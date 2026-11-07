@@ -290,6 +290,10 @@ GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/compl
 GH_FIELDS = "i, section, call, horizon, direction, tickers[{symbol,direction}], sectors[], impact, confidence, category, action, reason[], risks[]"
 
 
+# Gemini model names to try in order (the "latest" alias follows Google's current Flash model)
+GEMINI_MODELS = ["gemini-flash-latest", "gemini-3.8-flash", "gemini-2.5-flash"]
+
+
 def classify_compat(batch, universe, url, key, model):
     """Classification through any OpenAI-compatible chat API with a free tier
     (Google Gemini by default, or GitHub Models). Free tiers cap request size, so
@@ -440,7 +444,7 @@ def main():
         provider = "claude"
     elif os.environ.get("AI_API_KEY"):                        # free tier, e.g. a Google Gemini key
         provider = "compat"
-        compat = (os.environ.get("AI_BASE_URL") or GEMINI_URL, os.environ["AI_API_KEY"], os.environ.get("AI_MODEL") or "gemini-2.5-flash")
+        compat = (os.environ.get("AI_BASE_URL") or GEMINI_URL, os.environ["AI_API_KEY"], os.environ.get("AI_MODEL") or GEMINI_MODELS[0])
     elif os.environ.get("GH_MODELS_TOKEN") and os.environ.get("PULSEDGE_USE_GITHUB_MODELS"):
         provider = "compat"
         compat = (GH_MODELS_URL, os.environ["GH_MODELS_TOKEN"], os.environ.get("PULSEDGE_GH_MODEL") or "openai/gpt-4o-mini")
@@ -457,7 +461,16 @@ def main():
             if provider == "claude":
                 res = classify_claude(chunk, universe)
             elif provider == "compat" and gh_failures < 2:
-                res = classify_compat(chunk, universe, *compat)
+                while True:
+                    try:
+                        res = classify_compat(chunk, universe, *compat)
+                        break
+                    except RuntimeError as e:   # model retired or not offered to this key: try the next Gemini name
+                        nxt = GEMINI_MODELS.index(compat[2]) + 1 if compat[2] in GEMINI_MODELS else len(GEMINI_MODELS)
+                        if not str(e).startswith("HTTP 404") or nxt >= len(GEMINI_MODELS):
+                            raise
+                        log(f"  model {compat[2]} unavailable; trying {GEMINI_MODELS[nxt]}")
+                        compat = (compat[0], compat[1], GEMINI_MODELS[nxt])
             else:
                 res = classify_rules(chunk, universe)
         except Exception as e:
