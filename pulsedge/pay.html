@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>try{var t=localStorage.getItem("th");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pay for PulsEdge</title>
+<meta name="description" content="Pay for a PulsEdge plan by UPI and get your PULSE terminal access link.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/doc.css">
+<style>
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0 8px}
+.plans label{position:relative;display:block;border:1px solid var(--line);border-radius:12px;padding:14px;cursor:pointer;background:var(--card)}
+.plans input{position:absolute;top:0;left:0;width:1px;height:1px;margin:0;opacity:0;pointer-events:none}
+.plans label:has(input:checked){border-color:var(--pur);box-shadow:0 0 0 1px var(--pur)}
+.plans b{display:block;font-size:15px}
+.plans .amt{font:600 20px/1.3 var(--mono);margin-top:6px}
+.plans small{display:block;color:var(--mute);font-size:12.5px;margin-top:2px}
+.pay{display:grid;grid-template-columns:200px minmax(0,1fr);gap:20px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0;background:var(--card)}
+.pay img{width:200px;height:200px;border-radius:8px;background:#fff;display:block}
+.pay .big{font:600 26px/1.2 var(--mono)}
+.pay .vpa{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:10px 0;font:500 15px/1.4 var(--mono)}
+.pay .copy{font:500 13px var(--sans);padding:5px 10px;border-radius:8px;border:1px solid var(--line);background:transparent;color:inherit;cursor:pointer}
+.pay .app{display:none;margin-top:6px}
+@media (max-width:640px){.plans{grid-template-columns:1fr}.pay{grid-template-columns:1fr;justify-items:start}.pay .app{display:inline-block}}
+.steps{margin:6px 0 0;padding-left:20px}
+.steps li{margin:4px 0}
+</style>
+</head>
+<body>
+<main class="w">
+  <div class="head">
+    <a href="index.html" aria-label="PulsEdge home"><img class="logo lt" src="assets/icon.png" alt="PulsEdge" width="44" height="44"><img class="logo dk" src="assets/icon-dark.png" alt="PulsEdge" width="44" height="44"></a>
+    <div class="r"><a href="index.html#pricing">Plans</a><a href="contact.html">Contact</a>
+      <button class="thm" id="thm" type="button" aria-label="Switch to dark mode"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true" hidden><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button></div>
+  </div>
+  <p class="kick">Checkout</p>
+  <h1>Pay by UPI</h1>
+  <p class="upd">Any UPI app works: PhonePe, Google Pay, Paytm or your bank's app.</p>
+
+  <h2>1. Choose your plan</h2>
+  <div class="plans" role="radiogroup" aria-label="Plan">
+    <label><input type="radio" name="plan" value="yearly"><b>Pro yearly</b><span class="amt">₹7,999</span><small>₹667 a month · best value</small></label>
+    <label><input type="radio" name="plan" value="monthly"><b>Pro monthly</b><span class="amt">₹999</span><small>per month</small></label>
+    <label><input type="radio" name="plan" value="founding"><b>Founding member</b><span class="amt">₹4,999</span><small>per year, price kept while you renew · 15 seats</small></label>
+  </div>
+
+  <h2>2. Pay</h2>
+  <div class="pay">
+    <img id="qr" src="assets/pay/upi-yearly.svg" alt="UPI QR code for the selected plan" width="200" height="200">
+    <div>
+      <div class="big" id="amt">₹7,999</div>
+      <div class="muted" id="pname">PulsEdge Pro yearly</div>
+      <div class="vpa"><span>UPI ID: <b id="vpa">8073708940@ybl</b></span><button class="copy" id="copy" type="button">Copy</button></div>
+      <p class="muted">Paid to <b>Aditya Sawant (PulsEdge)</b>. Scan the code with your UPI app, or pay the UPI ID above the amount shown.</p>
+      <a class="btn app" id="app" href="#">Open my UPI app</a>
+    </div>
+  </div>
+
+  <h2>3. Tell us you've paid</h2>
+  <p class="muted">Enter the UPI transaction ID (the 12-digit UTR or reference number in your app's payment receipt).</p>
+  <form id="pf">
+    <input type="text" id="pf-name" required placeholder="Your name" autocomplete="name" aria-label="Your name">
+    <input type="email" id="pf-email" required placeholder="you@email.com" autocomplete="email" aria-label="Your email">
+    <input type="tel" id="pf-wa" placeholder="WhatsApp number (optional)" autocomplete="tel" aria-label="WhatsApp number">
+    <input type="text" id="pf-utr" required placeholder="UPI transaction ID, e.g. 431234567890" inputmode="numeric" aria-label="UPI transaction ID">
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+    <button class="btn" type="submit">I've paid: send my access link</button>
+    <p class="note" id="pf-note" aria-live="polite"></p>
+  </form>
+
+  <div class="box">
+    <p><b>What happens next</b></p>
+    <ol class="steps">
+      <li>We match your transaction ID with the payment, usually within a few hours (9 am to 9 pm IST).</li>
+      <li>You get your PULSE terminal access link by email, and on WhatsApp if you gave a number.</li>
+      <li>Open the link once on each device you use. It stays unlocked for your plan.</li>
+    </ol>
+    <p class="muted">Questions or a problem with a payment? WhatsApp <a href="https://wa.me/918073708940" target="_blank" rel="noopener">+91 80737 08940</a> or email <a href="mailto:asawant.work@gmail.com">asawant.work@gmail.com</a>. Full refund on a first payment within 7 days: see the <a href="refund.html">refund policy</a>.</p>
+  </div>
+
+  <footer>
+    <p>Educational information only. Not SEBI-registered investment advice. Trading involves substantial risk of loss.</p>
+    <p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds &amp; delivery</a> · <a href="contact.html">Contact</a> · <a href="https://t.me/pulsedgein" target="_blank" rel="noopener">Telegram</a></p>
+    <p>&copy; 2026 Aditya Sawant (PulsEdge) · Kalena Agrahara, Bannerghatta Road, Bengaluru, Karnataka</p>
+  </footer>
+</main>
+<script src="assets/theme.js"></script>
+<script>
+(function(){
+  // Prices live here and in index.html's pricing section; QR codes in assets/pay/ carry the same amounts.
+  var VPA="8073708940@ybl",PAYEE="Aditya Sawant";
+  var PLANS={yearly:{name:"PulsEdge Pro yearly",amount:7999},monthly:{name:"PulsEdge Pro monthly",amount:999},founding:{name:"PulsEdge Founding member",amount:4999}};
+  function $(id){return document.getElementById(id)}
+  var plan=(new URLSearchParams(location.search).get("plan")||"").toLowerCase();
+  if(!PLANS[plan])plan="yearly";
+  function show(p){
+    plan=p;var x=PLANS[p];
+    $("qr").src="assets/pay/upi-"+p+".svg";
+    $("amt").textContent="₹"+x.amount.toLocaleString("en-IN");
+    $("pname").textContent=x.name;
+    $("app").href="upi://pay?pa="+VPA+"&pn="+encodeURIComponent(PAYEE)+"&am="+x.amount+".00&cu=INR&tn="+encodeURIComponent(x.name);
+    document.querySelectorAll("input[name=plan]").forEach(function(r){r.checked=r.value===p});
+    try{history.replaceState(null,"","?plan="+p)}catch(e){}
+  }
+  document.querySelectorAll("input[name=plan]").forEach(function(r){r.addEventListener("change",function(){show(r.value)})});
+  show(plan);
+
+  $("copy").addEventListener("click",function(){
+    var b=this;
+    (navigator.clipboard?navigator.clipboard.writeText(VPA):Promise.reject()).then(function(){b.textContent="Copied"},function(){b.textContent="Select and copy"})
+      .then(function(){setTimeout(function(){b.textContent="Copy"},2000)});
+  });
+
+  var f=$("pf"),note=$("pf-note"),btn=f.querySelector("button");
+  function say(t,c){note.textContent=t;note.className="note"+(c?" "+c:"")}
+  f.addEventListener("submit",function(e){
+    e.preventDefault();
+    var name=$("pf-name").value.trim(),email=$("pf-email").value.trim(),wa=$("pf-wa").value.trim(),utr=$("pf-utr").value.replace(/\s+/g,"");
+    if(name.length<2){say("Enter your name.","err");return}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){say("Enter a full email address, like you@email.com.","err");return}
+    if(!/^[A-Za-z0-9]{10,23}$/.test(utr)){say("The transaction ID is usually 12 digits. Copy it from your UPI app's receipt.","err");return}
+    if(f.querySelector("[name=_gotcha]").value){say("Thanks, we'll be in touch.","ok");return}
+    var x=PLANS[plan];
+    btn.disabled=true;say("Sending…");
+    fetch("https://formspree.io/f/mkjoaaga",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
+      body:JSON.stringify({source:"payment",plan:plan,amount:x.amount,name:name,email:email,whatsapp:wa,utr:utr,
+        _subject:"PulsEdge payment: "+x.name+" ₹"+x.amount+" from "+name})})
+      .then(function(r){if(!r.ok)throw 0;say("Thanks, "+name.split(" ")[0]+". We'll check payment "+utr+" and send your access link to "+email+" within a few hours.","ok");f.reset();show(plan)})
+      .catch(function(){say("Couldn't send. WhatsApp +91 80737 08940 with your transaction ID instead.","err")})
+      .then(function(){btn.disabled=false});
+  });
+})();
+</script>
+</body>
+</html>

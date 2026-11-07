@@ -186,8 +186,8 @@
     var title=h("h2",{text:ended?(a.trial?"Your free trial has ended":"Your access has ended"):"Try PULSE free for "+TRIAL_SESSIONS+" trading sessions"});
     var kids=[k,title];
     if(ended){
-      kids.push(h("p",{text:a.trial?"You've used all "+a.trial.total+" trading sessions. Keep the terminal with Pro, or apply for one of the 15 founding seats.":"Your "+(a.label||"access")+" ran until "+nice(a.until)+". Renew to keep live signals."}));
-      kids.push(h("div",{"class":"pe-row"},[h("a",{"class":"pe-b",href:"index.html#pricing",text:"See plans"}),(function(){var b=h("button",{"class":"pe-b ghost",type:"button",text:"Send feedback"});b.onclick=function(){feedback(a)};return b})()]));
+      kids.push(h("p",{text:a.trial?"You've used all "+a.trial.total+" trading sessions. Keep the terminal with Pro, or take one of the 15 founding seats.":"Your "+(a.label||"access")+" ran until "+nice(a.until)+". Renew to keep live signals."}));
+      kids.push(h("div",{"class":"pe-row"},[h("a",{"class":"pe-b",href:"pay.html",text:"Get Pro"}),(function(){var b=h("button",{"class":"pe-b ghost",type:"button",text:"Send feedback"});b.onclick=function(){feedback(a)};return b})()]));
     }else{
       kids.push(h("p",{text:"Live signals sorted into Ignore, Watch and Act, the pre-market checklist, and alerts for your own stocks. No card or payment details."}));
       var inp=h("input",{type:"email",required:"",placeholder:"you@email.com",autocomplete:"email","aria-label":"Email address"}),
