@@ -157,6 +157,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .call.sell{background:var(--sell-bg);color:var(--red-l)}
 .call.watch{background:var(--watch-bg);color:var(--amber-l)}
 .call.ignore{background:var(--ign-bg);color:var(--mute)}
+.call.act{background:var(--pur-soft);color:var(--pur-l)}
 .hz{color:var(--mute)}
 .dir{font-weight:500}
 .dir.mixed{color:var(--mute)}
@@ -282,7 +283,7 @@ html{-webkit-tap-highlight-color:transparent}
   <section aria-label="Signals">
     <div class="tabs" role="tablist" aria-label="Filter signals">
       <button class="tab" role="tab" data-t="all" aria-selected="true">All</button>
-      <button class="tab" role="tab" data-t="ideas" aria-selected="false">Trade ideas</button>
+      <button class="tab" role="tab" data-t="ideas" aria-selected="false">Act now</button>
       <button class="tab" role="tab" data-t="watch" aria-selected="false">Watch</button>
       <button class="tab" role="tab" data-t="global" aria-selected="false">Global</button>
       <button class="tab" role="tab" data-t="redbox" aria-selected="false">RedBox</button>
@@ -478,7 +479,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     var h=el("div","sh");
     h.appendChild(el("span","tm",s.t?s.t.toLocaleTimeString("en-IN",{timeZone:"Asia/Kolkata",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false}):""));
     if(s.source)h.appendChild(el("span","srcb",s.source));
-    h.appendChild(el("span","call "+s.call,s.call.toUpperCase()));
+    var act=s.call==="buy"||s.call==="sell";h.appendChild(el("span","call "+(act?"act":s.call),act?"ACT":s.call.toUpperCase()));
     if(s.horizon)h.appendChild(el("span","hz",HZ[s.horizon]||s.horizon));
     h.appendChild(el("span","dir "+(s.dir==="mixed"?"mixed":s.dir),ARROW[s.dir]+" "+s.dir.toUpperCase()));
     if(s.latency!=null)h.appendChild(el("span","lat",s.latency.toFixed(1)+"s"));
