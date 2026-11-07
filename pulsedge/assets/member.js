@@ -19,7 +19,7 @@
   var FORMSPREE="https://formspree.io/f/mkjoaaga";
   var TRIAL_SESSIONS=5;
   var CLOSE_MIN=15*60+30;
-  var PLANS={trial7:"Free trial",trial14:"Extended trial",monthly:"Pro",yearly:"Pro yearly",founding:"Founding member",comp:"Guest access"};
+  var PLANS={trial7:"Free trial",trial14:"Extended trial",monthly:"Pro",yearly:"Pro yearly",founding:"Founding member",comp:"Guest access",owner:"Owner"};
   // Fallback when data/calendar.json can't be read; keep in step with it.
   var HOLIDAYS=["2026-01-15","2026-01-26","2026-03-03","2026-03-26","2026-03-31","2026-04-03","2026-04-14","2026-05-01",
     "2026-05-28","2026-06-26","2026-09-14","2026-10-02","2026-11-10","2026-11-24","2026-12-25"];
