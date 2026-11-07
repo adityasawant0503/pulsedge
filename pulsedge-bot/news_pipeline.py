@@ -291,7 +291,7 @@ GH_FIELDS = "i, section, call, horizon, direction, tickers[{symbol,direction}], 
 
 
 # Gemini model names to try in order (the "latest" alias follows Google's current Flash model)
-GEMINI_MODELS = ["gemini-flash-latest", "gemini-3.8-flash", "gemini-2.5-flash"]
+GEMINI_MODELS = ["gemini-3.8-flash", "gemini-flash-latest", "gemini-flash-lite-latest", "gemini-2.5-flash"]
 
 
 def classify_compat(batch, universe, url, key, model):
@@ -321,7 +321,7 @@ def classify_compat(batch, universe, url, key, model):
     def send(body):
         req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={
             "Authorization": "Bearer " + key, "Content-Type": "application/json", "Accept": "application/json"})
-        with urllib.request.urlopen(req, timeout=150) as r:
+        with urllib.request.urlopen(req, timeout=75) as r:
             return r.read().decode("utf-8", "replace")
     try:
         raw = send(payload)
@@ -478,11 +478,12 @@ def main():
                     try:
                         res = classify_compat(chunk, universe, *compat)
                         break
-                    except RuntimeError as e:   # model retired or not offered to this key: try the next Gemini name
+                    except Exception as e:      # model retired, busy or too slow: try the next Gemini model
                         nxt = GEMINI_MODELS.index(compat[2]) + 1 if compat[2] in GEMINI_MODELS else len(GEMINI_MODELS)
-                        if not str(e).startswith("HTTP 404") or nxt >= len(GEMINI_MODELS):
+                        retry = isinstance(e, TimeoutError) or re.match(r"HTTP (404|429|5\d\d)", str(e))
+                        if not retry or nxt >= len(GEMINI_MODELS):
                             raise
-                        log(f"  model {compat[2]} unavailable; trying {GEMINI_MODELS[nxt]}")
+                        log(f"  model {compat[2]} unavailable ({str(e)[:40]}); trying {GEMINI_MODELS[nxt]}")
                         compat = (compat[0], compat[1], GEMINI_MODELS[nxt])
             else:
                 res = classify_rules(chunk, universe)
