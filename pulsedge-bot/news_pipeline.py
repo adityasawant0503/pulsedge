@@ -290,6 +290,10 @@ GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/compl
 GH_FIELDS = "i, section, call, horizon, direction, tickers[{symbol,direction}], sectors[], impact, confidence, category, action, reason[], risks[]"
 
 
+# Gemini model names to try in order (the "latest" alias follows Google's current Flash model)
+GEMINI_MODELS = ["gemini-3.8-flash", "gemini-flash-latest", "gemini-flash-lite-latest", "gemini-2.5-flash"]
+
+
 def classify_compat(batch, universe, url, key, model):
     """Classification through any OpenAI-compatible chat API with a free tier
     (Google Gemini by default, or GitHub Models). Free tiers cap request size, so
@@ -311,13 +315,26 @@ def classify_compat(batch, universe, url, key, model):
         "response_format": {"type": "json_object"},
         "messages": [{"role": "system", "content": guide}, {"role": "user", "content": "Headlines:\n" + "\n".join(rows)}],
     }
-    req = urllib.request.Request(url, data=json.dumps(payload).encode(), headers={
-        "Authorization": "Bearer " + key, "Content-Type": "application/json", "Accept": "application/json"})
+    if "generativelanguage.googleapis.com" in url:
+        payload["reasoning_effort"] = "low"      # newer Gemini models think at length by default; sorting headlines doesn't need it
+
+    def send(body):
+        req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={
+            "Authorization": "Bearer " + key, "Content-Type": "application/json", "Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=75) as r:
+            return r.read().decode("utf-8", "replace")
     try:
-        with urllib.request.urlopen(req, timeout=90) as r:
-            raw = r.read().decode("utf-8", "replace")
+        raw = send(payload)
     except urllib.error.HTTPError as e:
-        raise RuntimeError(f"HTTP {e.code} {e.read()[:200]!r}")
+        detail = e.read()[:300]
+        if e.code == 400 and "reasoning_effort" in payload and b"reasoning" in detail.lower():
+            payload.pop("reasoning_effort")      # a model that doesn't take the setting
+            try:
+                raw = send(payload)
+            except urllib.error.HTTPError as e2:
+                raise RuntimeError(f"HTTP {e2.code} {e2.read()[:200]!r}")
+        else:
+            raise RuntimeError(f"HTTP {e.code} {detail[:200]!r}")
     try:
         data = json.loads(raw)
         content = data["choices"][0]["message"]["content"] or ""
@@ -440,7 +457,7 @@ def main():
         provider = "claude"
     elif os.environ.get("AI_API_KEY"):                        # free tier, e.g. a Google Gemini key
         provider = "compat"
-        compat = (os.environ.get("AI_BASE_URL") or GEMINI_URL, os.environ["AI_API_KEY"], os.environ.get("AI_MODEL") or "gemini-2.5-flash")
+        compat = (os.environ.get("AI_BASE_URL") or GEMINI_URL, os.environ["AI_API_KEY"], os.environ.get("AI_MODEL") or GEMINI_MODELS[0])
     elif os.environ.get("GH_MODELS_TOKEN") and os.environ.get("PULSEDGE_USE_GITHUB_MODELS"):
         provider = "compat"
         compat = (GH_MODELS_URL, os.environ["GH_MODELS_TOKEN"], os.environ.get("PULSEDGE_GH_MODEL") or "openai/gpt-4o-mini")
@@ -457,7 +474,17 @@ def main():
             if provider == "claude":
                 res = classify_claude(chunk, universe)
             elif provider == "compat" and gh_failures < 2:
-                res = classify_compat(chunk, universe, *compat)
+                while True:
+                    try:
+                        res = classify_compat(chunk, universe, *compat)
+                        break
+                    except Exception as e:      # model retired, busy or too slow: try the next Gemini model
+                        nxt = GEMINI_MODELS.index(compat[2]) + 1 if compat[2] in GEMINI_MODELS else len(GEMINI_MODELS)
+                        retry = isinstance(e, TimeoutError) or re.match(r"HTTP (404|429|5\d\d)", str(e))
+                        if not retry or nxt >= len(GEMINI_MODELS):
+                            raise
+                        log(f"  model {compat[2]} unavailable ({str(e)[:40]}); trying {GEMINI_MODELS[nxt]}")
+                        compat = (compat[0], compat[1], GEMINI_MODELS[nxt])
             else:
                 res = classify_rules(chunk, universe)
         except Exception as e:
