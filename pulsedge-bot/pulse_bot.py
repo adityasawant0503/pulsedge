@@ -5,7 +5,8 @@ Reads the same feed the terminal reads (pulsedge/data/feed.json, falling back to
 feed.sample.json), so whatever shows in the terminal is what goes to Telegram.
 
   python pulse_bot.py render [--event ID] [--out DIR]   # write card PNGs, no network
-  python pulse_bot.py post   [--event ID] [--dry-run]   # post new BUY/SELL signals to Telegram
+  python pulse_bot.py post   [--event ID] [--dry-run]   # post new Act signals to Telegram
+  python pulse_bot.py digest [--dry-run]                # post the day's evening summary (once a day)
 
 Posting needs TELEGRAM_BOT_TOKEN, and TELEGRAM_CHAT_ID (defaults to @pulsedgein).
 Events already posted are recorded in posted.json so nothing is sent twice.
@@ -167,7 +168,7 @@ def render(ev):
         d.text((x + 11, y), ev["source"], font=f_meta, fill=PUR_L)
         x += w + 18
     bg, fg = CALL_BADGE[ev["call"]]
-    label = ev["call"].upper()
+    label = "ACT" if ev["call"] in ("buy", "sell") else ev["call"].upper()   # never BUY/SELL in public posts
     w = d.textlength(label, font=f_meta_b) + 22
     d.rounded_rectangle((x, y - 4, x + w, y + 38), radius=6, fill=bg)
     d.text((x + 11, y), label, font=f_meta_b, fill=fg)
@@ -238,7 +239,7 @@ def render(ev):
 # ---------- Telegram ----------
 
 def caption(ev):
-    head = f"<b>{ev['call'].upper()}</b>"
+    head = "<b>ACT · worth reading now</b>" if ev["call"] in ("buy", "sell") else f"<b>{ev['call'].upper()}</b>"
     if ev["horizon"]:
         head += f" · {HZ.get(ev['horizon'], ev['horizon'].title())}"
     if ev["source"]:
@@ -249,11 +250,11 @@ def caption(ev):
     meters = [f"{k} {round(v)}" for k, v in (("Impact", ev["impact"]), ("Conf", ev["confidence"])) if v is not None]
     if meters:
         lines.append(" · ".join(meters))
-    if ev["action"]:
-        lines += ["", f"🎯 {html.escape(ev['action'])}"]
+    if ev["reason"]:
+        lines += ["", f"Why: {html.escape(ev['reason'][0])}"]
     if ev["url"]:
         lines += ["", f'<a href="{html.escape(ev["url"], quote=True)}">Source</a>']
-    lines += ["", "<i>Not investment advice. AI analysis can be wrong — confirm on the chart.</i>"]
+    lines += ["", "<i>Educational information only, not investment advice. AI can be wrong: check the source.</i>"]
     text = "\n".join(lines)
     return text if len(text) <= 1024 else text[:1000].rsplit("\n", 1)[0] + "\n…"
 
@@ -276,6 +277,65 @@ def send_photo(token, chat_id, png, text):
         raise RuntimeError(body.get("description", "Telegram rejected the post"))
 
 
+def send_message(token, chat_id, text):
+    data = json.dumps({"chat_id": chat_id, "text": text, "parse_mode": "HTML", "disable_web_page_preview": True}).encode()
+    req = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendMessage", data=data,
+                                 headers={"Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        body = json.load(r)
+    if not body.get("ok"):
+        raise RuntimeError(body.get("description", "Telegram rejected the message"))
+
+
+SITE = "https://adityasawant0503.github.io/pulsedge/"
+
+
+def digest_text(feed):
+    """The evening summary: what was read, what mattered, sectors, FIIs and big money."""
+    dg = feed.get("digest") or {}
+    day = dg.get("date") or datetime.now(IST).strftime("%Y-%m-%d")
+    flows = {}
+    try:
+        with open(os.path.join(DATA, "flows.json"), encoding="utf-8") as fh:
+            flows = json.load(fh)
+    except (OSError, ValueError):
+        pass
+    label = datetime.strptime(day, "%Y-%m-%d").strftime("%a %-d %b")
+    worth, act, ign = (dg.get("watch") or 0) + (dg.get("act") or 0), dg.get("act") or 0, dg.get("ignored") or 0
+    lines = [f"<b>PulsEdge · {label}</b>",
+             f"{worth + ign:,} headlines read · {worth:,} worth a look" + (f" · {act} to act on" if act else "")]
+    today = [x for x in feed.get("items", []) if str(x.get("time", ""))[:10] == day and x.get("call") != "ignore"
+             and x.get("kind") != "deal" and x.get("section") != "global"]
+    today.sort(key=lambda x: -(x.get("impact") or 0))
+    if today:
+        lines += ["", "<b>Worth reading</b>"]
+        for x in today[:3]:
+            tk = ", ".join(t["symbol"] for t in (x.get("tickers") or [])[:2] if t.get("symbol"))
+            h = str(x.get("headline", ""))
+            lines.append(f"• {html.escape((tk + ': ') if tk else '')}{html.escape(h[:110] + ('…' if len(h) > 110 else ''))}")
+    secs = [s for s in flows.get("sectors") or [] if not s.get("broad")]
+    if secs:
+        pick = secs[:2] + secs[-2:] if len(secs) > 4 else secs
+        lines += ["", "<b>Sectors</b> " + " · ".join(f"{s['label']} {s['d1']:+.1f}%" for s in pick)]
+    f = flows.get("fno") or {}
+    if f.get("fii_long_pct") is not None:
+        ch = f.get("prev_long_pct")
+        lines.append(f"<b>FIIs</b> {f['fii_long_pct']}% long in index futures"
+                     + (f" ({f['fii_long_pct'] - ch:+.1f} pts)" if ch is not None else ""))
+    big = (flows.get("by_stock") or [])[:2]
+    if big and flows.get("deals_date") == day:
+        parts = []
+        for b in big:
+            for k, who in (("foreign_cr", "foreign funds"), ("domestic_cr", "domestic institutions")):
+                v = b.get(k) or 0
+                if v:
+                    parts.append(f"{b['symbol']}: {who} {'bought' if v > 0 else 'sold'} ₹{abs(v):,.0f} cr")
+        lines.append("<b>Big money</b> " + " · ".join(parts[:3]))
+    lines += ["", f'<a href="{SITE}terminal.html">Open the PULSE terminal</a>',
+              "<i>Educational information only. Not investment advice.</i>"]
+    return day, "\n".join(lines)
+
+
 def png_bytes(img):
     buf = io.BytesIO()
     img.save(buf, "PNG", optimize=True)
@@ -284,13 +344,35 @@ def png_bytes(img):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("cmd", choices=["render", "post"])
+    ap.add_argument("cmd", choices=["render", "post", "digest"])
     ap.add_argument("--event", help="only this event id")
     ap.add_argument("--out", default=os.path.join(HERE, "out"), help="render: output folder")
     ap.add_argument("--dry-run", action="store_true", help="post: show what would be sent")
     a = ap.parse_args()
 
     feed, source = load_feed()
+    if a.cmd == "digest":
+        day, text = digest_text(feed)
+        posted = json.load(open(POSTED)) if os.path.exists(POSTED) else []
+        if a.dry_run:
+            print(text)
+            return
+        if source != "feed.json":
+            print("Only sample data is present; no summary posted.")
+            return
+        if f"digest:{day}" in posted:
+            print(f"Summary for {day} already posted.")
+            return
+        token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+        if not token:
+            print("TELEGRAM_BOT_TOKEN isn't set; skipping.")
+            return
+        send_message(token, os.environ.get("TELEGRAM_CHAT_ID") or "@pulsedgein", text)
+        posted.append(f"digest:{day}")
+        with open(POSTED, "w") as fh:
+            json.dump(posted[-2000:], fh, indent=1)
+        print("posted summary for", day)
+        return
     events = [normalize(x) for x in feed.get("items", []) if x.get("headline")]
     if a.event:
         events = [e for e in events if e["id"] == a.event]

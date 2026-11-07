@@ -20,6 +20,10 @@ on:
         description: 'Make the reel even if today already has one, or the market was closed'
         type: boolean
         default: false
+      digest:
+        description: "Post today's evening summary to Telegram now"
+        type: boolean
+        default: false
   push:
     branches-ignore:
       - master
@@ -118,7 +122,9 @@ jobs:
 
   telegram:
     needs: update
-    if: needs.update.outputs.changed == 'true'
+    if: >-
+      github.ref == 'refs/heads/master'
+      && (needs.update.outputs.changed == 'true' || github.event.schedule == '50 13 * * 1-5' || inputs.digest)
     runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v5
@@ -128,11 +134,19 @@ jobs:
       with:
         python-version: '3.12'
     - run: pip install --quiet pillow==10.4.0
-    - name: Post new BUY/SELL signals
+    - name: Post new Act signals
       env:
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
-      run: python pulsedge-bot/pulse_bot.py post
+      run: python pulse_bot.py post
+      working-directory: pulsedge-bot
+    - name: Evening summary
+      if: github.event.schedule == '50 13 * * 1-5' || inputs.digest
+      env:
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
+      run: python pulse_bot.py digest
+      working-directory: pulsedge-bot
     - name: Remember what was posted
       run: |
         if [ -n "$(git status --porcelain pulsedge-bot/posted.json)" ]; then
