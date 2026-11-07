@@ -315,13 +315,26 @@ def classify_compat(batch, universe, url, key, model):
         "response_format": {"type": "json_object"},
         "messages": [{"role": "system", "content": guide}, {"role": "user", "content": "Headlines:\n" + "\n".join(rows)}],
     }
-    req = urllib.request.Request(url, data=json.dumps(payload).encode(), headers={
-        "Authorization": "Bearer " + key, "Content-Type": "application/json", "Accept": "application/json"})
+    if "generativelanguage.googleapis.com" in url:
+        payload["reasoning_effort"] = "low"      # newer Gemini models think at length by default; sorting headlines doesn't need it
+
+    def send(body):
+        req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={
+            "Authorization": "Bearer " + key, "Content-Type": "application/json", "Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=150) as r:
+            return r.read().decode("utf-8", "replace")
     try:
-        with urllib.request.urlopen(req, timeout=90) as r:
-            raw = r.read().decode("utf-8", "replace")
+        raw = send(payload)
     except urllib.error.HTTPError as e:
-        raise RuntimeError(f"HTTP {e.code} {e.read()[:200]!r}")
+        detail = e.read()[:300]
+        if e.code == 400 and "reasoning_effort" in payload and b"reasoning" in detail.lower():
+            payload.pop("reasoning_effort")      # a model that doesn't take the setting
+            try:
+                raw = send(payload)
+            except urllib.error.HTTPError as e2:
+                raise RuntimeError(f"HTTP {e2.code} {e2.read()[:200]!r}")
+        else:
+            raise RuntimeError(f"HTTP {e.code} {detail[:200]!r}")
     try:
         data = json.loads(raw)
         content = data["choices"][0]["message"]["content"] or ""
