@@ -1,178 +1,380 @@
 {
- "updated": "2026-11-09T15:04:30+05:30",
+ "updated": "2026-11-10T01:42:02+05:30",
  "source": "NSE (bulk and block deals, provisional FII/DII cash, participant-wise open interest)",
  "cash": null,
  "cash_history": [],
  "fno": {
-  "date": "2026-11-06",
-  "fii_long": 48656,
-  "fii_short": 149072,
-  "fii_long_pct": 24.6,
-  "prev_long_pct": 21.5,
-  "prev_date": "2026-11-05"
+  "date": "2026-11-09",
+  "fii_long": 52382,
+  "fii_short": 143123,
+  "fii_long_pct": 26.8,
+  "prev_long_pct": 24.6,
+  "prev_date": "2026-11-06"
  },
- "deals_date": "2026-11-08",
+ "deals_date": "2026-11-09",
  "deals": [
   {
-   "date": "2026-11-08",
-   "symbol": "MOBILISE",
-   "name": "Mobilise App Lab Limited",
-   "client": "KULBHUSHAN PARASHAR",
+   "date": "2026-11-09",
+   "symbol": "COHANCE",
+   "name": "Cohance Lifesciences Ltd.",
+   "client": "JASUB PROPERTY HOLDINGS LLP",
    "who": "other",
    "side": "buy",
-   "qty": 150400,
-   "price": 120.99,
-   "value_cr": 1.82,
+   "qty": 3000000,
+   "price": 430.0,
+   "value_cr": 129.0,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-09",
+   "symbol": "COHANCE",
+   "name": "Cohance Lifesciences Ltd.",
+   "client": "JASTI FAMILY TRUST",
+   "who": "other",
+   "side": "sell",
+   "qty": 3000000,
+   "price": 430.0,
+   "value_cr": 129.0,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-09",
+   "symbol": "RATNAVEER",
+   "name": "Ratnaveer Precision Eng L",
+   "client": "UNITY ASSOCIATES",
+   "who": "other",
+   "side": "sell",
+   "qty": 500000,
+   "price": 364.15,
+   "value_cr": 18.21,
    "kind": "bulk",
    "nifty500": false
   },
   {
-   "date": "2026-11-08",
-   "symbol": "MOBILISE",
-   "name": "Mobilise App Lab Limited",
-   "client": "PRAMOD TRADERS",
+   "date": "2026-11-09",
+   "symbol": "TECHNOCRAF",
+   "name": "Technocraft Ventures Ltd",
+   "client": "RICHA GUPTA",
    "who": "other",
-   "side": "sell",
-   "qty": 96000,
-   "price": 121.0,
-   "value_cr": 1.16,
+   "side": "buy",
+   "qty": 211640,
+   "price": 513.05,
+   "value_cr": 10.86,
    "kind": "bulk",
    "nifty500": false
   },
   {
-   "date": "2026-11-08",
-   "symbol": "MOBILISE",
-   "name": "Mobilise App Lab Limited",
-   "client": "MAAHIR CONSULTANTS",
+   "date": "2026-11-09",
+   "symbol": "MKJEWELS",
+   "name": "MK Sons Fine Jewels Ltd",
+   "client": "GOLDMAN SACHS BANK EUROPE SE",
+   "who": "foreign",
+   "side": "sell",
+   "qty": 304300,
+   "price": 153.51,
+   "value_cr": 4.67,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-09",
+   "symbol": "SOUTHWEST",
+   "name": "South West Pinnacle Ltd",
+   "client": "AJAY KUMAR AGGARWAL",
    "who": "other",
    "side": "sell",
-   "qty": 62400,
-   "price": 121.0,
-   "value_cr": 0.76,
+   "qty": 220000,
+   "price": 162.56,
+   "value_cr": 3.58,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-09",
+   "symbol": "VPFL",
+   "name": "Vedant Poly Fabs Limited",
+   "client": "MAVERICK COMMODITY BROKERS PRIAVTE LIMITED",
+   "who": "other",
+   "side": "buy",
+   "qty": 360000,
+   "price": 94.0,
+   "value_cr": 3.38,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-09",
+   "symbol": "VPFL",
+   "name": "Vedant Poly Fabs Limited",
+   "client": "MAVERICK FINANCIAL SERVICES PRIVATE LIMITED",
+   "who": "other",
+   "side": "buy",
+   "qty": 360000,
+   "price": 94.0,
+   "value_cr": 3.38,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-09",
+   "symbol": "VISHNUINFR",
+   "name": "Vishnusurya Proj N Infr L",
+   "client": "NIRMALKUMAR PAREEK",
+   "who": "other",
+   "side": "buy",
+   "qty": 200500,
+   "price": 139.0,
+   "value_cr": 2.79,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-09",
+   "symbol": "AAATECH",
+   "name": "AAA Technologies Limited",
+   "client": "NOVA GLOBAL OPPORTUNITIES FUND PCC - TOUCHSTONE",
+   "who": "other",
+   "side": "sell",
+   "qty": 135000,
+   "price": 91.94,
+   "value_cr": 1.24,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-09",
+   "symbol": "VINEETLAB",
+   "name": "Vineet Laboratories Ltd",
+   "client": "KISHOR KHIMCHAND KALVANI",
+   "who": "other",
+   "side": "buy",
+   "qty": 130818,
+   "price": 37.93,
+   "value_cr": 0.5,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-09",
+   "symbol": "GSMFOILS",
+   "name": "GSM Foils Limited",
+   "client": "JAYESH MANNAR",
+   "who": "other",
+   "side": "sell",
+   "qty": 73500,
+   "price": 57.1,
+   "value_cr": 0.42,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-09",
+   "symbol": "WOMANCART",
+   "name": "Womancart Limited",
+   "client": "KHANDHAR JAYESH MANILAL",
+   "who": "other",
+   "side": "sell",
+   "qty": 49200,
+   "price": 74.06,
+   "value_cr": 0.36,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-09",
+   "symbol": "SAJHOTELS",
+   "name": "Saj Hotels Limited",
+   "client": "VICCO TRADING CORPORATION",
+   "who": "other",
+   "side": "buy",
+   "qty": 124000,
+   "price": 25.5,
+   "value_cr": 0.32,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-09",
+   "symbol": "JAIPURKURT",
+   "name": "Nandani Creation Limited",
+   "client": "MERU INVESTMENT FUND PCC- CELL 1",
+   "who": "other",
+   "side": "buy",
+   "qty": 100000,
+   "price": 29.75,
+   "value_cr": 0.3,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-09",
+   "symbol": "GSMFOILS",
+   "name": "GSM Foils Limited",
+   "client": "HI GROWTH CORPORATE SERVICES PVT LTD",
+   "who": "other",
+   "side": "buy",
+   "qty": 51000,
+   "price": 57.31,
+   "value_cr": 0.29,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-09",
+   "symbol": "JAIPURKURT",
+   "name": "Nandani Creation Limited",
+   "client": "L7 HITECH PRIVATE LIMITED",
+   "who": "other",
+   "side": "sell",
+   "qty": 45331,
+   "price": 27.06,
+   "value_cr": 0.12,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-09",
+   "symbol": "JALAN",
+   "name": "Jalan Transolu. India Ltd",
+   "client": "SHASHANK BAHAD",
+   "who": "other",
+   "side": "sell",
+   "qty": 75000,
+   "price": 1.4,
+   "value_cr": 0.01,
    "kind": "bulk",
    "nifty500": false
   }
  ],
- "by_stock": [],
- "sectors_date": "2026-11-06",
+ "by_stock": [
+  {
+   "symbol": "MKJEWELS",
+   "name": "MK Sons Fine Jewels Ltd",
+   "foreign_cr": -4.67,
+   "domestic_cr": 0.0
+  }
+ ],
+ "sectors_date": "2026-11-09",
  "sectors": [
   {
-   "label": "Financials",
-   "close": 27283.95,
-   "d1": 2.57,
-   "d5": 10.41,
-   "broad": false
-  },
-  {
-   "label": "Banks",
-   "close": 59086.0,
-   "d1": 2.27,
-   "d5": 8.04,
-   "broad": false
-  },
-  {
-   "label": "Nifty 50",
-   "close": 25030.35,
-   "d1": 2.01,
-   "d5": 8.58,
-   "broad": true
-  },
-  {
-   "label": "Consumer durables",
-   "close": 38003.6,
-   "d1": 1.7,
-   "d5": 10.08,
+   "label": "PSU Banks",
+   "close": 8905.35,
+   "d1": 3.73,
+   "d5": 6.69,
    "broad": false
   },
   {
    "label": "Pharma",
-   "close": 27940.4,
-   "d1": 1.21,
-   "d5": 3.01,
+   "close": 28896.1,
+   "d1": 1.65,
+   "d5": 6.61,
    "broad": false
   },
   {
-   "label": "Auto",
-   "close": 27811.8,
-   "d1": 0.76,
-   "d5": 9.4,
-   "broad": false
-  },
-  {
-   "label": "FMCG",
-   "close": 46785.6,
-   "d1": 0.67,
-   "d5": 7.28,
+   "label": "Banks",
+   "close": 59741.25,
+   "d1": 1.51,
+   "d5": 8.62,
    "broad": false
   },
   {
    "label": "Healthcare",
-   "close": 16931.2,
-   "d1": 0.67,
-   "d5": 2.93,
+   "close": 17411.0,
+   "d1": 1.33,
+   "d5": 5.65,
    "broad": false
   },
   {
-   "label": "Metals",
-   "close": 12678.15,
-   "d1": 0.66,
-   "d5": 7.58,
-   "broad": false
-  },
-  {
-   "label": "Oil & Gas",
-   "close": 11288.1,
-   "d1": 0.64,
-   "d5": 9.56,
-   "broad": false
-  },
-  {
-   "label": "PSU Banks",
-   "close": 8612.9,
-   "d1": 0.6,
-   "d5": 4.59,
-   "broad": false
-  },
-  {
-   "label": "IT",
-   "close": 32977.9,
-   "d1": 0.43,
-   "d5": 1.14,
+   "label": "Consumer durables",
+   "close": 38255.7,
+   "d1": 0.92,
+   "d5": 7.89,
    "broad": false
   },
   {
    "label": "Realty",
-   "close": 896.7,
-   "d1": 0.09,
-   "d5": 10.17,
+   "close": 897.7,
+   "d1": 0.77,
+   "d5": 9.18,
+   "broad": false
+  },
+  {
+   "label": "Financials",
+   "close": 27384.9,
+   "d1": 0.75,
+   "d5": 9.98,
    "broad": false
   },
   {
    "label": "Midcap 100",
-   "close": 60606.65,
-   "d1": -0.02,
-   "d5": 5.77,
-   "broad": true
-  },
-  {
-   "label": "Energy",
-   "close": 36867.3,
-   "d1": -0.05,
-   "d5": 5.46,
-   "broad": false
-  },
-  {
-   "label": "Smallcap 100",
-   "close": 18975.05,
-   "d1": -0.82,
-   "d5": 2.77,
+   "close": 61022.55,
+   "d1": 0.55,
+   "d5": 5.24,
    "broad": true
   },
   {
    "label": "Media",
-   "close": 1670.5,
-   "d1": -1.52,
-   "d5": 2.41,
+   "close": 1707.2,
+   "d1": 0.48,
+   "d5": 5.45,
+   "broad": false
+  },
+  {
+   "label": "Energy",
+   "close": 37164.95,
+   "d1": 0.38,
+   "d5": 2.3,
+   "broad": false
+  },
+  {
+   "label": "Auto",
+   "close": 27925.9,
+   "d1": 0.3,
+   "d5": 8.4,
+   "broad": false
+  },
+  {
+   "label": "Oil & Gas",
+   "close": 11334.6,
+   "d1": 0.25,
+   "d5": 3.83,
+   "broad": false
+  },
+  {
+   "label": "Nifty 50",
+   "close": 25044.65,
+   "d1": 0.23,
+   "d5": 6.84,
+   "broad": true
+  },
+  {
+   "label": "Smallcap 100",
+   "close": 19185.05,
+   "d1": 0.1,
+   "d5": 3.17,
+   "broad": true
+  },
+  {
+   "label": "FMCG",
+   "close": 46660.65,
+   "d1": -0.15,
+   "d5": 6.11,
+   "broad": false
+  },
+  {
+   "label": "Metals",
+   "close": 12664.65,
+   "d1": -0.46,
+   "d5": 4.13,
+   "broad": false
+  },
+  {
+   "label": "IT",
+   "close": 32468.9,
+   "d1": -1.22,
+   "d5": 0.08,
    "broad": false
   }
  ],
@@ -736,14 +938,85 @@
     38003.6,
     1.7
    ]
+  },
+  "2026-11-09": {
+   "Nifty 50": [
+    25044.65,
+    0.23
+   ],
+   "Midcap 100": [
+    61022.55,
+    0.55
+   ],
+   "Smallcap 100": [
+    19185.05,
+    0.1
+   ],
+   "Auto": [
+    27925.9,
+    0.3
+   ],
+   "Banks": [
+    59741.25,
+    1.51
+   ],
+   "Energy": [
+    37164.95,
+    0.38
+   ],
+   "Financials": [
+    27384.9,
+    0.75
+   ],
+   "FMCG": [
+    46660.65,
+    -0.15
+   ],
+   "IT": [
+    32468.9,
+    -1.22
+   ],
+   "Media": [
+    1707.2,
+    0.48
+   ],
+   "Metals": [
+    12664.65,
+    -0.46
+   ],
+   "Pharma": [
+    28896.1,
+    1.65
+   ],
+   "PSU Banks": [
+    8905.35,
+    3.73
+   ],
+   "Realty": [
+    897.7,
+    0.77
+   ],
+   "Oil & Gas": [
+    11334.6,
+    0.25
+   ],
+   "Healthcare": [
+    17411.0,
+    1.33
+   ],
+   "Consumer durables": [
+    38255.7,
+    0.92
+   ]
   }
  },
  "fno_history": {
   "2026-11-05": 21.5,
-  "2026-11-06": 24.6
+  "2026-11-06": 24.6,
+  "2026-11-09": 26.8
  },
  "week": {
-  "nifty_5d": 8.58,
-  "fii_long_now": 24.6
+  "nifty_5d": 6.84,
+  "fii_long_now": 26.8
  }
 }
