@@ -16,7 +16,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
-/* Layout: a product page. Sticky header; hero copy over a wide, tilted live product shot that flattens as you scroll;
+/* Layout: a product page. Sticky header; hero copy over a wide, tilted live product shot that flattens as you scroll,
+   with a 3D scene behind it (assets/hero3d.js: headlines stream into a gate and the few that matter drop into the shot);
    proof numbers; a sticky scroll story (steps left, one product view right); the interactive demo; track record;
    pricing; FAQ. The product surfaces are always dark, the page follows the viewer's theme. */
 :root{
@@ -103,12 +104,16 @@ header.scrolled{border-bottom-color:var(--line)}
 
 /* hero */
 .hero{position:relative;padding-top:76px}
-.hero::before{content:"";position:absolute;inset:-80px 0 0;pointer-events:none;z-index:-1;
+.hero::before{content:"";position:absolute;inset:-80px 0 0;pointer-events:none;z-index:-2;
   background:radial-gradient(55% 45% at 72% 8%,color-mix(in srgb,var(--acc) 17%,transparent),transparent 72%),
     radial-gradient(40% 35% at 10% 30%,color-mix(in srgb,var(--acc) 8%,transparent),transparent 70%)}
-.hero::after{content:"";position:absolute;inset:-80px 0 30%;pointer-events:none;z-index:-1;opacity:.6;
+.hero::after{content:"";position:absolute;inset:-80px 0 30%;pointer-events:none;z-index:-2;opacity:.6;
   background:linear-gradient(var(--line) 1px,transparent 1px) 0 0/56px 56px,linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/56px 56px;
   -webkit-mask-image:radial-gradient(70% 60% at 50% 0%,#000 30%,transparent 80%);mask-image:radial-gradient(70% 60% at 50% 0%,#000 30%,transparent 80%)}
+/* the triage in 3D (assets/hero3d.js): headlines stream into the gate; the few that matter drop into the terminal below */
+.h3d{position:absolute;left:0;top:-80px;width:100%;height:calc(100% + 80px);z-index:-1;pointer-events:none;opacity:0;transition:opacity 900ms ease}
+.h3d.on{opacity:1}
+@media (max-width:560px){.hero .micro{max-width:14.5rem}}
 .pill{display:inline-flex;align-items:center;gap:10px;font:500 13px/1 var(--mono);color:var(--ink2);text-decoration:none;border:1px solid var(--line2);background:color-mix(in srgb,var(--panel) 80%,transparent);border-radius:999px;padding:7px 14px 7px 10px;transition:border-color 160ms ease}
 .pill b{color:var(--ink);font-weight:600}
 .livedot{width:8px;height:8px;border-radius:50%;background:var(--act);box-shadow:0 0 0 0 color-mix(in srgb,var(--act) 55%,transparent);animation:ping 2.2s ease-out infinite;flex:none}
@@ -455,6 +460,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
 
 <main id="top">
   <section class="hero">
+    <canvas class="h3d" id="h3d" aria-hidden="true"></canvas>
     <div class="w">
       <a class="pill" href="#proof"><span class="livedot"></span><span id="h-pill">Live beta · reading today's market news</span></a>
       <h1>Indian market news, <span class="hl">triaged</span> for the stocks you own.</h1>
@@ -746,13 +752,16 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
   // ---------- clock + market state in the product shot ----------
   function ist(){return new Date(Date.now()+(330+new Date().getTimezoneOffset())*60000)}
   function pad(n){return (n<10?"0":"")+n}
+  var HOL={};
   function clock(){
-    var d=ist(),m=d.getHours()*60+d.getMinutes(),wd=d.getDay()>0&&d.getDay()<6,mk=$("dv-mkt");
+    var d=ist(),m=d.getHours()*60+d.getMinutes(),mk=$("dv-mkt");
+    var wd=d.getDay()>0&&d.getDay()<6&&!HOL[d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate())];
     $("dv-clock").textContent=pad(d.getHours())+":"+pad(d.getMinutes())+" IST";
     var st=!wd?["MARKET CLOSED",""]:m>=555&&m<930?["MARKET OPEN","ok"]:m>=480&&m<555?["PRE-MARKET","pre"]:["MARKET CLOSED",""];
     mk.textContent=st[0];mk.className="tp"+(st[1]?" "+st[1]:"");
   }
   clock();setInterval(clock,20000);
+  fetch("data/calendar.json").then(function(r){return r.ok?r.json():{}}).then(function(c){(c.holidays||[]).forEach(function(x){HOL[x]=1});clock()}).catch(function(){});
 
   // ---------- live data for the hero, proof numbers, story and track record ----------
   function vOf(x){var c=String(x.call||"").toLowerCase();return c==="buy"||c==="sell"?"act":(c==="act"||c==="watch"?c:"ignore")}
@@ -1180,5 +1189,6 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
   sync();
 })();
 </script>
+<script src="assets/hero3d.js" defer></script>
 </body>
 </html>
