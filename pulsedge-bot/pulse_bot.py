@@ -6,10 +6,14 @@ feed.sample.json), so whatever shows in the terminal is what goes to Telegram.
 
   python pulse_bot.py render [--event ID] [--out DIR]   # write card PNGs, no network
   python pulse_bot.py post   [--event ID] [--dry-run]   # post new Act signals to Telegram
-  python pulse_bot.py digest [--dry-run]                # post the day's evening summary (once a day)
+  python pulse_bot.py digest [--dry-run] [--any-hour]   # post the day's evening summary (once a day)
 
 Posting needs TELEGRAM_BOT_TOKEN, and TELEGRAM_CHAT_ID (defaults to @pulsedgein).
 Events already posted are recorded in posted.json so nothing is sent twice.
+
+The channel stays quiet from 22:00 to 07:00 IST: signals found overnight are posted by the first run
+after 07:00. The evening summary only goes out on an NSE trading day, and after 18:00 IST unless
+--any-hour is given. Both rules exist because a scheduled run can arrive hours late.
 """
 import argparse
 import html
@@ -102,6 +106,20 @@ def normalize(item):
 
 def postable(ev):
     return ev["call"] in ("buy", "sell")
+
+
+def quiet_hours(now):
+    return now.hour >= 22 or now.hour < 7
+
+
+def trading_day(day):
+    """True when NSE trades on this date (a weekday that isn't in data/calendar.json's holidays)."""
+    try:
+        with open(os.path.join(DATA, "calendar.json"), encoding="utf-8") as fh:
+            holidays = set(json.load(fh).get("holidays", []))
+    except (OSError, ValueError):
+        holidays = set()
+    return day.weekday() < 5 and day.isoformat() not in holidays
 
 
 # ---------- card image ----------
@@ -348,6 +366,7 @@ def main():
     ap.add_argument("--event", help="only this event id")
     ap.add_argument("--out", default=os.path.join(HERE, "out"), help="render: output folder")
     ap.add_argument("--dry-run", action="store_true", help="post: show what would be sent")
+    ap.add_argument("--any-hour", action="store_true", help="digest: post it even before 18:00 IST")
     a = ap.parse_args()
 
     feed, source = load_feed()
@@ -362,6 +381,13 @@ def main():
             return
         if f"digest:{day}" in posted:
             print(f"Summary for {day} already posted.")
+            return
+        now = datetime.now(IST)
+        if not trading_day(now.date()):
+            print("NSE is closed today; no evening summary.")
+            return
+        if now.hour < 18 and not a.any_hour:
+            print("Before 18:00 IST: too early for the evening summary.")
             return
         token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
         if not token:
@@ -394,6 +420,9 @@ def main():
     chat = os.environ.get("TELEGRAM_CHAT_ID") or "@pulsedgein"
     if not token and not a.dry_run:
         print("TELEGRAM_BOT_TOKEN isn't set; skipping. Add it as a repository secret to turn posting on.")
+        return
+    if quiet_hours(datetime.now(IST)) and not a.event and not a.dry_run:
+        print("Quiet hours (22:00 to 07:00 IST): new signals wait for the first run after 07:00.")
         return
     posted = json.load(open(POSTED)) if os.path.exists(POSTED) else []
     todo = [e for e in events if (a.event or postable(e)) and e["id"] not in posted]

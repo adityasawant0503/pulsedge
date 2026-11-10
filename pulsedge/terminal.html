@@ -315,14 +315,17 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
   // ---------- status bar ----------
   function ist(){return new Date(Date.now()+(330+new Date().getTimezoneOffset())*60000)}
   function pad(n){return ("0"+n).slice(-2)}
+  var HOL={};
   function tick(){
-    var d=ist(),m=d.getHours()*60+d.getMinutes(),wd=d.getDay()>=1&&d.getDay()<=5,st="MARKET CLOSED",cls="mkt-closed";
+    var d=ist(),m=d.getHours()*60+d.getMinutes(),hol=!!HOL[d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate())];
+    var wd=d.getDay()>=1&&d.getDay()<=5&&!hol,st="MARKET CLOSED",cls="mkt-closed";
     if(wd&&m>=555&&m<930){st="MARKET OPEN";cls="mkt-open"}else if(wd&&m>=540&&m<555){st="PRE-OPEN";cls="mkt-pre"}
     document.getElementById("clock").textContent=pad(d.getHours())+":"+pad(d.getMinutes())+":"+pad(d.getSeconds())+" IST";
     var k=document.getElementById("mkt");k.textContent=st;k.className="pill "+cls;
-    k.title="NSE hours 09:15–15:30 IST, Monday to Friday. Exchange holidays not included.";
+    k.title=hol?"NSE is closed today for an exchange holiday.":"NSE hours 09:15–15:30 IST, Monday to Friday.";
   }
   tick();setInterval(tick,1000);
+  fetch("data/calendar.json").then(function(r){return r.ok?r.json():{}}).then(function(c){(c.holidays||[]).forEach(function(x){HOL[x]=1})}).catch(function(){});
 
   // ---------- pre-market ----------
   var pm=null,pmKey="";
