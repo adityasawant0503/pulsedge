@@ -1,15 +1,23 @@
 name: PulsEdge news
 
-# Every 15 minutes during Indian market hours (08:15–16:15 IST, Mon–Fri), plus manual runs.
+# Every 15 minutes from 08:15 to 16:00 IST, Mon–Fri, and once more at 19:20 IST, plus manual runs.
 # On master: collect -> classify -> commit pulsedge/data/feed.json -> deploy the site -> post to Telegram.
-# At 19:20 IST (after NSE publishes closing prices) the same run also renders the daily reel and publishes
-# it to the "daily-reel" release; run it by hand with reel: true.
+# The 19:20 IST run (after NSE publishes closing prices) also posts the evening summary, renders the daily
+# reel and publishes it to the "daily-reel" release; run it by hand with reel: true.
+#
+# Timing: GitHub's cron ran this workflow hours late, or not at all, so the cron lines below only start
+# the day. Each run on master then books the next one itself: the "next" job waits for the next slot
+# (pulsedge-bot/next_slot.py) and starts the workflow again. Late cron runs can't post at night: the bot
+# keeps quiet from 22:00 to 07:00 IST, and the summary and reel only go out in the evening.
 # On any other branch (push): a dry run that fetches and classifies but changes nothing; reel changes
 # render a test reel as a workflow artifact.
 on:
   schedule:
-    - cron: '45,0,15,30 2-10 * * 1-5'
-    - cron: '50 13 * * 1-5'
+    # minutes away from :00/:15/:30/:45, when GitHub is busiest
+    - cron: '23 21-23 * * 0-4'          # 02:53–04:53 IST: waits for the 08:15 slot
+    - cron: '23 0-1 * * 1-5'            # 05:53 and 06:53 IST
+    - cron: '38 2-10 * * 1-5'            # 08:08–16:08 IST, hourly: restarts the chain if it ever stops
+    - cron: '53 13 * * 1-5'             # 19:23 IST: backup for the evening run
   workflow_dispatch:
     inputs:
       reel:
@@ -17,7 +25,7 @@ on:
         type: boolean
         default: false
       force:
-        description: 'Make the reel even if today already has one, or the market was closed'
+        description: 'Make the reel even if today already has one, the market was closed, or it is before 4 pm IST'
         type: boolean
         default: false
       digest:
@@ -42,14 +50,14 @@ permissions:
   id-token: write
   models: read
 
-concurrency:
-  group: pulsedge-news-${{ github.ref }}
-  cancel-in-progress: false
-
 jobs:
   update:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
+    # one update at a time per branch; the long wait in "next" stays outside this group so it never blocks a run
+    concurrency:
+      group: pulsedge-news-${{ github.ref }}
+      cancel-in-progress: false
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
     steps:
@@ -124,7 +132,7 @@ jobs:
     needs: update
     if: >-
       github.ref == 'refs/heads/master'
-      && (needs.update.outputs.changed == 'true' || github.event.schedule == '50 13 * * 1-5' || inputs.digest)
+      && (needs.update.outputs.changed == 'true' || github.event.schedule == '53 13 * * 1-5' || inputs.digest)
     runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v5
@@ -141,11 +149,12 @@ jobs:
       run: python pulse_bot.py post
       working-directory: pulsedge-bot
     - name: Evening summary
-      if: github.event.schedule == '50 13 * * 1-5' || inputs.digest
+      if: github.event.schedule == '53 13 * * 1-5' || inputs.digest
       env:
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
-      run: python pulse_bot.py digest
+      # a run that asks for the summary by input may post it at any hour; a late cron run may not
+      run: python pulse_bot.py digest ${{ inputs.digest && '--any-hour' || '' }}
       working-directory: pulsedge-bot
     - name: Remember what was posted
       run: |
@@ -161,7 +170,7 @@ jobs:
     needs: update
     # evening schedule or a manual run with reel: true on master; any push that reaches this workflow on another branch
     if: >-
-      (github.ref == 'refs/heads/master' && (github.event.schedule == '50 13 * * 1-5' || inputs.reel))
+      (github.ref == 'refs/heads/master' && (github.event.schedule == '53 13 * * 1-5' || inputs.reel))
       || (github.ref != 'refs/heads/master' && github.event_name == 'push')
     runs-on: ubuntu-24.04
     timeout-minutes: 20
@@ -186,6 +195,10 @@ jobs:
         PY
         )
         if [ "$GO" = no ] && [ -z "$FORCE" ] && [ -n "$PUBLISH" ]; then echo "NSE closed on $DAY; no reel."; echo "go=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+        # a cron run that GitHub delivers after midnight must not make "today's" reel from yesterday's close
+        if [ -n "$PUBLISH" ] && [ -z "$FORCE" ] && [ "$(TZ=Asia/Kolkata date +%-H)" -lt 16 ]; then
+          echo "Before 4 pm IST: today's closing prices aren't out yet; no reel."; echo "go=false" >> "$GITHUB_OUTPUT"; exit 0
+        fi
         if [ -n "$PUBLISH" ] && [ -z "$FORCE" ] && gh release view daily-reel --json assets -q '.assets[].name' 2>/dev/null | grep -qx "pulsedge-reel-$DAY.mp4"; then
           echo "Today's reel is already published."; echo "go=false" >> "$GITHUB_OUTPUT"; exit 0
         fi
@@ -246,3 +259,45 @@ jobs:
         if [ -z "$TG_TOKEN" ] || [ -z "$TG_CHAT" ]; then echo "Telegram not set up (TELEGRAM_BOT_TOKEN secret, TELEGRAM_REEL_CHAT_ID variable); skipping."; exit 0; fi
         curl -sf -o /dev/null -F chat_id="$TG_CHAT" -F supports_streaming=true -F video=@"out/pulsedge-reel-$DAY.mp4" \
           -F caption="$(head -c 1000 "out/pulsedge-reel-$DAY-caption.txt")" "https://api.telegram.org/bot$TG_TOKEN/sendVideo" && echo "Sent to Telegram."
+
+  next:
+    # Books the next run (see the note at the top). Only the newest run on master keeps the chain, so a cron
+    # run or a manual run that arrives while this one waits simply takes over.
+    needs: update
+    if: always() && github.ref == 'refs/heads/master' && github.event_name != 'push'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    permissions:
+      actions: write
+      contents: read
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      RUN_ID: ${{ github.run_id }}
+    steps:
+    - uses: actions/checkout@v5
+      with:
+        sparse-checkout: pulsedge-bot/next_slot.py
+        sparse-checkout-cone-mode: false
+    - name: Wait for the next slot, then start the next run
+      run: |
+        newer() {
+          gh api "repos/$REPO/actions/workflows/pulsedge-news.yml/runs?branch=master&per_page=30" \
+            --jq "[.workflow_runs[] | select(.id > $RUN_ID and .status != \"completed\")] | length" 2>/dev/null || echo 0
+        }
+        if [ "$(newer)" != "0" ]; then echo "A newer run is active; it books the next slot."; exit 0; fi
+        read -r AT KIND < <(python3 pulsedge-bot/next_slot.py) || true
+        if [ -z "${AT:-}" ]; then echo "No slot in the next few hours; a cron run starts the next day."; exit 0; fi
+        echo "Next run: $(TZ=Asia/Kolkata date -d "@$AT" '+%a %H:%M IST') ($KIND)"
+        while :; do
+          LEFT=$(( AT - $(date +%s) ))
+          if [ "$LEFT" -le 0 ]; then break; fi
+          sleep $(( LEFT < 240 ? LEFT : 240 ))
+          if [ "$(newer)" != "0" ]; then echo "A newer run took over."; exit 0; fi
+        done
+        if [ "$KIND" = evening ]; then
+          gh workflow run pulsedge-news.yml --repo "$REPO" --ref master -f reel=true -f digest=true
+        else
+          gh workflow run pulsedge-news.yml --repo "$REPO" --ref master
+        fi
+        echo "Started the $KIND run."
