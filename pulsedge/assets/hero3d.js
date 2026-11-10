@@ -209,7 +209,7 @@ function layout(){
     mask="linear-gradient(90deg,transparent "+(m-16).toFixed(1)+"%,#000 "+(m+5).toFixed(1)+"%)";
   }else{
     var k=W<560?1:1.3;
-    CAM_D=950;ringR=52*k;srcR=350*k;gateR=20*k;uSize=[40*k,13*k];aSize=[62*k,19.5*k];count=W<560?52:80;
+    CAM_D=950;ringR=52*k;srcR=350*k;gateR=20*k;uSize=[44*k,14*k];aSize=[64*k,20*k];count=W<560?64:84;
     gs=[W*.82,st-ringR*.8-10];gz=-240;
     fs=[W*1.05,TOP+10];fz=-2300;
     ks=[gs[0]-12,st+36];kz=20;
@@ -317,8 +317,12 @@ function tick(ts){
   clock+=Math.min(dt,60)/1000;
   mx+=(tx-mx)*.06;my+=(ty-my)*.06;
   draw(clock);
-  // quality: step down once if the first second or two runs slowly; a third step leaves a still frame
-  if(level<3&&++frames>12){slow+=dt;if(frames>=72){if(slow/60>34){level++;if(level>2){reduce=true}else layout()}frames=0;slow=0}}
+  // quality: steps down only when the scene itself is slow (under about 24 fps once the page has loaded), so a
+  // phone that caps animation at 30 fps to save battery keeps the moving scene; a third step leaves a still frame
+  if(level<3&&document.readyState==="complete"&&++frames>30){
+    slow+=Math.min(dt,100);
+    if(frames>=120){if(slow/90>(level<2?42:70)){level++;if(level>2)reduce=true;else layout()}frames=0;slow=0}
+  }
   raf=requestAnimationFrame(tick);
 }
 function start(){last=0;frames=0;slow=0;if(!raf&&ok&&seen&&!document.hidden&&!reduce)raf=requestAnimationFrame(tick)}
