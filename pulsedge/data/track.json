@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-10T04:43:43+05:30",
+ "updated": "2026-11-10T11:28:14+05:30",
  "summary": {
-  "calls": 882,
-  "scored_calls": 25,
+  "calls": 887,
+  "scored_calls": 30,
   "d1": {
    "scored": 16,
    "hits": 10,
@@ -21,6 +21,71 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "4e175411a8081282",
+   "symbol": "ENGINERSIN",
+   "time": "2026-11-10T11:15:37+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "GPT Infraprojects Limited: GPT Infraprojects Limited has informed the Exchange about Alcon Builders & Engineers Private Limited (WOS) of GPT Infraprojects Limit",
+   "url": "https://nsearchives.nseindia.com/corporate/GPTINFRA_10112026111140_GIL__L1_intimation_091126_SGD.pdf",
+   "entry_date": "2026-11-09",
+   "entry": 299.35
+  },
+  {
+   "id": "9fa5fb8c88ab7aab",
+   "symbol": "RELIANCE",
+   "time": "2026-11-10T10:45:52+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "AMFI Rejig: Reliance's Jio Platforms, NSE, Lenskart, LG among 7 stocks set for large cap upgrade - Vedanta in mid cap?",
+   "url": "https://www.livemint.com/market/stock-market-news/amfi-rejig-reliances-jio-platforms-nse-lenskart-lg-among-7-stocks-set-for-large-cap-upgrade-vedanta-in-mid-cap-11794286571524.html",
+   "entry_date": "2026-11-09",
+   "entry": 1324.4
+  },
+  {
+   "id": "9fa5fb8c88ab7aab",
+   "symbol": "VEDL",
+   "time": "2026-11-10T10:45:52+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "AMFI Rejig: Reliance's Jio Platforms, NSE, Lenskart, LG among 7 stocks set for large cap upgrade - Vedanta in mid cap?",
+   "url": "https://www.livemint.com/market/stock-market-news/amfi-rejig-reliances-jio-platforms-nse-lenskart-lg-among-7-stocks-set-for-large-cap-upgrade-vedanta-in-mid-cap-11794286571524.html",
+   "entry_date": "2026-11-09",
+   "entry": 262.0
+  },
+  {
+   "id": "c8d20fd72b8254a8",
+   "symbol": "BANKINDIA",
+   "time": "2026-11-10T07:32:12+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "RBI said to query bank valuations of some bond derivative trades",
+   "url": "https://economictimes.indiatimes.com/markets/bonds/rbi-said-to-query-bank-valuations-of-some-bond-derivative-trades/articleshow/135696624.cms",
+   "entry_date": "2026-11-09",
+   "entry": 145.0
+  },
+  {
+   "id": "3919bbb2b8436c19",
+   "symbol": "OIL",
+   "time": "2026-11-10T07:15:29+05:30",
+   "call": "buy",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Oil falls as Trump downplays prospect of escalation with Iran",
+   "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-falls-as-trump-downplays-prospect-of-escalation-with-iran/articleshow/135696497.cms",
+   "entry_date": "2026-11-09",
+   "entry": 439.0
+  },
   {
    "id": "5bc554c43a0b2d1a",
    "symbol": "OIL",
