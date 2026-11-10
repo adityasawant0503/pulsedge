@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-10T19:21:32+05:30",
+ "updated": "2026-11-11T02:08:24+05:30",
  "summary": {
-  "calls": 955,
-  "scored_calls": 49,
+  "calls": 960,
+  "scored_calls": 50,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,71 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "8c255a878c361096",
+   "symbol": "BLS",
+   "time": "2026-11-11T01:29:02+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "BLS International Services Limited: BLS International Services Limited has informed the Exchange about Change in Directors/KMP/SMP/Auditor/RTA |SUBJECT: Change ",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/CIM_13904_WebXMLFile_20261111_012900470.xml",
+   "entry_date": "2026-11-10",
+   "entry": 222.01
+  },
+  {
+   "id": "75ffa6db0f343dc2",
+   "symbol": "BANKINDIA",
+   "time": "2026-11-10T21:16:36+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Mint Markets",
+   "headline": "Nifty PSU Bank Index Performance: Bank of India, UCO Bank among 7 stocks rebound 15–56% from 1-yr lows - here’s why",
+   "url": "https://www.livemint.com/market/stock-market-news/nifty-psu-bank-index-performance-bank-of-india-uco-bank-among-7-stocks-rebound-15-56-from-1-yr-lows-here-s-why-11794321816668.html",
+   "entry_date": "2026-11-10",
+   "entry": 145.0
+  },
+  {
+   "id": "75ffa6db0f343dc2",
+   "symbol": "UCOBANK",
+   "time": "2026-11-10T21:16:36+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Mint Markets",
+   "headline": "Nifty PSU Bank Index Performance: Bank of India, UCO Bank among 7 stocks rebound 15–56% from 1-yr lows - here’s why",
+   "url": "https://www.livemint.com/market/stock-market-news/nifty-psu-bank-index-performance-bank-of-india-uco-bank-among-7-stocks-rebound-15-56-from-1-yr-lows-here-s-why-11794321816668.html",
+   "entry_date": "2026-11-10",
+   "entry": 24.19
+  },
+  {
+   "id": "56773329d11ad9f1",
+   "symbol": "PERSISTENT",
+   "time": "2026-11-10T20:45:45+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "Traders raise odds of 50 bps Fed rate hike as CPI rise exceeds expectations",
+   "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/traders-raise-odds-of-50-bps-fed-rate-hike-as-cpi-rise-exceeds-expectations/articleshow/135714586.cms",
+   "entry_date": "2026-11-10",
+   "entry": 6040.0
+  },
+  {
+   "id": "637244483bddb97f",
+   "symbol": "OIL",
+   "time": "2026-11-10T19:48:12+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Mint Markets",
+   "headline": "FPIs return to Dalal Street amid AI sell-off and oil slump; Can proposed tax cuts sustain inflows?",
+   "url": "https://www.livemint.com/market/stock-market-news/fpis-return-to-dalal-street-amid-ai-sell-off-and-oil-slump-can-proposed-tax-cuts-sustain-inflows-11794315705620.html",
+   "entry_date": "2026-11-10",
+   "entry": 439.0
+  },
   {
    "id": "cc7e703f7fe01926",
    "symbol": "BAJAJFINSV",
