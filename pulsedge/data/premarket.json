@@ -1,10 +1,10 @@
 {
  "date": "2026-11-11",
- "updated": "2026-11-11T09:00:32+05:30",
+ "updated": "2026-11-11T09:15:23+05:30",
  "sentiment": "Mildly bearish",
  "breadth": {
   "up": 0,
-  "down": 1
+  "down": 2
  },
  "checklist": [
   {
@@ -23,7 +23,7 @@
     "Dow 52,231.89 -0.30%",
     "S&P 7,520.93 -0.38%",
     "Nasdaq 25,065.87 -0.74%",
-    "Nasdaq futures now +1.20%"
+    "Nasdaq futures now +1.21%"
    ]
   },
   {
@@ -31,8 +31,8 @@
    "dir": "flat",
    "value": "Asia mixed",
    "detail": [
-    "Nikkei 60,942.48 +0.80%",
-    "Hang Seng 24,352.00 -0.83%"
+    "Nikkei 61,291.47 +1.38%",
+    "Hang Seng 24,331.80 -0.92%"
    ]
   },
   {
@@ -40,15 +40,17 @@
    "dir": "flat",
    "value": "No major currency pressure",
    "detail": [
-    "DXY 102.25 +0.02%",
-    "USD/INR 93.735 -0.20%"
+    "DXY 102.27 +0.04%",
+    "USD/INR 93.710 -0.23%"
    ]
   },
   {
    "title": "Brent crude level",
-   "dir": "flat",
-   "value": "$92.34 +0.93%",
-   "detail": []
+   "dir": "down",
+   "value": "$92.41 +1.01%",
+   "detail": [
+    "Rising crude hurts India (OMCs, paints, aviation); helps upstream"
+   ]
   },
   {
    "title": "India VIX",
@@ -57,8 +59,9 @@
    "detail": []
   }
  ],
- "summary": "Mildly bearish setup. NASDAQ closed 0.74% lower; IT may open soft; Nikkei up, Hang Seng down.",
+ "summary": "Mildly bearish setup. Brent up 1.01% — pressure on OMCs, paints and aviation; NASDAQ closed 0.74% lower; IT may open soft.",
  "global_cues": [
+  "Brent up 1.01% — pressure on OMCs, paints and aviation",
   "NASDAQ closed 0.74% lower; IT may open soft",
   "Nikkei up, Hang Seng down"
  ],
@@ -81,11 +84,19 @@
  ],
  "sector_tags": [
   {
+   "label": "Upstream oil",
+   "tone": "positive"
+  },
+  {
+   "label": "OMCs",
+   "tone": "negative"
+  },
+  {
    "label": "IT",
    "tone": "watch"
   }
  ],
- "key_risk": "",
+ "key_risk": "A further crude spike would hit OMCs and widen the INR move",
  "also": [
   {
    "name": "BANK NIFTY",
@@ -99,23 +110,23 @@
   },
   {
    "name": "NASDAQ FUT",
-   "value": "28,168",
-   "change": 1.2
+   "value": "28,171",
+   "change": 1.21
   },
   {
    "name": "KOSPI",
-   "value": "5,328",
-   "change": 1.7
+   "value": "5,335",
+   "change": 1.84
   },
   {
    "name": "WTI",
-   "value": "86.49",
-   "change": 0.52
+   "value": "86.55",
+   "change": 0.59
   },
   {
    "name": "GOLD",
-   "value": "4,056",
-   "change": 0.63
+   "value": "4,053",
+   "change": 0.58
   },
   {
    "name": "US 10Y",
