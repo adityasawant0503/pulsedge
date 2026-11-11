@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T09:46:54+05:30",
+ "updated": "2026-11-11T10:03:32+05:30",
  "summary": {
-  "calls": 977,
-  "scored_calls": 65,
+  "calls": 985,
+  "scored_calls": 73,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "c070e17832933fad",
+   "symbol": "KALYANKJIL",
+   "time": "2026-11-11T09:46:51+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Why Kalyan Jewellers shares surged 10%, hit 52-week high after Diwali, Dhanteras; up 26% in a week | Buy, sell or hold?",
+   "url": "https://www.livemint.com/market/stock-market-news/why-kalyan-jewellers-shares-surged-10-hit-52-week-high-after-diwali-dhanteras-up-26-in-a-week-buy-sell-or-hold-11794369395918.html",
+   "entry_date": "2026-11-10",
+   "entry": 611.0
+  },
+  {
+   "id": "2dd4b3360af7a947",
+   "symbol": "IIFL",
+   "time": "2026-11-11T09:38:27+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "IIFL Finance-Blackstone deal: Stock gains 4%; brokerages decode impact",
+   "url": "https://www.business-standard.com/markets/news/iifl-finance-blackstone-deal-stock-gains-4-brokerages-decode-impact-126111100226_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 627.0
+  },
   {
    "id": "fbea5e5c0a29747c",
    "symbol": "HDFCBANK",
@@ -46,6 +72,45 @@
    "url": "https://www.livemint.com/market/stock-market-news/stock-market-today-massive-jump-in-sensex-nifty-rs-4-5-lakh-cr-wealth-added-in-a-few-mins-reasons-for-bullish-party-11794369074218.html",
    "entry_date": "2026-11-10",
    "entry": 5430.0
+  },
+  {
+   "id": "c06d94724d25d4e9",
+   "symbol": "PNB",
+   "time": "2026-11-11T09:23:27+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Punjab National Bank among 7 stocks showing White Marubozu pattern",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/punjab-national-bank-among-7-stocks-showing-white-marubozu-pattern/slideshow/135725226.cms",
+   "entry_date": "2026-11-10",
+   "entry": 132.17
+  },
+  {
+   "id": "e8bd48a7e8dbf85c",
+   "symbol": "BANKINDIA",
+   "time": "2026-11-11T09:13:28+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Union Bank of India among 5 stocks closing above VWAP",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/union-bank-of-india-among-5-stocks-closing-above-vwap/slideshow/135725070.cms",
+   "entry_date": "2026-11-10",
+   "entry": 145.0
+  },
+  {
+   "id": "e8bd48a7e8dbf85c",
+   "symbol": "UNIONBANK",
+   "time": "2026-11-11T09:13:28+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Union Bank of India among 5 stocks closing above VWAP",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/union-bank-of-india-among-5-stocks-closing-above-vwap/slideshow/135725070.cms",
+   "entry_date": "2026-11-10",
+   "entry": 197.0
   },
   {
    "id": "56fd3122292ce709",
@@ -150,6 +215,45 @@
    "url": "https://www.livemint.com/market/stock-market-news/ongc-dividend-2026-last-day-to-buy-today-check-dividend-payout-record-date-history-yield-and-returns-11794363759514.html",
    "entry_date": "2026-11-10",
    "entry": 233.5
+  },
+  {
+   "id": "9cda0f0e7c04c4f7",
+   "symbol": "M&M",
+   "time": "2026-11-11T08:17:18+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "M&M Share Price Live Updates: M&M's Stock Surges Past Resistance",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/mm-share-price-today-live-11-nov-2026/liveblog/135723505.cms",
+   "entry_date": "2026-11-10",
+   "entry": 3290.6
+  },
+  {
+   "id": "45723be729fea7ad",
+   "symbol": "JIOFIN",
+   "time": "2026-11-11T08:16:53+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Jio Financial Services Share Price Live Updates: Jio Financial Services Shows Positive Momentum",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/jio-financial-services-stock-price-live-updates-11-nov-2026/liveblog/135723494.cms",
+   "entry_date": "2026-11-10",
+   "entry": 230.0
+  },
+  {
+   "id": "2db21c4cdded4888",
+   "symbol": "NTPC",
+   "time": "2026-11-11T08:15:06+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "NTPC Share Price Live Updates: NTPC Achieves New Heights Above 100-Day EMA",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/ntpc-share-price-live-updates-11-nov-2026/liveblog/135723467.cms",
+   "entry_date": "2026-11-10",
+   "entry": 328.75
   },
   {
    "id": "221cd1588e216b62",
