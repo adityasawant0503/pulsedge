@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T15:45:51+05:30",
+ "updated": "2026-11-11T16:00:46+05:30",
  "summary": {
-  "calls": 1053,
-  "scored_calls": 118,
+  "calls": 1056,
+  "scored_calls": 121,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,45 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "46dda46055d4b04c",
+   "symbol": "M&MFIN",
+   "time": "2026-11-11T15:59:15+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Mahindra & Mahindra Financial Services Limited: Mahindra & Mahindra Financial Services Limited has informed the Exchange regarding Issuance of securities |SUBJE",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_2374_WebXMLFile_20261111_155914294.xml",
+   "entry_date": "2026-11-10",
+   "entry": 280.25
+  },
+  {
+   "id": "76f931e1bf425146",
+   "symbol": "ADANIGREEN",
+   "time": "2026-11-11T15:49:55+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "MSCI Rejig: Adani Green, LIC, Coforge, Meesho shares set to enter India Standard Index; ICICI Life, PI Industries out?",
+   "url": "https://www.livemint.com/market/stock-market-news/msci-rejig-adani-green-lic-coforge-meesho-shares-set-to-enter-india-standard-index-icici-life-pi-industries-out-11794390119879.html",
+   "entry_date": "2026-11-10",
+   "entry": 1448.9
+  },
+  {
+   "id": "76f931e1bf425146",
+   "symbol": "COFORGE",
+   "time": "2026-11-11T15:49:55+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "MSCI Rejig: Adani Green, LIC, Coforge, Meesho shares set to enter India Standard Index; ICICI Life, PI Industries out?",
+   "url": "https://www.livemint.com/market/stock-market-news/msci-rejig-adani-green-lic-coforge-meesho-shares-set-to-enter-india-standard-index-icici-life-pi-industries-out-11794390119879.html",
+   "entry_date": "2026-11-10",
+   "entry": 2047.0
+  },
   {
    "id": "57f558862c0424c6",
    "symbol": "M&MFIN",
