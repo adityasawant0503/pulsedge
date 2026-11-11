@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T13:31:22+05:30",
+ "updated": "2026-11-11T13:46:49+05:30",
  "summary": {
-  "calls": 1032,
-  "scored_calls": 101,
+  "calls": 1035,
+  "scored_calls": 104,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "0f0187283c3521c8",
+   "symbol": "GROWW",
+   "time": "2026-11-11T13:44:07+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "‘Gen Z to drive India’s next Internet growth wave’: Why JPMorgan picked PhysicsWallah, Meesho, Groww shares over others",
+   "url": "https://www.livemint.com/market/stock-market-news/gen-z-to-drive-india-s-next-internet-growth-wave-why-jpmorgan-picked-physicswallah-meesho-groww-shares-over-others-11794381624965.html",
+   "entry_date": "2026-11-10",
+   "entry": 222.02
+  },
+  {
+   "id": "9bc081da4227ef1e",
+   "symbol": "PNB",
+   "time": "2026-11-11T13:21:28+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Punjab National Bank share price soars 11% in two 2 days; hits 52-week high",
+   "url": "https://www.business-standard.com/markets/news/punjab-national-bank-share-price-soars-11-in-two-2-days-hits-52-week-high-126111100580_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 132.17
+  },
   {
    "id": "ee34ab73f4ab740c",
    "symbol": "BAJFINANCE",
@@ -43,6 +69,19 @@
    "scored": true,
    "source": "Mint Markets",
    "headline": "Siemens’ order book shines, but input costs remain a concern",
+   "url": "https://www.livemint.com/market/mark-to-market/siemens-q2-results-order-growth-margin-pressure-stock-outlook-11794379013555.html",
+   "entry_date": "2026-11-10",
+   "entry": 3655.0
+  },
+  {
+   "id": "63f13036d342ce61",
+   "symbol": "SIEMENS",
+   "time": "2026-11-11T13:20:19+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Siemens’ growth pipeline is strong. Can margins keep pace?",
    "url": "https://www.livemint.com/market/mark-to-market/siemens-q2-results-order-growth-margin-pressure-stock-outlook-11794379013555.html",
    "entry_date": "2026-11-10",
    "entry": 3655.0
