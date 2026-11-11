@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-11T09:15:23+05:30",
+ "updated": "2026-11-11T09:33:02+05:30",
  "summary": {
-  "calls": 973,
+  "calls": 974,
   "scored_calls": 63,
   "d1": {
    "scored": 36,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "56fd3122292ce709",
+   "symbol": "BDL",
+   "time": "2026-11-11T09:01:18+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "Bharat Dynamics among 5 stocks showing RSI trending up",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/bharat-dynamics-among-5-stocks-showing-rsi-trending-up/slideshow/135724716.cms",
+   "entry_date": "2026-11-10",
+   "entry": 1109.65
+  },
   {
    "id": "5fb5465a4c59c3f3",
    "symbol": "OIL",
