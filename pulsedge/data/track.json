@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T08:46:53+05:30",
+ "updated": "2026-11-11T09:00:33+05:30",
  "summary": {
-  "calls": 969,
-  "scored_calls": 59,
+  "calls": 973,
+  "scored_calls": 63,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "5fb5465a4c59c3f3",
+   "symbol": "OIL",
+   "time": "2026-11-11T08:52:24+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Oil rises from 2-month low as Hormuz shipping attacks offset truce hopes",
+   "url": "https://www.business-standard.com/markets/commodities/oil-rises-from-2-month-low-as-hormuz-shipping-attacks-offset-truce-hopes-126111100088_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 439.0
+  },
+  {
+   "id": "e53f98dcf58db6ba",
+   "symbol": "JSWSTEEL",
+   "time": "2026-11-11T08:52:15+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "JSW Steel Limited: JSW Steel Limited has informed the Exchange regarding a press release dated November 11, 2026, titled \"JSW Steel reports Consolidated Crude S",
+   "url": "https://nsearchives.nseindia.com/corporate/jessydenny_11112026085151_press_release_oct_2026.pdf",
+   "entry_date": "2026-11-10",
+   "entry": 1347.0
+  },
+  {
+   "id": "62a54395c0a3f394",
+   "symbol": "HEGAM",
+   "time": "2026-11-11T08:51:06+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "HEG Advanced Materials Limited: HEG Advanced Materials Limited has informed the Exchange regarding a press release dated November 11, 2026, titled \"TACC Receive",
+   "url": "https://nsearchives.nseindia.com/corporate/HEGAM_11112026085043_StEX_TACC_Subsidy_Press_release.pdf",
+   "entry_date": "2026-11-10",
+   "entry": 289.18
+  },
+  {
+   "id": "62a54395c0a3f394",
+   "symbol": "GRAPHITE",
+   "time": "2026-11-11T08:51:06+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "HEG Advanced Materials Limited: HEG Advanced Materials Limited has informed the Exchange regarding a press release dated November 11, 2026, titled \"TACC Receive",
+   "url": "https://nsearchives.nseindia.com/corporate/HEGAM_11112026085043_StEX_TACC_Subsidy_Press_release.pdf",
+   "entry_date": "2026-11-10",
+   "entry": 763.1
+  },
   {
    "id": "b19e9f7a1b9b0faa",
    "symbol": "OIL",
