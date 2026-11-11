@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T13:15:31+05:30",
+ "updated": "2026-11-11T13:31:22+05:30",
  "summary": {
-  "calls": 1029,
-  "scored_calls": 98,
+  "calls": 1032,
+  "scored_calls": 101,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,45 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "ee34ab73f4ab740c",
+   "symbol": "BAJFINANCE",
+   "time": "2026-11-11T13:21:00+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Bajaj Finance said set to launch up to $1.2 billion QIP as early as this week",
+   "url": "https://www.livemint.com/market/stock-market-news/bajaj-finance-said-set-to-launch-up-to-1-2-billion-qip-as-early-as-this-week-11794382537759.html",
+   "entry_date": "2026-11-10",
+   "entry": 1064.85
+  },
+  {
+   "id": "8f10fd623e5fa235",
+   "symbol": "SIEMENS",
+   "time": "2026-11-11T13:20:19+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Siemens’ order book shines, but input costs remain a concern",
+   "url": "https://www.livemint.com/market/mark-to-market/siemens-q2-results-order-growth-margin-pressure-stock-outlook-11794379013555.html",
+   "entry_date": "2026-11-10",
+   "entry": 3655.0
+  },
+  {
+   "id": "413b6f58e56c7c0f",
+   "symbol": "BAJFINANCE",
+   "time": "2026-11-11T13:06:59+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Bajaj Finance to launch share sale worth up to Rs 11,700 cr this week: Report",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/bajaj-finance-said-to-be-set-to-launch-up-to-1-2-billion-share-sale/articleshow/135729545.cms",
+   "entry_date": "2026-11-10",
+   "entry": 1064.85
+  },
   {
    "id": "10ff330f639eadac",
    "symbol": "WAAREEENER",
