@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T12:01:21+05:30",
+ "updated": "2026-11-11T12:18:08+05:30",
  "summary": {
-  "calls": 1014,
-  "scored_calls": 85,
+  "calls": 1020,
+  "scored_calls": 91,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "eac3bfd41eca8cd0",
+   "symbol": "AVANTIFEED",
+   "time": "2026-11-11T12:06:36+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Avanti Feeds shares stumble 6% as Q2 profit more than halves to ₹69 crore",
+   "url": "https://www.business-standard.com/markets/news/avanti-feeds-share-price-stumble-6-as-q2-profit-more-than-halves-to-69-crore-126111100454_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 722.55
+  },
+  {
+   "id": "6b94670a8c1244eb",
+   "symbol": "ENGINERSIN",
+   "time": "2026-11-11T12:04:56+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Eppeltone Engineers Limited: Eppeltone Engineers Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026. |SUBJECT:",
+   "url": "https://nsearchives.nseindia.com/corporate/EPPELTONE_11112026120250_outcome_final_Signed.pdf",
+   "entry_date": "2026-11-10",
+   "entry": 299.35
+  },
+  {
+   "id": "1507f917e291881e",
+   "symbol": "DABUR",
+   "time": "2026-11-11T12:04:49+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Dabur India Limited: Dabur India Limited has informed the Exchange regarding Other Restructuring |SUBJECT: Other Restructuring-XBRL",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_Restructuring_787_WebXMLFile_20261111_120448154.xml",
+   "entry_date": "2026-11-10",
+   "entry": 375.25
+  },
+  {
+   "id": "1b821615aa02a58c",
+   "symbol": "MRF",
+   "time": "2026-11-11T11:57:59+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "MRF shares gain after Q2 results; Centrum bullish, sees margin recovery",
+   "url": "https://www.business-standard.com/markets/news/mrf-shares-gain-after-q2-results-centrum-bullish-sees-margin-recovery-126111100453_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 125105.0
+  },
   {
    "id": "3e0ad0170fd4b8b1",
    "symbol": "BERGEPAINT",
@@ -631,6 +683,32 @@
    "url": "https://www.business-standard.com/markets/news/stock-market-live-november-11-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-126111100079_1.html",
    "entry_date": "2026-11-10",
    "entry": 201.7
+  },
+  {
+   "id": "2ce4e909f273445b",
+   "symbol": "INDIGO",
+   "time": "2026-11-11T07:59:23+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex jumps 1,200 pts, Nifty tops 25,350; IndiGo, M&M top gainers",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-11-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-126111100079_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 5430.0
+  },
+  {
+   "id": "2ce4e909f273445b",
+   "symbol": "M&M",
+   "time": "2026-11-11T07:59:23+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex jumps 1,200 pts, Nifty tops 25,350; IndiGo, M&M top gainers",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-11-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-126111100079_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 3290.6
   },
   {
    "id": "66406ba20ee5888f",
