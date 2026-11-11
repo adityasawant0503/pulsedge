@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T08:32:55+05:30",
+ "updated": "2026-11-11T08:46:53+05:30",
  "summary": {
-  "calls": 967,
-  "scored_calls": 57,
+  "calls": 969,
+  "scored_calls": 59,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "b19e9f7a1b9b0faa",
+   "symbol": "OIL",
+   "time": "2026-11-11T08:40:35+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Indian stocks poised for higher open on softer crude, robust foreign buying",
+   "url": "https://www.livemint.com/market/stock-market-news/indian-stocks-poised-for-higher-open-on-softer-crude-robust-foreign-buying-11794366485802.html",
+   "entry_date": "2026-11-10",
+   "entry": 439.0
+  },
+  {
+   "id": "8d041fe2e1738298",
+   "symbol": "ONGC",
+   "time": "2026-11-11T08:37:01+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "ONGC dividend 2026: Last day to buy today | Check dividend payout, record date, history, yield and returns",
+   "url": "https://www.livemint.com/market/stock-market-news/ongc-dividend-2026-last-day-to-buy-today-check-dividend-payout-record-date-history-yield-and-returns-11794363759514.html",
+   "entry_date": "2026-11-10",
+   "entry": 233.5
+  },
   {
    "id": "221cd1588e216b62",
    "symbol": "KALYANKJIL",
