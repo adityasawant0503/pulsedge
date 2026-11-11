@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T06:52:09+05:30",
+ "updated": "2026-11-11T08:18:05+05:30",
  "summary": {
-  "calls": 961,
-  "scored_calls": 51,
+  "calls": 965,
+  "scored_calls": 55,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "9582e22842648e33",
+   "symbol": "HINDALCO",
+   "time": "2026-11-11T07:40:48+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Hindalco, Airtel among 2 stock recommendations by Kotak's Shrikant Chouhan",
+   "url": "https://www.business-standard.com/markets/news/stocks-to-buy-today-hindalco-airtel-among-2-stock-recommendations-by-kotak-s-shrikant-chouhan-126111100077_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 960.0
+  },
+  {
+   "id": "25eb33d1ac70011a",
+   "symbol": "COCHINSHIP",
+   "time": "2026-11-11T07:26:58+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Top stocks to watch today: Cochin Shipyard, MRF, Tata Power shares in focus on Wednesday, 11 November | Full list",
+   "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-cochin-shipyard-mrf-tata-power-shares-in-focus-on-wednesday-11-november-full-list-11794360457800.html",
+   "entry_date": "2026-11-10",
+   "entry": 1290.0
+  },
+  {
+   "id": "25eb33d1ac70011a",
+   "symbol": "MRF",
+   "time": "2026-11-11T07:26:58+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Top stocks to watch today: Cochin Shipyard, MRF, Tata Power shares in focus on Wednesday, 11 November | Full list",
+   "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-cochin-shipyard-mrf-tata-power-shares-in-focus-on-wednesday-11-november-full-list-11794360457800.html",
+   "entry_date": "2026-11-10",
+   "entry": 125105.0
+  },
+  {
+   "id": "760b3e00555f3149",
+   "symbol": "POLICYBZR",
+   "time": "2026-11-11T07:14:22+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "PB Fintech: Retailers buy, FPIs turn wary in Q2; who got right end of deal?",
+   "url": "https://www.business-standard.com/markets/news/pb-fintech-retailers-buy-fpis-turn-wary-in-q2-who-got-right-end-of-deal-126111100075_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 953.8
+  },
   {
    "id": "0323a9fec4eeb632",
    "symbol": "MRF",
