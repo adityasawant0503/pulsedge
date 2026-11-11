@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T23:32:31+05:30",
+ "updated": "2026-11-12T02:18:44+05:30",
  "summary": {
-  "calls": 1094,
-  "scored_calls": 123,
+  "calls": 1098,
+  "scored_calls": 127,
   "d1": {
    "scored": 114,
    "hits": 77,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "a7758081927c720e",
+   "symbol": "OIL",
+   "time": "2026-11-12T01:39:56+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Oil up 1% as Iran official says country will keep enriched nuclear material",
+   "url": "https://www.livemint.com/market/oil-up-1-as-iran-official-says-country-will-keep-enriched-nuclear-material-11794427796838.html",
+   "entry_date": "2026-11-11",
+   "entry": 445.8
+  },
+  {
+   "id": "31df165d84523beb",
+   "symbol": "WAAREEENER",
+   "time": "2026-11-12T00:56:00+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Waaree Energies Limited: Waaree Energies Limited has informed the Exchange about Clarification on the news article published by Moneycontrol on November 11, 202",
+   "url": "https://nsearchives.nseindia.com/corporate/WAAREE_12112026005542_USIntimation_signed.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 2500.0
+  },
+  {
+   "id": "733cb7a69ec696c6",
+   "symbol": "CUPID",
+   "time": "2026-11-11T23:56:50+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Multibagger Cupid to be in focus on Thursday after Q2 net profit more than doubles to ₹56 crore; raises FY27 guidance",
+   "url": "https://www.livemint.com/market/stock-market-news/multibagger-cupid-to-be-in-focus-on-thursday-after-q2-net-profit-more-than-doubles-to-rs-56-crore-raises-fy27-guidance-11794420911955.html",
+   "entry_date": "2026-11-11",
+   "entry": 354.0
+  },
+  {
+   "id": "c52e3a4ddc7cf99a",
+   "symbol": "BSE",
+   "time": "2026-11-11T23:55:13+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "BSE traders face technical glitch; NCDEX launches steel scrap futures",
+   "url": "https://www.business-standard.com/markets/news/bse-traders-face-technical-glitch-ncdex-launches-steel-scrap-futures-126111101646_1.html",
+   "entry_date": "2026-11-11",
+   "entry": 3906.0
+  },
   {
    "id": "f33b60bdc1a54122",
    "symbol": "OIL",
