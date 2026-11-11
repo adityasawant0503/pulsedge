@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T15:15:51+05:30",
+ "updated": "2026-11-11T15:20:43+05:30",
  "summary": {
-  "calls": 1048,
-  "scored_calls": 113,
+  "calls": 1049,
+  "scored_calls": 114,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "693d569dd5c5d941",
+   "symbol": "TVSMOTOR",
+   "time": "2026-11-11T15:15:05+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "TVS Motor Company Limited: TVS Motor Company Limited has informed the Exchange regarding a press release dated November 11, 2026, titled \"TVS MOTOR EXPANDS ITS ",
+   "url": "https://nsearchives.nseindia.com/corporate/TVSMOTOR_11112026151336_NSEBSECallisto110inturkey.pdf",
+   "entry_date": "2026-11-10",
+   "entry": 4505.9
+  },
   {
    "id": "10c9cabc214e62fd",
    "symbol": "GRSE",
