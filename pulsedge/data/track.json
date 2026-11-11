@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T14:01:23+05:30",
+ "updated": "2026-11-11T14:15:40+05:30",
  "summary": {
-  "calls": 1042,
-  "scored_calls": 108,
+  "calls": 1043,
+  "scored_calls": 109,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "d9ab45b114b23029",
+   "symbol": "BHEL",
+   "time": "2026-11-11T13:52:03+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "BHEL shares up 3.5% on Power Grid order for Gujarat synchronous condensers",
+   "url": "https://www.business-standard.com/markets/news/bhel-shares-up-3-5-on-power-grid-order-for-gujarat-synchronous-condensers-126111100646_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 422.95
+  },
   {
    "id": "3c516a86af423f69",
    "symbol": "BPCL",
