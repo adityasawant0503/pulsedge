@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T12:45:35+05:30",
+ "updated": "2026-11-11T13:01:05+05:30",
  "summary": {
-  "calls": 1027,
-  "scored_calls": 96,
+  "calls": 1028,
+  "scored_calls": 97,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "10ff330f639eadac",
+   "symbol": "WAAREEENER",
+   "time": "2026-11-11T12:39:38+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Waaree Energies Limited: The Exchange has sought clarification from Waaree Energies Limited with respect to recent news item captioned Waaree Energies to invest",
+   "url": "",
+   "entry_date": "2026-11-10",
+   "entry": 2444.0
+  },
   {
    "id": "be70036e23032762",
    "symbol": "WHIRLPOOL",
