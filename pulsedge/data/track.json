@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T08:18:05+05:30",
+ "updated": "2026-11-11T08:32:55+05:30",
  "summary": {
-  "calls": 965,
-  "scored_calls": 55,
+  "calls": 967,
+  "scored_calls": 57,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "221cd1588e216b62",
+   "symbol": "KALYANKJIL",
+   "time": "2026-11-11T08:06:38+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stocks to watch: Kalyan Jewellers, MTNL, Dabur, IIFL Finance, MRF, NBCC",
+   "url": "https://www.business-standard.com/markets/news/stocks-to-watch-kalyan-jewellers-mtnl-dabur-iifl-finance-mrf-nbcc-126111100092_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 611.0
+  },
+  {
+   "id": "221cd1588e216b62",
+   "symbol": "DABUR",
+   "time": "2026-11-11T08:06:38+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stocks to watch: Kalyan Jewellers, MTNL, Dabur, IIFL Finance, MRF, NBCC",
+   "url": "https://www.business-standard.com/markets/news/stocks-to-watch-kalyan-jewellers-mtnl-dabur-iifl-finance-mrf-nbcc-126111100092_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 375.25
+  },
   {
    "id": "9582e22842648e33",
    "symbol": "HINDALCO",
