@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T10:15:57+05:30",
+ "updated": "2026-11-11T10:30:46+05:30",
  "summary": {
-  "calls": 986,
-  "scored_calls": 74,
+  "calls": 990,
+  "scored_calls": 78,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "4ccaae754d8a02ab",
+   "symbol": "KALYANKJIL",
+   "time": "2026-11-11T10:11:56+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Kalyan Jewellers surges 10%, hits 52-week high post Q2 results",
+   "url": "https://www.business-standard.com/markets/news/kalyan-jewellers-surges-10-hits-52-week-high-post-q2-results-126111100244_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 611.0
+  },
+  {
+   "id": "63a08b4a2d834cf4",
+   "symbol": "COCHINSHIP",
+   "time": "2026-11-11T10:10:29+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Cochin Shipyard tanks 8% post Q2 show; what's plaguing the defence stock?",
+   "url": "https://www.business-standard.com/markets/news/cochin-shipyard-share-price-tanks-8-post-q2-show-what-s-plaguing-the-defence-stock-126111100253_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 1290.0
+  },
   {
    "id": "f6af2b07dc29ab00",
    "symbol": "COCHINSHIP",
@@ -293,6 +319,32 @@
    "url": "https://www.business-standard.com/markets/news/stocks-to-watch-kalyan-jewellers-mtnl-dabur-iifl-finance-mrf-nbcc-126111100092_1.html",
    "entry_date": "2026-11-10",
    "entry": 375.25
+  },
+  {
+   "id": "66406ba20ee5888f",
+   "symbol": "INDIGO",
+   "time": "2026-11-11T07:59:00+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: IndiGo, M&M lead 1,100-pt surge in Sensex, Nifty PSU Bank up 2% as SBI, BoB lead",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-11-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-126111100079_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 5430.0
+  },
+  {
+   "id": "66406ba20ee5888f",
+   "symbol": "M&M",
+   "time": "2026-11-11T07:59:00+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: IndiGo, M&M lead 1,100-pt surge in Sensex, Nifty PSU Bank up 2% as SBI, BoB lead",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-11-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-126111100079_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 3290.6
   },
   {
    "id": "9582e22842648e33",
