@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T09:33:02+05:30",
+ "updated": "2026-11-11T09:46:54+05:30",
  "summary": {
-  "calls": 974,
-  "scored_calls": 63,
+  "calls": 977,
+  "scored_calls": 65,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "fbea5e5c0a29747c",
+   "symbol": "HDFCBANK",
+   "time": "2026-11-11T09:33:17+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Stock Market Today: Massive jump in Sensex, Nifty! ₹4.5 lakh cr wealth added in a few mins - Reasons for bullish party",
+   "url": "https://www.livemint.com/market/stock-market-news/stock-market-today-massive-jump-in-sensex-nifty-rs-4-5-lakh-cr-wealth-added-in-a-few-mins-reasons-for-bullish-party-11794369074218.html",
+   "entry_date": "2026-11-10",
+   "entry": 798.15
+  },
+  {
+   "id": "fbea5e5c0a29747c",
+   "symbol": "INDIGO",
+   "time": "2026-11-11T09:33:17+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Stock Market Today: Massive jump in Sensex, Nifty! ₹4.5 lakh cr wealth added in a few mins - Reasons for bullish party",
+   "url": "https://www.livemint.com/market/stock-market-news/stock-market-today-massive-jump-in-sensex-nifty-rs-4-5-lakh-cr-wealth-added-in-a-few-mins-reasons-for-bullish-party-11794369074218.html",
+   "entry_date": "2026-11-10",
+   "entry": 5430.0
+  },
   {
    "id": "56fd3122292ce709",
    "symbol": "BDL",
@@ -98,6 +124,19 @@
    "url": "https://www.livemint.com/market/stock-market-news/indian-stocks-poised-for-higher-open-on-softer-crude-robust-foreign-buying-11794366485802.html",
    "entry_date": "2026-11-10",
    "entry": 439.0
+  },
+  {
+   "id": "7c9b9c8a30ed871f",
+   "symbol": "BSE",
+   "time": "2026-11-11T08:40:35+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Mint Markets",
+   "headline": "Sensex, Nifty 50 open higher on softer crude, robust foreign buying",
+   "url": "https://www.livemint.com/market/stock-market-news/indian-stocks-poised-for-higher-open-on-softer-crude-robust-foreign-buying-11794366485802.html",
+   "entry_date": "2026-11-10",
+   "entry": 3816.6
   },
   {
    "id": "8d041fe2e1738298",
