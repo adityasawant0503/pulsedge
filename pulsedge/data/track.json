@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T10:03:32+05:30",
+ "updated": "2026-11-11T10:15:57+05:30",
  "summary": {
-  "calls": 985,
-  "scored_calls": 73,
+  "calls": 986,
+  "scored_calls": 74,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "f6af2b07dc29ab00",
+   "symbol": "COCHINSHIP",
+   "time": "2026-11-11T10:08:24+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Cochin Shipyard shares crash 8%: Defence PSU stock Q2 profit drops 50% but declares ₹3 dividend- Still a stock to buy?",
+   "url": "https://www.livemint.com/market/stock-market-news/cochin-shipyard-shares-crash-8-defence-psu-stock-q2-profit-drops-50-but-declares-rs-3-dividend-still-a-stock-to-buy-11794370626964.html",
+   "entry_date": "2026-11-10",
+   "entry": 1290.0
+  },
   {
    "id": "c070e17832933fad",
    "symbol": "KALYANKJIL",
