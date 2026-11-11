@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T14:30:41+05:30",
+ "updated": "2026-11-11T14:48:18+05:30",
  "summary": {
-  "calls": 1044,
-  "scored_calls": 109,
+  "calls": 1045,
+  "scored_calls": 110,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "bb6458458f1cdf36",
+   "symbol": "COCHINSHIP",
+   "time": "2026-11-11T14:20:42+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Cochin Shipyard Limited: Cochin Shipyard Limited has informed the Exchange regarding ' Receipt of order for Normal refit cum re-powering of an Indian Naval Vess",
+   "url": "https://nsearchives.nseindia.com/corporate/Aswi4739_11112026142023_SE_Intimation_Sgd.pdf",
+   "entry_date": "2026-11-10",
+   "entry": 1290.0
+  },
   {
    "id": "d9ab45b114b23029",
    "symbol": "BHEL",
