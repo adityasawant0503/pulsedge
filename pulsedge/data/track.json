@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T02:08:24+05:30",
+ "updated": "2026-11-11T06:52:09+05:30",
  "summary": {
-  "calls": 960,
-  "scored_calls": 50,
+  "calls": 961,
+  "scored_calls": 51,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "0323a9fec4eeb632",
+   "symbol": "MRF",
+   "time": "2026-11-11T06:30:09+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Higher input costs drag MRF Q2 net profit down 23%",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/higher-input-costs-drag-mrf-q2-net-profit-down-23/articleshow/135722166.cms",
+   "entry_date": "2026-11-10",
+   "entry": 125105.0
+  },
   {
    "id": "8c255a878c361096",
    "symbol": "BLS",

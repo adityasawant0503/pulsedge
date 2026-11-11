@@ -1,18 +1,18 @@
 {
  "date": "2026-11-11",
- "updated": "2026-11-11T02:08:24+05:30",
- "sentiment": "Neutral",
+ "updated": "2026-11-11T06:52:09+05:30",
+ "sentiment": "Mildly bearish",
  "breadth": {
-  "up": 2,
-  "down": 2
+  "up": 0,
+  "down": 1
  },
  "checklist": [
   {
    "title": "Nifty 50 last close (GIFT Nifty not available from free sources)",
    "dir": "flat",
-   "value": "25,044.65 (+0.23%)",
+   "value": "25,044.65 (+0.00%)",
    "detail": [
-    "Previous close 24,987.18"
+    "Previous close 25,044.65"
    ]
   },
   {
@@ -20,52 +20,56 @@
    "dir": "down",
    "value": "Lower",
    "detail": [
-    "Dow 52,218.07 -0.33%",
-    "S&P 7,515.40 -0.46%",
-    "Nasdaq 25,037.68 -0.85%",
-    "Nasdaq futures now -0.69%"
+    "Dow 52,231.89 -0.30%",
+    "S&P 7,520.93 -0.38%",
+    "Nasdaq 25,065.87 -0.74%",
+    "Nasdaq futures now +0.53%"
    ]
   },
   {
    "title": "Asian markets live - Nikkei, Hang Seng",
-   "dir": "up",
-   "value": "Asia higher",
+   "dir": "flat",
+   "value": "Asia mixed",
    "detail": [
-    "Nikkei 60,459.58 +2.87%",
-    "Hang Seng 24,557.04 +0.44%"
+    "Nikkei 60,695.40 +0.39%",
+    "Hang Seng 24,557.04 +0.00%"
    ]
   },
   {
    "title": "DXY + USDINR move",
-   "dir": "down",
-   "value": "Rupee under pressure",
+   "dir": "flat",
+   "value": "No major currency pressure",
    "detail": [
-    "DXY 102.25 +0.59%",
+    "DXY 102.28 +0.05%",
     "USD/INR 93.927 +0.00%"
    ]
   },
   {
    "title": "Brent crude level",
    "dir": "flat",
-   "value": "$91.95 -0.67%",
+   "value": "$92.22 +0.80%",
    "detail": []
   },
   {
    "title": "India VIX",
-   "dir": "up",
-   "value": "17.42 (-5.48%) — normal",
+   "dir": "flat",
+   "value": "17.42 (+0.00%) — normal",
    "detail": []
   }
  ],
- "summary": "Neutral setup. NASDAQ closed 0.85% lower; IT may open soft; Nikkei up, Hang Seng up.",
+ "summary": "Mildly bearish setup. NASDAQ closed 0.74% lower; IT may open soft; Nikkei up, Hang Seng down.",
  "global_cues": [
-  "NASDAQ closed 0.85% lower; IT may open soft",
-  "Nikkei up, Hang Seng up"
+  "NASDAQ closed 0.74% lower; IT may open soft",
+  "Nikkei up, Hang Seng down"
  ],
  "india_triggers": [
-  "1 filings and headlines worth a look so far today"
+  "3 filings and headlines worth a look so far today"
  ],
  "focus": [
+  {
+   "symbol": "MRF",
+   "note": "Higher input costs drag MRF Q2 net profit down 23%"
+  },
   {
    "symbol": "BLS",
    "note": "BLS International Services Limited: BLS International Services Limited"
@@ -82,37 +86,37 @@
   {
    "name": "BANK NIFTY",
    "value": "59,741.2",
-   "change": 1.51
+   "change": 0.0
   },
   {
    "name": "S&P FUT",
-   "value": "7,540",
-   "change": -0.46
+   "value": "7,562",
+   "change": 0.23
   },
   {
    "name": "NASDAQ FUT",
-   "value": "27,820",
-   "change": -0.69
+   "value": "27,984",
+   "change": 0.53
   },
   {
    "name": "KOSPI",
-   "value": "5,239",
-   "change": 4.39
+   "value": "5,284",
+   "change": 0.86
   },
   {
    "name": "WTI",
-   "value": "86.36",
-   "change": -0.56
+   "value": "86.55",
+   "change": 0.59
   },
   {
    "name": "GOLD",
-   "value": "4,043",
-   "change": -1.74
+   "value": "4,038",
+   "change": 0.2
   },
   {
    "name": "US 10Y",
-   "value": "4.99",
-   "change": 2.59
+   "value": "5.00",
+   "change": 2.84
   }
  ],
  "source": "CNBC / Yahoo Finance (unofficial, delayed)"
