@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T12:30:39+05:30",
+ "updated": "2026-11-11T12:45:35+05:30",
  "summary": {
-  "calls": 1022,
-  "scored_calls": 91,
+  "calls": 1027,
+  "scored_calls": 96,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,45 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "be70036e23032762",
+   "symbol": "WHIRLPOOL",
+   "time": "2026-11-11T12:30:02+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Whirlpool gains 3% even as Q2 PAT sinks 40%; ICICI Sec maintains 'Reduce'",
+   "url": "https://www.business-standard.com/markets/news/whirlpool-gains-3-even-as-q2-pat-sinks-40-icici-sec-maintains-reduce-126111100531_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 837.7
+  },
+  {
+   "id": "e1ec0e7a8cae8f02",
+   "symbol": "BANKBARODA",
+   "time": "2026-11-11T12:27:51+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Nifty Bank index rallies 4% in two days, nears record high; here's why",
+   "url": "https://www.business-standard.com/markets/news/nifty-bank-index-rallies-4-in-two-days-nears-record-high-here-s-why-126111100463_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 260.01
+  },
+  {
+   "id": "e1ec0e7a8cae8f02",
+   "symbol": "PNB",
+   "time": "2026-11-11T12:27:51+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Nifty Bank index rallies 4% in two days, nears record high; here's why",
+   "url": "https://www.business-standard.com/markets/news/nifty-bank-index-rallies-4-in-two-days-nears-record-high-here-s-why-126111100463_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 132.17
+  },
   {
    "id": "b9c7405bb16cbf94",
    "symbol": "IRFC",
@@ -732,6 +771,32 @@
    "scored": true,
    "source": "Business Standard",
    "headline": "Stock Market LIVE: Sensex jumps 1,200 pts, Nifty tops 25,350; IndiGo, M&M top gainers",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-11-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-126111100079_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 3290.6
+  },
+  {
+   "id": "e16ceccc888067a6",
+   "symbol": "INDIGO",
+   "time": "2026-11-11T07:59:09+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex jumps 900 pts, Nifty around 25,350; IndiGo, M&M top gainers",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-11-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-126111100079_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 5430.0
+  },
+  {
+   "id": "e16ceccc888067a6",
+   "symbol": "M&M",
+   "time": "2026-11-11T07:59:09+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex jumps 900 pts, Nifty around 25,350; IndiGo, M&M top gainers",
    "url": "https://www.business-standard.com/markets/news/stock-market-live-november-11-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-126111100079_1.html",
    "entry_date": "2026-11-10",
    "entry": 3290.6
