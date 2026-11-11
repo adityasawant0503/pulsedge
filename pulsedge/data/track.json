@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T11:01:53+05:30",
+ "updated": "2026-11-11T11:15:38+05:30",
  "summary": {
-  "calls": 990,
-  "scored_calls": 78,
+  "calls": 998,
+  "scored_calls": 79,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "89ca0a0d741e4bea",
+   "symbol": "INTELLECT",
+   "time": "2026-11-11T11:09:30+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Intellect Design Arena Limited: Intellect Design Arena Limited has informed the Exchange regarding a press release dated November 11, 2026, titled \"IntellectAI ",
+   "url": "https://nsearchives.nseindia.com/corporate/INTELLECT_11112026110857_PressRelease11112026.pdf",
+   "entry_date": "2026-11-10",
+   "entry": 510.3
+  },
+  {
+   "id": "c4b32752300a5989",
+   "symbol": "ANGELONE",
+   "time": "2026-11-11T11:02:00+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "Angel One MF - Angel One Nifty Total Market Momentum Quality 50 ETF: Angel One Asset Management Company Limited has informed the Exchange that the Net Asset Val",
+   "url": "",
+   "entry_date": "2026-11-10",
+   "entry": 338.0
+  },
+  {
+   "id": "fdf3720f924af8ec",
+   "symbol": "INDIGO",
+   "time": "2026-11-11T10:58:29+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Mint Markets",
+   "headline": "IndiGo shares: InterGlobe Aviation stock flying 5% high, among top Nifty 50 gainers | Buy? Target price, upside",
+   "url": "https://www.livemint.com/market/stock-market-news/indigo-shares-interglobe-aviation-stock-flying-5-high-among-top-nifty-50-gainers-buy-target-price-upside-11794372567454.html",
+   "entry_date": "2026-11-10",
+   "entry": 5430.0
+  },
+  {
+   "id": "4dbb2009cb43865f",
+   "symbol": "OIL",
+   "time": "2026-11-11T10:46:44+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "Rupee rises 7 paise to 93.70 against US dollar in early trade",
+   "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-rises-7-paise-to-93-70-against-us-dollar-in-early-trade/articleshow/135726644.cms",
+   "entry_date": "2026-11-10",
+   "entry": 439.0
+  },
   {
    "id": "4ccaae754d8a02ab",
    "symbol": "KALYANKJIL",
@@ -295,6 +347,19 @@
    "entry": 328.75
   },
   {
+   "id": "e4b21ce1556be6a2",
+   "symbol": "UPL",
+   "time": "2026-11-11T08:10:24+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "UPL Share Price Live Updates: UPL's Daily Performance Update",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/upl-share-price-live-11-nov-2026/liveblog/135723402.cms",
+   "entry_date": "2026-11-10",
+   "entry": 541.5
+  },
+  {
    "id": "221cd1588e216b62",
    "symbol": "KALYANKJIL",
    "time": "2026-11-11T08:06:38+05:30",
@@ -319,6 +384,45 @@
    "url": "https://www.business-standard.com/markets/news/stocks-to-watch-kalyan-jewellers-mtnl-dabur-iifl-finance-mrf-nbcc-126111100092_1.html",
    "entry_date": "2026-11-10",
    "entry": 375.25
+  },
+  {
+   "id": "f1945fd53fbd77c9",
+   "symbol": "EICHERMOT",
+   "time": "2026-11-11T08:00:35+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "Eicher Motors Share Price Live Updates: Eicher Motors Stock Update",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/eicher-motors-share-price-live-11-nov-2026/liveblog/135723173.cms",
+   "entry_date": "2026-11-10",
+   "entry": 7629.0
+  },
+  {
+   "id": "56627feccf81f20b",
+   "symbol": "KALYANKJIL",
+   "time": "2026-11-11T07:59:40+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex jumps 1,200 pts; Kalyan Jewellers, RVNL shares lead MidCap gains",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-11-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-126111100079_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 611.0
+  },
+  {
+   "id": "56627feccf81f20b",
+   "symbol": "RVNL",
+   "time": "2026-11-11T07:59:40+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex jumps 1,200 pts; Kalyan Jewellers, RVNL shares lead MidCap gains",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-11-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-126111100079_1.html",
+   "entry_date": "2026-11-10",
+   "entry": 201.7
   },
   {
    "id": "66406ba20ee5888f",
