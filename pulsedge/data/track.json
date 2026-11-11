@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T15:31:12+05:30",
+ "updated": "2026-11-11T15:45:51+05:30",
  "summary": {
-  "calls": 1049,
-  "scored_calls": 114,
+  "calls": 1053,
+  "scored_calls": 118,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "57f558862c0424c6",
+   "symbol": "M&MFIN",
+   "time": "2026-11-11T15:42:54+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Mahindra & Mahindra Financial Services Limited: Issue of Securities |SUBJECT: Issue of Securities",
+   "url": "https://nsearchives.nseindia.com/content/debt/WDM/M_MFIN_11112026154242_Reg30_NCDFinal-1_signed.pdf",
+   "entry_date": "2026-11-10",
+   "entry": 280.25
+  },
+  {
+   "id": "b78113fb074b2e6f",
+   "symbol": "M&MFIN",
+   "time": "2026-11-11T15:41:01+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Mahindra & Mahindra Financial Services Limited: Mahindra & Mahindra Financial Services Limited has informed the Exchange about issue of Non- Convertible Debentu",
+   "url": "https://nsearchives.nseindia.com/corporate/M_MFIN_11112026153953_Reg30_NCDFinal-1_signed.pdf",
+   "entry_date": "2026-11-10",
+   "entry": 280.25
+  },
+  {
+   "id": "8b757a3ac9308d6a",
+   "symbol": "GRSE",
+   "time": "2026-11-11T15:36:49+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Garden Reach Shipbuilders & Engineers Limited: Unaudited Financial Results along with the Limited Review Report for the Quarter and Half Year Ended 30th Septemb",
+   "url": "https://nsearchives.nseindia.com/corporate/GRSE_11112026153634_GRSE_-_Unaudited_Financial_Results_-_Q2_FY_26-27.pdf",
+   "entry_date": "2026-11-10",
+   "entry": 2198.1
+  },
+  {
+   "id": "4bb5687e0126f42a",
+   "symbol": "HAL",
+   "time": "2026-11-11T15:33:11+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Hindustan Aeronautics Limited: Hindustan Aeronautics Limited has informed the Exchange about Credit Rating- withdrawal |SUBJECT: Credit Rating- Others",
+   "url": "https://nsearchives.nseindia.com/corporate/HAL_11112026153259_WithdrawalOfRating_11112026.pdf",
+   "entry_date": "2026-11-10",
+   "entry": 4999.0
+  },
   {
    "id": "693d569dd5c5d941",
    "symbol": "TVSMOTOR",
