@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T11:45:37+05:30",
+ "updated": "2026-11-11T12:01:21+05:30",
  "summary": {
-  "calls": 1009,
-  "scored_calls": 83,
+  "calls": 1014,
+  "scored_calls": 85,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "3e0ad0170fd4b8b1",
+   "symbol": "BERGEPAINT",
+   "time": "2026-11-11T11:57:01+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Berger Paints hopes for gloss back on volume and margin after pale Q2",
+   "url": "https://www.livemint.com/market/mark-to-market/berger-paints-q2-results-margin-pressure-volume-growth-outlook-11794371076493.html",
+   "entry_date": "2026-11-10",
+   "entry": 471.2
+  },
+  {
+   "id": "a4c3c117d8cf86d5",
+   "symbol": "BHEL",
+   "time": "2026-11-11T11:54:40+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Bharat Heavy Electricals Limited: BHARAT HEAVY ELECTRICALS LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SU",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_1252_WebXMLFile_20261111_115439266.xml",
+   "entry_date": "2026-11-10",
+   "entry": 422.95
+  },
+  {
+   "id": "226fe72b55808f61",
+   "symbol": "BHEL",
+   "time": "2026-11-11T11:47:41+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "Bharat Heavy Electricals Limited: Bharat Heavy Electricals Limited has informed the Exchange about Bagging/Receiving of orders/contracts |SUBJECT: Bagging/Recei",
+   "url": "https://nsearchives.nseindia.com/corporate/BHEL_11112026114240_orderpowergrid11112026.pdf",
+   "entry_date": "2026-11-10",
+   "entry": 422.95
+  },
+  {
+   "id": "e6779b26480fc676",
+   "symbol": "WAAREEENER",
+   "time": "2026-11-11T11:41:58+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Mint Markets",
+   "headline": "Why KPI Green Energy, Waaree Energies shares are rising today; over 5% jump amid post Diwali Sensex, Nifty fireworks",
+   "url": "https://www.livemint.com/market/stock-market-news/why-kpi-green-energy-waaree-energies-shares-are-rising-today-over-5-jump-amid-post-diwali-sensex-nifty-fireworks-11794375321435.html",
+   "entry_date": "2026-11-10",
+   "entry": 2444.0
+  },
   {
    "id": "aacc2d8a94f72b28",
    "symbol": "NETWEB",
@@ -527,6 +579,19 @@
    "url": "https://www.business-standard.com/markets/news/stocks-to-watch-kalyan-jewellers-mtnl-dabur-iifl-finance-mrf-nbcc-126111100092_1.html",
    "entry_date": "2026-11-10",
    "entry": 375.25
+  },
+  {
+   "id": "d549886d06ffbcc3",
+   "symbol": "TMCV",
+   "time": "2026-11-11T08:03:02+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "Tata Motors PV Share Price Live Updates: Tata Motors PV Trading Insights",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/tata-motors-pv-stock-price-today-live-11-nov-2026/liveblog/135723223.cms",
+   "entry_date": "2026-11-10",
+   "entry": 436.65
   },
   {
    "id": "f1945fd53fbd77c9",
