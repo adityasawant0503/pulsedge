@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-11T14:48:18+05:30",
+ "updated": "2026-11-11T15:00:47+05:30",
  "summary": {
-  "calls": 1045,
-  "scored_calls": 110,
+  "calls": 1046,
+  "scored_calls": 111,
   "d1": {
    "scored": 36,
    "hits": 10,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "10c9cabc214e62fd",
+   "symbol": "GRSE",
+   "time": "2026-11-11T14:47:22+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Garden Reach Shipbuilders & Engineers Limited: Garden Reach Shipbuilders & Engineers Limited has submitted to the Exchange, the financial results for the period",
+   "url": "https://nsearchives.nseindia.com/corporate/GRSE_11112026144558_GRSE_-_Unaudited_Financial_Results_-_Q2_FY_26-27.pdf",
+   "entry_date": "2026-11-10",
+   "entry": 2198.1
+  },
   {
    "id": "bb6458458f1cdf36",
    "symbol": "COCHINSHIP",
