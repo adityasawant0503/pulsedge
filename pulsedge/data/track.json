@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-12T10:30:38+05:30",
+ "updated": "2026-11-12T10:45:26+05:30",
  "summary": {
-  "calls": 1132,
-  "scored_calls": 154,
+  "calls": 1134,
+  "scored_calls": 156,
   "d1": {
    "scored": 114,
    "hits": 77,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "8ab7a137e0c3fcbf",
+   "symbol": "ECLERX",
+   "time": "2026-11-12T10:44:47+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "eClerx Services Limited: eClerx Services Limited has informed the Exchange about Acquisition |SUBJECT: Acquisition",
+   "url": "https://nsearchives.nseindia.com/corporate/ECLERX_12112026104405_BSENSERegedge12112026.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 1530.0
+  },
   {
    "id": "7687844820b18868",
    "symbol": "CUPID",
@@ -46,6 +59,19 @@
    "url": "https://www.livemint.com/market/stock-market-news/34-rise-in-a-year-why-hindustan-copper-shares-are-rising-6-today-check-target-stop-loss-returns-11794457283807.html",
    "entry_date": "2026-11-11",
    "entry": 436.35
+  },
+  {
+   "id": "6d6cd7845bc414fd",
+   "symbol": "VMM",
+   "time": "2026-11-12T10:06:34+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Vishal Mega Mart among 5 stocks showing RSI trending up",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/vishal-mega-mart-among-5-stocks-showing-rsi-trending-up/slideshow/135755604.cms",
+   "entry_date": "2026-11-11",
+   "entry": 96.79
   },
   {
    "id": "2ec0e2245ecfa7b6",
