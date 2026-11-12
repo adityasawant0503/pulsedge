@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-12T09:00:26+05:30",
+ "updated": "2026-11-12T09:16:45+05:30",
  "summary": {
-  "calls": 1110,
-  "scored_calls": 139,
+  "calls": 1111,
+  "scored_calls": 140,
   "d1": {
    "scored": 114,
    "hits": 77,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "74bb405a0813b457",
+   "symbol": "TATAPOWER",
+   "time": "2026-11-12T08:57:59+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Tata Power shares in focus after Q2 results. Why brokerages are bullish despite target price cuts",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/tata-power-shares-in-focus-after-q2-results-why-brokerages-are-bullish-despite-target-price-cuts/articleshow/135753647.cms",
+   "entry_date": "2026-11-11",
+   "entry": 360.0
+  },
   {
    "id": "171ddfb8623a9427",
    "symbol": "ADANIENT",
