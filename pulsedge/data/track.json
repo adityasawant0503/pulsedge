@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-12T02:18:44+05:30",
+ "updated": "2026-11-12T07:51:21+05:30",
  "summary": {
-  "calls": 1098,
-  "scored_calls": 127,
+  "calls": 1103,
+  "scored_calls": 132,
   "d1": {
    "scored": 114,
    "hits": 77,
@@ -21,6 +21,71 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "7570d98488bbad10",
+   "symbol": "OIL",
+   "time": "2026-11-12T07:24:50+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Oil prices drop more than $1 as hopes for Iran, Ukraine peace talks pressure markets",
+   "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-prices-drop-more-than-1-as-hopes-for-iran-ukraine-peace-talks-pressure-markets/articleshow/135752159.cms",
+   "entry_date": "2026-11-11",
+   "entry": 445.8
+  },
+  {
+   "id": "e8e42e070762148b",
+   "symbol": "TATAPOWER",
+   "time": "2026-11-12T07:20:28+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Top stocks to watch today: Tata Power, Bajaj Finance, HAL, IRCTC shares in focus on Thursday, 12 November | Full list",
+   "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-tata-power-bajaj-finance-hal-irctc-shares-in-focus-on-thursday-12-november-full-list-11794447178928.html",
+   "entry_date": "2026-11-11",
+   "entry": 360.0
+  },
+  {
+   "id": "e8e42e070762148b",
+   "symbol": "BAJFINANCE",
+   "time": "2026-11-12T07:20:28+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Top stocks to watch today: Tata Power, Bajaj Finance, HAL, IRCTC shares in focus on Thursday, 12 November | Full list",
+   "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-tata-power-bajaj-finance-hal-irctc-shares-in-focus-on-thursday-12-november-full-list-11794447178928.html",
+   "entry_date": "2026-11-11",
+   "entry": 1078.8
+  },
+  {
+   "id": "269d1261d7e8c2b1",
+   "symbol": "HDFCBANK",
+   "time": "2026-11-12T07:00:38+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Thinking about buying the dip in HDFC Bank? Here are the pros and cons.",
+   "url": "https://www.livemint.com/market/stock-market-news/hdfc-bank-hdfc-bank-stock-hdfc-bank-share-price-11794395992177.html",
+   "entry_date": "2026-11-11",
+   "entry": 806.6
+  },
+  {
+   "id": "777e947da38fc477",
+   "symbol": "BAJFINANCE",
+   "time": "2026-11-12T06:51:48+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Bajaj Finance unveils share sale to raise up to $1.25 billion",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/bajaj-finance-unveils-share-sale-to-raise-up-to-1-25-billion/articleshow/135751856.cms",
+   "entry_date": "2026-11-11",
+   "entry": 1078.8
+  },
   {
    "id": "a7758081927c720e",
    "symbol": "OIL",
