@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-12T12:16:02+05:30",
+ "updated": "2026-11-12T12:32:11+05:30",
  "summary": {
-  "calls": 1171,
-  "scored_calls": 166,
+  "calls": 1175,
+  "scored_calls": 170,
   "d1": {
    "scored": 114,
    "hits": 77,
@@ -21,6 +21,45 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "d4261d83a83beede",
+   "symbol": "NAVA",
+   "time": "2026-11-12T12:23:26+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "NAVA LIMITED: NAVA LIMITED has informed the Exchange regarding a press release dated November 12, 2026, titled \"Press release\". |SUBJECT: Press Release",
+   "url": "https://nsearchives.nseindia.com/corporate/NBVENTURES_12112026122242_Disclosure.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 544.7
+  },
+  {
+   "id": "7018d85995c67caf",
+   "symbol": "CDSL",
+   "time": "2026-11-12T12:20:45+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "CAMS, CDSL, Geojit Financial Services: Buy or hold? Capital market stocks rise up to 4%; do you own? Targets, stop-loss",
+   "url": "https://www.livemint.com/market/stock-market-news/cams-cdsl-geojit-financial-services-buy-or-hold-capital-market-stocks-rise-up-to-4-do-you-own-targets-stoploss-11794463581458.html",
+   "entry_date": "2026-11-11",
+   "entry": 1407.0
+  },
+  {
+   "id": "7018d85995c67caf",
+   "symbol": "CAMS",
+   "time": "2026-11-12T12:20:45+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "CAMS, CDSL, Geojit Financial Services: Buy or hold? Capital market stocks rise up to 4%; do you own? Targets, stop-loss",
+   "url": "https://www.livemint.com/market/stock-market-news/cams-cdsl-geojit-financial-services-buy-or-hold-capital-market-stocks-rise-up-to-4-do-you-own-targets-stoploss-11794463581458.html",
+   "entry_date": "2026-11-11",
+   "entry": 723.5
+  },
   {
    "id": "8858fcf5f3193cfd",
    "symbol": "NAVA",
@@ -46,6 +85,19 @@
    "url": "https://nsearchives.nseindia.com/corporate/ANILSHINDE_12112026120617_SEIntimationPressRelease.pdf",
    "entry_date": "2026-11-11",
    "entry": 1748.6
+  },
+  {
+   "id": "7ee8146a916d06f2",
+   "symbol": "M&M",
+   "time": "2026-11-12T11:59:25+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Mahindra & Mahindra among 5 stocks showing White Marubozu Pattern",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/mahindra-amp-mahindra-among-5-stocks-showing-white-marubozu-pattern/slideshow/135758580.cms",
+   "entry_date": "2026-11-11",
+   "entry": 3465.0
   },
   {
    "id": "115943ad2175a507",
