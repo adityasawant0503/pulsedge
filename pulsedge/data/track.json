@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-12T12:01:45+05:30",
+ "updated": "2026-11-12T12:16:02+05:30",
  "summary": {
-  "calls": 1160,
-  "scored_calls": 161,
+  "calls": 1171,
+  "scored_calls": 166,
   "d1": {
    "scored": 114,
    "hits": 77,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "8858fcf5f3193cfd",
+   "symbol": "NAVA",
+   "time": "2026-11-12T12:12:11+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "NAVA LIMITED: NAVA LIMITED has submitted to the Exchange, the financial results for the period ended September 30, 2026. |SUBJECT: Outcome of Board Meeting",
+   "url": "https://nsearchives.nseindia.com/corporate/NBVENTURES_12112026120911_Disclosure_signed.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 544.7
+  },
+  {
+   "id": "0dc3a13d43c838d3",
+   "symbol": "BHARATFORG",
+   "time": "2026-11-12T12:06:55+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Bharat Forge Limited: Bharat Forge Limited has informed the Exchange regarding a press release dated November 12, 2026, titled \"Press release titled Kalyani Str",
+   "url": "https://nsearchives.nseindia.com/corporate/ANILSHINDE_12112026120617_SEIntimationPressRelease.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 1748.6
+  },
   {
    "id": "115943ad2175a507",
    "symbol": "FEDERALBNK",
@@ -111,6 +137,32 @@
    "url": "https://www.livemint.com/market/stock-market-news/clean-max-enviro-energy-shares-jump-7-stock-trades-27-above-ipo-price-what-s-driving-the-rally-check-key-levels-11794461936977.html",
    "entry_date": "2026-11-11",
    "entry": 705.7
+  },
+  {
+   "id": "b83001104cdba5cf",
+   "symbol": "AXISBANK",
+   "time": "2026-11-12T11:24:56+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "FIIs are back! Jefferies lists 11 stocks that can be the biggest beneficiaries",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/fiis-are-back-jefferies-lists-11-stocks-that-can-be-the-biggest-beneficiaries/slideshow/135758277.cms",
+   "entry_date": "2026-11-11",
+   "entry": 1336.4
+  },
+  {
+   "id": "b83001104cdba5cf",
+   "symbol": "HDFCBANK",
+   "time": "2026-11-12T11:24:56+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "FIIs are back! Jefferies lists 11 stocks that can be the biggest beneficiaries",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/fiis-are-back-jefferies-lists-11-stocks-that-can-be-the-biggest-beneficiaries/slideshow/135758277.cms",
+   "entry_date": "2026-11-11",
+   "entry": 806.6
   },
   {
    "id": "364df510e2e2a76d",
@@ -477,6 +529,19 @@
    "entry": 1571.6
   },
   {
+   "id": "f23be9734bac974e",
+   "symbol": "INDUSINDBK",
+   "time": "2026-11-12T08:20:09+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "IndusInd Bank Share Price Live Updates: IndusInd Bank Rises Above 100-Day EMA Mark",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/indusind-bank-share-price-today-live-updates-12-nov-2026/liveblog/135753045.cms",
+   "entry_date": "2026-11-11",
+   "entry": 900.0
+  },
+  {
    "id": "415e620a76da0807",
    "symbol": "OIL",
    "time": "2026-11-12T08:20:07+05:30",
@@ -501,6 +566,32 @@
    "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/ongc-share-price-live-updates-12-nov-2026/liveblog/135753026.cms",
    "entry_date": "2026-11-11",
    "entry": 234.8
+  },
+  {
+   "id": "c2f6f49494140620",
+   "symbol": "ONGC",
+   "time": "2026-11-12T08:19:15+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "ONGC Share Price Live Updates: ONGC's Price Movement Analysis",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/ongc-share-price-live-updates-12-nov-2026/liveblog/135753026.cms",
+   "entry_date": "2026-11-11",
+   "entry": 234.8
+  },
+  {
+   "id": "593ff326654fbfd3",
+   "symbol": "TITAN",
+   "time": "2026-11-12T08:18:57+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "Titan Company Share Price Live Updates: Titan Company experiences a small rise in current trading",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/titan-company-share-price-today-live-updates-12-nov-2026/liveblog/135753022.cms",
+   "entry_date": "2026-11-11",
+   "entry": 4970.0
   },
   {
    "id": "f1a54b7b391655da",
@@ -594,6 +685,19 @@
    "entry": 197.99
   },
   {
+   "id": "c2d6e465296ab0c7",
+   "symbol": "TCS",
+   "time": "2026-11-12T08:17:29+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "TCS Share Price Live Updates: TCS Price Movement Analysis",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/tcs-share-price-live-12-nov-2026/liveblog/135752992.cms",
+   "entry_date": "2026-11-11",
+   "entry": 2472.1
+  },
+  {
    "id": "8019a78fc0420ce9",
    "symbol": "COFORGE",
    "time": "2026-11-12T08:11:03+05:30",
@@ -615,6 +719,19 @@
    "scored": true,
    "source": "ET Markets",
    "headline": "NTPC Share Price Live Updates: NTPC Daily Closing Price",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/ntpc-stock-price-live-updates-12-nov-2026/liveblog/135752862.cms",
+   "entry_date": "2026-11-11",
+   "entry": 327.0
+  },
+  {
+   "id": "b5329d0fc69531f8",
+   "symbol": "NTPC",
+   "time": "2026-11-12T08:10:06+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "NTPC Share Price Live Updates: NTPC's Recent Performance",
    "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/ntpc-stock-price-live-updates-12-nov-2026/liveblog/135752862.cms",
    "entry_date": "2026-11-11",
    "entry": 327.0
@@ -696,6 +813,32 @@
    "url": "https://www.business-standard.com/markets/news/stock-market-live-november-12-gift-nifty-nse-bse-sensex-today-nifty50-crude-oil-prices-q2-results-today-126111200066_1.html",
    "entry_date": "2026-11-11",
    "entry": 354.0
+  },
+  {
+   "id": "ebf0228f82e1f42f",
+   "symbol": "M&M",
+   "time": "2026-11-12T07:51:36+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex pares 400 pts from day's high, Nifty below 25,300; M&M, TCS top losers",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-12-gift-nifty-nse-bse-sensex-today-nifty50-crude-oil-prices-q2-results-today-126111200066_1.html",
+   "entry_date": "2026-11-11",
+   "entry": 3465.0
+  },
+  {
+   "id": "ebf0228f82e1f42f",
+   "symbol": "TCS",
+   "time": "2026-11-12T07:51:36+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex pares 400 pts from day's high, Nifty below 25,300; M&M, TCS top losers",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-12-gift-nifty-nse-bse-sensex-today-nifty50-crude-oil-prices-q2-results-today-126111200066_1.html",
+   "entry_date": "2026-11-11",
+   "entry": 2472.1
   },
   {
    "id": "426fbba21c4fb7be",
