@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-12T08:15:33+05:30",
+ "updated": "2026-11-12T08:30:58+05:30",
  "summary": {
-  "calls": 1105,
-  "scored_calls": 134,
+  "calls": 1107,
+  "scored_calls": 136,
   "d1": {
    "scored": 114,
    "hits": 77,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "171ddfb8623a9427",
+   "symbol": "ADANIENT",
+   "time": "2026-11-12T08:22:29+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Adani Enterprises Limited: Adani Enterprises Limited has informed the Exchange regarding a press release dated November 12, 2026, titled \"Intimation for submiss",
+   "url": "https://nsearchives.nseindia.com/corporate/nishant_joshi_adani_com_12112026082223_AELIntimationMediaRelease12112026.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 2714.5
+  },
+  {
+   "id": "8019a78fc0420ce9",
+   "symbol": "COFORGE",
+   "time": "2026-11-12T08:11:03+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "MSCI Nov rejig: LIC, Adani Green, Meesho among 4 additions; PI Inds exits",
+   "url": "https://www.business-standard.com/markets/news/msci-november-2026-rejig-lic-adani-green-meesho-among-4-additions-pi-inds-exits-126111200074_1.html",
+   "entry_date": "2026-11-11",
+   "entry": 2017.5
+  },
   {
    "id": "4f983e683f508d94",
    "symbol": "HFCL",
