@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-12T13:00:27+05:30",
+ "updated": "2026-11-12T13:15:35+05:30",
  "summary": {
-  "calls": 1186,
-  "scored_calls": 172,
+  "calls": 1196,
+  "scored_calls": 175,
   "d1": {
    "scored": 114,
    "hits": 77,
@@ -21,6 +21,110 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "bfddf7187e48920d",
+   "symbol": "ECLERX",
+   "time": "2026-11-12T13:10:18+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "eClerx Services Limited: eClerx Services Limited has informed the Exchange regarding a press release dated November 12, 2026, titled \"eClerx announces acquisiti",
+   "url": "https://nsearchives.nseindia.com/corporate/ECLERX_12112026130801_BSENSERegedge12112026_-_Press_release.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 1530.0
+  },
+  {
+   "id": "5f17bc15b2301203",
+   "symbol": "CAPLIPOINT",
+   "time": "2026-11-12T13:09:44+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "Caplin Point Laboratories Limited: Caplin Point Laboratories Limited has informed the Exchange about Investor Presentation |SUBJECT: Investor Presentation",
+   "url": "https://nsearchives.nseindia.com/corporate/CAPLINPOINT_12112026130916_Q2-SD.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 2520.3
+  },
+  {
+   "id": "9afc62e5381f7c2c",
+   "symbol": "CAPLIPOINT",
+   "time": "2026-11-12T13:07:53+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "Caplin Point Laboratories Limited: Caplin Point Laboratories Limited has submitted to the Exchange, the financial results for the period ended September 30, 202",
+   "url": "https://nsearchives.nseindia.com/corporate/CAPLINPOINT_12112026130650_Q2-SD.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 2520.3
+  },
+  {
+   "id": "522817cd9a136613",
+   "symbol": "DLF",
+   "time": "2026-11-12T13:06:50+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Realty index surges 4%; Oberoi, Sobha, Lodha up 5%; DLF nears 52-week high",
+   "url": "https://www.business-standard.com/markets/news/realty-index-surges-4-oberoi-sobha-lodha-up-5-dlf-nears-52-week-high-126111200602_1.html",
+   "entry_date": "2026-11-11",
+   "entry": 742.65
+  },
+  {
+   "id": "522817cd9a136613",
+   "symbol": "LODHA",
+   "time": "2026-11-12T13:06:50+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Realty index surges 4%; Oberoi, Sobha, Lodha up 5%; DLF nears 52-week high",
+   "url": "https://www.business-standard.com/markets/news/realty-index-surges-4-oberoi-sobha-lodha-up-5-dlf-nears-52-week-high-126111200602_1.html",
+   "entry_date": "2026-11-11",
+   "entry": 1174.5
+  },
+  {
+   "id": "899c349f0c4068b7",
+   "symbol": "POONAWALLA",
+   "time": "2026-11-12T13:00:24+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Poonawalla Fincorp Limited: Poonawalla Fincorp Limited has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteration Of Capital and Fund Rais",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_2184_WebXMLFile_20261112_130023785.xml",
+   "entry_date": "2026-11-11",
+   "entry": 485.95
+  },
+  {
+   "id": "0baee70e776b4cb3",
+   "symbol": "ICICILIFE",
+   "time": "2026-11-12T12:59:37+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "ICICI Life Insurance Limited: ICICI Life Insurance Limited has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteration Of Capital and Fund ",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_14257_WebXMLFile_20261112_125936156.xml",
+   "entry_date": "2026-11-11",
+   "entry": 450.0
+  },
+  {
+   "id": "3f3f2e3c9f50fd6c",
+   "symbol": "POONAWALLA",
+   "time": "2026-11-12T12:59:24+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "Poonawalla Fincorp Limited: Poonawalla Fincorp Limited has informed the Exchange regarding allotment of 50000 securities pursuant to Non Convertible Securities ",
+   "url": "https://nsearchives.nseindia.com/corporate/PFLROHIT_12112026125917_PFLIntimationAllotmentofNCDs12112026.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 485.95
+  },
   {
    "id": "2ccc41e97587c5a2",
    "symbol": "NETWEB",
@@ -841,6 +945,19 @@
    "entry": 4820.0
   },
   {
+   "id": "7e00e76c54441250",
+   "symbol": "BRITANNIA",
+   "time": "2026-11-12T08:18:04+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "Britannia Share Price Live Updates: Britannia's Market Performance Update",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/britannia-share-price-today-live-updates-12-nov-2026/liveblog/135753007.cms",
+   "entry_date": "2026-11-11",
+   "entry": 4820.0
+  },
+  {
    "id": "eac095e2a6c7b8ae",
    "symbol": "HDFCBANK",
    "time": "2026-11-12T08:17:47+05:30",
@@ -891,6 +1008,19 @@
    "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/tcs-share-price-live-12-nov-2026/liveblog/135752992.cms",
    "entry_date": "2026-11-11",
    "entry": 2472.1
+  },
+  {
+   "id": "2201eb1cb092e54b",
+   "symbol": "WIPRO",
+   "time": "2026-11-12T08:17:29+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "Wipro Share Price Live Updates: Wipro's Market Update",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/wipro-share-price-live-12-nov-2026/liveblog/135752991.cms",
+   "entry_date": "2026-11-11",
+   "entry": 197.99
   },
   {
    "id": "8019a78fc0420ce9",
