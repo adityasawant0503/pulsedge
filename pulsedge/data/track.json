@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-12T07:51:21+05:30",
+ "updated": "2026-11-12T08:15:33+05:30",
  "summary": {
-  "calls": 1103,
-  "scored_calls": 132,
+  "calls": 1105,
+  "scored_calls": 134,
   "d1": {
    "scored": 114,
    "hits": 77,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "4f983e683f508d94",
+   "symbol": "HFCL",
+   "time": "2026-11-12T08:05:06+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "HFCL Limited: HFCL Limited has informed the Exchange about \"HFCL secures Export Orders worth INR 834.36 crore approx. (equivalent to USD 88.94 million approx.) ",
+   "url": "https://nsearchives.nseindia.com/corporate/AHMED_12112026080428_HFCL_STX_Announcement_12112026.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 212.38
+  },
+  {
+   "id": "a415a055e9b168b4",
+   "symbol": "PAYTM",
+   "time": "2026-11-12T07:43:01+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Nifty could move to 25,500-25,750; Paytm among 3 stock ideas: Ajit Mishra",
+   "url": "https://www.business-standard.com/markets/news/stocks-to-buy-today-nifty-could-move-to-25-500-25-750-paytm-among-3-stock-ideas-ajit-mishra-126111200062_1.html",
+   "entry_date": "2026-11-11",
+   "entry": 1793.8
+  },
   {
    "id": "7570d98488bbad10",
    "symbol": "OIL",
