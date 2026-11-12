@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-12T14:47:02+05:30",
+ "updated": "2026-11-12T15:01:48+05:30",
  "summary": {
-  "calls": 1213,
+  "calls": 1216,
   "scored_calls": 192,
   "d1": {
    "scored": 114,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "11937a01b20538cc",
+   "symbol": "KAYNES",
+   "time": "2026-11-12T14:50:22+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "Kaynes Technology India Limited: Monitoring Agency Report for the Quarter ended 30 September 2026 |SUBJECT: Monitoring Agency Report",
+   "url": "https://nsearchives.nseindia.com/corporate/KAYNESTECH_12112026145006_MonitoringAgencyReportQ2FY27.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 3382.0
+  },
   {
    "id": "2137a3c604a6d1b7",
    "symbol": "PAGEIND",
@@ -984,6 +997,19 @@
    "entry": 12362.0
   },
   {
+   "id": "19d8a2a3e2728237",
+   "symbol": "ULTRACEMCO",
+   "time": "2026-11-12T08:21:05+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "UltraTech Cem Share Price Live Updates: UltraTech Cement's Current Price Update",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/ultratech-cem-share-price-live-12-nov-2026/liveblog/135753062.cms",
+   "entry_date": "2026-11-11",
+   "entry": 12362.0
+  },
+  {
    "id": "cd146b3d51fd719f",
    "symbol": "ICICIBANK",
    "time": "2026-11-12T08:20:27+05:30",
@@ -1018,6 +1044,19 @@
    "scored": true,
    "source": "ET Markets",
    "headline": "IndusInd Bank Share Price Live Updates: IndusInd Bank Rises Above 100-Day EMA Mark",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/indusind-bank-share-price-today-live-updates-12-nov-2026/liveblog/135753045.cms",
+   "entry_date": "2026-11-11",
+   "entry": 900.0
+  },
+  {
+   "id": "93bce80fa9edbcb6",
+   "symbol": "INDUSINDBK",
+   "time": "2026-11-12T08:20:09+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "IndusInd Bank Share Price Live Updates: IndusInd Bank's Current Market Performance",
    "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/indusind-bank-share-price-today-live-updates-12-nov-2026/liveblog/135753045.cms",
    "entry_date": "2026-11-11",
    "entry": 900.0
