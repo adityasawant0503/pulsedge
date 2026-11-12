@@ -354,6 +354,12 @@ def deal_items(rows):
                        "Big trades by institutions can show conviction, but can also be rebalancing or an exit",
                        "From NSE's end-of-day bulk and block deal disclosures"],
             "risks": ["The other side of the trade may also be an institution"],
+            # the same item in everyday words, for the terminal's Simple view
+            "plain": f"A big investor {verb} about ₹{v:,.0f} crore of {name} shares in a single trade.",
+            "why": ("Large investors buying can be a sign of confidence in the company." if x["side"] == "buy"
+                    else "Large investors selling can mean they see less upside, or just need the cash.")
+                   + " One trade on its own is not a trend.",
+            "check": "See who was on the other side of the trade, and any recent news on the company.",
             "original": f"{x['client']} {verb} {x['qty']:,} shares of {x['symbol']} ({x['kind']} deal, {x['date']})",
         })
     return items

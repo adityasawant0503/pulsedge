@@ -225,9 +225,12 @@ SCHEMA = {
             "action": {"type": "string"},
             "reason": {"type": "array", "items": {"type": "string"}},
             "risks": {"type": "array", "items": {"type": "string"}},
+            "plain": {"type": "string"},
+            "why": {"type": "string"},
+            "check": {"type": "string"},
         },
         "required": ["i", "section", "call", "horizon", "direction", "tickers", "sectors", "impact",
-                     "confidence", "category", "action", "reason", "risks"],
+                     "confidence", "category", "action", "reason", "risks", "plain", "why", "check"],
         "additionalProperties": False}}},
     "required": ["items"], "additionalProperties": False,
 }
@@ -241,6 +244,10 @@ For each numbered headline, decide how it affects listed Indian stocks (NSE symb
 - action: one short, conditional, educational line (e.g. "Watch for follow-through above the first 15-min high"). Never promise returns.
 - reason: 1-2 short bullets. risks: 0-2 short bullets.
 - horizon: intraday, swing (days-weeks) or positional (months).
+- plain, why, check: the same item for a beginner who has never read a filing. Everyday words, no jargon, no ticker symbols, no price levels.
+  plain: what happened, in one sentence of at most 22 words.
+  why: why it matters to someone who owns the shares, or why it is safe to skip, in at most 25 words.
+  check: one thing they could look at next, in at most 18 words; never an instruction to buy or sell. Empty string for "ignore".
 Answer for every index i you were given.
 
 NSE universe (SYMBOL|Company|Sector):
@@ -287,7 +294,7 @@ SIGNAL = re.compile(r"order|contract|acquisition|merger|results?|profit|guidance
 
 GH_MODELS_URL = "https://models.github.ai/inference/chat/completions"
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
-GH_FIELDS = "i, section, call, horizon, direction, tickers[{symbol,direction}], sectors[], impact, confidence, category, action, reason[], risks[]"
+GH_FIELDS = "i, section, call, horizon, direction, tickers[{symbol,direction}], sectors[], impact, confidence, category, action, reason[], risks[], plain, why, check"
 
 
 # Gemini model names to try in order (the "latest" alias follows Google's current Flash model)
@@ -311,7 +318,7 @@ def classify_compat(batch, universe, url, key, model):
         f'Reply with JSON only: {{"items": [{{{GH_FIELDS}}}, ...]}} using exactly these field names. '
         'section is trading|news|macro; call buy|sell|watch|ignore; horizon intraday|swing|positional; direction up|down|mixed.')
     payload = {
-        "model": model, "temperature": 0.2, "max_tokens": 3800,
+        "model": model, "temperature": 0.2, "max_tokens": 5000,
         "response_format": {"type": "json_object"},
         "messages": [{"role": "system", "content": guide}, {"role": "user", "content": "Headlines:\n" + "\n".join(rows)}],
     }
@@ -358,6 +365,7 @@ def classify_compat(batch, universe, url, key, model):
                 "impact": int(x.get("impact") or 0), "confidence": int(x.get("confidence") or 0),
                 "category": str(x.get("category") or ""), "action": str(x.get("action") or ""),
                 "reason": [str(v) for v in x.get("reason") or []], "risks": [str(v) for v in x.get("risks") or []],
+                "plain": str(x.get("plain") or ""), "why": str(x.get("why") or ""), "check": str(x.get("check") or ""),
             }
         except (KeyError, ValueError, TypeError, IndexError):
             continue
@@ -407,6 +415,10 @@ def classify_rules(batch, universe):
                 "action": "Check how these sectors open" if names else "No action",
                 "reason": ([f"{names[0]} news usually moves Indian {', '.join(secs[:3])}"] if names else [])
                 + ["Keyword rules (AI classification is off)"], "risks": [],
+                "plain": "",
+                "why": (f"News about {names[0]} abroad often moves Indian {', '.join(secs[:3])} shares the next day." if names
+                        else "World news with no clear link to Indian shares."),
+                "check": "See how these sectors open in the morning." if names else "",
             }
             continue
         tk = [{"symbol": s, "direction": "up"} for s in match_tickers(text, universe)]
@@ -421,6 +433,11 @@ def classify_rules(batch, universe):
             "category": "Routine filing" if routine else b["section_hint"].title() if noteworthy else "No listed-stock impact",
             "action": "Read the source before acting" if noteworthy else "No action",
             "reason": ["Keyword rules (AI classification is off)"], "risks": [],
+            "plain": "",
+            "why": ("A routine notice that companies must file. It rarely affects the share price." if routine
+                    else "It names a listed company or a kind of event that often moves share prices." if noteworthy
+                    else "No listed company is clearly affected."),
+            "check": "Open the source and read what the company actually said." if noteworthy else "",
         }
     return out
 
@@ -506,6 +523,8 @@ def main():
                 "tickers": tickers, "sectors": r["sectors"][:4],
                 "impact": max(0, min(100, int(r["impact"]))), "confidence": max(0, min(100, int(r["confidence"]))),
                 "category": r["category"], "action": r["action"], "reason": r["reason"][:3], "risks": r["risks"][:3],
+                # the same item in everyday words, for the terminal's Simple view
+                "plain": str(r.get("plain") or "")[:220], "why": str(r.get("why") or "")[:260], "check": str(r.get("check") or "")[:200],
                 "original": it["summary"][:300] or it["headline"],
             })
         if use_ai:
@@ -514,6 +533,8 @@ def main():
     if a.dry_run:
         for c in classified[:20]:
             log(f"  {c['call'].upper():6} {c['impact']:3} {','.join(t['symbol'] for t in c['tickers']) or '-':20} {c['headline'][:90]}")
+            if c["plain"] or c["why"]:
+                log(f"         plain: {c['plain'][:110]} | why: {c['why'][:110]} | check: {c['check'][:80]}")
         log(f"dry run: {len(classified)} items classified, nothing written")
         return
 
