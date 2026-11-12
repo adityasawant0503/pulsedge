@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-12T14:33:11+05:30",
+ "updated": "2026-11-12T14:47:02+05:30",
  "summary": {
-  "calls": 1209,
-  "scored_calls": 188,
+  "calls": 1213,
+  "scored_calls": 192,
   "d1": {
    "scored": 114,
    "hits": 77,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "2137a3c604a6d1b7",
+   "symbol": "PAGEIND",
+   "time": "2026-11-12T14:39:49+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Page Industries Limited: Page Industries Limited has informed the Exchange that Board of Directors at its meeting held on November 12, 2026, declared Interim Di",
+   "url": "https://nsearchives.nseindia.com/corporate/PAGEIND_12112026143844_RESULTS30092026.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 36570.0
+  },
+  {
+   "id": "8ac15cedc7e413e5",
+   "symbol": "TATAPOWER",
+   "time": "2026-11-12T14:38:48+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Tata Power: Q2 renewable gains partly offset by weak solar EPC",
+   "url": "https://www.livemint.com/market/mark-to-market/tata-power-q2-results-renewable-energy-solar-epc-growth-risks-11794468841184.html",
+   "entry_date": "2026-11-11",
+   "entry": 360.0
+  },
+  {
+   "id": "2f7a2847f877d0b9",
+   "symbol": "PAGEIND",
+   "time": "2026-11-12T14:34:44+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Page Industries Limited: Page Industries Limited has informed the Exchange regarding a press release dated November 12, 2026, titled \"Press Release and Investor",
+   "url": "https://nsearchives.nseindia.com/corporate/PAGEIND_12112026143403_PRIPQ2FY27.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 36570.0
+  },
+  {
+   "id": "a416cf72b1d0857f",
+   "symbol": "PAGEIND",
+   "time": "2026-11-12T14:29:53+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Page Industries Limited: Page Industries Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026. |SUBJECT: Outcome",
+   "url": "https://nsearchives.nseindia.com/corporate/PAGEIND_12112026142702_RESULTS30092026.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 36570.0
+  },
   {
    "id": "16e632ce3d963669",
    "symbol": "CESC",
