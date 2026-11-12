@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-12T12:32:11+05:30",
+ "updated": "2026-11-12T12:45:36+05:30",
  "summary": {
-  "calls": 1175,
-  "scored_calls": 170,
+  "calls": 1177,
+  "scored_calls": 172,
   "d1": {
    "scored": 114,
    "hits": 77,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "80fa14dd5be876e9",
+   "symbol": "AEGISLOG",
+   "time": "2026-11-12T12:36:51+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Aegis Logistics shares gain 3% as QIP opens; floor price set at ₹1,161.85",
+   "url": "https://www.business-standard.com/markets/news/aegis-logistics-shares-gain-3-as-qip-opens-floor-price-set-at-1-161-85-126111200424_1.html",
+   "entry_date": "2026-11-11",
+   "entry": 1227.1
+  },
+  {
+   "id": "5a5d039520217ca0",
+   "symbol": "MINDACORP",
+   "time": "2026-11-12T12:32:43+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Stocks to buy: Minda Corporation, RK Forgings, ASK Automotive - MNCL picks 8 auto ancillary stocks with up to 63% upside",
+   "url": "https://www.livemint.com/market/stock-market-news/stocks-to-buy-minda-corporation-rk-forgings-ask-automotive-mncl-picks-8-auto-ancillary-stocks-with-up-to-63-upside-11794465564136.html",
+   "entry_date": "2026-11-11",
+   "entry": 714.8
+  },
   {
    "id": "d4261d83a83beede",
    "symbol": "NAVA",
