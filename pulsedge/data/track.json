@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-12T14:15:41+05:30",
+ "updated": "2026-11-12T14:33:11+05:30",
  "summary": {
-  "calls": 1205,
-  "scored_calls": 184,
+  "calls": 1209,
+  "scored_calls": 188,
   "d1": {
    "scored": 114,
    "hits": 77,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "16e632ce3d963669",
+   "symbol": "CESC",
+   "time": "2026-11-12T14:27:02+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Down 27% in six months! This power stock could rally 36%, says ICICI Direct - Do you own? Check target price",
+   "url": "https://www.livemint.com/market/stock-market-news/down-27-in-six-months-this-power-stock-could-rally-36-says-icici-direct-do-you-own-check-target-price-11794470175551.html",
+   "entry_date": "2026-11-11",
+   "entry": 131.1
+  },
+  {
+   "id": "ee25beb24f668a42",
+   "symbol": "BOSCHLTD",
+   "time": "2026-11-12T14:20:42+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Bosch Limited: Bosch Limited has informed the Exchange about Incorporation of JV |SUBJECT: General Updates",
+   "url": "https://nsearchives.nseindia.com/corporate/BOSCHLTD2024_12112026142023_Letter2SE12112026.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 50490.0
+  },
+  {
+   "id": "e8f8628be0e56354",
+   "symbol": "PHOENIXLTD",
+   "time": "2026-11-12T14:17:10+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "The Phoenix Mills Limited: The Phoenix Mills Limited has informed the Exchange about Update on Acquisition |SUBJECT: Acquisition",
+   "url": "https://nsearchives.nseindia.com/corporate/PHOENIXLTD_12112026141654_ISML_capital_reduction_update.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 2171.0
+  },
+  {
+   "id": "8ab880e9b6c29888",
+   "symbol": "PHOENIXLTD",
+   "time": "2026-11-12T14:14:37+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "The Phoenix Mills Limited: THE PHOENIX MILLS LIMITED has informed the Exchange regarding Update-Acquisition/Scheme/Sale/Disposal-XBRL |SUBJECT: Update-Acquisiti",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_Restructuring_2579_WebXMLFile_20261112_141436561.xml",
+   "entry_date": "2026-11-11",
+   "entry": 2171.0
+  },
   {
    "id": "8f045982cb25d629",
    "symbol": "ALKEM",
