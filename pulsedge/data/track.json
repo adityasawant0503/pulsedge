@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T00:06:34+05:30",
+ "updated": "2026-11-13T02:40:12+05:30",
  "summary": {
-  "calls": 1267,
-  "scored_calls": 197,
+  "calls": 1268,
+  "scored_calls": 198,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "75ceb04a8eae54f5",
+   "symbol": "RVNL",
+   "time": "2026-11-13T00:13:08+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Rail Vikas Nigam in focus today after mixed Q2 performance; stock down 68% from record peak",
+   "url": "https://www.livemint.com/market/rail-vikas-nigam-in-focus-today-after-mixed-q2-performance-stock-down-68-from-record-peak-11794506076322.html",
+   "entry_date": "2026-11-12",
+   "entry": 205.4
+  },
   {
    "id": "26460bc9bf82bc23",
    "symbol": "PAYTM",
