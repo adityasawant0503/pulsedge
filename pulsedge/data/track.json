@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-12T15:45:46+05:30",
+ "updated": "2026-11-12T16:01:55+05:30",
  "summary": {
-  "calls": 1224,
-  "scored_calls": 194,
+  "calls": 1235,
+  "scored_calls": 196,
   "d1": {
    "scored": 114,
    "hits": 77,
@@ -21,6 +21,110 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "cbb958be974d37d3",
+   "symbol": "NBCC",
+   "time": "2026-11-12T15:56:19+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "NBCC (India) Limited: NBCC (India) Limited has informed the Exchange regarding 'General Update: Signing of Memorandum of Understanding by NBCC (India) Limited w",
+   "url": "https://nsearchives.nseindia.com/corporate/NBCC_12112026155610_intimation_MOUWEST_Bengal.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 80.62
+  },
+  {
+   "id": "7de8e9f718c8c282",
+   "symbol": "OIL",
+   "time": "2026-11-12T15:51:41+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Oil India Limited: Oil India Limited has submitted to the Exchange, the financial results for the period Quarter and Half-year ended September 30, 2026. |SUBJEC",
+   "url": "https://nsearchives.nseindia.com/corporate/OIL_12112026155129_OUTCOMEOFBOARDMEETING30092026_SIGNED.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 445.8
+  },
+  {
+   "id": "44e4db200a06f7eb",
+   "symbol": "IRB",
+   "time": "2026-11-12T15:48:54+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "IRB InvIT Fund: IRB InvIT Fund has informed the Exchange regarding ' Disclosure under Regulation 7(2)(b) of Securities and Exchange Board of India (Prohibition ",
+   "url": "https://nsearchives.nseindia.com/corporate/IRBINVIT_12112026154840_Disclosure_FORMC_IRBInvITFund_Sd.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 18.76
+  },
+  {
+   "id": "20edd7dbea9d6b35",
+   "symbol": "GAIL",
+   "time": "2026-11-12T15:48:49+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "GAIL (India) Limited: GAIL (India) Limited has informed the Exchange regarding a press release dated November 12, 2026, titled \"Awareness session for 300 TPD Mu",
+   "url": "https://nsearchives.nseindia.com/corporate/GAIL_12112026154813_PR12112026.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 189.9
+  },
+  {
+   "id": "fbd16d964200ca77",
+   "symbol": "IIFL",
+   "time": "2026-11-12T15:48:26+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "IIFL Capital Services Limited: ICICI Securities Limited has submitted a copy of the Letter of Offer of IIFL Capital Services Limited to the Exchange. |SUBJECT: ",
+   "url": "https://nsearchives.nseindia.com/corporate/team_bbodade_12112026144529_Dis11.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 666.25
+  },
+  {
+   "id": "342706d0c30d1b18",
+   "symbol": "MUTHOOTFIN",
+   "time": "2026-11-12T15:48:24+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "Muthoot Finance Limited: Asset/Liability management Statement |SUBJECT: Asset/Liability management Statement",
+   "url": "https://nsearchives.nseindia.com/content/debt/WDM/MUTHOOTFIN_12112026154813_ALM.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 2900.0
+  },
+  {
+   "id": "8ad40ba0bb707263",
+   "symbol": "BSE",
+   "time": "2026-11-12T15:40:09+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Business Standard",
+   "headline": "Gabriel India hits 20% upper circuit on huge volume; up 112% from March low",
+   "url": "https://www.business-standard.com/markets/news/gabriel-india-hits-20-upper-circuit-on-huge-volume-up-112-from-march-low-126111200893_1.html",
+   "entry_date": "2026-11-11",
+   "entry": 3906.0
+  },
+  {
+   "id": "8ad40ba0bb707263",
+   "symbol": "GABRIEL",
+   "time": "2026-11-12T15:40:09+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Business Standard",
+   "headline": "Gabriel India hits 20% upper circuit on huge volume; up 112% from March low",
+   "url": "https://www.business-standard.com/markets/news/gabriel-india-hits-20-upper-circuit-on-huge-volume-up-112-from-march-low-126111200893_1.html",
+   "entry_date": "2026-11-11",
+   "entry": 1408.4
+  },
   {
    "id": "32958cea44ed7e86",
    "symbol": "CANHLIFE",
@@ -1023,6 +1127,19 @@
    "entry": 1419.9
   },
   {
+   "id": "ea90dead26bd7447",
+   "symbol": "CIPLA",
+   "time": "2026-11-12T08:35:29+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "Cipla Share Price Live Updates: Cipla's Market Performance Today",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/cipla-stock-price-today-live-12-nov-2026/liveblog/135753318.cms",
+   "entry_date": "2026-11-11",
+   "entry": 1419.9
+  },
+  {
    "id": "f0af5eb6dce2331e",
    "symbol": "UPL",
    "time": "2026-11-12T08:30:10+05:30",
@@ -1322,6 +1439,19 @@
    "entry": 806.6
   },
   {
+   "id": "cfbf1c459d1e5985",
+   "symbol": "HDFCBANK",
+   "time": "2026-11-12T08:17:47+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "HDFC Bank Share Price Live Updates: HDFC Bank's Performance Snapshot",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/hdfc-bank-stock-price-livestock-price-today-live-updates-12-nov-2026/liveblog/135753001.cms",
+   "entry_date": "2026-11-11",
+   "entry": 806.6
+  },
+  {
    "id": "44bfb6705bdbe9ba",
    "symbol": "TCS",
    "time": "2026-11-12T08:17:29+05:30",
@@ -1369,6 +1499,19 @@
    "scored": false,
    "source": "ET Markets",
    "headline": "Wipro Share Price Live Updates: Wipro's Market Update",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/wipro-share-price-live-12-nov-2026/liveblog/135752991.cms",
+   "entry_date": "2026-11-11",
+   "entry": 197.99
+  },
+  {
+   "id": "8dbdf2e7b2ee4ca5",
+   "symbol": "WIPRO",
+   "time": "2026-11-12T08:17:29+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "Wipro Share Price Live Updates: Wipro's Trading Day Ends at Rs 196.2",
    "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/wipro-share-price-live-12-nov-2026/liveblog/135752991.cms",
    "entry_date": "2026-11-11",
    "entry": 197.99
