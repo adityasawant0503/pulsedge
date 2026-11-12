@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-12T11:00:28+05:30",
+ "updated": "2026-11-12T11:15:31+05:30",
  "summary": {
-  "calls": 1139,
-  "scored_calls": 158,
+  "calls": 1147,
+  "scored_calls": 161,
   "d1": {
    "scored": 114,
    "hits": 77,
@@ -21,6 +21,45 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "364df510e2e2a76d",
+   "symbol": "NUVAMA",
+   "time": "2026-11-12T11:09:21+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Nuvama Wealth share price: Brokerage stock up over 6% today, just 5% away from peak on strong Q2 results | Check target",
+   "url": "https://www.livemint.com/market/stock-market-news/nuvama-wealth-share-price-brokerage-stock-up-over-6-today-just-5-away-from-peak-on-strong-q2-results-check-target-11794460740294.html",
+   "entry_date": "2026-11-11",
+   "entry": 1843.5
+  },
+  {
+   "id": "1e6d1bf35a069302",
+   "symbol": "ITC",
+   "time": "2026-11-12T11:08:56+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "How are ITC shares performing after Gold Flake Regular price hike by ₹10 per pack? Should you buy stock? Experts views",
+   "url": "https://www.livemint.com/market/stock-market-news/how-are-itc-shares-performing-after-gold-flake-regular-price-hike-by-rs-10-per-pack-should-you-buy-stock-experts-views-11794458280381.html",
+   "entry_date": "2026-11-11",
+   "entry": 285.0
+  },
+  {
+   "id": "04c7b5e03f664a49",
+   "symbol": "TMCV",
+   "time": "2026-11-12T11:04:49+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Tata Motors CV share price gains 4%, up for 4th straight day; here's why",
+   "url": "https://www.business-standard.com/markets/news/tata-motors-cv-share-price-gains-4-up-for-4th-straight-day-here-s-why-126111200273_1.html",
+   "entry_date": "2026-11-11",
+   "entry": 446.05
+  },
   {
    "id": "11330975c22182ca",
    "symbol": "ECLERX",
@@ -217,6 +256,19 @@
    "entry": 360.0
   },
   {
+   "id": "1c113adeb28413ab",
+   "symbol": "EICHERMOT",
+   "time": "2026-11-12T08:45:05+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "Eicher Motors Share Price Live Updates: Eicher Motors Price Movement",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/eicher-motors-stock-price-live-updates-12-nov-2026/liveblog/135753520.cms",
+   "entry_date": "2026-11-11",
+   "entry": 7592.0
+  },
+  {
    "id": "2a5e5f8691228e5a",
    "symbol": "HINDALCO",
    "time": "2026-11-12T08:40:05+05:30",
@@ -295,6 +347,19 @@
    "entry": 1571.6
   },
   {
+   "id": "4d25ee8ccf21f7e0",
+   "symbol": "ICICIBANK",
+   "time": "2026-11-12T08:20:27+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "ICICI Bank Share Price Live Updates: ICICI Bank's Current Market Position",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/icici-bank-share-price-live-12-nov-2026/liveblog/135753052.cms",
+   "entry_date": "2026-11-11",
+   "entry": 1571.6
+  },
+  {
    "id": "415e620a76da0807",
    "symbol": "OIL",
    "time": "2026-11-12T08:20:07+05:30",
@@ -358,6 +423,19 @@
    "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/bajaj-auto-stock-price-live-updates-12-nov-2026/liveblog/135753019.cms",
    "entry_date": "2026-11-11",
    "entry": 11040.0
+  },
+  {
+   "id": "c89c684d48b9605f",
+   "symbol": "MARUTI",
+   "time": "2026-11-12T08:18:22+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "Maruti Suzuki Share Price Live Updates: Maruti Suzuki's Market Performance Overview",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/maruti-suzuki-share-price-today-live-updates-12-nov-2026/liveblog/135753015.cms",
+   "entry_date": "2026-11-11",
+   "entry": 13185.0
   },
   {
    "id": "44bfb6705bdbe9ba",
@@ -472,6 +550,32 @@
    "scored": true,
    "source": "Business Standard",
    "headline": "Stock Market LIVE: Sensex up 400 pts, Nifty tops 25,300; Cupid hits 52-wk high on Q2 profit growth",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-12-gift-nifty-nse-bse-sensex-today-nifty50-crude-oil-prices-q2-results-today-126111200066_1.html",
+   "entry_date": "2026-11-11",
+   "entry": 354.0
+  },
+  {
+   "id": "426fbba21c4fb7be",
+   "symbol": "AVANTIFEED",
+   "time": "2026-11-12T07:51:24+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex stuck in range, up 200 pts; Avanti Feeds, Cupid lead MidCap gains",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-12-gift-nifty-nse-bse-sensex-today-nifty50-crude-oil-prices-q2-results-today-126111200066_1.html",
+   "entry_date": "2026-11-11",
+   "entry": 704.1
+  },
+  {
+   "id": "426fbba21c4fb7be",
+   "symbol": "CUPID",
+   "time": "2026-11-12T07:51:24+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex stuck in range, up 200 pts; Avanti Feeds, Cupid lead MidCap gains",
    "url": "https://www.business-standard.com/markets/news/stock-market-live-november-12-gift-nifty-nse-bse-sensex-today-nifty50-crude-oil-prices-q2-results-today-126111200066_1.html",
    "entry_date": "2026-11-11",
    "entry": 354.0
