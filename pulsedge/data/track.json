@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-12T13:30:59+05:30",
+ "updated": "2026-11-12T13:47:11+05:30",
  "summary": {
-  "calls": 1196,
-  "scored_calls": 175,
+  "calls": 1198,
+  "scored_calls": 177,
   "d1": {
    "scored": 114,
    "hits": 77,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "9e9d26f100e47256",
+   "symbol": "HAL",
+   "time": "2026-11-12T13:30:14+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Hindustan Aeronautics Limited: Hindustan Aeronautics Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026. |SUBJ",
+   "url": "https://nsearchives.nseindia.com/corporate/HAL_12112026132915_IntegratedFinancial_30092026.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 4949.0
+  },
+  {
+   "id": "2203e9ae73a60dcb",
+   "symbol": "HDFCBANK",
+   "time": "2026-11-12T13:28:20+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "HDFC Bank, 18 other 'fallen angels' could be D-St's next winners: Elara",
+   "url": "https://www.business-standard.com/markets/news/hdfc-bank-18-other-fallen-angels-could-be-d-st-s-next-winners-elara-126111200555_1.html",
+   "entry_date": "2026-11-11",
+   "entry": 806.6
+  },
   {
    "id": "bfddf7187e48920d",
    "symbol": "ECLERX",
