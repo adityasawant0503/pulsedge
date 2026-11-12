@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-12T11:46:43+05:30",
+ "updated": "2026-11-12T12:01:45+05:30",
  "summary": {
-  "calls": 1157,
+  "calls": 1160,
   "scored_calls": 161,
   "d1": {
    "scored": 114,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "115943ad2175a507",
+   "symbol": "FEDERALBNK",
+   "time": "2026-11-12T11:51:10+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "The Federal Bank Limited: The Federal Bank Limited has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteration Of Capital and Fund Raising-",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_309_WebXMLFile_20261112_115109185.xml",
+   "entry_date": "2026-11-11",
+   "entry": 361.6
+  },
+  {
+   "id": "35b733837d983685",
+   "symbol": "FEDERALBNK",
+   "time": "2026-11-12T11:46:19+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "The Federal Bank Limited: The Federal Bank Limited has informed the Exchange about Allotment of Equity Shares on exercise of Stock options pursuant to Employee ",
+   "url": "https://nsearchives.nseindia.com/corporate/FEDERALBNK_12112026114502_ESOS2010_251_2017_252ESIS_2023_19SE_S.pdf",
+   "entry_date": "2026-11-11",
+   "entry": 361.6
+  },
   {
    "id": "9f5e5d81b58ae4da",
    "symbol": "LUPIN",
@@ -306,6 +332,19 @@
    "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/tech-mahindra-share-price-today-live-updates-12-nov-2026/liveblog/135754851.cms",
    "entry_date": "2026-11-11",
    "entry": 1788.5
+  },
+  {
+   "id": "8c358fd4557514a9",
+   "symbol": "TMCV",
+   "time": "2026-11-12T09:15:24+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "Tata Motors PV Share Price Live Updates: Tata Motors PV Market Update: Price and Change",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/tata-motors-pv-stock-price-today-live-12-nov-2026/liveblog/135754348.cms",
+   "entry_date": "2026-11-11",
+   "entry": 446.05
   },
   {
    "id": "74bb405a0813b457",
