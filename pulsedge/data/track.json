@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-12T15:01:48+05:30",
+ "updated": "2026-11-12T15:16:46+05:30",
  "summary": {
-  "calls": 1216,
-  "scored_calls": 192,
+  "calls": 1218,
+  "scored_calls": 194,
   "d1": {
    "scored": 114,
    "hits": 77,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "cb1dd27478d5326d",
+   "symbol": "IRFC",
+   "time": "2026-11-12T15:07:44+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "IRFC shares: Up 10% in one month but down 32% in 2026! Should you buy and hold PSU stock amid bounce back buzz? Target",
+   "url": "https://www.livemint.com/market/stock-market-news/irfc-shares-up-10-in-one-month-but-down-32-in-2026-should-you-buy-and-hold-psu-stock-amid-bounce-back-buzz-target-11794474319340.html",
+   "entry_date": "2026-11-11",
+   "entry": 86.7
+  },
+  {
+   "id": "7fad9887c2add043",
+   "symbol": "PAYTM",
+   "time": "2026-11-12T14:57:52+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Paytm zooms 7%, reclaims ₹1,900 for 1st time since listing day in Nov 2021",
+   "url": "https://www.business-standard.com/markets/news/paytm-zooms-7-reclaims-1-900-for-1st-time-since-listing-day-in-nov-2021-126111200790_1.html",
+   "entry_date": "2026-11-11",
+   "entry": 1793.8
+  },
   {
    "id": "11937a01b20538cc",
    "symbol": "KAYNES",
