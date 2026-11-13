@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T02:40:12+05:30",
+ "updated": "2026-11-13T07:29:52+05:30",
  "summary": {
-  "calls": 1268,
-  "scored_calls": 198,
+  "calls": 1269,
+  "scored_calls": 199,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "3aa58a38be21dd9e",
+   "symbol": "GODREJPROP",
+   "time": "2026-11-13T06:00:26+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Godrej Properties Limited: Godrej Properties Limited has informed the Exchange regarding a press release dated November 13, 2026, titled \"Press Release\". |SUBJE",
+   "url": "https://nsearchives.nseindia.com/corporate/GODREJPROP_13112026055158_SEintimationPressrelease.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 1879.5
+  },
   {
    "id": "75ceb04a8eae54f5",
    "symbol": "RVNL",

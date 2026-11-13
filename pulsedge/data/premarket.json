@@ -1,18 +1,18 @@
 {
  "date": "2026-11-13",
- "updated": "2026-11-13T02:40:12+05:30",
- "sentiment": "Bearish",
+ "updated": "2026-11-13T07:29:52+05:30",
+ "sentiment": "Mildly bearish",
  "breadth": {
-  "up": 1,
-  "down": 4
+  "up": 0,
+  "down": 1
  },
  "checklist": [
   {
    "title": "Nifty 50 last close (GIFT Nifty not available from free sources)",
    "dir": "flat",
-   "value": "25,299.35 (+0.18%)",
+   "value": "25,299.35 (+0.00%)",
    "detail": [
-    "Previous close 25,253.89"
+    "Previous close 25,299.35"
    ]
   },
   {
@@ -23,107 +23,100 @@
     "Dow 52,297.09 -0.36%",
     "S&P 7,592.40 -0.35%",
     "Nasdaq 25,366.09 -0.39%",
-    "Nasdaq futures now -0.28%"
+    "Nasdaq futures now +0.60%"
    ]
   },
   {
    "title": "Asian markets live - Nikkei, Hang Seng",
-   "dir": "down",
-   "value": "Asia lower",
+   "dir": "flat",
+   "value": "Asia mixed",
    "detail": [
-    "Nikkei 60,819.36 -0.70%",
-    "Hang Seng 24,008.55 -1.26%"
+    "Nikkei 61,787.83 +1.59%",
+    "Hang Seng 23,898.53 -0.46%"
    ]
   },
   {
    "title": "DXY + USDINR move",
-   "dir": "down",
-   "value": "Rupee under pressure",
+   "dir": "flat",
+   "value": "No major currency pressure",
    "detail": [
-    "DXY 103.18 +0.26%",
-    "USD/INR 94.043 +0.38%"
+    "DXY 103.14 -0.03%",
+    "USD/INR 94.040 -0.00%"
    ]
   },
   {
    "title": "Brent crude level",
-   "dir": "down",
-   "value": "$96.11 +3.61%",
-   "detail": [
-    "Rising crude hurts India (OMCs, paints, aviation); helps upstream"
-   ]
+   "dir": "flat",
+   "value": "$95.25 -0.59%",
+   "detail": []
   },
   {
    "title": "India VIX",
-   "dir": "up",
-   "value": "16.62 (-5.34%) — normal",
+   "dir": "flat",
+   "value": "16.62 (+0.00%) — normal",
    "detail": []
   }
  ],
- "summary": "Bearish setup. Brent up 3.61% — pressure on OMCs, paints and aviation; NASDAQ closed 0.39% lower; IT may open soft.",
+ "summary": "Mildly bearish setup. NASDAQ closed 0.39% lower; IT may open soft; Nikkei up, Hang Seng down.",
  "global_cues": [
-  "Brent up 3.61% — pressure on OMCs, paints and aviation",
   "NASDAQ closed 0.39% lower; IT may open soft",
-  "Nikkei down, Hang Seng down"
+  "Nikkei up, Hang Seng down"
  ],
  "india_triggers": [
-  "2 filings and headlines worth a look so far today"
+  "4 filings and headlines worth a look so far today"
  ],
  "focus": [
   {
    "symbol": "RVNL",
    "note": "Rail Vikas Nigam in focus today after mixed Q2 performance; stock down"
+  },
+  {
+   "symbol": "GODREJPROP",
+   "note": "Godrej Properties Limited: Godrej Properties Limited has informed the "
   }
  ],
  "sector_tags": [
-  {
-   "label": "Upstream oil",
-   "tone": "positive"
-  },
-  {
-   "label": "OMCs",
-   "tone": "negative"
-  },
   {
    "label": "IT",
    "tone": "watch"
   }
  ],
- "key_risk": "A further crude spike would hit OMCs and widen the INR move",
+ "key_risk": "",
  "also": [
   {
    "name": "BANK NIFTY",
    "value": "61,518.5",
-   "change": 1.19
-  },
-  {
-   "name": "S&P FUT",
-   "value": "7,618",
-   "change": -0.29
-  },
-  {
-   "name": "NASDAQ FUT",
-   "value": "28,392",
-   "change": -0.28
-  },
-  {
-   "name": "KOSPI",
-   "value": "5,343",
    "change": 0.0
   },
   {
+   "name": "S&P FUT",
+   "value": "7,647",
+   "change": 0.41
+  },
+  {
+   "name": "NASDAQ FUT",
+   "value": "28,556",
+   "change": 0.6
+  },
+  {
+   "name": "KOSPI",
+   "value": "5,459",
+   "change": 2.18
+  },
+  {
    "name": "WTI",
-   "value": "88.94",
-   "change": 2.79
+   "value": "88.19",
+   "change": -0.62
   },
   {
    "name": "GOLD",
-   "value": "3,880",
-   "change": -3.02
+   "value": "3,912",
+   "change": 0.68
   },
   {
    "name": "US 10Y",
    "value": "5.12",
-   "change": 2.73
+   "change": 0.35
   }
  ],
  "source": "CNBC / Yahoo Finance (unofficial, delayed)"
