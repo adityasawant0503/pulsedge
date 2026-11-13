@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T12:00:44+05:30",
+ "updated": "2026-11-13T12:15:29+05:30",
  "summary": {
-  "calls": 1313,
-  "scored_calls": 227,
+  "calls": 1315,
+  "scored_calls": 229,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "a12a341a4db3379e",
+   "symbol": "BBOX",
+   "time": "2026-11-13T12:09:10+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Black Box Limited: Black Box Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026. |SUBJECT: Outcome of Board Me",
+   "url": "https://nsearchives.nseindia.com/corporate/BBOX_13112026120810_SE_BM_Outcome_Q2FY27_Signed.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 883.8
+  },
+  {
+   "id": "fa3376f956277ec3",
+   "symbol": "PAGEIND",
+   "time": "2026-11-13T12:07:16+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Why Page Industries’ optimism needs a reality check",
+   "url": "https://www.livemint.com/market/mark-to-market/page-industries-jockey-speedo-volume-growth-h1fy27-h2fy27-festive-demand-disney-marvel-collection-11794548577245.html",
+   "entry_date": "2026-11-12",
+   "entry": 31850.0
+  },
   {
    "id": "ec4fe123fee52248",
    "symbol": "AMBUJACEM",
