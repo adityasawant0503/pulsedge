@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T12:30:40+05:30",
+ "updated": "2026-11-13T12:45:32+05:30",
  "summary": {
-  "calls": 1320,
-  "scored_calls": 229,
+  "calls": 1324,
+  "scored_calls": 233,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "4fec99a27fd83c9c",
+   "symbol": "HONASA",
+   "time": "2026-11-13T12:25:50+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Honasa, Nykaa rally up to 4% in subdued market; record 52-week highs",
+   "url": "https://www.business-standard.com/markets/news/honasa-nykaa-rally-up-to-4-in-subdued-market-record-52-week-highs-126111300603_1.html",
+   "entry_date": "2026-11-12",
+   "entry": 495.65
+  },
+  {
+   "id": "4fec99a27fd83c9c",
+   "symbol": "NYKAA",
+   "time": "2026-11-13T12:25:50+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Honasa, Nykaa rally up to 4% in subdued market; record 52-week highs",
+   "url": "https://www.business-standard.com/markets/news/honasa-nykaa-rally-up-to-4-in-subdued-market-record-52-week-highs-126111300603_1.html",
+   "entry_date": "2026-11-12",
+   "entry": 360.3
+  },
   {
    "id": "fae823b5d2552361",
    "symbol": "BSE",
@@ -59,6 +85,19 @@
    "url": "https://nsearchives.nseindia.com/corporate/BBOX_13112026122059_SE_PR_Q2FY27_Signed.pdf",
    "entry_date": "2026-11-12",
    "entry": 883.8
+  },
+  {
+   "id": "2fe63e53fd1f5a7e",
+   "symbol": "ZEEL",
+   "time": "2026-11-13T12:20:50+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Zee Entertainment buyback: What happened with ZEEL stock after ₹600 cr announcement? Check record date, price",
+   "url": "https://www.livemint.com/market/stock-market-news/zee-entertainment-announces-rs-600-cr-share-buyback-stock-down-3-check-record-date-price-other-key-things-to-know-11794549332632.html",
+   "entry_date": "2026-11-12",
+   "entry": 73.5
   },
   {
    "id": "a12a341a4db3379e",
@@ -462,6 +501,19 @@
    "url": "https://nsearchives.nseindia.com/corporate/YESBANK_13112026085219_YBL_SE_Intimation_RI_JCR_Rating_Signed.pdf",
    "entry_date": "2026-11-12",
    "entry": 17.69
+  },
+  {
+   "id": "3ac87b7be93488a4",
+   "symbol": "NTPC",
+   "time": "2026-11-13T08:46:27+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "NTPC Share Price Live Updates: NTPC's Price Action Indicates Bearish Trend",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/ntpc-share-price-today-live-13-nov-2026/liveblog/135787712.cms",
+   "entry_date": "2026-11-12",
+   "entry": 323.0
   },
   {
    "id": "f76354fffc336da0",
