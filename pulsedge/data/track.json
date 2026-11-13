@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T09:45:34+05:30",
+ "updated": "2026-11-13T10:00:27+05:30",
  "summary": {
-  "calls": 1283,
-  "scored_calls": 210,
+  "calls": 1284,
+  "scored_calls": 211,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "e5dc83eb90eef951",
+   "symbol": "IDEA",
+   "time": "2026-11-13T09:46:40+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Vodafone Idea shares decline 3.5% on wider-than-expected loss in Q2",
+   "url": "https://www.business-standard.com/markets/news/vodafone-idea-share-price-declines-3-5-on-wider-than-expected-loss-in-q2-126111300408_1.html",
+   "entry_date": "2026-11-12",
+   "entry": 12.97
+  },
   {
    "id": "5473a0e00a7bb4b0",
    "symbol": "OLAELEC",
