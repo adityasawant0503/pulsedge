@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T10:00:27+05:30",
+ "updated": "2026-11-13T10:16:45+05:30",
  "summary": {
-  "calls": 1284,
-  "scored_calls": 211,
+  "calls": 1287,
+  "scored_calls": 214,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "6ce88fd2ce5a616b",
+   "symbol": "POWERINDIA",
+   "time": "2026-11-13T10:10:43+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Up 94% from 52-week low, Hitachi Energy shares jump 9% today after Q2 results: Should you buy power stock? Check targets",
+   "url": "https://www.livemint.com/market/stock-market-news/up-94-from-52-week-low-hitachi-energy-shares-jump-9-today-after-q2-results-should-you-buy-power-stock-check-targets-11794543376253.html",
+   "entry_date": "2026-11-12",
+   "entry": 28545.0
+  },
   {
    "id": "e5dc83eb90eef951",
    "symbol": "IDEA",
@@ -189,6 +202,32 @@
    "url": "https://www.business-standard.com/markets/news/stocks-to-watch-zeel-ola-electric-vi-ihcl-manappuram-finance-rpower-126111300072_1.html",
    "entry_date": "2026-11-12",
    "entry": 440.0
+  },
+  {
+   "id": "32d3f7aaec3993e0",
+   "symbol": "M&M",
+   "time": "2026-11-13T07:57:36+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: M&M, HDFC Bank lead 100-pt loss in Sensex, Nifty near 25,200; VIX drops 7%",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-bn-agrochem-share-split-november-13-126111300069_1.html",
+   "entry_date": "2026-11-12",
+   "entry": 3399.0
+  },
+  {
+   "id": "32d3f7aaec3993e0",
+   "symbol": "HDFCBANK",
+   "time": "2026-11-13T07:57:36+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: M&M, HDFC Bank lead 100-pt loss in Sensex, Nifty near 25,200; VIX drops 7%",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-bn-agrochem-share-split-november-13-126111300069_1.html",
+   "entry_date": "2026-11-12",
+   "entry": 812.3
   },
   {
    "id": "4050851cf141f5ae",
