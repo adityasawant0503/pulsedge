@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T14:46:33+05:30",
+ "updated": "2026-11-13T15:01:04+05:30",
  "summary": {
-  "calls": 1348,
-  "scored_calls": 257,
+  "calls": 1353,
+  "scored_calls": 258,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "fc5aaae4d59f0dd4",
+   "symbol": "IIFL",
+   "time": "2026-11-13T14:49:09+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "IIFL Finance Limited: IIFL Finance Limited has informed the Exchange about Credit Rating |SUBJECT: Credit Rating",
+   "url": "https://nsearchives.nseindia.com/corporate/IIFL_13112026144720_SEIntimation_IndiaRatings.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 663.15
+  },
   {
    "id": "7c0634b7fecfa448",
    "symbol": "GRASIM",
@@ -789,6 +802,19 @@
    "entry": 17.69
   },
   {
+   "id": "8c148f6308dbcc1f",
+   "symbol": "INFY",
+   "time": "2026-11-13T08:50:51+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "Infosys Share Price Live Updates: Infosys Trading Volume Insights",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/infosys-share-price-today-live-updates-13-nov-2026/liveblog/135787862.cms",
+   "entry_date": "2026-11-12",
+   "entry": 1151.2
+  },
+  {
    "id": "3ac87b7be93488a4",
    "symbol": "NTPC",
    "time": "2026-11-13T08:46:27+05:30",
@@ -823,6 +849,19 @@
    "scored": false,
    "source": "ET Markets",
    "headline": "Grasim Inds Share Price Live Updates: Grasim Inds. News",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/grasim-inds-share-price-today-live-updates-13-nov-2026/liveblog/135787538.cms",
+   "entry_date": "2026-11-12",
+   "entry": 3114.9
+  },
+  {
+   "id": "5aa5299ba56a1470",
+   "symbol": "GRASIM",
+   "time": "2026-11-13T08:40:07+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "Grasim Industries Share Price Live Updates: Announcement under Regulation 30 (LODR)-Monitoring Agency Report",
    "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/grasim-inds-share-price-today-live-updates-13-nov-2026/liveblog/135787538.cms",
    "entry_date": "2026-11-12",
    "entry": 3114.9
@@ -878,6 +917,19 @@
    "url": "https://www.livemint.com/market/stock-market-news/51-rally-in-2026-so-far-icici-direct-sees-28-upside-potential-in-this-defence-stock-do-you-own-check-target-price-11794507179450.html",
    "entry_date": "2026-11-12",
    "entry": 2468.4
+  },
+  {
+   "id": "185bfe9ff635911d",
+   "symbol": "NESTLEIND",
+   "time": "2026-11-13T08:25:07+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "Nestle India Share Price Live Updates: Nestle India Stock Insights",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/nestle-india-share-price-live-updates-13-nov-2026/liveblog/135787120.cms",
+   "entry_date": "2026-11-12",
+   "entry": 1260.9
   },
   {
    "id": "225dd11b1d135786",
@@ -943,6 +995,19 @@
    "url": "https://www.business-standard.com/markets/news/stocks-to-watch-zeel-ola-electric-vi-ihcl-manappuram-finance-rpower-126111300072_1.html",
    "entry_date": "2026-11-12",
    "entry": 440.0
+  },
+  {
+   "id": "a546ee2792d3e660",
+   "symbol": "TMCV",
+   "time": "2026-11-13T07:57:51+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex falls 400 pts, Nifty near 25,100; Shriram Fin, Tata Motors PV top losers",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-bn-agrochem-share-split-november-13-126111300069_1.html",
+   "entry_date": "2026-11-12",
+   "entry": 453.4
   },
   {
    "id": "0b576dee56f92f93",
