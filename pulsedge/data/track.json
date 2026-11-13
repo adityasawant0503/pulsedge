@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T10:46:51+05:30",
+ "updated": "2026-11-13T11:00:31+05:30",
  "summary": {
-  "calls": 1297,
-  "scored_calls": 216,
+  "calls": 1299,
+  "scored_calls": 218,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "32a823ebcb9488ef",
+   "symbol": "BPCL",
+   "time": "2026-11-13T10:46:09+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Crude-sensitive stocks fall as oil trades at $95; BPCL, IndiGo down over 2%",
+   "url": "https://www.business-standard.com/markets/news/crude-sensitive-stocks-fall-as-oil-trades-at-95-bpcl-indigo-down-over-2-126111300478_1.html",
+   "entry_date": "2026-11-12",
+   "entry": 311.5
+  },
+  {
+   "id": "32a823ebcb9488ef",
+   "symbol": "INDIGO",
+   "time": "2026-11-13T10:46:09+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Crude-sensitive stocks fall as oil trades at $95; BPCL, IndiGo down over 2%",
+   "url": "https://www.business-standard.com/markets/news/crude-sensitive-stocks-fall-as-oil-trades-at-95-bpcl-indigo-down-over-2-126111300478_1.html",
+   "entry_date": "2026-11-12",
+   "entry": 5660.0
+  },
   {
    "id": "7e23ce41ba14d9f4",
    "symbol": "CUB",
