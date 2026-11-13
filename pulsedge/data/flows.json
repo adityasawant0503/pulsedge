@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T16:01:52+05:30",
+ "updated": "2026-11-13T19:21:49+05:30",
  "source": "NSE (bulk and block deals, provisional FII/DII cash, participant-wise open interest)",
  "cash": null,
  "cash_history": [],
@@ -11,415 +11,656 @@
   "prev_long_pct": 31.0,
   "prev_date": "2026-11-11"
  },
- "deals_date": "2026-11-12",
+ "deals_date": "2026-11-13",
  "deals": [
   {
-   "date": "2026-11-12",
-   "symbol": "GALLANTT",
-   "name": "Gallantt Ispat Ltd.",
-   "client": "SANTOSH KUMAR AGRAWAL",
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "SVF II MEERKAT (DE) LLC",
    "who": "other",
-   "side": "buy",
-   "qty": 4000000,
-   "price": 503.0,
-   "value_cr": 201.2,
+   "side": "sell",
+   "qty": 76400000,
+   "price": 246.75,
+   "value_cr": 1885.17,
    "kind": "block",
    "nifty500": true
   },
   {
-   "date": "2026-11-12",
-   "symbol": "GALLANTT",
-   "name": "Gallantt Ispat Ltd.",
-   "client": "DINESH R AGARWAL",
-   "who": "other",
-   "side": "sell",
-   "qty": 4000000,
-   "price": 503.0,
-   "value_cr": 201.2,
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "SOCIETE GENERALE",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 14778000,
+   "price": 246.75,
+   "value_cr": 364.65,
    "kind": "block",
    "nifty500": true
   },
   {
-   "date": "2026-11-12",
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "MORGAN STANLEY ASIA SINGAPORE PTE",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 9924000,
+   "price": 246.75,
+   "value_cr": 244.87,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "FIDELITY RUTLAND SQUARE TRUST II STRATEGIC ADVISERS FID EMG MARKETS FUND",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 8475900,
+   "price": 246.75,
+   "value_cr": 209.14,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "FIDELITY INVESTMENT TRUST FIDELITY SERIES EMERGING MARKETS FUND",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 7610300,
+   "price": 246.75,
+   "value_cr": 187.78,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "MOTILAL OSWAL MUTUAL FUND",
+   "who": "domestic",
+   "side": "buy",
+   "qty": 5250000,
+   "price": 246.75,
+   "value_cr": 129.54,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
+   "who": "domestic",
+   "side": "buy",
+   "qty": 4200000,
+   "price": 246.75,
+   "value_cr": 103.64,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "FGTFEBP FIAM SELECT EMERGING MARKETS EQUITY COMMINGLED POOL",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 3847600,
+   "price": 246.75,
+   "value_cr": 94.94,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "BNP PARIBAS FINANCIAL MARKETS",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 3817000,
+   "price": 246.75,
+   "value_cr": 94.18,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "GOLDMAN SACHS BANK EUROPE SE",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 3626000,
+   "price": 246.75,
+   "value_cr": 89.47,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "GHISALLO MASTER FUND LP",
+   "who": "other",
+   "side": "buy",
+   "qty": 3435000,
+   "price": 246.75,
+   "value_cr": 84.76,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "IIFLCAPS",
+   "name": "IIFL CAPITAL SERVICES LTD",
+   "client": "ALPHA ALTERNATIVES FINANCIAL SERVICES PRIVATE LIMITED",
+   "who": "other",
+   "side": "sell",
+   "qty": 2369139,
+   "price": 354.74,
+   "value_cr": 84.04,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "IIFLCAPS",
+   "name": "IIFL CAPITAL SERVICES LTD",
+   "client": "ARVESTA FINANCIAL SERVICES PRIVATE LIMITED",
+   "who": "other",
+   "side": "sell",
+   "qty": 2081589,
+   "price": 354.22,
+   "value_cr": 73.73,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "IIFLCAPS",
+   "name": "IIFL CAPITAL SERVICES LTD",
+   "client": "NEO TREASURY PLUS FUND",
+   "who": "other",
+   "side": "sell",
+   "qty": 1865000,
+   "price": 355.78,
+   "value_cr": 66.35,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "FIDELITY RUTLAND SQUARE TRUST II: STRATEGIC ADVISERS EMERGING MARKETS FUND",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 2296700,
+   "price": 246.75,
+   "value_cr": 56.67,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "GOVERNMENT OF SINGAPORE",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 2177506,
+   "price": 246.75,
+   "value_cr": 53.73,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "HDFC MUTUAL FUND",
+   "who": "domestic",
+   "side": "buy",
+   "qty": 1410000,
+   "price": 246.75,
+   "value_cr": 34.79,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "EDELWEISS MUTUAL FUND",
+   "who": "domestic",
+   "side": "buy",
+   "qty": 1015000,
+   "price": 246.75,
+   "value_cr": 25.05,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 1015000,
+   "price": 246.75,
+   "value_cr": 25.05,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "BAJAJ ALLIANZ LIFE INSURANCE COMPANY LIMITED",
+   "who": "domestic",
+   "side": "buy",
+   "qty": 1015000,
+   "price": 246.75,
+   "value_cr": 25.05,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "RALLIS",
+   "name": "Rallis India Ltd.",
+   "client": "ASK INVESTMENT MANAGERS LIMITED",
+   "who": "other",
+   "side": "sell",
+   "qty": 1279684,
+   "price": 189.42,
+   "value_cr": 24.24,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "WILLIAM BLAIR EMERGING MARKETS EX CHINA GROWTH COLLECTIVE INVESTMENT FUND",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 623914,
+   "price": 246.75,
+   "value_cr": 15.4,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "FIAM SELECT EMERGING MARKETS EQUITY FUND LP",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 540000,
+   "price": 246.75,
+   "value_cr": 13.32,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "MONETARY AUTHORITY OF SINGAPORE",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 497494,
+   "price": 246.75,
+   "value_cr": 12.28,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "TEXINFRA",
+   "name": "Texmaco Infra & Holdg Ltd",
+   "client": "ACQUARIO WEALTH ADVISORS LLP",
+   "who": "other",
+   "side": "sell",
+   "qty": 918078,
+   "price": 123.03,
+   "value_cr": 11.3,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-13",
    "symbol": "MANAKCOAT",
    "name": "Man Coat Metal & Ind Ltd",
-   "client": "GROWVIA TRADE PRIVATE LIMITED",
-   "who": "other",
-   "side": "buy",
-   "qty": 2035835,
-   "price": 167.74,
-   "value_cr": 34.15,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-12",
-   "symbol": "MKJEWELS",
-   "name": "MK Sons Fine Jewels Ltd",
-   "client": "MANUJA GAUTAM SHROFF",
-   "who": "other",
-   "side": "buy",
-   "qty": 1111113,
-   "price": 166.69,
-   "value_cr": 18.52,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-12",
-   "symbol": "TECHNOCRAF",
-   "name": "Technocraft Ventures Ltd",
-   "client": "VENUS INVESTMENTS VCC - VENUS STELLAR FUND",
+   "client": "TIGER STRATEGIES FUND -I",
    "who": "other",
    "side": "sell",
-   "qty": 355250,
-   "price": 488.61,
-   "value_cr": 17.36,
+   "qty": 600000,
+   "price": 175.04,
+   "value_cr": 10.5,
    "kind": "bulk",
    "nifty500": false
   },
   {
-   "date": "2026-11-12",
-   "symbol": "CONTROLPR",
-   "name": "Control Print Limited",
-   "client": "INDIA MAX INVESTMENT FUND LIMITED",
+   "date": "2026-11-13",
+   "symbol": "GCSL",
+   "name": "Gretex Corporate Services",
+   "client": "MANSUKH SECURITIES & FINANCE LIMITED",
    "who": "other",
    "side": "sell",
-   "qty": 250000,
-   "price": 610.0,
-   "value_cr": 15.25,
+   "qty": 107744,
+   "price": 821.37,
+   "value_cr": 8.85,
    "kind": "bulk",
    "nifty500": false
   },
   {
-   "date": "2026-11-12",
-   "symbol": "MANAKCOAT",
-   "name": "Man Coat Metal & Ind Ltd",
-   "client": "LONGTHRIVE CAPITAL VCC - TRENDVIEW CAPITAL FUND",
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "TEXAS MUNICIPAL RETIREMENT SYSTEM",
+   "who": "other",
+   "side": "buy",
+   "qty": 329789,
+   "price": 246.75,
+   "value_cr": 8.14,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "FIDELITY SELECT EMERGING MARKETS EQUITY INSTITUTIONAL TRUST",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 277500,
+   "price": 246.75,
+   "value_cr": 6.85,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "DCI",
+   "name": "DC Infotech and Comun Ltd",
+   "client": "SETU SECURITIES PRIVATE LIMITED",
+   "who": "other",
+   "side": "buy",
+   "qty": 138910,
+   "price": 333.43,
+   "value_cr": 4.63,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "FIDELITY INVESTMENT TR FIDELITY SAI SUSTAINABLE EMERGING MARKETS EQUITY FD",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 137000,
+   "price": 246.75,
+   "value_cr": 3.38,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "BCSSL",
+   "name": "Bombay Coated N Specl S L",
+   "client": "PINKAL SHAILESHKUMAR JOGANI",
+   "who": "other",
+   "side": "buy",
+   "qty": 325000,
+   "price": 81.25,
+   "value_cr": 2.64,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MAXENGS",
+   "name": "Maxwell Engineering Sol L",
+   "client": "NEO APEX SHARE BROKING SERVICES LLP",
    "who": "other",
    "side": "sell",
-   "qty": 799999,
-   "price": 173.35,
-   "value_cr": 13.87,
+   "qty": 85600,
+   "price": 276.06,
+   "value_cr": 2.36,
    "kind": "bulk",
    "nifty500": false
   },
   {
-   "date": "2026-11-12",
-   "symbol": "CONTROLPR",
-   "name": "Control Print Limited",
-   "client": "BASANT KABRA",
-   "who": "other",
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "WILLIAM BLAIR EMERGING MARKETS EX CHINA GROWTH FUND",
+   "who": "foreign",
    "side": "buy",
-   "qty": 136026,
-   "price": 609.81,
-   "value_cr": 8.3,
-   "kind": "bulk",
-   "nifty500": false
+   "qty": 61297,
+   "price": 246.75,
+   "value_cr": 1.51,
+   "kind": "block",
+   "nifty500": true
   },
   {
-   "date": "2026-11-12",
-   "symbol": "CONTROLPR",
-   "name": "Control Print Limited",
-   "client": "SHIVA BASANT KABRA",
-   "who": "other",
-   "side": "buy",
-   "qty": 85000,
-   "price": 609.99,
-   "value_cr": 5.18,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-12",
-   "symbol": "SHINDL",
-   "name": "Sharat Industries Ltd.",
-   "client": "MINERVA VENTURES FUND",
-   "who": "other",
-   "side": "sell",
-   "qty": 199292,
-   "price": 136.05,
-   "value_cr": 2.71,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-12",
-   "symbol": "NECCLTD",
-   "name": "North East Carry Corp Ltd",
-   "client": "ANKITA VISHAL SHAH",
-   "who": "other",
-   "side": "sell",
-   "qty": 1161639,
-   "price": 20.13,
-   "value_cr": 2.34,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-12",
-   "symbol": "SPECTRAA",
-   "name": "SpectraA Tech Solutions L",
-   "client": "G GUNAVANTH KUMAR",
-   "who": "other",
-   "side": "buy",
-   "qty": 70800,
-   "price": 254.59,
-   "value_cr": 1.8,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-12",
-   "symbol": "GREENASIA",
-   "name": "Green Asia Impex Limited",
-   "client": "GENZ INVESTMENT ADVISORS PRIVATE LIMITED",
-   "who": "other",
-   "side": "buy",
-   "qty": 208000,
-   "price": 83.09,
-   "value_cr": 1.73,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-12",
-   "symbol": "GREENASIA",
-   "name": "Green Asia Impex Limited",
-   "client": "AIKYATA ADVISORY LLP",
-   "who": "other",
-   "side": "buy",
-   "qty": 188800,
-   "price": 82.03,
-   "value_cr": 1.55,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-12",
-   "symbol": "MOS",
-   "name": "Mos Utility Limited",
-   "client": "HARDIK MILANBHAI MITHANI (HUF)",
-   "who": "other",
-   "side": "sell",
-   "qty": 1504000,
-   "price": 8.4,
-   "value_cr": 1.26,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-12",
-   "symbol": "MARUSHIKA",
-   "name": "Marushika Technology Ltd",
-   "client": "BRIMMING WEALTH ADVISORS LLP",
-   "who": "other",
-   "side": "buy",
-   "qty": 63600,
-   "price": 129.94,
-   "value_cr": 0.83,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-12",
+   "date": "2026-11-13",
    "symbol": "NECCLTD",
    "name": "North East Carry Corp Ltd",
    "client": "PRAJAL BHANDARI",
    "who": "other",
    "side": "buy",
-   "qty": 321928,
-   "price": 20.53,
-   "value_cr": 0.66,
+   "qty": 653328,
+   "price": 22.61,
+   "value_cr": 1.48,
    "kind": "bulk",
    "nifty500": false
   },
   {
-   "date": "2026-11-12",
+   "date": "2026-11-13",
    "symbol": "MOS",
    "name": "Mos Utility Limited",
    "client": "KULDEEP BHARATBHAI KHACHAR",
    "who": "other",
-   "side": "sell",
-   "qty": 600000,
-   "price": 8.12,
-   "value_cr": 0.49,
+   "side": "buy",
+   "qty": 1656000,
+   "price": 8.35,
+   "value_cr": 1.38,
    "kind": "bulk",
    "nifty500": false
   },
   {
-   "date": "2026-11-12",
-   "symbol": "URBAN",
-   "name": "Urban Enviro Waste Mgmt L",
-   "client": "PRATIK GAJADHAR MANDHANA",
-   "who": "other",
-   "side": "sell",
-   "qty": 47200,
-   "price": 97.98,
-   "value_cr": 0.46,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-12",
-   "symbol": "NIBL",
-   "name": "NRB Indus. Bearings Ltd.",
-   "client": "ORION STOCKS LTD",
-   "who": "other",
-   "side": "sell",
-   "qty": 79832,
-   "price": 34.78,
-   "value_cr": 0.28,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-12",
-   "symbol": "RADIOWALLA",
-   "name": "Radiowalla Network Ltd",
-   "client": "SS CORPORATE SECURITIES LIMITED",
-   "who": "other",
-   "side": "sell",
-   "qty": 40000,
-   "price": 21.85,
-   "value_cr": 0.09,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-12",
-   "symbol": "URBAN-RE",
-   "name": "Urban Enviro Waste Ltd",
-   "client": "DEVENDRA BANKATLAL RATHI",
+   "date": "2026-11-13",
+   "symbol": "HGSINDIALT",
+   "name": "HGS (India) Limited",
+   "client": "NEO APEX SHARE BROKING SERVICES LLP",
    "who": "other",
    "side": "buy",
-   "qty": 72000,
-   "price": 10.05,
-   "value_cr": 0.07,
+   "qty": 57600,
+   "price": 214.35,
+   "value_cr": 1.23,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "KKJEWELS",
+   "name": "Kabra Jewels Limited",
+   "client": "SARTH AJITBHAI SANTOKI",
+   "who": "other",
+   "side": "buy",
+   "qty": 55000,
+   "price": 182.0,
+   "value_cr": 1.0,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "client": "FIDELITY INVESTMENT TRUST FIDELITY SUSTAINABLE EMERGING MARKETS EQUITY FUND",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 40000,
+   "price": 246.75,
+   "value_cr": 0.99,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-13",
+   "symbol": "SABAR",
+   "name": "Sabar Flex India Limited",
+   "client": "ALEGULA MADHU BABU",
+   "who": "other",
+   "side": "buy",
+   "qty": 410000,
+   "price": 9.24,
+   "value_cr": 0.38,
    "kind": "bulk",
    "nifty500": false
   }
  ],
- "by_stock": [],
- "sectors_date": "2026-11-12",
+ "by_stock": [
+  {
+   "symbol": "MEESHO",
+   "name": "Meesho Ltd.",
+   "foreign_cr": 1474.21,
+   "domestic_cr": 318.07
+  }
+ ],
+ "sectors_date": "2026-11-13",
  "sectors": [
   {
-   "label": "Realty",
-   "close": 934.25,
-   "d1": 4.51,
-   "d5": 7.96,
-   "broad": false
-  },
-  {
-   "label": "Media",
-   "close": 1761.25,
-   "d1": 2.46,
-   "d5": 2.96,
-   "broad": false
-  },
-  {
-   "label": "PSU Banks",
-   "close": 9305.95,
-   "d1": 1.51,
-   "d5": 12.09,
-   "broad": false
-  },
-  {
-   "label": "Financials",
-   "close": 28057.15,
-   "d1": 1.42,
-   "d5": 9.68,
-   "broad": false
-  },
-  {
-   "label": "Banks",
-   "close": 61518.5,
-   "d1": 1.19,
-   "d5": 10.02,
-   "broad": false
-  },
-  {
-   "label": "Smallcap 100",
-   "close": 19706.75,
-   "d1": 1.12,
-   "d5": 3.58,
-   "broad": true
-  },
-  {
-   "label": "Midcap 100",
-   "close": 62039.0,
-   "d1": 0.85,
-   "d5": 4.26,
-   "broad": true
-  },
-  {
-   "label": "Consumer durables",
-   "close": 38670.05,
-   "d1": 0.35,
-   "d5": 5.88,
-   "broad": false
-  },
-  {
-   "label": "Nifty 50",
-   "close": 25299.35,
-   "d1": 0.18,
-   "d5": 5.59,
-   "broad": true
-  },
-  {
-   "label": "Metals",
-   "close": 12772.6,
-   "d1": -0.11,
-   "d5": 2.3,
-   "broad": false
-  },
-  {
-   "label": "Healthcare",
-   "close": 17299.6,
-   "d1": -0.32,
-   "d5": 3.58,
-   "broad": false
-  },
-  {
-   "label": "Pharma",
-   "close": 28675.75,
-   "d1": -0.35,
-   "d5": 4.91,
-   "broad": false
-  },
-  {
-   "label": "IT",
-   "close": 32163.55,
-   "d1": -0.41,
-   "d5": 0.32,
-   "broad": false
-  },
-  {
    "label": "Energy",
-   "close": 37389.1,
-   "d1": -0.42,
-   "d5": 0.84,
-   "broad": false
-  },
-  {
-   "label": "Oil & Gas",
-   "close": 11389.35,
-   "d1": -0.54,
-   "d5": 1.89,
+   "close": 37399.05,
+   "d1": 0.03,
+   "d5": 1.4,
    "broad": false
   },
   {
    "label": "FMCG",
-   "close": 46838.5,
-   "d1": -0.74,
-   "d5": 1.24,
+   "close": 46833.55,
+   "d1": -0.01,
+   "d5": 0.78,
+   "broad": false
+  },
+  {
+   "label": "Media",
+   "close": 1757.7,
+   "d1": -0.2,
+   "d5": 3.63,
+   "broad": false
+  },
+  {
+   "label": "Midcap 100",
+   "close": 61889.5,
+   "d1": -0.24,
+   "d5": 2.09,
+   "broad": true
+  },
+  {
+   "label": "Smallcap 100",
+   "close": 19656.45,
+   "d1": -0.26,
+   "d5": 2.74,
+   "broad": true
+  },
+  {
+   "label": "Healthcare",
+   "close": 17233.05,
+   "d1": -0.38,
+   "d5": 2.47,
+   "broad": false
+  },
+  {
+   "label": "Pharma",
+   "close": 28535.75,
+   "d1": -0.49,
+   "d5": 3.36,
+   "broad": false
+  },
+  {
+   "label": "PSU Banks",
+   "close": 9258.6,
+   "d1": -0.51,
+   "d5": 8.14,
+   "broad": false
+  },
+  {
+   "label": "Consumer durables",
+   "close": 38438.5,
+   "d1": -0.6,
+   "d5": 2.86,
+   "broad": false
+  },
+  {
+   "label": "Nifty 50",
+   "close": 25144.3,
+   "d1": -0.61,
+   "d5": 2.48,
+   "broad": true
+  },
+  {
+   "label": "Oil & Gas",
+   "close": 11312.45,
+   "d1": -0.68,
+   "d5": 0.85,
+   "broad": false
+  },
+  {
+   "label": "Financials",
+   "close": 27855.5,
+   "d1": -0.72,
+   "d5": 4.72,
+   "broad": false
+  },
+  {
+   "label": "IT",
+   "close": 31931.15,
+   "d1": -0.72,
+   "d5": -2.76,
+   "broad": false
+  },
+  {
+   "label": "Banks",
+   "close": 61034.1,
+   "d1": -0.79,
+   "d5": 5.64,
+   "broad": false
+  },
+  {
+   "label": "Metals",
+   "close": 12647.9,
+   "d1": -0.98,
+   "d5": 0.42,
    "broad": false
   },
   {
    "label": "Auto",
-   "close": 28231.0,
-   "d1": -1.02,
-   "d5": 6.51,
+   "close": 27929.85,
+   "d1": -1.07,
+   "d5": 1.19,
+   "broad": false
+  },
+  {
+   "label": "Realty",
+   "close": 921.25,
+   "d1": -1.39,
+   "d5": 2.83,
    "broad": false
   }
  ],
@@ -1193,6 +1434,76 @@
     38670.05,
     0.35
    ]
+  },
+  "2026-11-13": {
+   "Nifty 50": [
+    25144.3,
+    -0.61
+   ],
+   "Midcap 100": [
+    61889.5,
+    -0.24
+   ],
+   "Smallcap 100": [
+    19656.45,
+    -0.26
+   ],
+   "Auto": [
+    27929.85,
+    -1.07
+   ],
+   "Banks": [
+    61034.1,
+    -0.79
+   ],
+   "Energy": [
+    37399.05,
+    0.03
+   ],
+   "Financials": [
+    27855.5,
+    -0.72
+   ],
+   "FMCG": [
+    46833.55,
+    -0.01
+   ],
+   "IT": [
+    31931.15,
+    -0.72
+   ],
+   "Media": [
+    1757.7,
+    -0.2
+   ],
+   "Metals": [
+    12647.9,
+    -0.98
+   ],
+   "Pharma": [
+    28535.75,
+    -0.49
+   ],
+   "PSU Banks": [
+    9258.6,
+    -0.51
+   ],
+   "Realty": [
+    921.25,
+    -1.39
+   ],
+   "Oil & Gas": [
+    11312.45,
+    -0.68
+   ],
+   "Healthcare": [
+    17233.05,
+    -0.38
+   ],
+   "Consumer durables": [
+    38438.5,
+    -0.6
+   ]
   }
  },
  "fno_history": {
@@ -1203,7 +1514,7 @@
   "2026-11-12": 37.0
  },
  "week": {
-  "nifty_5d": 5.59,
+  "nifty_5d": 2.48,
   "fii_long_now": 37.0
  }
 }
