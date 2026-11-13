@@ -242,6 +242,64 @@ html{-webkit-tap-highlight-color:transparent}
 }
 .tab:active,.more:active,.caret:active,.thm:active,.back:active,.cl input:active{transform:scale(.97)}
 .back{display:inline-block}
+
+/* search, the Simple view and the one-page stock brief */
+.ask{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding-top:14px}
+.askbox{position:relative;flex:1 1 300px;min-width:0}
+.askbox input{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 40px;font:16px/1.3 var(--sans);color:var(--fg);box-shadow:var(--elev)}
+.askbox input::placeholder{color:var(--dim)}
+.askbox input:focus{outline:2px solid var(--pur);outline-offset:1px}
+.askbox svg{position:absolute;left:13px;top:50%;width:18px;height:18px;transform:translateY(-50%);stroke:var(--mute);fill:none;stroke-width:2;stroke-linecap:round;pointer-events:none}
+.sugg{position:absolute;z-index:6;left:0;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:var(--panel);border:1px solid var(--line);border-radius:10px;box-shadow:0 18px 40px -16px rgba(0,0,0,.55);max-height:min(60vh,380px);overflow:auto}
+.sugg li{display:flex;align-items:baseline;gap:10px;padding:9px 10px;border-radius:7px;cursor:pointer;font-size:15px}
+.sugg li[aria-selected="true"]{background:var(--pur-soft)}
+.sugg .k{font:500 12.5px/1.4 var(--mono);color:var(--pur-l);flex:none;min-width:6.5em}
+.sugg .n{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sugg .d{color:var(--mute);font-size:13px;margin-left:auto;white-space:nowrap}
+.view{display:inline-flex;border:1px solid var(--line);border-radius:9px;padding:2px;background:var(--panel)}
+.view button{background:none;border:0;border-radius:7px;padding:7px 13px;color:var(--mute);font-size:14px}
+.view button[aria-pressed="true"]{background:var(--pur);color:#fff}
+.help{background:none;border:1px solid var(--line);border-radius:9px;padding:8px 13px;color:var(--mute);font-size:14px}
+.legend{margin:0 0 12px;font-size:14px;color:var(--mute);line-height:1.5}
+.legend b{color:var(--fg);font-weight:600}
+.brief{background:var(--panel);box-shadow:var(--elev);border:1px solid var(--pur-edge);border-radius:14px;padding:18px;display:grid;gap:14px;margin-bottom:14px}
+.brief .bh{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px}
+.brief h2{margin:0;font-size:22px;line-height:1.25;letter-spacing:-.01em}
+.brief .sym{font:500 13px/1.4 var(--mono);color:var(--pur-l);border:1px solid var(--pur-edge);background:var(--pur-soft);border-radius:4px;padding:1px 8px}
+.brief .sub{color:var(--mute);font-size:14px}
+.brief .x{margin-left:auto}
+.btn2{background:none;border:1px solid var(--line);border-radius:8px;padding:7px 12px;color:var(--fg);font-size:14px}
+.btn2.on{border-color:var(--pur);color:var(--pur-l)}
+.brief .say{font-size:17px;line-height:1.5;margin:0}
+.brief .say b{font-weight:600}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.fact{border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:15px;line-height:1.45;min-width:0;overflow-wrap:anywhere}
+.fact small,.plain small{display:block;font:500 11px/1.4 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--mute);margin-bottom:3px}
+.brief .fine{font-size:12.5px;color:var(--dim);margin:0}
+.sig.simple h3{font-size:17px}
+.plain{display:grid;gap:8px;font-size:15.5px;line-height:1.5}
+.plain p{margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:6px 8px;font-size:13.5px;color:var(--mute)}
+.tags span{border:1px solid var(--line);border-radius:999px;padding:2px 10px}
+.tags .hi{color:var(--fg);border-color:var(--pur-edge);background:var(--pur-soft)}
+.tk{cursor:pointer}
+.tk:focus-visible{outline:2px solid var(--pur);outline-offset:1px}
+.rest{background:none;border:1px dashed var(--line);border-radius:12px;padding:14px;color:var(--mute);font-size:14.5px;width:100%}
+dialog.gl{max-width:min(640px,calc(100vw - 24px));max-height:min(86vh,720px);overflow:auto;background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:14px;padding:20px 20px 16px;box-shadow:0 30px 80px -20px rgba(0,0,0,.7)}
+dialog.gl::backdrop{background:rgba(8,7,12,.6)}
+.gl h2{margin:0 0 4px;font-size:20px}
+.gl h3{margin:16px 0 6px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.gl dl{margin:0;display:grid;gap:9px}
+.gl dt{font-weight:600}
+.gl dd{margin:0;color:var(--mute);line-height:1.5}
+.gl .close{float:right}
+@media (max-width:600px){
+  .ask{padding-top:10px;gap:8px}
+  .askbox{flex-basis:100%}
+  .brief{padding:14px}.brief h2{font-size:19px}.brief .say{font-size:15.5px}
+  .sig.simple h3{font-size:16px}.plain{font-size:15px}.fact{font-size:14.5px}
+  .sig.simple .call{font-size:11.5px;padding:1px 7px}
+}
 </style>
 </head>
 <body>
@@ -258,6 +316,19 @@ html{-webkit-tap-highlight-color:transparent}
     <button class="thm" id="thm" type="button" aria-label="Switch to dark mode"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true" hidden><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button>
   </div>
 </header>
+
+<div class="wrap ask">
+  <div class="askbox" role="search">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+    <input id="q" type="search" placeholder="Search a company or a term, e.g. Torrent Pharma" autocomplete="off" spellcheck="false" role="combobox" aria-label="Search a company or a market term" aria-controls="q-list" aria-expanded="false" aria-autocomplete="list">
+    <ul class="sugg" id="q-list" role="listbox" aria-label="Suggestions" hidden></ul>
+  </div>
+  <div class="view" role="group" aria-label="How much detail to show">
+    <button type="button" id="v-simple" aria-pressed="true">Simple</button><button type="button" id="v-pro" aria-pressed="false">Pro</button>
+  </div>
+  <button type="button" class="help" id="help">How to read this</button>
+</div>
+<dialog class="gl" id="gl" aria-labelledby="gl-t"></dialog>
 
 <main class="wrap main">
   <section class="pm" aria-labelledby="pm-t">
@@ -281,6 +352,8 @@ html{-webkit-tap-highlight-color:transparent}
   </section>
 
   <section aria-label="Signals">
+    <div class="brief" id="brief" hidden></div>
+    <p class="legend" id="legend" hidden><b>ACT</b> = worth reading now. <b>WATCH</b> = keep an eye on it. <b>IGNORE</b> = routine, safe to skip. PulsEdge explains the news; the decision is yours.</p>
     <div class="tabs" role="tablist" aria-label="Filter signals">
       <button class="tab" role="tab" data-t="all" aria-selected="true">All</button>
       <button class="tab" role="tab" data-t="ideas" aria-selected="false">Act now</button>
@@ -440,7 +513,8 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     b.setAttribute("aria-expanded",open?"true":"false");b.textContent=open?"▲":"▼";b.setAttribute("aria-label",open?"Collapse pre-market":"Expand pre-market");
     document.getElementById("pm-body").hidden=!open;store("pe_pm_open",open?"1":"0");renderPM();
   };
-  if(store("pe_pm_open")==="0")document.getElementById("pm-tog").click();
+  // on a phone the Simple view starts with this panel folded, so the news comes first
+  if(store("pe_pm_open")==="0"||(store("pe_pm_open")==null&&store("pe_view")!=="pro"&&innerWidth<=920))document.getElementById("pm-tog").click();
 
   // ---------- signals ----------
   var sigs=[],tab="all",openIds={},seen={},firstLoad=true;
@@ -462,6 +536,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       headline:String(x.headline||""),tickers:tk,sectors:list(x.sectors||x.affected),section:String(x.section||""),
       impact:typeof x.impact==="number"?Math.max(0,Math.min(100,x.impact)):null,conf:typeof x.confidence==="number"?Math.max(0,Math.min(100,x.confidence)):null,
       category:String(x.category||x.theme||""),action:String(x.action||""),reason:list(x.reason),risks:list(x.risks),original:String(x.original||""),
+      plain:String(x.plain||""),why:String(x.why||""),check:String(x.check||""),
       url:/^https?:\/\//.test(x.url||"")?x.url:"",after:x.after&&typeof x.after==="object"?x.after:null};
   }
   function inTab(s,t){
@@ -476,7 +551,14 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
   }
   function pct(v){return (v>=0?"+":"")+Number(v).toFixed(2)+"%"}
   function meter(label,v){var m=el("span","meter");var i=el("i"),f=el("span");f.style.width=v+"%";i.appendChild(f);m.append(document.createTextNode(label+" "),el("b",null,String(Math.round(v))),i);return m}
+  function chip(m){
+    var c=el("span","tk"+(m.direction==="down"?" down":"")+(mine(m.symbol)?" mine":""),(m.direction==="down"?"▼ ":"")+m.symbol);
+    c.setAttribute("role","button");c.tabIndex=0;c.title="Everything PulsEdge has on "+m.symbol;
+    c.onclick=function(){openStock(m.symbol)};c.onkeydown=function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();openStock(m.symbol)}};
+    return c;
+  }
   function card(s){
+    if(view==="simple")return simpleCard(s);
     var li=el("li","sig "+s.call+(!firstLoad&&!seen[s.id]?" fresh":""));seen[s.id]=1;
     var open=!!openIds[s.id];
     var h=el("div","sh");
@@ -491,7 +573,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       mb.onclick=function(){if(openIds[s.id])delete openIds[s.id];else openIds[s.id]=1;render()};h.appendChild(mb)}
     li.append(h,el("h3",null,s.headline));
     var ch=el("div","chips");
-    s.tickers.forEach(function(m){ch.appendChild(el("span","tk"+(m.direction==="down"?" down":"")+(mine(m.symbol)?" mine":""),(m.direction==="down"?"▼ ":"")+m.symbol))});
+    s.tickers.forEach(function(m){ch.appendChild(chip(m))});
     s.sectors.forEach(function(x){var m=sectorMove(x),c=el("span","sec",x);if(m){c.appendChild(el("span",m.d1>=0?"up":"down"," "+(m.d1>=0?"+":"")+m.d1.toFixed(1)+"%"));c.title=x+": "+(m.d1>=0?"+":"")+m.d1+"% on the last session"+(m.d5!=null?", "+(m.d5>=0?"+":"")+m.d5+"% over 5 sessions":"")}ch.appendChild(c)});
     if(ch.childNodes.length)li.appendChild(ch);
     var mt=el("div","meters");
@@ -518,20 +600,262 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
   }
   function render(){
     var ul=document.getElementById("feed");ul.textContent="";
-    var vis=sigs.filter(function(s){return inTab(s,tab)});
+    var found=focusItems(),rest=0;
+    document.querySelector(".tabs").hidden=!!found;
+    document.getElementById("legend").hidden=!(view==="simple"&&!found);
+    renderBrief(found);
+    var vis=found||sigs.filter(function(s){return inTab(s,tab)});
+    // Simple view keeps routine items out of the way until asked for
+    if(!found&&view==="simple"&&tab==="all"&&!showRest){rest=vis.length;vis=vis.filter(function(s){return s.call!=="ignore"});rest-=vis.length}
+    // ...and puts each day's most important items first, twenty at a time
+    var left=0;
+    if(!found&&view==="simple"){
+      vis=vis.slice().sort(function(a,b){var da=a.t?dayOf(a.t):"",db=b.t?dayOf(b.t):"";return da<db?1:da>db?-1:rank(a,b)});
+      left=Math.max(0,vis.length-shown);vis=vis.slice(0,shown);
+    }
     var mn=sigs.filter(function(s){return inTab(s,"mine")}).length;
     document.getElementById("mine-n").textContent=hold.length?String(mn):"";
-    if(!vis.length){
+    if(!vis.length&&!found&&!rest){
       var e=el("li","empty");
       if(tab==="mine"&&!hold.length){e.appendChild(el("b",null,"No watchlist yet"));var a=el("a",null,"Add your holdings on the PulsEdge site");a.href="index.html#feed";e.append(a,document.createTextNode(" and their signals show up here."))}
       else{e.appendChild(el("b",null,"No signals here yet"));e.appendChild(document.createTextNode(tab==="mine"?"None of your stocks are in today's news.":"New signals appear as the engine reads the news."))}
       ul.appendChild(e);
     }
     vis.forEach(function(s){ul.appendChild(card(s))});
+    if(left){var ml=el("li"),mbtn=el("button","rest","Show 20 more ("+left+" left)");mbtn.type="button";mbtn.onclick=function(){shown+=20;render()};ml.appendChild(mbtn);ul.appendChild(ml)}
+    if(rest&&!left){var li=el("li"),rb=el("button","rest","Show the "+rest+" routine items PulsEdge set aside");rb.type="button";rb.onclick=function(){showRest=true;render()};li.appendChild(rb);ul.appendChild(li)}
     firstLoad=false;
   }
-  document.querySelectorAll(".tab").forEach(function(b){b.onclick=function(){tab=b.dataset.t;document.querySelectorAll(".tab").forEach(function(x){x.setAttribute("aria-selected",x===b?"true":"false")});render()}});
+  document.querySelectorAll(".tab").forEach(function(b){b.onclick=function(){tab=b.dataset.t;showRest=false;shown=20;document.querySelectorAll(".tab").forEach(function(x){x.setAttribute("aria-selected",x===b?"true":"false")});render()}});
   window.addEventListener("storage",function(e){if(e.key==="pe_hold"){try{hold=JSON.parse(e.newValue||"[]")||[]}catch(x){hold=[]}render();renderPM()}});
+
+  // ---------- search, the Simple view and the stock brief ----------
+  // Simple (the default) says each item in plain words and keeps routine items out of the way; Pro is the dense terminal.
+  var view=store("pe_view")==="pro"?"pro":"simple",focus=null,showRest=false,shown=20,uni=[],track=null;
+  // a stock's sector (universe.json) -> the NSE sector index that follows it (flows.json labels)
+  var SECTOR_INDEX={"Financial Services":"Financials","Healthcare":"Healthcare","Automobile and Auto Components":"Auto","Fast Moving Consumer Goods":"FMCG",
+    "Information Technology":"IT","Metals & Mining":"Metals","Oil Gas & Consumable Fuels":"Oil & Gas","Power":"Energy","Consumer Durables":"Consumer durables","Realty":"Realty","Media Entertainment & Publication":"Media"};
+  var HZ_PLAIN={intraday:"Matters today",swing:"Matters over days to weeks",positional:"Matters over months"};
+  var GLOSS=[
+    {t:"Act",k:["act"],d:"PulsEdge thinks this is worth reading now, because it could clearly affect the company or its share price.",w:"It is a prompt to look, not an instruction to buy or sell. Read the reason and the source, then decide."},
+    {t:"Watch",k:["watch"],d:"This could matter, but it needs more information before anyone can tell.",w:"Nothing to do yet. Check back when the company or the exchange says more."},
+    {t:"Ignore",k:["ignore","set aside"],d:"Routine paperwork or news with no clear effect on a listed company.",w:"Most market news is like this. PulsEdge keeps it so you can see what was set aside and why."},
+    {t:"Importance",k:["importance","impact"],d:"How much this news could move the shares it names: low, medium or high.",w:"High importance on a stock you own is the kind of item worth a few minutes of your time."},
+    {t:"Bulk deal",k:["bulk deal","bulk deals"],d:"One investor bought or sold a large slice of a company's shares in a single day. The exchange publishes the names after trading ends.",w:"It shows which big investors are getting in or out. One deal is not a trend."},
+    {t:"Block deal",k:["block deal","block deals"],d:"One very large trade between two parties, agreed in advance and done in a separate trading window.",w:"Often a fund or an early investor selling a stake to another institution. Look at who bought as well as who sold."},
+    {t:"FII",k:["fii","fiis","fpi","foreign institutional","foreign investors"],d:"Foreign institutional investors: overseas funds that invest in Indian shares.",w:"They move very large sums, so steady buying or selling by them often sets the market's direction."},
+    {t:"DII",k:["dii","diis","domestic institutional","mutual funds"],d:"Domestic institutional investors: Indian mutual funds, insurers and pension funds.",w:"They often buy when foreign funds sell, which cushions falls."},
+    {t:"F&O",k:["f o","fno","futures","options","derivatives"],d:"Futures and options: contracts whose value follows a share or an index.",w:"PulsEdge uses them only to show how big investors are positioned. Trading them is risky and most individuals lose money doing it."},
+    {t:"India VIX",k:["vix","india vix","volatility"],d:"A number showing how much the market expects the Nifty to swing over the next month.",w:"A higher number means a more nervous market, with bigger daily moves both ways."},
+    {t:"Pre-market",k:["pre market","premarket","pre open"],d:"What happened overnight and before trading starts at 9:15 am: global markets, crude oil, the rupee.",w:"It hints at how Indian shares may open."},
+    {t:"Filing",k:["filing","filings","announcement","announcements","disclosure"],d:"A notice a listed company must send to the stock exchange: results, board meetings, orders won, changes in management.",w:"Hundreds arrive every day and most are routine. The few that are not are what PulsEdge flags."},
+    {t:"Results",k:["results","earnings","quarterly"],d:"A company's sales and profit for the last three months, published every quarter.",w:"Shares often move sharply on results day, depending on whether the numbers beat or missed what investors expected."},
+    {t:"Promoter",k:["promoter","promoters"],d:"The founders or controlling owners of a company.",w:"Promoters buying more of their own shares is usually read as confidence; selling or pledging can worry investors."},
+    {t:"Pledge",k:["pledge","pledged","pledging"],d:"Promoters borrowing money against their own shares.",w:"If the share price falls, lenders can sell the pledged shares, which pushes the price down further."},
+    {t:"Dividend",k:["dividend","dividends"],d:"Cash a company pays out to its shareholders from its profits.",w:"You must own the shares before the record date to receive it. The share price usually dips by about the same amount afterwards."},
+    {t:"Buyback",k:["buyback","buy back"],d:"A company buying its own shares back from investors, usually above the market price.",w:"It returns cash to shareholders and can signal that the company thinks its shares are cheap."},
+    {t:"Bonus and split",k:["bonus","split","stock split"],d:"The company gives extra shares, or divides each share into smaller ones. The price adjusts down to match.",w:"The value of your holding does not change on the day. Only the number of shares and the price per share do."},
+    {t:"QIP",k:["qip","fund raise","fundraise","preferential"],d:"A company raising money by selling new shares to large institutions.",w:"It brings in cash for growth or to repay debt, but your share of the company gets slightly smaller."},
+    {t:"Nifty 50",k:["nifty","nifty 50","sensex","index"],d:"An index of India's 50 largest listed companies. It is the usual shorthand for \"the market\".",w:"Most shares rise and fall with it to some degree."}
+  ];
+  function norm(v){return String(v).toLowerCase().replace(/[^a-z0-9 ]+/g," ").replace(/\b(ltd|limited|the|co|company|corp|corporation|of|and)\b/g," ").replace(/\s+/g," ").trim()}
+  function cleanHead(h){
+    h=String(h||"").split(" |SUBJECT")[0];
+    var m=h.match(/^(.+?):\s+(.+)$/);
+    if(m){var co=m[1],rest=m[2].replace(new RegExp("^"+co.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"\\s+has\\s+(informed the Exchange|submitted to the Exchange)\\s*(about|regarding|,)?\\s*","i"),"");h=co+": "+rest.charAt(0).toUpperCase()+rest.slice(1)}
+    return h;
+  }
+  function isAct(x){return x.call==="buy"||x.call==="sell"}
+  function hay(x){return x._h||(x._h=" "+norm(x.headline+" "+x.original)+" ")}
+  function nameWords(st){return st._w||(st._w=norm(st.name).split(" ").filter(function(w){return w&&w!=="india"}))}
+  function shortName(n){return String(n).replace(/\s+(Ltd\.?|Limited)$/i,"")}
+  // an item is about a stock when the AI tagged its symbol, or the headline names the company
+  function about(x,st){
+    if(x.tickers.some(function(m){return m.symbol===st.symbol}))return true;
+    var w=nameWords(st);if(!w.length)return false;
+    if(w.length===1)return w[0].length>=5&&hay(x).indexOf(" "+w[0]+" ")>=0;
+    return hay(x).indexOf(" "+w[0]+" "+(w[1].length<=5?w[1]+" ":w[1].slice(0,5)))>=0;
+  }
+  function dayOf(d){return d.toLocaleDateString("en-CA",{timeZone:"Asia/Kolkata"})}
+  function when(x){
+    if(!x.t)return "";
+    var tm=x.t.toLocaleTimeString("en-IN",{timeZone:"Asia/Kolkata",hour:"2-digit",minute:"2-digit",hour12:false});
+    return (dayOf(x.t)===dayOf(new Date())?"Today":x.t.toLocaleDateString("en-IN",{timeZone:"Asia/Kolkata",day:"numeric",month:"short"}))+" "+tm;
+  }
+  function rank(a,b){return (isAct(b)-isAct(a))||((b.impact||0)-(a.impact||0))||(b.ts-a.ts)}
+  function focusItems(){
+    if(!focus)return null;
+    if(focus.s)return sigs.filter(function(x){return about(x,focus.s)});
+    if(focus.g)return sigs.filter(function(x){return focus.g.k.some(function(k){return hay(x).indexOf(" "+k+" ")>=0})}).slice(0,25);
+    if(focus.today){var d=sigs.length&&sigs[0].t?dayOf(sigs[0].t):"";return sigs.filter(function(x){return x.call!=="ignore"&&x.t&&dayOf(x.t)===d}).sort(rank).slice(0,15)}
+    var n=norm(focus.text);return n?sigs.filter(function(x){return hay(x).indexOf(n)>=0}).slice(0,40):[];
+  }
+
+  // ----- the brief shown above the results -----
+  function fact(label,text){var d=el("div","fact");d.append(el("small",null,label),document.createTextNode(text));return d}
+  function title(v){return String(v).toLowerCase().replace(/\b[a-z]/g,function(c){return c.toUpperCase()})}
+  function plural(n,w){return n+" "+w+(n===1?"":"s")}
+  function renderBrief(items){
+    var b=document.getElementById("brief");b.textContent="";b.hidden=!focus;if(!focus)return;
+    var bh=el("div","bh"),x=el("button","btn2 x","← All news");x.type="button";x.onclick=function(){setFocus(null)};
+    var say=el("p","say"),facts=el("div","facts");
+    if(focus.s){
+      var st=focus.s,nm=shortName(st.name),act=items.filter(isAct),watch=items.filter(function(i){return i.call==="watch"}),ign=items.length-act.length-watch.length;
+      var top=items.slice().sort(rank)[0],on=mine(st.symbol),add=el("button","btn2"+(on?" on":""),on?"✓ In My stocks":"+ Add to My stocks");
+      add.type="button";add.onclick=function(){
+        if(mine(st.symbol))hold=hold.filter(function(h){return h.s!==st.symbol});else hold.push({s:st.symbol,q:null});
+        store("pe_hold",JSON.stringify(hold));render();renderPM();
+      };
+      bh.append(el("h2",null,nm),el("span","sym",st.symbol));if(st.sector)bh.appendChild(el("span","sub",st.sector));bh.append(add,x);
+      if(!items.length)say.textContent="PulsEdge has read nothing about "+nm+" in the last few days. If you hold it, that usually means there is nothing to react to right now.";
+      else say.append("PulsEdge read "+plural(items.length,"headline")+" about "+nm+" in the last few days: ",el("b",null,act.length+" to act on"),", ",el("b",null,watch.length+" to watch")," and "+ign+" set aside. ",
+        act.length?"There is something worth reading now.":watch.length?"Nothing urgent, but keep an eye on it.":"Nothing here needs your attention.");
+      if(top&&top.call!=="ignore"){
+        facts.appendChild(fact("Most important right now",top.plain||cleanHead(top.headline)));
+        if(top.why||top.reason[0])facts.appendChild(fact("Why it matters",top.why||top.reason[0]));
+        var chk=top.check||top.action;
+        if(chk&&!/^no action/i.test(chk))facts.appendChild(fact("What to check",chk));
+      }
+      var deals=(flows&&flows.deals||[]).filter(function(d){return d.symbol===st.symbol}).slice(0,3);
+      if(deals.length)facts.appendChild(fact("Big investors",deals.map(function(d){return title(d.client)+" "+(d.side==="sell"?"sold":"bought")+" ₹"+d.value_cr.toLocaleString("en-IN")+" crore"}).join("; ")+" ("+deals[0].kind+" deals, "+deals[0].date+")."));
+      var idx=SECTOR_INDEX[st.sector],mv=idx&&sectorMove(idx);
+      if(mv&&mv.d1!=null)facts.appendChild(fact("Its sector",idx+" shares moved "+pct(mv.d1)+" in the last session"+(mv.d5!=null?" and "+pct(mv.d5)+" over five sessions":"")+"."));
+      var past=(track&&track.calls||[]).filter(function(c){return c.symbol===st.symbol&&c.scored&&c.hit1!=null});
+      if(past.length)facts.appendChild(fact("PulsEdge's record here",plural(past.length,"earlier call")+" on this stock checked after one trading day: "+past.filter(function(c){return c.hit1}).length+" moved the way the news pointed."));
+      if(!track)getJson("data/track.json").then(function(j){track=j;if(focus&&focus.s)render()}).catch(function(){track={calls:[]}});
+    }else if(focus.g){
+      bh.append(el("h2",null,focus.g.t),el("span","sub","explained"),x);
+      say.textContent=focus.g.d;facts.appendChild(fact("Why it matters",focus.g.w));
+      if(items.length)facts.appendChild(fact("In the news",plural(items.length,"recent headline")+" below mention it."));
+    }else if(focus.today){
+      var all=sigs.filter(function(i){return i.t&&sigs[0].t&&dayOf(i.t)===dayOf(sigs[0].t)}),a=all.filter(isAct).length,w2=all.filter(function(i){return i.call==="watch"}).length;
+      var mn=all.filter(function(i){return i.call!=="ignore"&&i.tickers.some(function(m){return mine(m.symbol)})}).length;
+      bh.append(el("h2",null,"Today in plain words"),x);
+      say.append("PulsEdge has read "+plural(all.length,"headline")+" in the latest session. ",el("b",null,a+" are worth reading now"),", ",el("b",null,w2+" are worth keeping an eye on"),", and the rest are routine."+(hold.length?" "+(mn?mn+" of the flagged items are about your stocks.":"None of the flagged items are about your stocks."):""));
+      if(items.length)facts.appendChild(fact("Start here","The most important items are listed first below."));
+    }else{
+      bh.append(el("h2",null,"“"+focus.text+"”"),x);
+      say.textContent=items.length?plural(items.length,"recent headline")+" mention this.":"No recent headline mentions this. Try a company name, an NSE symbol, or a term such as bulk deal.";
+    }
+    b.append(bh,say);if(facts.childNodes.length)b.appendChild(facts);
+    b.appendChild(el("p","fine","A summary of public information to help you read the news. It is not investment advice."));
+  }
+  function setFocus(f){
+    focus=f;render();
+    var q=document.getElementById("q");q.value=f?(f.s?shortName(f.s.name):f.g?f.g.t:f.today?"Today":f.text):"";
+    if(f){var b=document.getElementById("brief"),top=b.getBoundingClientRect().top;if(top<0||top>innerHeight*.6)b.scrollIntoView({block:"start"})}
+  }
+  function openStock(sym){
+    var st=uni.filter(function(u){return u.symbol===sym})[0]||{symbol:sym,name:sym,sector:""};
+    setFocus({s:st});
+  }
+
+  // ----- suggestions under the search box -----
+  var q=document.getElementById("q"),ql=document.getElementById("q-list"),hits=[],sel=-1;
+  function suggest(text){
+    var n=norm(text),out=[];if(!n)return out;
+    var words=n.split(" ");
+    uni.forEach(function(st){
+      var sym=st.symbol.toLowerCase(),nm=" "+norm(st.name),sc=0;
+      if(sym===n)sc=100;else if(sym.indexOf(n)===0)sc=80;else if(nm.indexOf(" "+n)===0)sc=72;
+      else if(words.every(function(w){return nm.indexOf(" "+w)>=0}))sc=60;
+      else if(n.length>=3&&(nm.indexOf(n)>=0||sym.indexOf(n)>=0))sc=40;
+      if(sc)out.push({sc:sc+(mine(st.symbol)?6:0),s:st});
+    });
+    GLOSS.forEach(function(g){if(g.k.some(function(k){return (n.length>=2&&k.indexOf(n)===0)||(" "+n+" ").indexOf(" "+k+" ")>=0}))out.push({sc:75,g:g})});
+    if(/^(today|what matters|summary|whats? (new|important))/.test(n))out.push({sc:90,today:true});
+    return out.sort(function(a,b){return b.sc-a.sc}).slice(0,8);
+  }
+  function showHits(){
+    ql.textContent="";sel=hits.length?0:-1;
+    hits.forEach(function(h,i){
+      var li=el("li");li.setAttribute("role","option");li.id="q-o"+i;li.setAttribute("aria-selected",i===sel?"true":"false");
+      if(h.s){var c=sigs.filter(function(x){return x.call!=="ignore"&&about(x,h.s)}).length;li.append(el("span","k",h.s.symbol),el("span","n",shortName(h.s.name)),el("span","d",c?plural(c,"flagged item"):h.s.sector))}
+      else if(h.g)li.append(el("span","k","Explain"),el("span","n",h.g.t),el("span","d","what it means"));
+      else li.append(el("span","k","Summary"),el("span","n","Today in plain words"));
+      li.onmousedown=function(e){e.preventDefault();pick(i)};
+      ql.appendChild(li);
+    });
+    ql.hidden=!hits.length;q.setAttribute("aria-expanded",hits.length?"true":"false");
+    if(sel>=0)q.setAttribute("aria-activedescendant","q-o"+sel);else q.removeAttribute("aria-activedescendant");
+  }
+  function pick(i){
+    var h=hits[i];hits=[];showHits();q.blur();
+    if(!h){var t=q.value.trim();setFocus(t?{text:t}:null);return}
+    setFocus(h.s?{s:h.s}:h.g?{g:h.g}:{today:true});
+  }
+  q.addEventListener("input",function(){hits=suggest(q.value);showHits();if(!q.value.trim()&&focus)setFocus(null)});
+  q.addEventListener("focus",function(){if(q.value.trim()){hits=suggest(q.value);showHits()}});
+  q.addEventListener("blur",function(){setTimeout(function(){hits=[];showHits()},120)});
+  q.addEventListener("keydown",function(e){
+    if(e.key==="ArrowDown"||e.key==="ArrowUp"){
+      if(!hits.length)return;e.preventDefault();sel=(sel+(e.key==="ArrowDown"?1:hits.length-1))%hits.length;
+      Array.prototype.forEach.call(ql.children,function(li,i){li.setAttribute("aria-selected",i===sel?"true":"false")});
+      q.setAttribute("aria-activedescendant","q-o"+sel);ql.children[sel].scrollIntoView({block:"nearest"});
+    }else if(e.key==="Enter"){e.preventDefault();pick(sel)}
+    else if(e.key==="Escape"){hits=[];showHits()}
+  });
+  getJson("data/universe.json").then(function(j){
+    uni=Array.isArray(j.stocks)?j.stocks:[];
+    var want=new URLSearchParams(location.search).get("s");
+    if(want&&!focus){focus={s:uni.filter(function(u){return u.symbol===want.toUpperCase()})[0]||{symbol:want.toUpperCase(),name:want.toUpperCase(),sector:""}};q.value=shortName(focus.s.name);if(sigs.length)render()}
+  }).catch(function(){});
+
+  // ----- Simple view: one item in plain words -----
+  function row(label,text){var p=el("p");p.append(el("small",null,label),document.createTextNode(text));return p}
+  function simpleCard(s){
+    var act=isAct(s),li=el("li","sig simple "+s.call+(!firstLoad&&!seen[s.id]?" fresh":""));seen[s.id]=1;
+    var open=!!openIds[s.id],h=el("div","sh");
+    h.appendChild(el("span","call "+(act?"act":s.call),act?"ACT · worth reading now":s.call==="watch"?"WATCH · keep an eye on it":"IGNORE · safe to skip"));
+    h.appendChild(el("span","tm",when(s)));
+    var mb=el("button","more",open?"less":"details");mb.type="button";mb.setAttribute("aria-expanded",open?"true":"false");
+    mb.onclick=function(){if(openIds[s.id])delete openIds[s.id];else openIds[s.id]=1;render()};h.appendChild(mb);
+    li.append(h,el("h3",null,s.plain||cleanHead(s.headline)));
+    var ch=el("div","chips");s.tickers.forEach(function(m){ch.appendChild(chip(m))});if(ch.childNodes.length)li.appendChild(ch);
+    var p=el("div","plain"),why=s.why||s.reason[0]||"";
+    if(why)p.appendChild(row(s.call==="ignore"?"Why you can skip it":"Why it matters",why));
+    var chk=s.check||s.action;
+    if(s.call!=="ignore"&&chk&&!/^no action/i.test(chk))p.appendChild(row("What to check",chk));
+    if(p.childNodes.length)li.appendChild(p);
+    if(s.call!=="ignore"){
+      var tg=el("div","tags");
+      if(s.impact!=null)tg.appendChild(el("span",s.impact>=70?"hi":null,"Importance: "+(s.impact>=70?"high":s.impact>=40?"medium":"low")));
+      tg.appendChild(el("span",null,s.dir==="up"?"Reads as good news":s.dir==="down"?"Reads as bad news":"Could go either way"));
+      if(HZ_PLAIN[s.horizon])tg.appendChild(el("span",null,HZ_PLAIN[s.horizon]));
+      li.appendChild(tg);
+    }
+    if(open){
+      var ex=el("div","exp");
+      if(s.plain){ex.appendChild(el("div","lbl","The headline"));ex.appendChild(el("p","orig",cleanHead(s.headline)))}
+      [["More on why",s.reason.slice(s.why?0:1)],["What could go wrong",s.risks]].forEach(function(r){if(!r[1].length)return;ex.appendChild(el("div","lbl",r[0]));var u=el("ul");r[1].forEach(function(t){u.appendChild(el("li",null,t))});ex.appendChild(u)});
+      if(s.url){var l=el("a",null,"Read the source"+(s.source?" ("+s.source+")":"")+" ↗");l.href=s.url;l.target="_blank";l.rel="noopener";l.style.color="var(--pur-l)";ex.appendChild(l)}
+      li.appendChild(ex);
+    }
+    return li;
+  }
+  function setView(v){
+    view=v;store("pe_view",v);showRest=false;shown=20;
+    document.getElementById("v-simple").setAttribute("aria-pressed",v==="simple"?"true":"false");
+    document.getElementById("v-pro").setAttribute("aria-pressed",v==="pro"?"true":"false");
+    if(sigs.length)render();
+  }
+  document.getElementById("v-simple").onclick=function(){setView("simple")};
+  document.getElementById("v-pro").onclick=function(){setView("pro")};
+  setView(view);
+
+  // ----- "How to read this" -----
+  document.getElementById("help").onclick=function(){
+    var g=document.getElementById("gl");g.textContent="";
+    var c=el("button","btn2 close","Close");c.type="button";c.onclick=function(){g.close?g.close():g.removeAttribute("open")};
+    var h=el("h2",null,"How to read PulsEdge");h.id="gl-t";
+    g.append(c,h,el("p","sub","PulsEdge reads Indian market news and sorts every item into one of three verdicts. It explains the news; you decide what to do."));
+    [["The three verdicts",GLOSS.slice(0,4)],["Words you will see",GLOSS.slice(4)]].forEach(function(sec){
+      g.appendChild(el("h3",null,sec[0]));var dl=el("dl");
+      sec[1].forEach(function(t){var w=el("div");w.append(el("dt",null,t.t),el("dd",null,t.d+" "+t.w));dl.appendChild(w)});g.appendChild(dl);
+    });
+    g.appendChild(el("p","sub","Tip: type any company name in the search box for a one-page summary, and switch to Pro for the full terminal detail."));
+    if(g.showModal)g.showModal();else g.setAttribute("open","");
+  };
 
   // ---------- data ----------
   // mode "sample" (no trial or membership yet) shows the sample files; see assets/member.js
