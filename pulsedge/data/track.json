@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T11:46:11+05:30",
+ "updated": "2026-11-13T12:00:44+05:30",
  "summary": {
-  "calls": 1309,
-  "scored_calls": 223,
+  "calls": 1313,
+  "scored_calls": 227,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "ec4fe123fee52248",
+   "symbol": "AMBUJACEM",
+   "time": "2026-11-13T11:58:50+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Ambuja Cements Limited: ENDEAVOUR TRADE AND INVESTMENT LIMITED has Submitted to the Exchange a copy of Disclosure under Regulation 31(1) and 31(2) of the Securi",
+   "url": "https://nsearchives.nseindia.com/corporate/team_sandeshc_13112026113304_AMBUJACEM.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 389.4
+  },
+  {
+   "id": "f10a29d24acd90ba",
+   "symbol": "APTUS",
+   "time": "2026-11-13T11:55:10+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Aptus Value Housing Finance India Limited: Aptus Value Housing Finance India Limited has informed the Exchange about General Updates |SUBJECT: General Updates",
+   "url": "https://nsearchives.nseindia.com/corporate/APTUS_13112026115502_Aptus_Value_Dividend_Payout_Intimation_sd_final.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 176.15
+  },
+  {
+   "id": "fc855f4786f3ee7a",
+   "symbol": "TRIDENT",
+   "time": "2026-11-13T11:46:12+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Trident Limited: Trident Limited has informed the Exchange about Credit Rating |SUBJECT: Credit Rating",
+   "url": "https://nsearchives.nseindia.com/corporate/TRIDENT_13112026114145_Intimation_STX_filing.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 23.77
+  },
+  {
+   "id": "785d63c7cebc16f7",
+   "symbol": "COFORGE",
+   "time": "2026-11-13T11:36:12+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "MSCI rejig: Which stocks may see the biggest inflows & outflows?",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/msci-rejig-which-stocks-may-see-the-biggest-inflows-amp-outflows/slideshow/135792280.cms",
+   "entry_date": "2026-11-12",
+   "entry": 2034.0
+  },
   {
    "id": "ae29caf59e41b777",
    "symbol": "FLUOROCHEM",
