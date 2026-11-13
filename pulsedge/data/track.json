@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-13T11:15:36+05:30",
+ "updated": "2026-11-13T11:31:51+05:30",
  "summary": {
-  "calls": 1301,
+  "calls": 1306,
   "scored_calls": 220,
   "d1": {
    "scored": 194,
@@ -21,6 +21,71 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "d89e78099e92a2ea",
+   "symbol": "TRENT",
+   "time": "2026-11-13T11:24:22+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "Trent Limited: Trent Limited has informed the Exchange about Reminder letter to shareholders to Dematerialise the Shares |SUBJECT: General Updates",
+   "url": "https://nsearchives.nseindia.com/corporate/TRENT_13112026112141_Reg_30_-_Dematerialisation_letter_to_shareholders.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 3180.0
+  },
+  {
+   "id": "b97f618f77d08616",
+   "symbol": "TDPOWERSYS",
+   "time": "2026-11-13T11:20:28+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Mint Markets",
+   "headline": "TD Power Systems share price soars over 9%: Dividend declared, Q2 profit more than doubles - Should you buy?",
+   "url": "https://www.livemint.com/market/stock-market-news/td-power-systems-share-price-soars-over-9-dividend-declared-q2-profit-more-than-doubles-should-you-buy-11794548122280.html",
+   "entry_date": "2026-11-12",
+   "entry": 625.9
+  },
+  {
+   "id": "efda3ed99c4891a2",
+   "symbol": "FLUOROCHEM",
+   "time": "2026-11-13T11:15:19+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "Gujarat Fluorochemicals Limited: Gujarat Fluorochemicals Limited has informed the Exchange about Acquisition |SUBJECT: Acquisition",
+   "url": "https://nsearchives.nseindia.com/corporate/FLUOROCHEM_13112026111440_GFCL_Intimation_Reg_30_Incorporation_of_GFCL_EV_Critical_Minerals.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 4814.0
+  },
+  {
+   "id": "eddb9d239fbf59f2",
+   "symbol": "MCX",
+   "time": "2026-11-13T11:14:18+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Mint Markets",
+   "headline": "Gold, silver rates today: MCX gold rebounds from 1-year low, silver near ₹1.79 lakh; should you buy for good returns?",
+   "url": "https://www.livemint.com/market/commodities/gold-silver-rates-today-mcx-gold-rebounds-from-1-year-low-silver-near-rs-1-79-lakh-should-you-buy-for-good-returns-11794545667067.html",
+   "entry_date": "2026-11-12",
+   "entry": 3624.7
+  },
+  {
+   "id": "dbe137d60e638e4f",
+   "symbol": "POWERINDIA",
+   "time": "2026-11-13T11:13:07+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "Business Standard",
+   "headline": "Hitachi Energy shares rally 12% on 86% rise in Q2 order inflows, PAT up 21%",
+   "url": "https://www.business-standard.com/markets/news/hitachi-energy-shares-rally-12-on-86-rise-in-q2-order-inflows-pat-up-21-126111300504_1.html",
+   "entry_date": "2026-11-12",
+   "entry": 28545.0
+  },
   {
    "id": "7e52caede732f8f8",
    "symbol": "SIEMENS",
