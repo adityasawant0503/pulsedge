@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T12:45:32+05:30",
+ "updated": "2026-11-13T13:00:49+05:30",
  "summary": {
-  "calls": 1324,
-  "scored_calls": 233,
+  "calls": 1328,
+  "scored_calls": 237,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "5e3e4d751798d7cf",
+   "symbol": "PNBHOUSING",
+   "time": "2026-11-13T12:56:43+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "PNB Housing Finance Limited: PNB Housing Finance Limited has informed the Exchange regarding allotment of 75000 NCDs. |SUBJECT: Allotment of Securities",
+   "url": "https://nsearchives.nseindia.com/corporate/PNBHOUSING_13112026125624_SE_intimation_Allotment_of_NCD_LXXX.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 1135.4
+  },
+  {
+   "id": "a92b649f578d045f",
+   "symbol": "JSWSTEEL",
+   "time": "2026-11-13T12:51:08+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "JSW Steel Limited: Incorporation of step-down wholly owned subsidiary i.e. Acre Point Developers Private Limited. |SUBJECT: General Updates",
+   "url": "https://nsearchives.nseindia.com/corporate/jessydenny_13112026125050_Stock_Exchange_Intimation_-_Acre_point.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 1352.1
+  },
+  {
+   "id": "e43daa0248574162",
+   "symbol": "TECHNOE",
+   "time": "2026-11-13T12:46:10+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Techno Electric & Engineering Company Limited: Monitoring Agency Report |SUBJECT: Monitoring Agency Report",
+   "url": "https://nsearchives.nseindia.com/corporate/TECHNOE_13112026124537_MonitoringReport30092026_Techno_ocred.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 1016.1
+  },
+  {
+   "id": "1135428418852380",
+   "symbol": "BDL",
+   "time": "2026-11-13T12:42:26+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Bharat Dynamics shares fall 3% as Q2 margin pressure weighs on earnings",
+   "url": "https://www.business-standard.com/markets/news/bharat-dynamics-shares-fall-3-as-q2-margin-pressure-weighs-on-earnings-126111300659_1.html",
+   "entry_date": "2026-11-12",
+   "entry": 1055.1
+  },
   {
    "id": "4fec99a27fd83c9c",
    "symbol": "HONASA",
