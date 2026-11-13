@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T09:31:49+05:30",
+ "updated": "2026-11-13T09:45:34+05:30",
  "summary": {
-  "calls": 1279,
-  "scored_calls": 206,
+  "calls": 1283,
+  "scored_calls": 210,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,45 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "5473a0e00a7bb4b0",
+   "symbol": "OLAELEC",
+   "time": "2026-11-13T09:25:44+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Ola Electric shares skid nearly 7% as Q2 revenue falls 39%, loss narrows",
+   "url": "https://www.business-standard.com/markets/news/ola-electric-shares-skid-nearly-7-as-q2-revenue-falls-39-loss-narrows-126111300115_1.html",
+   "entry_date": "2026-11-12",
+   "entry": 35.74
+  },
+  {
+   "id": "e8f79c5bbb693b18",
+   "symbol": "ABCAPITAL",
+   "time": "2026-11-13T09:21:41+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Aditya Birla Capital among 9 stocks showing White Marubozu Pattern",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/aditya-birla-capital-among-9-stocks-showing-white-marubozu-pattern/slideshow/135788959.cms",
+   "entry_date": "2026-11-12",
+   "entry": 419.5
+  },
+  {
+   "id": "f5de7034d1505df2",
+   "symbol": "GODREJIND",
+   "time": "2026-11-13T09:06:57+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Godrej Industries among 4 stocks showing RSI trending up",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/godrej-industries-among-4-stocks-showing-rsi-trending-up/slideshow/135788392.cms",
+   "entry_date": "2026-11-12",
+   "entry": 1084.1
+  },
   {
    "id": "270f7c693704bfa2",
    "symbol": "ADANIENSOL",
@@ -85,6 +124,19 @@
    "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/dr-reddys-share-price-today-live-13-nov-2026/liveblog/135786986.cms",
    "entry_date": "2026-11-12",
    "entry": 1386.6
+  },
+  {
+   "id": "d422d95681e97aea",
+   "symbol": "INDUSINDBK",
+   "time": "2026-11-13T08:17:23+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "IndusInd Bank Share Price Live Updates: IndusInd Bank's Stock Price Drops Below EMA Level",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/indusind-bank-share-price-live-updates-13-nov-2026/liveblog/135786958.cms",
+   "entry_date": "2026-11-12",
+   "entry": 931.35
   },
   {
    "id": "de2369268227b2e0",
