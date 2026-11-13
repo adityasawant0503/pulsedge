@@ -299,8 +299,8 @@ GH_FIELDS = "i, section, call, horizon, direction, tickers[{symbol,direction}], 
 
 
 # Free tiers get busy and run out, so the classifier has several models to fall back on, tried in this order
-# for every batch. Gemini first (the "latest" aliases follow Google's current Flash models), then Groq if a key
-# is set, then GitHub Models, which needs no key inside GitHub Actions.
+# for every batch. Gemini first (the "latest" aliases follow Google's current Flash models), then Groq if
+# GROQ_API_KEY is set, then GitHub Models if PULSEDGE_USE_GITHUB_MODELS is set.
 GEMINI_MODELS = ["gemini-3.8-flash", "gemini-flash-latest", "gemini-flash-lite-latest"]
 GROQ_MODELS = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]
 GH_MODELS = ["openai/gpt-4.1-mini", "openai/gpt-4o-mini"]
@@ -318,9 +318,15 @@ def ai_candidates():
         out += [(env("AI_BASE_URL") or GEMINI_URL, env("AI_API_KEY"), m) for m in ([env("AI_MODEL")] if env("AI_MODEL") else GEMINI_MODELS)]
     if env("GROQ_API_KEY"):
         out += [(GROQ_URL, env("GROQ_API_KEY"), m) for m in ([env("GROQ_MODEL")] if env("GROQ_MODEL") else GROQ_MODELS)]
-    if env("GH_MODELS_TOKEN"):
+    if env("GH_MODELS_TOKEN") and env("PULSEDGE_USE_GITHUB_MODELS"):
         out += [(GH_MODELS_URL, env("GH_MODELS_TOKEN"), m) for m in ([env("PULSEDGE_GH_MODEL")] if env("PULSEDGE_GH_MODEL") else GH_MODELS)]
     return out
+
+
+def brief(msg):
+    """The readable part of a provider's error, for the log and state/ai.json."""
+    m = re.search(r'"message\W{1,6}(.{0,170})', msg)
+    return ((msg[:8] + " " + m.group(1)) if m else msg[:120]).replace("\\n", " ").strip()
 
 
 def classify_compat(batch, universe, url, key, model):
@@ -340,7 +346,7 @@ def classify_compat(batch, universe, url, key, model):
         f'Reply with JSON only: {{"items": [{{{GH_FIELDS}}}, ...]}} using exactly these field names. '
         'section is trading|news|macro; call buy|sell|watch|ignore; horizon intraday|swing|positional; direction up|down|mixed.')
     payload = {
-        "model": model, "temperature": 0.2, "max_tokens": 5000,
+        "model": model, "temperature": 0.2, "max_tokens": 8000,
         "response_format": {"type": "json_object"},
         "messages": [{"role": "system", "content": guide}, {"role": "user", "content": "Headlines:\n" + "\n".join(rows)}],
     }
@@ -495,7 +501,7 @@ def main():
     cands = [] if os.environ.get("ANTHROPIC_API_KEY") else ai_candidates()
     provider = "claude" if os.environ.get("ANTHROPIC_API_KEY") else "compat" if cands else None
     use_ai = provider is not None
-    batch_size = BATCH if provider == "claude" else 12
+    batch_size = BATCH if provider == "claude" else 20      # free tiers count requests, so fewer and larger ones go further
     log(f"classifier: {provider or 'keyword rules'}" + (f" ({len(cands)} models to fall back on)" if cands else ""))
     # never-news filings skip the AI; everything else goes to it in batches
     routine = [x for x in fresh if provider == "compat" and PREFILTER.search(x["headline"]) and not SIGNAL.search(x["headline"])]
@@ -503,7 +509,7 @@ def main():
     batches = [(ask[i:i + batch_size], use_ai) for i in range(0, len(ask), batch_size)] + ([(routine, False)] if routine else [])
     dead, resting = set(), {}                  # models that are gone for good; models to leave alone until a later batch
     ai_until = time.time() + 7 * 60            # after this the run finishes on keyword rules, to stay inside the job's time limit
-    by_ai = 0
+    by_ai, used, errors = 0, {}, []
     classified = []
     for bi, (chunk, wants_ai) in enumerate(batches):
         res = None
@@ -516,16 +522,27 @@ def main():
             for ci, cand in enumerate(cands):
                 if ci in dead or resting.get(ci, 0) > bi:
                     continue
-                try:
-                    res = classify_compat(chunk, universe, *cand)
+                for attempt in (1, 2):
+                    try:
+                        res = classify_compat(chunk, universe, *cand)
+                        used[cand[2]] = used.get(cand[2], 0) + len(res)
+                        break
+                    except Exception as e:
+                        msg = str(e)
+                        note = f"{cand[2]}: {brief(msg)}"
+                        log(f"  {note}")
+                        if note not in errors:
+                            errors.append(note)
+                        if re.match(r"HTTP (401|403|404)", msg):
+                            dead.add(ci)                   # a retired model, or a key this provider doesn't accept
+                        elif msg.startswith("HTTP 429"):
+                            resting[ci] = bi + 6           # over its limit: leave it alone for a while
+                        elif attempt == 1 and time.time() < ai_until:
+                            time.sleep(3)                  # busy or slow: one more try before moving on
+                            continue
+                        break
+                if res is not None:
                     break
-                except Exception as e:
-                    msg = str(e)
-                    if re.match(r"HTTP (401|403|404)", msg):
-                        dead.add(ci)                       # a retired model, or a key this provider doesn't accept
-                    else:
-                        resting[ci] = bi + (6 if msg.startswith("HTTP 429") else 2)     # over its limit, busy or slow
-                    log(f"  {cand[0].split('/')[2]} {cand[2]} unavailable ({msg[:60]})")
             if res is None:
                 log("  no AI model answered; using keyword rules for this batch")
         by_ai += len(res or {})
@@ -554,6 +571,15 @@ def main():
             time.sleep(4 if provider == "compat" else 1)      # stay under the free tiers' requests-per-minute limits
     if use_ai:
         log(f"classified {len(classified)}: {by_ai} by AI, {len(routine)} routine filings set aside by rule, {len(classified) - by_ai - len(routine)} by keyword rules")
+        if not a.dry_run and classified:
+            # a short history of how the AI step went, so a quota or outage shows up without reading run logs
+            path = os.path.join(os.path.dirname(STATE), "ai.json")
+            runs = load_json(path, {}).get("runs", [])
+            runs.append({"time": NOW.isoformat(timespec="minutes"), "new": len(classified), "ai": by_ai, "routine": len(routine),
+                         "rules": len(classified) - by_ai - len(routine), "models": used, "errors": errors[:6]})
+            with open(path, "w", encoding="utf-8") as fh:
+                json.dump({"note": "The last 60 runs of the AI classifier: items sorted by AI, set aside as routine, or left to keyword rules.",
+                           "runs": runs[-60:]}, fh, indent=1, ensure_ascii=False)
 
     if a.dry_run:
         for c in classified[:20]:
