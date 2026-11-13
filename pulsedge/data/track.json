@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T08:31:43+05:30",
+ "updated": "2026-11-13T08:46:41+05:30",
  "summary": {
-  "calls": 1274,
-  "scored_calls": 203,
+  "calls": 1275,
+  "scored_calls": 204,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "52402526b11b8c5f",
+   "symbol": "AZAD",
+   "time": "2026-11-13T08:30:32+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "51% rally in 2026 so far! ICICI Direct sees 28% upside potential in this defence stock - Do you own? Check target price",
+   "url": "https://www.livemint.com/market/stock-market-news/51-rally-in-2026-so-far-icici-direct-sees-28-upside-potential-in-this-defence-stock-do-you-own-check-target-price-11794507179450.html",
+   "entry_date": "2026-11-12",
+   "entry": 2468.4
+  },
   {
    "id": "de2369268227b2e0",
    "symbol": "OIL",
