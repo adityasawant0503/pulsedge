@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T08:46:41+05:30",
+ "updated": "2026-11-13T09:01:43+05:30",
  "summary": {
-  "calls": 1275,
-  "scored_calls": 204,
+  "calls": 1277,
+  "scored_calls": 206,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "9548d6b8378bc2a4",
+   "symbol": "YESBANK",
+   "time": "2026-11-13T08:53:20+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Yes Bank Limited: Intimation of Inaugural Credit Ratings Assigned by Japan Credit Rating Agency Ltd (JCR) and Rating and Investment Information, Inc. (R&I) |SUB",
+   "url": "https://nsearchives.nseindia.com/corporate/YESBANK_13112026085219_YBL_SE_Intimation_RI_JCR_Rating_Signed.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 17.69
+  },
+  {
+   "id": "f76354fffc336da0",
+   "symbol": "COCHINSHIP",
+   "time": "2026-11-13T08:45:24+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Cochin Shipyard dividend 2026: Last day to buy today | Check record date, payout amount, history, yield",
+   "url": "https://www.livemint.com/market/stock-market-news/cochin-shipyard-dividend-2026-last-day-to-buy-today-check-record-date-payout-amount-history-yield-11794537918251.html",
+   "entry_date": "2026-11-12",
+   "entry": 1196.0
+  },
   {
    "id": "52402526b11b8c5f",
    "symbol": "AZAD",
