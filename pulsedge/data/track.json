@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T13:46:47+05:30",
+ "updated": "2026-11-13T14:01:07+05:30",
  "summary": {
-  "calls": 1339,
-  "scored_calls": 248,
+  "calls": 1341,
+  "scored_calls": 250,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "ebb5394db574485d",
+   "symbol": "USHAMART",
+   "time": "2026-11-13T13:46:47+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Usha Martin Limited: Usha Martin Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026. |SUBJECT: Outcome of Boar",
+   "url": "https://nsearchives.nseindia.com/corporate/USHAMART_13112026134336_Results13112026.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 488.8
+  },
+  {
+   "id": "a0196c6276caf730",
+   "symbol": "ZFCVINDIA",
+   "time": "2026-11-13T13:45:45+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "ZF Commercial Vehicle Control Systems India Limited: ZF Commercial Vehicle Control Systems India Limited has submitted to the Exchange, the financial results fo",
+   "url": "https://nsearchives.nseindia.com/corporate/WABCOINDIA_13112026134521_sd-SEOutcomeNov.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 2313.9
+  },
   {
    "id": "3535084fb9142456",
    "symbol": "MCX",
