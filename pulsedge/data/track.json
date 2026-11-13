@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T13:31:20+05:30",
+ "updated": "2026-11-13T13:46:47+05:30",
  "summary": {
-  "calls": 1338,
-  "scored_calls": 247,
+  "calls": 1339,
+  "scored_calls": 248,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "3535084fb9142456",
+   "symbol": "MCX",
+   "time": "2026-11-13T13:33:43+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "MCX share price hits new high, up 100% in one year; market cap nears ₹1 trn",
+   "url": "https://www.business-standard.com/markets/news/mcx-share-price-hits-new-high-up-100-in-one-year-market-cap-nears-1-trn-126111300716_1.html",
+   "entry_date": "2026-11-12",
+   "entry": 3624.7
+  },
   {
    "id": "bc88a34ac7e1a746",
    "symbol": "DMART",
