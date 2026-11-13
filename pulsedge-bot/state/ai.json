@@ -1,0 +1,20 @@
+{
+ "note": "The last 60 runs of the AI classifier: items sorted by AI, set aside as routine, or left to keyword rules.",
+ "runs": [
+  {
+   "time": "2026-11-13T10:30+05:30",
+   "new": 24,
+   "ai": 20,
+   "routine": 2,
+   "rules": 2,
+   "models": {
+    "gemini-flash-lite-latest": 20
+   },
+   "errors": [
+    "gemini-3.8-flash: HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/d'",
+    "gemini-flash-latest: HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/d'",
+    "gemini-flash-lite-latest: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'"
+   ]
+  }
+ ]
+}
