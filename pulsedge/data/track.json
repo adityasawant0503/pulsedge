@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-13T09:01:43+05:30",
+ "updated": "2026-11-13T09:18:05+05:30",
  "summary": {
-  "calls": 1277,
+  "calls": 1279,
   "scored_calls": 206,
   "d1": {
    "scored": 194,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "270f7c693704bfa2",
+   "symbol": "ADANIENSOL",
+   "time": "2026-11-13T09:00:06+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "Adani Energy Solutions Limited: Adani Energy Solutions Limited has informed the Exchange about Intimation for acquisition of 100% Equity Shares of Intellismart ",
+   "url": "https://nsearchives.nseindia.com/corporate/ADANITRANS_13112026085954_AESL_Intellismart_Acquisition.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 1434.1
+  },
   {
    "id": "9548d6b8378bc2a4",
    "symbol": "YESBANK",
@@ -59,6 +72,19 @@
    "url": "https://www.livemint.com/market/stock-market-news/51-rally-in-2026-so-far-icici-direct-sees-28-upside-potential-in-this-defence-stock-do-you-own-check-target-price-11794507179450.html",
    "entry_date": "2026-11-12",
    "entry": 2468.4
+  },
+  {
+   "id": "225dd11b1d135786",
+   "symbol": "DRREDDY",
+   "time": "2026-11-13T08:18:29+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "Dr Reddys Share Price Live Updates: Dr. Reddy's Laboratories achieves significant monthly returns",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/dr-reddys-share-price-today-live-13-nov-2026/liveblog/135786986.cms",
+   "entry_date": "2026-11-12",
+   "entry": 1386.6
   },
   {
    "id": "de2369268227b2e0",
