@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-13T08:15:28+05:30",
+ "updated": "2026-11-13T08:31:43+05:30",
  "summary": {
-  "calls": 1273,
+  "calls": 1274,
   "scored_calls": 203,
   "d1": {
    "scored": 194,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "de2369268227b2e0",
+   "symbol": "OIL",
+   "time": "2026-11-13T08:13:10+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "ET Markets",
+   "headline": "India equity surge brightens outlook for exchanges, brokerages",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/india-equity-surge-brightens-outlook-for-exchanges-brokerages/articleshow/135786787.cms",
+   "entry_date": "2026-11-12",
+   "entry": 440.0
+  },
   {
    "id": "77f7959c59b02be9",
    "symbol": "MANAPPURAM",
