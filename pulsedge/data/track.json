@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T11:00:31+05:30",
+ "updated": "2026-11-13T11:15:36+05:30",
  "summary": {
-  "calls": 1299,
-  "scored_calls": 218,
+  "calls": 1301,
+  "scored_calls": 220,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "7e52caede732f8f8",
+   "symbol": "SIEMENS",
+   "time": "2026-11-13T11:02:21+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Power index rises 1%: Siemens Energy, GE Vernova rally up to 5%; here's why",
+   "url": "https://www.business-standard.com/markets/news/power-index-rises-1-siemens-energy-ge-vernova-rally-up-to-5-here-s-why-126111300489_1.html",
+   "entry_date": "2026-11-12",
+   "entry": 3670.9
+  },
   {
    "id": "32a823ebcb9488ef",
    "symbol": "BPCL",
@@ -241,6 +254,19 @@
    "url": "https://www.livemint.com/market/stock-market-news/cochin-shipyard-dividend-2026-last-day-to-buy-today-check-record-date-payout-amount-history-yield-11794537918251.html",
    "entry_date": "2026-11-12",
    "entry": 1196.0
+  },
+  {
+   "id": "b4760f64e8657159",
+   "symbol": "BAJFINANCE",
+   "time": "2026-11-13T08:34:10+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Bajaj Finance Share Price Live Updates: Bajaj Finance Price Decline Report",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/bajaj-finance-share-price-today-live-updates-13-nov-2026/liveblog/135787391.cms",
+   "entry_date": "2026-11-12",
+   "entry": 1115.0
   },
   {
    "id": "2461777a8e34fe79",
