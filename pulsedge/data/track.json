@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T15:30:25+05:30",
+ "updated": "2026-11-13T15:45:50+05:30",
  "summary": {
-  "calls": 1364,
-  "scored_calls": 262,
+  "calls": 1366,
+  "scored_calls": 264,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "b89db87b111c8628",
+   "symbol": "HDFCBANK",
+   "time": "2026-11-13T15:31:48+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Looking for stocks to buy for 2027? HDFC Bank, Meesho, Paytm, Park Medi, LG Electronics - Ventura's top picks revealed",
+   "url": "https://www.livemint.com/market/stock-market-news/looking-for-stocks-to-buy-for-2027-hdfc-bank-meesho-paytm-park-medi-lg-electronics-venturas-top-picks-revealed-11794556121055.html",
+   "entry_date": "2026-11-12",
+   "entry": 812.3
+  },
+  {
+   "id": "b89db87b111c8628",
+   "symbol": "PAYTM",
+   "time": "2026-11-13T15:31:48+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Looking for stocks to buy for 2027? HDFC Bank, Meesho, Paytm, Park Medi, LG Electronics - Ventura's top picks revealed",
+   "url": "https://www.livemint.com/market/stock-market-news/looking-for-stocks-to-buy-for-2027-hdfc-bank-meesho-paytm-park-medi-lg-electronics-venturas-top-picks-revealed-11794556121055.html",
+   "entry_date": "2026-11-12",
+   "entry": 1925.0
+  },
   {
    "id": "bf97f49c25abc905",
    "symbol": "EIDPARRY",
