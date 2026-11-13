@@ -244,6 +244,21 @@
     "gemini-3.8-flash: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'",
     "gemini-flash-latest: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'"
    ]
+  },
+  {
+   "time": "2026-11-13T14:30+05:30",
+   "new": 40,
+   "ai": 37,
+   "routine": 3,
+   "rules": 0,
+   "models": {
+    "gemini-flash-lite-latest": 37
+   },
+   "errors": [
+    "gemini-3.8-flash: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'",
+    "gemini-3.8-flash: HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/d'",
+    "gemini-flash-latest: HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/d'"
+   ]
   }
  ]
 }
