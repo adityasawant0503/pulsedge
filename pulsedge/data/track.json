@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T14:30:48+05:30",
+ "updated": "2026-11-13T14:46:33+05:30",
  "summary": {
-  "calls": 1347,
-  "scored_calls": 256,
+  "calls": 1348,
+  "scored_calls": 257,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "7c0634b7fecfa448",
+   "symbol": "GRASIM",
+   "time": "2026-11-13T14:31:46+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Grasim Industries Limited: Press release on the Unaudited Financial Results (Standalone & Consolidated) for the quarter and half year ended 30th September 2026 ",
+   "url": "https://nsearchives.nseindia.com/corporate/GRASIM2_13112026143135_SEintimation_Final_.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 3114.9
+  },
   {
    "id": "0a2519acdc587214",
    "symbol": "NATCOPHARM",
