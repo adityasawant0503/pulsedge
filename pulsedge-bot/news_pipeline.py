@@ -294,11 +294,33 @@ SIGNAL = re.compile(r"order|contract|acquisition|merger|results?|profit|guidance
 
 GH_MODELS_URL = "https://models.github.ai/inference/chat/completions"
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
+GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 GH_FIELDS = "i, section, call, horizon, direction, tickers[{symbol,direction}], sectors[], impact, confidence, category, action, reason[], risks[], plain, why, check"
 
 
-# Gemini model names to try in order (the "latest" alias follows Google's current Flash model)
-GEMINI_MODELS = ["gemini-3.8-flash", "gemini-flash-latest", "gemini-flash-lite-latest", "gemini-2.5-flash"]
+# Free tiers get busy and run out, so the classifier has several models to fall back on, tried in this order
+# for every batch. Gemini first (the "latest" aliases follow Google's current Flash models), then Groq if a key
+# is set, then GitHub Models, which needs no key inside GitHub Actions.
+GEMINI_MODELS = ["gemini-3.8-flash", "gemini-flash-latest", "gemini-flash-lite-latest"]
+GROQ_MODELS = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]
+GH_MODELS = ["openai/gpt-4.1-mini", "openai/gpt-4o-mini"]
+
+# Filings that are never news. They are set aside by rule, so the AI's free quota goes on headlines that might matter.
+PREFILTER = re.compile(r"74\s*\(5\)|trading window|loss of share|duplicate share|newspaper (publication|advertisement)|"
+                       r"copy of newspaper|compliance certificate|appeal no|recovery certificate|notice of demand|"
+                       r"investor meet|analyst meet", re.I)
+
+
+def ai_candidates():
+    """The models to try, best first, as (url, key, model)."""
+    env, out = os.environ.get, []
+    if env("AI_API_KEY"):
+        out += [(env("AI_BASE_URL") or GEMINI_URL, env("AI_API_KEY"), m) for m in ([env("AI_MODEL")] if env("AI_MODEL") else GEMINI_MODELS)]
+    if env("GROQ_API_KEY"):
+        out += [(GROQ_URL, env("GROQ_API_KEY"), m) for m in ([env("GROQ_MODEL")] if env("GROQ_MODEL") else GROQ_MODELS)]
+    if env("GH_MODELS_TOKEN"):
+        out += [(GH_MODELS_URL, env("GH_MODELS_TOKEN"), m) for m in ([env("PULSEDGE_GH_MODEL")] if env("PULSEDGE_GH_MODEL") else GH_MODELS)]
+    return out
 
 
 def classify_compat(batch, universe, url, key, model):
@@ -469,44 +491,45 @@ def main():
     fresh = sorted([x for x in fresh if x.get("section_hint") != "global"][:125] + glob, key=lambda x: x["time"], reverse=True)                                   # cap per run to bound cost
     log(f"{len(raw)} collected, {len(fresh)} new")
 
-    # AI provider: Claude if a key is set, else free GitHub Models inside Actions, else keyword rules
-    if os.environ.get("ANTHROPIC_API_KEY"):
-        provider = "claude"
-    elif os.environ.get("AI_API_KEY"):                        # free tier, e.g. a Google Gemini key
-        provider = "compat"
-        compat = (os.environ.get("AI_BASE_URL") or GEMINI_URL, os.environ["AI_API_KEY"], os.environ.get("AI_MODEL") or GEMINI_MODELS[0])
-    elif os.environ.get("GH_MODELS_TOKEN") and os.environ.get("PULSEDGE_USE_GITHUB_MODELS"):
-        provider = "compat"
-        compat = (GH_MODELS_URL, os.environ["GH_MODELS_TOKEN"], os.environ.get("PULSEDGE_GH_MODEL") or "openai/gpt-4o-mini")
-    else:
-        provider = None
+    # AI provider: Claude if a key is set, else the free models in ai_candidates(), else keyword rules
+    cands = [] if os.environ.get("ANTHROPIC_API_KEY") else ai_candidates()
+    provider = "claude" if os.environ.get("ANTHROPIC_API_KEY") else "compat" if cands else None
     use_ai = provider is not None
     batch_size = BATCH if provider == "claude" else 12
-    gh_failures = 0
-    log(f"classifier: {provider or 'keyword rules'}")
+    log(f"classifier: {provider or 'keyword rules'}" + (f" ({len(cands)} models to fall back on)" if cands else ""))
+    # never-news filings skip the AI; everything else goes to it in batches
+    routine = [x for x in fresh if provider == "compat" and PREFILTER.search(x["headline"]) and not SIGNAL.search(x["headline"])]
+    ask = [x for x in fresh if not any(x is r for r in routine)]
+    batches = [(ask[i:i + batch_size], use_ai) for i in range(0, len(ask), batch_size)] + ([(routine, False)] if routine else [])
+    dead, resting = set(), {}                  # models that are gone for good; models to leave alone until a later batch
+    ai_until = time.time() + 7 * 60            # after this the run finishes on keyword rules, to stay inside the job's time limit
+    by_ai = 0
     classified = []
-    for start in range(0, len(fresh), batch_size):
-        chunk = fresh[start:start + batch_size]
-        try:
-            if provider == "claude":
+    for bi, (chunk, wants_ai) in enumerate(batches):
+        res = None
+        if wants_ai and provider == "claude":
+            try:
                 res = classify_claude(chunk, universe)
-            elif provider == "compat" and gh_failures < 2:
-                while True:
-                    try:
-                        res = classify_compat(chunk, universe, *compat)
-                        break
-                    except Exception as e:      # model retired, busy or too slow: try the next Gemini model
-                        nxt = GEMINI_MODELS.index(compat[2]) + 1 if compat[2] in GEMINI_MODELS else len(GEMINI_MODELS)
-                        retry = isinstance(e, TimeoutError) or re.match(r"HTTP (404|429|5\d\d)", str(e))
-                        if not retry or nxt >= len(GEMINI_MODELS):
-                            raise
-                        log(f"  model {compat[2]} unavailable ({str(e)[:40]}); trying {GEMINI_MODELS[nxt]}")
-                        compat = (compat[0], compat[1], GEMINI_MODELS[nxt])
-            else:
-                res = classify_rules(chunk, universe)
-        except Exception as e:
-            gh_failures += provider == "compat"
-            log(f"  AI classification failed ({type(e).__name__}: {e}); using keyword rules for this batch")
+            except Exception as e:
+                log(f"  AI classification failed ({type(e).__name__}: {e}); using keyword rules for this batch")
+        elif wants_ai and time.time() < ai_until:
+            for ci, cand in enumerate(cands):
+                if ci in dead or resting.get(ci, 0) > bi:
+                    continue
+                try:
+                    res = classify_compat(chunk, universe, *cand)
+                    break
+                except Exception as e:
+                    msg = str(e)
+                    if re.match(r"HTTP (401|403|404)", msg):
+                        dead.add(ci)                       # a retired model, or a key this provider doesn't accept
+                    else:
+                        resting[ci] = bi + (6 if msg.startswith("HTTP 429") else 2)     # over its limit, busy or slow
+                    log(f"  {cand[0].split('/')[2]} {cand[2]} unavailable ({msg[:60]})")
+            if res is None:
+                log("  no AI model answered; using keyword rules for this batch")
+        by_ai += len(res or {})
+        if res is None:
             res = classify_rules(chunk, universe)
         known = {s["symbol"] for s in universe}
         for n, it in enumerate(chunk):
@@ -527,8 +550,10 @@ def main():
                 "plain": str(r.get("plain") or "")[:220], "why": str(r.get("why") or "")[:260], "check": str(r.get("check") or "")[:200],
                 "original": it["summary"][:300] or it["headline"],
             })
-        if use_ai:
-            time.sleep(1)
+        if wants_ai:
+            time.sleep(4 if provider == "compat" else 1)      # stay under the free tiers' requests-per-minute limits
+    if use_ai:
+        log(f"classified {len(classified)}: {by_ai} by AI, {len(routine)} routine filings set aside by rule, {len(classified) - by_ai - len(routine)} by keyword rules")
 
     if a.dry_run:
         for c in classified[:20]:
