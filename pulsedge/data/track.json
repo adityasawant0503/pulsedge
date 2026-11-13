@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-13T15:01:04+05:30",
+ "updated": "2026-11-13T15:16:52+05:30",
  "summary": {
-  "calls": 1353,
-  "scored_calls": 258,
+  "calls": 1358,
+  "scored_calls": 260,
   "d1": {
    "scored": 194,
    "hits": 129,
@@ -21,6 +21,71 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "2b6213a792ce0e0d",
+   "symbol": "TVSMOTOR",
+   "time": "2026-11-13T15:14:31+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "TVS Motor Company Limited: TVS Motor Company Limited has informed the Exchange about Resignation of Director/KMP/SMP |SUBJECT: Resignation of Director/KMP/SMP",
+   "url": "https://nsearchives.nseindia.com/corporate/TVSMOTOR_ROID_104748_KMP_Doc.zip",
+   "entry_date": "2026-11-12",
+   "entry": 4500.0
+  },
+  {
+   "id": "be47c23435ac153b",
+   "symbol": "JSWSTEEL",
+   "time": "2026-11-13T15:08:14+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "JSW Steel Limited: JSW STEEL LIMITED has informed the Exchange regarding Acquisition (including agreement to acquire) |SUBJECT: Acquisition (including agreement",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_Restructuring_2266_WebXMLFile_20261113_150813684.xml",
+   "entry_date": "2026-11-12",
+   "entry": 1352.1
+  },
+  {
+   "id": "5ecfd0ecbcae43ef",
+   "symbol": "TVSMOTOR",
+   "time": "2026-11-13T15:05:20+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "TVS Motor Company Limited: Updates |SUBJECT: Updates",
+   "url": "https://nsearchives.nseindia.com/content/debt/WDM/TVSMOTOR_13112026150458_TVSM_SMP_intimationSD.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 4500.0
+  },
+  {
+   "id": "3074580d71db8e98",
+   "symbol": "TVSMOTOR",
+   "time": "2026-11-13T15:03:11+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "TVS Motor Company Limited: TVS Motor Company Limited has informed the Exchange regarding Resignation of Mr Gaurav Gupta as President India Two Wheeler Business ",
+   "url": "https://nsearchives.nseindia.com/corporate/TVSMOTOR_13112026150251_TVSM_SMP_intimationSD.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 4500.0
+  },
+  {
+   "id": "4fe17c251e49cda6",
+   "symbol": "HDBFS",
+   "time": "2026-11-13T15:03:04+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "HDB Financial Services Limited: HDB Financial Services Limited has informed the Exchange regarding allotment of 30000 securities pursuant to Non Convertible Sec",
+   "url": "https://nsearchives.nseindia.com/corporate/HDB_13112026150005_Intimation_under_Regulation_30_-_Allotment_of_NCDs.pdf",
+   "entry_date": "2026-11-12",
+   "entry": 565.1
+  },
   {
    "id": "fc5aaae4d59f0dd4",
    "symbol": "IIFL",
