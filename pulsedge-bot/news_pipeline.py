@@ -314,9 +314,9 @@ PREFILTER = re.compile(r"74\s*\(5\)|trading window|loss of share|duplicate share
 
 def ai_candidates():
     """The models to try, best first, as (url, key, model)."""
-    env, out = os.environ.get, []
+    env, out, gem, groq = os.environ.get, [], [], []
     if env("AI_API_KEY"):
-        out += [(env("AI_BASE_URL") or GEMINI_URL, env("AI_API_KEY"), m) for m in ([env("AI_MODEL")] if env("AI_MODEL") else GEMINI_MODELS)]
+        gem = [(env("AI_BASE_URL") or GEMINI_URL, env("AI_API_KEY"), m) for m in ([env("AI_MODEL")] if env("AI_MODEL") else GEMINI_MODELS)]
     if env("GROQ_API_KEY"):
         names = [env("GROQ_MODEL")] if env("GROQ_MODEL") else GROQ_MODELS
         if not env("GROQ_MODEL"):
@@ -325,10 +325,25 @@ def ai_candidates():
                 names = groq_models(env("GROQ_API_KEY"))[:2] or GROQ_MODELS
             except Exception as e:
                 log(f"  Groq model list unavailable ({type(e).__name__}); trying {', '.join(names)}")
-        out += [(GROQ_URL, env("GROQ_API_KEY"), m) for m in names]
+        groq = [(GROQ_URL, env("GROQ_API_KEY"), m) for m in names]
+    # Gemini's best model first; Groq next, so it shares the load while Gemini's other free models are over
+    # their daily quota; then the rest of Gemini's models
+    out = gem[:1] + groq + gem[1:]
     if env("GH_MODELS_TOKEN") and env("PULSEDGE_USE_GITHUB_MODELS"):
         out += [(GH_MODELS_URL, env("GH_MODELS_TOKEN"), m) for m in ([env("PULSEDGE_GH_MODEL")] if env("PULSEDGE_GH_MODEL") else GH_MODELS)]
     return out
+
+
+DAILY = re.compile(r"per day|\bRPD\b|\bTPD\b|current quota|daily", re.I)
+
+
+def retry_after(msg, default):
+    """Seconds a provider asks us to wait ("try again in 7.66s" / "in 1m3s" / "in 850ms"), capped at 70."""
+    m = re.search(r"try again in (?:(\d+)m)?([\d.]+)(ms|s)", msg)
+    if not m:
+        return default
+    secs = (int(m.group(1) or 0) * 60) + float(m.group(2)) / (1000 if m.group(3) == "ms" else 1)
+    return min(70.0, secs + 1)
 
 
 def brief(msg):
@@ -351,6 +366,7 @@ def classify_compat(batch, universe, url, key, model):
                     + (f"  (candidate NSE symbols: {', '.join(cands)})" if cands else "  (no listed company named)"))
     guide = GUIDE.split("NSE universe")[0] + (
         "Only use the candidate symbols given for a headline; if none fit, return an empty tickers list.\n"
+        "A company with no candidate symbol is still a listed company: judge its news on its merits all the same.\n"
         f'Reply with JSON only: {{"items": [{{{GH_FIELDS}}}, ...]}} using exactly these field names. '
         'section is trading|news|macro; call buy|sell|watch|ignore; horizon intraday|swing|positional; direction up|down|mixed.')
     payload = {
@@ -362,22 +378,23 @@ def classify_compat(batch, universe, url, key, model):
         payload["reasoning_effort"] = "low"      # newer Gemini models think at length by default; sorting headlines doesn't need it
 
     def send(body):
+        # a browser-like User-Agent: Groq's API sits behind Cloudflare, which refuses Python's default one (HTTP 403)
         req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={
-            "Authorization": "Bearer " + key, "Content-Type": "application/json", "Accept": "application/json"})
+            "Authorization": "Bearer " + key, "Content-Type": "application/json", "Accept": "application/json", "User-Agent": UA})
         with urllib.request.urlopen(req, timeout=75) as r:
             return r.read().decode("utf-8", "replace")
     try:
         raw = send(payload)
     except urllib.error.HTTPError as e:
-        detail = e.read()[:300]
+        detail = e.read()[:900]
         if e.code == 400 and "reasoning_effort" in payload and b"reasoning" in detail.lower():
             payload.pop("reasoning_effort")      # a model that doesn't take the setting
             try:
                 raw = send(payload)
             except urllib.error.HTTPError as e2:
-                raise RuntimeError(f"HTTP {e2.code} {e2.read()[:200]!r}")
+                raise RuntimeError(f"HTTP {e2.code} {e2.read()[:800]!r}")
         else:
-            raise RuntimeError(f"HTTP {e.code} {detail[:200]!r}")
+            raise RuntimeError(f"HTTP {e.code} {detail[:800]!r}")
     try:
         data = json.loads(raw)
         content = data["choices"][0]["message"]["content"] or ""
@@ -515,10 +532,39 @@ def main():
     routine = [x for x in fresh if provider == "compat" and PREFILTER.search(x["headline"]) and not SIGNAL.search(x["headline"])]
     ask = [x for x in fresh if not any(x is r for r in routine)]
     batches = [(ask[i:i + batch_size], use_ai) for i in range(0, len(ask), batch_size)] + ([(routine, False)] if routine else [])
-    dead, resting = set(), {}                  # models that are gone for good; models to leave alone until a later batch
+    dead, resting = set(), {}                  # models gone for this run; models to leave alone until a given time
     ai_until = time.time() + 7 * 60            # after this the run finishes on keyword rules, to stay inside the job's time limit
     by_ai, used, errors = 0, {}, []
     classified = []
+
+    def try_models(chunk):
+        """The first answer from the models in order, skipping those that are gone or resting."""
+        for ci, cand in enumerate(cands):
+            if ci in dead or resting.get(ci, 0) > time.time():
+                continue
+            for attempt in (1, 2):
+                try:
+                    res = classify_compat(chunk, universe, *cand)
+                    used[cand[2]] = used.get(cand[2], 0) + len(res)
+                    return res
+                except Exception as e:
+                    msg = str(e)
+                    note = f"{cand[2]}: {brief(msg)}"
+                    log(f"  {note}")
+                    if note not in errors:
+                        errors.append(note)
+                    if re.match(r"HTTP (400|401|403|404)", msg) or (msg.startswith("HTTP 429") and DAILY.search(msg)):
+                        dead.add(ci)                   # retired, not allowed, or out of quota for the day
+                    elif msg.startswith("HTTP 429"):   # over a per-minute limit: rest as long as the provider asks
+                        resting[ci] = time.time() + retry_after(msg, 60)
+                    elif attempt == 1 and msg.startswith("HTTP 5") and time.time() < ai_until:
+                        time.sleep(3)                  # busy: one more try before moving on
+                        continue
+                    else:                              # still busy, or slow (a timeout costs 75 s, so rest longer)
+                        resting[ci] = time.time() + (30 if msg.startswith("HTTP 5") else 120)
+                    break
+        return None
+
     for bi, (chunk, wants_ai) in enumerate(batches):
         res = None
         if wants_ai and provider == "claude":
@@ -527,30 +573,15 @@ def main():
             except Exception as e:
                 log(f"  AI classification failed ({type(e).__name__}: {e}); using keyword rules for this batch")
         elif wants_ai and time.time() < ai_until:
-            for ci, cand in enumerate(cands):
-                if ci in dead or resting.get(ci, 0) > bi:
-                    continue
-                for attempt in (1, 2):
-                    try:
-                        res = classify_compat(chunk, universe, *cand)
-                        used[cand[2]] = used.get(cand[2], 0) + len(res)
-                        break
-                    except Exception as e:
-                        msg = str(e)
-                        note = f"{cand[2]}: {brief(msg)}"
-                        log(f"  {note}")
-                        if note not in errors:
-                            errors.append(note)
-                        if re.match(r"HTTP (401|403|404)", msg):
-                            dead.add(ci)                   # a retired model, or a key this provider doesn't accept
-                        elif msg.startswith("HTTP 429"):
-                            resting[ci] = bi + 6           # over its limit: leave it alone for a while
-                        elif attempt == 1 and time.time() < ai_until:
-                            time.sleep(3)                  # busy or slow: one more try before moving on
-                            continue
-                        break
-                if res is not None:
-                    break
+            res = try_models(chunk)
+            if res is None:
+                # every model is resting: wait for the first to come back, if that is soon and time allows
+                back = min((t for i, t in resting.items() if i not in dead), default=None)
+                if back is not None and back - time.time() <= 70 and back < ai_until:
+                    wait = max(0.0, back - time.time()) + 0.5
+                    log(f"  every model is resting; waiting {wait:.0f} s")
+                    time.sleep(wait)
+                    res = try_models(chunk)
             if res is None:
                 log("  no AI model answered; using keyword rules for this batch")
         by_ai += len(res or {})

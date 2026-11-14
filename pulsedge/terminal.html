@@ -308,6 +308,39 @@ dialog.gl::backdrop{background:rgba(8,7,12,.6)}
   .sig.simple h3{font-size:16px}.plain{font-size:15px}.fact{font-size:14.5px}
   .sig.simple .call{font-size:11.5px;padding:1px 7px}
 }
+/* Ask PulsEdge: a chat over PulsEdge's own news and AI reports */
+.askfab{position:fixed;z-index:20;right:max(18px,env(safe-area-inset-right,0px));bottom:max(18px,env(safe-area-inset-bottom,0px));display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;padding:12px 18px;background:var(--pur);color:#fff;font:600 15px/1 var(--sans);box-shadow:0 12px 30px -10px rgba(76,61,143,.8)}
+.askfab svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.askb{background:none;border:1px solid var(--pur-edge);color:var(--pur-l);border-radius:6px;padding:0 8px;font:500 12.5px/1.6 var(--sans)}
+.chat{position:fixed;z-index:21;right:max(18px,env(safe-area-inset-right,0px));bottom:max(18px,env(safe-area-inset-bottom,0px));width:min(420px,calc(100vw - 36px));height:min(640px,calc(100vh - 110px));display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--pur-edge);border-radius:16px;box-shadow:0 30px 80px -24px rgba(0,0,0,.7);overflow:hidden}
+.chat[hidden]{display:none}
+.chh{display:flex;align-items:center;gap:8px 10px;flex-wrap:wrap;padding:12px 14px;border-bottom:1px solid var(--line)}
+.chh b{font-size:16px}
+.chh .sub{font-size:12.5px;color:var(--mute);flex:1;min-width:0}
+.chh .btn2{padding:4px 10px}
+.chm{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px;overscroll-behavior:contain}
+.msg{max-width:92%;border-radius:12px;padding:10px 12px;font-size:15px;line-height:1.5;display:grid;gap:7px;overflow-wrap:anywhere}
+.msg p{margin:0}
+.msg ul{margin:0;padding-left:18px;display:grid;gap:3px}
+.msg.u{align-self:flex-end;background:var(--pur);color:#fff;border-bottom-right-radius:4px}
+.msg.b{align-self:flex-start;background:var(--panel2);border:1px solid var(--line);border-bottom-left-radius:4px}
+.msg small{display:block;font:500 11px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.msg a{color:var(--pur-l)}
+.cq{display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:var(--panel);border:1px solid var(--pur-edge);color:var(--pur-l);border-radius:999px;padding:5px 11px;font-size:13.5px;text-align:left}
+.mini{display:grid;gap:3px;border:1px solid var(--line);border-left:3px solid var(--dim);border-radius:8px;padding:8px 10px;background:var(--panel);font-size:14px}
+.mini.buy,.mini.sell{border-left-color:var(--green)}.mini.watch{border-left-color:var(--amber)}
+.mini .call{justify-self:start}
+.mini span:last-child{color:var(--mute)}
+.chf{display:flex;gap:8px;padding:10px 12px;border-top:1px solid var(--line)}
+.chf input{flex:1;min-width:0;background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:10px 12px;font:16px/1.3 var(--sans);color:var(--fg)}
+.chf input:focus{outline:2px solid var(--pur);outline-offset:1px}
+.chn{margin:0;padding:0 12px 10px;font-size:11.5px;color:var(--dim)}
+@media (max-width:700px){
+  .chat{right:0;bottom:0;width:100%;height:100%;height:100dvh;border-radius:0;border:0;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+  .askfab{padding:11px 15px;font-size:14px}
+  .msg{font-size:14.5px}
+}
 </style>
 </head>
 <body>
@@ -376,7 +409,15 @@ dialog.gl::backdrop{background:rgba(8,7,12,.6)}
   </section>
 </main>
 
-<footer class="wrap foot">
+<button class="askfab" id="chat-open" type="button" aria-haspopup="dialog" aria-controls="chat" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 21 12z"/></svg><span>Ask PulsEdge</span></button>
+<section class="chat" id="chat" role="dialog" aria-labelledby="chat-t" hidden>
+  <div class="chh"><b id="chat-t">Ask PulsEdge</b><span class="sub">Answers from PulsEdge's news and AI reports</span><button class="btn2" id="chat-x" type="button" aria-label="Close the chat">✕</button></div>
+  <div class="chm" id="chat-m" aria-live="polite"></div>
+  <form class="chf" id="chat-f"><input id="chat-q" type="text" placeholder="Ask about a company, a market word or today" autocomplete="off" aria-label="Your question"><button class="btn2" type="submit">Send</button></form>
+  <p class="chn">Educational information, not investment advice. PulsEdge never tells you to buy or sell.</p>
+</section>
+
+<footer class="wrap foot" style="padding-bottom:84px">
   <span>Not investment advice. AI analysis can be wrong — confirm on the chart.</span>
   <span><button type="button" class="fb" id="fb">Send feedback</button> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="contact.html">Contact</a></span>
 </footer>
@@ -576,6 +617,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     if(s.horizon)h.appendChild(el("span","hz",HZ[s.horizon]||s.horizon));
     h.appendChild(el("span","dir "+(s.dir==="mixed"?"mixed":s.dir),ARROW[s.dir]+" "+s.dir.toUpperCase()));
     if(s.latency!=null)h.appendChild(el("span","lat",s.latency.toFixed(1)+"s"));
+    h.appendChild(askBtn(s));
     var hasMore=s.reason.length||s.risks.length||s.original||s.url;
     if(hasMore){var mb=el("button","more",open?"less":"more");mb.type="button";mb.setAttribute("aria-expanded",open?"true":"false");
       mb.onclick=function(){if(openIds[s.id])delete openIds[s.id];else openIds[s.id]=1;render()};h.appendChild(mb)}
@@ -842,6 +884,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     var open=!!openIds[s.id],h=el("div","sh");
     h.appendChild(el("span","call "+(act?"act":s.call),act?"ACT · worth reading now":s.call==="watch"?"WATCH · keep an eye on it":"IGNORE · safe to skip"));
     h.appendChild(el("span","tm",when(s)));
+    h.appendChild(askBtn(s));
     var mb=el("button","more",open?"less":"details");mb.type="button";mb.setAttribute("aria-expanded",open?"true":"false");
     mb.onclick=function(){if(openIds[s.id])delete openIds[s.id];else openIds[s.id]=1;render()};h.appendChild(mb);
     li.append(h,el("h3",null,s.plain||cleanHead(s.headline)));
@@ -890,6 +933,151 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     g.appendChild(el("p","sub","Tip: type any company name in the search box for a one-page summary, and switch to Pro for the full terminal detail."));
     if(g.showModal)g.showModal();else g.setAttribute("open","");
   };
+
+  // ---------- Ask PulsEdge: a chat over PulsEdge's own news and AI reports ----------
+  // Answers come from what PulsEdge already has: the AI reports (data/reports.json, written on GitHub),
+  // the classified news, big-investor deals and the glossary. Nothing typed here leaves the browser.
+  var chat=document.getElementById("chat"),chm=document.getElementById("chat-m"),chq=document.getElementById("chat-q"),fab=document.getElementById("chat-open"),greeted=false,lastStock=null;
+  var STOP={indian:1,bank:1,state:1,national:1,power:1,general:1,global:1,united:1,first:1,market:1,share:1,shares:1,stock:1,stocks:1,today:1,news:1,what:1,tell:1,about:1,with:1,happening:1,price:1,company:1,group:1,international:1,industries:1,capital:1,finance:1,new:1};
+  var RX={advice:/\b(should i|shall i|buy or sell|sell or buy|worth buying|good (time|buy|stock)|target|tips?|multibagger|will (it|the stock|the shares?|the price|.* price) (go|rise|fall|move|crash)|invest in|to buy|to sell)\b/,
+    down:/\b(wrong|risks?|worr(y|ied)|bad|danger|downside|negative|concern|lose|loss)\b/,
+    up:/\b(go well|upside|positive|good news|opportunit\w*|strengths?|bright)\b/,
+    watch:/\b(watch|look out|look for|next|keep an eye|track)\b/,
+    what:/\b(what (does|do) (it|they|\w+) do|what (is|are) (it|they)|business|do they make|what kind of)\b/,
+    news:/\b(news|headlines?|latest|updates?|filings?|happen\w*|going on)\b/,
+    today:/\b(today|market|session|overall|this week|right now|morning)\b/,
+    mine:/\b(my stocks?|my portfolio|my holdings?|my shares|i own|i hold|my watchlist)\b/,
+    explain:/\b(what (is|are|does)|whats|explain|meaning|mean|define)\b/,
+    hello:/^(hi|hello|hey|namaste|help|start|how does this work)\b/};
+  function chMsg(who){var m=el("div","msg "+who);chm.appendChild(m);return m}
+  function chSay(parts){var m=chMsg("b");parts.forEach(function(p){if(p)m.appendChild(typeof p==="string"?el("p",null,p):p)});chm.scrollTop=chm.scrollHeight;return m}
+  function chChips(list){var d=el("div","cq");list.forEach(function(c){var b=el("button","chip",c[0]);b.type="button";b.onclick=function(){typeof c[1]==="function"?c[1]():ask(c[1]||c[0])};d.appendChild(b)});return d}
+  function chList(label,arr){var d=el("div");if(label)d.appendChild(el("small",null,label));var u=el("ul");arr.forEach(function(t){u.appendChild(el("li",null,t))});d.appendChild(u);return d}
+  function chPart(label,text){var d=el("div");d.append(el("small",null,label),el("p",null,text));return d}
+  function mini(s){
+    var d=el("div","mini "+s.call),act=isAct(s);
+    d.append(el("span","call "+(act?"act":s.call),act?"ACT":s.call.toUpperCase()),el("b",null,s.plain||cleanHead(s.headline)));
+    var why=s.why||s.reason[0];if(why)d.appendChild(el("span",null,why));
+    return d;
+  }
+  function openChat(){chat.hidden=false;fab.hidden=true;fab.setAttribute("aria-expanded","true");loadReports();if(!greeted){greeted=true;greet()}setTimeout(function(){chq.focus()},30)}
+  function closeChat(){chat.hidden=true;fab.hidden=false;fab.setAttribute("aria-expanded","false");fab.focus()}
+  fab.onclick=openChat;document.getElementById("chat-x").onclick=closeChat;
+  chat.addEventListener("keydown",function(e){if(e.key==="Escape")closeChat()});
+  document.getElementById("chat-f").addEventListener("submit",function(e){e.preventDefault();var t=chq.value.trim();if(!t)return;chq.value="";ask(t)});
+
+  function findStocks(text){
+    var n=" "+norm(text)+" ",hits=[];
+    uni.forEach(function(st){
+      var sym=st.symbol,w=nameWords(st),sc=0;
+      if(new RegExp("(^|[^A-Z0-9])"+sym.replace(/[^A-Z0-9]/g,".")+"([^A-Z0-9]|$)").test(text))sc=5;          // typed as a symbol, in capitals
+      else if(sym.length>=5&&n.indexOf(" "+sym.toLowerCase()+" ")>=0)sc=4;
+      if(w.length>=2&&n.indexOf(" "+w[0]+" "+w[1].slice(0,Math.min(5,w[1].length)))>=0)sc=Math.max(sc,4);
+      else if(w.length&&w[0].length>=4&&!STOP[w[0]]&&n.indexOf(" "+w[0]+" ")>=0)sc=Math.max(sc,w.length===1?4:2);
+      if(sc)hits.push({sc:sc,s:st});
+    });
+    if(!hits.length)return [];
+    hits.sort(function(a,b){return b.sc-a.sc});
+    var best=hits.filter(function(h){return h.sc===hits[0].sc});
+    return best.length>5?[]:best.map(function(h){return h.s});      // a word shared by many companies isn't a match
+  }
+  function flagged(st){return sigs.filter(function(x){return x.call!=="ignore"&&about(x,st)}).sort(rank)}
+  function report(st){return reports&&reports.stocks&&reports.stocks[st.symbol]}
+  function stockChips(st){
+    var s=st.symbol;
+    return chChips([["What could go wrong?","What could go wrong with "+s],["What to watch","What to watch for "+s],["Show the news","News on "+s],
+      ["What does it do?","What does "+s+" do"],["Open the full brief",function(){openStock(s);if(innerWidth<=700)closeChat()}]]);
+  }
+  function stockAnswer(st,t){
+    lastStock=st;
+    var nm=shortName(st.name),r=report(st),items=flagged(st),top=items[0],n50=reports&&reports.nifty50&&(reports.nifty50.symbols||[]).indexOf(st.symbol)>=0;
+    if(RX.down.test(t)){
+      var risk=(r&&r.downside)||(top&&top.risks[0]);
+      chSay([risk?chPart("What could go wrong for "+nm,risk):"PulsEdge's news on "+nm+" doesn't point to a specific risk right now.",
+        items.length?"Remember: every share can fall, even when the news is good.":null,stockChips(st)]);return;
+    }
+    if(RX.up.test(t)&&!RX.down.test(t)){
+      var up=(r&&r.upside)||(top&&top.dir==="up"&&(top.why||top.reason[0]));
+      chSay([up?chPart("What could go well for "+nm,up):"Nothing in PulsEdge's news on "+nm+" points to a clear positive right now.",stockChips(st)]);return;
+    }
+    if(RX.watch.test(t)){
+      var w=(r&&r.watch&&r.watch.length?r.watch:items.slice(0,3).map(function(x){return x.check||x.action}).filter(function(v){return v&&!/^no action/i.test(v)}));
+      chSay([w.length?chList("What to watch for "+nm,w):"PulsEdge has nothing specific to watch for "+nm+" right now.",stockChips(st)]);return;
+    }
+    if(RX.what.test(t)){
+      chSay([(r&&r.about)||(nm+(st.sector?" is in the "+st.sector+" sector":"")+". PulsEdge doesn't have a fuller description yet."),
+        n50?nm+" is one of India's 50 largest listed companies (Nifty 50).":"It is one of India's 500 largest listed companies (Nifty 500).",stockChips(st)]);return;
+    }
+    if(RX.news.test(t)&&!r||/^news on /i.test(t)){
+      if(!items.length){chSay(["PulsEdge hasn't flagged any news about "+nm+" in the last few days. That usually means there's nothing to react to.",stockChips(st)]);return}
+      var parts=[el("p",null,"The "+plural(Math.min(items.length,4),"most important item")+" PulsEdge flagged about "+nm+":")];
+      items.slice(0,4).forEach(function(x){parts.push(mini(x))});parts.push(stockChips(st));chSay(parts);return;
+    }
+    var head=el("p");head.append(el("b",null,nm),document.createTextNode(" ("+st.symbol+(st.sector?", "+st.sector:"")+(n50?", Nifty 50":"")+")"));
+    if(r&&r.summary){chSay([head,r.summary,r.why?chPart("Why it matters",r.why):null,stockChips(st)]);return}
+    if(top){chSay([head,"PulsEdge flagged "+plural(items.length,"item")+" about "+nm+" recently. The most important: "+(top.plain||cleanHead(top.headline)),
+      (top.why||top.reason[0])?chPart("Why it matters",top.why||top.reason[0]):null,stockChips(st)]);return}
+    chSay([head,"PulsEdge hasn't flagged any news about "+nm+" in the last few days. That usually means there's nothing to react to right now.",
+      chChips([[mine(st.symbol)?"It's in My stocks":"Add to My stocks",function(){if(!mine(st.symbol)){hold.push({s:st.symbol,q:null});store("pe_hold",JSON.stringify(hold));render();renderPM()}chSay([nm+" is in My stocks. Its news will show in the My stocks tab."])}]])]);
+  }
+  function todayAnswer(){
+    var ld=latestDay(),all=sigs.filter(function(i){return i.t&&dayOf(i.t)===ld}),top=all.filter(function(x){return x.call!=="ignore"}).sort(rank),td=reports&&reports.today;
+    var label=ld===dayOf(new Date())?"Today":"In the latest session ("+new Date(ld+"T12:00:00+05:30").toLocaleDateString("en-IN",{weekday:"long",day:"numeric",month:"short"})+")";
+    var parts=[el("p",null,label+", PulsEdge read "+plural(all.length,"headline")+": "+all.filter(isAct).length+" worth reading now, "+all.filter(function(i){return i.call==="watch"}).length+" to keep an eye on, the rest routine.")];
+    if(td&&td.summary&&td.date===ld){parts.push(el("p",null,td.summary));if(td.themes&&td.themes.length)parts.push(chList("Themes",td.themes));if(td.watch&&td.watch.length)parts.push(chList("What to watch",td.watch))}
+    else{parts.push(el("small",null,"The most important items"));top.slice(0,3).forEach(function(x){parts.push(mini(x))})}
+    parts.push(chChips([["What's in my stocks?","my stocks"],["What is a bulk deal?"],["Show today's list",function(){setFocus({today:true});if(innerWidth<=700)closeChat()}]]));
+    chSay(parts);
+  }
+  function mineAnswer(){
+    if(!hold.length){chSay(["You haven't added any stocks yet. Search a company at the top and tap \"+ Add to My stocks\", or import your holdings on the PulsEdge home page. Then ask me again."]);return}
+    var withNews=[];
+    hold.forEach(function(h){var st=uni.filter(function(u){return u.symbol===h.s})[0]||{symbol:h.s,name:h.s,sector:""},it=flagged(st);if(it.length)withNews.push({st:st,items:it})});
+    if(!withNews.length){chSay(["None of your "+plural(hold.length,"stock")+" has flagged news right now. That usually means there's nothing to react to."]);return}
+    var parts=[el("p",null,withNews.length+" of your "+plural(hold.length,"stock")+" "+(withNews.length===1?"has":"have")+" flagged news:")];
+    withNews.slice(0,6).forEach(function(w){var r=report(w.st),d=el("div","mini "+w.items[0].call);d.append(el("b",null,shortName(w.st.name)+" · "+plural(w.items.length,"item")),el("span",null,(r&&r.summary?r.summary.split(/\.\s/)[0].replace(/\.?$/,"."):(w.items[0].plain||cleanHead(w.items[0].headline)))));parts.push(d)});
+    parts.push(chChips(withNews.slice(0,4).map(function(w){return ["More on "+shortName(w.st.name),"Tell me about "+w.st.symbol]})));
+    chSay(parts);
+  }
+  function glossAnswer(g){
+    var hits=sigs.filter(function(x){return g.k.some(function(k){return hay(x).indexOf(" "+k+" ")>=0})});
+    chSay([el("b",null,g.t),g.d,chPart("Why it matters",g.w),hits.length?chChips([["Show the "+plural(Math.min(hits.length,25),"headline")+" that mention it",function(){setFocus({g:g});if(innerWidth<=700)closeChat()}]]):null]);
+  }
+  function help(lead){
+    var ex=reports&&reports.stocks?Object.keys(reports.stocks)[0]:null,exSt=ex&&uni.filter(function(u){return u.symbol===ex})[0];
+    chSay([lead||"Ask me in your own words. I can help with:",chList(null,["a company: \"What's happening with Torrent Pharma?\"","a market word: \"What is an FII?\"","the market: \"What happened today?\"","your stocks: \"Any news on my stocks?\""]),
+      chChips([["What happened today?"],exSt?[shortName(exSt.name),"Tell me about "+ex]:["Tell me about Reliance"],["What is a bulk deal?"],["My stocks","my stocks"]])]);
+  }
+  function greet(){help("Hi, I'm PulsEdge's assistant. I explain what PulsEdge's news and AI reports say, in plain words. I don't give buy or sell advice.")}
+  function ask(text){
+    var u=chMsg("u");u.textContent=text;chm.scrollTop=chm.scrollHeight;
+    var t=text.toLowerCase();
+    if(RX.advice.test(t))chSay(["PulsEdge doesn't tell anyone to buy, sell or hold, or where a price will go. That decision is yours. Here is what the news says, so you can decide."]);
+    if(RX.mine.test(t)){mineAnswer();return}
+    var found=findStocks(text);
+    if(!found.length&&lastStock&&/\b(it|its|it's|this|that|they|them|their|the company|the stock|the shares?)\b/.test(t))found=[lastStock];
+    if(found.length>1){chSay(["Which company do you mean?",chChips(found.map(function(st){return [shortName(st.name),"Tell me about "+st.symbol]}))]);return}
+    if(found.length===1){stockAnswer(found[0],t);return}
+    var n=" "+norm(text)+" ",g=GLOSS.filter(function(g){return g.k.some(function(k){return n.indexOf(" "+k+" ")>=0})})[0];
+    if(RX.today.test(t)&&!(g&&RX.explain.test(t))){todayAnswer();return}
+    if(g){glossAnswer(g);return}
+    if(RX.hello.test(t)){help();return}
+    if(RX.advice.test(t))return;
+    help("I couldn't match that to a company or a market word. A live AI chat for any question is coming; for now, try one of these:");
+  }
+  function askAbout(s){
+    openChat();
+    var u=chMsg("u");var hl=s.plain||cleanHead(s.headline);u.textContent="Explain: "+(hl.length>90?hl.slice(0,88).replace(/\s+\S*$/,"")+"…":hl);
+    var act=isAct(s),parts=[el("p",null,(act?"ACT: worth reading now. ":s.call==="watch"?"WATCH: keep an eye on it. ":"IGNORE: routine, safe to skip. ")+(s.plain||cleanHead(s.headline)))];
+    var why=s.why||s.reason[0],chk=s.check||s.action;
+    if(why)parts.push(chPart(s.call==="ignore"?"Why you can skip it":"Why it matters",why));
+    if(s.call!=="ignore"&&chk&&!/^no action/i.test(chk))parts.push(chPart("What to check",chk));
+    if(s.risks.length)parts.push(chPart("What could go wrong",s.risks[0]));
+    if(s.url){var a=el("a",null,"Read the source"+(s.source?" ("+s.source+")":"")+" ↗");a.href=s.url;a.target="_blank";a.rel="noopener";parts.push(a)}
+    if(s.tickers.length)parts.push(chChips(s.tickers.slice(0,3).map(function(m){return ["More on "+m.symbol,"Tell me about "+m.symbol]})));
+    chSay(parts);
+  }
+  function askBtn(s){var b=el("button","askb","Ask");b.type="button";b.setAttribute("aria-label","Ask PulsEdge about this");b.onclick=function(){askAbout(s)};return b}
 
   // ---------- data ----------
   // mode "sample" (no trial or membership yet) shows the sample files; see assets/member.js

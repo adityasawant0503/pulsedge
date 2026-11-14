@@ -116,9 +116,9 @@ def http(url, key=None, body=None, timeout=45, accept="application/json"):
         with urllib.request.urlopen(req, timeout=timeout) as r:
             return r.read()
     except urllib.error.HTTPError as e:
-        detail = e.read()[:400].decode("utf-8", "replace")
-        m = re.search(r'"message"\W{1,6}(.{0,160})', detail)
-        raise RuntimeError(f"HTTP {e.code} {m.group(1) if m else detail[:160]}".replace("\\n", " "))
+        detail = e.read()[:900].decode("utf-8", "replace")
+        m = re.search(r'"message"\W{1,6}(.{0,400})', detail)
+        raise RuntimeError(f"HTTP {e.code} {m.group(1) if m else detail[:400]}".replace("\\n", " "))
 
 
 # ---------------------------------------------------------------- models
@@ -153,22 +153,48 @@ def candidates():
     return out
 
 
+DAILY = re.compile(r"per day|\bRPD\b|\bTPD\b|current quota|daily", re.I)
+
+
+def retry_after(msg, default):
+    """Seconds a provider asks us to wait ("try again in 7.66s" / "in 1m3s" / "in 850ms"), capped at 70."""
+    m = re.search(r"try again in (?:(\d+)m)?([\d.]+)(ms|s)", msg)
+    if not m:
+        return default
+    return min(70.0, int(m.group(1) or 0) * 60 + float(m.group(2)) / (1000 if m.group(3) == "ms" else 1) + 1)
+
+
 class Writer:
+    BUDGET = 150          # seconds of AI work per run, inside the step's four-minute limit
+
     def __init__(self, cands):
-        self.cands, self.dead, self.rest, self.calls, self.last = cands, set(), {}, 0, 0.0
+        self.cands, self.dead, self.rest, self.calls, self.last, self.start = cands, set(), {}, 0, 0.0, time.time()
+        self.plain = set()
 
     def ask(self, prompt, max_tokens=700):
-        """One JSON answer from the first model that gives one, or None."""
+        """One JSON answer from the first model that gives one, waiting briefly if every model is resting."""
+        out = self._ask(prompt, max_tokens)
+        if out[0] is None and time.time() - self.start < self.BUDGET:
+            back = min((t for i, t in self.rest.items() if i not in self.dead), default=None)
+            if back is not None and 0 < back - time.time() <= 30:
+                time.sleep(back - time.time() + 0.5)
+                out = self._ask(prompt, max_tokens)
+        return out
+
+    def _ask(self, prompt, max_tokens):
+        if time.time() - self.start >= self.BUDGET:
+            return None, None
         for i, (label, url, key, model) in enumerate(self.cands):
-            if i in self.dead or self.rest.get(i, 0) > self.calls:
+            if i in self.dead or self.rest.get(i, 0) > time.time():
                 continue
             wait = GAP - (time.time() - self.last)
             if wait > 0:
                 time.sleep(wait)
             self.last = time.time()
             body = {"model": model, "temperature": 0.3, "max_tokens": max_tokens,
-                    "response_format": {"type": "json_object"},
                     "messages": [{"role": "system", "content": GUIDE}, {"role": "user", "content": prompt}]}
+            if model not in self.plain:                 # Groq's JSON mode sometimes fails on gpt-oss; the prompt asks for JSON anyway
+                body["response_format"] = {"type": "json_object"}
             if label == "gemini":
                 body["reasoning_effort"] = "low"
             try:
@@ -181,10 +207,15 @@ class Writer:
             except Exception as e:
                 msg = str(e)
                 log(f"  {model}: {msg[:140]}")
-                if re.match(r"HTTP (400|401|403|404)", msg):
-                    self.dead.add(i)
-                else:                                   # over a limit, busy or slow: skip it for a few requests
-                    self.rest[i] = self.calls + (3 if msg.startswith("HTTP 429") else 1)
+                if msg.startswith("HTTP 400") and "generate JSON" in msg and model not in self.plain:
+                    self.plain.add(model)               # ask again next time without JSON mode
+                    self.rest[i] = time.time() + 2
+                elif re.match(r"HTTP (400|401|403|404)", msg) or (msg.startswith("HTTP 429") and DAILY.search(msg)):
+                    self.dead.add(i)                    # retired, not allowed, or out of quota for the day
+                elif msg.startswith("HTTP 429"):        # over a per-minute limit: rest as long as the provider asks
+                    self.rest[i] = time.time() + retry_after(msg, 60)
+                else:                                   # busy or slow
+                    self.rest[i] = time.time() + (20 if msg.startswith("HTTP 5") else 90)
         self.calls += 1
         return None, None
 
