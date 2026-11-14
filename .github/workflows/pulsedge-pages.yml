@@ -34,3 +34,26 @@ jobs:
         path: pulsedge
     - id: deployment
       uses: actions/deploy-pages@v4
+
+  # Second copy at https://pulsedge.pages.dev (free, short address for the bio); does nothing until the
+  # CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID secrets exist. See pulsedge-bot/cf_pages.sh.
+  cloudflare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    concurrency:
+      group: pulsedge-cloudflare
+      cancel-in-progress: true
+    steps:
+    - uses: actions/checkout@v5
+      with:
+        persist-credentials: false
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 22
+    - name: Copy the site to Cloudflare Pages
+      env:
+        CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        CF_PAGES_PROJECT: ${{ vars.CF_PAGES_PROJECT }}
+        COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+      run: bash pulsedge-bot/cf_pages.sh
