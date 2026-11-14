@@ -354,6 +354,7 @@ def classify_compat(batch, universe, url, key, model):
                     + (f"  (candidate NSE symbols: {', '.join(cands)})" if cands else "  (no listed company named)"))
     guide = GUIDE.split("NSE universe")[0] + (
         "Only use the candidate symbols given for a headline; if none fit, return an empty tickers list.\n"
+        "A company with no candidate symbol is still a listed company: judge its news on its merits all the same.\n"
         f'Reply with JSON only: {{"items": [{{{GH_FIELDS}}}, ...]}} using exactly these field names. '
         'section is trading|news|macro; call buy|sell|watch|ignore; horizon intraday|swing|positional; direction up|down|mixed.')
     payload = {
@@ -365,8 +366,9 @@ def classify_compat(batch, universe, url, key, model):
         payload["reasoning_effort"] = "low"      # newer Gemini models think at length by default; sorting headlines doesn't need it
 
     def send(body):
+        # a browser-like User-Agent: Groq's API sits behind Cloudflare, which refuses Python's default one (HTTP 403)
         req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={
-            "Authorization": "Bearer " + key, "Content-Type": "application/json", "Accept": "application/json"})
+            "Authorization": "Bearer " + key, "Content-Type": "application/json", "Accept": "application/json", "User-Agent": UA})
         with urllib.request.urlopen(req, timeout=75) as r:
             return r.read().decode("utf-8", "replace")
     try:
@@ -548,9 +550,11 @@ def main():
                             dead.add(ci)                   # a retired model, or a key this provider doesn't accept
                         elif msg.startswith("HTTP 429"):
                             resting[ci] = bi + 6           # over its limit: leave it alone for a while
-                        elif attempt == 1 and time.time() < ai_until:
-                            time.sleep(3)                  # busy or slow: one more try before moving on
+                        elif attempt == 1 and msg.startswith("HTTP 5") and time.time() < ai_until:
+                            time.sleep(3)                  # busy: one more try before moving on (a timeout moves on at once)
                             continue
+                        else:
+                            resting[ci] = bi + 3           # slow or still busy: leave it alone for a few batches
                         break
                 if res is not None:
                     break
