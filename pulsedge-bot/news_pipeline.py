@@ -314,9 +314,9 @@ PREFILTER = re.compile(r"74\s*\(5\)|trading window|loss of share|duplicate share
 
 def ai_candidates():
     """The models to try, best first, as (url, key, model)."""
-    env, out = os.environ.get, []
+    env, out, gem, groq = os.environ.get, [], [], []
     if env("AI_API_KEY"):
-        out += [(env("AI_BASE_URL") or GEMINI_URL, env("AI_API_KEY"), m) for m in ([env("AI_MODEL")] if env("AI_MODEL") else GEMINI_MODELS)]
+        gem = [(env("AI_BASE_URL") or GEMINI_URL, env("AI_API_KEY"), m) for m in ([env("AI_MODEL")] if env("AI_MODEL") else GEMINI_MODELS)]
     if env("GROQ_API_KEY"):
         names = [env("GROQ_MODEL")] if env("GROQ_MODEL") else GROQ_MODELS
         if not env("GROQ_MODEL"):
@@ -325,7 +325,10 @@ def ai_candidates():
                 names = groq_models(env("GROQ_API_KEY"))[:2] or GROQ_MODELS
             except Exception as e:
                 log(f"  Groq model list unavailable ({type(e).__name__}); trying {', '.join(names)}")
-        out += [(GROQ_URL, env("GROQ_API_KEY"), m) for m in names]
+        groq = [(GROQ_URL, env("GROQ_API_KEY"), m) for m in names]
+    # Gemini's best model first; Groq next, so it shares the load while Gemini's other free models are over
+    # their daily quota; then the rest of Gemini's models
+    out = gem[:1] + groq + gem[1:]
     if env("GH_MODELS_TOKEN") and env("PULSEDGE_USE_GITHUB_MODELS"):
         out += [(GH_MODELS_URL, env("GH_MODELS_TOKEN"), m) for m in ([env("PULSEDGE_GH_MODEL")] if env("PULSEDGE_GH_MODEL") else GH_MODELS)]
     return out
