@@ -41,6 +41,7 @@ on:
       - 'pulsedge-bot/premarket.py'
       - 'pulsedge-bot/track_record.py'
       - 'pulsedge-bot/flows.py'
+      - 'pulsedge-bot/reports.py'
       - 'pulsedge-bot/reel/**'
       - '.github/workflows/pulsedge-news.yml'
 
@@ -85,6 +86,17 @@ jobs:
       env:
         DRY: ${{ github.ref != 'refs/heads/master' && '--dry-run' || '' }}
       run: python pulsedge-bot/flows.py $DRY
+    - name: AI reports
+      # plain-English reports for the terminal's search; a failure here never stops the update
+      timeout-minutes: 4
+      continue-on-error: true
+      env:
+        GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        GROQ_MODEL: ${{ vars.GROQ_MODEL }}
+        AI_API_KEY: ${{ secrets.AI_API_KEY }}
+        AI_BASE_URL: ${{ vars.AI_BASE_URL }}
+        DRY: ${{ github.ref != 'refs/heads/master' && '--dry-run' || '' }}
+      run: python pulsedge-bot/reports.py $DRY
     - name: Pre-market panel
       timeout-minutes: 4
       env:
@@ -99,10 +111,12 @@ jobs:
       id: commit
       if: github.ref == 'refs/heads/master'
       run: |
-        if [ -n "$(git status --porcelain pulsedge/data/feed.json pulsedge/data/universe.json pulsedge/data/premarket.json pulsedge/data/track.json pulsedge/data/flows.json pulsedge-bot/state)" ]; then
+        FILES="pulsedge/data/feed.json pulsedge/data/universe.json pulsedge/data/premarket.json pulsedge/data/track.json pulsedge/data/flows.json pulsedge/data/reports.json pulsedge-bot/state"
+        FILES=$(for f in $FILES; do [ -e "$f" ] && echo "$f"; done)
+        if [ -n "$(git status --porcelain $FILES)" ]; then
           git config user.name "pulsedge-bot"
           git config user.email "pulsedge-bot@users.noreply.github.com"
-          git add pulsedge/data/feed.json pulsedge/data/universe.json pulsedge/data/premarket.json pulsedge/data/track.json pulsedge/data/flows.json pulsedge-bot/state
+          git add $FILES
           git commit -q -m "PulsEdge news: $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"

@@ -276,6 +276,14 @@ html{-webkit-tap-highlight-color:transparent}
 .fact{border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:15px;line-height:1.45;min-width:0;overflow-wrap:anywhere}
 .fact small,.plain small{display:block;font:500 11px/1.4 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--mute);margin-bottom:3px}
 .brief .fine{font-size:12.5px;color:var(--dim);margin:0}
+.ai{border:1px solid var(--pur-edge);background:var(--pur-box);border-radius:12px;padding:14px 16px;display:grid;gap:10px}
+.ai .aih{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.ai .aib{font:600 12px/1.4 var(--mono);letter-spacing:.06em;color:#fff;background:var(--pur);border-radius:5px;padding:2px 8px}
+.ai .aim{font-size:12.5px;color:var(--mute)}
+.ai .ais{margin:0;font-size:16px;line-height:1.55}
+.ai .facts{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.ai .fact{background:var(--panel)}
+.ai ul{margin:2px 0 0;padding-left:18px;display:grid;gap:2px}
 .sig.simple h3{font-size:17px}
 .plain{display:grid;gap:8px;font-size:15.5px;line-height:1.5}
 .plain p{margin:0}
@@ -631,7 +639,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
 
   // ---------- search, the Simple view and the stock brief ----------
   // Simple (the default) says each item in plain words and keeps routine items out of the way; Pro is the dense terminal.
-  var view=store("pe_view")==="pro"?"pro":"simple",focus=null,showRest=false,shown=20,uni=[],track=null;
+  var view=store("pe_view")==="pro"?"pro":"simple",focus=null,showRest=false,shown=20,uni=[],track=null,reports=null;
   // a stock's sector (universe.json) -> the NSE sector index that follows it (flows.json labels)
   var SECTOR_INDEX={"Financial Services":"Financials","Healthcare":"Healthcare","Automobile and Auto Components":"Auto","Fast Moving Consumer Goods":"FMCG",
     "Information Technology":"IT","Metals & Mining":"Metals","Oil Gas & Consumable Fuels":"Oil & Gas","Power":"Energy","Consumer Durables":"Consumer durables","Realty":"Realty","Media Entertainment & Publication":"Media"};
@@ -682,12 +690,14 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     var tm=x.t.toLocaleTimeString("en-IN",{timeZone:"Asia/Kolkata",hour:"2-digit",minute:"2-digit",hour12:false});
     return (dayOf(x.t)===dayOf(new Date())?"Today":x.t.toLocaleDateString("en-IN",{timeZone:"Asia/Kolkata",day:"numeric",month:"short"}))+" "+tm;
   }
+  // the latest day with flagged news (over a weekend the newest items are routine filings)
+  function latestDay(){for(var i=0;i<sigs.length;i++)if(sigs[i].call!=="ignore"&&sigs[i].t)return dayOf(sigs[i].t);return sigs.length&&sigs[0].t?dayOf(sigs[0].t):""}
   function rank(a,b){return (isAct(b)-isAct(a))||((b.impact||0)-(a.impact||0))||(b.ts-a.ts)}
   function focusItems(){
     if(!focus)return null;
     if(focus.s)return sigs.filter(function(x){return about(x,focus.s)});
     if(focus.g)return sigs.filter(function(x){return focus.g.k.some(function(k){return hay(x).indexOf(" "+k+" ")>=0})}).slice(0,25);
-    if(focus.today){var d=sigs.length&&sigs[0].t?dayOf(sigs[0].t):"";return sigs.filter(function(x){return x.call!=="ignore"&&x.t&&dayOf(x.t)===d}).sort(rank).slice(0,15)}
+    if(focus.today){var d=latestDay();return sigs.filter(function(x){return x.call!=="ignore"&&x.t&&dayOf(x.t)===d}).sort(rank).slice(0,15)}
     var n=norm(focus.text);return n?sigs.filter(function(x){return hay(x).indexOf(n)>=0}).slice(0,40):[];
   }
 
@@ -695,10 +705,27 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
   function fact(label,text){var d=el("div","fact");d.append(el("small",null,label),document.createTextNode(text));return d}
   function title(v){return String(v).toLowerCase().replace(/\b[a-z]/g,function(c){return c.toUpperCase()})}
   function plural(n,w){return n+" "+w+(n===1?"":"s")}
+  // AI reports (data/reports.json): written on GitHub by the pipeline's reports.py from PulsEdge's own feed
+  function loadReports(){if(reports)return;reports={stocks:{}};getJson("data/reports.json").then(function(j){reports=j;if(focus)render()}).catch(function(){})}
+  function listFact(label,arr){var d=el("div","fact"),u=el("ul");d.appendChild(el("small",null,label));arr.forEach(function(t){u.appendChild(el("li",null,t))});d.appendChild(u);return d}
+  function aiBlock(r){
+    var box=el("div","ai"),hd=el("div","aih"),f=el("div","facts");
+    var up=r.updated?new Date(r.updated):null;
+    hd.append(el("span","aib","AI REPORT"),el("span","aim","Written by AI from PulsEdge's headlines"+(up&&!isNaN(up)?", "+when({t:up}):"")+". AI can be wrong; check the sources below."));
+    box.append(hd,el("p","ais",r.summary));
+    if(r.why)f.appendChild(fact("Why it matters",r.why));
+    if(r.upside)f.appendChild(fact("What could go well",r.upside));
+    if(r.downside)f.appendChild(fact("What could go wrong",r.downside));
+    if(r.themes&&r.themes.length)f.appendChild(listFact("Themes",r.themes));
+    if(r.watch&&r.watch.length)f.appendChild(listFact("What to watch",r.watch));
+    if(r.about)f.appendChild(fact("What the company does",r.about));
+    if(f.childNodes.length)box.appendChild(f);
+    return box;
+  }
   function renderBrief(items){
     var b=document.getElementById("brief");b.textContent="";b.hidden=!focus;if(!focus)return;
     var bh=el("div","bh"),x=el("button","btn2 x","← All news");x.type="button";x.onclick=function(){setFocus(null)};
-    var say=el("p","say"),facts=el("div","facts");
+    var say=el("p","say"),facts=el("div","facts"),aiNode=null;
     if(focus.s){
       var st=focus.s,nm=shortName(st.name),act=items.filter(isAct),watch=items.filter(function(i){return i.call==="watch"}),ign=items.length-act.length-watch.length;
       var top=items.slice().sort(rank)[0],on=mine(st.symbol),add=el("button","btn2"+(on?" on":""),on?"✓ In My stocks":"+ Add to My stocks");
@@ -710,7 +737,10 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       if(!items.length)say.textContent="PulsEdge has read nothing about "+nm+" in the last few days. If you hold it, that usually means there is nothing to react to right now.";
       else say.append("PulsEdge read "+plural(items.length,"headline")+" about "+nm+" in the last few days: ",el("b",null,act.length+" to act on"),", ",el("b",null,watch.length+" to watch")," and "+ign+" set aside. ",
         act.length?"There is something worth reading now.":watch.length?"Nothing urgent, but keep an eye on it.":"Nothing here needs your attention.");
-      if(top&&top.call!=="ignore"){
+      loadReports();
+      var ai=reports&&reports.stocks&&reports.stocks[st.symbol],n50=reports&&reports.nifty50&&(reports.nifty50.symbols||[]).indexOf(st.symbol)>=0;
+      if(ai&&ai.summary)aiNode=aiBlock(ai);
+      else if(top&&top.call!=="ignore"){
         facts.appendChild(fact("Most important right now",top.plain||cleanHead(top.headline)));
         if(top.why||top.reason[0])facts.appendChild(fact("Why it matters",top.why||top.reason[0]));
         var chk=top.check||top.action;
@@ -718,6 +748,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       }
       var deals=(flows&&flows.deals||[]).filter(function(d){return d.symbol===st.symbol}).slice(0,3);
       if(deals.length)facts.appendChild(fact("Big investors",deals.map(function(d){return title(d.client)+" "+(d.side==="sell"?"sold":"bought")+" ₹"+d.value_cr.toLocaleString("en-IN")+" crore"}).join("; ")+" ("+deals[0].kind+" deals, "+deals[0].date+")."));
+      if(reports&&reports.nifty50&&reports.nifty50.symbols&&reports.nifty50.symbols.length)facts.appendChild(fact("How big it is",n50?"One of India's 50 largest listed companies (Nifty 50). Its news can move the whole market.":"One of India's 500 largest listed companies (Nifty 500)."));
       var idx=SECTOR_INDEX[st.sector],mv=idx&&sectorMove(idx);
       if(mv&&mv.d1!=null)facts.appendChild(fact("Its sector",idx+" shares moved "+pct(mv.d1)+" in the last session"+(mv.d5!=null?" and "+pct(mv.d5)+" over five sessions":"")+"."));
       var past=(track&&track.calls||[]).filter(function(c){return c.symbol===st.symbol&&c.scored&&c.hit1!=null});
@@ -728,16 +759,19 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       say.textContent=focus.g.d;facts.appendChild(fact("Why it matters",focus.g.w));
       if(items.length)facts.appendChild(fact("In the news",plural(items.length,"recent headline")+" below mention it."));
     }else if(focus.today){
-      var all=sigs.filter(function(i){return i.t&&sigs[0].t&&dayOf(i.t)===dayOf(sigs[0].t)}),a=all.filter(isAct).length,w2=all.filter(function(i){return i.call==="watch"}).length;
+      var ld=latestDay(),all=sigs.filter(function(i){return i.t&&dayOf(i.t)===ld}),a=all.filter(isAct).length,w2=all.filter(function(i){return i.call==="watch"}).length;
       var mn=all.filter(function(i){return i.call!=="ignore"&&i.tickers.some(function(m){return mine(m.symbol)})}).length;
-      bh.append(el("h2",null,"Today in plain words"),x);
+      bh.append(el("h2",null,ld===dayOf(new Date())?"Today in plain words":"The latest session in plain words"),el("span","sub",ld?new Date(ld+"T12:00:00+05:30").toLocaleDateString("en-IN",{weekday:"long",day:"numeric",month:"long"}):""),x);
       say.append("PulsEdge has read "+plural(all.length,"headline")+" in the latest session. ",el("b",null,a+" are worth reading now"),", ",el("b",null,w2+" are worth keeping an eye on"),", and the rest are routine."+(hold.length?" "+(mn?mn+" of the flagged items are about your stocks.":"None of the flagged items are about your stocks."):""));
+      loadReports();
+      var td=reports&&reports.today;
+      if(td&&td.summary&&td.date===ld)aiNode=aiBlock(td);
       if(items.length)facts.appendChild(fact("Start here","The most important items are listed first below."));
     }else{
       bh.append(el("h2",null,"“"+focus.text+"”"),x);
       say.textContent=items.length?plural(items.length,"recent headline")+" mention this.":"No recent headline mentions this. Try a company name, an NSE symbol, or a term such as bulk deal.";
     }
-    b.append(bh,say);if(facts.childNodes.length)b.appendChild(facts);
+    b.append(bh,say);if(aiNode)b.appendChild(aiNode);if(facts.childNodes.length)b.appendChild(facts);
     b.appendChild(el("p","fine","A summary of public information to help you read the news. It is not investment advice."));
   }
   function setFocus(f){
