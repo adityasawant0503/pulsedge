@@ -162,6 +162,11 @@
       .then(function(r){if(!r.ok)throw new Error("form")});
   }
   function validEmail(s){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s)}
+  // A trial sign-up, with where the visitor came from (assets/source.js) so Instagram sign-ups stand out in the inbox.
+  function trialPost(email,n,via){
+    via=via||window.PulseSource||"direct";
+    return post({email:email,source:"trial",plan:"trial7",sessions:n,via:via,_subject:"PulsEdge trial started: "+email+(via==="direct"?"":" (via "+via+")")});
+  }
 
   function passForm(){
     var inp=h("input",{type:"text",placeholder:"Paste your access link",autocomplete:"off","aria-label":"Access link"}),
@@ -197,9 +202,9 @@
         e.preventDefault();var email=inp.value.trim().toLowerCase();
         if(!validEmail(email)){msg.textContent="Enter a full email address, like you@email.com.";msg.className="pe-msg err";return}
         btn.disabled=true;msg.textContent="Starting…";msg.className="pe-msg";
-        var rec={email:email,at:new Date().toISOString(),n:TRIAL_SESSIONS};
+        var rec={email:email,at:new Date().toISOString(),n:TRIAL_SESSIONS,via:window.PulseSource||"direct"};
         // The trial starts even if the signup can't be recorded; the email is retried on the next visit.
-        post({email:email,source:"trial",plan:"trial7",sessions:TRIAL_SESSIONS,_subject:"PulsEdge trial started: "+email})
+        trialPost(email,TRIAL_SESSIONS,rec.via)
           .then(function(){rec.sent=1},function(){})
           .then(function(){store("pe_trial",JSON.stringify(rec));location.reload()});
       });
@@ -280,7 +285,7 @@
   // Signups that couldn't be sent when the trial started are retried on later visits.
   ready.then(function(){
     var t=null;try{t=JSON.parse(store("pe_trial")||"null")}catch(e){}
-    if(t&&t.email&&!t.sent)post({email:t.email,source:"trial",plan:"trial7",sessions:t.n,_subject:"PulsEdge trial started: "+t.email})
+    if(t&&t.email&&!t.sent)trialPost(t.email,t.n,t.via)
       .then(function(){t.sent=1;store("pe_trial",JSON.stringify(t))},function(){});
   });
 
