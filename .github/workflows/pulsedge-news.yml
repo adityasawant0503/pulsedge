@@ -144,6 +144,32 @@ jobs:
     - id: deployment
       uses: actions/deploy-pages@v4
 
+  # Same update to the Cloudflare copy (https://pulsedge.pages.dev); a no-op until its secrets exist.
+  cloudflare:
+    needs: update
+    if: needs.update.outputs.changed == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    continue-on-error: true
+    concurrency:
+      group: pulsedge-cloudflare
+      cancel-in-progress: true
+    steps:
+    - uses: actions/checkout@v5
+      with:
+        ref: master
+        persist-credentials: false
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 22
+    - name: Copy the site to Cloudflare Pages
+      env:
+        CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        CF_PAGES_PROJECT: ${{ vars.CF_PAGES_PROJECT }}
+        COMMIT_MESSAGE: news update
+      run: bash pulsedge-bot/cf_pages.sh
+
   telegram:
     needs: update
     if: >-
