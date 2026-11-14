@@ -169,6 +169,7 @@ class Writer:
 
     def __init__(self, cands):
         self.cands, self.dead, self.rest, self.calls, self.last, self.start = cands, set(), {}, 0, 0.0, time.time()
+        self.plain = set()
 
     def ask(self, prompt, max_tokens=700):
         """One JSON answer from the first model that gives one, waiting briefly if every model is resting."""
@@ -191,8 +192,9 @@ class Writer:
                 time.sleep(wait)
             self.last = time.time()
             body = {"model": model, "temperature": 0.3, "max_tokens": max_tokens,
-                    "response_format": {"type": "json_object"},
                     "messages": [{"role": "system", "content": GUIDE}, {"role": "user", "content": prompt}]}
+            if model not in self.plain:                 # Groq's JSON mode sometimes fails on gpt-oss; the prompt asks for JSON anyway
+                body["response_format"] = {"type": "json_object"}
             if label == "gemini":
                 body["reasoning_effort"] = "low"
             try:
@@ -205,7 +207,10 @@ class Writer:
             except Exception as e:
                 msg = str(e)
                 log(f"  {model}: {msg[:140]}")
-                if re.match(r"HTTP (400|401|403|404)", msg) or (msg.startswith("HTTP 429") and DAILY.search(msg)):
+                if msg.startswith("HTTP 400") and "generate JSON" in msg and model not in self.plain:
+                    self.plain.add(model)               # ask again next time without JSON mode
+                    self.rest[i] = time.time() + 2
+                elif re.match(r"HTTP (400|401|403|404)", msg) or (msg.startswith("HTTP 429") and DAILY.search(msg)):
                     self.dead.add(i)                    # retired, not allowed, or out of quota for the day
                 elif msg.startswith("HTTP 429"):        # over a per-minute limit: rest as long as the provider asks
                     self.rest[i] = time.time() + retry_after(msg, 60)
