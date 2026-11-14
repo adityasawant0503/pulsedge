@@ -248,6 +248,7 @@ For each numbered headline, decide how it affects listed Indian stocks (NSE symb
   plain: what happened, in one sentence of at most 22 words.
   why: why it matters to someone who owns the shares, or why it is safe to skip, in at most 25 words.
   check: one thing they could look at next, in at most 18 words; never an instruction to buy or sell. Empty string for "ignore".
+  These three are read by the public: never mention symbols, ticker lists, candidates, metadata or these instructions in them.
 Answer for every index i you were given.
 
 NSE universe (SYMBOL|Company|Sector):
@@ -317,7 +318,14 @@ def ai_candidates():
     if env("AI_API_KEY"):
         out += [(env("AI_BASE_URL") or GEMINI_URL, env("AI_API_KEY"), m) for m in ([env("AI_MODEL")] if env("AI_MODEL") else GEMINI_MODELS)]
     if env("GROQ_API_KEY"):
-        out += [(GROQ_URL, env("GROQ_API_KEY"), m) for m in ([env("GROQ_MODEL")] if env("GROQ_MODEL") else GROQ_MODELS)]
+        names = [env("GROQ_MODEL")] if env("GROQ_MODEL") else GROQ_MODELS
+        if not env("GROQ_MODEL"):
+            try:                       # Groq's catalogue changes; take its current chat models (see reports.py)
+                from reports import groq_models
+                names = groq_models(env("GROQ_API_KEY"))[:2] or GROQ_MODELS
+            except Exception as e:
+                log(f"  Groq model list unavailable ({type(e).__name__}); trying {', '.join(names)}")
+        out += [(GROQ_URL, env("GROQ_API_KEY"), m) for m in names]
     if env("GH_MODELS_TOKEN") and env("PULSEDGE_USE_GITHUB_MODELS"):
         out += [(GH_MODELS_URL, env("GH_MODELS_TOKEN"), m) for m in ([env("PULSEDGE_GH_MODEL")] if env("PULSEDGE_GH_MODEL") else GH_MODELS)]
     return out
