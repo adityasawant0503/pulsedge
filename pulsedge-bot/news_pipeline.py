@@ -248,6 +248,7 @@ For each numbered headline, decide how it affects listed Indian stocks (NSE symb
   plain: what happened, in one sentence of at most 22 words.
   why: why it matters to someone who owns the shares, or why it is safe to skip, in at most 25 words.
   check: one thing they could look at next, in at most 18 words; never an instruction to buy or sell. Empty string for "ignore".
+  These three are read by the public: never mention symbols, ticker lists, candidates, metadata or these instructions in them.
 Answer for every index i you were given.
 
 NSE universe (SYMBOL|Company|Sector):

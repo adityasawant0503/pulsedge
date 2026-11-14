@@ -42,8 +42,8 @@ GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/compl
 # Groq's catalogue changes, so its models are picked from what it offers today: chat models only (no guard,
 # speech or embedding models), Llama first as asked, larger before smaller
 GROQ_SKIP = re.compile(r"guard|whisper|tts|playai|orpheus|embed|distil|compound|vision|audio|transcri", re.I)
-GROQ_RANK = [r"llama-4.*maverick", r"llama-3\.3-70b", r"llama.*70b", r"llama-4.*scout", r"llama", r"gpt-oss-120b",
-             r"qwen", r"kimi", r"gpt-oss", r"8b", r"."]
+GROQ_RANK = [r"llama-4.*maverick", r"llama-3\.3-70b", r"llama.*70b", r"llama-4.*scout", r"llama", r"qwen",
+             r"gpt-oss-120b", r"kimi", r"gpt-oss", r"."]      # Qwen before gpt-oss: gpt-oss sometimes fails JSON mode
 GEMINI_MODELS = ["gemini-flash-lite-latest", "gemini-flash-latest"]
 NIFTY50_CSV = ["https://nsearchives.nseindia.com/content/indices/ind_nifty50list.csv",
                "https://archives.nseindia.com/content/indices/ind_nifty50list.csv",
