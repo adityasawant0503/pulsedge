@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-14T21:05+05:30",
+ "updated": "2026-11-14T21:27+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -202,6 +202,134 @@
    "items": 1,
    "updated": "2026-11-14T21:05+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "BHARATFORG": {
+   "summary": "Bharat Forge Ltd. announced that its associated entity, Kalyani Strategic Systems, unveiled a new 120mm Rapid Attack Mortar System. This development highlights the company's activity in the defense sector alongside its core automobile business.",
+   "why": "For share owners, this shows the company is expanding into defense products, which could diversify its revenue sources beyond just car parts.",
+   "upside": "Successful execution of this new defense product could open up additional business opportunities.",
+   "downside": "There is a risk of delays in fulfilling defense orders, which could impact expected timelines.",
+   "watch": [
+    "Updates on the production timeline for the new mortar system.",
+    "Any official orders or contracts related to this defense product.",
+    "Performance of the broader auto sector index."
+   ],
+   "about": "Bharat Forge Ltd. operates in the automobile and auto components sector.",
+   "basis": "c3b872e7672e",
+   "items": 1,
+   "updated": "2026-11-14T21:27+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "HDFCBANK": {
+   "summary": "HDFC Bank shares fell sharply in the Sensex on 13 Nov 2026 after a recent 22% rise. The bank was also named a top pick for 2027 by a brokerage.",
+   "why": "As one of India’s largest listed companies, its performance can influence the broader market and affect investors holding its shares.",
+   "upside": "Being named a top pick for 2027 could attract new investors.",
+   "downside": "The recent sharp loss in the Sensex and potential market reversals could hurt the bank’s share price.",
+   "watch": [
+    "Next trading session share price movement",
+    "FII buying trends in Indian equities",
+    "Any new brokerage picks or market sentiment shifts"
+   ],
+   "about": "HDFC Bank is a major Indian financial services company.",
+   "basis": "77b39927997d",
+   "items": 6,
+   "updated": "2026-11-14T21:27+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
+  "IDEA": {
+   "summary": "Vodafone Idea shares fell about 3.5% after reporting a wider‑than‑expected loss for Q2, and the stock is expected to be volatile during earnings season.",
+   "why": "The loss hurts investor sentiment and could lead to further price swings for shareholders.",
+   "upside": "",
+   "downside": "The unexpected loss and heightened volatility could push the share price lower.",
+   "watch": [
+    "Q2 earnings details and loss magnitude",
+    "Any further director or auditor changes",
+    "Release of the monitoring agency report for Q3"
+   ],
+   "about": "Vodafone Idea Ltd. is an Indian telecommunications company.",
+   "basis": "c2cbc6137275",
+   "items": 5,
+   "updated": "2026-11-14T21:27+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "RELIANCE": {
+   "summary": "Reliance Industries shares jumped about 15% in November, adding roughly ₹2.38 lakh crore to its market value. At the same time, foreign institutional investors are returning to Indian equities, which could support the stock.",
+   "why": "The rebound lifts the value of existing holdings, and renewed FII buying may provide further buying pressure on the shares.",
+   "upside": "If foreign investors keep buying and the broader oil‑and‑gas sector stays strong, the stock could see additional gains.",
+   "downside": "A pullback in the sector or a reversal of FII flows due to global macro pressures could weigh on the share price.",
+   "watch": [
+    "Reliance share price trend after the November rebound",
+    "FII net buying trends in Indian equities",
+    "Performance of the Oil & Gas sector index"
+   ],
+   "about": "Reliance Industries Ltd. is a large Indian conglomerate with major operations in oil, gas and consumable fuels.",
+   "basis": "53c668c1b329",
+   "items": 3,
+   "updated": "2026-11-14T21:27+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "AXISBANK": {
+   "summary": "Axis Bank, one of India’s Nifty‑50 banks, is seen as a potential beneficiary as foreign institutional investors (FIIs) are shifting back to buying Indian equities. The broader financial sector fell 0.7% in the last session but has risen 4.7% over the past five sessions.",
+   "why": "FII inflows can lift demand for the bank’s shares, influencing market sentiment and valuation for existing shareholders.",
+   "upside": "Renewed FII buying could support the stock’s price and liquidity.",
+   "downside": "A reversal of FII flows due to global macroeconomic headwinds could pressure the share price.",
+   "watch": [
+    "FII flow trends and net buying levels",
+    "Financial sector index movements",
+    "Global macroeconomic developments affecting investor sentiment"
+   ],
+   "about": "Axis Bank Ltd. is a leading Indian commercial bank offering retail, corporate and treasury banking services.",
+   "basis": "4280bf46c7e8",
+   "items": 1,
+   "updated": "2026-11-14T21:27+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "MEESHO": {
+   "summary": "On 13 Nov 2026, Meesho saw a block sale by SVF II MEERKAT worth ₹1,885 crore and several block purchases by institutions such as Société Générale, Morgan Stanley, Fidelity, Motilal Oswal, Aditya Birla, and FGTFEBP, each buying between ₹94 and ₹365 crore worth of shares.",
+   "why": "Large institutional trades can signal confidence or concern, affecting share liquidity and perception.",
+   "upside": "The multiple large purchases could indicate institutional confidence.",
+   "downside": "The sizable block sale may suggest a lack of confidence or a need for cash.",
+   "watch": [
+    "Monitor any further block trades by these institutions",
+    "Watch for price reaction to the sale and purchases",
+    "Check if the other side of trades are also institutional"
+   ],
+   "about": "",
+   "basis": "6ca64aee2d4d",
+   "items": 22,
+   "updated": "2026-11-14T21:27+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
+  "GALLANTT": {
+   "summary": "Gallantt Ispat shares changed hands in a large private transaction on November 12, 2026. Santosh Kumar Agrawal bought 40 lakh shares from Dinesh R Agarwal at a price of ₹503 per share.",
+   "why": "This matters because a significant amount of stock moved between two large investors, which can signal changes in ownership structure or confidence levels among major holders.",
+   "upside": "The buyer’s decision to invest over ₹200 crore might indicate they see value in the company at this price.",
+   "downside": "The seller’s decision to exit a large position could suggest they are reducing their exposure or taking profits.",
+   "watch": [
+    "Future block deals involving these investors",
+    "Company announcements regarding ownership changes",
+    "General stock price movement following the trade"
+   ],
+   "about": "",
+   "basis": "c302513f6c3f",
+   "items": 2,
+   "updated": "2026-11-14T21:27+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "BAJFINANCE": {
+   "summary": "Bajaj Finance launched a large capital raise of ₹11,700 crore, which initially pushed its share price up toward a 52-week high. However, the stock price declined in the most recent session, following a period of strong gains.",
+   "why": "The company is raising significant new money, which may be used for growth but also means existing shareholders will own a slightly smaller percentage of the company.",
+   "upside": "The stock has shown strong momentum recently, climbing 16% in the last month and nearing its highest price in a year.",
+   "downside": "The recent price drop shows the stock can fall quickly, and the new capital raise slightly reduces the ownership stake of current shareholders.",
+   "watch": [
+    "How the broader financial sector index moves in the coming days",
+    "Whether the share price stabilizes after the recent decline",
+    "Details on how the company plans to use the new ₹11,700 crore funds"
+   ],
+   "about": "Bajaj Finance is a major non-banking financial company in India.",
+   "basis": "90fe4efa2ebb",
+   "items": 3,
+   "updated": "2026-11-14T21:27+05:30",
+   "model": "qwen/qwen3.8-27b"
   }
  }
 }
