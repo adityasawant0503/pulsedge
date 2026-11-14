@@ -39,9 +39,11 @@ GAP = 5                          # seconds between requests, to stay under per-m
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_LIST = "https://api.groq.com/openai/v1/models"
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
-# Llama first, as asked; the list is checked against the models Groq offers today, so a retired name is skipped
-GROQ_PREFER = ["llama-3.3-70b-versatile", "meta-llama/llama-4-maverick-17b-128e-instruct",
-               "meta-llama/llama-4-scout-17b-16e-instruct", "llama-3.1-8b-instant"]
+# Groq's catalogue changes, so its models are picked from what it offers today: chat models only (no guard,
+# speech or embedding models), Llama first as asked, larger before smaller
+GROQ_SKIP = re.compile(r"guard|whisper|tts|playai|orpheus|embed|distil|compound|vision|audio|transcri", re.I)
+GROQ_RANK = [r"llama-4.*maverick", r"llama-3\.3-70b", r"llama.*70b", r"llama-4.*scout", r"llama", r"gpt-oss-120b",
+             r"qwen", r"kimi", r"gpt-oss", r"8b", r"."]
 GEMINI_MODELS = ["gemini-flash-lite-latest", "gemini-flash-latest"]
 NIFTY50_CSV = ["https://nsearchives.nseindia.com/content/indices/ind_nifty50list.csv",
                "https://archives.nseindia.com/content/indices/ind_nifty50list.csv",
@@ -121,21 +123,28 @@ def http(url, key=None, body=None, timeout=45, accept="application/json"):
 
 # ---------------------------------------------------------------- models
 
+def groq_models(key):
+    """Groq's chat models, best first, from its live catalogue."""
+    have = [m["id"] for m in json.loads(http(GROQ_LIST, key, timeout=20)).get("data", []) if m.get("active", True)]
+    chat = [m for m in have if not GROQ_SKIP.search(m)]
+    pick = lambda m: next(i for i, pat in enumerate(GROQ_RANK) if re.search(pat, m, re.I))
+    small = lambda m: bool(re.search(r"(?<![0-9])(1|2|3|7|8|9|11)b(?![0-9a-z])", m, re.I))    # small models last
+    ranked = sorted(chat, key=lambda m: (small(m), pick(m), m))
+    log(f"Groq offers: {', '.join(sorted(have))}")
+    return ranked
+
+
 def candidates():
     """Models to try, best first, as (label, url, key, model)."""
     out = []
     gk = os.environ.get("GROQ_API_KEY")
     if gk:
-        prefer = [os.environ["GROQ_MODEL"]] if os.environ.get("GROQ_MODEL") else GROQ_PREFER
         try:
-            have = {m["id"] for m in json.loads(http(GROQ_LIST, gk, timeout=20)).get("data", [])}
-            names = [m for m in prefer if m in have]
-            if not names:      # none of the preferred models is offered any more: take Groq's largest Llama
-                names = sorted((m for m in have if "llama" in m.lower()), key=lambda m: ("70b" not in m, m))[:2]
-            log(f"Groq: {len(have)} models offered; using {', '.join(names) or 'none'}")
+            names = [os.environ["GROQ_MODEL"]] if os.environ.get("GROQ_MODEL") else groq_models(gk)[:3]
+            log(f"Groq: using {', '.join(names) or 'none'}")
         except Exception as e:
-            names = prefer
-            log(f"Groq model list unavailable ({e}); trying {', '.join(names)}")
+            names = [os.environ.get("GROQ_MODEL") or "llama-3.3-70b-versatile"]
+            log(f"Groq model list unavailable ({e}); trying {names[0]}")
         out += [("groq", GROQ_URL, gk, m) for m in names]
     ak = os.environ.get("AI_API_KEY")
     if ak:
