@@ -190,8 +190,133 @@ def load_universe():
     return []
 
 
-def match_tickers(text, universe):
-    """Cheap name match used by the rule fallback and to cross-check Claude."""
+# Sector words. After a one-word name they carry it on into another company's name: "Reliance Power" is not Reliance.
+FOLLOWERS = set("""power energy energies green renewable renewables solar wind oil gas coal petroleum petrochemicals refinery
+    refineries steel metals mining minerals cement cements copper zinc aluminium gold bank banks banking finance financial finserv
+    capital credit housing insurance life assurance securities wealth asset investments holdings ventures enterprises
+    infrastructure infra construction engineering engineers projects realty properties estates developers homes home ports port
+    airports aviation airlines shipping logistics transport railways rail motors motor auto automotive tyres tractors electric
+    electricals electronics cables wires lighting appliances consumer products foods food beverages breweries spirits dairy agro
+    agri seeds fertilisers fertilizers chemicals chemical pharma pharmaceuticals pharmaceutical laboratories labs biotech
+    healthcare health hospitals hospital diagnostics lifesciences sciences technologies technology tech systems software
+    solutions services digital data info media entertainment network networks communications telecom retail fashion lifestyle
+    textiles apparel paper sugar tea hotels resorts leisure travel tourism education resources total wilmar group""".split())
+# Everyday words, which are not a company on their own. A name that shrinks to one ("Solar Industries India" -> "solar",
+# "Oil India" -> "oil") is matched by its fuller name only, and a symbol that is one (OIL, IDEA, SAIL) only in capitals.
+GENERIC = FOLLOWERS | set("""india indian bharat hindustan national international global united union central state general
+    supreme standard premier page prestige brigade signature amber graphite trident urban container
+    ace anthem clean embassy fact fractal gland hal idea intellect rainbow rubicon sail craftsman endurance persistent""".split())
+LEGAL = {"limited", "ltd"}
+TAIL = {"india", "industries", "corporation", "company", "co", "enterprises", "enterprise", "holdings"}
+JOIN = {"of", "and", "&", "the"}
+# An exchange is also a listed company. Its name counts only when the text is about the company, not the market.
+EXCHANGES = {"BSE", "MCX"}
+ABOUT_COMPANY_AFTER = re.compile(r" (Ltd|Limited|shares?|stock|scrip|Q[1-4]|s (shares?|stock|profit|revenue|net|Q[1-4]))\b", re.I)
+ABOUT_COMPANY_BEFORE = re.compile(r"\b(shares? of|stake in|stock of) $", re.I)
+LEGAL_AFTER = re.compile(r" (Ltd|Limited)\b", re.I)
+# Names of bodies that are not listed but contain a listed company's name.
+DECOYS = ["reserve bank of india", "development bank of india", "import bank of india", "south indian bank",
+          "securities and exchange board of india", "supreme court"]
+_NAMES = {}
+
+
+def company_names(universe):
+    """For each stock, the ways news writes its name: (name, symbol, is one word, is an everyday word), plus the words of
+    its full name. "Solar Industries India" gives "solar industries india" and "solar industries"; its last form, "solar",
+    is an everyday word and only counts as "Solar Limited" (see match_tickers)."""
+    key = id(universe)
+    if key not in _NAMES:
+        names, own = [], {}
+        for s in universe:
+            words = [w for w in re.sub(r"[^a-z0-9& ]", " ", s["name"].lower()).split() if w not in LEGAL]
+            if words and words[0] == "the":
+                words = words[1:]
+            own[s["symbol"]] = set(words)
+            seen = set()
+            while words:
+                name = " ".join(words)
+                if name not in seen and len(name) >= 3:
+                    seen.add(name)
+                    names.append((name, s["symbol"], len(words) == 1, len(words) == 1 and name in GENERIC))
+                if words[-1] not in TAIL:
+                    break
+                words = words[:-1]
+                while words and words[-1] in JOIN:
+                    words = words[:-1]
+        _NAMES.clear()
+        _NAMES[key] = (names, own)
+    return _NAMES[key]
+
+
+def match_tickers(text, universe, limit=6):
+    """Stocks a text names, in the order it names them. Used by the keyword rules and as the candidates the AI may pick from.
+
+    A stock is named by its company name ("Tata Motors"), a shorter form that is still its own ("Reliance", "Maruti Suzuki")
+    or its NSE symbol ("TCS", "Paytm"). Names are written with a capital, so "reliance on imports" is not Reliance; the
+    longest name wins, so "State Bank of India" is not also Bank of India; and one word followed by another company-like
+    word ("Reliance Power", "IDBI Capital") belongs to that other company.
+    """
+    orig = " " + re.sub(r" +", " ", re.sub(r"[^A-Za-z0-9& ]", " ", text)) + " "
+    low = orig.lower()
+    names, own = company_names(universe)
+
+    def places(needle):
+        i = low.find(" " + needle + " ")
+        while i >= 0:
+            yield i + 1, i + 1 + len(needle)
+            i = low.find(" " + needle + " ", i + 1)
+
+    def written_as_name(word):               # "Tata Motors", "TCS", "eClerx", "3M India"; not "reliance" or "idea"
+        first = word.split(" ")[0]
+        return any(c.isupper() or c.isdigit() for c in first)
+
+    def continues(end, sym):                 # the next word carries the name on into a different company's
+        m = re.match(r" ([A-Za-z&]+)", orig[end:])
+        return bool(m and m.group(1)[0].isupper() and m.group(1).lower() in FOLLOWERS and m.group(1).lower() not in own[sym])
+
+    def is_market(a, b):                     # "BSE Sensex", "gold on MCX": the exchange, not the company
+        return orig[a:b].upper() in EXCHANGES and not (ABOUT_COMPANY_AFTER.match(orig[b:]) or ABOUT_COMPANY_BEFORE.search(orig[:a]))
+
+    def own_legal_name(a, b):                # "Trident Limited", but not "Vikram Solar Limited" for Solar Industries
+        before = re.search(r"([A-Za-z&]+) $", orig[:a])
+        part_of_longer = before and before.group(1)[0].isupper() and before.group(1).lower() not in LEGAL
+        return bool(LEGAL_AFTER.match(orig[b:])) and not part_of_longer
+
+    found = []
+    for name, sym, one, everyday in names:
+        for a, b in places(name):
+            word = orig[a:b]
+            if not written_as_name(word):
+                continue
+            if everyday and not own_legal_name(a, b):
+                continue
+            if one and ((len(name) <= 3 and not word.isupper()) or continues(b, sym) or is_market(a, b)):
+                continue
+            found.append((a, b, sym))
+    for s in universe:
+        sym = s["symbol"]
+        if len(sym) < 3:
+            continue
+        for a, b in places(sym.lower()):
+            word = orig[a:b]
+            if word != sym and not (word[0].isupper() and len(sym) >= 4 and sym.lower() not in GENERIC):
+                continue
+            if continues(b, sym) or is_market(a, b):
+                continue
+            found.append((a, b, sym))
+    for d in DECOYS:
+        found += [(a, b, None) for a, b in places(d)]
+    hits = []
+    for a, b, sym in sorted(found):
+        inside = any(o[2] != sym and o[0] <= a and b <= o[1] and o[1] - o[0] > b - a for o in found)
+        if sym and not inside and sym not in hits:
+            hits.append(sym)
+    return hits[:limit] if limit else hits
+
+
+def loose_match(text, universe):
+    """The matcher used until November 2026, kept only so that feed items it tagged wrongly can be found and corrected
+    (see heal_item). It took "solar" for Solar Industries and "oil" for Oil India."""
     t = " " + re.sub(r"[^a-z0-9& ]", " ", text.lower()) + " "
     hits = []
     for s in universe:
@@ -200,7 +325,7 @@ def match_tickers(text, universe):
         sym = s["symbol"].lower()
         if (len(name) > 3 and f" {name} " in t) or (len(sym) > 2 and f" {sym} " in t):
             hits.append(s["symbol"])
-    return hits[:6]
+    return hits
 
 
 # ---------------------------------------------------------------- classification
@@ -241,8 +366,8 @@ For each numbered headline, decide how it affects listed Indian stocks (NSE symb
 - call: "ignore" for routine filings (Reg 74(5), trading window, investor meet intimations, duplicate wire copy), market colour with no new information, or anything with no clear listed-stock impact. "watch" when it could matter but needs confirmation. "buy"/"sell" only for clearly material, company- or sector-specific news with a direct price impact.
 - tickers: only symbols from the list; direction per stock. Empty for broad-market items.
 - impact and confidence: 0-100. impact is how much the news could move the named stocks; confidence is how sure you are of the direction.
-- action: one short, conditional, educational line (e.g. "Watch for follow-through above the first 15-min high"). Never promise returns.
-- reason: 1-2 short bullets. risks: 0-2 short bullets.
+- action: one short line on what to watch or check next (e.g. "Watch whether the order adds to next quarter's revenue"). It is not advice: never say or hint when to buy, sell, enter, exit, add, accumulate, hold or avoid; give no price levels or targets; never promise returns.
+- reason: 1-2 short bullets. risks: 0-2 short bullets. Do not repeat a broker's rating, target price or buy/sell call, even when the headline carries one.
 - horizon: intraday, swing (days-weeks) or positional (months).
 - plain, why, check: the same item for a beginner who has never read a filing. Everyday words, no jargon, no ticker symbols, no price levels.
   plain: what happened, in one sentence of at most 22 words.
@@ -366,6 +491,8 @@ def classify_compat(batch, universe, url, key, model):
                     + (f"  (candidate NSE symbols: {', '.join(cands)})" if cands else "  (no listed company named)"))
     guide = GUIDE.split("NSE universe")[0] + (
         "Only use the candidate symbols given for a headline; if none fit, return an empty tickers list.\n"
+        "A candidate only means its name appears in the text. Use it only when the news is about that company: "
+        "a different company with a similar name (Vikram Solar is not Solar Industries) is not a match.\n"
         "A company with no candidate symbol is still a listed company: judge its news on its merits all the same.\n"
         f'Reply with JSON only: {{"items": [{{{GH_FIELDS}}}, ...]}} using exactly these field names. '
         'section is trading|news|macro; call buy|sell|watch|ignore; horizon intraday|swing|positional; direction up|down|mixed.')
@@ -495,6 +622,59 @@ def classify_rules(batch, universe):
     return out
 
 
+# ---------------------------------------------------------------- wording
+# PulsEdge explains news; it never tells anyone to trade. Wording that reads as a recommendation is taken out of what an
+# item shows, whichever model or rule wrote it (the AI reports have their own check in reports.py).
+ADVICE = re.compile(
+    r"\b(accumulate|bottom[- ]?fish\w*|book (?:partial |some )?profits?|stop[- ]?loss(?:es)?|target prices?|price targets?|"
+    r"multibaggers?|guaranteed returns?|(?:buy|add|buying|adding) on (?:any |every |the )?dips?|swing trades?|"
+    r"go(?:ing)? (?:long|short)|(?:entry|exit) (?:point|level|zone|price)s?|"
+    r"(?:buy|sell|hold) (?:rating|call|signal|recommendation)s?|(?:good|great|right) time to (?:buy|sell|invest))\b", re.I)
+# In the two lines that speak to the reader (action, check), anything about when to get in or out is advice as well.
+# Elsewhere "the board will consider selling the unit" is news, so this is not applied to the other fields.
+TIMING = re.compile(
+    r"\b(?:entry|entries)\b(?! into| in | of )|"
+    r"\b(?:before|when|while|consider(?:ing)?|time to|look(?:ing)? to|wait(?:ing)? to|whether to) (?:an? |any |fresh |new |your )*"
+    r"(?:buy|sell|buying(?! back)|selling(?! pressure| volume)|"
+    r"enter(?:ing)? (?:an? |any |fresh |new |swing |long |short )*(?:trades?|positions?))\b", re.I)
+PLAIN_ACTION = "Read the source before deciding anything."
+PLAIN_CHECK = "Open the source and read what the company actually said."
+DEAL_SOURCE = "NSE bulk & block deals"          # items written by flows.py; their stock comes from the deal, not from a name
+
+
+def soften(item):
+    """Replace advice-like wording in an item. True if anything changed."""
+    fields = ("action", "check", "plain", "why", "reason", "risks")
+    before = json.dumps([item.get(k) for k in fields], ensure_ascii=False)
+
+    def to_reader(v):
+        return ADVICE.search(v or "") or TIMING.search(v or "")
+    if to_reader(item.get("check")):
+        item["check"] = PLAIN_CHECK
+    if to_reader(item.get("action")):
+        item["action"] = item.get("check") or PLAIN_ACTION
+    for k in ("plain", "why"):
+        if ADVICE.search(item.get(k) or ""):
+            item[k] = ""
+    for k in ("reason", "risks"):
+        if item.get(k):
+            item[k] = [v for v in item[k] if not ADVICE.search(str(v))]
+    return before != json.dumps([item.get(k) for k in fields], ensure_ascii=False)
+
+
+def heal_item(item, universe):
+    """Correct an item stored by an earlier version of this script: stock tags the old matcher got wrong (it tagged
+    Solar Industries on any "solar" headline) and advice-like wording. True if anything changed."""
+    changed = soften(item)
+    if item.get("tickers") and item.get("source") != DEAL_SOURCE:
+        text = (item.get("headline") or "") + " " + (item.get("original") or "")
+        wrong = set(loose_match(text, universe)) - set(match_tickers(text, universe, limit=0))
+        kept = [t for t in item["tickers"] if t.get("symbol") not in wrong]
+        if len(kept) != len(item["tickers"]):
+            item["tickers"], changed = kept, True
+    return changed
+
+
 # ---------------------------------------------------------------- main
 def main():
     ap = argparse.ArgumentParser()
@@ -606,6 +786,7 @@ def main():
                 "plain": str(r.get("plain") or "")[:220], "why": str(r.get("why") or "")[:260], "check": str(r.get("check") or "")[:200],
                 "original": it["summary"][:300] or it["headline"],
             })
+            soften(classified[-1])
         if wants_ai:
             time.sleep(4 if provider == "compat" else 1)      # stay under the free tiers' requests-per-minute limits
     if use_ai:
@@ -625,7 +806,9 @@ def main():
             log(f"  {c['call'].upper():6} {c['impact']:3} {','.join(t['symbol'] for t in c['tickers']) or '-':20} {c['headline'][:90]}")
             if c["plain"] or c["why"]:
                 log(f"         plain: {c['plain'][:110]} | why: {c['why'][:110]} | check: {c['check'][:80]}")
-        log(f"dry run: {len(classified)} items classified, nothing written")
+        stored = load_json(os.path.join(DATA, "feed.json"), {"items": []}).get("items", [])
+        fix = sum(heal_item(json.loads(json.dumps(x)), universe) for x in stored)
+        log(f"dry run: {len(classified)} items classified, {fix} of {len(stored)} stored items would be corrected, nothing written")
         return
 
     # merge into feed.json (newest first, last KEEP_DAYS days, at most 300)
@@ -633,6 +816,9 @@ def main():
     feed = load_json(feed_path, {"items": []})
     cutoff = NOW - timedelta(days=KEEP_DAYS)
     old = [x for x in feed.get("items", []) if not x.get("sample") and parse_time(x.get("time", "")) and parse_time(x["time"]) > cutoff]
+    healed = sum(heal_item(x, universe) for x in old)
+    if healed:
+        log(f"corrected {healed} stored items (wrong stock tags or advice-like wording)")
     # keep every flagged item (watch/act, deals) for KEEP_DAYS; routine "ignore" items fill up to 300 in total,
     # otherwise the flood of routine NSE filings pushes yesterday's important items out within hours
     pool = sorted(classified + old, key=lambda x: x["time"], reverse=True)
@@ -652,7 +838,9 @@ def main():
                    "ignored": calls["ignore"],
                    "reasons": [{"label": k, "count": v} for k, v in sorted(reasons.items(), key=lambda kv: -kv[1])[:6]]},
     }
-    if classified or not os.path.exists(feed_path):
+    if healed and not classified:        # only corrections, no news: keep the feed's own time and the day's summary
+        out["updated"], out["digest"] = feed.get("updated", out["updated"]), feed.get("digest", out["digest"])
+    if classified or healed or not os.path.exists(feed_path):
         with open(feed_path, "w", encoding="utf-8") as fh:
             json.dump(out, fh, ensure_ascii=False, indent=1)
 
