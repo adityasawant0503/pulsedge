@@ -6,6 +6,7 @@ AI triage of Indian market news: every headline marked Ignore, Watch or Act, wit
 - **`pulsedge/`**: the static site published to GitHub Pages, with its data files in `pulsedge/data/`
 - **`pulsedge-bot/`**: the data pipeline
   - `news_pipeline.py`: collects and classifies news (Indian and global sources)
+  - `test_news_pipeline.py`: checks that headlines are tagged with the right company and that no item reads as advice (`python pulsedge-bot/test_news_pipeline.py`)
   - `flows.py`: bulk and block deals, FII positioning, sector index moves
   - `premarket.py`: the pre-market panel
   - `track_record.py`: scores calls against NSE closing prices
