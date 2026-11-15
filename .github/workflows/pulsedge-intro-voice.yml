@@ -1,0 +1,66 @@
+name: PulsEdge intro voice-over
+
+# Speaks pulsedge-bot/intro/narration.json with Kokoro (open-weight TTS, Apache-2.0) and mixes it into
+# pulsedge/assets/intro.mp4 and intro.webm, then commits the two files back to the branch it ran on.
+# Runs when the narration or the voice script changes on a work branch, or by hand. On master, merge the
+# branch instead so the site deploy picks the files up.
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore:
+      - master
+    paths:
+      - 'pulsedge-bot/intro/narration.json'
+      - 'pulsedge-bot/intro/voice.py'
+      - '.github/workflows/pulsedge-intro-voice.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pulsedge-intro-voice-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  voice:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+    - uses: actions/checkout@v5
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - name: Kokoro model (cached)
+      id: cache
+      uses: actions/cache@v4
+      with:
+        path: ~/kokoro
+        key: kokoro-model-files-v1.1
+    - name: Download the model
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: |
+        mkdir -p ~/kokoro && cd ~/kokoro
+        base=https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1
+        curl -fsSL --retry 3 -o kokoro-v1.0.onnx "$base/kokoro-v1.0.onnx"
+        curl -fsSL --retry 3 -o voices-v1.0.bin "$base/voices-v1.0.bin"
+        ls -la
+    - name: Install
+      run: |
+        pip install -q kokoro-onnx==0.6.1
+        command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg)
+    - name: Speak and mix
+      run: python pulsedge-bot/intro/voice.py --model ~/kokoro/kokoro-v1.0.onnx --voices ~/kokoro/voices-v1.0.bin
+    - name: Check the result
+      run: |
+        for f in pulsedge/assets/intro.mp4 pulsedge/assets/intro.webm; do
+          ffprobe -v error -show_entries stream=codec_type,codec_name,duration -of compact "$f"
+        done
+        ffmpeg -hide_banner -i pulsedge/assets/intro.mp4 -map 0:a -af ebur128 -f null - 2>&1 | grep -A3 "Integrated loudness" || true
+    - name: Commit
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add pulsedge/assets/intro.mp4 pulsedge/assets/intro.webm
+        git diff --cached --quiet && { echo "no change"; exit 0; }
+        git commit -q -m "Intro video: AI voice-over from narration.json"
+        git push
