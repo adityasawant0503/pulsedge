@@ -5,6 +5,16 @@
 <script>try{var t=localStorage.getItem("th");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>PulsEdge Terminal</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PulsEdge">
+<meta property="og:title" content="PulsEdge Terminal: today's market news, sorted">
+<meta property="og:description" content="Search any NSE stock for a plain-English brief, see what needs attention today, and ask PulsEdge about it. Free 5-day trial.">
+<meta property="og:url" content="https://adityasawant0503.github.io/pulsedge/terminal.html">
+<meta property="og:image" content="https://adityasawant0503.github.io/pulsedge/assets/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PulsEdge: Indian market news sorted into Ignore, Watch and Act">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Pre-market checklist and live news signals for Indian stocks.">
 <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -261,6 +271,14 @@ html{-webkit-tap-highlight-color:transparent}
 .view button[aria-pressed="true"]{background:var(--pur);color:#fff}
 .help{background:none;border:1px solid var(--line);border-radius:9px;padding:8px 13px;color:var(--mute);font-size:14px}
 .legend{margin:0 0 12px;font-size:14px;color:var(--mute);line-height:1.5}
+.intro{background:var(--pur-box);border:1px solid var(--pur-edge);border-radius:14px;padding:16px 18px;margin-bottom:14px}
+.intro .ih{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}
+.intro .ih b{font-size:16.5px}
+.intro ol{margin:0;padding-left:22px;display:grid;gap:10px;font-size:15px;line-height:1.55}
+.intro li .chip{margin-left:4px;vertical-align:baseline}
+.intro .call{margin:0 2px;white-space:nowrap;display:inline-block;border:0;border-radius:4px;padding:1px 7px;font:700 12px/1.4 var(--mono);letter-spacing:.04em}
+.intro .ih .btn2{white-space:nowrap;flex-shrink:0}
+.intro .fine{margin:12px 0 0;font-size:13.5px;color:var(--mute)}
 .legend b{color:var(--fg);font-weight:600}
 .brief{background:var(--panel);box-shadow:var(--elev);border:1px solid var(--pur-edge);border-radius:14px;padding:18px;display:grid;gap:14px;margin-bottom:14px}
 .brief .bh{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px}
@@ -393,6 +411,15 @@ dialog.gl::backdrop{background:rgba(8,7,12,.6)}
   </section>
 
   <section aria-label="Signals">
+    <div class="intro" id="intro" role="region" aria-labelledby="intro-t" hidden>
+      <div class="ih"><b id="intro-t">New here? Three things to know</b><button type="button" class="btn2" id="intro-x">Got it</button></div>
+      <ol>
+        <li><b>Search a company you own.</b> Type its name in the box above to get a one-page brief in plain English. <button type="button" class="chip" id="intro-try">Show me one</button></li>
+        <li><b>Every news item gets a label.</b> <span class="call act">ACT</span> worth reading now, <span class="call watch">WATCH</span> keep an eye on it, <span class="call ignore">IGNORE</span> routine, safe to skip.</li>
+        <li><b>Stuck on a word or a story?</b> Ask PulsEdge, the purple button at the bottom right. <button type="button" class="chip" id="intro-ask">Ask a question</button></li>
+      </ol>
+      <p class="fine">PulsEdge explains the news. The decision is always yours.</p>
+    </div>
     <div class="brief" id="brief" hidden></div>
     <p class="legend" id="legend" hidden><b>ACT</b> = worth reading now. <b>WATCH</b> = keep an eye on it. <b>IGNORE</b> = routine, safe to skip. PulsEdge explains the news; the decision is yours.</p>
     <div class="tabs" role="tablist" aria-label="Filter signals">
@@ -584,7 +611,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       horizon:String(x.horizon||"").toLowerCase(),dir:dir,latency:typeof x.latency==="number"?x.latency:null,
       headline:String(x.headline||""),tickers:tk,sectors:list(x.sectors||x.affected),section:String(x.section||""),
       impact:typeof x.impact==="number"?Math.max(0,Math.min(100,x.impact)):null,conf:typeof x.confidence==="number"?Math.max(0,Math.min(100,x.confidence)):null,
-      category:String(x.category||x.theme||""),action:String(x.action||""),reason:list(x.reason),risks:list(x.risks),original:String(x.original||""),
+      category:String(x.category||x.theme||""),action:String(x.action||""),reason:list(x.reason).filter(function(r){return !/^keyword rules/i.test(r)}),risks:list(x.risks),original:String(x.original||""),
       plain:String(x.plain||""),why:String(x.why||""),check:String(x.check||""),
       url:/^https?:\/\//.test(x.url||"")?x.url:"",after:x.after&&typeof x.after==="object"?x.after:null};
   }
@@ -652,7 +679,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     var ul=document.getElementById("feed");ul.textContent="";
     var found=focusItems(),rest=0;
     document.querySelector(".tabs").hidden=!!found;
-    document.getElementById("legend").hidden=!(view==="simple"&&!found);
+    document.getElementById("legend").hidden=!(view==="simple"&&!found)||!document.getElementById("intro").hidden;
     renderBrief(found);
     var vis=found||sigs.filter(function(s){return inTab(s,tab)});
     // Simple view keeps routine items out of the way until asked for
@@ -667,7 +694,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     document.getElementById("mine-n").textContent=hold.length?String(mn):"";
     if(!vis.length&&!found&&!rest){
       var e=el("li","empty");
-      if(tab==="mine"&&!hold.length){e.appendChild(el("b",null,"No watchlist yet"));var a=el("a",null,"Add your holdings on the PulsEdge site");a.href="index.html#feed";e.append(a,document.createTextNode(" and their signals show up here."))}
+      if(tab==="mine"&&!hold.length){e.appendChild(el("b",null,"No watchlist yet"));e.appendChild(document.createTextNode("Search a company you own in the box above and tap “Add to My stocks”, or "));var a=el("a",null,"add all your holdings at once");a.href="index.html#feed";e.append(a,document.createTextNode(". Their news then shows up here."))}
       else{e.appendChild(el("b",null,"No signals here yet"));e.appendChild(document.createTextNode(tab==="mine"?"None of your stocks are in today's news.":"New signals appear as the engine reads the news."))}
       ul.appendChild(e);
     }
@@ -939,7 +966,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
   // the classified news, big-investor deals and the glossary. Nothing typed here leaves the browser.
   var chat=document.getElementById("chat"),chm=document.getElementById("chat-m"),chq=document.getElementById("chat-q"),fab=document.getElementById("chat-open"),greeted=false,lastStock=null;
   var STOP={indian:1,bank:1,state:1,national:1,power:1,general:1,global:1,united:1,first:1,market:1,share:1,shares:1,stock:1,stocks:1,today:1,news:1,what:1,tell:1,about:1,with:1,happening:1,price:1,company:1,group:1,international:1,industries:1,capital:1,finance:1,new:1};
-  var RX={advice:/\b(should i|shall i|buy or sell|sell or buy|worth buying|good (time|buy|stock)|target|tips?|multibagger|will (it|the stock|the shares?|the price|.* price) (go|rise|fall|move|crash)|invest in|to buy|to sell)\b/,
+  var RX={advice:/\b(should i|shall i|buy or sell|sell or buy|worth buying|good (time|buy|stock)|target|tips?|multibagger|will (it|the stock|the shares?|the price|.* price) (go|rise|fall|move|crash)|invest in|to buy|to sell|good (investment|pick|share|company to)|safe (to|investment|bet))\b|\b(good|safe)\??$/,
     down:/\b(wrong|risks?|worr(y|ied)|bad|danger|downside|negative|concern|lose|loss)\b/,
     up:/\b(go well|upside|positive|good news|opportunit\w*|strengths?|bright)\b/,
     watch:/\b(watch|look out|look for|next|keep an eye|track)\b/,
@@ -1043,10 +1070,74 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     var hits=sigs.filter(function(x){return g.k.some(function(k){return hay(x).indexOf(" "+k+" ")>=0})});
     chSay([el("b",null,g.t),g.d,chPart("Why it matters",g.w),hits.length?chChips([["Show the "+plural(Math.min(hits.length,25),"headline")+" that mention it",function(){setFocus({g:g});if(innerWidth<=700)closeChat()}]]):null]);
   }
+  // ----- sectors, topics and plain keywords: "pharma stocks today", "any results?", "what is the RBI saying" -----
+  var SECTORS=[
+    [/\b(pharma\w*|health ?care|hospitals?|drug ?makers?|medicines?)\b/,"Healthcare","pharma and healthcare"],
+    [/\b(banks|banking|nbfcs?|lenders?|insurers?|insurance|financials?|financial services)\b/,"Financial Services","banking and finance"],
+    [/\b(it (sector|stocks?|companies|shares)|tech stocks?|technology|software|it services)\b/,"Information Technology","IT"],
+    [/\b(auto|autos|automobiles?|auto ?makers?|carmakers?|two ?wheelers?|evs?)\b/,"Automobile and Auto Components","auto"],
+    [/\b(fmcg|consumer goods)\b/,"Fast Moving Consumer Goods","FMCG"],
+    [/\b(oil|gas|petroleum|refiners?|refining)\b/,"Oil Gas & Consumable Fuels","oil and gas"],
+    [/\b(metals?|steel|mining|aluminium|copper|zinc)\b/,"Metals & Mining","metals and mining"],
+    [/\b(realty|real estate|property|housing)\b/,"Realty","real estate"],
+    [/\b(power (sector|stocks?|companies)|electricity|utilit(y|ies))\b/,"Power","power"],
+    [/\b(telecom\w*)\b/,"Telecommunication","telecom"],
+    [/\b(cement)\b/,"Construction Materials","cement"],
+    [/\b(infra\w*|construction)\b/,"Construction","construction and infrastructure"],
+    [/\b(defen[cs]e|capital goods|engineering)\b/,"Capital Goods","capital goods and defence"],
+    [/\b(chemicals?)\b/,"Chemicals","chemicals"]];
+  var TOPICS=[
+    [/\b(results?|earnings|quarterly|q[1-4]|profits?)\b/,["result","results","q1","q2","q3","q4","quarterly","profit","earnings"],"results"],
+    [/\bdividends?\b/,["dividend","dividends"],"dividends"],
+    [/\b(ipos?|listings?)\b/,["ipo","ipos","listing"],"IPOs and listings"],
+    [/\b(rbi|reserve bank|repo|interest rates?|rate cuts?|rate hikes?)\b/,["rbi","reserve bank","repo","rate cut","rate hike","interest rate"],"the RBI and interest rates"],
+    [/\bsebi\b/,["sebi"],"SEBI"],
+    [/\b(mergers?|acquisitions?|acquires?|takeovers?|stake sales?)\b/,["merger","acquisition","acquire","acquires","takeover","stake"],"mergers and stake deals"],
+    [/\b(buy ?backs?|bonus|splits?)\b/,["buyback","buy back","bonus","split"],"buybacks, bonuses and splits"],
+    [/\b(order (wins?|book|inflows?)|orders|contracts?)\b/,["order","orders","contract","contracts"],"orders and contracts"]];
+  var FILLER={what:1,whats:1,the:1,is:1,are:1,any:1,about:1,there:1,this:1,that:1,with:1,from:1,for:1,have:1,has:1,was:1,were:1,will:1,how:1,why:1,who:1,when:1,where:1,which:1,show:1,tell:1,give:1,me:1,latest:1,news:1,today:1,saying:1,says:1,said:1,happening:1,going:1,stocks:1,stock:1,shares:1,share:1,market:1,markets:1,please:1,can:1,you:1,your:1,does:1,did:1,doing:1,get:1,got:1,update:1,updates:1,know:1,want:1,need:1,some:1,all:1,new:1,recent:1,recently:1,sector:1,companies:1,company:1,india:1,indian:1,price:1,prices:1,rate:1,rates:1,level:1,levels:1,outlook:1,view:1,trend:1,trends:1,moving:1,move:1,moves:1};
+  function companies(n){return n+" "+(n===1?"company":"companies")}
+  function onDay(items,t){
+    // "today" narrows to the latest session that has news, if anything is left
+    if(!RX.today.test(t))return items;
+    var d=latestDay(),td=items.filter(function(x){return x.t&&dayOf(x.t)===d});return td.length?td:items;
+  }
+  function listAnswer(items,lead,none){
+    if(!items.length){chSay([none]);return}
+    var cos=[];items.forEach(function(x){x.tickers.forEach(function(m){if(cos.indexOf(m.symbol)<0)cos.push(m.symbol)})});
+    var parts=[el("p",null,lead(items.length))];
+    items.slice(0,4).forEach(function(x){parts.push(mini(x))});
+    var chips=cos.slice(0,4).map(function(s){var st=uni.filter(function(u){return u.symbol===s})[0];return ["More on "+(st?shortName(st.name):s),"Tell me about "+s]});
+    if(chips.length)parts.push(chChips(chips));
+    chSay(parts);
+  }
+  function sectorAnswer(sec,t){
+    var syms={};uni.forEach(function(u){if(u.sector===sec[1])syms[u.symbol]=1});
+    var items=onDay(sigs.filter(function(x){return x.call!=="ignore"&&x.tickers.some(function(m){return syms[m.symbol]})}).sort(rank),t);
+    var cos={};items.forEach(function(x){x.tickers.forEach(function(m){if(syms[m.symbol])cos[m.symbol]=1})});
+    listAnswer(items,function(n){return "PulsEdge flagged "+plural(n,"item")+" about "+companies(Object.keys(cos).length)+" in "+sec[2]+". The most important:"},
+      "PulsEdge hasn't flagged news about "+sec[2]+" companies in the last few days. That usually means there's nothing to react to.");
+  }
+  function topicAnswer(tp,t){
+    var items=onDay(sigs.filter(function(x){return x.call!=="ignore"&&tp[1].some(function(k){return hay(x).indexOf(" "+k+" ")>=0})}).sort(rank),t);
+    listAnswer(items,function(n){return "PulsEdge flagged "+plural(n,"item")+" about "+tp[2]+". The most important:"},
+      "PulsEdge hasn't flagged anything about "+tp[2]+" in the last few days.");
+  }
+  function wordAnswer(text,t){
+    // last resort before giving up: headlines that contain the question's own words
+    var words=norm(text).split(" ").filter(function(w){return w.length>=3&&!FILLER[w]&&!STOP[w]});
+    if(!words.length||words.length>6)return false;
+    var need=words.length<=2?words.length:Math.ceil(words.length*.6);
+    var scored=sigs.map(function(x){var h=hay(x);return {x:x,n:words.filter(function(w){return h.indexOf(" "+w+" ")>=0||h.indexOf(" "+w+"s ")>=0}).length}}).filter(function(r){return r.n>=need});
+    if(!scored.length)return false;
+    scored.sort(function(a,b){return (b.n-a.n)||rank(a.x,b.x)});
+    listAnswer(onDay(scored.map(function(r){return r.x}),t),function(n){return "Here's what PulsEdge has on “"+words.join(" ")+"” ("+plural(n,"item")+"):"},"");
+    return true;
+  }
   function help(lead){
     var ex=reports&&reports.stocks?Object.keys(reports.stocks)[0]:null,exSt=ex&&uni.filter(function(u){return u.symbol===ex})[0];
-    chSay([lead||"Ask me in your own words. I can help with:",chList(null,["a company: \"What's happening with Torrent Pharma?\"","a market word: \"What is an FII?\"","the market: \"What happened today?\"","your stocks: \"Any news on my stocks?\""]),
-      chChips([["What happened today?"],exSt?[shortName(exSt.name),"Tell me about "+ex]:["Tell me about Reliance"],["What is a bulk deal?"],["My stocks","my stocks"]])]);
+    chSay([lead||"Ask me in your own words. I can help with:",chList(null,["a company: \"What's happening with Torrent Pharma?\"","a sector: \"Pharma stocks today\"","a topic: \"Any results today?\" or \"What is the RBI saying?\"","a market word: \"What is an FII?\"","the market: \"What happened today?\"","your stocks: \"Any news on my stocks?\""]),
+      chChips([["What happened today?"],exSt?[shortName(exSt.name),"Tell me about "+ex]:["Tell me about Reliance"],["Any results today?"],["What is a bulk deal?"],["My stocks","my stocks"]])]);
   }
   function greet(){help("Hi, I'm PulsEdge's assistant. I explain what PulsEdge's news and AI reports say, in plain words. I don't give buy or sell advice.")}
   function ask(text){
@@ -1059,10 +1150,15 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     if(found.length>1){chSay(["Which company do you mean?",chChips(found.map(function(st){return [shortName(st.name),"Tell me about "+st.symbol]}))]);return}
     if(found.length===1){stockAnswer(found[0],t);return}
     var n=" "+norm(text)+" ",g=GLOSS.filter(function(g){return g.k.some(function(k){return n.indexOf(" "+k+" ")>=0})})[0];
-    if(RX.today.test(t)&&!(g&&RX.explain.test(t))){todayAnswer();return}
+    var wantsNews=/\b(saying|says|said|news|latest|today|doing|happening|updates?|any|this week)\b/.test(t);
+    if(g&&RX.explain.test(t)&&!wantsNews){glossAnswer(g);return}
+    var tp=TOPICS.filter(function(x){return x[0].test(t)})[0];if(tp){topicAnswer(tp,t);return}
+    var sec=SECTORS.filter(function(x){return x[0].test(t)})[0];if(sec){sectorAnswer(sec,t);return}
+    if(RX.today.test(t)){todayAnswer();return}
     if(g){glossAnswer(g);return}
     if(RX.hello.test(t)){help();return}
     if(RX.advice.test(t))return;
+    if(wordAnswer(text,t))return;
     help("I couldn't match that to a company or a market word. A live AI chat for any question is coming; for now, try one of these:");
   }
   function askAbout(s){
@@ -1078,6 +1174,22 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     chSay(parts);
   }
   function askBtn(s){var b=el("button","askb","Ask");b.type="button";b.setAttribute("aria-label","Ask PulsEdge about this");b.onclick=function(){askAbout(s)};return b}
+
+  // ---------- first visit: a short guide above the feed, until "Got it" ----------
+  (function(){
+    var box=document.getElementById("intro");
+    if(store("pe_intro"))return;
+    box.hidden=false;
+    function done(){box.hidden=true;store("pe_intro","1");if(sigs.length)render()}
+    document.getElementById("intro-x").onclick=done;
+    document.getElementById("intro-try").onclick=function(){
+      // a company from today's news, ACT items first, so the brief has something to show
+      var has=function(x){return x.tickers&&x.tickers.length},s=sigs.filter(function(x){return isAct(x)&&has(x)})[0]||sigs.filter(has)[0];
+      done();
+      if(s)openStock(s.tickers[0].symbol);else{q.focus();q.scrollIntoView({block:"center"})}
+    };
+    document.getElementById("intro-ask").onclick=function(){done();openChat()};
+  })();
 
   // ---------- data ----------
   // mode "sample" (no trial or membership yet) shows the sample files; see assets/member.js
