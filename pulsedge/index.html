@@ -443,6 +443,33 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
   footer{margin-top:64px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.tilt{transform:none!important}}
+/* Intro video: a tilted 3D screen that flattens as it scrolls into view; a click opens the full player */
+.watch{display:inline-flex;align-items:center;gap:10px;padding:6px 14px 6px 6px;border-radius:999px;color:var(--ink);text-decoration:none;font-weight:500;font-size:15px;border:1px solid transparent}
+.watch .pi{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--acc);color:var(--acc-ink);box-shadow:0 0 0 6px color-mix(in srgb,var(--acc) 18%,transparent)}
+.watch .pi svg{width:12px;height:12px;margin-left:2px;fill:currentColor}
+.watch small{color:var(--mute);font:500 13px/1 var(--mono)}
+.watch:hover{border-color:var(--line2)}
+@media (max-width:560px){.ctas .watch{width:100%;justify-content:center}}
+.vsec h2{max-width:24ch}
+.vstage{perspective:1600px;margin-top:10px}
+.vtilt{display:block;position:relative;width:100%;padding:0;border:0;background:#07060b;border-radius:20px;overflow:hidden;cursor:pointer;aspect-ratio:16/9;transform-origin:50% 100%;will-change:transform;
+  box-shadow:0 0 0 1px color-mix(in srgb,var(--acc) 35%,transparent),0 70px 140px -60px color-mix(in srgb,var(--acc) 70%,transparent),0 30px 70px -35px rgba(0,0,0,.6)}
+.vtilt img,.vtilt video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.vtilt video{opacity:0;transition:opacity .4s}
+.vtilt .vov{position:absolute;inset:0;display:flex;align-items:flex-end;padding:clamp(14px,3vw,30px);background:linear-gradient(0deg,rgba(7,6,11,.8),transparent 48%)}
+.vtilt .vbtn{display:inline-flex;align-items:center;gap:14px;color:#fff;text-align:left}
+.vtilt .vbtn i{flex:none;width:clamp(46px,6vw,68px);height:clamp(46px,6vw,68px);border-radius:50%;display:grid;place-items:center;background:#6c43f0;box-shadow:0 0 0 8px #6c43f040,0 10px 30px #6c43f088;transition:transform .2s}
+.vtilt .vbtn i svg{width:30%;height:30%;margin-left:6%;fill:#fff}
+.vtilt .vbtn b{display:block;font-size:clamp(16px,2vw,21px);font-weight:600}
+.vtilt .vbtn small{display:block;font:500 12.5px/1.4 var(--mono);color:#c9c6d6;margin-top:3px}
+.vtilt:hover .vbtn i{transform:scale(1.08)}
+.vbox{padding:0;border:0;background:transparent;width:min(1200px,94vw);max-width:none;max-height:none;overflow:visible}
+.vbox::backdrop{background:rgba(5,4,9,.86);backdrop-filter:blur(6px)}
+.vbox[open] .vin{animation:vin .55s cubic-bezier(.2,.8,.2,1)}
+.vin{position:relative}
+.vin video{display:block;width:100%;aspect-ratio:16/9;background:#000;border-radius:16px;box-shadow:0 0 0 1px #6c43f055,0 40px 120px -30px #6c43f0aa}
+.vclose{position:absolute;right:0;top:-48px;background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:8px 14px;font-size:14px;cursor:pointer}
+@keyframes vin{from{opacity:0;transform:perspective(1600px) rotateX(18deg) translateY(50px) scale(.86)}to{opacity:1;transform:none}}
 </style>
 </head>
 <body>
@@ -475,6 +502,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
       <div class="ctas">
         <a class="btn pri lg" href="terminal.html#trial">Start free trial <span class="arr" aria-hidden="true">→</span></a>
         <a class="btn ghost lg" href="#demo">Try it with your stocks</a>
+        <a class="watch" href="#intro" data-play><span class="pi"><svg viewBox="0 0 10 12" aria-hidden="true"><path d="M0 0l10 6-10 6z"/></svg></span>Watch the intro <small>1 min</small></a>
       </div>
       <p class="micro">5 trading sessions free · no card · nothing to cancel</p>
     </div>
@@ -507,6 +535,18 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
       </div>
       <p class="pnote" id="p-note">Live numbers from the PulsEdge pipeline.</p>
       <div class="srcs" aria-label="Sources PulsEdge reads"><b>Reads</b><span>NSE announcements</span><span>SEBI</span><span>RBI</span><span>Economic Times Markets</span><span>Mint</span><span>Business Standard</span><span>Moneycontrol</span></div>
+    </div>
+  </section>
+
+  <section class="s w vsec" id="intro">
+    <p class="kick">New here? Start with this</p>
+    <h2>PulsEdge in one minute. <span class="dim">What it does, and how to use it.</span></h2>
+    <div class="vstage">
+      <button class="vtilt" id="vtilt" type="button" aria-label="Play the one-minute PulsEdge intro video">
+        <img src="assets/intro-poster.jpg" alt="" loading="lazy" width="1920" height="1080">
+        <video id="vprev" muted playsinline loop preload="none" aria-hidden="true" tabindex="-1"></video>
+        <span class="vov"><span class="vbtn"><i><svg viewBox="0 0 10 12" aria-hidden="true"><path d="M0 0l10 6-10 6z"/></svg></i><span><b>Watch the intro</b><small>1 minute · captions on screen, no sound needed</small></span></span></span>
+      </button>
     </div>
   </section>
 
@@ -726,6 +766,9 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
     </footer>
   </div>
 </main>
+<dialog class="vbox" id="vbox" aria-label="PulsEdge intro video">
+  <div class="vin"><button class="vclose" id="vclose" type="button">Close ✕</button><video id="vfull" controls playsinline preload="none" poster="assets/intro-poster.jpg"></video></div>
+</dialog>
 
 <script>
 (function(){
@@ -755,6 +798,40 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
     tilt.style.transform="rotateX("+rx.toFixed(2)+"deg) scale("+sc.toFixed(3)+")";
   }
   if(!reduce){setTilt();addEventListener("scroll",function(){if(!ticking){ticking=true;requestAnimationFrame(setTilt)}},{passive:true});addEventListener("resize",setTilt)}
+
+  // ---------- intro video: tilted screen that flattens on scroll, muted preview while in view, full player on click ----------
+  (function(){
+    var box=$("vtilt");if(!box)return;
+    var v0=document.createElement("video"),src=/probably|maybe/.test(v0.canPlayType('video/mp4; codecs="avc1.640028"'))?"assets/intro.mp4":"assets/intro.webm",prev=$("vprev"),dlg=$("vbox"),full=$("vfull"),busy=false;
+    var conn=navigator.connection||{},light=!!conn.saveData||/2g|^3g$/.test(conn.effectiveType||"");
+    function setV(){
+      busy=false;
+      var r=box.getBoundingClientRect(),vh=innerHeight||800,p=Math.min(1,Math.max(0,(vh*0.95-r.top)/(vh*0.6))),mx=innerWidth<820?10:22;
+      box.style.transform="rotateX("+((1-p)*mx).toFixed(2)+"deg) scale("+(0.92+0.08*p).toFixed(3)+")";
+    }
+    if(!reduce){setV();addEventListener("scroll",function(){if(!busy){busy=true;requestAnimationFrame(setV)}},{passive:true});addEventListener("resize",setV)}
+    prev.addEventListener("playing",function(){prev.style.opacity=1});
+    // the muted preview loads only when the screen is in view, and not on slow or data-saving connections
+    if(!reduce&&!light&&"IntersectionObserver" in window){
+      new IntersectionObserver(function(es){es.forEach(function(e){
+        if(e.isIntersecting){if(!prev.getAttribute("src"))prev.src=src;prev.play().catch(function(){})}
+        else if(prev.getAttribute("src"))prev.pause();
+      })},{threshold:.45}).observe(box);
+    }
+    function open(){
+      if(prev.getAttribute("src"))prev.pause();
+      if(!full.getAttribute("src"))full.src=src;
+      try{full.currentTime=0}catch(e){}
+      if(dlg.showModal)dlg.showModal();else dlg.setAttribute("open","");
+      full.play().catch(function(){});
+    }
+    function close(){full.pause();if(dlg.close)dlg.close();else dlg.removeAttribute("open")}
+    box.addEventListener("click",open);
+    $("vclose").addEventListener("click",close);
+    dlg.addEventListener("click",function(e){if(e.target===dlg)close()});
+    dlg.addEventListener("close",function(){full.pause();if(prev.getAttribute("src")&&!reduce)prev.play().catch(function(){})});
+    Array.prototype.forEach.call(document.querySelectorAll("[data-play]"),function(a){a.addEventListener("click",function(e){e.preventDefault();open()})});
+  })();
 
   // ---------- clock + market state in the product shot ----------
   function ist(){return new Date(Date.now()+(330+new Date().getTimezoneOffset())*60000)}
