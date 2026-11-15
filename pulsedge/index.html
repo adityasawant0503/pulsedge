@@ -720,6 +720,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
   </div>
 </main>
 
+<script src="assets/source.js"></script>
 <script>
 (function(){
   // Formspree form ID for signups. From https://formspree.io/f/abcdwxyz the ID is "abcdwxyz".
@@ -937,10 +938,10 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
       if(trap&&trap.value){done(email);return}
       btn.disabled=true;setNote(note,"Saving…");
       ready.then(function(){
-        var rec={email:email,source:f.dataset.form,at:Date.now()};
+        var rec={email:email,source:f.dataset.form,via:window.PulseSource||"direct",at:Date.now()};
         if(db&&uid)return db.doc("signups/"+uid).set(rec);
         if(SIGNUP_ENDPOINT)return fetch(SIGNUP_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
-          body:JSON.stringify({email:email,source:rec.source,_subject:f.dataset.form==="founding"?"PulsEdge founding application":"New PulsEdge waitlist signup"})})
+          body:JSON.stringify({email:email,source:rec.source,via:rec.via,_subject:f.dataset.form==="founding"?"PulsEdge founding application":"New PulsEdge waitlist signup"})})
           .then(function(r){return r.json().catch(function(){return {}}).then(function(j){if(!r.ok)throw {code:"form",msg:j.errors&&j.errors[0]&&j.errors[0].message}})});
         throw {code:"no_backend"};
       }).then(function(){done(email)}).catch(function(err){

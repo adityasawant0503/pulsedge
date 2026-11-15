@@ -90,6 +90,7 @@
   </footer>
 </main>
 <script src="assets/theme.js"></script>
+<script src="assets/source.js"></script>
 <script>
 (function(){
   // Prices live here and in index.html's pricing section; QR codes in assets/pay/ carry the same amounts.
@@ -128,7 +129,7 @@
     var x=PLANS[plan];
     btn.disabled=true;say("Sending…");
     fetch("https://formspree.io/f/mkjoaaga",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
-      body:JSON.stringify({source:"payment",plan:plan,amount:x.amount,name:name,email:email,whatsapp:wa,utr:utr,
+      body:JSON.stringify({source:"payment",plan:plan,amount:x.amount,name:name,email:email,whatsapp:wa,utr:utr,via:window.PulseSource||"direct",
         _subject:"PulsEdge payment: "+x.name+" ₹"+x.amount+" from "+name})})
       .then(function(r){if(!r.ok)throw 0;say("Thanks, "+name.split(" ")[0]+". We'll check payment "+utr+" and send your access link to "+email+" within a few hours.","ok");f.reset();show(plan)})
       .catch(function(){say("Couldn't send. WhatsApp +91 80737 08940 with your transaction ID instead.","err")})
