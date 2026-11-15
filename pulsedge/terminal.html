@@ -277,7 +277,13 @@ html{-webkit-tap-highlight-color:transparent}
 .intro ol{margin:0;padding-left:22px;display:grid;gap:10px;font-size:15px;line-height:1.55}
 .intro li .chip{margin-left:4px;vertical-align:baseline}
 .intro .call{margin:0 2px;white-space:nowrap;display:inline-block;border:0;border-radius:4px;padding:1px 7px;font:700 12px/1.4 var(--mono);letter-spacing:.04em}
-.intro .ih .btn2{white-space:nowrap;flex-shrink:0}
+.intro .ih{flex-wrap:wrap}
+.intro .ihb{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.intro .ih .btn2,.intro .ih .chip{white-space:nowrap;flex-shrink:0}
+.vbox{padding:0;border:0;background:transparent;width:min(1100px,94vw);max-width:none;max-height:none;overflow:visible}
+.vbox::backdrop{background:rgba(5,4,9,.86)}
+.vbox video{display:block;width:100%;aspect-ratio:16/9;background:#000;border-radius:14px;box-shadow:0 0 0 1px var(--pur-edge),0 40px 120px -30px #8b5cf6aa}
+.vbox .vclose{position:absolute;right:0;top:-46px;background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:7px 13px;font-size:14px}
 .intro .fine{margin:12px 0 0;font-size:13.5px;color:var(--mute)}
 .legend b{color:var(--fg);font-weight:600}
 .brief{background:var(--panel);box-shadow:var(--elev);border:1px solid var(--pur-edge);border-radius:14px;padding:18px;display:grid;gap:14px;margin-bottom:14px}
@@ -388,6 +394,7 @@ dialog.gl::backdrop{background:rgba(8,7,12,.6)}
   <button type="button" class="help" id="help">How to read this</button>
 </div>
 <dialog class="gl" id="gl" aria-labelledby="gl-t"></dialog>
+<dialog class="vbox" id="vbox" aria-label="PulsEdge intro video"><button class="vclose" id="vclose" type="button">Close ✕</button><video id="vfull" controls playsinline preload="none" poster="assets/intro-poster.jpg"></video></dialog>
 
 <main class="wrap main">
   <section class="pm" aria-labelledby="pm-t">
@@ -412,7 +419,7 @@ dialog.gl::backdrop{background:rgba(8,7,12,.6)}
 
   <section aria-label="Signals">
     <div class="intro" id="intro" role="region" aria-labelledby="intro-t" hidden>
-      <div class="ih"><b id="intro-t">New here? Three things to know</b><button type="button" class="btn2" id="intro-x">Got it</button></div>
+      <div class="ih"><b id="intro-t">New here? Three things to know</b><span class="ihb"><button type="button" class="chip" id="intro-vid">▶ Watch the 1-minute intro</button><button type="button" class="btn2" id="intro-x">Got it</button></span></div>
       <ol>
         <li><b>Search a company you own.</b> Type its name in the box above to get a one-page brief in plain English. <button type="button" class="chip" id="intro-try">Show me one</button></li>
         <li><b>Every news item gets a label.</b> <span class="call act">ACT</span> worth reading now, <span class="call watch">WATCH</span> keep an eye on it, <span class="call ignore">IGNORE</span> routine, safe to skip.</li>
@@ -1189,6 +1196,18 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       if(s)openStock(s.tickers[0].symbol);else{q.focus();q.scrollIntoView({block:"center"})}
     };
     document.getElementById("intro-ask").onclick=function(){done();openChat()};
+  })();
+  // the one-minute intro video (assets/intro.mp4), from the guide above
+  (function(){
+    var dlg=document.getElementById("vbox"),v=document.getElementById("vfull");
+    function close(){v.pause();dlg.close?dlg.close():dlg.removeAttribute("open")}
+    document.getElementById("intro-vid").onclick=function(){
+      if(!v.getAttribute("src"))v.src=/probably|maybe/.test(v.canPlayType('video/mp4; codecs="avc1.640028"'))?"assets/intro.mp4":"assets/intro.webm";
+      dlg.showModal?dlg.showModal():dlg.setAttribute("open","");v.play().catch(function(){});
+    };
+    document.getElementById("vclose").onclick=close;
+    dlg.addEventListener("click",function(e){if(e.target===dlg)close()});
+    dlg.addEventListener("close",function(){v.pause()});
   })();
 
   // ---------- data ----------
