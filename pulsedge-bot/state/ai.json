@@ -702,6 +702,19 @@
    "errors": [
     "gemini-3.8-flash: The read operation timed out"
    ]
+  },
+  {
+   "time": "2026-11-16T12:45+05:30",
+   "new": 19,
+   "ai": 9,
+   "routine": 10,
+   "rules": 0,
+   "models": {
+    "qwen/qwen3.8-27b": 9
+   },
+   "errors": [
+    "gemini-3.8-flash: HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To"
+   ]
   }
  ]
 }
