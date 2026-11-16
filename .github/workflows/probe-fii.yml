@@ -1,0 +1,51 @@
+name: Probe FII cash sources (temporary)
+
+# One-off check, run by hand: which daily FII/DII cash sources answer from GitHub's runners, and what they
+# return. No schedule, no secrets, read-only. Remove once the source is chosen.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+    - name: NSE FII/DII report (the feed flows.py uses)
+      run: |
+        UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        J=$(mktemp)
+        echo "nse home: $(curl -s -m 20 -c $J -A "$UA" -o /dev/null -w '%{http_code}' https://www.nseindia.com/ || echo fail)"
+        curl -s -m 20 -c $J -b $J -A "$UA" -H "Referer: https://www.nseindia.com/reports/fii-dii" -H "Accept: application/json,*/*" \
+          -o nse.json -w "nse api: %{http_code} %{size_download} bytes\n" https://www.nseindia.com/api/fiidiiTradeReact || echo "nse api: fail"
+        head -c 400 nse.json; echo
+    - name: NSDL daily FPI report
+      run: |
+        UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        curl -s -L -m 30 -A "$UA" -o nsdl.html -w "nsdl: %{http_code} %{size_download} bytes\n" https://www.fpi.nsdl.co.in/web/Reports/Latest.aspx || echo "nsdl: fail"
+        echo "--- download links:"
+        grep -o -i 'href="[^"]*\(csv\|xls\|export\)[^"]*"' nsdl.html | head -5 || true
+        python3 - <<'PY'
+        import re, html
+        try:
+            s = open("nsdl.html", encoding="utf-8", errors="replace").read()
+        except FileNotFoundError:
+            raise SystemExit("no page")
+        m = re.search(r"Reporting Date[^<]*<[^>]*>([^<]+)|(\d{1,2}[-/ ][A-Za-z]{3}[-/ ]\d{4})", s)
+        print("--- date hint:", m.group(0)[:80] if m else "none")
+        # every table row as text, so the equity rows and their column order are visible
+        rows = re.findall(r"<tr[^>]*>(.*?)</tr>", s, re.S | re.I)
+        print("--- rows:", len(rows))
+        for r in rows[:40]:
+            cells = [html.unescape(re.sub(r"<[^>]+>", " ", c)).strip() for c in re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", r, re.S | re.I)]
+            cells = [re.sub(r"\s+", " ", c) for c in cells if c.strip()]
+            if cells:
+                print(" | ".join(cells)[:220])
+        i = s.lower().find("equity")
+        print("--- table markup near 'Equity':")
+        if i >= 0:
+            a = s.rfind("<table", 0, i)
+            print(re.sub(r"\s+", " ", s[max(a, 0): max(a, 0) + 1500]))
+        PY
