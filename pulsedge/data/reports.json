@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T16:02+05:30",
+ "updated": "2026-11-16T19:22+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a mixed day where the broader market held steady, but several individual stocks fell sharply after weak quarterly results. Tata Motors, Inox Wind, and Kaynes Technology saw significant price drops as investors reacted to lower profits or losses. In contrast, Eicher Motors and Belrise Industries rose after reporting strong performance. Foreign investors slightly reduced their long positions in index futures.",
+  "summary": "Tata Motors passenger vehicle shares fell 9% after the company posted a big loss for the quarter, showing how a loss can shake investor confidence. Inox Wind also saw a sharp drop in profit and margin, pushing its shares down 10%. Kaynes Technology’s earnings slipped 65%, sending its stock to a 52‑week low. Eicher Motors, on the other hand, reported record sales and profit, lifting its shares 3.5%.",
   "themes": [
-   "Weak quarterly earnings caused sharp drops in auto and energy stocks.",
-   "Strong results helped a few companies like Eicher Motors gain ground.",
-   "Foreign fund managers slightly lowered their bullish bets on the market."
+   "Profit drops hurt auto and energy stocks",
+   "Margin pressure is a concern for manufacturers",
+   "Sector performance varied, with FMCG and banks gaining while pharma and metals fell"
   ],
   "watch": [
-   "Whether the losses at Tata Motors and Inox Wind are one-time events or ongoing problems.",
-   "If foreign investors continue to reduce their long positions in the coming days.",
-   "How the market reacts to the cancellation of the large VA Tech Wabag project."
+   "Tata Motors PV’s future earnings and loss drivers",
+   "Inox Wind’s margin trend in upcoming quarters",
+   "Eicher Motors’ ability to sustain record sales"
   ],
   "date": "2026-11-16",
-  "basis": "d8a545fec4eb",
-  "updated": "2026-11-16T15:32+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 76
+  "basis": "3017126a146c",
+  "updated": "2026-11-16T19:22+05:30",
+  "model": "openai/gpt-oss-20b",
+  "items": 92
  },
  "stocks": {
   "TMPV": {
@@ -235,22 +235,6 @@
    "updated": "2026-11-16T15:32+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "MEESHO": {
-   "summary": "On Nov 13, several large block trades of Meesho shares were reported, with institutions both buying and selling billions of rupees worth of stock at ₹246.75.",
-   "why": "Such big moves can influence the share price and signal investor sentiment for current shareholders.",
-   "upside": "If buying by institutions continues, it could provide price support.",
-   "downside": "If selling by large investors persists, it could put downward pressure on the stock.",
-   "watch": [
-    "Future block deal activity",
-    "Net balance of buying vs selling",
-    "Share price reaction to these trades"
-   ],
-   "about": "",
-   "basis": "69b1ae777391",
-   "items": 20,
-   "updated": "2026-11-16T10:31+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "TMCV": {
    "summary": "Tata Motors reported a loss in its second quarter, although its revenue increased. The company's shares have fallen by 22% in 2026, and recent reports suggest the outlook remains weak.",
    "why": "This matters because a company that loses money while lowering its future expectations often sees its share price drop, which reduces the value of any shares you own.",
@@ -315,38 +299,6 @@
    "updated": "2026-11-16T14:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "PAYTM": {
-   "summary": "Paytm shares rose above the ₹1,955 IPO listing‑day high for the first time in nearly five years, spurred by positive regulatory news.",
-   "why": "Crossing the IPO high can draw new investors and lift sentiment, but the regulatory approvals are still only preliminary.",
-   "upside": "If the regulatory approvals become final, the share price could gain further support.",
-   "downside": "If the approvals remain pending or are denied, confidence could wane.",
-   "watch": [
-    "Progress on regulatory approvals",
-    "Share price staying above IPO high",
-    "Financials sector index trend"
-   ],
-   "about": "One 97 Communications runs Paytm, a digital payments platform.",
-   "basis": "06f075132960",
-   "items": 2,
-   "updated": "2026-11-16T15:39+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "BANKINDIA": {
-   "summary": "Bank of India saw strong weekly gains as the Nifty PSU Bank index posted its biggest surge in seven months, pushing the stock to multi‑month highs. The broader financial sector has been mixed, slipping 0.7% in the last session but up 4.7% over the past five sessions.",
-   "why": "Shareholders feel the impact of sector‑wide momentum that can lift the stock, but also face the risk of a quick pull‑back after a prolonged rally.",
-   "upside": "If the PSU bank rally sustains, the share could keep climbing.",
-   "downside": "A wave of profit‑taking after the recent multi‑week gains could push the price lower.",
-   "watch": [
-    "Continuation of the Nifty PSU Bank index surge",
-    "Signs of profit booking in the sector",
-    "Changes in India 10‑year bond yields affecting banking costs"
-   ],
-   "about": "Bank of India is a public sector bank that provides banking and financial services across India.",
-   "basis": "f58b673c3e54",
-   "items": 2,
-   "updated": "2026-11-16T10:31+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "KPIL": {
    "summary": "Kalpataru Projects International announced it has won a new infrastructure contract. This adds to the company's list of upcoming work.",
    "why": "New contracts generally mean more future revenue, which can support the company's long-term value.",
@@ -363,53 +315,21 @@
    "updated": "2026-11-16T09:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "PNB": {
-   "summary": "Punjab National Bank shares recently joined a strong rally in public sector bank stocks. This group of banks saw its biggest weekly gain in seven months, pushing prices to multi-month highs.",
-   "why": "If you own PNB shares, this rise means the value of your holding has increased recently. However, such strong moves can sometimes lead to a quick drop as investors sell to lock in profits.",
-   "upside": "The broad strength in the banking sector could continue to support the stock price in the short term.",
-   "downside": "After a big jump, investors may sell their shares to take profits, causing the price to fall.",
-   "watch": [
-    "Whether the banking sector rally continues or reverses",
-    "If other large banks in the index follow the same trend",
-    "General market sentiment towards public sector stocks"
-   ],
-   "about": "Punjab National Bank is a financial services company listed on the NSE.",
-   "basis": "d0a316d70302",
-   "items": 1,
-   "updated": "2026-11-16T08:31+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "BANKBARODA": {
-   "summary": "Bank of Baroda shares recently rose as part of a strong weekly gain for public sector banks. This sector movement pushed the stock to multi-month highs.",
-   "why": "This matters to shareholders because the stock price moved up significantly in a short period, which affects the value of their holdings.",
-   "upside": "The broader strength in public sector banks could continue to support the share price.",
-   "downside": "Stocks in this sector often see sudden drops in value when investors sell to lock in profits after a long rise.",
-   "watch": [
-    "Whether the public sector bank rally continues or reverses",
-    "Signs of investors selling shares to take profits",
-    "Overall performance of the Financials sector index"
-   ],
-   "about": "Bank of Baroda is a financial services company listed on the NSE.",
-   "basis": "d0a316d70302",
-   "items": 1,
-   "updated": "2026-11-16T08:31+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "OIL": {
-   "summary": "Oil India Ltd. (OIL) is in the news as analysts predict a sizeable surplus of oil in 2027 and global oil prices have edged lower due to expected supply from West Asia. The company also has an upcoming dividend record date in the PSU dividend week. These events are drawing attention to OIL’s share price movements.",
-   "why": "Oil price changes can affect OIL’s earnings from oil production, and the dividend record date may influence short‑term share price behaviour.",
-   "upside": "",
-   "downside": "Lower oil prices could reduce OIL’s revenue per barrel, potentially impacting its profitability.",
+   "summary": "Oil India is seeing pressure from falling global oil prices as analysts expect a supply surplus, while the company is set to declare a dividend this week. Its sector index has risen modestly.",
+   "why": "Lower oil prices could cut earnings per barrel, and the dividend timing may affect the share price around the ex‑date.",
+   "upside": "If the anticipated supply surplus does not materialise, oil prices could stay higher, supporting earnings.",
+   "downside": "A sustained drop in oil prices could reduce the company’s profit margins.",
    "watch": [
-    "Upcoming dividend record dates for OIL",
-    "Changes in global oil supply expectations and price movements",
-    "WPI inflation data and oil price releases that may influence market sentiment"
+    "Global oil price trends and supply‑surplus expectations",
+    "Oil India’s dividend record date and payout details",
+    "Upcoming WPI inflation and oil price data that could affect demand"
    ],
-   "about": "",
-   "basis": "9e5e69cbfbd7",
-   "items": 4,
-   "updated": "2026-11-16T11:01+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "Oil India Ltd. is a state‑owned company that explores, produces and markets crude oil and natural gas in India.",
+   "basis": "c8ce69f2d9f1",
+   "items": 5,
+   "updated": "2026-11-16T19:22+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "IDEA": {
    "summary": "Vodafone Idea lost more mobile customers than expected in its recent quarter. At the same time, telecom stocks, including Vodafone Idea, saw a price increase as investors showed optimism for the sector.",
@@ -540,19 +460,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "COCHINSHIP": {
-   "summary": "Cochin Shipyard Ltd. has announced an upcoming dividend with a record date of November 16. This news has drawn attention from investors comparing it with other shipping companies.",
-   "why": "Shareholders who hold the stock on the record date will receive this cash payment, which adds to their total return.",
-   "upside": "The dividend provides a direct cash return to investors who own the shares.",
-   "downside": "The share price may drop slightly on the ex-date to reflect the payout, and the market may have already priced in this news.",
+   "summary": "Cochin Shipyard Ltd. is one of four public sector companies set to announce dividend record dates between November 16 and 20. The company is part of the Nifty 500 index, which tracks India's 500 largest listed firms.",
+   "why": "Dividends provide cash returns to shareholders, but the share price often drops slightly on the ex-date to reflect this payout.",
+   "upside": "",
+   "downside": "The market may have already priced in the dividend, meaning the share price might not react as expected when the news is confirmed.",
    "watch": [
-    "The November 16 record date for the dividend",
-    "The ex-date when the stock price adjusts",
-    "How the stock reacts compared to peers like Shipping Corporation"
+    "The specific record date for the dividend payment",
+    "The ex-dividend date when the share price adjusts",
+    "The actual dividend amount per share"
    ],
-   "about": "Cochin Shipyard Ltd. is a major shipbuilder in the capital goods sector.",
-   "basis": "011eb33b00be",
-   "items": 2,
-   "updated": "2026-11-16T09:01+05:30",
+   "about": "",
+   "basis": "4b09b509020b",
+   "items": 1,
+   "updated": "2026-11-16T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "PFC": {
@@ -662,22 +582,6 @@
    ],
    "about": "",
    "basis": "0382c379d422",
-   "items": 1,
-   "updated": "2026-11-16T09:31+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "STLTECH": {
-   "summary": "Sterlite Technologies is part of a group of stocks that have seen large gains over the past year. This is partly because many mutual funds hold shares in the company.",
-   "why": "When many large investment funds own a stock, it can show that professionals are confident in the business. However, this also means the stock price has already risen a lot, which can make it more volatile.",
-   "upside": "The strong interest from mutual funds suggests that investors believe the company's business is growing well.",
-   "downside": "Stocks that have risen sharply can drop quickly if the company's growth slows down or if investors get nervous.",
-   "watch": [
-    "Check if mutual funds are still buying or if they are starting to sell.",
-    "Look for news about the company's recent sales or profits.",
-    "Watch for any sudden drops in the share price after the recent rise."
-   ],
-   "about": "Sterlite Technologies operates in the telecommunication sector.",
-   "basis": "86cbc1830a62",
    "items": 1,
    "updated": "2026-11-16T09:31+05:30",
    "model": "qwen/qwen3.8-27b"
