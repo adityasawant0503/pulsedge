@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T06:42:40+05:30",
+ "updated": "2026-11-16T08:16:59+05:30",
  "summary": {
-  "calls": 1442,
-  "scored_calls": 304,
+  "calls": 1446,
+  "scored_calls": 308,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "c66df1ff80ea4c4e",
+   "symbol": "ASHOKLEY",
+   "time": "2026-11-16T08:00:10+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stocks to watch: Ashok Leyland, BEL, Hero Moto, Coal India, Tata Motors PV",
+   "url": "https://www.business-standard.com/markets/news/stocks-to-watch-ashok-leyland-bel-hero-moto-coal-india-jupiter-wagons-126111600057_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 169.2
+  },
+  {
+   "id": "c66df1ff80ea4c4e",
+   "symbol": "BEL",
+   "time": "2026-11-16T08:00:10+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stocks to watch: Ashok Leyland, BEL, Hero Moto, Coal India, Tata Motors PV",
+   "url": "https://www.business-standard.com/markets/news/stocks-to-watch-ashok-leyland-bel-hero-moto-coal-india-jupiter-wagons-126111600057_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 400.85
+  },
+  {
+   "id": "cbda74b054db5673",
+   "symbol": "EICHERMOT",
+   "time": "2026-11-16T07:43:17+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Top stocks to watch today: Tata Motors PV, Eicher Motors, Hindalco shares in focus on Monday, 16 November | Full list",
+   "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-tata-motors-pv-eicher-motors-hindalco-shares-in-focus-on-monday-16-november-full-list-11794793810051.html",
+   "entry_date": "2026-11-13",
+   "entry": 7650.0
+  },
+  {
+   "id": "cbda74b054db5673",
+   "symbol": "HINDALCO",
+   "time": "2026-11-16T07:43:17+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Top stocks to watch today: Tata Motors PV, Eicher Motors, Hindalco shares in focus on Monday, 16 November | Full list",
+   "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-tata-motors-pv-eicher-motors-hindalco-shares-in-focus-on-monday-16-november-full-list-11794793810051.html",
+   "entry_date": "2026-11-13",
+   "entry": 943.6
+  },
   {
    "id": "64b7a34377e5a00a",
    "symbol": "POWERINDIA",

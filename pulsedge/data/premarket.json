@@ -1,10 +1,10 @@
 {
  "date": "2026-11-16",
- "updated": "2026-11-16T06:42:39+05:30",
+ "updated": "2026-11-16T08:16:59+05:30",
  "sentiment": "Mildly bearish",
  "breadth": {
   "up": 0,
-  "down": 2
+  "down": 1
  },
  "checklist": [
   {
@@ -23,16 +23,16 @@
     "Dow 52,347.55 +0.10%",
     "S&P 7,561.67 -0.40%",
     "Nasdaq 25,136.27 -0.91%",
-    "Nasdaq futures now +0.03%"
+    "Nasdaq futures now -0.05%"
    ]
   },
   {
    "title": "Asian markets live - Nikkei, Hang Seng",
-   "dir": "down",
-   "value": "Asia lower",
+   "dir": "flat",
+   "value": "Asia mixed",
    "detail": [
-    "Nikkei 60,774.69 -0.60%",
-    "Hang Seng 23,637.60 +0.00%"
+    "Nikkei 60,182.50 -1.57%",
+    "Hang Seng 23,828.93 +0.81%"
    ]
   },
   {
@@ -40,14 +40,14 @@
    "dir": "flat",
    "value": "No major currency pressure",
    "detail": [
-    "DXY 103.43 +0.02%",
+    "DXY 103.44 +0.03%",
     "USD/INR 94.240 +0.00%"
    ]
   },
   {
    "title": "Brent crude level",
    "dir": "flat",
-   "value": "$95.52 -0.33%",
+   "value": "$95.10 -0.77%",
    "detail": []
   },
   {
@@ -57,15 +57,23 @@
    "detail": []
   }
  ],
- "summary": "Mildly bearish setup. NASDAQ closed 0.91% lower; IT may open soft; Nikkei down, Hang Seng down.",
+ "summary": "Mildly bearish setup. NASDAQ closed 0.91% lower; IT may open soft; Nikkei down, Hang Seng up.",
  "global_cues": [
   "NASDAQ closed 0.91% lower; IT may open soft",
-  "Nikkei down, Hang Seng down"
+  "Nikkei down, Hang Seng up"
  ],
  "india_triggers": [
-  "1 filings and headlines worth a look so far today"
+  "3 filings and headlines worth a look so far today"
  ],
  "focus": [
+  {
+   "symbol": "ASHOKLEY",
+   "note": "Stocks to watch: Ashok Leyland, BEL, Hero Moto, Coal India, Tata Motor"
+  },
+  {
+   "symbol": "EICHERMOT",
+   "note": "Top stocks to watch today: Tata Motors PV, Eicher Motors, Hindalco sha"
+  },
   {
    "symbol": "POWERINDIA",
    "note": "Hitachi Energy’s growth outlook powers rally. Have valuations run ahea"
@@ -86,33 +94,33 @@
   },
   {
    "name": "S&P FUT",
-   "value": "7,588",
-   "change": 0.07
+   "value": "7,583",
+   "change": 0.0
   },
   {
    "name": "NASDAQ FUT",
-   "value": "28,042",
-   "change": 0.03
+   "value": "28,020",
+   "change": -0.05
   },
   {
    "name": "KOSPI",
-   "value": "5,282",
-   "change": -0.16
+   "value": "5,182",
+   "change": -2.05
   },
   {
    "name": "WTI",
-   "value": "88.40",
-   "change": -0.18
+   "value": "88.08",
+   "change": -0.54
   },
   {
    "name": "GOLD",
-   "value": "3,873",
-   "change": -0.34
+   "value": "3,884",
+   "change": -0.05
   },
   {
    "name": "US 10Y",
    "value": "5.14",
-   "change": -0.23
+   "change": -0.27
   }
  ],
  "source": "CNBC / Yahoo Finance (unofficial, delayed)"
