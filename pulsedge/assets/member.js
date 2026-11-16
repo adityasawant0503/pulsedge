@@ -7,8 +7,11 @@
  *    guest plan valid until a date. Links listed in data/revoked.json stop working.
  * Trials count NSE trading sessions, not calendar days. A trial runs until the next trading day after its last session.
  *
+ * A link issued to someone names their email. Once GOOGLE_CLIENT_ID is set, that link opens only after they sign in
+ * with that Google account; other accounts, even with the same link, see a sign-in screen instead.
+ *
  * This is a front-end gate for the beta: the data files are public, so it guards the experience, not the data.
- * Real protection comes with logins (Supabase) and private data.
+ * Real protection comes with logins on a server and private data.
  */
 (function(){
   "use strict";
@@ -16,6 +19,8 @@
   // keeps the private half there; its public half is added to data/keys.json. This one signs links from
   // pulsedge-bot/issue_pass.js.
   var KEYS=[{kid:"ops1",x:"8RUNuqzLjyLlTZrvGe4-S-klQ-lTGQd800eIdX_-l-g",y:"yhQDBaVv6lBvZiydzekTSDTOZbTmJoc-sAdEOjefXo8"}];
+  // Google OAuth "Web" client ID (public, safe to publish). Empty = sign-in off, links open as before.
+  var GOOGLE_CLIENT_ID="";
   var FORMSPREE="https://formspree.io/f/mkjoaaga";
   var TRIAL_SESSIONS=5;
   var CLOSE_MIN=15*60+30;
@@ -26,6 +31,31 @@
 
   function store(k,v){try{if(v===undefined)return localStorage.getItem(k);if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v)}catch(e){return null}}
   function getJson(u){return fetch(u,{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error(u);return r.json()})}
+
+  // ---------- Google sign-in for access links ----------
+  // Gmail ignores dots and "+tags" in addresses, so those count as the same account.
+  function normMail(e){
+    e=String(e||"").trim().toLowerCase();var at=e.lastIndexOf("@");if(at<0)return e;
+    var local=e.slice(0,at),dom=e.slice(at+1);
+    if(dom==="googlemail.com")dom="gmail.com";
+    if(dom==="gmail.com")local=local.split("+")[0].replace(/\./g,"");
+    return local+"@"+dom;
+  }
+  function maskMail(e){var s=String(e||""),at=s.indexOf("@");return at<1?s:s.charAt(0)+"•••"+s.slice(at)}
+  // The Google account signed in on this browser, until its token expires.
+  function who(){try{var w=JSON.parse(store("pe_who")||"null");if(w&&w.email&&w.exp*1000>Date.now())return w}catch(e){}return null}
+  function jwtPayload(t){var p=String(t||"").split(".");if(p.length!==3)return null;try{return JSON.parse(new TextDecoder().decode(b64u(p[1])))}catch(e){return null}}
+  // Google returns a signed ID token straight to this page; keep the verified Google account for this browser.
+  function onGoogle(resp){
+    var p=jwtPayload(resp&&resp.credential);
+    if(!p||p.aud!==GOOGLE_CLIENT_ID||(p.iss!=="https://accounts.google.com"&&p.iss!=="accounts.google.com")||p.email_verified!==true||!p.exp)return;
+    store("pe_who",JSON.stringify({email:p.email,exp:p.exp}));location.reload();
+  }
+  function loadGoogle(){
+    if(window.google&&google.accounts&&google.accounts.id)return Promise.resolve(true);
+    return new Promise(function(res){var s=document.createElement("script");s.src="https://accounts.google.com/gsi/client";s.async=true;
+      s.onload=function(){res(!!(window.google&&google.accounts))};s.onerror=function(){res(false)};document.head.appendChild(s)});
+  }
 
   // ---------- trading calendar (all dates are IST, "YYYY-MM-DD") ----------
   var hol={};HOLIDAYS.forEach(function(d){hol[d]=1});
@@ -85,6 +115,10 @@
     var tok=store("pe_pass"),t=null;try{t=JSON.parse(store("pe_trial")||"null")}catch(e){}
     return verify(tok).then(function(p){
       var pass=p&&revoked.indexOf(p.i)<0?fromPass(p):null,trial=t&&t.at?fromTrial(t):null;
+      // A link issued to someone opens only for that Google account, once sign-in is on.
+      if(pass&&pass.granted&&pass.email&&GOOGLE_CLIENT_ID){
+        var s=who();if(!s||normMail(s.email)!==normMail(pass.email)){pass.granted=false;pass.state="locked"}
+      }
       if(pass&&pass.granted)return pass;
       if(trial&&trial.granted)return trial;
       return pass||trial||{kind:"none",state:"none",granted:false};
@@ -127,6 +161,7 @@
   ".pe-link{display:block;background:none;border:0;padding:0;color:var(--mute);text-decoration:underline;text-underline-offset:3px;font-size:13px;margin-top:14px}"+
   ".pe-f+.pe-msg,.pe-link+.pe-f{margin-top:10px}"+
   ".pe-hide{display:none!important}"+
+  ".pe-gsi{display:flex;justify-content:center;min-height:44px;margin:4px 0 2px}"+
   ".pill.plan{cursor:pointer;color:var(--pur-l);border-color:var(--pur-edge);background:var(--pur-soft);transition:transform 160ms cubic-bezier(.2,.8,.2,1)}"+
   ".pill.plan:active{transform:scale(.97)}.pill.plan.warn{color:var(--amber-l);border-color:#f59e0b66;background:var(--amber-soft)}"+
   ".pe-pop{position:fixed;z-index:40;width:min(300px,calc(100vw - 24px));background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;box-shadow:var(--elev),0 20px 50px -20px rgba(0,0,0,.5);font-size:13.5px;opacity:0;transform:scale(.97);transform-origin:top right;transition:opacity 160ms ease-out,transform 160ms cubic-bezier(.2,.8,.2,1)}"+
@@ -180,7 +215,32 @@
     return [toggle,f,msg];
   }
 
+  function googleBox(){
+    var box=h("div",{"class":"pe-gsi"});
+    loadGoogle().then(function(ok){
+      if(!ok){box.append(h("p",{"class":"pe-msg err",text:"Sign-in couldn't load. Check your connection and reload the page."}));return}
+      google.accounts.id.initialize({client_id:GOOGLE_CLIENT_ID,callback:onGoogle,auto_select:false,cancel_on_tap_outside:true});
+      google.accounts.id.renderButton(box,{theme:"filled_black",size:"large",shape:"pill",text:"signin_with",width:260});
+    });
+    return box;
+  }
+  // The link belongs to one Google account: show who it's for and the sign-in, not the trial form.
+  function lockedGate(a,onSample){
+    var s=who(),mask=maskMail(a.email),kids=[
+      h("p",{"class":"pe-k",text:"Sign in to open your access"}),
+      h("h2",{text:"This access is for one Google account"}),
+      h("p",{text:"Sign in with "+mask+" to open PULSE. Other Google accounts can't open this link, even if they have it."})];
+    if(s&&normMail(s.email)!==normMail(a.email))kids.push(h("p",{"class":"pe-msg err",text:"You're signed in as "+s.email+", not "+mask+". Sign out, then sign in with the right account."}));
+    if(s){var so=h("button",{"class":"pe-b ghost",type:"button",text:"Sign out"});so.onclick=function(){store("pe_who",null);location.reload()};kids.push(h("div",{"class":"pe-row"},[so]))}
+    else kids.push(googleBox());
+    var sample=h("button",{type:"button","class":"pe-link",text:"Look around with sample data"});
+    sample.onclick=function(){try{sessionStorage.setItem("pe_sample","1")}catch(e){}close();onSample()};
+    kids.push(sample);
+    modal(h("div",{"class":"pe-card"},kids));
+  }
+
   function gate(a,onSample){
+    if(a.state==="locked")return lockedGate(a,onSample);
     var ended=a.state==="ended";
     var k=h("p",{"class":"pe-k",text:ended?(a.kind==="pass"&&!a.trial?"Access ended":"Trial ended"):"PULSE terminal"});
     var title=h("h2",{text:ended?(a.trial?"Your free trial has ended":"Your access has ended"):"Try PULSE free for "+TRIAL_SESSIONS+" trading sessions"});
