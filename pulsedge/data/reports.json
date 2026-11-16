@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T14:30+05:30",
+ "updated": "2026-11-16T14:47+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a sharp drop in Tata Motors PV shares after a huge quarterly loss, showing how profit cuts can hurt a stock. Kaynes Technology also fell sharply as its profit margin shrank, and Inox Wind shares slipped after a profit drop. The market overall rose, with the Sensex gaining 400 points and Nifty above 25,250, but some sectors like Realty and Auto fell. Eicher Motors gained on record sales, while Mahindra Logistics slid after its CEO resigned, highlighting leadership risk.",
+  "summary": "PulsEdge flagged a sharp fall in several auto and energy stocks after disappointing quarterly results, with Tata Motors passenger‑vehicle unit dropping about 9% and Kaynes Technology falling around 20% due to big profit declines. Inox Wind also slid about 10% as its profit margin squeezed. Meanwhile, Eicher Motors rose over 3% on record sales and profit, while Mahindra Logistics fell 14% after its CEO resigned. Overall, the market saw pressure on auto and energy sectors, while broader indices were mixed.",
   "themes": [
-   "Profit declines hurting shares",
-   "Leadership changes causing uncertainty",
-   "Market up but some stocks weak"
+   "Profit warnings dragged down auto and energy shares",
+   "Leadership change unsettled Mahindra Logistics",
+   "Eicher Motors' strong bike sales lifted its stock"
   ],
   "watch": [
-   "Tata Motors PV loss trend",
-   "Kaynes Technology profit margin erosion",
-   "Mahindra Logistics leadership transition"
+   "Next‑quarter earnings of Tata Motors PV and Kaynes Technology for signs of recovery or deeper loss",
+   "Margin trends at Inox Wind and other energy firms",
+   "Impact of Mahindra Logistics' new leadership on its performance"
   ],
   "date": "2026-11-16",
-  "basis": "b37b3a2aee50",
-  "updated": "2026-11-16T13:46+05:30",
-  "model": "openai/gpt-oss-20b",
-  "items": 56
+  "basis": "788962e3adda",
+  "updated": "2026-11-16T14:47+05:30",
+  "model": "openai/gpt-oss-120b",
+  "items": 68
  },
  "stocks": {
   "TMPV": {
@@ -220,19 +220,35 @@
    "model": "openai/gpt-oss-120b"
   },
   "PAYTM": {
-   "summary": "PulsEdge flagged that Paytm shares have risen above their IPO listing‑day high of ₹1,955 for the first time in five years, helped by an in‑principle regulatory authorisation. The stock also appeared in a brokerage’s list of top picks for 2027.",
-   "why": "Shareholders see the price breakout as a sign of renewed market confidence, while the regulatory nod could let the company expand into new services.",
-   "upside": "If the in‑principle authorisation receives final clearance, Paytm could launch new business lines that boost earnings.",
-   "downside": "The authorisation is still preliminary, and a failure to obtain full approval could dampen growth expectations.",
+   "summary": "Paytm’s shares rose above their IPO listing‑day high of ₹1,955 for the first time in five years, helped by recent positive regulatory news. The stock was also highlighted as a top pick for 2027 by a brokerage firm.",
+   "why": "Hitting the IPO high can draw fresh investor interest and may boost the stock’s momentum. Being named a top pick could increase demand from institutional investors.",
+   "upside": "If regulatory approvals become final, the share price could see further gains.",
+   "downside": "The regulatory approvals are still preliminary, so a setback could weigh on the stock.",
    "watch": [
-    "Final decision on the regulatory authorisation",
-    "Paytm’s share price relative to the IPO high",
-    "Impact of Ventura’s top‑pick recommendation on investor sentiment"
+    "Progress on regulatory approvals",
+    "Financials sector index movement",
+    "Any new brokerage recommendations or analyst coverage"
    ],
-   "about": "One 97 Communications Ltd. operates Paytm, a digital payments platform in India.",
-   "basis": "2ace5b045969",
-   "items": 4,
-   "updated": "2026-11-16T08:16+05:30",
+   "about": "One 97 Communications Ltd. operates Paytm, a digital payments platform.",
+   "basis": "05490c65331a",
+   "items": 3,
+   "updated": "2026-11-16T14:47+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "AMBER": {
+   "summary": "Amber Enterprises' shares fell sharply after its earnings report, with analysts flagging low profit margins, and again after a peer posted weak results.",
+   "why": "Margin compression could reduce future profits and sector sentiment may drag the stock further.",
+   "upside": "The consumer durables index has risen 2.9% over the past five sessions, which could help the stock recover.",
+   "downside": "Ongoing margin pressure and a broader sell‑off in the sector could keep the share price under pressure.",
+   "watch": [
+    "Margin trends in upcoming quarters",
+    "Kaynes Technology earnings and sector peer results",
+    "Movement of the consumer durables index"
+   ],
+   "about": "Amber Enterprises operates in the consumer durables sector.",
+   "basis": "6b03f93c70f1",
+   "items": 2,
+   "updated": "2026-11-16T14:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "BANKINDIA": {
@@ -250,21 +266,6 @@
    "items": 2,
    "updated": "2026-11-16T10:31+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "AMBER": {
-   "summary": "Amber Enterprises shares dropped sharply by over 8 percent after a rival company reported weaker profits. Investors often sell similar companies together when one performs poorly.",
-   "why": "This matters because your shares can lose value due to bad news from other companies in the same industry, even if Amber did not report anything new.",
-   "upside": "",
-   "downside": "Further sector-wide selling could happen if other peer companies also report weak numbers.",
-   "watch": [
-    "Performance of peer companies in the consumer durables sector",
-    "Overall movement of the Nifty 500 index"
-   ],
-   "about": "Amber Enterprises India Ltd. is a consumer durables company included in India's Nifty 500 index.",
-   "basis": "62bcd59a7855",
-   "items": 1,
-   "updated": "2026-11-16T13:15+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "KPIL": {
    "summary": "Kalpataru Projects International announced it has won a new infrastructure contract. This adds to the company's list of upcoming work.",
@@ -313,22 +314,6 @@
    "items": 1,
    "updated": "2026-11-16T08:31+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "GRASIM": {
-   "summary": "PulsEdge flagged Grasim Industries Ltd. for releasing its unaudited quarterly and half‑year financial results. The numbers show revenue growth, but the company faces margin pressure that could offset that growth.",
-   "why": "Shareholders watch profit and margin trends because they affect earnings and cash flow.",
-   "upside": "If the margin pressure eases while revenue continues to rise, profitability could improve.",
-   "downside": "Persistent margin pressure could reduce earnings despite higher sales.",
-   "watch": [
-    "Release of audited financial statements for the same period",
-    "Management commentary on margin trends and cost controls",
-    "Any guidance or updates on revenue growth in upcoming quarters"
-   ],
-   "about": "Grasim Industries Ltd. is a leading Indian construction materials company.",
-   "basis": "48cfb49f134b",
-   "items": 1,
-   "updated": "2026-11-16T14:30+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "OIL": {
    "summary": "Oil India Ltd. (OIL) is in the news as analysts predict a sizeable surplus of oil in 2027 and global oil prices have edged lower due to expected supply from West Asia. The company also has an upcoming dividend record date in the PSU dividend week. These events are drawing attention to OIL’s share price movements.",
@@ -473,6 +458,22 @@
    "items": 2,
    "updated": "2026-11-16T09:01+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "BELRISE": {
+   "summary": "Belrise Industries posted strong Q2 profit and revenue growth, sending its shares up 13% and taking the stock 44% higher over the past year.",
+   "why": "Shareholders see higher earnings and rapid price gains, but the recent surge may make the stock vulnerable to a pull‑back.",
+   "upside": "If the profit momentum continues, the share price could keep rising.",
+   "downside": "The stock may be overextended after the big jump, risking a correction.",
+   "watch": [
+    "Next earnings release",
+    "Progress on the H‑One merger",
+    "Auto sector index movement"
+   ],
+   "about": "Belrise Industries manufactures automobile and auto component products.",
+   "basis": "9e60a79670b8",
+   "items": 1,
+   "updated": "2026-11-16T14:47+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "PFC": {
    "summary": "Power Finance Corporation Ltd. is one of four public sector companies with an upcoming dividend record date between November 16 and 20. The broader Financials sector has risen 4.7% over the last five sessions, despite a small drop in the most recent session.",

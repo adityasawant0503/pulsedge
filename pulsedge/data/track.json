@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T14:31:27+05:30",
+ "updated": "2026-11-16T14:47:31+05:30",
  "summary": {
-  "calls": 1487,
-  "scored_calls": 349,
+  "calls": 1489,
+  "scored_calls": 351,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "1f1ca002d9e029d0",
+   "symbol": "BELRISE",
+   "time": "2026-11-16T14:30:43+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Belrise Industries shares surge 13% after Q2 results, H-One merger; stock rallies 44% in a year — What technical experts",
+   "url": "https://www.livemint.com/market/stock-market-news/belrise-industries-shares-surge-13-after-q2-results-h-one-merger-stock-rallies-44-in-a-year-what-technical-experts-11794817435375.html",
+   "entry_date": "2026-11-13",
+   "entry": 215.2
+  },
+  {
+   "id": "bed8113a842ed3c6",
+   "symbol": "AMBER",
+   "time": "2026-11-16T14:23:44+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Day after 9% surge Amber Enterprises dips 8%; analysts flag margin worries",
+   "url": "https://www.business-standard.com/markets/news/day-after-9-surge-amber-enterprises-dips-8-analysts-flag-margin-worries-126111601123_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 6772.0
+  },
   {
    "id": "3add552c0c21525e",
    "symbol": "TMCV",
