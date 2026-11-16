@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T15:17:03+05:30",
+ "updated": "2026-11-16T15:32:16+05:30",
  "summary": {
-  "calls": 1490,
-  "scored_calls": 352,
+  "calls": 1492,
+  "scored_calls": 354,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "00c8ac2247e41cef",
+   "symbol": "ATHERENERG",
+   "time": "2026-11-16T15:18:15+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Ola Electric vs Ather Energy: Ather shines, Ola struggles in Q2; which EV stock offers better upside?",
+   "url": "https://www.livemint.com/market/stock-market-news/ola-electric-vs-ather-energy-ather-shines-ola-struggles-in-q2-which-ev-stock-offers-better-upside-11794821623526.html",
+   "entry_date": "2026-11-13",
+   "entry": 1945.0
+  },
+  {
+   "id": "cee09b2a1f4cd312",
+   "symbol": "BELRISE",
+   "time": "2026-11-16T15:10:29+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Belrise Industries shares rally 13% after Q2 PAT rises 25%, revenue up 17%",
+   "url": "https://www.business-standard.com/markets/news/belrise-industries-shares-rally-13-after-q2-pat-rises-25-revenue-up-17-126111601219_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 215.2
+  },
   {
    "id": "1f1ca002d9e029d0",
    "symbol": "BELRISE",

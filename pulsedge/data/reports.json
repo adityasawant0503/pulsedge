@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T15:17+05:30",
+ "updated": "2026-11-16T15:32+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a sharp fall in several auto and energy stocks after disappointing quarterly results, with Tata Motors passenger‑vehicle unit dropping about 9% and Kaynes Technology falling around 20% due to big profit declines. Inox Wind also slid about 10% as its profit margin squeezed. Meanwhile, Eicher Motors rose over 3% on record sales and profit, while Mahindra Logistics fell 14% after its CEO resigned. Overall, the market saw pressure on auto and energy sectors, while broader indices were mixed.",
+  "summary": "PulsEdge flagged a mixed day where the broader market held steady, but several individual stocks fell sharply after weak quarterly results. Tata Motors, Inox Wind, and Kaynes Technology saw significant price drops as investors reacted to lower profits or losses. In contrast, Eicher Motors and Belrise Industries rose after reporting strong performance. Foreign investors slightly reduced their long positions in index futures.",
   "themes": [
-   "Profit warnings dragged down auto and energy shares",
-   "Leadership change unsettled Mahindra Logistics",
-   "Eicher Motors' strong bike sales lifted its stock"
+   "Weak quarterly earnings caused sharp drops in auto and energy stocks.",
+   "Strong results helped a few companies like Eicher Motors gain ground.",
+   "Foreign fund managers slightly lowered their bullish bets on the market."
   ],
   "watch": [
-   "Next‑quarter earnings of Tata Motors PV and Kaynes Technology for signs of recovery or deeper loss",
-   "Margin trends at Inox Wind and other energy firms",
-   "Impact of Mahindra Logistics' new leadership on its performance"
+   "Whether the losses at Tata Motors and Inox Wind are one-time events or ongoing problems.",
+   "If foreign investors continue to reduce their long positions in the coming days.",
+   "How the market reacts to the cancellation of the large VA Tech Wabag project."
   ],
   "date": "2026-11-16",
-  "basis": "788962e3adda",
-  "updated": "2026-11-16T14:47+05:30",
-  "model": "openai/gpt-oss-120b",
-  "items": 68
+  "basis": "d8a545fec4eb",
+  "updated": "2026-11-16T15:32+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 76
  },
  "stocks": {
   "TMPV": {
@@ -155,6 +155,22 @@
    "updated": "2026-11-16T14:30+05:30",
    "model": "openai/gpt-oss-20b"
   },
+  "ATHERENERG": {
+   "summary": "Ather Energy reported a profit and 63% revenue growth in its second quarter. This strong performance stands out against a sector that has seen mixed results recently.",
+   "why": "Strong earnings can increase the value of the company, which may benefit shareholders over time.",
+   "upside": "Continued revenue growth and profitability could strengthen investor confidence in the stock.",
+   "downside": "There is a risk that the reported financial results could be revised later.",
+   "watch": [
+    "Any official revisions to the Q2 financial results",
+    "Future quarterly earnings reports",
+    "Overall trends in the automobile sector index"
+   ],
+   "about": "Ather Energy operates in the automobile and auto components sector.",
+   "basis": "f14469544dd3",
+   "items": 1,
+   "updated": "2026-11-16T15:32+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "JIOFIN": {
    "summary": "Jio Financial Services shares fell noticeably in recent trading. This drop happened while the broader financial sector index was up over the last five sessions.",
    "why": "The price decline suggests investors are currently less confident in the stock, which affects the value of any shares you hold.",
@@ -169,6 +185,22 @@
    "basis": "7020864b9825",
    "items": 1,
    "updated": "2026-11-16T15:17+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "BELRISE": {
+   "summary": "Belrise Industries reported a 25% rise in profits and 17% growth in revenue for its second quarter. Following these results, the company's share price jumped 13% in a single day.",
+   "why": "Higher profits and revenue mean the company is generating more cash, which can support the value of the shares you own.",
+   "upside": "The company is currently growing its sales and profits at a faster rate than before.",
+   "downside": "The stock price has already risen significantly, including a 44% increase over the past year, which may make it vulnerable to a correction.",
+   "watch": [
+    "Whether the company's future growth guidance remains strong",
+    "If the share price stabilizes after the recent 13% jump",
+    "Performance of the broader Auto sector index"
+   ],
+   "about": "Belrise Industries operates in the automobile and auto components sector.",
+   "basis": "2e86e5d7ccf0",
+   "items": 2,
+   "updated": "2026-11-16T15:32+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "MEESHO": {
@@ -475,22 +507,6 @@
    "updated": "2026-11-16T09:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BELRISE": {
-   "summary": "Belrise Industries posted strong Q2 profit and revenue growth, sending its shares up 13% and taking the stock 44% higher over the past year.",
-   "why": "Shareholders see higher earnings and rapid price gains, but the recent surge may make the stock vulnerable to a pull‑back.",
-   "upside": "If the profit momentum continues, the share price could keep rising.",
-   "downside": "The stock may be overextended after the big jump, risking a correction.",
-   "watch": [
-    "Next earnings release",
-    "Progress on the H‑One merger",
-    "Auto sector index movement"
-   ],
-   "about": "Belrise Industries manufactures automobile and auto component products.",
-   "basis": "9e60a79670b8",
-   "items": 1,
-   "updated": "2026-11-16T14:47+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "PFC": {
    "summary": "Power Finance Corporation Ltd. is one of four public sector companies with an upcoming dividend record date between November 16 and 20. The broader Financials sector has risen 4.7% over the last five sessions, despite a small drop in the most recent session.",
    "why": "Shareholders need to know the record date to ensure they receive the dividend, as share prices often adjust slightly on the ex-date.",
@@ -743,22 +759,6 @@
    "items": 1,
    "updated": "2026-11-16T14:30+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "ITC": {
-   "summary": "ITC shares rose as FMCG stocks led gains in the Sensex, and the company announced an allotment of securities that could slightly dilute its share count. The broader market showed mixed signals with strength in large caps but weakness in mid and small caps.",
-   "why": "Share price movement and any dilution affect the value of existing shares for investors.",
-   "upside": "If the allotment is modest and the market continues to favor stable consumer stocks, the share price could benefit.",
-   "downside": "Dilution from the new securities could reduce per‑share metrics, and broader weakness in mid‑ and small‑cap stocks could pressure the index.",
-   "watch": [
-    "Further movement of the Sensex and Nifty indices",
-    "Details on the size and impact of the securities allotment",
-    "Performance of the FMCG sector and any mid‑/small‑cap weakness"
-   ],
-   "about": "ITC Ltd. is a leading Fast Moving Consumer Goods company in India.",
-   "basis": "cb20bbce7129",
-   "items": 2,
-   "updated": "2026-11-16T12:31+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "TATAPOWER": {
    "summary": "Tata Power commissioned a 100.8 MW wind farm in Ausa, Maharashtra and its renewable arm issued a business press announcement.",
