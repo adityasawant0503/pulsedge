@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T15:01+05:30",
+ "updated": "2026-11-16T15:17+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -154,6 +154,22 @@
    "items": 4,
    "updated": "2026-11-16T14:30+05:30",
    "model": "openai/gpt-oss-20b"
+  },
+  "JIOFIN": {
+   "summary": "Jio Financial Services shares fell noticeably in recent trading. This drop happened while the broader financial sector index was up over the last five sessions.",
+   "why": "The price decline suggests investors are currently less confident in the stock, which affects the value of any shares you hold.",
+   "upside": "A broader market rally could help limit further losses for the stock.",
+   "downside": "Negative sentiment around the stock could keep the share price lower.",
+   "watch": [
+    "Whether the stock recovers from the recent downturn",
+    "How the Financials sector index performs in the coming days",
+    "If the broader market rally continues"
+   ],
+   "about": "Jio Financial Services is a company in the financial services sector and is one of India's 50 largest listed companies.",
+   "basis": "7020864b9825",
+   "items": 1,
+   "updated": "2026-11-16T15:17+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "MEESHO": {
    "summary": "On Nov 13, several large block trades of Meesho shares were reported, with institutions both buying and selling billions of rupees worth of stock at ₹246.75.",
@@ -602,22 +618,6 @@
    "updated": "2026-11-16T09:31+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "TVSMOTOR": {
-   "summary": "TVS Motor Company announced that Mr. Gaurav Gupta, President of its India Two Wheeler Business, will resign effective December 24, 2026. The company also filed a general update with the stock exchange on the same day.",
-   "why": "Changes in senior leadership can create short-term uncertainty for investors who hold shares in the company.",
-   "upside": "",
-   "downside": "The departure of a key executive responsible for the two-wheeler business could disrupt operations or strategy.",
-   "watch": [
-    "Announcements about who will replace Mr. Gupta",
-    "Future updates from the company regarding this leadership change",
-    "Performance of the broader Auto sector index"
-   ],
-   "about": "TVS Motor Company operates in the automobile and auto components sector.",
-   "basis": "02ecf1109223",
-   "items": 3,
-   "updated": "2026-11-16T09:31+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "PATANJALI": {
    "summary": "Patanjali Foods reported lower Q2 profit, causing its shares to fall about 4%. Analysts say the dip may be temporary and linked to holiday timing.",
    "why": "The profit slip signals weaker earnings and could pressure margins, but the outlook may improve once the holiday effect passes.",
@@ -744,22 +744,6 @@
    "updated": "2026-11-16T14:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "JSWSTEEL": {
-   "summary": "JSW Steel announced an agreement to acquire a new asset. The deal could expand its capacity and market share. The metals sector index fell 1% in the last session but is up 0.4% over five days.",
-   "why": "Investors need to see how the acquisition will affect revenue growth and the company’s debt.",
-   "upside": "A well‑priced acquisition that adds capacity could boost earnings.",
-   "downside": "A high purchase price or added debt could weigh on profitability.",
-   "watch": [
-    "Details of the acquisition agreement",
-    "Impact on JSW Steel's debt levels",
-    "Metals sector price movements"
-   ],
-   "about": "JSW Steel Ltd. is a major Indian steel producer.",
-   "basis": "c5b0f0e13037",
-   "items": 1,
-   "updated": "2026-11-16T13:01+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "ITC": {
    "summary": "ITC shares rose as FMCG stocks led gains in the Sensex, and the company announced an allotment of securities that could slightly dilute its share count. The broader market showed mixed signals with strength in large caps but weakness in mid and small caps.",
    "why": "Share price movement and any dilution affect the value of existing shares for investors.",
@@ -791,22 +775,6 @@
    "items": 2,
    "updated": "2026-11-16T10:46+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "BSE": {
-   "summary": "BSE Ltd. is one of India's 50 largest listed companies in the Financial Services sector. Recent news mentioned it alongside other stocks in a list of top picks by market experts.",
-   "why": "As a major stock exchange, its performance is linked to overall market activity and investor confidence in India's financial system.",
-   "upside": "Positive attention from analysts could increase interest in the stock.",
-   "downside": "Broader market weakness could limit any gains for the share price.",
-   "watch": [
-    "Overall movement of the Financials sector index",
-    "General market conditions and sentiment",
-    "Future news regarding stock exchange operations"
-   ],
-   "about": "BSE Ltd. operates a stock exchange in India.",
-   "basis": "325d504f1020",
-   "items": 2,
-   "updated": "2026-11-16T12:45+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "SUPREMEIND": {
    "summary": "Supreme Industries Ltd. is a capital goods company listed in the Nifty 500.",
