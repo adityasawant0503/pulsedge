@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T10:16:35+05:30",
+ "updated": "2026-11-16T10:32:22+05:30",
  "summary": {
-  "calls": 1460,
-  "scored_calls": 322,
+  "calls": 1461,
+  "scored_calls": 323,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "b4b874891e4fa96f",
+   "symbol": "INOXWIND",
+   "time": "2026-11-16T10:28:32+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Inox Wind shares crash: Why energy stock price is falling today? Tanks 9.17% post Q2, down 60% in 1 year - Still a buy?",
+   "url": "https://www.livemint.com/market/stock-market-news/inox-wind-shares-crash-why-energy-stock-price-is-falling-today-tanks-9-17-post-q2-down-60-in-1-year-still-a-buy-11794803945803.html",
+   "entry_date": "2026-11-13",
+   "entry": 64.45
+  },
   {
    "id": "73516849ee109f2d",
    "symbol": "TATAPOWER",

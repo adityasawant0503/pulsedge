@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T10:15+05:30",
+ "updated": "2026-11-16T10:31+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "On Monday, November 16, 2026, the overall Indian stock market saw the Sensex gain 300 points while the Nifty stayed near 25,250. However, individual companies faced mixed fortunes as Tata Motors PV shares plunged after reporting a huge quarterly loss, and Kaynes Technology dropped sharply. Meanwhile, several firms like Biocon, Glenmark, and Kalpataru Projects announced new drug approvals and contract wins. PulsEdge also noted that oil prices edged lower on expectations of a future supply surplus.",
+  "summary": "The overall market moved higher, with the Sensex gaining 400 points, but several major stocks fell sharply after weak quarterly results. Tata Motors and Kaynes Technology saw their share prices drop significantly due to large losses and falling profits. In contrast, Eicher Motors rose after reporting its best-ever quarterly performance. A global summit involving major world leaders is also expected to influence market sentiment.",
   "themes": [
-   "Corporate earnings and sharp drops in specific stocks like Tata Motors PV and Kaynes Technology.",
-   "New business wins and regulatory approvals for pharmaceutical and infrastructure companies.",
-   "Falling oil prices driven by expectations of a future supply surplus."
+   "Sharp stock price drops followed weak quarterly earnings reports for several large companies.",
+   "The auto sector showed mixed results, with some companies falling while others reported record profits.",
+   "New business contracts and regulatory approvals provided positive news for specific infrastructure and pharma firms."
   ],
   "watch": [
-   "Ongoing quarterly financial results from major Indian companies.",
-   "The potential IPO valuation of Coal India's Mahanadi Coalfields.",
-   "Movements in global oil prices and their impact on energy markets."
+   "Whether the losses at Tata Motors and Kaynes Technology are one-time events or ongoing structural issues.",
+   "The outcome of the upcoming global summit between major world leaders and its impact on trade.",
+   "If foreign investors continue to reduce their long positions in Indian index futures."
   ],
   "date": "2026-11-16",
-  "basis": "69ff90648d24",
-  "updated": "2026-11-16T09:46+05:30",
-  "model": "gemini-flash-lite-latest",
-  "items": 13
+  "basis": "80a57a8b44f0",
+  "updated": "2026-11-16T10:31+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 25
  },
  "stocks": {
   "TMPV": {
@@ -107,6 +107,22 @@
    "updated": "2026-11-16T10:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "INOXWIND": {
+   "summary": "Inox Wind reported a sharp fall in its recent profits, sending the shares down 9.17% after the Q2 results and leaving the stock 60% lower than a year ago.",
+   "why": "The profit decline reduces earnings per share, which can affect dividend expectations and overall valuation for shareholders.",
+   "upside": "",
+   "downside": "Further profit warnings could trigger additional selling pressure and push the stock lower.",
+   "watch": [
+    "Next quarterly earnings release",
+    "Any new profit guidance from management",
+    "Broader energy sector sentiment"
+   ],
+   "about": "",
+   "basis": "dba91c81c7a1",
+   "items": 1,
+   "updated": "2026-11-16T10:31+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "ABB": {
    "summary": "ABB India shares jumped 36% recently after an analyst upgrade, reflecting optimism about its fundamentals.",
    "why": "The move matters to shareholders because it signals potential for further price movement, but a slowdown in the capital goods sector could weigh on future orders.",
@@ -140,19 +156,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "MEESHO": {
-   "summary": "On Nov 13, several large investors traded Meesho shares in block deals. Institutions bought about ₹1.5 billion worth of shares while one investor sold roughly ₹1.9 billion. The trades happened at ₹246.75 per share.",
-   "why": "Shareholders watch big trades because they can hint at how investors feel about the company’s outlook.",
-   "upside": "If more institutions keep buying, it could help the stock stay strong.",
-   "downside": "The large sale by SVF II may weigh on the share price if others follow suit.",
+   "summary": "On Nov 13, several large block trades of Meesho shares were reported, with institutions both buying and selling billions of rupees worth of stock at ₹246.75.",
+   "why": "Such big moves can influence the share price and signal investor sentiment for current shareholders.",
+   "upside": "If buying by institutions continues, it could provide price support.",
+   "downside": "If selling by large investors persists, it could put downward pressure on the stock.",
    "watch": [
-    "Further block‑deal activity",
-    "Share‑price movement after the trades",
-    "New large purchases or sales by institutions"
+    "Future block deal activity",
+    "Net balance of buying vs selling",
+    "Share price reaction to these trades"
    ],
    "about": "",
-   "basis": "505223595ad3",
-   "items": 21,
-   "updated": "2026-11-16T06:41+05:30",
+   "basis": "69b1ae777391",
+   "items": 20,
+   "updated": "2026-11-16T10:31+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "TMCV": {
@@ -251,22 +267,6 @@
    "updated": "2026-11-16T08:31+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BANKINDIA": {
-   "summary": "Bank of India shares recently saw strong gains as part of a broader rally in public sector bank stocks. This sector movement helped push the stock to multi-month highs, even though the wider financial sector dipped slightly in the most recent trading session.",
-   "why": "This matters to shareholders because the stock is moving with the overall trend of public sector banks, which can lead to quick price changes. However, such strong rallies often end with investors selling to lock in profits.",
-   "upside": "The stock may continue to rise if the positive momentum in the public sector banking group holds steady.",
-   "downside": "The share price could drop if investors sell off their holdings to take profits after the recent strong gains.",
-   "watch": [
-    "Whether the public sector bank rally continues or reverses",
-    "Changes in India's 10-year bond yields",
-    "New data on inflation levels"
-   ],
-   "about": "Bank of India is a financial services company listed on the NSE.",
-   "basis": "a95ba015776d",
-   "items": 3,
-   "updated": "2026-11-16T08:31+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "NATCOPHARM": {
    "summary": "Natco Pharma held a board meeting on 13 Nov 2026, announced its financial results for the quarter ended 30 Sep 2026 and declared a second interim dividend, and set the record date for dividend eligibility on 19 Nov 2026.",
    "why": "Dividends affect cash returns for shareholders and the record date determines who receives them.",
@@ -297,6 +297,22 @@
    "basis": "b41ed63de431",
    "items": 2,
    "updated": "2026-11-16T08:31+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "BANKINDIA": {
+   "summary": "Bank of India saw strong weekly gains as the Nifty PSU Bank index posted its biggest surge in seven months, pushing the stock to multi‑month highs. The broader financial sector has been mixed, slipping 0.7% in the last session but up 4.7% over the past five sessions.",
+   "why": "Shareholders feel the impact of sector‑wide momentum that can lift the stock, but also face the risk of a quick pull‑back after a prolonged rally.",
+   "upside": "If the PSU bank rally sustains, the share could keep climbing.",
+   "downside": "A wave of profit‑taking after the recent multi‑week gains could push the price lower.",
+   "watch": [
+    "Continuation of the Nifty PSU Bank index surge",
+    "Signs of profit booking in the sector",
+    "Changes in India 10‑year bond yields affecting banking costs"
+   ],
+   "about": "Bank of India is a public sector bank that provides banking and financial services across India.",
+   "basis": "f58b673c3e54",
+   "items": 2,
+   "updated": "2026-11-16T10:31+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "GRASIM": {
@@ -459,22 +475,6 @@
    "updated": "2026-11-16T09:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "COFORGE": {
-   "summary": "Coforge is one of the stocks named in recent news about MSCI index changes, which can force global funds to buy or sell shares. The broader IT sector has seen prices drop slightly over the last week.",
-   "why": "If Coforge is added to or removed from the MSCI index, it may see sudden buying or selling pressure from large funds, which can make the share price jump or drop sharply.",
-   "upside": "If Coforge is added to the index, it could attract new money from global funds.",
-   "downside": "If Coforge is removed from the index, it could face selling pressure from funds that must exit the stock.",
-   "watch": [
-    "The official MSCI index change list",
-    "How the IT sector index moves in the coming days",
-    "Trading volume on Coforge shares around the index effective date"
-   ],
-   "about": "Coforge is an Information Technology company listed in India's Nifty 500 index.",
-   "basis": "7ba49533d091",
-   "items": 2,
-   "updated": "2026-11-16T09:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "PFC": {
    "summary": "Power Finance Corporation Ltd. is one of four public sector companies with an upcoming dividend record date between November 16 and 20. The broader Financials sector has risen 4.7% over the last five sessions, despite a small drop in the most recent session.",
    "why": "Shareholders need to know the record date to ensure they receive the dividend, as share prices often adjust slightly on the ex-date.",
@@ -521,6 +521,22 @@
    "basis": "821abfd4cb49",
    "items": 1,
    "updated": "2026-11-16T09:16+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "COFORGE": {
+   "summary": "Coforge is facing potential fund moves after MSCI announced a reshuffle of its Indian index, while the broader IT sector has slipped 0.7% today and 2.8% over the past week.",
+   "why": "Shareholders should watch because index‑fund buying or selling can move the stock sharply, and sector weakness may weigh on earnings.",
+   "upside": "If MSCI adds Coforge, index funds could buy the shares, supporting the price.",
+   "downside": "If Coforge is removed or faces outflows, the stock could see selling pressure.",
+   "watch": [
+    "MSCI’s final decision on Coforge’s inclusion or exclusion",
+    "Subsequent fund flow data after the MSCI change",
+    "Continued performance of the IT sector index"
+   ],
+   "about": "Coforge Ltd. delivers information technology services and digital solutions.",
+   "basis": "72bc78a542bf",
+   "items": 1,
+   "updated": "2026-11-16T10:31+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "COALINDIA": {
