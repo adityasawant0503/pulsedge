@@ -124,7 +124,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .tl .up{color:var(--green-l)}.tl .down{color:var(--red-l)}.tl .flat{color:var(--mute)}
 .tlnote{margin:8px 0 0;font-size:12.5px;color:var(--mute);line-height:1.45}
 .fnote{margin:0;color:var(--mute);font-size:12.5px;line-height:1.5}
-.secs{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:5px 14px;font:13px/1.45 var(--mono);align-items:baseline}
+.secs{display:grid;grid-template-columns:minmax(0,1fr) repeat(3,auto);gap:5px 12px;font:13px/1.45 var(--mono);align-items:baseline}
+.secs .flat{color:var(--mute)}
 .secs .h{color:var(--mute);font-size:11px;letter-spacing:.06em}
 .secs .gap{grid-column:1/-1;border-top:1px dashed var(--line)}
 .wk{margin:0;font-size:14.5px;line-height:1.5}
@@ -599,12 +600,18 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     wrap.appendChild(el("p","tlnote",note));
     return wrap;
   }
+  // 1 day, 1 week (5 sessions) and 1 month (21 sessions) for each sector index, from its stored daily closes.
+  function sectorCell(label,back){
+    var ih=(flows&&flows.index_history)||{},dk=Object.keys(ih).sort(),n=dk.length;
+    var last=n&&ih[dk[n-1]]&&ih[dk[n-1]][label],base=n>back&&ih[dk[n-1-back]]&&ih[dk[n-1-back]][label];
+    if(!last||!base||!base[0]){return {t:n>back?"–":n+" of "+(back+1)+" days",c:"flat"}}
+    var v=100*(last[0]/base[0]-1);return {t:pct(Math.round(v*100)/100),c:v>=0?"up":"down"};
+  }
   function renderFlows(){
     var n=document.getElementById("pm-flows");n.textContent="";
     var c=flows&&flows.cash,f=flows&&flows.fno,deals=(flows&&flows.by_stock||[]).slice(0,6);
     var secs=(flows&&flows.sectors||[]).filter(function(x){return !x.broad}),wk=flows&&flows.week;
     n.hidden=!(c||f||deals.length||secs.length);if(n.hidden)return;
-    function pct(v){return v==null?"\u2013":(v>=0?"+":"")+v.toFixed(1)+"%"}
     if(wk&&(wk.nifty_5d!=null||wk.fii_long_now!=null)){
       var w0=el("div"),parts=[];w0.appendChild(el("div","lbl","This week"));
       if(wk.nifty_5d!=null)parts.push("Nifty "+pct(wk.nifty_5d)+" over 5 sessions");
@@ -615,8 +622,10 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     if(secs.length){
       var ws=el("div"),g0=el("div","secs"),pick=secs.length>8?secs.slice(0,4).concat([null],secs.slice(-4)):secs;
       ws.appendChild(el("div","lbl","Sectors"+(flows.sectors_date?" \u00b7 "+shortDay(flows.sectors_date):"")));
-      g0.append(el("span","h",""),el("span","h","1 DAY"),el("span","h","5 DAYS"));
-      pick.forEach(function(x){if(!x){g0.appendChild(el("span","gap"));return}g0.append(el("span",null,x.label),el("span",x.d1>=0?"up":"down",pct(x.d1)),el("span",x.d5==null?"flat":x.d5>=0?"up":"down",pct(x.d5)))});
+      g0.append(el("span","h",""),el("span","h","1 DAY"),el("span","h","1 WEEK"),el("span","h","1 MONTH"));
+      pick.forEach(function(x){if(!x){g0.appendChild(el("span","gap"));return}
+        g0.append(el("span",null,x.label));
+        [1,5,21].forEach(function(back){var c=sectorCell(x.label,back);g0.appendChild(el("span",c.c,c.t))});});
       ws.appendChild(g0);n.appendChild(ws);
     }
     if(c||f){
