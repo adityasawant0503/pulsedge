@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T10:32:22+05:30",
+ "updated": "2026-11-16T10:47:03+05:30",
  "summary": {
-  "calls": 1461,
-  "scored_calls": 323,
+  "calls": 1465,
+  "scored_calls": 327,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "f55b20f2d1cc926d",
+   "symbol": "ACUTAAS",
+   "time": "2026-11-16T10:35:04+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Angel One flags breakout on Acutaas, Indus Towers and one more stock",
+   "url": "https://www.business-standard.com/markets/news/breakout-stocks-angel-one-flags-breakout-on-acutaas-indus-towers-and-one-more-stock-126111600779_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 4039.1
+  },
+  {
+   "id": "f55b20f2d1cc926d",
+   "symbol": "INDUSTOWER",
+   "time": "2026-11-16T10:35:04+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Angel One flags breakout on Acutaas, Indus Towers and one more stock",
+   "url": "https://www.business-standard.com/markets/news/breakout-stocks-angel-one-flags-breakout-on-acutaas-indus-towers-and-one-more-stock-126111600779_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 396.0
+  },
+  {
+   "id": "63cfd932cfcf5ff7",
+   "symbol": "EICHERMOT",
+   "time": "2026-11-16T10:30:54+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Eicher Motors shares vroom like its Bullet, stock price jumps over 3%; what brokerages say post Q2; Buy or avoid? Target",
+   "url": "https://www.livemint.com/market/stock-market-news/eicher-motors-shares-vroom-like-its-bullet-stock-price-jumps-over-3-what-brokerages-say-post-q2-buy-or-avoid-target-11794804317886.html",
+   "entry_date": "2026-11-13",
+   "entry": 7650.0
+  },
+  {
+   "id": "f353aaf32d97e91c",
+   "symbol": "TATAPOWER",
+   "time": "2026-11-16T10:30:33+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Tata Power Company Limited: Tata Power Company Limited has informed the Exchange regarding a press release dated November 16, 2026, titled \"Tata Power Renewable",
+   "url": "https://nsearchives.nseindia.com/corporate/VPTPCL_16112026103024_Press_Release16112026.pdf",
+   "entry_date": "2026-11-13",
+   "entry": 348.0
+  },
   {
    "id": "b4b874891e4fa96f",
    "symbol": "INOXWIND",
