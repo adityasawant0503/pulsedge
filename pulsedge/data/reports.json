@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T19:22+05:30",
+ "updated": "2026-11-17T00:55+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Tata Motors passenger vehicle shares fell 9% after the company posted a big loss for the quarter, showing how a loss can shake investor confidence. Inox Wind also saw a sharp drop in profit and margin, pushing its shares down 10%. Kaynes Technology’s earnings slipped 65%, sending its stock to a 52‑week low. Eicher Motors, on the other hand, reported record sales and profit, lifting its shares 3.5%.",
+  "summary": "PulsEdge flagged a drop in U.S. crude oil to $85 a barrel, which could pressure Indian fuel retailers. The FMCG sector led gains, rising about 1.9%, while pharma, metals and realty fell around 1.5% each. Bank and financial stocks added modestly. Foreign fund futures stayed mostly long at 34%, a slight dip from the previous day.",
   "themes": [
-   "Profit drops hurt auto and energy stocks",
-   "Margin pressure is a concern for manufacturers",
-   "Sector performance varied, with FMCG and banks gaining while pharma and metals fell"
+   "Oil price decline may affect fuel sellers",
+   "FMCG outperformed while pharma, metals and realty lagged",
+   "Foreign fund long positions slipped marginally"
   ],
   "watch": [
-   "Tata Motors PV’s future earnings and loss drivers",
-   "Inox Wind’s margin trend in upcoming quarters",
-   "Eicher Motors’ ability to sustain record sales"
+   "Will oil stay near $85 or rebound on geopolitical news",
+   "Changes in foreign fund positioning that could move the market",
+   "Upcoming earnings from FMCG and pharma companies"
   ],
-  "date": "2026-11-16",
-  "basis": "3017126a146c",
-  "updated": "2026-11-16T19:22+05:30",
-  "model": "openai/gpt-oss-20b",
-  "items": 92
+  "date": "2026-11-17",
+  "basis": "70f7f3bc3c3d",
+  "updated": "2026-11-17T00:55+05:30",
+  "model": "openai/gpt-oss-120b",
+  "items": 1
  },
  "stocks": {
   "TMPV": {
@@ -124,19 +124,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "SWIGGY": {
-   "summary": "Swiggy's shares have fallen sharply, losing up to half their value this year, placing it among ten mid‑cap stocks with the biggest drops. The decline signals possible weakness but could also set the stage for a rebound if the company's fundamentals remain solid.",
-   "why": "The steep price fall hurts current investors and may indicate ongoing challenges for the stock.",
-   "upside": "A rebound is possible if Swiggy's underlying business fundamentals stay strong.",
-   "downside": "Further weakness could keep the share price depressed.",
+   "summary": "Swiggy's shares have fallen sharply this year, losing up to half their value, while its latest Q2 results show profit growth faster than its rival Zomato's parent. The company is in the Nifty 500 consumer services index.",
+   "why": "Shareholders feel the impact of the steep price drop and watch profit growth that could shape future earnings.",
+   "upside": "A rebound is possible if the company’s fundamentals remain strong.",
+   "downside": "Intense competition could squeeze margins, reducing profitability.",
    "watch": [
-    "Future share‑price movement",
-    "Company fundamentals and earnings trends",
-    "Performance of other mid‑cap stocks in the Nifty 500"
+    "Profit growth versus Zomato/Eternal",
+    "Share price recovery after 50% drop",
+    "Competitive pressure on margins"
    ],
-   "about": "Swiggy Ltd. operates a food‑delivery platform in India's consumer services sector.",
-   "basis": "2d8b12be97e2",
-   "items": 1,
-   "updated": "2026-11-16T16:02+05:30",
+   "about": "Swiggy is an Indian online food delivery platform.",
+   "basis": "e1600c42a6e6",
+   "items": 2,
+   "updated": "2026-11-17T00:55+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "RVNL": {
@@ -186,6 +186,22 @@
    "items": 4,
    "updated": "2026-11-16T14:30+05:30",
    "model": "openai/gpt-oss-20b"
+  },
+  "MPHASIS": {
+   "summary": "Mphasis is expected to benefit from strong Q3 revenue growth and AI‑led short‑cycle deals, according to recent PulsEdge coverage. However, slower global IT spending could weigh on earnings.",
+   "why": "Shareholders care because the earnings outlook looks positive but could be affected by broader IT spending trends.",
+   "upside": "Higher Q3 revenue and AI‑driven deals could boost earnings.",
+   "downside": "A slowdown in global IT spending could curb earnings growth.",
+   "watch": [
+    "Q3 revenue numbers",
+    "Global IT spending trends",
+    "IT sector index movement"
+   ],
+   "about": "Mphasis provides information technology services and solutions.",
+   "basis": "160f3e4b36a7",
+   "items": 1,
+   "updated": "2026-11-17T00:55+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "ATHERENERG": {
    "summary": "Ather Energy reported a profit and 63% revenue growth in its second quarter. This strong performance stands out against a sector that has seen mixed results recently.",
@@ -268,19 +284,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "SOLARINDS": {
-   "summary": "Solar Industries India Ltd. (SOLARINDS) is a chemicals company listed in the Nifty 500, but there have been no specific company‑specific updates in recent days.",
-   "why": "Shareholders should note that broad market or sector moves can affect the stock because it is part of the Nifty 500 index.",
-   "upside": "",
-   "downside": "",
+   "summary": "Solar Industries India Ltd (SOLARINDS) is a chemicals company in the Nifty 500. Recent news shows green‑energy stocks facing short‑term selling pressure, which could spill over to the broader market.",
+   "why": "Shareholders should watch sector volatility as it may affect SOLARINDS' share price even though the company itself is not directly mentioned in the news.",
+   "upside": "If the green‑energy sector stabilises, sentiment could improve for related stocks including SOLARINDS.",
+   "downside": "Continued technical weakness and policy uncertainty in the solar sector could keep pressure on the broader market and affect SOLARINDS.",
    "watch": [
-    "Overall Nifty 500 performance",
-    "Technical signals in the green‑energy sector that could spill over",
-    "Any upcoming company announcements or earnings releases"
+    "Technical chart signals for green‑energy stocks",
+    "Policy changes affecting the solar sector",
+    "Overall market volatility"
    ],
-   "about": "Solar Industries India Ltd. operates in the chemicals sector.",
-   "basis": "5b6d97c62fef",
-   "items": 4,
-   "updated": "2026-11-16T14:01+05:30",
+   "about": "Solar Industries India Ltd manufactures chemicals.",
+   "basis": "0e85b8cc132b",
+   "items": 3,
+   "updated": "2026-11-17T00:55+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "AMBER": {
@@ -316,19 +332,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India is seeing pressure from falling global oil prices as analysts expect a supply surplus, while the company is set to declare a dividend this week. Its sector index has risen modestly.",
-   "why": "Lower oil prices could cut earnings per barrel, and the dividend timing may affect the share price around the ex‑date.",
-   "upside": "If the anticipated supply surplus does not materialise, oil prices could stay higher, supporting earnings.",
-   "downside": "A sustained drop in oil prices could reduce the company’s profit margins.",
+   "summary": "Oil India is seeing pressure from falling global crude prices as experts expect a supply surplus, while the sector index has edged higher and a dividend is due soon. The market is watching for any reversal in oil price trends.",
+   "why": "Lower oil prices can reduce the revenue the company earns per barrel, and the upcoming dividend may cause short‑term price movement around the record date.",
+   "upside": "If geopolitical tensions lift oil prices, the company could see higher earnings.",
+   "downside": "Persistently low oil prices could keep profits under pressure.",
    "watch": [
-    "Global oil price trends and supply‑surplus expectations",
-    "Oil India’s dividend record date and payout details",
-    "Upcoming WPI inflation and oil price data that could affect demand"
+    "Crude oil price movements, especially around $85 a barrel",
+    "Geopolitical developments that could affect supply and prices",
+    "Dividend record dates and payout details"
    ],
-   "about": "Oil India Ltd. is a state‑owned company that explores, produces and markets crude oil and natural gas in India.",
-   "basis": "c8ce69f2d9f1",
-   "items": 5,
-   "updated": "2026-11-16T19:22+05:30",
+   "about": "Oil India Ltd. explores and produces oil and gas in India.",
+   "basis": "d4e4f14b3470",
+   "items": 6,
+   "updated": "2026-11-17T00:55+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "IDEA": {
@@ -362,22 +378,6 @@
    "items": 3,
    "updated": "2026-11-16T11:16+05:30",
    "model": "gemini-flash-lite-latest"
-  },
-  "BHARTIARTL": {
-   "summary": "Bharti Airtel’s shares rose about 3% and are near a record high as telecom stocks gain momentum. The company’s payments‑bank arm is being discussed for a future stock market listing.",
-   "why": "Shareholders feel the price move from sector optimism and may benefit if the payments‑bank IPO adds value.",
-   "upside": "If the payments‑bank IPO proceeds, it could unlock additional value for the group.",
-   "downside": "A sharp rally could trigger profit‑taking, and any delay or regulatory hurdle for the IPO could weigh on the stock.",
-   "watch": [
-    "Continued price movement and any signs of profit‑taking",
-    "Overall market strength or weakness affecting telecom stocks",
-    "Updates on the Airtel Payments Bank IPO timeline and approvals"
-   ],
-   "about": "Bharti Airtel provides mobile and broadband telecom services in India.",
-   "basis": "073c39f38e13",
-   "items": 3,
-   "updated": "2026-11-16T11:01+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "VEDL": {
    "summary": "The Supreme Court upheld the rejection of Twin Star’s plan to take control of Vedanta, sending the stock down about 3%. At the same time, Vedanta Power was highlighted as a sub‑₹100 pick in a recent recommendation.",
@@ -459,6 +459,38 @@
    "updated": "2026-11-16T11:16+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "BHARTIARTL": {
+   "summary": "Bharti Airtel shares rose by 3% and are close to their highest price ever. This happened as other major telecom stocks also increased in value.",
+   "why": "Shareholders may see the value of their holdings increase if this upward trend continues, though the stock is currently at a high level.",
+   "upside": "Continued investor optimism in the telecom sector could keep supporting the share price.",
+   "downside": "Investors might sell their shares to lock in profits after the recent strong rise.",
+   "watch": [
+    "Whether the stock holds its position near record highs.",
+    "How other telecom companies like Jio and Vodafone Idea perform.",
+    "General market conditions that could affect the sector."
+   ],
+   "about": "Bharti Airtel is a telecommunications company and one of India's 50 largest listed firms.",
+   "basis": "fa18c885955e",
+   "items": 2,
+   "updated": "2026-11-17T00:55+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "URBANCO": {
+   "summary": "Urban Company approved a qualified institutions placement (QIP) to sell new shares to large investors at a floor price of ₹161.03 per share, raising fresh capital. The move could dilute existing shareholders' ownership and earnings per share.",
+   "why": "Share dilution can affect the value of each share you own and may put pressure on the stock price.",
+   "upside": "If the placement is fully subscribed, the company gains funds that can support growth initiatives.",
+   "downside": "The additional shares may reduce earnings per share, potentially weighing on the share price.",
+   "watch": [
+    "Subscription level and pricing of the QIP",
+    "Market reaction to the dilution announcement",
+    "How the raised capital will be deployed"
+   ],
+   "about": "Urban Company runs an online platform that links consumers with professional providers for home and personal services.",
+   "basis": "0ff99937edca",
+   "items": 1,
+   "updated": "2026-11-17T00:55+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "COCHINSHIP": {
    "summary": "Cochin Shipyard Ltd. is one of four public sector companies set to announce dividend record dates between November 16 and 20. The company is part of the Nifty 500 index, which tracks India's 500 largest listed firms.",
    "why": "Dividends provide cash returns to shareholders, but the share price often drops slightly on the ex-date to reflect this payout.",
@@ -523,6 +555,22 @@
    "updated": "2026-11-16T15:39+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "TITAGARH": {
+   "summary": "Titagarh Rail Systems has set a target to produce 200 metro cars in the next financial year. It also aims to build 1,000 wagons per month by the end of that year.",
+   "why": "The company currently holds a large list of pending orders worth about ₹28,600 crore. This backlog suggests steady future work, which supports the company's revenue.",
+   "upside": "Meeting these high production targets would show the company can handle large orders efficiently.",
+   "downside": "There is a risk that the company may not be able to meet its ambitious production goals.",
+   "watch": [
+    "Progress toward the 200 metro car target",
+    "Wagon production levels by the fourth quarter",
+    "Changes in the total order book value"
+   ],
+   "about": "Titagarh Rail Systems is a capital goods company that manufactures trains and wagons.",
+   "basis": "789d8248a16d",
+   "items": 1,
+   "updated": "2026-11-17T00:55+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "BIOCON": {
    "summary": "Biocon Ltd. received U.S. FDA approval for Pebrilzo, a biosimilar version of the cancer drug Perjeta®, expanding its oncology portfolio. The approval could open a new revenue stream, but commercial success will depend on hospital formulary inclusion.",
    "why": "Shareholders may see future sales growth if Pebrilzo is adopted by hospitals, but the actual uptake is uncertain.",
@@ -569,6 +617,22 @@
    "basis": "100eab07570b",
    "items": 6,
    "updated": "2026-11-16T09:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "ETERNAL": {
+   "summary": "Eternal Ltd. is one of India's 50 largest listed companies in the consumer services sector. Recent news compares its growth and earnings outlook with a rival food delivery company after their latest quarterly results.",
+   "why": "Investors are watching how fast the company is growing its profits compared to competitors, as this can influence how attractive the stock appears to the market.",
+   "upside": "The company may be seen as more attractive if it continues to grow its profits faster than its main rival.",
+   "downside": "Intense competition in the sector could squeeze the company's profit margins.",
+   "watch": [
+    "Comparison of profit growth rates between Eternal and its rival.",
+    "Changes in profit margins due to market competition.",
+    "Investor sentiment regarding the company's growth outlook."
+   ],
+   "about": "",
+   "basis": "add6c534627e",
+   "items": 2,
+   "updated": "2026-11-17T00:55+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ENGINERSIN": {
@@ -618,100 +682,6 @@
    "updated": "2026-11-16T09:46+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "ICICIGI": {
-   "summary": "ICICI Lombard General Insurance Company Limited has informed the stock exchange about an acquisition of shares. This news was flagged because such events can often influence how the company's stock is traded.",
-   "why": "Shareholders should pay attention because changes in share ownership or acquisitions can affect the company's future direction and stability.",
-   "upside": "",
-   "downside": "",
-   "watch": [
-    "Details of the share acquisition announced by the company",
-    "How the broader Financials sector performs in the coming days",
-    "Any further official statements from ICICI Lombard regarding the acquisition"
-   ],
-   "about": "ICICI Lombard General Insurance Company Ltd. is a financial services company listed on the NSE.",
-   "basis": "0e9732a33ba6",
-   "items": 1,
-   "updated": "2026-11-16T09:46+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "BEML": {
-   "summary": "BEML's share price recently hit its highest level in the past year before dipping slightly. Brokers have raised their expectations for the stock, suggesting they see potential for further growth.",
-   "why": "If the company continues to perform well, the value of your shares could increase, but recent price rises often lead to short-term drops as investors take profits.",
-   "upside": "Broker optimism suggests the stock may continue to rise if the company maintains its strong performance.",
-   "downside": "The share price could fall further in the short term as investors sell to lock in their recent gains.",
-   "watch": [
-    "Whether the share price stabilizes after the recent dip",
-    "Any new announcements from the company regarding defence orders",
-    "How the stock performs compared to other companies in the Capital Goods sector"
-   ],
-   "about": "BEML is a company in the Capital Goods sector that is part of the Nifty 500 index of India's largest listed companies.",
-   "basis": "5a68b031a1af",
-   "items": 1,
-   "updated": "2026-11-16T09:46+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "RELIANCE": {
-   "summary": "Reliance Industries shares have risen by 15% in November, adding ₹2.38 lakh crore to its market value. This recent gain stands out against a slightly mixed performance in the broader Oil & Gas sector.",
-   "why": "This significant increase in market value reflects a shift in how investors are currently valuing the company compared to earlier in the month.",
-   "upside": "The strong rebound suggests that recent concerns may have been resolved or that new positive developments are being recognized by the market.",
-   "downside": "The broader Oil & Gas sector has seen mixed results recently, which could limit how far Reliance's share price can rise on its own.",
-   "watch": [
-    "Whether the 15% gain in November continues or stabilizes",
-    "How the Oil & Gas sector performs in the coming sessions",
-    "Any new news explaining what has changed for the company"
-   ],
-   "about": "Reliance Industries is a large Indian company operating in the Oil Gas & Consumable Fuels sector.",
-   "basis": "e67b44b352df",
-   "items": 1,
-   "updated": "2026-11-16T09:46+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "BDL": {
-   "summary": "Bharat Dynamics Ltd (BDL) is being compared with other defence PSUs such as GRSE and HAL in a post‑Q2 results race.",
-   "why": "Investors watch how BDL performs relative to peers after earnings because it can affect its market perception.",
-   "upside": "If BDL’s Q2 results beat expectations or outshine peers, sentiment could improve.",
-   "downside": "If BDL lags behind GRSE or HAL in results, sentiment could weaken.",
-   "watch": [
-    "BDL’s upcoming Q2 earnings release",
-    "Comparative performance of GRSE and HAL",
-    "Any new defence order announcements"
-   ],
-   "about": "Bharat Dynamics Ltd is a defence public‑sector company that designs and manufactures missiles and related systems.",
-   "basis": "d40186b45217",
-   "items": 1,
-   "updated": "2026-11-16T12:45+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "GRSE": {
-   "summary": "PulsEdge flagged a recent article comparing Garden Reach Shipbuilders & Engineers with other defence companies after their second-quarter results. The piece looks at how these state-owned defence firms are positioned for the future.",
-   "why": "This matters because it highlights how investors are comparing the company's performance and outlook against its peers in the defence sector.",
-   "upside": "The company is part of the Nifty 500, an index of India's 500 largest listed companies, which indicates it is a major player in the market.",
-   "downside": "",
-   "watch": [
-    "How GRSE compares to peers like HAL and BDL in the defence sector",
-    "The impact of the recent second-quarter results on investor sentiment"
-   ],
-   "about": "",
-   "basis": "d40186b45217",
-   "items": 1,
-   "updated": "2026-11-16T10:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "HAL": {
-   "summary": "Hindustan Aeronautics Ltd. (HAL) is part of a recent media comparison with other defence companies like GRSE and BDL. This comparison focuses on their performance after their second-quarter results.",
-   "why": "This matters because media attention and comparisons can influence how investors view the company's standing in the defence sector.",
-   "upside": "",
-   "downside": "",
-   "watch": [
-    "How HAL's share price reacts to the media comparison",
-    "Any new announcements regarding its defence contracts"
-   ],
-   "about": "",
-   "basis": "d40186b45217",
-   "items": 1,
-   "updated": "2026-11-16T14:30+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "TATAPOWER": {
    "summary": "Tata Power commissioned a 100.8 MW wind farm in Ausa, Maharashtra and its renewable arm issued a business press announcement.",
    "why": "The new clean‑energy capacity could support future growth, though its effect on current earnings may be limited.",
@@ -727,18 +697,6 @@
    "items": 2,
    "updated": "2026-11-16T10:46+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "SUPREMEIND": {
-   "summary": "Supreme Industries Ltd. is a capital goods company listed in the Nifty 500.",
-   "why": "Its inclusion in the Nifty 500 means it is among India's largest listed companies, which can influence index funds and investor perception.",
-   "upside": "",
-   "downside": "",
-   "watch": [],
-   "about": "Supreme Industries Ltd. operates in the capital goods sector.",
-   "basis": "3236e7864729",
-   "items": 2,
-   "updated": "2026-11-16T10:15+05:30",
-   "model": "openai/gpt-oss-20b"
   }
  }
 }
