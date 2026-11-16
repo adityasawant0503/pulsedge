@@ -114,13 +114,36 @@ def fetch_bse(src):
     return out
 
 
+def fetch_telegram(src):
+    """A public Telegram channel through its web view (t.me/s/<channel>): the latest ~20 posts, no API key.
+    Each post becomes one item: its first line is the headline, the rest a short summary, linked to the post."""
+    page = get(src["url"], "text/html").decode("utf-8", "replace")
+    out = []
+    for chunk in page.split('class="tgme_widget_message ')[1:]:
+        post = re.search(r'data-post="([^"]+)"', chunk)
+        body = re.search(r'<div class="tgme_widget_message_text[^"]*"[^>]*>(.*?)</div>', chunk, re.S)
+        when = re.search(r'<time[^>]+datetime="([^"]+)"', chunk)
+        if not post or not body:
+            continue                                  # photo or poll with no text
+        lines = [clean(x) for x in re.split(r"<br\s*/?>", body.group(1))]
+        lines = [x for x in lines if x]
+        if not lines:
+            continue
+        head, rest = lines[0], lines[1:]
+        if len(head) < 25 and rest:                   # a short tag line like "BREAKING" joins the next line
+            head, rest = f"{head} {rest[0]}", rest[1:]
+        out.append({"headline": head[:220], "url": f"https://t.me/{post.group(1)}",
+                    "time": parse_time(when.group(1)) if when else None, "summary": " ".join(rest)[:400]})
+    return out
+
+
 def collect(sources):
     items = []
     for src in sources:
         if src.get("enabled") is False:
             continue
         try:
-            got = (fetch_bse if src["kind"] == "bse" else fetch_rss)(src)
+            got = {"bse": fetch_bse, "telegram": fetch_telegram}.get(src["kind"], fetch_rss)(src)
             for g in got:
                 g["source"], g["section_hint"] = src["name"], src.get("section", "news")
                 if src.get("title_is_company") and g["summary"]:
