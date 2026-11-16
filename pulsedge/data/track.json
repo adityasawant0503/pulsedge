@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T09:32:38+05:30",
+ "updated": "2026-11-16T09:47:53+05:30",
  "summary": {
-  "calls": 1452,
-  "scored_calls": 314,
+  "calls": 1455,
+  "scored_calls": 317,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "864d51e31706be76",
+   "symbol": "TMPV",
+   "time": "2026-11-16T09:33:05+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Tata Motors PV shares plunge 9% after Q2 results; brokerages cut target",
+   "url": "https://www.business-standard.com/markets/news/tata-motors-pv-shares-plunge-9-after-q2-results-brokerages-cut-target-126111600451_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 287.4
+  },
+  {
+   "id": "8a4e0485313e16f9",
+   "symbol": "OIL",
+   "time": "2026-11-16T09:30:33+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Goldman Sachs Predicts ‘Sizeable Surplus’ for Oil Market in 2027",
+   "url": "https://www.livemint.com/market/goldman-sachs-predicts-sizeable-surplus-for-oil-market-in-2027-11794801634263.html",
+   "entry_date": "2026-11-13",
+   "entry": 441.5
+  },
   {
    "id": "1a09e7177d125a9e",
    "symbol": "COALINDIA",
@@ -124,6 +150,19 @@
    "url": "https://www.business-standard.com/markets/news/stocks-to-watch-ashok-leyland-bel-hero-moto-coal-india-jupiter-wagons-126111600057_1.html",
    "entry_date": "2026-11-13",
    "entry": 400.85
+  },
+  {
+   "id": "88802cbe4bbafa2a",
+   "symbol": "KAYNES",
+   "time": "2026-11-16T07:56:46+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex gains 300 pts, Nifty near 25,250; Kaynes Technology shares slump 15%",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-november-16-126111600051_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 3430.0
   },
   {
    "id": "cbda74b054db5673",
