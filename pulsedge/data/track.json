@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T09:47:53+05:30",
+ "updated": "2026-11-16T10:02:33+05:30",
  "summary": {
-  "calls": 1455,
-  "scored_calls": 317,
+  "calls": 1458,
+  "scored_calls": 320,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "fc095254f779a17a",
+   "symbol": "TMPV",
+   "time": "2026-11-16T09:50:39+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Tata Motors PV shares crash: What led to auto stock 8% ramming, Nifty laggard; down 27% in 2026 - Buy, sell or hold?",
+   "url": "https://www.livemint.com/market/stock-market-news/tata-motors-pv-shares-crash-what-led-to-auto-stock-8-ramming-nifty-laggard-down-27-in-2026-buy-sell-or-hold-11794801946841.html",
+   "entry_date": "2026-11-13",
+   "entry": 287.4
+  },
+  {
+   "id": "60b47b9ce5628e6e",
+   "symbol": "EICHERMOT",
+   "time": "2026-11-16T09:49:18+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Eicher Motors shares gain 3.5% on record Q2 show; margin recovery key",
+   "url": "https://www.business-standard.com/markets/news/eicher-motors-shares-gain-3-5-on-record-q2-show-margin-recovery-key-126111600695_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 7650.0
+  },
   {
    "id": "864d51e31706be76",
    "symbol": "TMPV",
@@ -160,6 +186,19 @@
    "scored": true,
    "source": "Business Standard",
    "headline": "Stock Market LIVE: Sensex gains 300 pts, Nifty near 25,250; Kaynes Technology shares slump 15%",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-november-16-126111600051_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 3430.0
+  },
+  {
+   "id": "8dba35e748ac8cce",
+   "symbol": "KAYNES",
+   "time": "2026-11-16T07:56:34+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex gains 400 pts, Nifty above 25,250; Kaynes Technology shares slump 15%",
    "url": "https://www.business-standard.com/markets/news/stock-market-live-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-november-16-126111600051_1.html",
    "entry_date": "2026-11-13",
    "entry": 3430.0

@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T09:46+05:30",
+ "updated": "2026-11-16T10:01+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -76,20 +76,20 @@
  },
  "stocks": {
   "TMPV": {
-   "summary": "Tata Motors Passenger Vehicles Ltd. shares dropped sharply after the car maker reported a huge loss for the last quarter. This steep decline followed disappointing Q2 results that shook investor confidence.",
-   "why": "A big loss means the company is losing money, which directly impacts the value of your investment and overall market sentiment.",
-   "upside": "It is possible the recent poor results are temporary rather than a permanent structural problem.",
-   "downside": "There is a risk that the losses could continue if the underlying issues driving them are permanent.",
+   "summary": "Tata Motors Passenger Vehicles Ltd reported a huge quarterly loss, sending its shares down about 8-9% in a single day.",
+   "why": "The large loss raises concerns about the division’s profitability, which can affect the value of the shares.",
+   "upside": "",
+   "downside": "If the loss drivers are structural, the company could face continued share price pressure.",
    "watch": [
-    "Whether future results show the losses were one-off events",
-    "Updates on how the company plans to fix its profit margins",
-    "Overall movement in the auto sector index"
+    "Next quarterly earnings release",
+    "Signs whether the loss is one‑off or structural",
+    "Auto sector index performance"
    ],
-   "about": "Tata Motors Passenger Vehicles Ltd. is a major Indian car manufacturing company.",
-   "basis": "8b1f77c76044",
-   "items": 1,
-   "updated": "2026-11-16T09:46+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "Tata Motors Passenger Vehicles Ltd manufactures and sells passenger cars in India.",
+   "basis": "b39fca89484a",
+   "items": 2,
+   "updated": "2026-11-16T10:01+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "POWERINDIA": {
    "summary": "Hitachi Energy India posted a strong Q2, with revenue up 63.5% and net profit rising 21% YoY, while order inflows jumped 86%. The results sparked a 12% share rally and the stock is now up about 94% from its 52‑week low.",
@@ -105,6 +105,22 @@
    "basis": "85c218dd7439",
    "items": 3,
    "updated": "2026-11-16T08:16+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "KAYNES": {
+   "summary": "Kaynes Technology shares fell about 15% on the day, even as the broader market rose, suggesting a company‑specific issue.",
+   "why": "The sharp drop directly reduces the value of holdings for shareholders.",
+   "upside": "",
+   "downside": "Further selling pressure could continue if negative news about the company emerges.",
+   "watch": [
+    "Any clarification from Kaynes on the cause of the slump",
+    "Upcoming earnings or announcements from Kaynes",
+    "Market reaction to earnings releases of peers like Ashok Leyland, BEL, Hero Moto, Coal India and Tata Motors"
+   ],
+   "about": "Kaynes Technology designs and manufactures electronic components for industrial applications.",
+   "basis": "745b76891c24",
+   "items": 3,
+   "updated": "2026-11-16T10:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ABB": {
@@ -123,20 +139,20 @@
    "updated": "2026-11-16T09:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "IDEA": {
-   "summary": "PulsEdge flagged that Vodafone Idea shares fell 3.5% after the company posted a wider‑than‑expected loss in Q2. The loss was larger than analysts had anticipated, adding pressure on the stock.",
-   "why": "PulsEdge flagged that the bigger loss could hurt investor sentiment and affect the value of existing shares.",
-   "upside": "",
-   "downside": "PulsEdge flagged that continued losses or higher volatility during earnings season could further depress the share price.",
+  "EICHERMOT": {
+   "summary": "Eicher Motors reported its best‑ever quarterly sales and profits, sending the shares up 3.5% as margin recovery was highlighted. The broader auto sector index fell 1.1% in the last session but is up 1.2% over five sessions.",
+   "why": "Strong results boost confidence among shareholders, but the current valuation may already price in the good news.",
+   "upside": "If the margin recovery continues, earnings could improve further.",
+   "downside": "If the valuation is already high, the stock could face a correction despite the strong results.",
    "watch": [
-    "Upcoming quarterly earnings releases",
-    "Changes in loss magnitude versus expectations",
-    "Market volatility during the earnings period"
+    "Eicher Motors' next earnings release",
+    "Quarter‑over‑quarter margin trends",
+    "Movement of the auto sector index"
    ],
-   "about": "Vodafone Idea Ltd. is a telecommunications company operating mobile services in India.",
-   "basis": "5f2c39588e09",
-   "items": 1,
-   "updated": "2026-11-16T08:16+05:30",
+   "about": "Eicher Motors manufactures vehicles, including motorcycles and commercial vehicles.",
+   "basis": "327c8c6cdbb7",
+   "items": 2,
+   "updated": "2026-11-16T10:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "MEESHO": {
@@ -170,22 +186,6 @@
    "items": 3,
    "updated": "2026-11-16T08:16+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "KAYNES": {
-   "summary": "Kaynes Technology India Ltd. shares slumped by 15% on November 16, 2026, even though the overall stock market was up. This company is part of the Nifty 500 index, which includes India's 500 largest listed companies.",
-   "why": "A sudden large drop in price while the rest of the market rises points to specific trouble or bad news for the company. This matters to share owners because sharp declines can impact the value of their investments.",
-   "upside": "",
-   "downside": "The sharp drop in share price could be the result of a specific negative announcement or missed financial expectations.",
-   "watch": [
-    "Any official company announcements explaining the 15% share price drop",
-    "Upcoming quarterly financial results and earnings reports",
-    "Overall market sentiment toward the Capital Goods sector"
-   ],
-   "about": "Kaynes Technology India Ltd. is an electronics company operating in the Capital Goods sector.",
-   "basis": "7253980fef65",
-   "items": 2,
-   "updated": "2026-11-16T09:46+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "NUVAMA": {
    "summary": "Nuvama Wealth Management Ltd. (NUVAMA) is a financial services firm in the Nifty 500. Its sector index fell 0.7% in the last session but has risen 4.7% over the past five sessions.",
@@ -824,6 +824,85 @@
    "basis": "e67b44b352df",
    "items": 1,
    "updated": "2026-11-16T09:46+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "GRSE": {
+   "summary": "PulsEdge flagged a recent article comparing Garden Reach Shipbuilders & Engineers with other defence companies after their second-quarter results. The piece looks at how these state-owned defence firms are positioned for the future.",
+   "why": "This matters because it highlights how investors are comparing the company's performance and outlook against its peers in the defence sector.",
+   "upside": "The company is part of the Nifty 500, an index of India's 500 largest listed companies, which indicates it is a major player in the market.",
+   "downside": "",
+   "watch": [
+    "How GRSE compares to peers like HAL and BDL in the defence sector",
+    "The impact of the recent second-quarter results on investor sentiment"
+   ],
+   "about": "",
+   "basis": "d40186b45217",
+   "items": 1,
+   "updated": "2026-11-16T10:01+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "IIFL": {
+   "summary": "IIFL Finance recently updated its credit rating, which affects how much it costs to borrow money. The broader financial sector has seen mixed results, dropping slightly in the last session but rising over the past week.",
+   "why": "Changes in credit ratings can alter the company's borrowing costs, which directly impacts its profit margins and overall financial health.",
+   "upside": "A better credit rating could make borrowing cheaper, potentially improving the company's profit margins.",
+   "downside": "If the rating is downgraded, the cost of funds could increase, putting pressure on profits.",
+   "watch": [
+    "The specific outcome of the recent credit rating update",
+    "Future announcements regarding borrowing costs",
+    "Trends in the Financials sector index"
+   ],
+   "about": "IIFL Finance operates in the Financial Services sector.",
+   "basis": "879be121176c",
+   "items": 1,
+   "updated": "2026-11-16T10:01+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "PAGEIND": {
+   "summary": "Page Industries is seeing higher input costs that could squeeze profit margins, though festive season demand might offset the pressure.",
+   "why": "Margin pressure directly impacts earnings for shareholders.",
+   "upside": "Strong festive demand could keep margins stable.",
+   "downside": "Rising costs may compress profit margins.",
+   "watch": [
+    "Festive season demand trends",
+    "Input cost movements",
+    "Company earnings guidance"
+   ],
+   "about": "Page Industries makes garments.",
+   "basis": "e6d3a01ec0c4",
+   "items": 1,
+   "updated": "2026-11-16T10:01+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "MANAPPURAM": {
+   "summary": "Manappuram Finance shares fell 4% recently, even though the company reported good quarterly results and analysts raised their estimates. This drop happened while the broader financial sector was mixed, with a slight decline in the last session but a gain over the past week.",
+   "why": "This matters because the share price moved down despite positive news, which can be confusing for new investors. It shows that market sentiment and broader trends can affect prices independently of a company's recent performance.",
+   "upside": "Analysts have upgraded their estimates, which suggests they see potential for stronger performance in the future.",
+   "downside": "Broader market weakness could continue to drag the share price down, even if the company's results remain good.",
+   "watch": [
+    "Whether the share price stabilizes after the recent dip",
+    "How the broader financial sector performs in the coming days",
+    "If other analysts also raise their estimates for the company"
+   ],
+   "about": "Manappuram Finance is a financial services company listed in India's Nifty 500 index.",
+   "basis": "e311a7771b5b",
+   "items": 1,
+   "updated": "2026-11-16T10:01+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "TDPOWERSYS": {
+   "summary": "TD Power Systems reported that its profit for the second quarter more than doubled. The company also declared a dividend, which contributed to its share price rising by over 9%.",
+   "why": "Stronger profits and a dividend payment can make the company more attractive to investors, which may influence the share price.",
+   "upside": "The significant increase in quarterly profit suggests the company is performing well financially.",
+   "downside": "The share price has already risen sharply, which may reflect the good news and leave less room for immediate further gains.",
+   "watch": [
+    "Future quarterly profit results",
+    "Dividend payment dates",
+    "Changes in the company's share price"
+   ],
+   "about": "",
+   "basis": "63624ecf391f",
+   "items": 1,
+   "updated": "2026-11-16T10:01+05:30",
    "model": "qwen/qwen3.8-27b"
   }
  }
