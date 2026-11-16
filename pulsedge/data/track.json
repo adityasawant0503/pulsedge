@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T11:17:30+05:30",
+ "updated": "2026-11-16T11:31:59+05:30",
  "summary": {
-  "calls": 1469,
-  "scored_calls": 331,
+  "calls": 1470,
+  "scored_calls": 332,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "150fc44bbef9b9ea",
+   "symbol": "COALINDIA",
+   "time": "2026-11-16T11:19:08+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Coal India’s Mahanadi Coalfields IPO expected profit calculator on GMP: What retail, HNI investors can gain on listing?",
+   "url": "https://www.livemint.com/market/ipo/coal-india-s-mahanadi-coalfields-ipo-expected-profit-calculator-on-gmp-what-retail-hni-investors-can-gain-on-listing-11794806101034.html",
+   "entry_date": "2026-11-13",
+   "entry": 403.5
+  },
   {
    "id": "10321745dc1d1169",
    "symbol": "BHARTIHEXA",

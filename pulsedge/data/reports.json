@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T11:16+05:30",
+ "updated": "2026-11-16T11:31+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -572,20 +572,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "COALINDIA": {
-   "summary": "Coal India is in the news as its subsidiary, Mahanadi Coalfields, prepares for an Initial Public Offering with a price band set at ₹129 to ₹136 per share. At the same time, the company is releasing its latest quarterly financial results, and it remains recognized as a high-yield dividend stock.",
-   "why": "These events matter because new share sales by a subsidiary can change how profits are shared, while quarterly financial results and dividend appeal often cause the stock price to move.",
-   "upside": "The parent company may bring in fresh funds from the public offering and continue to attract income-focused investors through its strong dividend yields.",
-   "downside": "There is a risk of earnings misses, and the subsidiary's share offering could face low demand or dilute the parent company's earnings per share.",
+   "summary": "Coal India’s subsidiary Mahanadi Coalfields is preparing an IPO with a price band of ₹129‑₹136 and a target valuation of $9.55 billion. The offering is drawing attention as it could affect Coal India’s earnings per share and investor sentiment.",
+   "why": "Existing shareholders may see dilution of earnings, but fresh capital could support growth and dividend potential.",
+   "upside": "If the IPO is well‑subscribed and priced at the top of the band, Coal India could receive funds that boost its financial position.",
+   "downside": "If the IPO is undersubscribed or priced below the band, earnings per share could be diluted and share price may fall.",
    "watch": [
-    "The final subscription numbers and listing details of the Mahanadi Coalfields IPO",
-    "The outcome and details of Coal India's latest quarterly financial results",
-    "Broader movements in the Oil, Gas & Consumable Fuels sector index"
+    "Mahanadi Coalfields IPO pricing and subscription",
+    "Coal India’s quarterly earnings release",
+    "Sustainability of its high dividend yield"
    ],
-   "about": "Coal India Ltd. is one of India's 50 largest listed companies operating in the Oil Gas & Consumable Fuels sector.",
-   "basis": "e46d1513d675",
-   "items": 5,
-   "updated": "2026-11-16T09:31+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "Coal India mines and sells coal, making it a major supplier of thermal coal in India.",
+   "basis": "c7a6084ddee7",
+   "items": 6,
+   "updated": "2026-11-16T11:31+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "BIOCON": {
    "summary": "Biocon Ltd. received U.S. FDA approval for Pebrilzo, a biosimilar version of the cancer drug Perjeta®, expanding its oncology portfolio. The approval could open a new revenue stream, but commercial success will depend on hospital formulary inclusion.",
@@ -762,22 +762,6 @@
    "updated": "2026-11-16T09:31+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "FLUOROCHEM": {
-   "summary": "Gujarat Fluorochemicals announced plans to acquire new entities that are yet to be incorporated. The company filed these details with the stock exchange on November 13, 2026.",
-   "why": "Buying new businesses can help the company grow into new areas, but it takes time to see if these moves help the bottom line.",
-   "upside": "The new acquisitions could expand the company's business lines and create future growth opportunities.",
-   "downside": "There are risks in setting up and running these new subsidiaries, which might not perform as expected.",
-   "watch": [
-    "Details on which specific companies are being acquired",
-    "How the new entities fit into the existing business",
-    "Future announcements on the progress of these acquisitions"
-   ],
-   "about": "Gujarat Fluorochemicals is a chemicals company listed in the Nifty 500 index.",
-   "basis": "14112960f460",
-   "items": 2,
-   "updated": "2026-11-16T09:46+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "GLENMARK": {
    "summary": "Glenmark Pharmaceuticals launched a cheaper version of a cancer drug in the United States. This move allows the company to sell its product in a major global market.",
    "why": "For shareholders, entering a large market like the US can lead to higher income and profits for the company.",
@@ -888,38 +872,6 @@
    "items": 1,
    "updated": "2026-11-16T10:01+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "MANAPPURAM": {
-   "summary": "Manappuram Finance shares fell 4% recently, even though the company reported good quarterly results and analysts raised their estimates. This drop happened while the broader financial sector was mixed, with a slight decline in the last session but a gain over the past week.",
-   "why": "This matters because the share price moved down despite positive news, which can be confusing for new investors. It shows that market sentiment and broader trends can affect prices independently of a company's recent performance.",
-   "upside": "Analysts have upgraded their estimates, which suggests they see potential for stronger performance in the future.",
-   "downside": "Broader market weakness could continue to drag the share price down, even if the company's results remain good.",
-   "watch": [
-    "Whether the share price stabilizes after the recent dip",
-    "How the broader financial sector performs in the coming days",
-    "If other analysts also raise their estimates for the company"
-   ],
-   "about": "Manappuram Finance is a financial services company listed in India's Nifty 500 index.",
-   "basis": "e311a7771b5b",
-   "items": 1,
-   "updated": "2026-11-16T10:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "TDPOWERSYS": {
-   "summary": "TD Power Systems reported that its profit for the second quarter more than doubled. The company also declared a dividend, which contributed to its share price rising by over 9%.",
-   "why": "Stronger profits and a dividend payment can make the company more attractive to investors, which may influence the share price.",
-   "upside": "The significant increase in quarterly profit suggests the company is performing well financially.",
-   "downside": "The share price has already risen sharply, which may reflect the good news and leave less room for immediate further gains.",
-   "watch": [
-    "Future quarterly profit results",
-    "Dividend payment dates",
-    "Changes in the company's share price"
-   ],
-   "about": "",
-   "basis": "63624ecf391f",
-   "items": 1,
-   "updated": "2026-11-16T10:01+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "POONAWALLA": {
    "summary": "Poonawalla Fincorp has announced plans to issue new securities to raise capital. This move is intended to help the company grow its lending business.",
