@@ -1,0 +1,37 @@
+name: probe FII sources (temporary)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+    - name: NSE fiidiiTradeReact (cookie flow, as flows.py does)
+      run: |
+        UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        J=$(mktemp)
+        echo "home: $(curl -s -m 20 -c $J -A "$UA" -o /dev/null -w '%{http_code}' https://www.nseindia.com/)"
+        curl -s -m 20 -c $J -b $J -A "$UA" -H "Referer: https://www.nseindia.com/reports/fii-dii" -H "Accept: application/json,*/*" -o nse.json -w "api: %{http_code} %{size_download}B\n" https://www.nseindia.com/api/fiidiiTradeReact
+        head -c 300 nse.json; echo
+    - name: NSDL FPI latest page
+      run: |
+        UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        curl -s -L -m 30 -A "$UA" -o nsdl.html -w "nsdl: %{http_code} %{size_download}B\n" https://www.fpi.nsdl.co.in/web/Reports/Latest.aspx
+        echo "--- lines mentioning Equity (trimmed):"
+        grep -n -i "equity" nsdl.html | head -12 | cut -c1-260
+        echo "--- download links:"
+        grep -o -i 'href="[^"]*\(csv\|xls\|export\)[^"]*"' nsdl.html | head -5
+        echo "--- table rows near Equity:"
+        python3 - <<'PY'
+        import re
+        s=open("nsdl.html",encoding="utf-8",errors="replace").read()
+        i=s.lower().find("equity")
+        if i<0:
+            print("no Equity text"); raise SystemExit
+        start=s.rfind("<table",0,i); end=s.find("</table>",i)
+        seg=s[max(start,0):end+8] if start>=0 and end>0 else s[max(i-300,0):i+1500]
+        seg=re.sub(r"\s+"," ",seg)
+        print(seg[:2500])
+        PY
