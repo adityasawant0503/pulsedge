@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T14:15:50+05:30",
+ "updated": "2026-11-16T14:31:27+05:30",
  "summary": {
-  "calls": 1484,
-  "scored_calls": 346,
+  "calls": 1487,
+  "scored_calls": 349,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,45 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "3add552c0c21525e",
+   "symbol": "TMCV",
+   "time": "2026-11-16T14:12:57+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Tata Motors PV vs Eicher Motors: Which auto stock is set to race ahead, and which should you buy after Q2 results?",
+   "url": "https://www.livemint.com/market/stock-market-news/tata-motors-pv-vs-eicher-motors-which-auto-stock-is-set-to-race-ahead-and-which-should-you-buy-after-q2-results-11794815971549.html",
+   "entry_date": "2026-11-13",
+   "entry": 433.55
+  },
+  {
+   "id": "3add552c0c21525e",
+   "symbol": "EICHERMOT",
+   "time": "2026-11-16T14:12:57+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Tata Motors PV vs Eicher Motors: Which auto stock is set to race ahead, and which should you buy after Q2 results?",
+   "url": "https://www.livemint.com/market/stock-market-news/tata-motors-pv-vs-eicher-motors-which-auto-stock-is-set-to-race-ahead-and-which-should-you-buy-after-q2-results-11794815971549.html",
+   "entry_date": "2026-11-13",
+   "entry": 7650.0
+  },
+  {
+   "id": "b1931f8d9ab98fc4",
+   "symbol": "INOXWIND",
+   "time": "2026-11-16T14:11:25+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Inox Wind: 42% fall in Q2 PAT, margin squeeze hammers stock by 10%",
+   "url": "https://www.business-standard.com/markets/news/inox-wind-42-fall-in-q2-pat-margin-squeeze-hammers-stock-by-10-126111601106_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 64.45
+  },
   {
    "id": "875b2b1c114f02d4",
    "symbol": "HINDZINC",
