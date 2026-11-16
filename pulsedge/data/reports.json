@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T12:01+05:30",
+ "updated": "2026-11-16T12:16+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -92,20 +92,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "KAYNES": {
-   "summary": "Kaynes Technology shares fell sharply by 15% to 18% on November 16, 2026, while the broader market rose. This drop followed the release of Q2 results showing a 65% decline in net profit due to shrinking margins.",
-   "why": "A steep drop in profits can reduce investor confidence and lead to lower share prices, which directly affects the value of any shares you own.",
-   "upside": "Some analysts noted a possibility of a short-term price bounce because the stock may be oversold after the crash.",
-   "downside": "The significant drop in profits and margins could lead to continued selling pressure if investors remain worried about the company's financial health.",
+   "summary": "Kaynes Technology shares fell sharply, hitting a 52‑week low after a 65% drop in Q2 profit and margin shrinkage. The stock has fallen 54% in a year.",
+   "why": "The sharp profit decline and margin erosion erode investor confidence, which can affect the company’s ability to raise capital and maintain shareholder value.",
+   "upside": "",
+   "downside": "Further downside risk if brokerages cut targets or if the drop is driven by negative news.",
    "watch": [
-    "Whether the share price stabilizes or continues to fall in the coming days.",
-    "Any further comments from the company regarding their margins.",
-    "How other companies in the Capital Goods sector perform in their upcoming results."
+    "Q2 PAT and margin figures",
+    "broker target revisions",
+    "intraday technical bounce after the crash"
    ],
-   "about": "Kaynes Technology is a company in the Capital Goods sector.",
-   "basis": "c244e637faa0",
-   "items": 4,
-   "updated": "2026-11-16T10:15+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "",
+   "basis": "f66d8e8a01d7",
+   "items": 5,
+   "updated": "2026-11-16T12:16+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "INOXWIND": {
    "summary": "Inox Wind reported a sharp fall in its recent profits, sending the shares down 9.17% after the Q2 results and leaving the stock 60% lower than a year ago.",
@@ -730,22 +730,6 @@
    "updated": "2026-11-16T09:31+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BBOX": {
-   "summary": "Black Box Ltd. released its unaudited financial results for the quarter ending September 30, 2026. The company is part of the Nifty 500 index and operates in the Information Technology sector.",
-   "why": "These quarterly numbers show how the company is performing financially, which helps owners understand its current health.",
-   "upside": "",
-   "downside": "The IT sector has dropped 2.8% over the last five sessions, which may weigh on the stock.",
-   "watch": [
-    "How the market reacts to the new Q2FY27 earnings",
-    "Whether the IT sector trend reverses or continues to fall",
-    "Any further announcements from the company"
-   ],
-   "about": "Black Box Ltd. is an Information Technology company listed on the NSE.",
-   "basis": "f2bf81858c01",
-   "items": 2,
-   "updated": "2026-11-16T09:31+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "GLENMARK": {
    "summary": "Glenmark Pharmaceuticals launched a cheaper version of a cancer drug in the United States. This move allows the company to sell its product in a major global market.",
    "why": "For shareholders, entering a large market like the US can lead to higher income and profits for the company.",
@@ -841,21 +825,21 @@
    "updated": "2026-11-16T10:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "PAGEIND": {
-   "summary": "Page Industries is seeing higher input costs that could squeeze profit margins, though festive season demand might offset the pressure.",
-   "why": "Margin pressure directly impacts earnings for shareholders.",
-   "upside": "Strong festive demand could keep margins stable.",
-   "downside": "Rising costs may compress profit margins.",
+  "BBOX": {
+   "summary": "Black Box Ltd. released its unaudited financial results for the second quarter of fiscal year 2027 on November 13, 2026. The company is part of the Nifty 500 index, which tracks India's 500 largest listed firms.",
+   "why": "Quarterly results show how much money the company made or lost, which helps investors understand its financial health.",
+   "upside": "",
+   "downside": "",
    "watch": [
-    "Festive season demand trends",
-    "Input cost movements",
-    "Company earnings guidance"
+    "The specific numbers in the Q2FY27 financial report",
+    "How the IT sector performs in the coming days",
+    "Any follow-up comments from the company on its results"
    ],
-   "about": "Page Industries makes garments.",
-   "basis": "e6d3a01ec0c4",
+   "about": "",
+   "basis": "101ba5b2cfde",
    "items": 1,
-   "updated": "2026-11-16T10:01+05:30",
-   "model": "openai/gpt-oss-120b"
+   "updated": "2026-11-16T12:16+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "POONAWALLA": {
    "summary": "Poonawalla Fincorp has announced plans to issue new securities to raise capital. This move is intended to help the company grow its lending business.",

@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T12:01:44+05:30",
+ "updated": "2026-11-16T12:17:06+05:30",
  "summary": {
-  "calls": 1471,
-  "scored_calls": 333,
+  "calls": 1472,
+  "scored_calls": 334,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "ef77ffb4649d933e",
+   "symbol": "KAYNES",
+   "time": "2026-11-16T11:58:00+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Why Kaynes Technology shares crashed 20% to 52-week low? stock down 54% in a year | What stock market experts say",
+   "url": "https://www.livemint.com/market/stock-market-news/why-kaynes-technology-shares-crashed-20-to-52-week-low-stock-down-54-in-a-year-what-stock-market-experts-say-11794807033272.html",
+   "entry_date": "2026-11-13",
+   "entry": 3430.0
+  },
   {
    "id": "150fc44bbef9b9ea",
    "symbol": "COALINDIA",
