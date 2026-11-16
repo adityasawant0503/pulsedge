@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T13:02:05+05:30",
+ "updated": "2026-11-16T13:16:04+05:30",
  "summary": {
-  "calls": 1473,
-  "scored_calls": 335,
+  "calls": 1476,
+  "scored_calls": 338,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,45 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "e44cd6b611bb5e3a",
+   "symbol": "AMBER",
+   "time": "2026-11-16T13:11:17+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Amber Enterprises shares resume losing run, tank over 8% after weak Q2 from peer Kaynes Technology. Is more fall ahead?",
+   "url": "https://www.livemint.com/market/stock-market-news/amber-enterprises-shares-resume-losing-run-tank-over-8-after-weak-q2-from-peer-kaynes-technology-is-more-fall-ahead-11794813833370.html",
+   "entry_date": "2026-11-13",
+   "entry": 6772.0
+  },
+  {
+   "id": "e44cd6b611bb5e3a",
+   "symbol": "KAYNES",
+   "time": "2026-11-16T13:11:17+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Amber Enterprises shares resume losing run, tank over 8% after weak Q2 from peer Kaynes Technology. Is more fall ahead?",
+   "url": "https://www.livemint.com/market/stock-market-news/amber-enterprises-shares-resume-losing-run-tank-over-8-after-weak-q2-from-peer-kaynes-technology-is-more-fall-ahead-11794813833370.html",
+   "entry_date": "2026-11-13",
+   "entry": 3430.0
+  },
+  {
+   "id": "274e728666b2c800",
+   "symbol": "COALINDIA",
+   "time": "2026-11-16T12:57:29+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Mahanadi IPO explained: Valuation, reserves, risks and Coal India strategy",
+   "url": "https://www.business-standard.com/markets/ipo/mahanadi-ipo-explained-valuation-reserves-risks-and-coal-india-strategy-126111600933_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 403.5
+  },
   {
    "id": "ef77ffb4649d933e",
    "symbol": "KAYNES",

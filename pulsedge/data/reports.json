@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T13:01+05:30",
+ "updated": "2026-11-16T13:15+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -92,20 +92,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "KAYNES": {
-   "summary": "Kaynes Technology shares fell sharply, hitting a 52‑week low after a 65% drop in Q2 profit and margin shrinkage. The stock has fallen 54% in a year.",
-   "why": "The sharp profit decline and margin erosion erode investor confidence, which can affect the company’s ability to raise capital and maintain shareholder value.",
-   "upside": "",
-   "downside": "Further downside risk if brokerages cut targets or if the drop is driven by negative news.",
+   "summary": "Kaynes Technology reported a sharp 65% drop in Q2 net profit and a shrinking margin, sending its shares down about 20% to a 52‑week low. The decline has triggered a broader sell‑off in the peer group, with related stocks also falling.",
+   "why": "The profit plunge hurts investor confidence and could pressure the share price further for current shareholders.",
+   "upside": "The steep fall may have left the stock oversold, opening the chance for a technical bounce.",
+   "downside": "Further profit misses or broker target cuts could push the price lower.",
    "watch": [
-    "Q2 PAT and margin figures",
-    "broker target revisions",
-    "intraday technical bounce after the crash"
+    "Any new guidance or earnings update from Kaynes",
+    "Brokerage target revisions for Kaynes",
+    "Performance of peers like Amber Enterprises"
    ],
-   "about": "",
-   "basis": "f66d8e8a01d7",
-   "items": 5,
-   "updated": "2026-11-16T12:16+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "Kaynes Technology India Ltd. makes electronic components and systems within India’s capital goods sector.",
+   "basis": "fc53c63c0589",
+   "items": 6,
+   "updated": "2026-11-16T13:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "INOXWIND": {
    "summary": "Inox Wind reported a sharp fall in its recent profits, sending the shares down 9.17% after the Q2 results and leaving the stock 60% lower than a year ago.",
@@ -299,6 +299,21 @@
    "updated": "2026-11-16T08:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "AMBER": {
+   "summary": "Amber Enterprises shares dropped sharply by over 8 percent after a rival company reported weaker profits. Investors often sell similar companies together when one performs poorly.",
+   "why": "This matters because your shares can lose value due to bad news from other companies in the same industry, even if Amber did not report anything new.",
+   "upside": "",
+   "downside": "Further sector-wide selling could happen if other peer companies also report weak numbers.",
+   "watch": [
+    "Performance of peer companies in the consumer durables sector",
+    "Overall movement of the Nifty 500 index"
+   ],
+   "about": "Amber Enterprises India Ltd. is a consumer durables company included in India's Nifty 500 index.",
+   "basis": "62bcd59a7855",
+   "items": 1,
+   "updated": "2026-11-16T13:15+05:30",
+   "model": "gemini-flash-lite-latest"
+  },
   "KPIL": {
    "summary": "Kalpataru Projects International announced it has won a new infrastructure contract. This adds to the company's list of upcoming work.",
    "why": "New contracts generally mean more future revenue, which can support the company's long-term value.",
@@ -459,22 +474,6 @@
    "updated": "2026-11-16T09:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "GILLETTE": {
-   "summary": "Gillette India released its unaudited financial results for the quarter and half-year ended September 30, 2026. This update provides a look at the company's recent profitability and financial health.",
-   "why": "These results show how much profit the business made recently, which helps investors understand if the company is performing as expected.",
-   "upside": "",
-   "downside": "Rising costs from inflation could squeeze the company's profit margins, and the results might not match what investors were expecting.",
-   "watch": [
-    "How the stock price reacts to the new financial figures",
-    "Whether the company mentions rising costs in future updates",
-    "The overall trend of the FMCG sector index"
-   ],
-   "about": "Gillette India is a company in the Fast Moving Consumer Goods sector, which sells everyday products that people buy frequently.",
-   "basis": "effb45e4bd99",
-   "items": 2,
-   "updated": "2026-11-16T09:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "PFC": {
    "summary": "Power Finance Corporation Ltd. is one of four public sector companies with an upcoming dividend record date between November 16 and 20. The broader Financials sector has risen 4.7% over the last five sessions, despite a small drop in the most recent session.",
    "why": "Shareholders need to know the record date to ensure they receive the dividend, as share prices often adjust slightly on the ex-date.",
@@ -524,19 +523,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "COALINDIA": {
-   "summary": "Coal India’s subsidiary Mahanadi Coalfields is preparing an IPO with a price band of ₹129‑₹136 and a target valuation of $9.55 billion. The offering is drawing attention as it could affect Coal India’s earnings per share and investor sentiment.",
-   "why": "Existing shareholders may see dilution of earnings, but fresh capital could support growth and dividend potential.",
-   "upside": "If the IPO is well‑subscribed and priced at the top of the band, Coal India could receive funds that boost its financial position.",
-   "downside": "If the IPO is undersubscribed or priced below the band, earnings per share could be diluted and share price may fall.",
+   "summary": "Coal India’s subsidiary Mahanadi Coalfields is launching an IPO with a price band of ₹129‑₹136 per share and a target valuation of $9.55 billion. The offering could affect Coal India’s share price as investors weigh fresh funds against possible dilution, and the company is also set to release its quarterly results today.",
+   "why": "Shareholders may see earnings per share diluted if the IPO reduces Coal India’s stake, while a successful offering could bring new capital to the group.",
+   "upside": "If the IPO is well‑subscribed and priced at the top of the band, Coal India could receive fresh funds that support its balance sheet and earnings.",
+   "downside": "If the IPO is undersubscribed or priced below the band, earnings per share could be diluted and the stock may face downward pressure.",
    "watch": [
-    "Mahanadi Coalfields IPO pricing and subscription",
-    "Coal India’s quarterly earnings release",
-    "Sustainability of its high dividend yield"
+    "Subscription level and final pricing of the Mahanadi Coalfields IPO",
+    "Coal India’s upcoming quarterly earnings report",
+    "Sustainability of the high dividend yield highlighted in recent lists"
    ],
-   "about": "Coal India mines and sells coal, making it a major supplier of thermal coal in India.",
-   "basis": "c7a6084ddee7",
-   "items": 6,
-   "updated": "2026-11-16T11:31+05:30",
+   "about": "Coal India Ltd is India’s largest coal mining company, producing and selling thermal coal for power generation.",
+   "basis": "d96aa5d52c69",
+   "items": 7,
+   "updated": "2026-11-16T13:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "BIOCON": {
@@ -777,22 +776,6 @@
    "updated": "2026-11-16T10:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "ZEEL": {
-   "summary": "Zee Entertainment Enterprises Ltd. announced that its board has passed a resolution to consider a share buy‑back. The media sector index was down 0.2% in the last session but up 3.6% over the past five sessions.",
-   "why": "A buy‑back can support the share price and signals management believes the stock is undervalued, which matters to current shareholders.",
-   "upside": "If the buy‑back is executed, it could lift the share price.",
-   "downside": "Regulatory hurdles or delays could prevent the buy‑back from happening.",
-   "watch": [
-    "Buy‑back execution timeline",
-    "Regulatory approval status",
-    "Continued sector index performance"
-   ],
-   "about": "Zee Entertainment Enterprises Ltd. is a media and entertainment company that creates and distributes television content in India.",
-   "basis": "c7f5ec602483",
-   "items": 1,
-   "updated": "2026-11-16T12:31+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "ITC": {
    "summary": "ITC shares rose as FMCG stocks led gains in the Sensex, and the company announced an allotment of securities that could slightly dilute its share count. The broader market showed mixed signals with strength in large caps but weakness in mid and small caps.",
    "why": "Share price movement and any dilution affect the value of existing shares for investors.",
@@ -856,22 +839,6 @@
    "items": 2,
    "updated": "2026-11-16T12:45+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "DMART": {
-   "summary": "Avenue Supermarts Ltd. announced changes in its senior management and board of directors, signalling a leadership transition.",
-   "why": "Shareholders watch leadership shifts because they can shape the company’s strategy and retail execution.",
-   "upside": "New leadership could bring fresh ideas that improve strategy and performance.",
-   "downside": "The departures may cause temporary uncertainty and disrupt execution.",
-   "watch": [
-    "Identity and background of the new senior managers",
-    "Composition of the revised board and auditor",
-    "Impact of the changes on retail operations and governance"
-   ],
-   "about": "Avenue Supermarts runs the DMart chain of discount supermarkets across India.",
-   "basis": "cf4ace453561",
-   "items": 2,
-   "updated": "2026-11-16T10:15+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "SUPREMEIND": {
    "summary": "Supreme Industries Ltd. is a capital goods company listed in the Nifty 500.",
