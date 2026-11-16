@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T08:46+05:30",
+ "updated": "2026-11-16T09:01+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Several big Indian companies, including car makers and a metal producer, released their quarterly earnings today, which can move their shares quickly. A global power equipment firm, Hitachi Energy, announced strong sales and a positive growth outlook, hinting at demand for power equipment. Energy stocks were the strongest in the session, while realty, auto and metals fell. Foreign funds were slightly less long than yesterday, holding 35% of their positions in index futures.",
+  "summary": "PulsEdge flagged a busy day for Indian markets as several major companies, including Ashok Leyland and Tata Motors, released their quarterly financial results. In the pharma sector, Biocon and Glenmark both announced new US drug approvals and launches, which could boost their future sales. Meanwhile, Mahanadi Coalfields set its IPO price band, a move that might affect its parent company's stock. Foreign investors slightly reduced their long positions, suggesting some caution in the market.",
   "themes": [
-   "Earnings releases of major Indian firms",
-   "Positive outlook for power equipment",
-   "Mixed sector index performance"
+   "Major Indian companies are reporting their latest quarterly earnings.",
+   "Pharmaceutical firms are expanding their presence in the US market.",
+   "New stock offerings are setting price ranges for public investors."
   ],
   "watch": [
-   "Earnings reports of Ashok Leyland, BEL, Hero Moto, Coal India, Tata Motors PV",
-   "Hitachi Energy’s growth outlook and its impact on the power sector",
-   "Foreign funds’ long positions in index futures"
+   "How the market reacts to the earnings reports from auto and metal companies.",
+   "Whether the Mahanadi Coalfields IPO prices at the top or bottom of its range.",
+   "If foreign investors continue to reduce their long positions in the coming days."
   ],
   "date": "2026-11-16",
-  "basis": "6b1269543f0a",
-  "updated": "2026-11-16T08:16+05:30",
-  "model": "openai/gpt-oss-20b",
-  "items": 3
+  "basis": "a6a1b44493c7",
+  "updated": "2026-11-16T09:01+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 7
  },
  "stocks": {
   "POWERINDIA": {
@@ -89,6 +89,22 @@
    "basis": "85c218dd7439",
    "items": 3,
    "updated": "2026-11-16T08:16+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "ABB": {
+   "summary": "ABB India shares jumped 36% recently after an analyst upgrade, reflecting optimism about its fundamentals.",
+   "why": "The move matters to shareholders because it signals potential for further price movement, but a slowdown in the capital goods sector could weigh on future orders.",
+   "upside": "If the company's fundamentals keep improving, the stock could see additional upside.",
+   "downside": "A slowdown in the sector could reduce order flow and pressure the share price.",
+   "watch": [
+    "Sector demand trends",
+    "Company's order book updates",
+    "Future analyst revisions"
+   ],
+   "about": "",
+   "basis": "ddf9141e5594",
+   "items": 1,
+   "updated": "2026-11-16T09:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "OLAELEC": {
@@ -299,6 +315,22 @@
    "updated": "2026-11-16T08:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "KPIL": {
+   "summary": "Kalpataru Projects International announced it has won a new infrastructure contract. This adds to the company's list of upcoming work.",
+   "why": "New contracts generally mean more future revenue, which can support the company's long-term value.",
+   "upside": "The new work could lead to higher future income if the project is profitable.",
+   "downside": "The contract might be worth less or have lower profit margins than investors expected.",
+   "watch": [
+    "The specific value of the new contract",
+    "The expected profit margin on this project",
+    "Future announcements about other orders"
+   ],
+   "about": "Kalpataru Projects International is a construction company that builds infrastructure.",
+   "basis": "6f74c17b96da",
+   "items": 1,
+   "updated": "2026-11-16T09:01+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "PNB": {
    "summary": "Punjab National Bank shares recently joined a strong rally in public sector bank stocks. This group of banks saw its biggest weekly gain in seven months, pushing prices to multi-month highs.",
    "why": "If you own PNB shares, this rise means the value of your holding has increased recently. However, such strong moves can sometimes lead to a quick drop as investors sell to lock in profits.",
@@ -396,20 +428,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "COCHINSHIP": {
-   "summary": "Cochin Shipyard has announced an interim dividend with a record date on Nov 16, and investors are being reminded to watch the ex‑date price adjustment.",
-   "why": "Shareholders will receive a cash payout, but the share price typically falls by the dividend amount on the ex‑date.",
-   "upside": "A higher‑than‑expected dividend could attract more investors and support the stock.",
-   "downside": "The stock is likely to drop by the dividend amount when it goes ex‑dividend.",
+   "summary": "Cochin Shipyard Ltd. has announced an upcoming dividend with a record date of November 16. This news has drawn attention from investors comparing it with other shipping companies.",
+   "why": "Shareholders who hold the stock on the record date will receive this cash payment, which adds to their total return.",
+   "upside": "The dividend provides a direct cash return to investors who own the shares.",
+   "downside": "The share price may drop slightly on the ex-date to reflect the payout, and the market may have already priced in this news.",
    "watch": [
-    "Dividend record date (Nov 16)",
-    "Ex‑dividend price movement",
-    "Any further dividend announcements or payout details"
+    "The November 16 record date for the dividend",
+    "The ex-date when the stock price adjusts",
+    "How the stock reacts compared to peers like Shipping Corporation"
    ],
-   "about": "Cochin Shipyard Ltd. builds and repairs ships and other marine structures in India.",
-   "basis": "355e05bd7381",
-   "items": 3,
-   "updated": "2026-11-16T08:46+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Cochin Shipyard Ltd. is a major shipbuilder in the capital goods sector.",
+   "basis": "011eb33b00be",
+   "items": 2,
+   "updated": "2026-11-16T09:01+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "GODREJIND": {
    "summary": "Godrej Industries' stock shows an upward RSI trend, indicating improving momentum, while its sister firm Godrej Properties has bought a 31‑acre plot in Indore for a housing project.",
@@ -426,6 +458,86 @@
    "items": 2,
    "updated": "2026-11-16T08:46+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "ZEEL": {
+   "summary": "Zee Entertainment Enterprises Ltd. announced a share buyback plan worth ₹600 crore and its board passed a resolution to consider the buyback. The media sector index has been slightly down yesterday but up 3.6% over the past five sessions.",
+   "why": "The buyback could return cash to shareholders and may signal management’s confidence in the share price. It also has the potential to influence the stock’s valuation.",
+   "upside": "If the buyback proceeds smoothly, it could provide cash returns and support the share price.",
+   "downside": "Regulatory delays or low participation in the tender could limit the benefits of the buyback.",
+   "watch": [
+    "Progress of regulatory approvals for the buyback",
+    "Level of shareholder participation in the tender offer",
+    "Continued performance of the media sector index"
+   ],
+   "about": "Zee Entertainment Enterprises Ltd. is a media and entertainment company that creates and distributes television content.",
+   "basis": "ec1196883d27",
+   "items": 2,
+   "updated": "2026-11-16T09:01+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "GILLETTE": {
+   "summary": "Gillette India released its unaudited financial results for the quarter and half-year ended September 30, 2026. This update provides a look at the company's recent profitability and financial health.",
+   "why": "These results show how much profit the business made recently, which helps investors understand if the company is performing as expected.",
+   "upside": "",
+   "downside": "Rising costs from inflation could squeeze the company's profit margins, and the results might not match what investors were expecting.",
+   "watch": [
+    "How the stock price reacts to the new financial figures",
+    "Whether the company mentions rising costs in future updates",
+    "The overall trend of the FMCG sector index"
+   ],
+   "about": "Gillette India is a company in the Fast Moving Consumer Goods sector, which sells everyday products that people buy frequently.",
+   "basis": "effb45e4bd99",
+   "items": 2,
+   "updated": "2026-11-16T09:01+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "COFORGE": {
+   "summary": "Coforge is one of the stocks named in recent news about MSCI index changes, which can force global funds to buy or sell shares. The broader IT sector has seen prices drop slightly over the last week.",
+   "why": "If Coforge is added to or removed from the MSCI index, it may see sudden buying or selling pressure from large funds, which can make the share price jump or drop sharply.",
+   "upside": "If Coforge is added to the index, it could attract new money from global funds.",
+   "downside": "If Coforge is removed from the index, it could face selling pressure from funds that must exit the stock.",
+   "watch": [
+    "The official MSCI index change list",
+    "How the IT sector index moves in the coming days",
+    "Trading volume on Coforge shares around the index effective date"
+   ],
+   "about": "Coforge is an Information Technology company listed in India's Nifty 500 index.",
+   "basis": "7ba49533d091",
+   "items": 2,
+   "updated": "2026-11-16T09:01+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "PFC": {
+   "summary": "Power Finance Corporation Ltd. is one of four public sector companies with an upcoming dividend record date between November 16 and 20. The broader Financials sector has risen 4.7% over the last five sessions, despite a small drop in the most recent session.",
+   "why": "Shareholders need to know the record date to ensure they receive the dividend, as share prices often adjust slightly on the ex-date.",
+   "upside": "The Financials sector has shown positive momentum with a 4.7% gain over the past week.",
+   "downside": "The market may have already priced in the dividend, meaning the share price might not rise further before the payment.",
+   "watch": [
+    "The specific record date for PFC's dividend",
+    "How the share price reacts on the ex-date",
+    "Continued performance of the Financials sector index"
+   ],
+   "about": "",
+   "basis": "4b09b509020b",
+   "items": 1,
+   "updated": "2026-11-16T09:01+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "SCI": {
+   "summary": "Shipping Corporation of India (SCI) is part of a group of public sector companies announcing dividend record dates this week. Investors are being advised to check these dates to understand when they might receive payments.",
+   "why": "Dividends are cash payments to shareholders, but the share price often drops slightly on the day the dividend is paid out. This is a normal market adjustment that affects the value of your holding.",
+   "upside": "Receiving a dividend provides direct cash income to shareholders.",
+   "downside": "The share price may dip on the ex-date, and the market might have already accounted for this payment in the current price.",
+   "watch": [
+    "The specific record date for SCI's dividend",
+    "The ex-date when the share price typically adjusts",
+    "Whether the dividend amount is already reflected in the current share price"
+   ],
+   "about": "",
+   "basis": "4b09b509020b",
+   "items": 1,
+   "updated": "2026-11-16T09:01+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "RELIANCE": {
    "summary": "Reliance Industries shares jumped about 15% in November, adding roughly ₹2.38 lakh crore to its market value. At the same time, foreign institutional investors are returning to Indian equities, which could support the stock.",

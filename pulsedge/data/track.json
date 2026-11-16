@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T08:47:37+05:30",
+ "updated": "2026-11-16T09:02:39+05:30",
  "summary": {
-  "calls": 1449,
-  "scored_calls": 311,
+  "calls": 1450,
+  "scored_calls": 312,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "724e62210b594cf1",
+   "symbol": "KPIL",
+   "time": "2026-11-16T08:46:36+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Kalpataru Projects International Limited: Kalpataru Projects International Limited has informed the Exchange about Bagging/Receiving of orders/contracts |SUBJEC",
+   "url": "https://nsearchives.nseindia.com/corporate/KALPATPOWR_16112026084614_SEIntimationPR16112026s.pdf",
+   "entry_date": "2026-11-13",
+   "entry": 1349.5
+  },
   {
    "id": "cb88be34bf9c6ee1",
    "symbol": "GLENMARK",
