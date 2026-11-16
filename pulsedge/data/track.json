@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T15:32:16+05:30",
+ "updated": "2026-11-16T15:40:07+05:30",
  "summary": {
-  "calls": 1492,
-  "scored_calls": 354,
+  "calls": 1494,
+  "scored_calls": 356,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "51a118e8f7521721",
+   "symbol": "COALINDIA",
+   "time": "2026-11-16T15:30:28+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Mahanadi Coalfields IPO: Dividend king in the making? What top official says about Coal India arm's post-listing payouts",
+   "url": "https://www.livemint.com/market/stock-market-news/mahanadi-coalfields-ipo-dividend-king-in-the-making-what-top-official-says-about-coal-india-arms-post-listing-payouts-11794818788482.html",
+   "entry_date": "2026-11-13",
+   "entry": 403.5
+  },
+  {
+   "id": "20d5181b959ae28f",
+   "symbol": "ADANIENT",
+   "time": "2026-11-16T15:19:09+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Adani Enterprises Limited: Adani Enterprises Limited has informed the Exchange regarding a press release dated November 16, 2026, titled \"Media Release on the s",
+   "url": "https://nsearchives.nseindia.com/corporate/nishant_joshi_adani_com_16112026151744_AELIntimationMediaRelease16112026.pdf",
+   "entry_date": "2026-11-13",
+   "entry": 2688.0
+  },
   {
    "id": "00c8ac2247e41cef",
    "symbol": "ATHERENERG",

@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T15:32+05:30",
+ "updated": "2026-11-16T15:39+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -267,22 +267,6 @@
    "updated": "2026-11-16T14:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "PAYTM": {
-   "summary": "Paytm’s shares rose above their IPO listing‑day high of ₹1,955 for the first time in five years, helped by recent positive regulatory news. The stock was also highlighted as a top pick for 2027 by a brokerage firm.",
-   "why": "Hitting the IPO high can draw fresh investor interest and may boost the stock’s momentum. Being named a top pick could increase demand from institutional investors.",
-   "upside": "If regulatory approvals become final, the share price could see further gains.",
-   "downside": "The regulatory approvals are still preliminary, so a setback could weigh on the stock.",
-   "watch": [
-    "Progress on regulatory approvals",
-    "Financials sector index movement",
-    "Any new brokerage recommendations or analyst coverage"
-   ],
-   "about": "One 97 Communications Ltd. operates Paytm, a digital payments platform.",
-   "basis": "05490c65331a",
-   "items": 3,
-   "updated": "2026-11-16T14:47+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "AMBER": {
    "summary": "Amber Enterprises' shares fell sharply after its earnings report, with analysts flagging low profit margins, and again after a peer posted weak results.",
    "why": "Margin compression could reduce future profits and sector sentiment may drag the stock further.",
@@ -297,6 +281,22 @@
    "basis": "6b03f93c70f1",
    "items": 2,
    "updated": "2026-11-16T14:47+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "PAYTM": {
+   "summary": "Paytm shares rose above the ₹1,955 IPO listing‑day high for the first time in nearly five years, spurred by positive regulatory news.",
+   "why": "Crossing the IPO high can draw new investors and lift sentiment, but the regulatory approvals are still only preliminary.",
+   "upside": "If the regulatory approvals become final, the share price could gain further support.",
+   "downside": "If the approvals remain pending or are denied, confidence could wane.",
+   "watch": [
+    "Progress on regulatory approvals",
+    "Share price staying above IPO high",
+    "Financials sector index trend"
+   ],
+   "about": "One 97 Communications runs Paytm, a digital payments platform.",
+   "basis": "06f075132960",
+   "items": 2,
+   "updated": "2026-11-16T15:39+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "BANKINDIA": {
@@ -540,19 +540,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "COALINDIA": {
-   "summary": "Coal India’s subsidiary Mahanadi Coalfields is launching an IPO with a price band of ₹129‑₹136 per share and a target valuation of $9.55 billion. The offering could affect Coal India’s share price as investors weigh fresh funds against possible dilution, and the company is also set to release its quarterly results today.",
-   "why": "Shareholders may see earnings per share diluted if the IPO reduces Coal India’s stake, while a successful offering could bring new capital to the group.",
-   "upside": "If the IPO is well‑subscribed and priced at the top of the band, Coal India could receive fresh funds that support its balance sheet and earnings.",
-   "downside": "If the IPO is undersubscribed or priced below the band, earnings per share could be diluted and the stock may face downward pressure.",
+   "summary": "Coal India Ltd is seeing its subsidiary Mahanadi Coalfields launch an IPO with a price band of ₹129‑₹136 per share. The offering could bring fresh funds but may also dilute existing shareholders' earnings.",
+   "why": "Shareholders could see earnings per share change due to dilution, while the IPO may improve the company’s cash position and dividend appeal.",
+   "upside": "If the IPO is well‑subscribed and priced at the top of the band, Coal India could receive strong capital and boost dividend prospects.",
+   "downside": "If the IPO is undersubscribed or priced below the band, earnings per share could be diluted and the share price may face pressure.",
    "watch": [
-    "Subscription level and final pricing of the Mahanadi Coalfields IPO",
-    "Coal India’s upcoming quarterly earnings report",
-    "Sustainability of the high dividend yield highlighted in recent lists"
+    "IPO subscription levels and final pricing",
+    "Coal India's share price reaction post‑IPO",
+    "Upcoming quarterly earnings and sector index movement"
    ],
-   "about": "Coal India Ltd is India’s largest coal mining company, producing and selling thermal coal for power generation.",
-   "basis": "d96aa5d52c69",
-   "items": 7,
-   "updated": "2026-11-16T13:15+05:30",
+   "about": "Coal India Ltd is India's largest coal mining company, a key player in the Oil, Gas & Consumable Fuels sector.",
+   "basis": "29fe544b0a6b",
+   "items": 8,
+   "updated": "2026-11-16T15:39+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "BIOCON": {
