@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T08:16:59+05:30",
+ "updated": "2026-11-16T08:32:34+05:30",
  "summary": {
-  "calls": 1446,
-  "scored_calls": 308,
+  "calls": 1447,
+  "scored_calls": 309,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "c41adee94be9953a",
+   "symbol": "COALINDIA",
+   "time": "2026-11-16T08:21:38+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Coal India's Mahanadi Coalfields IPO price band set at ₹129 - ₹136 per share | Check GMP, issue details, key dates",
+   "url": "https://www.livemint.com/market/ipo/coal-indias-mahanadi-coalfields-ipo-price-band-set-at-rs-129-rs-136-per-share-check-gmp-issue-details-key-dates-11794795588725.html",
+   "entry_date": "2026-11-13",
+   "entry": 403.5
+  },
   {
    "id": "c66df1ff80ea4c4e",
    "symbol": "ASHOKLEY",

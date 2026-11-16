@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T08:16+05:30",
+ "updated": "2026-11-16T08:31+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -233,6 +233,118 @@
    "basis": "ca977e7f5e42",
    "items": 4,
    "updated": "2026-11-16T08:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "SOLARINDS": {
+   "summary": "PulsEdge flagged headlines about other solar companies, but none of the provided facts contain specific news about Solar Industries India Ltd. The company is part of the Nifty 500 index, which tracks India's 500 largest listed firms.",
+   "why": "Because there is no specific recent news about Solar Industries India in the provided facts, there is no direct reason for its share price to move based on this information alone.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "Future announcements specific to Solar Industries India Ltd.",
+    "General trends in the Nifty 500 index",
+    "News about the broader chemicals sector"
+   ],
+   "about": "",
+   "basis": "723ac93008eb",
+   "items": 3,
+   "updated": "2026-11-16T08:31+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "MCX": {
+   "summary": "MCX shares recently hit a new high, doubling in value over the past year and approaching a market cap of one trillion rupees. This rise reflects strong confidence in the exchange's growth and trading activity.",
+   "why": "For shareholders, this indicates that the market values the company's performance highly, which can lead to significant gains if the trend continues.",
+   "upside": "Continued growth in trading volumes and strong market confidence could support further price increases.",
+   "downside": "Investors might sell their shares to lock in profits after such a large rise, which could cause the price to drop.",
+   "watch": [
+    "Whether the share price holds its new high or faces selling pressure.",
+    "Changes in commodity trading volumes on the exchange.",
+    "Overall market trends that might affect financial sector stocks."
+   ],
+   "about": "",
+   "basis": "63d197a91975",
+   "items": 3,
+   "updated": "2026-11-16T08:31+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "BANKINDIA": {
+   "summary": "Bank of India shares recently saw strong gains as part of a broader rally in public sector bank stocks. This sector movement helped push the stock to multi-month highs, even though the wider financial sector dipped slightly in the most recent trading session.",
+   "why": "This matters to shareholders because the stock is moving with the overall trend of public sector banks, which can lead to quick price changes. However, such strong rallies often end with investors selling to lock in profits.",
+   "upside": "The stock may continue to rise if the positive momentum in the public sector banking group holds steady.",
+   "downside": "The share price could drop if investors sell off their holdings to take profits after the recent strong gains.",
+   "watch": [
+    "Whether the public sector bank rally continues or reverses",
+    "Changes in India's 10-year bond yields",
+    "New data on inflation levels"
+   ],
+   "about": "Bank of India is a financial services company listed on the NSE.",
+   "basis": "a95ba015776d",
+   "items": 3,
+   "updated": "2026-11-16T08:31+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "NATCOPHARM": {
+   "summary": "Natco Pharma held a board meeting on 13 Nov 2026, announced its financial results for the quarter ended 30 Sep 2026 and declared a second interim dividend, and set the record date for dividend eligibility on 19 Nov 2026.",
+   "why": "Dividends affect cash returns for shareholders and the record date determines who receives them.",
+   "upside": "The dividend payout could provide additional income to shareholders.",
+   "downside": "The share price may fall by the dividend amount after the ex‑date or see profit‑taking if expectations were already priced in.",
+   "watch": [
+    "Ex‑dividend date and dividend amount",
+    "Future earnings releases",
+    "Healthcare sector performance"
+   ],
+   "about": "Natco Pharma Ltd. is a pharmaceutical company that develops, manufactures and markets medicines.",
+   "basis": "3afcd7c161c0",
+   "items": 3,
+   "updated": "2026-11-16T08:31+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "BDL": {
+   "summary": "Bharat Dynamics reported higher revenue from pending orders in Q2, but profit margins fell, sending the shares down about 3%. The company is also being compared with peers GRSE and HAL as the defence sector looks at post‑quarter performance.",
+   "why": "Margin pressure could affect earnings, while strong order intake shows demand for its products.",
+   "upside": "If margin pressure eases and the company converts its order backlog into higher profits, the share price could improve.",
+   "downside": "Continued margin compression could weigh on earnings and keep the stock under pressure.",
+   "watch": [
+    "Margin trends in upcoming quarters",
+    "Conversion of pending orders into profit",
+    "Competitive positioning versus GRSE and HAL"
+   ],
+   "about": "Bharat Dynamics Ltd. is a defence public sector company that manufactures missiles and related systems.",
+   "basis": "b41ed63de431",
+   "items": 2,
+   "updated": "2026-11-16T08:31+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "PNB": {
+   "summary": "Punjab National Bank shares recently joined a strong rally in public sector bank stocks. This group of banks saw its biggest weekly gain in seven months, pushing prices to multi-month highs.",
+   "why": "If you own PNB shares, this rise means the value of your holding has increased recently. However, such strong moves can sometimes lead to a quick drop as investors sell to lock in profits.",
+   "upside": "The broad strength in the banking sector could continue to support the stock price in the short term.",
+   "downside": "After a big jump, investors may sell their shares to take profits, causing the price to fall.",
+   "watch": [
+    "Whether the banking sector rally continues or reverses",
+    "If other large banks in the index follow the same trend",
+    "General market sentiment towards public sector stocks"
+   ],
+   "about": "Punjab National Bank is a financial services company listed on the NSE.",
+   "basis": "d0a316d70302",
+   "items": 1,
+   "updated": "2026-11-16T08:31+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "BANKBARODA": {
+   "summary": "Bank of Baroda shares recently rose as part of a strong weekly gain for public sector banks. This sector movement pushed the stock to multi-month highs.",
+   "why": "This matters to shareholders because the stock price moved up significantly in a short period, which affects the value of their holdings.",
+   "upside": "The broader strength in public sector banks could continue to support the share price.",
+   "downside": "Stocks in this sector often see sudden drops in value when investors sell to lock in profits after a long rise.",
+   "watch": [
+    "Whether the public sector bank rally continues or reverses",
+    "Signs of investors selling shares to take profits",
+    "Overall performance of the Financials sector index"
+   ],
+   "about": "Bank of Baroda is a financial services company listed on the NSE.",
+   "basis": "d0a316d70302",
+   "items": 1,
+   "updated": "2026-11-16T08:31+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "RELIANCE": {
