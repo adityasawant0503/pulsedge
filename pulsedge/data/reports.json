@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-14T21:27+05:30",
+ "updated": "2026-11-16T06:41+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,86 +57,38 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged that Ashok Leyland released its quarterly results and declared a small dividend of one rupee per share. In the energy sector, Vikram Solar reported improved profit margins, while Waaree Energies began setting up a new battery manufacturing line. A major mining company saw its shares drop after profits came in slightly below expectations. Overall, foreign investors slightly reduced their long positions in the market.",
+  "summary": "PulsEdge flagged Hitachi Energy’s strong sales and growth outlook, highlighting demand for power equipment. Indian power‑related stocks rallied but valuations may already be high. Sector indices showed Energy flat, FMCG flat, Media down slightly, while Realty, Auto and Metals fell. Foreign fund futures were slightly less long than before.",
   "themes": [
-   "Solar and energy companies are expanding into new areas like battery storage.",
-   "Vehicle makers are focusing on returning cash to shareholders through dividends.",
-   "Mining stocks are facing pressure from lower-than-expected profits and global metal prices."
+   "Power equipment demand boosts Indian sector",
+   "Valuation concerns in power stocks",
+   "Foreign fund positioning eases a bit"
   ],
   "watch": [
-   "The record date of November 20, 2026, for Ashok Leyland's dividend payment.",
-   "Whether Waaree Energies faces delays in starting commercial production of its new battery line.",
-   "How global metal prices affect the performance of mining stocks."
+   "Earnings of Indian power equipment companies",
+   "Any policy moves affecting the power sector",
+   "Trends in foreign fund long positions"
   ],
-  "date": "2026-11-14",
-  "basis": "7f8c5d6cbcb5",
-  "updated": "2026-11-14T21:05+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 10
+  "date": "2026-11-16",
+  "basis": "c6705a8e8f1e",
+  "updated": "2026-11-16T06:41+05:30",
+  "model": "openai/gpt-oss-120b",
+  "items": 1
  },
  "stocks": {
   "POWERINDIA": {
-   "summary": "Hitachi Energy India posted strong Q2 results with a 21% rise in net profit, 63.5% jump in revenue and an 86% increase in order inflows, sending the shares up about 12% and near a 94% gain from the 52‑week low.",
-   "why": "The earnings boost shows the business is growing, but the rapid share rally means valuations are now high, which matters to current investors.",
-   "upside": "If order inflows stay strong, earnings could keep rising.",
-   "downside": "High valuations after the big rally could lead to a price correction.",
+   "summary": "Hitachi Energy India reported strong second-quarter results, with revenue jumping 63.5% and net profit rising 21%. The company also saw an 86% increase in new orders, leading to a significant rise in its share price.",
+   "why": "These results show that demand for power equipment is growing, which supports the company's future earnings potential for shareholders.",
+   "upside": "The strong growth in orders suggests the company is well-positioned to continue expanding its business.",
+   "downside": "The share price has already risen 94% from its low, so some analysts worry the stock may be expensive relative to its current value.",
    "watch": [
-    "Future Q2 order inflow trends",
-    "Share price valuation levels",
-    "Impact of being featured in pre‑market watchlists"
+    "Future quarterly order inflows",
+    "Changes in the company's profit margins",
+    "Overall market sentiment toward power sector stocks"
    ],
    "about": "",
-   "basis": "3847afbae506",
-   "items": 3,
-   "updated": "2026-11-14T21:05+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "CUPID": {
-   "summary": "Cupid Ltd.’s shares jumped about 10% to a record high after reporting a 133% rise in Q2 net profit and issuing higher guidance.",
-   "why": "The profit surge and upbeat outlook could affect the value of existing shares.",
-   "upside": "If the company continues to deliver strong earnings growth, the share price could rise further.",
-   "downside": "High valuations after the sharp rally could pressure the stock if results disappoint.",
-   "watch": [
-    "Q3 earnings release",
-    "Any update to profit guidance",
-    "FMCG sector index movement"
-   ],
-   "about": "Cupid Ltd. is a Fast Moving Consumer Goods company.",
-   "basis": "35d6a69efaca",
-   "items": 2,
-   "updated": "2026-11-14T21:05+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "KALYANKJIL": {
-   "summary": "Kalyan Jewellers India Ltd. shares surged to a 52‑week high, rallying about 41% over the last nine sessions. The jump follows a Q2 FY27 net profit rise of 64% to ₹427 crore.",
-   "why": "The sharp profit increase and strong share rally could affect the value of existing holdings.",
-   "upside": "Continued earnings growth may support further share price gains.",
-   "downside": "Trading near its 52‑week high raises the risk of profit‑taking by investors.",
-   "watch": [
-    "Upcoming Q3 earnings report",
-    "Consumer durables sector performance",
-    "Share price staying near 52‑week high"
-   ],
-   "about": "",
-   "basis": "b20ccd106402",
-   "items": 1,
-   "updated": "2026-11-14T21:05+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "TATAPOWER": {
-   "summary": "Tata Power reported a 33% rise in quarterly profit to ₹1,652 crore, driven by strong renewable energy generation. However, this growth was partly offset by weaker performance in its solar engineering and construction business.",
-   "why": "Higher profits show the company is generating more cash, which can support its operations and debt management. The mix of strong revenue growth and rising debt means investors are watching how well the company manages its financial load.",
-   "upside": "Continued growth in renewable energy generation could boost overall earnings if it outpaces other costs.",
-   "downside": "Delays in adding new power capacity or rising debt levels could pressure future profits and the stock price.",
-   "watch": [
-    "Updates on the pace of new renewable capacity additions",
-    "Changes in the company's total debt levels",
-    "Performance of the solar engineering and construction segment"
-   ],
-   "about": "Tata Power is a company in the power sector.",
-   "basis": "6f4c0ba45569",
+   "basis": "19452d53162a",
    "items": 4,
-   "updated": "2026-11-14T21:05+05:30",
+   "updated": "2026-11-16T06:41+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "OLAELEC": {
@@ -155,38 +107,6 @@
    "updated": "2026-11-14T21:05+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "NUVAMA": {
-   "summary": "Nuvama Wealth Management reported strong second-quarter results, with net profit rising 19.5% compared to the same period last year. The company's share price recently increased by more than 6% in a single day, bringing it close to its previous high.",
-   "why": "Strong profit growth suggests the company is performing well, which can be positive for shareholders. However, the stock is near its peak price, so some investors might sell to lock in gains.",
-   "upside": "Continued strong financial performance could support the share price.",
-   "downside": "The stock is close to its highest recent level, which may lead to some investors selling their shares.",
-   "watch": [
-    "Whether the share price holds its recent gains or pulls back.",
-    "Future quarterly earnings reports.",
-    "Overall trends in the financial services sector."
-   ],
-   "about": "Nuvama Wealth Management is a financial services company listed in India's Nifty 500 index.",
-   "basis": "7f2fa343f0ae",
-   "items": 1,
-   "updated": "2026-11-14T21:05+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "TMCV": {
-   "summary": "Tata Motors shares have been volatile, falling as one of the top losers on a broad market drop on Nov 13, after a four‑day rally driven by strong commercial‑vehicle sales on Nov 12. The rally saw a 4% gain but technical analysis flagged the stock as overbought in the short term.",
-   "why": "Share price swings affect the value of investors' holdings, and strong commercial‑vehicle sales could boost earnings while overbought signals warn of a possible pull‑back.",
-   "upside": "If commercial‑vehicle demand stays strong, the stock could continue to rise.",
-   "downside": "If the overbought technical condition triggers a correction, the share price could fall.",
-   "watch": [
-    "Upcoming commercial‑vehicle sales figures",
-    "Broader market moves in the Sensex and Nifty",
-    "Technical indicators such as overbought/oversold levels"
-   ],
-   "about": "Tata Motors Ltd. manufactures commercial and passenger vehicles in India.",
-   "basis": "85448998990d",
-   "items": 4,
-   "updated": "2026-11-14T21:05+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "AZAD": {
    "summary": "Azad Engineering Ltd. has surged about 51% so far in 2026, drawing attention for its strong performance. Analysts note the stock may still have upside but warn that its valuation is now high.",
    "why": "Shareholders have benefited from the big rally, but the high price could limit future gains if sentiment shifts.",
@@ -203,53 +123,101 @@
    "updated": "2026-11-14T21:05+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "BHARATFORG": {
-   "summary": "Bharat Forge Ltd. announced that its associated entity, Kalyani Strategic Systems, unveiled a new 120mm Rapid Attack Mortar System. This development highlights the company's activity in the defense sector alongside its core automobile business.",
-   "why": "For share owners, this shows the company is expanding into defense products, which could diversify its revenue sources beyond just car parts.",
-   "upside": "Successful execution of this new defense product could open up additional business opportunities.",
-   "downside": "There is a risk of delays in fulfilling defense orders, which could impact expected timelines.",
+  "IDEA": {
+   "summary": "Vodafone Idea shares fell 3.5% after the company reported a larger-than-expected loss for its second quarter. The stock was also highlighted for high trading activity on November 13.",
+   "why": "A bigger loss than investors anticipated can lower confidence in the company's financial health, which may affect the value of your shares.",
+   "upside": "The stock is part of the Nifty 500, an index of India's 500 largest listed companies, which indicates it is a major player in the market.",
+   "downside": "The wider-than-expected loss weighed on investor sentiment, and high volatility during earnings season can cause sharp price swings.",
    "watch": [
-    "Updates on the production timeline for the new mortar system.",
-    "Any official orders or contracts related to this defense product.",
-    "Performance of the broader auto sector index."
+    "Future quarterly earnings reports",
+    "Daily trading volume and price movements",
+    "General market sentiment during earnings season"
    ],
-   "about": "Bharat Forge Ltd. operates in the automobile and auto components sector.",
-   "basis": "c3b872e7672e",
-   "items": 1,
-   "updated": "2026-11-14T21:27+05:30",
+   "about": "Vodafone Idea operates in the telecommunication sector.",
+   "basis": "9ec81016b682",
+   "items": 2,
+   "updated": "2026-11-16T06:41+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "HDFCBANK": {
-   "summary": "HDFC Bank shares fell sharply in the Sensex on 13 Nov 2026 after a recent 22% rise. The bank was also named a top pick for 2027 by a brokerage.",
-   "why": "As one of India’s largest listed companies, its performance can influence the broader market and affect investors holding its shares.",
-   "upside": "Being named a top pick for 2027 could attract new investors.",
-   "downside": "The recent sharp loss in the Sensex and potential market reversals could hurt the bank’s share price.",
+  "MEESHO": {
+   "summary": "On Nov 13, several large investors traded Meesho shares in block deals. Institutions bought about ₹1.5 billion worth of shares while one investor sold roughly ₹1.9 billion. The trades happened at ₹246.75 per share.",
+   "why": "Shareholders watch big trades because they can hint at how investors feel about the company’s outlook.",
+   "upside": "If more institutions keep buying, it could help the stock stay strong.",
+   "downside": "The large sale by SVF II may weigh on the share price if others follow suit.",
    "watch": [
-    "Next trading session share price movement",
-    "FII buying trends in Indian equities",
-    "Any new brokerage picks or market sentiment shifts"
+    "Further block‑deal activity",
+    "Share‑price movement after the trades",
+    "New large purchases or sales by institutions"
    ],
-   "about": "HDFC Bank is a major Indian financial services company.",
-   "basis": "77b39927997d",
-   "items": 6,
-   "updated": "2026-11-14T21:27+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
-  "IDEA": {
-   "summary": "Vodafone Idea shares fell about 3.5% after reporting a wider‑than‑expected loss for Q2, and the stock is expected to be volatile during earnings season.",
-   "why": "The loss hurts investor sentiment and could lead to further price swings for shareholders.",
-   "upside": "",
-   "downside": "The unexpected loss and heightened volatility could push the share price lower.",
-   "watch": [
-    "Q2 earnings details and loss magnitude",
-    "Any further director or auditor changes",
-    "Release of the monitoring agency report for Q3"
-   ],
-   "about": "Vodafone Idea Ltd. is an Indian telecommunications company.",
-   "basis": "c2cbc6137275",
-   "items": 5,
-   "updated": "2026-11-14T21:27+05:30",
+   "about": "",
+   "basis": "505223595ad3",
+   "items": 21,
+   "updated": "2026-11-16T06:41+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "TMCV": {
+   "summary": "Tata Motors posted a Q2 loss even though its revenue grew, sending the shares down about 22% and making it one of the day’s biggest losers as the broader market slipped.",
+   "why": "Earnings performance directly impacts investor sentiment, while the revenue increase offers a hint of potential recovery.",
+   "upside": "If the revenue growth translates into profit in upcoming quarters, the stock could regain momentum.",
+   "downside": "Continued earnings shortfalls could keep pressure on the share price.",
+   "watch": [
+    "Q3 earnings release",
+    "Revenue growth trends",
+    "Overall market moves (Sensex/Nifty)"
+   ],
+   "about": "Tata Motors designs, manufactures and sells automobiles and commercial vehicles.",
+   "basis": "300d28c55f55",
+   "items": 3,
+   "updated": "2026-11-16T06:41+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "NUVAMA": {
+   "summary": "Nuvama Wealth Management Ltd. (NUVAMA) is a financial services firm in the Nifty 500. Its sector index fell 0.7% in the last session but has risen 4.7% over the past five sessions.",
+   "why": "Sector moves can influence NUVAMA’s share price, so investors watch the financials index closely.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "Financials sector index trend",
+    "Upcoming earnings releases in the financial services space",
+    "Regulatory updates affecting wealth management"
+   ],
+   "about": "Nuvama Wealth Management provides wealth management and advisory services.",
+   "basis": "7b167071d381",
+   "items": 1,
+   "updated": "2026-11-16T06:41+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "OIL": {
+   "summary": "Oil India is in focus as it announces a dividend this week and investors watch upcoming WPI inflation and oil price data that could affect its performance. Recent global oil price moves have made crude‑sensitive stocks, including Oil India, volatile.",
+   "why": "Dividends can cause a short‑term price dip on the ex‑date and inflation or oil price changes can impact the company’s earnings.",
+   "upside": "Higher oil prices or favourable inflation data could boost Oil India’s revenue.",
+   "downside": "Higher inflation or a sudden rise in oil prices could pressure margins and cause a price dip around the dividend ex‑date.",
+   "watch": [
+    "Dividend record date and payout details",
+    "WPI inflation numbers and oil price data releases",
+    "Global crude price movements and geopolitical developments"
+   ],
+   "about": "Oil India explores, produces and markets oil and gas in India.",
+   "basis": "f62876db1ce1",
+   "items": 6,
+   "updated": "2026-11-16T06:41+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "GRASIM": {
+   "summary": "Grasim Industries released its unaudited financial results for the quarter and half-year ending September 2026. The company is currently in focus for high trading activity, with reports noting potential margin pressures.",
+   "why": "These results show how much profit the company made, which directly influences how investors feel about the stock. If profits missed expectations, the share price could react sharply.",
+   "upside": "Revenue growth could continue if the company manages its costs effectively.",
+   "downside": "Margin pressures might reduce profits, and high volatility could trigger quick price drops.",
+   "watch": [
+    "How the market reacts to the specific profit figures in the report",
+    "Whether margin pressures continue in upcoming quarters",
+    "Daily share price movements due to high trading volume"
+   ],
+   "about": "Grasim Industries is a major Indian company listed in the Nifty 50 index that operates in the construction materials sector.",
+   "basis": "b504378d427c",
+   "items": 5,
+   "updated": "2026-11-16T06:41+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "RELIANCE": {
    "summary": "Reliance Industries shares jumped about 15% in November, adding roughly ₹2.38 lakh crore to its market value. At the same time, foreign institutional investors are returning to Indian equities, which could support the stock.",
@@ -267,69 +235,21 @@
    "updated": "2026-11-14T21:27+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "AXISBANK": {
-   "summary": "Axis Bank, one of India’s Nifty‑50 banks, is seen as a potential beneficiary as foreign institutional investors (FIIs) are shifting back to buying Indian equities. The broader financial sector fell 0.7% in the last session but has risen 4.7% over the past five sessions.",
-   "why": "FII inflows can lift demand for the bank’s shares, influencing market sentiment and valuation for existing shareholders.",
-   "upside": "Renewed FII buying could support the stock’s price and liquidity.",
-   "downside": "A reversal of FII flows due to global macroeconomic headwinds could pressure the share price.",
+  "HDFCBANK": {
+   "summary": "HDFC Bank shares fell sharply in the Sensex on 13 Nov 2026 after a recent 22% rise. The bank was also named a top pick for 2027 by a brokerage.",
+   "why": "As one of India’s largest listed companies, its performance can influence the broader market and affect investors holding its shares.",
+   "upside": "Being named a top pick for 2027 could attract new investors.",
+   "downside": "The recent sharp loss in the Sensex and potential market reversals could hurt the bank’s share price.",
    "watch": [
-    "FII flow trends and net buying levels",
-    "Financial sector index movements",
-    "Global macroeconomic developments affecting investor sentiment"
+    "Next trading session share price movement",
+    "FII buying trends in Indian equities",
+    "Any new brokerage picks or market sentiment shifts"
    ],
-   "about": "Axis Bank Ltd. is a leading Indian commercial bank offering retail, corporate and treasury banking services.",
-   "basis": "4280bf46c7e8",
-   "items": 1,
-   "updated": "2026-11-14T21:27+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "MEESHO": {
-   "summary": "On 13 Nov 2026, Meesho saw a block sale by SVF II MEERKAT worth ₹1,885 crore and several block purchases by institutions such as Société Générale, Morgan Stanley, Fidelity, Motilal Oswal, Aditya Birla, and FGTFEBP, each buying between ₹94 and ₹365 crore worth of shares.",
-   "why": "Large institutional trades can signal confidence or concern, affecting share liquidity and perception.",
-   "upside": "The multiple large purchases could indicate institutional confidence.",
-   "downside": "The sizable block sale may suggest a lack of confidence or a need for cash.",
-   "watch": [
-    "Monitor any further block trades by these institutions",
-    "Watch for price reaction to the sale and purchases",
-    "Check if the other side of trades are also institutional"
-   ],
-   "about": "",
-   "basis": "6ca64aee2d4d",
-   "items": 22,
+   "about": "HDFC Bank is a major Indian financial services company.",
+   "basis": "77b39927997d",
+   "items": 6,
    "updated": "2026-11-14T21:27+05:30",
    "model": "openai/gpt-oss-20b"
-  },
-  "GALLANTT": {
-   "summary": "Gallantt Ispat shares changed hands in a large private transaction on November 12, 2026. Santosh Kumar Agrawal bought 40 lakh shares from Dinesh R Agarwal at a price of ₹503 per share.",
-   "why": "This matters because a significant amount of stock moved between two large investors, which can signal changes in ownership structure or confidence levels among major holders.",
-   "upside": "The buyer’s decision to invest over ₹200 crore might indicate they see value in the company at this price.",
-   "downside": "The seller’s decision to exit a large position could suggest they are reducing their exposure or taking profits.",
-   "watch": [
-    "Future block deals involving these investors",
-    "Company announcements regarding ownership changes",
-    "General stock price movement following the trade"
-   ],
-   "about": "",
-   "basis": "c302513f6c3f",
-   "items": 2,
-   "updated": "2026-11-14T21:27+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "BAJFINANCE": {
-   "summary": "Bajaj Finance launched a large capital raise of ₹11,700 crore, which initially pushed its share price up toward a 52-week high. However, the stock price declined in the most recent session, following a period of strong gains.",
-   "why": "The company is raising significant new money, which may be used for growth but also means existing shareholders will own a slightly smaller percentage of the company.",
-   "upside": "The stock has shown strong momentum recently, climbing 16% in the last month and nearing its highest price in a year.",
-   "downside": "The recent price drop shows the stock can fall quickly, and the new capital raise slightly reduces the ownership stake of current shareholders.",
-   "watch": [
-    "How the broader financial sector index moves in the coming days",
-    "Whether the share price stabilizes after the recent decline",
-    "Details on how the company plans to use the new ₹11,700 crore funds"
-   ],
-   "about": "Bajaj Finance is a major non-banking financial company in India.",
-   "basis": "90fe4efa2ebb",
-   "items": 3,
-   "updated": "2026-11-14T21:27+05:30",
-   "model": "qwen/qwen3.8-27b"
   }
  }
 }

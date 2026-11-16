@@ -437,6 +437,21 @@
     "qwen/qwen3.8-27b: HTTP 429 Request too large for model `qwen/qwen3.8-27b` in organization `org_01m7d9eshkezkr1pmsab9xhv8e` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, R",
     "gemini-flash-lite-latest: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'"
    ]
+  },
+  {
+   "time": "2026-11-16T06:39+05:30",
+   "new": 53,
+   "ai": 53,
+   "routine": 0,
+   "rules": 0,
+   "models": {
+    "qwen/qwen3.8-27b": 20,
+    "openai/gpt-oss-120b": 33
+   },
+   "errors": [
+    "gemini-3.8-flash: The read operation timed out",
+    "qwen/qwen3.8-27b: HTTP 429 Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m7d9eshkezkr1pmsab9xhv8e` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000,"
+   ]
   }
  ]
 }
