@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T00:55+05:30",
+ "updated": "2026-11-17T02:10+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a drop in U.S. crude oil to $85 a barrel, which could pressure Indian fuel retailers. The FMCG sector led gains, rising about 1.9%, while pharma, metals and realty fell around 1.5% each. Bank and financial stocks added modestly. Foreign fund futures stayed mostly long at 34%, a slight dip from the previous day.",
+  "summary": "PulsEdge flagged a sharp fall in global oil prices as supply outpaced demand, pushing Brent down 3.6% and WTI 3.2%. A fourth oil tanker hit a mine in the Hormuz Strait, raising worries about shipping risks. Indian sector indices showed FMCG leading gains while pharma, metals and realty fell. Foreign fund futures stayed slightly less bullish than the day before.",
   "themes": [
-   "Oil price decline may affect fuel sellers",
-   "FMCG outperformed while pharma, metals and realty lagged",
-   "Foreign fund long positions slipped marginally"
+   "Oil price slump driven by excess supply",
+   "Shipping risks in Hormuz could spark market volatility",
+   "Mixed sector performance with consumer goods up and heavy industries down"
   ],
   "watch": [
-   "Will oil stay near $85 or rebound on geopolitical news",
-   "Changes in foreign fund positioning that could move the market",
-   "Upcoming earnings from FMCG and pharma companies"
+   "Whether oil prices stabilise or rebound on geopolitical developments",
+   "Potential escalation of tensions in the Middle East affecting energy markets",
+   "Changes in foreign fund positioning that could influence market direction"
   ],
   "date": "2026-11-17",
-  "basis": "70f7f3bc3c3d",
-  "updated": "2026-11-17T00:55+05:30",
+  "basis": "6cd10243ea84",
+  "updated": "2026-11-17T02:10+05:30",
   "model": "openai/gpt-oss-120b",
-  "items": 1
+  "items": 3
  },
  "stocks": {
   "TMPV": {
@@ -332,20 +332,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India is seeing pressure from falling global crude prices as experts expect a supply surplus, while the sector index has edged higher and a dividend is due soon. The market is watching for any reversal in oil price trends.",
-   "why": "Lower oil prices can reduce the revenue the company earns per barrel, and the upcoming dividend may cause short‑term price movement around the record date.",
-   "upside": "If geopolitical tensions lift oil prices, the company could see higher earnings.",
-   "downside": "Persistently low oil prices could keep profits under pressure.",
+   "summary": "Oil India Ltd. is facing pressure from falling global oil prices, which dropped sharply due to expectations of a large supply surplus. The company is also preparing to pay a dividend, with record dates announced for this week.",
+   "why": "Lower oil prices can reduce the money the company earns from selling fuel, which may affect its future profits and the size of its dividends.",
+   "upside": "Oil prices could rise again if geopolitical tensions in the Middle East increase, which would help the company earn more.",
+   "downside": "If the predicted surplus in oil supply continues, prices may stay low, leading to lower earnings and potentially smaller dividend payouts.",
    "watch": [
-    "Crude oil price movements, especially around $85 a barrel",
-    "Geopolitical developments that could affect supply and prices",
-    "Dividend record dates and payout details"
+    "Global oil price trends and supply reports",
+    "The exact date the dividend is paid out",
+    "News about Middle East exports and geopolitical stability"
    ],
-   "about": "Oil India Ltd. explores and produces oil and gas in India.",
-   "basis": "d4e4f14b3470",
-   "items": 6,
-   "updated": "2026-11-17T00:55+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Oil India Ltd. is a major oil and gas company listed in India's Nifty 500 index.",
+   "basis": "b7ded0cfa8cc",
+   "items": 7,
+   "updated": "2026-11-17T02:10+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "IDEA": {
    "summary": "Vodafone Idea lost more mobile customers than expected in its recent quarter. At the same time, telecom stocks, including Vodafone Idea, saw a price increase as investors showed optimism for the sector.",
@@ -633,6 +633,22 @@
    "basis": "add6c534627e",
    "items": 2,
    "updated": "2026-11-17T00:55+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "KALYANKJIL": {
+   "summary": "Kalyan Jewellers' stock price rose by 42% over 11 trading days following strong quarterly results. The share price recently reached a level not seen in nearly two years.",
+   "why": "The recent rise shows that investors are reacting positively to the company's reported profits, which can affect the value of shares you own.",
+   "upside": "The strong financial results may continue to attract investor interest.",
+   "downside": "A sharp drop in price is possible if investors sell their shares to lock in their recent gains.",
+   "watch": [
+    "Whether the stock price stabilizes after the recent jump",
+    "General trends in the consumer durables sector",
+    "Any new company announcements"
+   ],
+   "about": "Kalyan Jewellers is a company in the consumer durables sector that is part of the Nifty 500 index.",
+   "basis": "9c120ba56346",
+   "items": 1,
+   "updated": "2026-11-17T02:10+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ENGINERSIN": {
