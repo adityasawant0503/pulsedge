@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T10:46+05:30",
+ "updated": "2026-11-16T11:01+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -203,22 +203,6 @@
    "updated": "2026-11-16T06:41+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "OIL": {
-   "summary": "Oil India Ltd. is facing mixed signals as global oil prices fluctuate due to expectations of a supply surplus. The company is also preparing to pay dividends, with record dates announced for this week.",
-   "why": "Changes in oil prices directly affect the company's revenue, while dividend payments provide cash returns to shareholders but may cause a temporary drop in the share price.",
-   "upside": "Geopolitical tensions could disrupt the expected oil supply surplus, potentially keeping prices higher and supporting profits.",
-   "downside": "A confirmed surplus in global oil supply could lead to cheaper crude, reducing the profit margin on each liter sold.",
-   "watch": [
-    "Global oil price movements and supply reports from West Asia",
-    "The dividend ex-date and any resulting price adjustment",
-    "Upcoming WPI inflation data that may impact overall market sentiment"
-   ],
-   "about": "Oil India Ltd. operates in the Oil Gas & Consumable Fuels sector and is one of India's 500 largest listed companies.",
-   "basis": "5aa6d82e3271",
-   "items": 5,
-   "updated": "2026-11-16T10:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "PAYTM": {
    "summary": "PulsEdge flagged that Paytm shares have risen above their IPO listing‑day high of ₹1,955 for the first time in five years, helped by an in‑principle regulatory authorisation. The stock also appeared in a brokerage’s list of top picks for 2027.",
    "why": "Shareholders see the price breakout as a sign of renewed market confidence, while the regulatory nod could let the company expand into new services.",
@@ -395,36 +379,52 @@
    "updated": "2026-11-16T08:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "BPCL": {
-   "summary": "BPCL shares fell over 2% as international crude oil prices rose to $95, dragging down crude‑sensitive stocks. The oil‑and‑gas sector index slipped 0.7% in the last session but is up 0.8% over five sessions.",
-   "why": "Higher fuel costs can squeeze BPCL’s profit margins, which matters to shareholders.",
-   "upside": "A sudden reversal in global crude prices could improve BPCL’s margins.",
-   "downside": "Persistently high crude prices could continue to pressure BPCL’s earnings.",
+  "OIL": {
+   "summary": "Oil India Ltd. (OIL) is in the news as analysts predict a sizeable surplus of oil in 2027 and global oil prices have edged lower due to expected supply from West Asia. The company also has an upcoming dividend record date in the PSU dividend week. These events are drawing attention to OIL’s share price movements.",
+   "why": "Oil price changes can affect OIL’s earnings from oil production, and the dividend record date may influence short‑term share price behaviour.",
+   "upside": "",
+   "downside": "Lower oil prices could reduce OIL’s revenue per barrel, potentially impacting its profitability.",
    "watch": [
-    "Crude oil price movements",
-    "Sector index performance",
-    "BPCL share price trend relative to peers"
+    "Upcoming dividend record dates for OIL",
+    "Changes in global oil supply expectations and price movements",
+    "WPI inflation data and oil price releases that may influence market sentiment"
    ],
-   "about": "BPCL is a state‑run oil refiner and marketer in India.",
-   "basis": "d09c1271e7c1",
-   "items": 1,
-   "updated": "2026-11-16T08:46+05:30",
+   "about": "",
+   "basis": "9e5e69cbfbd7",
+   "items": 4,
+   "updated": "2026-11-16T11:01+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
+  "BHARTIARTL": {
+   "summary": "Bharti Airtel’s shares rose about 3% and are near a record high as telecom stocks gain momentum. The company’s payments‑bank arm is being discussed for a future stock market listing.",
+   "why": "Shareholders feel the price move from sector optimism and may benefit if the payments‑bank IPO adds value.",
+   "upside": "If the payments‑bank IPO proceeds, it could unlock additional value for the group.",
+   "downside": "A sharp rally could trigger profit‑taking, and any delay or regulatory hurdle for the IPO could weigh on the stock.",
+   "watch": [
+    "Continued price movement and any signs of profit‑taking",
+    "Overall market strength or weakness affecting telecom stocks",
+    "Updates on the Airtel Payments Bank IPO timeline and approvals"
+   ],
+   "about": "Bharti Airtel provides mobile and broadband telecom services in India.",
+   "basis": "073c39f38e13",
+   "items": 3,
+   "updated": "2026-11-16T11:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "INDIGO": {
-   "summary": "IndiGo's shares fell more than 2% as crude oil prices rose to $95, raising fuel costs for the airline.",
-   "why": "Higher fuel expenses can squeeze the airline's profit margins, affecting shareholder returns.",
-   "upside": "A drop in global crude prices could improve margins and support the share price.",
-   "downside": "Sustained high oil prices could further pressure earnings.",
+  "INDUSTOWER": {
+   "summary": "Indus Towers is seeing attention as telecom stocks rise across the market. An analyst also flagged a possible price breakout for the stock. Both signals suggest short‑term interest but also carry risk.",
+   "why": "Shareholders may feel the sector’s upward momentum and the technical breakout could lift the share price, while the same factors could also trigger quick drops.",
+   "upside": "If the sector rally continues and the breakout holds, the stock could move higher.",
+   "downside": "Profit‑taking or a false breakout could push the price down sharply.",
    "watch": [
-    "Crude oil price movements",
-    "Fuel cost trends for airlines",
-    "Policy changes affecting fuel taxes or subsidies"
+    "Strength of the broader telecom rally",
+    "Confirmation of the breakout pattern",
+    "Signs of profit‑taking in the stock"
    ],
-   "about": "InterGlobe Aviation Ltd. operates IndiGo, a low‑cost airline in India.",
-   "basis": "d09c1271e7c1",
-   "items": 1,
-   "updated": "2026-11-16T08:46+05:30",
+   "about": "Indus Towers builds, owns and operates telecom tower infrastructure for mobile network operators.",
+   "basis": "c79f88e76dd7",
+   "items": 2,
+   "updated": "2026-11-16T11:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "COCHINSHIP": {
@@ -473,6 +473,54 @@
    "basis": "effb45e4bd99",
    "items": 2,
    "updated": "2026-11-16T09:01+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "BHARTIHEXA": {
+   "summary": "Telecom stocks are rallying, with major players near record highs. The sector’s strong buying interest signals optimism, but profit‑taking could follow the rally.",
+   "why": "Sector sentiment often moves all telecom stocks, so a rally or pull‑back can affect Bharti Hexacom’s share price.",
+   "upside": "If the telecom rally sustains, Bharti Hexacom could benefit from broader sector gains.",
+   "downside": "Profit‑taking after the rally could pull the stock lower.",
+   "watch": [
+    "Overall telecom sector index movement",
+    "Performance of leading peers like Bharti Airtel, Vodafone Idea and Jio Platforms",
+    "Any company‑specific announcements from Bharti Hexacom"
+   ],
+   "about": "Bharti Hexacom Ltd. provides telecommunications services.",
+   "basis": "51cf8110c90c",
+   "items": 1,
+   "updated": "2026-11-16T11:01+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "TATACOMM": {
+   "summary": "Telecom stocks are rising, with one major company close to its highest price ever. This suggests investors are optimistic about the industry's performance.",
+   "why": "If the telecom sector continues to perform well, it may positively impact the value of Tata Communications shares.",
+   "upside": "Strong buying interest in the telecom sector could lead to further gains for Tata Communications.",
+   "downside": "There is a risk of profit-taking after a strong rally, which could cause share prices to drop.",
+   "watch": [
+    "Continued performance of major telecom companies like Bharti Airtel",
+    "Investor sentiment towards the telecom sector",
+    "Potential profit-taking after recent stock rallies"
+   ],
+   "about": "Tata Communications Ltd. is a telecommunications company listed in India's Nifty 500 index.",
+   "basis": "51cf8110c90c",
+   "items": 1,
+   "updated": "2026-11-16T11:01+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "IDEA": {
+   "summary": "Vodafone Idea shares rose by 2% recently, joining a broader rally in the telecom sector. This move happened alongside gains for other major players like Bharti Airtel and Jio Platforms.",
+   "why": "This matters to share owners because rising prices in the sector suggest investors are currently optimistic about the industry's performance.",
+   "upside": "The strong buying interest in telecom stocks indicates that investors remain optimistic about the industry's overall performance.",
+   "downside": "There is a risk of profit-taking, where investors sell shares to lock in gains after a strong price rally.",
+   "watch": [
+    "Whether the telecom sector rally continues or faces a pullback.",
+    "If Bharti Airtel reaches its record high, which may influence the whole sector.",
+    "General investor sentiment towards Indian telecom companies."
+   ],
+   "about": "Vodafone Idea is a company in the telecommunication sector.",
+   "basis": "51cf8110c90c",
+   "items": 1,
+   "updated": "2026-11-16T11:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "PFC": {
@@ -952,22 +1000,6 @@
    "items": 2,
    "updated": "2026-11-16T10:46+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "BHARTIARTL": {
-   "summary": "Bharti Airtel is one of India's largest listed companies in the telecom sector. Recent reports suggest its payments banking arm may plan a future stock market listing, and analysts have recently highlighted the stock as a potential buy.",
-   "why": "A future listing of its payments business could unlock value for the parent company, while positive analyst attention may influence investor interest in the shares.",
-   "upside": "A successful future listing of the payments banking arm could add value to the parent company.",
-   "downside": "Broader market weakness could offset any gains from positive recommendations, and the payments IPO plans are distant and subject to regulatory hurdles.",
-   "watch": [
-    "Updates on the regulatory status of the Airtel Payments Bank IPO.",
-    "General market trends that might affect large-cap stocks.",
-    "Further analyst commentary on the company's performance."
-   ],
-   "about": "Bharti Airtel is a major telecommunications company in India.",
-   "basis": "4a2b83a5b04b",
-   "items": 2,
-   "updated": "2026-11-16T10:15+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "DMART": {
    "summary": "Avenue Supermarts Ltd. announced changes in its senior management and board of directors, signalling a leadership transition.",
