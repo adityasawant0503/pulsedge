@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T14:02:07+05:30",
+ "updated": "2026-11-16T14:15:50+05:30",
  "summary": {
-  "calls": 1482,
-  "scored_calls": 344,
+  "calls": 1484,
+  "scored_calls": 346,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "875b2b1c114f02d4",
+   "symbol": "HINDZINC",
+   "time": "2026-11-16T13:59:57+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Hindustan Zinc Limited: Hindustan Zinc Limited has informed the Exchange about Capacity addition |SUBJECT: Capacity addition",
+   "url": "https://nsearchives.nseindia.com/corporate/HINDZINCNSE_16112026135947_FinalSEOutcome.pdf",
+   "entry_date": "2026-11-13",
+   "entry": 554.85
+  },
   {
    "id": "945f758e71041669",
    "symbol": "PREMIERENE",
@@ -46,6 +59,19 @@
    "url": "https://www.livemint.com/market/stock-market-news/vikram-solar-vs-premier-vs-waaree-vs-suzlon-green-energy-stocks-under-pressure-what-do-technical-charts-signal-11794813873378.html",
    "entry_date": "2026-11-13",
    "entry": 19338.0
+  },
+  {
+   "id": "061ed73424ea6eda",
+   "symbol": "HINDZINC",
+   "time": "2026-11-16T13:55:11+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Hindustan Zinc Limited: Hindustan Zinc Limited has informed the Exchange regarding Outcome of Board Meeting held on November 16, 2026. |SUBJECT: Outcome of Boar",
+   "url": "https://nsearchives.nseindia.com/corporate/HINDZINCNSE_16112026135426_FinalSEOutcome.pdf",
+   "entry_date": "2026-11-13",
+   "entry": 554.85
   },
   {
    "id": "3dce5f4d617a0ebd",

@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T14:01+05:30",
+ "updated": "2026-11-16T14:15+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -235,22 +235,6 @@
    "updated": "2026-11-16T08:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "NATCOPHARM": {
-   "summary": "Natco Pharma held a board meeting on 13 Nov 2026, announced its financial results for the quarter ended 30 Sep 2026 and declared a second interim dividend, and set the record date for dividend eligibility on 19 Nov 2026.",
-   "why": "Dividends affect cash returns for shareholders and the record date determines who receives them.",
-   "upside": "The dividend payout could provide additional income to shareholders.",
-   "downside": "The share price may fall by the dividend amount after the ex‑date or see profit‑taking if expectations were already priced in.",
-   "watch": [
-    "Ex‑dividend date and dividend amount",
-    "Future earnings releases",
-    "Healthcare sector performance"
-   ],
-   "about": "Natco Pharma Ltd. is a pharmaceutical company that develops, manufactures and markets medicines.",
-   "basis": "3afcd7c161c0",
-   "items": 3,
-   "updated": "2026-11-16T08:31+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "BANKINDIA": {
    "summary": "Bank of India saw strong weekly gains as the Nifty PSU Bank index posted its biggest surge in seven months, pushing the stock to multi‑month highs. The broader financial sector has been mixed, slipping 0.7% in the last session but up 4.7% over the past five sessions.",
    "why": "Shareholders feel the impact of sector‑wide momentum that can lift the stock, but also face the risk of a quick pull‑back after a prolonged rally.",
@@ -408,6 +392,22 @@
    "basis": "073c39f38e13",
    "items": 3,
    "updated": "2026-11-16T11:01+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "HINDZINC": {
+   "summary": "Hindustan Zinc Ltd. announced that it is adding production capacity and also disclosed the outcomes of its board meeting on November 16. The capacity boost could raise future sales, while the board’s decisions may shape the company’s direction. The metals sector index fell 1.0% in the last session but was up 0.4% over the past five sessions.",
+   "why": "Shareholders should watch because higher capacity may improve earnings, but the required spending could strain cash flow in the short term.",
+   "upside": "If the new capacity is brought online efficiently, it could lift sales and profit margins.",
+   "downside": "The capital outlay needed for the capacity expansion might pressure short‑term cash flow.",
+   "watch": [
+    "Progress on the announced capacity addition",
+    "Details of the board meeting decisions",
+    "Trend of the Metals sector index"
+   ],
+   "about": "It is a metals and mining company.",
+   "basis": "e1d6da5f4577",
+   "items": 2,
+   "updated": "2026-11-16T14:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "WAAREEENER": {
@@ -806,6 +806,22 @@
    "basis": "60ea1515c87a",
    "items": 2,
    "updated": "2026-11-16T10:15+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "NATCOPHARM": {
+   "summary": "Natco Pharma held a board meeting on November 13, 2026, to discuss its dividend. The company also announced that the record date for this dividend is November 19, 2026.",
+   "why": "This matters because shareholders who own the stock by the record date will be eligible to receive the payout. However, the share price typically drops by the dividend amount on the ex-date, which can offset the cash received.",
+   "upside": "The dividend announcement may attract investors who are looking for regular income from their holdings.",
+   "downside": "The stock price is likely to adjust downwards on the ex-date, and the dividend amount may already be reflected in the current share price.",
+   "watch": [
+    "The specific dividend amount decided by the board.",
+    "The ex-dividend date when the stock price adjusts.",
+    "How the Healthcare sector index performs in the coming days."
+   ],
+   "about": "Natco Pharma is a healthcare company listed on the NSE.",
+   "basis": "4331783a92e6",
+   "items": 2,
+   "updated": "2026-11-16T14:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "TATAPOWER": {
