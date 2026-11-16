@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T15:40:07+05:30",
+ "updated": "2026-11-16T15:47:09+05:30",
  "summary": {
-  "calls": 1494,
-  "scored_calls": 356,
+  "calls": 1495,
+  "scored_calls": 357,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "43572ed35f0095dd",
+   "symbol": "VEDL",
+   "time": "2026-11-16T15:36:41+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Vedanta Limited: The Exchange has sought clarification from Vedanta Limited with respect to recent news item captioned Setback for Vedanta as Supreme Court upho",
+   "url": "",
+   "entry_date": "2026-11-13",
+   "entry": 259.68
+  },
   {
    "id": "51a118e8f7521721",
    "symbol": "COALINDIA",
