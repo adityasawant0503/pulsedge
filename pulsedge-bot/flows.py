@@ -294,7 +294,7 @@ def indices(prev_hist):
             except Exception:  # noqa: BLE001 - not published yet, or a holiday
                 pass
         d -= timedelta(days=1)
-    days = sorted(hist)[-12:]
+    days = sorted(hist)[-45:]
     hist = {k: hist[k] for k in days}
     if not days:
         log("indices: unavailable")
