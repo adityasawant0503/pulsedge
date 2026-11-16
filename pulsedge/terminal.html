@@ -285,6 +285,32 @@ html{-webkit-tap-highlight-color:transparent}
 .vbox video{display:block;width:100%;aspect-ratio:16/9;background:#000;border-radius:14px;box-shadow:0 0 0 1px var(--pur-edge),0 40px 120px -30px #8b5cf6aa}
 .vbox .vclose{position:absolute;right:0;top:-46px;background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:7px 13px;font-size:14px}
 .intro .fine{margin:12px 0 0;font-size:13.5px;color:var(--mute)}
+.mine{margin:0 0 12px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;gap:12px}
+.mine[hidden]{display:none}
+.mh{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.mh b{font-size:16px}.mh .sub{font-size:13px;color:var(--mute)}
+.mnote{margin:0;color:var(--mute);font-size:14px}
+.hl{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.hi{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:9px 12px}
+.hi .hn{grid-column:1;grid-row:1;white-space:normal;overflow-wrap:break-word}
+.hi .hx{grid-column:2;grid-row:1}
+.hi .hs{grid-column:1;grid-row:2}
+.hn{background:none;border:0;padding:0;text-align:left;color:var(--fg);font-weight:600;font-size:14.5px;min-width:0;line-height:1.3}
+.hs{font:500 12.5px/1.3 var(--mono);color:var(--mute);white-space:nowrap}
+.hw{grid-column:1/-1;font-size:12.5px;color:var(--mute)}
+.hx{background:none;border:1px solid var(--line);border-radius:8px;padding:4px 9px;color:var(--mute);font-size:12.5px}
+.hx:hover{color:var(--red-l);border-color:var(--red-l)}
+.mtabs{display:flex;gap:6px;flex-wrap:wrap}
+.mtabs button{border:1px solid var(--line);background:none;border-radius:999px;padding:6px 12px;color:var(--mute);font-size:13px}
+.mtabs button[aria-pressed="true"]{border-color:var(--pur-edge);background:var(--pur-soft);color:var(--fg)}
+.mbox{display:grid;gap:8px}
+.mbox textarea{width:100%;min-height:96px;border:1px solid var(--line);border-radius:9px;background:var(--panel2);color:var(--fg);padding:10px;font:14px/1.5 var(--mono);resize:vertical}
+.mbox textarea:focus{outline:none;border-color:var(--pur)}
+.mrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.mbtn{border:1px solid var(--pur-edge);background:var(--pur);color:#fff;border-radius:9px;padding:9px 14px;font-weight:600;font-size:14px}
+.mbtn.ghost{background:none;color:var(--fg);border-color:var(--line)}
+.mhint{margin:0;font-size:12.5px;color:var(--mute)}
+.mmsg{margin:0;font-size:13.5px;color:var(--fg)}.mmsg.err{color:var(--red-l)}.mmsg.ok{color:var(--green-l)}
 .legend b{color:var(--fg);font-weight:600}
 .brief{background:var(--panel);box-shadow:var(--elev);border:1px solid var(--pur-edge);border-radius:14px;padding:18px;display:grid;gap:14px;margin-bottom:14px}
 .brief .bh{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px}
@@ -439,6 +465,7 @@ dialog.gl::backdrop{background:rgba(8,7,12,.6)}
       <button class="tab" role="tab" data-t="money" aria-selected="false">Big money</button>
       <button class="tab" role="tab" data-t="mine" aria-selected="false">My stocks<span class="n" id="mine-n"></span></button>
     </div>
+    <section class="mine" id="mine" hidden aria-label="My stocks"></section>
     <ul class="feed" id="feed" aria-live="polite"></ul>
   </section>
 </main>
@@ -601,6 +628,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
 
   // ---------- signals ----------
   var sigs=[],tab="all",openIds={},seen={},firstLoad=true;
+  var mineMode="type",mineText={type:"",sum:""},mineNote="",mineErr=false,mineNoteTab="";
   function normCall(x){
     var c=String(x.call||"").toLowerCase();if(/^(buy|sell|watch|ignore)$/.test(c))return c;
     var v=String(x.verdict||"").toLowerCase(),d=String(x.direction||"");
@@ -697,14 +725,14 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       vis=vis.slice().sort(function(a,b){var da=a.t?dayOf(a.t):"",db=b.t?dayOf(b.t):"";return da<db?1:da>db?-1:rank(a,b)});
       left=Math.max(0,vis.length-shown);vis=vis.slice(0,shown);
     }
-    var mn=sigs.filter(function(s){return inTab(s,"mine")}).length;
-    document.getElementById("mine-n").textContent=hold.length?String(mn):"";
+    document.getElementById("mine-n").textContent=hold.length?String(hold.length):"";
     if(!vis.length&&!found&&!rest){
       var e=el("li","empty");
       if(tab==="mine"&&!hold.length){e.appendChild(el("b",null,"No watchlist yet"));e.appendChild(document.createTextNode("Search a company you own in the box above and tap “Add to My stocks”, or "));var a=el("a",null,"add all your holdings at once");a.href="index.html#feed";e.append(a,document.createTextNode(". Their news then shows up here."))}
       else{e.appendChild(el("b",null,"No signals here yet"));e.appendChild(document.createTextNode(tab==="mine"?"None of your stocks are in today's news.":"New signals appear as the engine reads the news."))}
       ul.appendChild(e);
     }
+    renderMine();
     vis.forEach(function(s){ul.appendChild(card(s))});
     if(left){var ml=el("li"),mbtn=el("button","rest","Show 20 more ("+left+" left)");mbtn.type="button";mbtn.onclick=function(){shown+=20;render()};ml.appendChild(mbtn);ul.appendChild(ml)}
     if(rest&&!left){var li=el("li"),rb=el("button","rest","Show the "+rest+" routine items PulsEdge set aside");rb.type="button";rb.onclick=function(){showRest=true;render()};li.appendChild(rb);ul.appendChild(li)}
@@ -712,6 +740,99 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
   }
   document.querySelectorAll(".tab").forEach(function(b){b.onclick=function(){tab=b.dataset.t;showRest=false;shown=20;document.querySelectorAll(".tab").forEach(function(x){x.setAttribute("aria-selected",x===b?"true":"false")});render()}});
   window.addEventListener("storage",function(e){if(e.key==="pe_hold"){try{hold=JSON.parse(e.newValue||"[]")||[]}catch(x){hold=[]}render();renderPM()}});
+
+  // ---------- My stocks: the holdings, and ways to add them (typed, a holding summary or a broker's CSV) ----------
+  function symbolOf(tok){var t=String(tok||"").trim().toUpperCase().replace(/\.(NS|BO)$|-(EQ|BE)$/,"");return uni.some(function(u){return u.symbol===t})?t:null}
+  function saveHold(list){hold=list;store("pe_hold",JSON.stringify(list))}
+  function removeHold(sym){saveHold(hold.filter(function(h){return h.s!==sym}));render();renderPM()}
+  function addHolds(r){
+    var list=hold.slice(),added=[],had=[],upd=[];
+    r.items.forEach(function(it){
+      var ex=list.filter(function(x){return x.s===it.s})[0];
+      if(ex){if(it.q&&it.q!==ex.q){ex.q=it.q;upd.push(it.s)}else had.push(it.s)}else{list.push({s:it.s,q:it.q||null});added.push(it.s)}
+    });
+    saveHold(list);
+    var parts=[];
+    if(added.length)parts.push("Added "+added.length+": "+added.join(", ")+".");
+    if(upd.length)parts.push("Updated quantity: "+upd.join(", ")+".");
+    if(had.length)parts.push("Already in My stocks: "+had.join(", ")+".");
+    if(r.bad.length)parts.push("Not recognised: "+r.bad.slice(0,5).join(", ")+(r.bad.length>5?" and "+(r.bad.length-5)+" more":"")+". Check the NSE symbol or the company name.");
+    mineErr=!added.length&&!had.length||!!r.bad.length;
+    mineNote=parts.join(" ")||"Nothing to add.";mineNoteTab=tab;
+    render();renderPM();
+  }
+  // Typed list: "TCS 40", "TCS x 40", "TCS, 40", or a company name and a quantity.
+  function parseTyped(text){
+    var items=[],bad=[];
+    text.split(/[\n;]+/).forEach(function(line){
+      var raw=line.trim();if(!raw)return;
+      var toks=raw.split(/[\s,]+/).filter(function(t){return t&&!/^(x|×|qty|shares|@|-)$/i.test(t)}),q=null;
+      if(toks.length>1&&/^[\d,]+$/.test(toks[toks.length-1]))q=parseInt(toks.pop().replace(/,/g,""),10)||null;
+      var name=toks.join(" "),sym=symbolOf(name);
+      if(!sym){var hs=suggest(name).filter(function(x){return x.s});if(hs.length&&hs[0].sc>=60&&(hs.length===1||hs[1].sc<hs[0].sc))sym=hs[0].s.symbol}
+      if(sym)items.push({s:sym,q:q});else bad.push(raw);
+    });
+    return {items:items,bad:bad};
+  }
+  // Holding summary or CSV: each line's symbol is matched; the first number after it is the quantity.
+  function parseSummary(text){
+    var items=[],bad=[];
+    String(text||"").replace(/^\uFEFF/,"").split(/\r?\n/).forEach(function(line){
+      var raw=line.trim();if(!raw)return;
+      var cells=(raw.indexOf("\t")>=0?raw.split("\t"):raw.indexOf(",")>=0?raw.split(","):raw.split(/\s+/)).map(function(c){return c.replace(/^"|"$/g,"").trim()}).filter(Boolean);
+      var si=-1,sym=null;cells.some(function(c,i){var s=symbolOf(c);if(s){sym=s;si=i;return true}return false});
+      if(!sym){if(!/^(instrument|symbol|stock|scrip|name|particulars|total)/i.test(cells[0]||""))bad.push(raw.slice(0,40));return}
+      var q=null;cells.slice(si+1).some(function(c){var n=c.replace(/,/g,"");if(/^\d+(\.\d+)?$/.test(n)){q=Math.round(parseFloat(n))||null;return true}return false});
+      items.push({s:sym,q:q});
+    });
+    return {items:items,bad:bad};
+  }
+  function renderMine(){
+    var box=document.getElementById("mine");if(!box)return;
+    if(tab!=="mine"){box.hidden=true;return}
+    box.hidden=false;box.textContent="";
+    box.append(el("div","mh",null));
+    box.firstChild.append(el("b",null,"My stocks"),el("span","sub",hold.length?plural(hold.length,"holding")+" · saved in this browser":"Nothing added yet"));
+    if(hold.length){
+      var ul=el("ul","hl");
+      hold.forEach(function(h){
+        var st=uni.filter(function(u){return u.symbol===h.s})[0]||{symbol:h.s,name:h.s,sector:""};
+        var c=sigs.filter(function(x){return x.call!=="ignore"&&about(x,st)}).length;
+        var nm=el("button","hn",shortName(st.name));nm.type="button";nm.onclick=function(){openStock(st.symbol)};
+        var x=el("button","hx","Remove");x.type="button";x.setAttribute("aria-label","Remove "+shortName(st.name)+" from My stocks");x.onclick=function(){removeHold(h.s)};
+        var li=el("li","hi");li.append(nm,el("span","hs",h.s+(h.q?" · "+h.q.toLocaleString("en-IN")+" shares":"")),x,el("span","hw",c?plural(c,"item")+" in the news":"No news in the latest session"));
+        ul.append(li);
+      });
+      box.append(ul);
+    }else box.append(el("p","mnote","Add the stocks you hold below. Their news shows here first, with the reason for each call."));
+    var modes=el("div","mtabs");
+    [["type","Type them"],["sum","Holding summary or CSV"]].forEach(function(m){var b=el("button",null,m[1]);b.type="button";b.setAttribute("aria-pressed",String(mineMode===m[0]));b.onclick=function(){mineMode=m[0];render()};modes.append(b)});
+    box.append(modes);
+    var wrap=el("div","mbox"),ta=document.createElement("textarea"),row=el("div","mrow");
+    ta.value=mineText[mineMode];ta.spellcheck=false;
+    ta.setAttribute("aria-label",mineMode==="type"?"Stocks to add":"Holding summary to add");
+    ta.placeholder=mineMode==="type"?"TCS 40\nHDFCBANK 120\nSun Pharma 35":"Paste the holdings table from your broker app, or the text of its CSV file";
+    ta.oninput=function(){mineText[mineMode]=ta.value};
+    var go=el("button","mbtn",mineMode==="type"?"Add to My stocks":"Add these holdings");go.type="button";
+    go.onclick=function(){
+      var r=mineMode==="type"?parseTyped(ta.value):parseSummary(ta.value);
+      if(!r.items.length&&!r.bad.length){mineErr=true;mineNote="Type or paste something first.";mineNoteTab=tab;render();return}
+      mineText[mineMode]="";addHolds(r);
+    };
+    row.append(go);
+    if(mineMode==="sum"){
+      var fi=document.createElement("input");fi.type="file";fi.accept=".csv,text/csv";fi.hidden=true;
+      fi.onchange=function(){var f=fi.files[0];if(!f)return;var rd=new FileReader();
+        rd.onload=function(){var r=parseSummary(String(rd.result||""));
+          if(!r.items.length){mineErr=true;mineNote="Couldn't find any stocks in "+f.name+". Export your holdings as CSV from the broker app and try again.";mineNoteTab=tab;render();return}
+          addHolds(r)};rd.readAsText(f)};
+      var up=el("button","mbtn ghost","Upload CSV file");up.type="button";up.onclick=function(){fi.click()};
+      row.append(up,fi);
+    }
+    wrap.append(ta,row,el("p","mhint",mineMode==="type"?"One stock per line: the name or NSE symbol, then the quantity (optional).":"Works with Zerodha Kite and Console holdings and most broker CSVs. The quantity is the first number after each stock, so check it."));
+    if(mineNote&&mineNoteTab===tab)wrap.append(el("p","mmsg"+(mineErr?" err":" ok"),mineNote));
+    box.append(wrap);
+  }
 
   // ---------- search, the Simple view and the stock brief ----------
   // Simple (the default) says each item in plain words and keeps routine items out of the way; Pro is the dense terminal.
@@ -1064,7 +1185,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     chSay(parts);
   }
   function mineAnswer(){
-    if(!hold.length){chSay(["You haven't added any stocks yet. Search a company at the top and tap \"+ Add to My stocks\", or import your holdings on the PulsEdge home page. Then ask me again."]);return}
+    if(!hold.length){chSay(["You haven't added any stocks yet. Open the My stocks tab and type them in or paste your holding summary, or search a company at the top and tap \"+ Add to My stocks\". Then ask me again."]);return}
     var withNews=[];
     hold.forEach(function(h){var st=uni.filter(function(u){return u.symbol===h.s})[0]||{symbol:h.s,name:h.s,sector:""},it=flagged(st);if(it.length)withNews.push({st:st,items:it})});
     if(!withNews.length){chSay(["None of your "+plural(hold.length,"stock")+" has flagged news right now. That usually means there's nothing to react to."]);return}
