@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T12:16+05:30",
+ "updated": "2026-11-16T12:31+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -475,22 +475,6 @@
    "updated": "2026-11-16T09:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "ZEEL": {
-   "summary": "Zee Entertainment Enterprises Ltd. announced a share buyback plan worth ₹600 crore and its board passed a resolution to consider the buyback. The media sector index has been slightly down yesterday but up 3.6% over the past five sessions.",
-   "why": "The buyback could return cash to shareholders and may signal management’s confidence in the share price. It also has the potential to influence the stock’s valuation.",
-   "upside": "If the buyback proceeds smoothly, it could provide cash returns and support the share price.",
-   "downside": "Regulatory delays or low participation in the tender could limit the benefits of the buyback.",
-   "watch": [
-    "Progress of regulatory approvals for the buyback",
-    "Level of shareholder participation in the tender offer",
-    "Continued performance of the media sector index"
-   ],
-   "about": "Zee Entertainment Enterprises Ltd. is a media and entertainment company that creates and distributes television content.",
-   "basis": "ec1196883d27",
-   "items": 2,
-   "updated": "2026-11-16T09:01+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "GILLETTE": {
    "summary": "Gillette India released its unaudited financial results for the quarter and half-year ended September 30, 2026. This update provides a look at the company's recent profitability and financial health.",
    "why": "These results show how much profit the business made recently, which helps investors understand if the company is performing as expected.",
@@ -666,38 +650,6 @@
    "updated": "2026-11-16T09:31+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "HONASA": {
-   "summary": "Honasa shares recently hit a new 52-week high, rising up to 4% in a quiet market. This move happened while the broader FMCG sector remained mostly flat.",
-   "why": "The strong price increase shows that many buyers are currently interested in the stock. However, high prices can sometimes lead to investors selling to lock in profits.",
-   "upside": "The recent rise to a record high suggests strong demand from buyers.",
-   "downside": "High valuations can invite sudden profit booking, where investors sell to take their gains.",
-   "watch": [
-    "Whether the share price holds its new 52-week high.",
-    "If the broader FMCG sector starts moving up or down.",
-    "Signs of investors selling to take profits."
-   ],
-   "about": "Honasa is a company in the Fast Moving Consumer Goods sector.",
-   "basis": "6b846e0aca7e",
-   "items": 1,
-   "updated": "2026-11-16T09:31+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "NYKAA": {
-   "summary": "Nykaa shares have risen to hit new 52-week highs. This happened even though the overall market was quiet.",
-   "why": "This shows that many investors are currently eager to buy the stock. However, high prices can sometimes lead to a quick drop if investors decide to sell to lock in their gains.",
-   "upside": "The strong buying interest suggests that investors remain confident in the company's performance.",
-   "downside": "Because the stock is at a record high, there is a risk that investors may sell their shares to take profits, which could cause the price to fall.",
-   "watch": [
-    "Whether the share price holds its new high level",
-    "If other market sectors start moving again",
-    "Any changes in investor sentiment toward consumer stocks"
-   ],
-   "about": "",
-   "basis": "6b846e0aca7e",
-   "items": 1,
-   "updated": "2026-11-16T09:31+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "TVSMOTOR": {
    "summary": "TVS Motor Company announced that Mr. Gaurav Gupta, President of its India Two Wheeler Business, will resign effective December 24, 2026. The company also filed a general update with the stock exchange on the same day.",
    "why": "Changes in senior leadership can create short-term uncertainty for investors who hold shares in the company.",
@@ -825,21 +777,37 @@
    "updated": "2026-11-16T10:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BBOX": {
-   "summary": "Black Box Ltd. released its unaudited financial results for the second quarter of fiscal year 2027 on November 13, 2026. The company is part of the Nifty 500 index, which tracks India's 500 largest listed firms.",
-   "why": "Quarterly results show how much money the company made or lost, which helps investors understand its financial health.",
-   "upside": "",
-   "downside": "",
+  "ZEEL": {
+   "summary": "Zee Entertainment Enterprises Ltd. announced that its board has passed a resolution to consider a share buy‑back. The media sector index was down 0.2% in the last session but up 3.6% over the past five sessions.",
+   "why": "A buy‑back can support the share price and signals management believes the stock is undervalued, which matters to current shareholders.",
+   "upside": "If the buy‑back is executed, it could lift the share price.",
+   "downside": "Regulatory hurdles or delays could prevent the buy‑back from happening.",
    "watch": [
-    "The specific numbers in the Q2FY27 financial report",
-    "How the IT sector performs in the coming days",
-    "Any follow-up comments from the company on its results"
+    "Buy‑back execution timeline",
+    "Regulatory approval status",
+    "Continued sector index performance"
    ],
-   "about": "",
-   "basis": "101ba5b2cfde",
+   "about": "Zee Entertainment Enterprises Ltd. is a media and entertainment company that creates and distributes television content in India.",
+   "basis": "c7f5ec602483",
    "items": 1,
-   "updated": "2026-11-16T12:16+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "updated": "2026-11-16T12:31+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "ITC": {
+   "summary": "ITC shares rose as FMCG stocks led gains in the Sensex, and the company announced an allotment of securities that could slightly dilute its share count. The broader market showed mixed signals with strength in large caps but weakness in mid and small caps.",
+   "why": "Share price movement and any dilution affect the value of existing shares for investors.",
+   "upside": "If the allotment is modest and the market continues to favor stable consumer stocks, the share price could benefit.",
+   "downside": "Dilution from the new securities could reduce per‑share metrics, and broader weakness in mid‑ and small‑cap stocks could pressure the index.",
+   "watch": [
+    "Further movement of the Sensex and Nifty indices",
+    "Details on the size and impact of the securities allotment",
+    "Performance of the FMCG sector and any mid‑/small‑cap weakness"
+   ],
+   "about": "ITC Ltd. is a leading Fast Moving Consumer Goods company in India.",
+   "basis": "cb20bbce7129",
+   "items": 2,
+   "updated": "2026-11-16T12:31+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "POONAWALLA": {
    "summary": "Poonawalla Fincorp has announced plans to issue new securities to raise capital. This move is intended to help the company grow its lending business.",
@@ -854,22 +822,6 @@
    "about": "Poonawalla Fincorp is a company in the Financial Services sector.",
    "basis": "60ea1515c87a",
    "items": 2,
-   "updated": "2026-11-16T10:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "BSE": {
-   "summary": "BSE Ltd. is one of India's 50 largest listed companies in the financial services sector. Recent news mentions it alongside other major stocks in market discussions, while its sector index has seen mixed movement recently.",
-   "why": "As a key player in India's stock market infrastructure, BSE's performance is often linked to overall market activity and investor sentiment in the financial sector.",
-   "upside": "Positive market sentiment and strong sector performance over the last few days could support the stock's value.",
-   "downside": "Broader market weakness or a decline in the financial sector index could negatively impact the share price.",
-   "watch": [
-    "Movement in the Financials sector index",
-    "General market conditions and investor sentiment",
-    "News regarding other major listed companies like NSE and MCX"
-   ],
-   "about": "BSE Ltd. is a financial services company and one of India's largest listed firms.",
-   "basis": "39cab025285a",
-   "items": 3,
    "updated": "2026-11-16T10:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
@@ -888,6 +840,22 @@
    "items": 2,
    "updated": "2026-11-16T10:46+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "BSE": {
+   "summary": "BSE Ltd. is one of India's 50 largest listed companies in the financial services sector. Recent news mentions it alongside other major stocks in market discussions, while its sector index has seen mixed movement recently.",
+   "why": "As a key player in India's stock market infrastructure, BSE's performance is often linked to overall market activity and investor sentiment in the financial sector.",
+   "upside": "Positive market sentiment and strong sector performance over the last few days could support the stock's value.",
+   "downside": "Broader market weakness or a decline in the financial sector index could negatively impact the share price.",
+   "watch": [
+    "Movement in the Financials sector index",
+    "General market conditions and investor sentiment",
+    "News regarding other major listed companies like NSE and MCX"
+   ],
+   "about": "BSE Ltd. is a financial services company and one of India's largest listed firms.",
+   "basis": "39cab025285a",
+   "items": 3,
+   "updated": "2026-11-16T10:15+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "DMART": {
    "summary": "Avenue Supermarts Ltd. announced changes in its senior management and board of directors, signalling a leadership transition.",
