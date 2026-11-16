@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T15:47:09+05:30",
+ "updated": "2026-11-16T16:02:30+05:30",
  "summary": {
-  "calls": 1495,
-  "scored_calls": 357,
+  "calls": 1497,
+  "scored_calls": 359,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "cb374e374b64eb92",
+   "symbol": "SWIGGY",
+   "time": "2026-11-16T15:40:54+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Swiggy among 10 midcap stocks that dropped up to 50% in CY26",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/swiggy-among-10-midcap-stocks-that-dropped-up-to-50-in-cy26/slideshow/135883464.cms",
+   "entry_date": "2026-11-13",
+   "entry": 186.7
+  },
+  {
+   "id": "cb374e374b64eb92",
+   "symbol": "RVNL",
+   "time": "2026-11-16T15:40:54+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Swiggy among 10 midcap stocks that dropped up to 50% in CY26",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/swiggy-among-10-midcap-stocks-that-dropped-up-to-50-in-cy26/slideshow/135883464.cms",
+   "entry_date": "2026-11-13",
+   "entry": 199.46
+  },
   {
    "id": "43572ed35f0095dd",
    "symbol": "VEDL",
