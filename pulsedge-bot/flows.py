@@ -401,12 +401,12 @@ def main():
         fno_hist[f["date"]] = f["fii_long_pct"]
         if f.get("prev_date") and f.get("prev_long_pct") is not None:
             fno_hist.setdefault(f["prev_date"], f["prev_long_pct"])
-    fno_hist = {k: fno_hist[k] for k in sorted(fno_hist)[-20:]}
+    fno_hist = {k: fno_hist[k] for k in sorted(fno_hist)[-45:]}
 
     hist = {h["date"]: h for h in prev.get("cash_history", []) if h.get("date")}
     if c:
         hist[c["date"]] = {"date": c["date"], "fii": c["fii"]["net"], "dii": c["dii"]["net"]}
-    hist = sorted(hist.values(), key=lambda h: h["date"])[-30:]
+    hist = sorted(hist.values(), key=lambda h: h["date"])[-45:]
 
     by = {}
     for x in rows:

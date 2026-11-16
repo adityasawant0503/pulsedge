@@ -119,6 +119,10 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .cd div{overflow-wrap:anywhere}
 .notes{padding:16px;display:grid;gap:14px}
 #pm-flows{border-top:1px solid var(--line)}
+.tl{display:grid;grid-template-columns:minmax(0,1.7fr) repeat(3,minmax(0,1fr));gap:6px 10px;font-size:13.5px;align-items:baseline}
+.tl .h{font:600 11px/1.3 var(--mono);letter-spacing:.06em;color:var(--mute)}
+.tl .up{color:var(--green-l)}.tl .down{color:var(--red-l)}.tl .flat{color:var(--mute)}
+.tlnote{margin:8px 0 0;font-size:12.5px;color:var(--mute);line-height:1.45}
 .fnote{margin:0;color:var(--mute);font-size:12.5px;line-height:1.5}
 .secs{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:5px 14px;font:13px/1.45 var(--mono);align-items:baseline}
 .secs .h{color:var(--mute);font-size:11px;letter-spacing:.06em}
@@ -574,6 +578,27 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
   function crore(v){var a=Math.abs(v),t=a>=1000?Math.round(a).toLocaleString("en-IN"):a.toFixed(a>=100?0:1);return (v<0?"\u2212":"+")+"\u20b9"+t+" cr"}
   function shortDay(d){var x=new Date(d+"T12:00:00+05:30");return isNaN(x)?"":x.toLocaleDateString("en-IN",{timeZone:"Asia/Kolkata",day:"numeric",month:"short"})}
   function sectorMove(label){var l=String(label).toLowerCase();return (flows&&flows.sectors||[]).filter(function(x){return x.label.toLowerCase()===l})[0]||null}
+  // 1 day, 1 week (5 sessions) and 1 month (21 sessions) for FII cash and FII index-futures positioning.
+  // Only days we have recorded count; a longer timeline says how many days are still missing.
+  function timelineBlock(){
+    var fh=(flows&&flows.cash_history)||[],fk=flows&&flows.fno_history?Object.keys(flows.fno_history).sort():[],ff=fk.map(function(k){return flows.fno_history[k]});
+    if(!fh.length&&ff.length<2)return null;
+    var cf=fh.map(function(x){return x.fii||0});
+    function cash(n){if(cf.length<n)return {t:cf.length?cf.length+" of "+n+" days":"not yet",c:"flat"};var s=cf.slice(-n).reduce(function(a,b){return a+b},0);return {t:crore(s),c:s>=0?"up":"down"}}
+    function fut(back){if(ff.length<=back)return {t:ff.length+" of "+(back+1)+" days",c:"flat"};var d=ff[ff.length-1]-ff[ff.length-1-back];return {t:(d>=0?"+":"")+d.toFixed(1)+" pts",c:d>=0?"up":"down"}}
+    var wrap=el("div"),grid=el("div","tl");
+    wrap.appendChild(el("div","lbl","Timelines"));
+    grid.append(el("span","h",""),el("span","h","1 DAY"),el("span","h","1 WEEK"),el("span","h","1 MONTH"));
+    function put(name,cells){grid.append(el("span",null,name));cells.forEach(function(x){grid.append(el("span",x.c,x.t))})}
+    put("FII cash, net",[1,5,21].map(cash));
+    put("FII index futures, long share",[1,5,21].map(fut));
+    wrap.appendChild(grid);
+    var note="Cash is FIIs' total net buying over the period (sum of daily figures). Futures show the change in their long share of index futures, in points.";
+    if(!cf.length)note+=" Cash figures appear once NSE's daily FII/DII report reaches us.";
+    if(ff.length&&ff.length<22)note+=" Longer timelines fill in as each trading day is recorded.";
+    wrap.appendChild(el("p","tlnote",note));
+    return wrap;
+  }
   function renderFlows(){
     var n=document.getElementById("pm-flows");n.textContent="";
     var c=flows&&flows.cash,f=flows&&flows.fno,deals=(flows&&flows.by_stock||[]).slice(0,6);
@@ -606,6 +631,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       if(f&&f.fii_long_pct!=null){var ch=f.prev_long_pct!=null?f.fii_long_pct-f.prev_long_pct:null;tile("FII index futures",f.fii_long_pct+"% long",f.fii_long_pct>=50?"up":"down",ch==null?"":(ch>=0?"+":"")+ch.toFixed(1)+" pts vs prior day")}
       w.appendChild(g);n.appendChild(w);
     }
+    var tlb=timelineBlock();if(tlb)n.appendChild(tlb);
     if(deals.length){
       var w2=el("div"),fz=el("div","focus");
       w2.appendChild(el("div","lbl","Big institutional deals"+(flows.deals_date?" \u00b7 "+shortDay(flows.deals_date):"")));
