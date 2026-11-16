@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T09:16+05:30",
+ "updated": "2026-11-16T09:31+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -105,22 +105,6 @@
    "basis": "ddf9141e5594",
    "items": 1,
    "updated": "2026-11-16T09:01+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "OLAELEC": {
-   "summary": "Ola Electric shares fell nearly 7% after Q2 revenue dropped 39% year‑on‑year, though the quarterly loss narrowed. The broader auto sector was down 1.1% in the last session but up 1.2% over five sessions.",
-   "why": "A sharp revenue decline can pressure earnings, while a narrowing loss may signal improving cost control.",
-   "upside": "The stock could see a short‑term bounce if it is oversold.",
-   "downside": "Continued revenue weakness could further strain profitability.",
-   "watch": [
-    "Q3 revenue trend",
-    "Quarterly loss trajectory",
-    "Auto sector index movement"
-   ],
-   "about": "",
-   "basis": "43e2e265fffc",
-   "items": 1,
-   "updated": "2026-11-16T08:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "IDEA": {
@@ -539,37 +523,21 @@
    "updated": "2026-11-16T09:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "ABCAPITAL": {
-   "summary": "Aditya Birla Capital shares recently showed a technical chart pattern that suggests strong buying interest. However, the broader financial sector has seen some recent weakness, which could affect this trend.",
-   "why": "This matters because the chart pattern hints at potential price movement, but it is not a guarantee. Investors should be aware that general market trends can override individual stock signals.",
-   "upside": "The strong buying interest indicated by the chart pattern could lead to further price gains if market conditions remain supportive.",
-   "downside": "Broad market weakness could invalidate the technical pattern, causing the share price to fall.",
-   "watch": [
-    "Whether the White Marubozu pattern holds in the coming sessions",
-    "The direction of the broader Financials sector index",
-    "Any new news regarding Aditya Birla Capital's business performance"
-   ],
-   "about": "Aditya Birla Capital is a company in the financial services sector.",
-   "basis": "954d7b4f6b9c",
-   "items": 1,
-   "updated": "2026-11-16T09:16+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "COALINDIA": {
-   "summary": "Coal India is releasing its quarterly financial results, which often cause share prices to move. At the same time, its subsidiary Mahanadi Coalfields has set a price range for its upcoming public share offering.",
-   "why": "The new results will show how much money the company made, while the subsidiary's offering could change the value of existing shares by increasing the total number of shares available.",
-   "upside": "The company was recently highlighted as a high-yield dividend stock, which may attract investors looking for regular income.",
-   "downside": "The subsidiary's share offering could dilute the value of existing Coal India shares, and the IPO might not be fully subscribed by new investors.",
+   "summary": "Coal India is in the news as its subsidiary, Mahanadi Coalfields, prepares for an Initial Public Offering with a price band set at ₹129 to ₹136 per share. At the same time, the company is releasing its latest quarterly financial results, and it remains recognized as a high-yield dividend stock.",
+   "why": "These events matter because new share sales by a subsidiary can change how profits are shared, while quarterly financial results and dividend appeal often cause the stock price to move.",
+   "upside": "The parent company may bring in fresh funds from the public offering and continue to attract income-focused investors through its strong dividend yields.",
+   "downside": "There is a risk of earnings misses, and the subsidiary's share offering could face low demand or dilute the parent company's earnings per share.",
    "watch": [
-    "The specific numbers in Coal India's quarterly earnings report.",
-    "The final price set for the Mahanadi Coalfields IPO.",
-    "How many investors apply for the Mahanadi Coalfields shares."
+    "The final subscription numbers and listing details of the Mahanadi Coalfields IPO",
+    "The outcome and details of Coal India's latest quarterly financial results",
+    "Broader movements in the Oil, Gas & Consumable Fuels sector index"
    ],
-   "about": "Coal India is a major listed company in the Oil Gas & Consumable Fuels sector and is part of the Nifty 50 index.",
-   "basis": "8532c821b240",
-   "items": 4,
-   "updated": "2026-11-16T09:16+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Coal India Ltd. is one of India's 50 largest listed companies operating in the Oil Gas & Consumable Fuels sector.",
+   "basis": "e46d1513d675",
+   "items": 5,
+   "updated": "2026-11-16T09:31+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "BIOCON": {
    "summary": "Biocon Ltd. received U.S. FDA approval for Pebrilzo, a biosimilar version of the cancer drug Perjeta®, expanding its oncology portfolio. The approval could open a new revenue stream, but commercial success will depend on hospital formulary inclusion.",
@@ -633,6 +601,117 @@
    "basis": "6db6fd7ba46f",
    "items": 2,
    "updated": "2026-11-16T09:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "ENGINERSIN": {
+   "summary": "PulsEdge flagged a recent earnings release for Ahlada Engineers Limited, a different company in the construction sector. There are no new specific updates for Engineers India Ltd. in the provided facts.",
+   "why": "Since the flagged news concerns a different company, it does not directly impact the value of Engineers India Ltd. shares.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "Future earnings reports from Engineers India Ltd.",
+    "General news in the construction sector"
+   ],
+   "about": "",
+   "basis": "0382c379d422",
+   "items": 1,
+   "updated": "2026-11-16T09:31+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "STLTECH": {
+   "summary": "Sterlite Technologies is part of a group of stocks that have seen large gains over the past year. This is partly because many mutual funds hold shares in the company.",
+   "why": "When many large investment funds own a stock, it can show that professionals are confident in the business. However, this also means the stock price has already risen a lot, which can make it more volatile.",
+   "upside": "The strong interest from mutual funds suggests that investors believe the company's business is growing well.",
+   "downside": "Stocks that have risen sharply can drop quickly if the company's growth slows down or if investors get nervous.",
+   "watch": [
+    "Check if mutual funds are still buying or if they are starting to sell.",
+    "Look for news about the company's recent sales or profits.",
+    "Watch for any sudden drops in the share price after the recent rise."
+   ],
+   "about": "Sterlite Technologies operates in the telecommunication sector.",
+   "basis": "86cbc1830a62",
+   "items": 1,
+   "updated": "2026-11-16T09:31+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "HONASA": {
+   "summary": "Honasa shares recently hit a new 52-week high, rising up to 4% in a quiet market. This move happened while the broader FMCG sector remained mostly flat.",
+   "why": "The strong price increase shows that many buyers are currently interested in the stock. However, high prices can sometimes lead to investors selling to lock in profits.",
+   "upside": "The recent rise to a record high suggests strong demand from buyers.",
+   "downside": "High valuations can invite sudden profit booking, where investors sell to take their gains.",
+   "watch": [
+    "Whether the share price holds its new 52-week high.",
+    "If the broader FMCG sector starts moving up or down.",
+    "Signs of investors selling to take profits."
+   ],
+   "about": "Honasa is a company in the Fast Moving Consumer Goods sector.",
+   "basis": "6b846e0aca7e",
+   "items": 1,
+   "updated": "2026-11-16T09:31+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "NYKAA": {
+   "summary": "Nykaa shares have risen to hit new 52-week highs. This happened even though the overall market was quiet.",
+   "why": "This shows that many investors are currently eager to buy the stock. However, high prices can sometimes lead to a quick drop if investors decide to sell to lock in their gains.",
+   "upside": "The strong buying interest suggests that investors remain confident in the company's performance.",
+   "downside": "Because the stock is at a record high, there is a risk that investors may sell their shares to take profits, which could cause the price to fall.",
+   "watch": [
+    "Whether the share price holds its new high level",
+    "If other market sectors start moving again",
+    "Any changes in investor sentiment toward consumer stocks"
+   ],
+   "about": "",
+   "basis": "6b846e0aca7e",
+   "items": 1,
+   "updated": "2026-11-16T09:31+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "TVSMOTOR": {
+   "summary": "TVS Motor Company announced that Mr. Gaurav Gupta, President of its India Two Wheeler Business, will resign effective December 24, 2026. The company also filed a general update with the stock exchange on the same day.",
+   "why": "Changes in senior leadership can create short-term uncertainty for investors who hold shares in the company.",
+   "upside": "",
+   "downside": "The departure of a key executive responsible for the two-wheeler business could disrupt operations or strategy.",
+   "watch": [
+    "Announcements about who will replace Mr. Gupta",
+    "Future updates from the company regarding this leadership change",
+    "Performance of the broader Auto sector index"
+   ],
+   "about": "TVS Motor Company operates in the automobile and auto components sector.",
+   "basis": "02ecf1109223",
+   "items": 3,
+   "updated": "2026-11-16T09:31+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "JSWSTEEL": {
+   "summary": "JSW Steel recently agreed to acquire a new asset and set up a subsidiary called Acre Point Developers Private Limited. These moves suggest the company is expanding its operations or restructuring its business units.",
+   "why": "These changes could affect the company's future revenue and costs, which directly impacts the value of its shares for investors.",
+   "upside": "The acquisition may help the company grow its production capacity or market share.",
+   "downside": "The new acquisition and subsidiary could increase debt or require upfront spending before they start generating profit.",
+   "watch": [
+    "Details on the specific asset being acquired",
+    "How the new subsidiary will operate",
+    "Changes in the company's debt levels"
+   ],
+   "about": "JSW Steel is a major Indian steel manufacturer and one of the largest listed companies in the country.",
+   "basis": "8a495116f473",
+   "items": 2,
+   "updated": "2026-11-16T09:31+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "BBOX": {
+   "summary": "Black Box Ltd. released its unaudited financial results for the quarter ending September 30, 2026. The company is part of the Nifty 500 index and operates in the Information Technology sector.",
+   "why": "These quarterly numbers show how the company is performing financially, which helps owners understand its current health.",
+   "upside": "",
+   "downside": "The IT sector has dropped 2.8% over the last five sessions, which may weigh on the stock.",
+   "watch": [
+    "How the market reacts to the new Q2FY27 earnings",
+    "Whether the IT sector trend reverses or continues to fall",
+    "Any further announcements from the company"
+   ],
+   "about": "Black Box Ltd. is an Information Technology company listed on the NSE.",
+   "basis": "f2bf81858c01",
+   "items": 2,
+   "updated": "2026-11-16T09:31+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "RELIANCE": {

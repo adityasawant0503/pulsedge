@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T09:17:32+05:30",
+ "updated": "2026-11-16T09:32:38+05:30",
  "summary": {
-  "calls": 1451,
-  "scored_calls": 313,
+  "calls": 1452,
+  "scored_calls": 314,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "1a09e7177d125a9e",
+   "symbol": "COALINDIA",
+   "time": "2026-11-16T09:11:29+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Coal India's Mahanadi Coalfields seeks $9.55 billion valuation in IPO",
+   "url": "https://www.business-standard.com/companies/news/coal-india-s-mahanadi-coalfields-seeks-9-55-billion-valuation-in-ipo-126111600061_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 403.5
+  },
   {
    "id": "7257cc3b09e8b4f7",
    "symbol": "OIL",
