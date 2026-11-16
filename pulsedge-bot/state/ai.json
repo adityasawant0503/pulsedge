@@ -773,6 +773,19 @@
    "errors": [
     "gemini-3.8-flash: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'"
    ]
+  },
+  {
+   "time": "2026-11-16T14:00+05:30",
+   "new": 24,
+   "ai": 18,
+   "routine": 6,
+   "rules": 0,
+   "models": {
+    "qwen/qwen3.8-27b": 18
+   },
+   "errors": [
+    "gemini-3.8-flash: The read operation timed out"
+   ]
   }
  ]
 }

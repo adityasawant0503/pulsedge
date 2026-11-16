@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T13:46+05:30",
+ "updated": "2026-11-16T14:01+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -203,6 +203,22 @@
    "updated": "2026-11-16T06:41+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "SOLARINDS": {
+   "summary": "Solar Industries India Ltd. (SOLARINDS) is a chemicals company listed in the Nifty 500, but there have been no specific company‑specific updates in recent days.",
+   "why": "Shareholders should note that broad market or sector moves can affect the stock because it is part of the Nifty 500 index.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "Overall Nifty 500 performance",
+    "Technical signals in the green‑energy sector that could spill over",
+    "Any upcoming company announcements or earnings releases"
+   ],
+   "about": "Solar Industries India Ltd. operates in the chemicals sector.",
+   "basis": "5b6d97c62fef",
+   "items": 4,
+   "updated": "2026-11-16T14:01+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "PAYTM": {
    "summary": "PulsEdge flagged that Paytm shares have risen above their IPO listing‑day high of ₹1,955 for the first time in five years, helped by an in‑principle regulatory authorisation. The stock also appeared in a brokerage’s list of top picks for 2027.",
    "why": "Shareholders see the price breakout as a sign of renewed market confidence, while the regulatory nod could let the company expand into new services.",
@@ -218,22 +234,6 @@
    "items": 4,
    "updated": "2026-11-16T08:16+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "SOLARINDS": {
-   "summary": "PulsEdge flagged headlines about other solar companies, but none of the provided facts contain specific news about Solar Industries India Ltd. The company is part of the Nifty 500 index, which tracks India's 500 largest listed firms.",
-   "why": "Because there is no specific recent news about Solar Industries India in the provided facts, there is no direct reason for its share price to move based on this information alone.",
-   "upside": "",
-   "downside": "",
-   "watch": [
-    "Future announcements specific to Solar Industries India Ltd.",
-    "General trends in the Nifty 500 index",
-    "News about the broader chemicals sector"
-   ],
-   "about": "",
-   "basis": "723ac93008eb",
-   "items": 3,
-   "updated": "2026-11-16T08:31+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "NATCOPHARM": {
    "summary": "Natco Pharma held a board meeting on 13 Nov 2026, announced its financial results for the quarter ended 30 Sep 2026 and declared a second interim dividend, and set the record date for dividend eligibility on 19 Nov 2026.",
@@ -410,6 +410,22 @@
    "updated": "2026-11-16T11:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "WAAREEENER": {
+   "summary": "Shares of Waaree Energies Ltd. are under short‑term selling pressure as green‑energy stocks face sector volatility, while its subsidiary has begun setting up a new battery‑pack manufacturing line.",
+   "why": "Shareholders may see price swings from sector moves and potential new revenue from the battery‑pack line.",
+   "upside": "The new battery‑pack line could open fresh revenue streams for the company.",
+   "downside": "Sector‑wide volatility may persist and delays in ramping up production could hurt the new line.",
+   "watch": [
+    "Sector volatility in green‑energy stocks",
+    "Progress of the battery‑pack manufacturing line ramp‑up",
+    "Any further production start announcements"
+   ],
+   "about": "",
+   "basis": "a0afb53c94c3",
+   "items": 2,
+   "updated": "2026-11-16T14:01+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "BHARTIHEXA": {
    "summary": "Bharti Hexacom Ltd. is seeing its shares rise as part of a wider rally in the telecommunication sector. Investors are showing strong buying interest and optimism about how the industry is performing right now.",
    "why": "This matters because sector-wide trends often influence the movement of individual stocks within that market, affecting the value of your holdings.",
@@ -489,22 +505,6 @@
    "items": 1,
    "updated": "2026-11-16T09:01+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "WAAREEENER": {
-   "summary": "Waaree Energies Ltd. announced that its subsidiary Waaree Energy Storage Solutions Pvt Ltd has begun commissioning a new battery‑pack manufacturing line, expanding the firm’s product range into energy‑storage equipment.",
-   "why": "Shareholders should watch because the new line could add fresh revenue, but any delay in scaling up production could affect earnings.",
-   "upside": "If the battery‑pack line reaches commercial scale on schedule, it could lift sales and margins.",
-   "downside": "Delays in ramp‑up or technical issues could postpone revenue benefits.",
-   "watch": [
-    "Progress of the battery‑pack line commissioning",
-    "Start of commercial production and sales",
-    "Market demand and pricing for battery packs"
-   ],
-   "about": "",
-   "basis": "821abfd4cb49",
-   "items": 1,
-   "updated": "2026-11-16T09:16+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "COALINDIA": {
    "summary": "Coal India’s subsidiary Mahanadi Coalfields is launching an IPO with a price band of ₹129‑₹136 per share and a target valuation of $9.55 billion. The offering could affect Coal India’s share price as investors weigh fresh funds against possible dilution, and the company is also set to release its quarterly results today.",
