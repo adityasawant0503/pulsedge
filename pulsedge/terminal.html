@@ -128,6 +128,13 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .secs .flat{color:var(--mute)}
 .secs .h{color:var(--mute);font-size:11px;letter-spacing:.06em}
 .secs .gap{grid-column:1/-1;border-top:1px dashed var(--line)}
+.secs .sort{background:none;border:0;padding:0;margin:0;font:inherit;font-size:11px;letter-spacing:.06em;color:var(--mute);cursor:pointer;text-align:left;white-space:nowrap}
+.secs .sort:hover,.secs .sort:focus-visible{color:var(--fg)}
+.secs .sort.on{color:var(--pur-l)}
+.sorthint{margin:6px 0 0;font-size:12px;color:var(--dim)}
+.lbl.dl{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.dsort{background:none;border:1px solid var(--line);border-radius:999px;padding:2px 9px;font:inherit;font-size:11px;letter-spacing:.04em;color:var(--mute);cursor:pointer;text-transform:none}
+.dsort:hover,.dsort:focus-visible{color:var(--fg);border-color:var(--pur-edge)}
 .wk{margin:0;font-size:14.5px;line-height:1.5}
 .summary{margin:0;font-size:15.5px;line-height:1.5}
 .lbl{font:600 11.5px/1 var(--sans);letter-spacing:.12em;color:var(--mute);text-transform:uppercase;margin:4px 0 8px}
@@ -604,12 +611,18 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
   function sectorCell(label,back){
     var ih=(flows&&flows.index_history)||{},dk=Object.keys(ih).sort(),n=dk.length;
     var last=n&&ih[dk[n-1]]&&ih[dk[n-1]][label],base=n>back&&ih[dk[n-1-back]]&&ih[dk[n-1-back]][label];
-    if(!last||!base||!base[0]){return {t:n>back?"–":n+" of "+(back+1)+" days",c:"flat"}}
-    var v=100*(last[0]/base[0]-1);return {t:pct(Math.round(v*100)/100),c:v>=0?"up":"down"};
+    if(!last||!base||!base[0]){return {t:n>back?"–":n+" of "+(back+1)+" days",c:"flat",v:null}}
+    var v=100*(last[0]/base[0]-1);return {t:pct(Math.round(v*100)/100),c:v>=0?"up":"down",v:v};
   }
+  // Sorting in the flows panel: sectors by a timeline column, deals by foreign funds' buying.
+  // Each click goes highest first, then lowest first, then back to the default view.
+  var secSort=null;try{secSort=JSON.parse(store("pe_secsort")||"null")}catch(e){secSort=null}
+  var dealSort=0;
   function renderFlows(){
     var n=document.getElementById("pm-flows");n.textContent="";
-    var c=flows&&flows.cash,f=flows&&flows.fno,deals=(flows&&flows.by_stock||[]).slice(0,6);
+    var c=flows&&flows.cash,f=flows&&flows.fno,allDeals=(flows&&flows.by_stock||[]).slice();
+    if(dealSort)allDeals.sort(function(a,b){return dealSort*((a.foreign_cr||0)-(b.foreign_cr||0))});
+    var deals=allDeals.slice(0,6);
     var secs=(flows&&flows.sectors||[]).filter(function(x){return !x.broad}),wk=flows&&flows.week;
     n.hidden=!(c||f||deals.length||secs.length);if(n.hidden)return;
     if(wk&&(wk.nifty_5d!=null||wk.fii_long_now!=null)){
@@ -620,13 +633,30 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       w0.appendChild(el("p","wk",parts.join(". ")+"."));n.appendChild(w0);
     }
     if(secs.length){
-      var ws=el("div"),g0=el("div","secs"),pick=secs.length>8?secs.slice(0,4).concat([null],secs.slice(-4)):secs;
+      var ws=el("div"),g0=el("div","secs"),pick;
+      if(secSort&&[1,5,21].indexOf(secSort.col)>=0){
+        // every sector, sorted; ones without a value yet go last either way
+        pick=secs.map(function(x){return {x:x,v:sectorCell(x.label,secSort.col).v}}).sort(function(a,b){
+          if(a.v==null||b.v==null)return (a.v==null)-(b.v==null);return secSort.dir*(a.v-b.v)}).map(function(r){return r.x});
+      }else{secSort=null;pick=secs.length>8?secs.slice(0,4).concat([null],secs.slice(-4)):secs}
       ws.appendChild(el("div","lbl","Sectors"+(flows.sectors_date?" \u00b7 "+shortDay(flows.sectors_date):"")));
-      g0.append(el("span","h",""),el("span","h","1 DAY"),el("span","h","1 WEEK"),el("span","h","1 MONTH"));
+      g0.append(el("span","h",""));
+      [[1,"1 DAY"],[5,"1 WEEK"],[21,"1 MONTH"]].forEach(function(hc){
+        var on=!!(secSort&&secSort.col===hc[0]),b=el("button","h sort"+(on?" on":""),hc[1]+(on?(secSort.dir<0?" \u25bc":" \u25b2"):""));
+        b.type="button";b.title="Sort sectors by "+hc[1].toLowerCase();
+        b.setAttribute("aria-label","Sort sectors by "+hc[1].toLowerCase()+(on?(secSort.dir<0?". Now highest first; click for lowest first":". Now lowest first; click to reset"):""));
+        b.onclick=function(){
+          if(!secSort||secSort.col!==hc[0])secSort={col:hc[0],dir:-1};else if(secSort.dir<0)secSort.dir=1;else secSort=null;
+          store("pe_secsort",JSON.stringify(secSort));renderFlows();
+        };
+        g0.appendChild(b);
+      });
       pick.forEach(function(x){if(!x){g0.appendChild(el("span","gap"));return}
         g0.append(el("span",null,x.label));
         [1,5,21].forEach(function(back){var c=sectorCell(x.label,back);g0.appendChild(el("span",c.c,c.t))});});
-      ws.appendChild(g0);n.appendChild(ws);
+      ws.appendChild(g0);
+      ws.appendChild(el("p","sorthint",secSort?"All sectors, "+(secSort.dir<0?"highest":"lowest")+" first. Click the column again to "+(secSort.dir<0?"flip it":"reset")+".":"Click 1 DAY, 1 WEEK or 1 MONTH to sort all sectors."));
+      n.appendChild(ws);
     }
     if(c||f){
       var w=el("div"),g=el("div","also"),h=(flows.cash_history||[]).slice(-5);
@@ -643,7 +673,11 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     var tlb=timelineBlock();if(tlb)n.appendChild(tlb);
     if(deals.length){
       var w2=el("div"),fz=el("div","focus");
-      w2.appendChild(el("div","lbl","Big institutional deals"+(flows.deals_date?" \u00b7 "+shortDay(flows.deals_date):"")));
+      var dl=el("div","lbl dl","Big institutional deals"+(flows.deals_date?" \u00b7 "+shortDay(flows.deals_date):""));
+      var ds=el("button","dsort",dealSort<0?"Foreign buys first \u25bc":dealSort>0?"Foreign sells first \u25b2":"Sort by foreign funds");ds.type="button";
+      ds.setAttribute("aria-label",dealSort<0?"Sorted by foreign funds, biggest buys first. Click for biggest sells first":dealSort>0?"Sorted by foreign funds, biggest sells first. Click to reset":"Sort deals by foreign funds' buying");
+      ds.onclick=function(){dealSort=dealSort===0?-1:dealSort<0?1:0;renderFlows()};
+      dl.appendChild(ds);w2.appendChild(dl);
       deals.forEach(function(x){
         var r=el("div");r.appendChild(el("span","tk"+(mine(x.symbol)?" mine":""),x.symbol));
         [["foreign_cr","foreign funds"],["domestic_cr","domestic institutions"]].forEach(function(k){var v=x[k[0]];if(!v)return;
