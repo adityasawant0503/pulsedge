@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T08:31+05:30",
+ "updated": "2026-11-16T08:46+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -107,22 +107,6 @@
    "updated": "2026-11-16T08:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "AZAD": {
-   "summary": "Azad Engineering Ltd. has surged about 51% so far in 2026, drawing attention for its strong performance. Analysts note the stock may still have upside but warn that its valuation is now high.",
-   "why": "Shareholders have benefited from the big rally, but the high price could limit future gains if sentiment shifts.",
-   "upside": "Further upside could materialise if the company’s earnings grow and the market eases valuation concerns.",
-   "downside": "The elevated valuation after the rally could lead to a price correction if growth expectations are not met.",
-   "watch": [
-    "Future earnings or guidance releases",
-    "Changes in defence sector demand",
-    "Any shifts in valuation metrics or analyst sentiment"
-   ],
-   "about": "Azad Engineering Ltd. is a capital‑goods company that manufactures defence equipment.",
-   "basis": "f72265516786",
-   "items": 1,
-   "updated": "2026-11-14T21:05+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "IDEA": {
    "summary": "PulsEdge flagged that Vodafone Idea shares fell 3.5% after the company posted a wider‑than‑expected loss in Q2. The loss was larger than analysts had anticipated, adding pressure on the stock.",
    "why": "PulsEdge flagged that the bigger loss could hurt investor sentiment and affect the value of existing shares.",
@@ -219,22 +203,6 @@
    "updated": "2026-11-16T08:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "GRASIM": {
-   "summary": "Grasim Industries released its unaudited financial results for the quarter and half-year ended September 2026. The company also filed a monitoring agency report under market regulations.",
-   "why": "These results show how much profit the company made, which helps investors understand its current financial health.",
-   "upside": "Revenue growth could be a positive factor if it outweighs other costs.",
-   "downside": "Margin pressures could reduce profits, and the share price might react sharply if results missed expectations.",
-   "watch": [
-    "How the market reacts to the new profit figures",
-    "Whether cost pressures continue to affect margins",
-    "Details in the monitoring agency report"
-   ],
-   "about": "Grasim Industries is a large Indian company listed in the Nifty 50 index that operates in the construction materials sector.",
-   "basis": "ca977e7f5e42",
-   "items": 4,
-   "updated": "2026-11-16T08:16+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "SOLARINDS": {
    "summary": "PulsEdge flagged headlines about other solar companies, but none of the provided facts contain specific news about Solar Industries India Ltd. The company is part of the Nifty 500 index, which tracks India's 500 largest listed firms.",
    "why": "Because there is no specific recent news about Solar Industries India in the provided facts, there is no direct reason for its share price to move based on this information alone.",
@@ -315,6 +283,22 @@
    "updated": "2026-11-16T08:31+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "GRASIM": {
+   "summary": "Grasim Industries posted its unaudited quarterly and half‑year results for the period ended 30 September 2026. The company reported revenue growth but flagged margin pressure that could limit profit. Investors are watching whether earnings meet expectations.",
+   "why": "Profit and margin trends directly affect earnings per share and potential dividends for shareholders.",
+   "upside": "If revenue growth outpaces margin pressure, profit could exceed estimates.",
+   "downside": "Margin pressure or a miss on profit estimates could trigger a volatile market reaction.",
+   "watch": [
+    "Margin trends in upcoming audited results",
+    "Future earnings guidance from management",
+    "Any changes in cost structure affecting margins"
+   ],
+   "about": "Grasim Industries manufactures construction materials and is a member of India’s Nifty 50 index.",
+   "basis": "fcf6e14c138f",
+   "items": 2,
+   "updated": "2026-11-16T08:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "PNB": {
    "summary": "Punjab National Bank shares recently joined a strong rally in public sector bank stocks. This group of banks saw its biggest weekly gain in seven months, pushing prices to multi-month highs.",
    "why": "If you own PNB shares, this rise means the value of your holding has increased recently. However, such strong moves can sometimes lead to a quick drop as investors sell to lock in profits.",
@@ -346,6 +330,102 @@
    "items": 1,
    "updated": "2026-11-16T08:31+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "SIEMENS": {
+   "summary": "Siemens Ltd. is seeing a potential lift as power stocks rose after authorities approved a large new transmission project. The rally could translate into more business orders for companies that build power equipment.",
+   "why": "Shareholders may benefit from increased demand for Siemens' power equipment, which could boost revenues.",
+   "upside": "If the transmission project proceeds as planned, Siemens could secure additional orders.",
+   "downside": "Broader market weakness could limit any gains from the sector rally.",
+   "watch": [
+    "Progress of the new transmission project",
+    "Power sector performance",
+    "Overall market trends affecting capital goods"
+   ],
+   "about": "Siemens Ltd. is a capital goods company listed in India's Nifty 500.",
+   "basis": "babd39c977f8",
+   "items": 1,
+   "updated": "2026-11-16T08:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "BPCL": {
+   "summary": "BPCL shares fell over 2% as international crude oil prices rose to $95, dragging down crude‑sensitive stocks. The oil‑and‑gas sector index slipped 0.7% in the last session but is up 0.8% over five sessions.",
+   "why": "Higher fuel costs can squeeze BPCL’s profit margins, which matters to shareholders.",
+   "upside": "A sudden reversal in global crude prices could improve BPCL’s margins.",
+   "downside": "Persistently high crude prices could continue to pressure BPCL’s earnings.",
+   "watch": [
+    "Crude oil price movements",
+    "Sector index performance",
+    "BPCL share price trend relative to peers"
+   ],
+   "about": "BPCL is a state‑run oil refiner and marketer in India.",
+   "basis": "d09c1271e7c1",
+   "items": 1,
+   "updated": "2026-11-16T08:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "INDIGO": {
+   "summary": "IndiGo's shares fell more than 2% as crude oil prices rose to $95, raising fuel costs for the airline.",
+   "why": "Higher fuel expenses can squeeze the airline's profit margins, affecting shareholder returns.",
+   "upside": "A drop in global crude prices could improve margins and support the share price.",
+   "downside": "Sustained high oil prices could further pressure earnings.",
+   "watch": [
+    "Crude oil price movements",
+    "Fuel cost trends for airlines",
+    "Policy changes affecting fuel taxes or subsidies"
+   ],
+   "about": "InterGlobe Aviation Ltd. operates IndiGo, a low‑cost airline in India.",
+   "basis": "d09c1271e7c1",
+   "items": 1,
+   "updated": "2026-11-16T08:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "ACE": {
+   "summary": "Action Construction Equipment Ltd. (ACE) saw its shares jump about 6% and approach a 52‑week high after posting healthy Q2 results driven by strong infrastructure demand. The rally reflects positive earnings momentum but could be tempered by broader market weakness.",
+   "why": "Strong earnings and demand suggest the company is performing well, which matters to shareholders as it can support the stock price in the short term.",
+   "upside": "If infrastructure spending stays robust and market sentiment remains positive, the stock could keep climbing.",
+   "downside": "A pullback in the overall market could dampen the rally despite the good results.",
+   "watch": [
+    "Upcoming quarterly earnings release",
+    "Trends in Indian infrastructure spending",
+    "Overall market sentiment and indices performance"
+   ],
+   "about": "Action Construction Equipment Ltd. manufactures and sells construction equipment for infrastructure projects.",
+   "basis": "72233bb2e18d",
+   "items": 1,
+   "updated": "2026-11-16T08:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "COCHINSHIP": {
+   "summary": "Cochin Shipyard has announced an interim dividend with a record date on Nov 16, and investors are being reminded to watch the ex‑date price adjustment.",
+   "why": "Shareholders will receive a cash payout, but the share price typically falls by the dividend amount on the ex‑date.",
+   "upside": "A higher‑than‑expected dividend could attract more investors and support the stock.",
+   "downside": "The stock is likely to drop by the dividend amount when it goes ex‑dividend.",
+   "watch": [
+    "Dividend record date (Nov 16)",
+    "Ex‑dividend price movement",
+    "Any further dividend announcements or payout details"
+   ],
+   "about": "Cochin Shipyard Ltd. builds and repairs ships and other marine structures in India.",
+   "basis": "355e05bd7381",
+   "items": 3,
+   "updated": "2026-11-16T08:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "GODREJIND": {
+   "summary": "Godrej Industries' stock shows an upward RSI trend, indicating improving momentum, while its sister firm Godrej Properties has bought a 31‑acre plot in Indore for a housing project.",
+   "why": "The technical momentum could affect share performance, and the land purchase may influence the group’s growth prospects.",
+   "upside": "If the upward momentum sustains, the share could benefit from continued buying interest.",
+   "downside": "A false breakout could occur if market conditions remain choppy, leading to a price pullback.",
+   "watch": [
+    "RSI trend for Godrej Industries",
+    "Progress of Godrej Properties' Indore land development",
+    "Overall market volatility"
+   ],
+   "about": "Godrej Industries Ltd. is a diversified conglomerate listed in the Nifty 500.",
+   "basis": "2dd6202dcb07",
+   "items": 2,
+   "updated": "2026-11-16T08:46+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "RELIANCE": {
    "summary": "Reliance Industries shares jumped about 15% in November, adding roughly ₹2.38 lakh crore to its market value. At the same time, foreign institutional investors are returning to Indian equities, which could support the stock.",

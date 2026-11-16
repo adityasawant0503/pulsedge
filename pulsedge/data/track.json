@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T08:32:34+05:30",
+ "updated": "2026-11-16T08:47:37+05:30",
  "summary": {
-  "calls": 1447,
-  "scored_calls": 309,
+  "calls": 1449,
+  "scored_calls": 311,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "cb88be34bf9c6ee1",
+   "symbol": "GLENMARK",
+   "time": "2026-11-16T08:40:28+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Glenmark Pharmaceuticals Limited: Glenmark Pharmaceuticals Limited has informed the Exchange regarding a press release dated November 16, 2026, titled \"Glenmark",
+   "url": "https://nsearchives.nseindia.com/corporate/GLENMARK_16112026083849_SE_Press_Release_16112026.pdf",
+   "entry_date": "2026-11-13",
+   "entry": 2640.0
+  },
+  {
+   "id": "2f388b370c8eb578",
+   "symbol": "BIOCON",
+   "time": "2026-11-16T08:39:11+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Biocon Limited: Biocon Limited has informed the Exchange regarding a press release dated November 16, 2026, titled \"Biocon Gets U.S. FDA Approval for Pebrilzo (",
+   "url": "https://nsearchives.nseindia.com/corporate/Bioconlimited_16112026083851_Pressrelease16112026.pdf",
+   "entry_date": "2026-11-13",
+   "entry": 364.05
+  },
   {
    "id": "c41adee94be9953a",
    "symbol": "COALINDIA",
