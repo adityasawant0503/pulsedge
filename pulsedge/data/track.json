@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T11:02:26+05:30",
+ "updated": "2026-11-16T11:17:30+05:30",
  "summary": {
-  "calls": 1467,
-  "scored_calls": 329,
+  "calls": 1469,
+  "scored_calls": 331,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "10321745dc1d1169",
+   "symbol": "BHARTIHEXA",
+   "time": "2026-11-16T10:50:26+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Airtel, Voda Idea rally up to 3%; here's why telecom stocks are in demand",
+   "url": "https://www.business-standard.com/markets/news/bharti-airtel-voda-idea-jio-platforms-rally-up-to-3-here-s-why-telecom-related-stocks-are-in-demand-today-126111600774_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 1665.5
+  },
+  {
+   "id": "10321745dc1d1169",
+   "symbol": "IDEA",
+   "time": "2026-11-16T10:50:26+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Airtel, Voda Idea rally up to 3%; here's why telecom stocks are in demand",
+   "url": "https://www.business-standard.com/markets/news/bharti-airtel-voda-idea-jio-platforms-rally-up-to-3-here-s-why-telecom-related-stocks-are-in-demand-today-126111600774_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 12.57
+  },
   {
    "id": "0499858ecd016298",
    "symbol": "BHARTIARTL",
