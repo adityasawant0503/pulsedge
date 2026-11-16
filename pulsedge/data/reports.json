@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T13:32+05:30",
+ "updated": "2026-11-16T13:46+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "The overall market was positive, with the Sensex gaining 400 points, but several individual stocks fell sharply due to poor quarterly results. Tata Motors, Kaynes Technology, and Inox Wind all saw their share prices drop significantly after reporting large losses or profit declines. In contrast, Eicher Motors shares rose after the company posted its best-ever quarterly performance. A leadership change at Mahindra Logistics also caused its stock to fall as investors adjusted to the news.",
+  "summary": "PulsEdge flagged a sharp drop in Tata Motors PV shares after a huge quarterly loss, showing how profit cuts can hurt a stock. Kaynes Technology also fell sharply as its profit margin shrank, and Inox Wind shares slipped after a profit drop. The market overall rose, with the Sensex gaining 400 points and Nifty above 25,250, but some sectors like Realty and Auto fell. Eicher Motors gained on record sales, while Mahindra Logistics slid after its CEO resigned, highlighting leadership risk.",
   "themes": [
-   "Poor quarterly earnings caused sharp drops in auto and tech stocks.",
-   "Strong sales and profits helped Eicher Motors stand out in a mixed market.",
-   "Leadership changes and lost contracts created uncertainty for specific companies."
+   "Profit declines hurting shares",
+   "Leadership changes causing uncertainty",
+   "Market up but some stocks weak"
   ],
   "watch": [
-   "Whether the losses at Tata Motors and Kaynes Technology are one-time events or ongoing issues.",
-   "How investors react to the new leadership at Mahindra Logistics.",
-   "If the positive market trend continues despite the weakness in the auto sector."
+   "Tata Motors PV loss trend",
+   "Kaynes Technology profit margin erosion",
+   "Mahindra Logistics leadership transition"
   ],
   "date": "2026-11-16",
-  "basis": "c0c3cc3cc606",
-  "updated": "2026-11-16T13:01+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 45
+  "basis": "b37b3a2aee50",
+  "updated": "2026-11-16T13:46+05:30",
+  "model": "openai/gpt-oss-20b",
+  "items": 56
  },
  "stocks": {
   "TMPV": {
@@ -250,22 +250,6 @@
    "items": 3,
    "updated": "2026-11-16T08:31+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "MCX": {
-   "summary": "MCX shares hit a fresh peak, doubling in a year and nearing a ₹1 trillion market cap. Analysts have listed it as a top stock to buy, indicating strong market confidence. The company is part of the Nifty 500 index.",
-   "why": "Shareholders see the price surge and market cap growth as signs of increasing trading activity and investor interest, which can affect the value of their holdings.",
-   "upside": "If market confidence remains, the share price could continue to rise.",
-   "downside": "Profit booking at higher levels could pull the price down.",
-   "watch": [
-    "MCX share price hitting new high",
-    "Market cap approaching ₹1 trillion",
-    "Sector index movement and broader market weakness"
-   ],
-   "about": "It operates a commodity exchange platform for trading various commodities.",
-   "basis": "1d09d0f681f2",
-   "items": 2,
-   "updated": "2026-11-16T11:16+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "BANKINDIA": {
    "summary": "Bank of India saw strong weekly gains as the Nifty PSU Bank index posted its biggest surge in seven months, pushing the stock to multi‑month highs. The broader financial sector has been mixed, slipping 0.7% in the last session but up 4.7% over the past five sessions.",
@@ -648,6 +632,22 @@
    "items": 3,
    "updated": "2026-11-16T09:31+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "PATANJALI": {
+   "summary": "Patanjali Foods reported lower Q2 profit, causing its shares to fall about 4%. Analysts say the dip may be temporary and linked to holiday timing.",
+   "why": "The profit slip signals weaker earnings and could pressure margins, but the outlook may improve once the holiday effect passes.",
+   "upside": "Profit and share price could recover if the holiday impact fades and margins improve.",
+   "downside": "Margins may stay under pressure if low import duties on inputs continue.",
+   "watch": [
+    "Q2 profit trend in upcoming reports",
+    "Changes in import duty policy affecting input costs",
+    "Impact of seasonal holidays on sales"
+   ],
+   "about": "Patanjali Foods Ltd. is a fast‑moving consumer goods company that makes food products.",
+   "basis": "f7671518a9f1",
+   "items": 1,
+   "updated": "2026-11-16T13:46+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "GLENMARK": {
    "summary": "Glenmark Pharmaceuticals launched a cheaper version of a cancer drug in the United States. This move allows the company to sell its product in a major global market.",

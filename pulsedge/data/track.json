@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T13:32:27+05:30",
+ "updated": "2026-11-16T13:46:33+05:30",
  "summary": {
-  "calls": 1478,
-  "scored_calls": 340,
+  "calls": 1480,
+  "scored_calls": 342,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "3dce5f4d617a0ebd",
+   "symbol": "PATANJALI",
+   "time": "2026-11-16T13:32:46+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Patanjali Foods dips 4% as Q2 profit slips but analysts upbeat; here's why",
+   "url": "https://www.business-standard.com/markets/news/patanjali-foods-share-price-dips-4-as-q2-profit-slips-but-analysts-upbeat-here-s-why-126111601051_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 421.0
+  },
+  {
+   "id": "01153d6cbd102f7b",
+   "symbol": "FORTIS",
+   "time": "2026-11-16T13:23:45+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Hospital stocks in focus: Max Healthcare, Aster DM, Fortis surge up to 7%",
+   "url": "https://www.business-standard.com/markets/news/hospital-stocks-in-focus-max-healthcare-aster-dm-fortis-surge-up-to-7-126111600992_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 764.0
+  },
   {
    "id": "06faec9caf2c8179",
    "symbol": "IDEA",
