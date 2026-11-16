@@ -599,10 +599,12 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     grid.append(el("span","h",""),el("span","h","1 DAY"),el("span","h","1 WEEK"),el("span","h","1 MONTH"));
     function put(name,cells){grid.append(el("span",null,name));cells.forEach(function(x){grid.append(el("span",x.c,x.t))})}
     put("FII cash, net",[1,5,21].map(cash));
+    var src=fh.length&&fh[fh.length-1].src;
     put("FII index futures, long share",[1,5,21].map(fut));
     wrap.appendChild(grid);
     var note="Cash is FIIs' total net buying over the period (sum of daily figures). Futures show the change in their long share of index futures, in points.";
-    if(!cf.length)note+=" Cash figures appear once NSE's daily FII/DII report reaches us.";
+    if(!cf.length)note+=" Cash figures appear once the daily FII/FPI report reaches us.";
+    else if(src==="NSDL")note+=" Cash figures are NSDL's daily FPI equity investment, by reporting date (trades confirmed up to the previous session).";
     if(ff.length&&ff.length<22)note+=" Longer timelines fill in as each trading day is recorded.";
     wrap.appendChild(el("p","tlnote",note));
     return wrap;
@@ -629,7 +631,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       var w0=el("div"),parts=[];w0.appendChild(el("div","lbl","This week"));
       if(wk.nifty_5d!=null)parts.push("Nifty "+pct(wk.nifty_5d)+" over 5 sessions");
       if(wk.fii_long_now!=null)parts.push(wk.fii_long_5d_ago!=null?"FIIs went from "+wk.fii_long_5d_ago+"% to "+wk.fii_long_now+"% long in index futures":"FIIs "+wk.fii_long_now+"% long in index futures");
-      if(wk.fii_cash_5d!=null)parts.push("FII cash "+crore(wk.fii_cash_5d)+", DII "+crore(wk.dii_cash_5d));
+      if(wk.fii_cash_5d!=null)parts.push("FII cash "+crore(wk.fii_cash_5d)+(wk.dii_cash_5d!=null?", DII "+crore(wk.dii_cash_5d):""));
       w0.appendChild(el("p","wk",parts.join(". ")+"."));n.appendChild(w0);
     }
     if(secs.length){
@@ -664,8 +666,9 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       function tile(name,val,cls,sub){var t=el("div","tile");t.append(el("small",null,name),el("b",cls,val),el("span","flat",sub||""));g.appendChild(t)}
       function sum(k){return h.reduce(function(s,x){return s+(x[k]||0)},0)}
       if(c){
-        tile("FII net, cash",crore(c.fii.net),c.fii.net>=0?"up":"down",h.length>1?h.length+" days "+crore(sum("fii")):"");
-        tile("DII net, cash",crore(c.dii.net),c.dii.net>=0?"up":"down",h.length>1?h.length+" days "+crore(sum("dii")):"");
+        var nsdl=c.source==="NSDL";
+        tile(nsdl?"FPI net, equity":"FII net, cash",crore(c.fii.net),c.fii.net>=0?"up":"down",h.length>1?h.length+" days "+crore(sum("fii")):(nsdl?"NSDL, reported "+shortDay(c.date):""));
+        if(c.dii)tile("DII net, cash",crore(c.dii.net),c.dii.net>=0?"up":"down",h.length>1?h.length+" days "+crore(sum("dii")):"");
       }
       if(f&&f.fii_long_pct!=null){var ch=f.prev_long_pct!=null?f.fii_long_pct-f.prev_long_pct:null;tile("FII index futures",f.fii_long_pct+"% long",f.fii_long_pct>=50?"up":"down",ch==null?"":(ch>=0?"+":"")+ch.toFixed(1)+" pts vs prior day")}
       w.appendChild(g);n.appendChild(w);
@@ -685,7 +688,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
         fz.appendChild(r)});
       w2.appendChild(fz);n.appendChild(w2);
     }
-    n.appendChild(el("p","fnote","NSE end-of-day data; cash figures are provisional. Shows where money moved, not where it will go."));
+    n.appendChild(el("p","fnote","NSE and NSDL end-of-day data; cash figures are provisional. Shows where money moved, not where it will go."));
   }
   document.getElementById("pm-tog").onclick=function(){
     var b=this,open=b.getAttribute("aria-expanded")!=="true";

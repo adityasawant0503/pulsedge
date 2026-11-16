@@ -20,6 +20,7 @@ Any source that fails is skipped; the rest are still written.
 import argparse
 import csv
 import hashlib
+import html
 import http.cookiejar
 import io
 import json
@@ -225,6 +226,57 @@ def cash():
     return res
 
 
+# ---------- FPI equity flows from NSDL (when NSE's report can't be reached) ----------
+# NSE's FII/DII report answers 403 to GitHub's runners. NSDL publishes the daily FPI table on a plain page.
+# Its date is the reporting date: confirmed FPI trades up to the previous session. It has no DII figure.
+NSDL_URL = "https://www.fpi.nsdl.co.in/web/Reports/Latest.aspx"
+
+
+def amount(s):
+    """'5,564.90' -> 5564.9 and '(237.84)' -> -237.84; None when the cell isn't a number."""
+    t = str(s).strip().replace(",", "")
+    neg = t.startswith("(") and t.endswith(")")
+    try:
+        v = float(t.strip("()"))
+    except ValueError:
+        return None
+    return -v if neg else v
+
+
+def parse_nsdl(page):
+    """The Equity sub-total row of 'Daily Trends in FPI Investments': gross buys, sells and net, in ₹ crore."""
+    m = re.search(r"Daily Trends in FPI Investments on\s*(\d{1,2}-[A-Za-z]{3}-\d{4})", page)
+    day = parse_date(m.group(1)) if m else None
+    equity = False
+    for row in re.findall(r"<tr[^>]*>(.*?)</tr>", page, re.S | re.I):
+        cells = [re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", c))).strip()
+                 for c in re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", row, re.S | re.I)]
+        cells = [c for c in cells if c]
+        if "Equity" in cells:
+            equity = True
+        elif equity and cells and cells[0] == "Sub-total":
+            vals = [v for v in (amount(c) for c in cells[1:]) if v is not None]
+            if day and len(vals) >= 3:
+                return {"date": day.isoformat(), "source": "NSDL", "dii": None,
+                        "fii": {"buy": round(vals[0], 2), "sell": round(vals[1], 2), "net": round(vals[2], 2)}}
+            return None
+    return None
+
+
+def nsdl_fpi():
+    try:
+        page = get(NSDL_URL, referer="https://www.fpi.nsdl.co.in/").decode("utf-8", "replace")
+    except Exception as e:  # noqa: BLE001
+        log(f"NSDL FPI: unavailable ({type(e).__name__}: {e})")
+        return None
+    res = parse_nsdl(page)
+    if not res:
+        log("NSDL FPI: equity row not found")
+        return None
+    log(f"NSDL FPI {res['date']}: equity net ₹{res['fii']['net']:,.0f} cr (buys ₹{res['fii']['buy']:,.0f}, sells ₹{res['fii']['sell']:,.0f})")
+    return res
+
+
 # ---------- FII positioning in index futures ----------
 
 def participant_oi(day):
@@ -322,7 +374,8 @@ def week_summary(sectors, fno_hist, cash_hist):
             out["fii_long_5d_ago"] = fno_hist[days[-6]]
     if len(cash_hist) >= 2:
         out["fii_cash_5d"] = round(sum(h["fii"] for h in cash_hist[-5:]), 2)
-        out["dii_cash_5d"] = round(sum(h["dii"] for h in cash_hist[-5:]), 2)
+        dii = [h["dii"] for h in cash_hist[-5:] if h.get("dii") is not None]
+        out["dii_cash_5d"] = round(sum(dii), 2) if dii else None
     return out or None
 
 
@@ -393,7 +446,7 @@ def main():
     path = os.path.join(DATA, "flows.json")
     prev = load_json(path, {})
     rows = deals()
-    c = cash()
+    c = cash() or nsdl_fpi()
     f = fno()
     idx_hist, sectors, idx_date = indices(prev.get("index_history"))
     fno_hist = dict(prev.get("fno_history") or {})
@@ -405,7 +458,8 @@ def main():
 
     hist = {h["date"]: h for h in prev.get("cash_history", []) if h.get("date")}
     if c:
-        hist[c["date"]] = {"date": c["date"], "fii": c["fii"]["net"], "dii": c["dii"]["net"]}
+        hist[c["date"]] = {"date": c["date"], "fii": c["fii"]["net"], "dii": c["dii"]["net"] if c.get("dii") else None,
+                           "src": c.get("source", "NSE")}
     hist = sorted(hist.values(), key=lambda h: h["date"])[-45:]
 
     by = {}
@@ -418,7 +472,8 @@ def main():
 
     out = {
         "updated": NOW.isoformat(timespec="seconds"),
-        "source": "NSE (bulk and block deals, provisional FII/DII cash, participant-wise open interest)",
+        "source": "NSE (bulk and block deals, provisional FII/DII cash, participant-wise open interest); "
+                  "NSDL (daily FPI investment, when NSE's report can't be reached)",
         "cash": c or prev.get("cash"),
         "cash_history": hist,
         "fno": f or prev.get("fno"),
