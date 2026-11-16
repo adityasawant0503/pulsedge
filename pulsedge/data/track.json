@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T10:02:33+05:30",
+ "updated": "2026-11-16T10:16:35+05:30",
  "summary": {
-  "calls": 1458,
-  "scored_calls": 320,
+  "calls": 1460,
+  "scored_calls": 322,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "73516849ee109f2d",
+   "symbol": "TATAPOWER",
+   "time": "2026-11-16T10:09:14+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Tata Power Renewable Energy Limited: Press Release |SUBJECT: Press Release",
+   "url": "https://nsearchives.nseindia.com/content/debt/WDM/TPREL655_16112026100501_NSEPressReleaseTPREL.pdf",
+   "entry_date": "2026-11-13",
+   "entry": 348.0
+  },
+  {
+   "id": "df27e0e70179ca38",
+   "symbol": "KAYNES",
+   "time": "2026-11-16T09:51:03+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Kaynes Technology shares tank 18% as Q2 PAT plunges 65%, margin shrinks",
+   "url": "https://www.business-standard.com/markets/news/kaynes-technology-shares-tank-18-as-q2-pat-plunges-65-margin-shrinks-126111600694_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 3430.0
+  },
   {
    "id": "fc095254f779a17a",
    "symbol": "TMPV",
