@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T13:15+05:30",
+ "updated": "2026-11-16T13:32+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -378,6 +378,22 @@
    "updated": "2026-11-16T11:01+05:30",
    "model": "openai/gpt-oss-20b"
   },
+  "IDEA": {
+   "summary": "Vodafone Idea lost more mobile customers than expected in its recent quarter. At the same time, telecom stocks, including Vodafone Idea, saw a price increase as investors showed optimism for the sector.",
+   "why": "Fewer customers mean less money coming in, which is risky for a company with high debts. This drop in subscribers could worsen the company's financial health.",
+   "upside": "Investors are currently optimistic about the telecom sector, which has driven up stock prices.",
+   "downside": "Losing customers reduces income, which is dangerous for a company carrying high debt levels.",
+   "watch": [
+    "Future changes in the number of mobile subscribers",
+    "The company's overall financial health and debt management",
+    "Whether the current rise in telecom stock prices continues"
+   ],
+   "about": "Vodafone Idea is a company in the telecommunication sector.",
+   "basis": "e07b58536c6f",
+   "items": 3,
+   "updated": "2026-11-16T13:32+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "INDUSTOWER": {
    "summary": "Indus Towers is seeing rising attention as part of a broader positive movement in telecom stocks. An expert has also pointed out a technical breakout pattern for the company's shares.",
    "why": "This matters because sector-wide optimism and technical breakouts can attract short-term trader interest and influence market momentum.",
@@ -425,22 +441,6 @@
    "items": 2,
    "updated": "2026-11-16T11:16+05:30",
    "model": "gemini-flash-lite-latest"
-  },
-  "IDEA": {
-   "summary": "Vodafone Idea shares rose by about 2% recently as part of a broader increase in telecom stocks. This movement happened alongside other major players in the sector, with one company nearing its highest price ever.",
-   "why": "If you own shares, this rise means the value of your holding has increased, reflecting current investor optimism about the telecom industry.",
-   "upside": "Continued positive sentiment in the telecom sector could support further price gains.",
-   "downside": "The recent rally might be short-lived, and investors may sell shares to lock in profits after such a strong rise.",
-   "watch": [
-    "Whether the telecom sector rally continues or reverses",
-    "Signs of profit-taking by investors",
-    "General market sentiment towards the Nifty 500 index"
-   ],
-   "about": "Vodafone Idea is a telecommunications company listed on the NSE.",
-   "basis": "5c2c9390c9fc",
-   "items": 2,
-   "updated": "2026-11-16T11:16+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "TATACOMM": {
    "summary": "Telecom stocks, including Tata Communications, are rising as investors show optimism about the sector. Major peers like Bharti Airtel and Vodafone Idea have seen significant price increases recently.",
