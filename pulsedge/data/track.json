@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T09:02:39+05:30",
+ "updated": "2026-11-16T09:17:32+05:30",
  "summary": {
-  "calls": 1450,
-  "scored_calls": 312,
+  "calls": 1451,
+  "scored_calls": 313,
   "d1": {
    "scored": 262,
    "hits": 158,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "7257cc3b09e8b4f7",
+   "symbol": "OIL",
+   "time": "2026-11-16T09:02:00+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Oil prices edge lower on expectations of supply surplus from West Asia",
+   "url": "https://www.business-standard.com/markets/commodities/oil-prices-edge-lower-on-expectations-of-supply-surplus-from-west-asia-126111600050_1.html",
+   "entry_date": "2026-11-13",
+   "entry": 441.5
+  },
   {
    "id": "724e62210b594cf1",
    "symbol": "KPIL",

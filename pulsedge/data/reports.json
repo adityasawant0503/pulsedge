@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T09:01+05:30",
+ "updated": "2026-11-16T09:16+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -188,19 +188,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is approaching a dividend record date this week, while recent macro data like WPI inflation and global oil price movements are influencing the sector. Crude prices have been volatile, causing oil‑sensitive stocks to fluctuate.",
-   "why": "Dividend timing can cause a short‑term price dip, and changes in inflation or oil prices can affect the company's earnings and cash flow.",
-   "upside": "",
-   "downside": "Higher inflation or rising oil prices could hurt demand and squeeze profit margins, and sudden geopolitical shifts could reverse oil price trends.",
+   "summary": "Oil India is navigating mixed signals as global oil prices have edged lower on supply surplus expectations, while earlier spikes pushed crude‑sensitive stocks down. The company also has an upcoming dividend record date, adding a short‑term price factor.",
+   "why": "Shareholders feel the impact of oil price swings on earnings and the dividend timing can affect the stock’s short‑term price.",
+   "upside": "A rebound in oil prices could lift the company’s revenue and profit margins.",
+   "downside": "Falling oil prices may cut earnings and the ex‑dividend date could trigger a price dip.",
    "watch": [
-    "Dividend record dates and announced returns for Oil India",
-    "Upcoming WPI inflation and oil price data",
-    "Global crude price movements and related geopolitical developments"
+    "Global oil price movements and supply‑demand outlook",
+    "Dividend record date and ex‑dividend price effect",
+    "WPI inflation and oil price data releases"
    ],
-   "about": "Oil India Ltd. is an Indian oil and gas exploration and production company.",
-   "basis": "b7545926fa9e",
-   "items": 4,
-   "updated": "2026-11-16T08:16+05:30",
+   "about": "Oil India Ltd. explores and produces oil and gas in India.",
+   "basis": "b4893cb50172",
+   "items": 5,
+   "updated": "2026-11-16T09:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "PAYTM": {
@@ -443,22 +443,6 @@
    "updated": "2026-11-16T09:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "GODREJIND": {
-   "summary": "Godrej Industries' stock shows an upward RSI trend, indicating improving momentum, while its sister firm Godrej Properties has bought a 31‑acre plot in Indore for a housing project.",
-   "why": "The technical momentum could affect share performance, and the land purchase may influence the group’s growth prospects.",
-   "upside": "If the upward momentum sustains, the share could benefit from continued buying interest.",
-   "downside": "A false breakout could occur if market conditions remain choppy, leading to a price pullback.",
-   "watch": [
-    "RSI trend for Godrej Industries",
-    "Progress of Godrej Properties' Indore land development",
-    "Overall market volatility"
-   ],
-   "about": "Godrej Industries Ltd. is a diversified conglomerate listed in the Nifty 500.",
-   "basis": "2dd6202dcb07",
-   "items": 2,
-   "updated": "2026-11-16T08:46+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "ZEEL": {
    "summary": "Zee Entertainment Enterprises Ltd. announced a share buyback plan worth ₹600 crore and its board passed a resolution to consider the buyback. The media sector index has been slightly down yesterday but up 3.6% over the past five sessions.",
    "why": "The buyback could return cash to shareholders and may signal management’s confidence in the share price. It also has the potential to influence the stock’s valuation.",
@@ -537,6 +521,118 @@
    "basis": "4b09b509020b",
    "items": 1,
    "updated": "2026-11-16T09:01+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "WAAREEENER": {
+   "summary": "Waaree Energies Ltd. announced that its subsidiary Waaree Energy Storage Solutions Pvt Ltd has begun commissioning a new battery‑pack manufacturing line, expanding the firm’s product range into energy‑storage equipment.",
+   "why": "Shareholders should watch because the new line could add fresh revenue, but any delay in scaling up production could affect earnings.",
+   "upside": "If the battery‑pack line reaches commercial scale on schedule, it could lift sales and margins.",
+   "downside": "Delays in ramp‑up or technical issues could postpone revenue benefits.",
+   "watch": [
+    "Progress of the battery‑pack line commissioning",
+    "Start of commercial production and sales",
+    "Market demand and pricing for battery packs"
+   ],
+   "about": "",
+   "basis": "821abfd4cb49",
+   "items": 1,
+   "updated": "2026-11-16T09:16+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "ABCAPITAL": {
+   "summary": "Aditya Birla Capital shares recently showed a technical chart pattern that suggests strong buying interest. However, the broader financial sector has seen some recent weakness, which could affect this trend.",
+   "why": "This matters because the chart pattern hints at potential price movement, but it is not a guarantee. Investors should be aware that general market trends can override individual stock signals.",
+   "upside": "The strong buying interest indicated by the chart pattern could lead to further price gains if market conditions remain supportive.",
+   "downside": "Broad market weakness could invalidate the technical pattern, causing the share price to fall.",
+   "watch": [
+    "Whether the White Marubozu pattern holds in the coming sessions",
+    "The direction of the broader Financials sector index",
+    "Any new news regarding Aditya Birla Capital's business performance"
+   ],
+   "about": "Aditya Birla Capital is a company in the financial services sector.",
+   "basis": "954d7b4f6b9c",
+   "items": 1,
+   "updated": "2026-11-16T09:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "COALINDIA": {
+   "summary": "Coal India is releasing its quarterly financial results, which often cause share prices to move. At the same time, its subsidiary Mahanadi Coalfields has set a price range for its upcoming public share offering.",
+   "why": "The new results will show how much money the company made, while the subsidiary's offering could change the value of existing shares by increasing the total number of shares available.",
+   "upside": "The company was recently highlighted as a high-yield dividend stock, which may attract investors looking for regular income.",
+   "downside": "The subsidiary's share offering could dilute the value of existing Coal India shares, and the IPO might not be fully subscribed by new investors.",
+   "watch": [
+    "The specific numbers in Coal India's quarterly earnings report.",
+    "The final price set for the Mahanadi Coalfields IPO.",
+    "How many investors apply for the Mahanadi Coalfields shares."
+   ],
+   "about": "Coal India is a major listed company in the Oil Gas & Consumable Fuels sector and is part of the Nifty 50 index.",
+   "basis": "8532c821b240",
+   "items": 4,
+   "updated": "2026-11-16T09:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "BIOCON": {
+   "summary": "Biocon Ltd. received U.S. FDA approval for Pebrilzo, a biosimilar version of the cancer drug Perjeta®, expanding its oncology portfolio. The approval could open a new revenue stream, but commercial success will depend on hospital formulary inclusion.",
+   "why": "Shareholders may see future sales growth if Pebrilzo is adopted by hospitals, but the actual uptake is uncertain.",
+   "upside": "If Pebrilzo is added to hospital formularies, sales could increase significantly.",
+   "downside": "If hospitals do not include Pebrilzo in their formularies, the drug may not generate expected revenue.",
+   "watch": [
+    "Progress of Pebrilzo's market launch in the U.S.",
+    "Hospital formulary decisions regarding Pebrilzo",
+    "Movement of the Healthcare sector index"
+   ],
+   "about": "Biocon Ltd. is an Indian biopharmaceutical company that develops and manufactures medicines, including biosimilars.",
+   "basis": "bca56fca79cc",
+   "items": 1,
+   "updated": "2026-11-16T09:16+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "NMDC": {
+   "summary": "NMDC reported a quarterly profit that fell slightly below expectations, causing its shares to slide and the stock to be down 23% over six months. The metals sector index also fell 1% in the last session.",
+   "why": "A profit miss can pressure short‑term sentiment, while the dividend record remains a key consideration for shareholders.",
+   "upside": "",
+   "downside": "Weak global metal prices and lower mining volumes could further hurt earnings.",
+   "watch": [
+    "Quarterly profit results versus expectations",
+    "Global metal price trends",
+    "Dividend announcements or payouts"
+   ],
+   "about": "NMDC Ltd is a major mining company in India's metals and mining sector.",
+   "basis": "03743ca8c153",
+   "items": 1,
+   "updated": "2026-11-16T09:16+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "ASHOKLEY": {
+   "summary": "Ashok Leyland released its quarterly financial results and declared an interim dividend of one rupee per share. The company also appointed a new non-executive director to its board.",
+   "why": "The dividend provides a small direct cash return to shareholders, while the financial results show how profitable the company has been recently.",
+   "upside": "Shareholders who own the stock by the record date will receive the declared cash dividend.",
+   "downside": "The share price may drop slightly on the ex-date to reflect the dividend payout, and earnings results can sometimes cause sharp price moves if they differ from expectations.",
+   "watch": [
+    "The record date of November 20, 2026, for dividend eligibility",
+    "The ex-dividend date when the stock price adjusts",
+    "Market reaction to the September quarter financial results"
+   ],
+   "about": "Ashok Leyland is a major vehicle manufacturer listed in the Capital Goods sector.",
+   "basis": "100eab07570b",
+   "items": 6,
+   "updated": "2026-11-16T09:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "HAL": {
+   "summary": "Hindustan Aeronautics Limited recently informed the stock exchange about a change in its management team. This news appeared alongside market discussions comparing it to other defense companies after their recent earnings reports.",
+   "why": "A change in leadership can affect how the company runs its day-to-day operations and executes its plans, which may influence the value of the shares you own.",
+   "upside": "",
+   "downside": "Leadership transitions can create short-term uncertainty about the company's direction and execution pace.",
+   "watch": [
+    "Official details on the new management team",
+    "Any immediate statements from the company regarding strategy",
+    "How the stock reacts to the news in the coming days"
+   ],
+   "about": "",
+   "basis": "6db6fd7ba46f",
+   "items": 2,
+   "updated": "2026-11-16T09:16+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "RELIANCE": {
