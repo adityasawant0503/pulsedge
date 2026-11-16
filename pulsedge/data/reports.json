@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-16T12:45+05:30",
+ "updated": "2026-11-16T13:01+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a mixed day where the overall market rose, with the Sensex gaining 400 points, but several individual stocks fell sharply due to poor quarterly results. Tata Motors PV and Kaynes Technology saw significant drops after reporting large losses and profit declines. In contrast, Eicher Motors shares rose on record sales and profits, while VA Tech Wabag fell after a major client cancelled a large project. Foreign investors slightly reduced their long positions in index futures.",
+  "summary": "The overall market was positive, with the Sensex gaining 400 points, but several individual stocks fell sharply due to poor quarterly results. Tata Motors, Kaynes Technology, and Inox Wind all saw their share prices drop significantly after reporting large losses or profit declines. In contrast, Eicher Motors shares rose after the company posted its best-ever quarterly performance. A leadership change at Mahindra Logistics also caused its stock to fall as investors adjusted to the news.",
   "themes": [
-   "Quarterly earnings reports drove sharp price swings in specific stocks.",
-   "Losses and profit drops led to selling pressure in auto and tech sectors.",
-   "Strong performance in two-wheeler manufacturing boosted Eicher Motors shares."
+   "Poor quarterly earnings caused sharp drops in auto and tech stocks.",
+   "Strong sales and profits helped Eicher Motors stand out in a mixed market.",
+   "Leadership changes and lost contracts created uncertainty for specific companies."
   ],
   "watch": [
-   "Whether Tata Motors PV's losses are one-time or ongoing structural issues.",
-   "Potential short-term bounces in oversold stocks like Kaynes Technology.",
-   "Market reaction to new contracts won by Kalpataru Projects and Hirect."
+   "Whether the losses at Tata Motors and Kaynes Technology are one-time events or ongoing issues.",
+   "How investors react to the new leadership at Mahindra Logistics.",
+   "If the positive market trend continues despite the weakness in the auto sector."
   ],
   "date": "2026-11-16",
-  "basis": "21a03f10a003",
-  "updated": "2026-11-16T12:01+05:30",
+  "basis": "c0c3cc3cc606",
+  "updated": "2026-11-16T13:01+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 38
+  "items": 45
  },
  "stocks": {
   "TMPV": {
@@ -650,22 +650,6 @@
    "updated": "2026-11-16T09:31+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "JSWSTEEL": {
-   "summary": "JSW Steel recently agreed to acquire a new asset and set up a subsidiary called Acre Point Developers Private Limited. These moves suggest the company is expanding its operations or restructuring its business units.",
-   "why": "These changes could affect the company's future revenue and costs, which directly impacts the value of its shares for investors.",
-   "upside": "The acquisition may help the company grow its production capacity or market share.",
-   "downside": "The new acquisition and subsidiary could increase debt or require upfront spending before they start generating profit.",
-   "watch": [
-    "Details on the specific asset being acquired",
-    "How the new subsidiary will operate",
-    "Changes in the company's debt levels"
-   ],
-   "about": "JSW Steel is a major Indian steel manufacturer and one of the largest listed companies in the country.",
-   "basis": "8a495116f473",
-   "items": 2,
-   "updated": "2026-11-16T09:31+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "GLENMARK": {
    "summary": "Glenmark Pharmaceuticals launched a cheaper version of a cancer drug in the United States. This move allows the company to sell its product in a major global market.",
    "why": "For shareholders, entering a large market like the US can lead to higher income and profits for the company.",
@@ -760,6 +744,22 @@
    "items": 1,
    "updated": "2026-11-16T10:01+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "JSWSTEEL": {
+   "summary": "JSW Steel announced an agreement to acquire a new asset. The deal could expand its capacity and market share. The metals sector index fell 1% in the last session but is up 0.4% over five days.",
+   "why": "Investors need to see how the acquisition will affect revenue growth and the company’s debt.",
+   "upside": "A well‑priced acquisition that adds capacity could boost earnings.",
+   "downside": "A high purchase price or added debt could weigh on profitability.",
+   "watch": [
+    "Details of the acquisition agreement",
+    "Impact on JSW Steel's debt levels",
+    "Metals sector price movements"
+   ],
+   "about": "JSW Steel Ltd. is a major Indian steel producer.",
+   "basis": "c5b0f0e13037",
+   "items": 1,
+   "updated": "2026-11-16T13:01+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "IIFL": {
    "summary": "IIFL Finance recently updated its credit rating, which affects how much it costs to borrow money. The broader financial sector has seen mixed results, dropping slightly in the last session but rising over the past week.",
