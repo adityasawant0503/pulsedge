@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T10:00+05:30",
+ "updated": "2026-11-17T10:15+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -332,20 +332,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is facing pressure from falling global oil prices, which dropped sharply due to expectations of a large supply surplus. The company is also set to announce dividend record dates this week, which may cause minor price adjustments.",
-   "why": "Lower oil prices can reduce the profit margins for companies that sell fuel, potentially affecting their earnings and share value. Shareholders should watch how these price changes impact the company's financial health.",
-   "upside": "Geopolitical tensions in the Middle East could quickly reverse the supply surplus narrative and push oil prices back up.",
-   "downside": "A sustained drop in oil prices could compress profit margins and lead to lower dividend payouts for shareholders.",
+   "summary": "Oil India is facing a backdrop of falling global oil prices as supply outpaces demand, while its sector index has shown modest gains. A dividend record date for the company is also approaching.",
+   "why": "Lower oil prices can squeeze the company’s profit margins and affect dividend payouts, which matters to shareholders.",
+   "upside": "If geopolitical tensions lift oil prices, the company’s earnings and dividend could improve.",
+   "downside": "Sustained low oil prices could compress margins and reduce dividend payouts.",
    "watch": [
-    "Global oil price movements and supply surplus forecasts",
-    "Upcoming dividend record dates and ex-dates",
-    "Geopolitical developments in the Middle East"
+    "Oil price trends and any reversal due to geopolitical events",
+    "Upcoming dividend record date and payout details",
+    "Sector index performance relative to Oil India"
    ],
-   "about": "Oil India Ltd. is an Indian oil and gas company listed on the NSE.",
-   "basis": "256cecd63260",
-   "items": 8,
-   "updated": "2026-11-17T08:20+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Oil India Ltd. explores and produces oil and gas in India.",
+   "basis": "bcacccfc104c",
+   "items": 9,
+   "updated": "2026-11-17T10:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "HINDZINC": {
    "summary": "PulsEdge flagged that Hindustan Zinc’s stock fell despite announcing a ₹80,000 cr expansion plan and a capacity‑addition programme. The market sees the shares as expensive, which may be weighing on the price. The company also disclosed recent board decisions.",
@@ -394,6 +394,22 @@
    "items": 3,
    "updated": "2026-11-16T11:16+05:30",
    "model": "gemini-flash-lite-latest"
+  },
+  "URBANCO": {
+   "summary": "Urban Company announced a ₹2,500 crore qualified institutional placement (QIP) to fund a new cleaning service, and its shares fell about 2% on the news. The board set a floor price of ₹161.03 per share for the placement.",
+   "why": "Existing shareholders face dilution, meaning their ownership percentage and earnings per share could shrink.",
+   "upside": "If the new cleaning service gains traction, it could boost revenue and improve long‑term earnings.",
+   "downside": "The large share issue may pressure the stock price and dilute earnings per share.",
+   "watch": [
+    "Subscription level of the QIP",
+    "Launch and market response to the new cleaning service",
+    "Future earnings per share trends"
+   ],
+   "about": "Urban Company offers on‑demand home services such as cleaning, repairs and beauty appointments.",
+   "basis": "4e9d477f708b",
+   "items": 2,
+   "updated": "2026-11-17T10:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "VEDL": {
    "summary": "The Supreme Court upheld the rejection of Twin Star’s plan to take control of Vedanta, sending the stock down about 3%. At the same time, Vedanta Power was highlighted as a sub‑₹100 pick in a recent recommendation.",
@@ -506,22 +522,6 @@
    "items": 1,
    "updated": "2026-11-17T09:30+05:30",
    "model": "openai/gpt-oss-20b"
-  },
-  "URBANCO": {
-   "summary": "Urban Company approved a qualified institutions placement (QIP) to sell new shares to large investors at a floor price of ₹161.03 per share, raising fresh capital. The move could dilute existing shareholders' ownership and earnings per share.",
-   "why": "Share dilution can affect the value of each share you own and may put pressure on the stock price.",
-   "upside": "If the placement is fully subscribed, the company gains funds that can support growth initiatives.",
-   "downside": "The additional shares may reduce earnings per share, potentially weighing on the share price.",
-   "watch": [
-    "Subscription level and pricing of the QIP",
-    "Market reaction to the dilution announcement",
-    "How the raised capital will be deployed"
-   ],
-   "about": "Urban Company runs an online platform that links consumers with professional providers for home and personal services.",
-   "basis": "0ff99937edca",
-   "items": 1,
-   "updated": "2026-11-17T00:55+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "COCHINSHIP": {
    "summary": "Cochin Shipyard Ltd. is one of four public sector companies set to announce dividend record dates between November 16 and 20. The company is part of the Nifty 500 index, which tracks India's 500 largest listed firms.",

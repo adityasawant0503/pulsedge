@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T10:01:11+05:30",
+ "updated": "2026-11-17T10:15:58+05:30",
  "summary": {
-  "calls": 1516,
-  "scored_calls": 378,
+  "calls": 1518,
+  "scored_calls": 380,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "fb00ddeb2a2ca5fc",
+   "symbol": "OIL",
+   "time": "2026-11-17T09:56:51+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Oil prices fall as supply surplus outlook outweighs tanker attack concerns",
+   "url": "https://www.business-standard.com/markets/commodities/oil-prices-fall-as-supply-surplus-outlook-outweighs-tanker-attack-concerns-126111700067_1.html",
+   "entry_date": "2026-11-16",
+   "entry": 441.4
+  },
+  {
+   "id": "dff458f8f03354a3",
+   "symbol": "URBANCO",
+   "time": "2026-11-17T09:55:05+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Urban Company shares slip 2% as firm launches ₹2,500 crore QIP issue",
+   "url": "https://www.business-standard.com/markets/news/urban-company-shares-slip-2-as-firm-launches-2-500-crore-qip-issue-126111700180_1.html",
+   "entry_date": "2026-11-16",
+   "entry": 171.7
+  },
   {
    "id": "04ba412dc32ec4f8",
    "symbol": "TATACHEM",
