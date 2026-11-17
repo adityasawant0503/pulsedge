@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T11:17+05:30",
+ "updated": "2026-11-17T11:30+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "The market had mixed activity. A gas leak at ONGC could hurt its earnings, while a large block deal pushed Groww to a record high. Oil prices fell, easing bond gains but hurting oil‑related stocks. Several companies had big share issues, causing price swings.",
+  "summary": "PulsEdge flagged a major gas leak at an ONGC plant in Andhra Pradesh, which could impact production and earnings. Rumors about a Tata Sons IPO caused Tata-related stocks to rally, prompting the exchange to seek clarification from three companies. Meanwhile, real estate stocks surged in November, with the Nifty Realty index up 14% and DLF hitting a one-year high.",
   "themes": [
-   "Safety and production risks at ONGC",
-   "Large share transactions influencing prices",
-   "Oil price movements affecting bonds and energy stocks"
+   "Corporate actions like IPOs and share allotments are driving significant price swings.",
+   "Sectoral performance is mixed, with real estate strong but pharma and metals weak.",
+   "Operational risks, such as the ONGC gas leak, are creating uncertainty for specific stocks."
   ],
   "watch": [
-   "Monitor the outcome of the ONGC gas leak investigation",
-   "Watch the progress of the Castrol India open offer and its regulatory status",
-   "Keep an eye on oil price trends and their impact on energy and bond markets"
+   "Official responses from Tata Chemicals, Tata Motors, and Tata Investment Corp regarding IPO rumors.",
+   "The outcome of TTK Healthcare’s board meeting on November 20 regarding bonus shares.",
+   "Whether the recent surge in real estate stocks continues or faces a correction."
   ],
   "date": "2026-11-17",
-  "basis": "443d78f1e6c1",
-  "updated": "2026-11-17T10:45+05:30",
-  "model": "openai/gpt-oss-20b",
-  "items": 32
+  "basis": "2a3cb2a130e9",
+  "updated": "2026-11-17T11:30+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 55
  },
  "stocks": {
   "TMPV": {
@@ -203,6 +203,22 @@
    "updated": "2026-11-16T14:30+05:30",
    "model": "openai/gpt-oss-20b"
   },
+  "NUVAMA": {
+   "summary": "Nuvama Wealth Management recently announced the allotment of new securities to raise fresh capital. This move adds to a period where the broader financial services sector has seen modest gains over the last week.",
+   "why": "Issuing new shares increases the total number of shares in circulation, which can reduce the value of each existing share held by current investors.",
+   "upside": "The new funds raised could be used for business growth, potentially limiting downside risk.",
+   "downside": "The increase in total shares may dilute the ownership percentage of current shareholders.",
+   "watch": [
+    "How the company plans to use the newly raised capital",
+    "Future announcements regarding the use of funds",
+    "Performance of the broader financial services sector"
+   ],
+   "about": "Nuvama Wealth Management is a company in the Financial Services sector.",
+   "basis": "a1815db9d55f",
+   "items": 2,
+   "updated": "2026-11-17T11:30+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "MPHASIS": {
    "summary": "Mphasis is expected to benefit from strong Q3 revenue growth and AI‑led short‑cycle deals, according to recent PulsEdge coverage. However, slower global IT spending could weigh on earnings.",
    "why": "Shareholders care because the earnings outlook looks positive but could be affected by broader IT spending trends.",
@@ -329,22 +345,6 @@
    "basis": "03ce51d8a132",
    "items": 3,
    "updated": "2026-11-17T11:17+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "NUVAMA": {
-   "summary": "Nuvama Wealth Management Ltd. (NUVAMA) is a financial services firm in the Nifty 500. Its sector index fell 0.7% in the last session but has risen 4.7% over the past five sessions.",
-   "why": "Sector moves can influence NUVAMA’s share price, so investors watch the financials index closely.",
-   "upside": "",
-   "downside": "",
-   "watch": [
-    "Financials sector index trend",
-    "Upcoming earnings releases in the financial services space",
-    "Regulatory updates affecting wealth management"
-   ],
-   "about": "Nuvama Wealth Management provides wealth management and advisory services.",
-   "basis": "7b167071d381",
-   "items": 1,
-   "updated": "2026-11-16T06:41+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "SOLARINDS": {
@@ -858,6 +858,38 @@
    "updated": "2026-11-16T09:31+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "CANBK": {
+   "summary": "Canara Bank shares have seen strong recent gains as the broader banking sector hits record highs. The stock was recently highlighted in market comparisons and analyst lists, contributing to its upward movement.",
+   "why": "For a shareholder, this means the value of their holding has increased recently due to general market optimism in the banking sector. However, this rise is tied to broader market trends rather than specific company news.",
+   "upside": "Continued strength in the banking sector could support further gains in the stock price.",
+   "downside": "If the broader market pulls back or the banking sector reverses, the stock could face volatility and price drops.",
+   "watch": [
+    "Movements in the Nifty Bank index",
+    "General market sentiment in the Financials sector",
+    "Comparison trends with other public sector banks"
+   ],
+   "about": "Canara Bank is a financial services company listed in India's Nifty 500 index.",
+   "basis": "704d59a9af7d",
+   "items": 2,
+   "updated": "2026-11-17T11:30+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "PNB": {
+   "summary": "Punjab National Bank shares recently hit their highest price in a year, rising by up to 24% in the last month. The stock is part of a broader trend where bank stocks are reaching record highs.",
+   "why": "Shareholders may see their holdings increase in value, but high prices can also lead to short-term drops if investors sell to lock in profits.",
+   "upside": "The banking sector is currently strong, with the financials index rising over the last week.",
+   "downside": "If the buying momentum fades or the broader market pulls back, the stock price could reverse and fall.",
+   "watch": [
+    "Whether the stock holds its recent high levels or sees profit-taking.",
+    "The overall performance of the Nifty Bank index.",
+    "Any changes in the broader market sentiment that might affect bank stocks."
+   ],
+   "about": "Punjab National Bank is a financial services company listed on the NSE.",
+   "basis": "1bfd97277577",
+   "items": 2,
+   "updated": "2026-11-17T11:30+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "YESBANK": {
    "summary": "Yes Bank has denied a report of a $3.4 million cyber fraud, saying no loss and no government accounts were affected. The stock exchange has asked the bank to clarify the matter, keeping the issue open.",
    "why": "Shareholders need to know whether the rumor could impact the bank’s finances or reputation, which can move the share price.",
@@ -905,6 +937,22 @@
    "items": 1,
    "updated": "2026-11-16T09:46+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "ITC": {
+   "summary": "ITC reclaimed its 200‑day moving average after a year, sparking talk of a rebound or a fresh uptrend. The stock also rose as FMCG names led gains in a stronger Sensex.",
+   "why": "Crossing the 200‑day average can signal short‑term upside, and investors are currently favoring stable consumer stocks.",
+   "upside": "If the share stays above the 200‑day line, momentum could carry it higher.",
+   "downside": "A broader market weakness could pull the stock back down.",
+   "watch": [
+    "ITC holding above the 200‑day moving average",
+    "Overall market strength, especially mid‑ and small‑cap indices",
+    "FMCG sector performance trends"
+   ],
+   "about": "ITC Ltd. is a leading Indian fast‑moving consumer goods company.",
+   "basis": "a48732685016",
+   "items": 2,
+   "updated": "2026-11-17T11:30+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "TATAPOWER": {
    "summary": "Tata Power commissioned a 100.8 MW wind farm in Ausa, Maharashtra and its renewable arm issued a business press announcement.",
