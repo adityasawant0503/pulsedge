@@ -1,7 +1,41 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-17T12:34:17+05:30",
+ "updated": "2026-11-17T12:37:17+05:30",
  "items": [
+  {
+   "id": "82fa904b7e511d31",
+   "time": "2026-11-17T12:36:19+05:30",
+   "headline": "SEBI EYES STRICTER CURBS ON MARGIN-FUNDED STOCK PURCHASES; PROPOSES LINKING MTF LIMITS TO FREE FLOAT, RAISING CONCERNS OVER BROKER REVENUE AND TRADING VOLUMES",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9435",
+   "section": "macro",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [],
+   "sectors": [
+    "Broking",
+    "Small Caps"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "Regulatory",
+   "action": "Monitor broker earnings guidance and small-cap liquidity trends for signs of volume contraction.",
+   "reason": [
+    "SEBI proposal to link margin limits to free float may reduce leveraged buying.",
+    "Could impact brokerage revenue and small/mid-cap trading volumes."
+   ],
+   "risks": [
+    "Implementation details may differ from current proposal.",
+    "Market may have already priced in regulatory tightening."
+   ],
+   "plain": "Regulators are considering rules that make it harder to buy stocks using borrowed money.",
+   "why": "This could lower trading activity and affect companies that earn money from trading services.",
+   "check": "Look for official SEBI circulars or broker commentary on expected volume changes.",
+   "original": "• Proposed curbs could restrict additional leveraged buying in stocks crossing specified exposure thresholds. • Small- and mid-cap stocks likely to face tighter restrictions. • Potential impact on MTF book growth, brokerage income and trading activity.",
+   "latency": 58.3,
+   "lane": "fast"
+  },
   {
    "id": "76be7a4ad605cef4",
    "time": "2026-11-17T12:32:34+05:30",
