@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T14:31:46+05:30",
+ "updated": "2026-11-17T14:46:21+05:30",
  "summary": {
-  "calls": 1578,
-  "scored_calls": 439,
+  "calls": 1581,
+  "scored_calls": 442,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "dc98eb6adb62083f",
+   "symbol": "COALINDIA",
+   "time": "2026-11-17T14:40:00+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Mahanadi Coalfields IPO single profit calculator basis latest GMP: What investors may earn on listing?",
+   "url": "https://www.livemint.com/market/ipo/mahanadi-coalfields-ipo-single-profit-calculator-basis-latest-gmp-what-investors-may-earn-on-listing-11794905163788.html",
+   "entry_date": "2026-11-16",
+   "entry": 397.5
+  },
+  {
+   "id": "7fd269020c273cf0",
+   "symbol": "HINDZINC",
+   "time": "2026-11-17T14:32:32+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Hindustan Zinc Limited: Hindustan Zinc Limited has informed the Exchange regarding a press release dated November 17, 2026, titled \"Hindustan Zinc to be World s",
+   "url": "https://nsearchives.nseindia.com/corporate/HINDZINCNSE_17112026143223_FinalSEIntimation.pdf",
+   "entry_date": "2026-11-16",
+   "entry": 550.2
+  },
   {
    "id": "4aa8b70436bbaa78",
    "symbol": "HFCL",
@@ -46,6 +72,19 @@
    "url": "https://www.livemint.com/market/stock-market-news/hfcl-sterlite-technologies-hit-5-lower-circuits-after-multibagger-rallies-should-investors-buy-the-dip-11794902287012.html",
    "entry_date": "2026-11-16",
    "entry": 675.25
+  },
+  {
+   "id": "108370fe6ae651bc",
+   "symbol": "EICHERMOT",
+   "time": "2026-11-17T14:21:29+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Eicher Motors Limited: Eicher Motors Limited has informed the Exchange regarding Grant of 105 Options. |SUBJECT: ESOP/ESOS/ESPS",
+   "url": "https://nsearchives.nseindia.com/corporate/EICHERMOT_17112026141949_EMLGrantofRSUNovember172026Signed.pdf",
+   "entry_date": "2026-11-16",
+   "entry": 7599.0
   },
   {
    "id": "2ad327e7b4d2c6c9",

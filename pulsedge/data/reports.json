@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T14:31+05:30",
+ "updated": "2026-11-17T14:46+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -188,20 +188,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "EICHERMOT": {
-   "summary": "Eicher Motors reported record Q2 sales and profits, with margin recovery, and its shares jumped over 3% after the results. The company also saw its best‑ever quarterly performance.",
-   "why": "Strong earnings and margin improvement can increase investor confidence and support the share price for shareholders.",
-   "upside": "Continued margin recovery could further improve profitability.",
-   "downside": "The valuation may already reflect the good news, limiting upside.",
+   "summary": "Eicher Motors reported its best-ever quarterly sales and profits, beating market expectations. The company also announced the grant of 105 new employee stock options.",
+   "why": "Stronger profits and record sales suggest the business is performing well, which can increase the value of the shares you own.",
+   "upside": "Continued strong sales and profit growth could keep investor confidence high.",
+   "downside": "The new employee stock options may dilute existing shareholders if exercised, and the stock price may have already risen to reflect the good news.",
    "watch": [
-    "Next earnings guidance",
-    "Margin trend in subsequent quarters",
-    "Sector index movement"
+    "Whether the new employee stock options are exercised.",
+    "Future quarterly sales and profit figures.",
+    "How the broader auto sector performs, as it has recently declined."
    ],
-   "about": "Eicher Motors is an automobile and auto components company.",
-   "basis": "1d4adfb75026",
-   "items": 4,
-   "updated": "2026-11-16T14:30+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "Eicher Motors is an Indian automobile and auto components company known for manufacturing vehicles like the Royal Enfield bike.",
+   "basis": "46cd6ec1533d",
+   "items": 5,
+   "updated": "2026-11-17T14:46+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "CAPLIPOINT": {
    "summary": "Caplin Point Laboratories informed the exchange that the US FDA classified an inspection at its subsidiary, Caplin Steriles, as Official Action Indicated. This status signals serious compliance issues that could delay approvals for new products.",
@@ -411,6 +411,22 @@
    "updated": "2026-11-17T13:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "HINDZINC": {
+   "summary": "Hindustan Zinc announced a Rs 80,000 crore expansion to become the world’s largest zinc and silver producer and is adding production capacity. The stock fell after the announcement as investors worry the company may be over‑valued and that the large capex could strain cash flow.",
+   "why": "Shareholders need to watch whether the expansion translates into higher profits or whether cash‑flow pressure and valuation concerns weigh on the share price.",
+   "upside": "If the expansion succeeds and demand for zinc and silver stays strong, the company could see higher earnings and a stronger market position.",
+   "downside": "The massive capital spending could strain cash flow and valuation worries may keep the stock under pressure.",
+   "watch": [
+    "Progress of the Rs 80,000 crore expansion plan",
+    "Updates on cash‑flow and financing for the project",
+    "Market sentiment and valuation metrics as the sector index falls"
+   ],
+   "about": "Hindustan Zinc Ltd. is a metals and mining company that produces zinc and silver.",
+   "basis": "aecae4ef6fcd",
+   "items": 4,
+   "updated": "2026-11-17T14:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "TATAINVEST": {
    "summary": "The stock exchange has asked Tata Investment Corporation Ltd. to clarify recent news about a possible Tata Sons IPO, and the shares have rallied up to 9% after an RBI nudge. The financial services sector has also risen, gaining 0.6% in the last session and 2.7% over five sessions.",
    "why": "Investors watch the IPO news because it could affect the value of the parent company's shares, and the recent rally could reverse if the offering is delayed or cancelled.",
@@ -556,35 +572,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "COALINDIA": {
-   "summary": "Coal India Ltd. is preparing to sell parts of its Northern, Central and Mahanadi Coalfields units through IPOs, aiming to raise cash for the group. The company’s share price may react to the new listings and the amount of shares offered.",
-   "why": "Shareholders may see a change in the company’s capital structure and earnings per share, and the IPO could bring fresh funds that affect the business’s growth prospects.",
-   "upside": "A successful IPO could bring in cash and potentially increase the value of the remaining shares.",
-   "downside": "If the IPO is priced poorly or under‑subscribed, or if market conditions are weak, existing shareholders could face dilution and a drop in earnings per share.",
+   "summary": "Coal India is preparing IPOs for its Mahanadi, Northern and Central Coalfields units, selling a small part of its ownership to the public, which could bring cash but also dilute existing shareholders.",
+   "why": "Shareholders may face dilution of earnings per share, while the fresh funds could support higher dividends or growth initiatives.",
+   "upside": "If the IPOs are well‑received, the cash raised could strengthen the balance sheet and enable higher dividend payouts.",
+   "downside": "The share sales may dilute existing stakes and earnings, potentially putting downward pressure on the stock price.",
    "watch": [
-    "IPO pricing and demand for Mahanadi Coalfields shares",
-    "Market reaction to the announcement of Northern and Central Coalfields IPOs",
-    "Potential dilution of Coal India’s stake and earnings per share"
+    "Mahanadi Coalfields IPO pricing and subscription levels",
+    "Completion and pricing of Northern and Central Coalfields IPOs",
+    "Sector index performance and upcoming earnings releases"
    ],
-   "about": "Coal India Ltd. is a major coal mining company in India.",
-   "basis": "4b475fa18b40",
-   "items": 9,
-   "updated": "2026-11-17T11:17+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
-  "HINDZINC": {
-   "summary": "PulsEdge flagged that Hindustan Zinc’s stock fell despite announcing a ₹80,000 cr expansion plan and a capacity‑addition programme. The market sees the shares as expensive, which may be weighing on the price. The company also disclosed recent board decisions.",
-   "why": "Shareholders should watch the valuation debate and the cash‑flow impact of the large capital spend, as both can affect earnings and share price.",
-   "upside": "If the new capacity translates into higher sales and profits, the stock could benefit.",
-   "downside": "If valuation concerns linger or the high capex strains cash flow, the share price could face further pressure.",
-   "watch": [
-    "Valuation sentiment and how it influences the stock’s movement",
-    "Progress and spending on the ₹80,000 cr expansion plan",
-    "Effect of the capacity addition on cash flow and earnings"
-   ],
-   "about": "Hindustan Zinc Ltd. is a mining company that produces zinc and related metals.",
-   "basis": "c6b1b3c2ca23",
-   "items": 3,
-   "updated": "2026-11-17T10:00+05:30",
+   "about": "Coal India Ltd is India’s largest coal producer, operating a network of coal mines across the country.",
+   "basis": "41f5a29008f3",
+   "items": 10,
+   "updated": "2026-11-17T14:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "IDEA": {
