@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T15:46+05:30",
+ "updated": "2026-11-17T16:00+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -987,6 +987,22 @@
    "updated": "2026-11-16T09:16+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "HDFCBANK": {
+   "summary": "HDFC Bank shares have recovered sharply after a Q2 sell‑off, jumping about 20% from their October low and helping the Nifty Bank index hit a record high. The rally is part of a broader gain in the financial sector, which rose 0.6% in the last session.",
+   "why": "Share price moves reflect investor confidence and can affect the value of holdings. The bank’s performance also influences the broader banking index.",
+   "upside": "If HDFC Bank continues to outperform peers such as Axis Bank, it could see further price gains.",
+   "downside": "A shift in market sentiment or an overbought condition in the banking sector could pull the stock back.",
+   "watch": [
+    "Comparison of HDFC Bank’s upside versus Axis Bank",
+    "Continued strength of the Nifty Bank index and sector momentum",
+    "Potential headwinds or overbought signals in the financial sector"
+   ],
+   "about": "HDFC Bank Ltd. is a leading Indian commercial bank providing a wide range of financial services.",
+   "basis": "406538814855",
+   "items": 3,
+   "updated": "2026-11-17T16:00+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "PNB": {
    "summary": "Punjab National Bank shares have risen sharply, hitting an eight-year high and a 52-week peak. The stock gained about 31% in the last month, outperforming its sector which rose 2.7% over five sessions.",
    "why": "This rapid increase shows strong market interest, but it also means the price is at a record level. Shareholders may see their holdings gain value, though the sharp rise increases the chance of a short-term drop.",
@@ -1002,22 +1018,6 @@
    "items": 3,
    "updated": "2026-11-17T14:00+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "HDFCBANK": {
-   "summary": "Banking stocks surged as the Nifty Bank index hit a record high, with HDFC Bank jumping about 20% from its October low. Investor confidence is strong but the sector may be overbought in the short term.",
-   "why": "Shareholders feel the boost from broad banking enthusiasm, yet a potential overbought condition could pressure the stock.",
-   "upside": "If confidence persists, the stock could keep rising.",
-   "downside": "If the sector proves overbought, a pull‑back could weigh on the share.",
-   "watch": [
-    "Nifty Bank index level and momentum",
-    "Signs of overbought conditions in banking sector",
-    "Any new analyst recommendations or stock ideas"
-   ],
-   "about": "HDFC Bank Ltd. is a leading Indian private‑sector bank that provides a range of banking and financial services.",
-   "basis": "1ee441122b81",
-   "items": 2,
-   "updated": "2026-11-17T11:02+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "ETERNAL": {
    "summary": "Eternal Ltd. is one of India's 50 largest listed companies in the consumer services sector. Recent news compares its growth and earnings outlook with a rival food delivery company after their latest quarterly results.",
@@ -1161,6 +1161,22 @@
    "items": 1,
    "updated": "2026-11-16T09:46+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "AXISBANK": {
+   "summary": "Axis Bank shares have recovered after a recent Q2 sell‑off, joining a broader rally in Indian banks as the market index rose sharply. The financial sector index also posted gains, up 0.6% in the last session and 2.7% over five sessions.",
+   "why": "Share owners see the recovery and sector strength as factors that could support the stock’s price.",
+   "upside": "If the broader banking rally continues, Axis Bank could see further price gains.",
+   "downside": "A shift in market sentiment or headwinds for the banking sector could reverse the recent gains.",
+   "watch": [
+    "Comparison of Axis Bank’s performance with HDFC Bank",
+    "Sustainability of the overall market rally",
+    "Trend of the Financials sector index"
+   ],
+   "about": "Axis Bank Ltd. is a major Indian commercial bank and a Nifty 50 constituent.",
+   "basis": "1de2a0b890e6",
+   "items": 2,
+   "updated": "2026-11-17T16:00+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "FORTIS": {
    "summary": "Fortis Healthcare is being watched after news that hospitals expect to keep profits stable despite new drug‑price caps, while hospital stocks have recently surged up to 7%. The broader healthcare index has risen 1.4% over the past five sessions after a slight dip yesterday.",

@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T15:47:00+05:30",
+ "updated": "2026-11-17T16:00:46+05:30",
  "summary": {
-  "calls": 1587,
-  "scored_calls": 448,
+  "calls": 1589,
+  "scored_calls": 450,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "1b7acc7d6d84fa26",
+   "symbol": "AXISBANK",
+   "time": "2026-11-17T15:44:25+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "HDFC Bank vs Axis Bank: Both shares recover after Q2 sell-off; which banking stock offers higher upside? Check targets",
+   "url": "https://www.livemint.com/market/stock-market-news/hdfc-bank-vs-axis-bank-both-shares-recover-after-q2-sell-off-which-banking-stock-offers-higher-upside-check-targets-11794907748296.html",
+   "entry_date": "2026-11-16",
+   "entry": 1342.4
+  },
+  {
+   "id": "1b7acc7d6d84fa26",
+   "symbol": "HDFCBANK",
+   "time": "2026-11-17T15:44:25+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "HDFC Bank vs Axis Bank: Both shares recover after Q2 sell-off; which banking stock offers higher upside? Check targets",
+   "url": "https://www.livemint.com/market/stock-market-news/hdfc-bank-vs-axis-bank-both-shares-recover-after-q2-sell-off-which-banking-stock-offers-higher-upside-check-targets-11794907748296.html",
+   "entry_date": "2026-11-16",
+   "entry": 816.5
+  },
   {
    "id": "25376039c86b64c7",
    "symbol": "KARURVYSYA",
