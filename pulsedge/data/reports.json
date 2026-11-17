@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T12:00+05:30",
+ "updated": "2026-11-17T12:15+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a major gas leak at an ONGC plant in Andhra Pradesh, which could impact production and earnings. Rumors about a Tata Sons IPO caused Tata-related stocks to rally, prompting the exchange to seek clarification from three companies. Meanwhile, real estate stocks surged in November, with the Nifty Realty index up 14% and DLF hitting a one-year high.",
+  "summary": "PulsEdge flagged a mixed day where consumer stocks like Senco Gold and TTK Healthcare saw sharp gains, while energy and realty sectors faced setbacks. Senco Gold shares jumped 8% on record festive sales, and TTK Healthcare rose 20% after its board planned to consider a bonus issue. On the other hand, ONGC faces a major gas leak issue, and Adani Green received a stop-work notice for a hydro project. The stock exchange also asked Tata group companies to clarify rumors about a possible IPO, causing their shares to rally earlier in the day.",
   "themes": [
-   "Corporate actions like IPOs and share allotments are driving significant price swings.",
-   "Sectoral performance is mixed, with real estate strong but pharma and metals weak.",
-   "Operational risks, such as the ONGC gas leak, are creating uncertainty for specific stocks."
+   "Strong festive season sales boosted consumer and retail stocks.",
+   "Operational and regulatory issues weighed on energy and infrastructure companies.",
+   "Market speculation around a Tata group IPO drove volatility in related stocks."
   ],
   "watch": [
-   "Official responses from Tata Chemicals, Tata Motors, and Tata Investment Corp regarding IPO rumors.",
-   "The outcome of TTK Healthcare’s board meeting on November 20 regarding bonus shares.",
-   "Whether the recent surge in real estate stocks continues or faces a correction."
+   "Clarifications from Tata Chemicals, Tata Motors, and Tata Investment Corp regarding IPO rumors.",
+   "The outcome of the TTK Healthcare board meeting on Nov 20 regarding the bonus issue.",
+   "Any updates on the ONGC gas leak and its impact on production."
   ],
   "date": "2026-11-17",
-  "basis": "2a3cb2a130e9",
-  "updated": "2026-11-17T11:30+05:30",
+  "basis": "24863d3639d4",
+  "updated": "2026-11-17T12:15+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 55
+  "items": 70
  },
  "stocks": {
   "TMPV": {
@@ -297,6 +297,22 @@
    "basis": "2e86e5d7ccf0",
    "items": 2,
    "updated": "2026-11-16T15:32+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "EMBASSY": {
+   "summary": "Embassy Developments, the parent company of Embassy Office Parks REIT, launched a new luxury residential project called Embassy One Residences. This addition increases the company's total development value for the upcoming fiscal year to about ₹9,000 crore.",
+   "why": "This matters to shareholders because a larger project pipeline can lead to higher future income from the company's real estate activities.",
+   "upside": "The new luxury project could boost future earnings and strengthen the company's reputation in the high-end market.",
+   "downside": "The luxury housing market is sensitive to economic slowdowns, and there is a risk of delays in building the new project.",
+   "watch": [
+    "Progress on the construction of Embassy One Residences",
+    "Sales performance of the new luxury units",
+    "Overall trends in the Indian real estate sector"
+   ],
+   "about": "Embassy Office Parks REIT is a real estate investment trust that owns and manages office parks in India.",
+   "basis": "45e9046d3767",
+   "items": 2,
+   "updated": "2026-11-17T12:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "CASTROLIND": {
