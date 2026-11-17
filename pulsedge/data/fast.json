@@ -1,7 +1,41 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-17T12:24:17+05:30",
+ "updated": "2026-11-17T12:29:17+05:30",
  "items": [
+  {
+   "id": "1f7ade42065a86a8",
+   "time": "2026-11-17T12:27:28+05:30",
+   "headline": "RUSSIA SAYS IT HIT TWO BRIDGES IN KYIV",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9431",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Defense",
+    "Energy"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "Geopolitics",
+   "action": "Monitor global risk sentiment for potential spillover into Indian defense or energy stocks.",
+   "reason": [
+    "Geopolitical escalation in Ukraine may affect global risk appetite.",
+    "No direct impact on specific Indian listed companies."
+   ],
+   "risks": [
+    "Potential rise in crude oil prices.",
+    "Increased volatility in global markets."
+   ],
+   "plain": "Russia announced it attacked two bridges in Kyiv, Ukraine.",
+   "why": "This is a global event that might slightly affect oil prices or market mood, but it does not directly change the business of Indian companies.",
+   "check": "Check if crude oil prices are rising significantly.",
+   "original": "RUSSIA SAYS IT HIT TWO BRIDGES IN KYIV",
+   "latency": 109.4,
+   "lane": "fast"
+  },
   {
    "id": "cc5c560900956c16",
    "time": "2026-11-17T12:23:19+05:30",
