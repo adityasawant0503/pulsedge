@@ -1,7 +1,45 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-17T10:52:17+05:30",
+ "updated": "2026-11-17T11:04:17+05:30",
  "items": [
+  {
+   "id": "c7d3ab01ad8b8f20",
+   "time": "2026-11-17T11:02:58+05:30",
+   "headline": "LASER POWER & INFRA LTD: CO. SECURES FIRST HTLS CONDUCTOR ORDER WORTH ₹72.76 CRORES FROM POWER GRID; ENTERS 220 KV UNDERGROUND TRANSMISSION PROJECT WITH CESC WORTH ₹44 CRORES; EXPANDING MANUFACTURING CAPACITY AT KHARAGPU",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9419",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "CESC",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Power",
+    "Infrastructure"
+   ],
+   "impact": 10,
+   "confidence": 40,
+   "category": "Corporate Action",
+   "action": "Monitor CESC for minor sentiment lift, but focus remains on the supplier's growth.",
+   "reason": [
+    "CESC is the buyer, not the primary beneficiary of the revenue news.",
+    "The news primarily benefits Laser Power & Infra, which is not in the candidate list."
+   ],
+   "risks": [
+    "Minimal direct financial impact on CESC's bottom line from a single project order."
+   ],
+   "plain": "A power company signed a contract to buy high-voltage cables from a manufacturer.",
+   "why": "It is a routine business deal for the buyer, so it likely won't change the stock price much.",
+   "check": "Look at the supplier's stock movement instead of the buyer's.",
+   "original": "LASER POWER & INFRA LTD: CO. SECURES FIRST HTLS CONDUCTOR ORDER WORTH ₹72.76 CRORES FROM POWER GRID; ENTERS 220 KV UNDERGROUND TRANSMISSION PROJECT WITH CESC WORTH ₹44 CRORES; EXPANDING MANUFACTURING CAPACITY AT KHARAGPU",
+   "latency": 79.5,
+   "lane": "fast"
+  },
   {
    "id": "a81426eb2507f792",
    "time": "2026-11-17T10:51:31+05:30",
