@@ -1,7 +1,45 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-17T14:47:01+05:30",
+ "updated": "2026-11-17T15:06:45+05:30",
  "items": [
+  {
+   "id": "de48e096d444c62c",
+   "time": "2026-11-17T15:05:18+05:30",
+   "headline": "UPL - @CNBC_Awaaz",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9446",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "UPL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Chemicals"
+   ],
+   "impact": 65,
+   "confidence": 40,
+   "category": "Corporate Action",
+   "action": "Verify if the company has officially withdrawn the restructuring proposal before assuming a valuation re-rating.",
+   "reason": [
+    "Cancelling a complex restructuring often removes the 'holding company discount' that depresses share prices.",
+    "Simpler corporate structures are typically valued higher by institutional investors."
+   ],
+   "risks": [
+    "The news is based on media reports, not an official company filing.",
+    "Restructuring plans can be delayed rather than fully cancelled."
+   ],
+   "plain": "Reports suggest the company may cancel its plan to change its corporate structure.",
+   "why": "A simpler structure often makes the stock more attractive to investors, potentially raising its value.",
+   "check": "Look for an official company statement confirming the cancellation of the restructuring plan.",
+   "original": "reports UPL likely to call off restructuring plan announced earlier This is positive since it might do away with HOLDCO Discount structure and was suggested by shareholders to company",
+   "latency": 87.1,
+   "lane": "fast"
+  },
   {
    "id": "3fc29955a24d1a84",
    "time": "2026-11-17T14:45:33+05:30",
