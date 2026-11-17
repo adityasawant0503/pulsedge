@@ -1,10 +1,10 @@
 {
  "date": "2026-11-17",
- "updated": "2026-11-17T16:36:12+05:30",
+ "updated": "2026-11-17T19:23:23+05:30",
  "sentiment": "Mildly bearish",
  "breadth": {
   "up": 1,
-  "down": 2
+  "down": 3
  },
  "checklist": [
   {
@@ -23,7 +23,7 @@
     "Dow 51,608.17 -1.41%",
     "S&P 7,416.59 -1.92%",
     "Nasdaq 24,509.76 -2.49%",
-    "Nasdaq futures now -0.35%"
+    "Nasdaq futures now +0.20%"
    ]
   },
   {
@@ -40,15 +40,17 @@
    "dir": "flat",
    "value": "No major currency pressure",
    "detail": [
-    "DXY 103.61 +0.06%",
+    "DXY 103.69 +0.13%",
     "USD/INR 93.470 -0.48%"
    ]
   },
   {
    "title": "Brent crude level",
-   "dir": "flat",
-   "value": "$92.80 +0.39%",
-   "detail": []
+   "dir": "down",
+   "value": "$93.64 +1.30%",
+   "detail": [
+    "Rising crude hurts India (OMCs, paints, aviation); helps upstream"
+   ]
   },
   {
    "title": "India VIX",
@@ -57,13 +59,14 @@
    "detail": []
   }
  ],
- "summary": "Mildly bearish setup. NASDAQ closed 2.49% lower; IT may open soft; Nikkei down, Hang Seng down.",
+ "summary": "Mildly bearish setup. Brent up 1.30% — pressure on OMCs, paints and aviation; NASDAQ closed 2.49% lower; IT may open soft.",
  "global_cues": [
+  "Brent up 1.30% — pressure on OMCs, paints and aviation",
   "NASDAQ closed 2.49% lower; IT may open soft",
   "Nikkei down, Hang Seng down"
  ],
  "india_triggers": [
-  "135 filings and headlines worth a look so far today"
+  "178 filings and headlines worth a look so far today"
  ],
  "focus": [
   {
@@ -71,21 +74,29 @@
    "note": "ONGC: MAJOR GAS LEAK AT ONGC PLANT IN ANDHRA'S KONASEEMA DISTRICT"
   },
   {
-   "symbol": "CAPLIPOINT",
-   "note": "Caplin Point Laboratories Limited: Caplin Point Laboratories Limited h"
+   "symbol": "GROWW",
+   "note": "Block deal: RIBBIT CAPITAL V L.P. sold 485.9 lakh shares of Billionbra"
   },
   {
-   "symbol": "KAYNES",
-   "note": "Kaynes Tech falls 16% in 2 sessions; Jefferies flags margin pressure"
+   "symbol": "GROWW",
+   "note": "Block deal: RIBBIT CAYMAN GW HOLDINGS V LTD. sold 384.1 lakh shares of"
   }
  ],
  "sector_tags": [
+  {
+   "label": "Upstream oil",
+   "tone": "positive"
+  },
+  {
+   "label": "OMCs",
+   "tone": "negative"
+  },
   {
    "label": "IT",
    "tone": "watch"
   }
  ],
- "key_risk": "Weak US tech could weigh on Indian IT at the open",
+ "key_risk": "A further crude spike would hit OMCs and widen the INR move",
  "also": [
   {
    "name": "BANK NIFTY",
@@ -94,13 +105,13 @@
   },
   {
    "name": "S&P FUT",
-   "value": "7,414",
-   "change": -0.33
+   "value": "7,426",
+   "change": -0.18
   },
   {
    "name": "NASDAQ FUT",
-   "value": "27,190",
-   "change": -0.35
+   "value": "27,338",
+   "change": 0.2
   },
   {
    "name": "KOSPI",
@@ -109,18 +120,18 @@
   },
   {
    "name": "WTI",
-   "value": "86.05",
-   "change": 0.38
+   "value": "86.91",
+   "change": 1.39
   },
   {
    "name": "GOLD",
-   "value": "3,856",
-   "change": 0.09
+   "value": "3,848",
+   "change": -0.12
   },
   {
    "name": "US 10Y",
-   "value": "5.11",
-   "change": -0.2
+   "value": "5.14",
+   "change": 0.43
   }
  ],
  "source": "CNBC / Yahoo Finance (unofficial, delayed)"

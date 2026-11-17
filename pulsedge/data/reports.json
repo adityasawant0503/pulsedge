@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T16:35+05:30",
+ "updated": "2026-11-17T19:22+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Senco Gold shares rose 8% after the company reported record festive sales, while Kaynes Technology fell 16% over two days due to lower profits and payment issues. The pharma sector faced pressure as Caplin Point received a serious compliance warning from US regulators. Meanwhile, capital market stocks like Angel One and Groww hit new highs, showing strong investor interest in trading platforms.",
+  "summary": "PulsEdge flagged Senco Gold’s 8% jump after record festive sales, while Angel One and Groww led gains in capital‑market stocks. Kaynes Technology fell sharply on profit decline and margin pressure, and ONGC faced a major gas leak that could hurt production. Caplin Point’s FDA inspection was marked as Official Action Indicated, raising compliance worries, and Adani Green’s hydro project got a stop‑work notice. Overall, PSU banks and realty rose, but IT and energy lagged, and foreign funds stayed modestly long.",
   "themes": [
-   "Strong festive sales boosted consumer stocks like Senco Gold.",
-   "Compliance and safety issues hurt pharma and energy companies.",
-   "Investors showed high interest in stock market platforms and brokers."
+   "Strong festive demand lifted Senco Gold and sparked broader market buying",
+   "Regulatory and safety issues weighed on energy, pharma and infrastructure stocks",
+   "Tech and electronics faced profit pressure while capital‑market players showed momentum"
   ],
   "watch": [
-   "Check if Caplin Point provides a plan to fix its US regulatory issues.",
-   "Look for updates on ONGC’s gas leak and any impact on production.",
-   "Monitor if the rally in capital market stocks continues or fades."
+   "Potential impact of the ONGC gas leak and any regulatory penalties",
+   "Kaynes Technology’s margin trends and its slowdown in smart‑meter deliveries",
+   "Large block trades in Billionbrains Garage Ventures as a gauge of investor sentiment"
   ],
   "date": "2026-11-17",
-  "basis": "1188b0a71992",
-  "updated": "2026-11-17T16:35+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 135
+  "basis": "15318ee3c00f",
+  "updated": "2026-11-17T19:22+05:30",
+  "model": "openai/gpt-oss-120b",
+  "items": 178
  },
  "stocks": {
   "TMPV": {
@@ -187,6 +187,22 @@
    "updated": "2026-11-16T09:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "GROWW": {
+   "summary": "PulsEdge flagged a series of large block deals on November 17, 2026, where major global and domestic investors exchanged shares in Billionbrains Garage Ventures. While firms like BlackRock, Fidelity, and Kotak Mahindra Mutual Fund bought stakes, other large investors sold significant portions of their holdings.",
+   "why": "These trades show that major institutional investors are actively repositioning their portfolios in the company, which can influence the stock's liquidity and short-term price movement.",
+   "upside": "The purchase of shares by well-known global funds like BlackRock and Fidelity may indicate confidence in the company's long-term prospects.",
+   "downside": "Large sales by existing investors could create selling pressure, and block deals are sometimes executed at a discount to the market price.",
+   "watch": [
+    "Future block deal disclosures to see if buying or selling continues to dominate",
+    "The company's next earnings report to understand its financial health",
+    "Broader trends in the Financial Services sector index"
+   ],
+   "about": "",
+   "basis": "324230ac7679",
+   "items": 17,
+   "updated": "2026-11-17T19:22+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "EICHERMOT": {
    "summary": "Eicher Motors reported record quarterly sales and profits, leading to a significant rise in its share price. The company also granted 105 employee stock options, which may slightly dilute existing shares.",
    "why": "Strong financial results can increase the value of the company, potentially benefiting shareholders, while new stock options might slightly reduce the value of each existing share.",
@@ -218,22 +234,6 @@
    "items": 1,
    "updated": "2026-11-17T14:16+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "GROWW": {
-   "summary": "Groww reported that its MTF (mutual fund) revenue made up 10.1% of total income in Q2FY27 and its share price hit a record high after a large ₹1,905 crore block deal. The broader financial sector also rose, helping the stock’s momentum.",
-   "why": "Shareholders see the revenue mix shift and the price jump as signs of growth and market confidence, but they also watch for any reversal of that momentum.",
-   "upside": "Further buying interest from large investors could push the share price higher.",
-   "downside": "Short‑term profit booking after the block deal or a broader market slowdown could pull the stock down.",
-   "watch": [
-    "MTF revenue share trend in upcoming quarters",
-    "Any new block deals or large investor activity",
-    "Financials sector performance and overall market momentum"
-   ],
-   "about": "Billionbrains Garage Ventures Ltd. provides financial services, primarily a platform for retail investors.",
-   "basis": "bf7f2145574c",
-   "items": 3,
-   "updated": "2026-11-17T13:00+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "ANGELONE": {
    "summary": "Angel One reported that MTF revenue now accounts for 20% of its total income for Q2FY27, a fee type that is usually more profitable. The stock also rose about 6% in the latest session.",
@@ -363,6 +363,22 @@
    "updated": "2026-11-17T12:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "ALKEM": {
+   "summary": "Alkem Laboratories Ltd. (ALKEM) saw a large block sale of 6.0 lakh shares by the Samprada & Nanhamati Singh Family Trust, worth ₹302 crore, on 17 November 2026. On the same day, ICICI Prudential Mutual Fund, DSP Mutual Fund and Nippon India Mutual Fund each bought 1.6–1.8 lakh shares, each trade worth around ₹80–90 crore.",
+   "why": "These institutional trades can signal either confidence in the company or a need for liquidity, which may influence the stock’s trading activity.",
+   "upside": "Large purchases by mutual funds could support the share price.",
+   "downside": "The sizeable block sale could indicate reduced confidence or a need for cash.",
+   "watch": [
+    "Monitor subsequent institutional buying or selling activity for Alkem shares",
+    "Observe any short‑term price movement following the block deals",
+    "Track the healthcare sector index, which moved +0.4% in the last session and -1.0% over five sessions"
+   ],
+   "about": "Alkem Laboratories Ltd. operates in the healthcare sector.",
+   "basis": "c75282456faf",
+   "items": 4,
+   "updated": "2026-11-17T19:22+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "CASTROLIND": {
    "summary": "Castrol India received an open offer to sell a 26% stake at Rs199.45 per share. The offer could lift the stock, but it may face regulatory delays or rejection.",
    "why": "Shareholders may see price movement from the offer and are exposed to the risk of the deal not being cleared.",
@@ -411,6 +427,22 @@
    "updated": "2026-11-17T12:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "FIRSTCRY": {
+   "summary": "Brainbees Solutions has completed the acquisition of Swara Corp and updated the exchange on the deal details. The company also reported that its recent quarterly loss narrowed significantly while sales increased.",
+   "why": "These changes matter because buying a new business and reducing losses can alter the company's future growth path and financial stability for shareholders.",
+   "upside": "The company is losing less money and selling more goods, which suggests the business is becoming healthier.",
+   "downside": "The company is still making a loss, and integrating the newly acquired Swara Corp could be difficult or expensive.",
+   "watch": [
+    "How well the company integrates Swara Corp into its operations",
+    "Whether the company continues to reduce its quarterly losses",
+    "The strategic goals outlined in the recent investor presentation"
+   ],
+   "about": "Brainbees Solutions operates an online store for baby products.",
+   "basis": "2bdc06d4ede6",
+   "items": 4,
+   "updated": "2026-11-17T19:22+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "HINDZINC": {
    "summary": "Hindustan Zinc announced a Rs 80,000 crore expansion to become the world’s largest zinc and silver producer and is adding production capacity. The stock fell after the announcement as investors worry the company may be over‑valued and that the large capex could strain cash flow.",
    "why": "Shareholders need to watch whether the expansion translates into higher profits or whether cash‑flow pressure and valuation concerns weigh on the share price.",
@@ -443,22 +475,6 @@
    "updated": "2026-11-17T11:17+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "FIRSTCRY": {
-   "summary": "Brainbees Solutions Ltd. (FirstCry) reported a Q2 net loss that narrowed by 75% and a jump in revenue, sending its shares up about 13%. The company also released an investor presentation outlining its strategic goals and growth metrics.",
-   "why": "The narrowing loss and higher sales suggest the business may be moving toward profitability, which matters to shareholders. The presentation gives investors insight into the company’s long‑term plan.",
-   "upside": "If the trend of reduced losses and rising revenue continues, the company could achieve profitability.",
-   "downside": "The firm is still reporting a loss, so continued deficits could pressure the share price.",
-   "watch": [
-    "Next quarterly earnings release",
-    "Updates on the strategic roadmap from management",
-    "Changes in revenue growth or loss margins"
-   ],
-   "about": "Brainbees Solutions runs FirstCry, an online retailer of baby products.",
-   "basis": "7abfc05d8971",
-   "items": 2,
-   "updated": "2026-11-17T12:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "GRASIM": {
    "summary": "Grasim Industries has released the transcript of its earnings call for the September quarter. The full financial results for the quarter and half-year are not yet available.",
    "why": "This matters because the upcoming release of full results can influence the share price based on how the numbers compare to what investors expect.",
@@ -489,6 +505,22 @@
    "items": 3,
    "updated": "2026-11-17T00:55+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "GALLANTT": {
+   "summary": "PulsEdge flagged a large block deal where Suryalaxmi Infracon Private Limited bought 30 lakh shares of Gallantt Ispat for ₹158.1 crore. On the same day, Dinesh R Agarwal sold the same number of shares at the same price of ₹527.0 per share.",
+   "why": "This matters because it shows a significant transfer of ownership between two large investors, which can signal a change in the company's shareholder base. However, one trade does not confirm a long-term trend.",
+   "upside": "The purchase by a large investor may indicate confidence in the company's future performance.",
+   "downside": "The sale by another large investor could suggest they see less potential for growth or simply need to raise cash.",
+   "watch": [
+    "Future block deals involving these investors",
+    "Company announcements regarding business updates",
+    "General market trends in the Capital Goods sector"
+   ],
+   "about": "",
+   "basis": "99ed4a65c76e",
+   "items": 2,
+   "updated": "2026-11-17T19:22+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "UPL": {
    "summary": "UPL is reported to be considering canceling its planned corporate restructuring, and its shares have recently moved above the 100‑day exponential moving average.",
@@ -617,6 +649,22 @@
    "items": 10,
    "updated": "2026-11-17T14:46+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "PRESTIGE": {
+   "summary": "Prestige Estates Projects has bought more shares in Prestige Vaishnaoi Projects and announced a 50% stake purchase in Advent Convention and Hotels International. At the same time, the broader real estate sector has seen strong gains recently.",
+   "why": "These business moves and sector changes can affect future profits, cash reserves, and overall share value.",
+   "upside": "Investing more in current projects and new ventures could lead to higher profits if they succeed.",
+   "downside": "The purchase costs could strain cash reserves, and managing new holdings can bring operational challenges.",
+   "watch": [
+    "How the company finances these new acquisitions",
+    "Integration of the newly acquired stakes",
+    "Overall trends in the real estate sector"
+   ],
+   "about": "Prestige Estates Projects Ltd. is a real estate company involved in property development.",
+   "basis": "cce5014d2f42",
+   "items": 4,
+   "updated": "2026-11-17T19:22+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "IDEA": {
    "summary": "Vodafone Idea lost more mobile customers than expected in its recent quarter. At the same time, telecom stocks, including Vodafone Idea, saw a price increase as investors showed optimism for the sector.",
@@ -778,6 +826,38 @@
    "updated": "2026-11-17T00:55+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "IDBI": {
+   "summary": "IDBI Bank is part of the Financial Services sector, which has seen a 3.0% rise over the last five sessions. Recent news mentions a major investor selling a large stake in a related finance company, IIFL Finance, through a block deal.",
+   "why": "Large sales of shares by big investors can add supply to the market, which may temporarily affect how the stock is perceived by other traders.",
+   "upside": "",
+   "downside": "The sale of a large stake in a related company could weigh on near-term market sentiment for the sector.",
+   "watch": [
+    "How the Financials sector index performs in the coming days.",
+    "Any further news regarding large stake sales in related financial companies.",
+    "General market reaction to block deals in the financial sector."
+   ],
+   "about": "IDBI Bank Ltd. is a company in the Financial Services sector.",
+   "basis": "c1304b5c9184",
+   "items": 1,
+   "updated": "2026-11-17T19:22+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "IIFL": {
+   "summary": "IIFL Finance is part of India's Nifty 500 index. A major investor, Fairfax, is planning to sell a 13.25% stake in the company through a large block deal worth ₹3,454 crore.",
+   "why": "This matters because selling such a large amount of shares at once can temporarily push the stock price down due to the sudden increase in supply.",
+   "upside": "",
+   "downside": "The large sale of shares could weigh on investor sentiment and cause the share price to drop in the near term.",
+   "watch": [
+    "The completion of the block deal and its immediate effect on the share price",
+    "How the Financials sector index performs in the coming days",
+    "Any official announcements from IIFL Finance regarding the stake sale"
+   ],
+   "about": "IIFL Finance Ltd. is a company in the Financial Services sector.",
+   "basis": "c1304b5c9184",
+   "items": 1,
+   "updated": "2026-11-17T19:22+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "JSWSTEEL": {
    "summary": "Steel prices are climbing again, and experts see this as a positive sign for JSW Steel. The broader metals sector, however, has slipped 1.5% in the last session and 1.7% over five sessions.",
    "why": "Higher steel prices can boost JSW Steel’s earnings, which matters to shareholders, but the sector’s recent weakness could weigh on the stock.",
@@ -869,22 +949,6 @@
     "Overall sector index trend over the next sessions"
    ],
    "about": "Lodha Developers Ltd. is an Indian real estate development company.",
-   "basis": "fb74963cbe28",
-   "items": 1,
-   "updated": "2026-11-17T11:02+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "PRESTIGE": {
-   "summary": "Prestige Estates Projects Ltd. is riding a broad rally in Indian realty stocks, which have surged about 14% in November, though the sector index slipped 1.3% in the latest session. The company’s share is influenced by these sector moves as it sits in the Nifty 500.",
-   "why": "Shareholders feel the impact of sector momentum, which can lift or pull the stock depending on market sentiment.",
-   "upside": "If the realty rally sustains, Prestige could see further price appreciation.",
-   "downside": "If the sector is deemed overextended, a correction could pressure the stock.",
-   "watch": [
-    "Realty sector index trends",
-    "Any upcoming earnings or project updates from Prestige",
-    "Broader market sentiment on realty stocks"
-   ],
-   "about": "Prestige Estates Projects Ltd. is a real estate development company.",
    "basis": "fb74963cbe28",
    "items": 1,
    "updated": "2026-11-17T11:02+05:30",
@@ -1114,21 +1178,6 @@
    "updated": "2026-11-17T02:10+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "ENGINERSIN": {
-   "summary": "PulsEdge flagged a recent earnings release for Ahlada Engineers Limited, a different company in the construction sector. There are no new specific updates for Engineers India Ltd. in the provided facts.",
-   "why": "Since the flagged news concerns a different company, it does not directly impact the value of Engineers India Ltd. shares.",
-   "upside": "",
-   "downside": "",
-   "watch": [
-    "Future earnings reports from Engineers India Ltd.",
-    "General news in the construction sector"
-   ],
-   "about": "",
-   "basis": "0382c379d422",
-   "items": 1,
-   "updated": "2026-11-16T09:31+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "BPCL": {
    "summary": "BPCL plans to start a new green jet fuel plant at its Mumbai refinery in December. The company also aims to increase the capacity of this plant to 61,000 tons per year by 2028.",
    "why": "These moves show BPCL is investing in sustainable energy products, which may help it stay relevant as industry standards change.",
@@ -1288,6 +1337,22 @@
    "items": 2,
    "updated": "2026-11-16T10:46+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "PHOENIXLTD": {
+   "summary": "Phoenix Mills announced the allotment of 9,734 new shares. This move may slightly change the company's ownership structure.",
+   "why": "Issuing new shares can reduce the profit share for each existing share, which might affect the stock's value.",
+   "upside": "",
+   "downside": "The new shares could dilute earnings per share, meaning each existing share represents a smaller slice of the company's profits.",
+   "watch": [
+    "How the market reacts to the new share allotment",
+    "Performance of the broader Realty sector",
+    "Any further announcements about share issuance"
+   ],
+   "about": "Phoenix Mills is a realty company listed in India's Nifty 500 index.",
+   "basis": "b936c5ad96fa",
+   "items": 2,
+   "updated": "2026-11-17T19:22+05:30",
+   "model": "qwen/qwen3.8-27b"
   }
  }
 }

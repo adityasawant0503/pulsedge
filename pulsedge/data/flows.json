@@ -1,14 +1,14 @@
 {
- "updated": "2026-11-17T16:35:49+05:30",
+ "updated": "2026-11-17T19:22:05+05:30",
  "source": "NSE (bulk and block deals, provisional FII/DII cash, participant-wise open interest); NSDL (daily FPI investment, when NSE's report can't be reached)",
  "cash": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "source": "NSDL",
   "dii": null,
   "fii": {
-   "buy": 18571.97,
-   "sell": 13007.07,
-   "net": 5564.9
+   "buy": 16657.3,
+   "sell": 11549.69,
+   "net": 5107.61
   }
  },
  "cash_history": [
@@ -17,438 +17,684 @@
    "fii": 5564.9,
    "dii": null,
    "src": "NSDL"
+  },
+  {
+   "date": "2026-11-17",
+   "fii": 5107.61,
+   "dii": null,
+   "src": "NSDL"
   }
  ],
  "fno": {
-  "date": "2026-11-16",
-  "fii_long": 61039,
-  "fii_short": 117726,
-  "fii_long_pct": 34.1,
-  "prev_long_pct": 34.6,
-  "prev_date": "2026-11-13"
+  "date": "2026-11-17",
+  "fii_long": 65568,
+  "fii_short": 130691,
+  "fii_long_pct": 33.4,
+  "prev_long_pct": 34.1,
+  "prev_date": "2026-11-16"
  },
- "deals_date": "2026-11-16",
+ "deals_date": "2026-11-17",
  "deals": [
   {
-   "date": "2026-11-16",
-   "symbol": "V2RETAIL",
-   "name": "V2 Retail Limited",
-   "client": "ABHIJIT PERIWAL",
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "RIBBIT CAPITAL V L.P.",
    "who": "other",
    "side": "sell",
-   "qty": 2105584,
-   "price": 148.14,
-   "value_cr": 31.19,
-   "kind": "bulk",
-   "nifty500": false
+   "qty": 48586888,
+   "price": 219.0,
+   "value_cr": 1064.05,
+   "kind": "block",
+   "nifty500": true
   },
   {
-   "date": "2026-11-16",
-   "symbol": "SKYWAYS",
-   "name": "Skyways Air Services Ltd",
-   "client": "THAKKAR NILESHKUMAR FARSHURAM HUF",
-   "who": "other",
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "RIBBIT CAYMAN GW HOLDINGS V LTD.",
+   "who": "foreign",
+   "side": "sell",
+   "qty": 38413112,
+   "price": 219.0,
+   "value_cr": 841.25,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "KOTAK MAHINDRA MUTUAL FUND",
+   "who": "domestic",
    "side": "buy",
-   "qty": 1935000,
-   "price": 128.57,
-   "value_cr": 24.88,
-   "kind": "bulk",
-   "nifty500": false
+   "qty": 20500000,
+   "price": 219.0,
+   "value_cr": 448.95,
+   "kind": "block",
+   "nifty500": true
   },
   {
-   "date": "2026-11-16",
-   "symbol": "STYLEBAAZA",
-   "name": "Baazar Style Retail Ltd",
-   "client": "I K AGENCIES PVT LTD",
-   "who": "other",
-   "side": "buy",
-   "qty": 530000,
-   "price": 461.48,
-   "value_cr": 24.46,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-16",
-   "symbol": "SUNSHINE",
-   "name": "Sunshine Pictures Limited",
-   "client": "ARIHANT CAPITAL MARKETS LIMITED",
+   "date": "2026-11-17",
+   "symbol": "ALKEM",
+   "name": "Alkem Laboratories Ltd.",
+   "client": "SAMPRADA&NANHAMATI SINGH FAMILY TRUST",
    "who": "other",
    "side": "sell",
-   "qty": 218788,
-   "price": 482.39,
-   "value_cr": 10.55,
-   "kind": "bulk",
+   "qty": 597825,
+   "price": 5050.0,
+   "value_cr": 301.9,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "SOCIETE GENERALE",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 10850000,
+   "price": 219.0,
+   "value_cr": 237.62,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "HAPPYFORGE",
+   "name": "Happy Forgings Limited",
+   "client": "FIDELITY FUNDS - INDIA FOCUS FUND",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 866928,
+   "price": 1845.0,
+   "value_cr": 159.95,
+   "kind": "block",
    "nifty500": false
   },
   {
-   "date": "2026-11-16",
-   "symbol": "SRM",
-   "name": "SRM Contractors Limited",
-   "client": "INTERACTIVE FINANCIAL SERVICES LIMITED",
+   "date": "2026-11-17",
+   "symbol": "GALLANTT",
+   "name": "Gallantt Ispat Ltd.",
+   "client": "SURYALAXMI INFRACON PRIVATE LIMITED",
+   "who": "other",
+   "side": "buy",
+   "qty": 3000000,
+   "price": 527.0,
+   "value_cr": 158.1,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "GALLANTT",
+   "name": "Gallantt Ispat Ltd.",
+   "client": "DINESH R AGARWAL",
    "who": "other",
    "side": "sell",
-   "qty": 160261,
-   "price": 423.45,
-   "value_cr": 6.79,
-   "kind": "bulk",
-   "nifty500": false
+   "qty": 3000000,
+   "price": 527.0,
+   "value_cr": 158.1,
+   "kind": "block",
+   "nifty500": true
   },
   {
-   "date": "2026-11-16",
-   "symbol": "AAATECH",
-   "name": "AAA Technologies Limited",
-   "client": "INDRAPRASTHA AGENCIES PRIVATE LIMITED",
-   "who": "other",
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "BLACKROCK EMERGING MARKETS FUND INC",
+   "who": "foreign",
    "side": "buy",
-   "qty": 435000,
-   "price": 92.2,
-   "value_cr": 4.01,
-   "kind": "bulk",
-   "nifty500": false
+   "qty": 5356460,
+   "price": 219.0,
+   "value_cr": 117.31,
+   "kind": "block",
+   "nifty500": true
   },
   {
-   "date": "2026-11-16",
-   "symbol": "AAATECH",
-   "name": "AAA Technologies Limited",
-   "client": "NAUTILUS PRIVATE CAPITAL LTD",
+   "date": "2026-11-17",
+   "symbol": "HAPPYFORGE",
+   "name": "Happy Forgings Limited",
+   "client": "PARITOSH KUMAR",
    "who": "other",
    "side": "sell",
-   "qty": 435000,
-   "price": 92.2,
-   "value_cr": 4.01,
-   "kind": "bulk",
+   "qty": 557941,
+   "price": 1845.0,
+   "value_cr": 102.94,
+   "kind": "block",
    "nifty500": false
   },
   {
-   "date": "2026-11-16",
-   "symbol": "ENCOMPAS",
-   "name": "Encompass Design India L",
-   "client": "GENZ INVESTMENT ADVISORS PRIVATE LIMITED",
+   "date": "2026-11-17",
+   "symbol": "HAPPYFORGE",
+   "name": "Happy Forgings Limited",
+   "client": "PARITOSH KUMAR GARG (HUF)",
    "who": "other",
    "side": "sell",
-   "qty": 156000,
-   "price": 234.0,
-   "value_cr": 3.65,
-   "kind": "bulk",
+   "qty": 549753,
+   "price": 1845.0,
+   "value_cr": 101.43,
+   "kind": "block",
    "nifty500": false
   },
   {
-   "date": "2026-11-16",
-   "symbol": "ENCOMPAS",
-   "name": "Encompass Design India L",
-   "client": "MINERVA VENTURES FUND",
+   "date": "2026-11-17",
+   "symbol": "ALKEM",
+   "name": "Alkem Laboratories Ltd.",
+   "client": "ICICI PRUDENTIAL MUTUAL FUND",
+   "who": "domestic",
+   "side": "buy",
+   "qty": 178285,
+   "price": 5050.0,
+   "value_cr": 90.03,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "VARIABLE INSURANCE PRODUCTS FUND II CONTRAFUND PORTFOLIO",
    "who": "other",
    "side": "buy",
-   "qty": 138000,
-   "price": 234.14,
-   "value_cr": 3.23,
-   "kind": "bulk",
-   "nifty500": false
+   "qty": 3732900,
+   "price": 219.0,
+   "value_cr": 81.75,
+   "kind": "block",
+   "nifty500": true
   },
   {
-   "date": "2026-11-16",
-   "symbol": "HGSINDIALT",
-   "name": "HGS (India) Limited",
-   "client": "PARMI SHAH",
+   "date": "2026-11-17",
+   "symbol": "ALKEM",
+   "name": "Alkem Laboratories Ltd.",
+   "client": "DSP MUTUAL FUND",
+   "who": "domestic",
+   "side": "buy",
+   "qty": 160265,
+   "price": 5050.0,
+   "value_cr": 80.93,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "ALKEM",
+   "name": "Alkem Laboratories Ltd.",
+   "client": "NIPPON INDIA MUTUAL FUND",
+   "who": "domestic",
+   "side": "buy",
+   "qty": 160265,
+   "price": 5050.0,
+   "value_cr": 80.93,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "BNP PARIBAS ARBITRAGE",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 3650000,
+   "price": 219.0,
+   "value_cr": 79.94,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "FIDELITY CONTRAFUND FIDELITY ADVISOR NEW INSIGHTS FUND",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 3478100,
+   "price": 219.0,
+   "value_cr": 76.17,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "RWC EMERGING MARKETS EQUITY MASTER FUND LIMITED",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 3054364,
+   "price": 219.0,
+   "value_cr": 66.89,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "MORGAN STANLEY ASIA SINGAPORE PTE",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 3000000,
+   "price": 219.0,
+   "value_cr": 65.7,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "GHISALLO MASTER FUND LP",
    "who": "other",
    "side": "buy",
-   "qty": 98400,
-   "price": 222.86,
-   "value_cr": 2.19,
-   "kind": "bulk",
-   "nifty500": false
+   "qty": 2900000,
+   "price": 219.0,
+   "value_cr": 63.51,
+   "kind": "block",
+   "nifty500": true
   },
   {
-   "date": "2026-11-16",
-   "symbol": "SHIVASHRIT",
-   "name": "Shivashrit Foods Limited",
-   "client": "ASNANI STOCK BROKER PRIVATE LIMITED - ERROR ACCOUNT",
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "VIRIDIAN ASIA OPPORTUNITIES MASTER FUND",
    "who": "other",
    "side": "buy",
-   "qty": 166000,
-   "price": 114.0,
-   "value_cr": 1.89,
-   "kind": "bulk",
-   "nifty500": false
+   "qty": 2650000,
+   "price": 219.0,
+   "value_cr": 58.03,
+   "kind": "block",
+   "nifty500": true
   },
   {
-   "date": "2026-11-16",
-   "symbol": "ENCOMPAS",
-   "name": "Encompass Design India L",
-   "client": "BIRCHWOOD MULTI STGY FND OPENENDED PCC LTD - BIRCHWOOD GLOBAL ALPHA FUND",
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "HDFC STANDARD LIFE INSURANCE CO LTD",
+   "who": "domestic",
+   "side": "buy",
+   "qty": 2600000,
+   "price": 219.0,
+   "value_cr": 56.94,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "BLACKROCK GLOBAL FUNDS EMERGING MARKETS FUND",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 2399973,
+   "price": 219.0,
+   "value_cr": 52.56,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "NATIONAL PENSION SYSTEM (NPS) TRUST",
    "who": "other",
    "side": "buy",
-   "qty": 76000,
-   "price": 234.49,
-   "value_cr": 1.78,
-   "kind": "bulk",
-   "nifty500": false
+   "qty": 2300000,
+   "price": 219.0,
+   "value_cr": 50.37,
+   "kind": "block",
+   "nifty500": true
   },
   {
-   "date": "2026-11-16",
-   "symbol": "HGSINDIALT",
-   "name": "HGS (India) Limited",
-   "client": "NEO APEX SHARE BROKING SERVICES LLP",
+   "date": "2026-11-17",
+   "symbol": "ALKEM",
+   "name": "Alkem Laboratories Ltd.",
+   "client": "HDFC MUTUAL FUND",
+   "who": "domestic",
+   "side": "buy",
+   "qty": 99010,
+   "price": 5050.0,
+   "value_cr": 50.0,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "HAPPYFORGE",
+   "name": "Happy Forgings Limited",
+   "client": "ASHISH GARG",
    "who": "other",
    "side": "sell",
-   "qty": 75600,
-   "price": 225.02,
-   "value_cr": 1.7,
-   "kind": "bulk",
+   "qty": 271004,
+   "price": 1845.0,
+   "value_cr": 50.0,
+   "kind": "block",
    "nifty500": false
   },
   {
-   "date": "2026-11-16",
-   "symbol": "HGSINDIALT",
-   "name": "HGS (India) Limited",
-   "client": "STATSOL RESEARCH LLP",
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "RETAIL EMPLOYEES SUPERANNUATION PTY. LIMITED AS TRUSTEE FOR RETAIL EMPLOYEES SUPERANNUATION TRUST",
+   "who": "other",
+   "side": "buy",
+   "qty": 2157409,
+   "price": 219.0,
+   "value_cr": 47.25,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "HAPPYFORGE",
+   "name": "Happy Forgings Limited",
+   "client": "AXIS MUTUAL FUND",
+   "who": "domestic",
+   "side": "buy",
+   "qty": 254200,
+   "price": 1845.0,
+   "value_cr": 46.9,
+   "kind": "block",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "HAPPYFORGE",
+   "name": "Happy Forgings Limited",
+   "client": "ASHISH GARG & SONS (HUF)",
    "who": "other",
    "side": "sell",
-   "qty": 63600,
-   "price": 215.0,
-   "value_cr": 1.37,
-   "kind": "bulk",
+   "qty": 254200,
+   "price": 1845.0,
+   "value_cr": 46.9,
+   "kind": "block",
    "nifty500": false
   },
   {
-   "date": "2026-11-16",
-   "symbol": "SAWALIYA",
-   "name": "Sawaliya Food Products L",
-   "client": "RANJANBEN JAYANTIBHAI VAGHELA",
-   "who": "other",
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "FIDELITY INSIGHTS INVESTMENT TRUST",
+   "who": "foreign",
    "side": "buy",
-   "qty": 57600,
-   "price": 176.26,
-   "value_cr": 1.02,
-   "kind": "bulk",
-   "nifty500": false
+   "qty": 2053600,
+   "price": 219.0,
+   "value_cr": 44.97,
+   "kind": "block",
+   "nifty500": true
   },
   {
-   "date": "2026-11-16",
-   "symbol": "KKJEWELS",
-   "name": "Kabra Jewels Limited",
-   "client": "SARTH AJITBHAI SANTOKI",
-   "who": "other",
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "FIDELITY CONTRAFUND: FIDELITY SERIES OPPORTUNISTIC INSIGHTS FUND",
+   "who": "foreign",
    "side": "buy",
-   "qty": 54000,
-   "price": 187.0,
-   "value_cr": 1.01,
-   "kind": "bulk",
-   "nifty500": false
+   "qty": 1935800,
+   "price": 219.0,
+   "value_cr": 42.39,
+   "kind": "block",
+   "nifty500": true
   },
   {
-   "date": "2026-11-16",
-   "symbol": "IEML-RE1",
-   "name": "Indian Emulsifiers Ltd",
-   "client": "YASH DASHARATH GOTARANE",
-   "who": "other",
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "RWC FUNDS-RWC GLOBAL EMERGING MARKETS FUND",
+   "who": "foreign",
    "side": "buy",
-   "qty": 1005000,
-   "price": 9.53,
-   "value_cr": 0.96,
-   "kind": "bulk",
-   "nifty500": false
+   "qty": 1719878,
+   "price": 219.0,
+   "value_cr": 37.67,
+   "kind": "block",
+   "nifty500": true
   },
   {
-   "date": "2026-11-16",
-   "symbol": "IEML",
-   "name": "Indian Emulsifiers Ltd",
-   "client": "PRATYUSH MITTAL",
-   "who": "other",
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "BLACKROCK GLOBAL FUNDS INDIA FUND",
+   "who": "foreign",
    "side": "buy",
-   "qty": 152500,
-   "price": 37.79,
-   "value_cr": 0.58,
-   "kind": "bulk",
-   "nifty500": false
+   "qty": 1708145,
+   "price": 219.0,
+   "value_cr": 37.41,
+   "kind": "block",
+   "nifty500": true
   },
   {
-   "date": "2026-11-16",
-   "symbol": "LANDSMILL",
-   "name": "Landsmill Green Limited",
-   "client": "INDRAPRASTHA AGENCIES PRIVATE LIMITED",
-   "who": "other",
-   "side": "buy",
-   "qty": 7073937,
-   "price": 0.7,
-   "value_cr": 0.5,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-16",
-   "symbol": "IEML-RE1",
-   "name": "Indian Emulsifiers Ltd",
-   "client": "DASHRATH DHAKALU GOTARANE",
-   "who": "other",
-   "side": "buy",
-   "qty": 248500,
-   "price": 9.0,
-   "value_cr": 0.22,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-16",
-   "symbol": "IEML-RE1",
-   "name": "Indian Emulsifiers Ltd",
-   "client": "LC VENTURE DEBT FUND",
+   "date": "2026-11-17",
+   "symbol": "AGIIL",
+   "name": "Agi Infra Limited",
+   "client": "ARTHKUMBH VENTURES LLP",
    "who": "other",
    "side": "sell",
-   "qty": 200000,
-   "price": 9.0,
-   "value_cr": 0.18,
+   "qty": 900000,
+   "price": 320.0,
+   "value_cr": 28.8,
    "kind": "bulk",
    "nifty500": false
   },
   {
-   "date": "2026-11-16",
-   "symbol": "PPSL",
-   "name": "Picturepost Studios Ltd",
-   "client": "PRASHANT BALASAHEB KALE",
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 1150000,
+   "price": 219.0,
+   "value_cr": 25.18,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "RBC ASIA PACIFIC EX-JAPAN EQUITY FUND",
    "who": "other",
-   "side": "sell",
-   "qty": 219000,
-   "price": 2.66,
-   "value_cr": 0.06,
-   "kind": "bulk",
+   "side": "buy",
+   "qty": 1150000,
+   "price": 219.0,
+   "value_cr": 25.18,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "SUSQUEHANNA PACIFIC PTY LTD",
+   "who": "other",
+   "side": "buy",
+   "qty": 1150000,
+   "price": 219.0,
+   "value_cr": 25.18,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "client": "TATA MUTUAL FUND",
+   "who": "domestic",
+   "side": "buy",
+   "qty": 1150000,
+   "price": 219.0,
+   "value_cr": 25.18,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-17",
+   "symbol": "INDGN",
+   "name": "Indegene Limited",
+   "client": "RAJESH BHASKARAN NAIR",
+   "who": "other",
+   "side": "buy",
+   "qty": 382000,
+   "price": 655.0,
+   "value_cr": 25.02,
+   "kind": "block",
    "nifty500": false
   },
   {
-   "date": "2026-11-16",
-   "symbol": "SUVID-RE",
-   "name": "Suvidhaa Infoserve Ltd",
-   "client": "PRASHANT PRAHALADRAY THAKAR",
+   "date": "2026-11-17",
+   "symbol": "INDGN",
+   "name": "Indegene Limited",
+   "client": "AARABHI PARTNERS CONSULTANTS LLP",
    "who": "other",
    "side": "sell",
-   "qty": 470245,
-   "price": 0.2,
-   "value_cr": 0.01,
-   "kind": "bulk",
+   "qty": 382000,
+   "price": 655.0,
+   "value_cr": 25.02,
+   "kind": "block",
    "nifty500": false
   }
  ],
- "by_stock": [],
- "sectors_date": "2026-11-16",
+ "by_stock": [
+  {
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "foreign_cr": 160.67,
+   "domestic_cr": 531.07
+  },
+  {
+   "symbol": "ALKEM",
+   "name": "Alkem Laboratories Ltd.",
+   "foreign_cr": 0.0,
+   "domestic_cr": 301.89
+  },
+  {
+   "symbol": "HAPPYFORGE",
+   "name": "Happy Forgings Limited",
+   "foreign_cr": 204.37,
+   "domestic_cr": 71.9
+  }
+ ],
+ "sectors_date": "2026-11-17",
  "sectors": [
   {
-   "label": "FMCG",
-   "close": 47708.1,
-   "d1": 1.87,
-   "d5": 1.97,
-   "broad": false
-  },
-  {
-   "label": "Banks",
-   "close": 61575.9,
-   "d1": 0.89,
-   "d5": 4.21,
-   "broad": false
-  },
-  {
-   "label": "Nifty 50",
-   "close": 25291.1,
-   "d1": 0.58,
-   "d5": 1.04,
-   "broad": true
-  },
-  {
-   "label": "Financials",
-   "close": 28015.4,
-   "d1": 0.57,
-   "d5": 2.68,
-   "broad": false
-  },
-  {
    "label": "PSU Banks",
-   "close": 9305.3,
-   "d1": 0.5,
-   "d5": 8.04,
-   "broad": false
-  },
-  {
-   "label": "Oil & Gas",
-   "close": 11360.1,
-   "d1": 0.42,
-   "d5": 0.64,
-   "broad": false
-  },
-  {
-   "label": "Consumer durables",
-   "close": 38586.15,
-   "d1": 0.38,
-   "d5": 1.53,
-   "broad": false
-  },
-  {
-   "label": "Media",
-   "close": 1763.3,
-   "d1": 0.32,
-   "d5": 5.56,
-   "broad": false
-  },
-  {
-   "label": "IT",
-   "close": 31941.05,
-   "d1": 0.03,
-   "d5": -3.14,
-   "broad": false
-  },
-  {
-   "label": "Energy",
-   "close": 37276.65,
-   "d1": -0.33,
-   "d5": 1.11,
-   "broad": false
-  },
-  {
-   "label": "Healthcare",
-   "close": 17167.7,
-   "d1": -0.38,
-   "d5": 1.4,
-   "broad": false
-  },
-  {
-   "label": "Midcap 100",
-   "close": 61576.4,
-   "d1": -0.51,
-   "d5": 1.6,
-   "broad": true
-  },
-  {
-   "label": "Smallcap 100",
-   "close": 19441.1,
-   "d1": -1.1,
-   "d5": 2.46,
-   "broad": true
-  },
-  {
-   "label": "Auto",
-   "close": 27570.25,
-   "d1": -1.29,
-   "d5": -0.87,
+   "close": 9486.6,
+   "d1": 1.95,
+   "d5": 6.53,
    "broad": false
   },
   {
    "label": "Realty",
-   "close": 908.9,
-   "d1": -1.34,
-   "d5": 1.36,
+   "close": 926.5,
+   "d1": 1.94,
+   "d5": 3.21,
+   "broad": false
+  },
+  {
+   "label": "Banks",
+   "close": 62273.25,
+   "d1": 1.13,
+   "d5": 4.24,
+   "broad": false
+  },
+  {
+   "label": "Auto",
+   "close": 27769.15,
+   "d1": 0.72,
+   "d5": -0.56,
+   "broad": false
+  },
+  {
+   "label": "Financials",
+   "close": 28195.0,
+   "d1": 0.64,
+   "d5": 2.96,
+   "broad": false
+  },
+  {
+   "label": "Media",
+   "close": 1774.65,
+   "d1": 0.64,
+   "d5": 3.95,
    "broad": false
   },
   {
    "label": "Metals",
-   "close": 12458.35,
-   "d1": -1.5,
-   "d5": -1.73,
+   "close": 12530.3,
+   "d1": 0.58,
+   "d5": -1.06,
    "broad": false
   },
   {
+   "label": "Oil & Gas",
+   "close": 11410.6,
+   "d1": 0.44,
+   "d5": 0.67,
+   "broad": false
+  },
+  {
+   "label": "Nifty 50",
+   "close": 25387.4,
+   "d1": 0.38,
+   "d5": 1.37,
+   "broad": true
+  },
+  {
+   "label": "Healthcare",
+   "close": 17233.2,
+   "d1": 0.38,
+   "d5": -1.02,
+   "broad": false
+  },
+  {
+   "label": "Midcap 100",
+   "close": 61730.0,
+   "d1": 0.25,
+   "d5": 1.16,
+   "broad": true
+  },
+  {
    "label": "Pharma",
-   "close": 28098.4,
-   "d1": -1.53,
-   "d5": 0.57,
+   "close": 28157.1,
+   "d1": 0.21,
+   "d5": -2.56,
+   "broad": false
+  },
+  {
+   "label": "FMCG",
+   "close": 47611.6,
+   "d1": -0.2,
+   "d5": 2.04,
+   "broad": false
+  },
+  {
+   "label": "Smallcap 100",
+   "close": 19398.7,
+   "d1": -0.22,
+   "d5": 1.11,
+   "broad": true
+  },
+  {
+   "label": "Consumer durables",
+   "close": 38493.9,
+   "d1": -0.24,
+   "d5": 0.62,
+   "broad": false
+  },
+  {
+   "label": "Energy",
+   "close": 37176.7,
+   "d1": -0.27,
+   "d5": 0.03,
+   "broad": false
+  },
+  {
+   "label": "IT",
+   "close": 31654.1,
+   "d1": -0.9,
+   "d5": -2.51,
    "broad": false
   }
  ],
@@ -1292,6 +1538,76 @@
     38586.15,
     0.38
    ]
+  },
+  "2026-11-17": {
+   "Nifty 50": [
+    25387.4,
+    0.38
+   ],
+   "Midcap 100": [
+    61730.0,
+    0.25
+   ],
+   "Smallcap 100": [
+    19398.7,
+    -0.22
+   ],
+   "Auto": [
+    27769.15,
+    0.72
+   ],
+   "Banks": [
+    62273.25,
+    1.13
+   ],
+   "Energy": [
+    37176.7,
+    -0.27
+   ],
+   "Financials": [
+    28195.0,
+    0.64
+   ],
+   "FMCG": [
+    47611.6,
+    -0.2
+   ],
+   "IT": [
+    31654.1,
+    -0.9
+   ],
+   "Media": [
+    1774.65,
+    0.64
+   ],
+   "Metals": [
+    12530.3,
+    0.58
+   ],
+   "Pharma": [
+    28157.1,
+    0.21
+   ],
+   "PSU Banks": [
+    9486.6,
+    1.95
+   ],
+   "Realty": [
+    926.5,
+    1.94
+   ],
+   "Oil & Gas": [
+    11410.6,
+    0.44
+   ],
+   "Healthcare": [
+    17233.2,
+    0.38
+   ],
+   "Consumer durables": [
+    38493.9,
+    -0.24
+   ]
   }
  },
  "fno_history": {
@@ -1301,11 +1617,14 @@
   "2026-11-11": 31.0,
   "2026-11-12": 37.0,
   "2026-11-13": 34.6,
-  "2026-11-16": 34.1
+  "2026-11-16": 34.1,
+  "2026-11-17": 33.4
  },
  "week": {
-  "nifty_5d": 1.04,
-  "fii_long_now": 34.1,
-  "fii_long_5d_ago": 24.6
+  "nifty_5d": 1.37,
+  "fii_long_now": 33.4,
+  "fii_long_5d_ago": 26.8,
+  "fii_cash_5d": 10672.51,
+  "dii_cash_5d": null
  }
 }
