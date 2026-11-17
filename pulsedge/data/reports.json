@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T10:45+05:30",
+ "updated": "2026-11-17T11:02+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -539,6 +539,86 @@
    "updated": "2026-11-17T00:55+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "DLF": {
+   "summary": "Real estate stocks jumped about 14% in November, pushing DLF to a 52‑week high, while the broader Realty index fell 1.3% in the last session but rose 1.4% over five days.",
+   "why": "Shareholders see a sharp price rise that could bring further gains but also carries risk of a short‑term pullback.",
+   "upside": "If the sector’s strong momentum continues, DLF could move higher.",
+   "downside": "If the sector is overextended, a correction could pull DLF’s price down.",
+   "watch": [
+    "Nifty Realty index trend",
+    "DLF’s price relative to its 52‑week high",
+    "Signs of sector‑wide correction"
+   ],
+   "about": "DLF Ltd. is an Indian real estate development company.",
+   "basis": "fb74963cbe28",
+   "items": 1,
+   "updated": "2026-11-17T11:02+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "GODREJPROP": {
+   "summary": "Godrej Properties is part of a realty sector that has surged about 14% in November, though the sector index fell 1.3% in the latest session.",
+   "why": "Share owners feel the impact of strong sector momentum and the risk of a short‑term correction.",
+   "upside": "A continued rally in the Nifty Realty index could lift Godrej Properties’ stock.",
+   "downside": "If the sector is deemed overextended, a correction could pull the stock lower.",
+   "watch": [
+    "Nifty Realty index performance",
+    "Any company‑specific news on Godrej Properties",
+    "Overall market sentiment toward realty stocks"
+   ],
+   "about": "",
+   "basis": "fb74963cbe28",
+   "items": 1,
+   "updated": "2026-11-17T11:02+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "LODHA": {
+   "summary": "The realty sector has surged about 14% in November, with some stocks hitting yearly highs, while the sector index fell 1.3% in the last session but rose 1.4% over the past five days. Lodha Developers, as part of this sector, is riding the current strong investor interest but faces short‑term volatility.",
+   "why": "Shareholders feel the impact of broad sector moves, which can lift or drag Lodha’s stock regardless of company‑specific news.",
+   "upside": "If the sector’s upward momentum continues, Lodha could benefit from higher demand and price appreciation.",
+   "downside": "A correction in the over‑extended realty market could pull Lodha’s shares lower.",
+   "watch": [
+    "Nifty Realty index daily performance",
+    "DLF stock movements as a sector peer",
+    "Overall sector index trend over the next sessions"
+   ],
+   "about": "Lodha Developers Ltd. is an Indian real estate development company.",
+   "basis": "fb74963cbe28",
+   "items": 1,
+   "updated": "2026-11-17T11:02+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "PRESTIGE": {
+   "summary": "Prestige Estates Projects Ltd. is riding a broad rally in Indian realty stocks, which have surged about 14% in November, though the sector index slipped 1.3% in the latest session. The company’s share is influenced by these sector moves as it sits in the Nifty 500.",
+   "why": "Shareholders feel the impact of sector momentum, which can lift or pull the stock depending on market sentiment.",
+   "upside": "If the realty rally sustains, Prestige could see further price appreciation.",
+   "downside": "If the sector is deemed overextended, a correction could pressure the stock.",
+   "watch": [
+    "Realty sector index trends",
+    "Any upcoming earnings or project updates from Prestige",
+    "Broader market sentiment on realty stocks"
+   ],
+   "about": "Prestige Estates Projects Ltd. is a real estate development company.",
+   "basis": "fb74963cbe28",
+   "items": 1,
+   "updated": "2026-11-17T11:02+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "SOBHA": {
+   "summary": "Sobha Ltd. is riding a strong rally in the realty sector, with the Nifty Realty index up about 14% in November. The sector showed a modest dip of 1.3% in the last session but is up 1.4% over the past five sessions.",
+   "why": "Sector momentum can lift Sobha’s share price, while a pull‑back could weigh on it.",
+   "upside": "If the broader realty rally continues, Sobha could benefit from further price gains.",
+   "downside": "If the sector is deemed overextended, a correction could pull Sobha’s stock lower.",
+   "watch": [
+    "Nifty Realty index performance",
+    "Short‑term sector moves (e.g., the recent -1.3% session)",
+    "Signs of sector overextension or correction"
+   ],
+   "about": "Sobha Ltd. is a real estate developer.",
+   "basis": "fb74963cbe28",
+   "items": 1,
+   "updated": "2026-11-17T11:02+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "TATACHEM": {
    "summary": "Tata Chemicals shares jumped about 9% after a surge in buying volume, driven by rumors of a Tata Sons listing that could boost the Tata Group’s stock rally. The price rise may be unstable if the listing rumors are not confirmed.",
    "why": "Shareholders see rapid price moves, which can affect the value of their holdings.",
@@ -698,6 +778,22 @@
    "items": 6,
    "updated": "2026-11-16T09:16+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "HDFCBANK": {
+   "summary": "Banking stocks surged as the Nifty Bank index hit a record high, with HDFC Bank jumping about 20% from its October low. Investor confidence is strong but the sector may be overbought in the short term.",
+   "why": "Shareholders feel the boost from broad banking enthusiasm, yet a potential overbought condition could pressure the stock.",
+   "upside": "If confidence persists, the stock could keep rising.",
+   "downside": "If the sector proves overbought, a pull‑back could weigh on the share.",
+   "watch": [
+    "Nifty Bank index level and momentum",
+    "Signs of overbought conditions in banking sector",
+    "Any new analyst recommendations or stock ideas"
+   ],
+   "about": "HDFC Bank Ltd. is a leading Indian private‑sector bank that provides a range of banking and financial services.",
+   "basis": "1ee441122b81",
+   "items": 2,
+   "updated": "2026-11-17T11:02+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "ETERNAL": {
    "summary": "Eternal Ltd. is one of India's 50 largest listed companies in the consumer services sector. Recent news compares its growth and earnings outlook with a rival food delivery company after their latest quarterly results.",
