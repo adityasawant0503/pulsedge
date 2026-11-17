@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T08:20:27+05:30",
+ "updated": "2026-11-17T08:32:16+05:30",
  "summary": {
-  "calls": 1511,
-  "scored_calls": 373,
+  "calls": 1512,
+  "scored_calls": 374,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "47954b11bb64a382",
+   "symbol": "BAJFINANCE",
+   "time": "2026-11-17T08:25:32+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Bajaj Finance Limited: Bajaj Finance Limited has informed the Exchange regarding allotment of 114146341 securities pursuant to Qualified Institution Placement a",
+   "url": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_17112026082518_BSENSE_Intimationofallotment.pdf",
+   "entry_date": "2026-11-16",
+   "entry": 1110.0
+  },
   {
    "id": "5eb76fa99175d0db",
    "symbol": "HONASA",
