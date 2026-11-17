@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T09:00:47+05:30",
+ "updated": "2026-11-17T09:15:35+05:30",
  "summary": {
-  "calls": 1512,
-  "scored_calls": 374,
+  "calls": 1513,
+  "scored_calls": 375,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "b4fd21b7f5cd55bb",
+   "symbol": "CYIENT",
+   "time": "2026-11-17T08:41:33+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Cyient Limited: Cyient Limited has informed the Exchange about Change in Senior Management Personnel |SUBJECT: Change in Management",
+   "url": "https://nsearchives.nseindia.com/corporate/CYIENT_17112026083916_Disclosure_CHROSigned.pdf",
+   "entry_date": "2026-11-16",
+   "entry": 1103.2
+  },
   {
    "id": "47954b11bb64a382",
    "symbol": "BAJFINANCE",
