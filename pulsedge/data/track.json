@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T13:15:59+05:30",
+ "updated": "2026-11-17T13:30:58+05:30",
  "summary": {
-  "calls": 1571,
-  "scored_calls": 432,
+  "calls": 1573,
+  "scored_calls": 434,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "37657c921b417804",
+   "symbol": "KAYNES",
+   "time": "2026-11-17T13:20:11+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Kaynes Tech falls 16% in 2 sessions; Jefferies flags margin pressure",
+   "url": "https://www.business-standard.com/markets/news/kaynes-tech-falls-16-in-2-sessions-jefferies-flags-margin-pressure-126111700486_1.html",
+   "entry_date": "2026-11-16",
+   "entry": 2980.0
+  },
   {
    "id": "cc9e14e2431c9254",
    "symbol": "KAYNES",
@@ -759,6 +772,19 @@
    "url": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_17112026082518_BSENSE_Intimationofallotment.pdf",
    "entry_date": "2026-11-16",
    "entry": 1110.0
+  },
+  {
+   "id": "9fdc624d098ed11b",
+   "symbol": "INFY",
+   "time": "2026-11-17T08:18:00+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Infosys Share Price Live Updates: Infosys Falls Below 100-Day Exponential Moving Average",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/infosys-share-price-today-live-17-nov-2026/liveblog/135908134.cms",
+   "entry_date": "2026-11-16",
+   "entry": 1145.1
   },
   {
    "id": "fe95910b77889d40",
