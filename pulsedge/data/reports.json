@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T12:15+05:30",
+ "updated": "2026-11-17T12:30+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -124,20 +124,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "ONGC": {
-   "summary": "ONGC reported a major gas leak at its plant in Andhra's Konaseema district, which could cut production and raise safety costs. It is also highlighted as a high‑yield dividend stock, attracting income‑focused investors.",
-   "why": "The leak may hurt earnings, while the attractive dividend yield could influence investor demand for the shares.",
-   "upside": "If the dividend remains sustainable, it could draw more income‑focused investors.",
-   "downside": "The gas leak could reduce output and lead to regulatory penalties or higher safety expenses.",
+   "summary": "ONGC reported a major gas leak at its plant in Andhra Pradesh, leading to a temporary power disconnection to manage safety risks. This incident follows recent mentions of the company as a high-yield dividend stock.",
+   "why": "The gas leak and subsequent shutdown could reduce production and increase safety costs, which may lower the company's earnings and affect the value of its shares.",
+   "upside": "The company is recognized for offering high dividend yields, which can attract investors looking for regular income.",
+   "downside": "The gas leak could lead to further production cuts, regulatory penalties, or higher safety expenses that hurt profits.",
    "watch": [
-    "Resolution of the gas leak and any regulatory actions",
-    "Sustainability of the high dividend yield",
-    "Performance of the Oil & Gas sector index"
+    "Updates on the resolution of the gas leak and power supply",
+    "Any regulatory actions or penalties related to the incident",
+    "Changes in the company's dividend payout or yield"
    ],
-   "about": "ONGC is a state‑owned Indian company engaged in oil and gas exploration and production.",
-   "basis": "4f61ebcb9118",
-   "items": 2,
-   "updated": "2026-11-17T10:30+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "ONGC is a major Indian company in the oil and gas sector that is part of the Nifty 50 index.",
+   "basis": "46371b6c8bf2",
+   "items": 3,
+   "updated": "2026-11-17T12:30+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "SWIGGY": {
    "summary": "Swiggy's shares have fallen sharply this year, losing up to half their value, while its latest Q2 results show profit growth faster than its rival Zomato's parent. The company is in the Nifty 500 consumer services index.",
@@ -203,6 +203,22 @@
    "updated": "2026-11-16T14:30+05:30",
    "model": "openai/gpt-oss-20b"
   },
+  "GROWW": {
+   "summary": "Groww shares recently hit a record high after a large block deal worth ₹1,905 crore. The stock is currently leading gains in the financial services sector.",
+   "why": "This matters because the large sale suggests big investors are actively trading the stock, which can increase volatility and attention from other traders.",
+   "upside": "The strong buying interest and record high price show that many investors are currently confident in the company.",
+   "downside": "The recent surge could fade if the broader market slows down, or investors might take profits after the big block deal.",
+   "watch": [
+    "Whether the stock price holds its record high or pulls back.",
+    "How the broader financial services sector performs in the coming days.",
+    "Any news about the specific investors involved in the block deal."
+   ],
+   "about": "",
+   "basis": "da120026089c",
+   "items": 2,
+   "updated": "2026-11-17T12:30+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "NUVAMA": {
    "summary": "Nuvama Wealth Management recently announced the allotment of new securities to raise fresh capital. This move adds to a period where the broader financial services sector has seen modest gains over the last week.",
    "why": "Issuing new shares increases the total number of shares in circulation, which can reduce the value of each existing share held by current investors.",
@@ -217,6 +233,22 @@
    "basis": "a1815db9d55f",
    "items": 2,
    "updated": "2026-11-17T11:30+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "ANGELONE": {
+   "summary": "Angel One shares rose 6% recently, leading gains in the financial services sector. The stock is part of the Nifty 500, an index of India's 500 largest listed companies.",
+   "why": "A sharp rise in share price indicates strong short-term buying interest, which can affect the value of your investment.",
+   "upside": "The stock may continue to benefit from the broader strength in the financial sector, which has risen 2.7% over the last five sessions.",
+   "downside": "The recent price momentum could fade if the broader market stops rising.",
+   "watch": [
+    "Whether the 6% price jump continues or reverses",
+    "Performance of the Financials sector index",
+    "General market trends that affect financial stocks"
+   ],
+   "about": "",
+   "basis": "7a94f85d9b2a",
+   "items": 1,
+   "updated": "2026-11-17T12:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ADANIGREEN": {
@@ -332,19 +364,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "TMCV": {
-   "summary": "Tata Motors recently reported a loss in its second quarter, even though its sales revenue grew. The stock exchange has also asked the company to clarify recent news about a possible new public offering by its parent group.",
-   "why": "These events matter because weak profits can lower the share price, while a new offering could change how much the parent company is worth to investors.",
-   "upside": "The company's revenue increased in the latest quarter, which shows some business activity is growing.",
-   "downside": "The stock has already fallen 22% this year, and further selling could happen if the company's profit outlook stays weak or if the new offering is delayed.",
+   "summary": "Tata Motors reported a loss in its second quarter despite higher revenue, and its shares are down 22% this year. The stock exchange has also asked the company to clarify recent news about a possible new public offering.",
+   "why": "These events matter because weak profits and uncertainty about a new share issue can make the stock price fall, affecting the value of your investment.",
+   "upside": "The company's revenue grew in the latest quarter, which shows some business activity is increasing.",
+   "downside": "The company's struggles in China and a lowered outlook for future performance could lead to more selling of its shares.",
    "watch": [
-    "The company's response to the stock exchange's request for clarification.",
-    "Any updates on the status of the potential Tata Sons IPO.",
-    "Future quarterly earnings reports to see if losses continue."
+    "The company's official response to the exchange's questions about the IPO news.",
+    "How well the company sells cars in markets other than China.",
+    "Future quarterly results to see if the loss continues or improves."
    ],
    "about": "",
-   "basis": "429ab59ad1ca",
-   "items": 5,
-   "updated": "2026-11-17T11:17+05:30",
+   "basis": "8c49c46937d4",
+   "items": 6,
+   "updated": "2026-11-17T12:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "TATACHEM": {
@@ -441,22 +473,6 @@
    "basis": "210aaf13da72",
    "items": 1,
    "updated": "2026-11-17T11:45+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "GROWW": {
-   "summary": "Groww's share price reached a record high after a ₹1,905 crore block deal by a large group of investors.",
-   "why": "The large purchase could lift confidence among shareholders, but block deals sometimes lead to short‑term profit taking.",
-   "upside": "If the new investors hold their stakes, confidence and price support could continue.",
-   "downside": "The block deal may trigger short‑term profit booking, pressuring the share price.",
-   "watch": [
-    "Further large investor purchases or block deals",
-    "Share price reaction after the record high",
-    "Financials sector index trends"
-   ],
-   "about": "Billionbrains Garage Ventures Ltd. provides financial services.",
-   "basis": "2264c5fe4282",
-   "items": 1,
-   "updated": "2026-11-17T10:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "KPIL": {
@@ -936,6 +952,22 @@
    "basis": "0382c379d422",
    "items": 1,
    "updated": "2026-11-16T09:31+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "BPCL": {
+   "summary": "BPCL plans to start a new green jet fuel plant at its Mumbai refinery in December. The company also aims to increase the capacity of this plant to 61,000 tons per year by 2028.",
+   "why": "These moves show BPCL is investing in sustainable energy products, which may help it stay relevant as industry standards change.",
+   "upside": "Successfully launching the new plant adds a modern, eco-friendly product to the company's lineup.",
+   "downside": "The expansion requires high capital spending, and the new plant could face operational delays.",
+   "watch": [
+    "The actual start of the green jet fuel plant in December",
+    "Progress toward the 2028 capacity target",
+    "The cost of the required capital expenditure"
+   ],
+   "about": "BPCL is an Indian company in the oil, gas, and consumable fuels sector.",
+   "basis": "90319aeafdc2",
+   "items": 2,
+   "updated": "2026-11-17T12:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "CANBK": {

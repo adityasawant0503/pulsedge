@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T12:15:47+05:30",
+ "updated": "2026-11-17T12:31:02+05:30",
  "summary": {
-  "calls": 1550,
-  "scored_calls": 412,
+  "calls": 1557,
+  "scored_calls": 419,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,84 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "9fdeceffef708034",
+   "symbol": "ONGC",
+   "time": "2026-11-17T12:29:01+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "ONGC: POWER SUPPLY IN AREA TEMPORARILY DISCONNECTED TO MINIMISE POTENTIAL IGNITION RISKS",
+   "url": "https://t.me/Indiaredboxglobal/9432",
+   "entry_date": "2026-11-16",
+   "entry": 226.99
+  },
+  {
+   "id": "4dacc446e24e3552",
+   "symbol": "TMCV",
+   "time": "2026-11-17T12:21:07+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Why JLR remains the albatross around Tata Motors’ neck",
+   "url": "https://www.livemint.com/market/mark-to-market/tata-motors-share-price-jlr-recovery-delayed-fy28-cash-flow-11794892499084.html",
+   "entry_date": "2026-11-16",
+   "entry": 428.25
+  },
+  {
+   "id": "293d583c1dee2879",
+   "symbol": "BPCL",
+   "time": "2026-11-17T12:20:06+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "BPCL: CO EXEC PLANS TO INCREASE MUMBAI SAF PLANT CAPACITY TO 61,000 TON/YR BY 2028",
+   "url": "https://t.me/Indiaredboxglobal/9429",
+   "entry_date": "2026-11-16",
+   "entry": 305.3
+  },
+  {
+   "id": "1a5a7e54c2dcc00b",
+   "symbol": "BPCL",
+   "time": "2026-11-17T12:19:37+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "BPCL: CO EXEC SAYS CO TO COMMISSION 40,000 TONS PER YEAR GREEN JET FUEL PLANT AT MUMBAI REFINERY IN DEC",
+   "url": "https://t.me/Indiaredboxglobal/9428",
+   "entry_date": "2026-11-16",
+   "entry": 305.3
+  },
+  {
+   "id": "8ba06126e5afc807",
+   "symbol": "ANGELONE",
+   "time": "2026-11-17T12:11:55+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Capital Market stocks shine: Angel One jumps 6%; Groww, NSE hit new highs",
+   "url": "https://www.business-standard.com/markets/news/capital-market-stocks-shine-angel-one-jumps-6-groww-nse-hit-new-highs-126111700369_1.html",
+   "entry_date": "2026-11-16",
+   "entry": 348.15
+  },
+  {
+   "id": "8ba06126e5afc807",
+   "symbol": "GROWW",
+   "time": "2026-11-17T12:11:55+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Capital Market stocks shine: Angel One jumps 6%; Groww, NSE hit new highs",
+   "url": "https://www.business-standard.com/markets/news/capital-market-stocks-shine-angel-one-jumps-6-groww-nse-hit-new-highs-126111700369_1.html",
+   "entry_date": "2026-11-16",
+   "entry": 224.92
+  },
   {
    "id": "2e4e35b4524acb12",
    "symbol": "EMBASSY",
@@ -525,6 +603,19 @@
    "url": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_17112026082518_BSENSE_Intimationofallotment.pdf",
    "entry_date": "2026-11-16",
    "entry": 1110.0
+  },
+  {
+   "id": "fe95910b77889d40",
+   "symbol": "HEROMOTOCO",
+   "time": "2026-11-17T08:15:06+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Hero MotoCorp Share Price Live Updates: Hero MotoCorp Sees Slight Decline",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/hero-motocorp-stock-price-live-updates-17-nov-2026/liveblog/135908096.cms",
+   "entry_date": "2026-11-16",
+   "entry": 5359.5
   },
   {
    "id": "5eb76fa99175d0db",
