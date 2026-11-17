@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T16:00:46+05:30",
+ "updated": "2026-11-17T16:36:13+05:30",
  "summary": {
-  "calls": 1589,
-  "scored_calls": 450,
+  "calls": 1593,
+  "scored_calls": 454,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "e01bab81c4644a41",
+   "symbol": "INFY",
+   "time": "2026-11-17T16:27:49+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "TCS vs Infosys: Better IT stock to buy amid anti-AI trade buzz | Experts' views, target price, stop-loss, rationale",
+   "url": "https://www.livemint.com/market/stock-market-news/tcs-vs-infosys-better-it-stock-to-buy-amid-anti-ai-trade-buzz-experts-views-target-price-stop-loss-rationale-11794910515731.html",
+   "entry_date": "2026-11-16",
+   "entry": 1145.1
+  },
+  {
+   "id": "e01bab81c4644a41",
+   "symbol": "TCS",
+   "time": "2026-11-17T16:27:49+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "TCS vs Infosys: Better IT stock to buy amid anti-AI trade buzz | Experts' views, target price, stop-loss, rationale",
+   "url": "https://www.livemint.com/market/stock-market-news/tcs-vs-infosys-better-it-stock-to-buy-amid-anti-ai-trade-buzz-experts-views-target-price-stop-loss-rationale-11794910515731.html",
+   "entry_date": "2026-11-16",
+   "entry": 2405.0
+  },
+  {
+   "id": "3686cf9dc8b025b2",
+   "symbol": "GRASIM",
+   "time": "2026-11-17T16:20:03+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Grasim Industries Limited: Transcript of Conference Call on the Unaudited Financial Results (Standalone & Consolidated) for the quarter and half year ended 30th",
+   "url": "https://nsearchives.nseindia.com/corporate/GRASIM_17112026161954_SEIntimation.pdf",
+   "entry_date": "2026-11-16",
+   "entry": 3084.4
+  },
+  {
+   "id": "6472590a58207fb0",
+   "symbol": "PNBHOUSING",
+   "time": "2026-11-17T15:51:55+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "PNB Housing Finance Limited: PNB Housing Finance Limited has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteration Of Capital and Fund Ra",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_14347_WebXMLFile_20261117_155154640.xml",
+   "entry_date": "2026-11-16",
+   "entry": 1135.9
+  },
   {
    "id": "1b7acc7d6d84fa26",
    "symbol": "AXISBANK",

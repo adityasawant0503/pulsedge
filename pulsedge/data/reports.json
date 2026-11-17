@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T16:00+05:30",
+ "updated": "2026-11-17T16:35+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Senco Gold shares rose 8% after the company reported its best-ever festive season sales. In contrast, Kaynes Technology shares fell sharply over two days as profits dropped and the company slowed deliveries to collect unpaid bills. The pharmaceutical sector weakened after Caplin Point received a serious compliance warning from US regulators. Meanwhile, capital market stocks like Angel One and Groww hit new highs, showing strong investor interest in trading platforms.",
+  "summary": "Senco Gold shares rose 8% after the company reported record festive sales, while Kaynes Technology fell 16% over two days due to lower profits and payment issues. The pharma sector faced pressure as Caplin Point received a serious compliance warning from US regulators. Meanwhile, capital market stocks like Angel One and Groww hit new highs, showing strong investor interest in trading platforms.",
   "themes": [
-   "Strong festive sales boosted Senco Gold, while a major gas leak at ONGC raised safety concerns.",
-   "Kaynes Technology faced pressure from falling profits and slow payment collection from state governments.",
-   "Regulatory issues hurt Caplin Point and Adani Green, while Hindustan Zinc announced a massive expansion plan."
+   "Strong festive sales boosted consumer stocks like Senco Gold.",
+   "Compliance and safety issues hurt pharma and energy companies.",
+   "Investors showed high interest in stock market platforms and brokers."
   ],
   "watch": [
-   "Whether Caplin Point can quickly fix the issues flagged by US regulators to avoid long delays.",
-   "If Kaynes Technology can recover pending payments from state authorities to improve cash flow.",
-   "How the market reacts to Hindustan Zinc's large spending plan to become the world's largest zinc producer."
+   "Check if Caplin Point provides a plan to fix its US regulatory issues.",
+   "Look for updates on ONGC’s gas leak and any impact on production.",
+   "Monitor if the rally in capital market stocks continues or fades."
   ],
   "date": "2026-11-17",
-  "basis": "449f08eb0945",
-  "updated": "2026-11-17T15:16+05:30",
+  "basis": "1188b0a71992",
+  "updated": "2026-11-17T16:35+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 124
+  "items": 135
  },
  "stocks": {
   "TMPV": {
@@ -459,6 +459,21 @@
    "updated": "2026-11-17T12:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "GRASIM": {
+   "summary": "Grasim Industries has released the transcript of its earnings call for the September quarter. The full financial results for the quarter and half-year are not yet available.",
+   "why": "This matters because the upcoming release of full results can influence the share price based on how the numbers compare to what investors expect.",
+   "upside": "",
+   "downside": "The reported results could be lower than what the market expects.",
+   "watch": [
+    "The release of the full unaudited financial results",
+    "Market reaction to the earnings call transcript"
+   ],
+   "about": "Grasim Industries is a major Indian company in the construction materials sector and is part of the Nifty 50 index.",
+   "basis": "2b450c3e8d03",
+   "items": 1,
+   "updated": "2026-11-17T16:35+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "SOLARINDS": {
    "summary": "Solar Industries India Ltd (SOLARINDS) is a chemicals company in the Nifty 500. Recent news shows green‑energy stocks facing short‑term selling pressure, which could spill over to the broader market.",
    "why": "Shareholders should watch sector volatility as it may affect SOLARINDS' share price even though the company itself is not directly mentioned in the news.",
@@ -634,6 +649,38 @@
    "items": 3,
    "updated": "2026-11-16T11:16+05:30",
    "model": "gemini-flash-lite-latest"
+  },
+  "INFY": {
+   "summary": "Infosys shares recently fell below a key medium-term technical support level, known as the 100-day moving average. At the same time, media comparisons with TCS are influencing how investors view the stock, though no new company-specific data has been released.",
+   "why": "Dropping below this technical level can signal continued short-term price weakness, which may affect the value of your holdings. However, this move could also be a temporary dip if broader market buying pulls the stock back up.",
+   "upside": "If index-wide buying returns, the stock could recover above the support level it recently broke.",
+   "downside": "Breaking below the 100-day moving average often leads to further short-term price declines.",
+   "watch": [
+    "Whether the stock price recovers above the 100-day moving average",
+    "Changes in investor sentiment regarding IT stocks compared to TCS",
+    "Overall performance of the IT sector index"
+   ],
+   "about": "Infosys is a major Indian Information Technology company and one of the 50 largest listed firms in the Nifty 50 index.",
+   "basis": "ec2c902fbb06",
+   "items": 2,
+   "updated": "2026-11-17T16:35+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "TCS": {
+   "summary": "TCS was named a leader in agentic application management services by a research firm. At the same time, media outlets are comparing it with Infosys as investors look for opportunities in the IT sector.",
+   "why": "This recognition could help the company attract new clients, while the sector's recent dip may be affecting the mood of investors holding these shares.",
+   "upside": "Being seen as a leader in new AI software tools might help the company win more business.",
+   "downside": "The IT sector has fallen over the last week, which could keep pressure on share prices.",
+   "watch": [
+    "How the IT sector index moves in the coming days",
+    "Any new announcements about customer wins or contracts",
+    "Further comparisons or news involving Infosys"
+   ],
+   "about": "TCS is a major Indian information technology company.",
+   "basis": "f5fda1261826",
+   "items": 2,
+   "updated": "2026-11-17T16:35+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "URBANCO": {
    "summary": "Urban Company announced a ₹2,500 crore qualified institutional placement (QIP) to fund a new cleaning service, and its shares fell about 2% on the news. The board set a floor price of ₹161.03 per share for the placement.",
