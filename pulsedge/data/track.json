@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T14:00:57+05:30",
+ "updated": "2026-11-17T14:16:02+05:30",
  "summary": {
-  "calls": 1575,
-  "scored_calls": 436,
+  "calls": 1576,
+  "scored_calls": 437,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "2ad327e7b4d2c6c9",
+   "symbol": "CAPLIPOINT",
+   "time": "2026-11-17T14:04:59+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Caplin Point Laboratories Limited: Caplin Point Laboratories Limited has informed the Exchange about Classification of US FDA Inspection at the facility of Capl",
+   "url": "https://nsearchives.nseindia.com/corporate/CAPLINPOINT_17112026135959_Stock_Exchange_intimation_of_USFDA_Audit.pdf",
+   "entry_date": "2026-11-16",
+   "entry": 2346.8
+  },
   {
    "id": "96ac5739ccec0fc1",
    "symbol": "KAYNES",

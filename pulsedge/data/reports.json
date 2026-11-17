@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T14:00+05:30",
+ "updated": "2026-11-17T14:16+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -202,6 +202,22 @@
    "items": 4,
    "updated": "2026-11-16T14:30+05:30",
    "model": "openai/gpt-oss-20b"
+  },
+  "CAPLIPOINT": {
+   "summary": "Caplin Point Laboratories informed the exchange that the US FDA classified an inspection at its subsidiary, Caplin Steriles, as Official Action Indicated. This status signals serious compliance issues that could delay approvals for new products.",
+   "why": "This matters to shareholders because delays in product approvals can affect the company's future revenue and growth prospects.",
+   "upside": "A swift remediation timeline could limit prolonged downside.",
+   "downside": "Serious compliance issues could delay new product approvals.",
+   "watch": [
+    "Updates on the remediation plan for the FDA inspection",
+    "Progress on any pending product approvals",
+    "Further announcements from the company regarding the subsidiary"
+   ],
+   "about": "",
+   "basis": "723a4fd3e92c",
+   "items": 1,
+   "updated": "2026-11-17T14:16+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "GROWW": {
    "summary": "Groww reported that its MTF (mutual fund) revenue made up 10.1% of total income in Q2FY27 and its share price hit a record high after a large ₹1,905 crore block deal. The broader financial sector also rose, helping the stock’s momentum.",
