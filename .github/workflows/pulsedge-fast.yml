@@ -1,0 +1,64 @@
+name: PulsEdge fast lane
+
+# RedBox Global India (every source with "fast": true in pulsedge-bot/sources.json) checked about once a minute
+# from 07:00 to 16:00 IST on NSE trading days, instead of every 15 minutes. New posts are sorted at once, written
+# to pulsedge/data/fast.json and the site redeployed, so they reach the terminal two to three minutes after posting.
+#
+# One run keeps checking for up to 5 h 45 min, then starts the next run itself (runs queue in one group, so two
+# never overlap). The news workflow's update job starts this lane if it isn't running, which covers GitHub's
+# unreliable cron; the cron line below starts the day early. On any other branch (push): one dry-run check.
+on:
+  schedule:
+    - cron: '41 1 * * 1-5'            # 07:11 IST
+  workflow_dispatch:
+  push:
+    branches-ignore:
+      - master
+    paths:
+      - 'pulsedge-bot/fast_lane.py'
+      - '.github/workflows/pulsedge-fast.yml'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: pulsedge-fast-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 355
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      GROQ_MODEL: ${{ vars.GROQ_MODEL }}
+      AI_API_KEY: ${{ secrets.AI_API_KEY }}
+      AI_BASE_URL: ${{ vars.AI_BASE_URL }}
+      AI_MODEL: ${{ vars.AI_MODEL }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      PULSEDGE_MODEL: ${{ vars.PULSEDGE_MODEL }}
+      GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      PULSEDGE_USE_GITHUB_MODELS: ${{ vars.PULSEDGE_USE_GITHUB_MODELS }}
+      PULSEDGE_GH_MODEL: ${{ vars.PULSEDGE_GH_MODEL }}
+      PULSEDGE_FAST_EVERY: ${{ vars.PULSEDGE_FAST_EVERY }}
+    steps:
+    - uses: actions/checkout@v5
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - run: pip install --quiet "anthropic>=0.70"
+    - name: Dry run (branches)
+      if: github.ref != 'refs/heads/master'
+      run: python pulsedge-bot/fast_lane.py --dry-run
+    - name: Watch the fast sources
+      id: lane
+      if: github.ref == 'refs/heads/master'
+      run: |
+        git config user.name "pulsedge-bot"
+        git config user.email "pulsedge-bot@users.noreply.github.com"
+        python pulsedge-bot/fast_lane.py --loop --publish --start 07:00 --until 16:00 --minutes 345
+    - name: Hand over to the next run
+      if: github.ref == 'refs/heads/master' && steps.lane.outputs.more == '1'
+      run: gh workflow run pulsedge-fast.yml --repo "${{ github.repository }}" --ref master && echo "Next run queued."

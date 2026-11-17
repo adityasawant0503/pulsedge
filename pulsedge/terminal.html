@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <script>try{var t=localStorage.getItem("th");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>PulsEdge Terminal</title>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="PulsEdge">
@@ -19,6 +20,11 @@
 <meta name="description" content="Pre-market checklist and live news signals for Indian stocks.">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<!-- added to an iPhone's Home Screen: opens full screen as "PULSE" (the safe areas are padded below) -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="PULSE">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
@@ -791,10 +797,10 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     var vis=found||sigs.filter(function(s){return inTab(s,tab)});
     // Simple view keeps routine items out of the way until asked for
     if(!found&&view==="simple"&&tab==="all"&&!showRest){rest=vis.length;vis=vis.filter(function(s){return s.call!=="ignore"});rest-=vis.length}
-    // ...and puts each day's most important items first, twenty at a time
+    // ...and puts each day's most important items first, twenty at a time (the RedBox tab stays newest first: it is there for speed)
     var left=0;
     if(!found&&view==="simple"){
-      vis=vis.slice().sort(function(a,b){var da=a.t?dayOf(a.t):"",db=b.t?dayOf(b.t):"";return da<db?1:da>db?-1:rank(a,b)});
+      if(tab!=="redbox")vis=vis.slice().sort(function(a,b){var da=a.t?dayOf(a.t):"",db=b.t?dayOf(b.t):"";return da<db?1:da>db?-1:rank(a,b)});
       left=Math.max(0,vis.length-shown);vis=vis.slice(0,shown);
     }
     document.getElementById("mine-n").textContent=hold.length?String(hold.length):"";
@@ -1376,9 +1382,17 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
   function askBtn(s){var b=el("button","askb","Ask");b.type="button";b.setAttribute("aria-label","Ask PulsEdge about this");b.onclick=function(){askAbout(s)};return b}
 
   // ---------- first visit: a short guide above the feed, until "Got it" ----------
+  // The owner never sees it: an owner link (or stored pass) skips it, even in a Home Screen app's fresh storage.
+  // Only the pass's plan is read here, unchecked; assets/member.js verifies the pass itself.
+  function ownerHint(){
+    try{
+      var m=(location.search+location.hash).match(/[?#&]pass=([A-Za-z0-9_\-]+)/),b=m?m[1]:String(store("pe_pass")||"").split(".")[0];
+      return !!b&&JSON.parse(atob(b.replace(/-/g,"+").replace(/_/g,"/"))).p==="owner";
+    }catch(e){return false}
+  }
   (function(){
     var box=document.getElementById("intro");
-    if(store("pe_intro"))return;
+    if(store("pe_intro")||ownerHint())return;
     box.hidden=false;
     function done(){box.hidden=true;store("pe_intro","1");if(sigs.length)render()}
     document.getElementById("intro-x").onclick=done;
@@ -1410,10 +1424,17 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     var feed=mode==="sample"?getJson("data/feed.sample.json"):getJson("data/feed.json").then(function(j){j._live=!j.sample;return j}).catch(function(){return getJson("data/feed.sample.json")});
     var pre=(mode==="sample"?getJson("data/premarket.sample.json"):getJson("data/premarket.json").then(function(j){j._live=!j.sample;return j}).catch(function(){return getJson("data/premarket.sample.json")})).catch(function(){return null});
     var fl=getJson("data/flows.json").catch(function(){return null});   // public end-of-day data, shown in the demo too
-    return Promise.all([feed,pre,fl]).then(function(r){
+    // the fast lane (RedBox, checked every minute): its posts show here until the 15-minute run adds them to feed.json
+    var fast=mode==="sample"?Promise.resolve(null):getJson("data/fast.json").catch(function(){return null});
+    return Promise.all([feed,pre,fl,fast]).then(function(r){
       flows=r[2];
       var j=r[0];live=!!j._live;
-      sigs=(Array.isArray(j.items)?j.items:[]).filter(function(x){return x&&x.headline}).map(normalize).sort(function(a,b){return b.ts-a.ts});
+      var items=Array.isArray(j.items)?j.items.slice():[],fj=r[3];
+      if(live&&fj&&Array.isArray(fj.items)){
+        var ids={},since=Date.now()-864e5;items.forEach(function(x){if(x&&x.id)ids[x.id]=1});
+        fj.items.forEach(function(x){if(x&&x.id&&!ids[x.id]&&Date.parse(x.time)>since){ids[x.id]=1;items.push(x)}});
+      }
+      sigs=items.filter(function(x){return x&&x.headline}).map(normalize).sort(function(a,b){return b.ts-a.ts});
       pm=r[1];if(pm){pmKey="pe_pm_"+(pm.date||"today")}
       document.getElementById("demo").hidden=live&&!!(pm&&pm._live);
       var eng=document.getElementById("eng");eng.className="pill eng"+(live?" live":"");document.getElementById("eng-t").textContent=live?"live":"demo";
@@ -1422,6 +1443,11 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
   }
   (window.PulseAccess?PulseAccess.guard():Promise.resolve({mode:"live"})).then(function(g){mode=g.mode;return load()}).catch(function(){var ul=document.getElementById("feed");ul.textContent="";var e=el("li","empty");e.append(el("b",null,"Couldn't load signals"),document.createTextNode("Refresh the page to try again."));ul.appendChild(e)});
   setInterval(function(){if(live)load().catch(function(){})},60000);
+  // back from the background (a Home Screen app has no pull-to-refresh): fetch at once instead of up to a minute later
+  var lastLoad=Date.now();
+  document.addEventListener("visibilitychange",function(){
+    if(document.visibilityState==="visible"&&live&&Date.now()-lastLoad>15000){lastLoad=Date.now();load().catch(function(){})}
+  });
 })();
 </script>
 <script>

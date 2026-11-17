@@ -519,6 +519,26 @@ def classify_rules(batch, universe):
 
 
 # ---------------------------------------------------------------- main
+def to_item(it, r, known):
+    """One feed.json entry from a collected headline and its classification (also used by fast_lane.py)."""
+    if it.get("section_hint") == "global":
+        r["section"] = "global"
+        if not r.get("sectors"):
+            r["sectors"] = global_themes(it["headline"] + " " + it["summary"])[1]
+    tickers = [t for t in r["tickers"] if t["symbol"].upper() in known]
+    return {
+        "id": it["key"], "time": it["time"].isoformat(timespec="seconds"), "headline": it["headline"],
+        "source": it["source"], "url": it["url"] if it["url"].startswith("http") else "",
+        "section": r["section"], "call": r["call"], "horizon": r["horizon"], "direction": r["direction"],
+        "tickers": tickers, "sectors": r["sectors"][:4],
+        "impact": max(0, min(100, int(r["impact"]))), "confidence": max(0, min(100, int(r["confidence"]))),
+        "category": r["category"], "action": r["action"], "reason": r["reason"][:3], "risks": r["risks"][:3],
+        # the same item in everyday words, for the terminal's Simple view
+        "plain": str(r.get("plain") or "")[:220], "why": str(r.get("why") or "")[:260], "check": str(r.get("check") or "")[:200],
+        "original": it["summary"][:300] or it["headline"],
+    }
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
@@ -540,6 +560,11 @@ def main():
         batch_keys.add(k)
         it["key"], it["time"] = k, t
         fresh.append(it)
+    # posts the fast lane (fast_lane.py) already sorted between runs go into the feed as they are: no second AI call
+    early = [x for x in load_json(os.path.join(DATA, "fast.json"), {}).get("items", [])
+             if x.get("id") and x["id"] not in seen and parse_time(x.get("time", "")) and NOW - parse_time(x["time"]) <= MAX_AGE]
+    taken = {x["id"] for x in early}
+    fresh = [x for x in fresh if x["key"] not in taken]
     fresh.sort(key=lambda x: x["time"], reverse=True)
     glob = [x for x in fresh if x.get("section_hint") == "global"][:25]   # global news must not crowd out Indian items
     fresh = sorted([x for x in fresh if x.get("section_hint") != "global"][:125] + glob, key=lambda x: x["time"], reverse=True)                                   # cap per run to bound cost
@@ -612,23 +637,7 @@ def main():
             res = classify_rules(chunk, universe)
         known = {s["symbol"] for s in universe}
         for n, it in enumerate(chunk):
-            r = res.get(n) or classify_rules([it], universe)[0]
-            if it.get("section_hint") == "global":
-                r["section"] = "global"
-                if not r.get("sectors"):
-                    r["sectors"] = global_themes(it["headline"] + " " + it["summary"])[1]
-            tickers = [t for t in r["tickers"] if t["symbol"].upper() in known]
-            classified.append({
-                "id": it["key"], "time": it["time"].isoformat(timespec="seconds"), "headline": it["headline"],
-                "source": it["source"], "url": it["url"] if it["url"].startswith("http") else "",
-                "section": r["section"], "call": r["call"], "horizon": r["horizon"], "direction": r["direction"],
-                "tickers": tickers, "sectors": r["sectors"][:4],
-                "impact": max(0, min(100, int(r["impact"]))), "confidence": max(0, min(100, int(r["confidence"]))),
-                "category": r["category"], "action": r["action"], "reason": r["reason"][:3], "risks": r["risks"][:3],
-                # the same item in everyday words, for the terminal's Simple view
-                "plain": str(r.get("plain") or "")[:220], "why": str(r.get("why") or "")[:260], "check": str(r.get("check") or "")[:200],
-                "original": it["summary"][:300] or it["headline"],
-            })
+            classified.append(to_item(it, res.get(n) or classify_rules([it], universe)[0], known))
         if wants_ai:
             time.sleep(4 if provider == "compat" else 1)      # stay under the free tiers' requests-per-minute limits
     if use_ai:
@@ -642,6 +651,10 @@ def main():
             with open(path, "w", encoding="utf-8") as fh:
                 json.dump({"note": "The last 60 runs of the AI classifier: items sorted by AI, set aside as routine, or left to keyword rules.",
                            "runs": runs[-60:]}, fh, indent=1, ensure_ascii=False)
+
+    if early:
+        log(f"{len(early)} items from the fast lane, sorted there already")
+        classified += early
 
     if a.dry_run:
         for c in classified[:20]:

@@ -129,12 +129,20 @@
   var calP=getJson("data/calendar.json").then(function(j){(j.holidays||[]).forEach(function(d){hol[d]=1})}).catch(function(){});
 
   // A link opened as terminal.html#pass=... is checked, kept in this browser and removed from the address bar.
+  // Home Screen links (terminal.html?pass=...) stay in the address bar, and an owner link becomes one: an
+  // iPhone's Home Screen app, or a bookmark opened in another browser, starts with no stored pass, so the link
+  // itself has to carry it.
   var linkMsg="";
+  function homeUrl(tok){return location.pathname+"?pass="+tok}
   var passP=(function(){
-    var m=location.hash.match(/[#&]pass=([A-Za-z0-9_\-.]+)/);
+    var q=location.search.match(/[?&]pass=([A-Za-z0-9_\-.]+)/),m=q||location.hash.match(/[#&]pass=([A-Za-z0-9_\-.]+)/);
     if(!m)return Promise.resolve();
-    history.replaceState(null,"",location.pathname+location.search);
-    return verify(m[1]).then(function(p){if(p){store("pe_pass",m[1]);linkMsg=""}else linkMsg="That access link isn't valid. Ask PulsEdge for a new one."});
+    var plan="";try{plan=JSON.parse(new TextDecoder().decode(b64u(m[1].split(".")[0]))).p}catch(e){}
+    if(!q)history.replaceState(null,"",plan==="owner"?homeUrl(m[1]):location.pathname+location.search);
+    return verify(m[1]).then(function(p){
+      if(p){store("pe_pass",m[1]);linkMsg=""}
+      else{linkMsg="That access link isn't valid. Ask PulsEdge for a new one.";if(!q&&plan==="owner")history.replaceState(null,"",location.pathname)}
+    });
   })();
 
   var ready=Promise.all([calP,passP,revokedP]).then(function(r){return current(r[2])});
@@ -298,7 +306,7 @@
     var t=a.trial,c;
     if(t)c=h("button",{type:"button","class":"pill plan"+(t.left<=1?" warn":""),
       text:t.lastDay?"TRIAL · LAST DAY":t.left?"TRIAL · "+t.left+" LEFT":"TRIAL · ENDS "+nice(t.next).split(",")[0].toUpperCase()});
-    else c=h("button",{type:"button","class":"pill plan",text:(a.plan==="founding"?"FOUNDING":a.plan==="comp"?"GUEST":"PRO")});
+    else c=h("button",{type:"button","class":"pill plan",text:(a.plan==="founding"?"FOUNDING":a.plan==="comp"?"GUEST":a.plan==="owner"?"OWNER":"PRO")});
     c.setAttribute("aria-haspopup","dialog");
     c.onclick=function(e){e.stopPropagation();popover(a,c)};
     anchor.parentNode.insertBefore(c,anchor);
@@ -310,6 +318,16 @@
     if(t)kids.push(h("p",{text:(t.lastDay?"Today is your last trading session.":t.left?t.left+" of "+t.total+" trading sessions left. Last session: "+nice(t.last)+".":"All "+t.total+" sessions used. Access ends when trading opens on "+nice(t.next)+".")+(a.email?" Signed up as "+a.email+".":"")}));
     else kids.push(h("p",{text:(a.until?"Active until "+nice(a.until)+".":"Active.")+(a.email?" For "+a.email+".":"")}));
     if(t||a.plan==="comp")kids.push(h("a",{"class":"pe-b",href:"index.html#pricing",text:"See plans"}));
+    var tok=a.kind==="pass"&&store("pe_pass");
+    if(tok){
+      // puts the pass back in the address bar, so Share > Add to Home Screen saves a link that opens signed in
+      var hs=h("button",{"class":"pe-b ghost",type:"button",text:"Add to Home Screen"});
+      hs.onclick=function(e){
+        e.stopPropagation();history.replaceState(null,"",homeUrl(tok));
+        hs.replaceWith(h("p",{"class":"pe-s",text:"Ready. iPhone: tap Share, then Add to Home Screen. Android: tap ⋮, then Add to Home screen. The icon opens PULSE signed in. It works for anyone who has it, so keep it on your own phone."}));
+      };
+      kids.push(hs);
+    }
     var fb=h("button",{"class":"pe-b ghost",type:"button",text:"Send feedback"});fb.onclick=function(){pop.remove();pop=null;feedback(a)};kids.push(fb);
     var p=h("div",{"class":"pe-pop",role:"dialog","aria-label":"Your plan"},kids),r=btn.getBoundingClientRect();
     p.style.top=(r.bottom+8)+"px";p.style.right=Math.max(12,innerWidth-r.right)+"px";

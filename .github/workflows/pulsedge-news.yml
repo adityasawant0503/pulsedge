@@ -50,6 +50,7 @@ permissions:
   pages: write
   id-token: write
   models: read
+  actions: write    # the update job starts the RedBox fast lane (pulsedge-fast.yml) when it isn't running
 
 jobs:
   update:
@@ -118,9 +119,27 @@ jobs:
           git config user.email "pulsedge-bot@users.noreply.github.com"
           git add $FILES
           git commit -q -m "PulsEdge news: $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push
+          # the fast lane pushes fast.json about once a minute; it never touches these files, so a rebase is clean
+          ok=""
+          for i in 1 2 3 4; do
+            if git push -q; then ok=1; break; fi
+            git pull --rebase -q origin master || true
+            sleep "$i"
+          done
+          [ -n "$ok" ] || { echo "push failed four times"; exit 1; }
           echo "changed=true" >> "$GITHUB_OUTPUT"
         fi
+    - name: Keep the RedBox fast lane running
+      if: github.ref == 'refs/heads/master' && github.event_name != 'push'
+      continue-on-error: true
+      env:
+        GH_TOKEN: ${{ github.token }}
+        REPO: ${{ github.repository }}
+      run: |
+        HM=$(TZ=Asia/Kolkata date +%H%M)
+        if [ "$HM" -lt 700 ] || [ "$HM" -ge 1550 ]; then echo "Outside the fast lane's hours."; exit 0; fi
+        n=$(gh api "repos/$REPO/actions/workflows/pulsedge-fast.yml/runs?per_page=10" --jq '[.workflow_runs[] | select(.status != "completed")] | length')
+        if [ "$n" = "0" ]; then gh workflow run pulsedge-fast.yml --repo "$REPO" --ref master && echo "Started the fast lane."; else echo "Fast lane running."; fi
 
   deploy:
     needs: update
