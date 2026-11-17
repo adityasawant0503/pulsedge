@@ -1,7 +1,40 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-17T12:21:18+05:30",
+ "updated": "2026-11-17T12:24:17+05:30",
  "items": [
+  {
+   "id": "cc5c560900956c16",
+   "time": "2026-11-17T12:23:19+05:30",
+   "headline": "INDIA MARKETS REGULATOR TO TIGHTEN RULES FOR LEVERAGED STOCK BETS, :RTRS",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9430",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "positional",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Market Structure"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "Regulatory",
+   "action": "Monitor for specific rule changes that might affect trading volume in the coming weeks.",
+   "reason": [
+    "Broad regulatory tightening affects market structure rather than specific stocks.",
+    "No immediate price impact on individual listed entities."
+   ],
+   "risks": [
+    "Potential reduction in speculative trading volume.",
+    "Increased compliance costs for brokers."
+   ],
+   "plain": "The market regulator plans to make rules stricter for using borrowed money to bet on stocks.",
+   "why": "This changes how the market works overall but does not directly change the value of any specific company right now.",
+   "check": "Look for official announcements about new limits on borrowing for stock trades.",
+   "original": "INDIA MARKETS REGULATOR TO TIGHTEN RULES FOR LEVERAGED STOCK BETS, :RTRS",
+   "latency": 58.5,
+   "lane": "fast"
+  },
   {
    "id": "293d583c1dee2879",
    "time": "2026-11-17T12:20:06+05:30",
