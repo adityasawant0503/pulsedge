@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T11:45+05:30",
+ "updated": "2026-11-17T12:00+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -219,6 +219,22 @@
    "updated": "2026-11-17T11:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "ADANIGREEN": {
+   "summary": "Adani Green Energy received a stop‑work notice for its Tarali hydro‑power project in Satara, which could delay the project and affect future earnings and cash flow. The broader energy sector index fell 0.3% in the last session but rose 1.1% over five sessions.",
+   "why": "A regulatory halt may reduce the company’s earnings and cash flow, directly impacting shareholders’ returns.",
+   "upside": "If the stop‑work notice is lifted and the hydro project resumes, earnings could improve.",
+   "downside": "Extended regulatory delays could keep the project halted, hurting earnings and cash flow.",
+   "watch": [
+    "Resolution of the stop‑work notice for the Tarali hydro project",
+    "Progress updates on the Tarali hydro‑power construction",
+    "Movement of the energy sector index"
+   ],
+   "about": "Adani Green Energy is a power company operating in India’s energy sector.",
+   "basis": "8105b29b4f74",
+   "items": 1,
+   "updated": "2026-11-17T12:00+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "MPHASIS": {
    "summary": "Mphasis is expected to benefit from strong Q3 revenue growth and AI‑led short‑cycle deals, according to recent PulsEdge coverage. However, slower global IT spending could weigh on earnings.",
    "why": "Shareholders care because the earnings outlook looks positive but could be affected by broader IT spending trends.",
@@ -345,6 +361,22 @@
    "basis": "03ce51d8a132",
    "items": 3,
    "updated": "2026-11-17T11:17+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "FIRSTCRY": {
+   "summary": "Brainbees Solutions Ltd. (FirstCry) reported a Q2 net loss that narrowed by 75% and a jump in revenue, sending its shares up about 13%. The company also released an investor presentation outlining its strategic goals and growth metrics.",
+   "why": "The narrowing loss and higher sales suggest the business may be moving toward profitability, which matters to shareholders. The presentation gives investors insight into the company’s long‑term plan.",
+   "upside": "If the trend of reduced losses and rising revenue continues, the company could achieve profitability.",
+   "downside": "The firm is still reporting a loss, so continued deficits could pressure the share price.",
+   "watch": [
+    "Next quarterly earnings release",
+    "Updates on the strategic roadmap from management",
+    "Changes in revenue growth or loss margins"
+   ],
+   "about": "Brainbees Solutions runs FirstCry, an online retailer of baby products.",
+   "basis": "7abfc05d8971",
+   "items": 2,
+   "updated": "2026-11-17T12:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "SOLARINDS": {
@@ -842,6 +874,22 @@
    "items": 2,
    "updated": "2026-11-17T00:55+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "DIXON": {
+   "summary": "Dixon Technologies announced a new deal with another business, which could add customers and revenue. The consumer durables sector has been modestly higher recently.",
+   "why": "Shareholders care because the deal may boost earnings, but the agreement terms could affect profitability.",
+   "upside": "If the deal brings in strong sales, the company's revenue could rise.",
+   "downside": "Unfavourable terms in the agreement could limit profit gains.",
+   "watch": [
+    "Details of the new deal’s terms",
+    "Sector index performance",
+    "Upcoming earnings or financial updates"
+   ],
+   "about": "Dixon Technologies manufactures and assembles consumer electronics and appliances.",
+   "basis": "2f0e187fecf7",
+   "items": 1,
+   "updated": "2026-11-17T12:00+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "KALYANKJIL": {
    "summary": "Kalyan Jewellers' stock price rose by 42% over 11 trading days following strong quarterly results. The share price recently reached a level not seen in nearly two years.",

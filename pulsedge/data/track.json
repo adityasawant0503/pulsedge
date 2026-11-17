@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T11:46:08+05:30",
+ "updated": "2026-11-17T12:00:58+05:30",
  "summary": {
-  "calls": 1545,
-  "scored_calls": 407,
+  "calls": 1549,
+  "scored_calls": 411,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,57 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "979acf816ccffd99",
+   "symbol": "EMBASSY",
+   "time": "2026-11-17T11:56:39+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Embassy Developments Limited: Press Release - \"Embassy Developments Unveils Embassy ONE Residences - an Exclusive Collection of 59 Ultra-Luxury Managed Residenc",
+   "url": "https://nsearchives.nseindia.com/corporate/EMBDL_17112026115355_EDL_Press_Release_17112026.pdf",
+   "entry_date": "2026-11-16"
+  },
+  {
+   "id": "488bea0d4f845228",
+   "symbol": "FIRSTCRY",
+   "time": "2026-11-17T11:52:23+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "FirstCry-parent Brainbees Solutions shares rally 13%: Q2 net loss narrows 75%, revenue jumps - Should you buy?",
+   "url": "https://www.livemint.com/market/stock-market-news/firstcryparent-brainbees-solutions-shares-rally-13-q2-net-loss-narrows-75-revenue-jumps-should-you-buy-11794895128954.html",
+   "entry_date": "2026-11-16",
+   "entry": 158.59
+  },
+  {
+   "id": "2edcd646c9bba496",
+   "symbol": "ADANIGREEN",
+   "time": "2026-11-17T11:49:32+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "ADANI GREEN:MAHARASHTRA'S FOREST DEPARTMENT ISSUES A STOP-WORK NOTICE TO ADANI'S TARALI HYDROPOWER PROJECT IN SATARA.",
+   "url": "https://t.me/Indiaredboxglobal/9426",
+   "entry_date": "2026-11-16",
+   "entry": 1406.6
+  },
+  {
+   "id": "48aea832a838dba6",
+   "symbol": "DIXON",
+   "time": "2026-11-17T11:44:53+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Dixon Technologies (India) Limited: DIXON TECHNOLOGIES (INDIA) LIMITED has informed the Exchange regarding |SUBJECT: Agreements,Contracts,Arrangements,MOU-XBRL",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/ANN_AGREEMENT_15472_WebXMLFile_20261117_114452697.xml",
+   "entry_date": "2026-11-16",
+   "entry": 12890.0
+  },
   {
    "id": "a8d981820a627644",
    "symbol": "AETHER",
