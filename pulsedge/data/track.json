@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T09:15:35+05:30",
+ "updated": "2026-11-17T09:30:33+05:30",
  "summary": {
-  "calls": 1513,
-  "scored_calls": 375,
+  "calls": 1514,
+  "scored_calls": 376,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "7b270bf4640104ba",
+   "symbol": "AEGISLOG",
+   "time": "2026-11-17T09:26:23+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Aegis Logistics closes ₹3500 crore QIP; over 83% of shares issued to Nomura India, Quant Mutual Fund, 2 US-based FPIs",
+   "url": "https://www.livemint.com/market/stock-market-news/aegis-logistics-closes-rs-3500-crore-qip-over-83-of-shares-issued-to-nomura-india-quant-mutual-fund-2-us-based-fpis-11794885634109.html",
+   "entry_date": "2026-11-16",
+   "entry": 1228.1
+  },
   {
    "id": "b4fd21b7f5cd55bb",
    "symbol": "CYIENT",
