@@ -1,7 +1,45 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-17T12:31:17+05:30",
+ "updated": "2026-11-17T12:34:17+05:30",
  "items": [
+  {
+   "id": "76be7a4ad605cef4",
+   "time": "2026-11-17T12:32:34+05:30",
+   "headline": "ONGC: GAS CONCENTRATION MONITORING AT WELL SITE INDICATED ZERO CONCENTRATION AT MONITORED LOCATIONS; UNDERTAKING NECESSARY WELL-CONTROL OPERATIONS FOLLOWING A GAS LEAKAGE AT A GAS WELL",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9434",
+   "section": "news",
+   "call": "watch",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "ONGC",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Oil & Gas"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "Operational Incident",
+   "action": "Monitor for any further regulatory updates or production halt announcements.",
+   "reason": [
+    "Gas leakage incident at a well site, though currently contained with zero concentration at monitored locations.",
+    "Well-control operations are underway, which may temporarily impact production or incur costs."
+   ],
+   "risks": [
+    "Potential for incident escalation or regulatory scrutiny.",
+    "Short-term production disruption or cleanup costs."
+   ],
+   "plain": "A gas leak occurred at an oil well, but sensors show no gas at nearby spots now.",
+   "why": "It might cause a brief pause in work or extra costs, but the situation seems controlled for now.",
+   "check": "Look for any official statement about when normal work will resume.",
+   "original": "ONGC: GAS CONCENTRATION MONITORING AT WELL SITE INDICATED ZERO CONCENTRATION AT MONITORED LOCATIONS; UNDERTAKING NECESSARY WELL-CONTROL OPERATIONS FOLLOWING A GAS LEAKAGE AT A GAS WELL",
+   "latency": 103.8,
+   "lane": "fast"
+  },
   {
    "id": "e5dac672036e062a",
    "time": "2026-11-17T12:30:49+05:30",
