@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T11:02+05:30",
+ "updated": "2026-11-17T11:17+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -284,20 +284,52 @@
    "model": "openai/gpt-oss-120b"
   },
   "TMCV": {
-   "summary": "Tata Motors reported a loss in its second quarter, although its revenue increased. The company's shares have fallen by 22% in 2026, and recent reports suggest the outlook remains weak.",
-   "why": "This matters because a company that loses money while lowering its future expectations often sees its share price drop, which reduces the value of any shares you own.",
-   "upside": "The company's revenue grew in the latest quarter, which shows it is still selling more products.",
-   "downside": "The stock may see further selling if the company's guidance for future performance remains weak.",
+   "summary": "Tata Motors recently reported a loss in its second quarter, even though its sales revenue grew. The stock exchange has also asked the company to clarify recent news about a possible new public offering by its parent group.",
+   "why": "These events matter because weak profits can lower the share price, while a new offering could change how much the parent company is worth to investors.",
+   "upside": "The company's revenue increased in the latest quarter, which shows some business activity is growing.",
+   "downside": "The stock has already fallen 22% this year, and further selling could happen if the company's profit outlook stays weak or if the new offering is delayed.",
    "watch": [
-    "Future quarterly financial results",
-    "Changes in the company's outlook or guidance",
-    "Comparison with other auto stocks like Eicher Motors"
+    "The company's response to the stock exchange's request for clarification.",
+    "Any updates on the status of the potential Tata Sons IPO.",
+    "Future quarterly earnings reports to see if losses continue."
    ],
    "about": "",
-   "basis": "eed16434470c",
-   "items": 4,
-   "updated": "2026-11-16T14:30+05:30",
+   "basis": "429ab59ad1ca",
+   "items": 5,
+   "updated": "2026-11-17T11:17+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "TATACHEM": {
+   "summary": "Tata Chemicals shares jumped about 9% on a volume surge as rumors of a Tata Sons IPO spread, and the stock exchange has asked the company to clarify the news. The rally is linked to group‑wide listing buzz, which could be volatile.",
+   "why": "The potential IPO could affect the valuation of Tata Chemicals as part of the Tata Group, so shareholders need to watch any developments closely.",
+   "upside": "If the Tata Sons IPO proceeds and is well received, the positive sentiment could support Tata Chemicals’ share price.",
+   "downside": "If the IPO is delayed or cancelled, the recent rally may reverse and the stock could correct.",
+   "watch": [
+    "Outcome of the exchange’s request for clarification on the IPO rumors",
+    "Confirmation or denial of the Tata Sons IPO plan",
+    "Any regulatory guidance from the RBI or other authorities affecting Tata Chemicals or its affiliates"
+   ],
+   "about": "Tata Chemicals Ltd. is a chemicals manufacturer operating in the Indian market.",
+   "basis": "1e5ed86eb497",
+   "items": 4,
+   "updated": "2026-11-17T11:17+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "TATAINVEST": {
+   "summary": "The stock exchange has asked Tata Investment Corporation Ltd. to clarify recent news about a possible Tata Sons IPO, and the shares have rallied up to 9% after an RBI nudge. The financial services sector has also risen, gaining 0.6% in the last session and 2.7% over five sessions.",
+   "why": "Investors watch the IPO news because it could affect the value of the parent company's shares, and the recent rally could reverse if the offering is delayed or cancelled.",
+   "upside": "If the Tata Sons IPO proceeds as expected, it could support further gains for Tata Investment Corporation's stock.",
+   "downside": "If the IPO is delayed or cancelled, the stock could correct from its recent rally.",
+   "watch": [
+    "Outcome of the exchange's clarification request",
+    "Official announcement on the Tata Sons IPO",
+    "Further RBI or regulatory actions affecting the company"
+   ],
+   "about": "Tata Investment Corporation Ltd. is an investment company that manages a portfolio of listed securities.",
+   "basis": "03ce51d8a132",
+   "items": 3,
+   "updated": "2026-11-17T11:17+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "NUVAMA": {
    "summary": "Nuvama Wealth Management Ltd. (NUVAMA) is a financial services firm in the Nifty 500. Its sector index fell 0.7% in the last session but has risen 4.7% over the past five sessions.",
@@ -394,6 +426,22 @@
    "items": 10,
    "updated": "2026-11-17T10:45+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "COALINDIA": {
+   "summary": "Coal India Ltd. is preparing to sell parts of its Northern, Central and Mahanadi Coalfields units through IPOs, aiming to raise cash for the group. The company’s share price may react to the new listings and the amount of shares offered.",
+   "why": "Shareholders may see a change in the company’s capital structure and earnings per share, and the IPO could bring fresh funds that affect the business’s growth prospects.",
+   "upside": "A successful IPO could bring in cash and potentially increase the value of the remaining shares.",
+   "downside": "If the IPO is priced poorly or under‑subscribed, or if market conditions are weak, existing shareholders could face dilution and a drop in earnings per share.",
+   "watch": [
+    "IPO pricing and demand for Mahanadi Coalfields shares",
+    "Market reaction to the announcement of Northern and Central Coalfields IPOs",
+    "Potential dilution of Coal India’s stake and earnings per share"
+   ],
+   "about": "Coal India Ltd. is a major coal mining company in India.",
+   "basis": "4b475fa18b40",
+   "items": 9,
+   "updated": "2026-11-17T11:17+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "HINDZINC": {
    "summary": "PulsEdge flagged that Hindustan Zinc’s stock fell despite announcing a ₹80,000 cr expansion plan and a capacity‑addition programme. The market sees the shares as expensive, which may be weighing on the price. The company also disclosed recent board decisions.",
@@ -619,22 +667,6 @@
    "updated": "2026-11-17T11:02+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "TATACHEM": {
-   "summary": "Tata Chemicals shares jumped about 9% after a surge in buying volume, driven by rumors of a Tata Sons listing that could boost the Tata Group’s stock rally. The price rise may be unstable if the listing rumors are not confirmed.",
-   "why": "Shareholders see rapid price moves, which can affect the value of their holdings.",
-   "upside": "If the Tata Sons listing materialises, the share price could stay elevated.",
-   "downside": "If the listing rumors prove false, the share price could correct lower.",
-   "watch": [
-    "Confirmation or denial of the Tata Sons listing",
-    "Continued trading volume and price movement",
-    "Overall performance of the Tata Group stocks"
-   ],
-   "about": "Tata Chemicals Ltd. is an Indian chemicals manufacturer.",
-   "basis": "114eb8db25ac",
-   "items": 1,
-   "updated": "2026-11-17T10:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "AEGISLOG": {
    "summary": "Aegis Logistics Ltd. closed a ₹3500 crore Qualified Institutional Placement (QIP), selling over 83% of the new shares to Nomura India, Quant Mutual Fund and two US-based foreign portfolio investors.",
    "why": "The participation of large institutional investors signals confidence in the company, which could support the share price, but the new shares also increase the total shares outstanding, potentially diluting existing shareholders' value.",
@@ -698,22 +730,6 @@
    "items": 1,
    "updated": "2026-11-16T09:01+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "COALINDIA": {
-   "summary": "Coal India Ltd is seeing its subsidiary Mahanadi Coalfields launch an IPO with a price band of ₹129‑₹136 per share. The offering could bring fresh funds but may also dilute existing shareholders' earnings.",
-   "why": "Shareholders could see earnings per share change due to dilution, while the IPO may improve the company’s cash position and dividend appeal.",
-   "upside": "If the IPO is well‑subscribed and priced at the top of the band, Coal India could receive strong capital and boost dividend prospects.",
-   "downside": "If the IPO is undersubscribed or priced below the band, earnings per share could be diluted and the share price may face pressure.",
-   "watch": [
-    "IPO subscription levels and final pricing",
-    "Coal India's share price reaction post‑IPO",
-    "Upcoming quarterly earnings and sector index movement"
-   ],
-   "about": "Coal India Ltd is India's largest coal mining company, a key player in the Oil, Gas & Consumable Fuels sector.",
-   "basis": "29fe544b0a6b",
-   "items": 8,
-   "updated": "2026-11-16T15:39+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "TITAGARH": {
    "summary": "Titagarh Rail Systems has set a target to produce 200 metro cars in the next financial year. It also aims to build 1,000 wagons per month by the end of that year.",
