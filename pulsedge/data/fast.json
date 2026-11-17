@@ -1,7 +1,41 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-17T11:06:17+05:30",
+ "updated": "2026-11-17T11:33:17+05:30",
  "items": [
+  {
+   "id": "db2842fee01a8d1d",
+   "time": "2026-11-17T11:31:40+05:30",
+   "headline": "INDIA AVIATION MINISTER SAYS INDIA TO HAVE 400,000 TONS OF SAF PRODUCTION CAPACITY",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9421",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "positional",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "Aviation",
+    "Energy"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "Policy",
+   "action": "Monitor for specific announcements from listed aviation fuel suppliers or airline operators regarding SAF adoption timelines.",
+   "reason": [
+    "No specific listed company is named in the headline.",
+    "The news is a long-term policy statement rather than an immediate operational change."
+   ],
+   "risks": [
+    "Implementation of SAF production capacity may take years.",
+    "Cost of SAF remains higher than conventional jet fuel."
+   ],
+   "plain": "The aviation minister said India will soon be able to make a large amount of sustainable fuel for planes.",
+   "why": "This is a long-term plan that does not change how any specific company operates today, so it is safe to skip for now.",
+   "check": "",
+   "original": "INDIA AVIATION MINISTER SAYS INDIA TO HAVE 400,000 TONS OF SAF PRODUCTION CAPACITY",
+   "latency": 97.7,
+   "lane": "fast"
+  },
   {
    "id": "a0368e7beda8f2a3",
    "time": "2026-11-17T11:05:22+05:30",
