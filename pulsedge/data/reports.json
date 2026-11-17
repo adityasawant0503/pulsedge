@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T15:16+05:30",
+ "updated": "2026-11-17T15:46+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -379,6 +379,22 @@
    "updated": "2026-11-17T10:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "TATACHEM": {
+   "summary": "Tata Chemicals shares jumped nearly 10% in a single day and rose 11% over three days due to rumors that its parent company, Tata Sons, may list on the stock market. The company has denied having any knowledge of these negotiations, and the stock exchange has asked for clarification on the recent news.",
+   "why": "If the parent company lists, it could increase the value of Tata Chemicals shares, but the recent price rise is based on unconfirmed rumors. The company's denial suggests the hype may be cooling down, which could affect the share price.",
+   "upside": "The stock could remain strong if the parent company's listing is confirmed and proceeds as expected.",
+   "downside": "The share price may drop if the listing is delayed or cancelled, as the recent rally was driven by speculation.",
+   "watch": [
+    "Official response from Tata Chemicals to the stock exchange's clarification request",
+    "Any new announcements regarding the Tata Sons IPO",
+    "Changes in trading volume and share price stability"
+   ],
+   "about": "Tata Chemicals is a chemical company listed in India's Nifty 500 index.",
+   "basis": "c4dc2aa6c4e0",
+   "items": 6,
+   "updated": "2026-11-17T15:46+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "TMCV": {
    "summary": "Tata Motors reported a loss in its second quarter despite higher revenue, and its shares are down 22% this year. The stock exchange has also asked the company to clarify recent news about a possible new public offering.",
    "why": "These events matter because weak profits and uncertainty about a new share issue can make the stock price fall, affecting the value of your investment.",
@@ -394,22 +410,6 @@
    "items": 6,
    "updated": "2026-11-17T12:30+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "TATACHEM": {
-   "summary": "Tata Chemicals shares jumped about 9% on rumors of a Tata Sons IPO, while the company denied any knowledge of such plans and the stock exchange has asked it to clarify the news.",
-   "why": "The speculation and the company's denial could cause price swings, affecting shareholders.",
-   "upside": "If a Tata Sons IPO is confirmed, it could support the share price.",
-   "downside": "If the IPO is delayed or cancelled, the share price may fall back from the recent rally.",
-   "watch": [
-    "Official confirmation of Tata Sons IPO",
-    "Tata Chemicals' response to the exchange's clarification request",
-    "Share price movement after the rumor-driven rally"
-   ],
-   "about": "Tata Chemicals Ltd. is an Indian chemicals manufacturer.",
-   "basis": "93cf9e714c67",
-   "items": 5,
-   "updated": "2026-11-17T13:00+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "HINDZINC": {
    "summary": "Hindustan Zinc announced a Rs 80,000 crore expansion to become the world’s largest zinc and silver producer and is adding production capacity. The stock fell after the announcement as investors worry the company may be over‑valued and that the large capex could strain cash flow.",
