@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T10:15:58+05:30",
+ "updated": "2026-11-17T10:31:04+05:30",
  "summary": {
-  "calls": 1518,
-  "scored_calls": 380,
+  "calls": 1523,
+  "scored_calls": 385,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,71 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "427f636e8ba3507d",
+   "symbol": "CASTROLIND",
+   "time": "2026-11-17T10:22:58+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "CASTROL INDIA: CO. OPEN OFFER FOR 26% STAKE AT RUPEES 199.45 PER SHARE",
+   "url": "https://t.me/Indiaredboxglobal/9417",
+   "entry_date": "2026-11-16",
+   "entry": 190.14
+  },
+  {
+   "id": "cb4c10d352dedc0e",
+   "symbol": "YESBANK",
+   "time": "2026-11-17T10:18:03+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "YES BANK: CO. REFUTES FACTUALLY INCORRECT REPORT OF $3.4MN CYBER FRAUD; NO GOVERNMENT ACCOUNTS AFFECTED; BANK HAS NOT INCURRED ANY FINANCIAL LOSS.",
+   "url": "https://t.me/Indiaredboxglobal/9416",
+   "entry_date": "2026-11-16",
+   "entry": 18.02
+  },
+  {
+   "id": "112266f34e81a1a5",
+   "symbol": "GROWW",
+   "time": "2026-11-17T10:17:27+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Groww share price hits record high after massive ₹1,905 crore block deal: Key things to know - Should you buy?",
+   "url": "https://www.livemint.com/market/stock-market-news/groww-share-price-hits-record-high-after-massive-rs-1-905-crore-block-deal-key-things-to-know-should-you-buy-11794889175341.html",
+   "entry_date": "2026-11-16",
+   "entry": 224.92
+  },
+  {
+   "id": "ba4b2becc43febe8",
+   "symbol": "ONGC",
+   "time": "2026-11-17T10:17:26+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "ONGC: MAJOR GAS LEAK AT ONGC PLANT IN ANDHRA'S KONASEEMA DISTRICT",
+   "url": "https://t.me/Indiaredboxglobal/9414",
+   "entry_date": "2026-11-16",
+   "entry": 226.99
+  },
+  {
+   "id": "b0aa8dc873168810",
+   "symbol": "YESBANK",
+   "time": "2026-11-17T10:15:08+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Yes Bank Limited: The Exchange has sought clarification from Yes Bank Limited with respect to recent news item captioned YES Bank denies 32 crore cyber fraud re",
+   "url": "https://nsearchives.nseindia.com/corporate/YESBANK_17112026101124_NSE_Response_signed.pdf",
+   "entry_date": "2026-11-16",
+   "entry": 18.02
+  },
   {
    "id": "fb00ddeb2a2ca5fc",
    "symbol": "OIL",
