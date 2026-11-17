@@ -1,7 +1,46 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-17T12:30:17+05:30",
+ "updated": "2026-11-17T12:31:17+05:30",
  "items": [
+  {
+   "id": "e5dac672036e062a",
+   "time": "2026-11-17T12:30:49+05:30",
+   "headline": "ONGC: CO SAYS AREA WITHIN 500-METRE RADIUS OF THE WELL HAS BEEN CORDONED OFF, AND RESIDENTS IN THE VICINITY HAVE BEEN EVACUATED",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9433",
+   "section": "news",
+   "call": "watch",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "ONGC",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Energy",
+    "Oil & Gas"
+   ],
+   "impact": 45,
+   "confidence": 60,
+   "category": "Operational Incident",
+   "action": "Monitor for official statements on production impact or regulatory penalties.",
+   "reason": [
+    "Safety incident at an operational site may lead to temporary production halt.",
+    "Evacuation and cordon indicate a significant safety breach requiring investigation."
+   ],
+   "risks": [
+    "Potential regulatory fines or operational delays.",
+    "Negative sentiment from safety concerns."
+   ],
+   "plain": "The oil company secured the area around a well and moved nearby residents away for safety.",
+   "why": "This suggests a safety issue that might pause work, which could slightly hurt the company's short-term output.",
+   "check": "Look for updates on whether the well is still producing oil or gas.",
+   "original": "ONGC: CO SAYS AREA WITHIN 500-METRE RADIUS OF THE WELL HAS BEEN CORDONED OFF, AND RESIDENTS IN THE VICINITY HAVE BEEN EVACUATED",
+   "latency": 28.5,
+   "lane": "fast"
+  },
   {
    "id": "9fdeceffef708034",
    "time": "2026-11-17T12:29:01+05:30",
