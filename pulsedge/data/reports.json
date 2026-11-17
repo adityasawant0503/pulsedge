@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T12:30+05:30",
+ "updated": "2026-11-17T12:46+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -124,20 +124,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "ONGC": {
-   "summary": "ONGC reported a major gas leak at its plant in Andhra Pradesh, leading to a temporary power disconnection to manage safety risks. This incident follows recent mentions of the company as a high-yield dividend stock.",
-   "why": "The gas leak and subsequent shutdown could reduce production and increase safety costs, which may lower the company's earnings and affect the value of its shares.",
-   "upside": "The company is recognized for offering high dividend yields, which can attract investors looking for regular income.",
-   "downside": "The gas leak could lead to further production cuts, regulatory penalties, or higher safety expenses that hurt profits.",
+   "summary": "PulsEdge flagged that a major gas leak occurred at an ONGC plant in Andhra's Konaseema district. The company evacuated about 800 nearby residents, cordoned off the area, and cut power to prevent fires while undertaking well-control operations.",
+   "why": "This matters because unexpected safety incidents can pause work, cut production, and lead to extra costs or regulatory fines.",
+   "upside": "Sensors show zero gas concentration at monitored locations now, and the issue could be resolved quickly with limited overall impact.",
+   "downside": "The situation carries the potential for incident escalation, further operational delays, or regulatory penalties.",
    "watch": [
-    "Updates on the resolution of the gas leak and power supply",
-    "Any regulatory actions or penalties related to the incident",
-    "Changes in the company's dividend payout or yield"
+    "Updates on the well-control operations and when work resumes",
+    "Any official statements regarding regulatory scrutiny or fines",
+    "Changes in production levels at the affected plant"
    ],
-   "about": "ONGC is a major Indian company in the oil and gas sector that is part of the Nifty 50 index.",
-   "basis": "46371b6c8bf2",
-   "items": 3,
-   "updated": "2026-11-17T12:30+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Oil & Natural Gas Corporation Ltd. is one of India's 50 largest listed companies, operating in the oil, gas, and consumable fuels sector.",
+   "basis": "1e92c68fba23",
+   "items": 6,
+   "updated": "2026-11-17T12:46+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "SWIGGY": {
    "summary": "Swiggy's shares have fallen sharply this year, losing up to half their value, while its latest Q2 results show profit growth faster than its rival Zomato's parent. The company is in the Nifty 500 consumer services index.",
