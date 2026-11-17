@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T02:10+05:30",
+ "updated": "2026-11-17T08:20+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a sharp fall in global oil prices as supply outpaced demand, pushing Brent down 3.6% and WTI 3.2%. A fourth oil tanker hit a mine in the Hormuz Strait, raising worries about shipping risks. Indian sector indices showed FMCG leading gains while pharma, metals and realty fell. Foreign fund futures stayed slightly less bullish than the day before.",
+  "summary": "Oil prices fell sharply because there is more oil available than needed, which may lower earnings for fuel sellers. Global tech stocks dipped as investors reacted to recent earnings reports, creating uncertainty for Indian IT companies. Consumer goods and bank stocks were the strongest performers in the last session, while pharma and metals lagged. Foreign investors slightly reduced their long positions in Indian index futures.",
   "themes": [
-   "Oil price slump driven by excess supply",
-   "Shipping risks in Hormuz could spark market volatility",
-   "Mixed sector performance with consumer goods up and heavy industries down"
+   "Cheaper oil due to global supply surplus",
+   "Global tech sentiment affecting Indian IT stocks",
+   "Rotation into consumer and banking sectors"
   ],
   "watch": [
-   "Whether oil prices stabilise or rebound on geopolitical developments",
-   "Potential escalation of tensions in the Middle East affecting energy markets",
-   "Changes in foreign fund positioning that could influence market direction"
+   "Whether oil prices stay low or rebound due to Middle East tensions",
+   "How Indian IT stocks react to global AI sector news",
+   "Changes in foreign investor buying or selling trends"
   ],
   "date": "2026-11-17",
-  "basis": "6cd10243ea84",
-  "updated": "2026-11-17T02:10+05:30",
-  "model": "openai/gpt-oss-120b",
-  "items": 3
+  "basis": "4f86723c2859",
+  "updated": "2026-11-17T08:20+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 9
  },
  "stocks": {
   "TMPV": {
@@ -332,19 +332,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is facing pressure from falling global oil prices, which dropped sharply due to expectations of a large supply surplus. The company is also preparing to pay a dividend, with record dates announced for this week.",
-   "why": "Lower oil prices can reduce the money the company earns from selling fuel, which may affect its future profits and the size of its dividends.",
-   "upside": "Oil prices could rise again if geopolitical tensions in the Middle East increase, which would help the company earn more.",
-   "downside": "If the predicted surplus in oil supply continues, prices may stay low, leading to lower earnings and potentially smaller dividend payouts.",
+   "summary": "Oil India Ltd. is facing pressure from falling global oil prices, which dropped sharply due to expectations of a large supply surplus. The company is also set to announce dividend record dates this week, which may cause minor price adjustments.",
+   "why": "Lower oil prices can reduce the profit margins for companies that sell fuel, potentially affecting their earnings and share value. Shareholders should watch how these price changes impact the company's financial health.",
+   "upside": "Geopolitical tensions in the Middle East could quickly reverse the supply surplus narrative and push oil prices back up.",
+   "downside": "A sustained drop in oil prices could compress profit margins and lead to lower dividend payouts for shareholders.",
    "watch": [
-    "Global oil price trends and supply reports",
-    "The exact date the dividend is paid out",
-    "News about Middle East exports and geopolitical stability"
+    "Global oil price movements and supply surplus forecasts",
+    "Upcoming dividend record dates and ex-dates",
+    "Geopolitical developments in the Middle East"
    ],
-   "about": "Oil India Ltd. is a major oil and gas company listed in India's Nifty 500 index.",
-   "basis": "b7ded0cfa8cc",
-   "items": 7,
-   "updated": "2026-11-17T02:10+05:30",
+   "about": "Oil India Ltd. is an Indian oil and gas company listed on the NSE.",
+   "basis": "256cecd63260",
+   "items": 8,
+   "updated": "2026-11-17T08:20+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "IDEA": {

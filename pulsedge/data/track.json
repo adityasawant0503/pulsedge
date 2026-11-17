@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T04:35:43+05:30",
+ "updated": "2026-11-17T08:20:27+05:30",
  "summary": {
-  "calls": 1508,
-  "scored_calls": 370,
+  "calls": 1511,
+  "scored_calls": 373,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,45 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "5eb76fa99175d0db",
+   "symbol": "HONASA",
+   "time": "2026-11-17T07:46:20+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Honasa Consumer, HDFC Bank: Two stock ideas by Shrikant Chouhan",
+   "url": "https://www.business-standard.com/markets/news/honasa-consumer-hdfc-bank-two-stock-ideas-by-shrikant-chouhan-126111700074_1.html",
+   "entry_date": "2026-11-16",
+   "entry": 501.25
+  },
+  {
+   "id": "5eb76fa99175d0db",
+   "symbol": "HDFCBANK",
+   "time": "2026-11-17T07:46:20+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Honasa Consumer, HDFC Bank: Two stock ideas by Shrikant Chouhan",
+   "url": "https://www.business-standard.com/markets/news/honasa-consumer-hdfc-bank-two-stock-ideas-by-shrikant-chouhan-126111700074_1.html",
+   "entry_date": "2026-11-16",
+   "entry": 816.5
+  },
+  {
+   "id": "12813c386740d0a0",
+   "symbol": "OIL",
+   "time": "2026-11-17T07:21:03+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Oil slips on supply surplus outlook despite Gulf tensions",
+   "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-slips-on-supply-surplus-outlook-despite-gulf-tensions/articleshow/135907255.cms",
+   "entry_date": "2026-11-16",
+   "entry": 441.4
+  },
   {
    "id": "570bdfe6bc63edd0",
    "symbol": "OIL",
