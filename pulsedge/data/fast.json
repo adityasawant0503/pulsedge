@@ -1,7 +1,39 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-17T11:33:17+05:30",
+ "updated": "2026-11-17T11:36:17+05:30",
  "items": [
+  {
+   "id": "3bbfbb6eaac9c521",
+   "time": "2026-11-17T11:35:19+05:30",
+   "headline": "HOSPITALS OPPOSE DRUG MARGIN CAPS BEFORE SUPREME COURT; WARN PATIENT BILLS MAY NOT DECLINE AS COSTS COULD SHIFT TO OTHER CHARGES",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9422",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Healthcare"
+   ],
+   "impact": 10,
+   "confidence": 20,
+   "category": "Regulatory",
+   "action": "Monitor hospital sector sentiment for any broader regulatory shifts.",
+   "reason": [
+    "SUPREMEIND is a real estate company, not a hospital operator.",
+    "The news concerns hospital drug pricing, which does not directly impact real estate stocks."
+   ],
+   "risks": [
+    "Misattribution of sector impact."
+   ],
+   "plain": "Hospitals are arguing against new rules that limit how much they can charge for medicines.",
+   "why": "This news affects hospital stocks, not real estate companies, so it is safe to skip for this specific stock.",
+   "check": "",
+   "original": "HOSPITALS OPPOSE DRUG MARGIN CAPS BEFORE SUPREME COURT; WARN PATIENT BILLS MAY NOT DECLINE AS COSTS COULD SHIFT TO OTHER CHARGES",
+   "latency": 58.2,
+   "lane": "fast"
+  },
   {
    "id": "db2842fee01a8d1d",
    "time": "2026-11-17T11:31:40+05:30",
