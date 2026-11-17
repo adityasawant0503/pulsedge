@@ -1,7 +1,45 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-17T11:36:17+05:30",
+ "updated": "2026-11-17T11:37:17+05:30",
  "items": [
+  {
+   "id": "e43b4ea51c8c93d2",
+   "time": "2026-11-17T11:36:11+05:30",
+   "headline": "Apollo Hospitals, Fortis Health In Focus - Positive",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9423",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "FORTIS",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Healthcare"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "Regulatory/Operational",
+   "action": "Monitor if hospital chains confirm stable margins despite drug price caps.",
+   "reason": [
+    "Drug margin caps may not reduce overall patient bills due to cost pass-through.",
+    "Bundled services being unbundled could protect hospital revenue streams."
+   ],
+   "risks": [
+    "Regulatory scrutiny on billing practices may increase.",
+    "Patient sentiment could worsen if perceived costs rise."
+   ],
+   "plain": "Hospitals expect to keep their profits stable even if medicine prices are capped by the government.",
+   "why": "It suggests the company can maintain its earnings despite new rules on drug pricing, which is good for shareholders.",
+   "check": "Look for official statements from the hospital chain about how they will handle billing changes.",
+   "original": "-Drug margin caps won’t lower patient bills -Hospitals will pass on costs through other charges -Services now bundled with medicines may be billed separately -Hospitals aren’t retail pharmacies, says federation -Medicine charges include value-added clinical services Source: Written Submissions by He",
+   "latency": 66.3,
+   "lane": "fast"
+  },
   {
    "id": "3bbfbb6eaac9c521",
    "time": "2026-11-17T11:35:19+05:30",
