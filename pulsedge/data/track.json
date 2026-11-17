@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T15:00:58+05:30",
+ "updated": "2026-11-17T15:16:42+05:30",
  "summary": {
-  "calls": 1583,
-  "scored_calls": 444,
+  "calls": 1585,
+  "scored_calls": 446,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "de48e096d444c62c",
+   "symbol": "UPL",
+   "time": "2026-11-17T15:05:18+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "UPL - @CNBC_Awaaz",
+   "url": "https://t.me/Indiaredboxglobal/9446",
+   "entry_date": "2026-11-16",
+   "entry": 563.45
+  },
+  {
+   "id": "119cf81d66da7547",
+   "symbol": "EICHERMOT",
+   "time": "2026-11-17T15:03:58+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Eicher Motors jumps 3%, stock top gainer in Nifty Auto; brokerages upbeat",
+   "url": "https://www.business-standard.com/markets/news/eicher-motors-jumps-3-stock-top-gainer-in-nifty-auto-brokerages-upbeat-126111700622_1.html",
+   "entry_date": "2026-11-16",
+   "entry": 7599.0
+  },
   {
    "id": "311715efdb4aed8f",
    "symbol": "JSWSTEEL",

@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T15:00+05:30",
+ "updated": "2026-11-17T15:16+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Senco Gold shares rose 8% after the company reported record festive sales of ₹2,426 crore. In contrast, Kaynes Technology fell 16% over two days as profits dropped and analysts noted pressure on margins. The pharma sector weakened after Caplin Point received a serious compliance warning from the US FDA. Meanwhile, capital market stocks like Angel One and Groww hit new highs, showing strong investor interest in trading platforms.",
+  "summary": "Senco Gold shares rose 8% after the company reported its best-ever festive season sales. In contrast, Kaynes Technology shares fell sharply over two days as profits dropped and the company slowed deliveries to collect unpaid bills. The pharmaceutical sector weakened after Caplin Point received a serious compliance warning from US regulators. Meanwhile, capital market stocks like Angel One and Groww hit new highs, showing strong investor interest in trading platforms.",
   "themes": [
-   "Strong festive season sales boosted consumer-facing stocks like Senco Gold.",
-   "Profitability concerns and compliance issues weighed on electronics and pharma stocks.",
-   "Investors showed high interest in capital market and wealth management platforms."
+   "Strong festive sales boosted Senco Gold, while a major gas leak at ONGC raised safety concerns.",
+   "Kaynes Technology faced pressure from falling profits and slow payment collection from state governments.",
+   "Regulatory issues hurt Caplin Point and Adani Green, while Hindustan Zinc announced a massive expansion plan."
   ],
   "watch": [
-   "ONGC's gas leak in Andhra Pradesh and potential impact on production.",
-   "Adani Green's hydro project halt in Maharashtra and regulatory delays.",
-   "Tata Chemicals' response to the exchange's query about a possible IPO."
+   "Whether Caplin Point can quickly fix the issues flagged by US regulators to avoid long delays.",
+   "If Kaynes Technology can recover pending payments from state authorities to improve cash flow.",
+   "How the market reacts to Hindustan Zinc's large spending plan to become the world's largest zinc producer."
   ],
   "date": "2026-11-17",
-  "basis": "0ad1bd7448b4",
-  "updated": "2026-11-17T14:31+05:30",
+  "basis": "449f08eb0945",
+  "updated": "2026-11-17T15:16+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 111
+  "items": 124
  },
  "stocks": {
   "TMPV": {
@@ -188,19 +188,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "EICHERMOT": {
-   "summary": "Eicher Motors reported its best-ever quarterly sales and profits, beating market expectations. The company also announced the grant of 105 new employee stock options.",
-   "why": "Stronger profits and record sales suggest the business is performing well, which can increase the value of the shares you own.",
-   "upside": "Continued strong sales and profit growth could keep investor confidence high.",
-   "downside": "The new employee stock options may dilute existing shareholders if exercised, and the stock price may have already risen to reflect the good news.",
+   "summary": "Eicher Motors reported record quarterly sales and profits, leading to a significant rise in its share price. The company also granted 105 employee stock options, which may slightly dilute existing shares.",
+   "why": "Strong financial results can increase the value of the company, potentially benefiting shareholders, while new stock options might slightly reduce the value of each existing share.",
+   "upside": "Continued growth in premium motorcycle sales could further boost the company's performance.",
+   "downside": "Competition in the mid-range bike segment and the potential dilution from new stock options could pressure the stock price.",
    "watch": [
-    "Whether the new employee stock options are exercised.",
-    "Future quarterly sales and profit figures.",
-    "How the broader auto sector performs, as it has recently declined."
+    "How the stock price reacts to the recent positive news",
+    "The impact of the 105 new employee stock options on existing shares",
+    "Competitive developments in the 350cc-650cc motorcycle segment"
    ],
-   "about": "Eicher Motors is an Indian automobile and auto components company known for manufacturing vehicles like the Royal Enfield bike.",
-   "basis": "46cd6ec1533d",
-   "items": 5,
-   "updated": "2026-11-17T14:46+05:30",
+   "about": "Eicher Motors is an Indian automobile and auto components company known for its motorcycles.",
+   "basis": "15eb3aaf52cd",
+   "items": 6,
+   "updated": "2026-11-17T15:16+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "CAPLIPOINT": {
@@ -473,6 +473,22 @@
    "basis": "0e85b8cc132b",
    "items": 3,
    "updated": "2026-11-17T00:55+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "UPL": {
+   "summary": "UPL is reported to be considering canceling its planned corporate restructuring, and its shares have recently moved above the 100‑day exponential moving average.",
+   "why": "A simpler structure could make the stock more appealing to investors, while the price move may signal a new upward trend.",
+   "upside": "If the restructuring is cancelled and a simpler structure is confirmed, investor interest could improve.",
+   "downside": "If the price breakout proves false or the restructuring plan remains uncertain, the stock could face pressure.",
+   "watch": [
+    "Official filing on the corporate structure plan",
+    "Share price behavior around the 100‑day EMA",
+    "Confirmation of any restructuring cancellation"
+   ],
+   "about": "UPL Ltd is a chemicals company that produces agricultural and industrial chemical products.",
+   "basis": "ea414fd591d3",
+   "items": 2,
+   "updated": "2026-11-17T15:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "AMBER": {
