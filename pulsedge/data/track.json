@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T12:47:14+05:30",
+ "updated": "2026-11-17T13:01:12+05:30",
  "summary": {
-  "calls": 1561,
-  "scored_calls": 423,
+  "calls": 1565,
+  "scored_calls": 426,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "083edefdf7839b20",
+   "symbol": "GROWW",
+   "time": "2026-11-17T12:58:41+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "RedBox Global India",
+   "headline": "BILLIONBRAINS GARAGE VENTURES: MTF REVENUE IS 10.1% OF TOTAL INCOME FOR Q2FY27",
+   "url": "https://t.me/Indiaredboxglobal/9439",
+   "entry_date": "2026-11-16",
+   "entry": 224.92
+  },
+  {
+   "id": "dd837ee3646f25e6",
+   "symbol": "BLS",
+   "time": "2026-11-17T12:55:49+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Jio Platforms, BLS Polymers, Shiprocket, more: 23 stocks to watch as anchor lock-in expires this week | List",
+   "url": "https://www.livemint.com/market/ipo/jio-platforms-bls-polymers-shiprocket-more-23-stocks-to-watch-as-anchor-lock-in-expires-this-week-list-11794896708353.html",
+   "entry_date": "2026-11-16",
+   "entry": 225.07
+  },
+  {
+   "id": "6a1f19e61ec3b86b",
+   "symbol": "TATACHEM",
+   "time": "2026-11-17T12:45:47+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "TATA CHEMICALS: CO. DENIES KNOWLEDGE OF TATA SONS IPO NEGOTIATIONS, SAYS UNAWARE OF UNDISCLOSED INFORMATION BEHIND SHARE PRICE RALLY",
+   "url": "https://t.me/Indiaredboxglobal/9436",
+   "entry_date": "2026-11-16",
+   "entry": 612.1
+  },
+  {
+   "id": "fa4cb0da0c4b6879",
+   "symbol": "OIL",
+   "time": "2026-11-17T12:45:21+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Oil seen at $78 by 2027 amid supply glut expectation: Mirae Asset Sharekhan",
+   "url": "https://www.business-standard.com/markets/news/oil-seen-at-78-by-2027-amid-supply-glut-expectation-mirae-asset-sharekhan-126111700435_1.html",
+   "entry_date": "2026-11-16",
+   "entry": 441.4
+  },
   {
    "id": "76be7a4ad605cef4",
    "symbol": "ONGC",

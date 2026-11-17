@@ -2,23 +2,6 @@
  "note": "The last 60 runs of the AI classifier: items sorted by AI, set aside as routine, or left to keyword rules.",
  "runs": [
   {
-   "time": "2026-11-14T21:01+05:30",
-   "new": 140,
-   "ai": 123,
-   "routine": 17,
-   "rules": 0,
-   "models": {
-    "gemini-flash-lite-latest": 123
-   },
-   "errors": [
-    "gemini-3.8-flash: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'",
-    "gemini-3.8-flash: The read operation timed out",
-    "gemini-flash-latest: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'",
-    "gemini-flash-latest: HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/d'",
-    "gemini-3.8-flash: HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/d'"
-   ]
-  },
-  {
    "time": "2026-11-14T21:26+05:30",
    "new": 126,
    "ai": 95,
@@ -835,6 +818,20 @@
    },
    "errors": [
     "gemini-3.8-flash: The read operation timed out"
+   ]
+  },
+  {
+   "time": "2026-11-17T13:00+05:30",
+   "new": 29,
+   "ai": 20,
+   "routine": 9,
+   "rules": 0,
+   "models": {
+    "qwen/qwen3.8-27b": 20
+   },
+   "errors": [
+    "gemini-3.8-flash: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'",
+    "gemini-3.8-flash: HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To"
    ]
   }
  ]

@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T12:46+05:30",
+ "updated": "2026-11-17T13:00+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a mixed day where consumer stocks like Senco Gold and TTK Healthcare saw sharp gains, while energy and realty sectors faced setbacks. Senco Gold shares jumped 8% on record festive sales, and TTK Healthcare rose 20% after its board planned to consider a bonus issue. On the other hand, ONGC faces a major gas leak issue, and Adani Green received a stop-work notice for a hydro project. The stock exchange also asked Tata group companies to clarify rumors about a possible IPO, causing their shares to rally earlier in the day.",
+  "summary": "PulsEdge flagged strong sales at Senco Gold, sending its shares up 8%. Capital market brokers Angel One and Groww also rose, leading market gains. ONGC reported a major gas leak that could cut production and hurt earnings, while Adani Green’s hydro project got a stop‑work notice, adding regulatory risk. Sector performance was mixed, with FMCG leading gains and pharma, metals and realty lagging.",
   "themes": [
-   "Strong festive season sales boosted consumer and retail stocks.",
-   "Operational and regulatory issues weighed on energy and infrastructure companies.",
-   "Market speculation around a Tata group IPO drove volatility in related stocks."
+   "Corporate earnings and sales drove stock jumps",
+   "Regulatory and operational issues pressured energy and infrastructure stocks",
+   "Broker and fintech stocks fueled short‑term market momentum"
   ],
   "watch": [
-   "Clarifications from Tata Chemicals, Tata Motors, and Tata Investment Corp regarding IPO rumors.",
-   "The outcome of the TTK Healthcare board meeting on Nov 20 regarding the bonus issue.",
-   "Any updates on the ONGC gas leak and its impact on production."
+   "How the ONGC gas leak affects future production and earnings",
+   "Outcome of the open offer for a 26% stake in Castrol India",
+   "Clarifications on Tata group IPO rumors and any related stock moves"
   ],
   "date": "2026-11-17",
-  "basis": "24863d3639d4",
-  "updated": "2026-11-17T12:15+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 70
+  "basis": "c183a72491c2",
+  "updated": "2026-11-17T13:00+05:30",
+  "model": "openai/gpt-oss-120b",
+  "items": 89
  },
  "stocks": {
   "TMPV": {
@@ -204,20 +204,20 @@
    "model": "openai/gpt-oss-20b"
   },
   "GROWW": {
-   "summary": "Groww shares recently hit a record high after a large block deal worth ₹1,905 crore. The stock is currently leading gains in the financial services sector.",
-   "why": "This matters because the large sale suggests big investors are actively trading the stock, which can increase volatility and attention from other traders.",
-   "upside": "The strong buying interest and record high price show that many investors are currently confident in the company.",
-   "downside": "The recent surge could fade if the broader market slows down, or investors might take profits after the big block deal.",
+   "summary": "Groww reported that its MTF (mutual fund) revenue made up 10.1% of total income in Q2FY27 and its share price hit a record high after a large ₹1,905 crore block deal. The broader financial sector also rose, helping the stock’s momentum.",
+   "why": "Shareholders see the revenue mix shift and the price jump as signs of growth and market confidence, but they also watch for any reversal of that momentum.",
+   "upside": "Further buying interest from large investors could push the share price higher.",
+   "downside": "Short‑term profit booking after the block deal or a broader market slowdown could pull the stock down.",
    "watch": [
-    "Whether the stock price holds its record high or pulls back.",
-    "How the broader financial services sector performs in the coming days.",
-    "Any news about the specific investors involved in the block deal."
+    "MTF revenue share trend in upcoming quarters",
+    "Any new block deals or large investor activity",
+    "Financials sector performance and overall market momentum"
    ],
-   "about": "",
-   "basis": "da120026089c",
-   "items": 2,
-   "updated": "2026-11-17T12:30+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Billionbrains Garage Ventures Ltd. provides financial services, primarily a platform for retail investors.",
+   "basis": "bf7f2145574c",
+   "items": 3,
+   "updated": "2026-11-17T13:00+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "NUVAMA": {
    "summary": "Nuvama Wealth Management recently announced the allotment of new securities to raise fresh capital. This move adds to a period where the broader financial services sector has seen modest gains over the last week.",
@@ -380,19 +380,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "TATACHEM": {
-   "summary": "Tata Chemicals shares jumped about 9% on a volume surge as rumors of a Tata Sons IPO spread, and the stock exchange has asked the company to clarify the news. The rally is linked to group‑wide listing buzz, which could be volatile.",
-   "why": "The potential IPO could affect the valuation of Tata Chemicals as part of the Tata Group, so shareholders need to watch any developments closely.",
-   "upside": "If the Tata Sons IPO proceeds and is well received, the positive sentiment could support Tata Chemicals’ share price.",
-   "downside": "If the IPO is delayed or cancelled, the recent rally may reverse and the stock could correct.",
+   "summary": "Tata Chemicals shares jumped about 9% on rumors of a Tata Sons IPO, while the company denied any knowledge of such plans and the stock exchange has asked it to clarify the news.",
+   "why": "The speculation and the company's denial could cause price swings, affecting shareholders.",
+   "upside": "If a Tata Sons IPO is confirmed, it could support the share price.",
+   "downside": "If the IPO is delayed or cancelled, the share price may fall back from the recent rally.",
    "watch": [
-    "Outcome of the exchange’s request for clarification on the IPO rumors",
-    "Confirmation or denial of the Tata Sons IPO plan",
-    "Any regulatory guidance from the RBI or other authorities affecting Tata Chemicals or its affiliates"
+    "Official confirmation of Tata Sons IPO",
+    "Tata Chemicals' response to the exchange's clarification request",
+    "Share price movement after the rumor-driven rally"
    ],
-   "about": "Tata Chemicals Ltd. is a chemicals manufacturer operating in the Indian market.",
-   "basis": "1e5ed86eb497",
-   "items": 4,
-   "updated": "2026-11-17T11:17+05:30",
+   "about": "Tata Chemicals Ltd. is an Indian chemicals manufacturer.",
+   "basis": "93cf9e714c67",
+   "items": 5,
+   "updated": "2026-11-17T13:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "TATAINVEST": {
@@ -492,19 +492,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India is seeing pressure as global crude prices have fallen sharply on a supply surplus outlook. The sector index has risen modestly, but lower oil prices could squeeze the company’s earnings.",
-   "why": "Lower crude prices can reduce the profit margin on each barrel Oil India sells and may affect dividend payouts.",
-   "upside": "If oil prices recover or the supply surplus eases, margins and earnings could improve.",
-   "downside": "Sustained low oil prices could compress margins further and limit dividend payments.",
+   "summary": "Oil India Ltd. is seeing a sharp decline in global oil prices as supply surplus expectations dominate market sentiment. Recent drops in Brent and WTI prices have raised concerns about lower revenue for oil sellers.",
+   "why": "Lower oil prices can cut the company's earnings and affect dividend payouts, which matters to shareholders.",
+   "upside": "",
+   "downside": "Sustained low oil prices could compress margins and reduce dividend payouts.",
    "watch": [
-    "Global oil price trends (e.g., Brent, WTI) and any rebound",
-    "Goldman Sachs forecast of a sizeable surplus in 2027",
-    "Geopolitical developments in the Middle East that could tighten supply"
+    "Oil price movements",
+    "Supply surplus outlook",
+    "Geopolitical developments that could shift prices"
    ],
-   "about": "Oil India Ltd. is an Indian company that explores for and produces crude oil and natural gas.",
-   "basis": "fa479f9f511a",
-   "items": 10,
-   "updated": "2026-11-17T10:45+05:30",
+   "about": "Oil India Ltd. explores, produces and markets oil and gas in India.",
+   "basis": "2008601592c4",
+   "items": 11,
+   "updated": "2026-11-17T13:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "COALINDIA": {
