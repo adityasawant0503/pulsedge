@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T13:01:12+05:30",
+ "updated": "2026-11-17T13:15:59+05:30",
  "summary": {
-  "calls": 1565,
-  "scored_calls": 426,
+  "calls": 1571,
+  "scored_calls": 432,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,71 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "cc9e14e2431c9254",
+   "symbol": "KAYNES",
+   "time": "2026-11-17T13:09:10+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Kaynes Technology shares extend losses, fall another 4%; should investors worry about its Q2 performance?",
+   "url": "https://www.livemint.com/market/stock-market-news/kaynes-technology-shares-extend-losses-fall-another-4-should-investors-worry-about-its-q2-performance-11794900682488.html",
+   "entry_date": "2026-11-16",
+   "entry": 2980.0
+  },
+  {
+   "id": "111226847dfaeb9b",
+   "symbol": "ANGELONE",
+   "time": "2026-11-17T13:08:38+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "ANGEL ONE: MTF REVENUE IS 20% OF TOTAL INCOME FOR Q2FY27",
+   "url": "https://t.me/Indiaredboxglobal/9441",
+   "entry_date": "2026-11-16",
+   "entry": 348.15
+  },
+  {
+   "id": "049a512ef727a6be",
+   "symbol": "AXISBANK",
+   "time": "2026-11-17T13:04:41+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Sensex zooms 800 pts intraday, Nifty tops 25,500: 5 factors behind bull run",
+   "url": "https://www.business-standard.com/markets/news/sensex-zooms-800-pts-intraday-nifty-tops-25-500-5-factors-behind-bull-run-126111700469_1.html",
+   "entry_date": "2026-11-16",
+   "entry": 1342.4
+  },
+  {
+   "id": "049a512ef727a6be",
+   "symbol": "BANKINDIA",
+   "time": "2026-11-17T13:04:41+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Sensex zooms 800 pts intraday, Nifty tops 25,500: 5 factors behind bull run",
+   "url": "https://www.business-standard.com/markets/news/sensex-zooms-800-pts-intraday-nifty-tops-25-500-5-factors-behind-bull-run-126111700469_1.html",
+   "entry_date": "2026-11-16",
+   "entry": 152.97
+  },
+  {
+   "id": "0e22ec5937b98a41",
+   "symbol": "BSE",
+   "time": "2026-11-17T12:59:36+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "NSE or BSE: Why are experts bullish on NSE shares? Here's what technical charts hint at? | Target price, stop-loss",
+   "url": "https://www.livemint.com/market/stock-market-news/nse-or-bse-why-are-experts-bullish-on-nse-shares-heres-what-technical-charts-hint-at-target-price-stoploss-11794897901591.html",
+   "entry_date": "2026-11-16",
+   "entry": 3887.4
+  },
   {
    "id": "083edefdf7839b20",
    "symbol": "GROWW",
@@ -720,6 +785,19 @@
    "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/ongc-stock-price-today-live-17-nov-2026/liveblog/135907899.cms",
    "entry_date": "2026-11-16",
    "entry": 226.99
+  },
+  {
+   "id": "90a617a325d04582",
+   "symbol": "LAURUSLABS",
+   "time": "2026-11-17T07:55:00+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex gains 500 pts, Nifty around 25,450; Laurus Labs, BoI lead MidCap gains",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-17-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-bse-share-price-126111700071_1.html",
+   "entry_date": "2026-11-16",
+   "entry": 2220.0
   },
   {
    "id": "5eb76fa99175d0db",

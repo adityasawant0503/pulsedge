@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T13:00+05:30",
+ "updated": "2026-11-17T13:15+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -92,20 +92,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "KAYNES": {
-   "summary": "Kaynes Technology reported a sharp 65% drop in Q2 net profit and a shrinking margin, sending its shares down about 20% to a 52‑week low. The decline has triggered a broader sell‑off in the peer group, with related stocks also falling.",
-   "why": "The profit plunge hurts investor confidence and could pressure the share price further for current shareholders.",
-   "upside": "The steep fall may have left the stock oversold, opening the chance for a technical bounce.",
-   "downside": "Further profit misses or broker target cuts could push the price lower.",
+   "summary": "Kaynes Technology shares are falling after reporting a 65% drop in Q2 profit and margin shrinkage, leading to a 20% drop to a 52‑week low.",
+   "why": "Lower profits mean the company is earning less, which usually makes investors less willing to pay high prices, affecting shareholders’ investment value.",
+   "upside": "",
+   "downside": "Further downside if quarterly trends continue, sector sell‑off pressure, or margin erosion persists.",
    "watch": [
-    "Any new guidance or earnings update from Kaynes",
-    "Brokerage target revisions for Kaynes",
-    "Performance of peers like Amber Enterprises"
+    "Q2 profit trend and margin changes",
+    "Sector performance of peers such as Amber Enterprises",
+    "Any new earnings or guidance announcements"
    ],
-   "about": "Kaynes Technology India Ltd. makes electronic components and systems within India’s capital goods sector.",
-   "basis": "fc53c63c0589",
-   "items": 6,
-   "updated": "2026-11-16T13:15+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "",
+   "basis": "93762f45bf10",
+   "items": 7,
+   "updated": "2026-11-17T13:15+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "INOXWIND": {
    "summary": "Inox Wind reported a sharp fall in Q2 profit, with margins squeezed, leading to a 10% drop in its share price. The decline follows a 60% drop over the past year.",
@@ -219,6 +219,22 @@
    "updated": "2026-11-17T13:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "ANGELONE": {
+   "summary": "Angel One reported that MTF revenue now accounts for 20% of its total income for Q2FY27, a fee type that is usually more profitable. The stock also rose about 6% in the latest session.",
+   "why": "The shift in revenue mix could affect the company’s earnings profile, and the recent price jump shows strong short‑term market interest.",
+   "upside": "If MTF fees keep growing and market trading volumes stay high, earnings could improve.",
+   "downside": "MTF revenue can be volatile and may fall if trading activity slows.",
+   "watch": [
+    "MTF revenue share in upcoming quarters",
+    "Overall market trading volumes",
+    "Performance of the Financials sector index"
+   ],
+   "about": "Angel One Ltd. is a financial services firm listed in the Nifty 500.",
+   "basis": "7be14e7fe773",
+   "items": 2,
+   "updated": "2026-11-17T13:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "NUVAMA": {
    "summary": "Nuvama Wealth Management recently announced the allotment of new securities to raise fresh capital. This move adds to a period where the broader financial services sector has seen modest gains over the last week.",
    "why": "Issuing new shares increases the total number of shares in circulation, which can reduce the value of each existing share held by current investors.",
@@ -233,22 +249,6 @@
    "basis": "a1815db9d55f",
    "items": 2,
    "updated": "2026-11-17T11:30+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "ANGELONE": {
-   "summary": "Angel One shares rose 6% recently, leading gains in the financial services sector. The stock is part of the Nifty 500, an index of India's 500 largest listed companies.",
-   "why": "A sharp rise in share price indicates strong short-term buying interest, which can affect the value of your investment.",
-   "upside": "The stock may continue to benefit from the broader strength in the financial sector, which has risen 2.7% over the last five sessions.",
-   "downside": "The recent price momentum could fade if the broader market stops rising.",
-   "watch": [
-    "Whether the 6% price jump continues or reverses",
-    "Performance of the Financials sector index",
-    "General market trends that affect financial stocks"
-   ],
-   "about": "",
-   "basis": "7a94f85d9b2a",
-   "items": 1,
-   "updated": "2026-11-17T12:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ADANIGREEN": {
@@ -1080,6 +1080,22 @@
    "basis": "a48732685016",
    "items": 2,
    "updated": "2026-11-17T11:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "BSE": {
+   "summary": "PulsEdge flagged recent articles that show analysts are bullish on BSE Ltd., noting the exchange’s growth and profitability. The broader financial sector index has risen recently.",
+   "why": "Positive sentiment and sector strength can influence the market perception of BSE shares.",
+   "upside": "If the bullish sentiment holds, the stock could benefit from continued investor optimism.",
+   "downside": "A broader market weakness could dampen any gains for BSE shares.",
+   "watch": [
+    "Technical chart signals that analysts say hint at a long‑term uptrend",
+    "Analyst recommendations that list BSE among top picks",
+    "Performance of the Financials sector index"
+   ],
+   "about": "BSE Ltd. operates one of India’s major stock exchanges.",
+   "basis": "3721f4c7cad2",
+   "items": 2,
+   "updated": "2026-11-17T13:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "TATAPOWER": {
