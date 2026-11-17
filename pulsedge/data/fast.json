@@ -1,7 +1,46 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-17T10:19:17+05:30",
+ "updated": "2026-11-17T10:24:17+05:30",
  "items": [
+  {
+   "id": "427f636e8ba3507d",
+   "time": "2026-11-17T10:22:58+05:30",
+   "headline": "CASTROL INDIA: CO. OPEN OFFER FOR 26% STAKE AT RUPEES 199.45 PER SHARE",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9417",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "CASTROLIND",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Automotive",
+    "Lubricants"
+   ],
+   "impact": 75,
+   "confidence": 85,
+   "category": "M&A",
+   "action": "Monitor for regulatory approvals and potential premium over current market price.",
+   "reason": [
+    "Open offer for 26% stake implies a significant change in ownership structure.",
+    "Offer price of 199.45 INR provides a valuation floor and potential arbitrage opportunity."
+   ],
+   "risks": [
+    "Regulatory delays or rejection of the open offer.",
+    "Market sentiment may already have priced in the news."
+   ],
+   "plain": "A company is buying a large share of Castrol India at a fixed price.",
+   "why": "This usually pushes the stock price up because buyers are willing to pay more.",
+   "check": "Check if the stock price is currently below the offer price.",
+   "original": "CASTROL INDIA: CO. OPEN OFFER FOR 26% STAKE AT RUPEES 199.45 PER SHARE",
+   "latency": 79.4,
+   "lane": "fast"
+  },
   {
    "id": "cb4c10d352dedc0e",
    "time": "2026-11-17T10:18:03+05:30",
