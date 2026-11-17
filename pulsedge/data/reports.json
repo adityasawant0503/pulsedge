@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T19:22+05:30",
+ "updated": "2026-11-18T03:28+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged Senco Gold’s 8% jump after record festive sales, while Angel One and Groww led gains in capital‑market stocks. Kaynes Technology fell sharply on profit decline and margin pressure, and ONGC faced a major gas leak that could hurt production. Caplin Point’s FDA inspection was marked as Official Action Indicated, raising compliance worries, and Adani Green’s hydro project got a stop‑work notice. Overall, PSU banks and realty rose, but IT and energy lagged, and foreign funds stayed modestly long.",
+  "summary": "NVIDIA reported strong sales that beat expectations, which may boost confidence in the tech sector. However, the company's CEO resigned, and US regulators are investigating the firm, creating uncertainty. Oil prices rose slightly, which could help Indian oil companies. Indian bank stocks performed well, while IT stocks dipped in the previous session.",
   "themes": [
-   "Strong festive demand lifted Senco Gold and sparked broader market buying",
-   "Regulatory and safety issues weighed on energy, pharma and infrastructure stocks",
-   "Tech and electronics faced profit pressure while capital‑market players showed momentum"
+   "Mixed signals from NVIDIA's strong results and leadership changes",
+   "Rising oil prices affecting energy sector earnings",
+   "Strong performance in Indian banking stocks"
   ],
   "watch": [
-   "Potential impact of the ONGC gas leak and any regulatory penalties",
-   "Kaynes Technology’s margin trends and its slowdown in smart‑meter deliveries",
-   "Large block trades in Billionbrains Garage Ventures as a gauge of investor sentiment"
+   "How Indian IT stocks react to NVIDIA's news",
+   "Updates on the US regulatory probe into NVIDIA",
+   "Future movements in crude oil prices"
   ],
-  "date": "2026-11-17",
-  "basis": "15318ee3c00f",
-  "updated": "2026-11-17T19:22+05:30",
-  "model": "openai/gpt-oss-120b",
-  "items": 178
+  "date": "2026-11-18",
+  "basis": "00eaaf32170b",
+  "updated": "2026-11-18T03:28+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 8
  },
  "stocks": {
   "TMPV": {
@@ -108,36 +108,36 @@
    "model": "qwen/qwen3.8-27b"
   },
   "INOXWIND": {
-   "summary": "Inox Wind reported a sharp fall in Q2 profit, with margins squeezed, leading to a 10% drop in its share price. The decline follows a 60% drop over the past year.",
-   "why": "The profit slump reduces earnings for shareholders and may trigger further selling pressure.",
-   "upside": "",
-   "downside": "Further margin compression or additional profit warnings could push the stock lower.",
+   "summary": "Inox Wind reported a 42% drop in its second-quarter profits because its costs went up, which caused its share price to fall sharply. The stock is now down 60% over the past year, though some analysts believe it may rise again.",
+   "why": "Lower profits mean the company is making less money, which often leads investors to sell shares and push the price down. A sharp drop in value affects the worth of any shares you currently hold.",
+   "upside": "Some analysts believe the stock could recover significantly after its recent decline.",
+   "downside": "The company's costs are rising, which squeezes its profits and could lead to further drops in earnings in future quarters.",
    "watch": [
-    "Quarterly margin trends",
-    "Any new profit warnings",
-    "Share price movement"
+    "Whether the company can successfully deliver on new orders without delays.",
+    "If profit margins continue to shrink in upcoming quarters.",
+    "How the share price reacts to the recent profit warning."
    ],
    "about": "",
-   "basis": "1873da5392ca",
-   "items": 2,
-   "updated": "2026-11-16T14:30+05:30",
-   "model": "openai/gpt-oss-120b"
+   "basis": "60483d5de20d",
+   "items": 3,
+   "updated": "2026-11-18T03:28+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "ONGC": {
-   "summary": "PulsEdge flagged that a major gas leak occurred at an ONGC plant in Andhra's Konaseema district. The company evacuated about 800 nearby residents, cordoned off the area, and cut power to prevent fires while undertaking well-control operations.",
-   "why": "This matters because unexpected safety incidents can pause work, cut production, and lead to extra costs or regulatory fines.",
-   "upside": "Sensors show zero gas concentration at monitored locations now, and the issue could be resolved quickly with limited overall impact.",
-   "downside": "The situation carries the potential for incident escalation, further operational delays, or regulatory penalties.",
+   "summary": "ONGC reported a gas leak at a plant in Andhra Pradesh, leading to the evacuation of about 800 people and temporary power cuts in the area. The company has secured the site and is conducting well-control operations, with sensors currently showing zero gas concentration at monitored spots.",
+   "why": "This incident may cause short-term delays in production and increase safety costs, which could affect the company's immediate earnings and share price stability.",
+   "upside": "The situation appears controlled for now, as sensors indicate no gas at nearby locations and necessary operations are underway.",
+   "downside": "There is a risk of further escalation, regulatory scrutiny, or fines that could lead to longer operational downtime and higher costs.",
    "watch": [
-    "Updates on the well-control operations and when work resumes",
-    "Any official statements regarding regulatory scrutiny or fines",
-    "Changes in production levels at the affected plant"
+    "Updates on whether the well-control operations successfully contain the leak.",
+    "Any announcements regarding regulatory investigations or penalties.",
+    "The timeline for resuming normal operations at the affected site."
    ],
-   "about": "Oil & Natural Gas Corporation Ltd. is one of India's 50 largest listed companies, operating in the oil, gas, and consumable fuels sector.",
-   "basis": "1e92c68fba23",
-   "items": 6,
-   "updated": "2026-11-17T12:46+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "ONGC is an oil and gas company and one of India's 50 largest listed companies.",
+   "basis": "3927902f69b9",
+   "items": 5,
+   "updated": "2026-11-18T03:28+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "SWIGGY": {
    "summary": "Swiggy's shares have fallen sharply this year, losing up to half their value, while its latest Q2 results show profit growth faster than its rival Zomato's parent. The company is in the Nifty 500 consumer services index.",
@@ -267,6 +267,22 @@
    "updated": "2026-11-17T11:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "INOXINDIA": {
+   "summary": "INOX India Ltd. is a capital goods company listed in the Nifty 500 index. Recent news highlights a significant drop in its share price over the past year, followed by a strong rally.",
+   "why": "This matters to shareholders because the stock has experienced high volatility, with a 60% decline in one year and a recent upward movement.",
+   "upside": "The recent strong rally suggests the share price may continue to recover from its previous lows.",
+   "downside": "There is a risk that the execution of new orders may lag behind expectations, which could affect future performance.",
+   "watch": [
+    "Progress on executing new orders",
+    "Continuation of the recent share price rally",
+    "Company updates on renewable energy projects"
+   ],
+   "about": "",
+   "basis": "7705eac36285",
+   "items": 1,
+   "updated": "2026-11-18T03:28+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "ADANIGREEN": {
    "summary": "Adani Green Energy received a stop‑work notice for its Tarali hydro‑power project in Satara, which could delay the project and affect future earnings and cash flow. The broader energy sector index fell 0.3% in the last session but rose 1.1% over five sessions.",
    "why": "A regulatory halt may reduce the company’s earnings and cash flow, directly impacting shareholders’ returns.",
@@ -347,6 +363,22 @@
    "updated": "2026-11-16T15:32+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "URBANCO": {
+   "summary": "Urban Company is raising ₹2,500 crore by selling new shares to large investors. The offer was oversubscribed six times, attracting ₹15,300 crore in bids. The company plans to use this money to launch a new cleaning service.",
+   "why": "Selling new shares means existing owners hold a smaller slice of the company, which can lower the share price. However, the high demand for the new shares suggests investors are confident in the company's plans.",
+   "upside": "The strong demand for the new shares indicates that investors believe the company's expansion plans are valuable.",
+   "downside": "The new shares reduce the ownership percentage of current holders, and the money raised might be spent on projects that do not return the expected profits.",
+   "watch": [
+    "How the new cleaning service performs in the market",
+    "Whether the company uses the funds for acquisitions",
+    "Changes in the company's earnings per share"
+   ],
+   "about": "",
+   "basis": "5e57cf376349",
+   "items": 4,
+   "updated": "2026-11-18T03:28+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "EMBASSY": {
    "summary": "Embassy Developments, the parent company of Embassy Office Parks REIT, launched a new luxury residential project called Embassy One Residences. This addition increases the company's total development value for the upcoming fiscal year to about ₹9,000 crore.",
    "why": "This matters to shareholders because a larger project pipeline can lead to higher future income from the company's real estate activities.",
@@ -361,6 +393,22 @@
    "basis": "45e9046d3767",
    "items": 2,
    "updated": "2026-11-17T12:15+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "AXISBANK": {
+   "summary": "Axis Bank shares have recovered after a recent drop, aided by a broader rise in the stock market. Additionally, the global investment firm BlackRock increased its ownership stake in the bank to 5%.",
+   "why": "Shareholders may see their holdings gain value as the stock price rises with the market and reacts to the increased investment from a major global fund.",
+   "upside": "The increased stake by BlackRock suggests confidence in the bank, which could support the share price.",
+   "downside": "If BlackRock later reduces its stake, or if the recent market rally reverses, the share price could fall.",
+   "watch": [
+    "Any future changes in BlackRock's ownership stake",
+    "The overall performance of the banking sector",
+    "Whether the recent stock market rally continues or reverses"
+   ],
+   "about": "Axis Bank is a major Indian bank and one of the 50 largest listed companies in India.",
+   "basis": "752411f71344",
+   "items": 3,
+   "updated": "2026-11-18T03:28+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ALKEM": {
@@ -427,22 +475,6 @@
    "updated": "2026-11-17T12:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "FIRSTCRY": {
-   "summary": "Brainbees Solutions has completed the acquisition of Swara Corp and updated the exchange on the deal details. The company also reported that its recent quarterly loss narrowed significantly while sales increased.",
-   "why": "These changes matter because buying a new business and reducing losses can alter the company's future growth path and financial stability for shareholders.",
-   "upside": "The company is losing less money and selling more goods, which suggests the business is becoming healthier.",
-   "downside": "The company is still making a loss, and integrating the newly acquired Swara Corp could be difficult or expensive.",
-   "watch": [
-    "How well the company integrates Swara Corp into its operations",
-    "Whether the company continues to reduce its quarterly losses",
-    "The strategic goals outlined in the recent investor presentation"
-   ],
-   "about": "Brainbees Solutions operates an online store for baby products.",
-   "basis": "2bdc06d4ede6",
-   "items": 4,
-   "updated": "2026-11-17T19:22+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "HINDZINC": {
    "summary": "Hindustan Zinc announced a Rs 80,000 crore expansion to become the world’s largest zinc and silver producer and is adding production capacity. The stock fell after the announcement as investors worry the company may be over‑valued and that the large capex could strain cash flow.",
    "why": "Shareholders need to watch whether the expansion translates into higher profits or whether cash‑flow pressure and valuation concerns weigh on the share price.",
@@ -458,6 +490,22 @@
    "items": 4,
    "updated": "2026-11-17T14:46+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "FIRSTCRY": {
+   "summary": "Brainbees Solutions Ltd. has completed the acquisition of Swara Corp and updated its acquisition agreement. Q2 results show a 75% reduction in net loss and a revenue jump, leading to a 13% share rally.",
+   "why": "Shareholders should note that the acquisition could change capital deployment and growth prospects, while the improved Q2 performance indicates a healthier business, though losses remain.",
+   "upside": "If the acquisition integrates smoothly, it could expand market reach and support future growth.",
+   "downside": "Integration risks and the cost of the acquisition could hurt profitability, and the company still reports a loss.",
+   "watch": [
+    "Progress of Swara Corp integration",
+    "Cost impact of the acquisition",
+    "Future quarterly results"
+   ],
+   "about": "Parent company of FirstCry, an online baby products retailer.",
+   "basis": "309a68ca1fc9",
+   "items": 3,
+   "updated": "2026-11-18T03:28+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "TATAINVEST": {
    "summary": "The stock exchange has asked Tata Investment Corporation Ltd. to clarify recent news about a possible Tata Sons IPO, and the shares have rallied up to 9% after an RBI nudge. The financial services sector has also risen, gaining 0.6% in the last session and 2.7% over five sessions.",
@@ -489,22 +537,6 @@
    "items": 1,
    "updated": "2026-11-17T16:35+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "SOLARINDS": {
-   "summary": "Solar Industries India Ltd (SOLARINDS) is a chemicals company in the Nifty 500. Recent news shows green‑energy stocks facing short‑term selling pressure, which could spill over to the broader market.",
-   "why": "Shareholders should watch sector volatility as it may affect SOLARINDS' share price even though the company itself is not directly mentioned in the news.",
-   "upside": "If the green‑energy sector stabilises, sentiment could improve for related stocks including SOLARINDS.",
-   "downside": "Continued technical weakness and policy uncertainty in the solar sector could keep pressure on the broader market and affect SOLARINDS.",
-   "watch": [
-    "Technical chart signals for green‑energy stocks",
-    "Policy changes affecting the solar sector",
-    "Overall market volatility"
-   ],
-   "about": "Solar Industries India Ltd manufactures chemicals.",
-   "basis": "0e85b8cc132b",
-   "items": 3,
-   "updated": "2026-11-17T00:55+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "GALLANTT": {
    "summary": "PulsEdge flagged a large block deal where Suryalaxmi Infracon Private Limited bought 30 lakh shares of Gallantt Ispat for ₹158.1 crore. On the same day, Dinesh R Agarwal sold the same number of shares at the same price of ₹527.0 per share.",
@@ -553,6 +585,22 @@
    "items": 2,
    "updated": "2026-11-16T14:47+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "SOLARINDS": {
+   "summary": "Solar Industries India Ltd. is a chemicals company included in the Nifty 500 index. Recent news highlights show that shares in the broader green energy sector have fallen due to weak technical signals, creating short-term selling pressure.",
+   "why": "As a company in the chemicals sector, it may be affected by general market volatility in the green energy space, which could impact the value of its shares.",
+   "upside": "",
+   "downside": "Sector-wide volatility in green energy stocks may continue, leading to further short-term price declines.",
+   "watch": [
+    "Continued movement in green energy sector stocks",
+    "Changes in solar sector policies",
+    "Technical chart signals for the broader sector"
+   ],
+   "about": "Solar Industries India Ltd. is a company in the chemicals sector.",
+   "basis": "60bec927311f",
+   "items": 2,
+   "updated": "2026-11-18T03:28+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "HFCL": {
    "summary": "HFCL shares hit a 5% lower trading limit after a sharp rise in their price. This sudden drop made it hard for some investors to sell their shares immediately.",
@@ -619,19 +667,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is seeing a sharp decline in global oil prices as supply surplus expectations dominate market sentiment. Recent drops in Brent and WTI prices have raised concerns about lower revenue for oil sellers.",
-   "why": "Lower oil prices can cut the company's earnings and affect dividend payouts, which matters to shareholders.",
-   "upside": "",
+   "summary": "Oil India is feeling the impact of recent oil price swings. Prices have fallen sharply on a supply surplus outlook, though a small rise in U.S. crude futures was noted. The oil‑and‑gas sector index has edged higher.",
+   "why": "The company's earnings depend on crude oil prices, so price moves can affect its profit and dividend outlook.",
+   "upside": "Higher oil prices could lift revenue and earnings.",
    "downside": "Sustained low oil prices could compress margins and reduce dividend payouts.",
    "watch": [
-    "Oil price movements",
-    "Supply surplus outlook",
-    "Geopolitical developments that could shift prices"
+    "Crude oil price trends, especially U.S. futures and Brent levels",
+    "Global supply‑demand balance and surplus expectations",
+    "Performance of the Oil & Gas sector index"
    ],
-   "about": "Oil India Ltd. explores, produces and markets oil and gas in India.",
-   "basis": "2008601592c4",
-   "items": 11,
-   "updated": "2026-11-17T13:00+05:30",
+   "about": "Oil India Ltd. explores, produces and sells crude oil and natural gas in India.",
+   "basis": "d0763b5126cc",
+   "items": 14,
+   "updated": "2026-11-18T03:28+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "COALINDIA": {
@@ -698,6 +746,22 @@
    "updated": "2026-11-16T11:16+05:30",
    "model": "gemini-flash-lite-latest"
   },
+  "DLF": {
+   "summary": "Real estate stocks jumped about 14% in November, pushing DLF to a 52‑week high, while the broader Realty index fell 1.3% in the last session but rose 1.4% over five days.",
+   "why": "Shareholders see a sharp price rise that could bring further gains but also carries risk of a short‑term pullback.",
+   "upside": "If the sector’s strong momentum continues, DLF could move higher.",
+   "downside": "If the sector is overextended, a correction could pull DLF’s price down.",
+   "watch": [
+    "Nifty Realty index trend",
+    "DLF’s price relative to its 52‑week high",
+    "Signs of sector‑wide correction"
+   ],
+   "about": "DLF Ltd. is an Indian real estate development company.",
+   "basis": "fb74963cbe28",
+   "items": 1,
+   "updated": "2026-11-17T11:02+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "INFY": {
    "summary": "Infosys shares recently fell below a key medium-term technical support level, known as the 100-day moving average. At the same time, media comparisons with TCS are influencing how investors view the stock, though no new company-specific data has been released.",
    "why": "Dropping below this technical level can signal continued short-term price weakness, which may affect the value of your holdings. However, this move could also be a temporary dip if broader market buying pulls the stock back up.",
@@ -730,22 +794,6 @@
    "updated": "2026-11-17T16:35+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "URBANCO": {
-   "summary": "Urban Company announced a ₹2,500 crore qualified institutional placement (QIP) to fund a new cleaning service, and its shares fell about 2% on the news. The board set a floor price of ₹161.03 per share for the placement.",
-   "why": "Existing shareholders face dilution, meaning their ownership percentage and earnings per share could shrink.",
-   "upside": "If the new cleaning service gains traction, it could boost revenue and improve long‑term earnings.",
-   "downside": "The large share issue may pressure the stock price and dilute earnings per share.",
-   "watch": [
-    "Subscription level of the QIP",
-    "Launch and market response to the new cleaning service",
-    "Future earnings per share trends"
-   ],
-   "about": "Urban Company offers on‑demand home services such as cleaning, repairs and beauty appointments.",
-   "basis": "4e9d477f708b",
-   "items": 2,
-   "updated": "2026-11-17T10:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "VEDL": {
    "summary": "The Supreme Court upheld the rejection of Twin Star’s plan to take control of Vedanta, sending the stock down about 3%. At the same time, Vedanta Power was highlighted as a sub‑₹100 pick in a recent recommendation.",
    "why": "Legal uncertainty can weigh on investor sentiment and affect the share price, while positive mentions may boost interest.",
@@ -761,22 +809,6 @@
    "items": 2,
    "updated": "2026-11-16T15:47+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "WAAREEENER": {
-   "summary": "Shares of Waaree Energies Ltd. are under short‑term selling pressure as green‑energy stocks face sector volatility, while its subsidiary has begun setting up a new battery‑pack manufacturing line.",
-   "why": "Shareholders may see price swings from sector moves and potential new revenue from the battery‑pack line.",
-   "upside": "The new battery‑pack line could open fresh revenue streams for the company.",
-   "downside": "Sector‑wide volatility may persist and delays in ramping up production could hurt the new line.",
-   "watch": [
-    "Sector volatility in green‑energy stocks",
-    "Progress of the battery‑pack manufacturing line ramp‑up",
-    "Any further production start announcements"
-   ],
-   "about": "",
-   "basis": "a0afb53c94c3",
-   "items": 2,
-   "updated": "2026-11-16T14:01+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "BHARTIHEXA": {
    "summary": "Bharti Hexacom Ltd. is seeing its shares rise as part of a wider rally in the telecommunication sector. Investors are showing strong buying interest and optimism about how the industry is performing right now.",
@@ -904,22 +936,6 @@
    "basis": "cd9df50499cb",
    "items": 1,
    "updated": "2026-11-17T15:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "DLF": {
-   "summary": "Real estate stocks jumped about 14% in November, pushing DLF to a 52‑week high, while the broader Realty index fell 1.3% in the last session but rose 1.4% over five days.",
-   "why": "Shareholders see a sharp price rise that could bring further gains but also carries risk of a short‑term pullback.",
-   "upside": "If the sector’s strong momentum continues, DLF could move higher.",
-   "downside": "If the sector is overextended, a correction could pull DLF’s price down.",
-   "watch": [
-    "Nifty Realty index trend",
-    "DLF’s price relative to its 52‑week high",
-    "Signs of sector‑wide correction"
-   ],
-   "about": "DLF Ltd. is an Indian real estate development company.",
-   "basis": "fb74963cbe28",
-   "items": 1,
-   "updated": "2026-11-17T11:02+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "GODREJPROP": {
@@ -1066,36 +1082,20 @@
    "updated": "2026-11-16T09:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "NMDC": {
-   "summary": "NMDC reported a quarterly profit that fell slightly below expectations, causing its shares to slide and the stock to be down 23% over six months. The metals sector index also fell 1% in the last session.",
-   "why": "A profit miss can pressure short‑term sentiment, while the dividend record remains a key consideration for shareholders.",
-   "upside": "",
-   "downside": "Weak global metal prices and lower mining volumes could further hurt earnings.",
+  "ETERNAL": {
+   "summary": "Eternal Ltd. is one of India's 50 largest listed companies in the consumer services sector. Recent news compares its growth and earnings outlook with a rival food delivery company after their latest quarterly results.",
+   "why": "Investors are watching how fast the company is growing its profits compared to competitors, as this can influence how attractive the stock appears to the market.",
+   "upside": "The company may be seen as more attractive if it continues to grow its profits faster than its main rival.",
+   "downside": "Intense competition in the sector could squeeze the company's profit margins.",
    "watch": [
-    "Quarterly profit results versus expectations",
-    "Global metal price trends",
-    "Dividend announcements or payouts"
+    "Comparison of profit growth rates between Eternal and its rival.",
+    "Changes in profit margins due to market competition.",
+    "Investor sentiment regarding the company's growth outlook."
    ],
-   "about": "NMDC Ltd is a major mining company in India's metals and mining sector.",
-   "basis": "03743ca8c153",
-   "items": 1,
-   "updated": "2026-11-16T09:16+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "ASHOKLEY": {
-   "summary": "Ashok Leyland released its quarterly financial results and declared an interim dividend of one rupee per share. The company also appointed a new non-executive director to its board.",
-   "why": "The dividend provides a small direct cash return to shareholders, while the financial results show how profitable the company has been recently.",
-   "upside": "Shareholders who own the stock by the record date will receive the declared cash dividend.",
-   "downside": "The share price may drop slightly on the ex-date to reflect the dividend payout, and earnings results can sometimes cause sharp price moves if they differ from expectations.",
-   "watch": [
-    "The record date of November 20, 2026, for dividend eligibility",
-    "The ex-dividend date when the stock price adjusts",
-    "Market reaction to the September quarter financial results"
-   ],
-   "about": "Ashok Leyland is a major vehicle manufacturer listed in the Capital Goods sector.",
-   "basis": "100eab07570b",
-   "items": 6,
-   "updated": "2026-11-16T09:16+05:30",
+   "about": "",
+   "basis": "add6c534627e",
+   "items": 2,
+   "updated": "2026-11-17T00:55+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "HDFCBANK": {
@@ -1128,22 +1128,6 @@
    "basis": "8946d38565b9",
    "items": 3,
    "updated": "2026-11-17T14:00+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "ETERNAL": {
-   "summary": "Eternal Ltd. is one of India's 50 largest listed companies in the consumer services sector. Recent news compares its growth and earnings outlook with a rival food delivery company after their latest quarterly results.",
-   "why": "Investors are watching how fast the company is growing its profits compared to competitors, as this can influence how attractive the stock appears to the market.",
-   "upside": "The company may be seen as more attractive if it continues to grow its profits faster than its main rival.",
-   "downside": "Intense competition in the sector could squeeze the company's profit margins.",
-   "watch": [
-    "Comparison of profit growth rates between Eternal and its rival.",
-    "Changes in profit margins due to market competition.",
-    "Investor sentiment regarding the company's growth outlook."
-   ],
-   "about": "",
-   "basis": "add6c534627e",
-   "items": 2,
-   "updated": "2026-11-17T00:55+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "DIXON": {
@@ -1258,20 +1242,20 @@
    "updated": "2026-11-16T09:46+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "AXISBANK": {
-   "summary": "Axis Bank shares have recovered after a recent Q2 sell‑off, joining a broader rally in Indian banks as the market index rose sharply. The financial sector index also posted gains, up 0.6% in the last session and 2.7% over five sessions.",
-   "why": "Share owners see the recovery and sector strength as factors that could support the stock’s price.",
-   "upside": "If the broader banking rally continues, Axis Bank could see further price gains.",
-   "downside": "A shift in market sentiment or headwinds for the banking sector could reverse the recent gains.",
+  "BSE": {
+   "summary": "PulsEdge flagged recent articles that show analysts are bullish on BSE Ltd., noting the exchange’s growth and profitability. The broader financial sector index has risen recently.",
+   "why": "Positive sentiment and sector strength can influence the market perception of BSE shares.",
+   "upside": "If the bullish sentiment holds, the stock could benefit from continued investor optimism.",
+   "downside": "A broader market weakness could dampen any gains for BSE shares.",
    "watch": [
-    "Comparison of Axis Bank’s performance with HDFC Bank",
-    "Sustainability of the overall market rally",
-    "Trend of the Financials sector index"
+    "Technical chart signals that analysts say hint at a long‑term uptrend",
+    "Analyst recommendations that list BSE among top picks",
+    "Performance of the Financials sector index"
    ],
-   "about": "Axis Bank Ltd. is a major Indian commercial bank and a Nifty 50 constituent.",
-   "basis": "1de2a0b890e6",
+   "about": "BSE Ltd. operates one of India’s major stock exchanges.",
+   "basis": "3721f4c7cad2",
    "items": 2,
-   "updated": "2026-11-17T16:00+05:30",
+   "updated": "2026-11-17T13:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "FORTIS": {
@@ -1304,22 +1288,6 @@
    "basis": "a48732685016",
    "items": 2,
    "updated": "2026-11-17T11:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "BSE": {
-   "summary": "PulsEdge flagged recent articles that show analysts are bullish on BSE Ltd., noting the exchange’s growth and profitability. The broader financial sector index has risen recently.",
-   "why": "Positive sentiment and sector strength can influence the market perception of BSE shares.",
-   "upside": "If the bullish sentiment holds, the stock could benefit from continued investor optimism.",
-   "downside": "A broader market weakness could dampen any gains for BSE shares.",
-   "watch": [
-    "Technical chart signals that analysts say hint at a long‑term uptrend",
-    "Analyst recommendations that list BSE among top picks",
-    "Performance of the Financials sector index"
-   ],
-   "about": "BSE Ltd. operates one of India’s major stock exchanges.",
-   "basis": "3721f4c7cad2",
-   "items": 2,
-   "updated": "2026-11-17T13:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "TATAPOWER": {

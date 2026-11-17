@@ -1,10 +1,10 @@
 {
- "date": "2026-11-17",
- "updated": "2026-11-17T19:23:23+05:30",
+ "date": "2026-11-18",
+ "updated": "2026-11-18T03:29:03+05:30",
  "sentiment": "Mildly bearish",
  "breadth": {
   "up": 1,
-  "down": 3
+  "down": 2
  },
  "checklist": [
   {
@@ -20,10 +20,10 @@
    "dir": "down",
    "value": "Lower",
    "detail": [
-    "Dow 51,608.17 -1.41%",
-    "S&P 7,416.59 -1.92%",
-    "Nasdaq 24,509.76 -2.49%",
-    "Nasdaq futures now +0.20%"
+    "Dow 50,759.42 -1.64%",
+    "S&P 7,340.53 -1.03%",
+    "Nasdaq 24,328.38 -0.74%",
+    "Nasdaq futures now -0.55%"
    ]
   },
   {
@@ -31,7 +31,7 @@
    "dir": "down",
    "value": "Asia lower",
    "detail": [
-    "Nikkei 58,860.43 -1.34%",
+    "Nikkei 58,860.43 +0.00%",
     "Hang Seng 23,508.17 -1.03%"
    ]
   },
@@ -40,17 +40,15 @@
    "dir": "flat",
    "value": "No major currency pressure",
    "detail": [
-    "DXY 103.69 +0.13%",
+    "DXY 103.56 +0.01%",
     "USD/INR 93.470 -0.48%"
    ]
   },
   {
    "title": "Brent crude level",
-   "dir": "down",
-   "value": "$93.64 +1.30%",
-   "detail": [
-    "Rising crude hurts India (OMCs, paints, aviation); helps upstream"
-   ]
+   "dir": "flat",
+   "value": "$92.97 +0.57%",
+   "detail": []
   },
   {
    "title": "India VIX",
@@ -59,44 +57,27 @@
    "detail": []
   }
  ],
- "summary": "Mildly bearish setup. Brent up 1.30% — pressure on OMCs, paints and aviation; NASDAQ closed 2.49% lower; IT may open soft.",
+ "summary": "Mildly bearish setup. NASDAQ closed 0.74% lower; IT may open soft; Nikkei down, Hang Seng down.",
  "global_cues": [
-  "Brent up 1.30% — pressure on OMCs, paints and aviation",
-  "NASDAQ closed 2.49% lower; IT may open soft",
+  "NASDAQ closed 0.74% lower; IT may open soft",
   "Nikkei down, Hang Seng down"
  ],
  "india_triggers": [
-  "178 filings and headlines worth a look so far today"
+  "8 filings and headlines worth a look so far today"
  ],
  "focus": [
   {
-   "symbol": "ONGC",
-   "note": "ONGC: MAJOR GAS LEAK AT ONGC PLANT IN ANDHRA'S KONASEEMA DISTRICT"
-  },
-  {
-   "symbol": "GROWW",
-   "note": "Block deal: RIBBIT CAPITAL V L.P. sold 485.9 lakh shares of Billionbra"
-  },
-  {
-   "symbol": "GROWW",
-   "note": "Block deal: RIBBIT CAYMAN GW HOLDINGS V LTD. sold 384.1 lakh shares of"
+   "symbol": "OIL",
+   "note": "US CRUDE OIL FUTURES SETTLE 0.34% HIGHER AT $86.01/BBL, UP 29 CENTS"
   }
  ],
  "sector_tags": [
-  {
-   "label": "Upstream oil",
-   "tone": "positive"
-  },
-  {
-   "label": "OMCs",
-   "tone": "negative"
-  },
   {
    "label": "IT",
    "tone": "watch"
   }
  ],
- "key_risk": "A further crude spike would hit OMCs and widen the INR move",
+ "key_risk": "",
  "also": [
   {
    "name": "BANK NIFTY",
@@ -105,33 +86,33 @@
   },
   {
    "name": "S&P FUT",
-   "value": "7,426",
-   "change": -0.18
+   "value": "7,367",
+   "change": -0.96
   },
   {
    "name": "NASDAQ FUT",
-   "value": "27,338",
-   "change": 0.2
+   "value": "27,133",
+   "change": -0.55
   },
   {
    "name": "KOSPI",
    "value": "4,968",
-   "change": -2.59
+   "change": 0.0
   },
   {
    "name": "WTI",
-   "value": "86.91",
-   "change": 1.39
+   "value": "85.55",
+   "change": -0.2
   },
   {
    "name": "GOLD",
-   "value": "3,848",
-   "change": -0.12
+   "value": "3,852",
+   "change": -0.02
   },
   {
    "name": "US 10Y",
-   "value": "5.14",
-   "change": 0.43
+   "value": "5.11",
+   "change": -0.2
   }
  ],
  "source": "CNBC / Yahoo Finance (unofficial, delayed)"
