@@ -1,7 +1,46 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-17T12:29:17+05:30",
+ "updated": "2026-11-17T12:30:17+05:30",
  "items": [
+  {
+   "id": "9fdeceffef708034",
+   "time": "2026-11-17T12:29:01+05:30",
+   "headline": "ONGC: POWER SUPPLY IN AREA TEMPORARILY DISCONNECTED TO MINIMISE POTENTIAL IGNITION RISKS",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9432",
+   "section": "news",
+   "call": "watch",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "ONGC",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Energy",
+    "Oil & Gas"
+   ],
+   "impact": 30,
+   "confidence": 60,
+   "category": "Operational Disruption",
+   "action": "Monitor for any official clarification on the duration of the power cut and its impact on production volumes.",
+   "reason": [
+    "Temporary power disconnection may halt or slow down operations in the affected area.",
+    "Safety measures to prevent ignition risks indicate a potential operational pause."
+   ],
+   "risks": [
+    "Prolonged outage could lead to minor revenue loss.",
+    "Market may overreact to safety-related operational pauses."
+   ],
+   "plain": "The company temporarily cut power in one area to prevent fire risks.",
+   "why": "This might slow down work for a short time, but it is a safety measure, not a major failure.",
+   "check": "Look for a company statement confirming when normal operations resume.",
+   "original": "ONGC: POWER SUPPLY IN AREA TEMPORARILY DISCONNECTED TO MINIMISE POTENTIAL IGNITION RISKS",
+   "latency": 76.8,
+   "lane": "fast"
+  },
   {
    "id": "1f7ade42065a86a8",
    "time": "2026-11-17T12:27:28+05:30",
