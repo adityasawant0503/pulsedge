@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T09:30+05:30",
+ "updated": "2026-11-17T10:00+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Oil prices fell sharply because there is more supply than demand, which may lower earnings for fuel sellers. The IT sector jumped 21% recently, but it is unclear if this is a lasting recovery or just a short-term spike. Global tech stocks dropped due to new US rules on AI chips, which could make investors nervous about Indian tech companies. Foreign investors slightly reduced their long positions, showing a bit of caution.",
+  "summary": "Tata Chemicals shares jumped almost 10% after a buzz about a possible listing of its parent company, but the rise could reverse if the rumours are wrong. Aegis Logistics raised ₹3500 crore by selling new shares, which may put short‑term pressure on its price because of dilution. Oil prices fell sharply, which could hurt companies that earn from selling fuel. The Nifty IT index rebounded 21% in the last four months, but it remains 15% down for the year, showing uncertainty about a lasting recovery.",
   "themes": [
-   "Oil prices dropped due to a global supply surplus.",
-   "IT stocks rebounded but face pressure from global tech tensions.",
-   "Foreign investors slightly trimmed their long bets."
+   "Stock price swings from rumours and new share issues",
+   "Oil price drops affecting energy and related stocks",
+   "Mixed signals in the IT sector"
   ],
   "watch": [
-   "Whether the IT sector's recent jump continues or fades.",
-   "How oil companies react to lower fuel prices.",
-   "Impact of new US chip restrictions on Indian tech stocks."
+   "Tata Chemicals price may correct if listing rumours are unconfirmed",
+   "Aegis Logistics share dilution could temporarily pressure its stock",
+   "Nifty IT rebound may fail if broader market sentiment weakens"
   ],
   "date": "2026-11-17",
-  "basis": "28dab4f693c1",
-  "updated": "2026-11-17T09:15+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 13
+  "basis": "757b6d7bbb49",
+  "updated": "2026-11-17T10:00+05:30",
+  "model": "openai/gpt-oss-20b",
+  "items": 16
  },
  "stocks": {
   "TMPV": {
@@ -347,6 +347,22 @@
    "updated": "2026-11-17T08:20+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "HINDZINC": {
+   "summary": "PulsEdge flagged that Hindustan Zinc’s stock fell despite announcing a ₹80,000 cr expansion plan and a capacity‑addition programme. The market sees the shares as expensive, which may be weighing on the price. The company also disclosed recent board decisions.",
+   "why": "Shareholders should watch the valuation debate and the cash‑flow impact of the large capital spend, as both can affect earnings and share price.",
+   "upside": "If the new capacity translates into higher sales and profits, the stock could benefit.",
+   "downside": "If valuation concerns linger or the high capex strains cash flow, the share price could face further pressure.",
+   "watch": [
+    "Valuation sentiment and how it influences the stock’s movement",
+    "Progress and spending on the ₹80,000 cr expansion plan",
+    "Effect of the capacity addition on cash flow and earnings"
+   ],
+   "about": "Hindustan Zinc Ltd. is a mining company that produces zinc and related metals.",
+   "basis": "c6b1b3c2ca23",
+   "items": 3,
+   "updated": "2026-11-17T10:00+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "IDEA": {
    "summary": "Vodafone Idea lost more mobile customers than expected in its recent quarter. At the same time, telecom stocks, including Vodafone Idea, saw a price increase as investors showed optimism for the sector.",
    "why": "Fewer customers mean less money coming in, which is risky for a company with high debts. This drop in subscribers could worsen the company's financial health.",
@@ -393,22 +409,6 @@
    "basis": "0364ce6d6fde",
    "items": 2,
    "updated": "2026-11-16T15:47+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "HINDZINC": {
-   "summary": "Hindustan Zinc Ltd. announced that it is adding production capacity and also disclosed the outcomes of its board meeting on November 16. The capacity boost could raise future sales, while the board’s decisions may shape the company’s direction. The metals sector index fell 1.0% in the last session but was up 0.4% over the past five sessions.",
-   "why": "Shareholders should watch because higher capacity may improve earnings, but the required spending could strain cash flow in the short term.",
-   "upside": "If the new capacity is brought online efficiently, it could lift sales and profit margins.",
-   "downside": "The capital outlay needed for the capacity expansion might pressure short‑term cash flow.",
-   "watch": [
-    "Progress on the announced capacity addition",
-    "Details of the board meeting decisions",
-    "Trend of the Metals sector index"
-   ],
-   "about": "It is a metals and mining company.",
-   "basis": "e1d6da5f4577",
-   "items": 2,
-   "updated": "2026-11-16T14:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "WAAREEENER": {
@@ -474,6 +474,22 @@
    "items": 2,
    "updated": "2026-11-17T00:55+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "TATACHEM": {
+   "summary": "Tata Chemicals shares jumped about 9% after a surge in buying volume, driven by rumors of a Tata Sons listing that could boost the Tata Group’s stock rally. The price rise may be unstable if the listing rumors are not confirmed.",
+   "why": "Shareholders see rapid price moves, which can affect the value of their holdings.",
+   "upside": "If the Tata Sons listing materialises, the share price could stay elevated.",
+   "downside": "If the listing rumors prove false, the share price could correct lower.",
+   "watch": [
+    "Confirmation or denial of the Tata Sons listing",
+    "Continued trading volume and price movement",
+    "Overall performance of the Tata Group stocks"
+   ],
+   "about": "Tata Chemicals Ltd. is an Indian chemicals manufacturer.",
+   "basis": "114eb8db25ac",
+   "items": 1,
+   "updated": "2026-11-17T10:00+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "AEGISLOG": {
    "summary": "Aegis Logistics Ltd. closed a ₹3500 crore Qualified Institutional Placement (QIP), selling over 83% of the new shares to Nomura India, Quant Mutual Fund and two US-based foreign portfolio investors.",

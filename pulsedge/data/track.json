@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T09:46:28+05:30",
+ "updated": "2026-11-17T10:01:11+05:30",
  "summary": {
-  "calls": 1514,
-  "scored_calls": 376,
+  "calls": 1516,
+  "scored_calls": 378,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "04ba412dc32ec4f8",
+   "symbol": "TATACHEM",
+   "time": "2026-11-17T09:45:24+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Tata Chemicals share price jumps 9%: Volume surge, Tata Sons listing buzz behind the Tata Group stock rally. Do you own?",
+   "url": "https://www.livemint.com/market/stock-market-news/tata-chemicals-share-price-jumps-9-volume-surge-tata-sons-listing-buzz-behind-the-tata-group-stock-rally-do-you-own-11794888270229.html",
+   "entry_date": "2026-11-16",
+   "entry": 612.1
+  },
+  {
+   "id": "5365c3c6a644bb0a",
+   "symbol": "HINDZINC",
+   "time": "2026-11-17T09:43:27+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Why is Hindustan Zinc stock down despite ₹80,000 cr expansion plan? Decoded",
+   "url": "https://www.business-standard.com/markets/news/why-is-hindustan-zinc-stock-down-despite-80-000-cr-expansion-plan-decoded-126111700163_1.html",
+   "entry_date": "2026-11-16",
+   "entry": 550.2
+  },
   {
    "id": "7b270bf4640104ba",
    "symbol": "AEGISLOG",
