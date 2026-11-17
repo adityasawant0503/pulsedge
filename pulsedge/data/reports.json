@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T10:30+05:30",
+ "updated": "2026-11-17T10:45+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Tata Chemicals shares jumped almost 10% after a buzz about a possible listing of its parent company, but the rise could reverse if the rumours are wrong. Aegis Logistics raised ₹3500 crore by selling new shares, which may put short‑term pressure on its price because of dilution. Oil prices fell sharply, which could hurt companies that earn from selling fuel. The Nifty IT index rebounded 21% in the last four months, but it remains 15% down for the year, showing uncertainty about a lasting recovery.",
+  "summary": "The market had mixed activity. A gas leak at ONGC could hurt its earnings, while a large block deal pushed Groww to a record high. Oil prices fell, easing bond gains but hurting oil‑related stocks. Several companies had big share issues, causing price swings.",
   "themes": [
-   "Stock price swings from rumours and new share issues",
-   "Oil price drops affecting energy and related stocks",
-   "Mixed signals in the IT sector"
+   "Safety and production risks at ONGC",
+   "Large share transactions influencing prices",
+   "Oil price movements affecting bonds and energy stocks"
   ],
   "watch": [
-   "Tata Chemicals price may correct if listing rumours are unconfirmed",
-   "Aegis Logistics share dilution could temporarily pressure its stock",
-   "Nifty IT rebound may fail if broader market sentiment weakens"
+   "Monitor the outcome of the ONGC gas leak investigation",
+   "Watch the progress of the Castrol India open offer and its regulatory status",
+   "Keep an eye on oil price trends and their impact on energy and bond markets"
   ],
   "date": "2026-11-17",
-  "basis": "757b6d7bbb49",
-  "updated": "2026-11-17T10:00+05:30",
+  "basis": "443d78f1e6c1",
+  "updated": "2026-11-17T10:45+05:30",
   "model": "openai/gpt-oss-20b",
-  "items": 16
+  "items": 32
  },
  "stocks": {
   "TMPV": {
@@ -380,19 +380,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India is facing a backdrop of falling global oil prices as supply outpaces demand, while its sector index has shown modest gains. A dividend record date for the company is also approaching.",
-   "why": "Lower oil prices can squeeze the company’s profit margins and affect dividend payouts, which matters to shareholders.",
-   "upside": "If geopolitical tensions lift oil prices, the company’s earnings and dividend could improve.",
-   "downside": "Sustained low oil prices could compress margins and reduce dividend payouts.",
+   "summary": "Oil India is seeing pressure as global crude prices have fallen sharply on a supply surplus outlook. The sector index has risen modestly, but lower oil prices could squeeze the company’s earnings.",
+   "why": "Lower crude prices can reduce the profit margin on each barrel Oil India sells and may affect dividend payouts.",
+   "upside": "If oil prices recover or the supply surplus eases, margins and earnings could improve.",
+   "downside": "Sustained low oil prices could compress margins further and limit dividend payments.",
    "watch": [
-    "Oil price trends and any reversal due to geopolitical events",
-    "Upcoming dividend record date and payout details",
-    "Sector index performance relative to Oil India"
+    "Global oil price trends (e.g., Brent, WTI) and any rebound",
+    "Goldman Sachs forecast of a sizeable surplus in 2027",
+    "Geopolitical developments in the Middle East that could tighten supply"
    ],
-   "about": "Oil India Ltd. explores and produces oil and gas in India.",
-   "basis": "bcacccfc104c",
-   "items": 9,
-   "updated": "2026-11-17T10:15+05:30",
+   "about": "Oil India Ltd. is an Indian company that explores for and produces crude oil and natural gas.",
+   "basis": "fa479f9f511a",
+   "items": 10,
+   "updated": "2026-11-17T10:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "HINDZINC": {
