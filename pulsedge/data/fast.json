@@ -1,7 +1,45 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-17T10:00:22+05:30",
+ "updated": "2026-11-17T10:18:18+05:30",
  "items": [
+  {
+   "id": "ba4b2becc43febe8",
+   "time": "2026-11-17T10:17:26+05:30",
+   "headline": "ONGC: MAJOR GAS LEAK AT ONGC PLANT IN ANDHRA'S KONASEEMA DISTRICT",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9414",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "ONGC",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Energy"
+   ],
+   "impact": 80,
+   "confidence": 85,
+   "category": "news",
+   "action": "Watch for updates on leak containment and any production impact",
+   "reason": [
+    "Significant operational disruption at a major asset",
+    "Potential production loss and safety cost increase"
+   ],
+   "risks": [
+    "Further escalation or regulatory penalties",
+    "Short‑term supply constraints affecting earnings"
+   ],
+   "plain": "A major gas leak was reported at ONGC’s plant in Andhra’s Konaseema district.",
+   "why": "The incident could cut production and raise safety costs, likely hurting the company’s earnings.",
+   "check": "Look for updates on the leak’s containment and any impact on output.",
+   "original": "ONGC: MAJOR GAS LEAK AT ONGC PLANT IN ANDHRA'S KONASEEMA DISTRICT",
+   "latency": 52.8,
+   "lane": "fast"
+  },
   {
    "id": "471d22f638a889f6",
    "time": "2026-11-17T09:52:52+05:30",
