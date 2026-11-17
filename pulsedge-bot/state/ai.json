@@ -2,19 +2,6 @@
  "note": "The last 60 runs of the AI classifier: items sorted by AI, set aside as routine, or left to keyword rules.",
  "runs": [
   {
-   "time": "2026-11-16T09:15+05:30",
-   "new": 4,
-   "ai": 2,
-   "routine": 2,
-   "rules": 0,
-   "models": {
-    "qwen/qwen3.8-27b": 2
-   },
-   "errors": [
-    "gemini-3.8-flash: The read operation timed out"
-   ]
-  },
-  {
    "time": "2026-11-16T09:30+05:30",
    "new": 2,
    "ai": 2,
@@ -810,6 +797,17 @@
    "rules": 0,
    "models": {
     "gemini-3.8-flash": 16
+   },
+   "errors": []
+  },
+  {
+   "time": "2026-11-17T14:30+05:30",
+   "new": 12,
+   "ai": 10,
+   "routine": 2,
+   "rules": 0,
+   "models": {
+    "gemini-3.8-flash": 10
    },
    "errors": []
   }

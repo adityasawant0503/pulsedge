@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T14:16:02+05:30",
+ "updated": "2026-11-17T14:31:46+05:30",
  "summary": {
-  "calls": 1576,
-  "scored_calls": 437,
+  "calls": 1578,
+  "scored_calls": 439,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "4aa8b70436bbaa78",
+   "symbol": "HFCL",
+   "time": "2026-11-17T14:23:33+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "HFCL, Sterlite Technologies hit 5% lower circuits after multibagger rallies; should investors buy the dip?",
+   "url": "https://www.livemint.com/market/stock-market-news/hfcl-sterlite-technologies-hit-5-lower-circuits-after-multibagger-rallies-should-investors-buy-the-dip-11794902287012.html",
+   "entry_date": "2026-11-16",
+   "entry": 195.2
+  },
+  {
+   "id": "4aa8b70436bbaa78",
+   "symbol": "STLTECH",
+   "time": "2026-11-17T14:23:33+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "HFCL, Sterlite Technologies hit 5% lower circuits after multibagger rallies; should investors buy the dip?",
+   "url": "https://www.livemint.com/market/stock-market-news/hfcl-sterlite-technologies-hit-5-lower-circuits-after-multibagger-rallies-should-investors-buy-the-dip-11794902287012.html",
+   "entry_date": "2026-11-16",
+   "entry": 675.25
+  },
   {
    "id": "2ad327e7b4d2c6c9",
    "symbol": "CAPLIPOINT",

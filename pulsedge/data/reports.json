@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T14:16+05:30",
+ "updated": "2026-11-17T14:31+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Senco Gold shares rose 8% after reporting record festive sales of ₹2,426 crore, while Kaynes Technology fell 16% over two days due to profit drops and payment collection issues. Capital market stocks like Angel One and Groww hit new highs, showing strong buying interest in that sector. Meanwhile, ONGC faced a major gas leak, and Adani Green received a stop-work notice for a hydro project, adding uncertainty to those companies.",
+  "summary": "Senco Gold shares rose 8% after the company reported record festive sales of ₹2,426 crore. In contrast, Kaynes Technology fell 16% over two days as profits dropped and analysts noted pressure on margins. The pharma sector weakened after Caplin Point received a serious compliance warning from the US FDA. Meanwhile, capital market stocks like Angel One and Groww hit new highs, showing strong investor interest in trading platforms.",
   "themes": [
-   "Strong festive sales boosted consumer-facing stocks like Senco Gold.",
-   "Electronics maker Kaynes Technology struggled with falling profits and cash flow issues.",
-   "Regulatory and operational setbacks affected energy and infrastructure firms like ONGC and Adani Green."
+   "Strong festive season sales boosted consumer-facing stocks like Senco Gold.",
+   "Profitability concerns and compliance issues weighed on electronics and pharma stocks.",
+   "Investors showed high interest in capital market and wealth management platforms."
   ],
   "watch": [
-   "Clarification from the exchange regarding the possible Tata Sons IPO.",
-   "Whether Kaynes Technology can recover pending dues from state authorities.",
-   "Impact of the ONGC gas leak on production levels and safety costs."
+   "ONGC's gas leak in Andhra Pradesh and potential impact on production.",
+   "Adani Green's hydro project halt in Maharashtra and regulatory delays.",
+   "Tata Chemicals' response to the exchange's query about a possible IPO."
   ],
   "date": "2026-11-17",
-  "basis": "98808e42372d",
-  "updated": "2026-11-17T13:45+05:30",
+  "basis": "0ad1bd7448b4",
+  "updated": "2026-11-17T14:31+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 100
+  "items": 111
  },
  "stocks": {
   "TMPV": {
@@ -474,6 +474,38 @@
    "items": 2,
    "updated": "2026-11-16T14:47+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "HFCL": {
+   "summary": "HFCL shares hit a 5% lower trading limit after a sharp rise in their price. This sudden drop made it hard for some investors to sell their shares immediately.",
+   "why": "If you own HFCL shares, this event shows that prices can fall quickly after a big run-up. It also highlights that trading limits can temporarily stop you from selling if the market is very active.",
+   "upside": "",
+   "downside": "If the selling pressure continues, the share price could drop further, and the trading limit might stay locked, preventing you from exiting your position.",
+   "watch": [
+    "Whether the 5% lower trading limit remains locked for extended periods.",
+    "If the sharp price run-up reverses into a longer-term decline.",
+    "General market sentiment towards telecom equipment makers."
+   ],
+   "about": "HFCL is a company in the telecommunication sector.",
+   "basis": "3e8c217a5fc7",
+   "items": 1,
+   "updated": "2026-11-17T14:31+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "STLTECH": {
+   "summary": "Sterlite Technologies shares hit a 5% lower trading limit after a sharp rise in price. This means the stock price dropped significantly in a short time, triggering a temporary halt in trading.",
+   "why": "If you own these shares, the trading halt can make it hard to sell your stock immediately because there are not enough buyers at the current price.",
+   "upside": "",
+   "downside": "The selling pressure might continue if the trading limit stays locked, making it difficult to exit your position.",
+   "watch": [
+    "Whether the trading limit unlocks and allows normal buying and selling to resume",
+    "If the sharp drop continues or if the price stabilizes",
+    "News about the company's telecom business that might explain the sudden drop"
+   ],
+   "about": "Sterlite Technologies is a company in the telecommunication sector.",
+   "basis": "3e8c217a5fc7",
+   "items": 1,
+   "updated": "2026-11-17T14:31+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "AETHER": {
    "summary": "Aether Industries signed a facility development and supply agreement with Baker Petrolite LLC to be the exclusive manufacturer of drag‑reducing agents for India’s first dedicated plant in Panoli, Gujarat.",
