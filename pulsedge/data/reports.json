@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-17T13:30+05:30",
+ "updated": "2026-11-17T13:45+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged strong sales at Senco Gold, sending its shares up 8%. Capital market brokers Angel One and Groww also rose, leading market gains. ONGC reported a major gas leak that could cut production and hurt earnings, while Adani Green’s hydro project got a stop‑work notice, adding regulatory risk. Sector performance was mixed, with FMCG leading gains and pharma, metals and realty lagging.",
+  "summary": "Senco Gold shares rose 8% after reporting record festive sales of ₹2,426 crore, while Kaynes Technology fell 16% over two days due to profit drops and payment collection issues. Capital market stocks like Angel One and Groww hit new highs, showing strong buying interest in that sector. Meanwhile, ONGC faced a major gas leak, and Adani Green received a stop-work notice for a hydro project, adding uncertainty to those companies.",
   "themes": [
-   "Corporate earnings and sales drove stock jumps",
-   "Regulatory and operational issues pressured energy and infrastructure stocks",
-   "Broker and fintech stocks fueled short‑term market momentum"
+   "Strong festive sales boosted consumer-facing stocks like Senco Gold.",
+   "Electronics maker Kaynes Technology struggled with falling profits and cash flow issues.",
+   "Regulatory and operational setbacks affected energy and infrastructure firms like ONGC and Adani Green."
   ],
   "watch": [
-   "How the ONGC gas leak affects future production and earnings",
-   "Outcome of the open offer for a 26% stake in Castrol India",
-   "Clarifications on Tata group IPO rumors and any related stock moves"
+   "Clarification from the exchange regarding the possible Tata Sons IPO.",
+   "Whether Kaynes Technology can recover pending dues from state authorities.",
+   "Impact of the ONGC gas leak on production levels and safety costs."
   ],
   "date": "2026-11-17",
-  "basis": "c183a72491c2",
-  "updated": "2026-11-17T13:00+05:30",
-  "model": "openai/gpt-oss-120b",
-  "items": 89
+  "basis": "98808e42372d",
+  "updated": "2026-11-17T13:45+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 100
  },
  "stocks": {
   "TMPV": {
@@ -92,19 +92,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "KAYNES": {
-   "summary": "Kaynes Technology shares fell sharply over two days, dropping about 16% to hit a 52-week low. This happened after the company reported that its quarterly profit dropped by 65% due to lower margins.",
-   "why": "Lower profits mean the company is earning less money, which often makes investors less willing to pay high prices for its shares.",
-   "upside": "The stock might see a short-term price bounce because it has fallen so quickly in a short time.",
-   "downside": "The share price could fall further if the company continues to report weak profits in future quarters.",
+   "summary": "Kaynes Technology's stock price has fallen sharply over the last two days, dropping to a 52-week low. This happened because the company reported a 65% drop in quarterly profits and is slowing down deliveries to focus on collecting unpaid bills from state authorities.",
+   "why": "Lower profits mean the company is earning less money, which often makes investors less willing to pay high prices for its shares. The decision to pause some deliveries to chase unpaid bills also signals cash flow challenges.",
+   "upside": "The stock might see a short-term price recovery simply because it has fallen so steeply in a short time.",
+   "downside": "If the company continues to struggle with collecting money from state authorities or if profits keep falling, the stock price could drop further.",
    "watch": [
+    "How quickly the company collects pending payments from state authorities.",
     "Whether other electronics companies report similar weak results.",
-    "If the stock price stabilizes or continues to drop after the recent crash.",
-    "Any new updates from the company regarding its costs or margins."
+    "If the stock price stabilizes or continues to fall after the recent sharp drop."
    ],
    "about": "Kaynes Technology is an electronics manufacturer in the capital goods sector.",
-   "basis": "93afc5eac1a5",
-   "items": 8,
-   "updated": "2026-11-17T13:30+05:30",
+   "basis": "b65dd434d90f",
+   "items": 9,
+   "updated": "2026-11-17T13:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "INOXWIND": {

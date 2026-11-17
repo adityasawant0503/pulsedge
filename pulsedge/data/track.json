@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T13:40:34+05:30",
+ "updated": "2026-11-17T13:45:45+05:30",
  "summary": {
-  "calls": 1573,
-  "scored_calls": 434,
+  "calls": 1574,
+  "scored_calls": 435,
   "d1": {
    "scored": 355,
    "hits": 198,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "96ac5739ccec0fc1",
+   "symbol": "KAYNES",
+   "time": "2026-11-17T13:42:10+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Kaynes Technology stock in pain as Street falls out of love",
+   "url": "https://www.livemint.com/market/mark-to-market/kaynes-technology-stock-q2-results-smart-meter-sales-crash-11794899402071.html",
+   "entry_date": "2026-11-16",
+   "entry": 2980.0
+  },
   {
    "id": "37657c921b417804",
    "symbol": "KAYNES",
