@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T14:31+05:30",
+ "updated": "2026-11-18T14:46+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -204,19 +204,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "EICHERMOT": {
-   "summary": "Eicher Motors reported its best‑ever quarterly sales and profit, beating expectations, and its shares jumped over 3% as brokerages stayed positive on premium motorcycle growth.",
-   "why": "Strong results can boost shareholder value, but the grant of employee stock options could dilute earnings per share.",
-   "upside": "If demand for premium motorcycles remains strong, earnings could improve further.",
-   "downside": "Dilution from exercised stock options or heightened competition in the 350‑650cc bike segment could pressure the stock.",
+   "summary": "Eicher Motors reported record Q2 sales and profit, sending the stock up more than 3% on strong broker sentiment. The company also granted 105 employee stock options and later saw a price adjustment during the day.",
+   "why": "Shareholders see the earnings beat as a boost to value, but the new options could dilute earnings per share if exercised.",
+   "upside": "If the momentum from record sales continues, the share price could rise further.",
+   "downside": "The recent price adjustment and potential dilution from stock options could pressure the stock.",
    "watch": [
-    "Premium motorcycle sales momentum",
-    "Exercise of the 105 employee stock options",
-    "Competitive activity in the 350‑650cc segment"
+    "Further price movements after today’s adjustment",
+    "Impact of employee stock options on dilution",
+    "Competitive pressure in the 350‑650cc bike segment"
    ],
-   "about": "Eicher Motors manufactures motorcycles, including premium models, and also produces commercial vehicles.",
-   "basis": "80a57b70be01",
-   "items": 5,
-   "updated": "2026-11-18T14:31+05:30",
+   "about": "Eicher Motors manufactures motorcycles, including premium models under the Royal Enfield brand.",
+   "basis": "539d6a991c66",
+   "items": 6,
+   "updated": "2026-11-18T14:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "CAPLIPOINT": {
@@ -329,22 +329,6 @@
    "basis": "f14469544dd3",
    "items": 1,
    "updated": "2026-11-16T15:32+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "JIOFIN": {
-   "summary": "Jio Financial Services shares fell noticeably in recent trading. This drop happened while the broader financial sector index was up over the last five sessions.",
-   "why": "The price decline suggests investors are currently less confident in the stock, which affects the value of any shares you hold.",
-   "upside": "A broader market rally could help limit further losses for the stock.",
-   "downside": "Negative sentiment around the stock could keep the share price lower.",
-   "watch": [
-    "Whether the stock recovers from the recent downturn",
-    "How the Financials sector index performs in the coming days",
-    "If the broader market rally continues"
-   ],
-   "about": "Jio Financial Services is a company in the financial services sector and is one of India's 50 largest listed companies.",
-   "basis": "7020864b9825",
-   "items": 1,
-   "updated": "2026-11-16T15:17+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "JSWENERGY": {
@@ -875,20 +859,36 @@
    "model": "gemini-flash-lite-latest"
   },
   "COALINDIA": {
-   "summary": "Coal India is preparing to sell a small part of its Mahanadi Coalfields and Northern/Central Coalfields units to the public. The Mahanadi IPO has set a price band of ₹129–₹136 per share and seeks a valuation of $9.55 billion.",
-   "why": "Selling these parts can bring in cash for the company, but it also means existing owners will have a smaller share of the total business, which might affect the stock price.",
-   "upside": "The IPO could bring in fresh funds and show that the group is growing, which might make the parent company more attractive to investors.",
-   "downside": "Existing shareholders could see their profit share reduced because the company will own a smaller percentage of these units after the sale.",
+   "summary": "Coal India is preparing to sell parts of its business through IPOs, including Mahanadi Coalfields and plans for Northern and Central Coalfields. The company is also setting a high valuation for Mahanadi, which could bring cash but may dilute existing shareholders.",
+   "why": "Shareholders may see changes in share price and earnings per share as the company raises capital and potentially dilutes its stake.",
+   "upside": "A successful IPO could bring cash into the company and increase the value of remaining shares.",
+   "downside": "The IPO could dilute existing shareholders’ stake and may push the share price down if the market absorbs the new supply.",
    "watch": [
-    "The final price at which the Mahanadi IPO is sold.",
-    "How the market reacts to the new supply of shares.",
-    "Updates on the IPO preparations for Northern and Central Coalfields."
+    "IPO pricing and demand for Mahanadi Coalfields",
+    "Market reaction to Northern and Central Coalfields IPO preparations",
+    "Impact on Coal India’s earnings per share"
    ],
-   "about": "Coal India is a major coal company and one of India's 50 largest listed companies.",
-   "basis": "bd49cdb7129e",
-   "items": 7,
-   "updated": "2026-11-18T14:31+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Coal India is a large Indian coal mining company listed in the Nifty 50.",
+   "basis": "20895d8d4a38",
+   "items": 6,
+   "updated": "2026-11-18T14:46+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
+  "PRESTIGE": {
+   "summary": "Prestige Estates Projects Ltd. is buying new businesses, including a 50% stake in Advent Convention and Hotels International, and increasing its ownership in the Prestige Vaishnaoi Projects. The realty sector has been rising, with the Nifty Realty index up 1.9% in the last session.",
+   "why": "These acquisitions could change the company’s future earnings and affect its cash position, which matters to current shareholders.",
+   "upside": "If the new assets generate strong cash flow and integrate smoothly, earnings could improve.",
+   "downside": "The deals may be costly, strain cash reserves, and dilute shareholder value if not managed well.",
+   "watch": [
+    "Financing and integration of the Advent Convention and Hotels International stake",
+    "Performance and profitability of the expanded Prestige Vaishnaoi Projects",
+    "Overall realty sector momentum and any signs of short‑term overextension"
+   ],
+   "about": "Prestige Estates Projects Ltd. is a real estate developer.",
+   "basis": "384187098a52",
+   "items": 5,
+   "updated": "2026-11-18T14:46+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "HDFCBANK": {
    "summary": "HDFC Bank shares have risen sharply, jumping about 20% from their October low as the Nifty Bank index hit a record high. Analysts note a technical breakout that could keep banks moving higher, though broader market moves could affect this.",
@@ -906,36 +906,20 @@
    "updated": "2026-11-18T10:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "PRESTIGE": {
-   "summary": "Prestige Estates Projects has bought more shares in Prestige Vaishnaoi Projects and announced a 50% stake purchase in Advent Convention and Hotels International. At the same time, the broader real estate sector has seen strong gains recently.",
-   "why": "These business moves and sector changes can affect future profits, cash reserves, and overall share value.",
-   "upside": "Investing more in current projects and new ventures could lead to higher profits if they succeed.",
-   "downside": "The purchase costs could strain cash reserves, and managing new holdings can bring operational challenges.",
-   "watch": [
-    "How the company finances these new acquisitions",
-    "Integration of the newly acquired stakes",
-    "Overall trends in the real estate sector"
-   ],
-   "about": "Prestige Estates Projects Ltd. is a real estate company involved in property development.",
-   "basis": "cce5014d2f42",
-   "items": 4,
-   "updated": "2026-11-17T19:22+05:30",
-   "model": "gemini-flash-lite-latest"
-  },
   "HINDALCO": {
-   "summary": "Hindalco shares have been falling as metal stocks slipped on lower global commodity prices and a stronger US dollar, but Axis Securities recently named it a conviction pick after its Q2 results.",
-   "why": "Share price changes affect shareholder value, and tighter profit margins from commodity price weakness matter for earnings.",
-   "upside": "If the Axis recommendation triggers buying or an oversold bounce occurs, the stock could recover.",
-   "downside": "Ongoing low commodity prices and a strong US dollar could keep margins tight and pressure the share price.",
+   "summary": "Hindalco shares have been falling amid a broader drop in metal stocks, driven by lower global commodity prices and a stronger US dollar. At the same time, Axis Securities highlighted Hindalco as a conviction pick after its Q2 results, setting higher price targets.",
+   "why": "Share price moves affect the value of investors' holdings, and lower commodity prices can squeeze the company's profit margins.",
+   "upside": "The Axis Securities recommendation could attract buying interest and support the share price.",
+   "downside": "Weak commodity prices and a strong US dollar could continue to pressure margins and keep the stock under pressure.",
    "watch": [
-    "Q2 earnings release on 16 November",
-    "Metal sector index movement",
-    "Global commodity price trends and US dollar strength"
+    "Axis Securities' target and any follow‑up analyst commentary",
+    "Global metal price trends and commodity price movements",
+    "US dollar index changes and potential China stimulus news"
    ],
-   "about": "Hindalco Industries Ltd is a leading Indian metal producer in the Metals & Mining sector.",
-   "basis": "65d3b2275831",
-   "items": 4,
-   "updated": "2026-11-18T14:15+05:30",
+   "about": "Hindalco Industries Ltd is a large Indian metal producer.",
+   "basis": "accb212cc931",
+   "items": 3,
+   "updated": "2026-11-18T14:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "KALYANKJIL": {
