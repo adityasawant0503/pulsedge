@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T12:01+05:30",
+ "updated": "2026-11-18T12:15+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -858,6 +858,22 @@
    "updated": "2026-11-17T19:22+05:30",
    "model": "gemini-flash-lite-latest"
   },
+  "BHARTIHEXA": {
+   "summary": "Bharti Hexacom disclosed an official regulatory action or penalty order against the company. At the same time, the broader telecom sector is seeing a rally, with major peers rising in value.",
+   "why": "The regulatory order could impact the company's finances or operations, while the sector-wide optimism may influence investor sentiment toward its shares.",
+   "upside": "The current positive trend in the telecom sector could lift the stock along with its peers.",
+   "downside": "The regulatory order may result in fines or operational demands that hurt the company's performance.",
+   "watch": [
+    "Details on the financial size of the regulatory penalty",
+    "Whether the telecom sector rally continues or reverses",
+    "Any further official announcements from the company"
+   ],
+   "about": "",
+   "basis": "4b2e7a25ed83",
+   "items": 3,
+   "updated": "2026-11-18T12:15+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "TATASTEEL": {
    "summary": "Tata Steel's CEO noted that iron ore costs are rising in India while the company continues discussions with the Dutch government for financial assistance. Meanwhile, steel prices are increasing, which experts suggest could benefit the company's profits.",
    "why": "Higher raw material costs can reduce the profit made on each ton of steel, but rising steel prices might offset this. The outcome of the Dutch government talks could also affect the company's financial stability.",
@@ -1001,22 +1017,6 @@
    "items": 2,
    "updated": "2026-11-17T16:35+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "BHARTIHEXA": {
-   "summary": "Bharti Hexacom Ltd. is seeing its shares rise as part of a wider rally in the telecommunication sector. Investors are showing strong buying interest and optimism about how the industry is performing right now.",
-   "why": "This matters because sector-wide trends often influence the movement of individual stocks within that market, affecting the value of your holdings.",
-   "upside": "Strong buying interest and positive sentiment in the telecom sector could continue to support stock prices.",
-   "downside": "The rally might be short-lived, and investors could start taking profits after the recent gains.",
-   "watch": [
-    "Whether the telecom sector rally continues or loses steam",
-    "Signs of profit-taking by investors",
-    "Overall market sentiment toward telecommunication stocks"
-   ],
-   "about": "",
-   "basis": "5c2c9390c9fc",
-   "items": 2,
-   "updated": "2026-11-16T11:16+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "TATACOMM": {
    "summary": "Telecom stocks, including Tata Communications, are rising as investors show optimism about the sector. Major peers like Bharti Airtel and Vodafone Idea have seen significant price increases recently.",
@@ -1353,6 +1353,22 @@
    "items": 2,
    "updated": "2026-11-17T10:30+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "TITAN": {
+   "summary": "Titan shares fell by more than 4% in a single day while the broader market also trended lower. This drop happened even though the company is one of India's largest listed firms.",
+   "why": "A sharp decline in a major stock can reduce the value of your investment quickly. It may also signal that investors are feeling cautious about the overall market.",
+   "upside": "The broader market showed some recovery in the afternoon, which could help limit further losses.",
+   "downside": "The drop reflects a general mood of caution in the market, which could lead to more volatility.",
+   "watch": [
+    "Whether the broader market continues to recover or stays weak",
+    "How Titan's stock price reacts in the coming days",
+    "Trends in the Consumer Durables sector index"
+   ],
+   "about": "",
+   "basis": "c446c18b17a3",
+   "items": 1,
+   "updated": "2026-11-18T12:15+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "CANBK": {
    "summary": "Canara Bank shares have risen sharply as the banking sector hit record highs. Recent media comparisons with other public sector banks have drawn attention to its recent price gains.",

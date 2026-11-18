@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T12:01:35+05:30",
+ "updated": "2026-11-18T12:15:57+05:30",
  "summary": {
-  "calls": 1672,
-  "scored_calls": 513,
+  "calls": 1674,
+  "scored_calls": 515,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "615ca5a9b87cbaca",
+   "symbol": "BHARTIHEXA",
+   "time": "2026-11-18T12:11:33+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Bharti Hexacom Limited: Bharti Hexacom Limited has informed the Exchange about Action(s) taken or orders passed |SUBJECT: Action(s) taken or orders passed",
+   "url": "https://nsearchives.nseindia.com/corporate/HexacomApril20_18112026121039_Reg-30.pdf",
+   "entry_date": "2026-11-17",
+   "entry": 1672.7
+  },
   {
    "id": "d4462b9e9bdb8dca",
    "symbol": "GODREJPROP",
@@ -397,6 +410,19 @@
    "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/upl-stock-price-today-live-18-nov-2026/liveblog/135946233.cms",
    "entry_date": "2026-11-17",
    "entry": 551.7
+  },
+  {
+   "id": "716518130c4f8360",
+   "symbol": "TITAN",
+   "time": "2026-11-18T08:01:50+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex down 400 pts; Nifty tops 25,200; Titan shares fall over 4%",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-18-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-bond-yields-hero-motocorp-share-price-hcltech-stock-price-today-ipo-today-126111800134_1.html",
+   "entry_date": "2026-11-17",
+   "entry": 4908.0
   },
   {
    "id": "e17e884536ffd2b3",
