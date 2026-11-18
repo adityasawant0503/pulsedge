@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T12:15+05:30",
+ "updated": "2026-11-18T12:30+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -650,6 +650,22 @@
    "updated": "2026-11-18T10:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "SIGNATURE": {
+   "summary": "Signature Global recently bought 194 acres of land in Maharashtra for 194 crore rupees. The company also stated it expects to meet its sales target of 10,000 crore rupees for the year 2027.",
+   "why": "These moves suggest the business is expanding, which can be positive for shareholders. However, spending on land may use up some of the company's cash reserves.",
+   "upside": "The new land purchase could lead to higher earnings from future projects.",
+   "downside": "High expectations for sales might cause investors to sell shares if immediate results do not match the hype.",
+   "watch": [
+    "How the company funds the recent land purchase",
+    "Progress toward the 2027 sales target",
+    "Performance of the broader Realty sector"
+   ],
+   "about": "Signature Global is a realty company listed on the NSE.",
+   "basis": "8672cbe5803c",
+   "items": 2,
+   "updated": "2026-11-18T12:30+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "KPIL": {
    "summary": "Kalpataru Projects International Ltd. recently announced it won a new infrastructure contract. Around the same time, the company disclosed that it received an official regulatory or tax order.",
    "why": "The new contract adds to the company's future workload and potential revenue. The regulatory order introduces a small financial risk, though such notices are often routine and contested.",
@@ -680,6 +696,22 @@
    "basis": "8d3264432255",
    "items": 2,
    "updated": "2026-11-18T08:46+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "TITAN": {
+   "summary": "Titan shares fell by more than 4% in a single day while the broader market also trended lower. This drop happened even though the company is one of India's largest listed firms.",
+   "why": "A sharp decline in a major stock can reduce the value of your investment quickly. It may also signal that investors are feeling cautious about the overall market.",
+   "upside": "The broader market showed some recovery in the afternoon, which could help limit further losses.",
+   "downside": "The drop reflects a general mood of caution in the market, which could lead to more volatility.",
+   "watch": [
+    "Whether the broader market continues to recover or stays weak",
+    "How Titan's stock price reacts in the coming days",
+    "Trends in the Consumer Durables sector index"
+   ],
+   "about": "",
+   "basis": "c446c18b17a3",
+   "items": 1,
+   "updated": "2026-11-18T12:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "GALLANTT": {
@@ -858,6 +890,22 @@
    "updated": "2026-11-17T19:22+05:30",
    "model": "gemini-flash-lite-latest"
   },
+  "SAIL": {
+   "summary": "SAIL shares fell sharply as part of a broader drop in metal stocks, driven by lower global commodity prices and a stronger US dollar. The company was among the biggest losers in the Nifty Metal index during this period.",
+   "why": "Lower commodity prices can reduce the profit margins for steel producers, which may affect the value of shares held by investors.",
+   "upside": "A rebound in metal prices or a reversal in the US dollar trend could help support the stock.",
+   "downside": "Continued weakness in global commodity prices or a stronger US dollar could further squeeze profits.",
+   "watch": [
+    "Global steel and metal price trends",
+    "Movements in the US Dollar index",
+    "Any new economic stimulus announcements from China"
+   ],
+   "about": "SAIL is a major steel producer in India.",
+   "basis": "8553ec6374c1",
+   "items": 3,
+   "updated": "2026-11-18T12:30+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "BHARTIHEXA": {
    "summary": "Bharti Hexacom disclosed an official regulatory action or penalty order against the company. At the same time, the broader telecom sector is seeing a rally, with major peers rising in value.",
    "why": "The regulatory order could impact the company's finances or operations, while the sector-wide optimism may influence investor sentiment toward its shares.",
@@ -937,6 +985,22 @@
    "items": 3,
    "updated": "2026-11-16T11:16+05:30",
    "model": "gemini-flash-lite-latest"
+  },
+  "HINDALCO": {
+   "summary": "Hindalco’s shares fell as metal stocks dropped 2% on lower global commodity prices and a stronger US dollar. Investors are also focused on its upcoming earnings report to gauge profitability.",
+   "why": "Margin pressure from falling metal prices can affect earnings, so shareholders watch profit trends closely.",
+   "upside": "A rebound in commodity prices or a weaker US dollar could improve margins.",
+   "downside": "Continued low prices or a strong dollar could further squeeze margins and hurt earnings.",
+   "watch": [
+    "Hindalco earnings release",
+    "Global metal price movements",
+    "US Dollar index and China stimulus news"
+   ],
+   "about": "Hindalco Industries Ltd. is a leading Indian metal producer.",
+   "basis": "6c555a9db2fb",
+   "items": 2,
+   "updated": "2026-11-18T12:30+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "GODREJPROP": {
    "summary": "Godrej Properties reported a regulatory order, which is often a minor procedural issue. At the same time, the broader real estate sector has seen a sharp rise in stock prices this month.",
@@ -1306,22 +1370,6 @@
    "updated": "2026-11-17T02:10+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "SAIL": {
-   "summary": "SAIL’s shares fell sharply as the Sensex dropped 300‑400 points, making it one of the biggest losers in the metal sector. The broader metal index was up 0.6% in the last session but down 1.1% over the past five sessions.",
-   "why": "Shareholders see price moves because SAIL is sensitive to overall market sentiment and metal price trends.",
-   "upside": "A rebound in metal prices or positive sector news could lift the stock.",
-   "downside": "Further declines in the broader market or continued weakness in metal prices could keep the stock under pressure.",
-   "watch": [
-    "Sensex movements",
-    "Metal sector index performance",
-    "Metal price trends"
-   ],
-   "about": "SAIL is a major Indian steel producer.",
-   "basis": "59a2e4bf44a1",
-   "items": 2,
-   "updated": "2026-11-18T11:45+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "BPCL": {
    "summary": "BPCL plans to start a new green jet fuel plant at its Mumbai refinery in December. The company also aims to increase the capacity of this plant to 61,000 tons per year by 2028.",
    "why": "These moves show BPCL is investing in sustainable energy products, which may help it stay relevant as industry standards change.",
@@ -1353,22 +1401,6 @@
    "items": 2,
    "updated": "2026-11-17T10:30+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "TITAN": {
-   "summary": "Titan shares fell by more than 4% in a single day while the broader market also trended lower. This drop happened even though the company is one of India's largest listed firms.",
-   "why": "A sharp decline in a major stock can reduce the value of your investment quickly. It may also signal that investors are feeling cautious about the overall market.",
-   "upside": "The broader market showed some recovery in the afternoon, which could help limit further losses.",
-   "downside": "The drop reflects a general mood of caution in the market, which could lead to more volatility.",
-   "watch": [
-    "Whether the broader market continues to recover or stays weak",
-    "How Titan's stock price reacts in the coming days",
-    "Trends in the Consumer Durables sector index"
-   ],
-   "about": "",
-   "basis": "c446c18b17a3",
-   "items": 1,
-   "updated": "2026-11-18T12:15+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "CANBK": {
    "summary": "Canara Bank shares have risen sharply as the banking sector hit record highs. Recent media comparisons with other public sector banks have drawn attention to its recent price gains.",
