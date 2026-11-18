@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T15:15+05:30",
+ "updated": "2026-11-18T15:30+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "IIFL Finance shares jumped 6% after Fairfax sold its entire stake, creating strong buying interest. Meanwhile, gold loan companies like Muthoot and Manappuram fell 5% as falling gold prices made their lending riskier. Trading firm stocks dropped up to 3% because the market regulator is considering stricter rules for their operations.",
+  "summary": "IIFL Finance shares rose after Fairfax sold its stake, showing buying interest. ONGC secured a ₹100 crore subsea installation contract, which could boost its earnings. Gold‑financing companies fell as lower gold prices raise collateral risk, while a drug plant at Caplin Point faced a US FDA warning that could delay approvals.",
   "themes": [
-   "Large institutional sales can boost share prices in the short term.",
-   "Falling commodity prices are hurting related companies like gold lenders and copper miners.",
-   "New regulatory rules are causing uncertainty for stock trading platforms."
+   "Block sale and buying pressure",
+   "Regulatory and contract wins",
+   "Commodity price and collateral risk"
   ],
   "watch": [
-   "Whether the regulator finalizes stricter rules for trading platforms.",
-   "If copper prices stay low, which could affect Hindustan Copper's future profits.",
-   "How gold loan companies manage risk if gold prices continue to drop."
+   "IIFL Finance share movement after Fairfax sale",
+   "Execution and cost of ONGC subsea contract",
+   "Gold price changes and margin pressure for gold‑financing firms"
   ],
   "date": "2026-11-18",
-  "basis": "903e77cc25a2",
-  "updated": "2026-11-18T14:31+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 108
+  "basis": "8e6e526f1634",
+  "updated": "2026-11-18T15:30+05:30",
+  "model": "openai/gpt-oss-20b",
+  "items": 129
  },
  "stocks": {
   "KAYNES": {
@@ -651,20 +651,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "TATAPOWER": {
-   "summary": "Tata Power leaders say profits are expected to triple next quarter because projects are being completed three times faster than in the first half of the year. The company also recently started using a new 100.8 MW wind farm in Maharashtra to generate electricity.",
-   "why": "Faster project completion and new power sources could lead to higher earnings, which may influence how investors value the stock.",
-   "upside": "If the company meets its target of tripling profits next quarter, it would show strong business growth.",
-   "downside": "The profit forecast is a prediction and not a guarantee, so actual results might be lower than expected.",
+   "summary": "Tata Power says next quarter profits could triple due to faster project completion. They also commissioned a new 100.8 MW wind farm in Maharashtra. The company is part of the Nifty 500 and operates in the power sector.",
+   "why": "Higher profits could make the company more attractive to shareholders.",
+   "upside": "Triple growth in next quarter profits.",
+   "downside": "Guidance is forward‑looking and results may differ.",
    "watch": [
-    "The official financial results for the upcoming quarter",
-    "Updates on the speed of project completions",
-    "Performance of the new wind farm in Maharashtra"
+    "Next quarter earnings",
+    "Commissioning of 100.8 MW wind project",
+    "Sector index movement"
    ],
-   "about": "Tata Power is a company in the power sector that generates electricity, including from renewable sources like wind.",
-   "basis": "336c861cb636",
-   "items": 3,
-   "updated": "2026-11-18T11:15+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Tata Power Co. Ltd. is a power company.",
+   "basis": "1ba79dce53d9",
+   "items": 2,
+   "updated": "2026-11-18T15:30+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "UPL": {
    "summary": "UPL's shares slipped below a key moving average, and media reports say the company may scrap its plan to change its corporate structure.",
@@ -827,20 +827,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "COALINDIA": {
-   "summary": "Coal India is preparing to sell small parts of its Northern and Central Coalfields units to the public. It has also recently launched an IPO for its Mahanadi Coalfields subsidiary, which is expected to bring in cash for the parent company.",
-   "why": "These sales can generate cash for Coal India and potentially increase the value of the remaining shares. However, selling shares also means more shares are available to buy, which can sometimes push the price down.",
-   "upside": "The cash from these sales could make the company more attractive to investors looking for steady income through dividends.",
-   "downside": "The market may already have priced in this news, or the extra supply of shares could put pressure on the stock price.",
+   "summary": "Coal India Ltd. is preparing to sell stakes in its subsidiaries – Mahanadi Coalfields and the Northern and Central Coalfields – through initial public offerings (IPOs). The Mahanadi IPO has already set a good listing gain signal, while the parent company is still in the preparation stage for the other two units. These moves could bring cash into the company and affect the value of existing shares.",
+   "why": "Shareholders should note that IPOs can raise capital for the company, potentially boosting its financial position, but they can also dilute existing holdings and influence share liquidity.",
+   "upside": "The IPOs could generate cash proceeds and improve the company’s valuation, and the Mahanadi IPO may offer good dividends to investors.",
+   "downside": "Potential dilution of the parent company’s stake and a possible drain of liquidity from existing shares could negatively impact shareholders.",
    "watch": [
-    "How the Mahanadi Coalfields IPO performs on its listing day",
-    "Updates on the IPO preparations for Northern and Central Coalfields",
-    "Whether the company announces specific dividend plans for the new subsidiaries"
+    "Mahanadi Coalfields IPO listing performance and GMP signals",
+    "Northern and Central Coalfields IPO preparation status and market conditions",
+    "Impact of the IPOs on Coal India’s share price and liquidity"
    ],
-   "about": "Coal India is a major coal company and one of India's 50 largest listed companies.",
-   "basis": "b947fcd1557e",
-   "items": 6,
-   "updated": "2026-11-18T15:01+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Coal India Ltd. is India’s largest coal producer and a major player in the coal sector.",
+   "basis": "a8bd9f019147",
+   "items": 7,
+   "updated": "2026-11-18T15:30+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "PRESTIGE": {
    "summary": "Prestige Estates Projects Ltd. is buying new businesses, including a 50% stake in Advent Convention and Hotels International, and increasing its ownership in the Prestige Vaishnaoi Projects. The realty sector has been rising, with the Nifty Realty index up 1.9% in the last session.",
