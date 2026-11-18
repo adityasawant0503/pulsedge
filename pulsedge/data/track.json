@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T15:31:16+05:30",
+ "updated": "2026-11-18T15:47:19+05:30",
  "summary": {
-  "calls": 1710,
-  "scored_calls": 551,
+  "calls": 1712,
+  "scored_calls": 553,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "dbd36956429b533d",
+   "symbol": "COALINDIA",
+   "time": "2026-11-18T15:41:06+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Mahanadi Coalfields IPO: Should you bet on Coal India’s cash cow despite muted growth?",
+   "url": "https://www.livemint.com/market/stock-market-news/mahanadi-coalfields-ipo-review-price-band-valuation-risks-11794989503971.html",
+   "entry_date": "2026-11-17",
+   "entry": 391.55
+  },
+  {
+   "id": "d53b35645f5dc3e1",
+   "symbol": "SUPREMEIND",
+   "time": "2026-11-18T15:32:07+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Supreme Power Equipment Limited: Supreme Power Equipment Limited has informed the Exchange about Bagging/Receiving of orders/contracts |SUBJECT: Bagging/Receivi",
+   "url": "https://nsearchives.nseindia.com/corporate/SPEL_18112026153158_Intimationbaggingoforder.pdf",
+   "entry_date": "2026-11-17",
+   "entry": 3231.3
+  },
   {
    "id": "4626dd5144de5da6",
    "symbol": "INFY",

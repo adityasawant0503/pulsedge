@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T15:30+05:30",
+ "updated": "2026-11-18T15:46+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -92,20 +92,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "INOXWIND": {
-   "summary": "Inox Wind reported a 42% drop in its second-quarter profits because its costs went up, which caused its share price to fall sharply. The stock is now down 60% over the past year, though some analysts believe it may rise again.",
-   "why": "Lower profits mean the company is making less money, which often leads investors to sell shares and push the price down. A sharp drop in value affects the worth of any shares you currently hold.",
-   "upside": "Some analysts believe the stock could recover significantly after its recent decline.",
-   "downside": "The company's costs are rising, which squeezes its profits and could lead to further drops in earnings in future quarters.",
+   "summary": "Inox Wind reported a 42% drop in Q2 profit and margin compression, pushing its shares down about 60% over the past year. An analyst, however, flagged a potential 42% upside and a comeback rally if new orders are executed well.",
+   "why": "Profit decline and squeezed margins directly affect earnings for shareholders, while a possible rally could boost share value.",
+   "upside": "Successful execution of new orders could trigger a strong share price rally.",
+   "downside": "Continued margin pressure or lagging order execution could further depress the stock.",
    "watch": [
-    "Whether the company can successfully deliver on new orders without delays.",
-    "If profit margins continue to shrink in upcoming quarters.",
-    "How the share price reacts to the recent profit warning."
+    "Execution of new orders",
+    "Margin trends in upcoming quarters",
+    "Future earnings releases"
    ],
    "about": "",
-   "basis": "60483d5de20d",
-   "items": 3,
-   "updated": "2026-11-18T03:28+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "basis": "5cefa2a82a9f",
+   "items": 2,
+   "updated": "2026-11-18T15:46+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "ONGC": {
    "summary": "ONGC secured a ₹100 crore subsea installation contract for a pipeline replacement, while a major gas leak at its Konaseema plant forced evacuations, power shutdowns and area cordons.",
@@ -572,20 +572,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "SUPREMEIND": {
-   "summary": "Supreme Industries Ltd. has no recent company‑specific announcements. It remains listed in the Nifty 500 as a capital goods firm. No new developments have been reported.",
-   "why": "Shareholders may want to know if any changes are coming that could affect the company’s operations or ownership.",
+   "summary": "Supreme Industries Ltd. (SUPREMEIND) is listed in the Nifty 500 and operates in the capital goods sector. There are no specific recent announcements or events flagged for the company in the latest PulsEdge watch list.",
+   "why": "Shareholders watch large‑cap capital‑goods firms for stability and any future growth catalysts; the lack of recent news means no new drivers are evident now.",
    "upside": "",
    "downside": "",
    "watch": [
-    "Upcoming earnings release",
-    "Any regulatory filings",
-    "Market news affecting the capital goods sector"
+    "Look for any new order or contract wins announced by Supreme Industries",
+    "Monitor regulatory or legal developments affecting capital‑goods companies",
+    "Watch for changes in its Nifty 500 status or index weighting"
    ],
-   "about": "Supreme Industries Ltd. is a capital goods company listed on the NSE.",
-   "basis": "dab0aadd37fd",
-   "items": 1,
-   "updated": "2026-11-18T13:00+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "",
+   "basis": "af2044457e93",
+   "items": 2,
+   "updated": "2026-11-18T15:46+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "GRASIM": {
    "summary": "Grasim Industries has released the transcript of its earnings call for the September quarter. The full financial results for the quarter and half-year are not yet available.",
@@ -650,22 +650,6 @@
    "updated": "2026-11-18T12:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "TATAPOWER": {
-   "summary": "Tata Power says next quarter profits could triple due to faster project completion. They also commissioned a new 100.8 MW wind farm in Maharashtra. The company is part of the Nifty 500 and operates in the power sector.",
-   "why": "Higher profits could make the company more attractive to shareholders.",
-   "upside": "Triple growth in next quarter profits.",
-   "downside": "Guidance is forward‑looking and results may differ.",
-   "watch": [
-    "Next quarter earnings",
-    "Commissioning of 100.8 MW wind project",
-    "Sector index movement"
-   ],
-   "about": "Tata Power Co. Ltd. is a power company.",
-   "basis": "1ba79dce53d9",
-   "items": 2,
-   "updated": "2026-11-18T15:30+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
   "UPL": {
    "summary": "UPL's shares slipped below a key moving average, and media reports say the company may scrap its plan to change its corporate structure.",
    "why": "This matters because technical price signals can affect short‑term trading sentiment and a simpler corporate structure could influence investor appeal.",
@@ -729,6 +713,22 @@
    "items": 1,
    "updated": "2026-11-18T11:30+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "TATAPOWER": {
+   "summary": "Tata Power says next quarter profits could triple due to faster project completion. They also commissioned a new 100.8 MW wind farm in Maharashtra. The company is part of the Nifty 500 and operates in the power sector.",
+   "why": "Higher profits could make the company more attractive to shareholders.",
+   "upside": "Triple growth in next quarter profits.",
+   "downside": "Guidance is forward‑looking and results may differ.",
+   "watch": [
+    "Next quarter earnings",
+    "Commissioning of 100.8 MW wind project",
+    "Sector index movement"
+   ],
+   "about": "Tata Power Co. Ltd. is a power company.",
+   "basis": "1ba79dce53d9",
+   "items": 2,
+   "updated": "2026-11-18T15:30+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "ACMESOLAR": {
    "summary": "ACME Solar Holdings announced it has executed a Power Purchase Agreement, meaning it will sell electricity under a new contract. The broader energy sector index was flat over the past five sessions.",
@@ -827,20 +827,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "COALINDIA": {
-   "summary": "Coal India Ltd. is preparing to sell stakes in its subsidiaries – Mahanadi Coalfields and the Northern and Central Coalfields – through initial public offerings (IPOs). The Mahanadi IPO has already set a good listing gain signal, while the parent company is still in the preparation stage for the other two units. These moves could bring cash into the company and affect the value of existing shares.",
-   "why": "Shareholders should note that IPOs can raise capital for the company, potentially boosting its financial position, but they can also dilute existing holdings and influence share liquidity.",
-   "upside": "The IPOs could generate cash proceeds and improve the company’s valuation, and the Mahanadi IPO may offer good dividends to investors.",
-   "downside": "Potential dilution of the parent company’s stake and a possible drain of liquidity from existing shares could negatively impact shareholders.",
+   "summary": "Coal India is preparing to list stakes in its subsidiaries, including Mahanadi Coalfields and later Northern and Central Coalfields, through initial public offerings. The IPO activity could influence the value of existing Coal India shares as investors assess cash proceeds and potential dilution.",
+   "why": "The outcome of the IPOs may affect the cash position and ownership percentage of the parent, which can move the share price.",
+   "upside": "If the IPOs raise strong cash proceeds and unlock higher valuation for the remaining business, the parent’s shares could benefit.",
+   "downside": "Dilution of Coal India’s stake and pricing curbs or muted demand could limit any positive impact on the share price.",
    "watch": [
-    "Mahanadi Coalfields IPO listing performance and GMP signals",
-    "Northern and Central Coalfields IPO preparation status and market conditions",
-    "Impact of the IPOs on Coal India’s share price and liquidity"
+    "Mahanadi Coalfields IPO pricing and subscription levels",
+    "Progress and pricing of Northern and Central Coalfields IPOs",
+    "Market reaction to potential dilution and cash inflow"
    ],
-   "about": "Coal India Ltd. is India’s largest coal producer and a major player in the coal sector.",
-   "basis": "a8bd9f019147",
-   "items": 7,
-   "updated": "2026-11-18T15:30+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "Coal India Ltd is a major Indian coal mining company.",
+   "basis": "ff6f5a5a40a5",
+   "items": 8,
+   "updated": "2026-11-18T15:46+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "PRESTIGE": {
    "summary": "Prestige Estates Projects Ltd. is buying new businesses, including a 50% stake in Advent Convention and Hotels International, and increasing its ownership in the Prestige Vaishnaoi Projects. The realty sector has been rising, with the Nifty Realty index up 1.9% in the last session.",
