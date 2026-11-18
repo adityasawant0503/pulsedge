@@ -1,7 +1,45 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-18T12:54:30+05:30",
+ "updated": "2026-11-18T13:08:33+05:30",
  "items": [
+  {
+   "id": "8b871a88ca76b33a",
+   "time": "2026-11-18T13:07:02+05:30",
+   "headline": "SEAMEC: BAGS USD 10.77 MILLION (APPROX. ₹100 CRORE) SUBSEA INSTALLATION CONTRACT FOR ONGC’S PIPELINE REPLACEMENT PROJECT",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9549",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "ONGC",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Energy"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "company",
+   "action": "Watch for earnings guidance update reflecting the new contract",
+   "reason": [
+    "New subsea installation contract adds ~₹100 crore revenue",
+    "Strengthens order book and cash‑flow outlook"
+   ],
+   "risks": [
+    "Potential execution delays or cost overruns",
+    "Oil‑price volatility may affect profitability"
+   ],
+   "plain": "ONGC won a subsea installation contract worth about ₹100 crore for a pipeline replacement project.",
+   "why": "The contract could boost ONGC’s revenue and improve its outlook, benefiting shareholders.",
+   "check": "Check ONGC’s upcoming quarterly results for commentary on the contract impact.",
+   "original": "SEAMEC: BAGS USD 10.77 MILLION (APPROX. ₹100 CRORE) SUBSEA INSTALLATION CONTRACT FOR ONGC’S PIPELINE REPLACEMENT PROJECT",
+   "latency": 91.5,
+   "lane": "fast"
+  },
   {
    "id": "92407f02b9d406b6",
    "time": "2026-11-18T12:52:54+05:30",
@@ -975,38 +1013,6 @@
    "check": "Look at the company's next quarterly report to see if this profitable revenue share stays the same or grows.",
    "original": "ANGEL ONE: MTF REVENUE IS 20% OF TOTAL INCOME FOR Q2FY27",
    "latency": 99.8,
-   "lane": "fast"
-  },
-  {
-   "id": "083edefdf7839b20",
-   "time": "2026-11-17T12:58:41+05:30",
-   "headline": "BILLIONBRAINS GARAGE VENTURES: MTF REVENUE IS 10.1% OF TOTAL INCOME FOR Q2FY27",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9439",
-   "section": "trading",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [
-    {
-     "symbol": "GROWW",
-     "direction": "up"
-    }
-   ],
-   "sectors": [],
-   "impact": 25,
-   "confidence": 30,
-   "category": "Trading",
-   "action": "Read the source before acting",
-   "reason": [
-    "Keyword rules (AI classification is off)"
-   ],
-   "risks": [],
-   "plain": "",
-   "why": "It names a listed company or a kind of event that often moves share prices.",
-   "check": "Open the source and read what the company actually said.",
-   "original": "BILLIONBRAINS GARAGE VENTURES: MTF REVENUE IS 10.1% OF TOTAL INCOME FOR Q2FY27",
-   "latency": 36.0,
    "lane": "fast"
   }
  ]
