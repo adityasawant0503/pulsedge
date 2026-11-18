@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """PulsEdge fast lane: the quickest sources, checked about once a minute instead of every 15 minutes.
 
-Sources marked "fast": true in sources.json (today: RedBox Global India's Telegram channel) are read every
+Sources marked "fast": true in sources.json (today: the RedBox Global India and Walter Bloomberg Telegram channels) are read every
 --every seconds. Each new post is sorted at once, with the same AI models and keyword rules as news_pipeline.py,
 and added to pulsedge/data/fast.json, which the terminal reads every minute. With --publish (GitHub Actions)
 every change is committed to master and the site redeployed, so a post reaches the terminal two to three

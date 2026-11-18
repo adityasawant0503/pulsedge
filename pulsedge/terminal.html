@@ -479,6 +479,7 @@ dialog.gl::backdrop{background:rgba(8,7,12,.6)}
       <button class="tab" role="tab" data-t="watch" aria-selected="false">Watch</button>
       <button class="tab" role="tab" data-t="global" aria-selected="false">Global</button>
       <button class="tab" role="tab" data-t="redbox" aria-selected="false">RedBox</button>
+      <button class="tab" role="tab" data-t="walter" aria-selected="false">Walter</button>
       <button class="tab" role="tab" data-t="filings" aria-selected="false">Filings</button>
       <button class="tab" role="tab" data-t="money" aria-selected="false">Big money</button>
       <button class="tab" role="tab" data-t="mine" aria-selected="false">My stocks<span class="n" id="mine-n"></span></button>
@@ -732,6 +733,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     if(t==="ideas")return s.call==="buy"||s.call==="sell";
     if(t==="watch")return s.call==="watch";
     if(t==="redbox")return /redbox/i.test(s.source);
+    if(t==="walter")return /walter bloomberg/i.test(s.source);
     if(t==="global")return s.section==="global";
     if(t==="money")return /bulk|block deal/i.test(s.source);
     if(t==="filings")return /announcement|filing|nse|bse/i.test(s.source)||/filing|compliance/i.test(s.category);
@@ -797,10 +799,10 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     var vis=found||sigs.filter(function(s){return inTab(s,tab)});
     // Simple view keeps routine items out of the way until asked for
     if(!found&&view==="simple"&&tab==="all"&&!showRest){rest=vis.length;vis=vis.filter(function(s){return s.call!=="ignore"});rest-=vis.length}
-    // ...and puts each day's most important items first, twenty at a time (the RedBox tab stays newest first: it is there for speed)
+    // ...and puts each day's most important items first, twenty at a time (the RedBox and Walter tabs stay newest first: they are there for speed)
     var left=0;
     if(!found&&view==="simple"){
-      if(tab!=="redbox")vis=vis.slice().sort(function(a,b){var da=a.t?dayOf(a.t):"",db=b.t?dayOf(b.t):"";return da<db?1:da>db?-1:rank(a,b)});
+      if(tab!=="redbox"&&tab!=="walter")vis=vis.slice().sort(function(a,b){var da=a.t?dayOf(a.t):"",db=b.t?dayOf(b.t):"";return da<db?1:da>db?-1:rank(a,b)});
       left=Math.max(0,vis.length-shown);vis=vis.slice(0,shown);
     }
     document.getElementById("mine-n").textContent=hold.length?String(hold.length):"";
@@ -1424,7 +1426,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     var feed=mode==="sample"?getJson("data/feed.sample.json"):getJson("data/feed.json").then(function(j){j._live=!j.sample;return j}).catch(function(){return getJson("data/feed.sample.json")});
     var pre=(mode==="sample"?getJson("data/premarket.sample.json"):getJson("data/premarket.json").then(function(j){j._live=!j.sample;return j}).catch(function(){return getJson("data/premarket.sample.json")})).catch(function(){return null});
     var fl=getJson("data/flows.json").catch(function(){return null});   // public end-of-day data, shown in the demo too
-    // the fast lane (RedBox, checked every minute): its posts show here until the 15-minute run adds them to feed.json
+    // the fast lane (RedBox and Walter Bloomberg, checked every minute): its posts show here until the 15-minute run adds them to feed.json
     var fast=mode==="sample"?Promise.resolve(null):getJson("data/fast.json").catch(function(){return null});
     return Promise.all([feed,pre,fl,fast]).then(function(r){
       flows=r[2];
