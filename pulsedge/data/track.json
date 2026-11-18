@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T13:01:22+05:30",
+ "updated": "2026-11-18T13:15:01+05:30",
  "summary": {
-  "calls": 1683,
-  "scored_calls": 524,
+  "calls": 1684,
+  "scored_calls": 525,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "8b871a88ca76b33a",
+   "symbol": "ONGC",
+   "time": "2026-11-18T13:07:02+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "SEAMEC: BAGS USD 10.77 MILLION (APPROX. ₹100 CRORE) SUBSEA INSTALLATION CONTRACT FOR ONGC’S PIPELINE REPLACEMENT PROJECT",
+   "url": "https://t.me/Indiaredboxglobal/9549",
+   "entry_date": "2026-11-17",
+   "entry": 223.52
+  },
   {
    "id": "18a7ec16dd7b389d",
    "symbol": "BHARATFORG",
