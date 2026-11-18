@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T11:30+05:30",
+ "updated": "2026-11-18T11:45+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -603,20 +603,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "SOLARINDS": {
-   "summary": "Solar Industries India Ltd. is part of the Nifty 500 index. Recently, the company projected a yearly business growth of 20 to 25 percent over the next three years.",
-   "why": "This growth projection shows the company is confident about its future sales. However, the broader green energy sector has faced recent selling pressure and volatility.",
-   "upside": "Strong business confidence could help drive steady sales growth over the next three years.",
-   "downside": "The company faces execution risks in meeting its growth targets, alongside sector-wide volatility and policy changes.",
+   "summary": "Solar Industries India Ltd expects its business to grow 20‑25% each year for the next three years, showing confidence in future sales. However, there is execution risk and the broader green‑energy sector has shown recent price pressure.",
+   "why": "Shareholders care because strong growth could lift earnings, but missing the targets could hurt returns.",
+   "upside": "If the company delivers the projected growth, earnings and cash flow could improve.",
+   "downside": "Failure to meet growth targets or continued sector volatility could weigh on the share price.",
    "watch": [
-    "Whether the company meets its projected growth targets",
-    "Continued volatility in the green energy sector",
-    "Potential changes in solar sector policies"
+    "Progress on the company’s growth plan",
+    "Sector technical signals and volatility",
+    "Any new project wins or contracts"
    ],
-   "about": "Solar Industries India Ltd. operates in the chemicals sector and is among India's 500 largest listed companies.",
-   "basis": "42833d5a5fe1",
-   "items": 3,
-   "updated": "2026-11-18T11:02+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "Solar Industries India Ltd operates in the chemicals sector.",
+   "basis": "1abffa9db816",
+   "items": 4,
+   "updated": "2026-11-18T11:45+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "TATAPOWER": {
    "summary": "Tata Power leaders say profits are expected to triple next quarter because projects are being completed three times faster than in the first half of the year. The company also recently started using a new 100.8 MW wind farm in Maharashtra to generate electricity.",
@@ -1306,6 +1306,22 @@
    "updated": "2026-11-17T02:10+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "SAIL": {
+   "summary": "SAIL’s shares fell sharply as the Sensex dropped 300‑400 points, making it one of the biggest losers in the metal sector. The broader metal index was up 0.6% in the last session but down 1.1% over the past five sessions.",
+   "why": "Shareholders see price moves because SAIL is sensitive to overall market sentiment and metal price trends.",
+   "upside": "A rebound in metal prices or positive sector news could lift the stock.",
+   "downside": "Further declines in the broader market or continued weakness in metal prices could keep the stock under pressure.",
+   "watch": [
+    "Sensex movements",
+    "Metal sector index performance",
+    "Metal price trends"
+   ],
+   "about": "SAIL is a major Indian steel producer.",
+   "basis": "59a2e4bf44a1",
+   "items": 2,
+   "updated": "2026-11-18T11:45+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "BPCL": {
    "summary": "BPCL plans to start a new green jet fuel plant at its Mumbai refinery in December. The company also aims to increase the capacity of this plant to 61,000 tons per year by 2028.",
    "why": "These moves show BPCL is investing in sustainable energy products, which may help it stay relevant as industry standards change.",
@@ -1337,22 +1353,6 @@
    "items": 2,
    "updated": "2026-11-17T10:30+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "SAIL": {
-   "summary": "SAIL shares recently led losses in the metal sector as the broader market fell. The company is part of the Nifty 500 index, which tracks India's largest listed firms.",
-   "why": "Shareholders may see their investment value drop when the stock leads sector losses during a market decline.",
-   "upside": "Positive news in the metal sector could help reverse the recent price drop.",
-   "downside": "A continuing fall in the overall market could pull SAIL’s share price down further.",
-   "watch": [
-    "Future movements in the Sensex index",
-    "News specific to the metal sector",
-    "SAIL's performance relative to other Nifty Metal stocks"
-   ],
-   "about": "SAIL operates in the Metals & Mining sector.",
-   "basis": "4f076dc2c3f5",
-   "items": 1,
-   "updated": "2026-11-18T11:15+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "CANBK": {
    "summary": "Canara Bank shares have risen sharply as the banking sector hit record highs. Recent media comparisons with other public sector banks have drawn attention to its recent price gains.",
