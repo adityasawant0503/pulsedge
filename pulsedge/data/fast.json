@@ -1,7 +1,41 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-18T15:51:28+05:30",
+ "updated": "2026-11-18T15:55:28+05:30",
  "items": [
+  {
+   "id": "cf3390df6225248e",
+   "time": "2026-11-18T15:54:36+05:30",
+   "headline": "INDIA-US TRADE DEAL TO BE CONCLUDED SOON: COMMERCE SECY",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9574",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "positional",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "Export",
+    "Import"
+   ],
+   "impact": 40,
+   "confidence": 30,
+   "category": "Macro",
+   "action": "Monitor sector-specific news for concrete tariff changes before reacting to general headlines.",
+   "reason": [
+    "Broad macro headline without specific details on tariffs or sectors.",
+    "No direct impact on specific listed stocks yet."
+   ],
+   "risks": [
+    "Market may overreact to vague positive news.",
+    "Actual deal terms could differ from expectations."
+   ],
+   "plain": "The government says a trade agreement with the US will be finished soon.",
+   "why": "This is general news that does not say which businesses will benefit or how much.",
+   "check": "Look for official statements listing specific products or companies affected.",
+   "original": "INDIA-US TRADE DEAL TO BE CONCLUDED SOON: COMMERCE SECY",
+   "latency": 52.6,
+   "lane": "fast"
+  },
   {
    "id": "07ebf4b6c9837398",
    "time": "2026-11-18T15:50:18+05:30",
