@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T10:16+05:30",
+ "updated": "2026-11-18T10:32+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -778,6 +778,22 @@
    "updated": "2026-11-17T19:22+05:30",
    "model": "gemini-flash-lite-latest"
   },
+  "TCS": {
+   "summary": "TCS stock fell 26% this year despite good business results, and the company has been named a leader in agentic application management services. The broader IT sector has also slipped, adding pressure on the stock.",
+   "why": "Shareholders may see the price drop as a risk to their investment, while the leadership recognition could signal future growth opportunities.",
+   "upside": "Being recognized as a leader in AI software management could help TCS win new customers and boost its reputation.",
+   "downside": "Ongoing market weakness and quick sentiment shifts could keep the share price low or cause further declines.",
+   "watch": [
+    "TCS share price trend and any technical support levels",
+    "IT sector index performance over the next few sessions",
+    "Any new announcements about AI services or competitor moves"
+   ],
+   "about": "TCS is a major Indian IT services and solutions company.",
+   "basis": "7aa8c48732e4",
+   "items": 3,
+   "updated": "2026-11-18T10:32+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "IDEA": {
    "summary": "Vodafone Idea lost more mobile customers than expected in its recent quarter. At the same time, telecom stocks, including Vodafone Idea, saw a price increase as investors showed optimism for the sector.",
    "why": "Fewer customers mean less money coming in, which is risky for a company with high debts. This drop in subscribers could worsen the company's financial health.",
@@ -854,22 +870,6 @@
    ],
    "about": "Infosys is a major Indian Information Technology company and one of the 50 largest listed firms in the Nifty 50 index.",
    "basis": "ec2c902fbb06",
-   "items": 2,
-   "updated": "2026-11-17T16:35+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "TCS": {
-   "summary": "TCS was named a leader in agentic application management services by a research firm. At the same time, media outlets are comparing it with Infosys as investors look for opportunities in the IT sector.",
-   "why": "This recognition could help the company attract new clients, while the sector's recent dip may be affecting the mood of investors holding these shares.",
-   "upside": "Being seen as a leader in new AI software tools might help the company win more business.",
-   "downside": "The IT sector has fallen over the last week, which could keep pressure on share prices.",
-   "watch": [
-    "How the IT sector index moves in the coming days",
-    "Any new announcements about customer wins or contracts",
-    "Further comparisons or news involving Infosys"
-   ],
-   "about": "TCS is a major Indian information technology company.",
-   "basis": "f5fda1261826",
    "items": 2,
    "updated": "2026-11-17T16:35+05:30",
    "model": "qwen/qwen3.8-27b"

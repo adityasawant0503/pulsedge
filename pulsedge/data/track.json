@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T10:16:40+05:30",
+ "updated": "2026-11-18T10:32:15+05:30",
  "summary": {
-  "calls": 1649,
-  "scored_calls": 490,
+  "calls": 1650,
+  "scored_calls": 491,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "af7fdf8076d54d43",
+   "symbol": "TCS",
+   "time": "2026-11-18T10:15:21+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "TCS share price down 26% in 2026: Is this a buying opportunity? What do technical charts suggest? Key levels to watch",
+   "url": "https://www.livemint.com/market/stock-market-news/tcs-share-price-down-26-in-2026-is-this-a-buying-opportunity-what-do-technical-charts-suggest-key-levels-to-watch-11794974220332.html",
+   "entry_date": "2026-11-17",
+   "entry": 2406.6
+  },
   {
    "id": "bcffb29d4178746b",
    "symbol": "FEDERALBNK",
