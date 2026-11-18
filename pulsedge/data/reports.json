@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T13:30+05:30",
+ "updated": "2026-11-18T13:45+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a mix of company moves and commodity pressures on Wednesday. Fairfax sold its stake in IIFL Finance, pushing the stock up, while gold and copper companies faced downward pressure from falling commodity prices. Meanwhile, regulatory warnings hit drug plants, and several firms shared strong future growth and sales projections.",
+  "summary": "IIFL Finance shares jumped 6% after Fairfax sold its entire stake, creating a large block deal that boosted buying interest. Meanwhile, gold loan companies like Muthoot and Manappuram fell 5% because lower gold prices make their loans riskier. Caplin Point dropped 13% over three days after the US FDA flagged one of its plants, which can block new product approvals. PSU banks and realty stocks were the strongest sectors, while IT stocks lagged.",
   "themes": [
-   "Stake sales and block deals driving stock movements",
-   "Falling commodity prices weighing on metal and gold lenders",
-   "Company growth projections and plant maintenance updates"
+   "Large institutional sales, like Fairfax exiting IIFL Finance, can cause sharp short-term price moves.",
+   "Commodity price swings, such as falling copper and gold, directly impact the stock performance of related companies.",
+   "Regulatory actions, including FDA warnings and court orders, create significant uncertainty for specific firms."
   ],
   "watch": [
-   "Value Industries' Supreme Court insolvency case and management changes",
-   "Signature Global and Tata Power progress toward their stated business goals",
-   "Netweb Technologies following its strong AI-related order book"
+   "Whether IIFL Finance shares face profit-taking after the recent 6% jump.",
+   "If gold loan companies can maintain profits despite lower gold prices and high competition.",
+   "The outcome of the Supreme Court decision regarding Value Industries' insolvency case."
   ],
   "date": "2026-11-18",
-  "basis": "82cfc3e8b0ac",
-  "updated": "2026-11-18T13:00+05:30",
-  "model": "gemini-flash-lite-latest",
-  "items": 73
+  "basis": "b531c16266dc",
+  "updated": "2026-11-18T13:45+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 90
  },
  "stocks": {
   "TMPV": {
@@ -906,6 +906,22 @@
    "updated": "2026-11-17T19:22+05:30",
    "model": "gemini-flash-lite-latest"
   },
+  "HINDALCO": {
+   "summary": "Hindalco shares have fallen recently as global metal prices dropped and the US dollar strengthened. This decline is part of a broader drop in Indian metal stocks, which also affected the Nifty Metal index.",
+   "why": "Lower metal prices can reduce the profit margins for companies like Hindalco, which may impact the value of their shares in the short term.",
+   "upside": "A sudden reversal in the US dollar or new stimulus from China could support metal prices.",
+   "downside": "Continued selling momentum could keep stock prices depressed, and earnings disappointments might lead to further downward revisions.",
+   "watch": [
+    "Global commodity price trends",
+    "US Dollar index movements",
+    "Recent financial results"
+   ],
+   "about": "Hindalco is a major Indian company in the metals and mining sector.",
+   "basis": "d4ba7c2f109d",
+   "items": 3,
+   "updated": "2026-11-18T13:45+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "SAIL": {
    "summary": "SAIL shares fell sharply as part of a broader drop in metal stocks, driven by lower global commodity prices and a stronger US dollar. The company was among the biggest losers in the Nifty Metal index during this period.",
    "why": "Lower commodity prices can reduce the profit margins for steel producers, which may affect the value of shares held by investors.",
@@ -1001,22 +1017,6 @@
    "items": 3,
    "updated": "2026-11-16T11:16+05:30",
    "model": "gemini-flash-lite-latest"
-  },
-  "HINDALCO": {
-   "summary": "Hindalco’s shares fell as metal stocks dropped 2% on lower global commodity prices and a stronger US dollar. Investors are also focused on its upcoming earnings report to gauge profitability.",
-   "why": "Margin pressure from falling metal prices can affect earnings, so shareholders watch profit trends closely.",
-   "upside": "A rebound in commodity prices or a weaker US dollar could improve margins.",
-   "downside": "Continued low prices or a strong dollar could further squeeze margins and hurt earnings.",
-   "watch": [
-    "Hindalco earnings release",
-    "Global metal price movements",
-    "US Dollar index and China stimulus news"
-   ],
-   "about": "Hindalco Industries Ltd. is a leading Indian metal producer.",
-   "basis": "6c555a9db2fb",
-   "items": 2,
-   "updated": "2026-11-18T12:30+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "GODREJPROP": {
    "summary": "Godrej Properties reported a regulatory order, which is often a minor procedural issue. At the same time, the broader real estate sector has seen a sharp rise in stock prices this month.",
