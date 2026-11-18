@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T11:46:04+05:30",
+ "updated": "2026-11-18T12:01:35+05:30",
  "summary": {
-  "calls": 1670,
-  "scored_calls": 511,
+  "calls": 1672,
+  "scored_calls": 513,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "d4462b9e9bdb8dca",
+   "symbol": "GODREJPROP",
+   "time": "2026-11-18T11:49:11+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Godrej Properties Limited: GODREJ PROPERTIES LIMITED has informed the Exchange about Action(s) taken or orders passed (sub-para 20) |SUBJECT: Actions initiated/",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/AIATOP_3014_WebXMLFile_20261118_114909554.xml",
+   "entry_date": "2026-11-17",
+   "entry": 1892.4
+  },
+  {
+   "id": "78931b6117fcd693",
+   "symbol": "KPIL",
+   "time": "2026-11-18T11:45:50+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Kalpataru Projects International Limited: Kalpataru Projects International Limited has informed the Exchange about Action(s) taken or orders passed |SUBJECT: Ac",
+   "url": "https://nsearchives.nseindia.com/corporate/KALPATPOWR_18112026114540_SEintimation_18112026.pdf",
+   "entry_date": "2026-11-17",
+   "entry": 1332.3
+  },
   {
    "id": "fdf957392bfc616d",
    "symbol": "NETWEB",

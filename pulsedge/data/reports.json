@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T11:45+05:30",
+ "updated": "2026-11-18T12:01+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a busy day on the Indian stock market as major corporate deals and commodity price shifts impacted specific sectors. Fairfax sold its entire stake in IIFL Finance, causing the stock to jump about 6 percent. Meanwhile, gold financiers and Hindustan Copper faced downward pressure due to dropping commodity prices, and Hindustan Organic Chemicals extended the shutdown of its Kochi phenol plant.",
+  "summary": "IIFL Finance shares jumped 6% after Fairfax sold its entire 13.25% stake in a large block deal. Meanwhile, gold loan companies like Muthoot and Manappuram fell 5% because falling gold prices make their lending riskier. Hindustan Copper shares dropped 3% as copper prices hit a five-month low, despite the company reporting higher profits. PSU banks and realty stocks were the strongest performers in the previous session.",
   "themes": [
-   "Large block deals driving sharp moves in specific stocks",
-   "Falling commodity prices putting pressure on related sectors",
-   "Global tensions and technological developments influencing market sentiment"
+   "Large block deals can cause sudden price swings in individual stocks.",
+   "Commodity price drops are hurting related companies like copper miners and gold lenders.",
+   "Banking and realty sectors showed strength while IT and energy lagged."
   ],
   "watch": [
-   "Australian Premium Solar's projected growth of 20 to 25 percent annually",
-   "Tata Power's expectation of triple profit growth next quarter",
-   "Biocon's new marketing authorization for a cancer drug in Europe"
+   "Whether IIFL Finance holds its gains or faces profit-taking after the 6% jump.",
+   "If copper prices continue to fall, which could pressure Hindustan Copper's future earnings.",
+   "Tata Power's next quarter results, which management expects to show significant growth."
   ],
   "date": "2026-11-18",
-  "basis": "43cec2a2b431",
-  "updated": "2026-11-18T11:02+05:30",
-  "model": "gemini-flash-lite-latest",
-  "items": 41
+  "basis": "4fc72a147a14",
+  "updated": "2026-11-18T12:01+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 55
  },
  "stocks": {
   "TMPV": {
@@ -267,22 +267,6 @@
    "updated": "2026-11-17T13:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "NUVAMA": {
-   "summary": "Nuvama Wealth Management recently announced the allotment of new securities to raise fresh capital. This move adds to a period where the broader financial services sector has seen modest gains over the last week.",
-   "why": "Issuing new shares increases the total number of shares in circulation, which can reduce the value of each existing share held by current investors.",
-   "upside": "The new funds raised could be used for business growth, potentially limiting downside risk.",
-   "downside": "The increase in total shares may dilute the ownership percentage of current shareholders.",
-   "watch": [
-    "How the company plans to use the newly raised capital",
-    "Future announcements regarding the use of funds",
-    "Performance of the broader financial services sector"
-   ],
-   "about": "Nuvama Wealth Management is a company in the Financial Services sector.",
-   "basis": "a1815db9d55f",
-   "items": 2,
-   "updated": "2026-11-17T11:30+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "MANAPPURAM": {
    "summary": "PulsEdge flagged that gold-lending companies like Manappuram Finance are currently under pressure. This is happening because gold prices have dropped and competition from other lenders is high.",
    "why": "This matters to shareholders because falling gold prices reduce the value of the collateral, which can hurt profits and lead to tighter profit margins from competitive lending rates.",
@@ -475,6 +459,22 @@
    "updated": "2026-11-18T11:02+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "NUVAMA": {
+   "summary": "Nuvama Wealth Management recently announced it is issuing new shares to raise fresh capital. This move adds to the context of a financial sector that has seen a slight rise in recent trading sessions.",
+   "why": "Issuing new shares increases the total number of shares available, which can reduce the value of each existing share held by current investors.",
+   "upside": "The new funds raised could be used for business growth, which might limit potential losses for the company.",
+   "downside": "The increase in total shares can dilute the ownership percentage of current shareholders, often putting downward pressure on the stock price.",
+   "watch": [
+    "How the company plans to use the newly raised funds",
+    "The final number of shares allotted in this issuance",
+    "Continued performance of the broader Financials sector index"
+   ],
+   "about": "",
+   "basis": "64ba87cecef2",
+   "items": 1,
+   "updated": "2026-11-18T12:01+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "ALKEM": {
    "summary": "Alkem Laboratories Ltd. (ALKEM) saw a large block sale of 6.0 lakh shares by the Samprada & Nanhamati Singh Family Trust, worth ₹302 crore, on 17 November 2026. On the same day, ICICI Prudential Mutual Fund, DSP Mutual Fund and Nippon India Mutual Fund each bought 1.6–1.8 lakh shares, each trade worth around ₹80–90 crore.",
    "why": "These institutional trades can signal either confidence in the company or a need for liquidity, which may influence the stock’s trading activity.",
@@ -508,20 +508,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "TMCV": {
-   "summary": "Tata Motors recently reported a Q2 loss despite revenue growth, and its stock has dropped 22% in 2026. The company is also facing questions from the stock exchange about a possible public offering for Tata Sons and dealing with struggles in China for its JLR unit.",
-   "why": "These events matter to share owners because weak earnings, struggles in key markets, and news about public offerings can directly cause the stock price to move up or down.",
-   "upside": "The stock price recently ended a day higher than its long-term average, which suggests it might be starting to recover from a long period of decline, and the company might offset struggles in China with sales in other markets.",
-   "downside": "Struggles in China could weigh on the share price, and weak guidance could lead to further selling or downward revisions.",
+   "summary": "Tata Motors released its quarterly results, which included a lowered outlook that disappointed some investors. The stock price recently closed above its long-term average, suggesting a possible recovery, but the exchange is asking the company to clarify news about a potential new public offering.",
+   "why": "The lowered outlook and questions about a new share offering create uncertainty that can cause the share price to move up or down sharply.",
+   "upside": "The stock closing above its long-term average suggests it might be starting to recover from a long period of decline.",
+   "downside": "JLR's struggles in China are seen as a drag on the company, and the lowered outlook from recent results may lead to further selling.",
    "watch": [
-    "Whether the company can offset weak sales in China with other markets.",
-    "Clarifications from the company regarding the possible public offering.",
-    "Trading volume to see if recent stock price gains are sustained."
+    "Clarification from the company regarding the news about a possible new public offering.",
+    "Whether the stock maintains its position above the 200-day moving average with sufficient trading volume.",
+    "How JLR's performance in China affects the overall group results."
    ],
-   "about": "Tata Motors Ltd. is a car company that is part of India's Nifty 500 index.",
-   "basis": "063f1e3fb76c",
-   "items": 7,
-   "updated": "2026-11-18T09:30+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "",
+   "basis": "ebc98a35e7e9",
+   "items": 6,
+   "updated": "2026-11-18T12:01+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "TATACHEM": {
    "summary": "Tata Chemicals shares jumped nearly 10% in a single day and rose 11% over three days due to rumors that its parent company, Tata Sons, may list on the stock market. The company has denied having any knowledge of these negotiations, and the stock exchange has asked for clarification on the recent news.",
@@ -649,6 +649,22 @@
    "items": 3,
    "updated": "2026-11-18T10:16+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "KPIL": {
+   "summary": "Kalpataru Projects International Ltd. recently announced it won a new infrastructure contract. Around the same time, the company disclosed that it received an official regulatory or tax order.",
+   "why": "The new contract adds to the company's future workload and potential revenue. The regulatory order introduces a small financial risk, though such notices are often routine and contested.",
+   "upside": "The new contract secures additional work for the company, which supports its future business activity.",
+   "downside": "The regulatory order could result in a monetary fine, although the company may contest it in court.",
+   "watch": [
+    "The specific value and profit margin of the newly won contract.",
+    "Any updates on the status of the regulatory or tax order.",
+    "Further announcements regarding new project orders."
+   ],
+   "about": "Kalpataru Projects International Ltd. is an engineering and construction company.",
+   "basis": "6744d2abc9e0",
+   "items": 2,
+   "updated": "2026-11-18T12:01+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "BIOCON": {
    "summary": "Biocon received approval from US and EU regulators to sell a new cancer drug called pertuzumab. This allows the company to start selling this medication in both major markets.",
@@ -778,22 +794,6 @@
    "updated": "2026-11-17T11:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "KPIL": {
-   "summary": "Kalpataru Projects International announced it has won a new infrastructure contract. This adds to the company's list of upcoming work.",
-   "why": "New contracts generally mean more future revenue, which can support the company's long-term value.",
-   "upside": "The new work could lead to higher future income if the project is profitable.",
-   "downside": "The contract might be worth less or have lower profit margins than investors expected.",
-   "watch": [
-    "The specific value of the new contract",
-    "The expected profit margin on this project",
-    "Future announcements about other orders"
-   ],
-   "about": "Kalpataru Projects International is a construction company that builds infrastructure.",
-   "basis": "6f74c17b96da",
-   "items": 1,
-   "updated": "2026-11-16T09:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "OIL": {
    "summary": "Oil India is feeling the impact of recent oil price swings. Prices have fallen sharply on a supply surplus outlook, though a small rise in U.S. crude futures was noted. The oil‑and‑gas sector index has edged higher.",
    "why": "The company's earnings depend on crude oil prices, so price moves can affect its profit and dividend outlook.",
@@ -921,6 +921,22 @@
    "items": 3,
    "updated": "2026-11-16T11:16+05:30",
    "model": "gemini-flash-lite-latest"
+  },
+  "GODREJPROP": {
+   "summary": "Godrej Properties reported a regulatory order, which is often a minor procedural issue. At the same time, the broader real estate sector has seen a sharp rise in stock prices this month.",
+   "why": "Shareholders need to know if the regulatory order leads to fines or operational problems. The sector's recent surge shows high investor interest, which can affect the stock's value.",
+   "upside": "Strong momentum in the real estate sector could continue to support the company's share price.",
+   "downside": "The regulatory order could result in financial penalties or compliance hurdles, and the sector may face a correction after its recent sharp rise.",
+   "watch": [
+    "Details of the regulatory order and any associated fines",
+    "Performance of the Nifty Realty index",
+    "Company announcements regarding compliance"
+   ],
+   "about": "Godrej Properties is a real estate company listed in the Nifty 500 index.",
+   "basis": "64d45239a388",
+   "items": 2,
+   "updated": "2026-11-18T12:01+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "ICICIBANK": {
    "summary": "ICICI Bank shares are moving with the broader market, which recently saw a strong rise led by banking stocks. The Financials sector has gained 3.0% over the last five sessions.",
@@ -1064,22 +1080,6 @@
    "basis": "cd9df50499cb",
    "items": 1,
    "updated": "2026-11-17T15:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "GODREJPROP": {
-   "summary": "Godrej Properties is part of a realty sector that has surged about 14% in November, though the sector index fell 1.3% in the latest session.",
-   "why": "Share owners feel the impact of strong sector momentum and the risk of a short‑term correction.",
-   "upside": "A continued rally in the Nifty Realty index could lift Godrej Properties’ stock.",
-   "downside": "If the sector is deemed overextended, a correction could pull the stock lower.",
-   "watch": [
-    "Nifty Realty index performance",
-    "Any company‑specific news on Godrej Properties",
-    "Overall market sentiment toward realty stocks"
-   ],
-   "about": "",
-   "basis": "fb74963cbe28",
-   "items": 1,
-   "updated": "2026-11-17T11:02+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "LODHA": {
