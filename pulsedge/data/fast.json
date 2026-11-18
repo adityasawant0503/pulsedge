@@ -1,7 +1,73 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-18T12:38:30+05:30",
+ "updated": "2026-11-18T12:54:30+05:30",
  "items": [
+  {
+   "id": "92407f02b9d406b6",
+   "time": "2026-11-18T12:52:54+05:30",
+   "headline": "FINANCE MINISTRY SOURCES DENY BLOOMBERG REPORT ON PROPOSED DERIVATIVES TAX HIKE – REDBOX GLOBAL",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9548",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Derivatives",
+    "Broking"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "Rumor Denial",
+   "action": "Monitor official government press releases for any future policy changes.",
+   "reason": [
+    "Ministry denies the specific Bloomberg report.",
+    "No new policy information is introduced."
+   ],
+   "risks": [
+    "Market may react to the rumor itself before the denial settles."
+   ],
+   "plain": "Government officials said a news report about a new tax on trading is not true.",
+   "why": "Since the government says the story is false, it does not change the rules for investors right now.",
+   "check": "Look for official government statements to confirm the tax status.",
+   "original": "FINANCE MINISTRY SOURCES DENY BLOOMBERG REPORT ON PROPOSED DERIVATIVES TAX HIKE – REDBOX GLOBAL",
+   "latency": 96.5,
+   "lane": "fast"
+  },
+  {
+   "id": "c0bb1528389f0bf5",
+   "time": "2026-11-18T12:52:52+05:30",
+   "headline": "FINANCE MINISTRY SOURCES DENY REPORT ON PROPOSED DERIVATIVES TAX HIKE – REDBOX GLOBAL",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9547",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Derivatives",
+    "Broking"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "Rumor Denial",
+   "action": "Monitor official government press releases for any future policy changes.",
+   "reason": [
+    "Duplicate headline regarding the same denial.",
+    "No actionable new information."
+   ],
+   "risks": [
+    "Repeated rumors can cause unnecessary volatility."
+   ],
+   "plain": "Government officials said a news report about a new tax on trading is not true.",
+   "why": "Since the government says the story is false, it does not change the rules for investors right now.",
+   "check": "Look for official government statements to confirm the tax status.",
+   "original": "FINANCE MINISTRY SOURCES DENY REPORT ON PROPOSED DERIVATIVES TAX HIKE – REDBOX GLOBAL",
+   "latency": 98.5,
+   "lane": "fast"
+  },
   {
    "id": "807e114fe4611c87",
    "time": "2026-11-18T12:37:03+05:30",
@@ -941,109 +1007,6 @@
    "check": "Open the source and read what the company actually said.",
    "original": "BILLIONBRAINS GARAGE VENTURES: MTF REVENUE IS 10.1% OF TOTAL INCOME FOR Q2FY27",
    "latency": 36.0,
-   "lane": "fast"
-  },
-  {
-   "id": "6ab3715367729c1d",
-   "time": "2026-11-17T12:53:22+05:30",
-   "headline": "NEWGEN SOFTWARE: CO. WINS RUPEES 21.94 CRORE GHANA CONTRACT FOR AI-ENABLED AUTOMATED CREDIT MANAGEMENT SOLUTIONS",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9438",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "IT Services"
-   ],
-   "impact": 0,
-   "confidence": 0,
-   "category": "Corporate Update",
-   "action": "No specific action required for listed stocks.",
-   "reason": [
-    "No listed company named in the headline.",
-    "Contract size is small relative to major IT peers."
-   ],
-   "risks": [],
-   "plain": "A software company won a contract in Ghana worth about 22 million rupees.",
-   "why": "This is a small deal for a company not listed on the stock exchange, so it does not affect your shares.",
-   "check": "",
-   "original": "NEWGEN SOFTWARE: CO. WINS RUPEES 21.94 CRORE GHANA CONTRACT FOR AI-ENABLED AUTOMATED CREDIT MANAGEMENT SOLUTIONS",
-   "latency": 55.1,
-   "lane": "fast"
-  },
-  {
-   "id": "de467e679e892d9c",
-   "time": "2026-11-17T12:49:17+05:30",
-   "headline": "LT FOODS: CO. MAKES BASMATI RICE THE HERO OF EVERY MEAL WITH DELIGHT’S NEW CAMPAIGN",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9437",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "LTFOODS",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "FMCG"
-   ],
-   "impact": 5,
-   "confidence": 20,
-   "category": "Marketing",
-   "action": "No immediate trading action required for marketing announcements.",
-   "reason": [
-    "Routine marketing campaign launch.",
-    "No direct financial impact or new business data."
-   ],
-   "risks": [
-    "None significant."
-   ],
-   "plain": "The company announced a new advertising campaign for its rice products.",
-   "why": "This is just a marketing move and does not change the company's business or profits.",
-   "check": "",
-   "original": "LT FOODS: CO. MAKES BASMATI RICE THE HERO OF EVERY MEAL WITH DELIGHT’S NEW CAMPAIGN",
-   "latency": 60.4,
-   "lane": "fast"
-  },
-  {
-   "id": "6a1f19e61ec3b86b",
-   "time": "2026-11-17T12:45:47+05:30",
-   "headline": "TATA CHEMICALS: CO. DENIES KNOWLEDGE OF TATA SONS IPO NEGOTIATIONS, SAYS UNAWARE OF UNDISCLOSED INFORMATION BEHIND SHARE PRICE RALLY",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9436",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [
-    {
-     "symbol": "TATACHEM",
-     "direction": "up"
-    }
-   ],
-   "sectors": [],
-   "impact": 30,
-   "confidence": 40,
-   "category": "company",
-   "action": "Watch for price reaction if the rumor fades and volume spikes.",
-   "reason": [
-    "Denial may curb speculative buying.",
-    "If IPO talks were true, could have driven rally."
-   ],
-   "risks": [
-    "Rumor could resurface.",
-    "Market may ignore denial."
-   ],
-   "plain": "Tata Chemicals said it knows nothing about any IPO talks that were rumored.",
-   "why": "If you own shares, the denial could cool hype and affect price, but the impact is uncertain.",
-   "check": "Look for any official filing or announcement confirming or denying IPO plans.",
-   "original": "TATA CHEMICALS: CO. DENIES KNOWLEDGE OF TATA SONS IPO NEGOTIATIONS, SAYS UNAWARE OF UNDISCLOSED INFORMATION BEHIND SHARE PRICE RALLY",
-   "latency": 92.4,
    "lane": "fast"
   }
  ]
