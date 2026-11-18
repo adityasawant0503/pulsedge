@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T14:15+05:30",
+ "updated": "2026-11-18T14:31+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "IIFL Finance shares jumped 6% after Fairfax sold its entire stake, creating a large block deal that boosted buying interest. Meanwhile, gold loan companies like Muthoot and Manappuram fell 5% because lower gold prices make their loans riskier. Caplin Point dropped 13% over three days after the US FDA flagged one of its plants, which can block new product approvals. PSU banks and realty stocks were the strongest sectors, while IT stocks lagged.",
+  "summary": "IIFL Finance shares jumped 6% after Fairfax sold its entire stake, creating strong buying interest. Meanwhile, gold loan companies like Muthoot and Manappuram fell 5% as falling gold prices made their lending riskier. Trading firm stocks dropped up to 3% because the market regulator is considering stricter rules for their operations.",
   "themes": [
-   "Large institutional sales, like Fairfax exiting IIFL Finance, can cause sharp short-term price moves.",
-   "Commodity price swings, such as falling copper and gold, directly impact the stock performance of related companies.",
-   "Regulatory actions, including FDA warnings and court orders, create significant uncertainty for specific firms."
+   "Large institutional sales can boost share prices in the short term.",
+   "Falling commodity prices are hurting related companies like gold lenders and copper miners.",
+   "New regulatory rules are causing uncertainty for stock trading platforms."
   ],
   "watch": [
-   "Whether IIFL Finance shares face profit-taking after the recent 6% jump.",
-   "If gold loan companies can maintain profits despite lower gold prices and high competition.",
-   "The outcome of the Supreme Court decision regarding Value Industries' insolvency case."
+   "Whether the regulator finalizes stricter rules for trading platforms.",
+   "If copper prices stay low, which could affect Hindustan Copper's future profits.",
+   "How gold loan companies manage risk if gold prices continue to drop."
   ],
   "date": "2026-11-18",
-  "basis": "b531c16266dc",
-  "updated": "2026-11-18T13:45+05:30",
+  "basis": "903e77cc25a2",
+  "updated": "2026-11-18T14:31+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 90
+  "items": 108
  },
  "stocks": {
   "TMPV": {
@@ -92,20 +92,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "KAYNES": {
-   "summary": "Kaynes Technology's stock price has fallen sharply over the last two days, dropping to a 52-week low. This happened because the company reported a 65% drop in quarterly profits and is slowing down deliveries to focus on collecting unpaid bills from state authorities.",
-   "why": "Lower profits mean the company is earning less money, which often makes investors less willing to pay high prices for its shares. The decision to pause some deliveries to chase unpaid bills also signals cash flow challenges.",
-   "upside": "The stock might see a short-term price recovery simply because it has fallen so steeply in a short time.",
-   "downside": "If the company continues to struggle with collecting money from state authorities or if profits keep falling, the stock price could drop further.",
+   "summary": "Kaynes Technology reported a sharp fall in quarterly profit and margins, slowed smart‑meter deliveries to chase overdue payments, and its shares have tumbled over 20% in recent sessions.",
+   "why": "The profit plunge and cash‑flow concerns hurt shareholder value and could pressure the stock further.",
+   "upside": "A faster‑than‑expected recovery of state dues or a technical bounce could lift the share price.",
+   "downside": "Continued margin erosion or further profit declines could drive the stock lower.",
    "watch": [
-    "How quickly the company collects pending payments from state authorities.",
-    "Whether other electronics companies report similar weak results.",
-    "If the stock price stabilizes or continues to fall after the recent sharp drop."
+    "Recovery speed of pending state dues",
+    "Margin trends in upcoming quarters",
+    "Performance of peer electronics firms such as Amber Enterprises"
    ],
-   "about": "Kaynes Technology is an electronics manufacturer in the capital goods sector.",
-   "basis": "b65dd434d90f",
-   "items": 9,
-   "updated": "2026-11-17T13:45+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Kaynes Technology manufactures electronics, including smart meters.",
+   "basis": "66c79c2701f0",
+   "items": 6,
+   "updated": "2026-11-18T14:31+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "INOXWIND": {
    "summary": "Inox Wind reported a 42% drop in its second-quarter profits because its costs went up, which caused its share price to fall sharply. The stock is now down 60% over the past year, though some analysts believe it may rise again.",
@@ -155,6 +155,22 @@
    "updated": "2026-11-18T09:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "RVNL": {
+   "summary": "RVNL’s shares have plunged, down about 71% from their peak and up to 50% this year, with analysts calling the stock overpriced.",
+   "why": "Shareholders see a sharp loss in value and face the risk of further declines if the valuation does not improve.",
+   "upside": "A rebound could occur if the company’s fundamentals remain strong.",
+   "downside": "The stock could fall further as analysts expect more downside due to high valuation.",
+   "watch": [
+    "Valuation and price correction risk",
+    "Company earnings or fundamental updates",
+    "Broader mid‑cap market trends"
+   ],
+   "about": "Rail Vikas Nigam Ltd is a construction company focused on railway infrastructure.",
+   "basis": "b417c8a77f69",
+   "items": 2,
+   "updated": "2026-11-18T14:31+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "SWIGGY": {
    "summary": "Swiggy's shares have fallen sharply this year, losing up to half their value, while its latest Q2 results show profit growth faster than its rival Zomato's parent. The company is in the Nifty 500 consumer services index.",
    "why": "Shareholders feel the impact of the steep price drop and watch profit growth that could shape future earnings.",
@@ -169,22 +185,6 @@
    "basis": "e1600c42a6e6",
    "items": 2,
    "updated": "2026-11-17T00:55+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "RVNL": {
-   "summary": "Rail Vikas Nigam Ltd (RVNL) shares have fallen sharply, losing up to about 50% of their value so far this year.",
-   "why": "The steep decline hurts investors and may indicate ongoing weakness in the stock.",
-   "upside": "If the company’s fundamentals remain strong, the shares could rebound.",
-   "downside": "Continued weakness could keep the stock depressed.",
-   "watch": [
-    "Any signs of improving earnings or project wins",
-    "Broader mid‑cap market trends",
-    "Updates on the company’s railway infrastructure projects"
-   ],
-   "about": "RVNL builds and manages railway infrastructure projects.",
-   "basis": "2d8b12be97e2",
-   "items": 1,
-   "updated": "2026-11-16T16:02+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "GROWW": {
@@ -204,20 +204,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "EICHERMOT": {
-   "summary": "Eicher Motors reported record quarterly sales and profits, leading to a significant rise in its share price. The company also granted 105 employee stock options, which may slightly dilute existing shares.",
-   "why": "Strong financial results can increase the value of the company, potentially benefiting shareholders, while new stock options might slightly reduce the value of each existing share.",
-   "upside": "Continued growth in premium motorcycle sales could further boost the company's performance.",
-   "downside": "Competition in the mid-range bike segment and the potential dilution from new stock options could pressure the stock price.",
+   "summary": "Eicher Motors reported its best‑ever quarterly sales and profit, beating expectations, and its shares jumped over 3% as brokerages stayed positive on premium motorcycle growth.",
+   "why": "Strong results can boost shareholder value, but the grant of employee stock options could dilute earnings per share.",
+   "upside": "If demand for premium motorcycles remains strong, earnings could improve further.",
+   "downside": "Dilution from exercised stock options or heightened competition in the 350‑650cc bike segment could pressure the stock.",
    "watch": [
-    "How the stock price reacts to the recent positive news",
-    "The impact of the 105 new employee stock options on existing shares",
-    "Competitive developments in the 350cc-650cc motorcycle segment"
+    "Premium motorcycle sales momentum",
+    "Exercise of the 105 employee stock options",
+    "Competitive activity in the 350‑650cc segment"
    ],
-   "about": "Eicher Motors is an Indian automobile and auto components company known for its motorcycles.",
-   "basis": "15eb3aaf52cd",
-   "items": 6,
-   "updated": "2026-11-17T15:16+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Eicher Motors manufactures motorcycles, including premium models, and also produces commercial vehicles.",
+   "basis": "80a57b70be01",
+   "items": 5,
+   "updated": "2026-11-18T14:31+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "CAPLIPOINT": {
    "summary": "Caplin Point Laboratories informed the exchange that the US FDA classified an inspection at its subsidiary, Caplin Steriles, as Official Action Indicated. This status signals serious compliance issues that could delay approvals for new products.",
@@ -236,20 +236,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "ANGELONE": {
-   "summary": "Angel One reported that MTF revenue now accounts for 20% of its total income for Q2FY27, a fee type that is usually more profitable. The stock also rose about 6% in the latest session.",
-   "why": "The shift in revenue mix could affect the company’s earnings profile, and the recent price jump shows strong short‑term market interest.",
-   "upside": "If MTF fees keep growing and market trading volumes stay high, earnings could improve.",
-   "downside": "MTF revenue can be volatile and may fall if trading activity slows.",
+   "summary": "Angel One shares recently jumped 6% before falling up to 3% as the regulator, SEBI, considers new rules for trading platforms. The company noted that fees from these platforms now make up one-fifth of its total income.",
+   "why": "Changes in these rules could directly affect how much money the company earns from its most profitable services. This uncertainty can cause the share price to move up or down quickly.",
+   "upside": "The company is earning a larger share of its income from high-margin trading fees, which suggests it is becoming more efficient.",
+   "downside": "If the regulator restricts these trading platforms, the company may earn less money, which could lower its share price.",
    "watch": [
-    "MTF revenue share in upcoming quarters",
-    "Overall market trading volumes",
-    "Performance of the Financials sector index"
+    "Official announcements from SEBI regarding new rules for trading platforms",
+    "Changes in daily trading volumes that affect fee income",
+    "Whether the recent stock price drop continues or stabilizes"
    ],
-   "about": "Angel One Ltd. is a financial services firm listed in the Nifty 500.",
-   "basis": "7be14e7fe773",
-   "items": 2,
-   "updated": "2026-11-17T13:15+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Angel One is a financial services company listed on the NSE.",
+   "basis": "c23f30092f85",
+   "items": 3,
+   "updated": "2026-11-18T14:31+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "MANAPPURAM": {
    "summary": "PulsEdge flagged that gold-lending companies like Manappuram Finance are currently under pressure. This is happening because gold prices have dropped and competition from other lenders is high.",
@@ -459,6 +459,22 @@
    "updated": "2026-11-18T11:02+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "BSE": {
+   "summary": "BSE shares fell by up to 3% as the regulator, SEBI, considered stricter rules for trading platforms. At the same time, its main rival, NSE, is launching new trading products to compete for customers.",
+   "why": "Stricter rules could limit how much money BSE makes from trading, which might lower the value of its shares.",
+   "upside": "If BSE successfully competes with NSE for traders, it could keep its revenue steady.",
+   "downside": "New regulations might reduce the number of trades BSE handles, leading to lower income.",
+   "watch": [
+    "Final decisions from SEBI on trading platform rules",
+    "How NSE's new trading products affect BSE's customer base",
+    "Changes in the overall Financials sector index"
+   ],
+   "about": "BSE is one of India's largest stock exchanges and a major player in the financial services sector.",
+   "basis": "9345941f6ec7",
+   "items": 4,
+   "updated": "2026-11-18T14:31+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "NUVAMA": {
    "summary": "Nuvama Wealth Management recently announced it is issuing new shares to raise fresh capital. This move adds to the context of a financial sector that has seen a slight rise in recent trading sessions.",
    "why": "Issuing new shares increases the total number of shares available, which can reduce the value of each existing share held by current investors.",
@@ -507,22 +523,6 @@
    "updated": "2026-11-17T10:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "TMCV": {
-   "summary": "Tata Motors released its quarterly results, which included a lowered outlook that disappointed some investors. The stock price recently closed above its long-term average, suggesting a possible recovery, but the exchange is asking the company to clarify news about a potential new public offering.",
-   "why": "The lowered outlook and questions about a new share offering create uncertainty that can cause the share price to move up or down sharply.",
-   "upside": "The stock closing above its long-term average suggests it might be starting to recover from a long period of decline.",
-   "downside": "JLR's struggles in China are seen as a drag on the company, and the lowered outlook from recent results may lead to further selling.",
-   "watch": [
-    "Clarification from the company regarding the news about a possible new public offering.",
-    "Whether the stock maintains its position above the 200-day moving average with sufficient trading volume.",
-    "How JLR's performance in China affects the overall group results."
-   ],
-   "about": "",
-   "basis": "ebc98a35e7e9",
-   "items": 6,
-   "updated": "2026-11-18T12:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "TATACHEM": {
    "summary": "Tata Chemicals shares jumped nearly 10% in a single day and rose 11% over three days due to rumors that its parent company, Tata Sons, may list on the stock market. The company has denied having any knowledge of these negotiations, and the stock exchange has asked for clarification on the recent news.",
    "why": "If the parent company lists, it could increase the value of Tata Chemicals shares, but the recent price rise is based on unconfirmed rumors. The company's denial suggests the hype may be cooling down, which could affect the share price.",
@@ -538,6 +538,22 @@
    "items": 6,
    "updated": "2026-11-17T15:46+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "TMCV": {
+   "summary": "Tata Motors' shares closed above their 200‑day moving average, hinting at a possible recovery after a long decline. However, the company faces headwinds from Jaguar Land Rover's weak sales in China and a disappointing Q2 earnings report that lowered its outlook. The stock exchange has also asked for clarification on rumors of a Tata Sons IPO, adding uncertainty.",
+   "why": "Shareholders need to watch whether the price rise is sustainable or a false breakout, and how JLR's challenges and the weak quarter could affect earnings. Any news on a Tata Sons IPO could also impact the value of the parent company's holdings.",
+   "upside": "If the breakout above the long‑term average is backed by strong trading volume, it could signal a genuine bounce in the stock.",
+   "downside": "Weak Q2 results, lowered guidance and ongoing JLR struggles in China could lead to further selling pressure, and a delayed or cancelled IPO could cause a correction.",
+   "watch": [
+    "Stock price relative to the 200‑day moving average and trading volume",
+    "Updates on Jaguar Land Rover's performance in China",
+    "Outcome of the exchange's request for clarification on the Tata Sons IPO rumor"
+   ],
+   "about": "Tata Motors designs, manufactures and sells automobiles, including passenger cars, commercial vehicles, and the Jaguar Land Rover brand.",
+   "basis": "040b4e72975d",
+   "items": 4,
+   "updated": "2026-11-18T14:31+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "HINDZINC": {
    "summary": "Hindustan Zinc announced a Rs 80,000 crore expansion to become the world’s largest zinc and silver producer and is adding production capacity. The stock fell after the announcement as investors worry the company may be over‑valued and that the large capex could strain cash flow.",
@@ -843,52 +859,36 @@
    "model": "openai/gpt-oss-120b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is seeing its earnings influenced by recent changes in crude oil prices. Crude futures rose to $86.01 a barrel, but analysts expect a fall to $78 by 2027 due to a supply glut. Bond yields have eased, which could affect the company’s cost of capital.",
-   "why": "Shareholders should note that oil price swings directly affect Oil India’s revenue and profit margins.",
-   "upside": "Higher crude prices could lift earnings.",
-   "downside": "Lower crude prices could reduce revenue.",
+   "summary": "Oil India Ltd. is navigating a shifting market as global crude oil prices fluctuate between supply concerns and rising futures. Changing oil prices directly impact the revenues and profits of energy producers.",
+   "why": "Because Oil India sells crude oil, shifts in global oil prices can directly change how much money the company makes. Investors need to watch these trends closely.",
+   "upside": "If crude oil prices rise, the company's earnings could improve.",
+   "downside": "If oil prices fall due to a supply surplus, the company's revenue could decline.",
    "watch": [
-    "Crude oil futures settlement price",
-    "Analyst forecasts of a $78 price by 2027",
-    "Bond yield movements in India"
+    "Global crude oil price movements",
+    "Supply surplus and inventory updates",
+    "Geopolitical news affecting oil shipping"
    ],
-   "about": "",
-   "basis": "0e0248e69808",
-   "items": 15,
-   "updated": "2026-11-18T14:15+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "Oil India Ltd. is an energy company operating in the oil, gas, and consumable fuels sector.",
+   "basis": "aadcebc2efa9",
+   "items": 14,
+   "updated": "2026-11-18T14:31+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "COALINDIA": {
-   "summary": "PulsEdge flagged that Coal India is preparing IPOs for its Mahanadi, Northern and Central Coalfields units, selling a small part of its ownership to the public. The market is watching how the new share supply and pricing will affect the parent’s stock.",
-   "why": "PulsEdge flagged that the IPOs could bring fresh cash and potential dividend payouts, but they may also dilute existing shareholders’ earnings per share.",
-   "upside": "If the IPOs raise strong funds and lead to higher dividend payouts, the stock could become more attractive to income‑seeking investors.",
-   "downside": "The new share issues could dilute earnings per share and put downward pressure on the stock price.",
+   "summary": "Coal India is preparing to sell a small part of its Mahanadi Coalfields and Northern/Central Coalfields units to the public. The Mahanadi IPO has set a price band of ₹129–₹136 per share and seeks a valuation of $9.55 billion.",
+   "why": "Selling these parts can bring in cash for the company, but it also means existing owners will have a smaller share of the total business, which might affect the stock price.",
+   "upside": "The IPO could bring in fresh funds and show that the group is growing, which might make the parent company more attractive to investors.",
+   "downside": "Existing shareholders could see their profit share reduced because the company will own a smaller percentage of these units after the sale.",
    "watch": [
-    "Subscription levels and final pricing of the Mahanadi Coalfields IPO",
-    "Progress and market reception of the Northern and Central Coalfields IPOs",
-    "Sector index performance and upcoming quarterly earnings releases"
+    "The final price at which the Mahanadi IPO is sold.",
+    "How the market reacts to the new supply of shares.",
+    "Updates on the IPO preparations for Northern and Central Coalfields."
    ],
-   "about": "Coal India Ltd. is a state‑owned company that mines and sells coal across India.",
-   "basis": "af7755d6404a",
-   "items": 8,
-   "updated": "2026-11-18T14:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "HINDALCO": {
-   "summary": "Hindalco shares have been falling as metal stocks slipped on lower global commodity prices and a stronger US dollar, but Axis Securities recently named it a conviction pick after its Q2 results.",
-   "why": "Share price changes affect shareholder value, and tighter profit margins from commodity price weakness matter for earnings.",
-   "upside": "If the Axis recommendation triggers buying or an oversold bounce occurs, the stock could recover.",
-   "downside": "Ongoing low commodity prices and a strong US dollar could keep margins tight and pressure the share price.",
-   "watch": [
-    "Q2 earnings release on 16 November",
-    "Metal sector index movement",
-    "Global commodity price trends and US dollar strength"
-   ],
-   "about": "Hindalco Industries Ltd is a leading Indian metal producer in the Metals & Mining sector.",
-   "basis": "65d3b2275831",
-   "items": 4,
-   "updated": "2026-11-18T14:15+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Coal India is a major coal company and one of India's 50 largest listed companies.",
+   "basis": "bd49cdb7129e",
+   "items": 7,
+   "updated": "2026-11-18T14:31+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "HDFCBANK": {
    "summary": "HDFC Bank shares have risen sharply, jumping about 20% from their October low as the Nifty Bank index hit a record high. Analysts note a technical breakout that could keep banks moving higher, though broader market moves could affect this.",
@@ -921,6 +921,22 @@
    "items": 4,
    "updated": "2026-11-17T19:22+05:30",
    "model": "gemini-flash-lite-latest"
+  },
+  "HINDALCO": {
+   "summary": "Hindalco shares have been falling as metal stocks slipped on lower global commodity prices and a stronger US dollar, but Axis Securities recently named it a conviction pick after its Q2 results.",
+   "why": "Share price changes affect shareholder value, and tighter profit margins from commodity price weakness matter for earnings.",
+   "upside": "If the Axis recommendation triggers buying or an oversold bounce occurs, the stock could recover.",
+   "downside": "Ongoing low commodity prices and a strong US dollar could keep margins tight and pressure the share price.",
+   "watch": [
+    "Q2 earnings release on 16 November",
+    "Metal sector index movement",
+    "Global commodity price trends and US dollar strength"
+   ],
+   "about": "Hindalco Industries Ltd is a leading Indian metal producer in the Metals & Mining sector.",
+   "basis": "65d3b2275831",
+   "items": 4,
+   "updated": "2026-11-18T14:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "KALYANKJIL": {
    "summary": "Kalyan Jewellers shares slipped about 5% as the consumer durables sector fell, following a recent 42% rally after strong Q2 results. The drop reflects broader worries about near‑term consumer demand despite lower gold prices.",
@@ -1321,54 +1337,6 @@
    "updated": "2026-11-18T09:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "COCHINSHIP": {
-   "summary": "Cochin Shipyard Ltd. is one of four public sector companies set to announce dividend record dates between November 16 and 20. The company is part of the Nifty 500 index, which tracks India's 500 largest listed firms.",
-   "why": "Dividends provide cash returns to shareholders, but the share price often drops slightly on the ex-date to reflect this payout.",
-   "upside": "",
-   "downside": "The market may have already priced in the dividend, meaning the share price might not react as expected when the news is confirmed.",
-   "watch": [
-    "The specific record date for the dividend payment",
-    "The ex-dividend date when the share price adjusts",
-    "The actual dividend amount per share"
-   ],
-   "about": "",
-   "basis": "4b09b509020b",
-   "items": 1,
-   "updated": "2026-11-16T19:22+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "PFC": {
-   "summary": "Power Finance Corporation Ltd. is one of four public sector companies with an upcoming dividend record date between November 16 and 20. The broader Financials sector has risen 4.7% over the last five sessions, despite a small drop in the most recent session.",
-   "why": "Shareholders need to know the record date to ensure they receive the dividend, as share prices often adjust slightly on the ex-date.",
-   "upside": "The Financials sector has shown positive momentum with a 4.7% gain over the past week.",
-   "downside": "The market may have already priced in the dividend, meaning the share price might not rise further before the payment.",
-   "watch": [
-    "The specific record date for PFC's dividend",
-    "How the share price reacts on the ex-date",
-    "Continued performance of the Financials sector index"
-   ],
-   "about": "",
-   "basis": "4b09b509020b",
-   "items": 1,
-   "updated": "2026-11-16T09:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "SCI": {
-   "summary": "Shipping Corporation of India (SCI) is part of a group of public sector companies announcing dividend record dates this week. Investors are being advised to check these dates to understand when they might receive payments.",
-   "why": "Dividends are cash payments to shareholders, but the share price often drops slightly on the day the dividend is paid out. This is a normal market adjustment that affects the value of your holding.",
-   "upside": "Receiving a dividend provides direct cash income to shareholders.",
-   "downside": "The share price may dip on the ex-date, and the market might have already accounted for this payment in the current price.",
-   "watch": [
-    "The specific record date for SCI's dividend",
-    "The ex-date when the share price typically adjusts",
-    "Whether the dividend amount is already reflected in the current share price"
-   ],
-   "about": "",
-   "basis": "4b09b509020b",
-   "items": 1,
-   "updated": "2026-11-16T09:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "POLYCAB": {
    "summary": "Polycab reduced prices on its light‑duty cables and wires for the second time this week, and copper prices have dropped for the fifth straight day.",
    "why": "Price cuts could pressure revenue growth, while cheaper copper may boost profit margins if sales volumes stay steady.",
@@ -1545,22 +1513,6 @@
    "updated": "2026-11-16T09:46+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "ASHOKLEY": {
-   "summary": "Ashok Leyland is seeing strong vehicle demand but its profit margins are being squeezed by high raw material costs. Investors are watching the upcoming quarterly earnings release for signs of how the cost pressure is affecting earnings.",
-   "why": "Margin pressure could limit profit growth even as sales stay robust, directly impacting shareholder returns. The quarterly results could cause the share price to move sharply.",
-   "upside": "If raw material prices ease, the company’s margins could improve.",
-   "downside": "Further escalation in raw material costs could further compress margins.",
-   "watch": [
-    "Raw material price trends",
-    "Quarterly earnings release and results",
-    "Margin performance in the upcoming report"
-   ],
-   "about": "",
-   "basis": "5a91c5697aa4",
-   "items": 2,
-   "updated": "2026-11-18T12:45+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "FEDERALBNK": {
    "summary": "Federal Bank said it will not make any deal with Jana Small Finance Bank. The financial sector index rose 0.6% in the last session and 3% over five sessions.",
    "why": "Shareholders should note the decision could limit a growth opportunity and affect market perception of the stock.",
@@ -1609,22 +1561,6 @@
    "updated": "2026-11-18T08:29+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "BSE": {
-   "summary": "PulsEdge flagged BSE Ltd. after a recent rally that helped it join a group of stocks hitting 52‑week highs, and analysts are noting bullish technical signals for the exchange.",
-   "why": "The rally and positive technical outlook suggest potential earnings growth for shareholders.",
-   "upside": "If the buying momentum continues, the stock could keep rising.",
-   "downside": "A quick shift in broader market sentiment could reverse the momentum.",
-   "watch": [
-    "Sustained price rally after hitting 52‑week high",
-    "Financials sector performance trends",
-    "Analyst technical bullish views on the exchange"
-   ],
-   "about": "BSE Ltd. runs India's Bombay Stock Exchange, offering trading and related financial services.",
-   "basis": "9fc55930b422",
-   "items": 2,
-   "updated": "2026-11-18T09:45+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "KOTAKBANK": {
    "summary": "Kotak Mahindra Bank shares recently reached their highest price in the last year. This move happened alongside other major Indian stocks that also hit new yearly highs.",
    "why": "When a stock hits a new high, it shows strong recent demand, which can influence how other investors view the company's value.",
@@ -1655,22 +1591,6 @@
    "basis": "ef18ab2e3552",
    "items": 2,
    "updated": "2026-11-17T11:45+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "ITC": {
-   "summary": "ITC reclaimed its 200‑day moving average after a year, sparking talk of a rebound or a fresh uptrend. The stock also rose as FMCG names led gains in a stronger Sensex.",
-   "why": "Crossing the 200‑day average can signal short‑term upside, and investors are currently favoring stable consumer stocks.",
-   "upside": "If the share stays above the 200‑day line, momentum could carry it higher.",
-   "downside": "A broader market weakness could pull the stock back down.",
-   "watch": [
-    "ITC holding above the 200‑day moving average",
-    "Overall market strength, especially mid‑ and small‑cap indices",
-    "FMCG sector performance trends"
-   ],
-   "about": "ITC Ltd. is a leading Indian fast‑moving consumer goods company.",
-   "basis": "a48732685016",
-   "items": 2,
-   "updated": "2026-11-17T11:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "AMBUJACEM": {

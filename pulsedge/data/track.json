@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T14:16:17+05:30",
+ "updated": "2026-11-18T14:32:25+05:30",
  "summary": {
-  "calls": 1699,
-  "scored_calls": 540,
+  "calls": 1703,
+  "scored_calls": 544,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "3a7e43631e29390e",
+   "symbol": "BSE",
+   "time": "2026-11-18T14:15:33+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "NSE uses equity option script to up ante in commodity F&O",
+   "url": "https://www.livemint.com/market/commodities/nse-mcx-commodity-options-market-share-crude-oil-expiry-11794985120018.html",
+   "entry_date": "2026-11-17",
+   "entry": 3864.9
+  },
+  {
+   "id": "5008a1df8240f28c",
+   "symbol": "RVNL",
+   "time": "2026-11-18T14:15:16+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "RVNL share price down 71% from peak: Why does PL Capital see more downside?",
+   "url": "https://www.business-standard.com/markets/news/rvnl-share-price-down-71-from-peak-why-does-pl-capital-see-more-downside-126111800587_1.html",
+   "entry_date": "2026-11-17",
+   "entry": 195.5
+  },
+  {
+   "id": "832e341e48d6c243",
+   "symbol": "ANGELONE",
+   "time": "2026-11-18T14:13:23+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Angel One, 5paisa, BSE and other capital market stocks slide up to 3% as SEBI weighs MTF curbs; Is the MTF party over?",
+   "url": "https://www.livemint.com/market/stock-market-news/angel-one-5paisa-bse-and-other-capital-market-stocks-slide-up-to-3-as-sebi-weighs-mtf-curbs-is-the-mtf-party-over-11794988829405.html",
+   "entry_date": "2026-11-17",
+   "entry": 349.8
+  },
+  {
+   "id": "832e341e48d6c243",
+   "symbol": "BSE",
+   "time": "2026-11-18T14:13:23+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Angel One, 5paisa, BSE and other capital market stocks slide up to 3% as SEBI weighs MTF curbs; Is the MTF party over?",
+   "url": "https://www.livemint.com/market/stock-market-news/angel-one-5paisa-bse-and-other-capital-market-stocks-slide-up-to-3-as-sebi-weighs-mtf-curbs-is-the-mtf-party-over-11794988829405.html",
+   "entry_date": "2026-11-17",
+   "entry": 3864.9
+  },
   {
    "id": "3d78c4acaf190cb5",
    "symbol": "POLYCAB",
