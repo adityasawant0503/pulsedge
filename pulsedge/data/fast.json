@@ -1,7 +1,41 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-18T14:48:23+05:30",
+ "updated": "2026-11-18T14:52:03+05:30",
  "items": [
+  {
+   "id": "e1a1244e6104b1bd",
+   "time": "2026-11-18T14:50:58+05:30",
+   "headline": "SAUDI ARABIA SAYS DANGER HAS PASSED IN JAZAN",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9568",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Oil & Gas",
+    "Defense"
+   ],
+   "impact": 10,
+   "confidence": 20,
+   "category": "Geopolitics",
+   "action": "Monitor global crude oil prices for any residual volatility, though immediate impact is likely muted.",
+   "reason": [
+    "Saudi Arabia's statement that danger has passed in Jazan suggests a de-escalation of regional tensions.",
+    "This reduces the geopolitical risk premium on crude oil, which is generally neutral to slightly positive for Indian importers but negative for oil producers."
+   ],
+   "risks": [
+    "Sudden re-escalation of conflict in the region.",
+    "Global oil price volatility affecting inflation expectations."
+   ],
+   "plain": "Saudi Arabia says the recent threat in its Jazan region is over.",
+   "why": "This lowers the risk of oil supply disruptions, which is generally good for global markets but has little direct effect on specific Indian stocks.",
+   "check": "Check if global oil prices have stabilized after the news.",
+   "original": "SAUDI ARABIA SAYS DANGER HAS PASSED IN JAZAN",
+   "latency": 65.3,
+   "lane": "fast"
+  },
   {
    "id": "9feaff69f9cb9978",
    "time": "2026-11-18T14:46:41+05:30",
