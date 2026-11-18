@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T13:15:01+05:30",
+ "updated": "2026-11-18T13:31:06+05:30",
  "summary": {
-  "calls": 1684,
-  "scored_calls": 525,
+  "calls": 1689,
+  "scored_calls": 530,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,71 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "0b9fc38ad76e3ac2",
+   "symbol": "JSWENERGY",
+   "time": "2026-11-18T13:29:11+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "JSW ENERGY: APTEL SETS ASIDE APERC ORDER, DIRECTS DISCOMS TO PAY APPLICABLE WIND POWER TARIFF WITH INTEREST",
+   "url": "https://t.me/Indiaredboxglobal/9554",
+   "entry_date": "2026-11-17",
+   "entry": 514.9
+  },
+  {
+   "id": "4fb328315ed5c6bd",
+   "symbol": "JSWENERGY",
+   "time": "2026-11-18T13:26:57+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "JSW Energy Limited: JSW Energy Limited has informed the Exchange about material litigation under Regulation 30(4) of the Securities Exchange Board of India (Lis",
+   "url": "https://nsearchives.nseindia.com/corporate/KRUTIKAJSWEL_18112026132637_LettertobsenseCUFmatter_sd.pdf",
+   "entry_date": "2026-11-17",
+   "entry": 514.9
+  },
+  {
+   "id": "bb5fc7cabab792dc",
+   "symbol": "TITAN",
+   "time": "2026-11-18T13:26:26+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Titan, Kalyan Jewellers, PC Jeweller fall up to 5%: Why are jewellery stocks losing shine despite lower gold prices?",
+   "url": "https://www.livemint.com/market/titan-kalyan-jewellers-pc-jeweller-fall-up-to-5-why-are-jewellery-stocks-losing-shine-despite-lower-gold-prices-11794985842518.html",
+   "entry_date": "2026-11-17",
+   "entry": 4908.0
+  },
+  {
+   "id": "bb5fc7cabab792dc",
+   "symbol": "KALYANKJIL",
+   "time": "2026-11-18T13:26:26+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Titan, Kalyan Jewellers, PC Jeweller fall up to 5%: Why are jewellery stocks losing shine despite lower gold prices?",
+   "url": "https://www.livemint.com/market/titan-kalyan-jewellers-pc-jeweller-fall-up-to-5-why-are-jewellery-stocks-losing-shine-despite-lower-gold-prices-11794985842518.html",
+   "entry_date": "2026-11-17",
+   "entry": 682.75
+  },
+  {
+   "id": "f8847704e5631d3d",
+   "symbol": "NTPC",
+   "time": "2026-11-18T13:20:55+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "NTPC: 3 WORKERS EMPLOYED BY SIMPLEX INFRASTRUCTURES AND THYSSENKRUPP WERE KILLED AND 2 OTHERS INJURED IN ACCIDENT AT NTPC'S PROJECT IN TANDWA; INVESTIGATION INT",
+   "url": "https://t.me/Indiaredboxglobal/9552",
+   "entry_date": "2026-11-17",
+   "entry": 321.8
+  },
   {
    "id": "8b871a88ca76b33a",
    "symbol": "ONGC",
