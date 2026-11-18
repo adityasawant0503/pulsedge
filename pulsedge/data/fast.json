@@ -1,7 +1,34 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-18T13:08:33+05:30",
+ "updated": "2026-11-18T13:10:29+05:30",
  "items": [
+  {
+   "id": "7c7104d46fe16c69",
+   "time": "2026-11-18T13:09:35+05:30",
+   "headline": "ROYAL ORCHID HOTELS LTD: CO. LAUNCHES NEW PROPERTY \"Z BY REGENTA\" IN VISAKHAPATNAM; TARGETS BUSINESS AND LEISURE TRAVELLERS WITH 32 ROOMS AND MULTI-CUISINE DINING.",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9550",
+   "section": "trading",
+   "call": "ignore",
+   "horizon": "swing",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [],
+   "impact": 8,
+   "confidence": 30,
+   "category": "No listed-stock impact",
+   "action": "No action",
+   "reason": [
+    "Keyword rules (AI classification is off)"
+   ],
+   "risks": [],
+   "plain": "",
+   "why": "No listed company is clearly affected.",
+   "check": "",
+   "original": "ROYAL ORCHID HOTELS LTD: CO. LAUNCHES NEW PROPERTY \"Z BY REGENTA\" IN VISAKHAPATNAM; TARGETS BUSINESS AND LEISURE TRAVELLERS WITH 32 ROOMS AND MULTI-CUISINE DINING.",
+   "latency": 54.8,
+   "lane": "fast"
+  },
   {
    "id": "8b871a88ca76b33a",
    "time": "2026-11-18T13:07:02+05:30",
@@ -974,45 +1001,6 @@
    "check": "Track subsequent earnings reports to see if export margins hold up against currency moves.",
    "original": "TECHNOCRAFT: FY27 TOPLINE SHOULD GROW 20%, BUT RUPEE STRENGTH COULD LIMIT GAINS",
    "latency": 52.1,
-   "lane": "fast"
-  },
-  {
-   "id": "111226847dfaeb9b",
-   "time": "2026-11-17T13:08:38+05:30",
-   "headline": "ANGEL ONE: MTF REVENUE IS 20% OF TOTAL INCOME FOR Q2FY27",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9441",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "ANGELONE",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Financial Services",
-    "Broking"
-   ],
-   "impact": 40,
-   "confidence": 60,
-   "category": "Earnings/Revenue Mix",
-   "action": "Monitor if the high-margin MTF revenue share sustains above 20% in subsequent quarters to confirm margin expansion.",
-   "reason": [
-    "Multi-factor trading (MTF) revenue is typically higher margin than traditional brokerage.",
-    "A 20% contribution to total income signals a positive shift in revenue quality."
-   ],
-   "risks": [
-    "MTF revenue can be volatile and dependent on market trading volumes.",
-    "Regulatory changes could impact MTF fee structures."
-   ],
-   "plain": "Angel One says a specific type of trading fee now makes up one-fifth of its total earnings.",
-   "why": "This type of fee is usually more profitable, suggesting the company is becoming more efficient and potentially more profitable.",
-   "check": "Look at the company's next quarterly report to see if this profitable revenue share stays the same or grows.",
-   "original": "ANGEL ONE: MTF REVENUE IS 20% OF TOTAL INCOME FOR Q2FY27",
-   "latency": 99.8,
    "lane": "fast"
   }
  ]
