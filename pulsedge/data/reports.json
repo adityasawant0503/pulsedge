@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T13:45+05:30",
+ "updated": "2026-11-18T14:01+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -618,37 +618,37 @@
    "updated": "2026-11-17T16:35+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "SOLARINDS": {
-   "summary": "Solar Industries India Ltd expects its business to grow 20‑25% each year for the next three years, showing confidence in future sales. However, there is execution risk and the broader green‑energy sector has shown recent price pressure.",
-   "why": "Shareholders care because strong growth could lift earnings, but missing the targets could hurt returns.",
-   "upside": "If the company delivers the projected growth, earnings and cash flow could improve.",
-   "downside": "Failure to meet growth targets or continued sector volatility could weigh on the share price.",
+  "TITAN": {
+   "summary": "Titan shares fell over 4-5% on Nov 18 as the broader market and consumer‑durables sector slipped, with the Nifty Consumer Durables index down 3% and the broader indices lower.",
+   "why": "The drop hurts shareholders because it reflects weaker near‑term consumer demand and could pressure the company’s sales and margins.",
+   "upside": "A rebound in wedding‑season demand could lift sales and support the share price.",
+   "downside": "A sector‑wide sell‑off could continue if broader market sentiment weakens, further pressuring the stock.",
    "watch": [
-    "Progress on the company’s growth plan",
-    "Sector technical signals and volatility",
-    "Any new project wins or contracts"
+    "Consumer‑durables index movement",
+    "Wedding‑season demand trends",
+    "Broad market sentiment and technical support levels"
    ],
-   "about": "Solar Industries India Ltd operates in the chemicals sector.",
-   "basis": "1abffa9db816",
+   "about": "Titan Company makes jewellery, watches and related accessories.",
+   "basis": "157e842de832",
    "items": 4,
-   "updated": "2026-11-18T11:45+05:30",
+   "updated": "2026-11-18T14:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "TITAN": {
-   "summary": "Titan shares dropped over 4% on November 18, 2026, during a broader market decline. This fall was driven by concerns about weak consumer demand for jewellery, even though gold prices have recently decreased.",
-   "why": "If customers buy fewer items, the company's sales and profits may shrink, which can lower the value of the shares you own.",
-   "upside": "Demand for jewellery often rises during the upcoming wedding season, which could help sales recover quickly.",
-   "downside": "If retail demand stays weak, the company may struggle to sell enough products to maintain its profit margins.",
+  "SOLARINDS": {
+   "summary": "Solar Industries India Ltd, a chemicals maker in the Nifty 500, has not had any specific news in recent days, but the broader green‑energy sector has seen short‑term selling pressure on technical grounds.",
+   "why": "Sector‑wide volatility can influence investor sentiment toward the stock.",
+   "upside": "Improved sentiment in the green‑energy and chemicals sectors could lift the share.",
+   "downside": "Continued technical weakness in the sector may keep pressure on the stock.",
    "watch": [
-    "Sales figures during the wedding season",
-    "Changes in gold prices",
-    "Overall market trends for consumer goods"
+    "Technical trends in green‑energy stocks",
+    "Any new project or order announcements from Solar Industries",
+    "Movement of the Nifty 500 index"
    ],
-   "about": "Titan is a major Indian company that makes and sells jewellery and watches.",
-   "basis": "758020b6e748",
-   "items": 3,
-   "updated": "2026-11-18T13:30+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Solar Industries India Ltd manufactures industrial chemicals.",
+   "basis": "a2d139b1c7c5",
+   "items": 4,
+   "updated": "2026-11-18T14:01+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "SIGNATURE": {
    "summary": "Signature Global launched properties worth 4,400 crore rupees in the first half of the year and expects to reach a 10,000 crore booking target for the next fiscal year. The company also recently bought 194 acres of land in Maharashtra for 194 crore rupees.",
@@ -843,20 +843,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "OIL": {
-   "summary": "Oil India shares are facing mixed signals as global oil prices fluctuate between recent drops and slight gains. The sector index has moved up slightly, but analysts note that a surplus of oil supply could keep prices under pressure.",
-   "why": "Since the company earns money by selling oil, its profits depend heavily on the global price of crude. If oil prices stay low, the company may earn less, which can affect the value of its shares.",
-   "upside": "If oil prices rise again, the company could earn more money from each barrel it sells.",
-   "downside": "If oil prices continue to fall due to too much supply, the company's revenue and profits could drop.",
+   "summary": "Oil India is navigating a volatile oil price environment. Crude oil futures have risen modestly, while other analysts expect prices to fall due to a supply glut. The sector index has posted modest gains.",
+   "why": "Shareholders should watch oil price moves because they directly affect the company's revenue and profit margins.",
+   "upside": "Higher crude prices could lift earnings for Oil India.",
+   "downside": "A sustained decline in oil prices could compress the company's revenue.",
    "watch": [
-    "Global oil price trends",
-    "News about oil supply levels",
-    "Geopolitical events that might affect oil prices"
+    "Crude oil price trends and futures",
+    "Supply‑demand outlook for global oil",
+    "Geopolitical events that could shift oil prices"
    ],
-   "about": "Oil India Ltd. is a company in the Oil Gas & Consumable Fuels sector.",
-   "basis": "8d22deb96a3f",
-   "items": 15,
-   "updated": "2026-11-18T12:45+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Oil India Ltd. is an Indian oil and gas exploration and production company.",
+   "basis": "b7f5a5f458c1",
+   "items": 16,
+   "updated": "2026-11-18T14:01+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "COALINDIA": {
    "summary": "Coal India is gearing up to sell small stakes in its Mahanadi, Northern and Central Coalfields units through IPOs, with the Mahanadi IPO price band set at ₹129‑₹136 per share. The moves could bring fresh cash but also dilute existing shareholders’ stakes.",
@@ -905,6 +905,22 @@
    "items": 4,
    "updated": "2026-11-17T19:22+05:30",
    "model": "gemini-flash-lite-latest"
+  },
+  "KALYANKJIL": {
+   "summary": "Kalyan Jewellers shares slipped about 5% as the consumer durables sector fell, following a recent 42% rally after strong Q2 results. The drop reflects broader worries about near‑term consumer demand despite lower gold prices.",
+   "why": "Share price moves affect investors’ portfolio value and signal how demand and margins may be changing for the jewellery business.",
+   "upside": "Demand could pick up during the upcoming wedding season, potentially supporting sales and the stock.",
+   "downside": "A sector‑wide sell‑off or profit‑booking after the recent rally could push the share lower.",
+   "watch": [
+    "Consumer durables sector index trends",
+    "Wedding season demand outlook",
+    "Profit‑booking pressure after the recent rally"
+   ],
+   "about": "Kalyan Jewellers India Ltd. is a jewellery retailer.",
+   "basis": "25ca704678f3",
+   "items": 3,
+   "updated": "2026-11-18T14:01+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "HINDALCO": {
    "summary": "Hindalco shares have fallen recently as global metal prices dropped and the US dollar strengthened. This decline is part of a broader drop in Indian metal stocks, which also affected the Nifty Metal index.",
@@ -1018,6 +1034,38 @@
    "updated": "2026-11-16T11:16+05:30",
    "model": "gemini-flash-lite-latest"
   },
+  "DIXON": {
+   "summary": "Dixon Technologies announced a new business deal while the broader consumer durables sector saw a 3% slide in the Nifty index. The sector index was down 0.2% in the last session but up 0.6% over the past five sessions.",
+   "why": "Shareholders watch the new deal because it could boost revenue, but the sector‑wide sell‑off may pressure the stock price.",
+   "upside": "If the new agreement brings more customers and revenue, the company could see earnings growth.",
+   "downside": "A continued sector‑wide sell‑off or unfavorable terms in the deal could hurt performance.",
+   "watch": [
+    "Consumer durables index movement",
+    "Details and terms of the new deal",
+    "Overall market sentiment"
+   ],
+   "about": "Dixon Technologies (India) Ltd. manufactures electronics and consumer durable products.",
+   "basis": "7ae0c7077ef4",
+   "items": 2,
+   "updated": "2026-11-18T14:01+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "HAVELLS": {
+   "summary": "Havells India announced a new super‑hi‑speed BLDC+ ceiling fan while the broader consumer durables sector showed modest weakness, slipping 0.2% in the last session.",
+   "why": "The product launch could boost future earnings, but sector weakness may pressure the stock.",
+   "upside": "Strong demand for the faster, quieter fan could improve revenue and margins.",
+   "downside": "Higher R&D and marketing expenses for the new fan may compress short‑term margins.",
+   "watch": [
+    "Consumer Durables index performance",
+    "Sales uptake of the Super Hi‑Speed BLDC+ fan",
+    "Margin trends amid R&D spending"
+   ],
+   "about": "Havells India Ltd manufactures electrical consumer durables such as fans, lighting and home appliances.",
+   "basis": "57957e45264e",
+   "items": 2,
+   "updated": "2026-11-18T14:01+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "GODREJPROP": {
    "summary": "Godrej Properties reported a regulatory order, which is often a minor procedural issue. At the same time, the broader real estate sector has seen a sharp rise in stock prices this month.",
    "why": "Shareholders need to know if the regulatory order leads to fines or operational problems. The sector's recent surge shows high investor interest, which can affect the stock's value.",
@@ -1112,6 +1160,38 @@
    "basis": "5c2c9390c9fc",
    "items": 2,
    "updated": "2026-11-16T11:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "BATAINDIA": {
+   "summary": "Bata India Ltd. is seeing its shares pressured as the Nifty Consumer Durables index fell about 3% today, reflecting broader concerns for the sector. The sector has been slightly up over the past five sessions but slipped 0.2% in the last session.",
+   "why": "Sector sentiment can move Bata’s stock even without company‑specific news, so investors watch the broader consumer‑durables trend.",
+   "upside": "A rebound in the consumer‑durables index, which has been modestly positive over five days, could lift Bata’s shares.",
+   "downside": "If the sector‑wide sell‑off continues because market sentiment weakens, Bata’s stock could face further pressure.",
+   "watch": [
+    "Consumer durables index movement (daily and 5‑day)",
+    "Overall market sentiment toward consumer‑durables stocks",
+    "Any new company‑specific news or earnings releases"
+   ],
+   "about": "",
+   "basis": "266d2c7acd5a",
+   "items": 1,
+   "updated": "2026-11-18T14:01+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "CROMPTON": {
+   "summary": "Crompton Greaves Consumer Electricals is part of the consumer durables sector, which saw a 3% drop in its index recently. This decline happened alongside other major companies in the same group, such as Titan and Kalyan Jewellers.",
+   "why": "If you own Crompton shares, this drop shows that the market is currently cautious about companies that sell durable goods like appliances. The value of your shares may fluctuate as investors adjust their views on this specific type of business.",
+   "upside": "",
+   "downside": "The sector-wide sell-off could continue if general market confidence weakens further.",
+   "watch": [
+    "Whether the consumer durables sector index stabilizes or continues to fall.",
+    "How other large companies in the Nifty 500 are performing.",
+    "General market sentiment for the next few sessions."
+   ],
+   "about": "",
+   "basis": "266d2c7acd5a",
+   "items": 1,
+   "updated": "2026-11-18T14:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "BHARATFORG": {
@@ -1289,22 +1369,6 @@
    "updated": "2026-11-16T09:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "KALYANKJIL": {
-   "summary": "Kalyan Jewellers shares have recently fallen up to 5% due to worries about weak consumer demand, even though gold prices are lower. This follows a sharp 42% rise in the stock earlier in the month after the company reported strong profits.",
-   "why": "These moves matter because they show how sensitive the company's sales are to customer spending habits. A drop in demand can reduce the money the company makes from each piece of jewellery sold.",
-   "upside": "Demand from the upcoming wedding season could quickly boost sales and help the stock price recover.",
-   "downside": "If retail demand stays weak, the company may sell fewer items and earn less profit on each sale.",
-   "watch": [
-    "How well the company sells during the wedding season.",
-    "Whether the stock price stabilizes after the recent drop.",
-    "Changes in gold prices that affect consumer buying."
-   ],
-   "about": "Kalyan Jewellers is a company in the consumer durables sector that is part of India's Nifty 500 index.",
-   "basis": "9630e172ef28",
-   "items": 2,
-   "updated": "2026-11-18T13:30+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "KEI": {
    "summary": "KEI Industries and peers slipped up to 3% as copper prices fell for the fifth consecutive day, pulling the stock lower. The drop reflects market reaction to cheaper raw material costs for cable makers.",
    "why": "Changes in copper prices directly affect KEI's production costs and thus its profitability for shareholders.",
@@ -1384,22 +1448,6 @@
    "items": 3,
    "updated": "2026-11-17T14:00+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "DIXON": {
-   "summary": "Dixon Technologies announced a new deal with another business, which could add customers and revenue. The consumer durables sector has been modestly higher recently.",
-   "why": "Shareholders care because the deal may boost earnings, but the agreement terms could affect profitability.",
-   "upside": "If the deal brings in strong sales, the company's revenue could rise.",
-   "downside": "Unfavourable terms in the agreement could limit profit gains.",
-   "watch": [
-    "Details of the new deal’s terms",
-    "Sector index performance",
-    "Upcoming earnings or financial updates"
-   ],
-   "about": "Dixon Technologies manufactures and assembles consumer electronics and appliances.",
-   "basis": "2f0e187fecf7",
-   "items": 1,
-   "updated": "2026-11-17T12:00+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "BPCL": {
    "summary": "BPCL plans to start a new green jet fuel plant at its Mumbai refinery in December. The company also aims to increase the capacity of this plant to 61,000 tons per year by 2028.",

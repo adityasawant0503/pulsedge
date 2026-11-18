@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T13:46:04+05:30",
+ "updated": "2026-11-18T14:01:55+05:30",
  "summary": {
-  "calls": 1690,
-  "scored_calls": 531,
+  "calls": 1696,
+  "scored_calls": 537,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,84 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "1c9a48f4b842d03a",
+   "symbol": "OIL",
+   "time": "2026-11-18T13:54:04+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "GOLDMAN SACHS: FURTHER RISE IN CRUDE OIL PRICES MAY DERAIL GROWTH OUTLOOK; INDIA CAD TO REMAIN CONTAINED AT 1.1% OF GDP IN 2027",
+   "url": "https://t.me/Indiaredboxglobal/9555",
+   "entry_date": "2026-11-17",
+   "entry": 433.5
+  },
+  {
+   "id": "f2a72a11545c26d6",
+   "symbol": "IRFC",
+   "time": "2026-11-18T13:45:55+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Indian Railway Finance Corporation Limited: Indian Railway Finance Corporation Limited has informed the Exchange regarding Outcome of Board Meeting held on Nove",
+   "url": "https://nsearchives.nseindia.com/corporate/IRFC_18112026134539_OUTCOME18112026.pdf",
+   "entry_date": "2026-11-17",
+   "entry": 82.65
+  },
+  {
+   "id": "0f36c80771ca625e",
+   "symbol": "BATAINDIA",
+   "time": "2026-11-18T13:42:33+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Nifty Consumer Durables index slides 3%; Titan, Kalyan Jewellers crack 5%",
+   "url": "https://www.business-standard.com/markets/news/nifty-consumer-durables-index-slides-3-titan-kalyan-jewellers-crack-5-126111800512_1.html",
+   "entry_date": "2026-11-17",
+   "entry": 633.25
+  },
+  {
+   "id": "0f36c80771ca625e",
+   "symbol": "CROMPTON",
+   "time": "2026-11-18T13:42:33+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Nifty Consumer Durables index slides 3%; Titan, Kalyan Jewellers crack 5%",
+   "url": "https://www.business-standard.com/markets/news/nifty-consumer-durables-index-slides-3-titan-kalyan-jewellers-crack-5-126111800512_1.html",
+   "entry_date": "2026-11-17",
+   "entry": 208.95
+  },
+  {
+   "id": "a9bb10bd03326676",
+   "symbol": "NTPC",
+   "time": "2026-11-18T13:39:56+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Multibagger ACME Solar jumps 3% on order win, trades 113% up from Jan lows",
+   "url": "https://www.business-standard.com/markets/news/multibagger-stock-acme-solar-jumps-3-on-order-win-trades-113-up-from-january-lows-126111800524_1.html",
+   "entry_date": "2026-11-17",
+   "entry": 321.8
+  },
+  {
+   "id": "a9bb10bd03326676",
+   "symbol": "SOLARINDS",
+   "time": "2026-11-18T13:39:56+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Multibagger ACME Solar jumps 3% on order win, trades 113% up from Jan lows",
+   "url": "https://www.business-standard.com/markets/news/multibagger-stock-acme-solar-jumps-3-on-order-win-trades-113-up-from-january-lows-126111800524_1.html",
+   "entry_date": "2026-11-17",
+   "entry": 18764.0
+  },
   {
    "id": "0b9fc38ad76e3ac2",
    "symbol": "JSWENERGY",

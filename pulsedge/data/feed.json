@@ -1,6 +1,432 @@
 {
- "updated": "2026-11-18T13:45:17+05:30",
+ "updated": "2026-11-18T14:00:27+05:30",
  "items": [
+  {
+   "id": "33fc4a48be81bac5",
+   "time": "2026-11-18T13:59:35+05:30",
+   "headline": "Putin says EU is losing industry, falling behind competition, ahead of meeting with Trump and Xi",
+   "source": "CNBC World Markets",
+   "url": "https://www.cnbc.com/2026/11/18/putin-apec-eu-trump-xi-meeting.html",
+   "section": "global",
+   "call": "ignore",
+   "horizon": "positional",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "macro"
+   ],
+   "impact": 10,
+   "confidence": 20,
+   "category": "geopolitics",
+   "action": "Monitor global risk sentiment for broader market impacts.",
+   "reason": [
+    "Geopolitical commentary with no direct impact on specific Indian stocks."
+   ],
+   "risks": [
+    "Potential for broader market volatility if geopolitical tensions escalate."
+   ],
+   "plain": "A world leader commented on economic competition ahead of international meetings.",
+   "why": "This is general global news that does not directly change the value of specific Indian companies.",
+   "check": "Look at how global news affects the overall market mood.",
+   "original": "Putin used the speech to emphasize Russia's economic resilience despite U.S. sanctions, and played up opportunities for APEC members in the country."
+  },
+  {
+   "id": "eb041b6808872156",
+   "time": "2026-11-18T13:55:11+05:30",
+   "headline": "Hitachi Energy India Limited: Hitachi Energy India Limited has informed the Exchange about Transcript |SUBJECT: Analysts/Institutional Investor Meet/Con. Call Updates",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/HitachiEnergy_18112026135407_Binder1.pdf",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "swing",
+   "direction": "mixed",
+   "tickers": [
+    {
+     "symbol": "POWERINDIA",
+     "direction": "up"
+    }
+   ],
+   "sectors": [],
+   "impact": 8,
+   "confidence": 30,
+   "category": "Routine filing",
+   "action": "No action",
+   "reason": [
+    "Keyword rules (AI classification is off)"
+   ],
+   "risks": [],
+   "plain": "",
+   "why": "A routine notice that companies must file. It rarely affects the share price.",
+   "check": "",
+   "original": "Hitachi Energy India Limited: Hitachi Energy India Limited has informed the Exchange about Transcript |SUBJECT: Analysts/Institutional Investor Meet/Con. Call Updates"
+  },
+  {
+   "id": "f89541cfec786ff4",
+   "time": "2026-11-18T13:54:46+05:30",
+   "headline": "GOLDMAN SACHS: SEE INDIA FY27 GDP GROWTH AT 7.2% IN 2027 VS 7.6% IN 2026; TOTAL PRIVATE SECTOR CREDIT GROWTH AT AROUND 17% OCT-DEC",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9557",
+   "section": "macro",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "macro"
+   ],
+   "impact": 30,
+   "confidence": 30,
+   "category": "macro",
+   "action": "Watch for market reaction to the growth outlook in upcoming sessions",
+   "reason": [
+    "Forecast suggests strong GDP growth, could boost equities",
+    "Credit growth may improve financial sector outlook"
+   ],
+   "risks": [
+    "Projections may be revised downward",
+    "Global headwinds could dampen impact"
+   ],
+   "plain": "Goldman Sachs projects India's FY27 GDP at 7.2% and private credit growth around 17%.",
+   "why": "Higher growth expectations can lift market sentiment, but numbers may change, so impact is uncertain.",
+   "check": "Look at upcoming economic data releases for GDP and credit trends.",
+   "original": "GOLDMAN SACHS: SEE INDIA FY27 GDP GROWTH AT 7.2% IN 2027 VS 7.6% IN 2026; TOTAL PRIVATE SECTOR CREDIT GROWTH AT AROUND 17% OCT-DEC",
+   "latency": 45.8,
+   "lane": "fast"
+  },
+  {
+   "id": "efdb5646f06ac9c1",
+   "time": "2026-11-18T13:54:29+05:30",
+   "headline": "GOLDMAN SACHS: GLOBAL AI CAPEX IS PROJECTED TO APPROACH $2 TIN IN 2028; DEMAND, ROBUST EARNINGS TO MAKE INDIA ATTRACTIVE FOR AL",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9556",
+   "section": "macro",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "technology",
+    "AI"
+   ],
+   "impact": 25,
+   "confidence": 30,
+   "category": "macro",
+   "action": "Watch for sector moves as AI investment expectations evolve",
+   "reason": [
+    "AI spending surge could benefit Indian tech firms",
+    "Long‑term forecast may not translate into immediate price moves"
+   ],
+   "risks": [
+    "Forecast is long‑term and may not materialise",
+    "Competitive pressures could limit benefits"
+   ],
+   "plain": "Goldman Sachs expects global AI capex to near $2 trillion by 2028, making India attractive for AI.",
+   "why": "Strong AI investment could boost Indian technology stocks, but the outlook is distant and uncertain.",
+   "check": "Monitor AI‑related earnings updates from Indian technology companies.",
+   "original": "GOLDMAN SACHS: GLOBAL AI CAPEX IS PROJECTED TO APPROACH $2 TIN IN 2028; DEMAND, ROBUST EARNINGS TO MAKE INDIA ATTRACTIVE FOR AL",
+   "latency": 62.8,
+   "lane": "fast"
+  },
+  {
+   "id": "1c9a48f4b842d03a",
+   "time": "2026-11-18T13:54:04+05:30",
+   "headline": "GOLDMAN SACHS: FURTHER RISE IN CRUDE OIL PRICES MAY DERAIL GROWTH OUTLOOK; INDIA CAD TO REMAIN CONTAINED AT 1.1% OF GDP IN 2027",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9555",
+   "section": "macro",
+   "call": "watch",
+   "horizon": "positional",
+   "direction": "mixed",
+   "tickers": [
+    {
+     "symbol": "OIL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Energy",
+    "Macro"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "Research Note",
+   "action": "Monitor global crude benchmarks for sustained upward momentum before assuming sector-wide strength.",
+   "reason": [
+    "Goldman Sachs warns rising crude prices could hurt India's growth outlook.",
+    "However, the CAD impact is expected to remain contained at 1.1% of GDP in 2027."
+   ],
+   "risks": [
+    "Sustained high oil prices may squeeze corporate margins across the economy.",
+    "Growth slowdown could reduce overall market sentiment."
+   ],
+   "plain": "A major bank says rising oil prices might slow India's economic growth, but the trade deficit impact should stay small.",
+   "why": "Higher oil costs can hurt the economy and corporate profits, but the specific trade deficit risk is limited.",
+   "check": "Look at recent global oil price trends and India's monthly trade deficit data.",
+   "original": "GOLDMAN SACHS: FURTHER RISE IN CRUDE OIL PRICES MAY DERAIL GROWTH OUTLOOK; INDIA CAD TO REMAIN CONTAINED AT 1.1% OF GDP IN 2027",
+   "latency": 27.0,
+   "lane": "fast"
+  },
+  {
+   "id": "2673ec0122a99572",
+   "time": "2026-11-18T13:50:34+05:30",
+   "headline": "Indian Railway Finance Corporation Limited: Indian Railway Finance Corporation Limited has informed the Exchange about General Updates |SUBJECT: General Updates",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/IRFC_18112026135021_OUTCOME18112026.pdf",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [
+    {
+     "symbol": "IRFC",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "finance"
+   ],
+   "impact": 5,
+   "confidence": 10,
+   "category": "filing",
+   "action": "No specific action required for routine updates.",
+   "reason": [
+    "Routine general update with no specific financial data or material change."
+   ],
+   "risks": [],
+   "plain": "A company sent a general update to the stock exchange.",
+   "why": "This is a standard administrative notice that does not contain new financial information.",
+   "check": "",
+   "original": "Indian Railway Finance Corporation Limited: Indian Railway Finance Corporation Limited has informed the Exchange about General Updates |SUBJECT: General Updates"
+  },
+  {
+   "id": "6459af1a888a900e",
+   "time": "2026-11-18T13:50:25+05:30",
+   "headline": "Jio Platforms shares gain over 26% from IPO price: Should investors hold, buy more or book profits? What experts say",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/jio-platforms-shares-gain-over-26-from-ipo-price-should-investors-hold-buy-more-or-book-profits-what-experts-say-11794985144658.html",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "telecom",
+    "technology"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "earnings",
+   "action": "Watch for analyst follow-ups on valuation after the strong price run.",
+   "reason": [
+    "Strong performance and price appreciation from IPO levels.",
+    "Analyst opinions are mixed on holding vs booking profits."
+   ],
+   "risks": [
+    "Valuation may be stretched after a 26% gain from IPO price."
+   ],
+   "plain": "A major tech company's shares have risen significantly since they first started trading.",
+   "why": "The company is growing well, but the stock price has already gone up a lot, so it might be expensive now.",
+   "check": "Check what experts think about the current price level.",
+   "original": "After a strong IPO debut, Jio Platforms reported higher revenue and profit, with growth supported by 5G, broadband and digital services. Analysts recommend existing investors consider holding, while new buyers may wait for a correction or a technical breakout rather than chase the rally."
+  },
+  {
+   "id": "7b7956eaa70c9d0f",
+   "time": "2026-11-18T13:48:46+05:30",
+   "headline": "The Federal Bank Limited: The Federal Bank Limited has informed the Exchange regarding Notice of Postal Ballot |SUBJECT: Shareholders meeting",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/FEDERALBNK_18112026134742_SE_Intimation-PB_Notice_Nov_2026_S.pdf",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [
+    {
+     "symbol": "FEDERALBNK",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "banking"
+   ],
+   "impact": 5,
+   "confidence": 10,
+   "category": "filing",
+   "action": "No specific action required for routine meeting notices.",
+   "reason": [
+    "Routine notice for a shareholders meeting via postal ballot."
+   ],
+   "risks": [],
+   "plain": "A bank announced it will hold a meeting for its owners to vote on some decisions.",
+   "why": "This is a standard procedure for companies to get approval from their owners and does not change the business.",
+   "check": "",
+   "original": "The Federal Bank Limited: The Federal Bank Limited has informed the Exchange regarding Notice of Postal Ballot |SUBJECT: Shareholders meeting"
+  },
+  {
+   "id": "f2a72a11545c26d6",
+   "time": "2026-11-18T13:45:55+05:30",
+   "headline": "Indian Railway Finance Corporation Limited: Indian Railway Finance Corporation Limited has informed the Exchange regarding Outcome of Board Meeting held on November 18, 2026. |SUBJECT: Outcome of Board Meeting",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/IRFC_18112026134539_OUTCOME18112026.pdf",
+   "section": "news",
+   "call": "watch",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [
+    {
+     "symbol": "IRFC",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "finance"
+   ],
+   "impact": 20,
+   "confidence": 40,
+   "category": "board_meeting",
+   "action": "Check the detailed board meeting outcome for any new approvals or dividends.",
+   "reason": [
+    "Board meeting outcomes can contain material financial decisions."
+   ],
+   "risks": [
+    "Outcome details are not provided in the headline."
+   ],
+   "plain": "A company's top managers met and made some decisions.",
+   "why": "These meetings often decide on important things like new loans or profits, which can affect the stock.",
+   "check": "Read the full report of what the managers decided.",
+   "original": "Indian Railway Finance Corporation Limited: Indian Railway Finance Corporation Limited has informed the Exchange regarding Outcome of Board Meeting held on November 18, 2026. |SUBJECT: Outcome of Board Meeting"
+  },
+  {
+   "id": "96636ece886c61af",
+   "time": "2026-11-18T13:45:50+05:30",
+   "headline": "Krishana Phoschem Limited: Krishana Phoschem Limited has informed the Exchange about Link of Recording |SUBJECT: Analysts/Institutional Investor Meet/Con. Call Updates",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/KRISHANA_18112026134429_NSEANLINKRECO181126TOUP.pdf",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "swing",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [],
+   "impact": 8,
+   "confidence": 30,
+   "category": "Routine filing",
+   "action": "No action",
+   "reason": [
+    "Keyword rules (AI classification is off)"
+   ],
+   "risks": [],
+   "plain": "",
+   "why": "A routine notice that companies must file. It rarely affects the share price.",
+   "check": "",
+   "original": "Krishana Phoschem Limited: Krishana Phoschem Limited has informed the Exchange about Link of Recording |SUBJECT: Analysts/Institutional Investor Meet/Con. Call Updates"
+  },
+  {
+   "id": "77e8d8a5639a5f66",
+   "time": "2026-11-18T13:45:48+05:30",
+   "headline": "Apex Ecotech Limited: Apex Ecotech Limited has informed the Exchange about Investor Presentation |SUBJECT: Investor Presentation",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/APEXECO_18112026134516_InvestorPresentationsigned.pdf",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "technology"
+   ],
+   "impact": 5,
+   "confidence": 10,
+   "category": "filing",
+   "action": "No specific action required for investor presentations.",
+   "reason": [
+    "Routine investor presentation with no specific new data."
+   ],
+   "risks": [],
+   "plain": "A company shared a presentation with people who invest in it.",
+   "why": "This is a standard way for companies to explain their business and does not usually change the stock price immediately.",
+   "check": "",
+   "original": "Apex Ecotech Limited: Apex Ecotech Limited has informed the Exchange about Investor Presentation |SUBJECT: Investor Presentation"
+  },
+  {
+   "id": "3b54245c42768eab",
+   "time": "2026-11-18T13:45:14+05:30",
+   "headline": "Kwality Wall's (India) Limited: Submission of Copies of Newspaper Advertisements with respect to the 1st Annual General Meeting of the Company to be held on Thursday, 10th December, 2026 at 12:30 P.M. (IST) through Video Conferencing (VC) / Other Audio",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/Magnum_18112026134501_SEIntimationPostDispatchNewspaperADsigned.pdf",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "swing",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [],
+   "impact": 8,
+   "confidence": 30,
+   "category": "Routine filing",
+   "action": "No action",
+   "reason": [
+    "Keyword rules (AI classification is off)"
+   ],
+   "risks": [],
+   "plain": "",
+   "why": "A routine notice that companies must file. It rarely affects the share price.",
+   "check": "",
+   "original": "Kwality Wall's (India) Limited: Submission of Copies of Newspaper Advertisements with respect to the 1st Annual General Meeting of the Company to be held on Thursday, 10th December, 2026 at 12:30 P.M. (IST) through Video Conferencing (VC) / Other Audio"
+  },
+  {
+   "id": "0f36c80771ca625e",
+   "time": "2026-11-18T13:42:33+05:30",
+   "headline": "Nifty Consumer Durables index slides 3%; Titan, Kalyan Jewellers crack 5%",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/nifty-consumer-durables-index-slides-3-titan-kalyan-jewellers-crack-5-126111800512_1.html",
+   "section": "trading",
+   "call": "watch",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "BATAINDIA",
+     "direction": "down"
+    },
+    {
+     "symbol": "CROMPTON",
+     "direction": "down"
+    },
+    {
+     "symbol": "DIXON",
+     "direction": "down"
+    },
+    {
+     "symbol": "HAVELLS",
+     "direction": "down"
+    },
+    {
+     "symbol": "KALYANKJIL",
+     "direction": "down"
+    },
+    {
+     "symbol": "TITAN",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "consumer_durables"
+   ],
+   "impact": 60,
+   "confidence": 80,
+   "category": "market_movement",
+   "action": "Watch for sector-wide weakness or specific company news driving the decline.",
+   "reason": [
+    "Significant drop in the Consumer Durables index.",
+    "Multiple major stocks in the sector are down significantly."
+   ],
+   "risks": [
+    "Sector-wide sell-off could continue if broader market sentiment weakens."
+   ],
+   "plain": "Stocks of companies that make things people buy, like watches and appliances, went down today.",
+   "why": "When many companies in the same group go down, it might mean people are worried about that specific type of business.",
+   "check": "See if there is any bad news about these specific companies or the whole sector.",
+   "original": "Among others in the Consumer Durables index, Dixon, Havells India, Voltas, Crompton Greaves Consumer Electricals and Bata India declined in the range of 2-3% in Wednesday's trade."
+  },
   {
    "id": "15ead3f90b01d4f5",
    "time": "2026-11-18T13:41:01+05:30",
@@ -54,6 +480,46 @@
    "why": "New customer orders can support future revenue growth for smaller technology providers.",
    "check": "Look for the total monetary value of the contract in company disclosures.",
    "original": "Canarys Automations Limited: Intimation regarding International order Secured by M/s. Canarys Automations Limited from M/s Tenpoint Therapeutics |SUBJECT: Awarding of order(s)/contract(s)"
+  },
+  {
+   "id": "a9bb10bd03326676",
+   "time": "2026-11-18T13:39:56+05:30",
+   "headline": "Multibagger ACME Solar jumps 3% on order win, trades 113% up from Jan lows",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/multibagger-stock-acme-solar-jumps-3-on-order-win-trades-113-up-from-january-lows-126111800524_1.html",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "NTPC",
+     "direction": "up"
+    },
+    {
+     "symbol": "SOLARINDS",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "energy",
+    "renewables"
+   ],
+   "impact": 50,
+   "confidence": 70,
+   "category": "contract_win",
+   "action": "Monitor the details of the power purchase agreement for long-term revenue impact.",
+   "reason": [
+    "ACME Solar's subsidiary won a significant contract with NTPC.",
+    "This indicates growth in the renewable energy sector."
+   ],
+   "risks": [
+    "Contract execution risks and long-term revenue realization."
+   ],
+   "plain": "A solar energy company got a big contract to sell power to a major electricity company.",
+   "why": "Winning a big contract means the company will earn more money in the future, which is good for its stock.",
+   "check": "Look at how much money this contract is worth and how long it will last.",
+   "original": "ACME Solar's subsidiary, ACME Alpha Renewables, has executed a power purchase agreement (PPA) with NTPC for a Hybrid Power Project for a contract capacity of 150 MW."
   },
   {
    "id": "f2d6e0ff0573880a",
@@ -3577,195 +4043,6 @@
    "why": "This is a standard daily update that does not change the value of the company's shares.",
    "check": "",
    "original": "ICICI Prudential MF-ICICI Prudential Nifty EV & New Age Automotive ETF: EVIETF : ICICI Prudential Asset Management Company Limited has informed the Exchange that the Net Asset Value (per unit) of ICICI Prudential MF-ICICI Prudential Nifty EV & New Age Automotive ETF as on November 17, 2026 i"
-  },
-  {
-   "id": "3cd1d613d01ac92a",
-   "time": "2026-11-18T12:03:00+05:30",
-   "headline": "ICICI PRUDENTIAL MUTUAL FUND - ICICI Prudential Nifty FMCG ETF: FMCGIETF : ICICI Prudential Asset Management Company Limited has informed the Exchange that the Net Asset Value (per unit) of ICICI Prudential Mutual Fund - ICICI Prudential FMCG ETF as on November 17, 2026 is Rs. 51.295",
-   "source": "NSE Announcements",
-   "url": "",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "ETF"
-   ],
-   "impact": 0,
-   "confidence": 100,
-   "category": "Routine Filing",
-   "action": "No action required.",
-   "reason": [
-    "Routine daily NAV declaration."
-   ],
-   "risks": [],
-   "plain": "The fund manager announced the daily value of the consumer goods investment fund.",
-   "why": "This is a standard daily update that does not change the value of the company's shares.",
-   "check": "",
-   "original": "ICICI PRUDENTIAL MUTUAL FUND - ICICI Prudential Nifty FMCG ETF: FMCGIETF : ICICI Prudential Asset Management Company Limited has informed the Exchange that the Net Asset Value (per unit) of ICICI Prudential Mutual Fund - ICICI Prudential FMCG ETF as on November 17, 2026 is Rs. 51.295"
-  },
-  {
-   "id": "2debde9eb3c2a875",
-   "time": "2026-11-18T12:03:00+05:30",
-   "headline": "ICICI PRUDENTIAL MUTUAL FUND - ICICI Prudential Nifty Healthcare ETF: ICICI Prudential Asset Management Company Limited has informed the Exchange that the Net Asset Value (per unit) of ICICI Prudential Mutual Fund - ICICI Prudential Healthcare ETF as on November 17, 2026 is Rs. 176.9023. |",
-   "source": "NSE Announcements",
-   "url": "",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "ETF"
-   ],
-   "impact": 0,
-   "confidence": 100,
-   "category": "Routine Filing",
-   "action": "No action required.",
-   "reason": [
-    "Routine daily NAV declaration."
-   ],
-   "risks": [],
-   "plain": "The fund manager announced the daily value of the healthcare investment fund.",
-   "why": "This is a standard daily update that does not change the value of the company's shares.",
-   "check": "",
-   "original": "ICICI PRUDENTIAL MUTUAL FUND - ICICI Prudential Nifty Healthcare ETF: ICICI Prudential Asset Management Company Limited has informed the Exchange that the Net Asset Value (per unit) of ICICI Prudential Mutual Fund - ICICI Prudential Healthcare ETF as on November 17, 2026 is Rs. 176.9023. |"
-  },
-  {
-   "id": "908b873a09da7ce6",
-   "time": "2026-11-18T12:03:00+05:30",
-   "headline": "ICICI Prudential Mutual Fund - ICICI Prudential Nifty Metal ETF: METALIETF : ICICI Prudential Asset Management Company Limited has informed the Exchange that the Net Asset Value (per unit) of ICICI Prudential Mutual Fund - ICICI Prudential Nifty Metal ETF as on November 17, 2026 is Rs",
-   "source": "NSE Announcements",
-   "url": "",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "ETF"
-   ],
-   "impact": 0,
-   "confidence": 100,
-   "category": "Routine Filing",
-   "action": "No action required.",
-   "reason": [
-    "Routine daily NAV declaration."
-   ],
-   "risks": [],
-   "plain": "The fund manager announced the daily value of the metal investment fund.",
-   "why": "This is a standard daily update that does not change the value of the company's shares.",
-   "check": "",
-   "original": "ICICI Prudential Mutual Fund - ICICI Prudential Nifty Metal ETF: METALIETF : ICICI Prudential Asset Management Company Limited has informed the Exchange that the Net Asset Value (per unit) of ICICI Prudential Mutual Fund - ICICI Prudential Nifty Metal ETF as on November 17, 2026 is Rs"
-  },
-  {
-   "id": "fe60f12f5d4da224",
-   "time": "2026-11-18T12:03:00+05:30",
-   "headline": "ICICI Pru Mutual Fund-ICICI Prudential Nifty 10 yr Benchmark G-Sec ETF: ICICI Prudential Asset Management Company Limited has informed the Exchange that the Net Asset Value (per unit) of ICICI Pru Mutual Fund-ICICI Prudential Nifty 10 yr Benchmark G-Sec ETF as on November 17, 2026 is Rs. 261",
-   "source": "NSE Announcements",
-   "url": "",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "ETF"
-   ],
-   "impact": 0,
-   "confidence": 100,
-   "category": "Routine Filing",
-   "action": "No action required.",
-   "reason": [
-    "Routine daily NAV declaration."
-   ],
-   "risks": [],
-   "plain": "The fund manager announced the daily value of the 10-year government bond fund.",
-   "why": "This is a standard daily update that does not change the value of the company's shares.",
-   "check": "",
-   "original": "ICICI Pru Mutual Fund-ICICI Prudential Nifty 10 yr Benchmark G-Sec ETF: ICICI Prudential Asset Management Company Limited has informed the Exchange that the Net Asset Value (per unit) of ICICI Pru Mutual Fund-ICICI Prudential Nifty 10 yr Benchmark G-Sec ETF as on November 17, 2026 is Rs. 261"
-  },
-  {
-   "id": "02523c27196be7d1",
-   "time": "2026-11-18T12:03:00+05:30",
-   "headline": "ICICI Prudential Mutual Fund - ICICI Prudential Nifty Oil & Gas ETF: OILIETF : ICICI Prudential Asset Management Company Limited has informed the Exchange that the Net Asset Value (per unit) of ICICI Prudential Mutual Fund - ICICI Prudential Nifty Oil & Gas ETF as on November 17, 2026 is ",
-   "source": "NSE Announcements",
-   "url": "",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "ETF"
-   ],
-   "impact": 0,
-   "confidence": 100,
-   "category": "Routine Filing",
-   "action": "No action required.",
-   "reason": [
-    "Routine daily NAV declaration."
-   ],
-   "risks": [],
-   "plain": "The fund manager announced the daily value of the oil and gas investment fund.",
-   "why": "This is a standard daily update that does not change the value of the company's shares.",
-   "check": "",
-   "original": "ICICI Prudential Mutual Fund - ICICI Prudential Nifty Oil & Gas ETF: OILIETF : ICICI Prudential Asset Management Company Limited has informed the Exchange that the Net Asset Value (per unit) of ICICI Prudential Mutual Fund - ICICI Prudential Nifty Oil & Gas ETF as on November 17, 2026 is "
-  },
-  {
-   "id": "dce881360fdb1e00",
-   "time": "2026-11-18T12:03:00+05:30",
-   "headline": "ICICI Prudential Nifty50 Value 20 ETF: NV20IETF : ICICI Prudential Asset Management Company Limited has informed the Exchange that the Net Asset Value (per unit) of ICICI Prudential NV20 ETF as on November 17, 2026 is Rs. 14.2935. |SUBJECT: Declaration of NAV",
-   "source": "NSE Announcements",
-   "url": "",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "ETF"
-   ],
-   "impact": 0,
-   "confidence": 100,
-   "category": "Routine Filing",
-   "action": "No action required.",
-   "reason": [
-    "Routine daily NAV declaration."
-   ],
-   "risks": [],
-   "plain": "The fund manager announced the daily value of the value stock investment fund.",
-   "why": "This is a standard daily update that does not change the value of the company's shares.",
-   "check": "",
-   "original": "ICICI Prudential Nifty50 Value 20 ETF: NV20IETF : ICICI Prudential Asset Management Company Limited has informed the Exchange that the Net Asset Value (per unit) of ICICI Prudential NV20 ETF as on November 17, 2026 is Rs. 14.2935. |SUBJECT: Declaration of NAV"
-  },
-  {
-   "id": "a56237aa9839721e",
-   "time": "2026-11-18T12:03:00+05:30",
-   "headline": "ICICI Prudential Nifty 5 Yr Benchmark G-SEC ETF: GSEC5IETF : ICICI Prudential Asset Management Company Limited has informed the Exchange that the Net Asset Value (per unit) of ICICI Prudential Mutual Fund - ICICI Prudential 5 Year G-Sec ETF as on November 17, 2026 is R",
-   "source": "NSE Announcements",
-   "url": "",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "ETF"
-   ],
-   "impact": 0,
-   "confidence": 100,
-   "category": "Routine Filing",
-   "action": "No action required.",
-   "reason": [
-    "Routine daily NAV declaration."
-   ],
-   "risks": [],
-   "plain": "The fund manager announced the daily value of the 5-year government bond fund.",
-   "why": "This is a standard daily update that does not change the value of the company's shares.",
-   "check": "",
-   "original": "ICICI Prudential Nifty 5 Yr Benchmark G-SEC ETF: GSEC5IETF : ICICI Prudential Asset Management Company Limited has informed the Exchange that the Net Asset Value (per unit) of ICICI Prudential Mutual Fund - ICICI Prudential 5 Year G-Sec ETF as on November 17, 2026 is R"
   },
   {
    "id": "e3aa5b1ab50f7db3",
@@ -16131,51 +16408,17 @@
    "why": "Changes may affect Oil India’s performance, so keep an eye on the numbers.",
    "check": "Look at the latest WPI and crude oil price releases.",
    "original": "WPI inflation data, foreign investor trading activity, crude oil prices, and developments in West Asia will drive investor sentiment this week, analysts said. Globally, US retail sales, Nvidia's earnings and the FOMC (Federal Open Market Committee) minutes will shape global rate expectations and tec"
-  },
-  {
-   "id": "7ee524637da68a36",
-   "time": "2026-11-15T13:48:27+05:30",
-   "headline": "Powerful solar stock to generate further returns? 33% up in 6 months, Motilal Oswal sees 40% more; do you own it? Target",
-   "source": "Mint Markets",
-   "url": "https://www.livemint.com/market/stock-market-news/midcap-solar-stock-rallies-33-in-six-months-motilal-oswal-sees-40-upside-do-you-own-it-check-target-price-11794669986419.html",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "SOLARINDS",
-     "direction": "up"
-    }
-   ],
-   "sectors": [],
-   "impact": 65,
-   "confidence": 70,
-   "category": "watch",
-   "action": "Watch for earnings updates that could confirm the growth outlook.",
-   "reason": [
-    "Analyst expects earnings growth for the solar company.",
-    "Recent price dip may be temporary."
-   ],
-   "risks": [
-    "Solar sector policy changes.",
-    "Execution risk on growth plans."
-   ],
-   "plain": "Solar company Fujiyama Power Systems sees a 2% price dip but analysts expect growth.",
-   "why": "Positive earnings outlook could lift the stock despite the recent dip.",
-   "check": "Check the upcoming quarterly earnings release.",
-   "original": "Fujiyama Power Systems shares fell 2.05% on Friday, extending recent losses, though they remain up 33% over six months. Motilal Oswal expects earnings growth in the second half of FY27, citing expanding distribution, new facilities and strong rooftop solar demand.&nbsp;"
   }
  ],
  "digest": {
   "date": "2026-11-18",
   "act": 9,
-  "watch": 81,
+  "watch": 88,
   "ignored": 100,
   "reasons": [
    {
     "label": "Routine filing",
-    "count": 23
+    "count": 26
    },
    {
     "label": "general",
@@ -16183,7 +16426,7 @@
    },
    {
     "label": "Routine Filing",
-    "count": 16
+    "count": 9
    },
    {
     "label": "NAV Update",
@@ -16194,7 +16437,7 @@
     "count": 4
    },
    {
-    "label": "management",
+    "label": "filing",
     "count": 3
    }
   ]
