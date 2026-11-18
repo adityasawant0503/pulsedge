@@ -1,7 +1,45 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-18T13:20:30+05:30",
+ "updated": "2026-11-18T13:21:30+05:30",
  "items": [
+  {
+   "id": "f8847704e5631d3d",
+   "time": "2026-11-18T13:20:55+05:30",
+   "headline": "NTPC: 3 WORKERS EMPLOYED BY SIMPLEX INFRASTRUCTURES AND THYSSENKRUPP WERE KILLED AND 2 OTHERS INJURED IN ACCIDENT AT NTPC'S PROJECT IN TANDWA; INVESTIGATION INTO THE CAUSE OF THE ACCIDENT IS UNDERWAY",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9552",
+   "section": "news",
+   "call": "watch",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "NTPC",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Power"
+   ],
+   "impact": 20,
+   "confidence": 60,
+   "category": "Operational Incident",
+   "action": "Monitor for regulatory updates or project delay announcements that could extend the negative sentiment.",
+   "reason": [
+    "Fatalities at a project site trigger immediate safety scrutiny and potential work stoppages.",
+    "Investigation may lead to short-term operational disruptions or reputational risk."
+   ],
+   "risks": [
+    "Regulatory fines or mandatory safety audits could increase costs.",
+    "Project timeline delays may affect revenue recognition."
+   ],
+   "plain": "Three workers died in an accident at an NTPC project site, and an investigation is now underway.",
+   "why": "Such accidents can pause work and draw regulatory attention, which might temporarily affect the company's operations and reputation.",
+   "check": "Look for official statements from the company or news about any work stoppages.",
+   "original": "NTPC: 3 WORKERS EMPLOYED BY SIMPLEX INFRASTRUCTURES AND THYSSENKRUPP WERE KILLED AND 2 OTHERS INJURED IN ACCIDENT AT NTPC'S PROJECT IN TANDWA; INVESTIGATION INTO THE CAUSE OF THE ACCIDENT IS UNDERWAY",
+   "latency": 35.6,
+   "lane": "fast"
+  },
   {
    "id": "6dd6e246364219f5",
    "time": "2026-11-18T13:19:02+05:30",
