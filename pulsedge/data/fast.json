@@ -1,7 +1,45 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-17T15:06:45+05:30",
+ "updated": "2026-11-18T09:56:25+05:30",
  "items": [
+  {
+   "id": "bcffb29d4178746b",
+   "time": "2026-11-18T09:54:26+05:30",
+   "headline": "FEDERAL BANK: CO SAYS WONT DO ANY DEAL WITH JANA SMALL FINANCE BANK: INTERVIEW",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9522",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "FEDERALBNK",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Banking"
+   ],
+   "impact": 30,
+   "confidence": 60,
+   "category": "company",
+   "action": "Watch for any follow‑up clarification on the bank’s partnership strategy.",
+   "reason": [
+    "Federal Bank ruled out a deal with Jana Small Finance Bank.",
+    "Potential synergies or revenue from the partnership are now unlikely."
+   ],
+   "risks": [
+    "Market may view the decision as cautious, limiting upside.",
+    "Future partnership opportunities could still emerge."
+   ],
+   "plain": "Federal Bank said it will not make any deal with Jana Small Finance Bank.",
+   "why": "Investors may see a missed growth opportunity, so the stock could face slight downside.",
+   "check": "Look for any official statement on future partnership plans.",
+   "original": "FEDERAL BANK: CO SAYS WONT DO ANY DEAL WITH JANA SMALL FINANCE BANK: INTERVIEW",
+   "latency": 119.9,
+   "lane": "fast"
+  },
   {
    "id": "de48e096d444c62c",
    "time": "2026-11-17T15:05:18+05:30",
@@ -1113,31 +1151,6 @@
    "check": "Look for updates on the leak’s containment and any impact on output.",
    "original": "ONGC: MAJOR GAS LEAK AT ONGC PLANT IN ANDHRA'S KONASEEMA DISTRICT",
    "latency": 52.8,
-   "lane": "fast"
-  },
-  {
-   "id": "471d22f638a889f6",
-   "time": "2026-11-17T09:52:52+05:30",
-   "headline": "EVEREST INDUSTRIES: CO APPOINTS DR. AMIT MAHAJAN AS HEAD OF R&D; PREVIOUSLY SERVED AT RELIANCE INDUSTRIES AND SAINT-GOBAIN",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9413",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "company",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "Everest Industries named a new head of R&D, previously from Reliance Industries.",
-   "why": "It’s a routine appointment that likely won’t affect share price soon.",
-   "check": "",
-   "original": "EVEREST INDUSTRIES: CO APPOINTS DR. AMIT MAHAJAN AS HEAD OF R&D; PREVIOUSLY SERVED AT RELIANCE INDUSTRIES AND SAINT-GOBAIN",
-   "latency": 450.9,
    "lane": "fast"
   }
  ]
