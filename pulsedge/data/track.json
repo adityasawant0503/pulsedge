@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T08:46:54+05:30",
+ "updated": "2026-11-18T09:00:44+05:30",
  "summary": {
-  "calls": 1641,
-  "scored_calls": 482,
+  "calls": 1642,
+  "scored_calls": 483,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "c9b50b14b12e80bc",
+   "symbol": "ACMESOLAR",
+   "time": "2026-11-18T08:42:04+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Acme Solar Holdings Limited: Acme Solar Holdings Limited has informed the Exchange about execution of Power Purchase Agreement. Press release is also enclosed |",
+   "url": "https://nsearchives.nseindia.com/corporate/ACME122002_18112026084007_Intimation18112026.pdf",
+   "entry_date": "2026-11-17",
+   "entry": 403.6
+  },
   {
    "id": "798233d2cdd5122e",
    "symbol": "BIOCON",

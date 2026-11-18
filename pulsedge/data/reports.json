@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T08:46+05:30",
+ "updated": "2026-11-18T09:00+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -633,6 +633,22 @@
    "items": 2,
    "updated": "2026-11-18T03:28+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "ACMESOLAR": {
+   "summary": "ACME Solar Holdings announced it has executed a Power Purchase Agreement, meaning it will sell electricity under a new contract. The broader energy sector index was flat over the past five sessions.",
+   "why": "The agreement secures future revenue, which can influence the value of the shares.",
+   "upside": "If the PPA is sizable and profitable, it could lift the company's earnings.",
+   "downside": "Because the contract value was not disclosed, the actual impact on earnings is uncertain.",
+   "watch": [
+    "PPA contract size and terms",
+    "Energy sector index movement",
+    "Any further corporate announcements"
+   ],
+   "about": "ACME Solar Holdings Ltd. develops and operates solar power projects.",
+   "basis": "2e1c0c180c2c",
+   "items": 1,
+   "updated": "2026-11-18T09:00+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "HFCL": {
    "summary": "HFCL shares hit a 5% lower trading limit after a sharp rise in their price. This sudden drop made it hard for some investors to sell their shares immediately.",
