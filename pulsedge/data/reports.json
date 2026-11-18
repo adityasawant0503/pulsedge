@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T11:02+05:30",
+ "updated": "2026-11-18T11:15+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -619,20 +619,20 @@
    "model": "gemini-flash-lite-latest"
   },
   "TATAPOWER": {
-   "summary": "Tata Power commissioned a 100.8 MW wind farm in Ausa, Maharashtra and its renewable arm issued a business press announcement.",
-   "why": "The new clean‑energy capacity could support future growth, though its effect on current earnings may be limited.",
-   "upside": "If the wind project delivers strong output, it could boost the company’s renewable revenue.",
-   "downside": "The project’s contribution to overall earnings might remain marginal.",
+   "summary": "Tata Power leaders say profits are expected to triple next quarter because projects are being completed three times faster than in the first half of the year. The company also recently started using a new 100.8 MW wind farm in Maharashtra to generate electricity.",
+   "why": "Faster project completion and new power sources could lead to higher earnings, which may influence how investors value the stock.",
+   "upside": "If the company meets its target of tripling profits next quarter, it would show strong business growth.",
+   "downside": "The profit forecast is a prediction and not a guarantee, so actual results might be lower than expected.",
    "watch": [
-    "Performance of the Ausa wind project",
-    "Details of the renewable arm’s press release",
-    "Energy sector index trends"
+    "The official financial results for the upcoming quarter",
+    "Updates on the speed of project completions",
+    "Performance of the new wind farm in Maharashtra"
    ],
-   "about": "Tata Power generates electricity and operates in the power sector.",
-   "basis": "d22862ce715f",
-   "items": 2,
-   "updated": "2026-11-16T10:46+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Tata Power is a company in the power sector that generates electricity, including from renewable sources like wind.",
+   "basis": "336c861cb636",
+   "items": 3,
+   "updated": "2026-11-18T11:15+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "UPL": {
    "summary": "UPL’s share price slipped below a key moving average after earlier climbing above its 100‑day exponential moving average, and media reports say the company may scrap a planned corporate‑structure change.",
@@ -1290,6 +1290,22 @@
    "updated": "2026-11-17T10:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "SAIL": {
+   "summary": "SAIL shares recently led losses in the metal sector as the broader market fell. The company is part of the Nifty 500 index, which tracks India's largest listed firms.",
+   "why": "Shareholders may see their investment value drop when the stock leads sector losses during a market decline.",
+   "upside": "Positive news in the metal sector could help reverse the recent price drop.",
+   "downside": "A continuing fall in the overall market could pull SAIL’s share price down further.",
+   "watch": [
+    "Future movements in the Sensex index",
+    "News specific to the metal sector",
+    "SAIL's performance relative to other Nifty Metal stocks"
+   ],
+   "about": "SAIL operates in the Metals & Mining sector.",
+   "basis": "4f076dc2c3f5",
+   "items": 1,
+   "updated": "2026-11-18T11:15+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "CANBK": {
    "summary": "Canara Bank shares have risen sharply as the banking sector hit record highs. Recent media comparisons with other public sector banks have drawn attention to its recent price gains.",
    "why": "If you own these shares, the recent rise means your investment value has increased, but the sector's strong performance could also lead to a correction if the broader market slows down.",
@@ -1449,6 +1465,38 @@
    "items": 2,
    "updated": "2026-11-17T11:30+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "AMBUJACEM": {
+   "summary": "Ambuja Cements is partnering with Adani Cement to deploy heavy-duty electric trucks for transporting clinker and cement. The plan aims to have 410 trucks running by March 2027 to reduce carbon emissions and logistics costs.",
+   "why": "This matters because lower transportation costs and a greener image could improve the company's profits and appeal to investors who care about sustainability.",
+   "upside": "Using electric trucks could significantly cut logistics expenses and reduce carbon emissions, potentially boosting profitability.",
+   "downside": "The high cost of buying electric trucks could strain the company's cash flow, and delays in implementation might limit the expected benefits.",
+   "watch": [
+    "Progress toward the target of 410 electric trucks by March 2027",
+    "Actual impact on logistics costs and cash flow",
+    "Any delays in the deployment of the electric vehicle fleet"
+   ],
+   "about": "Ambuja Cements is a construction materials company that manufactures cement.",
+   "basis": "1b3685b9fc21",
+   "items": 2,
+   "updated": "2026-11-18T11:15+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "INDIACEM": {
+   "summary": "PulsEdge flagged news that Ambuja Cements is deploying electric trucks for cement transport. This move aims to cut logistics costs and reduce carbon emissions at the Sanghi plant.",
+   "why": "For India Cements shareholders, this matters because it signals a sector-wide shift toward greener, potentially cheaper logistics. While the news is about a competitor, it may influence industry standards and cost structures that affect all major cement companies.",
+   "upside": "If electric trucks successfully lower transport costs, it could improve profit margins across the cement sector, including for India Cements.",
+   "downside": "The high cost of buying electric trucks could strain cash flow, and delays in implementation might limit the expected savings.",
+   "watch": [
+    "Whether India Cements announces similar green logistics initiatives.",
+    "The actual cost savings reported by Ambuja Cements after the trucks are fully deployed.",
+    "Any regulatory changes in India regarding cement transport emissions."
+   ],
+   "about": "India Cements Ltd. is a company in the Construction Materials sector.",
+   "basis": "1b3685b9fc21",
+   "items": 2,
+   "updated": "2026-11-18T11:15+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "PHOENIXLTD": {
    "summary": "Phoenix Mills announced the allotment of 9,734 new shares. This move may slightly change the company's ownership structure.",

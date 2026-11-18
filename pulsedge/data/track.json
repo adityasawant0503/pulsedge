@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T11:02:56+05:30",
+ "updated": "2026-11-18T11:16:03+05:30",
  "summary": {
-  "calls": 1659,
-  "scored_calls": 500,
+  "calls": 1664,
+  "scored_calls": 505,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "36f3122e9ab557c4",
+   "symbol": "AMBUJACEM",
+   "time": "2026-11-18T11:07:24+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Ambuja Cements Limited: Ambuja Cements Limited has informed the Exchange regarding a press release dated November 18, 2026, titled \"Adani Cement Flags Off Heavy",
+   "url": "https://nsearchives.nseindia.com/corporate/AMBUJACEM_18112026110657_ACL_Media_Release_18112026_Final.pdf",
+   "entry_date": "2026-11-17",
+   "entry": 390.2
+  },
+  {
+   "id": "36f3122e9ab557c4",
+   "symbol": "INDIACEM",
+   "time": "2026-11-18T11:07:24+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Ambuja Cements Limited: Ambuja Cements Limited has informed the Exchange regarding a press release dated November 18, 2026, titled \"Adani Cement Flags Off Heavy",
+   "url": "https://nsearchives.nseindia.com/corporate/AMBUJACEM_18112026110657_ACL_Media_Release_18112026_Final.pdf",
+   "entry_date": "2026-11-17",
+   "entry": 321.5
+  },
+  {
+   "id": "749fbe408b0dafd3",
+   "symbol": "AMBUJACEM",
+   "time": "2026-11-18T11:02:02+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "AMBUJA CEMENTS: ADANI CEMENT BEGINS DEPLOYING HEAVY-DUTY EV TRUCKS AT SANGHI PLANT, TARGETING 410 TRUCKS BY MARCH 2027 TO CUT OVER 25000 TONNES OF CO₂ ANNUALLY,",
+   "url": "https://t.me/Indiaredboxglobal/9535",
+   "entry_date": "2026-11-17",
+   "entry": 390.2
+  },
+  {
+   "id": "749fbe408b0dafd3",
+   "symbol": "INDIACEM",
+   "time": "2026-11-18T11:02:02+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "AMBUJA CEMENTS: ADANI CEMENT BEGINS DEPLOYING HEAVY-DUTY EV TRUCKS AT SANGHI PLANT, TARGETING 410 TRUCKS BY MARCH 2027 TO CUT OVER 25000 TONNES OF CO₂ ANNUALLY,",
+   "url": "https://t.me/Indiaredboxglobal/9535",
+   "entry_date": "2026-11-17",
+   "entry": 321.5
+  },
   {
    "id": "6116bbe5779144fa",
    "symbol": "TATASTEEL",
@@ -267,6 +319,19 @@
    "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/upl-stock-price-today-live-18-nov-2026/liveblog/135946233.cms",
    "entry_date": "2026-11-17",
    "entry": 551.7
+  },
+  {
+   "id": "88f899720f161177",
+   "symbol": "SAIL",
+   "time": "2026-11-18T08:01:12+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex down 400 pts; NALCO, SAIL shares lead loss in Nifty Metal",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-18-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-bond-yields-hero-motocorp-share-price-hcltech-stock-price-today-ipo-today-126111800134_1.html",
+   "entry_date": "2026-11-17",
+   "entry": 171.31
   },
   {
    "id": "df7ddccdbd8061a0",
