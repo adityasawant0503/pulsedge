@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T10:32+05:30",
+ "updated": "2026-11-18T10:47+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -379,6 +379,22 @@
    "updated": "2026-11-16T15:32+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "AXISBANK": {
+   "summary": "Axis Bank is seeing positive momentum as analysts note a technical breakout for banks and the stock has recovered after a Q2 sell‑off. BlackRock recently increased its holding to 5%, adding institutional confidence amid a broader market rally.",
+   "why": "Shareholders may benefit if the technical bias holds and the BlackRock stake supports sentiment, but the stock is still linked to overall market and banking sector trends.",
+   "upside": "If the technical breakout persists and BlackRock maintains or expands its stake, the share could gain further.",
+   "downside": "A broader market decline or a reduction in BlackRock’s holding could pressure the stock.",
+   "watch": [
+    "Technical breakout and Nifty Bank movement",
+    "Changes in BlackRock’s stake in Axis Bank",
+    "Overall banking sector sentiment and market direction"
+   ],
+   "about": "Axis Bank is a major Indian commercial bank and a constituent of the Nifty 50 index.",
+   "basis": "558f3c759dd5",
+   "items": 4,
+   "updated": "2026-11-18T10:47+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "URBANCO": {
    "summary": "Urban Company is raising ₹2,500 crore by selling new shares to large investors. The offer was oversubscribed six times, attracting ₹15,300 crore in bids. The company plans to use this money to launch a new cleaning service.",
    "why": "Selling new shares means existing owners hold a smaller slice of the company, which can lower the share price. However, the high demand for the new shares suggests investors are confident in the company's plans.",
@@ -425,22 +441,6 @@
    "basis": "45e9046d3767",
    "items": 2,
    "updated": "2026-11-17T12:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "AXISBANK": {
-   "summary": "Axis Bank shares have recovered after a recent drop, aided by a broader rise in the stock market. Additionally, the global investment firm BlackRock increased its ownership stake in the bank to 5%.",
-   "why": "Shareholders may see their holdings gain value as the stock price rises with the market and reacts to the increased investment from a major global fund.",
-   "upside": "The increased stake by BlackRock suggests confidence in the bank, which could support the share price.",
-   "downside": "If BlackRock later reduces its stake, or if the recent market rally reverses, the share price could fall.",
-   "watch": [
-    "Any future changes in BlackRock's ownership stake",
-    "The overall performance of the banking sector",
-    "Whether the recent stock market rally continues or reverses"
-   ],
-   "about": "Axis Bank is a major Indian bank and one of the 50 largest listed companies in India.",
-   "basis": "752411f71344",
-   "items": 3,
-   "updated": "2026-11-18T03:28+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ALKEM": {
@@ -569,6 +569,22 @@
    "items": 1,
    "updated": "2026-11-17T16:35+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "TATAPOWER": {
+   "summary": "Tata Power commissioned a 100.8 MW wind farm in Ausa, Maharashtra and its renewable arm issued a business press announcement.",
+   "why": "The new clean‑energy capacity could support future growth, though its effect on current earnings may be limited.",
+   "upside": "If the wind project delivers strong output, it could boost the company’s renewable revenue.",
+   "downside": "The project’s contribution to overall earnings might remain marginal.",
+   "watch": [
+    "Performance of the Ausa wind project",
+    "Details of the renewable arm’s press release",
+    "Energy sector index trends"
+   ],
+   "about": "Tata Power generates electricity and operates in the power sector.",
+   "basis": "d22862ce715f",
+   "items": 2,
+   "updated": "2026-11-16T10:46+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "UPL": {
    "summary": "UPL’s share price slipped below a key moving average after earlier climbing above its 100‑day exponential moving average, and media reports say the company may scrap a planned corporate‑structure change.",
@@ -762,6 +778,22 @@
    "updated": "2026-11-18T08:17+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "HDFCBANK": {
+   "summary": "HDFC Bank shares have risen sharply, jumping about 20% from their October low as the Nifty Bank index hit a record high. Analysts note a technical breakout that could keep banks moving higher, though broader market moves could affect this.",
+   "why": "Shareholders may see further price movement if the bullish technical bias holds, but they also face risk if the market turns lower.",
+   "upside": "If the technical breakout and strong banking sector momentum continue, the stock could keep rising.",
+   "downside": "If the broader market falls or the sector becomes overbought, the stock could stall or retreat.",
+   "watch": [
+    "Technical breakout on Nifty Bank index",
+    "Overall market direction and any broad declines",
+    "Banking sector sentiment and overbought signals"
+   ],
+   "about": "HDFC Bank Ltd. is a leading Indian commercial bank offering retail and corporate banking services.",
+   "basis": "630bf2c39df4",
+   "items": 4,
+   "updated": "2026-11-18T10:47+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "PRESTIGE": {
    "summary": "Prestige Estates Projects has bought more shares in Prestige Vaishnaoi Projects and announced a 50% stake purchase in Advent Convention and Hotels International. At the same time, the broader real estate sector has seen strong gains recently.",
    "why": "These business moves and sector changes can affect future profits, cash reserves, and overall share value.",
@@ -825,6 +857,22 @@
    "items": 3,
    "updated": "2026-11-16T11:16+05:30",
    "model": "gemini-flash-lite-latest"
+  },
+  "ICICIBANK": {
+   "summary": "ICICI Bank shares are moving with the broader market, which recently saw a strong rise led by banking stocks. The Financials sector has gained 3.0% over the last five sessions.",
+   "why": "As a major player in the banking sector, ICICI Bank's share price often moves in line with the overall market and its sector index.",
+   "upside": "Banking stocks may continue to rise if the current positive market trend holds.",
+   "downside": "The recent market gains could reverse quickly if investors start selling to lock in profits.",
+   "watch": [
+    "Whether the Nifty Bank index maintains its recent high levels",
+    "General market sentiment and profit-taking activity",
+    "Performance of the Financials sector index"
+   ],
+   "about": "ICICI Bank is a large financial services company and one of India's 50 largest listed firms.",
+   "basis": "7ddf7ecec909",
+   "items": 2,
+   "updated": "2026-11-18T10:47+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "SOBHA": {
    "summary": "Sobha Ltd. recently announced a new credit rating from an agency. At the same time, the broader real estate sector has seen a sharp rise in stock prices this month.",
@@ -1130,22 +1178,6 @@
    "updated": "2026-11-18T08:17+05:30",
    "model": "gemini-flash-lite-latest"
   },
-  "HDFCBANK": {
-   "summary": "HDFC Bank shares have recovered sharply after a Q2 sell‑off, jumping about 20% from their October low and helping the Nifty Bank index hit a record high. The rally is part of a broader gain in the financial sector, which rose 0.6% in the last session.",
-   "why": "Share price moves reflect investor confidence and can affect the value of holdings. The bank’s performance also influences the broader banking index.",
-   "upside": "If HDFC Bank continues to outperform peers such as Axis Bank, it could see further price gains.",
-   "downside": "A shift in market sentiment or an overbought condition in the banking sector could pull the stock back.",
-   "watch": [
-    "Comparison of HDFC Bank’s upside versus Axis Bank",
-    "Continued strength of the Nifty Bank index and sector momentum",
-    "Potential headwinds or overbought signals in the financial sector"
-   ],
-   "about": "HDFC Bank Ltd. is a leading Indian commercial bank providing a wide range of financial services.",
-   "basis": "406538814855",
-   "items": 3,
-   "updated": "2026-11-17T16:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "PNB": {
    "summary": "Punjab National Bank shares have risen sharply, hitting an eight-year high and a 52-week peak. The stock gained about 31% in the last month, outperforming its sector which rose 2.7% over five sessions.",
    "why": "This rapid increase shows strong market interest, but it also means the price is at a record level. Shareholders may see their holdings gain value, though the sharp rise increases the chance of a short-term drop.",
@@ -1368,22 +1400,6 @@
    "basis": "a48732685016",
    "items": 2,
    "updated": "2026-11-17T11:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "TATAPOWER": {
-   "summary": "Tata Power commissioned a 100.8 MW wind farm in Ausa, Maharashtra and its renewable arm issued a business press announcement.",
-   "why": "The new clean‑energy capacity could support future growth, though its effect on current earnings may be limited.",
-   "upside": "If the wind project delivers strong output, it could boost the company’s renewable revenue.",
-   "downside": "The project’s contribution to overall earnings might remain marginal.",
-   "watch": [
-    "Performance of the Ausa wind project",
-    "Details of the renewable arm’s press release",
-    "Energy sector index trends"
-   ],
-   "about": "Tata Power generates electricity and operates in the power sector.",
-   "basis": "d22862ce715f",
-   "items": 2,
-   "updated": "2026-11-16T10:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "PHOENIXLTD": {

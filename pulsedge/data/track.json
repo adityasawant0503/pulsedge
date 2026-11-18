@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T10:32:15+05:30",
+ "updated": "2026-11-18T10:47:32+05:30",
  "summary": {
-  "calls": 1650,
-  "scored_calls": 491,
+  "calls": 1653,
+  "scored_calls": 494,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,45 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "b9f420ba72f99533",
+   "symbol": "TATAPOWER",
+   "time": "2026-11-18T10:29:34+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "TATA POWER: CO SAYS NEXT QTR RESULTS WILL BE GOOD SHOWING 3X GROWTH COMPARE TO LAST QTR|| EXECUTION PACE WILL BE 3X HIGHER COMPARE TO H1: INTERVIEW",
+   "url": "https://t.me/Indiaredboxglobal/9524",
+   "entry_date": "2026-11-17",
+   "entry": 344.5
+  },
+  {
+   "id": "73b822903a2eacf0",
+   "symbol": "AXISBANK",
+   "time": "2026-11-18T10:26:05+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Tech view on Axis, ICICI and HDFC Bank as Nifty Bank quotes near new high",
+   "url": "https://www.business-standard.com/markets/news/bank-stocks-tech-view-on-axis-icici-and-hdfc-bank-with-nifty-bank-quoting-at-new-high-126111800266_1.html",
+   "entry_date": "2026-11-17",
+   "entry": 1369.0
+  },
+  {
+   "id": "73b822903a2eacf0",
+   "symbol": "HDFCBANK",
+   "time": "2026-11-18T10:26:05+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Tech view on Axis, ICICI and HDFC Bank as Nifty Bank quotes near new high",
+   "url": "https://www.business-standard.com/markets/news/bank-stocks-tech-view-on-axis-icici-and-hdfc-bank-with-nifty-bank-quoting-at-new-high-126111800266_1.html",
+   "entry_date": "2026-11-17",
+   "entry": 814.95
+  },
   {
    "id": "af7fdf8076d54d43",
    "symbol": "TCS",
