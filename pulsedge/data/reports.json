@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T12:30+05:30",
+ "updated": "2026-11-18T12:45+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -185,22 +185,6 @@
    "basis": "2d8b12be97e2",
    "items": 1,
    "updated": "2026-11-16T16:02+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "ABB": {
-   "summary": "ABB India shares jumped 36% recently after an analyst upgrade, reflecting optimism about its fundamentals.",
-   "why": "The move matters to shareholders because it signals potential for further price movement, but a slowdown in the capital goods sector could weigh on future orders.",
-   "upside": "If the company's fundamentals keep improving, the stock could see additional upside.",
-   "downside": "A slowdown in the sector could reduce order flow and pressure the share price.",
-   "watch": [
-    "Sector demand trends",
-    "Company's order book updates",
-    "Future analyst revisions"
-   ],
-   "about": "",
-   "basis": "ddf9141e5594",
-   "items": 1,
-   "updated": "2026-11-16T09:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "GROWW": {
@@ -618,6 +602,22 @@
    "updated": "2026-11-18T11:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "SIGNATURE": {
+   "summary": "Signature Global launched properties worth 4,400 crore rupees in the first half of the year and expects to reach a 10,000 crore booking target for the next fiscal year. The company also recently bought 194 acres of land in Maharashtra for 194 crore rupees.",
+   "why": "These moves suggest the business is expanding its project pipeline, which could support future revenue for shareholders. However, strong launch numbers do not guarantee that all units will be sold.",
+   "upside": "Reaching the high booking target and successfully selling the newly launched projects could lead to higher profits.",
+   "downside": "If actual sales do not match the high expectations set by the company, investors might sell their shares, causing the price to drop.",
+   "watch": [
+    "Whether the company meets its 10,000 crore booking target",
+    "How quickly the newly launched properties are sold",
+    "The impact of the land purchase on the company's cash reserves"
+   ],
+   "about": "Signature Global is a realty company listed in the Nifty 500 index.",
+   "basis": "2160e88b8996",
+   "items": 3,
+   "updated": "2026-11-18T12:45+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "TATAPOWER": {
    "summary": "Tata Power leaders say profits are expected to triple next quarter because projects are being completed three times faster than in the first half of the year. The company also recently started using a new 100.8 MW wind farm in Maharashtra to generate electricity.",
    "why": "Faster project completion and new power sources could lead to higher earnings, which may influence how investors value the stock.",
@@ -649,22 +649,6 @@
    "items": 3,
    "updated": "2026-11-18T10:16+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "SIGNATURE": {
-   "summary": "Signature Global recently bought 194 acres of land in Maharashtra for 194 crore rupees. The company also stated it expects to meet its sales target of 10,000 crore rupees for the year 2027.",
-   "why": "These moves suggest the business is expanding, which can be positive for shareholders. However, spending on land may use up some of the company's cash reserves.",
-   "upside": "The new land purchase could lead to higher earnings from future projects.",
-   "downside": "High expectations for sales might cause investors to sell shares if immediate results do not match the hype.",
-   "watch": [
-    "How the company funds the recent land purchase",
-    "Progress toward the 2027 sales target",
-    "Performance of the broader Realty sector"
-   ],
-   "about": "Signature Global is a realty company listed on the NSE.",
-   "basis": "8672cbe5803c",
-   "items": 2,
-   "updated": "2026-11-18T12:30+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "KPIL": {
    "summary": "Kalpataru Projects International Ltd. recently announced it won a new infrastructure contract. Around the same time, the company disclosed that it received an official regulatory or tax order.",
@@ -699,19 +683,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "TITAN": {
-   "summary": "Titan shares fell by more than 4% in a single day while the broader market also trended lower. This drop happened even though the company is one of India's largest listed firms.",
-   "why": "A sharp decline in a major stock can reduce the value of your investment quickly. It may also signal that investors are feeling cautious about the overall market.",
-   "upside": "The broader market showed some recovery in the afternoon, which could help limit further losses.",
-   "downside": "The drop reflects a general mood of caution in the market, which could lead to more volatility.",
+   "summary": "Titan shares dropped more than 4% in a single day as the broader Indian stock market fell. This sharp decline happened while the wider consumer durables sector remained relatively stable.",
+   "why": "A sudden drop in a major company's share price can reduce the value of your investment quickly. It may also signal that investors are feeling nervous about the company or the overall market.",
+   "upside": "The stock might bounce back if it finds support at key technical levels during the trading day.",
+   "downside": "The sharp fall could trigger automatic sell orders from other investors, which might push the price down further.",
    "watch": [
-    "Whether the broader market continues to recover or stays weak",
-    "How Titan's stock price reacts in the coming days",
-    "Trends in the Consumer Durables sector index"
+    "Whether the stock recovers during the afternoon session.",
+    "If the broader market continues to trend lower.",
+    "How the consumer durables sector performs in the coming days."
    ],
-   "about": "",
-   "basis": "c446c18b17a3",
-   "items": 1,
-   "updated": "2026-11-18T12:15+05:30",
+   "about": "Titan is a major Indian company in the consumer durables sector and is one of the 50 largest listed companies in India.",
+   "basis": "55947fb3e8de",
+   "items": 2,
+   "updated": "2026-11-18T12:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "GALLANTT": {
@@ -827,20 +811,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "OIL": {
-   "summary": "Oil India is feeling the impact of recent oil price swings. Prices have fallen sharply on a supply surplus outlook, though a small rise in U.S. crude futures was noted. The oil‑and‑gas sector index has edged higher.",
-   "why": "The company's earnings depend on crude oil prices, so price moves can affect its profit and dividend outlook.",
-   "upside": "Higher oil prices could lift revenue and earnings.",
-   "downside": "Sustained low oil prices could compress margins and reduce dividend payouts.",
+   "summary": "Oil India shares are facing mixed signals as global oil prices fluctuate between recent drops and slight gains. The sector index has moved up slightly, but analysts note that a surplus of oil supply could keep prices under pressure.",
+   "why": "Since the company earns money by selling oil, its profits depend heavily on the global price of crude. If oil prices stay low, the company may earn less, which can affect the value of its shares.",
+   "upside": "If oil prices rise again, the company could earn more money from each barrel it sells.",
+   "downside": "If oil prices continue to fall due to too much supply, the company's revenue and profits could drop.",
    "watch": [
-    "Crude oil price trends, especially U.S. futures and Brent levels",
-    "Global supply‑demand balance and surplus expectations",
-    "Performance of the Oil & Gas sector index"
+    "Global oil price trends",
+    "News about oil supply levels",
+    "Geopolitical events that might affect oil prices"
    ],
-   "about": "Oil India Ltd. explores, produces and sells crude oil and natural gas in India.",
-   "basis": "d0763b5126cc",
-   "items": 14,
-   "updated": "2026-11-18T03:28+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Oil India Ltd. is a company in the Oil Gas & Consumable Fuels sector.",
+   "basis": "8d22deb96a3f",
+   "items": 15,
+   "updated": "2026-11-18T12:45+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "COALINDIA": {
    "summary": "Coal India is gearing up to sell small stakes in its Mahanadi, Northern and Central Coalfields units through IPOs, with the Mahanadi IPO price band set at ₹129‑₹136 per share. The moves could bring fresh cash but also dilute existing shareholders’ stakes.",
@@ -1449,6 +1433,22 @@
    "items": 1,
    "updated": "2026-11-16T09:46+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "ASHOKLEY": {
+   "summary": "Ashok Leyland is seeing strong vehicle demand but its profit margins are being squeezed by high raw material costs. Investors are watching the upcoming quarterly earnings release for signs of how the cost pressure is affecting earnings.",
+   "why": "Margin pressure could limit profit growth even as sales stay robust, directly impacting shareholder returns. The quarterly results could cause the share price to move sharply.",
+   "upside": "If raw material prices ease, the company’s margins could improve.",
+   "downside": "Further escalation in raw material costs could further compress margins.",
+   "watch": [
+    "Raw material price trends",
+    "Quarterly earnings release and results",
+    "Margin performance in the upcoming report"
+   ],
+   "about": "",
+   "basis": "5a91c5697aa4",
+   "items": 2,
+   "updated": "2026-11-18T12:45+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "FEDERALBNK": {
    "summary": "Federal Bank said it will not make any deal with Jana Small Finance Bank. The financial sector index rose 0.6% in the last session and 3% over five sessions.",
