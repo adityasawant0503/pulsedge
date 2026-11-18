@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T14:01+05:30",
+ "updated": "2026-11-18T14:15+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -843,35 +843,51 @@
    "model": "openai/gpt-oss-120b"
   },
   "OIL": {
-   "summary": "Oil India is navigating a volatile oil price environment. Crude oil futures have risen modestly, while other analysts expect prices to fall due to a supply glut. The sector index has posted modest gains.",
-   "why": "Shareholders should watch oil price moves because they directly affect the company's revenue and profit margins.",
-   "upside": "Higher crude prices could lift earnings for Oil India.",
-   "downside": "A sustained decline in oil prices could compress the company's revenue.",
+   "summary": "Oil India Ltd. is seeing its earnings influenced by recent changes in crude oil prices. Crude futures rose to $86.01 a barrel, but analysts expect a fall to $78 by 2027 due to a supply glut. Bond yields have eased, which could affect the company’s cost of capital.",
+   "why": "Shareholders should note that oil price swings directly affect Oil India’s revenue and profit margins.",
+   "upside": "Higher crude prices could lift earnings.",
+   "downside": "Lower crude prices could reduce revenue.",
    "watch": [
-    "Crude oil price trends and futures",
-    "Supply‑demand outlook for global oil",
-    "Geopolitical events that could shift oil prices"
+    "Crude oil futures settlement price",
+    "Analyst forecasts of a $78 price by 2027",
+    "Bond yield movements in India"
    ],
-   "about": "Oil India Ltd. is an Indian oil and gas exploration and production company.",
-   "basis": "b7f5a5f458c1",
-   "items": 16,
-   "updated": "2026-11-18T14:01+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "",
+   "basis": "0e0248e69808",
+   "items": 15,
+   "updated": "2026-11-18T14:15+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "COALINDIA": {
-   "summary": "Coal India is gearing up to sell small stakes in its Mahanadi, Northern and Central Coalfields units through IPOs, with the Mahanadi IPO price band set at ₹129‑₹136 per share. The moves could bring fresh cash but also dilute existing shareholders’ stakes.",
-   "why": "Shareholders may see earnings per share change due to dilution, while any cash raised could support the remaining business.",
-   "upside": "If the IPOs raise strong funds and the market values the units well, the remaining shares could become more valuable.",
-   "downside": "The new share issues could dilute earnings and profit share for current owners, potentially pressuring the stock price.",
+   "summary": "PulsEdge flagged that Coal India is preparing IPOs for its Mahanadi, Northern and Central Coalfields units, selling a small part of its ownership to the public. The market is watching how the new share supply and pricing will affect the parent’s stock.",
+   "why": "PulsEdge flagged that the IPOs could bring fresh cash and potential dividend payouts, but they may also dilute existing shareholders’ earnings per share.",
+   "upside": "If the IPOs raise strong funds and lead to higher dividend payouts, the stock could become more attractive to income‑seeking investors.",
+   "downside": "The new share issues could dilute earnings per share and put downward pressure on the stock price.",
    "watch": [
-    "Mahanadi Coalfields IPO subscription and final pricing",
-    "Market absorption of the new shares and impact on Coal India’s share price",
-    "Quarterly earnings release and sector index performance"
+    "Subscription levels and final pricing of the Mahanadi Coalfields IPO",
+    "Progress and market reception of the Northern and Central Coalfields IPOs",
+    "Sector index performance and upcoming quarterly earnings releases"
    ],
-   "about": "Coal India Ltd is India’s largest coal producer, operating a network of mines across the country.",
-   "basis": "21dc9f8a0dee",
-   "items": 9,
-   "updated": "2026-11-18T08:17+05:30",
+   "about": "Coal India Ltd. is a state‑owned company that mines and sells coal across India.",
+   "basis": "af7755d6404a",
+   "items": 8,
+   "updated": "2026-11-18T14:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "HINDALCO": {
+   "summary": "Hindalco shares have been falling as metal stocks slipped on lower global commodity prices and a stronger US dollar, but Axis Securities recently named it a conviction pick after its Q2 results.",
+   "why": "Share price changes affect shareholder value, and tighter profit margins from commodity price weakness matter for earnings.",
+   "upside": "If the Axis recommendation triggers buying or an oversold bounce occurs, the stock could recover.",
+   "downside": "Ongoing low commodity prices and a strong US dollar could keep margins tight and pressure the share price.",
+   "watch": [
+    "Q2 earnings release on 16 November",
+    "Metal sector index movement",
+    "Global commodity price trends and US dollar strength"
+   ],
+   "about": "Hindalco Industries Ltd is a leading Indian metal producer in the Metals & Mining sector.",
+   "basis": "65d3b2275831",
+   "items": 4,
+   "updated": "2026-11-18T14:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "HDFCBANK": {
@@ -921,22 +937,6 @@
    "items": 3,
    "updated": "2026-11-18T14:01+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "HINDALCO": {
-   "summary": "Hindalco shares have fallen recently as global metal prices dropped and the US dollar strengthened. This decline is part of a broader drop in Indian metal stocks, which also affected the Nifty Metal index.",
-   "why": "Lower metal prices can reduce the profit margins for companies like Hindalco, which may impact the value of their shares in the short term.",
-   "upside": "A sudden reversal in the US dollar or new stimulus from China could support metal prices.",
-   "downside": "Continued selling momentum could keep stock prices depressed, and earnings disappointments might lead to further downward revisions.",
-   "watch": [
-    "Global commodity price trends",
-    "US Dollar index movements",
-    "Recent financial results"
-   ],
-   "about": "Hindalco is a major Indian company in the metals and mining sector.",
-   "basis": "d4ba7c2f109d",
-   "items": 3,
-   "updated": "2026-11-18T13:45+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "SAIL": {
    "summary": "SAIL shares fell sharply as part of a broader drop in metal stocks, driven by lower global commodity prices and a stronger US dollar. The company was among the biggest losers in the Nifty Metal index during this period.",
@@ -1369,6 +1369,22 @@
    "updated": "2026-11-16T09:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "POLYCAB": {
+   "summary": "Polycab reduced prices on its light‑duty cables and wires for the second time this week, and copper prices have dropped for the fifth straight day.",
+   "why": "Price cuts could pressure revenue growth, while cheaper copper may boost profit margins if sales volumes stay steady.",
+   "upside": "Lower copper costs could improve margins if demand remains stable.",
+   "downside": "Repeated price reductions may hurt revenue unless the company can sell enough extra volume.",
+   "watch": [
+    "Any further price adjustments for cables and wires",
+    "Trends in copper prices and their impact on input costs",
+    "Sales volume trends for light‑duty cable products"
+   ],
+   "about": "Polycab India Ltd manufactures electrical cables and wires for power and telecom applications.",
+   "basis": "c7b4a2f3f745",
+   "items": 2,
+   "updated": "2026-11-18T14:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "KEI": {
    "summary": "KEI Industries and peers slipped up to 3% as copper prices fell for the fifth consecutive day, pulling the stock lower. The drop reflects market reaction to cheaper raw material costs for cable makers.",
    "why": "Changes in copper prices directly affect KEI's production costs and thus its profitability for shareholders.",
@@ -1380,22 +1396,6 @@
     "KEI's profit margin reports"
    ],
    "about": "KEI Industries manufactures electrical cables and related products.",
-   "basis": "f5e73a423695",
-   "items": 1,
-   "updated": "2026-11-18T11:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "POLYCAB": {
-   "summary": "Polycab shares slipped up to 3% as copper prices fell for a fifth consecutive day. The cheaper copper could lift profit margins, but a price drop driven by weak demand might curb sales.",
-   "why": "Raw material costs directly affect Polycab’s earnings, so changes matter to shareholders.",
-   "upside": "If copper stays cheap while demand remains solid, Polycab’s margins could improve.",
-   "downside": "A sustained copper decline could reflect weak demand, hurting cable sales volumes.",
-   "watch": [
-    "Copper price movements",
-    "Overall demand for electrical cables",
-    "Polycab’s upcoming margin or earnings updates"
-   ],
-   "about": "Polycab India Ltd manufactures electrical cables and wires.",
    "basis": "f5e73a423695",
    "items": 1,
    "updated": "2026-11-18T11:30+05:30",
@@ -1448,6 +1448,22 @@
    "items": 3,
    "updated": "2026-11-17T14:00+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "NTPC": {
+   "summary": "PulsEdge flagged a tragic accident at NTPC's Tandwa project where three workers died and two were injured, and an investigation is now under way. The Energy sector index was flat over the past five sessions, showing little market movement.",
+   "why": "Shareholders should watch the incident because it could pause work, raise safety costs, or attract regulatory scrutiny that may affect earnings.",
+   "upside": "If the investigation finds no major violations, the project could resume quickly and avoid additional costs.",
+   "downside": "Regulatory fines, safety audits, or prolonged project delays could increase expenses and hurt profitability.",
+   "watch": [
+    "Result of the accident investigation",
+    "Any regulatory actions or fines announced",
+    "Impact on project timelines and power output at Tandwa"
+   ],
+   "about": "NTPC Ltd. is a major Indian power generation company.",
+   "basis": "6d6aa8ded454",
+   "items": 2,
+   "updated": "2026-11-18T14:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "BPCL": {
    "summary": "BPCL plans to start a new green jet fuel plant at its Mumbai refinery in December. The company also aims to increase the capacity of this plant to 61,000 tons per year by 2028.",
