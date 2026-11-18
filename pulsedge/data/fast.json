@@ -1,7 +1,45 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-18T12:29:31+05:30",
+ "updated": "2026-11-18T12:31:30+05:30",
  "items": [
+  {
+   "id": "7e2a0248a0f1771e",
+   "time": "2026-11-18T12:30:14+05:30",
+   "headline": "SIGNATURE GLOBAL: LAUNCHES TARGETED AT 15,000 CR FOR THE YEAR, ₹4,400 CR LAUNCHED IN H1",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9545",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "SIGNATURE",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Real Estate"
+   ],
+   "impact": 45,
+   "confidence": 60,
+   "category": "Business Update",
+   "action": "Monitor if the strong launch figures translate into actual booking numbers in the next few weeks.",
+   "reason": [
+    "The company has launched ₹4,400 Cr in H1 against a ₹15,000 Cr annual target, indicating strong initial demand.",
+    "High launch volumes often signal positive sentiment and potential revenue growth for real estate developers."
+   ],
+   "risks": [
+    "Launch figures do not guarantee final sales or bookings.",
+    "Market sentiment in the real estate sector can be volatile."
+   ],
+   "plain": "The company has launched properties worth 4,400 crore rupees in the first half of the year.",
+   "why": "This shows strong initial interest in their new projects, which could lead to higher future sales and profits.",
+   "check": "Look for updates on actual sales bookings in the coming months.",
+   "original": "SIGNATURE GLOBAL: LAUNCHES TARGETED AT 15,000 CR FOR THE YEAR, ₹4,400 CR LAUNCHED IN H1",
+   "latency": 76.6,
+   "lane": "fast"
+  },
   {
    "id": "c7ddb5e3e71ec9df",
    "time": "2026-11-18T12:29:25+05:30",
@@ -1045,45 +1083,6 @@
    "check": "Look for any official statement about when normal work will resume.",
    "original": "ONGC: GAS CONCENTRATION MONITORING AT WELL SITE INDICATED ZERO CONCENTRATION AT MONITORED LOCATIONS; UNDERTAKING NECESSARY WELL-CONTROL OPERATIONS FOLLOWING A GAS LEAKAGE AT A GAS WELL",
    "latency": 103.8,
-   "lane": "fast"
-  },
-  {
-   "id": "e5dac672036e062a",
-   "time": "2026-11-17T12:30:49+05:30",
-   "headline": "ONGC: CO SAYS AREA WITHIN 500-METRE RADIUS OF THE WELL HAS BEEN CORDONED OFF, AND RESIDENTS IN THE VICINITY HAVE BEEN EVACUATED",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9433",
-   "section": "news",
-   "call": "watch",
-   "horizon": "intraday",
-   "direction": "down",
-   "tickers": [
-    {
-     "symbol": "ONGC",
-     "direction": "down"
-    }
-   ],
-   "sectors": [
-    "Energy",
-    "Oil & Gas"
-   ],
-   "impact": 45,
-   "confidence": 60,
-   "category": "Operational Incident",
-   "action": "Monitor for official statements on production impact or regulatory penalties.",
-   "reason": [
-    "Safety incident at an operational site may lead to temporary production halt.",
-    "Evacuation and cordon indicate a significant safety breach requiring investigation."
-   ],
-   "risks": [
-    "Potential regulatory fines or operational delays.",
-    "Negative sentiment from safety concerns."
-   ],
-   "plain": "The oil company secured the area around a well and moved nearby residents away for safety.",
-   "why": "This suggests a safety issue that might pause work, which could slightly hurt the company's short-term output.",
-   "check": "Look for updates on whether the well is still producing oil or gas.",
-   "original": "ONGC: CO SAYS AREA WITHIN 500-METRE RADIUS OF THE WELL HAS BEEN CORDONED OFF, AND RESIDENTS IN THE VICINITY HAVE BEEN EVACUATED",
-   "latency": 28.5,
    "lane": "fast"
   }
  ]
