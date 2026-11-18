@@ -1,7 +1,45 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-18T12:26:33+05:30",
+ "updated": "2026-11-18T12:29:31+05:30",
  "items": [
+  {
+   "id": "c7ddb5e3e71ec9df",
+   "time": "2026-11-18T12:29:25+05:30",
+   "headline": "SIGNATURE GLOBAL: CO WILL ACHIEVE FY27 BOOKINGS GUIDANCE OF 10,000 CR",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9544",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "SIGNATURE",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "IT Services"
+   ],
+   "impact": 65,
+   "confidence": 70,
+   "category": "Guidance",
+   "action": "Monitor if the stock holds its gains after the announcement to confirm market acceptance of the target.",
+   "reason": [
+    "Achieving a 10,000 Cr FY27 booking target signals strong future revenue visibility.",
+    "Positive guidance often attracts institutional interest in IT stocks."
+   ],
+   "risks": [
+    "High expectations may lead to profit-taking if immediate results don't match the hype.",
+    "Global IT demand slowdown could hinder the ability to meet this target."
+   ],
+   "plain": "The company says it expects to reach a specific sales goal for the year 2027.",
+   "why": "This shows the business is growing, which is good for people who own its shares.",
+   "check": "Look at how the stock price reacts in the first hour of trading.",
+   "original": "SIGNATURE GLOBAL: CO WILL ACHIEVE FY27 BOOKINGS GUIDANCE OF 10,000 CR",
+   "latency": 6.4,
+   "lane": "fast"
+  },
   {
    "id": "0deea1f4b3d38aad",
    "time": "2026-11-18T12:26:07+05:30",
@@ -1046,79 +1084,6 @@
    "check": "Look for updates on whether the well is still producing oil or gas.",
    "original": "ONGC: CO SAYS AREA WITHIN 500-METRE RADIUS OF THE WELL HAS BEEN CORDONED OFF, AND RESIDENTS IN THE VICINITY HAVE BEEN EVACUATED",
    "latency": 28.5,
-   "lane": "fast"
-  },
-  {
-   "id": "9fdeceffef708034",
-   "time": "2026-11-17T12:29:01+05:30",
-   "headline": "ONGC: POWER SUPPLY IN AREA TEMPORARILY DISCONNECTED TO MINIMISE POTENTIAL IGNITION RISKS",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9432",
-   "section": "news",
-   "call": "watch",
-   "horizon": "intraday",
-   "direction": "down",
-   "tickers": [
-    {
-     "symbol": "ONGC",
-     "direction": "down"
-    }
-   ],
-   "sectors": [
-    "Energy",
-    "Oil & Gas"
-   ],
-   "impact": 30,
-   "confidence": 60,
-   "category": "Operational Disruption",
-   "action": "Monitor for any official clarification on the duration of the power cut and its impact on production volumes.",
-   "reason": [
-    "Temporary power disconnection may halt or slow down operations in the affected area.",
-    "Safety measures to prevent ignition risks indicate a potential operational pause."
-   ],
-   "risks": [
-    "Prolonged outage could lead to minor revenue loss.",
-    "Market may overreact to safety-related operational pauses."
-   ],
-   "plain": "The company temporarily cut power in one area to prevent fire risks.",
-   "why": "This might slow down work for a short time, but it is a safety measure, not a major failure.",
-   "check": "Look for a company statement confirming when normal operations resume.",
-   "original": "ONGC: POWER SUPPLY IN AREA TEMPORARILY DISCONNECTED TO MINIMISE POTENTIAL IGNITION RISKS",
-   "latency": 76.8,
-   "lane": "fast"
-  },
-  {
-   "id": "1f7ade42065a86a8",
-   "time": "2026-11-17T12:27:28+05:30",
-   "headline": "RUSSIA SAYS IT HIT TWO BRIDGES IN KYIV",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9431",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Defense",
-    "Energy"
-   ],
-   "impact": 10,
-   "confidence": 50,
-   "category": "Geopolitics",
-   "action": "Monitor global risk sentiment for potential spillover into Indian defense or energy stocks.",
-   "reason": [
-    "Geopolitical escalation in Ukraine may affect global risk appetite.",
-    "No direct impact on specific Indian listed companies."
-   ],
-   "risks": [
-    "Potential rise in crude oil prices.",
-    "Increased volatility in global markets."
-   ],
-   "plain": "Russia announced it attacked two bridges in Kyiv, Ukraine.",
-   "why": "This is a global event that might slightly affect oil prices or market mood, but it does not directly change the business of Indian companies.",
-   "check": "Check if crude oil prices are rising significantly.",
-   "original": "RUSSIA SAYS IT HIT TWO BRIDGES IN KYIV",
-   "latency": 109.4,
    "lane": "fast"
   }
  ]
