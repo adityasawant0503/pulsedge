@@ -1,7 +1,46 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-18T13:30:30+05:30",
+ "updated": "2026-11-18T13:54:31+05:30",
  "items": [
+  {
+   "id": "1c9a48f4b842d03a",
+   "time": "2026-11-18T13:54:04+05:30",
+   "headline": "GOLDMAN SACHS: FURTHER RISE IN CRUDE OIL PRICES MAY DERAIL GROWTH OUTLOOK; INDIA CAD TO REMAIN CONTAINED AT 1.1% OF GDP IN 2027",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9555",
+   "section": "macro",
+   "call": "watch",
+   "horizon": "positional",
+   "direction": "mixed",
+   "tickers": [
+    {
+     "symbol": "OIL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Energy",
+    "Macro"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "Research Note",
+   "action": "Monitor global crude benchmarks for sustained upward momentum before assuming sector-wide strength.",
+   "reason": [
+    "Goldman Sachs warns rising crude prices could hurt India's growth outlook.",
+    "However, the CAD impact is expected to remain contained at 1.1% of GDP in 2027."
+   ],
+   "risks": [
+    "Sustained high oil prices may squeeze corporate margins across the economy.",
+    "Growth slowdown could reduce overall market sentiment."
+   ],
+   "plain": "A major bank says rising oil prices might slow India's economic growth, but the trade deficit impact should stay small.",
+   "why": "Higher oil costs can hurt the economy and corporate profits, but the specific trade deficit risk is limited.",
+   "check": "Look at recent global oil price trends and India's monthly trade deficit data.",
+   "original": "GOLDMAN SACHS: FURTHER RISE IN CRUDE OIL PRICES MAY DERAIL GROWTH OUTLOOK; INDIA CAD TO REMAIN CONTAINED AT 1.1% OF GDP IN 2027",
+   "latency": 27.0,
+   "lane": "fast"
+  },
   {
    "id": "0b9fc38ad76e3ac2",
    "time": "2026-11-18T13:29:11+05:30",
@@ -1038,73 +1077,6 @@
    "check": "Open the source and read what the company actually said.",
    "original": "REFEX INDUSTRIES LIMITED: CO. BAGS CONTRACT FOR UTILIZATION OF POND ASH WORTH ₹28 CRORE; CONTRACT VALID FOR TWO YEARS; AWARDED BY DOMESTIC ENTITY",
    "latency": 101.3,
-   "lane": "fast"
-  },
-  {
-   "id": "d16d86f0490cb254",
-   "time": "2026-11-17T13:52:46+05:30",
-   "headline": "TECHNOCRAFT: VISIBILITY FOR ORDERS IS VERY STRONG AND ENQUIRIES ARE COMING IN; NO REASON TO BELIEVE THAT H2FY27 WILL NOT BE AS STRONG AS H1FY27; HAVE EXITED THE FABRIC BUSINESS, WHICH BODES WELL",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9443",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [],
-   "sectors": [
-    "Textiles",
-    "Engineering"
-   ],
-   "impact": 55,
-   "confidence": 65,
-   "category": "guidance",
-   "action": "Track order inflow disclosures and margin expansion after exiting the drag fabric business.",
-   "reason": [
-    "Management commentary highlights strong order visibility and steady business momentum.",
-    "Strategic exit from the fabric business is expected to improve overall operational margins."
-   ],
-   "risks": [
-    "General global macroeconomic slowdown could impact order execution cycles."
-   ],
-   "plain": "The company reported strong upcoming order visibility and confirmed the exit from its loss-making fabric segment.",
-   "why": "Exiting a weaker business line while maintaining strong orders can boost overall profitability and future earnings.",
-   "check": "Upcoming quarterly revenue and margin improvement post fabric business exit.",
-   "original": "TECHNOCRAFT: VISIBILITY FOR ORDERS IS VERY STRONG AND ENQUIRIES ARE COMING IN; NO REASON TO BELIEVE THAT H2FY27 WILL NOT BE AS STRONG AS H1FY27; HAVE EXITED THE FABRIC BUSINESS, WHICH BODES WELL",
-   "latency": 92.9,
-   "lane": "fast"
-  },
-  {
-   "id": "701e66a942b8ec54",
-   "time": "2026-11-17T13:52:35+05:30",
-   "headline": "TECHNOCRAFT: FY27 TOPLINE SHOULD GROW 20%, BUT RUPEE STRENGTH COULD LIMIT GAINS",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9442",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Textiles",
-    "Industrial Manufacturing"
-   ],
-   "impact": 45,
-   "confidence": 60,
-   "category": "earnings",
-   "action": "Track management commentary on export realization and currency impact",
-   "reason": [
-    "Technocraft guides for 20% topline growth by FY27, showing strong demand",
-    "Rupee appreciation risks capping export margin gains"
-   ],
-   "risks": [
-    "Adverse currency movements hurting realisations",
-    "Global demand slowdown affecting order inflows"
-   ],
-   "plain": "Technocraft targets twenty percent revenue growth by FY27, though a stronger rupee could dampen overall profitability.",
-   "why": "Long-term revenue targets show healthy demand, but currency strength could pressure operating margins on exports.",
-   "check": "Track subsequent earnings reports to see if export margins hold up against currency moves.",
-   "original": "TECHNOCRAFT: FY27 TOPLINE SHOULD GROW 20%, BUT RUPEE STRENGTH COULD LIMIT GAINS",
-   "latency": 52.1,
    "lane": "fast"
   }
  ]
