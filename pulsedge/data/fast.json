@@ -1,7 +1,40 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-18T11:26:30+05:30",
+ "updated": "2026-11-18T12:03:30+05:30",
  "items": [
+  {
+   "id": "260b1d950f6ec8d0",
+   "time": "2026-11-18T12:02:49+05:30",
+   "headline": "SEBI CHAIRMAN - CONSIDERING PROPOSAL OF LINKING MTF",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9541",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "positional",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Market Structure"
+   ],
+   "impact": 10,
+   "confidence": 20,
+   "category": "Regulatory Update",
+   "action": "No immediate action required; monitor for formal SEBI circulars regarding free-float adjustments.",
+   "reason": [
+    "SEBI is only considering the proposal; no decision has been made.",
+    "Impact on specific stocks is speculative until rules are finalized."
+   ],
+   "risks": [
+    "Potential future changes to trading limits could affect liquidity for low-float stocks.",
+    "Market sentiment may react negatively to perceived restrictions on trading."
+   ],
+   "plain": "The market regulator is thinking about linking trading limits to how many shares are available for public trading.",
+   "why": "It is just a discussion stage with no final rule, so it does not change anything for investors right now.",
+   "check": "",
+   "original": "LIMITS TO STOCK FREE FLOAT; NO DECISION YET ON LINKING MTF LIMITS TO STOCK FREE FLOAT",
+   "latency": 41.7,
+   "lane": "fast"
+  },
   {
    "id": "6f7563470346a324",
    "time": "2026-11-18T11:25:39+05:30",
@@ -1163,257 +1196,6 @@
    "check": "Check for official announcements confirming the start of operations in December.",
    "original": "BPCL: CO EXEC SAYS CO TO COMMISSION 40,000 TONS PER YEAR GREEN JET FUEL PLANT AT MUMBAI REFINERY IN DEC",
    "latency": 101.4,
-   "lane": "fast"
-  },
-  {
-   "id": "2e4e35b4524acb12",
-   "time": "2026-11-17T12:00:58+05:30",
-   "headline": "EMBASSY DEVELOPMENTS: CO. UNVEILS EMBASSY ONE RESIDENCES – AN EXCLUSIVE COLLECTION OF 59 ULTRA-LUXURY MANAGED RESIDENCES; WITH A GDV OF RUPEES 1,400 CR; WITH THIS ADDITION CO'S TOTAL GDV IS RUPEES 9000 CR FOR FY27; CO'S ",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9427",
-   "section": "news",
-   "call": "buy",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "EMBASSY",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Real Estate"
-   ],
-   "impact": 60,
-   "confidence": 70,
-   "category": "company",
-   "action": "Watch for construction progress and sales traction in upcoming quarterly updates",
-   "reason": [
-    "New ultra‑luxury project expands Embassy’s pipeline",
-    "Significant GDV addition could boost future revenue"
-   ],
-   "risks": [
-    "Potential delays in project execution",
-    "Luxury housing demand may soften"
-   ],
-   "plain": "Embassy launched a 59‑unit ultra‑luxury residential project, adding about ₹1,400 crore to its development value.",
-   "why": "The new project expands the pipeline and could boost future earnings, so shareholders may see upside.",
-   "check": "Look for sales bookings or construction updates in the next quarterly report.",
-   "original": "EMBASSY DEVELOPMENTS: CO. UNVEILS EMBASSY ONE RESIDENCES – AN EXCLUSIVE COLLECTION OF 59 ULTRA-LUXURY MANAGED RESIDENCES; WITH A GDV OF RUPEES 1,400 CR; WITH THIS ADDITION CO'S TOTAL GDV IS RUPEES 9000 CR FOR FY27; CO'S ",
-   "latency": 21.7,
-   "lane": "fast"
-  },
-  {
-   "id": "2edcd646c9bba496",
-   "time": "2026-11-17T11:49:32+05:30",
-   "headline": "ADANI GREEN:MAHARASHTRA'S FOREST DEPARTMENT ISSUES A STOP-WORK NOTICE TO ADANI'S TARALI HYDROPOWER PROJECT IN SATARA.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9426",
-   "section": "news",
-   "call": "sell",
-   "horizon": "swing",
-   "direction": "down",
-   "tickers": [
-    {
-     "symbol": "ADANIGREEN",
-     "direction": "down"
-    }
-   ],
-   "sectors": [
-    "Power & Utilities"
-   ],
-   "impact": 70,
-   "confidence": 80,
-   "category": "company",
-   "action": "Watch for any official response or clearance from authorities",
-   "reason": [
-    "Stop‑work notice halts project progress",
-    "Potential revenue and cash‑flow delay"
-   ],
-   "risks": [
-    "Regulatory delays could extend the halt",
-    "Legal challenges may arise"
-   ],
-   "plain": "A stop‑work notice was issued for Adani’s hydro project in Satara.",
-   "why": "It could delay the project, affecting future earnings and cash flow.",
-   "check": "Look for updates on the notice status or any government clearance.",
-   "original": "ADANI GREEN:MAHARASHTRA'S FOREST DEPARTMENT ISSUES A STOP-WORK NOTICE TO ADANI'S TARALI HYDROPOWER PROJECT IN SATARA.",
-   "latency": 46.7,
-   "lane": "fast"
-  },
-  {
-   "id": "4f76a1ab4573f8ba",
-   "time": "2026-11-17T11:45:12+05:30",
-   "headline": "INDIA DEFENCE MINISTER TO VISIT JAPAN FROM NOV. 18 TO 19",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9425",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Defence"
-   ],
-   "impact": 10,
-   "confidence": 20,
-   "category": "Diplomatic Visit",
-   "action": "No specific trade setup; monitor for future contract announcements.",
-   "reason": [
-    "Routine diplomatic visit with no immediate financial impact.",
-    "No specific company or contract mentioned."
-   ],
-   "risks": [
-    "Market may overreact to speculative defence news."
-   ],
-   "plain": "The Indian defence minister is visiting Japan for two days.",
-   "why": "This is a normal diplomatic trip that does not change any company's business today.",
-   "check": "",
-   "original": "INDIA DEFENCE MINISTER TO VISIT JAPAN FROM NOV. 18 TO 19",
-   "latency": 65.2,
-   "lane": "fast"
-  },
-  {
-   "id": "a8d981820a627644",
-   "time": "2026-11-17T11:43:08+05:30",
-   "headline": "AETHER INDUSTRIES LTD: CO. ENTERS INTO FACILITY DEVELOPMENT AND SUPPLY AGREEMENT WITH BAKER PETROLITE LLC; EXCLUSIVE MANUFACTURING SUPPLIER FOR INDIA'S FIRST DEDICATED DRAG REDUCING AGENTS FACILITY IN PANOLI, GUJARAT.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9424",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "AETHER",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Chemicals",
-    "Oil & Gas Services"
-   ],
-   "impact": 65,
-   "confidence": 70,
-   "category": "Business Development",
-   "action": "Monitor volume and price action in the first hour to see if the market accepts the new contract as a revenue driver.",
-   "reason": [
-    "Secures exclusive manufacturing rights for a major global client.",
-    "Establishes a dedicated facility in Gujarat, signaling capacity expansion."
-   ],
-   "risks": [
-    "Execution risk in setting up the new facility.",
-    "Dependence on a single major client for this specific product line."
-   ],
-   "plain": "The company signed a deal to exclusively make special oil additives for a major global firm in Gujarat.",
-   "why": "This brings a reliable new customer and shows the company can build large-scale production, which is good for future profits.",
-   "check": "Look for news about when the new factory will start producing goods.",
-   "original": "AETHER INDUSTRIES LTD: CO. ENTERS INTO FACILITY DEVELOPMENT AND SUPPLY AGREEMENT WITH BAKER PETROLITE LLC; EXCLUSIVE MANUFACTURING SUPPLIER FOR INDIA'S FIRST DEDICATED DRAG REDUCING AGENTS FACILITY IN PANOLI, GUJARAT.",
-   "latency": 69.8,
-   "lane": "fast"
-  },
-  {
-   "id": "e43b4ea51c8c93d2",
-   "time": "2026-11-17T11:36:11+05:30",
-   "headline": "Apollo Hospitals, Fortis Health In Focus - Positive",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9423",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "FORTIS",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Healthcare"
-   ],
-   "impact": 40,
-   "confidence": 60,
-   "category": "Regulatory/Operational",
-   "action": "Monitor if hospital chains confirm stable margins despite drug price caps.",
-   "reason": [
-    "Drug margin caps may not reduce overall patient bills due to cost pass-through.",
-    "Bundled services being unbundled could protect hospital revenue streams."
-   ],
-   "risks": [
-    "Regulatory scrutiny on billing practices may increase.",
-    "Patient sentiment could worsen if perceived costs rise."
-   ],
-   "plain": "Hospitals expect to keep their profits stable even if medicine prices are capped by the government.",
-   "why": "It suggests the company can maintain its earnings despite new rules on drug pricing, which is good for shareholders.",
-   "check": "Look for official statements from the hospital chain about how they will handle billing changes.",
-   "original": "-Drug margin caps won’t lower patient bills -Hospitals will pass on costs through other charges -Services now bundled with medicines may be billed separately -Hospitals aren’t retail pharmacies, says federation -Medicine charges include value-added clinical services Source: Written Submissions by He",
-   "latency": 66.3,
-   "lane": "fast"
-  },
-  {
-   "id": "3bbfbb6eaac9c521",
-   "time": "2026-11-17T11:35:19+05:30",
-   "headline": "HOSPITALS OPPOSE DRUG MARGIN CAPS BEFORE SUPREME COURT; WARN PATIENT BILLS MAY NOT DECLINE AS COSTS COULD SHIFT TO OTHER CHARGES",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9422",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Healthcare"
-   ],
-   "impact": 10,
-   "confidence": 20,
-   "category": "Regulatory",
-   "action": "Monitor hospital sector sentiment for any broader regulatory shifts.",
-   "reason": [
-    "SUPREMEIND is a real estate company, not a hospital operator.",
-    "The news concerns hospital drug pricing, which does not directly impact real estate stocks."
-   ],
-   "risks": [
-    "Misattribution of sector impact."
-   ],
-   "plain": "Hospitals are arguing against new rules that limit how much they can charge for medicines.",
-   "why": "This news affects hospital stocks, not real estate companies, so it is safe to skip for this specific stock.",
-   "check": "",
-   "original": "HOSPITALS OPPOSE DRUG MARGIN CAPS BEFORE SUPREME COURT; WARN PATIENT BILLS MAY NOT DECLINE AS COSTS COULD SHIFT TO OTHER CHARGES",
-   "latency": 58.2,
-   "lane": "fast"
-  },
-  {
-   "id": "db2842fee01a8d1d",
-   "time": "2026-11-17T11:31:40+05:30",
-   "headline": "INDIA AVIATION MINISTER SAYS INDIA TO HAVE 400,000 TONS OF SAF PRODUCTION CAPACITY",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9421",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "positional",
-   "direction": "up",
-   "tickers": [],
-   "sectors": [
-    "Aviation",
-    "Energy"
-   ],
-   "impact": 10,
-   "confidence": 50,
-   "category": "Policy",
-   "action": "Monitor for specific announcements from listed aviation fuel suppliers or airline operators regarding SAF adoption timelines.",
-   "reason": [
-    "No specific listed company is named in the headline.",
-    "The news is a long-term policy statement rather than an immediate operational change."
-   ],
-   "risks": [
-    "Implementation of SAF production capacity may take years.",
-    "Cost of SAF remains higher than conventional jet fuel."
-   ],
-   "plain": "The aviation minister said India will soon be able to make a large amount of sustainable fuel for planes.",
-   "why": "This is a long-term plan that does not change how any specific company operates today, so it is safe to skip for now.",
-   "check": "",
-   "original": "INDIA AVIATION MINISTER SAYS INDIA TO HAVE 400,000 TONS OF SAF PRODUCTION CAPACITY",
-   "latency": 97.7,
    "lane": "fast"
   }
  ]
