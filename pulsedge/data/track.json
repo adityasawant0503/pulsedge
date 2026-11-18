@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T09:15:41+05:30",
+ "updated": "2026-11-18T09:31:04+05:30",
  "summary": {
-  "calls": 1642,
-  "scored_calls": 483,
+  "calls": 1645,
+  "scored_calls": 486,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "f2629ad98e9b3350",
+   "symbol": "SOBHA",
+   "time": "2026-11-18T09:23:27+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Sobha Limited: Sobha Limited has informed the Exchange about Credit Rating |SUBJECT: Credit Rating",
+   "url": "https://nsearchives.nseindia.com/corporate/SOBHA_18112026092208_Sobha_Credit_Rating_update.pdf",
+   "entry_date": "2026-11-17",
+   "entry": 1290.4
+  },
+  {
+   "id": "85e9b927ef1a8ab8",
+   "symbol": "TMCV",
+   "time": "2026-11-18T09:11:13+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Tata Motors among 5 stocks closing above 200-DMA",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/tata-motors-among-5-stocks-closing-above-200-dma/slideshow/135947686.cms",
+   "entry_date": "2026-11-17",
+   "entry": 445.65
+  },
   {
    "id": "c9b50b14b12e80bc",
    "symbol": "ACMESOLAR",
@@ -46,6 +72,19 @@
    "url": "https://nsearchives.nseindia.com/corporate/BIOCON_18112026083410_Pressrelease18112026.pdf",
    "entry_date": "2026-11-17",
    "entry": 359.4
+  },
+  {
+   "id": "13303f5c96a2c544",
+   "symbol": "CIPLA",
+   "time": "2026-11-18T08:30:30+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Cipla Share Price Live Updates: Cipla's Recent Performance Signals Caution",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/cipla-share-price-today-live-18-nov-2026/liveblog/135946796.cms",
+   "entry_date": "2026-11-17",
+   "entry": 1388.0
   },
   {
    "id": "df7ddccdbd8061a0",

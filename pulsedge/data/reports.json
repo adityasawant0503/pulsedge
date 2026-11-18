@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T09:15+05:30",
+ "updated": "2026-11-18T09:30+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -459,6 +459,22 @@
    "updated": "2026-11-17T10:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "TMCV": {
+   "summary": "Tata Motors recently reported a Q2 loss despite revenue growth, and its stock has dropped 22% in 2026. The company is also facing questions from the stock exchange about a possible public offering for Tata Sons and dealing with struggles in China for its JLR unit.",
+   "why": "These events matter to share owners because weak earnings, struggles in key markets, and news about public offerings can directly cause the stock price to move up or down.",
+   "upside": "The stock price recently ended a day higher than its long-term average, which suggests it might be starting to recover from a long period of decline, and the company might offset struggles in China with sales in other markets.",
+   "downside": "Struggles in China could weigh on the share price, and weak guidance could lead to further selling or downward revisions.",
+   "watch": [
+    "Whether the company can offset weak sales in China with other markets.",
+    "Clarifications from the company regarding the possible public offering.",
+    "Trading volume to see if recent stock price gains are sustained."
+   ],
+   "about": "Tata Motors Ltd. is a car company that is part of India's Nifty 500 index.",
+   "basis": "063f1e3fb76c",
+   "items": 7,
+   "updated": "2026-11-18T09:30+05:30",
+   "model": "gemini-flash-lite-latest"
+  },
   "TATACHEM": {
    "summary": "Tata Chemicals shares jumped nearly 10% in a single day and rose 11% over three days due to rumors that its parent company, Tata Sons, may list on the stock market. The company has denied having any knowledge of these negotiations, and the stock exchange has asked for clarification on the recent news.",
    "why": "If the parent company lists, it could increase the value of Tata Chemicals shares, but the recent price rise is based on unconfirmed rumors. The company's denial suggests the hype may be cooling down, which could affect the share price.",
@@ -473,22 +489,6 @@
    "basis": "c4dc2aa6c4e0",
    "items": 6,
    "updated": "2026-11-17T15:46+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "TMCV": {
-   "summary": "Tata Motors reported a loss in its second quarter despite higher revenue, and its shares are down 22% this year. The stock exchange has also asked the company to clarify recent news about a possible new public offering.",
-   "why": "These events matter because weak profits and uncertainty about a new share issue can make the stock price fall, affecting the value of your investment.",
-   "upside": "The company's revenue grew in the latest quarter, which shows some business activity is increasing.",
-   "downside": "The company's struggles in China and a lowered outlook for future performance could lead to more selling of its shares.",
-   "watch": [
-    "The company's official response to the exchange's questions about the IPO news.",
-    "How well the company sells cars in markets other than China.",
-    "Future quarterly results to see if the loss continues or improves."
-   ],
-   "about": "",
-   "basis": "8c49c46937d4",
-   "items": 6,
-   "updated": "2026-11-17T12:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "HINDZINC": {
@@ -794,6 +794,22 @@
    "updated": "2026-11-16T11:16+05:30",
    "model": "gemini-flash-lite-latest"
   },
+  "SOBHA": {
+   "summary": "Sobha Ltd. recently announced a new credit rating from an agency. At the same time, the broader real estate sector has seen a sharp rise in stock prices this month.",
+   "why": "The credit rating affects how easily Sobha can borrow money, which can influence its future costs. The sector's recent surge shows high investor interest, but it also suggests prices may have risen quickly.",
+   "upside": "Strong investor interest in the real estate sector could support the company's share price in the near term.",
+   "downside": "If the credit rating is a downgrade, it could increase the company's borrowing costs, and the sector's recent sharp rise might lead to a price correction.",
+   "watch": [
+    "The specific details and outcome of the new credit rating.",
+    "Whether the real estate sector continues to rise or pulls back after its recent surge.",
+    "Changes in the Nifty Realty index performance over the next few sessions."
+   ],
+   "about": "Sobha Ltd. is a real estate company listed on the NSE.",
+   "basis": "48f3dc4154f4",
+   "items": 2,
+   "updated": "2026-11-18T09:30+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "DLF": {
    "summary": "DLF shares have risen to a 52‑week high, joining a group of stocks that rallied about 15% over the past month as the realty sector surged in November.",
    "why": "The rise shows strong investor interest, which can affect the value of existing holdings.",
@@ -997,22 +1013,6 @@
     "Overall sector index trend over the next sessions"
    ],
    "about": "Lodha Developers Ltd. is an Indian real estate development company.",
-   "basis": "fb74963cbe28",
-   "items": 1,
-   "updated": "2026-11-17T11:02+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "SOBHA": {
-   "summary": "Sobha Ltd. is riding a strong rally in the realty sector, with the Nifty Realty index up about 14% in November. The sector showed a modest dip of 1.3% in the last session but is up 1.4% over the past five sessions.",
-   "why": "Sector momentum can lift Sobha’s share price, while a pull‑back could weigh on it.",
-   "upside": "If the broader realty rally continues, Sobha could benefit from further price gains.",
-   "downside": "If the sector is deemed overextended, a correction could pull Sobha’s stock lower.",
-   "watch": [
-    "Nifty Realty index performance",
-    "Short‑term sector moves (e.g., the recent -1.3% session)",
-    "Signs of sector overextension or correction"
-   ],
-   "about": "Sobha Ltd. is a real estate developer.",
    "basis": "fb74963cbe28",
    "items": 1,
    "updated": "2026-11-17T11:02+05:30",
