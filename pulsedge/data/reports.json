@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T11:15+05:30",
+ "updated": "2026-11-18T11:30+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -698,6 +698,22 @@
    "updated": "2026-11-16T14:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "NETWEB": {
+   "summary": "Netweb Technologies reported record profits and a large backlog of AI‑related work, and its shares have jumped 42% from the 52‑week low. The broader IT index has been falling, down 0.9% in the last session and 2.5% over five sessions.",
+   "why": "Strong future orders could keep earnings high, which matters to shareholders. However, the recent price surge may lead some investors to book profits, which could pressure the stock.",
+   "upside": "If the AI backlog turns into revenue, earnings could stay strong.",
+   "downside": "If many investors sell to lock in gains, the share price could fall.",
+   "watch": [
+    "Next earnings release",
+    "Progress on AI project deliveries",
+    "Any sharp moves in the stock after the recent rally"
+   ],
+   "about": "Netweb Technologies India Ltd. provides information technology services.",
+   "basis": "f7d30fcc4e4d",
+   "items": 1,
+   "updated": "2026-11-18T11:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "ACMESOLAR": {
    "summary": "ACME Solar Holdings announced it has executed a Power Purchase Agreement, meaning it will sell electricity under a new contract. The broader energy sector index was flat over the past five sessions.",
    "why": "The agreement secures future revenue, which can influence the value of the shares.",
@@ -1177,6 +1193,38 @@
    "items": 1,
    "updated": "2026-11-16T09:01+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "KEI": {
+   "summary": "KEI Industries and peers slipped up to 3% as copper prices fell for the fifth consecutive day, pulling the stock lower. The drop reflects market reaction to cheaper raw material costs for cable makers.",
+   "why": "Changes in copper prices directly affect KEI's production costs and thus its profitability for shareholders.",
+   "upside": "If lower copper prices boost margins without hurting demand, earnings could improve.",
+   "downside": "A sustained copper decline might indicate weak demand, potentially reducing sales volumes for KEI.",
+   "watch": [
+    "Copper price movements",
+    "Demand trends for electrical cables",
+    "KEI's profit margin reports"
+   ],
+   "about": "KEI Industries manufactures electrical cables and related products.",
+   "basis": "f5e73a423695",
+   "items": 1,
+   "updated": "2026-11-18T11:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "POLYCAB": {
+   "summary": "Polycab shares slipped up to 3% as copper prices fell for a fifth consecutive day. The cheaper copper could lift profit margins, but a price drop driven by weak demand might curb sales.",
+   "why": "Raw material costs directly affect Polycab’s earnings, so changes matter to shareholders.",
+   "upside": "If copper stays cheap while demand remains solid, Polycab’s margins could improve.",
+   "downside": "A sustained copper decline could reflect weak demand, hurting cable sales volumes.",
+   "watch": [
+    "Copper price movements",
+    "Overall demand for electrical cables",
+    "Polycab’s upcoming margin or earnings updates"
+   ],
+   "about": "Polycab India Ltd manufactures electrical cables and wires.",
+   "basis": "f5e73a423695",
+   "items": 1,
+   "updated": "2026-11-18T11:30+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "TITAGARH": {
    "summary": "Titagarh Rail Systems has set a target to produce 200 metro cars in the next financial year. It also aims to build 1,000 wagons per month by the end of that year.",

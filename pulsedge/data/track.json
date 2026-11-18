@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T11:16:03+05:30",
+ "updated": "2026-11-18T11:31:01+05:30",
  "summary": {
-  "calls": 1664,
-  "scored_calls": 505,
+  "calls": 1667,
+  "scored_calls": 508,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,45 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "fdf957392bfc616d",
+   "symbol": "NETWEB",
+   "time": "2026-11-18T11:21:01+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Netweb Technologies shares up 42% from 52-week low, is there more steam left in the AI stock? Check targets, performance",
+   "url": "https://www.livemint.com/market/stock-market-news/netweb-technologies-share-price-up-42-from-52-week-low-more-steam-left-in-the-ai-stock-check-targets-support-levels-11794978231557.html",
+   "entry_date": "2026-11-17",
+   "entry": 4053.4
+  },
+  {
+   "id": "5974bab17a9d039c",
+   "symbol": "KEI",
+   "time": "2026-11-18T11:17:12+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Polycab, KEI, RR Kabel & others fall up to 3% as copper plunges for 5th day",
+   "url": "https://www.business-standard.com/markets/news/polycab-kei-rr-kabel-others-fall-up-to-3-as-copper-plunges-for-5th-day-126111800315_1.html",
+   "entry_date": "2026-11-17",
+   "entry": 3851.0
+  },
+  {
+   "id": "5974bab17a9d039c",
+   "symbol": "POLYCAB",
+   "time": "2026-11-18T11:17:12+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Polycab, KEI, RR Kabel & others fall up to 3% as copper plunges for 5th day",
+   "url": "https://www.business-standard.com/markets/news/polycab-kei-rr-kabel-others-fall-up-to-3-as-copper-plunges-for-5th-day-126111800315_1.html",
+   "entry_date": "2026-11-17",
+   "entry": 7702.0
+  },
   {
    "id": "36f3122e9ab557c4",
    "symbol": "AMBUJACEM",
