@@ -1,7 +1,34 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-18T11:02:31+05:30",
+ "updated": "2026-11-18T11:05:29+05:30",
  "items": [
+  {
+   "id": "a6e41af13c3cfd62",
+   "time": "2026-11-18T11:04:29+05:30",
+   "headline": "PARAG MILK FOODS: CO ISSUES ₹161 CRORE EQUITY; RECEIVES ₹121 CRORE AS PROMOTERS AND INVESTORS CONVERT WARRANTS INTO EQUITY",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9536",
+   "section": "trading",
+   "call": "ignore",
+   "horizon": "swing",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [],
+   "impact": 8,
+   "confidence": 30,
+   "category": "No listed-stock impact",
+   "action": "No action",
+   "reason": [
+    "Keyword rules (AI classification is off)"
+   ],
+   "risks": [],
+   "plain": "",
+   "why": "No listed company is clearly affected.",
+   "check": "",
+   "original": "PARAG MILK FOODS: CO ISSUES ₹161 CRORE EQUITY; RECEIVES ₹121 CRORE AS PROMOTERS AND INVESTORS CONVERT WARRANTS INTO EQUITY",
+   "latency": 60.9,
+   "lane": "fast"
+  },
   {
    "id": "749fbe408b0dafd3",
    "time": "2026-11-18T11:02:02+05:30",
@@ -1265,83 +1292,6 @@
    "check": "",
    "original": "INDIA AVIATION MINISTER SAYS INDIA TO HAVE 400,000 TONS OF SAF PRODUCTION CAPACITY",
    "latency": 97.7,
-   "lane": "fast"
-  },
-  {
-   "id": "a0368e7beda8f2a3",
-   "time": "2026-11-17T11:05:22+05:30",
-   "headline": "INDIAN OIL CORP: CO CHAIRMAN SAYS INDIAN OIL GOT APPROVALS TO DELIVER SUSTAINABLE AVIATION FUEL ON COMMERCIAL SCALE; KEEN TO LOCK IN CUSTOMERS FOR FUTURE SUSTAINABLE AVIATION FUEL SALES",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9420",
-   "section": "news",
-   "call": "watch",
-   "horizon": "positional",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "IOC",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Oil & Gas",
-    "Renewables"
-   ],
-   "impact": 40,
-   "confidence": 60,
-   "category": "Corporate Strategy",
-   "action": "Monitor IOC for volume spikes on positive sentiment regarding green energy initiatives.",
-   "reason": [
-    "Approval for commercial sustainable aviation fuel (SAF) signals a strategic pivot toward high-margin green products.",
-    "Locking in customers suggests future revenue visibility in a growing niche."
-   ],
-   "risks": [
-    "High capital expenditure required for SAF production may pressure short-term cash flows.",
-    "Regulatory or demand shifts in aviation could delay commercial ramp-up."
-   ],
-   "plain": "Indian Oil received approval to sell eco-friendly plane fuel commercially and is seeking long-term buyers.",
-   "why": "This shows the company is moving into a growing green energy market, which could boost future profits.",
-   "check": "Look for news on how much fuel they plan to produce and who the first customers are.",
-   "original": "INDIAN OIL CORP: CO CHAIRMAN SAYS INDIAN OIL GOT APPROVALS TO DELIVER SUSTAINABLE AVIATION FUEL ON COMMERCIAL SCALE; KEEN TO LOCK IN CUSTOMERS FOR FUTURE SUSTAINABLE AVIATION FUEL SALES",
-   "latency": 55.6,
-   "lane": "fast"
-  },
-  {
-   "id": "c7d3ab01ad8b8f20",
-   "time": "2026-11-17T11:02:58+05:30",
-   "headline": "LASER POWER & INFRA LTD: CO. SECURES FIRST HTLS CONDUCTOR ORDER WORTH ₹72.76 CRORES FROM POWER GRID; ENTERS 220 KV UNDERGROUND TRANSMISSION PROJECT WITH CESC WORTH ₹44 CRORES; EXPANDING MANUFACTURING CAPACITY AT KHARAGPU",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9419",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "CESC",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Power",
-    "Infrastructure"
-   ],
-   "impact": 10,
-   "confidence": 40,
-   "category": "Corporate Action",
-   "action": "Monitor CESC for minor sentiment lift, but focus remains on the supplier's growth.",
-   "reason": [
-    "CESC is the buyer, not the primary beneficiary of the revenue news.",
-    "The news primarily benefits Laser Power & Infra, which is not in the candidate list."
-   ],
-   "risks": [
-    "Minimal direct financial impact on CESC's bottom line from a single project order."
-   ],
-   "plain": "A power company signed a contract to buy high-voltage cables from a manufacturer.",
-   "why": "It is a routine business deal for the buyer, so it likely won't change the stock price much.",
-   "check": "Look at the supplier's stock movement instead of the buyer's.",
-   "original": "LASER POWER & INFRA LTD: CO. SECURES FIRST HTLS CONDUCTOR ORDER WORTH ₹72.76 CRORES FROM POWER GRID; ENTERS 220 KV UNDERGROUND TRANSMISSION PROJECT WITH CESC WORTH ₹44 CRORES; EXPANDING MANUFACTURING CAPACITY AT KHARAGPU",
-   "latency": 79.5,
    "lane": "fast"
   }
  ]
