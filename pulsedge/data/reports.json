@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T00:20+05:30",
+ "updated": "2026-11-19T03:10+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged that the US Federal Reserve may raise rates again because inflation is still high. This could slow money coming into India and keep the market cautious. In India, PSU banks and media stocks rose, while consumer durables, metals and auto fell. Foreign funds were slightly less long than before, holding about 32% of the market in long positions.",
+  "summary": "Three oil tankers caught fire in the Strait of Hormuz, adding to Middle East tensions that could push oil prices higher. US crude oil futures fell to $83.26 a barrel, while the Fed signalled more rate hikes, sending the Dow down over 500 points and gold to a one‑year low. Indian sector indices saw PSU banks and media gain modestly, but consumer durables, metals and auto fell sharply. An amendment from IIFL Capital Services was filed, adding a corporate event to watch.",
   "themes": [
-   "US rate hikes may affect Indian markets",
-   "Mixed sector performance",
-   "Foreign funds slightly less bullish"
+   "Middle East tensions and oil price risk",
+   "US monetary policy and global market volatility",
+   "Sector‑specific performance and corporate filings"
   ],
   "watch": [
-   "US Fed policy updates",
-   "PSU bank performance",
-   "Foreign funds positions"
+   "Oil price swings and their effect on oil‑related stocks",
+   "Fed rate‑hike signals and potential capital outflows",
+   "Details of the IIFL Capital Services amendment"
   ],
   "date": "2026-11-19",
-  "basis": "ab17469f5886",
-  "updated": "2026-11-19T00:20+05:30",
+  "basis": "c643c5a9a2df",
+  "updated": "2026-11-19T03:10+05:30",
   "model": "openai/gpt-oss-20b",
-  "items": 1
+  "items": 9
  },
  "stocks": {
   "ONGC": {
@@ -92,20 +92,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "IIFL": {
-   "summary": "Fairfax sold its entire 13.25% stake in IIFL Finance in a ₹3,454‑crore block deal, sending the share price up about 6%. At the same time, IIFL received a stake from institutional investors linked to a new SBI Mutual Fund‑Punjab National Bank distribution partnership.",
-   "why": "The block sale adds large supply of shares, which can pressure the price, while the fresh capital and partnership could support growth and improve earnings.",
-   "upside": "New institutional capital and the distribution partnership could bring more customers and boost earnings.",
-   "downside": "The large block sale may weigh on the share price and profit‑taking could follow the recent jump.",
+   "summary": "IIFL Finance shares jumped about 6% after Fairfax sold its entire 13.25% stake in a large block deal. The company also received new investment from institutional investors recently.",
+   "why": "A large sale of shares can change how the market views the company, and new money from big investors may support the stock's value.",
+   "upside": "The strong buying interest during the block deal suggests other investors are confident in the company.",
+   "downside": "The recent price jump might lead to some investors selling to lock in their gains, which could push the price back down.",
    "watch": [
-    "Share price reaction and volatility after the block deal",
-    "Execution and rollout of the SBI Funds‑PNB distribution network",
-    "Further institutional investment or stake changes"
+    "How the share price reacts in the days after the big sale",
+    "Any updates on the new institutional investment",
+    "Changes to the company's official filings"
    ],
-   "about": "IIFL Finance Ltd. is a non‑bank financial company that provides loan and other financial services.",
-   "basis": "d98f4600e3d9",
-   "items": 4,
-   "updated": "2026-11-19T00:20+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "IIFL Finance is a financial services company listed in India's Nifty 500 index.",
+   "basis": "2befd06c814f",
+   "items": 5,
+   "updated": "2026-11-19T03:10+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "JIOFIN": {
    "summary": "Jio Financial Services Ltd. has announced an acquisition and entered a 50:50 joint venture with BlackRock for asset management. Both moves aim to strengthen its growth and earnings potential. The company is also one of India's 50 largest listed firms in the Nifty 50 index.",
@@ -778,20 +778,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is facing mixed signals from the global oil market, where prices recently settled at $86.01 per barrel but analysts warn of a potential drop to $78 by 2027 due to excess supply. While a US deal has made the Strait of Hormuz safer, reducing some geopolitical risks, falling US crude inventories suggest tighter supply that could support prices in the short term.",
-   "why": "Since Oil India earns money by selling oil, its share price tends to move with global oil prices; higher prices generally mean more revenue, while lower prices can reduce earnings.",
-   "upside": "Tighter US oil supplies and a safer Strait of Hormuz could help keep oil prices stable or higher, supporting the company's revenue.",
-   "downside": "Analysts expect a global supply glut that could push oil prices down to $78 by 2027, which would likely reduce the company's income.",
+   "summary": "Oil India is feeling the impact of recent global oil price swings and geopolitical news. Crude futures have moved both lower and higher, and a fire on three tankers in the Strait of Hormuz added uncertainty.",
+   "why": "Shareholders watch oil prices because they directly affect the company’s revenue and profit margins.",
+   "upside": "Higher crude prices, as seen when futures rose to $86.01, could boost earnings.",
+   "downside": "Falling crude prices, like the drop to $83.26, could reduce revenue.",
    "watch": [
-    "Future global oil price forecasts regarding the expected supply glut.",
-    "Updates on the safety of the Strait of Hormuz and other geopolitical risks.",
-    "Changes in US crude oil inventory levels."
+    "Daily movements in US crude oil futures",
+    "Developments around the Strait of Hormuz",
+    "US crude oil inventory reports"
    ],
-   "about": "Oil India Ltd. is a company in the Oil Gas & Consumable Fuels sector that is part of the Nifty 500 index.",
-   "basis": "9aa99d87488d",
-   "items": 14,
-   "updated": "2026-11-19T00:20+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Oil India Ltd. is an Indian oil and gas exploration and production company.",
+   "basis": "1841999f1d04",
+   "items": 16,
+   "updated": "2026-11-19T03:10+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "PRESTIGE": {
    "summary": "Prestige Estates is actively expanding its business by buying a 50% stake in a hotel company and increasing its ownership in a housing project. The company also announced plans to create two new subsidiaries. These moves happened while the broader real estate sector saw strong gains in November.",
@@ -954,19 +954,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "KALYANKJIL": {
-   "summary": "Kalyan Jewellers shares slipped about 5% as the consumer durables sector fell, following a recent 42% rally after strong Q2 results. The drop reflects broader worries about near‑term consumer demand despite lower gold prices.",
-   "why": "Share price moves affect investors’ portfolio value and signal how demand and margins may be changing for the jewellery business.",
-   "upside": "Demand could pick up during the upcoming wedding season, potentially supporting sales and the stock.",
-   "downside": "A sector‑wide sell‑off or profit‑booking after the recent rally could push the share lower.",
+   "summary": "Kalyan Jewellers shares fell up to 5% as the Nifty Consumer Durables index slid about 3% and concerns grew over near‑term consumer demand despite lower gold prices.",
+   "why": "The price drop reflects market worries that weaker retail demand could hurt sales volumes and profit margins for shareholders.",
+   "upside": "A rebound in demand during the upcoming wedding season could lift sales and support the share price.",
+   "downside": "A broader sector‑wide sell‑off or continued weak consumer demand could further compress margins and push the stock lower.",
    "watch": [
-    "Consumer durables sector index trends",
-    "Wedding season demand outlook",
-    "Profit‑booking pressure after the recent rally"
+    "Movement of the Consumer Durables sector index",
+    "Retail demand trends, especially wedding season activity",
+    "Gold price changes and their impact on jewellery pricing"
    ],
-   "about": "Kalyan Jewellers India Ltd. is a jewellery retailer.",
-   "basis": "25ca704678f3",
-   "items": 3,
-   "updated": "2026-11-18T14:01+05:30",
+   "about": "Kalyan Jewellers India Ltd is a retailer of jewellery and related consumer products.",
+   "basis": "538f8ef109c2",
+   "items": 2,
+   "updated": "2026-11-19T03:10+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "GODREJPROP": {
@@ -1161,19 +1161,19 @@
    "model": "openai/gpt-oss-20b"
   },
   "PNB": {
-   "summary": "Punjab National Bank shares have risen sharply, hitting an eight-year high and a 52-week peak. The stock gained about 31% in the last month, outperforming its sector which rose 2.7% over five sessions.",
-   "why": "This rapid increase shows strong market interest, but it also means the price is at a record level. Shareholders may see their holdings gain value, though the sharp rise increases the chance of a short-term drop.",
-   "upside": "The strong momentum suggests continued investor confidence in the bank's performance.",
-   "downside": "The stock is considered overbought, which can lead to traders selling to lock in profits and cause the price to fall.",
+   "summary": "Punjab National Bank shares have risen 31% in one month to hit an 8-year high. The bank recently announced a distribution partnership with SBI Mutual Fund, though it also reported regulatory actions taken against it.",
+   "why": "The sharp price increase means your investment value has grown significantly, but the recent regulatory news adds a layer of uncertainty to the bank's future performance.",
+   "upside": "The new partnership with SBI Mutual Fund could bring more customers to the bank and support its business growth.",
+   "downside": "Regulatory actions could lead to penalties or restrictions, and the stock's recent sharp rise makes it vulnerable to a price pullback.",
    "watch": [
-    "Whether the share price holds its recent high levels or pulls back.",
-    "How the broader banking sector performs in the coming days.",
-    "Any changes in trading volume that might signal a shift in interest."
+    "Details of the regulatory actions reported to the exchange",
+    "How the SBI Mutual Fund distribution partnership progresses",
+    "Whether the stock price stabilizes after its recent 31% jump"
    ],
-   "about": "Punjab National Bank is a major state-run lender in the financial services sector.",
-   "basis": "8946d38565b9",
-   "items": 3,
-   "updated": "2026-11-17T14:00+05:30",
+   "about": "Punjab National Bank is a state-run lender in the financial services sector.",
+   "basis": "99a1b9a847d1",
+   "items": 4,
+   "updated": "2026-11-19T03:10+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "POLYCAB": {
@@ -1224,21 +1224,21 @@
    "updated": "2026-11-17T00:55+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "ETERNAL": {
-   "summary": "Eternal Ltd. recently saw its stock hit a 52-week high after rallying up to 15% over the past month. At the same time, the company reported its Q2 results alongside competitor Swiggy, highlighting ongoing discussions about profit growth and food delivery competition.",
-   "why": "This matters to shareholders because strong recent price momentum and earnings reports can attract more attention from investors. However, high prices might also tempt some to sell and lock in profits.",
-   "upside": "The recent rally and growing profits could attract more buying support for further gains.",
-   "downside": "Momentum could reverse quickly if market sentiment shifts or intense competition squeezes profit margins.",
+  "DALBHARAT": {
+   "summary": "Dalmia Bharat Ltd. is set to discuss a possible share buyback at its board meeting on 23 November. The proposal is currently only on the agenda and not yet approved.",
+   "why": "A buyback can boost earnings per share and signal confidence in the stock, which matters to current shareholders.",
+   "upside": "If the buyback is approved, it could support the share price and improve shareholder returns.",
+   "downside": "The buyback could be delayed, altered, or cancelled, which would remove the potential benefit.",
    "watch": [
-    "Whether buying momentum continues or fades",
-    "Changes in broader market sentiment",
-    "Competition in the food delivery space"
+    "Outcome of the 23‑Nov board meeting",
+    "Official approval or rejection of the share buyback",
+    "Any follow‑up announcements from the company regarding the buyback"
    ],
-   "about": "Eternal Ltd. is a consumer services company and one of India's 50 largest listed firms.",
-   "basis": "d9496364245a",
-   "items": 3,
-   "updated": "2026-11-18T08:17+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "Dalmia Bharat Ltd. manufactures cement and other construction‑material products.",
+   "basis": "e939c32054d6",
+   "items": 2,
+   "updated": "2026-11-19T03:10+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "NTPC": {
    "summary": "PulsEdge flagged a tragic accident at NTPC's Tandwa project where three workers died and two were injured, and an investigation is now under way. The Energy sector index was flat over the past five sessions, showing little market movement.",
@@ -1256,37 +1256,52 @@
    "updated": "2026-11-18T14:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "SWIGGY": {
-   "summary": "Swiggy's shares have fallen sharply this year, losing up to half their value, while its latest Q2 results show profit growth faster than its rival Zomato's parent. The company is in the Nifty 500 consumer services index.",
-   "why": "Shareholders feel the impact of the steep price drop and watch profit growth that could shape future earnings.",
-   "upside": "A rebound is possible if the company’s fundamentals remain strong.",
-   "downside": "Intense competition could squeeze margins, reducing profitability.",
+  "THERMAX": {
+   "summary": "Thermax Ltd. is a capital goods company listed in the Nifty 500 index. PulsEdge flagged a recent headline about PI Industries hitting a 52-week low, but the provided facts do not confirm this applies to Thermax.",
+   "why": "Since the specific news item refers to a different company, this report does not provide information on why this matters for Thermax shareholders based on the given facts.",
+   "upside": "",
+   "downside": "",
    "watch": [
-    "Profit growth versus Zomato/Eternal",
-    "Share price recovery after 50% drop",
-    "Competitive pressure on margins"
+    "Clarification on whether the 52-week low news applies to Thermax or only PI Industries",
+    "General market trends for the Capital Goods sector"
    ],
-   "about": "Swiggy is an Indian online food delivery platform.",
-   "basis": "e1600c42a6e6",
-   "items": 2,
-   "updated": "2026-11-17T00:55+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Thermax Ltd. operates in the Capital Goods sector.",
+   "basis": "4b3f7b0954af",
+   "items": 1,
+   "updated": "2026-11-19T03:10+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "PNBHOUSING": {
+   "summary": "PNB Housing Finance announced that its Chief of Operations and Customer Service is resigning effective November 30, 2026. The company also disclosed the allotment of new securities, which may increase the total number of shares.",
+   "why": "Leadership changes and new share issuances can create uncertainty for investors and potentially reduce the value of each existing share.",
+   "upside": "",
+   "downside": "The departure of a senior executive and the issuance of new shares could lead to lower stock prices or reduced earnings per share.",
+   "watch": [
+    "Appointment of a new Chief of Operations",
+    "Details on the number of new shares allotted",
+    "Company statements explaining the reason for the resignation"
+   ],
+   "about": "PNB Housing Finance is a financial services company that provides housing loans.",
+   "basis": "c85fc628bb16",
+   "items": 3,
+   "updated": "2026-11-19T03:10+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "EICHERMOT": {
-   "summary": "Eicher Motors saw its share price adjust after a 3% jump that followed positive broker sentiment on its premium motorcycle growth. The company also granted 105 employee stock options and reported a strong quarter compared with a rival car maker.",
-   "why": "Share price moves affect shareholder value and the new options could dilute existing holdings if exercised.",
-   "upside": "Continued demand for premium motorcycles could lift earnings and support the stock.",
-   "downside": "Dilution from employee stock options and competition in the 350‑650cc bike segment could pressure the price.",
+   "summary": "Eicher Motors shares rose 3% recently as brokerages highlighted growth in premium motorcycles, but the stock saw a price adjustment the following day. The company also announced the grant of 105 employee stock options.",
+   "why": "Shareholders may see short-term price swings due to analyst sentiment and option grants, while the broader auto sector has recently declined.",
+   "upside": "Positive views on premium motorcycle growth could support the stock price.",
+   "downside": "Competition in the 350cc-650cc bike segment and potential dilution from new employee options could pressure the stock.",
    "watch": [
-    "Further price adjustments after the recent move",
-    "Exercise of the 105 employee stock options",
-    "Competitive dynamics in the premium motorcycle segment"
+    "How the stock reacts to the recent price adjustment.",
+    "The impact of the 105 new employee stock options on existing shares.",
+    "Performance of the broader auto sector index."
    ],
-   "about": "Eicher Motors manufactures motorcycles, including premium models, under brands such as Royal Enfield.",
-   "basis": "93456217682f",
-   "items": 4,
-   "updated": "2026-11-18T16:00+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Eicher Motors is an Indian automobile and auto components company that is part of the Nifty 50 index.",
+   "basis": "3896b03687b5",
+   "items": 3,
+   "updated": "2026-11-19T03:10+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "BPCL": {
    "summary": "BPCL plans to start a new green jet fuel plant at its Mumbai refinery in December. The company also aims to increase the capacity of this plant to 61,000 tons per year by 2028.",
@@ -1368,22 +1383,6 @@
    "updated": "2026-11-18T15:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "FEDERALBNK": {
-   "summary": "Federal Bank said it will not make any deal with Jana Small Finance Bank. The financial sector index rose 0.6% in the last session and 3% over five sessions.",
-   "why": "Shareholders should note the decision could limit a growth opportunity and affect market perception of the stock.",
-   "upside": "A rising sector index may support the bank's share price.",
-   "downside": "Missing a potential deal could keep the stock from gaining further upside.",
-   "watch": [
-    "Federal Bank's stance on a Jana Small Finance Bank partnership",
-    "Sector index performance for Financials",
-    "Profit‑taking trends after recent 52‑week highs in banking stocks"
-   ],
-   "about": "Federal Bank Ltd. is a financial services company that offers banking products and services.",
-   "basis": "cfdf464f1729",
-   "items": 2,
-   "updated": "2026-11-18T10:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "ULTRACEMCO": {
    "summary": "UltraTech Cement announced a credit rating update to the exchange. An investment advisor also highlighted the stock as one of three top picks in a recent note.",
    "why": "The rating can influence the cost of borrowing for the company, affecting profitability. Investor attention from the advisor could move the share price.",
@@ -1399,22 +1398,6 @@
    "items": 2,
    "updated": "2026-11-18T08:29+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "KOTAKBANK": {
-   "summary": "Kotak Mahindra Bank shares recently reached their highest price in the last year. This move happened alongside other major Indian stocks that also hit new yearly highs.",
-   "why": "When a stock hits a new high, it shows strong recent demand, which can influence how other investors view the company's value.",
-   "upside": "The recent rally might attract more buyers, potentially supporting further price gains.",
-   "downside": "Momentum could reverse quickly if broader market sentiment shifts or if sellers lock in profits.",
-   "watch": [
-    "Whether the stock holds its 52-week high or pulls back",
-    "Changes in overall market sentiment",
-    "Performance of other Financial Services stocks"
-   ],
-   "about": "Kotak Mahindra Bank is a financial services company and one of India's 50 largest listed companies.",
-   "basis": "b11ff564ee42",
-   "items": 2,
-   "updated": "2026-11-18T08:17+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "AMBUJACEM": {
    "summary": "Ambuja Cements is partnering with Adani Cement to deploy heavy-duty electric trucks for transporting clinker and cement. The plan aims to have 410 trucks running by March 2027 to reduce carbon emissions and logistics costs.",

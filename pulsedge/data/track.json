@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T00:21:38+05:30",
+ "updated": "2026-11-19T03:11:18+05:30",
  "summary": {
-  "calls": 1750,
-  "scored_calls": 583,
+  "calls": 1753,
+  "scored_calls": 586,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,45 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "330e307c79caa733",
+   "symbol": "OIL",
+   "time": "2026-11-19T01:38:37+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "THREE OIL TANKERS THAT WERE OFFENDING CAUGHT FIRE IN THE EASTERN STRAIT OF HORMUZ, IRIB NEWS REPORTS",
+   "url": "https://t.me/Indiaredboxglobal/9627",
+   "entry_date": "2026-11-18",
+   "entry": 435.5
+  },
+  {
+   "id": "c515ba1cdb32222e",
+   "symbol": "OIL",
+   "time": "2026-11-19T01:02:46+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "US CRUDE OIL FUTURES SETTLE AT $83.26 A BARREL, DOWN $2.75 OR 3.20%",
+   "url": "https://t.me/Indiaredboxglobal/9624",
+   "entry_date": "2026-11-18",
+   "entry": 435.5
+  },
+  {
+   "id": "a74af1445825224a",
+   "symbol": "IIFL",
+   "time": "2026-11-19T00:58:46+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "IIFL Capital Services Limited: IIFL Capital Services Limited has informed the Exchange about Amendment(s) |SUBJECT: Amendment(s)",
+   "url": "https://nsearchives.nseindia.com/corporate/IIFLSEC_19112026005808_SEintimation.pdf",
+   "entry_date": "2026-11-18",
+   "entry": 661.95
+  },
   {
    "id": "664777011deafc58",
    "symbol": "OIL",

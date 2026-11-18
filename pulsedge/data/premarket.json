@@ -1,10 +1,10 @@
 {
  "date": "2026-11-19",
- "updated": "2026-11-19T00:21:38+05:30",
- "sentiment": "Neutral",
+ "updated": "2026-11-19T03:11:17+05:30",
+ "sentiment": "Bearish",
  "breadth": {
   "up": 1,
-  "down": 1
+  "down": 4
  },
  "checklist": [
   {
@@ -17,37 +17,37 @@
   },
   {
    "title": "US close - Dow/S&P/Nasdaq direction",
-   "dir": "flat",
-   "value": "Mixed — 2/3 higher",
+   "dir": "down",
+   "value": "Mixed — 1/3 higher",
    "detail": [
-    "Dow 50,359.88 -0.79%",
-    "S&P 7,346.14 +0.08%",
-    "Nasdaq 24,502.61 +0.72%",
-    "Nasdaq futures now +0.71%"
+    "Dow 50,198.17 -1.11%",
+    "S&P 7,323.63 -0.23%",
+    "Nasdaq 24,429.88 +0.42%",
+    "Nasdaq futures now +0.61%"
    ]
   },
   {
    "title": "Asian markets live - Nikkei, Hang Seng",
-   "dir": "flat",
-   "value": "Asia mixed",
+   "dir": "down",
+   "value": "Asia lower",
    "detail": [
-    "Nikkei 59,024.28 +0.28%",
+    "Nikkei 59,024.28 +0.00%",
     "Hang Seng 23,294.75 -0.91%"
    ]
   },
   {
    "title": "DXY + USDINR move",
-   "dir": "flat",
-   "value": "No major currency pressure",
+   "dir": "down",
+   "value": "Rupee under pressure",
    "detail": [
-    "DXY 103.77 +0.28%",
+    "DXY 103.80 +0.31%",
     "USD/INR 93.450 -0.02%"
    ]
   },
   {
    "title": "Brent crude level",
    "dir": "up",
-   "value": "$91.38 -1.89%",
+   "value": "$91.73 -1.51%",
    "detail": []
   },
   {
@@ -57,16 +57,29 @@
    "detail": []
   }
  ],
- "summary": "Neutral setup. Brent down 1.89% — relief for OMCs and paints; NASDAQ closed 0.72% higher; supportive for IT.",
+ "summary": "Bearish setup. Brent down 1.51% — relief for OMCs and paints; NASDAQ closed 0.42% higher; supportive for IT.",
  "global_cues": [
-  "Brent down 1.89% — relief for OMCs and paints",
-  "NASDAQ closed 0.72% higher; supportive for IT",
-  "Nikkei up, Hang Seng down"
+  "Brent down 1.51% — relief for OMCs and paints",
+  "NASDAQ closed 0.42% higher; supportive for IT",
+  "Nikkei down, Hang Seng down"
  ],
  "india_triggers": [
-  "1 filings and headlines worth a look so far today"
+  "9 filings and headlines worth a look so far today"
  ],
- "focus": [],
+ "focus": [
+  {
+   "symbol": "OIL",
+   "note": "THREE OIL TANKERS THAT WERE OFFENDING CAUGHT FIRE IN THE EASTERN STRAI"
+  },
+  {
+   "symbol": "OIL",
+   "note": "US CRUDE OIL FUTURES SETTLE AT $83.26 A BARREL, DOWN $2.75 OR 3.20%"
+  },
+  {
+   "symbol": "IIFL",
+   "note": "IIFL Capital Services Limited: IIFL Capital Services Limited has infor"
+  }
+ ],
  "sector_tags": [
   {
    "label": "IT",
@@ -82,33 +95,33 @@
   },
   {
    "name": "S&P FUT",
-   "value": "7,371",
-   "change": 0.16
+   "value": "7,346",
+   "change": -0.17
   },
   {
    "name": "NASDAQ FUT",
-   "value": "27,268",
-   "change": 0.71
+   "value": "27,242",
+   "change": 0.61
   },
   {
    "name": "KOSPI",
    "value": "5,067",
-   "change": 1.99
+   "change": 0.0
   },
   {
    "name": "WTI",
-   "value": "82.56",
-   "change": -4.01
+   "value": "83.15",
+   "change": -3.33
   },
   {
    "name": "GOLD",
-   "value": "3,742",
-   "change": -3.16
+   "value": "3,730",
+   "change": -3.47
   },
   {
    "name": "US 10Y",
-   "value": "5.06",
-   "change": -0.8
+   "value": "5.07",
+   "change": -0.69
   }
  ],
  "source": "CNBC / Yahoo Finance (unofficial, delayed)"
