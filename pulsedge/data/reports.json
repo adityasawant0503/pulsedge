@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T12:45+05:30",
+ "updated": "2026-11-18T13:00+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "IIFL Finance shares jumped 6% after Fairfax sold its entire 13.25% stake in a large block deal. Meanwhile, gold loan companies like Muthoot and Manappuram fell 5% because falling gold prices make their lending riskier. Hindustan Copper shares dropped 3% as copper prices hit a five-month low, despite the company reporting higher profits. PSU banks and realty stocks were the strongest performers in the previous session.",
+  "summary": "PulsEdge flagged a mix of company moves and commodity pressures on Wednesday. Fairfax sold its stake in IIFL Finance, pushing the stock up, while gold and copper companies faced downward pressure from falling commodity prices. Meanwhile, regulatory warnings hit drug plants, and several firms shared strong future growth and sales projections.",
   "themes": [
-   "Large block deals can cause sudden price swings in individual stocks.",
-   "Commodity price drops are hurting related companies like copper miners and gold lenders.",
-   "Banking and realty sectors showed strength while IT and energy lagged."
+   "Stake sales and block deals driving stock movements",
+   "Falling commodity prices weighing on metal and gold lenders",
+   "Company growth projections and plant maintenance updates"
   ],
   "watch": [
-   "Whether IIFL Finance holds its gains or faces profit-taking after the 6% jump.",
-   "If copper prices continue to fall, which could pressure Hindustan Copper's future earnings.",
-   "Tata Power's next quarter results, which management expects to show significant growth."
+   "Value Industries' Supreme Court insolvency case and management changes",
+   "Signature Global and Tata Power progress toward their stated business goals",
+   "Netweb Technologies following its strong AI-related order book"
   ],
   "date": "2026-11-18",
-  "basis": "4fc72a147a14",
-  "updated": "2026-11-18T12:01+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 55
+  "basis": "82cfc3e8b0ac",
+  "updated": "2026-11-18T13:00+05:30",
+  "model": "gemini-flash-lite-latest",
+  "items": 73
  },
  "stocks": {
   "TMPV": {
@@ -570,6 +570,22 @@
    "items": 3,
    "updated": "2026-11-17T11:17+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "SUPREMEIND": {
+   "summary": "Supreme Industries Ltd. has no recent company‑specific announcements. It remains listed in the Nifty 500 as a capital goods firm. No new developments have been reported.",
+   "why": "Shareholders may want to know if any changes are coming that could affect the company’s operations or ownership.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "Upcoming earnings release",
+    "Any regulatory filings",
+    "Market news affecting the capital goods sector"
+   ],
+   "about": "Supreme Industries Ltd. is a capital goods company listed on the NSE.",
+   "basis": "dab0aadd37fd",
+   "items": 1,
+   "updated": "2026-11-18T13:00+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "GRASIM": {
    "summary": "Grasim Industries has released the transcript of its earnings call for the September quarter. The full financial results for the quarter and half-year are not yet available.",
@@ -1081,6 +1097,21 @@
    "items": 2,
    "updated": "2026-11-16T11:16+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "BHARATFORG": {
+   "summary": "Bharat Forge announced that it is merging with or absorbing another company. This corporate restructuring changes how the business is organized.",
+   "why": "Mergers can change the company's size, debt, and future growth, which directly affects share value and the ownership stake of current investors.",
+   "upside": "",
+   "downside": "The merger brings a potential dilution of existing shareholders.",
+   "watch": [
+    "Further updates on the amalgamation and merger process",
+    "Details on how the merger impacts company debt and size"
+   ],
+   "about": "Bharat Forge Ltd. is an auto components company operating in India.",
+   "basis": "04e63dc3659c",
+   "items": 1,
+   "updated": "2026-11-18T13:00+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "IDBI": {
    "summary": "IDBI Bank is part of the Financial Services sector, which has seen a 3.0% rise over the last five sessions. Recent news mentions a major investor selling a large stake in a related finance company, IIFL Finance, through a block deal.",
