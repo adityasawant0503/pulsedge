@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T16:10+05:30",
+ "updated": "2026-11-18T19:23+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,56 +57,24 @@
   ]
  },
  "today": {
-  "summary": "IIFL Finance shares rose after Fairfax sold its stake, showing buying interest. ONGC secured a ₹100 crore subsea installation contract, which could boost its earnings. Gold‑financing companies fell as lower gold prices raise collateral risk, while a drug plant at Caplin Point faced a US FDA warning that could delay approvals.",
+  "summary": "Jio Financial Services and BlackRock each put ₹123 crore into a new 50:50 asset‑management joint venture, while Jio also announced a separate acquisition. IIFL Finance shares jumped about 6% after Fairfax sold its 13.25% stake, showing buying interest but also a risk of profit‑taking. SpiceJet plans to raise up to ₹5,500 crore, which could dilute shareholders and indicates cash pressure. ONGC secured a ₹100 crore subsea installation contract that may boost revenue but could face execution delays.",
   "themes": [
-   "Block sale and buying pressure",
-   "Regulatory and contract wins",
-   "Commodity price and collateral risk"
+   "Joint ventures and acquisitions",
+   "Capital moves and share price swings",
+   "Sector performance and regulatory signals"
   ],
   "watch": [
-   "IIFL Finance share movement after Fairfax sale",
-   "Execution and cost of ONGC subsea contract",
-   "Gold price changes and margin pressure for gold‑financing firms"
+   "Jio JV performance and integration risks",
+   "IIFL Finance price after Fairfax sale",
+   "SpiceJet fund‑raising terms and potential dilution"
   ],
   "date": "2026-11-18",
-  "basis": "8e6e526f1634",
-  "updated": "2026-11-18T15:30+05:30",
+  "basis": "4fb5e6513c7e",
+  "updated": "2026-11-18T19:23+05:30",
   "model": "openai/gpt-oss-20b",
-  "items": 129
+  "items": 175
  },
  "stocks": {
-  "KAYNES": {
-   "summary": "Kaynes Technology reported a sharp fall in quarterly profit, causing its shares to tumble over 16% in two sessions and hit a 52‑week low. The company has also slowed smart‑meter deliveries to focus on collecting overdue payments from state authorities.",
-   "why": "Lower profits and margin pressure hurt earnings, while delayed deliveries and payment collection issues can strain cash flow for shareholders.",
-   "upside": "A faster‑than‑expected recovery of dues from state entities or a technical bounce after the steep price drop could improve sentiment.",
-   "downside": "Continued profit decline, margin pressure and further payment collection problems could push the stock lower.",
-   "watch": [
-    "Recovery speed of state dues",
-    "Next quarterly earnings report",
-    "Margin trends and cost pressures"
-   ],
-   "about": "Kaynes Technology India Ltd. is an electronics manufacturer that produces items such as smart meters.",
-   "basis": "cffbd42a181d",
-   "items": 5,
-   "updated": "2026-11-18T15:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "INOXWIND": {
-   "summary": "Inox Wind reported a 42% drop in Q2 profit and margin compression, pushing its shares down about 60% over the past year. An analyst, however, flagged a potential 42% upside and a comeback rally if new orders are executed well.",
-   "why": "Profit decline and squeezed margins directly affect earnings for shareholders, while a possible rally could boost share value.",
-   "upside": "Successful execution of new orders could trigger a strong share price rally.",
-   "downside": "Continued margin pressure or lagging order execution could further depress the stock.",
-   "watch": [
-    "Execution of new orders",
-    "Margin trends in upcoming quarters",
-    "Future earnings releases"
-   ],
-   "about": "",
-   "basis": "5cefa2a82a9f",
-   "items": 2,
-   "updated": "2026-11-18T15:46+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "ONGC": {
    "summary": "ONGC secured a ₹100 crore subsea installation contract for a pipeline replacement, while a major gas leak at its Konaseema plant forced evacuations, power shutdowns and area cordons.",
    "why": "The contract could lift revenue, but the safety incident may hurt short‑term output and earnings.",
@@ -122,6 +90,22 @@
    "items": 6,
    "updated": "2026-11-18T13:14+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "JIOFIN": {
+   "summary": "Jio Financial Services Ltd. has announced an acquisition and entered a 50:50 joint venture with BlackRock for asset management. Both moves aim to strengthen its growth and earnings potential. The company is also one of India's 50 largest listed firms in the Nifty 50 index.",
+   "why": "These developments could increase the company's revenue streams and market presence, directly affecting shareholder value.",
+   "upside": "The acquisition and the JV with BlackRock could boost growth and earnings.",
+   "downside": "The acquisition may face regulatory delays, and the JV's performance could lag expectations.",
+   "watch": [
+    "Regulatory approval status of the acquisition",
+    "Performance of the Jio BlackRock Asset Management JV",
+    "Integration progress between Jio and BlackRock"
+   ],
+   "about": "Jio Financial Services Ltd. operates in the financial services sector.",
+   "basis": "e95c0c2e4329",
+   "items": 3,
+   "updated": "2026-11-18T19:23+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "IIFL": {
    "summary": "IIFL Finance shares jumped about 6% after Fairfax Financial sold its entire 13.25% stake in a large block deal worth ₹3,454 crore. This sale created significant buying interest in the stock, which is part of India's Nifty 500 index.",
@@ -172,20 +156,36 @@
    "model": "openai/gpt-oss-120b"
   },
   "GROWW": {
-   "summary": "PulsEdge flagged a series of large block deals on November 17, 2026, where major global and domestic investors exchanged shares in Billionbrains Garage Ventures. While firms like BlackRock, Fidelity, and Kotak Mahindra Mutual Fund bought stakes, other large investors sold significant portions of their holdings.",
-   "why": "These trades show that major institutional investors are actively repositioning their portfolios in the company, which can influence the stock's liquidity and short-term price movement.",
-   "upside": "The purchase of shares by well-known global funds like BlackRock and Fidelity may indicate confidence in the company's long-term prospects.",
-   "downside": "Large sales by existing investors could create selling pressure, and block deals are sometimes executed at a discount to the market price.",
+   "summary": "Billionbrains Garage Ventures Ltd. (GROWW) has seen several large block deals recently. Major institutional investors such as BlackRock, Fidelity, Societe Generale, and Kotak Mahindra MF bought a combined stake worth about ₹1,905 crore, while Ribbit Capital and Ribbit Cayman sold large blocks of shares.",
+   "why": "These moves show that big investors are actively trading the stock, which can influence its price and signal their view of the company’s prospects.",
+   "upside": "The significant institutional buying may indicate confidence in the company’s future.",
+   "downside": "Large sales by major investors could signal concerns or a need for liquidity.",
    "watch": [
-    "Future block deal disclosures to see if buying or selling continues to dominate",
-    "The company's next earnings report to understand its financial health",
-    "Broader trends in the Financial Services sector index"
+    "Future block deals by major investors",
+    "Price reaction to the recent buy/sell activity",
+    "Sector index performance for financials"
    ],
    "about": "",
-   "basis": "324230ac7679",
-   "items": 17,
-   "updated": "2026-11-17T19:22+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "basis": "1194ffef6b96",
+   "items": 18,
+   "updated": "2026-11-18T19:23+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
+  "KAYNES": {
+   "summary": "Kaynes Technology has slowed smart meter deliveries to focus on collecting pending dues from state authorities, leading to a sharp drop in quarterly profit and a 16% fall in share price over two sessions.",
+   "why": "The slowdown signals revenue growth pressure and cash flow concerns, which can affect shareholder value.",
+   "upside": "",
+   "downside": "Revenue slowdown, margin pressure, and potential further decline if quarterly trends continue.",
+   "watch": [
+    "Recovery of pending dues from state authorities",
+    "Margin trends and analyst concerns",
+    "Share price reaction after the two-day drop"
+   ],
+   "about": "Kaynes Technology India Ltd. is an electronics manufacturer.",
+   "basis": "dc2740392f5f",
+   "items": 3,
+   "updated": "2026-11-18T19:23+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "CAPLIPOINT": {
    "summary": "Caplin Point Laboratories informed the exchange that the US FDA classified an inspection at its subsidiary, Caplin Steriles, as Official Action Indicated. This status signals serious compliance issues that could delay approvals for new products.",
@@ -217,6 +217,22 @@
    "basis": "c23f30092f85",
    "items": 3,
    "updated": "2026-11-18T14:31+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "INOXWIND": {
+   "summary": "Inox Wind is setting a target of roughly ₹7,500 crore in revenue for FY28, aiming for a 20% EBITDA margin. The company has seen a significant drop in its share price over the past year, but recent news highlights its long-term financial goals.",
+   "why": "These targets show the company's plans for future growth and profitability, which can influence how investors view the stock's potential.",
+   "upside": "Meeting these revenue and margin goals could strengthen investor confidence in the company's recovery.",
+   "downside": "If the company fails to hit these targets or delays in executing new orders, it may lead to disappointment among investors.",
+   "watch": [
+    "Progress toward the FY28 revenue target",
+    "Actual EBITDA margins compared to the 20% goal",
+    "Timely execution of new orders"
+   ],
+   "about": "",
+   "basis": "62cb1dde20d7",
+   "items": 2,
+   "updated": "2026-11-18T19:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "MANAPPURAM": {
@@ -297,6 +313,38 @@
    "basis": "f14469544dd3",
    "items": 1,
    "updated": "2026-11-16T15:32+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "SOLARINDS": {
+   "summary": "PulsEdge flagged that Acme Solar Holdings, a subsidiary of Solar Industries India, signed a 150 MW hybrid power project agreement with NTPC. The company also reported receiving new orders and projects a 20-25% annual growth rate for the next three years.",
+   "why": "These new contracts and growth projections suggest the company expects higher future revenue, which is a key factor for shareholders monitoring its financial health.",
+   "upside": "The company projects a 20-25% annual growth rate for the next three years, indicating confidence in expanding its business.",
+   "downside": "There is a risk that the new projects may face execution delays, which could affect when the company actually earns the money from these contracts.",
+   "watch": [
+    "Updates on the execution timeline for the 150 MW NTPC project",
+    "Whether the company meets its projected 20-25% annual growth targets",
+    "Any further announcements regarding new orders or contracts"
+   ],
+   "about": "Solar Industries India Ltd. is a company in the Chemicals sector that is part of the Nifty 500 index.",
+   "basis": "1a711d67a271",
+   "items": 4,
+   "updated": "2026-11-18T19:23+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "ACMESOLAR": {
+   "summary": "Acme Solar Holdings recently signed a new agreement to sell electricity and reported receiving additional orders. These moves suggest the company is securing future work in the power sector.",
+   "why": "New contracts and agreements can lead to higher future revenue, which may support the value of the company for shareholders.",
+   "upside": "The new orders and power purchase agreement could increase future income if the projects are completed on time.",
+   "downside": "The company noted that projects may face execution delays, which could affect when revenue is actually earned.",
+   "watch": [
+    "Details on the value of the new power purchase agreement",
+    "Progress on executing the newly received orders",
+    "Performance of the broader Energy sector index"
+   ],
+   "about": "Acme Solar Holdings is a company in the power sector that sells electricity under power purchase agreements.",
+   "basis": "b36e77da67ad",
+   "items": 2,
+   "updated": "2026-11-18T19:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "JSWENERGY": {
@@ -443,6 +491,22 @@
    "updated": "2026-11-18T12:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "AZAD": {
+   "summary": "PulsEdge flagged several large trades in Azad Engineering shares on November 18, 2026. One investor sold about ₹800 crore worth of shares, while four other large investors bought a combined total of roughly ₹370 crore.",
+   "why": "These trades show that large investors are actively changing their positions in the company, which can influence how other market participants view the stock.",
+   "upside": "The significant buying by multiple large funds, including a government pension fund, may indicate confidence in the company's future.",
+   "downside": "The large sale by a single investor could suggest that some big holders are reducing their exposure or need cash.",
+   "watch": [
+    "Future bulk or block deals involving these same investors",
+    "Any official company announcements explaining the large share sale",
+    "General market trends in the Capital Goods sector"
+   ],
+   "about": "",
+   "basis": "68deb283c665",
+   "items": 5,
+   "updated": "2026-11-18T19:23+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "ALKEM": {
    "summary": "Alkem Laboratories Ltd. (ALKEM) saw a large block sale of 6.0 lakh shares by the Samprada & Nanhamati Singh Family Trust, worth ₹302 crore, on 17 November 2026. On the same day, ICICI Prudential Mutual Fund, DSP Mutual Fund and Nippon India Mutual Fund each bought 1.6–1.8 lakh shares, each trade worth around ₹80–90 crore.",
    "why": "These institutional trades can signal either confidence in the company or a need for liquidity, which may influence the stock’s trading activity.",
@@ -491,53 +555,21 @@
    "updated": "2026-11-17T15:46+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "EICHERMOT": {
-   "summary": "Eicher Motors saw its share price adjust after a 3% jump that followed positive broker sentiment on its premium motorcycle growth. The company also granted 105 employee stock options and reported a strong quarter compared with a rival car maker.",
-   "why": "Share price moves affect shareholder value and the new options could dilute existing holdings if exercised.",
-   "upside": "Continued demand for premium motorcycles could lift earnings and support the stock.",
-   "downside": "Dilution from employee stock options and competition in the 350‑650cc bike segment could pressure the price.",
-   "watch": [
-    "Further price adjustments after the recent move",
-    "Exercise of the 105 employee stock options",
-    "Competitive dynamics in the premium motorcycle segment"
-   ],
-   "about": "Eicher Motors manufactures motorcycles, including premium models, under brands such as Royal Enfield.",
-   "basis": "93456217682f",
-   "items": 4,
-   "updated": "2026-11-18T16:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "TMCV": {
-   "summary": "Tata Motors' shares closed above their 200‑day moving average, hinting at a possible recovery after a long decline. However, the company faces headwinds from Jaguar Land Rover's weak sales in China and a disappointing Q2 earnings report that lowered its outlook. The stock exchange has also asked for clarification on rumors of a Tata Sons IPO, adding uncertainty.",
-   "why": "Shareholders need to watch whether the price rise is sustainable or a false breakout, and how JLR's challenges and the weak quarter could affect earnings. Any news on a Tata Sons IPO could also impact the value of the parent company's holdings.",
-   "upside": "If the breakout above the long‑term average is backed by strong trading volume, it could signal a genuine bounce in the stock.",
-   "downside": "Weak Q2 results, lowered guidance and ongoing JLR struggles in China could lead to further selling pressure, and a delayed or cancelled IPO could cause a correction.",
+   "summary": "Tata Motors saw its stock close above its long-term average, hinting at a potential recovery. At the same time, the company is dealing with struggles for its JLR brand in China and has been asked by the stock exchange to clarify news about a possible Tata Sons public offering.",
+   "why": "These mixed events matter because they can shift investor sentiment and change the value of the company's shares.",
+   "upside": "The stock might be starting to recover from a long period of decline, and strong sales in other markets could offset troubles in China.",
+   "downside": "Struggles in China could weigh on the share price, and a delayed or cancelled public offering might cause the stock to correct from its recent rally.",
    "watch": [
-    "Stock price relative to the 200‑day moving average and trading volume",
-    "Updates on Jaguar Land Rover's performance in China",
-    "Outcome of the exchange's request for clarification on the Tata Sons IPO rumor"
+    "Trading volume to see if the stock's recent price rise is real",
+    "Updates on JLR sales in China and other markets",
+    "The company's official response to the stock exchange regarding the public offering news"
    ],
-   "about": "Tata Motors designs, manufactures and sells automobiles, including passenger cars, commercial vehicles, and the Jaguar Land Rover brand.",
-   "basis": "040b4e72975d",
-   "items": 4,
-   "updated": "2026-11-18T14:31+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "HINDZINC": {
-   "summary": "Hindustan Zinc announced a Rs 80,000 crore expansion to become the world’s largest zinc and silver producer and is adding production capacity. The stock fell after the announcement as investors worry the company may be over‑valued and that the large capex could strain cash flow.",
-   "why": "Shareholders need to watch whether the expansion translates into higher profits or whether cash‑flow pressure and valuation concerns weigh on the share price.",
-   "upside": "If the expansion succeeds and demand for zinc and silver stays strong, the company could see higher earnings and a stronger market position.",
-   "downside": "The massive capital spending could strain cash flow and valuation worries may keep the stock under pressure.",
-   "watch": [
-    "Progress of the Rs 80,000 crore expansion plan",
-    "Updates on cash‑flow and financing for the project",
-    "Market sentiment and valuation metrics as the sector index falls"
-   ],
-   "about": "Hindustan Zinc Ltd. is a metals and mining company that produces zinc and silver.",
-   "basis": "aecae4ef6fcd",
-   "items": 4,
-   "updated": "2026-11-17T14:46+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Tata Motors Ltd. is a car company included in the Nifty 500 index of India's largest listed companies.",
+   "basis": "67015767faa6",
+   "items": 3,
+   "updated": "2026-11-18T19:23+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "FIRSTCRY": {
    "summary": "Brainbees Solutions Ltd. has completed the acquisition of Swara Corp and updated its acquisition agreement. Q2 results show a 75% reduction in net loss and a revenue jump, leading to a 13% share rally.",
@@ -587,6 +619,22 @@
    "updated": "2026-11-18T15:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "HINDZINC": {
+   "summary": "Hindustan Zinc announced a Rs 80,000 crore expansion to become the world’s largest zinc and silver producer and is adding production capacity. The stock fell after the announcement as investors worry the company may be over‑valued and that the large capex could strain cash flow.",
+   "why": "Shareholders need to watch whether the expansion translates into higher profits or whether cash‑flow pressure and valuation concerns weigh on the share price.",
+   "upside": "If the expansion succeeds and demand for zinc and silver stays strong, the company could see higher earnings and a stronger market position.",
+   "downside": "The massive capital spending could strain cash flow and valuation worries may keep the stock under pressure.",
+   "watch": [
+    "Progress of the Rs 80,000 crore expansion plan",
+    "Updates on cash‑flow and financing for the project",
+    "Market sentiment and valuation metrics as the sector index falls"
+   ],
+   "about": "Hindustan Zinc Ltd. is a metals and mining company that produces zinc and silver.",
+   "basis": "aecae4ef6fcd",
+   "items": 4,
+   "updated": "2026-11-17T14:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "GRASIM": {
    "summary": "Grasim Industries has released the transcript of its earnings call for the September quarter. The full financial results for the quarter and half-year are not yet available.",
    "why": "This matters because the upcoming release of full results can influence the share price based on how the numbers compare to what investors expect.",
@@ -614,22 +662,6 @@
    ],
    "about": "Titan Company makes jewellery, watches and related accessories.",
    "basis": "157e842de832",
-   "items": 4,
-   "updated": "2026-11-18T14:01+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "SOLARINDS": {
-   "summary": "Solar Industries India Ltd, a chemicals maker in the Nifty 500, has not had any specific news in recent days, but the broader green‑energy sector has seen short‑term selling pressure on technical grounds.",
-   "why": "Sector‑wide volatility can influence investor sentiment toward the stock.",
-   "upside": "Improved sentiment in the green‑energy and chemicals sectors could lift the share.",
-   "downside": "Continued technical weakness in the sector may keep pressure on the stock.",
-   "watch": [
-    "Technical trends in green‑energy stocks",
-    "Any new project or order announcements from Solar Industries",
-    "Movement of the Nifty 500 index"
-   ],
-   "about": "Solar Industries India Ltd manufactures industrial chemicals.",
-   "basis": "a2d139b1c7c5",
    "items": 4,
    "updated": "2026-11-18T14:01+05:30",
    "model": "openai/gpt-oss-120b"
@@ -682,22 +714,6 @@
    "updated": "2026-11-17T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "AMBER": {
-   "summary": "Amber Enterprises' shares fell sharply after its earnings report, with analysts flagging low profit margins, and again after a peer posted weak results.",
-   "why": "Margin compression could reduce future profits and sector sentiment may drag the stock further.",
-   "upside": "The consumer durables index has risen 2.9% over the past five sessions, which could help the stock recover.",
-   "downside": "Ongoing margin pressure and a broader sell‑off in the sector could keep the share price under pressure.",
-   "watch": [
-    "Margin trends in upcoming quarters",
-    "Kaynes Technology earnings and sector peer results",
-    "Movement of the consumer durables index"
-   ],
-   "about": "Amber Enterprises operates in the consumer durables sector.",
-   "basis": "6b03f93c70f1",
-   "items": 2,
-   "updated": "2026-11-16T14:47+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "NETWEB": {
    "summary": "Netweb Technologies reported record profits and a large backlog of AI‑related work, and its shares have jumped 42% from the 52‑week low. The broader IT index has been falling, down 0.9% in the last session and 2.5% over five sessions.",
    "why": "Strong future orders could keep earnings high, which matters to shareholders. However, the recent price surge may lead some investors to book profits, which could pressure the stock.",
@@ -728,22 +744,6 @@
    "basis": "3e72a9621c05",
    "items": 1,
    "updated": "2026-11-18T16:10+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "ACMESOLAR": {
-   "summary": "ACME Solar Holdings announced it has executed a Power Purchase Agreement, meaning it will sell electricity under a new contract. The broader energy sector index was flat over the past five sessions.",
-   "why": "The agreement secures future revenue, which can influence the value of the shares.",
-   "upside": "If the PPA is sizable and profitable, it could lift the company's earnings.",
-   "downside": "Because the contract value was not disclosed, the actual impact on earnings is uncertain.",
-   "watch": [
-    "PPA contract size and terms",
-    "Energy sector index movement",
-    "Any further corporate announcements"
-   ],
-   "about": "ACME Solar Holdings Ltd. develops and operates solar power projects.",
-   "basis": "2e1c0c180c2c",
-   "items": 1,
-   "updated": "2026-11-18T09:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "BIOCON": {
@@ -826,22 +826,6 @@
    "updated": "2026-11-18T15:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "COALINDIA": {
-   "summary": "Coal India is preparing to list stakes in its subsidiaries, including Mahanadi Coalfields and later Northern and Central Coalfields, through initial public offerings. The IPO activity could influence the value of existing Coal India shares as investors assess cash proceeds and potential dilution.",
-   "why": "The outcome of the IPOs may affect the cash position and ownership percentage of the parent, which can move the share price.",
-   "upside": "If the IPOs raise strong cash proceeds and unlock higher valuation for the remaining business, the parent’s shares could benefit.",
-   "downside": "Dilution of Coal India’s stake and pricing curbs or muted demand could limit any positive impact on the share price.",
-   "watch": [
-    "Mahanadi Coalfields IPO pricing and subscription levels",
-    "Progress and pricing of Northern and Central Coalfields IPOs",
-    "Market reaction to potential dilution and cash inflow"
-   ],
-   "about": "Coal India Ltd is a major Indian coal mining company.",
-   "basis": "ff6f5a5a40a5",
-   "items": 8,
-   "updated": "2026-11-18T15:46+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "PRESTIGE": {
    "summary": "Prestige Estates Projects Ltd. is buying new businesses, including a 50% stake in Advent Convention and Hotels International, and increasing its ownership in the Prestige Vaishnaoi Projects. The realty sector has been rising, with the Nifty Realty index up 1.9% in the last session.",
    "why": "These acquisitions could change the company’s future earnings and affect its cash position, which matters to current shareholders.",
@@ -856,6 +840,22 @@
    "basis": "384187098a52",
    "items": 5,
    "updated": "2026-11-18T14:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "COALINDIA": {
+   "summary": "Coal India is preparing to list stakes in its subsidiaries, including Mahanadi Coalfields and later Northern and Central Coalfields, through initial public offerings. The IPO activity could influence the value of existing Coal India shares as investors assess cash proceeds and potential dilution.",
+   "why": "The outcome of the IPOs may affect the cash position and ownership percentage of the parent, which can move the share price.",
+   "upside": "If the IPOs raise strong cash proceeds and unlock higher valuation for the remaining business, the parent’s shares could benefit.",
+   "downside": "Dilution of Coal India’s stake and pricing curbs or muted demand could limit any positive impact on the share price.",
+   "watch": [
+    "Mahanadi Coalfields IPO pricing and subscription levels",
+    "Progress and pricing of Northern and Central Coalfields IPOs",
+    "Market reaction to potential dilution and cash inflow"
+   ],
+   "about": "Coal India Ltd is a major Indian coal mining company.",
+   "basis": "ff6f5a5a40a5",
+   "items": 8,
+   "updated": "2026-11-18T15:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "HDFCBANK": {
@@ -1209,22 +1209,6 @@
    "updated": "2026-11-18T08:17+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "IDEA": {
-   "summary": "Vodafone Idea lost more mobile subscribers than expected in the latest quarter, raising concerns about its revenue outlook.",
-   "why": "Fewer customers mean lower cash inflows, which is risky for a heavily indebted company.",
-   "upside": "",
-   "downside": "Continued subscriber loss could further strain the company's financial health.",
-   "watch": [
-    "Quarterly mobile subscriber numbers",
-    "Debt repayment capacity",
-    "Management's response to subscriber attrition"
-   ],
-   "about": "Vodafone Idea provides mobile telecommunications services in India.",
-   "basis": "b0fcac1a775f",
-   "items": 1,
-   "updated": "2026-11-18T16:10+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "POLYCAB": {
    "summary": "Polycab reduced prices on its light‑duty cables and wires for the second time this week, and copper prices have dropped for the fifth straight day.",
    "why": "Price cuts could pressure revenue growth, while cheaper copper may boost profit margins if sales volumes stay steady.",
@@ -1273,22 +1257,6 @@
    "updated": "2026-11-17T00:55+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "ETERNAL": {
-   "summary": "Eternal Ltd. recently saw its stock hit a 52-week high after rallying up to 15% over the past month. At the same time, the company reported its Q2 results alongside competitor Swiggy, highlighting ongoing discussions about profit growth and food delivery competition.",
-   "why": "This matters to shareholders because strong recent price momentum and earnings reports can attract more attention from investors. However, high prices might also tempt some to sell and lock in profits.",
-   "upside": "The recent rally and growing profits could attract more buying support for further gains.",
-   "downside": "Momentum could reverse quickly if market sentiment shifts or intense competition squeezes profit margins.",
-   "watch": [
-    "Whether buying momentum continues or fades",
-    "Changes in broader market sentiment",
-    "Competition in the food delivery space"
-   ],
-   "about": "Eternal Ltd. is a consumer services company and one of India's 50 largest listed firms.",
-   "basis": "d9496364245a",
-   "items": 3,
-   "updated": "2026-11-18T08:17+05:30",
-   "model": "gemini-flash-lite-latest"
-  },
   "PNB": {
    "summary": "Punjab National Bank shares have risen sharply, hitting an eight-year high and a 52-week peak. The stock gained about 31% in the last month, outperforming its sector which rose 2.7% over five sessions.",
    "why": "This rapid increase shows strong market interest, but it also means the price is at a record level. Shareholders may see their holdings gain value, though the sharp rise increases the chance of a short-term drop.",
@@ -1305,6 +1273,22 @@
    "updated": "2026-11-17T14:00+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "ETERNAL": {
+   "summary": "Eternal Ltd. recently saw its stock hit a 52-week high after rallying up to 15% over the past month. At the same time, the company reported its Q2 results alongside competitor Swiggy, highlighting ongoing discussions about profit growth and food delivery competition.",
+   "why": "This matters to shareholders because strong recent price momentum and earnings reports can attract more attention from investors. However, high prices might also tempt some to sell and lock in profits.",
+   "upside": "The recent rally and growing profits could attract more buying support for further gains.",
+   "downside": "Momentum could reverse quickly if market sentiment shifts or intense competition squeezes profit margins.",
+   "watch": [
+    "Whether buying momentum continues or fades",
+    "Changes in broader market sentiment",
+    "Competition in the food delivery space"
+   ],
+   "about": "Eternal Ltd. is a consumer services company and one of India's 50 largest listed firms.",
+   "basis": "d9496364245a",
+   "items": 3,
+   "updated": "2026-11-18T08:17+05:30",
+   "model": "gemini-flash-lite-latest"
+  },
   "NTPC": {
    "summary": "PulsEdge flagged a tragic accident at NTPC's Tandwa project where three workers died and two were injured, and an investigation is now under way. The Energy sector index was flat over the past five sessions, showing little market movement.",
    "why": "Shareholders should watch the incident because it could pause work, raise safety costs, or attract regulatory scrutiny that may affect earnings.",
@@ -1319,6 +1303,22 @@
    "basis": "6d6aa8ded454",
    "items": 2,
    "updated": "2026-11-18T14:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "EICHERMOT": {
+   "summary": "Eicher Motors saw its share price adjust after a 3% jump that followed positive broker sentiment on its premium motorcycle growth. The company also granted 105 employee stock options and reported a strong quarter compared with a rival car maker.",
+   "why": "Share price moves affect shareholder value and the new options could dilute existing holdings if exercised.",
+   "upside": "Continued demand for premium motorcycles could lift earnings and support the stock.",
+   "downside": "Dilution from employee stock options and competition in the 350‑650cc bike segment could pressure the price.",
+   "watch": [
+    "Further price adjustments after the recent move",
+    "Exercise of the 105 employee stock options",
+    "Competitive dynamics in the premium motorcycle segment"
+   ],
+   "about": "Eicher Motors manufactures motorcycles, including premium models, under brands such as Royal Enfield.",
+   "basis": "93456217682f",
+   "items": 4,
+   "updated": "2026-11-18T16:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "BPCL": {
@@ -1384,22 +1384,6 @@
    "items": 1,
    "updated": "2026-11-18T08:46+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "PATANJALI": {
-   "summary": "Patanjali Foods reported lower Q2 profit, causing its shares to fall about 4%. Analysts say the dip may be temporary and linked to holiday timing.",
-   "why": "The profit slip signals weaker earnings and could pressure margins, but the outlook may improve once the holiday effect passes.",
-   "upside": "Profit and share price could recover if the holiday impact fades and margins improve.",
-   "downside": "Margins may stay under pressure if low import duties on inputs continue.",
-   "watch": [
-    "Q2 profit trend in upcoming reports",
-    "Changes in import duty policy affecting input costs",
-    "Impact of seasonal holidays on sales"
-   ],
-   "about": "Patanjali Foods Ltd. is a fast‑moving consumer goods company that makes food products.",
-   "basis": "f7671518a9f1",
-   "items": 1,
-   "updated": "2026-11-16T13:46+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "WAAREEENER": {
    "summary": "Waaree Energies was named a top performer in global solar quality tests for the fifth year in a row. This recognition highlights the reliability of its products, which is important for its business reputation.",
@@ -1480,22 +1464,6 @@
    "items": 2,
    "updated": "2026-11-18T08:17+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "FORTIS": {
-   "summary": "Fortis Healthcare is being watched after news that hospitals expect to keep profits stable despite new drug‑price caps, while hospital stocks have recently surged up to 7%. The broader healthcare index has risen 1.4% over the past five sessions after a slight dip yesterday.",
-   "why": "Shareholders care because stable earnings under price caps could protect returns, and a sector rally may lift the stock.",
-   "upside": "If earnings remain stable and the sector rally continues, Fortis could see stronger performance.",
-   "downside": "Heightened regulatory scrutiny on billing practices could pose a risk.",
-   "watch": [
-    "Effect of drug price caps on earnings",
-    "Regulatory scrutiny on billing practices",
-    "Momentum of the sector rally"
-   ],
-   "about": "Fortis Healthcare runs a network of hospitals and provides medical services across India.",
-   "basis": "ef18ab2e3552",
-   "items": 2,
-   "updated": "2026-11-17T11:45+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "AMBUJACEM": {
    "summary": "Ambuja Cements is partnering with Adani Cement to deploy heavy-duty electric trucks for transporting clinker and cement. The plan aims to have 410 trucks running by March 2027 to reduce carbon emissions and logistics costs.",
