@@ -1,7 +1,40 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-18T12:31:30+05:30",
+ "updated": "2026-11-18T12:38:30+05:30",
  "items": [
+  {
+   "id": "807e114fe4611c87",
+   "time": "2026-11-18T12:37:03+05:30",
+   "headline": "GOVT SAID TO CONSIDER TO WEIGH STT TAX TWEAK FOR STOCKS TRADING DERIVATIVES: ET NOW",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9546",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Market Infrastructure"
+   ],
+   "impact": 10,
+   "confidence": 20,
+   "category": "Policy Rumor",
+   "action": "Monitor official government announcements for any confirmed changes to tax structures.",
+   "reason": [
+    "Rumor stage with no official confirmation.",
+    "No specific listed company named or directly impacted yet."
+   ],
+   "risks": [
+    "Rumor may be false or delayed.",
+    "Market reaction could be volatile if confirmed."
+   ],
+   "plain": "Reports suggest the government is thinking about changing taxes on stock trading.",
+   "why": "It is just a rumor right now, so it is too early to affect your portfolio.",
+   "check": "Wait for an official statement from the government or stock exchanges.",
+   "original": "GOVT SAID TO CONSIDER TO WEIGH STT TAX TWEAK FOR STOCKS TRADING DERIVATIVES: ET NOW",
+   "latency": 87.2,
+   "lane": "fast"
+  },
   {
    "id": "7e2a0248a0f1771e",
    "time": "2026-11-18T12:30:14+05:30",
@@ -1011,78 +1044,6 @@
    "check": "Look for any official filing or announcement confirming or denying IPO plans.",
    "original": "TATA CHEMICALS: CO. DENIES KNOWLEDGE OF TATA SONS IPO NEGOTIATIONS, SAYS UNAWARE OF UNDISCLOSED INFORMATION BEHIND SHARE PRICE RALLY",
    "latency": 92.4,
-   "lane": "fast"
-  },
-  {
-   "id": "82fa904b7e511d31",
-   "time": "2026-11-17T12:36:19+05:30",
-   "headline": "SEBI EYES STRICTER CURBS ON MARGIN-FUNDED STOCK PURCHASES; PROPOSES LINKING MTF LIMITS TO FREE FLOAT, RAISING CONCERNS OVER BROKER REVENUE AND TRADING VOLUMES",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9435",
-   "section": "macro",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "down",
-   "tickers": [],
-   "sectors": [
-    "Broking",
-    "Small Caps"
-   ],
-   "impact": 40,
-   "confidence": 60,
-   "category": "Regulatory",
-   "action": "Monitor broker earnings guidance and small-cap liquidity trends for signs of volume contraction.",
-   "reason": [
-    "SEBI proposal to link margin limits to free float may reduce leveraged buying.",
-    "Could impact brokerage revenue and small/mid-cap trading volumes."
-   ],
-   "risks": [
-    "Implementation details may differ from current proposal.",
-    "Market may have already priced in regulatory tightening."
-   ],
-   "plain": "Regulators are considering rules that make it harder to buy stocks using borrowed money.",
-   "why": "This could lower trading activity and affect companies that earn money from trading services.",
-   "check": "Look for official SEBI circulars or broker commentary on expected volume changes.",
-   "original": "• Proposed curbs could restrict additional leveraged buying in stocks crossing specified exposure thresholds. • Small- and mid-cap stocks likely to face tighter restrictions. • Potential impact on MTF book growth, brokerage income and trading activity.",
-   "latency": 58.3,
-   "lane": "fast"
-  },
-  {
-   "id": "76be7a4ad605cef4",
-   "time": "2026-11-17T12:32:34+05:30",
-   "headline": "ONGC: GAS CONCENTRATION MONITORING AT WELL SITE INDICATED ZERO CONCENTRATION AT MONITORED LOCATIONS; UNDERTAKING NECESSARY WELL-CONTROL OPERATIONS FOLLOWING A GAS LEAKAGE AT A GAS WELL",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9434",
-   "section": "news",
-   "call": "watch",
-   "horizon": "intraday",
-   "direction": "down",
-   "tickers": [
-    {
-     "symbol": "ONGC",
-     "direction": "down"
-    }
-   ],
-   "sectors": [
-    "Oil & Gas"
-   ],
-   "impact": 40,
-   "confidence": 60,
-   "category": "Operational Incident",
-   "action": "Monitor for any further regulatory updates or production halt announcements.",
-   "reason": [
-    "Gas leakage incident at a well site, though currently contained with zero concentration at monitored locations.",
-    "Well-control operations are underway, which may temporarily impact production or incur costs."
-   ],
-   "risks": [
-    "Potential for incident escalation or regulatory scrutiny.",
-    "Short-term production disruption or cleanup costs."
-   ],
-   "plain": "A gas leak occurred at an oil well, but sensors show no gas at nearby spots now.",
-   "why": "It might cause a brief pause in work or extra costs, but the situation seems controlled for now.",
-   "check": "Look for any official statement about when normal work will resume.",
-   "original": "ONGC: GAS CONCENTRATION MONITORING AT WELL SITE INDICATED ZERO CONCENTRATION AT MONITORED LOCATIONS; UNDERTAKING NECESSARY WELL-CONTROL OPERATIONS FOLLOWING A GAS LEAKAGE AT A GAS WELL",
-   "latency": 103.8,
    "lane": "fast"
   }
  ]
