@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T08:30:27+05:30",
+ "updated": "2026-11-18T08:46:54+05:30",
  "summary": {
-  "calls": 1640,
-  "scored_calls": 481,
+  "calls": 1641,
+  "scored_calls": 482,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "798233d2cdd5122e",
+   "symbol": "BIOCON",
+   "time": "2026-11-18T08:34:26+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Biocon Limited: Biocon Limited has informed the Exchange regarding a press release dated November 18, 2026, titled \"Biocon s Pertuzumab Gets Marketing Authoriza",
+   "url": "https://nsearchives.nseindia.com/corporate/BIOCON_18112026083410_Pressrelease18112026.pdf",
+   "entry_date": "2026-11-17",
+   "entry": 359.4
+  },
   {
    "id": "df7ddccdbd8061a0",
    "symbol": "EXIDEIND",

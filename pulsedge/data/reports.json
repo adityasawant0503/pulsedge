@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T08:29+05:30",
+ "updated": "2026-11-18T08:46+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -554,6 +554,22 @@
    "updated": "2026-11-17T16:35+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "BIOCON": {
+   "summary": "Biocon received approval from US and EU regulators to sell a new cancer drug called pertuzumab. This allows the company to start selling this medication in both major markets.",
+   "why": "For shareholders, these approvals open up new sources of income that could increase the company's future sales and profits.",
+   "upside": "Selling this drug in the US and Europe could significantly boost the company's revenue.",
+   "downside": "The drug's success depends on hospitals choosing to stock it, and the stock price may have already risen if investors expected these approvals.",
+   "watch": [
+    "Whether hospitals add the new drug to their approved lists",
+    "How the stock price reacts to these recent announcements",
+    "General trends in the healthcare sector"
+   ],
+   "about": "",
+   "basis": "8d3264432255",
+   "items": 2,
+   "updated": "2026-11-18T08:46+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "GALLANTT": {
    "summary": "PulsEdge flagged a large block deal where Suryalaxmi Infracon Private Limited bought 30 lakh shares of Gallantt Ispat for ₹158.1 crore. On the same day, Dinesh R Agarwal sold the same number of shares at the same price of ₹527.0 per share.",
    "why": "This matters because it shows a significant transfer of ownership between two large investors, which can signal a change in the company's shareholder base. However, one trade does not confirm a long-term trend.",
@@ -1082,22 +1098,6 @@
    "updated": "2026-11-17T00:55+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BIOCON": {
-   "summary": "Biocon Ltd. received U.S. FDA approval for Pebrilzo, a biosimilar version of the cancer drug Perjeta®, expanding its oncology portfolio. The approval could open a new revenue stream, but commercial success will depend on hospital formulary inclusion.",
-   "why": "Shareholders may see future sales growth if Pebrilzo is adopted by hospitals, but the actual uptake is uncertain.",
-   "upside": "If Pebrilzo is added to hospital formularies, sales could increase significantly.",
-   "downside": "If hospitals do not include Pebrilzo in their formularies, the drug may not generate expected revenue.",
-   "watch": [
-    "Progress of Pebrilzo's market launch in the U.S.",
-    "Hospital formulary decisions regarding Pebrilzo",
-    "Movement of the Healthcare sector index"
-   ],
-   "about": "Biocon Ltd. is an Indian biopharmaceutical company that develops and manufactures medicines, including biosimilars.",
-   "basis": "bca56fca79cc",
-   "items": 1,
-   "updated": "2026-11-16T09:16+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "ETERNAL": {
    "summary": "Eternal Ltd. recently saw its stock hit a 52-week high after rallying up to 15% over the past month. At the same time, the company reported its Q2 results alongside competitor Swiggy, highlighting ongoing discussions about profit growth and food delivery competition.",
    "why": "This matters to shareholders because strong recent price momentum and earnings reports can attract more attention from investors. However, high prices might also tempt some to sell and lock in profits.",
@@ -1194,22 +1194,6 @@
    "updated": "2026-11-17T12:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "CANBK": {
-   "summary": "Canara Bank shares have seen strong recent gains as the broader banking sector hits record highs. The stock was recently highlighted in market comparisons and analyst lists, contributing to its upward movement.",
-   "why": "For a shareholder, this means the value of their holding has increased recently due to general market optimism in the banking sector. However, this rise is tied to broader market trends rather than specific company news.",
-   "upside": "Continued strength in the banking sector could support further gains in the stock price.",
-   "downside": "If the broader market pulls back or the banking sector reverses, the stock could face volatility and price drops.",
-   "watch": [
-    "Movements in the Nifty Bank index",
-    "General market sentiment in the Financials sector",
-    "Comparison trends with other public sector banks"
-   ],
-   "about": "Canara Bank is a financial services company listed in India's Nifty 500 index.",
-   "basis": "704d59a9af7d",
-   "items": 2,
-   "updated": "2026-11-17T11:30+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "YESBANK": {
    "summary": "Yes Bank has denied a report of a $3.4 million cyber fraud, saying no loss and no government accounts were affected. The stock exchange has asked the bank to clarify the matter, keeping the issue open.",
    "why": "Shareholders need to know whether the rumor could impact the bank’s finances or reputation, which can move the share price.",
@@ -1225,6 +1209,22 @@
    "items": 2,
    "updated": "2026-11-17T10:30+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "CANBK": {
+   "summary": "Canara Bank shares have risen sharply as the banking sector hit record highs. Recent media comparisons with other public sector banks have drawn attention to its recent price gains.",
+   "why": "If you own these shares, the recent rise means your investment value has increased, but the sector's strong performance could also lead to a correction if the broader market slows down.",
+   "upside": "Continued positive sentiment in the banking sector may support further gains for the stock.",
+   "downside": "The banking sector could reverse if the broader market experiences a pullback.",
+   "watch": [
+    "Broader market trends that affect the banking sector",
+    "Comparisons with other public sector banks",
+    "Future sector index movements"
+   ],
+   "about": "Canara Bank is a financial services company listed in India's Nifty 500 index.",
+   "basis": "ae07505f67af",
+   "items": 1,
+   "updated": "2026-11-18T08:46+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "PATANJALI": {
    "summary": "Patanjali Foods reported lower Q2 profit, causing its shares to fall about 4%. Analysts say the dip may be temporary and linked to holiday timing.",
