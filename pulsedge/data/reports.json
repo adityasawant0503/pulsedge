@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T14:46+05:30",
+ "updated": "2026-11-18T15:01+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -75,22 +75,6 @@
   "items": 108
  },
  "stocks": {
-  "TMPV": {
-   "summary": "Tata Motors Passenger Vehicles Ltd reported a huge quarterly loss, sending its shares down about 8-9% in a single day.",
-   "why": "The large loss raises concerns about the division’s profitability, which can affect the value of the shares.",
-   "upside": "",
-   "downside": "If the loss drivers are structural, the company could face continued share price pressure.",
-   "watch": [
-    "Next quarterly earnings release",
-    "Signs whether the loss is one‑off or structural",
-    "Auto sector index performance"
-   ],
-   "about": "Tata Motors Passenger Vehicles Ltd manufactures and sells passenger cars in India.",
-   "basis": "b39fca89484a",
-   "items": 2,
-   "updated": "2026-11-16T10:01+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "KAYNES": {
    "summary": "Kaynes Technology reported a sharp fall in quarterly profit and margins, slowed smart‑meter deliveries to chase overdue payments, and its shares have tumbled over 20% in recent sessions.",
    "why": "The profit plunge and cash‑flow concerns hurt shareholder value and could pressure the stock further.",
@@ -121,6 +105,22 @@
    "basis": "60483d5de20d",
    "items": 3,
    "updated": "2026-11-18T03:28+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "TMPV": {
+   "summary": "Tata Motors Passenger Vehicles Ltd. reported a large financial loss for the recent quarter. This news caused its share price to drop significantly, making it one of the weaker performers in the Nifty 50 index.",
+   "why": "A large loss suggests the business is facing difficulties, which can reduce the value of the shares you own.",
+   "upside": "",
+   "downside": "If the company continues to report losses in future quarters, the share price could fall further.",
+   "watch": [
+    "The company's next quarterly earnings report",
+    "Whether the share price stabilizes or continues to decline",
+    "Overall trends in the automobile sector index"
+   ],
+   "about": "The company operates in the automobile and auto components sector.",
+   "basis": "d7bdf7445798",
+   "items": 1,
+   "updated": "2026-11-18T15:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ONGC": {
@@ -698,38 +698,6 @@
    "updated": "2026-11-18T10:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "KPIL": {
-   "summary": "Kalpataru Projects International Ltd. recently announced it won a new infrastructure contract. Around the same time, the company disclosed that it received an official regulatory or tax order.",
-   "why": "The new contract adds to the company's future workload and potential revenue. The regulatory order introduces a small financial risk, though such notices are often routine and contested.",
-   "upside": "The new contract secures additional work for the company, which supports its future business activity.",
-   "downside": "The regulatory order could result in a monetary fine, although the company may contest it in court.",
-   "watch": [
-    "The specific value and profit margin of the newly won contract.",
-    "Any updates on the status of the regulatory or tax order.",
-    "Further announcements regarding new project orders."
-   ],
-   "about": "Kalpataru Projects International Ltd. is an engineering and construction company.",
-   "basis": "6744d2abc9e0",
-   "items": 2,
-   "updated": "2026-11-18T12:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "BIOCON": {
-   "summary": "Biocon received approval from US and EU regulators to sell a new cancer drug called pertuzumab. This allows the company to start selling this medication in both major markets.",
-   "why": "For shareholders, these approvals open up new sources of income that could increase the company's future sales and profits.",
-   "upside": "Selling this drug in the US and Europe could significantly boost the company's revenue.",
-   "downside": "The drug's success depends on hospitals choosing to stock it, and the stock price may have already risen if investors expected these approvals.",
-   "watch": [
-    "Whether hospitals add the new drug to their approved lists",
-    "How the stock price reacts to these recent announcements",
-    "General trends in the healthcare sector"
-   ],
-   "about": "",
-   "basis": "8d3264432255",
-   "items": 2,
-   "updated": "2026-11-18T08:46+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "GALLANTT": {
    "summary": "PulsEdge flagged a large block deal where Suryalaxmi Infracon Private Limited bought 30 lakh shares of Gallantt Ispat for ₹158.1 crore. On the same day, Dinesh R Agarwal sold the same number of shares at the same price of ₹527.0 per share.",
    "why": "This matters because it shows a significant transfer of ownership between two large investors, which can signal a change in the company's shareholder base. However, one trade does not confirm a long-term trend.",
@@ -794,6 +762,22 @@
    "updated": "2026-11-18T09:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "BIOCON": {
+   "summary": "Biocon received official permission to sell a cancer drug called Pertuzumab in Europe. This is the first biosimilar approved under a new, faster clinical review process in the EU.",
+   "why": "This approval allows Biocon to sell this drug in a large market, which could increase its future sales and profits.",
+   "upside": "Selling this drug in Europe could add a new source of income for the company.",
+   "downside": "The stock price might not rise much if investors already guessed this approval would happen.",
+   "watch": [
+    "How much revenue the new EU drug actually brings in.",
+    "Whether other countries approve the same drug next.",
+    "General trends in the healthcare sector."
+   ],
+   "about": "",
+   "basis": "32b3eec3caa3",
+   "items": 1,
+   "updated": "2026-11-18T15:01+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "HFCL": {
    "summary": "HFCL shares hit a 5% lower trading limit after a sharp rise in their price. This sudden drop made it hard for some investors to sell their shares immediately.",
    "why": "If you own HFCL shares, this event shows that prices can fall quickly after a big run-up. It also highlights that trading limits can temporarily stop you from selling if the market is very active.",
@@ -843,36 +827,36 @@
    "model": "openai/gpt-oss-120b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is navigating a shifting market as global crude oil prices fluctuate between supply concerns and rising futures. Changing oil prices directly impact the revenues and profits of energy producers.",
-   "why": "Because Oil India sells crude oil, shifts in global oil prices can directly change how much money the company makes. Investors need to watch these trends closely.",
-   "upside": "If crude oil prices rise, the company's earnings could improve.",
-   "downside": "If oil prices fall due to a supply surplus, the company's revenue could decline.",
+   "summary": "Oil India shares are facing mixed signals as global crude oil prices fluctuate. Recent news shows oil prices dropping due to a supply surplus, which can lower revenue for producers, while other reports note a slight rise in crude futures.",
+   "why": "Since Oil India sells crude oil, its earnings depend heavily on the price of oil. If oil prices stay low, the company may earn less money, which can affect the value of its shares.",
+   "upside": "If oil prices rise again, it could improve the company's earnings potential.",
+   "downside": "A continued drop in oil prices due to excess supply could reduce the company's revenue and profits.",
    "watch": [
-    "Global crude oil price movements",
-    "Supply surplus and inventory updates",
-    "Geopolitical news affecting oil shipping"
+    "Global crude oil price trends",
+    "News on oil supply levels",
+    "Geopolitical events that might affect oil prices"
    ],
-   "about": "Oil India Ltd. is an energy company operating in the oil, gas, and consumable fuels sector.",
-   "basis": "aadcebc2efa9",
-   "items": 14,
-   "updated": "2026-11-18T14:31+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "Oil India Ltd. is a company in the Oil Gas & Consumable Fuels sector.",
+   "basis": "ceff96882cae",
+   "items": 12,
+   "updated": "2026-11-18T15:01+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "COALINDIA": {
-   "summary": "Coal India is preparing to sell parts of its business through IPOs, including Mahanadi Coalfields and plans for Northern and Central Coalfields. The company is also setting a high valuation for Mahanadi, which could bring cash but may dilute existing shareholders.",
-   "why": "Shareholders may see changes in share price and earnings per share as the company raises capital and potentially dilutes its stake.",
-   "upside": "A successful IPO could bring cash into the company and increase the value of remaining shares.",
-   "downside": "The IPO could dilute existing shareholders’ stake and may push the share price down if the market absorbs the new supply.",
+   "summary": "Coal India is preparing to sell small parts of its Northern and Central Coalfields units to the public. It has also recently launched an IPO for its Mahanadi Coalfields subsidiary, which is expected to bring in cash for the parent company.",
+   "why": "These sales can generate cash for Coal India and potentially increase the value of the remaining shares. However, selling shares also means more shares are available to buy, which can sometimes push the price down.",
+   "upside": "The cash from these sales could make the company more attractive to investors looking for steady income through dividends.",
+   "downside": "The market may already have priced in this news, or the extra supply of shares could put pressure on the stock price.",
    "watch": [
-    "IPO pricing and demand for Mahanadi Coalfields",
-    "Market reaction to Northern and Central Coalfields IPO preparations",
-    "Impact on Coal India’s earnings per share"
+    "How the Mahanadi Coalfields IPO performs on its listing day",
+    "Updates on the IPO preparations for Northern and Central Coalfields",
+    "Whether the company announces specific dividend plans for the new subsidiaries"
    ],
-   "about": "Coal India is a large Indian coal mining company listed in the Nifty 50.",
-   "basis": "20895d8d4a38",
+   "about": "Coal India is a major coal company and one of India's 50 largest listed companies.",
+   "basis": "b947fcd1557e",
    "items": 6,
-   "updated": "2026-11-18T14:46+05:30",
-   "model": "openai/gpt-oss-20b"
+   "updated": "2026-11-18T15:01+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "PRESTIGE": {
    "summary": "Prestige Estates Projects Ltd. is buying new businesses, including a 50% stake in Advent Convention and Hotels International, and increasing its ownership in the Prestige Vaishnaoi Projects. The realty sector has been rising, with the Nifty Realty index up 1.9% in the last session.",
@@ -1481,20 +1465,20 @@
    "updated": "2026-11-16T13:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "GLENMARK": {
-   "summary": "Glenmark Pharmaceuticals launched a cheaper version of a cancer drug in the United States. This move allows the company to sell its product in a major global market.",
-   "why": "For shareholders, entering a large market like the US can lead to higher income and profits for the company.",
-   "upside": "Selling a new medicine in a big market can increase company income and profits.",
-   "downside": "Generic pricing pressure may limit margins.",
+  "WAAREEENER": {
+   "summary": "Waaree Energies was named a top performer in global solar quality tests for the fifth year in a row. This recognition highlights the reliability of its products, which is important for its business reputation.",
+   "why": "Strong quality ratings can help the company win more customers and maintain sales, which supports the value of its shares.",
+   "upside": "The company's strong quality record may help it secure new orders and maintain its position in the global market.",
+   "downside": "The company faces pressure from cheaper solar imports and recent weak market trends in the green energy sector.",
    "watch": [
-    "How well the new US drug sells",
-    "Changes in the Healthcare sector index",
-    "Future product launches"
+    "New order announcements",
+    "Changes in solar import costs",
+    "Future quality test results"
    ],
-   "about": "Glenmark Pharmaceuticals is a healthcare company listed in India's Nifty 500 index.",
-   "basis": "ebacecb9d550",
-   "items": 1,
-   "updated": "2026-11-16T09:46+05:30",
+   "about": "Waaree Energies is a capital goods company that manufactures solar modules.",
+   "basis": "d7e272632b61",
+   "items": 3,
+   "updated": "2026-11-18T15:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "FEDERALBNK": {
