@@ -1,7 +1,46 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-18T10:56:24+05:30",
+ "updated": "2026-11-18T10:58:21+05:30",
  "items": [
+  {
+   "id": "6116bbe5779144fa",
+   "time": "2026-11-18T10:56:35+05:30",
+   "headline": "TATA STEEL: CEO SAYS COST OF IRON ORE GOING UP IN INDIA",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9533",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "TATASTEEL",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Metals",
+    "Steel"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "Cost Pressure",
+   "action": "Monitor iron ore price trends and company commentary on margin protection.",
+   "reason": [
+    "Rising raw material costs directly squeeze steel production margins.",
+    "CEO comment signals potential pressure on near-term profitability."
+   ],
+   "risks": [
+    "Steel prices may rise in tandem, offsetting cost increases.",
+    "Commentary may be anecdotal rather than a confirmed structural shift."
+   ],
+   "plain": "The company's top executive stated that the cost of iron ore is increasing in India.",
+   "why": "Higher raw material costs can reduce the profit the company makes on each ton of steel sold.",
+   "check": "Look at recent steel price trends to see if they are rising to match the costs.",
+   "original": "TATA STEEL: CEO SAYS COST OF IRON ORE GOING UP IN INDIA",
+   "latency": 106.4,
+   "lane": "fast"
+  },
   {
    "id": "f9008bbc6a0bd8de",
    "time": "2026-11-18T10:56:20+05:30",
