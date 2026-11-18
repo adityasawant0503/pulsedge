@@ -1,7 +1,40 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-18T14:42:01+05:30",
+ "updated": "2026-11-18T14:43:00+05:30",
  "items": [
+  {
+   "id": "519b0504e67bcbf0",
+   "time": "2026-11-18T14:42:08+05:30",
+   "headline": "SPICEJET: BOARD APPROVES INCREASE IN AUTHORISED SHARE CAPITAL TO ₹7,500 CRORE; PLANS TO RAISE UP TO ₹5,500 CRORE THROUGH VARIOUS FUNDRAISING ROUTES TO STRENGTHEN FINANCIAL POSITION.",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9566",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "Aviation"
+   ],
+   "impact": 60,
+   "confidence": 70,
+   "category": "Corporate Action",
+   "action": "Monitor for specific details on the fundraising method and timeline to assess dilution risk.",
+   "reason": [
+    "Capital raise strengthens balance sheet but may dilute existing shareholders.",
+    "No candidate symbol provided for SpiceJet in the input list."
+   ],
+   "risks": [
+    "Potential equity dilution for existing investors.",
+    "Execution risk in raising the full amount."
+   ],
+   "plain": "The airline board approved raising large amounts of money to improve its finances.",
+   "why": "This could help the company pay debts, but new shares might reduce the value of existing ones.",
+   "check": "Look for news on how the company plans to raise this money.",
+   "original": "SPICEJET: BOARD APPROVES INCREASE IN AUTHORISED SHARE CAPITAL TO ₹7,500 CRORE; PLANS TO RAISE UP TO ₹5,500 CRORE THROUGH VARIOUS FUNDRAISING ROUTES TO STRENGTHEN FINANCIAL POSITION.",
+   "latency": 52.8,
+   "lane": "fast"
+  },
   {
    "id": "c436a0a8dd9b3e6f",
    "time": "2026-11-18T14:40:28+05:30",
@@ -1365,33 +1398,6 @@
    "check": "Look for the company's upcoming quarterly earnings release",
    "original": "MOLD TEK TECH: CO'S EBITDA MARGIN OUTLOOK AT 20%+; PAT MARGIN 15 - 16%; REVENUE GROWTH 20 - 25% CAGR FOR FY27 - 28",
    "latency": 88.3,
-   "lane": "fast"
-  },
-  {
-   "id": "840b032ab87f1f23",
-   "time": "2026-11-17T14:42:51+05:30",
-   "headline": "REFEX INDUSTRIES LIMITED: CO. BAGS CONTRACT FOR UTILIZATION OF POND ASH WORTH ₹28 CRORE; CONTRACT VALID FOR TWO YEARS; AWARDED BY DOMESTIC ENTITY",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9444",
-   "section": "trading",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 45,
-   "confidence": 30,
-   "category": "Trading",
-   "action": "Read the source before acting",
-   "reason": [
-    "Keyword rules (AI classification is off)"
-   ],
-   "risks": [],
-   "plain": "",
-   "why": "It names a listed company or a kind of event that often moves share prices.",
-   "check": "Open the source and read what the company actually said.",
-   "original": "REFEX INDUSTRIES LIMITED: CO. BAGS CONTRACT FOR UTILIZATION OF POND ASH WORTH ₹28 CRORE; CONTRACT VALID FOR TWO YEARS; AWARDED BY DOMESTIC ENTITY",
-   "latency": 101.3,
    "lane": "fast"
   }
  ]
