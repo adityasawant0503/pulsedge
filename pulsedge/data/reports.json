@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T19:23+05:30",
+ "updated": "2026-11-19T00:20+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Jio Financial Services and BlackRock each put ₹123 crore into a new 50:50 asset‑management joint venture, while Jio also announced a separate acquisition. IIFL Finance shares jumped about 6% after Fairfax sold its 13.25% stake, showing buying interest but also a risk of profit‑taking. SpiceJet plans to raise up to ₹5,500 crore, which could dilute shareholders and indicates cash pressure. ONGC secured a ₹100 crore subsea installation contract that may boost revenue but could face execution delays.",
+  "summary": "PulsEdge flagged that the US Federal Reserve may raise rates again because inflation is still high. This could slow money coming into India and keep the market cautious. In India, PSU banks and media stocks rose, while consumer durables, metals and auto fell. Foreign funds were slightly less long than before, holding about 32% of the market in long positions.",
   "themes": [
-   "Joint ventures and acquisitions",
-   "Capital moves and share price swings",
-   "Sector performance and regulatory signals"
+   "US rate hikes may affect Indian markets",
+   "Mixed sector performance",
+   "Foreign funds slightly less bullish"
   ],
   "watch": [
-   "Jio JV performance and integration risks",
-   "IIFL Finance price after Fairfax sale",
-   "SpiceJet fund‑raising terms and potential dilution"
+   "US Fed policy updates",
+   "PSU bank performance",
+   "Foreign funds positions"
   ],
-  "date": "2026-11-18",
-  "basis": "4fb5e6513c7e",
-  "updated": "2026-11-18T19:23+05:30",
+  "date": "2026-11-19",
+  "basis": "ab17469f5886",
+  "updated": "2026-11-19T00:20+05:30",
   "model": "openai/gpt-oss-20b",
-  "items": 175
+  "items": 1
  },
  "stocks": {
   "ONGC": {
@@ -91,6 +91,22 @@
    "updated": "2026-11-18T13:14+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "IIFL": {
+   "summary": "Fairfax sold its entire 13.25% stake in IIFL Finance in a ₹3,454‑crore block deal, sending the share price up about 6%. At the same time, IIFL received a stake from institutional investors linked to a new SBI Mutual Fund‑Punjab National Bank distribution partnership.",
+   "why": "The block sale adds large supply of shares, which can pressure the price, while the fresh capital and partnership could support growth and improve earnings.",
+   "upside": "New institutional capital and the distribution partnership could bring more customers and boost earnings.",
+   "downside": "The large block sale may weigh on the share price and profit‑taking could follow the recent jump.",
+   "watch": [
+    "Share price reaction and volatility after the block deal",
+    "Execution and rollout of the SBI Funds‑PNB distribution network",
+    "Further institutional investment or stake changes"
+   ],
+   "about": "IIFL Finance Ltd. is a non‑bank financial company that provides loan and other financial services.",
+   "basis": "d98f4600e3d9",
+   "items": 4,
+   "updated": "2026-11-19T00:20+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "JIOFIN": {
    "summary": "Jio Financial Services Ltd. has announced an acquisition and entered a 50:50 joint venture with BlackRock for asset management. Both moves aim to strengthen its growth and earnings potential. The company is also one of India's 50 largest listed firms in the Nifty 50 index.",
    "why": "These developments could increase the company's revenue streams and market presence, directly affecting shareholder value.",
@@ -106,54 +122,6 @@
    "items": 3,
    "updated": "2026-11-18T19:23+05:30",
    "model": "openai/gpt-oss-20b"
-  },
-  "IIFL": {
-   "summary": "IIFL Finance shares jumped about 6% after Fairfax Financial sold its entire 13.25% stake in a large block deal worth ₹3,454 crore. This sale created significant buying interest in the stock, which is part of India's Nifty 500 index.",
-   "why": "A large investor selling their full stake can change how other traders view the company, often leading to short-term price swings. Shareholders should note that such events can cause volatility even if the company's business remains unchanged.",
-   "upside": "The strong buying response to the sale suggests some investors see value in the stock despite the large supply of shares entering the market.",
-   "downside": "The sharp price increase may lead to profit-taking, where early buyers sell to lock in gains, which could push the share price back down.",
-   "watch": [
-    "Whether the share price stabilizes after the initial 6% jump.",
-    "Any further news regarding Fairfax Financial's other investments.",
-    "General trends in the Financial Services sector, which has risen 3% over the last five sessions."
-   ],
-   "about": "IIFL Finance is a company in the Financial Services sector.",
-   "basis": "7177fc89752f",
-   "items": 3,
-   "updated": "2026-11-18T09:45+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "RVNL": {
-   "summary": "RVNL’s shares have plunged, down about 71% from their peak and up to 50% this year, with analysts calling the stock overpriced.",
-   "why": "Shareholders see a sharp loss in value and face the risk of further declines if the valuation does not improve.",
-   "upside": "A rebound could occur if the company’s fundamentals remain strong.",
-   "downside": "The stock could fall further as analysts expect more downside due to high valuation.",
-   "watch": [
-    "Valuation and price correction risk",
-    "Company earnings or fundamental updates",
-    "Broader mid‑cap market trends"
-   ],
-   "about": "Rail Vikas Nigam Ltd is a construction company focused on railway infrastructure.",
-   "basis": "b417c8a77f69",
-   "items": 2,
-   "updated": "2026-11-18T14:31+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "SWIGGY": {
-   "summary": "Swiggy's shares have fallen sharply this year, losing up to half their value, while its latest Q2 results show profit growth faster than its rival Zomato's parent. The company is in the Nifty 500 consumer services index.",
-   "why": "Shareholders feel the impact of the steep price drop and watch profit growth that could shape future earnings.",
-   "upside": "A rebound is possible if the company’s fundamentals remain strong.",
-   "downside": "Intense competition could squeeze margins, reducing profitability.",
-   "watch": [
-    "Profit growth versus Zomato/Eternal",
-    "Share price recovery after 50% drop",
-    "Competitive pressure on margins"
-   ],
-   "about": "Swiggy is an Indian online food delivery platform.",
-   "basis": "e1600c42a6e6",
-   "items": 2,
-   "updated": "2026-11-17T00:55+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "GROWW": {
    "summary": "Billionbrains Garage Ventures Ltd. (GROWW) has seen several large block deals recently. Major institutional investors such as BlackRock, Fidelity, Societe Generale, and Kotak Mahindra MF bought a combined stake worth about ₹1,905 crore, while Ribbit Capital and Ribbit Cayman sold large blocks of shares.",
@@ -219,6 +187,22 @@
    "updated": "2026-11-18T14:31+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "MANAPPURAM": {
+   "summary": "Manappuram Finance shares fell about 4‑5% as gold prices dropped. The lower gold price reduces the value of the collateral that backs its loans.",
+   "why": "A fall in gold prices can squeeze profits for gold‑loan lenders and increase credit risk for shareholders.",
+   "upside": "A rebound in gold prices could restore collateral values and support earnings.",
+   "downside": "Further declines in gold prices or tighter competition could compress margins and hurt profitability.",
+   "watch": [
+    "Gold price movements",
+    "Competitive lending rates in the gold‑loan market",
+    "Financials sector index trends"
+   ],
+   "about": "Manappuram Finance provides loans secured by gold as collateral.",
+   "basis": "609a99f5a578",
+   "items": 2,
+   "updated": "2026-11-19T00:20+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "INOXWIND": {
    "summary": "Inox Wind is setting a target of roughly ₹7,500 crore in revenue for FY28, aiming for a 20% EBITDA margin. The company has seen a significant drop in its share price over the past year, but recent news highlights its long-term financial goals.",
    "why": "These targets show the company's plans for future growth and profitability, which can influence how investors view the stock's potential.",
@@ -235,21 +219,21 @@
    "updated": "2026-11-18T19:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "MANAPPURAM": {
-   "summary": "PulsEdge flagged that gold-lending companies like Manappuram Finance are currently under pressure. This is happening because gold prices have dropped and competition from other lenders is high.",
-   "why": "This matters to shareholders because falling gold prices reduce the value of the collateral, which can hurt profits and lead to tighter profit margins from competitive lending rates.",
-   "upside": "",
-   "downside": "The company could face lower profits if falling gold prices and high competition continue to squeeze its margins.",
+  "MUTHOOTFIN": {
+   "summary": "Muthoot Finance shares fell about 4% as gold prices slipped. The lower gold price reduces the value of the gold pledged as collateral, putting pressure on gold‑loan lenders.",
+   "why": "Shareholders should watch because weaker collateral can affect loan quality and earnings.",
+   "upside": "A quick rebound in gold prices could improve collateral values and ease pressure on the loan book.",
+   "downside": "Prolonged low gold prices could further erode collateral values and strain loan performance.",
    "watch": [
-    "Changes in gold prices",
-    "Levels of lending competition",
-    "Profit margin updates"
+    "Gold price movements",
+    "Muthoot Finance's loan growth and asset quality",
+    "Financial sector index trends"
    ],
-   "about": "Manappuram Finance Ltd. is a financial services company that lends money against gold.",
-   "basis": "e40c18c45cb9",
+   "about": "Muthoot Finance provides gold‑backed loans to retail customers.",
+   "basis": "ecdef1fcd294",
    "items": 1,
-   "updated": "2026-11-18T11:02+05:30",
-   "model": "gemini-flash-lite-latest"
+   "updated": "2026-11-19T00:20+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "INOXINDIA": {
    "summary": "INOX India Ltd. is a capital goods company listed in the Nifty 500 index. Recent news highlights a significant drop in its share price over the past year, followed by a strong rally.",
@@ -299,22 +283,6 @@
    "updated": "2026-11-17T00:55+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "ATHERENERG": {
-   "summary": "Ather Energy reported a profit and 63% revenue growth in its second quarter. This strong performance stands out against a sector that has seen mixed results recently.",
-   "why": "Strong earnings can increase the value of the company, which may benefit shareholders over time.",
-   "upside": "Continued revenue growth and profitability could strengthen investor confidence in the stock.",
-   "downside": "There is a risk that the reported financial results could be revised later.",
-   "watch": [
-    "Any official revisions to the Q2 financial results",
-    "Future quarterly earnings reports",
-    "Overall trends in the automobile sector index"
-   ],
-   "about": "Ather Energy operates in the automobile and auto components sector.",
-   "basis": "f14469544dd3",
-   "items": 1,
-   "updated": "2026-11-16T15:32+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "SOLARINDS": {
    "summary": "PulsEdge flagged that Acme Solar Holdings, a subsidiary of Solar Industries India, signed a 150 MW hybrid power project agreement with NTPC. The company also reported receiving new orders and projects a 20-25% annual growth rate for the next three years.",
    "why": "These new contracts and growth projections suggest the company expects higher future revenue, which is a key factor for shareholders monitoring its financial health.",
@@ -361,22 +329,6 @@
    "basis": "4b793021d08c",
    "items": 2,
    "updated": "2026-11-18T13:30+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "BELRISE": {
-   "summary": "Belrise Industries reported a 25% rise in profits and 17% growth in revenue for its second quarter. Following these results, the company's share price jumped 13% in a single day.",
-   "why": "Higher profits and revenue mean the company is generating more cash, which can support the value of the shares you own.",
-   "upside": "The company is currently growing its sales and profits at a faster rate than before.",
-   "downside": "The stock price has already risen significantly, including a 44% increase over the past year, which may make it vulnerable to a correction.",
-   "watch": [
-    "Whether the company's future growth guidance remains strong",
-    "If the share price stabilizes after the recent 13% jump",
-    "Performance of the broader Auto sector index"
-   ],
-   "about": "Belrise Industries operates in the automobile and auto components sector.",
-   "basis": "2e86e5d7ccf0",
-   "items": 2,
-   "updated": "2026-11-16T15:32+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "AXISBANK": {
@@ -441,6 +393,21 @@
    "basis": "45e9046d3767",
    "items": 2,
    "updated": "2026-11-17T12:15+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "RVNL": {
+   "summary": "Rail Vikas Nigam Ltd. is a construction company included in the Nifty 500 index. Recent reports indicate its share price has dropped significantly from its highest point.",
+   "why": "This matters to shareholders because the current price level reflects a major decline, and some analysts believe the stock may still be overpriced.",
+   "upside": "",
+   "downside": "Some investment firms believe the stock is still too expensive and could fall further in value.",
+   "watch": [
+    "Whether the share price stabilizes or continues to decline",
+    "How the company's construction projects affect its financial health"
+   ],
+   "about": "Rail Vikas Nigam Ltd. is a company in the construction sector.",
+   "basis": "dfea7d9e9a03",
+   "items": 1,
+   "updated": "2026-11-19T00:20+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "HINDCOPPER": {
@@ -620,19 +587,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "HINDZINC": {
-   "summary": "Hindustan Zinc announced a Rs 80,000 crore expansion to become the world’s largest zinc and silver producer and is adding production capacity. The stock fell after the announcement as investors worry the company may be over‑valued and that the large capex could strain cash flow.",
-   "why": "Shareholders need to watch whether the expansion translates into higher profits or whether cash‑flow pressure and valuation concerns weigh on the share price.",
-   "upside": "If the expansion succeeds and demand for zinc and silver stays strong, the company could see higher earnings and a stronger market position.",
-   "downside": "The massive capital spending could strain cash flow and valuation worries may keep the stock under pressure.",
+   "summary": "Hindustan Zinc announced an Rs 80,000 crore plan to expand and become the world’s largest zinc and silver producer. The stock fell after the news because some investors think the share price is already high. The metals sector has also been slipping, down 2.5% in the last session.",
+   "why": "Shareholders could see higher future earnings from the expansion, but the large spending may pressure cash flow and the current valuation worries could keep the share price under pressure.",
+   "upside": "If the expansion is executed well, the company could boost earnings and capture a larger share of the global zinc market.",
+   "downside": "The massive capital outlay could strain cash flow and valuation concerns may keep the stock under pressure.",
    "watch": [
-    "Progress of the Rs 80,000 crore expansion plan",
-    "Updates on cash‑flow and financing for the project",
-    "Market sentiment and valuation metrics as the sector index falls"
+    "Progress and timing of the Rs 80,000 crore expansion spending",
+    "Cash‑flow and debt levels as the project ramps up",
+    "Valuation metrics and how the market prices the expansion plan"
    ],
-   "about": "Hindustan Zinc Ltd. is a metals and mining company that produces zinc and silver.",
-   "basis": "aecae4ef6fcd",
-   "items": 4,
-   "updated": "2026-11-17T14:46+05:30",
+   "about": "Hindustan Zinc mines and produces zinc and silver.",
+   "basis": "8e26d228bfe2",
+   "items": 2,
+   "updated": "2026-11-19T00:20+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "GRASIM": {
@@ -811,51 +778,51 @@
    "model": "openai/gpt-oss-120b"
   },
   "OIL": {
-   "summary": "Oil India shares are facing mixed signals as global crude oil prices fluctuate. Recent news shows oil prices dropping due to a supply surplus, which can lower revenue for producers, while other reports note a slight rise in crude futures.",
-   "why": "Since Oil India sells crude oil, its earnings depend heavily on the price of oil. If oil prices stay low, the company may earn less money, which can affect the value of its shares.",
-   "upside": "If oil prices rise again, it could improve the company's earnings potential.",
-   "downside": "A continued drop in oil prices due to excess supply could reduce the company's revenue and profits.",
+   "summary": "Oil India Ltd. is facing mixed signals from the global oil market, where prices recently settled at $86.01 per barrel but analysts warn of a potential drop to $78 by 2027 due to excess supply. While a US deal has made the Strait of Hormuz safer, reducing some geopolitical risks, falling US crude inventories suggest tighter supply that could support prices in the short term.",
+   "why": "Since Oil India earns money by selling oil, its share price tends to move with global oil prices; higher prices generally mean more revenue, while lower prices can reduce earnings.",
+   "upside": "Tighter US oil supplies and a safer Strait of Hormuz could help keep oil prices stable or higher, supporting the company's revenue.",
+   "downside": "Analysts expect a global supply glut that could push oil prices down to $78 by 2027, which would likely reduce the company's income.",
    "watch": [
-    "Global crude oil price trends",
-    "News on oil supply levels",
-    "Geopolitical events that might affect oil prices"
+    "Future global oil price forecasts regarding the expected supply glut.",
+    "Updates on the safety of the Strait of Hormuz and other geopolitical risks.",
+    "Changes in US crude oil inventory levels."
    ],
-   "about": "Oil India Ltd. is a company in the Oil Gas & Consumable Fuels sector.",
-   "basis": "ceff96882cae",
-   "items": 12,
-   "updated": "2026-11-18T15:01+05:30",
+   "about": "Oil India Ltd. is a company in the Oil Gas & Consumable Fuels sector that is part of the Nifty 500 index.",
+   "basis": "9aa99d87488d",
+   "items": 14,
+   "updated": "2026-11-19T00:20+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "PRESTIGE": {
-   "summary": "Prestige Estates Projects Ltd. is buying new businesses, including a 50% stake in Advent Convention and Hotels International, and increasing its ownership in the Prestige Vaishnaoi Projects. The realty sector has been rising, with the Nifty Realty index up 1.9% in the last session.",
-   "why": "These acquisitions could change the company’s future earnings and affect its cash position, which matters to current shareholders.",
-   "upside": "If the new assets generate strong cash flow and integrate smoothly, earnings could improve.",
-   "downside": "The deals may be costly, strain cash reserves, and dilute shareholder value if not managed well.",
+   "summary": "Prestige Estates is actively expanding its business by buying a 50% stake in a hotel company and increasing its ownership in a housing project. The company also announced plans to create two new subsidiaries. These moves happened while the broader real estate sector saw strong gains in November.",
+   "why": "These acquisitions and new entities could change how much money the company earns in the future. Shareholders need to watch how these new investments affect the company's cash and overall performance.",
+   "upside": "The new hotel stake and increased project ownership could diversify income sources and support future growth.",
+   "downside": "These purchases require significant spending, which could strain the company's cash reserves or lead to integration challenges.",
    "watch": [
-    "Financing and integration of the Advent Convention and Hotels International stake",
-    "Performance and profitability of the expanded Prestige Vaishnaoi Projects",
-    "Overall realty sector momentum and any signs of short‑term overextension"
+    "How the new hotel stake is financed and integrated",
+    "Details on the purpose of the two new subsidiaries",
+    "Whether the real estate sector's recent rise continues or corrects"
    ],
-   "about": "Prestige Estates Projects Ltd. is a real estate developer.",
-   "basis": "384187098a52",
-   "items": 5,
-   "updated": "2026-11-18T14:46+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Prestige Estates is a real estate company listed in the Nifty 500 index.",
+   "basis": "cc24feab3628",
+   "items": 7,
+   "updated": "2026-11-19T00:20+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "COALINDIA": {
-   "summary": "Coal India is preparing to list stakes in its subsidiaries, including Mahanadi Coalfields and later Northern and Central Coalfields, through initial public offerings. The IPO activity could influence the value of existing Coal India shares as investors assess cash proceeds and potential dilution.",
-   "why": "The outcome of the IPOs may affect the cash position and ownership percentage of the parent, which can move the share price.",
-   "upside": "If the IPOs raise strong cash proceeds and unlock higher valuation for the remaining business, the parent’s shares could benefit.",
-   "downside": "Dilution of Coal India’s stake and pricing curbs or muted demand could limit any positive impact on the share price.",
+   "summary": "PulsEdge flagged that Coal India Ltd. is preparing IPOs for its subsidiaries, including Mahanadi Coalfields and later Northern and Central Coalfields. The listings aim to monetize assets and raise cash, while the market watches the pricing and demand.",
+   "why": "Shareholders could see the value of their holdings change due to new cash inflows or dilution from the share sales.",
+   "upside": "If the IPOs price well and attract strong investor interest, Coal India could receive significant cash and a higher overall valuation.",
+   "downside": "Weak demand, pricing caps or a muted grey‑market premium could limit proceeds and put downward pressure on the existing share price.",
    "watch": [
-    "Mahanadi Coalfields IPO pricing and subscription levels",
-    "Progress and pricing of Northern and Central Coalfields IPOs",
-    "Market reaction to potential dilution and cash inflow"
+    "Pricing and subscription levels of the Mahanadi Coalfields IPO",
+    "Market response to the upcoming Northern and Central Coalfields IPO announcements",
+    "Overall sentiment in the Oil & Gas sector index and its impact on coal stocks"
    ],
-   "about": "Coal India Ltd is a major Indian coal mining company.",
-   "basis": "ff6f5a5a40a5",
-   "items": 8,
-   "updated": "2026-11-18T15:46+05:30",
+   "about": "Coal India Ltd. is India's largest coal mining company, operating a network of mines and supplying a major share of the country's coal.",
+   "basis": "0f666a542feb",
+   "items": 5,
+   "updated": "2026-11-19T00:20+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "HDFCBANK": {
@@ -904,22 +871,6 @@
    "basis": "accb212cc931",
    "items": 3,
    "updated": "2026-11-18T14:46+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "KALYANKJIL": {
-   "summary": "Kalyan Jewellers shares slipped about 5% as the consumer durables sector fell, following a recent 42% rally after strong Q2 results. The drop reflects broader worries about near‑term consumer demand despite lower gold prices.",
-   "why": "Share price moves affect investors’ portfolio value and signal how demand and margins may be changing for the jewellery business.",
-   "upside": "Demand could pick up during the upcoming wedding season, potentially supporting sales and the stock.",
-   "downside": "A sector‑wide sell‑off or profit‑booking after the recent rally could push the share lower.",
-   "watch": [
-    "Consumer durables sector index trends",
-    "Wedding season demand outlook",
-    "Profit‑booking pressure after the recent rally"
-   ],
-   "about": "Kalyan Jewellers India Ltd. is a jewellery retailer.",
-   "basis": "25ca704678f3",
-   "items": 3,
-   "updated": "2026-11-18T14:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "SAIL": {
@@ -999,6 +950,22 @@
    "about": "Havells India Ltd manufactures electrical consumer durables such as fans, lighting and home appliances.",
    "basis": "57957e45264e",
    "items": 2,
+   "updated": "2026-11-18T14:01+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "KALYANKJIL": {
+   "summary": "Kalyan Jewellers shares slipped about 5% as the consumer durables sector fell, following a recent 42% rally after strong Q2 results. The drop reflects broader worries about near‑term consumer demand despite lower gold prices.",
+   "why": "Share price moves affect investors’ portfolio value and signal how demand and margins may be changing for the jewellery business.",
+   "upside": "Demand could pick up during the upcoming wedding season, potentially supporting sales and the stock.",
+   "downside": "A sector‑wide sell‑off or profit‑booking after the recent rally could push the share lower.",
+   "watch": [
+    "Consumer durables sector index trends",
+    "Wedding season demand outlook",
+    "Profit‑booking pressure after the recent rally"
+   ],
+   "about": "Kalyan Jewellers India Ltd. is a jewellery retailer.",
+   "basis": "25ca704678f3",
+   "items": 3,
    "updated": "2026-11-18T14:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
@@ -1193,20 +1160,20 @@
    "updated": "2026-11-17T09:30+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "VEDL": {
-   "summary": "The Supreme Court rejected a plan by a major investor to take control of Vedanta, causing the stock to fall nearly 3%. The stock exchange has asked the company for clarification on this recent legal development.",
-   "why": "Legal fights over who controls the company can create uncertainty, which often makes investors nervous and can lower the share price.",
-   "upside": "",
-   "downside": "Prolonged legal battles could distract management and negatively impact investor sentiment.",
+  "PNB": {
+   "summary": "Punjab National Bank shares have risen sharply, hitting an eight-year high and a 52-week peak. The stock gained about 31% in the last month, outperforming its sector which rose 2.7% over five sessions.",
+   "why": "This rapid increase shows strong market interest, but it also means the price is at a record level. Shareholders may see their holdings gain value, though the sharp rise increases the chance of a short-term drop.",
+   "upside": "The strong momentum suggests continued investor confidence in the bank's performance.",
+   "downside": "The stock is considered overbought, which can lead to traders selling to lock in profits and cause the price to fall.",
    "watch": [
-    "The company's response to the stock exchange's request for clarification",
-    "Any further updates on the legal status of the rejected takeover plan",
-    "How the stock price reacts to these legal developments"
+    "Whether the share price holds its recent high levels or pulls back.",
+    "How the broader banking sector performs in the coming days.",
+    "Any changes in trading volume that might signal a shift in interest."
    ],
-   "about": "Vedanta is a company in the Metals & Mining sector.",
-   "basis": "3923ed10b9af",
-   "items": 1,
-   "updated": "2026-11-18T08:17+05:30",
+   "about": "Punjab National Bank is a major state-run lender in the financial services sector.",
+   "basis": "8946d38565b9",
+   "items": 3,
+   "updated": "2026-11-17T14:00+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "POLYCAB": {
@@ -1257,22 +1224,6 @@
    "updated": "2026-11-17T00:55+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "PNB": {
-   "summary": "Punjab National Bank shares have risen sharply, hitting an eight-year high and a 52-week peak. The stock gained about 31% in the last month, outperforming its sector which rose 2.7% over five sessions.",
-   "why": "This rapid increase shows strong market interest, but it also means the price is at a record level. Shareholders may see their holdings gain value, though the sharp rise increases the chance of a short-term drop.",
-   "upside": "The strong momentum suggests continued investor confidence in the bank's performance.",
-   "downside": "The stock is considered overbought, which can lead to traders selling to lock in profits and cause the price to fall.",
-   "watch": [
-    "Whether the share price holds its recent high levels or pulls back.",
-    "How the broader banking sector performs in the coming days.",
-    "Any changes in trading volume that might signal a shift in interest."
-   ],
-   "about": "Punjab National Bank is a major state-run lender in the financial services sector.",
-   "basis": "8946d38565b9",
-   "items": 3,
-   "updated": "2026-11-17T14:00+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "ETERNAL": {
    "summary": "Eternal Ltd. recently saw its stock hit a 52-week high after rallying up to 15% over the past month. At the same time, the company reported its Q2 results alongside competitor Swiggy, highlighting ongoing discussions about profit growth and food delivery competition.",
    "why": "This matters to shareholders because strong recent price momentum and earnings reports can attract more attention from investors. However, high prices might also tempt some to sell and lock in profits.",
@@ -1303,6 +1254,22 @@
    "basis": "6d6aa8ded454",
    "items": 2,
    "updated": "2026-11-18T14:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "SWIGGY": {
+   "summary": "Swiggy's shares have fallen sharply this year, losing up to half their value, while its latest Q2 results show profit growth faster than its rival Zomato's parent. The company is in the Nifty 500 consumer services index.",
+   "why": "Shareholders feel the impact of the steep price drop and watch profit growth that could shape future earnings.",
+   "upside": "A rebound is possible if the company’s fundamentals remain strong.",
+   "downside": "Intense competition could squeeze margins, reducing profitability.",
+   "watch": [
+    "Profit growth versus Zomato/Eternal",
+    "Share price recovery after 50% drop",
+    "Competitive pressure on margins"
+   ],
+   "about": "Swiggy is an Indian online food delivery platform.",
+   "basis": "e1600c42a6e6",
+   "items": 2,
+   "updated": "2026-11-17T00:55+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "EICHERMOT": {
@@ -1416,22 +1383,6 @@
    "items": 2,
    "updated": "2026-11-18T10:00+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "ADANIENT": {
-   "summary": "Adani Enterprises shares recently fell below a key technical support level, which often signals continued selling pressure. At the same time, the company announced that its wind energy arm began producing India's longest wind turbine blade.",
-   "why": "The drop in share price may affect the value of your holdings in the short term. The new production milestone shows the company is expanding into renewable energy, which is a major growth area.",
-   "upside": "Buying interest could return, causing the share price to bounce back above the recent low levels.",
-   "downside": "The share price may continue to fall if selling pressure persists after breaking the key support level.",
-   "watch": [
-    "Whether the share price stabilizes or continues to fall below the recent low.",
-    "How the market reacts to the news about the new wind turbine blade production.",
-    "General trends in the Metals & Mining sector index."
-   ],
-   "about": "",
-   "basis": "776332467bae",
-   "items": 2,
-   "updated": "2026-11-18T11:02+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "ULTRACEMCO": {
    "summary": "UltraTech Cement announced a credit rating update to the exchange. An investment advisor also highlighted the stock as one of three top picks in a recent note.",
