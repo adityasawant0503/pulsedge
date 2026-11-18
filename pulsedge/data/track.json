@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T09:31:04+05:30",
+ "updated": "2026-11-18T09:45:51+05:30",
  "summary": {
-  "calls": 1645,
-  "scored_calls": 486,
+  "calls": 1647,
+  "scored_calls": 488,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "a0f6ad911ce97199",
+   "symbol": "IIFL",
+   "time": "2026-11-18T09:43:33+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "IIFL Finance share price: NBFC stock jumps 6% after ₹3,454 cr block deal: Why is Fairfax selling entire 13.25% stake?",
+   "url": "https://www.livemint.com/market/stock-market-news/iifl-finance-share-price-nbfc-stock-jumps-6-after-rs-3-454-cr-block-deal-why-is-fairfax-selling-entire-13-25-stake-11794973879183.html",
+   "entry_date": "2026-11-17",
+   "entry": 636.4
+  },
+  {
+   "id": "6c205637903ed7dc",
+   "symbol": "IIFL",
+   "time": "2026-11-18T09:28:26+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "IIFL Finance shares gain 6% after block deal; Fairfax likely seller",
+   "url": "https://www.business-standard.com/markets/news/iifl-finance-shares-gain-6-after-block-deal-fairfax-likely-seller-126111800199_1.html",
+   "entry_date": "2026-11-17",
+   "entry": 636.4
+  },
   {
    "id": "f2629ad98e9b3350",
    "symbol": "SOBHA",

@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T09:30+05:30",
+ "updated": "2026-11-18T09:45+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -137,6 +137,22 @@
    "basis": "3927902f69b9",
    "items": 5,
    "updated": "2026-11-18T03:28+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "IIFL": {
+   "summary": "IIFL Finance shares jumped about 6% after Fairfax Financial sold its entire 13.25% stake in a large block deal worth ₹3,454 crore. This sale created significant buying interest in the stock, which is part of India's Nifty 500 index.",
+   "why": "A large investor selling their full stake can change how other traders view the company, often leading to short-term price swings. Shareholders should note that such events can cause volatility even if the company's business remains unchanged.",
+   "upside": "The strong buying response to the sale suggests some investors see value in the stock despite the large supply of shares entering the market.",
+   "downside": "The sharp price increase may lead to profit-taking, where early buyers sell to lock in gains, which could push the share price back down.",
+   "watch": [
+    "Whether the share price stabilizes after the initial 6% jump.",
+    "Any further news regarding Fairfax Financial's other investments.",
+    "General trends in the Financial Services sector, which has risen 3% over the last five sessions."
+   ],
+   "about": "IIFL Finance is a company in the Financial Services sector.",
+   "basis": "7177fc89752f",
+   "items": 3,
+   "updated": "2026-11-18T09:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "SWIGGY": {
@@ -890,22 +906,6 @@
    "updated": "2026-11-16T11:16+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BHARTIARTL": {
-   "summary": "Bharti Airtel shares rose by 3% and are close to their highest price ever. This happened as other major telecom stocks also increased in value.",
-   "why": "Shareholders may see the value of their holdings increase if this upward trend continues, though the stock is currently at a high level.",
-   "upside": "Continued investor optimism in the telecom sector could keep supporting the share price.",
-   "downside": "Investors might sell their shares to lock in profits after the recent strong rise.",
-   "watch": [
-    "Whether the stock holds its position near record highs.",
-    "How other telecom companies like Jio and Vodafone Idea perform.",
-    "General market conditions that could affect the sector."
-   ],
-   "about": "Bharti Airtel is a telecommunications company and one of India's 50 largest listed firms.",
-   "basis": "fa18c885955e",
-   "items": 2,
-   "updated": "2026-11-17T00:55+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "IDBI": {
    "summary": "IDBI Bank is part of the Financial Services sector, which has seen a 3.0% rise over the last five sessions. Recent news mentions a major investor selling a large stake in a related finance company, IIFL Finance, through a block deal.",
    "why": "Large sales of shares by big investors can add supply to the market, which may temporarily affect how the stock is perceived by other traders.",
@@ -917,22 +917,6 @@
     "General market reaction to block deals in the financial sector."
    ],
    "about": "IDBI Bank Ltd. is a company in the Financial Services sector.",
-   "basis": "c1304b5c9184",
-   "items": 1,
-   "updated": "2026-11-17T19:22+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "IIFL": {
-   "summary": "IIFL Finance is part of India's Nifty 500 index. A major investor, Fairfax, is planning to sell a 13.25% stake in the company through a large block deal worth ₹3,454 crore.",
-   "why": "This matters because selling such a large amount of shares at once can temporarily push the stock price down due to the sudden increase in supply.",
-   "upside": "",
-   "downside": "The large sale of shares could weigh on investor sentiment and cause the share price to drop in the near term.",
-   "watch": [
-    "The completion of the block deal and its immediate effect on the share price",
-    "How the Financials sector index performs in the coming days",
-    "Any official announcements from IIFL Finance regarding the stake sale"
-   ],
-   "about": "IIFL Finance Ltd. is a company in the Financial Services sector.",
    "basis": "c1304b5c9184",
    "items": 1,
    "updated": "2026-11-17T19:22+05:30",
@@ -1048,6 +1032,22 @@
    "basis": "3923ed10b9af",
    "items": 1,
    "updated": "2026-11-18T08:17+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "BHARTIARTL": {
+   "summary": "Bharti Airtel shares rose by 3% recently, moving close to their highest price ever. Other major telecom stocks in India also increased in value during this period.",
+   "why": "This rise suggests that investors are feeling positive about the telecom industry's performance, which can affect the value of the shares you hold.",
+   "upside": "Continued strong buying interest in the sector could support the stock's momentum.",
+   "downside": "Investors might sell their shares to lock in profits after such a strong rise, causing the price to drop.",
+   "watch": [
+    "Whether the stock maintains its position near record highs.",
+    "Movements in other major telecom stocks like Jio Platforms and Vodafone Idea.",
+    "Signs of profit-taking activity in the market."
+   ],
+   "about": "Bharti Airtel is a telecommunications company and one of India's 50 largest listed companies.",
+   "basis": "51cf8110c90c",
+   "items": 1,
+   "updated": "2026-11-18T09:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "COCHINSHIP": {
@@ -1274,22 +1274,6 @@
    "updated": "2026-11-16T09:46+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BSE": {
-   "summary": "BSE Ltd. is one of India's 50 largest listed companies in the financial services sector. Recent news highlights positive analyst interest in the stock, with some experts viewing it as a top pick alongside other major firms.",
-   "why": "As a major stock exchange, its performance is linked to overall market activity and trading volumes, which can affect the company's revenue and value for shareholders.",
-   "upside": "Positive analyst recommendations and strong sector momentum could support the stock price in the near term.",
-   "downside": "Broader market weakness or a shift in investor sentiment could cause the stock to decline despite positive news.",
-   "watch": [
-    "Changes in overall market trading volumes",
-    "Future analyst reports and their revised views",
-    "Performance of the broader Financials sector index"
-   ],
-   "about": "BSE Ltd. operates one of India's major stock exchanges.",
-   "basis": "097e8e1f9274",
-   "items": 3,
-   "updated": "2026-11-18T08:17+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "ULTRACEMCO": {
    "summary": "UltraTech Cement announced a credit rating update to the exchange. An investment advisor also highlighted the stock as one of three top picks in a recent note.",
    "why": "The rating can influence the cost of borrowing for the company, affecting profitability. Investor attention from the advisor could move the share price.",
@@ -1304,6 +1288,22 @@
    "basis": "d685963bb379",
    "items": 2,
    "updated": "2026-11-18T08:29+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "BSE": {
+   "summary": "PulsEdge flagged BSE Ltd. after a recent rally that helped it join a group of stocks hitting 52‑week highs, and analysts are noting bullish technical signals for the exchange.",
+   "why": "The rally and positive technical outlook suggest potential earnings growth for shareholders.",
+   "upside": "If the buying momentum continues, the stock could keep rising.",
+   "downside": "A quick shift in broader market sentiment could reverse the momentum.",
+   "watch": [
+    "Sustained price rally after hitting 52‑week high",
+    "Financials sector performance trends",
+    "Analyst technical bullish views on the exchange"
+   ],
+   "about": "BSE Ltd. runs India's Bombay Stock Exchange, offering trading and related financial services.",
+   "basis": "9fc55930b422",
+   "items": 2,
+   "updated": "2026-11-18T09:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "KOTAKBANK": {
