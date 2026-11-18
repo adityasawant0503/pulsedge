@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T08:17+05:30",
+ "updated": "2026-11-18T08:29+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -1274,6 +1274,22 @@
    "updated": "2026-11-18T08:17+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "ULTRACEMCO": {
+   "summary": "UltraTech Cement announced a credit rating update to the exchange. An investment advisor also highlighted the stock as one of three top picks in a recent note.",
+   "why": "The rating can influence the cost of borrowing for the company, affecting profitability. Investor attention from the advisor could move the share price.",
+   "upside": "A strong credit rating could allow cheaper financing for growth projects.",
+   "downside": "A downgrade or weaker rating could raise borrowing costs and pressure earnings.",
+   "watch": [
+    "Outcome of the credit rating announcement",
+    "Market reaction to the advisor’s top‑stock mention",
+    "Potential changes in the company’s financing costs"
+   ],
+   "about": "UltraTech Cement Ltd. is a leading cement manufacturer in India.",
+   "basis": "d685963bb379",
+   "items": 2,
+   "updated": "2026-11-18T08:29+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "KOTAKBANK": {
    "summary": "Kotak Mahindra Bank shares recently reached their highest price in the last year. This move happened alongside other major Indian stocks that also hit new yearly highs.",
    "why": "When a stock hits a new high, it shows strong recent demand, which can influence how other investors view the company's value.",
@@ -1353,6 +1369,22 @@
    "items": 2,
    "updated": "2026-11-17T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "LAURUSLABS": {
+   "summary": "Laurus Labs clarified recent news about promoters selling their equity shares. The stock jumped sharply as it led the mid‑cap rally while the broader market rose. The healthcare sector index was up 0.4% in the last session.",
+   "why": "Shareholders need to watch promoter selling because it could affect ownership and stock price, and the recent price surge shows the stock is sensitive to market moves.",
+   "upside": "If the broader market rally continues, the stock could keep gaining.",
+   "downside": "Promoter selling pressure could weigh on the share price.",
+   "watch": [
+    "Promoter share sale activity",
+    "Mid‑cap rally momentum",
+    "Healthcare sector index trend"
+   ],
+   "about": "Laurus Labs Ltd. is a pharmaceutical company that develops and manufactures medicines.",
+   "basis": "dfcc72489ab9",
+   "items": 2,
+   "updated": "2026-11-18T08:29+05:30",
+   "model": "openai/gpt-oss-120b"
   }
  }
 }
