@@ -61,6 +61,14 @@
       "_why": "Fast Indian market headlines from the channel's public web view; shown as headline, verdict and a link to the post. \"fast\": also checked about once a minute by fast_lane.py"
     },
     {
+      "name": "Walter Bloomberg",
+      "kind": "telegram",
+      "url": "https://t.me/s/WalterBloomberg",
+      "section": "global",
+      "fast": true,
+      "_why": "Global market headlines, usually first (the Telegram channel carrying Walter Bloomberg's posts, @DeItaone on X). X's own API is paid and free X readers are blocked, so the channel's public web view is read instead"
+    },
+    {
       "name": "CNBC World Markets",
       "kind": "rss",
       "url": "https://www.cnbc.com/id/100727362/device/rss/rss.html",

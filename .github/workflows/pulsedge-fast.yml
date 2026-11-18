@@ -1,6 +1,6 @@
 name: PulsEdge fast lane
 
-# RedBox Global India (every source with "fast": true in pulsedge-bot/sources.json) checked about once a minute
+# RedBox Global India and Walter Bloomberg (every source with "fast": true in pulsedge-bot/sources.json) checked about once a minute
 # from 07:00 to 16:00 IST on NSE trading days, instead of every 15 minutes. New posts are sorted at once, written
 # to pulsedge/data/fast.json and the site redeployed, so they reach the terminal two to three minutes after posting.
 #
