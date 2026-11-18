@@ -49,8 +49,8 @@ def trading_day(t):
     return t.weekday() < 5 and t.strftime("%Y-%m-%d") not in hol
 
 
-def collect(sources):
-    """news_pipeline.collect without its per-source log lines, which would fill the log once a minute."""
+def collect(sources, verbose=False):
+    """news_pipeline.collect, quiet unless verbose (a dry run): in the loop its per-source lines would fill the log."""
     out = []
     for src in sources:
         try:
@@ -60,6 +60,10 @@ def collect(sources):
             continue
         for g in got:
             g["source"], g["section_hint"] = src["name"], src.get("section", "news")
+        if verbose:
+            times = sorted((g["time"] for g in got if g.get("time")), reverse=True)
+            log(f"{src['name']}: {len(got)} posts" + (f", newest {times[0]:%d %b %H:%M} IST" if times else "")
+                + (f": {got[0]['headline'][:80]}" if got else ""))
         out += got
     return out
 
@@ -128,7 +132,7 @@ def publish(n):
 
 def check(sources, sorter, universe, known, dry, publishing):
     """One look at the fast sources. Returns how many new posts were added."""
-    raw = collect(sources)
+    raw = collect(sources, verbose=dry)
 
     def new_posts():
         fast = news.load_json(FAST, {"items": []})
