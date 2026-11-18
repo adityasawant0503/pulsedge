@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T03:29:03+05:30",
+ "updated": "2026-11-18T08:18:08+05:30",
  "summary": {
-  "calls": 1636,
-  "scored_calls": 477,
+  "calls": 1640,
+  "scored_calls": 481,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "df7ddccdbd8061a0",
+   "symbol": "EXIDEIND",
+   "time": "2026-11-18T07:44:12+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Exide Industries Limited: Exide Industries Limited has informed the Exchange about Regulation 30 Update on Divestment from captive wind power project |SUBJECT: ",
+   "url": "https://nsearchives.nseindia.com/corporate/EXIDEIND_18112026074337_SEsdSEDIVESTMENT.pdf",
+   "entry_date": "2026-11-17",
+   "entry": 380.15
+  },
+  {
+   "id": "0fd65a0efd1e7f6c",
+   "symbol": "HYUNDAI",
+   "time": "2026-11-18T06:04:21+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Reliance, UltraTech, Hyundai Motor shares: Top 3 stocks to buy; check ratings, target price, stop loss by Jay Thakkar",
+   "url": "https://www.livemint.com/market/stock-market-news/reliance-ultratech-hyundai-motor-shares-top-3-stocks-to-buy-check-ratings-target-price-stop-loss-by-jay-thakkar-11794931314865.html",
+   "entry_date": "2026-11-17",
+   "entry": 2121.3
+  },
+  {
+   "id": "0fd65a0efd1e7f6c",
+   "symbol": "RELIANCE",
+   "time": "2026-11-18T06:04:21+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Reliance, UltraTech, Hyundai Motor shares: Top 3 stocks to buy; check ratings, target price, stop loss by Jay Thakkar",
+   "url": "https://www.livemint.com/market/stock-market-news/reliance-ultratech-hyundai-motor-shares-top-3-stocks-to-buy-check-ratings-target-price-stop-loss-by-jay-thakkar-11794931314865.html",
+   "entry_date": "2026-11-17",
+   "entry": 1367.0
+  },
+  {
+   "id": "7f172028a62fcac5",
+   "symbol": "HYUNDAI",
+   "time": "2026-11-18T05:00:13+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "CNBC World Markets",
+   "headline": "JPMorgan is working on AI agent transactions that don’t involve humans",
+   "url": "https://www.cnbc.com/2026/11/18/jpmorgan-hyundai-card-ai-agents-payments.html",
+   "entry_date": "2026-11-17",
+   "entry": 2121.3
+  },
   {
    "id": "11134d85eb174fb4",
    "symbol": "OIL",

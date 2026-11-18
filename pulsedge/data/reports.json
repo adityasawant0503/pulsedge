@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T03:28+05:30",
+ "updated": "2026-11-18T08:17+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "NVIDIA reported strong sales that beat expectations, which may boost confidence in the tech sector. However, the company's CEO resigned, and US regulators are investigating the firm, creating uncertainty. Oil prices rose slightly, which could help Indian oil companies. Indian bank stocks performed well, while IT stocks dipped in the previous session.",
+  "summary": "PulsEdge flagged a strong boost for tech sentiment as Nvidia posted earnings well above expectations, but the news was tempered by its CEO's resignation and a US regulator probe. AI developments, such as JPMorgan and Hyundai Card testing AI agents for transactions, added optimism for future efficiency gains. Rising oil prices lifted Indian oil stocks, while a strong US dollar kept pressure on the rupee and import costs. Overall, banks and realty led gains, while IT and energy lagged.",
   "themes": [
-   "Mixed signals from NVIDIA's strong results and leadership changes",
-   "Rising oil prices affecting energy sector earnings",
-   "Strong performance in Indian banking stocks"
+   "AI hype lifted tech mood but leadership and regulatory issues added caution",
+   "Higher oil prices and a strong dollar created macro‑economic headwinds",
+   "Banking and realty outperformed while IT and energy fell behind"
   ],
   "watch": [
-   "How Indian IT stocks react to NVIDIA's news",
-   "Updates on the US regulatory probe into NVIDIA",
-   "Future movements in crude oil prices"
+   "Outcome of Nvidia's CEO change and SEC investigation",
+   "Direction of the US dollar and its impact on the rupee and foreign inflows",
+   "Progress of AI agent pilots by JPMorgan and Hyundai Card and any margin effects"
   ],
   "date": "2026-11-18",
-  "basis": "00eaaf32170b",
-  "updated": "2026-11-18T03:28+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 8
+  "basis": "41768e114b35",
+  "updated": "2026-11-18T08:17+05:30",
+  "model": "openai/gpt-oss-120b",
+  "items": 17
  },
  "stocks": {
   "TMPV": {
@@ -379,6 +379,22 @@
    "updated": "2026-11-18T03:28+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "HYUNDAI": {
+   "summary": "Hyundai Motor India Ltd. is in the news after a financial advisor highlighted it as a top pick and after JPMorgan began testing AI agents for transactions with Hyundai Card. The auto sector index showed a modest rise of 0.7% in the last session but fell 0.6% over the past five sessions.",
+   "why": "Shareholders watch these developments because AI testing could improve margins, while analyst attention may influence market sentiment.",
+   "upside": "If AI agents boost transaction efficiency, Hyundai Card’s margins could improve, benefiting the broader Hyundai group.",
+   "downside": "Delays in AI implementation could limit any expected efficiency gains.",
+   "watch": [
+    "Progress on AI agent transactions with JPMorgan",
+    "Market reaction to the financial advisor’s recommendation",
+    "Auto sector index movements"
+   ],
+   "about": "Hyundai Motor India Ltd. manufactures and sells automobiles in India.",
+   "basis": "220312878b27",
+   "items": 2,
+   "updated": "2026-11-18T08:17+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "EMBASSY": {
    "summary": "Embassy Developments, the parent company of Embassy Office Parks REIT, launched a new luxury residential project called Embassy One Residences. This addition increases the company's total development value for the upcoming fiscal year to about ₹9,000 crore.",
    "why": "This matters to shareholders because a larger project pipeline can lead to higher future income from the company's real estate activities.",
@@ -683,19 +699,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "COALINDIA": {
-   "summary": "Coal India is preparing IPOs for its Mahanadi, Northern and Central Coalfields units, selling a small part of its ownership to the public, which could bring cash but also dilute existing shareholders.",
-   "why": "Shareholders may face dilution of earnings per share, while the fresh funds could support higher dividends or growth initiatives.",
-   "upside": "If the IPOs are well‑received, the cash raised could strengthen the balance sheet and enable higher dividend payouts.",
-   "downside": "The share sales may dilute existing stakes and earnings, potentially putting downward pressure on the stock price.",
+   "summary": "Coal India is gearing up to sell small stakes in its Mahanadi, Northern and Central Coalfields units through IPOs, with the Mahanadi IPO price band set at ₹129‑₹136 per share. The moves could bring fresh cash but also dilute existing shareholders’ stakes.",
+   "why": "Shareholders may see earnings per share change due to dilution, while any cash raised could support the remaining business.",
+   "upside": "If the IPOs raise strong funds and the market values the units well, the remaining shares could become more valuable.",
+   "downside": "The new share issues could dilute earnings and profit share for current owners, potentially pressuring the stock price.",
    "watch": [
-    "Mahanadi Coalfields IPO pricing and subscription levels",
-    "Completion and pricing of Northern and Central Coalfields IPOs",
-    "Sector index performance and upcoming earnings releases"
+    "Mahanadi Coalfields IPO subscription and final pricing",
+    "Market absorption of the new shares and impact on Coal India’s share price",
+    "Quarterly earnings release and sector index performance"
    ],
-   "about": "Coal India Ltd is India’s largest coal producer, operating a network of coal mines across the country.",
-   "basis": "41f5a29008f3",
-   "items": 10,
-   "updated": "2026-11-17T14:46+05:30",
+   "about": "Coal India Ltd is India’s largest coal producer, operating a network of mines across the country.",
+   "basis": "21dc9f8a0dee",
+   "items": 9,
+   "updated": "2026-11-18T08:17+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "PRESTIGE": {
@@ -747,19 +763,19 @@
    "model": "gemini-flash-lite-latest"
   },
   "DLF": {
-   "summary": "Real estate stocks jumped about 14% in November, pushing DLF to a 52‑week high, while the broader Realty index fell 1.3% in the last session but rose 1.4% over five days.",
-   "why": "Shareholders see a sharp price rise that could bring further gains but also carries risk of a short‑term pullback.",
-   "upside": "If the sector’s strong momentum continues, DLF could move higher.",
-   "downside": "If the sector is overextended, a correction could pull DLF’s price down.",
+   "summary": "DLF shares have risen to a 52‑week high, joining a group of stocks that rallied about 15% over the past month as the realty sector surged in November.",
+   "why": "The rise shows strong investor interest, which can affect the value of existing holdings.",
+   "upside": "If buying momentum continues, the stock could move higher.",
+   "downside": "A quick shift in market sentiment or an over‑extended sector could reverse the gains.",
    "watch": [
-    "Nifty Realty index trend",
-    "DLF’s price relative to its 52‑week high",
-    "Signs of sector‑wide correction"
+    "DLF price relative to the Nifty Realty index",
+    "Broader market sentiment changes",
+    "Any further 52‑week high tests or corrections"
    ],
-   "about": "DLF Ltd. is an Indian real estate development company.",
-   "basis": "fb74963cbe28",
-   "items": 1,
-   "updated": "2026-11-17T11:02+05:30",
+   "about": "DLF Ltd. is a real estate developer in India.",
+   "basis": "d6752d9ced5a",
+   "items": 2,
+   "updated": "2026-11-18T08:17+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "INFY": {
@@ -793,22 +809,6 @@
    "items": 2,
    "updated": "2026-11-17T16:35+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "VEDL": {
-   "summary": "The Supreme Court upheld the rejection of Twin Star’s plan to take control of Vedanta, sending the stock down about 3%. At the same time, Vedanta Power was highlighted as a sub‑₹100 pick in a recent recommendation.",
-   "why": "Legal uncertainty can weigh on investor sentiment and affect the share price, while positive mentions may boost interest.",
-   "upside": "If the legal issues are resolved quickly in Vedanta’s favor, sentiment could improve.",
-   "downside": "Prolonged legal battles could distract management and keep the stock under pressure.",
-   "watch": [
-    "Supreme Court or exchange clarification on the ownership case",
-    "Any further stock movement after the legal news",
-    "Metals sector index trends"
-   ],
-   "about": "Vedanta Ltd. is an Indian metals and mining company.",
-   "basis": "0364ce6d6fde",
-   "items": 2,
-   "updated": "2026-11-16T15:47+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "BHARTIHEXA": {
    "summary": "Bharti Hexacom Ltd. is seeing its shares rise as part of a wider rally in the telecommunication sector. Investors are showing strong buying interest and optimism about how the industry is performing right now.",
@@ -1002,6 +1002,22 @@
    "updated": "2026-11-17T09:30+05:30",
    "model": "openai/gpt-oss-20b"
   },
+  "VEDL": {
+   "summary": "The Supreme Court rejected a plan by a major investor to take control of Vedanta, causing the stock to fall nearly 3%. The stock exchange has asked the company for clarification on this recent legal development.",
+   "why": "Legal fights over who controls the company can create uncertainty, which often makes investors nervous and can lower the share price.",
+   "upside": "",
+   "downside": "Prolonged legal battles could distract management and negatively impact investor sentiment.",
+   "watch": [
+    "The company's response to the stock exchange's request for clarification",
+    "Any further updates on the legal status of the rejected takeover plan",
+    "How the stock price reacts to these legal developments"
+   ],
+   "about": "Vedanta is a company in the Metals & Mining sector.",
+   "basis": "3923ed10b9af",
+   "items": 1,
+   "updated": "2026-11-18T08:17+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "COCHINSHIP": {
    "summary": "Cochin Shipyard Ltd. is one of four public sector companies set to announce dividend record dates between November 16 and 20. The company is part of the Nifty 500 index, which tracks India's 500 largest listed firms.",
    "why": "Dividends provide cash returns to shareholders, but the share price often drops slightly on the ex-date to reflect this payout.",
@@ -1083,20 +1099,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "ETERNAL": {
-   "summary": "Eternal Ltd. is one of India's 50 largest listed companies in the consumer services sector. Recent news compares its growth and earnings outlook with a rival food delivery company after their latest quarterly results.",
-   "why": "Investors are watching how fast the company is growing its profits compared to competitors, as this can influence how attractive the stock appears to the market.",
-   "upside": "The company may be seen as more attractive if it continues to grow its profits faster than its main rival.",
-   "downside": "Intense competition in the sector could squeeze the company's profit margins.",
+   "summary": "Eternal Ltd. recently saw its stock hit a 52-week high after rallying up to 15% over the past month. At the same time, the company reported its Q2 results alongside competitor Swiggy, highlighting ongoing discussions about profit growth and food delivery competition.",
+   "why": "This matters to shareholders because strong recent price momentum and earnings reports can attract more attention from investors. However, high prices might also tempt some to sell and lock in profits.",
+   "upside": "The recent rally and growing profits could attract more buying support for further gains.",
+   "downside": "Momentum could reverse quickly if market sentiment shifts or intense competition squeezes profit margins.",
    "watch": [
-    "Comparison of profit growth rates between Eternal and its rival.",
-    "Changes in profit margins due to market competition.",
-    "Investor sentiment regarding the company's growth outlook."
+    "Whether buying momentum continues or fades",
+    "Changes in broader market sentiment",
+    "Competition in the food delivery space"
    ],
-   "about": "",
-   "basis": "add6c534627e",
-   "items": 2,
-   "updated": "2026-11-17T00:55+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Eternal Ltd. is a consumer services company and one of India's 50 largest listed firms.",
+   "basis": "d9496364245a",
+   "items": 3,
+   "updated": "2026-11-18T08:17+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "HDFCBANK": {
    "summary": "HDFC Bank shares have recovered sharply after a Q2 sell‑off, jumping about 20% from their October low and helping the Nifty Bank index hit a record high. The rally is part of a broader gain in the financial sector, which rose 0.6% in the last session.",
@@ -1243,20 +1259,36 @@
    "model": "qwen/qwen3.8-27b"
   },
   "BSE": {
-   "summary": "PulsEdge flagged recent articles that show analysts are bullish on BSE Ltd., noting the exchange’s growth and profitability. The broader financial sector index has risen recently.",
-   "why": "Positive sentiment and sector strength can influence the market perception of BSE shares.",
-   "upside": "If the bullish sentiment holds, the stock could benefit from continued investor optimism.",
-   "downside": "A broader market weakness could dampen any gains for BSE shares.",
+   "summary": "BSE Ltd. is one of India's 50 largest listed companies in the financial services sector. Recent news highlights positive analyst interest in the stock, with some experts viewing it as a top pick alongside other major firms.",
+   "why": "As a major stock exchange, its performance is linked to overall market activity and trading volumes, which can affect the company's revenue and value for shareholders.",
+   "upside": "Positive analyst recommendations and strong sector momentum could support the stock price in the near term.",
+   "downside": "Broader market weakness or a shift in investor sentiment could cause the stock to decline despite positive news.",
    "watch": [
-    "Technical chart signals that analysts say hint at a long‑term uptrend",
-    "Analyst recommendations that list BSE among top picks",
-    "Performance of the Financials sector index"
+    "Changes in overall market trading volumes",
+    "Future analyst reports and their revised views",
+    "Performance of the broader Financials sector index"
    ],
-   "about": "BSE Ltd. operates one of India’s major stock exchanges.",
-   "basis": "3721f4c7cad2",
+   "about": "BSE Ltd. operates one of India's major stock exchanges.",
+   "basis": "097e8e1f9274",
+   "items": 3,
+   "updated": "2026-11-18T08:17+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "KOTAKBANK": {
+   "summary": "Kotak Mahindra Bank shares recently reached their highest price in the last year. This move happened alongside other major Indian stocks that also hit new yearly highs.",
+   "why": "When a stock hits a new high, it shows strong recent demand, which can influence how other investors view the company's value.",
+   "upside": "The recent rally might attract more buyers, potentially supporting further price gains.",
+   "downside": "Momentum could reverse quickly if broader market sentiment shifts or if sellers lock in profits.",
+   "watch": [
+    "Whether the stock holds its 52-week high or pulls back",
+    "Changes in overall market sentiment",
+    "Performance of other Financial Services stocks"
+   ],
+   "about": "Kotak Mahindra Bank is a financial services company and one of India's 50 largest listed companies.",
+   "basis": "b11ff564ee42",
    "items": 2,
-   "updated": "2026-11-17T13:15+05:30",
-   "model": "openai/gpt-oss-120b"
+   "updated": "2026-11-18T08:17+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "FORTIS": {
    "summary": "Fortis Healthcare is being watched after news that hospitals expect to keep profits stable despite new drug‑price caps, while hospital stocks have recently surged up to 7%. The broader healthcare index has risen 1.4% over the past five sessions after a slight dip yesterday.",

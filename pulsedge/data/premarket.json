@@ -1,18 +1,18 @@
 {
  "date": "2026-11-18",
- "updated": "2026-11-18T03:29:03+05:30",
+ "updated": "2026-11-18T08:18:07+05:30",
  "sentiment": "Mildly bearish",
  "breadth": {
-  "up": 1,
+  "up": 0,
   "down": 2
  },
  "checklist": [
   {
    "title": "Nifty 50 last close (GIFT Nifty not available from free sources)",
-   "dir": "up",
-   "value": "25,387.40 (+0.38%)",
+   "dir": "flat",
+   "value": "25,387.40 (+0.00%)",
    "detail": [
-    "Previous close 25,291.29"
+    "Previous close 25,387.40"
    ]
   },
   {
@@ -23,7 +23,7 @@
     "Dow 50,759.42 -1.64%",
     "S&P 7,340.53 -1.03%",
     "Nasdaq 24,328.38 -0.74%",
-    "Nasdaq futures now -0.55%"
+    "Nasdaq futures now +0.53%"
    ]
   },
   {
@@ -31,8 +31,8 @@
    "dir": "down",
    "value": "Asia lower",
    "detail": [
-    "Nikkei 58,860.43 +0.00%",
-    "Hang Seng 23,508.17 -1.03%"
+    "Nikkei 58,696.54 -0.28%",
+    "Hang Seng 23,383.53 -0.53%"
    ]
   },
   {
@@ -40,20 +40,20 @@
    "dir": "flat",
    "value": "No major currency pressure",
    "detail": [
-    "DXY 103.56 +0.01%",
-    "USD/INR 93.470 -0.48%"
+    "DXY 103.60 +0.11%",
+    "USD/INR 93.470 +0.00%"
    ]
   },
   {
    "title": "Brent crude level",
    "dir": "flat",
-   "value": "$92.97 +0.57%",
+   "value": "$92.80 -0.37%",
    "detail": []
   },
   {
    "title": "India VIX",
    "dir": "flat",
-   "value": "15.52 (-1.00%) — normal",
+   "value": "15.52 (+0.00%) — normal",
    "detail": []
   }
  ],
@@ -63,12 +63,20 @@
   "Nikkei down, Hang Seng down"
  ],
  "india_triggers": [
-  "8 filings and headlines worth a look so far today"
+  "17 filings and headlines worth a look so far today"
  ],
  "focus": [
   {
+   "symbol": "HYUNDAI",
+   "note": "JPMorgan is working on AI agent transactions that don’t involve humans"
+  },
+  {
    "symbol": "OIL",
    "note": "US CRUDE OIL FUTURES SETTLE 0.34% HIGHER AT $86.01/BBL, UP 29 CENTS"
+  },
+  {
+   "symbol": "HYUNDAI",
+   "note": "Reliance, UltraTech, Hyundai Motor shares: Top 3 stocks to buy; check "
   }
  ],
  "sector_tags": [
@@ -82,37 +90,37 @@
   {
    "name": "BANK NIFTY",
    "value": "62,273.2",
-   "change": 1.13
-  },
-  {
-   "name": "S&P FUT",
-   "value": "7,367",
-   "change": -0.96
-  },
-  {
-   "name": "NASDAQ FUT",
-   "value": "27,133",
-   "change": -0.55
-  },
-  {
-   "name": "KOSPI",
-   "value": "4,968",
    "change": 0.0
   },
   {
+   "name": "S&P FUT",
+   "value": "7,380",
+   "change": 0.29
+  },
+  {
+   "name": "NASDAQ FUT",
+   "value": "27,219",
+   "change": 0.53
+  },
+  {
+   "name": "KOSPI",
+   "value": "4,990",
+   "change": 0.43
+  },
+  {
    "name": "WTI",
-   "value": "85.55",
-   "change": -0.2
+   "value": "85.20",
+   "change": -0.94
   },
   {
    "name": "GOLD",
-   "value": "3,852",
-   "change": -0.02
+   "value": "3,803",
+   "change": -1.59
   },
   {
    "name": "US 10Y",
-   "value": "5.11",
-   "change": -0.2
+   "value": "5.09",
+   "change": -0.24
   }
  ],
  "source": "CNBC / Yahoo Finance (unofficial, delayed)"
