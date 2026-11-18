@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T16:00+05:30",
+ "updated": "2026-11-18T16:10+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -715,20 +715,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "TATAPOWER": {
-   "summary": "Tata Power says next quarter profits could triple due to faster project completion. They also commissioned a new 100.8 MW wind farm in Maharashtra. The company is part of the Nifty 500 and operates in the power sector.",
-   "why": "Higher profits could make the company more attractive to shareholders.",
-   "upside": "Triple growth in next quarter profits.",
-   "downside": "Guidance is forward‑looking and results may differ.",
+   "summary": "Tata Power says its profit could triple in the next quarter as it speeds up project completion. The company expects its execution pace to be three times higher than in the first half of the year. The broader energy index was slightly down yesterday.",
+   "why": "Higher profits could boost earnings per share and potentially improve returns for shareholders.",
+   "upside": "If the profit growth materialises, earnings could rise sharply.",
+   "downside": "The profit guidance is forward‑looking and may not be met.",
    "watch": [
-    "Next quarter earnings",
-    "Commissioning of 100.8 MW wind project",
-    "Sector index movement"
+    "Quarterly earnings release",
+    "Progress on project execution",
+    "Energy sector index movement"
    ],
-   "about": "Tata Power Co. Ltd. is a power company.",
-   "basis": "1ba79dce53d9",
-   "items": 2,
-   "updated": "2026-11-18T15:30+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "Tata Power generates, transmits and distributes electricity in India.",
+   "basis": "3e72a9621c05",
+   "items": 1,
+   "updated": "2026-11-18T16:10+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "ACMESOLAR": {
    "summary": "ACME Solar Holdings announced it has executed a Power Purchase Agreement, meaning it will sell electricity under a new contract. The broader energy sector index was flat over the past five sessions.",
@@ -1066,22 +1066,6 @@
    "updated": "2026-11-18T08:17+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "IDEA": {
-   "summary": "Vodafone Idea reported a larger-than-expected drop in mobile subscribers in the latest quarter. The loss of customers raises concerns about revenue and debt servicing. Telecom stocks, including Vodafone Idea, have seen a short‑term rally of up to 3% amid sector optimism.",
-   "why": "The decline in subscribers could reduce future revenue and worsen the company’s debt burden, affecting its financial stability.",
-   "upside": "Sector rally could lift Vodafone Idea’s share price.",
-   "downside": "Further subscriber attrition could worsen financial health.",
-   "watch": [
-    "Quarterly subscriber numbers",
-    "Debt levels",
-    "Sustainability of sector rally"
-   ],
-   "about": "Vodafone Idea is a telecommunications company operating in India.",
-   "basis": "a793712e454c",
-   "items": 2,
-   "updated": "2026-11-18T16:00+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
   "BATAINDIA": {
    "summary": "Bata India Ltd. is seeing its shares pressured as the Nifty Consumer Durables index fell about 3% today, reflecting broader concerns for the sector. The sector has been slightly up over the past five sessions but slipped 0.2% in the last session.",
    "why": "Sector sentiment can move Bata’s stock even without company‑specific news, so investors watch the broader consumer‑durables trend.",
@@ -1225,6 +1209,22 @@
    "updated": "2026-11-18T08:17+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "IDEA": {
+   "summary": "Vodafone Idea lost more mobile subscribers than expected in the latest quarter, raising concerns about its revenue outlook.",
+   "why": "Fewer customers mean lower cash inflows, which is risky for a heavily indebted company.",
+   "upside": "",
+   "downside": "Continued subscriber loss could further strain the company's financial health.",
+   "watch": [
+    "Quarterly mobile subscriber numbers",
+    "Debt repayment capacity",
+    "Management's response to subscriber attrition"
+   ],
+   "about": "Vodafone Idea provides mobile telecommunications services in India.",
+   "basis": "b0fcac1a775f",
+   "items": 1,
+   "updated": "2026-11-18T16:10+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "POLYCAB": {
    "summary": "Polycab reduced prices on its light‑duty cables and wires for the second time this week, and copper prices have dropped for the fifth straight day.",
    "why": "Price cuts could pressure revenue growth, while cheaper copper may boost profit margins if sales volumes stay steady.",
@@ -1319,54 +1319,6 @@
    "basis": "6d6aa8ded454",
    "items": 2,
    "updated": "2026-11-18T14:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "BHARTIHEXA": {
-   "summary": "PulsEdge flagged that Bharti Hexacom disclosed an official regulatory action or penalty order, while telecom stocks are currently rallying. The company is part of the Nifty 500 and the sector mood is upbeat.",
-   "why": "Shareholders should watch because a penalty could affect cash flow or reputation, while a sector rally could lift the stock.",
-   "upside": "If the telecom rally continues, Bharti Hexacom could benefit from broader buying.",
-   "downside": "If the regulatory order involves a large fine or operational restrictions, it could weigh on the share price.",
-   "watch": [
-    "Details of the regulatory order – fine amount and compliance steps",
-    "Momentum in the telecom sector and any earnings updates",
-    "Company’s response or clarification to the regulatory action"
-   ],
-   "about": "Bharti Hexacom Ltd. provides telecommunications services in India.",
-   "basis": "b59ef2e0eeed",
-   "items": 2,
-   "updated": "2026-11-18T16:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "TATACOMM": {
-   "summary": "PulsEdge flagged a sector rally in telecom stocks, which includes Tata Communications Ltd. (TATACOMM). Investors are currently optimistic about the telecom sector’s performance.",
-   "why": "Share price movements for Tata Communications can be influenced by broader sentiment in the telecom industry.",
-   "upside": "If the telecom rally sustains, Tata Communications could benefit from higher investor demand.",
-   "downside": "The rally may be short‑lived, which could limit any positive impact on the stock.",
-   "watch": [
-    "Continuation of the telecom sector rally",
-    "Upcoming earnings or financial disclosures from Tata Communications",
-    "Regulatory or policy changes affecting telecom companies"
-   ],
-   "about": "Tata Communications provides telecommunications services.",
-   "basis": "5338d29b9eef",
-   "items": 1,
-   "updated": "2026-11-18T16:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "INDUSTOWER": {
-   "summary": "Telecom stocks are rallying as investors feel optimistic about the sector. Indus Towers, a telecom tower company, could ride this sentiment.",
-   "why": "Shareholders may see the share move with the sector’s momentum, either up or down.",
-   "upside": "If the telecom rally sustains, Indus Towers could benefit from higher investor demand.",
-   "downside": "If the rally proves short‑lived, the stock could face pressure along with the rest of the sector.",
-   "watch": [
-    "Continuation of the telecom sector rally",
-    "Earnings and guidance from major operators like Airtel and Vodafone Idea",
-    "Overall market sentiment toward telecom stocks"
-   ],
-   "about": "Indus Towers builds, owns, and operates telecom tower infrastructure across India.",
-   "basis": "5338d29b9eef",
-   "items": 1,
-   "updated": "2026-11-18T16:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "BPCL": {
