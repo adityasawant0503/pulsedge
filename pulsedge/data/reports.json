@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T10:00+05:30",
+ "updated": "2026-11-18T10:16+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "NVIDIA reported strong sales, boosting confidence in the AI sector despite news of its CEO leaving and a US government probe. In India, Biocon gained approval to sell a cancer drug in Europe, while Acme Solar signed a new power deal. A strong US dollar and rising oil prices also shaped the market mood.",
+  "summary": "IIFL Finance shares rose about 6% after Fairfax sold its entire 13.25% stake in a large block deal. Global tech sentiment stayed positive as NVIDIA reported record sales, though its CEO recently stepped down. Domestic stocks also saw good news, with Biocon getting EU approval for a cancer drug and Ashoka Buildcon winning a major road project.",
   "themes": [
-   "AI demand remains high, but leadership changes and legal checks add uncertainty.",
-   "Indian companies are securing new income sources through drug approvals and power contracts.",
-   "Global currency moves and oil prices are influencing Indian market sentiment."
+   "Large institutional sales and new government contracts boosted specific Indian stocks.",
+   "Global AI demand remains strong, supported by NVIDIA's high revenue figures.",
+   "Indian companies are expanding into new markets, such as Biocon's entry into Europe."
   ],
   "watch": [
-   "How the market reacts to the US investigation into NVIDIA.",
-   "Whether Biocon's new European approval leads to immediate sales growth.",
-   "The impact of a strong US dollar on the Indian rupee and foreign investment."
+   "Whether IIFL Finance shares hold their gains or see profit-taking after the jump.",
+   "How the Indian IT sector reacts to NVIDIA's strong results and leadership change.",
+   "The impact of rising crude oil prices on Indian energy companies."
   ],
   "date": "2026-11-18",
-  "basis": "9b5caf1e380a",
-  "updated": "2026-11-18T09:15+05:30",
+  "basis": "3e413a56fa70",
+  "updated": "2026-11-18T10:16+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 19
+  "items": 28
  },
  "stocks": {
   "TMPV": {
@@ -570,6 +570,22 @@
    "updated": "2026-11-17T16:35+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "UPL": {
+   "summary": "UPL’s share price slipped below a key moving average after earlier climbing above its 100‑day exponential moving average, and media reports say the company may scrap a planned corporate‑structure change.",
+   "why": "These technical moves can sway short‑term trading sentiment, while a simpler structure could affect how attractive the stock is to investors.",
+   "upside": "If the price stabilises above the moving averages and the simplified structure is confirmed, investor interest could improve.",
+   "downside": "A continued drop below the moving average or the cancellation of the restructuring could dampen sentiment and pressure the share price.",
+   "watch": [
+    "Price action around the key moving average",
+    "Official announcement on corporate structure",
+    "Trading volume and momentum indicators"
+   ],
+   "about": "UPL Ltd. is a leading agrochemical company in India’s chemicals sector.",
+   "basis": "4296c947f2c0",
+   "items": 3,
+   "updated": "2026-11-18T10:16+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "BIOCON": {
    "summary": "Biocon received approval from US and EU regulators to sell a new cancer drug called pertuzumab. This allows the company to start selling this medication in both major markets.",
    "why": "For shareholders, these approvals open up new sources of income that could increase the company's future sales and profits.",
@@ -601,22 +617,6 @@
    "items": 2,
    "updated": "2026-11-17T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "UPL": {
-   "summary": "UPL is reported to be considering canceling its planned corporate restructuring, and its shares have recently moved above the 100‑day exponential moving average.",
-   "why": "A simpler structure could make the stock more appealing to investors, while the price move may signal a new upward trend.",
-   "upside": "If the restructuring is cancelled and a simpler structure is confirmed, investor interest could improve.",
-   "downside": "If the price breakout proves false or the restructuring plan remains uncertain, the stock could face pressure.",
-   "watch": [
-    "Official filing on the corporate structure plan",
-    "Share price behavior around the 100‑day EMA",
-    "Confirmation of any restructuring cancellation"
-   ],
-   "about": "UPL Ltd is a chemicals company that produces agricultural and industrial chemical products.",
-   "basis": "ea414fd591d3",
-   "items": 2,
-   "updated": "2026-11-17T15:16+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "AMBER": {
    "summary": "Amber Enterprises' shares fell sharply after its earnings report, with analysts flagging low profit margins, and again after a peer posted weak results.",
