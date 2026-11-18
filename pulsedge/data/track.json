@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T15:01:40+05:30",
+ "updated": "2026-11-18T15:16:18+05:30",
  "summary": {
-  "calls": 1707,
-  "scored_calls": 548,
+  "calls": 1709,
+  "scored_calls": 550,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "4626dd5144de5da6",
+   "symbol": "INFY",
+   "time": "2026-11-18T15:11:06+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Infosys share price: Lost 1/4th investor wealth in 1 year, should you still buy the IT major? Check target, stop loss",
+   "url": "https://www.livemint.com/market/stock-market-news/infosys-share-price-lost-1-4th-investor-wealth-in-1-year-should-you-still-buy-the-it-major-check-target-stop-loss-11794991373495.html",
+   "entry_date": "2026-11-17",
+   "entry": 1130.0
+  },
+  {
+   "id": "b8e0a31ef443616f",
+   "symbol": "CUMMINSIND",
+   "time": "2026-11-18T15:01:00+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Cummins faces a double whammy of cost inflation and lag effect of price hikes",
+   "url": "https://www.livemint.com/market/mark-to-market/cummins-india-margin-pressure-cost-inflation-price-hikes-data-centres-power-generation-11794991370304.html",
+   "entry_date": "2026-11-17",
+   "entry": 4065.0
+  },
   {
    "id": "bbe26d3c82c68ff8",
    "symbol": "WAAREEENER",

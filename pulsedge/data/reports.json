@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-18T15:01+05:30",
+ "updated": "2026-11-18T15:15+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -76,19 +76,19 @@
  },
  "stocks": {
   "KAYNES": {
-   "summary": "Kaynes Technology reported a sharp fall in quarterly profit and margins, slowed smart‑meter deliveries to chase overdue payments, and its shares have tumbled over 20% in recent sessions.",
-   "why": "The profit plunge and cash‑flow concerns hurt shareholder value and could pressure the stock further.",
-   "upside": "A faster‑than‑expected recovery of state dues or a technical bounce could lift the share price.",
-   "downside": "Continued margin erosion or further profit declines could drive the stock lower.",
+   "summary": "Kaynes Technology reported a sharp fall in quarterly profit, causing its shares to tumble over 16% in two sessions and hit a 52‑week low. The company has also slowed smart‑meter deliveries to focus on collecting overdue payments from state authorities.",
+   "why": "Lower profits and margin pressure hurt earnings, while delayed deliveries and payment collection issues can strain cash flow for shareholders.",
+   "upside": "A faster‑than‑expected recovery of dues from state entities or a technical bounce after the steep price drop could improve sentiment.",
+   "downside": "Continued profit decline, margin pressure and further payment collection problems could push the stock lower.",
    "watch": [
-    "Recovery speed of pending state dues",
-    "Margin trends in upcoming quarters",
-    "Performance of peer electronics firms such as Amber Enterprises"
+    "Recovery speed of state dues",
+    "Next quarterly earnings report",
+    "Margin trends and cost pressures"
    ],
-   "about": "Kaynes Technology manufactures electronics, including smart meters.",
-   "basis": "66c79c2701f0",
-   "items": 6,
-   "updated": "2026-11-18T14:31+05:30",
+   "about": "Kaynes Technology India Ltd. is an electronics manufacturer that produces items such as smart meters.",
+   "basis": "cffbd42a181d",
+   "items": 5,
+   "updated": "2026-11-18T15:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "INOXWIND": {
@@ -105,22 +105,6 @@
    "basis": "60483d5de20d",
    "items": 3,
    "updated": "2026-11-18T03:28+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "TMPV": {
-   "summary": "Tata Motors Passenger Vehicles Ltd. reported a large financial loss for the recent quarter. This news caused its share price to drop significantly, making it one of the weaker performers in the Nifty 50 index.",
-   "why": "A large loss suggests the business is facing difficulties, which can reduce the value of the shares you own.",
-   "upside": "",
-   "downside": "If the company continues to report losses in future quarters, the share price could fall further.",
-   "watch": [
-    "The company's next quarterly earnings report",
-    "Whether the share price stabilizes or continues to decline",
-    "Overall trends in the automobile sector index"
-   ],
-   "about": "The company operates in the automobile and auto components sector.",
-   "basis": "d7bdf7445798",
-   "items": 1,
-   "updated": "2026-11-18T15:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ONGC": {
@@ -202,22 +186,6 @@
    "items": 17,
    "updated": "2026-11-17T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "EICHERMOT": {
-   "summary": "Eicher Motors reported record Q2 sales and profit, sending the stock up more than 3% on strong broker sentiment. The company also granted 105 employee stock options and later saw a price adjustment during the day.",
-   "why": "Shareholders see the earnings beat as a boost to value, but the new options could dilute earnings per share if exercised.",
-   "upside": "If the momentum from record sales continues, the share price could rise further.",
-   "downside": "The recent price adjustment and potential dilution from stock options could pressure the stock.",
-   "watch": [
-    "Further price movements after today’s adjustment",
-    "Impact of employee stock options on dilution",
-    "Competitive pressure in the 350‑650cc bike segment"
-   ],
-   "about": "Eicher Motors manufactures motorcycles, including premium models under the Royal Enfield brand.",
-   "basis": "539d6a991c66",
-   "items": 6,
-   "updated": "2026-11-18T14:46+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "CAPLIPOINT": {
    "summary": "Caplin Point Laboratories informed the exchange that the US FDA classified an inspection at its subsidiary, Caplin Steriles, as Official Action Indicated. This status signals serious compliance issues that could delay approvals for new products.",
@@ -523,6 +491,22 @@
    "updated": "2026-11-17T15:46+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "EICHERMOT": {
+   "summary": "Eicher Motors saw its shares jump over 3% after reporting a strong Q2 with record bike sales and profit, but the stock later showed a price adjustment that could signal weakness.",
+   "why": "Shareholders feel the impact of both the upside from better earnings and the risk of dilution from newly granted employee stock options.",
+   "upside": "If the momentum from strong sales and positive analyst sentiment continues, the share price could rise further.",
+   "downside": "Dilution from exercised stock options or broader market weakness could pressure the stock.",
+   "watch": [
+    "Further price movements or adjustments",
+    "Exercise of the 105 employee stock options",
+    "Competitive pressure in the 350‑650cc motorcycle segment"
+   ],
+   "about": "Eicher Motors designs, manufactures and sells motorcycles, focusing on premium models.",
+   "basis": "04f1b292cbbf",
+   "items": 5,
+   "updated": "2026-11-18T15:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "TMCV": {
    "summary": "Tata Motors' shares closed above their 200‑day moving average, hinting at a possible recovery after a long decline. However, the company faces headwinds from Jaguar Land Rover's weak sales in China and a disappointing Q2 earnings report that lowered its outlook. The stock exchange has also asked for clarification on rumors of a Tata Sons IPO, adding uncertainty.",
    "why": "Shareholders need to watch whether the price rise is sustainable or a false breakout, and how JLR's challenges and the weak quarter could affect earnings. Any news on a Tata Sons IPO could also impact the value of the parent company's holdings.",
@@ -683,19 +667,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "UPL": {
-   "summary": "UPL’s share price slipped below a key moving average after earlier climbing above its 100‑day exponential moving average, and media reports say the company may scrap a planned corporate‑structure change.",
-   "why": "These technical moves can sway short‑term trading sentiment, while a simpler structure could affect how attractive the stock is to investors.",
-   "upside": "If the price stabilises above the moving averages and the simplified structure is confirmed, investor interest could improve.",
-   "downside": "A continued drop below the moving average or the cancellation of the restructuring could dampen sentiment and pressure the share price.",
+   "summary": "UPL's shares slipped below a key moving average, and media reports say the company may scrap its plan to change its corporate structure.",
+   "why": "This matters because technical price signals can affect short‑term trading sentiment and a simpler corporate structure could influence investor appeal.",
+   "upside": "If the stock climbs back above the moving average, momentum could turn positive.",
+   "downside": "If the price stays below the indicator or the restructuring plan is cancelled, sentiment could stay weak.",
    "watch": [
-    "Price action around the key moving average",
-    "Official announcement on corporate structure",
-    "Trading volume and momentum indicators"
+    "Price movement relative to the key moving average",
+    "Official announcement on corporate structure changes",
+    "Broader market reaction to the news"
    ],
-   "about": "UPL Ltd. is a leading agrochemical company in India’s chemicals sector.",
-   "basis": "4296c947f2c0",
-   "items": 3,
-   "updated": "2026-11-18T10:16+05:30",
+   "about": "UPL Ltd. is a chemicals company that manufactures agro‑chemical products.",
+   "basis": "f8baf144f126",
+   "items": 2,
+   "updated": "2026-11-18T15:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "GALLANTT": {
@@ -888,6 +872,22 @@
    "basis": "630bf2c39df4",
    "items": 4,
    "updated": "2026-11-18T10:47+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "INFY": {
+   "summary": "Infosys shares have fallen sharply, losing about a quarter of investor wealth over the past year and recently slipping below the 100‑day exponential moving average. The broader IT sector is also down, and analysts note the price may have bottomed.",
+   "why": "Owners may see a potential bottom that could support a rebound, but the outlook is clouded by uncertain global IT spending.",
+   "upside": "If the price has indeed bottomed, the stock could recover as buying interest returns.",
+   "downside": "Weak global IT demand and continued technical weakness could push the share lower.",
+   "watch": [
+    "Whether the stock holds above the 100‑day EMA",
+    "Sector index performance and any broad IT buying",
+    "Updates on global IT spending trends"
+   ],
+   "about": "Infosys provides IT services and consulting.",
+   "basis": "06a6cb8e45ee",
+   "items": 3,
+   "updated": "2026-11-18T15:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "HINDALCO": {
@@ -1113,22 +1113,6 @@
    "items": 2,
    "updated": "2026-11-18T08:17+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "INFY": {
-   "summary": "Infosys shares recently fell below a key medium-term technical support level, known as the 100-day moving average. At the same time, media comparisons with TCS are influencing how investors view the stock, though no new company-specific data has been released.",
-   "why": "Dropping below this technical level can signal continued short-term price weakness, which may affect the value of your holdings. However, this move could also be a temporary dip if broader market buying pulls the stock back up.",
-   "upside": "If index-wide buying returns, the stock could recover above the support level it recently broke.",
-   "downside": "Breaking below the 100-day moving average often leads to further short-term price declines.",
-   "watch": [
-    "Whether the stock price recovers above the 100-day moving average",
-    "Changes in investor sentiment regarding IT stocks compared to TCS",
-    "Overall performance of the IT sector index"
-   ],
-   "about": "Infosys is a major Indian Information Technology company and one of the 50 largest listed firms in the Nifty 50 index.",
-   "basis": "ec2c902fbb06",
-   "items": 2,
-   "updated": "2026-11-17T16:35+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "TATACOMM": {
    "summary": "Telecom stocks, including Tata Communications, are rising as investors show optimism about the sector. Major peers like Bharti Airtel and Vodafone Idea have seen significant price increases recently.",
@@ -1431,6 +1415,22 @@
    "basis": "c4a4f9105422",
    "items": 2,
    "updated": "2026-11-17T10:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "CUMMINSIND": {
+   "summary": "Cummins India is dealing with rising input costs while its price increases are lagging behind, squeezing profit margins. The higher expenses are not being fully offset by higher selling prices.",
+   "why": "Profit pressure can affect earnings per share and dividend potential for shareholders.",
+   "upside": "If the company successfully passes higher costs onto customers, margins could improve.",
+   "downside": "If costs continue to outpace price hikes, earnings may fall.",
+   "watch": [
+    "Trend in raw material and component cost inflation",
+    "Effectiveness of price hike implementation",
+    "Quarterly profit margin performance"
+   ],
+   "about": "Cummins India manufactures and sells engines and related power equipment.",
+   "basis": "d6b82dab147e",
+   "items": 1,
+   "updated": "2026-11-18T15:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "CANBK": {
