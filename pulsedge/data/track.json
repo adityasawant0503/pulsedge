@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T10:47:32+05:30",
+ "updated": "2026-11-18T11:02:56+05:30",
  "summary": {
-  "calls": 1653,
-  "scored_calls": 494,
+  "calls": 1659,
+  "scored_calls": 500,
   "d1": {
    "scored": 445,
    "hits": 263,
@@ -21,6 +21,71 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "6116bbe5779144fa",
+   "symbol": "TATASTEEL",
+   "time": "2026-11-18T10:56:35+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "TATA STEEL: CEO SAYS COST OF IRON ORE GOING UP IN INDIA",
+   "url": "https://t.me/Indiaredboxglobal/9533",
+   "entry_date": "2026-11-17",
+   "entry": 181.5
+  },
+  {
+   "id": "f9008bbc6a0bd8de",
+   "symbol": "TATASTEEL",
+   "time": "2026-11-18T10:56:20+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "TATA STEEL: CEO SAYS HAVE SOUGHT FINANCIAL ASSISTANCE FROM DUTCH GOVT, STILL UNDER DISCUSSION",
+   "url": "https://t.me/Indiaredboxglobal/9531",
+   "entry_date": "2026-11-17",
+   "entry": 181.5
+  },
+  {
+   "id": "1c030d6bca7fc107",
+   "symbol": "SOLARINDS",
+   "time": "2026-11-18T10:45:14+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "AUSTRALIAN PREMIUM SOLAR: CO. PROJECTED CAGR OF 20- 25% FOR NEXT 3 YEARS",
+   "url": "https://t.me/Indiaredboxglobal/9529",
+   "entry_date": "2026-11-17",
+   "entry": 18764.0
+  },
+  {
+   "id": "2406e9d592dd1db2",
+   "symbol": "MANAPPURAM",
+   "time": "2026-11-18T10:38:07+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Gold financiers under pressure; Muthoot, Manappuram fall 5%; here's why",
+   "url": "https://www.business-standard.com/markets/news/gold-financiers-under-pressure-muthoot-manappuram-fall-5-here-s-why-126111800267_1.html",
+   "entry_date": "2026-11-17",
+   "entry": 296.6
+  },
+  {
+   "id": "c5e9311258c2a400",
+   "symbol": "HINDCOPPER",
+   "time": "2026-11-18T10:36:34+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Hindustan Copper shares fall 3% as copper prices hit 5-month low",
+   "url": "https://www.business-standard.com/markets/news/hindustan-copper-shares-fall-3-as-copper-prices-hit-5-month-low-126111800284_1.html",
+   "entry_date": "2026-11-17",
+   "entry": 431.95
+  },
   {
    "id": "b9f420ba72f99533",
    "symbol": "TATAPOWER",
@@ -150,6 +215,19 @@
    "url": "https://nsearchives.nseindia.com/corporate/ACME122002_18112026084007_Intimation18112026.pdf",
    "entry_date": "2026-11-17",
    "entry": 403.6
+  },
+  {
+   "id": "3c142e53e0c6ce8d",
+   "symbol": "ADANIENT",
+   "time": "2026-11-18T08:35:05+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Adani Ent Share Price Live Updates: Adani Enterprises Dips Below Key EMA Level",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/adani-ent-share-price-live-updates-18-nov-2026/liveblog/135946890.cms",
+   "entry_date": "2026-11-17",
+   "entry": 2745.1
   },
   {
    "id": "798233d2cdd5122e",

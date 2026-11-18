@@ -2,19 +2,6 @@
  "note": "The last 60 runs of the AI classifier: items sorted by AI, set aside as routine, or left to keyword rules.",
  "runs": [
   {
-   "time": "2026-11-16T14:15+05:30",
-   "new": 21,
-   "ai": 14,
-   "routine": 7,
-   "rules": 0,
-   "models": {
-    "qwen/qwen3.8-27b": 14
-   },
-   "errors": [
-    "gemini-3.8-flash: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'"
-   ]
-  },
-  {
    "time": "2026-11-16T14:30+05:30",
    "new": 15,
    "ai": 8,
@@ -831,6 +818,21 @@
    "models": {
     "qwen/qwen3.8-27b": 20,
     "openai/gpt-oss-120b": 33
+   },
+   "errors": [
+    "gemini-3.8-flash: The read operation timed out",
+    "qwen/qwen3.8-27b: HTTP 429 Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m7d9eshkezkr1pmsab9xhv8e` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000,"
+   ]
+  },
+  {
+   "time": "2026-11-18T11:00+05:30",
+   "new": 27,
+   "ai": 24,
+   "routine": 3,
+   "rules": 0,
+   "models": {
+    "qwen/qwen3.8-27b": 20,
+    "openai/gpt-oss-120b": 4
    },
    "errors": [
     "gemini-3.8-flash: The read operation timed out",
