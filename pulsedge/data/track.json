@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T10:31:03+05:30",
+ "updated": "2026-11-19T10:46:05+05:30",
  "summary": {
-  "calls": 1773,
-  "scored_calls": 606,
+  "calls": 1775,
+  "scored_calls": 608,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "0fa846f4b65c1432",
+   "symbol": "PAYTM",
+   "time": "2026-11-19T10:27:19+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Paytm share price crash: Payment stock slides 7% on UPI MDR rollout delay; Pine Labs, One Mobikwik Systems also tumble",
+   "url": "https://www.livemint.com/market/stock-market-news/paytm-share-price-crash-payment-stock-slides-7-on-upi-mdr-rollout-delay-pine-labs-one-mobikwik-systems-also-tumble-11795062771594.html",
+   "entry_date": "2026-11-18",
+   "entry": 1890.0
+  },
+  {
+   "id": "0fa846f4b65c1432",
+   "symbol": "PINELABS",
+   "time": "2026-11-19T10:27:19+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Paytm share price crash: Payment stock slides 7% on UPI MDR rollout delay; Pine Labs, One Mobikwik Systems also tumble",
+   "url": "https://www.livemint.com/market/stock-market-news/paytm-share-price-crash-payment-stock-slides-7-on-upi-mdr-rollout-delay-pine-labs-one-mobikwik-systems-also-tumble-11795062771594.html",
+   "entry_date": "2026-11-18",
+   "entry": 169.35
+  },
   {
    "id": "bb01b3d451a63125",
    "symbol": "PAYTM",
