@@ -56,9 +56,36 @@ def market_open(t=None):
     return t.weekday() < 5 and (9, 15) <= (t.hour, t.minute) < (15, 30)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__" and sys.argv[1:2] == ["--probe"]:
+    pass
+elif __name__ == "__main__":
     syms = sys.argv[1:] or ["RELIANCE", "TCS", "M&M", "HDFCBANK"]
     got = quotes(syms)
     for s in syms:
         print(f"{s:12} {json.dumps(got.get(s)) if s in got else 'no price'}")
     print(f"{len(got)} of {len(syms)} priced")
+
+
+def probe(symbols=("RELIANCE", "M&M")):
+    """Which free price sources answer from this machine (run from the branch workflow when choosing one)."""
+    import urllib.error
+    def hit(label, url, data=None, headers=None):
+        try:
+            req = urllib.request.Request(url, data=data, headers={"User-Agent": UA, **(headers or {})})
+            with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+                body = r.read().decode("utf-8", "replace")
+            print(f"{label:22} HTTP 200  {body[:240]!r}")
+        except urllib.error.HTTPError as e:
+            print(f"{label:22} HTTP {e.code}  {e.read()[:160]!r}")
+        except Exception as e:
+            print(f"{label:22} {type(e).__name__}: {str(e)[:120]}")
+    s = symbols[0]
+    hit("yahoo chart", f"https://query1.finance.yahoo.com/v8/finance/chart/{s}.NS?range=1d&interval=1m")
+    hit("google finance", f"https://www.google.com/finance/quote/{s}:NSE")
+    body = json.dumps({"symbols": {"tickers": [f"NSE:{x}" for x in symbols]}, "columns": ["close", "change", "update_mode"]}).encode()
+    hit("tradingview scanner", "https://scanner.tradingview.com/india/scan", body, {"Content-Type": "application/json"})
+    hit("nse quote api", f"https://www.nseindia.com/api/quote-equity?symbol={s}", None, {"Accept": "application/json", "Referer": "https://www.nseindia.com/"})
+
+
+if __name__ == "__main__" and sys.argv[1:2] == ["--probe"]:
+    probe()

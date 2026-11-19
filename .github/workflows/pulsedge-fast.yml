@@ -60,10 +60,12 @@ jobs:
       run: python pulsedge-bot/fast_lane.py --dry-run
     - name: Live price source (branches)
       if: github.ref != 'refs/heads/master'
-      run: python pulsedge-bot/quotes.py RELIANCE TCS M\&M HDFCBANK TMPV KAYNES URBANCO
+      run: python pulsedge-bot/quotes.py --probe
     - name: Act checks on past alerts (branches)
       if: github.ref != 'refs/heads/master'
-      run: python pulsedge-bot/eval_act.py --review
+      # the rules only on a push; the AI second check (about 90 requests) only when started by hand, because on
+      # every push it used up the free models' daily token quota that the live alerts depend on
+      run: python pulsedge-bot/eval_act.py ${{ github.event_name == 'workflow_dispatch' && '--review' || '' }}
     - name: Watch the fast sources
       id: lane
       if: github.ref == 'refs/heads/master'
