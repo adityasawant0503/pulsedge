@@ -18,6 +18,7 @@ on:
     paths:
       - 'pulsedge-bot/fast_lane.py'
       - 'pulsedge-bot/eval_act.py'
+      - 'pulsedge-bot/quotes.py'
       - 'pulsedge-bot/eval/**'
       - '.github/workflows/pulsedge-fast.yml'
 
@@ -57,6 +58,9 @@ jobs:
     - name: Dry run (branches)
       if: github.ref != 'refs/heads/master'
       run: python pulsedge-bot/fast_lane.py --dry-run
+    - name: Live price source (branches)
+      if: github.ref != 'refs/heads/master'
+      run: python pulsedge-bot/quotes.py RELIANCE TCS M\&M HDFCBANK TMPV KAYNES URBANCO
     - name: Act checks on past alerts (branches)
       if: github.ref != 'refs/heads/master'
       run: python pulsedge-bot/eval_act.py --review
