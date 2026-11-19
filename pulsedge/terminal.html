@@ -479,7 +479,6 @@ dialog.gl::backdrop{background:rgba(8,7,12,.6)}
       <button class="tab" role="tab" data-t="watch" aria-selected="false">Watch</button>
       <button class="tab" role="tab" data-t="global" aria-selected="false">Global</button>
       <button class="tab" role="tab" data-t="redbox" aria-selected="false">RedBox</button>
-      <button class="tab" role="tab" data-t="walter" aria-selected="false">Walter</button>
       <button class="tab" role="tab" data-t="filings" aria-selected="false">Filings</button>
       <button class="tab" role="tab" data-t="money" aria-selected="false">Big money</button>
       <button class="tab" role="tab" data-t="mine" aria-selected="false">My stocks<span class="n" id="mine-n"></span></button>
@@ -733,7 +732,6 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     if(t==="ideas")return s.call==="buy"||s.call==="sell";
     if(t==="watch")return s.call==="watch";
     if(t==="redbox")return /redbox/i.test(s.source);
-    if(t==="walter")return /walter bloomberg/i.test(s.source);
     if(t==="global")return s.section==="global";
     if(t==="money")return /bulk|block deal/i.test(s.source);
     if(t==="filings")return /announcement|filing|nse|bse/i.test(s.source)||/filing|compliance/i.test(s.category);
@@ -797,12 +795,12 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     document.getElementById("legend").hidden=!(view==="simple"&&!found)||!document.getElementById("intro").hidden;
     renderBrief(found);
     var vis=found||sigs.filter(function(s){return inTab(s,tab)});
-    // Simple view keeps routine items out of the way until asked for
-    if(!found&&view==="simple"&&tab==="all"&&!showRest){rest=vis.length;vis=vis.filter(function(s){return s.call!=="ignore"});rest-=vis.length}
-    // ...and puts each day's most important items first, twenty at a time (the RedBox and Walter tabs stay newest first: they are there for speed)
+    // Simple view keeps routine items out of the way until asked for (in Global too: most Walter Bloomberg posts are US-only)
+    if(!found&&view==="simple"&&(tab==="all"||tab==="global")&&!showRest){rest=vis.length;vis=vis.filter(function(s){return s.call!=="ignore"});rest-=vis.length}
+    // ...and puts each day's most important items first, twenty at a time (RedBox and Global stay newest first: they are there for speed)
     var left=0;
     if(!found&&view==="simple"){
-      if(tab!=="redbox"&&tab!=="walter")vis=vis.slice().sort(function(a,b){var da=a.t?dayOf(a.t):"",db=b.t?dayOf(b.t):"";return da<db?1:da>db?-1:rank(a,b)});
+      if(tab!=="redbox"&&tab!=="global")vis=vis.slice().sort(function(a,b){var da=a.t?dayOf(a.t):"",db=b.t?dayOf(b.t):"";return da<db?1:da>db?-1:rank(a,b)});
       left=Math.max(0,vis.length-shown);vis=vis.slice(0,shown);
     }
     document.getElementById("mine-n").textContent=hold.length?String(hold.length):"";
