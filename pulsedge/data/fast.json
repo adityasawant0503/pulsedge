@@ -1,7 +1,32 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-19T12:00:35+05:30",
+ "updated": "2026-11-19T12:06:35+05:30",
  "items": [
+  {
+   "id": "f0aacda77fce8841",
+   "time": "2026-11-19T12:05:33+05:30",
+   "headline": "JAPAN TOBACCO TO EXCLUDE RUSSIA UNITS FROM FINANCIAL REPORTING",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9683",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [],
+   "impact": 0,
+   "confidence": 0,
+   "category": "macro",
+   "action": "",
+   "reason": [],
+   "risks": [],
+   "plain": "Japan Tobacco said it will not include its Russian operations in its financial statements.",
+   "why": "It does not affect Indian stocks, so investors can ignore it.",
+   "check": "",
+   "original": "JAPAN TOBACCO TO EXCLUDE RUSSIA UNITS FROM FINANCIAL REPORTING",
+   "latency": 62.1,
+   "lane": "fast"
+  },
   {
    "id": "4d019b1cec87f70f",
    "time": "2026-11-19T11:59:23+05:30",
@@ -2029,39 +2054,6 @@
    "check": "",
    "original": "BRENT CRUDE FUTURES DOWN MORE THAN $1 TO INTRA-DAY LOW OF $91.83/BBL",
    "latency": 26.3,
-   "lane": "fast"
-  },
-  {
-   "id": "260b1d950f6ec8d0",
-   "time": "2026-11-18T12:02:49+05:30",
-   "headline": "SEBI CHAIRMAN - CONSIDERING PROPOSAL OF LINKING MTF",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9541",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "positional",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Market Structure"
-   ],
-   "impact": 10,
-   "confidence": 20,
-   "category": "Regulatory Update",
-   "action": "No immediate action required; monitor for formal SEBI circulars regarding free-float adjustments.",
-   "reason": [
-    "SEBI is only considering the proposal; no decision has been made.",
-    "Impact on specific stocks is speculative until rules are finalized."
-   ],
-   "risks": [
-    "Potential future changes to trading limits could affect liquidity for low-float stocks.",
-    "Market sentiment may react negatively to perceived restrictions on trading."
-   ],
-   "plain": "The market regulator is thinking about linking trading limits to how many shares are available for public trading.",
-   "why": "It is just a discussion stage with no final rule, so it does not change anything for investors right now.",
-   "check": "",
-   "original": "LIMITS TO STOCK FREE FLOAT; NO DECISION YET ON LINKING MTF LIMITS TO STOCK FREE FLOAT",
-   "latency": 41.7,
    "lane": "fast"
   }
  ]
