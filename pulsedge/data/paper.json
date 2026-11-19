@@ -1,0 +1,68 @@
+{
+ "updated": "2026-11-20T03:26:40+05:30",
+ "start": "2026-11-20",
+ "cost": 0.3,
+ "note": "Paper trades only: no money is placed. Rules fixed on 20 Nov 2026 and never changed afterwards; entry is the first NSE close after the news reached readers, exit the close 'hold' sessions later, net of 0.3% round-trip costs. Educational; not investment advice.",
+ "strategies": [
+  {
+   "id": "buy-the-fall",
+   "name": "Buy the fall",
+   "rule": "PulsEdge flags bad news on a stock (an AI call pointing down) and the stock has already fallen 3% or more from the close before the news to the first close after it reached readers: buy at that close, sell at the next close.",
+   "hold": 1,
+   "earlier": "9-19 Nov replay: 24 trades, 58% won, +0.42% a trade after costs (8 of them on 18 Nov; not proven)",
+   "summary": {
+    "closed": 0,
+    "open": 0,
+    "win_rate": null,
+    "avg_net": null,
+    "total_net": null
+   },
+   "trades": []
+  },
+  {
+   "id": "short-sell-alerts",
+   "name": "Act on Sell alerts",
+   "rule": "Every Sell (Act) alert: short at the first close after it reached readers, buy back at the next close. In practice this needs futures or an intraday short; for a holder it means selling.",
+   "hold": 1,
+   "earlier": "9-19 Nov replay: 25 trades, 48% won, -0.06% a trade after costs (Sell alerts beat Buy alerts, but not costs)",
+   "summary": {
+    "closed": 0,
+    "open": 0,
+    "win_rate": null,
+    "avg_net": null,
+    "total_net": null
+   },
+   "trades": []
+  },
+  {
+   "id": "fade-jumps",
+   "name": "Fade the jump",
+   "rule": "PulsEdge flags good news (an AI call pointing up) and the stock has already risen 3% or more by the first close after the news reached readers: short at that close, buy back five sessions later.",
+   "hold": 5,
+   "earlier": "9-19 Nov replay: 28 trades, 75% won, +1.11% a trade after costs, 12 of them on 11 Nov (not proven)",
+   "summary": {
+    "closed": 0,
+    "open": 0,
+    "win_rate": null,
+    "avg_net": null,
+    "total_net": null
+   },
+   "trades": []
+  },
+  {
+   "id": "follow-act",
+   "name": "Follow every Act alert (baseline)",
+   "rule": "Every Act alert in the alert's direction: buy if it points up, short if down, at the first close after it reached readers; exit at the next close. The yardstick the others must beat.",
+   "hold": 1,
+   "earlier": "9-19 Nov replay: 70 trades, 39% won, -0.18% a trade after costs",
+   "summary": {
+    "closed": 0,
+    "open": 0,
+    "win_rate": null,
+    "avg_net": null,
+    "total_net": null
+   },
+   "trades": []
+  }
+ ]
+}

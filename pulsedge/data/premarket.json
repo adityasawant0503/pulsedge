@@ -1,10 +1,10 @@
 {
- "date": "2026-11-19",
- "updated": "2026-11-19T19:25:40+05:30",
- "sentiment": "Neutral",
+ "date": "2026-11-20",
+ "updated": "2026-11-20T03:26:39+05:30",
+ "sentiment": "Mildly bearish",
  "breadth": {
   "up": 1,
-  "down": 1
+  "down": 2
  },
  "checklist": [
   {
@@ -18,20 +18,20 @@
   {
    "title": "US close - Dow/S&P/Nasdaq direction",
    "dir": "down",
-   "value": "Mixed — 1/3 higher",
+   "value": "Lower",
    "detail": [
-    "Dow 50,198.17 -1.11%",
-    "S&P 7,323.63 -0.23%",
-    "Nasdaq 24,429.88 +0.42%",
-    "Nasdaq futures now +1.77%"
+    "Dow 49,097.06 -2.19%",
+    "S&P 7,175.83 -2.02%",
+    "Nasdaq 23,879.20 -2.25%",
+    "Nasdaq futures now -2.69%"
    ]
   },
   {
    "title": "Asian markets live - Nikkei, Hang Seng",
-   "dir": "flat",
-   "value": "Asia mixed",
+   "dir": "down",
+   "value": "Asia lower",
    "detail": [
-    "Nikkei 59,444.21 +0.71%",
+    "Nikkei 59,444.21 +0.00%",
     "Hang Seng 22,841.62 -1.95%"
    ]
   },
@@ -40,14 +40,14 @@
    "dir": "flat",
    "value": "No major currency pressure",
    "detail": [
-    "DXY 103.67 -0.18%",
+    "DXY 103.95 +0.08%",
     "USD/INR 93.290 -0.17%"
    ]
   },
   {
    "title": "Brent crude level",
    "dir": "flat",
-   "value": "$92.76 +0.88%",
+   "value": "$92.62 +0.73%",
    "detail": []
   },
   {
@@ -57,27 +57,27 @@
    "detail": []
   }
  ],
- "summary": "Neutral setup. NASDAQ closed 0.42% higher; supportive for IT; Nikkei up, Hang Seng down.",
+ "summary": "Mildly bearish setup. NASDAQ closed 2.25% lower; IT may open soft; Nikkei down, Hang Seng down.",
  "global_cues": [
-  "NASDAQ closed 0.42% higher; supportive for IT",
-  "Nikkei up, Hang Seng down"
+  "NASDAQ closed 2.25% lower; IT may open soft",
+  "Nikkei down, Hang Seng down"
  ],
  "india_triggers": [
-  "161 filings and headlines worth a look so far today",
+  "7 filings and headlines worth a look so far today",
   "India VIX up 3.5% — expect wider ranges"
  ],
  "focus": [
   {
-   "symbol": "ALKEM",
-   "note": "ALKEM LABORATORIES: US FDA ISSUES WARNING LETTER TO AMALIYA'S DAMAN MA"
+   "symbol": "OIL",
+   "note": "Oil prices inch up as tanker disruptions offset surplus supply outlook"
   },
   {
-   "symbol": "PAYTM",
-   "note": "Market LIVE: Sensex flat, Nifty below 25,200; Paytm, Pine Labs fall up"
+   "symbol": "OIL",
+   "note": "US Sour Crude’s War Premium Vanishes as Supply Surges"
   },
   {
-   "symbol": "TATATECH",
-   "note": "Tata Tech shares jump 10% as company targets $1.3 billion revenue by F"
+   "symbol": "POLICYBZR",
+   "note": "PB Fintech Limited: PB Fintech Limited has informed the Exchange regar"
   }
  ],
  "sector_tags": [
@@ -86,7 +86,7 @@
    "tone": "watch"
   }
  ],
- "key_risk": "",
+ "key_risk": "Weak US tech could weigh on Indian IT at the open",
  "also": [
   {
    "name": "BANK NIFTY",
@@ -95,33 +95,33 @@
   },
   {
    "name": "S&P FUT",
-   "value": "7,414",
-   "change": 1.0
+   "value": "7,174",
+   "change": -2.27
   },
   {
    "name": "NASDAQ FUT",
-   "value": "27,668",
-   "change": 1.77
+   "value": "26,457",
+   "change": -2.69
   },
   {
    "name": "KOSPI",
    "value": "5,138",
-   "change": 1.39
+   "change": 0.0
   },
   {
    "name": "WTI",
-   "value": "84.37",
-   "change": 1.33
+   "value": "83.85",
+   "change": 0.71
   },
   {
    "name": "GOLD",
-   "value": "3,715",
-   "change": -0.72
+   "value": "3,628",
+   "change": -3.03
   },
   {
    "name": "US 10Y",
-   "value": "5.08",
-   "change": 0.2
+   "value": "5.05",
+   "change": -0.36
   }
  ],
  "source": "CNBC / Yahoo Finance (unofficial, delayed)"
