@@ -6,10 +6,16 @@ feed.sample.json), so whatever shows in the terminal is what goes to Telegram.
 
   python pulse_bot.py render [--event ID] [--out DIR]   # write card PNGs, no network
   python pulse_bot.py post   [--event ID] [--dry-run]   # post new Act signals to Telegram
+  python pulse_bot.py news   [--dry-run]                # post the most market-moving global and India news
   python pulse_bot.py digest [--dry-run] [--any-hour]   # post the day's evening summary (once a day)
 
 Posting needs TELEGRAM_BOT_TOKEN, and TELEGRAM_CHAT_ID (defaults to @pulsedgein).
 Events already posted are recorded in posted.json so nothing is sent twice.
+
+Market-moving news: Watch items in the global or macro (economy and policy) sections with impact of at
+least NEWS_MIN: the headline, why it matters and the sectors to watch, with the source credited and linked. At most
+NEWS_PER_RUN per message and NEWS_PER_DAY a day; live-blog updates, stale items and repeats of a story
+already posted that day are left out.
 
 The channel stays quiet from 22:00 to 07:00 IST: signals found overnight are posted by the first run
 after 07:00. The evening summary only goes out on an NSE trading day, and after 18:00 IST unless
@@ -20,6 +26,7 @@ import html
 import io
 import json
 import os
+import re
 import sys
 import urllib.request
 import uuid
@@ -101,11 +108,95 @@ def normalize(item):
         "reason": as_list(item.get("reason")),
         "url": item.get("url") if str(item.get("url", "")).startswith(("http://", "https://")) else "",
         "time": t,
+        "section": str(item.get("section", "")),
+        "plain": str(item.get("plain") or ""),
+        "why": str(item.get("why") or ""),
+        "original": str(item.get("original") or ""),
     }
 
 
 def postable(ev):
     return ev["call"] in ("buy", "sell")
+
+
+# ---------- market-moving news ----------
+NEWS_MIN = 45            # impact a global or macro story needs: about 2-10 a day qualify
+NEWS_PER_RUN = 3
+NEWS_PER_DAY = 8
+NEWS_MAX_AGE = timedelta(hours=12)
+LIVE_BLOG = re.compile(r"\blive\b[: ]|live updates|live blog|highlights", re.I)
+SECTION_LABEL = {"global": "🌍 Global", "macro": "📊 Economy &amp; policy"}
+
+
+COMMON = set("the and for are was were has had not but its which could about their this that with have will been "
+             "from into over more than what when they them some also after before because while would should being "
+             "make made says said year years today company companies market markets stock stocks share shares news "
+             "india indian investors investor money growth economy going gone good".split())
+
+
+def stems(text):
+    return {w[:4] for w in re.findall(r"[a-z0-9]+", text.lower()) if len(w) >= 3 and w not in COMMON}
+
+
+def consistent(ev):
+    """The AI's plain-English line shares a word with the headline. Now and then a model answers for the wrong
+    item of a batch (a dollar story summed up as an oil story); such an item never goes to the public channel.
+    Items sorted by keyword rules alone (no plain line) don't either: their scores are rough."""
+    return bool(ev["plain"]) and bool(stems(ev["plain"]) & stems(ev["headline"] + " " + ev["original"]))
+
+
+def newsworthy(ev, now):
+    return (ev["call"] == "watch" and ev["section"] in SECTION_LABEL and (ev["impact"] or 0) >= NEWS_MIN
+            and ev["time"] is not None and now - ev["time"] <= NEWS_MAX_AGE and not LIVE_BLOG.search(ev["headline"])
+            and consistent(ev))
+
+
+def words(text):
+    return {w for w in re.findall(r"[a-z0-9$%.]+", text.lower()) if len(w) > 3}
+
+
+def same_story(a, b):
+    """Two headlines about the same event: most of the shorter one's words appear in the other."""
+    wa, wb = words(a), words(b)
+    return bool(wa and wb) and len(wa & wb) / min(len(wa), len(wb)) >= 0.6
+
+
+def pick_news(events, posted, now):
+    """Today's best new stories, most important first, skipping repeats of a story already posted today."""
+    day = now.strftime("%Y-%m-%d")
+    done_ids = {p.split(":", 2)[2] for p in posted if p.startswith(f"news:{day}:")}
+    left = NEWS_PER_DAY - len(done_ids)
+    if left <= 0:
+        return []
+    done = [e["headline"] for e in events if e["id"] in done_ids]
+    out = []
+    for ev in sorted((e for e in events if newsworthy(e, now) and e["id"] not in done_ids),
+                     key=lambda e: (-(e["impact"] or 0), -(e["time"].timestamp()))):
+        if any(same_story(ev["headline"], h) for h in done + [x["headline"] for x in out]):
+            continue
+        out.append(ev)
+        if len(out) >= min(NEWS_PER_RUN, left):
+            break
+    return out
+
+
+def news_text(evs, now):
+    lines = [f"📰 <b>Market-moving news</b> · {now:%H:%M} IST"]
+    for ev in evs:
+        lines += ["", f"<b>{SECTION_LABEL[ev['section']]}</b>"]
+        lines.append(f"<b>{html.escape(ev['headline'])}</b>")
+        why = ev["why"] or (ev["reason"][0] if ev["reason"] else "")
+        if why:
+            lines.append(f"Why it matters: {html.escape(why)}")
+        if ev["sectors"]:
+            lines.append("Sectors to watch: " + html.escape(", ".join(ev["sectors"][:3])))
+        if ev["source"]:
+            src = html.escape(ev["source"])
+            lines.append(f'Source: <a href="{html.escape(ev["url"], quote=True)}">{src}</a>' if ev["url"] else f"Source: {src}")
+    lines += ["", f'<a href="{SITE}terminal.html">Open the PULSE terminal</a> · '
+                  "<i>Educational information only. Not investment advice.</i>"]
+    text = "\n".join(lines)
+    return text if len(text) <= 4000 else text[:3990].rsplit("\n", 1)[0] + "\n…"
 
 
 def quiet_hours(now):
@@ -349,6 +440,14 @@ def digest_text(feed):
                 if v:
                     parts.append(f"{b['symbol']}: {who} {'bought' if v > 0 else 'sold'} ₹{abs(v):,.0f} cr")
         lines.append("<b>Big money</b> " + " · ".join(parts[:3]))
+    glob = [x for x in feed.get("items", []) if str(x.get("time", ""))[:10] == day and x.get("section") == "global"
+            and x.get("call") != "ignore" and not LIVE_BLOG.search(str(x.get("headline", "")))]
+    glob.sort(key=lambda x: -(x.get("impact") or 0))
+    if glob:
+        lines += ["", "<b>Around the world</b>"]
+        for x in glob[:2]:
+            h = str(x.get("headline", ""))
+            lines.append(f"• {html.escape(h[:110] + ('…' if len(h) > 110 else ''))}")
     lines += ["", f'<a href="{SITE}terminal.html">Open the PULSE terminal</a>',
               "<i>Educational information only. Not investment advice.</i>"]
     return day, "\n".join(lines)
@@ -362,7 +461,7 @@ def png_bytes(img):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("cmd", choices=["render", "post", "digest"])
+    ap.add_argument("cmd", choices=["render", "post", "news", "digest"])
     ap.add_argument("--event", help="only this event id")
     ap.add_argument("--out", default=os.path.join(HERE, "out"), help="render: output folder")
     ap.add_argument("--dry-run", action="store_true", help="post: show what would be sent")
@@ -404,6 +503,34 @@ def main():
         events = [e for e in events if e["id"] == a.event]
         if not events:
             sys.exit(f"No event with id {a.event} in {source}")
+
+    if a.cmd == "news":
+        now = datetime.now(IST)
+        posted = json.load(open(POSTED)) if os.path.exists(POSTED) else []
+        picks = pick_news(events, posted, now)
+        if not picks:
+            print("No new market-moving news.")
+            return
+        text = news_text(picks, now)
+        if a.dry_run:
+            print(text)
+            return
+        if source != "feed.json":
+            print("Only sample data is present; no news posted.")
+            return
+        if quiet_hours(now):
+            print("Quiet hours (22:00 to 07:00 IST): news waits for the first run after 07:00.")
+            return
+        token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+        if not token:
+            print("TELEGRAM_BOT_TOKEN isn't set; skipping.")
+            return
+        send_message(token, os.environ.get("TELEGRAM_CHAT_ID") or "@pulsedgein", text)
+        posted += [f"news:{now:%Y-%m-%d}:{e['id']}" for e in picks]
+        with open(POSTED, "w") as fh:
+            json.dump(posted[-2000:], fh, indent=1)
+        print("posted news:", ", ".join(e["id"] for e in picks))
+        return
 
     if a.cmd == "render":
         os.makedirs(a.out, exist_ok=True)

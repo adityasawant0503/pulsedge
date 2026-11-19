@@ -209,6 +209,14 @@ jobs:
         TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
       run: python pulse_bot.py post
       working-directory: pulsedge-bot
+    - name: Post market-moving news
+      # the most important global and economy/policy stories, up to 3 per message and 8 a day
+      continue-on-error: true
+      env:
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
+      run: python pulse_bot.py news
+      working-directory: pulsedge-bot
     - name: Evening summary
       if: github.event.schedule == '53 13 * * 1-5' || inputs.digest
       env:
