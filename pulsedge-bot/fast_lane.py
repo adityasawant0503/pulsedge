@@ -76,7 +76,11 @@ class Sorter:
 
     def __init__(self):
         self.claude = bool(os.environ.get("ANTHROPIC_API_KEY"))
-        self.cands = [] if self.claude else news.ai_candidates()
+        # Groq answers in about a second, so it goes first here; a model that takes longer than AI_TIMEOUT is
+        # skipped for ten minutes rather than holding every alert up (Gemini once took 75 s to time out)
+        cands = [] if self.claude else news.ai_candidates()
+        self.cands = sorted(cands, key=lambda c: 0 if "groq.com" in c[0] else 1)
+        news.AI_TIMEOUT = 15
         self.rest = {}
 
     def describe(self):
@@ -92,7 +96,11 @@ class Sorter:
             if self.rest.get(i, 0) > time.time():
                 continue
             try:
-                return news.classify_compat(batch, universe, *cand), cand[2]
+                res = news.classify_compat(batch, universe, *cand)
+                if res:
+                    return res, cand[2]
+                log(f"  {cand[2]}: no usable answer; trying the next model")
+                continue
             except Exception as e:
                 msg = str(e)
                 log(f"  {cand[2]}: {news.brief(msg)}")
@@ -100,8 +108,8 @@ class Sorter:
                     self.rest[i] = time.time() + 3600
                 elif msg.startswith("HTTP 429"):
                     self.rest[i] = time.time() + news.retry_after(msg, 60)
-                else:
-                    self.rest[i] = time.time() + 120
+                else:                                # slow or busy: leave it alone for ten minutes
+                    self.rest[i] = time.time() + 600
         return None, "rules"
 
 

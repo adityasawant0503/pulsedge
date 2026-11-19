@@ -357,6 +357,7 @@ def ai_candidates():
     return out
 
 
+AI_TIMEOUT = 75            # seconds to wait for a model; the fast lane sets it much lower
 DAILY = re.compile(r"per day|\bRPD\b|\bTPD\b|current quota|daily", re.I)
 
 
@@ -404,7 +405,7 @@ def classify_compat(batch, universe, url, key, model):
         # a browser-like User-Agent: Groq's API sits behind Cloudflare, which refuses Python's default one (HTTP 403)
         req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={
             "Authorization": "Bearer " + key, "Content-Type": "application/json", "Accept": "application/json", "User-Agent": UA})
-        with urllib.request.urlopen(req, timeout=75) as r:
+        with urllib.request.urlopen(req, timeout=AI_TIMEOUT) as r:
             return r.read().decode("utf-8", "replace")
     try:
         raw = send(payload)
