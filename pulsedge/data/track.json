@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T13:02:12+05:30",
+ "updated": "2026-11-19T13:12:19+05:30",
  "summary": {
-  "calls": 1802,
-  "scored_calls": 635,
+  "calls": 1806,
+  "scored_calls": 639,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "d5a74dafcedc469d",
+   "symbol": "ICICIAMC",
+   "time": "2026-11-19T13:01:15+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "ICICI Prudential Asset Management Company Limited: ICICI Prudential Asset Management Company Limited has informed the Exchange regarding 'Update on receipt of a",
+   "url": "https://nsearchives.nseindia.com/corporate/AMCSECRETARIAL_19112026130029_ICICIINTIMATIONISEC.pdf",
+   "entry_date": "2026-11-18",
+   "entry": 2949.1
+  },
+  {
+   "id": "0924ca3922b6d398",
+   "symbol": "POLICYBZR",
+   "time": "2026-11-19T12:54:27+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "PB Fintech shares slide over 6% after co-founder Alok Bansal steps down",
+   "url": "https://www.business-standard.com/markets/news/pb-fintech-shares-slide-over-6-after-co-founder-alok-bansal-steps-down-126111900475_1.html",
+   "entry_date": "2026-11-18",
+   "entry": 1035.2
+  },
   {
    "id": "22a552f5fef3c371",
    "symbol": "BLUESTARCO",
@@ -72,6 +98,32 @@
    "url": "https://t.me/Indiaredboxglobal/9685",
    "entry_date": "2026-11-18",
    "entry": 2392.0
+  },
+  {
+   "id": "0468b282e6262191",
+   "symbol": "BHARTIARTL",
+   "time": "2026-11-19T12:35:20+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Goldman Sachs names 22 ‘high-growth’ stocks; Bharti Airtel, Eternal and HDFC Bank feature in the list",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/goldman-sachs-names-22-high-growth-stocks-bharti-airtel-eternal-and-hdfc-bank-feature-in-the-list/slideshow/135981076.cms",
+   "entry_date": "2026-11-18",
+   "entry": 2132.0
+  },
+  {
+   "id": "0468b282e6262191",
+   "symbol": "ETERNAL",
+   "time": "2026-11-19T12:35:20+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Goldman Sachs names 22 ‘high-growth’ stocks; Bharti Airtel, Eternal and HDFC Bank feature in the list",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/goldman-sachs-names-22-high-growth-stocks-bharti-airtel-eternal-and-hdfc-bank-feature-in-the-list/slideshow/135981076.cms",
+   "entry_date": "2026-11-18",
+   "entry": 366.0
   },
   {
    "id": "91a3d70dd2c7e424",

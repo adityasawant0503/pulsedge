@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T13:01+05:30",
+ "updated": "2026-11-19T13:11+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -298,6 +298,22 @@
    "items": 2,
    "updated": "2026-11-18T19:23+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "POLICYBZR": {
+   "summary": "PB Fintech shares fell more than 6% after co‑founder Alok Bansal stepped down. The company is part of the Nifty 500 and operates in financial services. The exit of a key leader may raise concerns about future direction.",
+   "why": "Leadership changes can affect strategic direction and investor confidence.",
+   "upside": "",
+   "downside": "Loss of key leadership could affect strategic direction.",
+   "watch": [
+    "Co‑founder Alok Bansal's exit",
+    "Share price decline",
+    "Sector index movement"
+   ],
+   "about": "PB Fintech Ltd. operates in the financial services sector.",
+   "basis": "69a6ebe6951a",
+   "items": 1,
+   "updated": "2026-11-19T13:11+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "GMRAIRPORT": {
    "summary": "PulsEdge flagged GMR Airports as one of the top two stocks to watch in the near term after analysts suggested it could rise soon. The company may benefit from the recent market dip and positive analyst coverage. However, overall market volatility remains a risk.",
@@ -937,6 +953,22 @@
    "updated": "2026-11-19T11:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "HDFCBANK": {
+   "summary": "PulsEdge flagged HDFC Bank as part of Goldman Sachs' high‑growth list and noted a technical view that banks are near a new high after a recent Q2 sell‑off recovery. The broader financial sector fell 0.7% in the last session but rose 1.2% over the past five sessions.",
+   "why": "These signals could influence investor sentiment and affect the share price, which matters to current shareholders.",
+   "upside": "If the high‑growth label and technical breakout attract more buying, the stock could see further gains.",
+   "downside": "A broader market decline or weakness in the financial sector could limit any upside.",
+   "watch": [
+    "Goldman Sachs' inclusion of HDFC Bank in its high‑growth list",
+    "Technical breakout expectations as Nifty Bank quotes near new highs",
+    "Recovery momentum after the Q2 sell‑off"
+   ],
+   "about": "HDFC Bank Ltd. is a leading Indian commercial bank offering retail and wholesale banking services.",
+   "basis": "0e41cc654459",
+   "items": 3,
+   "updated": "2026-11-19T13:11+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "M&M": {
    "summary": "PulsEdge flagged a recent rally where Mahindra & Mahindra (M&M) and other auto stocks rose up to 5%, but the auto sector index has slipped 1.4% in the last session and 4% over the past five sessions.",
    "why": "Share price moves for M&M tend to follow the broader auto sector, so sector swings directly affect shareholders.",
@@ -1080,22 +1112,6 @@
    "items": 2,
    "updated": "2026-11-19T03:10+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "HDFCBANK": {
-   "summary": "HDFC Bank shares have recovered from a recent sell-off, with analysts noting a technical breakout in the banking sector. The stock is currently being compared with Axis Bank as both look to regain momentum.",
-   "why": "This matters because a technical breakout suggests the stock might continue moving upward, but it also indicates that recent volatility has unsettled some investors.",
-   "upside": "If the technical breakout holds, the stock could rise along with other major banks.",
-   "downside": "If the broader market falls, the positive technical bias may not materialize, and the stock could stay flat or drop.",
-   "watch": [
-    "Whether the Nifty Bank index maintains its new high",
-    "How HDFC Bank performs relative to Axis Bank",
-    "General market sentiment in the financial sector"
-   ],
-   "about": "HDFC Bank is a major financial services company and one of India's 50 largest listed firms.",
-   "basis": "ba23b89534c6",
-   "items": 2,
-   "updated": "2026-11-19T12:01+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "ICICIBANK": {
    "summary": "ICICI Bank shares are moving with the broader market, which recently saw a strong rise led by banking stocks. The Financials sector has gained 3.0% over the last five sessions.",
@@ -1242,19 +1258,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "PNB": {
-   "summary": "Punjab National Bank’s shares have surged, rising about 27% in November and hitting an eight‑year high, as government‑owned banks rally toward record levels. The bank also announced a distribution partnership with SBI Mutual Fund, while reporting regulatory actions against it.",
-   "why": "The sharp price gains and new partnership could boost earnings, but regulatory scrutiny may weigh on future performance.",
-   "upside": "If the SBI partnership drives more customers and the rally sustains, the share price could rise further.",
-   "downside": "Regulatory actions could result in penalties or operational restrictions, hurting the bank’s outlook.",
+   "summary": "PulsEdge flagged that Punjab National Bank (PNB) shares have jumped sharply, up about 31% in a month and near an all‑time high, as PSU bank stocks rally. The bank also announced a distribution partnership with SBI Mutual Fund, while reporting regulatory actions taken against it.",
+   "why": "Shareholders see rapid price gains and a new partnership that could expand the bank’s customer base, but regulatory scrutiny could affect future performance.",
+   "upside": "If the SBI partnership rolls out smoothly, it could bring more customers and support the share price.",
+   "downside": "Regulatory actions could lead to penalties or operational restrictions, and the recent rally may be overextended.",
    "watch": [
-    "Continuation of the PSU bank rally",
-    "Progress of the SBI mutual fund distribution partnership",
-    "Any further regulatory developments or penalties"
+    "Progress on the SBI mutual fund distribution network",
+    "Details and outcomes of the regulatory actions",
+    "Continuation of the PSU bank rally and sector momentum"
    ],
-   "about": "Punjab National Bank is a government‑owned bank that offers a range of financial services in India.",
-   "basis": "e071174f1c6f",
-   "items": 5,
-   "updated": "2026-11-19T12:30+05:30",
+   "about": "Punjab National Bank is a government‑owned commercial bank in India that provides a range of banking services.",
+   "basis": "3aa1dde623a2",
+   "items": 4,
+   "updated": "2026-11-19T13:11+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "POLYCAB": {
@@ -1289,6 +1305,22 @@
    "updated": "2026-11-18T11:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "ETERNAL": {
+   "summary": "Eternal Ltd. was named by Goldman Sachs as a high‑growth stock and has joined five stocks that recently hit 52‑week highs, with its share price rallying up to 15% over the past month.",
+   "why": "These developments can influence investor sentiment and may affect the market price of the shares you hold.",
+   "upside": "If the positive momentum and analyst attention continue, the stock could keep climbing.",
+   "downside": "A shift in broader market sentiment could quickly reverse the rally.",
+   "watch": [
+    "Goldman Sachs' high‑growth stock list inclusion",
+    "Sustaining the 52‑week high and recent price rally",
+    "Overall market sentiment and any new analyst commentary"
+   ],
+   "about": "Eternal Ltd. operates in the consumer services sector and is a constituent of India's Nifty 50 index.",
+   "basis": "893fe07b7a30",
+   "items": 2,
+   "updated": "2026-11-19T13:11+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "NTPC": {
    "summary": "PulsEdge flagged a tragic accident at NTPC's Tandwa project where three workers died and two were injured, and an investigation is now under way. The Energy sector index was flat over the past five sessions, showing little market movement.",
    "why": "Shareholders should watch the incident because it could pause work, raise safety costs, or attract regulatory scrutiny that may affect earnings.",
@@ -1303,6 +1335,38 @@
    "basis": "6d6aa8ded454",
    "items": 2,
    "updated": "2026-11-18T14:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "BHARTIARTL": {
+   "summary": "PulsEdge flagged that Goldman Sachs listed Bharti Airtel among its 22 high‑growth stocks, highlighting it as a potential long‑term winner.",
+   "why": "The mention may draw attention from investors who follow big‑bank lists, possibly influencing the stock’s demand.",
+   "upside": "If investors act on the recommendation, buying pressure could lift the share price.",
+   "downside": "Analyst opinions are not guarantees; the stock could underperform if expectations are not met.",
+   "watch": [
+    "Any follow‑up commentary from Goldman Sachs or other analysts",
+    "Changes in investor sentiment after the high‑growth list release",
+    "Upcoming earnings or financial disclosures from Bharti Airtel"
+   ],
+   "about": "Bharti Airtel Ltd. is a leading Indian telecommunications company providing mobile and broadband services.",
+   "basis": "e5f80fc59bf5",
+   "items": 1,
+   "updated": "2026-11-19T13:11+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "INDIGO": {
+   "summary": "PulsEdge flagged no company‑specific news for InterGlobe Aviation Ltd. (INDIGO) in the recent days. The only note is that it remains one of the 50 largest listed firms in India’s Nifty 50 index.",
+   "why": "Being part of the Nifty 50 means the stock can be affected by broader index movements and fund flows that track the index.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "Changes in the Nifty 50 composition or weighting",
+    "Any future inclusion in high‑growth stock lists by major banks",
+    "Quarterly earnings and passenger traffic trends"
+   ],
+   "about": "InterGlobe Aviation Ltd. operates IndiGo, a low‑cost airline and one of India’s largest carriers.",
+   "basis": "e5f80fc59bf5",
+   "items": 1,
+   "updated": "2026-11-19T13:11+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ADANIPOWER": {
@@ -1447,22 +1511,6 @@
    "items": 1,
    "updated": "2026-11-18T15:15+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "CANBK": {
-   "summary": "Canara Bank shares have risen sharply as the banking sector hit record highs. Recent media comparisons with other public sector banks have drawn attention to its recent price gains.",
-   "why": "If you own these shares, the recent rise means your investment value has increased, but the sector's strong performance could also lead to a correction if the broader market slows down.",
-   "upside": "Continued positive sentiment in the banking sector may support further gains for the stock.",
-   "downside": "The banking sector could reverse if the broader market experiences a pullback.",
-   "watch": [
-    "Broader market trends that affect the banking sector",
-    "Comparisons with other public sector banks",
-    "Future sector index movements"
-   ],
-   "about": "Canara Bank is a financial services company listed in India's Nifty 500 index.",
-   "basis": "ae07505f67af",
-   "items": 1,
-   "updated": "2026-11-18T08:46+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "COALINDIA": {
    "summary": "Coal India is currently in the news because its subsidiary, Mahanadi Coalfields, is selling shares to the public for the first time. Early signs suggest that investor interest in this new sale is lower than expected, with the grey market premium remaining low.",
