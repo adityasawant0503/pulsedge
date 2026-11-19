@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T11:15+05:30",
+ "updated": "2026-11-19T11:31+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a sharp fall in Paytm, Pine Labs and other payment stocks after the government delayed a new UPI fee, which could cut their transaction earnings. BLS Polymers surged to a record high on strong Q2 results, while several companies announced deals or investments, such as Cyient’s partnership with GlobalFoundries and LT Foods’ acquisition of MK Foods. Sector indices showed mixed moves, with PSU banks gaining and consumer durables slipping, and foreign funds held a modest net‑long position. The market stayed flat overall, with the Sensex unchanged and the Nifty hovering just below 25,200.",
+  "summary": "Payment stocks like Paytm and Pine Labs fell sharply because a new fee rule for digital payments may be delayed. Meanwhile, auto and bank stocks showed strength, with car makers rising up to 5%. BLS Polymers hit a record high after reporting strong profits. Dalmia Bharat is set to discuss a share buyback plan next week.",
   "themes": [
-   "Payment fee delay pressures payment‑sector stocks",
-   "Earnings beats and corporate deals lift select shares",
-   "Sector performance varies and foreign fund stance stays modest"
+   "Uncertainty over digital payment fees hurt fintech stocks",
+   "Auto and banking sectors showed resilience",
+   "Strong earnings boosted specific company shares"
   ],
   "watch": [
-   "Potential further delays or clarification of the UPI MDR fee and its impact on payment companies",
-   "Progress on BLS Polymers earnings momentum and LT Foods’ integration of MK Foods",
-   "Changes in foreign fund positioning and how they affect broader market sentiment"
+   "Dalmia Bharat board meeting on November 23 for buyback details",
+   "Potential impact of the UPI fee delay on payment company earnings",
+   "Whether auto sector gains continue or reverse"
   ],
   "date": "2026-11-19",
-  "basis": "66f48fe02685",
-  "updated": "2026-11-19T10:45+05:30",
-  "model": "openai/gpt-oss-120b",
-  "items": 36
+  "basis": "643b78af155c",
+  "updated": "2026-11-19T11:31+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 56
  },
  "stocks": {
   "PAYTM": {
@@ -123,22 +123,6 @@
    "updated": "2026-11-19T08:11+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "ONGC": {
-   "summary": "ONGC secured a subsea installation contract worth about ₹100 crore for a pipeline replacement project, which could lift revenue. At the same time, the company faced a major gas leak in Andhra's Konaseema district and related safety shutdowns, raising short‑term operational concerns.",
-   "why": "The contract may improve earnings, while the leak could cut production and add safety or regulatory costs, affecting shareholders' returns.",
-   "upside": "The new subsea installation contract could boost ONGC’s revenue and outlook.",
-   "downside": "The gas leak and associated safety measures could reduce output and lead to additional costs or penalties.",
-   "watch": [
-    "Progress on the ₹100 crore subsea installation contract",
-    "Resolution of the Konaseema gas leak and any production impact",
-    "Potential regulatory actions or fines related to the safety incidents"
-   ],
-   "about": "ONGC explores, produces and transports oil and natural gas in India.",
-   "basis": "d3a075f1bd83",
-   "items": 5,
-   "updated": "2026-11-19T10:45+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "JIOFIN": {
    "summary": "Jio Financial Services Ltd. has announced an acquisition and entered a 50:50 joint venture with BlackRock for asset management. Both moves aim to strengthen its growth and earnings potential. The company is also one of India's 50 largest listed firms in the Nifty 50 index.",
    "why": "These developments could increase the company's revenue streams and market presence, directly affecting shareholder value.",
@@ -156,20 +140,20 @@
    "model": "openai/gpt-oss-20b"
   },
   "GROWW": {
-   "summary": "Billionbrains Garage Ventures Ltd. (GROWW) has seen several large block deals recently. Major institutional investors such as BlackRock, Fidelity, Societe Generale, and Kotak Mahindra MF bought a combined stake worth about ₹1,905 crore, while Ribbit Capital and Ribbit Cayman sold large blocks of shares.",
-   "why": "These moves show that big investors are actively trading the stock, which can influence its price and signal their view of the company’s prospects.",
-   "upside": "The significant institutional buying may indicate confidence in the company’s future.",
-   "downside": "Large sales by major investors could signal concerns or a need for liquidity.",
+   "summary": "PulsEdge flagged that major global and Indian investment funds, including BlackRock and Kotak MF, bought a combined stake worth roughly Rs 1,905 crore in Groww. At the same time, another large investor, Ribbit Capital, sold a significant portion of its holdings in the same period.",
+   "why": "This matters because it shows a shift in ownership from one large investor to several others, which can indicate changing views on the company's value among professional money managers.",
+   "upside": "The entry of prominent global and domestic funds may signal confidence in the company's long-term potential.",
+   "downside": "The simultaneous large-scale selling by Ribbit Capital could create price volatility or suggest that some investors are taking profits.",
    "watch": [
-    "Future block deals by major investors",
-    "Price reaction to the recent buy/sell activity",
-    "Sector index performance for financials"
+    "Whether the new buyers hold their shares or sell them in the near future.",
+    "Any further large block deals involving major institutional investors.",
+    "How the company's stock price reacts to these large ownership changes."
    ],
-   "about": "",
-   "basis": "1194ffef6b96",
-   "items": 18,
-   "updated": "2026-11-18T19:23+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "Billionbrains Garage Ventures Ltd. is a Financial Services company listed on the NSE.",
+   "basis": "d169a2337249",
+   "items": 17,
+   "updated": "2026-11-19T11:31+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "KAYNES": {
    "summary": "Kaynes Technology has slowed smart meter deliveries to focus on collecting pending dues from state authorities, leading to a sharp drop in quarterly profit and a 16% fall in share price over two sessions.",
@@ -217,6 +201,22 @@
    "basis": "2a88b9e7414b",
    "items": 4,
    "updated": "2026-11-19T11:01+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "ONGC": {
+   "summary": "ONGC recently won a subsea installation contract worth about ₹100 crore for a pipeline project. At the same time, the company managed a gas leak at a well site by evacuating nearby residents and cutting power to ensure safety.",
+   "why": "The new contract adds to the company's revenue, while the gas leak may cause short-term delays or extra costs that affect operations.",
+   "upside": "The new pipeline contract could boost revenue and improve the company's outlook.",
+   "downside": "The gas leak incident might lead to operational delays, regulatory scrutiny, or higher costs.",
+   "watch": [
+    "Updates on the gas leak situation and when normal operations resume",
+    "Progress on the new ₹100 crore subsea installation contract",
+    "Any regulatory actions or fines related to the safety incident"
+   ],
+   "about": "ONGC is a major Indian company in the oil and gas sector and is one of the 50 largest listed companies in India.",
+   "basis": "9ea1781c9cef",
+   "items": 4,
+   "updated": "2026-11-19T11:31+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ANGELONE": {
@@ -346,6 +346,22 @@
    "items": 6,
    "updated": "2026-11-19T11:01+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "DALBHARAT": {
+   "summary": "Dalmia Bharat's board will meet on November 23 to consider a proposal to buy back some of its own shares. This plan is currently under review and has not yet been approved.",
+   "why": "A share buyback can return cash to shareholders and often supports the stock price, which may benefit current owners if approved.",
+   "upside": "If the board approves the buyback, it could signal that the company believes its shares are undervalued, potentially boosting investor confidence.",
+   "downside": "The buyback is only on the agenda and may be delayed, cancelled, or approved at a size that disappoints market expectations.",
+   "watch": [
+    "The outcome of the November 23 board meeting regarding the buyback proposal.",
+    "The specific size and terms of the buyback if it is approved.",
+    "General market attention on the stock, which can lead to higher price volatility."
+   ],
+   "about": "Dalmia Bharat is a company in the construction materials sector.",
+   "basis": "0873e2a128a0",
+   "items": 4,
+   "updated": "2026-11-19T11:31+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "ACMESOLAR": {
    "summary": "Acme Solar Holdings recently signed a new agreement to sell electricity and reported receiving additional orders. These moves suggest the company is securing future work in the power sector.",
@@ -1337,22 +1353,6 @@
    "updated": "2026-11-18T11:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "DALBHARAT": {
-   "summary": "Dalmia Bharat Ltd. is currently on PulsEdge’s watchlist and is set to hold a board meeting on November 23 to consider a share buyback. The market is paying close attention to these developments, which could lead to increased stock activity.",
-   "why": "A buyback, if approved, can be seen as a sign that the company believes its shares are undervalued, which matters to existing shareholders.",
-   "upside": "Approval of the share buyback could boost earnings per share and support the stock price.",
-   "downside": "If the buyback is delayed or cancelled, the expected benefit to shareholders may not materialize.",
-   "watch": [
-    "Outcome of the November 23 board meeting on the share buyback",
-    "Impact of being on the watchlist on stock volatility",
-    "Any further corporate announcements from Dalmia Bharat"
-   ],
-   "about": "Dalmia Bharat Ltd. manufactures cement and other construction materials.",
-   "basis": "002509414fb0",
-   "items": 3,
-   "updated": "2026-11-19T08:11+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "ADANIPOWER": {
    "summary": "Adani Power plans to increase its steady electricity generation capacity to 45 GW by 2032. A major investment bank recently listed the company among large-cap stocks it expects to perform well.",
    "why": "This expansion plan signals long-term growth, but it will likely require significant borrowing to build new power plants.",
@@ -1417,19 +1417,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "EICHERMOT": {
-   "summary": "Eicher Motors shares rose 3% recently as brokerages highlighted growth in premium motorcycles, but the stock saw a price adjustment the following day. The company also announced the grant of 105 employee stock options.",
-   "why": "Shareholders may see short-term price swings due to analyst sentiment and option grants, while the broader auto sector has recently declined.",
-   "upside": "Positive views on premium motorcycle growth could support the stock price.",
-   "downside": "Competition in the 350cc-650cc bike segment and potential dilution from new employee options could pressure the stock.",
+   "summary": "Eicher Motors shares recently rose, including a 3% jump that made it a top gainer in the auto sector. This happened while the broader auto sector index was falling over the last few days.",
+   "why": "Shareholders may see this as a sign that investors are confident in the company's performance, particularly in its premium motorcycle business, despite general weakness in the auto sector.",
+   "upside": "Growth in the premium motorcycle segment could continue to support the company's results.",
+   "downside": "Competition from other domestic and international bike makers in the 350cc-650cc range could limit growth, and new employee stock options might slightly reduce the value of existing shares.",
    "watch": [
-    "How the stock reacts to the recent price adjustment.",
-    "The impact of the 105 new employee stock options on existing shares.",
-    "Performance of the broader auto sector index."
+    "How the stock performs compared to the rest of the auto sector.",
+    "Sales figures for premium motorcycles.",
+    "Whether the newly granted employee stock options are exercised."
    ],
-   "about": "Eicher Motors is an Indian automobile and auto components company that is part of the Nifty 50 index.",
-   "basis": "3896b03687b5",
-   "items": 3,
-   "updated": "2026-11-19T03:10+05:30",
+   "about": "Eicher Motors is an Indian automobile and auto components manufacturer.",
+   "basis": "c3b1748de437",
+   "items": 4,
+   "updated": "2026-11-19T11:31+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "PNBHOUSING": {

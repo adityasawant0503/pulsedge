@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T11:16:32+05:30",
+ "updated": "2026-11-19T11:31:23+05:30",
  "summary": {
-  "calls": 1787,
-  "scored_calls": 620,
+  "calls": 1788,
+  "scored_calls": 621,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "3865a62422575452",
+   "symbol": "DALBHARAT",
+   "time": "2026-11-19T11:20:00+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Dalmia Bharat buyback alert! Board to consider share repurchase proposal next week on Nov 23 - Key details | Buy or sell",
+   "url": "https://www.livemint.com/market/stock-market-news/dalmia-bharat-buyback-alert-board-to-consider-share-repurchase-proposal-next-week-on-nov-23-key-details-buy-or-sell-11795064602871.html",
+   "entry_date": "2026-11-18",
+   "entry": 1510.9
+  },
   {
    "id": "b13e46ce49e5b06b",
    "symbol": "OIL",
