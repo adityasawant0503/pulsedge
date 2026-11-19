@@ -1,0 +1,4301 @@
+{
+ "note": "Every Act (buy/sell) alert posted to @pulsedgein from 10 Nov 2026, as it was sorted then, with what each stock did next. Moves are % in the alert's direction from the first NSE close after posting: pre = news day (close before the news to that close), s1/s5 = 1 and 5 sessions later, x1/x5 = the same against the average Nifty 500 stock. null = prices not in yet. Used by eval_act.py to test changes to the Act checks before they ship.",
+ "prices_to": "2026-11-18",
+ "alerts": [
+  {
+   "id": "f7d6dbf77e885f96",
+   "time": "2026-11-09T10:00:40+05:30",
+   "headline": "Honasa Consumer gains 5% as brokerages raise target, earnings post Q2",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/honasa-consumer-share-price-gains-5-as-brokerages-raise-target-earnings-post-q2-126110900201_1.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "HONASA",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "FMCG"
+   ],
+   "impact": 65,
+   "confidence": 70,
+   "category": "Earnings",
+   "reason": [
+    "Gained following target price upgrades post earnings."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "In 2026 so far, Honasa shares have climbed 70 per cent and are up 76 per cent on a one-year basis, according to NSE data.",
+   "posted": "2026-11-09T20:12:47+00:00",
+   "moves": {
+    "HONASA": {
+     "pre": 3.78,
+     "s1": 0.4,
+     "x1": -0.68,
+     "s5": 6.97,
+     "x5": 6.22
+    }
+   }
+  },
+  {
+   "id": "bc1769fd6fb1bcd6",
+   "time": "2026-11-09T11:02:22+05:30",
+   "headline": "PSU Banks in focus; SBI, BOI, PNB, Indian Bank, Canara, UBI gain up to 3%",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/psu-banks-in-focus-sbi-boi-pnb-indian-bank-canara-ubi-gain-up-to-3-126110900233_1.html",
+   "section": "trading",
+   "call": "buy",
+   "horizon": "intraday",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "INDIANB",
+     "direction": "up"
+    },
+    {
+     "symbol": "PNB",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Banking"
+   ],
+   "impact": 60,
+   "confidence": 70,
+   "category": "Sectoral Move",
+   "reason": [
+    "Nifty PSU Bank index led sectoral gains.",
+    "Broad-based buying seen across state-owned lenders."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "The Nifty PSU Bank index was the top gainer among sectoral indices up 2% in Monday's intraday deals, while the Nifty slipped 0.3%.",
+   "posted": "2026-11-09T20:12:47+00:00",
+   "moves": {
+    "INDIANB": {
+     "pre": 3.51,
+     "s1": 0.18,
+     "x1": -0.9,
+     "s5": 0.25,
+     "x5": -0.51
+    },
+    "PNB": {
+     "pre": 4.44,
+     "s1": 4.77,
+     "x1": 3.69,
+     "s5": 13.49,
+     "x5": 12.74
+    }
+   }
+  },
+  {
+   "id": "c2aca34d9375a5d2",
+   "time": "2026-11-09T11:38:33+05:30",
+   "headline": "Multibagger stock: Sai Life Sciences surges 9% to record high after Q2 nos",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/multibagger-stock-sai-life-sciences-surges-9-to-record-high-after-q2-nos-126110900299_1.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "SAILIFE",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Pharma"
+   ],
+   "impact": 75,
+   "confidence": 80,
+   "category": "Earnings",
+   "reason": [
+    "Strong Q2 net profit and revenue growth.",
+    "Stock hit record highs following the announcement."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Sai Life Sciences' consolidated net profit increased by 17 per cent Y-o-Y to ₹98 crore in the September quarter of FY27. Its revenue grew by 23 per cent Y-o-Y to ₹659 crore.",
+   "posted": "2026-11-09T20:12:47+00:00",
+   "moves": {
+    "SAILIFE": {
+     "pre": 2.9,
+     "s1": 4.45,
+     "x1": 3.37,
+     "s5": -4.64,
+     "x5": -5.4
+    }
+   }
+  },
+  {
+   "id": "075014d3af127e9e",
+   "time": "2026-11-09T12:09:56+05:30",
+   "headline": "Nuvama Wealth Management Q2 Results: Profit rises 19% YoY to Rs 304 crore",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/nuvama-wealth-management-q2-results-profit-rises-19-yoy-to-rs-304-crore/articleshow/135673703.cms",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "NUVAMA",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Financials"
+   ],
+   "impact": 65,
+   "confidence": 75,
+   "category": "earnings",
+   "reason": [
+    "Healthy YoY profit and revenue growth in Q2."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Nuvama Wealth Management Ltd achieved a consolidated net profit of Rs 303.5 crore for Q2 FY27. The company saw a revenue increase of 20.35% to Rs 1,366 crore for the same quarter. Client assets reached Rs 5.5 lakh crore, reflecting a 25% year-on-year growth. Wealth management, asset services, and ca",
+   "posted": "2026-11-09T20:12:47+00:00",
+   "moves": {
+    "NUVAMA": {
+     "pre": 1.24,
+     "s1": -1.47,
+     "x1": -2.55,
+     "s5": 0.92,
+     "x5": 0.17
+    }
+   }
+  },
+  {
+   "id": "d25eac645197a7d8",
+   "time": "2026-11-09T12:23:39+05:30",
+   "headline": "Pharma shares shine: Sai, Gland, Divi's, Laurus, Glenmark surge up to 9%",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/pharma-shares-shine-sai-gland-divi-s-laurus-glenmark-surge-up-to-9-126110900372_1.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "GLAND",
+     "direction": "up"
+    },
+    {
+     "symbol": "GLENMARK",
+     "direction": "up"
+    },
+    {
+     "symbol": "LAURUSLABS",
+     "direction": "up"
+    },
+    {
+     "symbol": "SAILIFE",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Pharma"
+   ],
+   "impact": 75,
+   "confidence": 80,
+   "category": "sector momentum",
+   "reason": [
+    "Multiple pharma stocks hitting record highs indicate strong sectoral momentum."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Divi's Labs, Laurus Labs, Sai Life Sciences and Glenmark Pharma quoted at their respective record highs in Monday's trade.",
+   "posted": "2026-11-09T20:12:47+00:00",
+   "moves": {
+    "GLAND": {
+     "pre": 4.2,
+     "s1": -1.17,
+     "x1": -2.25,
+     "s5": -1.64,
+     "x5": -2.39
+    },
+    "GLENMARK": {
+     "pre": 3.13,
+     "s1": 0.23,
+     "x1": -0.85,
+     "s5": -2.07,
+     "x5": -2.82
+    }
+   }
+  },
+  {
+   "id": "c427b81bd60540b8",
+   "time": "2026-11-09T12:32:11+05:30",
+   "headline": "HFCL shares locked in 5% lower circuit, down 21% in a month despite record Q2 profit: What lies ahead?",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/hfcl-shares-locked-in-5-lower-circuit-down-21-in-a-month-despite-record-q2-profit-what-lies-ahead-11794206445672.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "HFCL",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Telecom"
+   ],
+   "impact": 65,
+   "confidence": 75,
+   "category": "earnings",
+   "reason": [
+    "Lower circuit hit despite strong numbers suggests profit booking or valuation concerns."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "HFCL shares hit the 5% lower circuit despite record Q2 FY27 results, with net profit rising to ₹394.22 crore and revenue more than doubling. The company expects at least 80% FY27 revenue growth, backed by a ₹28,900 crore order book and planned ₹1,800 crore capacity investments.",
+   "posted": "2026-11-09T20:12:47+00:00",
+   "moves": {
+    "HFCL": {
+     "pre": 1.99,
+     "s1": -2.86,
+     "x1": -1.78,
+     "s5": 8.85,
+     "x5": 9.61
+    }
+   }
+  },
+  {
+   "id": "3a5cdde60db0bba6",
+   "time": "2026-11-09T15:09:55+05:30",
+   "headline": "Data Patterns shares zoom 9% post Q2 show, nearly double from Jan lows",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/data-patterns-shares-zoom-9-post-q2-show-nearly-double-from-jan-lows-126110900563_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "DATAPATTNS",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Defense"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "earnings",
+   "reason": [
+    "Significant YoY drop in profit after tax for Q2."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Data Patterns posted a profit after tax (PAT) of 21.97 crore in Q2 FY27 as against 49.19 crore in Q2 FY26, a reduction of 55.3 per cent year-on-year (YoY).",
+   "posted": "2026-11-09T20:12:47+00:00",
+   "moves": {
+    "DATAPATTNS": {
+     "pre": -6.83,
+     "s1": -0.67,
+     "x1": 0.41,
+     "s5": -4.74,
+     "x5": -3.99
+    }
+   }
+  },
+  {
+   "id": "381d6fa7b320625d",
+   "time": "2026-11-09T20:37:33+05:30",
+   "headline": "HSBC upgrades Indian equities to 'overweight', cuts China to 'neutral'",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/hsbc-upgrades-indian-equities-to-overweight-cuts-china-to-neutral-126110901244_1.html",
+   "section": "macro",
+   "call": "buy",
+   "horizon": "positional",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "Nifty 50"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "broker_upgrade",
+   "reason": [
+    "HSBC upgraded Indian equities to 'overweight' citing reasonable valuations and earnings resilience.",
+    "Positive sentiment shift from major foreign brokerages can drive inflows."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "HSBC upgraded Indian equities to 'overweight' after a market correction, citing reasonable valuations, resilient earnings and strong credit growth, while downgrading Chinese stocks to 'neutral",
+   "posted": "2026-11-09T20:12:47+00:00",
+   "moves": {}
+  },
+  {
+   "id": "5bc554c43a0b2d1a",
+   "time": "2026-11-10T01:33:43+05:30",
+   "headline": "Oil down more than $7 a barrel in post settlement trade as Trump signals restraint on Iran",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/oil-down-more-than-7-a-barrel-in-post-settlement-trade-as-trump-signals-restraint-on-iran-11794254623929.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "OIL",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Energy",
+    "Oil & Gas"
+   ],
+   "impact": 65,
+   "confidence": 70,
+   "category": "Commodities",
+   "reason": [
+    "Crude oil prices dropped significantly following signals of restraint on Iran.",
+    "Negative impact on oil exploration companies' realizations."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "GLOBAL-OIL:Oil down more than $7 a barrel in post settlement trade as Trump signals restraint on Iran",
+   "posted": "2026-11-09T20:12:47+00:00",
+   "moves": {
+    "OIL": {
+     "pre": 0.0,
+     "s1": 1.55,
+     "x1": 0.47,
+     "s5": -1.25,
+     "x5": -2.01
+    }
+   }
+  },
+  {
+   "id": "3919bbb2b8436c19",
+   "time": "2026-11-10T07:15:29+05:30",
+   "headline": "Oil falls as Trump downplays prospect of escalation with Iran",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-falls-as-trump-downplays-prospect-of-escalation-with-iran/articleshow/135696497.cms",
+   "section": "macro",
+   "call": "buy",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "OIL",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Oil & Gas"
+   ],
+   "impact": 60,
+   "confidence": 70,
+   "category": "Commodities",
+   "reason": [
+    "Lower crude prices reduce realization concerns for upstream producers like OIL."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Oil prices fell due to President Trump's announcement regarding US military action against Iran, easing supply concerns. Brent crude futures dropped to $92.33 per barrel while WTI futures reached $86.50. Trump stated he would maintain a naval blockade in the Strait of Hormuz temporarily. OPEC's oil ",
+   "posted": "2026-11-10T05:58:27+00:00",
+   "moves": {
+    "OIL": {
+     "pre": 0.0,
+     "s1": 1.55,
+     "x1": 0.47,
+     "s5": -1.25,
+     "x5": -2.01
+    }
+   }
+  },
+  {
+   "id": "b71935bed352d645",
+   "time": "2026-11-10T16:22:44+05:30",
+   "headline": "Bajaj Finance issues 5.74 crore warrants to promoter for Rs 5,799 crore",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/bajaj-finance-issues-5-74-crore-warrants-to-promoter-for-rs-5799-crore/articleshow/135708439.cms",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "BAJFINANCE",
+     "direction": "up"
+    },
+    {
+     "symbol": "BAJAJFINSV",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Financial Services"
+   ],
+   "impact": 65,
+   "confidence": 85,
+   "category": "Capital Raising",
+   "reason": [
+    "Promoter infusion of Rs 5,799 crore via warrants shows strong backing.",
+    "Strengthens the capital adequacy of Bajaj Finance."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Bajaj Finance has allotted 5.74 crore warrants to its promoter, Bajaj Finserv, for Rs 5,799 crore. The special committee of the board approved the issue at an issue price of Rs 1,010 per warrant. Each warrant is convertible into an equivalent number of equity shares of the company. A minimum of 25 p",
+   "posted": "2026-11-10T11:30:00+00:00",
+   "moves": {
+    "BAJFINANCE": {
+     "pre": 1.31,
+     "s1": 3.36,
+     "x1": 2.65,
+     "s5": 1.4,
+     "x5": 2.61
+    },
+    "BAJAJFINSV": {
+     "pre": 0.44,
+     "s1": 2.28,
+     "x1": 1.58,
+     "s5": 0.61,
+     "x5": 1.82
+    }
+   }
+  },
+  {
+   "id": "4b0f53f16499fe26",
+   "time": "2026-11-10T16:40:22+05:30",
+   "headline": "IIFL Finance Limited: IIFL Finance Limited has informed the Exchange regarding a press release dated November 10, 2026, titled \"IIFL Finance to Raise ₹6,414 Crores ($686 million) in One of the Largest Primary Private Equity Infusions in a Lis",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/IIFL_10112026164007_SEIntimation.pdf",
+   "section": "news",
+   "call": "buy",
+   "horizon": "positional",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "IIFL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Financial Services"
+   ],
+   "impact": 85,
+   "confidence": 90,
+   "category": "Fund Raising",
+   "reason": [
+    "Massive private equity capital infusion of Rs 6,414 Crores significantly boosts growth capital.",
+    "One of the largest primary PE infusions in the sector."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "IIFL Finance Limited: IIFL Finance Limited has informed the Exchange regarding a press release dated November 10, 2026, titled \"IIFL Finance to Raise ₹6,414 Crores ($686 million) in One of the Largest Primary Private Equity Infusions in a Lis",
+   "posted": "2026-11-10T11:30:00+00:00",
+   "moves": {
+    "IIFL": {
+     "pre": 6.26,
+     "s1": -0.47,
+     "x1": -1.17,
+     "s5": -0.65,
+     "x5": 0.57
+    }
+   }
+  },
+  {
+   "id": "0323a9fec4eeb632",
+   "time": "2026-11-11T06:30:09+05:30",
+   "headline": "Higher input costs drag MRF Q2 net profit down 23%",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/higher-input-costs-drag-mrf-q2-net-profit-down-23/articleshow/135722166.cms",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "MRF",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Automobile Ancillaries"
+   ],
+   "impact": 70,
+   "confidence": 85,
+   "category": "Earnings",
+   "reason": [
+    "Q2 net profit fell 22.8% due to higher input costs.",
+    "Margin pressure may continue in the near term."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Tyre maker MRF Ltd reported a 22.8% decline in net profit for the July-September quarter. Revenue from operations saw a growth of 17.4%, reaching Rs 8,660.19 crore compared to the previous year. However, total expenses also rose significantly, driven by sharp increases in raw material costs. The com",
+   "posted": "2026-11-11T02:48:25+00:00",
+   "moves": {
+    "MRF": {
+     "pre": -1.61,
+     "s1": -1.16,
+     "x1": -0.45,
+     "s5": -1.35,
+     "x5": -2.56
+    }
+   }
+  },
+  {
+   "id": "9582e22842648e33",
+   "time": "2026-11-11T07:40:48+05:30",
+   "headline": "Hindalco, Airtel among 2 stock recommendations by Kotak's Shrikant Chouhan",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/stocks-to-buy-today-hindalco-airtel-among-2-stock-recommendations-by-kotak-s-shrikant-chouhan-126111100077_1.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "HINDALCO",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Metals"
+   ],
+   "impact": 60,
+   "confidence": 70,
+   "category": "Analyst Recommendation",
+   "reason": [
+    "Strong copper profitability and gradual recovery at Novelis.",
+    "Positive brokerage recommendation."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Shrikant Chouhan remains constructive on Hindalco's outlook, supported by strong copper profitability, gradual recovery at Novelis, and continued progress on strategic growth initiatives.",
+   "posted": "2026-11-11T02:48:25+00:00",
+   "moves": {
+    "HINDALCO": {
+     "pre": 0.24,
+     "s1": 0.18,
+     "x1": -0.53,
+     "s5": -6.47,
+     "x5": -5.26
+    }
+   }
+  },
+  {
+   "id": "62a54395c0a3f394",
+   "time": "2026-11-11T08:51:06+05:30",
+   "headline": "HEG Advanced Materials Limited: HEG Advanced Materials Limited has informed the Exchange regarding a press release dated November 11, 2026, titled \"TACC Receives Approval Letter for Rs 609.50 Crore Incentive under ECMS for its Synthetic Graphite Anode ",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/HEGAM_11112026085043_StEX_TACC_Subsidy_Press_release.pdf",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "HEGAM",
+     "direction": "up"
+    },
+    {
+     "symbol": "GRAPHITE",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Industrial Materials",
+    "Chemicals"
+   ],
+   "impact": 68,
+   "confidence": 75,
+   "category": "government_incentives",
+   "reason": [
+    "Secured a significant Rs 609.50 crore incentive approval under the ECMS scheme for synthetic graphite anode capacity.",
+    "Substantial capital subsidy improves project economics and accelerates entry into EV battery supply chain."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "HEG Advanced Materials Limited: HEG Advanced Materials Limited has informed the Exchange regarding a press release dated November 11, 2026, titled \"TACC Receives Approval Letter for Rs 609.50 Crore Incentive under ECMS for its Synthetic Graphite Anode ",
+   "posted": "2026-11-11T03:30:48+00:00",
+   "moves": {
+    "HEGAM": {
+     "pre": 0.06,
+     "s1": -3.0,
+     "x1": -3.71,
+     "s5": -7.52,
+     "x5": -6.31
+    },
+    "GRAPHITE": {
+     "pre": 1.36,
+     "s1": 3.26,
+     "x1": 2.55,
+     "s5": 1.16,
+     "x5": 2.38
+    }
+   }
+  },
+  {
+   "id": "fbea5e5c0a29747c",
+   "time": "2026-11-11T09:33:17+05:30",
+   "headline": "Stock Market Today: Massive jump in Sensex, Nifty! ₹4.5 lakh cr wealth added in a few mins - Reasons for bullish party",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/stock-market-today-massive-jump-in-sensex-nifty-rs-4-5-lakh-cr-wealth-added-in-a-few-mins-reasons-for-bullish-party-11794369074218.html",
+   "section": "trading",
+   "call": "buy",
+   "horizon": "intraday",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "HDFCBANK",
+     "direction": "up"
+    },
+    {
+     "symbol": "INDIGO",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Banking",
+    "Aviation"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "Market Rally",
+   "reason": [
+    "Broad market rally driven by heavyweights like HDFC Bank and IndiGo.",
+    "Strong positive market sentiment and wealth creation."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "The Sensex and Nifty climbed more than 1% in Wednesday trading, led by gains in major stocks including IndiGo, M&amp;M and HDFC Bank. Mid- and small-cap shares also advanced as easing oil prices and improved investor sentiment buoyed markets.",
+   "posted": "2026-11-11T04:17:07+00:00",
+   "moves": {
+    "HDFCBANK": {
+     "pre": 1.06,
+     "s1": 0.71,
+     "x1": 0.0,
+     "s5": 0.19,
+     "x5": 1.4
+    },
+    "INDIGO": {
+     "pre": 4.33,
+     "s1": -0.09,
+     "x1": -0.79,
+     "s5": -2.92,
+     "x5": -1.71
+    }
+   }
+  },
+  {
+   "id": "2dd4b3360af7a947",
+   "time": "2026-11-11T09:38:27+05:30",
+   "headline": "IIFL Finance-Blackstone deal: Stock gains 4%; brokerages decode impact",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/iifl-finance-blackstone-deal-stock-gains-4-brokerages-decode-impact-126111100226_1.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "IIFL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Financials"
+   ],
+   "impact": 75,
+   "confidence": 85,
+   "category": "Corporate Action",
+   "reason": [
+    "Blackstone to invest Rs 5,000 crore for a 16% stake.",
+    "Positive validation from global alternative asset manager."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "US-based Blackstone, the world's largest alternative asset manager, will invest ₹5,000 crore (about $535 million) for a nearly 16 per cent stake in IIFL Finance",
+   "posted": "2026-11-11T04:33:44+00:00",
+   "moves": {
+    "IIFL": {
+     "pre": 6.26,
+     "s1": -0.47,
+     "x1": -1.17,
+     "s5": -0.65,
+     "x5": 0.57
+    }
+   }
+  },
+  {
+   "id": "f6af2b07dc29ab00",
+   "time": "2026-11-11T10:08:24+05:30",
+   "headline": "Cochin Shipyard shares crash 8%: Defence PSU stock Q2 profit drops 50% but declares ₹3 dividend- Still a stock to buy?",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/cochin-shipyard-shares-crash-8-defence-psu-stock-q2-profit-drops-50-but-declares-rs-3-dividend-still-a-stock-to-buy-11794370626964.html",
+   "section": "trading",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "COCHINSHIP",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Defense",
+    "Shipbuilding"
+   ],
+   "impact": 70,
+   "confidence": 85,
+   "category": "earnings",
+   "reason": [
+    "Q2 net profit halved year-on-year to Rs 53.77 crore driven by higher expenses and segment loss in shipbuilding.",
+    "Sharp earnings miss triggers continued negative sentiment and potential brokerage downgrades."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Cochin Shipyard shares fell 8% after Q2 FY27 net profit nearly halved to ₹53.77 crore, despite revenue rising 11.7%. Higher expenses and a loss in shipbuilding weighed on results. The company announced a ₹3 interim dividend.",
+   "posted": "2026-11-11T04:46:11+00:00",
+   "moves": {
+    "COCHINSHIP": {
+     "pre": 6.82,
+     "s1": 0.5,
+     "x1": 1.21,
+     "s5": 5.21,
+     "x5": 4.0
+    }
+   }
+  },
+  {
+   "id": "63a08b4a2d834cf4",
+   "time": "2026-11-11T10:10:29+05:30",
+   "headline": "Cochin Shipyard tanks 8% post Q2 show; what's plaguing the defence stock?",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/cochin-shipyard-share-price-tanks-8-post-q2-show-what-s-plaguing-the-defence-stock-126111100253_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "COCHINSHIP",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Defence"
+   ],
+   "impact": 75,
+   "confidence": 90,
+   "category": "Earnings",
+   "reason": [
+    "Consolidated net profit declined 49.9% YoY in Q2.",
+    "Disappointing earnings triggered heavy selling pressure."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Cochin Shipyard's consolidated net profit declined 49.9 per cent year-on-year (YoY) to ₹53.77 crore in Q2 FY27 from ₹107.53 crore in the year-ago period.",
+   "posted": "2026-11-11T05:01:04+00:00",
+   "moves": {
+    "COCHINSHIP": {
+     "pre": 6.82,
+     "s1": 0.5,
+     "x1": 1.21,
+     "s5": 5.21,
+     "x5": 4.0
+    }
+   }
+  },
+  {
+   "id": "4ccaae754d8a02ab",
+   "time": "2026-11-11T10:11:56+05:30",
+   "headline": "Kalyan Jewellers surges 10%, hits 52-week high post Q2 results",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/kalyan-jewellers-surges-10-hits-52-week-high-post-q2-results-126111100244_1.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "KALYANKJIL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Consumer Durables"
+   ],
+   "impact": 80,
+   "confidence": 90,
+   "category": "Earnings",
+   "reason": [
+    "Strong Q2 results led to a 10% surge and 52-week high.",
+    "Significant jump in trading volumes indicates strong institutional interest."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "The average trading volume at the Kalyan Jewellers' counter jumped 10-fold with a combined 17.37 million shares changing hands on the NSE and BSE till 09:32 AM on Wednesday.",
+   "posted": "2026-11-11T05:01:04+00:00",
+   "moves": {
+    "KALYANKJIL": {
+     "pre": 8.63,
+     "s1": 7.1,
+     "x1": 6.4,
+     "s5": -2.07,
+     "x5": -0.86
+    }
+   }
+  },
+  {
+   "id": "aacc2d8a94f72b28",
+   "time": "2026-11-11T11:30:32+05:30",
+   "headline": "AI stock Nvidia crashed but Netweb Technologies shares jumped 8% today after falling 13% in 1 month? Reasons; target",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/ai-stock-nvidia-crashed-but-netweb-technologies-shares-jumped-8-today-after-falling-13-in-1-month-reasons-target-11794375606908.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "NETWEB",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "IT",
+    "Technology"
+   ],
+   "impact": 75,
+   "confidence": 80,
+   "category": "Earnings",
+   "reason": [
+    "Reported record Q2 revenue and profit.",
+    "Rebound supported by strong sector interest in AI infrastructure plays."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Netweb Technologies shares rose as much as 7.8% on Wednesday, supported by a broader IT-sector rebound and record Q2 FY27 revenue and profit. The company reported strong sequential growth and a ₹2,629 crore order book.&nbsp;",
+   "posted": "2026-11-11T06:15:50+00:00",
+   "moves": {
+    "NETWEB": {
+     "pre": 8.22,
+     "s1": -0.06,
+     "x1": -0.77,
+     "s5": -0.87,
+     "x5": 0.34
+    }
+   }
+  },
+  {
+   "id": "eac3bfd41eca8cd0",
+   "time": "2026-11-11T12:06:36+05:30",
+   "headline": "Avanti Feeds shares stumble 6% as Q2 profit more than halves to ₹69 crore",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/avanti-feeds-share-price-stumble-6-as-q2-profit-more-than-halves-to-69-crore-126111100454_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "AVANTIFEED",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Agriculture",
+    "Food"
+   ],
+   "impact": 70,
+   "confidence": 85,
+   "category": "earnings",
+   "reason": [
+    "Q2 consolidated net profit declined 55% YoY to ₹68.95 crore.",
+    "Shares already stumbled 6% following the earnings miss."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Avanti Feeds posted a 55 per cent year-on-year (YoY) decline in the consolidated net profit (attributable to the owners of the company) to ₹68.95 crore.",
+   "posted": "2026-11-11T06:48:31+00:00",
+   "moves": {
+    "AVANTIFEED": {
+     "pre": 2.55,
+     "s1": -8.35,
+     "x1": -7.65,
+     "s5": -1.89,
+     "x5": -3.1
+    }
+   }
+  },
+  {
+   "id": "be70036e23032762",
+   "time": "2026-11-11T12:30:02+05:30",
+   "headline": "Whirlpool gains 3% even as Q2 PAT sinks 40%; ICICI Sec maintains 'Reduce'",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/whirlpool-gains-3-even-as-q2-pat-sinks-40-icici-sec-maintains-reduce-126111100531_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "WHIRLPOOL",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Consumer Durables"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "Earnings",
+   "reason": [
+    "Q2 PAT dropped 40% YoY due to inflation and geopolitical headwinds.",
+    "Brokerage maintains a 'Reduce' rating."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Whirlpool of India reported a 40% YoY decline in consolidated net profit to ₹25.08 crore in Q2FY27, impacted by inflation fueled by geopolitical instability, crude oil prices & rupee depreciation",
+   "posted": "2026-11-11T07:15:58+00:00",
+   "moves": {
+    "WHIRLPOOL": {
+     "pre": 0.9,
+     "s1": -0.34,
+     "x1": 0.36,
+     "s5": 1.63,
+     "x5": 0.42
+    }
+   }
+  },
+  {
+   "id": "d9ab45b114b23029",
+   "time": "2026-11-11T13:52:03+05:30",
+   "headline": "BHEL shares up 3.5% on Power Grid order for Gujarat synchronous condensers",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/bhel-shares-up-3-5-on-power-grid-order-for-gujarat-synchronous-condensers-126111100646_1.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "BHEL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Capital Goods",
+    "Power"
+   ],
+   "impact": 65,
+   "confidence": 85,
+   "category": "order_win",
+   "reason": [
+    "BHEL secured an order for synchronous condensers from Power Grid Corporation."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "BHEL has received a Notification of Award from Power Grid Corporation of India, for setting up two synchronous condensers of +300/-200 MVAR capacity at Kalyanpur in Gujarat",
+   "posted": "2026-11-11T08:45:54+00:00",
+   "moves": {
+    "BHEL": {
+     "pre": 2.14,
+     "s1": -0.19,
+     "x1": -0.89,
+     "s5": -2.38,
+     "x5": -1.17
+    }
+   }
+  },
+  {
+   "id": "bb6458458f1cdf36",
+   "time": "2026-11-11T14:20:42+05:30",
+   "headline": "Cochin Shipyard Limited: Cochin Shipyard Limited has informed the Exchange regarding ' Receipt of order for Normal refit cum re-powering of an Indian Naval Vessel'. |SUBJECT: Updates",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/Aswi4739_11112026142023_SE_Intimation_Sgd.pdf",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "COCHINSHIP",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Defense",
+    "Shipbuilding"
+   ],
+   "impact": 65,
+   "confidence": 80,
+   "category": "contract_award",
+   "reason": [
+    "Bagged a contract for normal refit cum re-powering of an Indian Naval Vessel.",
+    "Boosts defense order book and revenue visibility."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Cochin Shipyard Limited: Cochin Shipyard Limited has informed the Exchange regarding ' Receipt of order for Normal refit cum re-powering of an Indian Naval Vessel'. |SUBJECT: Updates",
+   "posted": "2026-11-11T09:18:32+00:00",
+   "moves": {
+    "COCHINSHIP": {
+     "pre": -6.82,
+     "s1": -0.5,
+     "x1": -1.21,
+     "s5": -5.21,
+     "x5": -4.0
+    }
+   }
+  },
+  {
+   "id": "733cb7a69ec696c6",
+   "time": "2026-11-11T23:56:50+05:30",
+   "headline": "Multibagger Cupid to be in focus on Thursday after Q2 net profit more than doubles to ₹56 crore; raises FY27 guidance",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/multibagger-cupid-to-be-in-focus-on-thursday-after-q2-net-profit-more-than-doubles-to-rs-56-crore-raises-fy27-guidance-11794420911955.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "CUPID",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "FMCG",
+    "Healthcare"
+   ],
+   "impact": 85,
+   "confidence": 90,
+   "category": "Earnings",
+   "reason": [
+    "Q2 net profit more than doubled to ₹56 crore.",
+    "Management raised FY27 guidance following strong H1 performance."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Cupid reported strong Q2 and first-half FY27 results, with H1 net profit up 156% to ₹100.37 crore and revenue up 137% to ₹342.58 crore. Growth was driven by domestic consumer healthcare and FMCG, while new retail partnerships support raised FY27 revenue guidance of at least ₹880 crore.",
+   "posted": "2026-11-12T02:21:34+00:00",
+   "moves": {
+    "CUPID": {
+     "pre": 8.7,
+     "s1": -1.82,
+     "x1": -1.33,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "4f983e683f508d94",
+   "time": "2026-11-12T08:05:06+05:30",
+   "headline": "HFCL Limited: HFCL Limited has informed the Exchange about \"HFCL secures Export Orders worth INR 834.36 crore approx. (equivalent to USD 88.94 million approx.) for supply of Optical Fiber Cables (OFC)\" |SUBJECT: Bagging/Receiving of o",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/AHMED_12112026080428_HFCL_STX_Announcement_12112026.pdf",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "HFCL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Telecom"
+   ],
+   "impact": 80,
+   "confidence": 85,
+   "category": "Order Win",
+   "reason": [
+    "Secured major export orders worth INR 834.36 crore for Optical Fiber Cables.",
+    "Significantly boosts revenue visibility in the telecom segment."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "HFCL Limited: HFCL Limited has informed the Exchange about \"HFCL secures Export Orders worth INR 834.36 crore approx. (equivalent to USD 88.94 million approx.) for supply of Optical Fiber Cables (OFC)\" |SUBJECT: Bagging/Receiving of o",
+   "posted": "2026-11-12T02:45:46+00:00",
+   "moves": {
+    "HFCL": {
+     "pre": -1.11,
+     "s1": -2.17,
+     "x1": -1.68,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "2fbe0a2560ad40d9",
+   "time": "2026-11-12T08:57:59+05:30",
+   "headline": "Tata Power shares rise 2% after Q2 results. Why brokerages are bullish despite target price cuts",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/tata-power-shares-in-focus-after-q2-results-why-brokerages-are-bullish-despite-target-price-cuts/articleshow/135753647.cms",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "TATAPOWER",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Power"
+   ],
+   "impact": 75,
+   "confidence": 80,
+   "category": "Earnings",
+   "reason": [
+    "33% y-o-y increase in net profit for Q2 FY27.",
+    "Revenue rose 26% y-o-y."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Tata Power achieved a 33% year-on-year increase in net profit for the second quarter of FY27. Revenue also rose by 26% year-on-year to ₹19,886 crore during this period. Brokerages maintained their 'Buy' ratings while adjusting their target prices based on the latest performance figures. The company'",
+   "posted": "2026-11-12T04:31:02+00:00",
+   "moves": {
+    "TATAPOWER": {
+     "pre": -0.83,
+     "s1": -2.52,
+     "x1": -2.03,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "a4dae80bea2a6e43",
+   "time": "2026-11-12T09:43:21+05:30",
+   "headline": "Tata Power shares gain 2% after Q2 profit rises 33%; analysts upbeat",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/tata-power-shares-gain-2-after-q2-profit-rises-33-analysts-upbeat-126111200194_1.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "TATAPOWER",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Power"
+   ],
+   "impact": 75,
+   "confidence": 80,
+   "category": "Earnings",
+   "reason": [
+    "PAT grew 33% y-o-y to ₹1,652 crore for Q2FY27.",
+    "Analyst sentiment remains upbeat."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Tata Power reported 33 per cent y-o-y growth in PAT at ₹1,652 crore for Q2FY27 from ₹1,245 crore last year.",
+   "posted": "2026-11-12T04:31:02+00:00",
+   "moves": {
+    "TATAPOWER": {
+     "pre": -0.83,
+     "s1": -2.52,
+     "x1": -2.03,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "2d6a9ffff03a652f",
+   "time": "2026-11-12T09:57:26+05:30",
+   "headline": "Kalyan Jewellers shares hit 52-week high, rally 41% in 9 sessions; should you buy after Q2 results 2026? Check target",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/kalyan-jewellers-shares-hit-52-week-high-rally-41-in-9-sessions-should-you-buy-after-q2-results-2026-check-target-11794457015532.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "KALYANKJIL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Consumer Durables"
+   ],
+   "impact": 80,
+   "confidence": 85,
+   "category": "Earnings",
+   "reason": [
+    "Q2 FY27 net profit climbed 64% to ₹427 crore.",
+    "Revenue grew 32% demonstrating strong underlying demand."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Kalyan Jewellers shares rose for a ninth straight session, hitting a 52-week high after Q2 FY27 net profit climbed 64% to ₹427 crore and revenue grew 32% to ₹10,323 crore. Motilal Oswal retained its Buy rating, while technical analysts flagged potential gains and cautioned about consolidation.",
+   "posted": "2026-11-12T04:31:02+00:00",
+   "moves": {
+    "KALYANKJIL": {
+     "pre": 7.1,
+     "s1": -1.96,
+     "x1": -1.47,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "84a7076e49d4ee61",
+   "time": "2026-11-12T10:22:08+05:30",
+   "headline": "Small-cap stock under ₹100: Roto Pumps shares jump 19% today, soar 28% in 4 days - What's fuelling the rally?",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/smallcap-stock-under-rs-100-roto-pumps-shares-jump-19-today-soar-28-in-4-days-whats-fuelling-the-rally-11794458105178.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "Industrial"
+   ],
+   "impact": 80,
+   "confidence": 85,
+   "category": "Earnings",
+   "reason": [
+    "Consolidated net profit jumped 245.3% YoY."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Roto Pumps shares rose 14% on November 12 after the company reported strong Q2 FY27 results. Consolidated net profit jumped 245.3% year-on-year to ₹20.58 crore, while revenue climbed 54.65% to ₹100.15 crore. The board also approved a ₹110 crore loan facility for its wholly owned subsidiary.",
+   "posted": "2026-11-12T05:01:07+00:00",
+   "moves": {}
+  },
+  {
+   "id": "7687844820b18868",
+   "time": "2026-11-12T10:27:54+05:30",
+   "headline": "Multibagger stock: Cupid shares jump 10% as profit soars 133% in Q2 results 2026; already up 262% in 2026 — What's next?",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/multibagger-stock-cupid-shares-jump-10-as-profit-soars-133-in-q2-results-2026-already-up-262-in-2026-whats-next-11794457689791.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "CUPID",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "FMCG",
+    "Healthcare"
+   ],
+   "impact": 85,
+   "confidence": 90,
+   "category": "Earnings",
+   "reason": [
+    "Net profit soared 133% to 156% in Q2 results.",
+    "Revenue climbed strongly by 137% driven by domestic growth."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Cupid shares surged 10% to a 52-week high after strong Q2 FY27 results. First-half net profit rose 156% and revenue climbed 137%, supported by growing domestic consumer healthcare and FMCG sales. The firm raised its FY27–FY29 targets, while expanding retail partnerships are expected to boost growth.",
+   "posted": "2026-11-12T05:01:07+00:00",
+   "moves": {
+    "CUPID": {
+     "pre": 8.7,
+     "s1": -1.82,
+     "x1": -1.33,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "04c7b5e03f664a49",
+   "time": "2026-11-12T11:04:49+05:30",
+   "headline": "Tata Motors CV share price gains 4%, up for 4th straight day; here's why",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/tata-motors-cv-share-price-gains-4-up-for-4th-straight-day-here-s-why-126111200273_1.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "TMCV",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Automobile"
+   ],
+   "impact": 70,
+   "confidence": 75,
+   "category": "Sales",
+   "reason": [
+    "Strong commercial vehicle sales data driving momentum.",
+    "Stock up for four consecutive sessions."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "In the past two trading days, the stock price of the Tata Group company rallied 6.4% amid reports of strong CV sales.",
+   "posted": "2026-11-12T05:45:50+00:00",
+   "moves": {
+    "TMCV": {
+     "pre": 1.65,
+     "s1": -4.38,
+     "x1": -3.89,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "364df510e2e2a76d",
+   "time": "2026-11-12T11:09:21+05:30",
+   "headline": "Nuvama Wealth share price: Brokerage stock up over 6% today, just 5% away from peak on strong Q2 results | Check target",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/nuvama-wealth-share-price-brokerage-stock-up-over-6-today-just-5-away-from-peak-on-strong-q2-results-check-target-11794460740294.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "NUVAMA",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Financial Services"
+   ],
+   "impact": 75,
+   "confidence": 80,
+   "category": "Earnings",
+   "reason": [
+    "Strong Q2 results with net profit up 19.5% YoY.",
+    "Revenue growth of over 20% boosting investor sentiment."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Nuvama Wealth shares rose as much as 6.6% after the company reported a 19.5% year-on-year increase in Q2 FY27 net profit to ₹303.5 crore and 20.35% revenue growth to ₹1,366 crore. Motilal Oswal reiterated its Buy rating and set a ₹2,160 target price.",
+   "posted": "2026-11-12T05:45:50+00:00",
+   "moves": {
+    "NUVAMA": {
+     "pre": 2.32,
+     "s1": -2.04,
+     "x1": -1.55,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "b83001104cdba5cf",
+   "time": "2026-11-12T11:24:56+05:30",
+   "headline": "FIIs are back! Jefferies lists 11 stocks that can be the biggest beneficiaries",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/fiis-are-back-jefferies-lists-11-stocks-that-can-be-the-biggest-beneficiaries/slideshow/135758277.cms",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "AXISBANK",
+     "direction": "up"
+    },
+    {
+     "symbol": "HDFCBANK",
+     "direction": "up"
+    },
+    {
+     "symbol": "RELIANCE",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Banking",
+    "Conglomerate"
+   ],
+   "impact": 65,
+   "confidence": 70,
+   "category": "Institutional Flows",
+   "reason": [
+    "FIIs shifting back to net buyers in Indian equities.",
+    "Jefferies highlights key beneficiaries among large caps."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "In November, foreign institutional investors unexpectedly shifted to become net buyers of Indian equities, indicating a noteworthy change in market dynamics. Jefferies has pinpointed 11 stocks poised to gain from this influx, including heavyweights like Reliance Industries, HDFC Bank, and Axis Bank,",
+   "posted": "2026-11-12T06:46:16+00:00",
+   "moves": {
+    "AXISBANK": {
+     "pre": 0.49,
+     "s1": -0.89,
+     "x1": -0.4,
+     "s5": null,
+     "x5": null
+    },
+    "HDFCBANK": {
+     "pre": 0.71,
+     "s1": -1.02,
+     "x1": -0.53,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "0dc3a13d43c838d3",
+   "time": "2026-11-12T12:06:55+05:30",
+   "headline": "Bharat Forge Limited: Bharat Forge Limited has informed the Exchange regarding a press release dated November 12, 2026, titled \"Press release titled Kalyani Strategic Systems Unveils 120mm R.A.M.S, the Rapid Attack Mortar System - Another Ste",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/ANILSHINDE_12112026120617_SEIntimationPressRelease.pdf",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "BHARATFORG",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Defense",
+    "Manufacturing"
+   ],
+   "impact": 70,
+   "confidence": 75,
+   "category": "Corporate News",
+   "reason": [
+    "Kalyani Strategic Systems unveiled a new 120mm Rapid Attack Mortar System.",
+    "Expands defense product portfolio for Bharat Forge."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Bharat Forge Limited: Bharat Forge Limited has informed the Exchange regarding a press release dated November 12, 2026, titled \"Press release titled Kalyani Strategic Systems Unveils 120mm R.A.M.S, the Rapid Attack Mortar System - Another Ste",
+   "posted": "2026-11-12T06:46:16+00:00",
+   "moves": {
+    "BHARATFORG": {
+     "pre": 0.65,
+     "s1": -0.54,
+     "x1": -0.05,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "76bc7bd1553db285",
+   "time": "2026-11-12T12:35:54+05:30",
+   "headline": "Gulshan Polyols Limited: Gulshan Polyols Limited has informed the Exchange regarding the receipt of allocation for supply of Ethanol to OMCs (ESY 2026-27). |SUBJECT: Updates",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/GULPOLY_12112026123247_Intimation.pdf",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "Energy"
+   ],
+   "impact": 65,
+   "confidence": 75,
+   "category": "Contract Win",
+   "reason": [
+    "Received ethanol supply allocation for ESY 2026-27 from OMCs."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Gulshan Polyols Limited: Gulshan Polyols Limited has informed the Exchange regarding the receipt of allocation for supply of Ethanol to OMCs (ESY 2026-27). |SUBJECT: Updates",
+   "posted": "2026-11-12T07:15:53+00:00",
+   "moves": {}
+  },
+  {
+   "id": "615dea8243c8ab2a",
+   "time": "2026-11-12T07:51:49+05:30",
+   "headline": "Stock Market LIVE: Sensex choppy in volatile session; Nifty below 25,300; HAL down 4% post Q2 result",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-12-gift-nifty-nse-bse-sensex-today-nifty50-crude-oil-prices-q2-results-today-126111200066_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "HAL",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Defense"
+   ],
+   "impact": 65,
+   "confidence": 80,
+   "category": "Earnings",
+   "reason": [
+    "HAL stock down 4% following Q2 earnings report.",
+    "Broader market remains volatile with Nifty slipping below key levels."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Sensex Today | Stock Market LIVE Updates Thursday: In the broader markets, the Nifty MidCap 100 and the Nifty SmallCap 100 rose 0.66 per cent and 1.01 per cent, respectively",
+   "posted": "2026-11-12T08:45:55+00:00",
+   "moves": {
+    "HAL": {
+     "pre": 2.13,
+     "s1": 0.69,
+     "x1": 0.21,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "52402526b11b8c5f",
+   "time": "2026-11-13T08:30:32+05:30",
+   "headline": "51% rally in 2026 so far! ICICI Direct sees 28% upside potential in this defence stock - Do you own? Check target price",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/51-rally-in-2026-so-far-icici-direct-sees-28-upside-potential-in-this-defence-stock-do-you-own-check-target-price-11794507179450.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "AZAD",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Capital Goods",
+    "Defence"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "Analyst Rating",
+   "reason": [
+    "ICICI Securities maintains a Buy rating with a 28% upside potential.",
+    "Strong prior momentum in the stock."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Azad Engineering shares have risen about 51% in 2026, but ICICI Securities sees up to 28% further upside and retains a Buy rating, with a revised target of ₹3,100. Potential delivery of a second engine to DRDO and aerospace expansion could support growth.",
+   "posted": "2026-11-13T03:16:55+00:00",
+   "moves": {
+    "AZAD": {
+     "pre": -0.51,
+     "s1": -2.35,
+     "x1": -1.69,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "5473a0e00a7bb4b0",
+   "time": "2026-11-13T09:25:44+05:30",
+   "headline": "Ola Electric shares skid nearly 7% as Q2 revenue falls 39%, loss narrows",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/ola-electric-shares-skid-nearly-7-as-q2-revenue-falls-39-loss-narrows-126111300115_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "OLAELEC",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Auto"
+   ],
+   "impact": 75,
+   "confidence": 85,
+   "category": "Earnings",
+   "reason": [
+    "Q2 revenue fell sharply by 39% year-on-year.",
+    "Persistent net losses continue to weigh on sentiment."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Ola Electric Mobility posted a consolidated net loss of ₹362 crore for the July-September quarter, which narrowed from a ₹418 crore loss in the year-ago period.",
+   "posted": "2026-11-13T04:15:47+00:00",
+   "moves": {
+    "OLAELEC": {
+     "pre": 3.05,
+     "s1": 2.66,
+     "x1": 2.0,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "e5dc83eb90eef951",
+   "time": "2026-11-13T09:46:40+05:30",
+   "headline": "Vodafone Idea shares decline 3.5% on wider-than-expected loss in Q2",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/vodafone-idea-share-price-declines-3-5-on-wider-than-expected-loss-in-q2-126111300408_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "IDEA",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Telecom"
+   ],
+   "impact": 65,
+   "confidence": 85,
+   "category": "Earnings",
+   "reason": [
+    "Wider-than-expected loss in Q2 weighs on investor sentiment.",
+    "Sustained subscriber losses and funding concerns continue to pressure the stock."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Vodafone Idea share price: Sustained subscriber growth, ARPU improvement, and successful execution of the capex programme will be critical for achieving a sustainable financial turnaround.",
+   "posted": "2026-11-13T04:31:35+00:00",
+   "moves": {
+    "IDEA": {
+     "pre": 3.08,
+     "s1": 0.32,
+     "x1": -0.33,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "6ce88fd2ce5a616b",
+   "time": "2026-11-13T10:10:43+05:30",
+   "headline": "Up 94% from 52-week low, Hitachi Energy shares jump 9% today after Q2 results: Should you buy power stock? Check targets",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/up-94-from-52-week-low-hitachi-energy-shares-jump-9-today-after-q2-results-should-you-buy-power-stock-check-targets-11794543376253.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "POWERINDIA",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Power",
+    "Capital Goods"
+   ],
+   "impact": 85,
+   "confidence": 90,
+   "category": "Earnings",
+   "reason": [
+    "Net profit grew 21% YoY and revenue jumped 63.5%.",
+    "Order inflows surged 85.9% to over ₹4,100 crore."
+   ],
+   "plain": null,
+   "why": null,
+   "original": "Hitachi Energy India shares rose as much as 9.2% after Q2 FY27 net profit grew 21% year on year and revenue jumped 63.5%. Orders surged 85.9% to ₹4,120.8 crore, lifting the record backlog to ₹33,335.4 crore.",
+   "posted": "2026-11-13T04:47:04+00:00",
+   "moves": {
+    "POWERINDIA": {
+     "pre": 10.68,
+     "s1": -2.25,
+     "x1": -1.59,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "f27d2adacb3abf99",
+   "time": "2026-11-15T12:39:36+05:30",
+   "headline": "ABB India shares 36% up in 2026: Time to buy? Rating upgrade boost and target price hike by Motilal Oswal - Details here",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/abb-india-shares-36-up-in-2026-time-to-buy-rating-upgrade-boost-and-target-price-hike-by-motilal-oswal-details-here-11794724492961.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "ABB",
+     "direction": "up"
+    }
+   ],
+   "sectors": [],
+   "impact": 80,
+   "confidence": 85,
+   "category": "buy",
+   "reason": [
+    "Rating upgrade and higher target price boost investor confidence.",
+    "Strong profit and order inflow growth."
+   ],
+   "plain": "ABB India shares jump 36% after a rating upgrade and higher target price.",
+   "why": "Improved fundamentals and analyst optimism can push the stock higher.",
+   "original": "ABB India reported an 11% rise in September-quarter profit to ₹440 crore and a 19.4% rise in revenue to ₹3,738 crore. Record order inflows rose 56% to ₹4,733 crore. Motilal Oswal upgraded the stock to Buy and set a target of ₹8,200, citing growth prospects and improving margins.",
+   "posted": "2026-11-16T02:47:22+00:00",
+   "moves": {
+    "ABB": {
+     "pre": -2.26,
+     "s1": 0.41,
+     "x1": 0.28,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "864d51e31706be76",
+   "time": "2026-11-16T09:33:05+05:30",
+   "headline": "Tata Motors PV shares plunge 9% after Q2 results; brokerages cut target",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/tata-motors-pv-shares-plunge-9-after-q2-results-brokerages-cut-target-126111600451_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "TMPV",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Automotive"
+   ],
+   "impact": 90,
+   "confidence": 95,
+   "category": "Earnings",
+   "reason": [
+    "Massive Q2 net loss of ₹5,451 crore significantly exceeds expectations.",
+    "Brokerages have cut target prices, signaling a downward re-rating."
+   ],
+   "plain": "The car maker reported a huge loss for the last quarter, causing its stock price to drop sharply.",
+   "why": "A big loss means the company is losing money, which makes investors less confident and lowers the share price.",
+   "original": "Tata Motors Passenger Vehicles (TMPV) reported a consolidated net loss of ₹5,451 crore from continuing operations for the second quarter of financial year 2026-27",
+   "posted": "2026-11-16T04:18:09+00:00",
+   "moves": {
+    "TMPV": {
+     "pre": 8.7,
+     "s1": 1.22,
+     "x1": 1.35,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "8dba35e748ac8cce",
+   "time": "2026-11-16T07:56:34+05:30",
+   "headline": "Stock Market LIVE: Sensex gains 400 pts, Nifty above 25,250; Kaynes Technology shares slump 15%",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-november-16-126111600051_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "KAYNES",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Technology"
+   ],
+   "impact": 80,
+   "confidence": 90,
+   "category": "Price Action",
+   "reason": [
+    "Kaynes Technology shares slumped 15% in the session.",
+    "Sharp single-day drop indicates significant negative sentiment or news impact."
+   ],
+   "plain": "A technology company's stock price dropped significantly during the trading day.",
+   "why": "A large drop suggests investors are worried or selling off, which can lower the share value.",
+   "original": "Sensex Today | Stock Market LIVE Updates Monday: In the broader markets, the Nifty MidCap rose 0.16 per cent and the Nifty SmallCap fell 0.37 per cent",
+   "posted": "2026-11-16T04:32:55+00:00",
+   "moves": {
+    "KAYNES": {
+     "pre": 13.12,
+     "s1": 4.09,
+     "x1": 4.22,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "60b47b9ce5628e6e",
+   "time": "2026-11-16T09:49:18+05:30",
+   "headline": "Eicher Motors shares gain 3.5% on record Q2 show; margin recovery key",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/eicher-motors-shares-gain-3-5-on-record-q2-show-margin-recovery-key-126111600695_1.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "EICHERMOT",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Automobiles"
+   ],
+   "impact": 75,
+   "confidence": 85,
+   "category": "Earnings Beat",
+   "reason": [
+    "Record quarterly revenue and operating income reported.",
+    "Strong demand momentum and export recovery are positive drivers."
+   ],
+   "plain": "A vehicle manufacturer reported its best-ever quarterly sales and profits.",
+   "why": "Strong performance usually makes investors more confident, potentially raising the share price.",
+   "original": "Eicher Motors posted its highest-ever quarterly revenue and operating income in Q2 FY27 amid strong demand momentum and recovery in exports.",
+   "posted": "2026-11-16T04:32:55+00:00",
+   "moves": {
+    "EICHERMOT": {
+     "pre": -0.67,
+     "s1": 3.01,
+     "x1": 2.89,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "fc095254f779a17a",
+   "time": "2026-11-16T09:50:39+05:30",
+   "headline": "Tata Motors PV shares crash: What led to auto stock 8% ramming, Nifty laggard; down 27% in 2026 - Buy, sell or hold?",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/tata-motors-pv-shares-crash-what-led-to-auto-stock-8-ramming-nifty-laggard-down-27-in-2026-buy-sell-or-hold-11794801946841.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "TMPV",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Automobiles"
+   ],
+   "impact": 85,
+   "confidence": 90,
+   "category": "Earnings Miss",
+   "reason": [
+    "Tata Motors PV reported a massive consolidated loss of ₹5,531 crore.",
+    "Stock already down 27% in 2026, indicating sustained negative sentiment."
+   ],
+   "plain": "The passenger vehicle division of a major car maker reported a huge financial loss for the quarter.",
+   "why": "A large loss suggests the business is struggling, which can lower the value of its shares.",
+   "original": "Tata Motors Passenger Vehicles shares fell more than 8% after the company reported a September-quarter consolidated loss of ₹5,531 crore, despite revenue rising 34% year-on-year. Exceptional costs totalled ₹6,738 crore, while brokerages differed on the stock’s outlook and target prices.",
+   "posted": "2026-11-16T04:32:55+00:00",
+   "moves": {
+    "TMPV": {
+     "pre": 8.7,
+     "s1": 1.22,
+     "x1": 1.35,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "df27e0e70179ca38",
+   "time": "2026-11-16T09:51:03+05:30",
+   "headline": "Kaynes Technology shares tank 18% as Q2 PAT plunges 65%, margin shrinks",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/kaynes-technology-shares-tank-18-as-q2-pat-plunges-65-margin-shrinks-126111600694_1.html",
+   "section": "trading",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "KAYNES",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Electronics",
+    "Capital Goods"
+   ],
+   "impact": 85,
+   "confidence": 90,
+   "category": "earnings_miss",
+   "reason": [
+    "Net profit plunged 65% alongside operating margin contraction.",
+    "Valuation multiples vulnerable to sharp re-rating on severe profit miss."
+   ],
+   "plain": "Quarterly net profit fell 65% due to sharp margin erosion.",
+   "why": "Steep profit declines hurt investor confidence and lead to price drops.",
+   "original": "Kaynes Technology has reported a consolidated net profit of ₹39.8 crore in Q2FY27, down 65 per cent from ₹115.7 crore posted in the corresponding quarter of the previous financial year.",
+   "posted": "2026-11-16T04:46:54+00:00",
+   "moves": {
+    "KAYNES": {
+     "pre": 13.12,
+     "s1": 4.09,
+     "x1": 4.22,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "47fe8cc796076ae9",
+   "time": "2026-11-16T10:03:40+05:30",
+   "headline": "VA Tech Wabag cracks 10% as Saudi cancels ₹2,332 cr desalination tender",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/va-tech-wabag-cracks-10-as-saudi-cancels-2-332-cr-desalination-tender-126111600637_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [],
+   "sectors": [
+    "Utilities",
+    "Infrastructure"
+   ],
+   "impact": 85,
+   "confidence": 90,
+   "category": "contract_cancellation",
+   "reason": [
+    "Cancellation of large ₹2,332 crore desalination project severely hits order book.",
+    "Significant negative impact on future revenue and earnings visibility."
+   ],
+   "plain": "A major overseas client cancelled a ₹2,332 crore water desalination project.",
+   "why": "Losing a massive project hurts future revenue and profit projections.",
+   "original": "VA Tech Wabag received intimation from the Saudi Water Authority regarding cancellation of the tender for its 300 MLD mega sea water desalination plant at Yanbu, Saudi Arabia, worth ₹2,332 crore.",
+   "posted": "2026-11-16T04:46:54+00:00",
+   "moves": {}
+  },
+  {
+   "id": "b4b874891e4fa96f",
+   "time": "2026-11-16T10:28:32+05:30",
+   "headline": "Inox Wind shares crash: Why energy stock price is falling today? Tanks 9.17% post Q2, down 60% in 1 year - Still a buy?",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/inox-wind-shares-crash-why-energy-stock-price-is-falling-today-tanks-9-17-post-q2-down-60-in-1-year-still-a-buy-11794803945803.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "INOXWIND",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Energy"
+   ],
+   "impact": 85,
+   "confidence": 90,
+   "category": "earnings",
+   "reason": [
+    "Q2 net profit fell 42% year-on-year.",
+    "Stock is already down 60% in a year, showing sustained weakness."
+   ],
+   "plain": "The company reported a large drop in its recent profits, causing its share price to fall sharply.",
+   "why": "Lower profits mean the company is making less money, which usually makes investors sell the shares.",
+   "original": "Inox Wind shares fell nearly 9.17% in Monday intraday trading after results showed a 42% annual drop in second-quarter net profit to ₹69 crore. Motilal Oswal cut its FY27 and FY28 EBITDA estimates and lowered its target price to ₹74, while retaining a Buy rating.",
+   "posted": "2026-11-16T05:02:40+00:00",
+   "moves": {
+    "INOXWIND": {
+     "pre": 7.68,
+     "s1": -0.34,
+     "x1": -0.21,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "ef77ffb4649d933e",
+   "time": "2026-11-16T11:58:00+05:30",
+   "headline": "Why Kaynes Technology shares crashed 20% to 52-week low? stock down 54% in a year | What stock market experts say",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/why-kaynes-technology-shares-crashed-20-to-52-week-low-stock-down-54-in-a-year-what-stock-market-experts-say-11794807033272.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "KAYNES",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Technology"
+   ],
+   "impact": 85,
+   "confidence": 90,
+   "category": "Earnings Miss",
+   "reason": [
+    "Net profit fell 61.6% YoY.",
+    "Stock hit 52-week low and lower circuit."
+   ],
+   "plain": "The company's profits dropped sharply, causing its stock price to fall significantly.",
+   "why": "A large drop in profit usually makes investors sell the stock, leading to a price crash.",
+   "original": "Kaynes Technology shares hit 20% lower circuit after Q2 FY27 net profit fell 61.6% year-on-year, despite modest revenue growth. Brokerages cited weakness in smart metering, rising debt and uneven segment performance, while auditor observations and financial restatements added to investor concerns.",
+   "posted": "2026-11-16T06:47:30+00:00",
+   "moves": {
+    "KAYNES": {
+     "pre": 13.12,
+     "s1": 4.09,
+     "x1": 4.22,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "b1931f8d9ab98fc4",
+   "time": "2026-11-16T14:11:25+05:30",
+   "headline": "Inox Wind: 42% fall in Q2 PAT, margin squeeze hammers stock by 10%",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/inox-wind-42-fall-in-q2-pat-margin-squeeze-hammers-stock-by-10-126111601106_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "INOXWIND",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Renewable Energy"
+   ],
+   "impact": 85,
+   "confidence": 90,
+   "category": "Earnings",
+   "reason": [
+    "42% drop in net profit indicates severe margin squeeze.",
+    "Higher expenses are hurting bottom-line results."
+   ],
+   "plain": "The company made much less money than expected because its costs went up.",
+   "why": "A big drop in profit usually makes investors sell the stock, causing the price to fall.",
+   "original": "Inox Wind reported a 42 per cent decline in its consolidated net profit to ₹69 crore in the September quarter due to higher expenses.",
+   "posted": "2026-11-16T09:01:55+00:00",
+   "moves": {
+    "INOXWIND": {
+     "pre": 7.68,
+     "s1": -0.34,
+     "x1": -0.21,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "eaf27b54802487bf",
+   "time": "2026-11-16T08:10:14+05:30",
+   "headline": "Jio Financial Services Share Price Live Updates: Jio Financial Services experiences a downturn",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/jio-financial-services-share-price-live-updates-16-nov-2026/liveblog/135870485.cms",
+   "section": "news",
+   "call": "sell",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "JIOFIN",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Financial Services"
+   ],
+   "impact": 70,
+   "confidence": 65,
+   "category": "company",
+   "reason": [
+    "Shares fell after a reported downturn.",
+    "Negative sentiment may pressure the stock."
+   ],
+   "plain": "Jio Financial Services shares fell noticeably.",
+   "why": "A price drop signals negative sentiment, which could keep the stock lower.",
+   "original": "Jio Financial Services Share Price Live Updates: Jio Financial Services experiences a downturn",
+   "posted": "2026-11-16T09:47:34+00:00",
+   "moves": {
+    "JIOFIN": {
+     "pre": 0.66,
+     "s1": -1.31,
+     "x1": -1.18,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "cee09b2a1f4cd312",
+   "time": "2026-11-16T15:10:29+05:30",
+   "headline": "Belrise Industries shares rally 13% after Q2 PAT rises 25%, revenue up 17%",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/belrise-industries-shares-rally-13-after-q2-pat-rises-25-revenue-up-17-126111601219_1.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "BELRISE",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Industrial"
+   ],
+   "impact": 65,
+   "confidence": 75,
+   "category": "company",
+   "reason": [
+    "Q2 profit rose 25% YoY",
+    "Revenue increased 17%"
+   ],
+   "plain": "Belrise Industries reported a 25% profit rise and 17% revenue growth in Q2.",
+   "why": "Better‑than‑expected results can lift the share price.",
+   "original": "Belrise Industries' consolidated net profit rose 25 per cent Y-o-Y to ₹166.25 crore in the September quarter of FY27, compared with ₹132.98 crore in the corresponding quarter of the previous fiscal.",
+   "posted": "2026-11-16T10:02:49+00:00",
+   "moves": {
+    "BELRISE": {
+     "pre": 9.51,
+     "s1": -0.5,
+     "x1": 0.4,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "00c8ac2247e41cef",
+   "time": "2026-11-16T15:18:15+05:30",
+   "headline": "Ola Electric vs Ather Energy: Ather shines, Ola struggles in Q2; which EV stock offers better upside?",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/ola-electric-vs-ather-energy-ather-shines-ola-struggles-in-q2-which-ev-stock-offers-better-upside-11794821623526.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "ATHERENERG",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Auto",
+    "EV"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "company",
+   "reason": [
+    "Q2 profit rose sharply",
+    "Revenue grew 63% year‑on‑year"
+   ],
+   "plain": "Ather Energy posted a profit and 63% revenue growth in Q2 FY27.",
+   "why": "Strong earnings suggest the stock could rise, rewarding shareholders.",
+   "original": "Ather Energy outperformed Ola Electric in Q2 FY27, posting a ₹1.26 crore profit, 63% revenue growth and a second consecutive EBITDA-positive quarter. Ola’s revenue fell 39% and its EBITDA loss widened.&nbsp;",
+   "posted": "2026-11-16T10:02:49+00:00",
+   "moves": {
+    "ATHERENERG": {
+     "pre": -1.87,
+     "s1": -0.39,
+     "x1": 0.51,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "cb374e374b64eb92",
+   "time": "2026-11-16T15:40:54+05:30",
+   "headline": "Swiggy among 10 midcap stocks that dropped up to 50% in CY26",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/swiggy-among-10-midcap-stocks-that-dropped-up-to-50-in-cy26/slideshow/135883464.cms",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "SWIGGY",
+     "direction": "down"
+    },
+    {
+     "symbol": "RVNL",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Consumer Discretionary",
+    "Capital Goods"
+   ],
+   "impact": 80,
+   "confidence": 70,
+   "category": "stock-specific",
+   "reason": [
+    "Significant price decline this year",
+    "May reflect broader mid‑cap weakness"
+   ],
+   "plain": "Swiggy and Rail Vikas Nigam stocks fell sharply, losing up to half their value this year.",
+   "why": "Large drops can hurt investors and may signal continued weakness in those stocks.",
+   "original": "The Nifty Midcap 150 has gained around 2% in CY26, but several constituents have suffered steep corrections. Swiggy, PI Industries and Rail Vikas Nigam lead the 10 biggest laggards, with losses ranging from 32% to 52%.",
+   "posted": "2026-11-16T10:32:46+00:00",
+   "moves": {
+    "SWIGGY": {
+     "pre": 1.15,
+     "s1": 4.25,
+     "x1": 3.35,
+     "s5": null,
+     "x5": null
+    },
+    "RVNL": {
+     "pre": -0.59,
+     "s1": 3.32,
+     "x1": 2.43,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "f3f8eae0cc4ab611",
+   "time": "2026-11-16T21:05:30+05:30",
+   "headline": "Mid-cap stocks: AI-led short-cycle deals rise; Anand Rathi identifies mid-cap IT stocks Mphasis, Sonata set to benefit",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/midcap-stocks-ai-led-short-cycle-deals-rise-anand-rathi-identifies-mid-cap-it-stocks-mphasis-sonata-set-to-benefit-11794808591830.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "MPHASIS",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Information Technology"
+   ],
+   "impact": 70,
+   "confidence": 70,
+   "category": "news",
+   "reason": [
+    "Mid‑cap IT firms posted better‑than‑expected revenue growth."
+   ],
+   "plain": "Mid‑cap IT firms Mphasis and Sonata are expected to benefit from strong Q3 revenue growth.",
+   "why": "Positive earnings outlook for Mphasis suggests upside for shareholders.",
+   "original": "Anand Rathi said Indian mid-cap IT firms recorded stronger-than-expected September-quarter revenue growth, while margins remained stable. It expects muted FY27 growth amid AI-driven pricing pressure and geopolitical uncertainty but sees longer-term opportunities in AI and modernization.&nbsp;",
+   "posted": "2026-11-17T02:50:55+00:00",
+   "moves": {
+    "MPHASIS": {
+     "pre": 0.5,
+     "s1": -1.96,
+     "x1": -1.07,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "ba4b2becc43febe8",
+   "time": "2026-11-17T10:17:26+05:30",
+   "headline": "ONGC: MAJOR GAS LEAK AT ONGC PLANT IN ANDHRA'S KONASEEMA DISTRICT",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9414",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "ONGC",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Energy"
+   ],
+   "impact": 80,
+   "confidence": 85,
+   "category": "news",
+   "reason": [
+    "Significant operational disruption at a major asset",
+    "Potential production loss and safety cost increase"
+   ],
+   "plain": "A major gas leak was reported at ONGC’s plant in Andhra’s Konaseema district.",
+   "why": "The incident could cut production and raise safety costs, likely hurting the company’s earnings.",
+   "original": "ONGC: MAJOR GAS LEAK AT ONGC PLANT IN ANDHRA'S KONASEEMA DISTRICT",
+   "posted": "2026-11-17T05:01:30+00:00",
+   "moves": {
+    "ONGC": {
+     "pre": 1.53,
+     "s1": -0.66,
+     "x1": -1.56,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "d0a8ab83dbeb427b",
+   "time": "2026-11-17T11:18:43+05:30",
+   "headline": "Nuvama Wealth Management Limited: Nuvama Wealth Management Limited has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteration Of Capital and Fund Raising-XBRL",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_21997_WebXMLFile_20261117_111842814.xml",
+   "section": "trading",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "NUVAMA",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Financial Services"
+   ],
+   "impact": 50,
+   "confidence": 70,
+   "category": "news",
+   "reason": [
+    "Capital raise may dilute existing shareholders.",
+    "Market may view the raise as a sign of funding need."
+   ],
+   "plain": "Nuvama Wealth Management announced an allotment of securities, raising fresh capital.",
+   "why": "Issuing new shares can dilute current holdings, often pressuring the stock lower.",
+   "original": "Nuvama Wealth Management Limited: Nuvama Wealth Management Limited has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteration Of Capital and Fund Raising-XBRL",
+   "posted": "2026-11-17T06:01:41+00:00",
+   "moves": {
+    "NUVAMA": {
+     "pre": -1.5,
+     "s1": 0.91,
+     "x1": 0.01,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "e9ffbb603247ad03",
+   "time": "2026-11-17T11:35:02+05:30",
+   "headline": "Senco Gold shares jump 8% on record festive sales of ₹2,426 crore",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/senco-gold-shares-jump-8-on-record-festive-sales-of-2-426-crore-126111700328_1.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "Jewellery"
+   ],
+   "impact": 80,
+   "confidence": 85,
+   "category": "Earnings/Performance",
+   "reason": [
+    "Record festive sales of ₹2,426 crore is a strong positive signal.",
+    "Stock already jumped 8%, indicating market approval."
+   ],
+   "plain": "The company reported its best-ever sales during the holiday season, which made its stock price go up.",
+   "why": "Strong sales mean the business is doing well, which is good for people who own the shares.",
+   "original": "The company said that it has delivered a record performance during the 41- day festive period from October 1, 2026, to November 11, 2026, achieving its highest-ever retail NSV of over ₹2,426 crore.",
+   "posted": "2026-11-17T06:16:28+00:00",
+   "moves": {}
+  },
+  {
+   "id": "2edcd646c9bba496",
+   "time": "2026-11-17T11:49:32+05:30",
+   "headline": "ADANI GREEN:MAHARASHTRA'S FOREST DEPARTMENT ISSUES A STOP-WORK NOTICE TO ADANI'S TARALI HYDROPOWER PROJECT IN SATARA.",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9426",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "ADANIGREEN",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Power & Utilities"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "company",
+   "reason": [
+    "Stop‑work notice halts project progress",
+    "Potential revenue and cash‑flow delay"
+   ],
+   "plain": "A stop‑work notice was issued for Adani’s hydro project in Satara.",
+   "why": "It could delay the project, affecting future earnings and cash flow.",
+   "original": "ADANI GREEN:MAHARASHTRA'S FOREST DEPARTMENT ISSUES A STOP-WORK NOTICE TO ADANI'S TARALI HYDROPOWER PROJECT IN SATARA.",
+   "posted": "2026-11-17T06:31:14+00:00",
+   "moves": {
+    "ADANIGREEN": {
+     "pre": -1.66,
+     "s1": 1.8,
+     "x1": 0.91,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "2e4e35b4524acb12",
+   "time": "2026-11-17T12:00:58+05:30",
+   "headline": "EMBASSY DEVELOPMENTS: CO. UNVEILS EMBASSY ONE RESIDENCES – AN EXCLUSIVE COLLECTION OF 59 ULTRA-LUXURY MANAGED RESIDENCES; WITH A GDV OF RUPEES 1,400 CR; WITH THIS ADDITION CO'S TOTAL GDV IS RUPEES 9000 CR FOR FY27; CO'S ",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9427",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "EMBASSY",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Real Estate"
+   ],
+   "impact": 60,
+   "confidence": 70,
+   "category": "company",
+   "reason": [
+    "New ultra‑luxury project expands Embassy’s pipeline",
+    "Significant GDV addition could boost future revenue"
+   ],
+   "plain": "Embassy launched a 59‑unit ultra‑luxury residential project, adding about ₹1,400 crore to its development value.",
+   "why": "The new project expands the pipeline and could boost future earnings, so shareholders may see upside.",
+   "original": "EMBASSY DEVELOPMENTS: CO. UNVEILS EMBASSY ONE RESIDENCES – AN EXCLUSIVE COLLECTION OF 59 ULTRA-LUXURY MANAGED RESIDENCES; WITH A GDV OF RUPEES 1,400 CR; WITH THIS ADDITION CO'S TOTAL GDV IS RUPEES 9000 CR FOR FY27; CO'S ",
+   "posted": "2026-11-17T06:46:13+00:00",
+   "moves": {
+    "EMBASSY": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "8ba06126e5afc807",
+   "time": "2026-11-17T12:11:55+05:30",
+   "headline": "Capital Market stocks shine: Angel One jumps 6%; Groww, NSE hit new highs",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/capital-market-stocks-shine-angel-one-jumps-6-groww-nse-hit-new-highs-126111700369_1.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "intraday",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "ANGELONE",
+     "direction": "up"
+    },
+    {
+     "symbol": "GROWW",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Financial Services",
+    "Financial Services"
+   ],
+   "impact": 70,
+   "confidence": 70,
+   "category": "news",
+   "reason": [
+    "Angel One surged 6% and Groww posted strong gains, indicating buying momentum."
+   ],
+   "plain": "Angel One jumped 6% and Groww rose, leading market gains.",
+   "why": "Sharp price moves suggest strong short‑term buying interest.",
+   "original": "The Nifty Capital Markets index bounced back 23.4% from its low of 4,875.15 hit on October 26, 2026, against a 13.4% rise in the Nifty 50.",
+   "posted": "2026-11-17T07:01:22+00:00",
+   "moves": {
+    "ANGELONE": {
+     "pre": 0.47,
+     "s1": -3.29,
+     "x1": -2.39,
+     "s5": null,
+     "x5": null
+    },
+    "GROWW": {
+     "pre": 1.16,
+     "s1": -1.76,
+     "x1": -0.86,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "37657c921b417804",
+   "time": "2026-11-17T13:20:11+05:30",
+   "headline": "Kaynes Tech falls 16% in 2 sessions; Jefferies flags margin pressure",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/kaynes-tech-falls-16-in-2-sessions-jefferies-flags-margin-pressure-126111700486_1.html",
+   "section": "trading",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "KAYNES",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Capital Goods"
+   ],
+   "impact": 75,
+   "confidence": 85,
+   "category": "earnings",
+   "reason": [
+    "Sharp year-on-year drop in consolidated net profit triggered a major selloff.",
+    "Brokerage downgrade and margin concerns continue to exert downward pressure."
+   ],
+   "plain": "The electronics manufacturer suffered a heavy price fall after quarterly profit plunged and an analyst flagged margins.",
+   "why": "A steep drop in profits usually lowers short-term market confidence and share prices.",
+   "original": "Kaynes Technology reported a consolidated net profit of ₹39.8 crore in Q2FY27, compared with ₹115.7 crore in the corresponding quarter of the previous financial year.",
+   "posted": "2026-11-17T08:01:26+00:00",
+   "moves": {
+    "KAYNES": {
+     "pre": 4.09,
+     "s1": -0.84,
+     "x1": -1.74,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "96ac5739ccec0fc1",
+   "time": "2026-11-17T13:42:10+05:30",
+   "headline": "Kaynes Technology stock in pain as Street falls out of love",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/mark-to-market/kaynes-technology-stock-q2-results-smart-meter-sales-crash-11794899402071.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "KAYNES",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Electronics Manufacturing",
+    "Capital Goods"
+   ],
+   "impact": 65,
+   "confidence": 80,
+   "category": "earnings_downside",
+   "reason": [
+    "Management cutting meter shipments to focus on cash collection highlights revenue growth slowdown.",
+    "Mounting government receivables raise working capital and cash-flow concerns."
+   ],
+   "plain": "The electronics maker slowed down smart meter deliveries to focus on collecting pending dues from state authorities.",
+   "why": "Deliberately slowing deliveries hurts revenue growth and signals payment collection issues that hurt cash flow.",
+   "original": "The management reduced meter supplies to prioritize the recovery of outstanding receivables from state governments.",
+   "posted": "2026-11-17T08:16:01+00:00",
+   "moves": {
+    "KAYNES": {
+     "pre": 4.09,
+     "s1": -0.84,
+     "x1": -1.74,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "2ad327e7b4d2c6c9",
+   "time": "2026-11-17T14:04:59+05:30",
+   "headline": "Caplin Point Laboratories Limited: Caplin Point Laboratories Limited has informed the Exchange about Classification of US FDA Inspection at the facility of Caplin Steriles Limited (Company's Subsidiary) as OAI |SUBJECT: General Updates",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/CAPLINPOINT_17112026135959_Stock_Exchange_intimation_of_USFDA_Audit.pdf",
+   "section": "trading",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "CAPLIPOINT",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Pharmaceuticals"
+   ],
+   "impact": 75,
+   "confidence": 95,
+   "category": "regulatory",
+   "reason": [
+    "Official Action Indicated (OAI) by US FDA signals serious regulatory non-compliance.",
+    "Risk of import alerts or delayed product approvals for the injectable subsidiary."
+   ],
+   "plain": "The US health regulator classified an inspection at the company's sterile facility as Official Action Indicated.",
+   "why": "This classification indicates serious compliance issues that could delay new product approvals.",
+   "original": "Caplin Point Laboratories Limited: Caplin Point Laboratories Limited has informed the Exchange about Classification of US FDA Inspection at the facility of Caplin Steriles Limited (Company's Subsidiary) as OAI |SUBJECT: General Updates",
+   "posted": "2026-11-17T08:46:34+00:00",
+   "moves": {
+    "CAPLIPOINT": {
+     "pre": 4.25,
+     "s1": 7.2,
+     "x1": 6.3,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "655100629dac89a3",
+   "time": "2026-11-17T16:59:53+05:30",
+   "headline": "Making a comeback! Down 60% in 1 year, strong rally seen ahead for renewable energy stock Inox Wind; 42% upside likely",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/making-a-comeback-down-60-in-1-year-strong-rally-seen-ahead-for-renewable-energy-stock-inox-wind-42-upside-likely-11794910421216.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "INOXWIND",
+     "direction": "up"
+    },
+    {
+     "symbol": "INOXINDIA",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Renewable Energy"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "news",
+   "reason": [
+    "Analyst expects strong rally after recent slump."
+   ],
+   "plain": "Analyst sees 42% upside for Inox Wind after a 60% drop.",
+   "why": "Positive outlook could lift the share price.",
+   "original": "Religare retained its BUY rating on Inox Wind with an ₹83 target, citing equipment-led growth, a 3.8 GW order book, manufacturing expansion and a larger O&amp;M business. It expects strong FY26–FY28 growth, while flagging commodity costs, execution and working-capital management as risks.",
+   "posted": "2026-11-18T02:48:42+00:00",
+   "moves": {
+    "INOXWIND": {
+     "pre": -3.69,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    },
+    "INOXINDIA": {
+     "pre": 7.81,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "72e0c7adc3208224",
+   "time": "2026-11-17T19:37:25+05:30",
+   "headline": "Urban Company's ₹2,500-crore QIP oversubscribed 6 times, attracts ₹15,300 crore in bids: Report",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/urban-companys-rs-2-500-crore-qip-oversubscribed-6-times-attracts-rs-15-300-crore-in-bids-report-11794923606837.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "URBANCO",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Consumer Services"
+   ],
+   "impact": 60,
+   "confidence": 75,
+   "category": "news",
+   "reason": [
+    "Strong investor demand indicates confidence in the company's growth prospects."
+   ],
+   "plain": "Urban Company’s ₹2,500‑crore QIP was subscribed six times.",
+   "why": "High demand could boost the share price and fund expansion plans.",
+   "original": "Urban Company's ₹2,500-crore QIP reportedly attracted bids of around ₹15,300 crore, nearly six times the issue size, from domestic and global investors. The fundraising comes amid intensifying competition in home services.&nbsp;",
+   "posted": "2026-11-18T02:48:42+00:00",
+   "moves": {
+    "URBANCO": {
+     "pre": 6.87,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "9aa1a3325c55b4a0",
+   "time": "2026-11-17T19:58:06+05:30",
+   "headline": "BlackRock raises its stake in Axis Bank to 5%",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/blackrock-raises-its-stake-in-axis-bank-to-5/articleshow/135929469.cms",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "AXISBANK",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Banking"
+   ],
+   "impact": 50,
+   "confidence": 70,
+   "category": "news",
+   "reason": [
+    "BlackRock increasing its holding signals confidence in the bank."
+   ],
+   "plain": "BlackRock increased its stake in Axis Bank to 5%.",
+   "why": "The investment suggests confidence, which may lift the share price.",
+   "original": "BlackRock has successfully increased its stake in Axis Bank to 5 per cent by acquiring more shares from the open market. Specifically, the investment giant procured 18,560 crore additional shares, nudging its ownership from 4.99 per cent. This elevates BlackRock's total holding to 155,726,461 shares",
+   "posted": "2026-11-18T02:48:42+00:00",
+   "moves": {
+    "AXISBANK": {
+     "pre": -0.66,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "7f172028a62fcac5",
+   "time": "2026-11-18T05:00:13+05:30",
+   "headline": "JPMorgan is working on AI agent transactions that don’t involve humans",
+   "source": "CNBC World Markets",
+   "url": "https://www.cnbc.com/2026/11/18/jpmorgan-hyundai-card-ai-agents-payments.html",
+   "section": "global",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "HYUNDAI",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "financials"
+   ],
+   "impact": 60,
+   "confidence": 70,
+   "category": "news",
+   "reason": [
+    "AI adoption may boost operational efficiency.",
+    "Partnership with JPMorgan adds credibility."
+   ],
+   "plain": "JPMorgan and Hyundai Card are testing AI agents for financial transactions.",
+   "why": "If AI improves efficiency, Hyundai Card could see better margins and growth.",
+   "original": "JPMorgan and Hyundai Card are looking to expand the use of AI agents in financial transactions.",
+   "posted": "2026-11-18T02:48:42+00:00",
+   "moves": {
+    "HYUNDAI": {
+     "pre": -1.12,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "6c205637903ed7dc",
+   "time": "2026-11-18T09:28:26+05:30",
+   "headline": "IIFL Finance shares gain 6% after block deal; Fairfax likely seller",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/iifl-finance-shares-gain-6-after-block-deal-fairfax-likely-seller-126111800199_1.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "IIFL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Financial Services"
+   ],
+   "impact": 80,
+   "confidence": 90,
+   "category": "stock",
+   "reason": [
+    "Large stake sale by Fairfax signals confidence in valuation.",
+    "Block deal boosted liquidity and price."
+   ],
+   "plain": "Fairfax sold its entire 13.25% stake in IIFL Finance, pushing the shares up about 6%.",
+   "why": "The large block sale created buying interest and signaled confidence, lifting the price.",
+   "original": "Fairfax Financial Holdings, promoted by Prem Watsa was. looking to exit IIFL Finance by selling its entire 13.25 per cent stake through a block deal",
+   "posted": "2026-11-18T04:16:08+00:00",
+   "moves": {
+    "IIFL": {
+     "pre": 4.01,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "a0f6ad911ce97199",
+   "time": "2026-11-18T09:43:33+05:30",
+   "headline": "IIFL Finance share price: NBFC stock jumps 6% after ₹3,454 cr block deal: Why is Fairfax selling entire 13.25% stake?",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/iifl-finance-share-price-nbfc-stock-jumps-6-after-rs-3-454-cr-block-deal-why-is-fairfax-selling-entire-13-25-stake-11794973879183.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "IIFL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Financial Services"
+   ],
+   "impact": 80,
+   "confidence": 90,
+   "category": "stock",
+   "reason": [
+    "Large stake sale by Fairfax signals confidence in valuation.",
+    "Block deal boosted liquidity and price."
+   ],
+   "plain": "Fairfax sold its 13.25% stake in IIFL Finance, sending the stock up about 6%.",
+   "why": "The sale created buying pressure and signaled confidence, lifting the share price.",
+   "original": "Fairfax Financial reportedly sold its entire 13.25% stake in IIFL Finance for about ₹3,454 crore, with shares rising as much as 6.4% after news of the block deal. The sale is expected to help fund Fairfax’s proposed acquisition of a 60.72% stake in IDBI Bank.",
+   "posted": "2026-11-18T04:16:08+00:00",
+   "moves": {
+    "IIFL": {
+     "pre": 4.01,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "3e3b21bf179457ed",
+   "time": "2026-11-18T10:30:56+05:30",
+   "headline": "HINDUSTAN ORGANIC CHEMICALS: TEMPORARY SHUTDOWN OF KOCHI PHENOL PLANT EXTENDED BY ONE WEEK; MAINTENANCE WORK ON H₂ SUPPLY PIPELINE AND OTHER ACTIVITIES REQUIRED.",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9525",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [],
+   "sectors": [
+    "Chemicals"
+   ],
+   "impact": 60,
+   "confidence": 70,
+   "category": "operational",
+   "reason": [
+    "Plant shutdown reduces output and revenue",
+    "Maintenance may cause short‑term supply constraints"
+   ],
+   "plain": "The company's Kochi phenol plant will stay closed for another week for maintenance.",
+   "why": "A plant closure cuts production, which can temporarily lower earnings for shareholders.",
+   "original": "HINDUSTAN ORGANIC CHEMICALS: TEMPORARY SHUTDOWN OF KOCHI PHENOL PLANT EXTENDED BY ONE WEEK; MAINTENANCE WORK ON H₂ SUPPLY PIPELINE AND OTHER ACTIVITIES REQUIRED.",
+   "posted": "2026-11-18T05:17:47+00:00",
+   "moves": {}
+  },
+  {
+   "id": "c5e9311258c2a400",
+   "time": "2026-11-18T10:36:34+05:30",
+   "headline": "Hindustan Copper shares fall 3% as copper prices hit 5-month low",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/hindustan-copper-shares-fall-3-as-copper-prices-hit-5-month-low-126111800284_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "HINDCOPPER",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Metals"
+   ],
+   "impact": 60,
+   "confidence": 70,
+   "category": "stock",
+   "reason": [
+    "Copper price decline pressures margins.",
+    "Profit surge may not offset near‑term price weakness."
+   ],
+   "plain": "Hindustan Copper's shares dropped 3% after copper prices fell to a five‑month low despite a big profit rise.",
+   "why": "The drop shows investors worry about lower copper prices hurting future earnings, even though profit jumped this quarter.",
+   "original": "Helped by higher sales volume and metal prices, Hindustan Copper posted an 182 per cent year-on-year (YoY) rise in the second quarter (Q2 FY27) consolidated net profit to ₹518.13 crore.",
+   "posted": "2026-11-18T05:33:17+00:00",
+   "moves": {
+    "HINDCOPPER": {
+     "pre": 2.95,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "2406e9d592dd1db2",
+   "time": "2026-11-18T10:38:07+05:30",
+   "headline": "Gold financiers under pressure; Muthoot, Manappuram fall 5%; here's why",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/gold-financiers-under-pressure-muthoot-manappuram-fall-5-here-s-why-126111800267_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "MANAPPURAM",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "NBFC"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "Sector Headwind",
+   "reason": [
+    "Gold financiers facing pressure from falling gold prices.",
+    "Intensifying competition may moderate loan growth momentum."
+   ],
+   "plain": "Companies that lend money against gold are struggling because gold prices have dropped and competition is high.",
+   "why": "If gold prices fall, the value of the collateral drops, making it riskier for these companies to lend, which can hurt their profits.",
+   "original": "Analysts fear that the recent correction in gold prices and intensifying competition could moderate gold-loan growth momentum.",
+   "posted": "2026-11-18T05:33:17+00:00",
+   "moves": {
+    "MANAPPURAM": {
+     "pre": 4.59,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "e3aa5b1ab50f7db3",
+   "time": "2026-11-18T12:01:47+05:30",
+   "headline": "Caplin Point slides 13% in 3 sessions after US FDA flags plant for action",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/caplin-point-slides-13-in-3-sessions-after-us-fda-flags-plant-for-action-126111800383_1.html",
+   "section": "trading",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [],
+   "sectors": [
+    "Pharmaceuticals"
+   ],
+   "impact": 65,
+   "confidence": 90,
+   "category": "regulatory",
+   "reason": [
+    "Official Action Indicated (OAI) status suggests severe compliance deviations.",
+    "Often leads to import alerts or warning letters halting new US approvals."
+   ],
+   "plain": "A drug plant received a severe regulatory warning status from the US FDA.",
+   "why": "This regulatory status can block new product approvals and trigger warning letters.",
+   "original": "US FDA classified the Gummidipoondi facility as OAI, indicating that the FDA believes the inspection findings warrant regulatory action",
+   "posted": "2026-11-18T06:46:10+00:00",
+   "moves": {}
+  },
+  {
+   "id": "8b871a88ca76b33a",
+   "time": "2026-11-18T13:07:02+05:30",
+   "headline": "SEAMEC: BAGS USD 10.77 MILLION (APPROX. ₹100 CRORE) SUBSEA INSTALLATION CONTRACT FOR ONGC’S PIPELINE REPLACEMENT PROJECT",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9549",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "ONGC",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Energy"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "company",
+   "reason": [
+    "New subsea installation contract adds ~₹100 crore revenue",
+    "Strengthens order book and cash‑flow outlook"
+   ],
+   "plain": "ONGC won a subsea installation contract worth about ₹100 crore for a pipeline replacement project.",
+   "why": "The contract could boost ONGC’s revenue and improve its outlook, benefiting shareholders.",
+   "original": "SEAMEC: BAGS USD 10.77 MILLION (APPROX. ₹100 CRORE) SUBSEA INSTALLATION CONTRACT FOR ONGC’S PIPELINE REPLACEMENT PROJECT",
+   "posted": "2026-11-18T07:45:24+00:00",
+   "moves": {
+    "ONGC": {
+     "pre": 0.66,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "0b9fc38ad76e3ac2",
+   "time": "2026-11-18T13:29:11+05:30",
+   "headline": "JSW ENERGY: APTEL SETS ASIDE APERC ORDER, DIRECTS DISCOMS TO PAY APPLICABLE WIND POWER TARIFF WITH INTEREST",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9554",
+   "section": "trading",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "JSWENERGY",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Power",
+    "Renewable Energy"
+   ],
+   "impact": 65,
+   "confidence": 75,
+   "category": "LEGAL",
+   "reason": [
+    "APTEL ruled in favor of wind power developers, directing Andhra Discoms to pay tariffs with interest.",
+    "Improves cash flow clarity and resolves a long-standing regulatory overhang on renewable receivables."
+   ],
+   "plain": "Tribunal ordered power distributors to pay pending wind energy tariffs along with interest to the company.",
+   "why": "This could bring in significant pending cash flows and removes a lingering legal issue.",
+   "original": "JSW ENERGY: APTEL SETS ASIDE APERC ORDER, DIRECTS DISCOMS TO PAY APPLICABLE WIND POWER TARIFF WITH INTEREST",
+   "posted": "2026-11-18T08:01:27+00:00",
+   "moves": {
+    "JSWENERGY": {
+     "pre": -0.59,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "832e341e48d6c243",
+   "time": "2026-11-18T14:13:23+05:30",
+   "headline": "Angel One, 5paisa, BSE and other capital market stocks slide up to 3% as SEBI weighs MTF curbs; Is the MTF party over?",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/angel-one-5paisa-bse-and-other-capital-market-stocks-slide-up-to-3-as-sebi-weighs-mtf-curbs-is-the-mtf-party-over-11794988829405.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "ANGELONE",
+     "direction": "down"
+    },
+    {
+     "symbol": "BSE",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Brokerage",
+    "Exchanges"
+   ],
+   "impact": 50,
+   "confidence": 75,
+   "category": "Regulatory Concern",
+   "reason": [
+    "SEBI considering curbs on MTFs (Multi-Trading Facilities).",
+    "Stocks already sliding up to 3%."
+   ],
+   "plain": "Stocks of trading companies are falling because the regulator might restrict how they operate.",
+   "why": "If the rules become stricter, these companies might make less money, causing their stock prices to drop.",
+   "original": "Shares of SMC Global Securities, Anand Rathi Share and Stock Brokers, 5paisa Capital, Angel One and BSE fell up to 3% amid reports that SEBI is considering limits on leveraged stock purchases. Proposed restrictions could apply when margin-funded holdings reach a set share of a company’s free float.",
+   "posted": "2026-11-18T09:03:00+00:00",
+   "moves": {
+    "ANGELONE": {
+     "pre": 3.29,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    },
+    "BSE": {
+     "pre": 2.83,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "5008a1df8240f28c",
+   "time": "2026-11-18T14:15:16+05:30",
+   "headline": "RVNL share price down 71% from peak: Why does PL Capital see more downside?",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/rvnl-share-price-down-71-from-peak-why-does-pl-capital-see-more-downside-126111800587_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "RVNL",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Infrastructure"
+   ],
+   "impact": 60,
+   "confidence": 70,
+   "category": "Brokerage Downgrade",
+   "reason": [
+    "PL Capital maintains 'Sell' rating and cuts target price.",
+    "Stock trades at rich valuation of 38x FY28E EPS."
+   ],
+   "plain": "An investment firm says the stock is too expensive and predicts its price will fall further.",
+   "why": "When experts say a stock is overpriced, it often signals that the price may drop to a more reasonable level.",
+   "original": "RVNL stock, PL Capital said, trades at a rich valuation of around 38x FY28E EPS. The brokerage has maintained its 'Sell' rating on RVNL and cut the target price to ₹153.",
+   "posted": "2026-11-18T09:03:00+00:00",
+   "moves": {
+    "RVNL": {
+     "pre": 3.32,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "c670d9f572db19cb",
+   "time": "2026-11-18T14:32:19+05:30",
+   "headline": "ARISINFRA SOLUTIONS LTD: CO PROMOTER PURCHASES 5,00,000 EQUITY SHARES ON NOVEMBER 17",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9563",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [],
+   "impact": 60,
+   "confidence": 70,
+   "category": "company",
+   "reason": [
+    "Promoter buying signals confidence in the company’s prospects",
+    "Adds demand for shares, potentially supporting the price"
+   ],
+   "plain": "A promoter bought 500,000 shares of the company on November 17.",
+   "why": "Promoter buying often indicates confidence, which can lift the share price.",
+   "original": "ARISINFRA SOLUTIONS LTD: CO PROMOTER PURCHASES 5,00,000 EQUITY SHARES ON NOVEMBER 17",
+   "posted": "2026-11-18T09:17:46+00:00",
+   "moves": {}
+  },
+  {
+   "id": "17eb685efd98d822",
+   "time": "2026-11-18T18:21:36+05:30",
+   "headline": "Jio Financial Services Limited: Investment in Jio BlackRock Asset Management Private Limited, Joint Venture between the Company and BlackRock |SUBJECT: Acquisition",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/JIOFIN_18112026181924_JFSL.pdf",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "JIOFIN",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Financial Services"
+   ],
+   "impact": 80,
+   "confidence": 80,
+   "category": "news",
+   "reason": [
+    "Strategic partnership with BlackRock is likely to drive growth."
+   ],
+   "plain": "Jio Financial Services invested in a joint venture with BlackRock for asset management.",
+   "why": "The JV adds a strong partner and could increase earnings.",
+   "original": "Jio Financial Services Limited: Investment in Jio BlackRock Asset Management Private Limited, Joint Venture between the Company and BlackRock |SUBJECT: Acquisition",
+   "posted": "2026-11-18T13:55:24+00:00",
+   "moves": {
+    "JIOFIN": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "7e850c58ac4e8363",
+   "time": "2026-11-18T18:23:11+05:30",
+   "headline": "Acme Solar Holdings Limited: ACME SOLAR HOLDINGS LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_24030_WebXMLFile_20261118_182310185.xml",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "ACMESOLAR",
+     "direction": "up"
+    },
+    {
+     "symbol": "SOLARINDS",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Renewable Energy"
+   ],
+   "impact": 60,
+   "confidence": 65,
+   "category": "news",
+   "reason": [
+    "New orders boost the order book."
+   ],
+   "plain": "Acme Solar Holdings reported receiving new orders/contracts.",
+   "why": "Additional contracts can increase future revenue and improve outlook.",
+   "original": "Acme Solar Holdings Limited: ACME SOLAR HOLDINGS LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+   "posted": "2026-11-18T13:55:24+00:00",
+   "moves": {
+    "ACMESOLAR": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    },
+    "SOLARINDS": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "1ff3df076bf4e8b3",
+   "time": "2026-11-18T18:25:13+05:30",
+   "headline": "JIO FINANCIAL SERVICES: CO AND BLACKROCK INVEST ₹123 CRORE EACH IN 50:50 JOINT VENTURE JIO BLACKROCK ASSET MANAGEMENT",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9600",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "JIOFIN",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Financial Services"
+   ],
+   "impact": 80,
+   "confidence": 80,
+   "category": "news",
+   "reason": [
+    "BlackRock partnership adds credibility and capital."
+   ],
+   "plain": "Jio Financial Services and BlackRock each invested ₹123 crore in a 50:50 joint venture.",
+   "why": "The partnership could enhance asset‑management capabilities and boost earnings.",
+   "original": "JIO FINANCIAL SERVICES: CO AND BLACKROCK INVEST ₹123 CRORE EACH IN 50:50 JOINT VENTURE JIO BLACKROCK ASSET MANAGEMENT",
+   "posted": "2026-11-18T13:55:24+00:00",
+   "moves": {
+    "JIOFIN": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "ff828beb05cfb6ee",
+   "time": "2026-11-18T18:28:20+05:30",
+   "headline": "Jio Financial Services Limited: Jio Financial Services Limited has informed the Exchange regarding Acquisition (including agreement to acquire) |SUBJECT: Acquisition (including agreement to acquire)-XBRL",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_Restructuring_22295_WebXMLFile_20261118_182819409.xml",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "JIOFIN",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Financial Services"
+   ],
+   "impact": 70,
+   "confidence": 70,
+   "category": "news",
+   "reason": [
+    "Acquisition could expand business."
+   ],
+   "plain": "Jio Financial Services announced it will acquire another company.",
+   "why": "The acquisition could boost growth and earnings.",
+   "original": "Jio Financial Services Limited: Jio Financial Services Limited has informed the Exchange regarding Acquisition (including agreement to acquire) |SUBJECT: Acquisition (including agreement to acquire)-XBRL",
+   "posted": "2026-11-18T13:55:24+00:00",
+   "moves": {
+    "JIOFIN": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "635a8bcadf338800",
+   "time": "2026-11-18T18:29:41+05:30",
+   "headline": "SpiceJet board approves plan to raise up to ₹5,500 crore amid cash crunch",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/industry/aviation/spicejet-board-approves-plan-to-raise-up-to-5-500-crore-amid-cash-crunch-126111801099_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [],
+   "sectors": [],
+   "impact": 70,
+   "confidence": 70,
+   "category": "news",
+   "reason": [
+    "Capital raise may dilute existing shareholders.",
+    "Cash‑crunch signals financial stress."
+   ],
+   "plain": "SpiceJet plans to raise up to ₹5,500 crore through equity and other instruments.",
+   "why": "Large fund‑raising may dilute existing shareholders and signal cash stress.",
+   "original": "SpiceJet plans to raise up to ₹5,500 crore through equity and other instruments as mounting dues, salary delays and operational disruptions strain its finances.",
+   "posted": "2026-11-18T13:55:24+00:00",
+   "moves": {}
+  },
+  {
+   "id": "e64cae0e16a52b53",
+   "time": "2026-11-18T19:46:53+05:30",
+   "headline": "Gold price slide drags Muthoot Finance, Manappuram shares down nearly 4%",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/industry/news/gold-price-slide-drags-muthoot-finance-manappuram-shares-down-nearly-4-126111801259_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "MANAPPURAM",
+     "direction": "down"
+    },
+    {
+     "symbol": "MUTHOOTFIN",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Finance"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "news",
+   "reason": [
+    "Gold price decline reduces collateral value for gold‑loan lenders.",
+    "Shares fell nearly 4% on the news."
+   ],
+   "plain": "Gold price slide pulled Muthoot Finance and Manappuram shares down about 4%.",
+   "why": "Lower gold prices hurt the value of collateral, pressuring gold‑loan lenders.",
+   "original": "Shares of gold-loan financiers declined as falling gold prices raised concerns over collateral values, asset quality and the impact of tighter loan-to-value regulations.",
+   "posted": "2026-11-19T02:43:22+00:00",
+   "moves": {
+    "MANAPPURAM": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    },
+    "MUTHOOTFIN": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "8ec6b712af0c07ed",
+   "time": "2026-11-19T06:02:55+05:30",
+   "headline": "GMR Airports, IIFL Finance shares: Top 2 stocks to buy in near term; check target price, stop loss by Nagaraj Shetti",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/gmr-airports-iifl-finance-shares-top-2-stocks-to-buy-in-near-term-check-target-price-stop-loss-by-nagaraj-shetti-11795014291243.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "GMRAIRPORT",
+     "direction": "up"
+    },
+    {
+     "symbol": "IIFL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "airports",
+    "finance"
+   ],
+   "impact": 70,
+   "confidence": 60,
+   "category": "news",
+   "reason": [
+    "Analyst recommends these stocks for near‑term upside",
+    "Recent market dip may provide buying opportunity"
+   ],
+   "plain": "Analysts suggest GMR Airports and IIFL Finance could rise soon.",
+   "why": "They may benefit from the recent market dip and positive analyst coverage.",
+   "original": "The Sensex fell 500 points and the Nifty 50 dropped 159 points on Wednesday, ending a two-day winning streak as investors booked profits. Analysts cited support for the Nifty near 25,000–24,900 and recommended GMR Airports and IIFL Finance for short-term trades.",
+   "posted": "2026-11-19T02:43:22+00:00",
+   "moves": {
+    "GMRAIRPORT": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    },
+    "IIFL": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "2c17a475cf7a531f",
+   "time": "2026-11-19T07:59:38+05:30",
+   "headline": "Market LIVE: Sensex flat, Nifty below 25,200; Paytm, Pine Labs fall up to 6% on MDR Fee announcement",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-19-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-mahanadi-coalfields-ipo-today-126111900101_1.html",
+   "section": "trading",
+   "call": "sell",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "PAYTM",
+     "direction": "down"
+    },
+    {
+     "symbol": "PINELABS",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Fintech",
+    "Payments"
+   ],
+   "impact": 85,
+   "confidence": 90,
+   "category": "sector",
+   "reason": [
+    "MDR fee announcement directly impacts revenue models of payment aggregators.",
+    "Stocks are already falling up to 6% on this specific news."
+   ],
+   "plain": "Two payment companies are seeing their stock prices drop because of a new fee rule.",
+   "why": "The new fee rule might reduce the money these companies earn from processing transactions, which worries investors.",
+   "original": "Sensex Today | Stock Market LIVE Updates Thursday: In the broader markets, the Nifty MidCap and the Nifty SmallCap fell 0.23 per cent and 0.24 per cent, respectively",
+   "posted": "2026-11-19T04:01:09+00:00",
+   "moves": {
+    "PAYTM": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    },
+    "PINELABS": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "00f7a1ed88c0087e",
+   "time": "2026-11-19T09:58:20+05:30",
+   "headline": "BLS Polymers shares hit record high! Up 106% from IPO price, recently-listed multibagger stock soars 8% today | Buy?",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/bls-polymers-shares-hit-record-high-up-106-from-ipo-price-recently-listed-multibagger-stock-soars-8-today-buy-11795023009361.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "BLS",
+     "direction": "up"
+    }
+   ],
+   "sectors": [],
+   "impact": 70,
+   "confidence": 80,
+   "category": "stock",
+   "reason": [
+    "Revenue rose 28.9% YoY",
+    "PAT surged 130%"
+   ],
+   "plain": "BLS Polymers posted strong Q2 earnings, sending its shares sharply higher.",
+   "why": "Good earnings often lift the stock, so owners may see gains.",
+   "original": "BLS Polymers reported strong Q2FY27 results, with revenue up 28.92% year on year to ₹125.56 crore and profit after tax rising 130.63% to ₹10.54 crore. Shares climbed to a record high after already gaining about 103% from the IPO price.",
+   "posted": "2026-11-19T04:31:47+00:00",
+   "moves": {
+    "BLS": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "bb01b3d451a63125",
+   "time": "2026-11-19T10:11:26+05:30",
+   "headline": "Paytm, Pine Labs shares drop up to 7% amid concerns on UPI MDR delay",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/paytm-pine-labs-shares-drop-up-to-7-amid-concerns-on-upi-mdr-delay-126111900221_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "PAYTM",
+     "direction": "down"
+    },
+    {
+     "symbol": "PINELABS",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Fintech"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "Regulatory Delay",
+   "reason": [
+    "Delay in UPI Merchant Discount Rate (MDR) implementation reduces near-term revenue expectations.",
+    "Stocks already dropped up to 7% on the news."
+   ],
+   "plain": "The government may delay a new fee rule for digital payments until after state elections.",
+   "why": "This delay means these companies will earn less money from that fee than expected for a while.",
+   "original": "Reports suggest the implementation of MDR on select UPI transactions could be deferred until after assembly elections in five states during H1CY27, amid concerns over merchant opposition.",
+   "posted": "2026-11-19T05:01:31+00:00",
+   "moves": {
+    "PAYTM": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    },
+    "PINELABS": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "0fa846f4b65c1432",
+   "time": "2026-11-19T10:27:19+05:30",
+   "headline": "Paytm share price crash: Payment stock slides 7% on UPI MDR rollout delay; Pine Labs, One Mobikwik Systems also tumble",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/paytm-share-price-crash-payment-stock-slides-7-on-upi-mdr-rollout-delay-pine-labs-one-mobikwik-systems-also-tumble-11795062771594.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "PAYTM",
+     "direction": "down"
+    },
+    {
+     "symbol": "PINELABS",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Fintech",
+    "Payments"
+   ],
+   "impact": 75,
+   "confidence": 85,
+   "category": "Sector News",
+   "reason": [
+    "UPI MDR rollout delay directly hits revenue models.",
+    "Sector-wide negative sentiment affecting peers."
+   ],
+   "plain": "A key payment service fee is being delayed, which worries investors about future income.",
+   "why": "The delay means these companies will earn less money from transactions than expected.",
+   "original": "Paytm shares fell nearly 7% on Thursday as reports of another delay to UPI merchant charges raised concerns about payment companies’ revenue prospects. Pine Labs and MobiKwik also declined.&nbsp;",
+   "posted": "2026-11-19T05:16:34+00:00",
+   "moves": {
+    "PAYTM": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    },
+    "PINELABS": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "3865a62422575452",
+   "time": "2026-11-19T11:20:00+05:30",
+   "headline": "Dalmia Bharat buyback alert! Board to consider share repurchase proposal next week on Nov 23 - Key details | Buy or sell",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/dalmia-bharat-buyback-alert-board-to-consider-share-repurchase-proposal-next-week-on-nov-23-key-details-buy-or-sell-11795064602871.html",
+   "section": "trading",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "DALBHARAT",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Cement"
+   ],
+   "impact": 65,
+   "confidence": 85,
+   "category": "buyback",
+   "reason": [
+    "Board meeting scheduled on Nov 23 to consider a share buyback proposal.",
+    "Buybacks generally provide downside support to stock prices and signal management confidence."
+   ],
+   "plain": "Dalmia Bharat's board will meet on November 23 to consider a share buyback proposal.",
+   "why": "Share repurchases return cash to shareholders and often support the stock price.",
+   "original": "Dalmia Bharat shares rose up to 2% after the company said its board will consider a proposal to buy back fully paid-up equity shares on November 23. No buyback has been approved, and details such as its size, price and structure have not been disclosed.",
+   "posted": "2026-11-19T06:01:47+00:00",
+   "moves": {
+    "DALBHARAT": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "f583fa1e70ae06eb",
+   "time": "2026-11-19T11:30:12+05:30",
+   "headline": "JUBILANT INGREVIA: SAYS CFO VARUN GUPTA RESIGNS, EFFECTIVE NOVEMBER 30, 2026",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9663",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "JUBLINGREA",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "financial services"
+   ],
+   "impact": 45,
+   "confidence": 70,
+   "category": "company",
+   "reason": [
+    "CFO resignation creates leadership uncertainty.",
+    "Potential impact on financial reporting and strategy."
+   ],
+   "plain": "The chief financial officer quit, effective November 30, 2026.",
+   "why": "A CFO leaving can raise concerns about the company's financial management, possibly affecting the share price.",
+   "original": "JUBILANT INGREVIA: SAYS CFO VARUN GUPTA RESIGNS, EFFECTIVE NOVEMBER 30, 2026",
+   "posted": "2026-11-19T06:16:27+00:00",
+   "moves": {
+    "JUBLINGREA": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "d3fec271f09faed2",
+   "time": "2026-11-19T11:33:37+05:30",
+   "headline": "Jubilant Ingrevia Limited: Jubilant Ingrevia Limited has informed the Exchange regarding Resignation of Mr Varun Gupta as Chief Financial Officer of the company w.e.f. November 30, 2026. |SUBJECT: Resignation",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/JUBLINGREA_19112026113312_SE_Intimation_Resignation_of_CFO.pdf",
+   "section": "trading",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "JUBLINGREA",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Pharmaceuticals"
+   ],
+   "impact": 50,
+   "confidence": 70,
+   "category": "trading",
+   "reason": [
+    "Chief Financial Officer resignation is a leadership change.",
+    "May raise concerns about financial reporting continuity."
+   ],
+   "plain": "Jubilant Ingrevia’s CFO resigned effective 30 Nov 2026.",
+   "why": "Loss of a key executive can create short‑term uncertainty for shareholders.",
+   "original": "Jubilant Ingrevia Limited: Jubilant Ingrevia Limited has informed the Exchange regarding Resignation of Mr Varun Gupta as Chief Financial Officer of the company w.e.f. November 30, 2026. |SUBJECT: Resignation",
+   "posted": "2026-11-19T06:16:27+00:00",
+   "moves": {
+    "JUBLINGREA": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "bde585664109d3de",
+   "time": "2026-11-19T11:37:48+05:30",
+   "headline": "MIDHANI: CO SAYS EXPECTED TO EXCEED FY26 LEVEL OF 22.8% (H1 FY27 AT 20%), PLUS ₹450-₹500 CR NEW ORDERS SEEN IN Q3.",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9668",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [],
+   "impact": 70,
+   "confidence": 80,
+   "category": "company",
+   "reason": [
+    "Guidance shows higher growth and fresh ₹450‑₹500 crn new orders",
+    "Stronger order book may boost earnings"
+   ],
+   "plain": "MIDHANI expects higher growth and new orders worth ₹450‑₹500 crore in the next quarter.",
+   "why": "Higher growth and fresh orders could improve earnings, making the shares attractive.",
+   "original": "MIDHANI: CO SAYS EXPECTED TO EXCEED FY26 LEVEL OF 22.8% (H1 FY27 AT 20%), PLUS ₹450-₹500 CR NEW ORDERS SEEN IN Q3.",
+   "posted": "2026-11-19T06:16:27+00:00",
+   "moves": {}
+  },
+  {
+   "id": "52807d12a811fd4b",
+   "time": "2026-11-19T11:49:06+05:30",
+   "headline": "NBCC (INDIA): COMPANY WINS ORDER VALUED AT 85 CRORE RUPEES",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9673",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "NBCC",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Construction"
+   ],
+   "impact": 60,
+   "confidence": 70,
+   "category": "company",
+   "reason": [
+    "Order adds to NBCC’s revenue pipeline",
+    "May improve upcoming quarterly earnings"
+   ],
+   "plain": "NBCC secured a new construction contract worth 85 crore rupees.",
+   "why": "The contract adds revenue, which could lift earnings and support the share price.",
+   "original": "NBCC (INDIA): COMPANY WINS ORDER VALUED AT 85 CRORE RUPEES",
+   "posted": "2026-11-19T06:33:28+00:00",
+   "moves": {
+    "NBCC": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "073fd1f546e6afa7",
+   "time": "2026-11-19T11:49:28+05:30",
+   "headline": "LT Foods shares rocket 10%, nears peak! Daawat rice-parent makes a big US acquisition, jumps 545% in 5 yrs | Details",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/lt-foods-shares-rocket-10-nears-peak-daawat-rice-parent-makes-a-big-us-acquisition-jumps-545-in-5-yrs-details-11795067814304.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "LTFOODS",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Food & Beverage"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "news",
+   "reason": [
+    "Acquisition expands product portfolio",
+    "Revenue boost expected"
+   ],
+   "plain": "LT Foods announced acquisition of US‑based MK Foods Holdings for about ₹54.2 crore.",
+   "why": "The deal adds new brands and could lift earnings, making the stock attractive.",
+   "original": "LT Foods shares rose 10% after it agreed to acquire US-based MK Foods Holdings for about ₹54.2 crore. The deal will add Maya Kaimal’s Indian-inspired sauces, curries and rice products to its portfolio, strengthen its ready-to-eat, ready-to-cook and ready-to-heat offerings.",
+   "posted": "2026-11-19T06:33:28+00:00",
+   "moves": {
+    "LTFOODS": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "788c549479ff4b9a",
+   "time": "2026-11-19T12:39:29+05:30",
+   "headline": "Reliance Industries shares: After 13% surge in 1 month, JPMorgan sees another 23% upside in Mukesh Ambani stock | Target",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/reliance-industries-shares-after-13-surge-in-1-month-jpmorgan-sees-another-23-upside-in-mukesh-ambani-stock-target-11795069231709.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "RELIANCE",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Energy"
+   ],
+   "impact": 80,
+   "confidence": 85,
+   "category": "analyst",
+   "reason": [
+    "JPMorgan maintains Overweight rating with 23% upside target",
+    "Strong order‑to‑cash earnings expected"
+   ],
+   "plain": "JPMorgan kept an Overweight rating on Reliance with a target price suggesting about 23% upside.",
+   "why": "Analyst upgrade signals potential price rise, so shareholders should monitor the stock.",
+   "original": "JPMorgan maintained its Overweight rating on Reliance Industries with a ₹1,675 price target, implying about 23% upside. It expects stronger O2C earnings and possible upgrades to support growth.",
+   "posted": "2026-11-19T07:16:18+00:00",
+   "moves": {
+    "RELIANCE": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "0924ca3922b6d398",
+   "time": "2026-11-19T12:54:27+05:30",
+   "headline": "PB Fintech shares slide over 6% after co-founder Alok Bansal steps down",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/pb-fintech-shares-slide-over-6-after-co-founder-alok-bansal-steps-down-126111900475_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "POLICYBZR",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Fintech",
+    "Insurance"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "Management Change",
+   "reason": [
+    "Co-founder stepping down is a significant leadership change.",
+    "Stock already sliding over 6% indicates negative market reaction."
+   ],
+   "plain": "A co-founder of a major insurance tech company is leaving his daily job.",
+   "why": "When a key leader leaves, investors often worry about the company's future direction and sell shares.",
+   "original": "Bansal has stated that the change is on account of his personal desire to step back from day-to-day executive responsibilities.",
+   "posted": "2026-11-19T07:42:45+00:00",
+   "moves": {
+    "POLICYBZR": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "3ffe1d658bccd745",
+   "time": "2026-11-19T13:42:16+05:30",
+   "headline": "ALKEM LABORATORIES: US FDA ISSUES WARNING LETTER TO AMALIYA'S DAMAN MANUFACTURING FACILITY AFTER INSPECTION IS CLASSED AS OFFICIAL ACTION INDICATED (OAI); 45% OF OUR U.S. REVENUE COMES FROM THIS FACILITY",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9688",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "ALKEM",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Pharma"
+   ],
+   "impact": 85,
+   "confidence": 90,
+   "category": "Regulatory",
+   "reason": [
+    "FDA Warning Letter is a severe regulatory action indicating serious compliance failures.",
+    "45% of US revenue is tied to the affected facility, creating direct financial exposure."
+   ],
+   "plain": "US regulators issued a serious warning to a key factory owned by the company.",
+   "why": "This factory makes nearly half of the company's US sales, so the warning threatens major income.",
+   "original": "ALKEM LABORATORIES: US FDA ISSUES WARNING LETTER TO AMALIYA'S DAMAN MANUFACTURING FACILITY AFTER INSPECTION IS CLASSED AS OFFICIAL ACTION INDICATED (OAI); 45% OF OUR U.S. REVENUE COMES FROM THIS FACILITY",
+   "posted": "2026-11-19T08:16:35+00:00",
+   "moves": {
+    "ALKEM": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "6208dced900e1a1c",
+   "time": "2026-11-19T14:25:31+05:30",
+   "headline": "ADANI ENERGY SOLUTIONS: CO SAYS PROJECT TO ADD 881 CKMS OF TRANSMISSION LINES AND 3,160 MVA CAPACITY; ANNUAL TARIFF ESTIMATED AT ₹500 CR ON COMMISSIONING.",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9698",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "ADANIENSOL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Power"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "company",
+   "reason": [
+    "New transmission capacity expands revenue base",
+    "Estimated ₹500 cr annual tariff indicates strong cash flow"
+   ],
+   "plain": "Adani Energy announced a new transmission project expected to generate about ₹500 crore in annual tariff revenue.",
+   "why": "The added lines could boost the company’s earnings, making the stock potentially more attractive.",
+   "original": "ADANI ENERGY SOLUTIONS: CO SAYS PROJECT TO ADD 881 CKMS OF TRANSMISSION LINES AND 3,160 MVA CAPACITY; ANNUAL TARIFF ESTIMATED AT ₹500 CR ON COMMISSIONING.",
+   "posted": "2026-11-19T09:02:54+00:00",
+   "moves": {
+    "ADANIENSOL": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "05721b7bd42e22ef",
+   "time": "2026-11-19T14:28:55+05:30",
+   "headline": "Adani Energy Solutions Limited: Adani Energy Solutions Limited has informed the Exchange regarding a press release dated November 19, 2026, titled \"Adani Energy Solutions wins Bihar transmission project\". |SUBJECT: Press Release",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/ADANITRANS_19112026142813_AESL_Press_Release_Pirpainti_Transmission_Proj_win_.pdf",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "ADANIENSOL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Power & Utilities"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "company",
+   "reason": [
+    "Secured a large transmission project in Bihar; adds to order book."
+   ],
+   "plain": "Adani Energy Solutions announced it won a transmission project in Bihar.",
+   "why": "Winning a new project can boost future revenue, making the stock more attractive.",
+   "original": "Adani Energy Solutions Limited: Adani Energy Solutions Limited has informed the Exchange regarding a press release dated November 19, 2026, titled \"Adani Energy Solutions wins Bihar transmission project\". |SUBJECT: Press Release",
+   "posted": "2026-11-19T09:17:47+00:00",
+   "moves": {
+    "ADANIENSOL": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "29dac8bc7f8d9e19",
+   "time": "2026-11-19T14:50:37+05:30",
+   "headline": "IREDA shares jump 11% to 4-month high: Is the renewable energy stock finally turning around after 6 months of losses?",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/ireda-share-price-jumps-11-is-the-renewable-energy-player-finally-turning-around-after-6-months-of-losses-11795079108329.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "intraday",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "IREDA",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Energy"
+   ],
+   "impact": 70,
+   "confidence": 75,
+   "category": "stock",
+   "reason": [
+    "Shares rallied 11% after recovery",
+    "Renewable‑energy focus gains investor interest"
+   ],
+   "plain": "IREDA shares jumped 11% to a four‑month high, recovering six‑month losses.",
+   "why": "The rebound suggests renewed investor confidence in the renewable‑energy business.",
+   "original": "IREDA shares surged 11% to a four-month high of ₹133.60, recovering their six-month losses as November gains reached 34%. Trading volumes spiked despite no clear immediate trigger.&nbsp;",
+   "posted": "2026-11-19T09:33:19+00:00",
+   "moves": {
+    "IREDA": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "5658c5e6f27613d8",
+   "time": "2026-11-19T14:59:23+05:30",
+   "headline": "Tata Tech shares jump 10% as company targets $1.3 billion revenue by FY30, bets on aerospace, industrial machinery",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/tata-tech-shares-jump-10-as-company-targets-1-3-billion-revenue-by-fy30-bets-on-aerospace-industrial-machinery-11795077108823.html",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "TATATECH",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Technology"
+   ],
+   "impact": 80,
+   "confidence": 85,
+   "category": "stock",
+   "reason": [
+    "Revenue target of $1.1‑1.3 bn signals growth",
+    "Aerospace and industrial focus expands addressable market"
+   ],
+   "plain": "Tata Technologies set a FY30 revenue target of $1.1‑1.3 bn, shares rose 10%.",
+   "why": "Higher revenue outlook could boost earnings, making the stock attractive.",
+   "original": "Tata Technologies shares rose 10% to a one-month high after the company set FY30 targets of $1.1–1.3 billion in revenue and margins above 20%. Its plans include expanding aerospace, industrial machinery and AI-enabled services.&nbsp;",
+   "posted": "2026-11-19T09:33:19+00:00",
+   "moves": {
+    "TATATECH": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  },
+  {
+   "id": "1d75dfae5c0da79c",
+   "time": "2026-11-19T15:24:01+05:30",
+   "headline": "APL APOLLO TUBES: PROMOTER GUPTA FAMILY EXPLORES SALE OF 28.18% STAKE WORTH ~₹17,000 CRORE; TOTAL DEAL SIZE COULD EXCEED ₹32,000 CRORE INCLUDING MANDATORY OPEN OFFER.",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9703",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "APLAPOLLO",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Metal"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "company",
+   "reason": [
+    "Promoter is selling a large stake, which may dilute existing shareholders.",
+    "Mandatory open offer could trigger further selling pressure."
+   ],
+   "plain": "Promoter family is looking to sell about 28% of the company, worth around ₹17,000 crore.",
+   "why": "Selling a big chunk can dilute existing shareholders and push the share price lower.",
+   "original": "APL APOLLO TUBES: PROMOTER GUPTA FAMILY EXPLORES SALE OF 28.18% STAKE WORTH ~₹17,000 CRORE; TOTAL DEAL SIZE COULD EXCEED ₹32,000 CRORE INCLUDING MANDATORY OPEN OFFER.",
+   "posted": "2026-11-19T09:54:46+00:00",
+   "moves": {
+    "APLAPOLLO": {
+     "pre": null,
+     "s1": null,
+     "x1": null,
+     "s5": null,
+     "x5": null
+    }
+   }
+  }
+ ]
+}

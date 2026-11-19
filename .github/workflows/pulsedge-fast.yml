@@ -17,6 +17,8 @@ on:
       - master
     paths:
       - 'pulsedge-bot/fast_lane.py'
+      - 'pulsedge-bot/eval_act.py'
+      - 'pulsedge-bot/eval/**'
       - '.github/workflows/pulsedge-fast.yml'
 
 permissions:
@@ -55,6 +57,9 @@ jobs:
     - name: Dry run (branches)
       if: github.ref != 'refs/heads/master'
       run: python pulsedge-bot/fast_lane.py --dry-run
+    - name: Act checks on past alerts (branches)
+      if: github.ref != 'refs/heads/master'
+      run: python pulsedge-bot/eval_act.py --review
     - name: Watch the fast sources
       id: lane
       if: github.ref == 'refs/heads/master'

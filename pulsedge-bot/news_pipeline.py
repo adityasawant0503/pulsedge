@@ -261,7 +261,7 @@ SCHEMA = {
 GUIDE = """You triage Indian stock market news for PulsEdge, an educational news-impact tool.
 For each numbered headline, decide how it affects listed Indian stocks (NSE symbols from the list below).
 
-- call: "ignore" for routine filings (Reg 74(5), trading window, investor meet intimations, duplicate wire copy), market colour with no new information, or anything with no clear listed-stock impact. "watch" when it could matter but needs confirmation. "buy"/"sell" only for clearly material, company- or sector-specific news with a direct price impact.
+- call: "ignore" for routine filings (Reg 74(5), trading window, investor meet intimations, duplicate wire copy), market colour with no new information, or anything with no clear listed-stock impact. "watch" when it could matter but needs confirmation. "buy"/"sell" only for clearly material, company- or sector-specific news with a direct price impact. Never "buy"/"sell" for: a report that a share price already moved ("shares jump 9%"), a broker's rating or price target, a round-up of several stocks, or a live blog; those are at most "watch".
 - tickers: only symbols from the list; direction per stock. Empty for broad-market items.
 - impact and confidence: 0-100. impact is how much the news could move the named stocks; confidence is how sure you are of the direction.
 - action: one short, conditional, educational line (e.g. "Watch for follow-through above the first 15-min high"). Never promise returns.
@@ -520,6 +520,109 @@ def classify_rules(batch, universe):
 
 
 # ---------------------------------------------------------------- main
+# ---------------------------------------------------------------- Act checks
+# An Act call (buy/sell) goes to the Telegram channel and the "Act now" tab, so it must pass two checks.
+# 1. temper(): rules. Broker views, live blogs, round-ups and keyword-rule labels are at most Watch.
+# 2. review_act(): a second AI model re-reads each remaining Act call against stricter questions (new,
+#    company-specific, material, clear direction, not already in the price) and can only downgrade it.
+# On the alerts posted from 10 Nov (pulsedge-bot/eval/act_alerts.json, eval_act.py) broker views were right
+# about the next day's move 33% of the time against 44% for all Act alerts.
+BROKER = re.compile(r"target price|price target|\btarget of\b|\b(upgrade|downgrade)[sd]?\b|initiat\w* coverage|"
+                    r"\b(overweight|underweight|outperform|underperform)\b|\b(buy|sell|hold|neutral|add|reduce|accumulate) (rating|call)\b|"
+                    r"maintains? (buy|sell)|\bbrokerages\b|\d+% upside|upside potential|top picks|"
+                    r"\b(jefferies|morgan stanley|goldman sachs|nomura|clsa|citi|jp ?morgan|macquarie|bernstein|ubs|hsbc|"
+                    r"icici (direct|securities)|motilal oswal|kotak institutional)\b"
+                    r"(?=.{0,60}\b(target|upside|rating|sees|flags|lists|picks|bullish|bearish|overweight|underweight)\b)", re.I)
+LIVE_BLOG = re.compile(r"\blive\b[: ]|live updates|live blog|highlights", re.I)
+# a list of three or more names ("Sai, Gland, Divi's, Laurus") or a market round-up
+ROUNDUP = re.compile(r"(?i:\b(top (gainers|losers)|stocks? to (buy|watch)|buzzing stocks|stocks? in (focus|news)|hot stocks|"
+                     r"stock market today|market (wrap|close|today))\b)"
+                     r"|(\b[A-Z][\w'’&.-]*(\s[A-Z][\w'’&.-]*){0,2},\s*){2,}[A-Z]")
+
+
+def temper(x):
+    """The rules an Act call must pass; one that fails becomes Watch, with the reason first."""
+    if x.get("call") not in ("buy", "sell"):
+        return x
+    h = x.get("headline", "")
+    why = ("sorted by keyword rules only, with no AI reading" if any("eyword rules" in r for r in x.get("reason") or [])
+           else "a broker's view, not news from the company" if BROKER.search(h)
+           else "a live blog, not a single piece of news" if LIVE_BLOG.search(h)
+           else "a round-up of several stocks" if ROUNDUP.search(h)
+           else None)
+    if why:
+        x["call"], x["checked"] = "watch", why
+        x["reason"] = [f"Kept at Watch: {why}"] + list(x.get("reason") or [])[:2]
+    return x
+
+
+REVIEW = """You check Act alerts before PulsEdge sends them to retail investors in India. An Act alert says: this news is
+worth acting on today. Keep one only if all four hold:
+1. New, company-specific information: results, an order or contract, a deal, a fund raise, a regulator's action, a
+   management change. Not a report that the share price already moved, not a broker's rating or price target, not a
+   market round-up or live blog.
+2. Material for that company: large relative to its size, not routine.
+3. The direction for the share price follows clearly from the news itself.
+4. Not already in the price: if the headline says the stock already jumped or fell sharply on this news, it is too late.
+Reply with JSON only: {"items": [{"i": 0, "keep": true, "why": "under 12 words"}]} with one entry per alert.
+When unsure, keep is false."""
+
+
+def ask_json(url, key, model, system, user, max_tokens=2000):
+    """One chat request to an OpenAI-compatible API that must answer with a JSON object."""
+    body = {"model": model, "temperature": 0, "max_tokens": max_tokens, "response_format": {"type": "json_object"},
+            "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}
+    if "generativelanguage.googleapis.com" in url:
+        body["reasoning_effort"] = "low"
+    req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={
+        "Authorization": "Bearer " + key, "Content-Type": "application/json", "Accept": "application/json", "User-Agent": UA})
+    try:
+        with urllib.request.urlopen(req, timeout=AI_TIMEOUT) as r:
+            data = json.loads(r.read().decode("utf-8", "replace"))
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"HTTP {e.code} {e.read()[:300]!r}")
+    content = re.sub(r"^\s*```(?:json)?\s*|\s*```\s*$", "", data["choices"][0]["message"]["content"] or "")
+    return json.loads(content[content.find("{"):content.rfind("}") + 1])
+
+
+def review_act(items, cands=None):
+    """Second opinion on Act calls. Each one the reviewing model doesn't confirm becomes Watch. If no model answers,
+    the calls stand as they are (the rules in temper() have already run). Returns how many were downgraded."""
+    act = [x for x in items if x.get("call") in ("buy", "sell")]
+    if not act:
+        return 0
+    cands = ai_candidates() if cands is None else cands
+    rows = [f"{n}. [{x.get('source', '')}] {x['headline']}"
+            + (f" — {x.get('original', '')[:220]}" if x.get("original") and x.get("original") != x["headline"] else "")
+            + f"  (alert: {x['call'].upper()} {', '.join(t['symbol'] for t in x.get('tickers') or []) or 'no stock named'})"
+            for n, x in enumerate(act)]
+    for url, key, model in cands:
+        try:
+            out = ask_json(url, key, model, REVIEW, "Act alerts:\n" + "\n".join(rows))
+            verdict = {int(v["i"]): v for v in out.get("items", []) if isinstance(v, dict) and "i" in v}
+        except Exception as e:
+            log(f"  second check, {model}: {brief(str(e))}")
+            continue
+        if not verdict:
+            continue
+        down = 0
+        for n, x in enumerate(act):
+            v = verdict.get(n)
+            if v is None:
+                continue
+            if v.get("keep") is True:
+                x["checked"] = "confirmed by a second AI check"
+            else:
+                why = str(v.get("why") or "not confirmed by a second AI check")[:90]
+                x["call"], x["checked"] = "watch", why
+                x["reason"] = [f"Kept at Watch: {why}"] + list(x.get("reason") or [])[:2]
+                down += 1
+        log(f"  second check ({model}): {len(act) - down} of {len(act)} Act calls confirmed, {down} kept at Watch")
+        return down
+    log("  second check: no model answered; Act calls stand after the rules")
+    return 0
+
+
 def to_item(it, r, known):
     """One feed.json entry from a collected headline and its classification (also used by fast_lane.py)."""
     if it.get("section_hint") == "global":
@@ -527,7 +630,7 @@ def to_item(it, r, known):
         if not r.get("sectors"):
             r["sectors"] = global_themes(it["headline"] + " " + it["summary"])[1]
     tickers = [t for t in r["tickers"] if t["symbol"].upper() in known]
-    return {
+    return temper({
         "id": it["key"], "time": it["time"].isoformat(timespec="seconds"), "headline": it["headline"],
         "source": it["source"], "url": it["url"] if it["url"].startswith("http") else "",
         "section": r["section"], "call": r["call"], "horizon": r["horizon"], "direction": r["direction"],
@@ -537,7 +640,7 @@ def to_item(it, r, known):
         # the same item in everyday words, for the terminal's Simple view
         "plain": str(r.get("plain") or "")[:220], "why": str(r.get("why") or "")[:260], "check": str(r.get("check") or "")[:200],
         "original": it["summary"][:300] or it["headline"],
-    }
+    })
 
 
 def main():
@@ -641,6 +744,8 @@ def main():
             classified.append(to_item(it, res.get(n) or classify_rules([it], universe)[0], known))
         if wants_ai:
             time.sleep(4 if provider == "compat" else 1)      # stay under the free tiers' requests-per-minute limits
+    if provider == "compat":
+        review_act(classified, cands)
     if use_ai:
         log(f"classified {len(classified)}: {by_ai} by AI, {len(routine)} routine filings set aside by rule, {len(classified) - by_ai - len(routine)} by keyword rules")
         if not a.dry_run and classified:
