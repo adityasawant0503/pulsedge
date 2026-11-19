@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T14:01+05:30",
+ "updated": "2026-11-19T14:16+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -76,19 +76,19 @@
  },
  "stocks": {
   "ALKEM": {
-   "summary": "The US FDA issued a serious warning letter to Alkem's Daman manufacturing facility, which produces 45% of the company's US revenue. On the same day, several large mutual funds bought shares, while one family trust sold a significant block of stock.",
-   "why": "The FDA warning creates a risk that US exports from this key factory could be suspended, which would directly impact the company's major income source. Shareholders need to monitor if this regulatory issue leads to actual business losses.",
-   "upside": "Multiple large mutual funds purchased shares on the same day as the warning, suggesting some institutional investors still see value in the stock.",
-   "downside": "The FDA warning could lead to a suspension of US exports from the Daman facility, threatening nearly half of the company's US revenue.",
+   "summary": "The US Food and Drug Administration issued a serious warning to Alkem's Daman manufacturing facility after an inspection. This factory produces 45% of the company's revenue from the United States.",
+   "why": "This matters because a regulatory warning could restrict the company's ability to export medicines to the US, which is a major source of its income.",
+   "upside": "Several large mutual funds bought shares in the same week, suggesting some investors still see value in the company despite the news.",
+   "downside": "The FDA warning could lead to a suspension of exports from the Daman facility, which would directly reduce the company's earnings.",
    "watch": [
     "Any official response or corrective actions taken by Alkem regarding the FDA warning.",
-    "Whether the Daman facility faces a formal suspension of US exports.",
-    "Further large-scale buying or selling by institutional investors."
+    "Further announcements about the status of the Daman facility's operations.",
+    "Whether other large investors continue to buy or sell shares in response to the regulatory news."
    ],
-   "about": "",
-   "basis": "378960a487ed",
-   "items": 5,
-   "updated": "2026-11-19T13:45+05:30",
+   "about": "Alkem Laboratories is a healthcare company listed in India's Nifty 500 index.",
+   "basis": "85785016e0cb",
+   "items": 6,
+   "updated": "2026-11-19T14:16+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "PAYTM": {
@@ -1528,6 +1528,22 @@
    "updated": "2026-11-19T13:31+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "BRIGADE": {
+   "summary": "Brigade Enterprises has launched a new 40-acre premium housing project in East Bengaluru. This move signals that the company is actively expanding its business operations in a key market.",
+   "why": "For shareholders, launching new projects suggests the company is generating future sales opportunities, which can support long-term growth.",
+   "upside": "If buyers show strong interest in the new development, it could boost the company's revenue and demonstrate healthy market demand.",
+   "downside": "Real estate sales can be slow to materialize, and demand may weaken if interest rates rise or economic sentiment turns negative.",
+   "watch": [
+    "Early sales figures for the new Brigade Autograph project",
+    "Changes in interest rates that affect home loan costs",
+    "Overall performance of the Realty sector index"
+   ],
+   "about": "Brigade Enterprises is a realty company that develops and sells housing projects.",
+   "basis": "586459bc63ff",
+   "items": 2,
+   "updated": "2026-11-19T14:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "NMDC": {
    "summary": "NMDC is facing pressure from falling global metal prices, which has caused its sector to drop significantly over the last week. At the same time, a contractor won sub-contracts for civil work on NMDC township projects, indicating ongoing activity at the company.",
    "why": "Lower metal prices can reduce the company's profits, which may affect the value of its shares. However, continued project work suggests the company is still executing its plans.",
@@ -1559,22 +1575,6 @@
    "items": 2,
    "updated": "2026-11-19T08:15+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "TMCV": {
-   "summary": "Tata Motors' stock closed above its 200‑day moving average, hinting at a possible recovery after a long decline. At the same time, Jaguar Land Rover's (JLR) weak performance in China is seen as a drag on the group.",
-   "why": "Share price trends and JLR's China sales can directly impact the company's earnings and investor sentiment.",
-   "upside": "If the price breakout is supported by strong volume and other markets offset JLR's China weakness, the share could gain further.",
-   "downside": "A false breakout on low volume or continued JLR struggles in China could pull the share lower.",
-   "watch": [
-    "Trading volume behind the 200‑DMA price move",
-    "JLR's sales and market share in China",
-    "Performance of Tata Motors' other regional markets"
-   ],
-   "about": "Tata Motors manufactures passenger cars, commercial vehicles and trucks.",
-   "basis": "3309900b14ff",
-   "items": 2,
-   "updated": "2026-11-19T12:15+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "ULTRACEMCO": {
    "summary": "UltraTech Cement announced a credit rating update to the exchange. An investment advisor also highlighted the stock as one of three top picks in a recent note.",
