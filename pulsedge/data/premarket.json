@@ -1,18 +1,18 @@
 {
  "date": "2026-11-19",
- "updated": "2026-11-19T09:15:39+05:30",
+ "updated": "2026-11-19T09:30:53+05:30",
  "sentiment": "Mildly bearish",
  "breadth": {
   "up": 0,
-  "down": 2
+  "down": 1
  },
  "checklist": [
   {
    "title": "Nifty 50 last close (GIFT Nifty not available from free sources)",
    "dir": "flat",
-   "value": "25,227.95 (+0.00%)",
+   "value": "25,188.15 (-0.16%)",
    "detail": [
-    "Previous close 25,227.95"
+    "Previous close 25,228.52"
    ]
   },
   {
@@ -23,16 +23,16 @@
     "Dow 50,198.17 -1.11%",
     "S&P 7,323.63 -0.23%",
     "Nasdaq 24,429.88 +0.42%",
-    "Nasdaq futures now +0.84%"
+    "Nasdaq futures now +1.02%"
    ]
   },
   {
    "title": "Asian markets live - Nikkei, Hang Seng",
-   "dir": "down",
-   "value": "Asia lower",
+   "dir": "flat",
+   "value": "Asia mixed",
    "detail": [
-    "Nikkei 59,015.58 -0.01%",
-    "Hang Seng 22,844.50 -1.93%"
+    "Nikkei 59,246.79 +0.38%",
+    "Hang Seng 22,857.22 -1.88%"
    ]
   },
   {
@@ -40,32 +40,36 @@
    "dir": "flat",
    "value": "No major currency pressure",
    "detail": [
-    "DXY 103.97 +0.10%",
-    "USD/INR 93.395 -0.06%"
+    "DXY 103.96 +0.10%",
+    "USD/INR 93.493 +0.05%"
    ]
   },
   {
    "title": "Brent crude level",
    "dir": "flat",
-   "value": "$91.74 -0.23%",
+   "value": "$91.88 -0.08%",
    "detail": []
   },
   {
    "title": "India VIX",
    "dir": "flat",
-   "value": "15.56 (+0.00%) — normal",
+   "value": "15.70 (+0.88%) — normal",
    "detail": []
   }
  ],
- "summary": "Mildly bearish setup. NASDAQ closed 0.42% higher; supportive for IT; Nikkei down, Hang Seng down.",
+ "summary": "Mildly bearish setup. NASDAQ closed 0.42% higher; supportive for IT; Nikkei up, Hang Seng down.",
  "global_cues": [
   "NASDAQ closed 0.42% higher; supportive for IT",
-  "Nikkei down, Hang Seng down"
+  "Nikkei up, Hang Seng down"
  ],
  "india_triggers": [
-  "20 filings and headlines worth a look so far today"
+  "22 filings and headlines worth a look so far today"
  ],
  "focus": [
+  {
+   "symbol": "PAYTM",
+   "note": "Market LIVE: Sensex flat, Nifty below 25,200; Paytm, Pine Labs fall up"
+  },
   {
    "symbol": "CYIENT",
    "note": "Cyient Limited: Cyient Limited has informed the Exchange regarding a p"
@@ -73,10 +77,6 @@
   {
    "symbol": "GMRAIRPORT",
    "note": "GMR Airports, IIFL Finance shares: Top 2 stocks to buy in near term; c"
-  },
-  {
-   "symbol": "OIL",
-   "note": "US dollar hovers near 19-month high, Aussie falls after soft jobs data"
   }
  ],
  "sector_tags": [
@@ -89,38 +89,38 @@
  "also": [
   {
    "name": "BANK NIFTY",
-   "value": "62,038.7",
-   "change": 0.0
+   "value": "62,129.7",
+   "change": 0.15
   },
   {
    "name": "S&P FUT",
-   "value": "7,374",
-   "change": 0.46
+   "value": "7,384",
+   "change": 0.59
   },
   {
    "name": "NASDAQ FUT",
-   "value": "27,414",
-   "change": 0.84
+   "value": "27,464",
+   "change": 1.02
   },
   {
    "name": "KOSPI",
-   "value": "4,999",
-   "change": -1.36
+   "value": "5,050",
+   "change": -0.35
   },
   {
    "name": "WTI",
-   "value": "82.70",
-   "change": -0.67
+   "value": "82.85",
+   "change": -0.49
   },
   {
    "name": "GOLD",
-   "value": "3,714",
-   "change": -0.73
+   "value": "3,718",
+   "change": -0.65
   },
   {
    "name": "US 10Y",
    "value": "5.05",
-   "change": -0.28
+   "change": -0.24
   }
  ],
  "source": "CNBC / Yahoo Finance (unofficial, delayed)"

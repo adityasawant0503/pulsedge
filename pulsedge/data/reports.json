@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T09:01+05:30",
+ "updated": "2026-11-19T09:30+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -75,6 +75,38 @@
   "items": 20
  },
  "stocks": {
+  "PAYTM": {
+   "summary": "Paytm’s shares fell up to 6% after a new merchant discount rate (MDR) fee rule was announced, which could cut the money it earns from processing transactions. The broader Financials index was down 0.7% in the last session but up 1.2% over the past five sessions.",
+   "why": "The fee change may lower Paytm’s transaction‑processing revenue, affecting earnings for shareholders.",
+   "upside": "A sharp rebound is possible if the market later sees the long‑term impact as less severe.",
+   "downside": "The MDR fee could reduce the company’s core revenue from payment processing.",
+   "watch": [
+    "Paytm stock reaction in the days after the MDR fee announcement",
+    "Any regulatory clarification on the MDR fee rule",
+    "Financials sector index trends"
+   ],
+   "about": "One 97 Communications Ltd. runs Paytm, a digital payments and financial services platform.",
+   "basis": "3fa29d02acb6",
+   "items": 1,
+   "updated": "2026-11-19T09:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "PINELABS": {
+   "summary": "Pine Labs shares fell up to 6% after a new merchant discount rate (MDR) fee rule was announced, sparking concerns about its transaction revenue.",
+   "why": "The fee could cut the money the company earns from processing payments, which matters to shareholders.",
+   "upside": "A market reassessment could trigger a sharp rebound if the long‑term impact is seen as limited.",
+   "downside": "The MDR fee may reduce transaction‑processing income, pressuring earnings.",
+   "watch": [
+    "Clarifications on how the MDR fee will affect revenue",
+    "Sector index movement and broader financials performance",
+    "Company’s next earnings update or guidance"
+   ],
+   "about": "Pine Labs provides merchant payment and financing solutions, enabling businesses to accept digital transactions.",
+   "basis": "3fa29d02acb6",
+   "items": 1,
+   "updated": "2026-11-19T09:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "IIFL": {
    "summary": "IIFL Finance shares jumped about 6% after Fairfax sold its entire 13.25% stake in a large block deal. This move coincided with reports of new institutional investment in the company.",
    "why": "A large sale by a major investor can change how other traders view the stock, often leading to short-term price swings that affect the value of your holding.",
@@ -281,22 +313,6 @@
    "basis": "8105b29b4f74",
    "items": 1,
    "updated": "2026-11-17T12:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "MPHASIS": {
-   "summary": "Mphasis is expected to benefit from strong Q3 revenue growth and AI‑led short‑cycle deals, according to recent PulsEdge coverage. However, slower global IT spending could weigh on earnings.",
-   "why": "Shareholders care because the earnings outlook looks positive but could be affected by broader IT spending trends.",
-   "upside": "Higher Q3 revenue and AI‑driven deals could boost earnings.",
-   "downside": "A slowdown in global IT spending could curb earnings growth.",
-   "watch": [
-    "Q3 revenue numbers",
-    "Global IT spending trends",
-    "IT sector index movement"
-   ],
-   "about": "Mphasis provides information technology services and solutions.",
-   "basis": "160f3e4b36a7",
-   "items": 1,
-   "updated": "2026-11-17T00:55+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "SOLARINDS": {
