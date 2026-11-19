@@ -37,6 +37,9 @@ from PIL import Image, ImageDraw, ImageFont
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "..", "pulsedge", "data")
 POSTED = os.path.join(HERE, "posted.json")
+# what the fast lane (fast_lane.py) posted itself, the moment it sorted a RedBox or Walter Bloomberg post;
+# read here so the 15-minute run never posts those again (each lane writes only its own file)
+FAST_POSTED = os.path.join(HERE, "state", "fast_posted.json")
 IST = timezone(timedelta(hours=5, minutes=30))
 
 # card palette, matches terminal.html (PULSE design)
@@ -117,6 +120,15 @@ def normalize(item):
 
 def postable(ev):
     return ev["call"] in ("buy", "sell")
+
+
+def read_list(path):
+    try:
+        with open(path, encoding="utf-8") as fh:
+            v = json.load(fh)
+        return v if isinstance(v, list) else []
+    except (OSError, ValueError):
+        return []
 
 
 # ---------- market-moving news ----------
@@ -453,6 +465,41 @@ def digest_text(feed):
     return day, "\n".join(lines)
 
 
+def post_fast(items, dry=False):
+    """Called by fast_lane.py with the items it has just sorted: posts their Act cards and any market-moving news
+    at once, instead of waiting for the next 15-minute run. Returns the entries to record in FAST_POSTED."""
+    now = datetime.now(IST)
+    token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+    chat = os.environ.get("TELEGRAM_CHAT_ID") or "@pulsedgein"
+    if quiet_hours(now) or not (token or dry):
+        return []
+    seen = read_list(POSTED) + read_list(FAST_POSTED)
+    events = [normalize(x) for x in items if x.get("headline")]
+    done = []
+    for ev in sorted((e for e in events if postable(e) and e["id"] not in seen),
+                     key=lambda e: e["time"] or datetime.min.replace(tzinfo=IST)):
+        if dry:
+            print(f"--- would post card {ev['id']}\n{caption(ev)}\n")
+            continue
+        try:
+            send_photo(token, chat, png_bytes(render(ev)), caption(ev))
+            done.append(ev["id"])
+        except Exception as e:                       # one failed post never stops the lane
+            print(f"card {ev['id']} not posted ({type(e).__name__}: {str(e)[:120]})")
+    picks = pick_news(events, seen + done, now)
+    if picks:
+        text = news_text(picks, now)
+        if dry:
+            print(f"--- would post news\n{text}\n")
+        else:
+            try:
+                send_message(token, chat, text)
+                done += [f"news:{now:%Y-%m-%d}:{e['id']}" for e in picks]
+            except Exception as e:
+                print(f"news not posted ({type(e).__name__}: {str(e)[:120]})")
+    return done
+
+
 def png_bytes(img):
     buf = io.BytesIO()
     img.save(buf, "PNG", optimize=True)
@@ -506,8 +553,8 @@ def main():
 
     if a.cmd == "news":
         now = datetime.now(IST)
-        posted = json.load(open(POSTED)) if os.path.exists(POSTED) else []
-        picks = pick_news(events, posted, now)
+        posted = read_list(POSTED)
+        picks = pick_news(events, posted + read_list(FAST_POSTED), now)
         if not picks:
             print("No new market-moving news.")
             return
@@ -551,8 +598,9 @@ def main():
     if quiet_hours(datetime.now(IST)) and not a.event and not a.dry_run:
         print("Quiet hours (22:00 to 07:00 IST): new signals wait for the first run after 07:00.")
         return
-    posted = json.load(open(POSTED)) if os.path.exists(POSTED) else []
-    todo = [e for e in events if (a.event or postable(e)) and e["id"] not in posted]
+    posted = read_list(POSTED)
+    sent = set(posted) | set(read_list(FAST_POSTED))
+    todo = [e for e in events if (a.event or postable(e)) and e["id"] not in sent]
     todo.sort(key=lambda e: e["time"] or datetime.min.replace(tzinfo=IST))
     if not todo:
         print("Nothing new to post.")
