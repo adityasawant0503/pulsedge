@@ -8,8 +8,17 @@ Every Watch/Act/Buy/Sell call that names a stock is recorded the first time it i
 feed.json (the feed only keeps three days, so this runs on every pipeline run). Prices are
 NSE's official end-of-day closes from the daily bhavcopy on nsearchives.nseindia.com.
 
-  entry = close of the last session that had ended when the news came out (15:30 IST)
+  entry = the first NSE close after the news reached readers (its feed time + 15 minutes): the earliest
+          price someone who read the alert could have traded at with end-of-day data
   1D / 5D = close of the 1st / 5th session after that
+  news day = the move from the last close before the news to the entry close (already gone by the entry)
+  alert price = the live price recorded when the alert went out (quotes.py), when NSE was open; "after alert"
+          is the move from it to the entry close
+
+Until 20 Nov 2026 the entry was the close before the news, which counted the news-day move as if it could be
+traded and made the calls look far better than anyone could have done (61% vs about 40% on the same calls).
+
+paper_book() keeps the paper-trading log (data/paper.json): rules fixed on 20 Nov 2026, trades from then on.
 
 A call counts towards the hit rate only when the AI gave the stock a direction (up/down).
 Keyword-rule calls have no real direction, so they show the price move but are never scored.
@@ -179,44 +188,61 @@ def add_calls(track, feed):
                 continue
             d = (t.get("direction") if isinstance(t, dict) else None) or it.get("direction")
             scored = ai_classified(it) and d in ("up", "down")
+            q = (it.get("quotes") or {}).get(sym) or {}
             track["calls"].append({
                 "id": it["id"], "symbol": sym, "time": it["time"], "call": it["call"].lower(),
                 "dir": d if scored else None, "scored": scored, "source": it.get("source", ""),
                 "headline": (it.get("headline") or "")[:160], "url": it.get("url", ""),
+                **({"alert_px": q["px"], "alert_move": q["move"], "alert_at": q["at"], "alert_delay": q.get("delay", 0)}
+                   if q.get("px") else {}),
             })
             have.add((it["id"], sym))
             new += 1
     return new
 
 
-def entry_session(t, days):
-    """Index into sorted session days of the last session that had closed by time t."""
-    cut = t.date().isoformat()
-    closed_today = (t.hour, t.minute) >= CLOSE_TIME
+READ_DELAY = timedelta(minutes=15)     # the news run's cadence: by then the item is in the terminal
+
+
+def closed_by(t, days):
+    """Index of the last session whose close (15:30 IST) had happened by time t."""
     idx = None
     for i, d in enumerate(days):
-        if d < cut or (d == cut and closed_today):
+        if datetime.fromisoformat(d).replace(hour=CLOSE_TIME[0], minute=CLOSE_TIME[1], tzinfo=IST) <= t:
             idx = i
         else:
             break
     return idx
 
 
+def entry_session(t, days):
+    """Index of the first session that closed after the news reached readers (t + READ_DELAY)."""
+    i = closed_by(t + READ_DELAY, days)
+    j = 0 if i is None else i + 1
+    return j if j < len(days) else None
+
+
 def score(track, closes):
     sessions = closes.get("sessions", {})
     days = sorted(sessions)
     for c in track["calls"]:
-        for k in ("entry_date", "entry", "r1", "r5", "hit1", "hit5"):   # recomputed from the sessions as they stand
+        for k in ("entry_date", "entry", "r1", "r5", "hit1", "hit5", "news_day", "after_alert"):   # recomputed each run
             c.pop(k, None)
         t = datetime.fromisoformat(c["time"])
         i = entry_session(t, days)
         if i is None:
-            continue  # news is older than our price history
+            continue  # prices not in yet, or news older than our price history
         c["entry_date"] = days[i]
         entry = sessions[days[i]].get(c["symbol"])
         if not entry:
             continue
         c["entry"] = entry
+        p = closed_by(t, days)
+        before = sessions[days[p]].get(c["symbol"]) if p is not None and p < i else None
+        if before:
+            c["news_day"] = round((entry / before - 1) * 100, 2)
+        if c.get("alert_px"):
+            c["after_alert"] = round((entry / c["alert_px"] - 1) * 100, 2)
         for n, k in ((1, "r1"), (5, "r5")):
             if i + n < len(days):
                 px = sessions[days[i + n]].get(c["symbol"])
@@ -236,13 +262,89 @@ def summarise(calls):
                 "avg_return": round(sum(signed) / len(signed), 2) if signed else None}
 
     moved = [abs(c["r1"]) for c in calls if "r1" in c]
+    sign = lambda c: 1 if c["dir"] == "up" else -1                    # noqa: E731
+    news_day = [sign(c) * c["news_day"] for c in calls if c["scored"] and c.get("news_day") is not None]
+    after = [sign(c) * c["after_alert"] for c in calls if c["scored"] and c.get("after_alert") is not None]
     return {
         "calls": len(calls),
         "scored_calls": sum(c["scored"] for c in calls),
         "d1": rate(1), "d5": rate(5),
         "avg_abs_move_1d": round(sum(moved) / len(moved), 2) if moved else None,
+        # how much of the move had already happened by the entry: on the news day, and from the alert to that close
+        "news_day_move": round(sum(news_day) / len(news_day), 2) if news_day else None,
+        "after_alert_move": {"n": len(after), "avg": round(sum(after) / len(after), 2)} if after else None,
         "since": min((c["time"][:10] for c in calls), default=None),
     }
+
+
+# ---------------------------------------------------------------- paper trading
+# Rules written down before any of these trades happened (20 Nov 2026), from a test on 9-19 Nov that found nothing
+# proven. Only trades entered from PAPER_START count. Same honest entry as the track record, 0.3% round-trip costs.
+PAPER = os.path.join(DATA, "paper.json")
+PAPER_START = "2026-11-20"
+COST = 0.30
+STRATEGIES = [
+    {"id": "buy-the-fall", "name": "Buy the fall", "hold": 1,
+     "rule": "PulsEdge flags bad news on a stock (an AI call pointing down) and the stock has already fallen 3% or more "
+             "from the close before the news to the first close after it reached readers: buy at that close, sell at "
+             "the next close.",
+     "earlier": "9-19 Nov replay: 24 trades, 58% won, +0.42% a trade after costs (8 of them on 18 Nov; not proven)",
+     "pick": lambda c: c["scored"] and c["dir"] == "down" and c.get("news_day") is not None and c["news_day"] <= -3,
+     "side": lambda c: 1},
+    {"id": "short-sell-alerts", "name": "Act on Sell alerts", "hold": 1,
+     "rule": "Every Sell (Act) alert: short at the first close after it reached readers, buy back at the next close. "
+             "In practice this needs futures or an intraday short; for a holder it means selling.",
+     "earlier": "9-19 Nov replay: 25 trades, 48% won, -0.06% a trade after costs (Sell alerts beat Buy alerts, but not costs)",
+     "pick": lambda c: c["call"] == "sell" and c["scored"],
+     "side": lambda c: -1},
+    {"id": "fade-jumps", "name": "Fade the jump", "hold": 5,
+     "rule": "PulsEdge flags good news (an AI call pointing up) and the stock has already risen 3% or more by the "
+             "first close after the news reached readers: short at that close, buy back five sessions later.",
+     "earlier": "9-19 Nov replay: 28 trades, 75% won, +1.11% a trade after costs, 12 of them on 11 Nov (not proven)",
+     "pick": lambda c: c["scored"] and c["dir"] == "up" and c.get("news_day") is not None and c["news_day"] >= 3,
+     "side": lambda c: -1},
+    {"id": "follow-act", "name": "Follow every Act alert (baseline)", "hold": 1,
+     "rule": "Every Act alert in the alert's direction: buy if it points up, short if down, at the first close "
+             "after it reached readers; exit at the next close. The yardstick the others must beat.",
+     "earlier": "9-19 Nov replay: 70 trades, 39% won, -0.18% a trade after costs",
+     "pick": lambda c: c["call"] in ("buy", "sell") and c["scored"],
+     "side": lambda c: 1 if c["dir"] == "up" else -1},
+]
+
+
+def paper_book(calls, closes):
+    sessions = closes.get("sessions", {})
+    days = sorted(sessions)
+    out = []
+    for st in STRATEGIES:
+        trades, seen = [], set()
+        for c in sorted(calls, key=lambda c: c["time"]):
+            if not c.get("entry") or c.get("entry_date", "") < PAPER_START or not st["pick"](c):
+                continue
+            key = (c["symbol"], c["entry_date"])
+            if key in seen:                                   # one trade per stock per entry day
+                continue
+            seen.add(key)
+            side, i = st["side"](c), days.index(c["entry_date"]) if c["entry_date"] in days else None
+            t = {"date": c["entry_date"], "symbol": c["symbol"], "side": "long" if side > 0 else "short",
+                 "entry": c["entry"], "headline": c["headline"][:120], "url": c.get("url", "")}
+            j = None if i is None else i + st["hold"]
+            px = sessions[days[j]].get(c["symbol"]) if j is not None and j < len(days) else None
+            if px:
+                t.update(exit_date=days[j], exit=px, net=round(side * (px / c["entry"] - 1) * 100 - COST, 2))
+            trades.append(t)
+        done = [t["net"] for t in trades if "net" in t]
+        summary = {"closed": len(done), "open": len(trades) - len(done),
+                   "win_rate": round(100 * sum(v > 0 for v in done) / len(done)) if done else None,
+                   "avg_net": round(sum(done) / len(done), 2) if done else None,
+                   "total_net": round(sum(done), 2) if done else None}
+        out.append({k: st[k] for k in ("id", "name", "rule", "hold", "earlier")} | {"summary": summary,
+                    "trades": sorted(trades, key=lambda t: t["date"], reverse=True)[:80]})
+    return {"updated": NOW.isoformat(timespec="seconds"), "start": PAPER_START, "cost": COST,
+            "note": "Paper trades only: no money is placed. Rules fixed on 20 Nov 2026 and never changed afterwards; "
+                    "entry is the first NSE close after the news reached readers, exit the close 'hold' sessions "
+                    "later, net of 0.3% round-trip costs. Educational; not investment advice.",
+            "strategies": out}
 
 
 def main():
@@ -265,17 +367,21 @@ def main():
     out = {
         "updated": NOW.isoformat(timespec="seconds"),
         "summary": summarise(track["calls"]),
-        "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the "
-                  "closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
+        "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and "
+                  "5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the "
+                  "hit rate.",
         "source": "NSE end-of-day bhavcopy",
         "calls": track["calls"],
     }
+    paper = paper_book(track["calls"], closes)
     log(f"track: {new} new calls, {added} new sessions, {len(closes.get('sessions', {}))} sessions stored")
     log("summary: " + json.dumps(out["summary"]))
+    log("paper: " + "; ".join(f"{s['id']} {json.dumps(s['summary'])}" for s in paper["strategies"]))
     if dry:
         return
     save(CLOSES, closes)
     save(TRACK, out)
+    save(PAPER, paper)
 
 
 if __name__ == "__main__":

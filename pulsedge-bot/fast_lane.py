@@ -196,6 +196,7 @@ def check(sources, sorter, universe, known, dry, publishing):
         log(f"  {x['call'].upper():6} {x['impact']:3}  {int(lag):>5}s after posting  ({by})  {x['headline'][:90]}")
 
     news.review_act(items, [c for i, c in enumerate(sorter.cands) if sorter.rest.get(i, 0) <= time.time()])
+    news.add_quotes(items)
     cutoff = picked - KEEP
     old = [x for x in fast.get("items", []) if news.parse_time(x.get("time", "")) and news.parse_time(x["time"]) > cutoff]
     out = {

@@ -103,7 +103,7 @@ footer{margin-top:36px;font-size:12px;color:var(--mute)}
 
   <p class="kick">Track record</p>
   <h1>How our calls did.</h1>
-  <p class="lede">Every Watch and Act call on a named stock is logged the moment it's made, then checked against NSE's official closing price one and five trading sessions later. Nothing is removed.</p>
+  <p class="lede">Every Watch and Act call on a named stock is logged the moment it's made, then checked against NSE's official closing prices. We measure from the first close after the news reached you, the earliest price you could have traded at, not from before the news broke. Nothing is removed.</p>
 
   <div class="tiles">
     <div class="tile"><b id="t-calls">–</b><span>calls tracked</span></div>
@@ -111,7 +111,7 @@ footer{margin-top:36px;font-size:12px;color:var(--mute)}
     <div class="tile"><b id="t-h5">–</b><span id="t-h5s">5-day hit rate</span></div>
     <div class="tile"><b id="t-mv">–</b><span>avg 1-day move after news</span></div>
   </div>
-  <p class="note" id="note">A call counts as a hit when the stock moved the way the AI said it would. Calls made by keyword rules (while AI is off) carry no direction, so they show the price move but are never counted.</p>
+  <p class="note" id="note">A call counts as a hit when the stock moved the way the AI said it would after that close. Most of a news move happens before anyone can act on it, so these numbers are lower than a measure from before the news would show. That is the honest version. Calls made by keyword rules (while AI is off) carry no direction, so they show the price move but are never counted.</p>
 
   <div class="bar">
     <div class="seg" role="group" aria-label="Filter calls">
@@ -126,7 +126,7 @@ footer{margin-top:36px;font-size:12px;color:var(--mute)}
     <tbody id="rows"><tr><td class="empty" colspan="8">Loading…</td></tr></tbody>
   </table>
 
-  <footer>Prices: NSE end-of-day bhavcopy. Entry is the close of the last session that had ended when the news came out. Past results don't predict future ones. Educational information only, not investment advice.<br><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="contact.html">Contact</a></footer>
+  <footer>Prices: NSE end-of-day bhavcopy. Entry is the first NSE close after the news reached readers (15 minutes after it came out); until 20 Nov 2026 this page measured from the close before the news, which overstated results; every call since 26 Oct has been re-measured the new way. Past results don't predict future ones. Educational information only, not investment advice.<br><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="contact.html">Contact</a></footer>
 </main>
 <script>
 (function(){
