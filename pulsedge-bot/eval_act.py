@@ -18,6 +18,7 @@ import math
 import os
 import statistics as st
 import sys
+import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -63,6 +64,7 @@ def main():
         cands = sorted(news.ai_candidates(), key=lambda c: 0 if "groq.com" in c[0] else 1)   # as in the fast lane
         for i in range(0, len(reviewed), 15):                 # small batches, like a busy hour
             news.review_act(reviewed[i:i + 15], cands)
+            time.sleep(2)                                     # stay under the free tier's per-minute limit
         kept = [x for x in reviewed if x["call"] in ("buy", "sell")]
         gone = [x for x in reviewed if x["call"] not in ("buy", "sell")]
         print(line("after rules and second check", kept))

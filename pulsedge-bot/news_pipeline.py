@@ -592,6 +592,9 @@ def review_act(items, cands=None):
     if not act:
         return 0
     cands = ai_candidates() if cands is None else cands
+    # one model judges every batch, so the bar doesn't move from run to run: the largest first (on the past alerts
+    # gpt-oss-120b answered consistently; a smaller model confirmed 0 of 15 in one batch and 9 of 15 in the next)
+    cands = sorted(cands, key=lambda c: 0 if "120b" in c[2] else 1 if "70b" in c[2] else 2)
     rows = [f"{n}. [{x.get('source', '')}] {x['headline']}"
             + (f" — {x.get('original', '')[:220]}" if x.get("original") and x.get("original") != x["headline"] else "")
             + f"  (alert: {x['call'].upper()} {', '.join(t['symbol'] for t in x.get('tickers') or []) or 'no stock named'})"
