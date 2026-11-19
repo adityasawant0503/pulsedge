@@ -1,7 +1,45 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-19T12:51:35+05:30",
+ "updated": "2026-11-19T13:43:35+05:30",
  "items": [
+  {
+   "id": "3ffe1d658bccd745",
+   "time": "2026-11-19T13:42:16+05:30",
+   "headline": "ALKEM LABORATORIES: US FDA ISSUES WARNING LETTER TO AMALIYA'S DAMAN MANUFACTURING FACILITY AFTER INSPECTION IS CLASSED AS OFFICIAL ACTION INDICATED (OAI); 45% OF OUR U.S. REVENUE COMES FROM THIS FACILITY",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9688",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "ALKEM",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Pharma"
+   ],
+   "impact": 85,
+   "confidence": 90,
+   "category": "Regulatory",
+   "action": "Expect significant downside volatility; monitor for immediate clarification on export suspension or remediation timelines.",
+   "reason": [
+    "FDA Warning Letter is a severe regulatory action indicating serious compliance failures.",
+    "45% of US revenue is tied to the affected facility, creating direct financial exposure."
+   ],
+   "risks": [
+    "Potential suspension of US exports from the Daman facility.",
+    "Costly and time-consuming remediation process may delay revenue recovery."
+   ],
+   "plain": "US regulators issued a serious warning to a key factory owned by the company.",
+   "why": "This factory makes nearly half of the company's US sales, so the warning threatens major income.",
+   "check": "Read the company's official statement to see if they plan to stop shipping from that factory.",
+   "original": "ALKEM LABORATORIES: US FDA ISSUES WARNING LETTER TO AMALIYA'S DAMAN MANUFACTURING FACILITY AFTER INSPECTION IS CLASSED AS OFFICIAL ACTION INDICATED (OAI); 45% OF OUR U.S. REVENUE COMES FROM THIS FACILITY",
+   "latency": 79.3,
+   "lane": "fast"
+  },
   {
    "id": "91d17440c88995ee",
    "time": "2026-11-19T12:51:21+05:30",
@@ -1796,241 +1834,6 @@
    "check": "Look at recent global oil price trends and India's monthly trade deficit data.",
    "original": "GOLDMAN SACHS: FURTHER RISE IN CRUDE OIL PRICES MAY DERAIL GROWTH OUTLOOK; INDIA CAD TO REMAIN CONTAINED AT 1.1% OF GDP IN 2027",
    "latency": 27.0,
-   "lane": "fast"
-  },
-  {
-   "id": "0b9fc38ad76e3ac2",
-   "time": "2026-11-18T13:29:11+05:30",
-   "headline": "JSW ENERGY: APTEL SETS ASIDE APERC ORDER, DIRECTS DISCOMS TO PAY APPLICABLE WIND POWER TARIFF WITH INTEREST",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9554",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "JSWENERGY",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Power",
-    "Renewables"
-   ],
-   "impact": 65,
-   "confidence": 70,
-   "category": "Regulatory/Arbitration",
-   "action": "Monitor for confirmation of payment timelines and interest accrual details from the company.",
-   "reason": [
-    "APTEL ruling reverses a previous order that likely reduced revenue.",
-    "Mandates payment of applicable wind power tariffs plus interest, directly improving cash flows."
-   ],
-   "risks": [
-    "Discoms may delay payments or appeal the decision.",
-    "Interest calculation details may be lower than market expectations."
-   ],
-   "plain": "A top court ordered power companies to pay a wind energy firm the correct rate plus interest.",
-   "why": "This means the company will receive more money than expected, which is good for its profits.",
-   "check": "Look for the company's official statement on how much extra money they expect to receive.",
-   "original": "JSW ENERGY: APTEL SETS ASIDE APERC ORDER, DIRECTS DISCOMS TO PAY APPLICABLE WIND POWER TARIFF WITH INTEREST",
-   "latency": 79.7,
-   "lane": "fast"
-  },
-  {
-   "id": "f8847704e5631d3d",
-   "time": "2026-11-18T13:20:55+05:30",
-   "headline": "NTPC: 3 WORKERS EMPLOYED BY SIMPLEX INFRASTRUCTURES AND THYSSENKRUPP WERE KILLED AND 2 OTHERS INJURED IN ACCIDENT AT NTPC'S PROJECT IN TANDWA; INVESTIGATION INTO THE CAUSE OF THE ACCIDENT IS UNDERWAY",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9552",
-   "section": "news",
-   "call": "watch",
-   "horizon": "intraday",
-   "direction": "down",
-   "tickers": [
-    {
-     "symbol": "NTPC",
-     "direction": "down"
-    }
-   ],
-   "sectors": [
-    "Power"
-   ],
-   "impact": 20,
-   "confidence": 60,
-   "category": "Operational Incident",
-   "action": "Monitor for regulatory updates or project delay announcements that could extend the negative sentiment.",
-   "reason": [
-    "Fatalities at a project site trigger immediate safety scrutiny and potential work stoppages.",
-    "Investigation may lead to short-term operational disruptions or reputational risk."
-   ],
-   "risks": [
-    "Regulatory fines or mandatory safety audits could increase costs.",
-    "Project timeline delays may affect revenue recognition."
-   ],
-   "plain": "Three workers died in an accident at an NTPC project site, and an investigation is now underway.",
-   "why": "Such accidents can pause work and draw regulatory attention, which might temporarily affect the company's operations and reputation.",
-   "check": "Look for official statements from the company or news about any work stoppages.",
-   "original": "NTPC: 3 WORKERS EMPLOYED BY SIMPLEX INFRASTRUCTURES AND THYSSENKRUPP WERE KILLED AND 2 OTHERS INJURED IN ACCIDENT AT NTPC'S PROJECT IN TANDWA; INVESTIGATION INTO THE CAUSE OF THE ACCIDENT IS UNDERWAY",
-   "latency": 35.6,
-   "lane": "fast"
-  },
-  {
-   "id": "6dd6e246364219f5",
-   "time": "2026-11-18T13:19:02+05:30",
-   "headline": "ROYAL ORCHID HOTELS LIMITED: CO. LAUNCHES NEW PROPERTY REGENTA CRYSTAL IN RAJKOT THROUGH SUBSIDIARY REGENTA HOTELS PRIVATE LIMITED; HOTEL OFFERS 70 ROOMS, MULTI-CUISINE DINING, AND BUSINESS FACILITIES.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9551",
-   "section": "trading",
-   "call": "ignore",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 8,
-   "confidence": 30,
-   "category": "No listed-stock impact",
-   "action": "No action",
-   "reason": [
-    "Keyword rules (AI classification is off)"
-   ],
-   "risks": [],
-   "plain": "",
-   "why": "No listed company is clearly affected.",
-   "check": "",
-   "original": "ROYAL ORCHID HOTELS LIMITED: CO. LAUNCHES NEW PROPERTY REGENTA CRYSTAL IN RAJKOT THROUGH SUBSIDIARY REGENTA HOTELS PRIVATE LIMITED; HOTEL OFFERS 70 ROOMS, MULTI-CUISINE DINING, AND BUSINESS FACILITIES.",
-   "latency": 88.1,
-   "lane": "fast"
-  },
-  {
-   "id": "7c7104d46fe16c69",
-   "time": "2026-11-18T13:09:35+05:30",
-   "headline": "ROYAL ORCHID HOTELS LTD: CO. LAUNCHES NEW PROPERTY \"Z BY REGENTA\" IN VISAKHAPATNAM; TARGETS BUSINESS AND LEISURE TRAVELLERS WITH 32 ROOMS AND MULTI-CUISINE DINING.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9550",
-   "section": "trading",
-   "call": "ignore",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 8,
-   "confidence": 30,
-   "category": "No listed-stock impact",
-   "action": "No action",
-   "reason": [
-    "Keyword rules (AI classification is off)"
-   ],
-   "risks": [],
-   "plain": "",
-   "why": "No listed company is clearly affected.",
-   "check": "",
-   "original": "ROYAL ORCHID HOTELS LTD: CO. LAUNCHES NEW PROPERTY \"Z BY REGENTA\" IN VISAKHAPATNAM; TARGETS BUSINESS AND LEISURE TRAVELLERS WITH 32 ROOMS AND MULTI-CUISINE DINING.",
-   "latency": 54.8,
-   "lane": "fast"
-  },
-  {
-   "id": "8b871a88ca76b33a",
-   "time": "2026-11-18T13:07:02+05:30",
-   "headline": "SEAMEC: BAGS USD 10.77 MILLION (APPROX. ₹100 CRORE) SUBSEA INSTALLATION CONTRACT FOR ONGC’S PIPELINE REPLACEMENT PROJECT",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9549",
-   "section": "news",
-   "call": "buy",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "ONGC",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Energy"
-   ],
-   "impact": 70,
-   "confidence": 80,
-   "category": "company",
-   "action": "Watch for earnings guidance update reflecting the new contract",
-   "reason": [
-    "New subsea installation contract adds ~₹100 crore revenue",
-    "Strengthens order book and cash‑flow outlook"
-   ],
-   "risks": [
-    "Potential execution delays or cost overruns",
-    "Oil‑price volatility may affect profitability"
-   ],
-   "plain": "ONGC won a subsea installation contract worth about ₹100 crore for a pipeline replacement project.",
-   "why": "The contract could boost ONGC’s revenue and improve its outlook, benefiting shareholders.",
-   "check": "Check ONGC’s upcoming quarterly results for commentary on the contract impact.",
-   "original": "SEAMEC: BAGS USD 10.77 MILLION (APPROX. ₹100 CRORE) SUBSEA INSTALLATION CONTRACT FOR ONGC’S PIPELINE REPLACEMENT PROJECT",
-   "latency": 91.5,
-   "lane": "fast"
-  },
-  {
-   "id": "92407f02b9d406b6",
-   "time": "2026-11-18T12:52:54+05:30",
-   "headline": "FINANCE MINISTRY SOURCES DENY BLOOMBERG REPORT ON PROPOSED DERIVATIVES TAX HIKE – REDBOX GLOBAL",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9548",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Derivatives",
-    "Broking"
-   ],
-   "impact": 10,
-   "confidence": 50,
-   "category": "Rumor Denial",
-   "action": "Monitor official government press releases for any future policy changes.",
-   "reason": [
-    "Ministry denies the specific Bloomberg report.",
-    "No new policy information is introduced."
-   ],
-   "risks": [
-    "Market may react to the rumor itself before the denial settles."
-   ],
-   "plain": "Government officials said a news report about a new tax on trading is not true.",
-   "why": "Since the government says the story is false, it does not change the rules for investors right now.",
-   "check": "Look for official government statements to confirm the tax status.",
-   "original": "FINANCE MINISTRY SOURCES DENY BLOOMBERG REPORT ON PROPOSED DERIVATIVES TAX HIKE – REDBOX GLOBAL",
-   "latency": 96.5,
-   "lane": "fast"
-  },
-  {
-   "id": "c0bb1528389f0bf5",
-   "time": "2026-11-18T12:52:52+05:30",
-   "headline": "FINANCE MINISTRY SOURCES DENY REPORT ON PROPOSED DERIVATIVES TAX HIKE – REDBOX GLOBAL",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9547",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Derivatives",
-    "Broking"
-   ],
-   "impact": 10,
-   "confidence": 50,
-   "category": "Rumor Denial",
-   "action": "Monitor official government press releases for any future policy changes.",
-   "reason": [
-    "Duplicate headline regarding the same denial.",
-    "No actionable new information."
-   ],
-   "risks": [
-    "Repeated rumors can cause unnecessary volatility."
-   ],
-   "plain": "Government officials said a news report about a new tax on trading is not true.",
-   "why": "Since the government says the story is false, it does not change the rules for investors right now.",
-   "check": "Look for official government statements to confirm the tax status.",
-   "original": "FINANCE MINISTRY SOURCES DENY REPORT ON PROPOSED DERIVATIVES TAX HIKE – REDBOX GLOBAL",
-   "latency": 98.5,
    "lane": "fast"
   }
  ]
