@@ -1,54 +1,56 @@
 #!/usr/bin/env python3
-"""Live NSE prices at the moment an alert goes out.
+"""NSE prices at the moment an alert goes out.
 
     python pulsedge-bot/quotes.py RELIANCE TCS M&M          # print what the source returns
+    python pulsedge-bot/quotes.py --probe                   # which free sources answer from this machine
 
-quotes(symbols) -> {symbol: {"px": last price, "prev": previous close, "move": % since that close, "at": ISO time}}
-for the symbols it could price. Used by news_pipeline.add_quotes() for every item that names a stock while NSE is
-open, so each alert records how far the stock had already moved when it went out (shown as "already +6.2% today")
-and the track record can measure what happened after the alert, not just after the news.
+quotes(symbols) -> {symbol: {"px": price, "prev": previous close, "move": % since that close, "at": ISO time,
+"delay": seconds the price lags}} for the symbols it could price. news_pipeline.add_quotes() calls it for every item
+that names a stock while NSE is open, so each alert records how far the stock had already moved when it went out
+(the terminal and Telegram show "already +6.2% today") and the track record can look at what happened after it.
 
-Source: Yahoo Finance's public chart endpoint (no key; NSE's own quote API refuses GitHub's runners). A symbol it
-can't price is left out; nothing here ever stops a run.
+Source: TradingView's public screener (one request for many symbols). From GitHub's runners it is the only free
+source that answers: Yahoo returns 429, NSE's own API 403, Google only as a page to scrape (checked 19 Nov 2026 with
+--probe). Its NSE prices are 15 minutes delayed, so "already moved" is the move up to about 15 minutes before the
+alert, and the price is not the exact one at the alert. A real-time price needs a broker's API (a key as a
+repository secret). It is an unofficial endpoint: fine for this, but a paid product should take prices from a
+licensed source. A symbol it can't price is left out; nothing here ever stops a run.
 """
 import json
 import sys
-import urllib.parse
 import urllib.request
-from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 
 IST = timezone(timedelta(hours=5, minutes=30))
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-HOSTS = ("query1.finance.yahoo.com", "query2.finance.yahoo.com")
+SCAN = "https://scanner.tradingview.com/india/scan"
 TIMEOUT = 8
 
 
-def quote(symbol):
-    path = "/v8/finance/chart/" + urllib.parse.quote(symbol + ".NS") + "?range=1d&interval=1m&includePrePost=false"
-    for host in HOSTS:
+def quotes(symbols):
+    symbols = sorted({str(s).upper() for s in symbols if s})
+    out, now = {}, datetime.now(IST).isoformat(timespec="seconds")
+    for i in range(0, len(symbols), 100):
+        chunk = symbols[i:i + 100]
+        body = json.dumps({"symbols": {"tickers": [f"NSE:{s}" for s in chunk]},
+                           "columns": ["close", "change", "update_mode"]}).encode()
         try:
-            req = urllib.request.Request("https://" + host + path, headers={"User-Agent": UA, "Accept": "application/json"})
+            req = urllib.request.Request(SCAN, data=body, headers={"User-Agent": UA, "Content-Type": "application/json"})
             with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
-                meta = json.loads(r.read())["chart"]["result"][0]["meta"]
-            px, prev = meta.get("regularMarketPrice"), meta.get("chartPreviousClose") or meta.get("previousClose")
-            if not px or not prev:
-                return None
-            at = datetime.fromtimestamp(meta.get("regularMarketTime") or 0, IST)
-            return {"px": round(float(px), 2), "prev": round(float(prev), 2),
-                    "move": round((float(px) / float(prev) - 1) * 100, 2), "at": at.isoformat(timespec="seconds")}
+                rows = json.loads(r.read()).get("data") or []
         except Exception:
             continue
-    return None
-
-
-def quotes(symbols, workers=6):
-    symbols = sorted({s for s in symbols if s})
-    if not symbols:
-        return {}
-    with ThreadPoolExecutor(max_workers=workers) as ex:
-        got = dict(zip(symbols, ex.map(quote, symbols)))
-    return {s: q for s, q in got.items() if q}
+        for row in rows:
+            try:
+                sym, (px, chg, mode) = row["s"].split(":", 1)[1], row["d"][:3]
+                if not px or chg is None:
+                    continue
+                delay = int(str(mode).rsplit("_", 1)[1]) if "delayed" in str(mode) else 0
+                out[sym] = {"px": round(float(px), 2), "prev": round(float(px) / (1 + float(chg) / 100), 2),
+                            "move": round(float(chg), 2), "at": now, "delay": delay}
+            except (KeyError, ValueError, TypeError, IndexError):
+                continue
+    return out
 
 
 def market_open(t=None):

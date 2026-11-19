@@ -112,7 +112,7 @@ jobs:
       id: commit
       if: github.ref == 'refs/heads/master'
       run: |
-        FILES="pulsedge/data/feed.json pulsedge/data/universe.json pulsedge/data/premarket.json pulsedge/data/track.json pulsedge/data/flows.json pulsedge/data/reports.json pulsedge-bot/state"
+        FILES="pulsedge/data/feed.json pulsedge/data/universe.json pulsedge/data/premarket.json pulsedge/data/track.json pulsedge/data/flows.json pulsedge/data/reports.json pulsedge/data/paper.json pulsedge-bot/state"
         FILES=$(for f in $FILES; do [ -e "$f" ] && echo "$f"; done)
         if [ -n "$(git status --porcelain $FILES)" ]; then
           git config user.name "pulsedge-bot"

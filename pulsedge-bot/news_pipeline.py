@@ -634,6 +634,28 @@ def review_act(items, cands=None):
     return 0
 
 
+def add_quotes(items, limit=80):
+    """While NSE is open, record each named stock's price and its move since the previous close on the items that
+    matter (not Ignore): how far it had already moved when the alert went out (pulsedge-bot/quotes.py)."""
+    try:
+        import quotes
+        if not quotes.market_open():
+            return 0
+        want = [x for x in items if x.get("call") != "ignore" and x.get("tickers")]
+        syms = {t["symbol"] for x in want for t in x["tickers"]}
+        got = quotes.quotes(sorted(syms)[:limit])
+        for x in want:
+            q = {t["symbol"]: got[t["symbol"]] for t in x["tickers"] if t["symbol"] in got}
+            if q:
+                x["quotes"] = q
+        if want:
+            log(f"  prices at alert time: {len(got)} of {len(syms)} stocks")
+        return len(got)
+    except Exception as e:                     # prices are a nice-to-have; never stop a run for them
+        log(f"  prices at alert time skipped ({type(e).__name__}: {str(e)[:120]})")
+        return 0
+
+
 def to_item(it, r, known):
     """One feed.json entry from a collected headline and its classification (also used by fast_lane.py)."""
     if it.get("section_hint") == "global":
@@ -757,6 +779,7 @@ def main():
             time.sleep(4 if provider == "compat" else 1)      # stay under the free tiers' requests-per-minute limits
     if provider == "compat":
         review_act(classified, cands)
+    add_quotes(classified)
     if use_ai:
         log(f"classified {len(classified)}: {by_ai} by AI, {len(routine)} routine filings set aside by rule, {len(classified) - by_ai - len(routine)} by keyword rules")
         if not a.dry_run and classified:

@@ -196,6 +196,19 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .tk{font:500 13.5px/1.4 var(--mono);color:var(--pur-l);border:1px solid var(--pur-edge);background:var(--pur-soft);border-radius:4px;padding:1px 8px}
 .tk.down{color:var(--red-l);border-color:#ef444466;background:var(--red-soft)}
 .tk.mine{box-shadow:0 0 0 1px var(--pur-l)}
+/* how far the stock had already moved when the alert went out (price recorded at alert time) */
+.mv{font:500 12.5px/1.4 var(--mono);color:var(--mute);border:1px dashed var(--line);border-radius:4px;padding:1px 7px}
+.mv.late{color:var(--amber-l);border-color:#f59e0b66;background:var(--amber-soft)}
+/* owner-only paper-trading log */
+.paper{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.paper h4{margin:0 0 6px;font:600 11.5px/1.3 var(--mono);letter-spacing:.08em;color:var(--pur-l)}
+.paper table{width:100%;border-collapse:collapse;font-size:12.5px}
+.paper td,.paper th{padding:4px 4px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.paper th{font-weight:500;color:var(--mute);font-size:11.5px}
+.paper .n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.paper .pos{color:var(--green-l)}.paper .neg{color:var(--red-l)}
+.paper p{margin:6px 0 0;font-size:11.5px;color:var(--mute)}
+.paper details{margin-top:4px}.paper summary{cursor:pointer;color:var(--mute);font-size:11.5px}
 .sec{font-size:13.5px;color:var(--mute);border:1px dashed var(--line);border-radius:4px;padding:1px 8px}
 .meters{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;font:13.5px/1.4 var(--mono);color:var(--mute)}
 .meter{display:inline-flex;align-items:center;gap:8px}
@@ -458,6 +471,7 @@ dialog.gl::backdrop{background:rgba(8,7,12,.6)}
       <ul class="cl" id="pm-cl"></ul>
       <div class="notes" id="pm-notes"></div>
       <div class="notes" id="pm-flows" hidden></div>
+      <div class="paper" id="pm-paper" hidden></div>
     </div>
   </section>
 
@@ -726,7 +740,8 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       impact:typeof x.impact==="number"?Math.max(0,Math.min(100,x.impact)):null,conf:typeof x.confidence==="number"?Math.max(0,Math.min(100,x.confidence)):null,
       category:String(x.category||x.theme||""),action:String(x.action||""),reason:list(x.reason).filter(function(r){return !/^keyword rules/i.test(r)}),risks:list(x.risks),original:String(x.original||""),
       plain:String(x.plain||""),why:String(x.why||""),check:String(x.check||""),
-      url:/^https?:\/\//.test(x.url||"")?x.url:"",after:x.after&&typeof x.after==="object"?x.after:null};
+      url:/^https?:\/\//.test(x.url||"")?x.url:"",after:x.after&&typeof x.after==="object"?x.after:null,
+      quotes:x.quotes&&typeof x.quotes==="object"?x.quotes:null};
   }
   function inTab(s,t){
     if(t==="ideas")return s.call==="buy"||s.call==="sell";
@@ -746,6 +761,15 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     c.onclick=function(){openStock(m.symbol)};c.onkeydown=function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();openStock(m.symbol)}};
     return c;
   }
+  // how far the stock had already moved since the previous close when this alert went out; 3% or more is flagged,
+  // because in PulsEdge's own test, trading after a move that size lost money on average
+  function movedChip(s,m,plain){
+    var q=s.quotes&&s.quotes[m.symbol];if(!q||typeof q.move!=="number")return null;
+    var v=q.move,late=Math.abs(v)>=3,txt=plain?"already "+(v>=0?"up ":"down ")+Math.abs(v).toFixed(1)+"% today":(v>=0?"+":"")+v.toFixed(1)+"% today";
+    var c=el("span","mv"+(late?" late":""),txt);
+    c.title=m.symbol+" was at ₹"+q.px+(q.delay?" about "+Math.round(q.delay/60)+" minutes before this came out (delayed price)":" when this came out")+", against ₹"+q.prev+" at the previous close"+(late?". Much of the move may already have happened.":".");
+    return c;
+  }
   function card(s){
     if(view==="simple")return simpleCard(s);
     var li=el("li","sig "+s.call+(!firstLoad&&!seen[s.id]?" fresh":""));seen[s.id]=1;
@@ -763,7 +787,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       mb.onclick=function(){if(openIds[s.id])delete openIds[s.id];else openIds[s.id]=1;render()};h.appendChild(mb)}
     li.append(h,el("h3",null,s.headline));
     var ch=el("div","chips");
-    s.tickers.forEach(function(m){ch.appendChild(chip(m))});
+    s.tickers.forEach(function(m){ch.appendChild(chip(m));var mv=movedChip(s,m);if(mv)ch.appendChild(mv)});
     s.sectors.forEach(function(x){var m=sectorMove(x),c=el("span","sec",x);if(m){c.appendChild(el("span",m.d1>=0?"up":"down"," "+(m.d1>=0?"+":"")+m.d1.toFixed(1)+"%"));c.title=x+": "+(m.d1>=0?"+":"")+m.d1+"% on the last session"+(m.d5!=null?", "+(m.d5>=0?"+":"")+m.d5+"% over 5 sessions":"")}ch.appendChild(c)});
     if(ch.childNodes.length)li.appendChild(ch);
     var mt=el("div","meters");
@@ -1121,7 +1145,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     var mb=el("button","more",open?"less":"details");mb.type="button";mb.setAttribute("aria-expanded",open?"true":"false");
     mb.onclick=function(){if(openIds[s.id])delete openIds[s.id];else openIds[s.id]=1;render()};h.appendChild(mb);
     li.append(h,el("h3",null,s.plain||cleanHead(s.headline)));
-    var ch=el("div","chips");s.tickers.forEach(function(m){ch.appendChild(chip(m))});if(ch.childNodes.length)li.appendChild(ch);
+    var ch=el("div","chips");s.tickers.forEach(function(m){ch.appendChild(chip(m));var mv=movedChip(s,m,true);if(mv)ch.appendChild(mv)});if(ch.childNodes.length)li.appendChild(ch);
     var p=el("div","plain"),why=s.why||s.reason[0]||"";
     if(why)p.appendChild(row(s.call==="ignore"?"Why you can skip it":"Why it matters",why));
     var chk=s.check||s.action;
@@ -1441,8 +1465,35 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       renderPM();renderFlows();render();
     });
   }
-  (window.PulseAccess?PulseAccess.guard():Promise.resolve({mode:"live"})).then(function(g){mode=g.mode;return load()}).catch(function(){var ul=document.getElementById("feed");ul.textContent="";var e=el("li","empty");e.append(el("b",null,"Couldn't load signals"),document.createTextNode("Refresh the page to try again."));ul.appendChild(e)});
+  (window.PulseAccess?PulseAccess.guard():Promise.resolve({mode:"live"})).then(function(g){mode=g.mode;if(g.access&&g.access.plan==="owner"&&g.access.granted)loadPaper();return load()}).catch(function(){var ul=document.getElementById("feed");ul.textContent="";var e=el("li","empty");e.append(el("b",null,"Couldn't load signals"),document.createTextNode("Refresh the page to try again."));ul.appendChild(e)});
   setInterval(function(){if(live)load().catch(function(){})},60000);
+
+  // ---------- owner only: the paper-trading log (data/paper.json, written by pulsedge-bot/track_record.py) ----------
+  function loadPaper(){
+    getJson("data/paper.json").then(renderPaper).catch(function(){});
+  }
+  function renderPaper(p){
+    var box=document.getElementById("pm-paper");if(!box||!p||!Array.isArray(p.strategies))return;
+    box.textContent="";box.hidden=false;
+    box.appendChild(el("h4",null,"PAPER TRADES · OWNER ONLY"));
+    var t=el("table"),hd=el("tr");["Strategy","Closed","Won","Avg","Total"].forEach(function(h,i){hd.appendChild(el("th",i?"n":null,h))});t.appendChild(hd);
+    var f=function(v){return v==null?"–":(v>0?"+":"")+v.toFixed(2)+"%"};
+    p.strategies.forEach(function(st){
+      var s=st.summary||{},r=el("tr");
+      var name=el("td");name.appendChild(document.createTextNode(st.name));
+      var d=el("details");d.appendChild(el("summary",null,"rule"));d.appendChild(el("p",null,st.rule));
+      if(st.earlier)d.appendChild(el("p",null,"Before: "+st.earlier));
+      (st.trades||[]).slice(0,5).forEach(function(tr){d.appendChild(el("p",null,tr.date+" "+tr.side+" "+tr.symbol+(tr.net!=null?" → "+f(tr.net):" · open")))});
+      name.appendChild(d);r.appendChild(name);
+      r.appendChild(el("td","n",String(s.closed||0)+(s.open?" +"+s.open+" open":"")));
+      r.appendChild(el("td","n",s.win_rate==null?"–":s.win_rate+"%"));
+      r.appendChild(el("td","n "+(s.avg_net>0?"pos":s.avg_net<0?"neg":""),f(s.avg_net)));
+      r.appendChild(el("td","n "+(s.total_net>0?"pos":s.total_net<0?"neg":""),f(s.total_net)));
+      t.appendChild(r);
+    });
+    box.appendChild(t);
+    box.appendChild(el("p",null,"Rules fixed on "+(p.start||"20 Nov 2026")+"; no money is placed. Entry: first NSE close after the news reached readers; after "+(p.cost||0.3)+"% costs. Judge them after about three months, not before."));
+  }
   // back from the background (a Home Screen app has no pull-to-refresh): fetch at once instead of up to a minute later
   var lastLoad=Date.now();
   document.addEventListener("visibilitychange",function(){

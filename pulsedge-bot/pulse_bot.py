@@ -115,6 +115,7 @@ def normalize(item):
         "plain": str(item.get("plain") or ""),
         "why": str(item.get("why") or ""),
         "original": str(item.get("original") or ""),
+        "quotes": item.get("quotes") if isinstance(item.get("quotes"), dict) else {},
     }
 
 
@@ -371,6 +372,12 @@ def caption(ev):
     meters = [f"{k} {round(v)}" for k, v in (("Impact", ev["impact"]), ("Conf", ev["confidence"])) if v is not None]
     if meters:
         lines.append(" · ".join(meters))
+    moved = [f"{t['symbol']} {q['move']:+.1f}%" for t in ev["tickers"] for q in [ev["quotes"].get(t["symbol"])]
+             if q and isinstance(q.get("move"), (int, float))]
+    if moved:
+        late = any(abs(ev["quotes"][t["symbol"]]["move"]) >= 3 for t in ev["tickers"] if t["symbol"] in ev["quotes"])
+        lines.append("Already moved today: " + ", ".join(moved) + (" · much of the move may be done" if late else "")
+                     + " <i>(15-min delayed)</i>")
     if ev["reason"]:
         lines += ["", f"Why: {html.escape(ev['reason'][0])}"]
     if ev["url"]:
