@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T14:47:30+05:30",
+ "updated": "2026-11-19T15:02:59+05:30",
  "summary": {
-  "calls": 1830,
-  "scored_calls": 663,
+  "calls": 1834,
+  "scored_calls": 667,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "5658c5e6f27613d8",
+   "symbol": "TATATECH",
+   "time": "2026-11-19T14:59:23+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Tata Tech shares jump 10% as company targets $1.3 billion revenue by FY30, bets on aerospace, industrial machinery",
+   "url": "https://www.livemint.com/market/stock-market-news/tata-tech-shares-jump-10-as-company-targets-1-3-billion-revenue-by-fy30-bets-on-aerospace-industrial-machinery-11795077108823.html",
+   "entry_date": "2026-11-18",
+   "entry": 656.7
+  },
+  {
+   "id": "29dac8bc7f8d9e19",
+   "symbol": "IREDA",
+   "time": "2026-11-19T14:50:37+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "IREDA shares jump 11% to 4-month high: Is the renewable energy stock finally turning around after 6 months of losses?",
+   "url": "https://www.livemint.com/market/stock-market-news/ireda-share-price-jumps-11-is-the-renewable-energy-player-finally-turning-around-after-6-months-of-losses-11795079108329.html",
+   "entry_date": "2026-11-18",
+   "entry": 119.8
+  },
+  {
+   "id": "8a79c848f71d1daa",
+   "symbol": "TRIDENT",
+   "time": "2026-11-19T14:50:01+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Trident Techlabs Limited: Trident Techlabs Limited has informed the Exchange regarding a press release dated November 19, 2026, titled \"Press Release Unaudited ",
+   "url": "https://nsearchives.nseindia.com/corporate/TRIDENTTECHLABS_19112026144935_Trident_Techlabs_Press_Release_s.pdf",
+   "entry_date": "2026-11-18",
+   "entry": 23.26
+  },
+  {
+   "id": "390bee3c6e51f8c4",
+   "symbol": "URBANCO",
+   "time": "2026-11-19T14:49:47+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Urban Company Limited: Urban Company Limited has informed the Exchange regarding Outcome of Board Meeting held on November 19, 2026. |SUBJECT: Outcome of Board ",
+   "url": "https://nsearchives.nseindia.com/corporate/URBANCO_19112026144812_BM_Outcome_19112026.pdf",
+   "entry_date": "2026-11-18",
+   "entry": 172.73
+  },
   {
    "id": "05721b7bd42e22ef",
    "symbol": "ADANIENSOL",

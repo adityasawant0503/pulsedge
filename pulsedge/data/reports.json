@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T14:47+05:30",
+ "updated": "2026-11-19T15:02+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -155,6 +155,22 @@
    "updated": "2026-11-18T19:23+05:30",
    "model": "openai/gpt-oss-20b"
   },
+  "TATATECH": {
+   "summary": "Tata Technologies shares rose 10% after the company announced a target to reach $1.1 to $1.3 billion in revenue by 2030. Management highlighted growth plans in aerospace and industrial machinery during an investor day.",
+   "why": "This matters because a higher revenue goal suggests the company expects to earn more money in the future, which can influence the stock's value.",
+   "upside": "If the company successfully grows its sales in new areas like aerospace, it could lead to stronger profits.",
+   "downside": "The revenue targets are for 2030, so there is a risk that the company may not meet these goals over the next four years.",
+   "watch": [
+    "Progress toward the 2030 revenue target",
+    "Performance in the aerospace and industrial machinery sectors",
+    "Overall trends in the IT sector index"
+   ],
+   "about": "Tata Technologies is an Information Technology company listed in India's Nifty 500 index.",
+   "basis": "a51f192c96ed",
+   "items": 2,
+   "updated": "2026-11-19T15:02+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "RELIANCE": {
    "summary": "Reliance Industries shares rose by 13% in the last month. JPMorgan recently noted that the stock has potential for further growth, while another advisor listed it as a top pick.",
    "why": "These recent analyst comments suggest that some experts believe the company's performance may continue to improve, which could affect the value of your shares.",
@@ -203,22 +219,6 @@
    "updated": "2026-11-17T14:16+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BLS": {
-   "summary": "PulsEdge flagged that BLS Polymers, a recently listed company, reported strong Q2 profits that more than doubled compared to last year. This news pushed the stock to a record high, rising 8% on the day and sitting 100% above its initial public offering price.",
-   "why": "Strong profit growth can make a company more attractive to investors, which may lead to higher share prices for existing owners.",
-   "upside": "The significant jump in profits suggests the business is performing well, which could support further interest from investors.",
-   "downside": "The stock has risen sharply, so it may be overextended, and early investors are now allowed to sell their shares, which could create selling pressure.",
-   "watch": [
-    "Whether the stock price stabilizes after the recent sharp rise.",
-    "How much selling pressure comes from early investors exiting their positions.",
-    "If future quarterly results match or beat the strong performance seen in Q2."
-   ],
-   "about": "",
-   "basis": "2a88b9e7414b",
-   "items": 4,
-   "updated": "2026-11-19T11:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "ADANIENSOL": {
    "summary": "Adani Energy Solutions announced it won a transmission project in Bihar that will add 881 km of lines and 3,160 MVA capacity, with an estimated annual tariff revenue of about ₹500 crore. The sector index has been slipping, down 0.5% in the last session and 1.5% over five sessions.",
    "why": "The new contract could increase future earnings for shareholders, but any delays or cost overruns could hurt profitability.",
@@ -251,6 +251,22 @@
    "updated": "2026-11-19T12:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "BLS": {
+   "summary": "No new events reported for BLS International Services Ltd. in the provided data.",
+   "why": "There are no recent developments to affect shareholders.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "Look for upcoming quarterly results",
+    "Monitor any regulatory filings",
+    "Watch for changes in sector performance"
+   ],
+   "about": "BLS International Services Ltd. operates in the consumer services sector.",
+   "basis": "d7b31c263760",
+   "items": 3,
+   "updated": "2026-11-19T15:02+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "MANAPPURAM": {
    "summary": "Manappuram Finance shares fell about 4‑5% as gold prices dropped. The lower gold price reduces the value of the collateral that backs its loans.",
    "why": "A fall in gold prices can squeeze profits for gold‑loan lenders and increase credit risk for shareholders.",
@@ -282,6 +298,22 @@
    "items": 2,
    "updated": "2026-11-18T19:23+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "IREDA": {
+   "summary": "IREDA shares rose 11% to a four‑month high, ending a six‑month decline. The rally reflects renewed investor confidence in the renewable‑energy business.",
+   "why": "The rebound signals that investors see potential in IREDA's renewable‑energy projects.",
+   "upside": "A positive policy shift could boost subsidies for renewable projects.",
+   "downside": "Policy changes could reduce subsidies, hurting the business.",
+   "watch": [
+    "Policy announcements on renewable subsidies",
+    "IREDA's quarterly earnings release",
+    "Sector index performance"
+   ],
+   "about": "",
+   "basis": "f3d44f5bb4aa",
+   "items": 1,
+   "updated": "2026-11-19T15:02+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "POLICYBZR": {
    "summary": "PB Fintech shares fell more than 6% after co‑founder Alok Bansal stepped down. The company is part of the Nifty 500 and operates in financial services. The exit of a key leader may raise concerns about future direction.",
@@ -443,21 +475,37 @@
    "updated": "2026-11-19T13:16+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "AXISBANK": {
-   "summary": "Axis Bank is seeing positive momentum as analysts note a technical breakout for banks and the stock has recovered after a Q2 sell‑off. BlackRock recently increased its holding to 5%, adding institutional confidence amid a broader market rally.",
-   "why": "Shareholders may benefit if the technical bias holds and the BlackRock stake supports sentiment, but the stock is still linked to overall market and banking sector trends.",
-   "upside": "If the technical breakout persists and BlackRock maintains or expands its stake, the share could gain further.",
-   "downside": "A broader market decline or a reduction in BlackRock’s holding could pressure the stock.",
+  "URBANCO": {
+   "summary": "Urban Company announced the outcome of its board meeting on 19 November 2026. Earlier, it oversubscribed a ₹2,500‑crore QIP six times, raising ₹15,300 crore. These events could influence its future strategy.",
+   "why": "Shareholders should note that board decisions and new capital could affect the company’s growth plans and financial structure.",
+   "upside": "Strong demand for the QIP could provide capital for expansion.",
+   "downside": "Funds may be used for acquisitions that fail to deliver expected returns.",
    "watch": [
-    "Technical breakout and Nifty Bank movement",
-    "Changes in BlackRock’s stake in Axis Bank",
-    "Overall banking sector sentiment and market direction"
+    "Outcome of the 19 November board meeting",
+    "Use of ₹15,300 crore raised from QIP",
+    "Overall consumer services market conditions"
    ],
-   "about": "Axis Bank is a major Indian commercial bank and a constituent of the Nifty 50 index.",
-   "basis": "558f3c759dd5",
-   "items": 4,
-   "updated": "2026-11-18T10:47+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "",
+   "basis": "ce47d3f57eb2",
+   "items": 3,
+   "updated": "2026-11-19T15:02+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
+  "AXISBANK": {
+   "summary": "Axis Bank is seeing renewed attention as its shares recover from a recent drop alongside other major banks. Meanwhile, BlackRock has increased its stake in the company to 5%.",
+   "why": "This matters because major investments and technical momentum can influence market interest and sentiment around the stock.",
+   "upside": "If technical breakout trends hold and the broader banking sector performs well, the stock could rise.",
+   "downside": "If the broader market falls or if investor sentiment shifts negatively, the recent gains may not last.",
+   "watch": [
+    "Whether the banking sector maintains its technical breakout",
+    "Any further changes in stake by major investors like BlackRock",
+    "Broader market movements affecting financial stocks"
+   ],
+   "about": "Axis Bank Ltd. is a financial services company and one of India's 50 largest listed companies.",
+   "basis": "9d449535db2f",
+   "items": 3,
+   "updated": "2026-11-19T15:02+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "NBCC": {
    "summary": "NBCC won a new construction contract worth about 85 crore rupees and announced similar work orders of roughly the same value. The orders add to the company’s revenue pipeline.",
@@ -473,22 +521,6 @@
    "basis": "9e193188b829",
    "items": 2,
    "updated": "2026-11-19T12:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "URBANCO": {
-   "summary": "Urban Company raised ₹2,500 crore through a qualified institutional placement (QIP) that was oversubscribed six times, attracting about ₹15,300 crore in bids.",
-   "why": "The capital can fund expansion or acquisitions, which could affect future earnings for shareholders.",
-   "upside": "If the raised funds are deployed successfully for growth, earnings and cash flow could improve.",
-   "downside": "If the company pursues acquisitions that do not meet expectations, the investment could hurt profitability.",
-   "watch": [
-    "Use of QIP proceeds – expansion vs acquisitions",
-    "Any announced acquisition targets and their integration",
-    "Consumer services demand trends in the broader market"
-   ],
-   "about": "Urban Company runs an on‑demand platform that connects consumers with professionals for home and personal services.",
-   "basis": "a94fea6bd4a2",
-   "items": 2,
-   "updated": "2026-11-19T11:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "RVNL": {
@@ -522,22 +554,6 @@
    "updated": "2026-11-18T11:02+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BSE": {
-   "summary": "BSE shares fell by up to 3% as the regulator, SEBI, considered stricter rules for trading platforms. At the same time, its main rival, NSE, is launching new trading products to compete for customers.",
-   "why": "Stricter rules could limit how much money BSE makes from trading, which might lower the value of its shares.",
-   "upside": "If BSE successfully competes with NSE for traders, it could keep its revenue steady.",
-   "downside": "New regulations might reduce the number of trades BSE handles, leading to lower income.",
-   "watch": [
-    "Final decisions from SEBI on trading platform rules",
-    "How NSE's new trading products affect BSE's customer base",
-    "Changes in the overall Financials sector index"
-   ],
-   "about": "BSE is one of India's largest stock exchanges and a major player in the financial services sector.",
-   "basis": "9345941f6ec7",
-   "items": 4,
-   "updated": "2026-11-18T14:31+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "JUBLINGREA": {
    "summary": "Jubilant Ingrevia Ltd. announced the resignation of a senior director and its chief financial officer, effective at the end of November 2026.",
    "why": "Shareholders may be concerned about possible management instability and uncertainty over future financial guidance.",
@@ -553,6 +569,22 @@
    "items": 3,
    "updated": "2026-11-19T13:31+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "BSE": {
+   "summary": "BSE Ltd. shares recently slid along with other capital market stocks as the market regulator weighs curbs on margin trading facilities (MTF). At the same time, competition is heating up between stock exchanges launching similar trading contracts.",
+   "why": "Regulatory changes and rival competition can directly impact the company's business and revenue. These factors help shareholders understand what is driving recent stock movements.",
+   "upside": "",
+   "downside": "Stricter regulatory rules or intense competition from other exchanges could erode market share and revenue.",
+   "watch": [
+    "Updates on SEBI's proposed MTF curbs",
+    "Competition developments in commodity trading contracts",
+    "Broader financial sector market sentiment"
+   ],
+   "about": "",
+   "basis": "093941d54dac",
+   "items": 3,
+   "updated": "2026-11-19T15:02+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "ANGELONE": {
    "summary": "Angel One reported that multi‑trading‑facility (MTF) fees now account for about 20% of its Q2FY27 income, showing a shift toward higher‑margin revenue. At the same time, the market is reacting to SEBI’s possible new restrictions on MTF operations, which could pressure the stock.",
@@ -571,20 +603,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "GROWW": {
-   "summary": "Large institutional investors such as Kotak MF, BlackRock, Fidelity and Societe Generale bought a big chunk of Groww shares in block deals, while other big holders sold sizable blocks on the same day. The activity shows strong interest from both buyers and sellers.",
-   "why": "Shareholders should watch because heavy buying can signal confidence, but large sales may add price volatility.",
-   "upside": "If the new institutional owners keep their stakes, it could support the share price and bring long‑term stability.",
-   "downside": "If the sellers off‑load more shares or the block deals were at a discount, the stock could face downward pressure.",
+   "summary": "PulsEdge flagged that several large investment firms recently bought and sold massive blocks of shares in Billionbrains Garage Ventures, which operates a popular investing app. Major buyers like BlackRock, Fidelity, and Kotak Mahindra Mutual Fund picked up stakes worth crores, while early investors like Ribbit Capital sold portions of their holdings.",
+   "why": "For shareholders, high trading activity from large professional investors shows strong interest in the company. However, it also means ownership is shifting rapidly between different big institutions.",
+   "upside": "When major global investors buy large stakes, it can signal their confidence in the company's long-term business.",
+   "downside": "Large buyers or sellers can cause sudden price swings, and block deals are sometimes executed at a discount.",
    "watch": [
-    "Further block‑deal activity by institutions",
-    "Any change in the share price around ₹219.0",
-    "Movement of the Financials sector index"
+    "Further large block deals by institutional investors",
+    "Any shifts in ownership percentages by major funds",
+    "Overall movement in the financial services sector"
    ],
-   "about": "Groww runs a popular investing and stock‑trading app in India's financial services sector.",
-   "basis": "6e236c823974",
-   "items": 16,
-   "updated": "2026-11-19T14:01+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Billionbrains Garage Ventures operates a popular investing and stock trading app.",
+   "basis": "1c1d008c5a32",
+   "items": 15,
+   "updated": "2026-11-19T15:02+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "AZAD": {
    "summary": "PulsEdge flagged several large trades in Azad Engineering shares on November 18, 2026. One investor sold about ₹800 crore worth of shares, while four other large investors bought a combined total of roughly ₹370 crore.",
@@ -634,22 +666,6 @@
    "updated": "2026-11-18T15:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "TATACHEM": {
-   "summary": "Tata Chemicals shares jumped about 11% in three days on speculation that its parent Tata Group may soon list on the stock market, but the company has denied any knowledge of such IPO talks.",
-   "why": "The share price swing is driven by market rumors, so owners could see gains or losses depending on how the story unfolds.",
-   "upside": "If Tata Group confirms a listing, the rally could continue and the shares may rise further.",
-   "downside": "If the listing does not materialise, the recent rally may be seen as over‑extended and the stock could pull back.",
-   "watch": [
-    "Official announcement from Tata Group about an IPO or listing",
-    "Further share price reaction after the denial",
-    "Broader market sentiment on Tata Group stock moves"
-   ],
-   "about": "Tata Chemicals Ltd. is a chemicals manufacturer in the Tata Group, producing chemicals and related products.",
-   "basis": "42aca0770a7c",
-   "items": 2,
-   "updated": "2026-11-19T12:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "PWL": {
    "summary": "Physicswallah shares rose about 4% after the company announced ambitious FY30 earnings guidance, aiming to earn much more money in the coming years. The news sparked investor excitement but also highlighted the challenge of meeting high growth targets.",
    "why": "The guidance sets expectations for future profitability, which can move the share price if the company meets or misses them.",
@@ -680,6 +696,21 @@
    "items": 1,
    "updated": "2026-11-17T16:35+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "TATACHEM": {
+   "summary": "Tata Chemicals shares rallied 11 percent in three days. This rise happened because people think its parent company might list on the stock market soon.",
+   "why": "If the parent company lists, it could make the shares of this company worth more.",
+   "upside": "A potential parent company stock market listing could boost the value of these shares.",
+   "downside": "The price rally may be overextended if the listing does not happen soon.",
+   "watch": [
+    "Updates on the parent company's stock market listing",
+    "Further movement in the share price"
+   ],
+   "about": "Tata Chemicals Ltd. is a chemical company belonging to the Tata Group.",
+   "basis": "d3e019e2c3fb",
+   "items": 1,
+   "updated": "2026-11-19T15:02+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "HINDZINC": {
    "summary": "Hindustan Zinc announced a Rs 80,000 crore expansion plan to become the world’s largest zinc and silver producer. The move signals potential long‑term profit growth but also raises cash‑flow concerns.",
@@ -809,22 +840,6 @@
    "updated": "2026-11-19T13:31+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "TATATECH": {
-   "summary": "Tata Technologies outlined an ambitious plan to boost sales and profits by 2030, signalling confidence from management. The broader IT sector has been falling, down 1.2% today and 3.2% over the past week.",
-   "why": "Shareholders care because the plan could lift earnings, but achieving it depends on execution over the next four years.",
-   "upside": "If the company meets its growth targets, earnings could rise sharply.",
-   "downside": "Execution risk and a weak IT sector could hinder progress.",
-   "watch": [
-    "Updates on the 2030 growth roadmap",
-    "Quarterly financial results",
-    "Movement in the Indian IT sector"
-   ],
-   "about": "",
-   "basis": "ce9043a5c0fb",
-   "items": 1,
-   "updated": "2026-11-19T11:01+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "NETWEB": {
    "summary": "Netweb Technologies reported record profits and a large backlog of AI‑related work, and its shares have jumped 42% from the 52‑week low. The broader IT index has been falling, down 0.9% in the last session and 2.5% over five sessions.",
    "why": "Strong future orders could keep earnings high, which matters to shareholders. However, the recent price surge may lead some investors to book profits, which could pressure the stock.",
@@ -937,22 +952,6 @@
    "updated": "2026-11-19T12:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "M&M": {
-   "summary": "Mahindra & Mahindra shares rose sharply on November 19 as cheaper metal and oil costs eased worries for the auto sector. This rally followed a broader market gain where the Nifty index topped 25,500 points.",
-   "why": "Lower costs for materials like metal and oil can improve a car maker's profits, which may make its shares more attractive to investors.",
-   "upside": "If metal and oil prices stay low, the company's production costs remain manageable, supporting its financial health.",
-   "downside": "The recent price jump could reverse quickly if input costs rise again or if investors sell their shares to lock in profits.",
-   "watch": [
-    "Changes in metal and oil prices",
-    "Whether the auto sector rally continues or fades",
-    "Overall market trends affecting large companies"
-   ],
-   "about": "Mahindra & Mahindra is an Indian company in the automobile and auto components sector.",
-   "basis": "1c872ff7a8d5",
-   "items": 4,
-   "updated": "2026-11-19T13:16+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "SAIL": {
    "summary": "SAIL shares have fallen sharply as global metal prices dropped and the US dollar strengthened. The company led losses in the Nifty Metal index, which is down 4.4% over the last five sessions.",
    "why": "Lower metal prices reduce the profit margins for steel companies, which can lower the earnings available to shareholders.",
@@ -967,6 +966,22 @@
    "basis": "c94bbd3d695c",
    "items": 4,
    "updated": "2026-11-19T11:45+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "M&M": {
+   "summary": "Mahindra & Mahindra shares rose sharply on November 19 as cheaper metal and oil costs eased worries for the auto sector. This rally followed a broader market gain where the Nifty index topped 25,500 points.",
+   "why": "Lower costs for materials like metal and oil can improve a car maker's profits, which may make its shares more attractive to investors.",
+   "upside": "If metal and oil prices stay low, the company's production costs remain manageable, supporting its financial health.",
+   "downside": "The recent price jump could reverse quickly if input costs rise again or if investors sell their shares to lock in profits.",
+   "watch": [
+    "Changes in metal and oil prices",
+    "Whether the auto sector rally continues or fades",
+    "Overall market trends affecting large companies"
+   ],
+   "about": "Mahindra & Mahindra is an Indian company in the automobile and auto components sector.",
+   "basis": "1c872ff7a8d5",
+   "items": 4,
+   "updated": "2026-11-19T13:16+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "MARUTI": {
@@ -1113,22 +1128,6 @@
    "updated": "2026-11-19T03:10+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "ICICIBANK": {
-   "summary": "ICICI Bank shares are moving with the broader market, which recently saw a strong rise led by banking stocks. The Financials sector has gained 3.0% over the last five sessions.",
-   "why": "As a major player in the banking sector, ICICI Bank's share price often moves in line with the overall market and its sector index.",
-   "upside": "Banking stocks may continue to rise if the current positive market trend holds.",
-   "downside": "The recent market gains could reverse quickly if investors start selling to lock in profits.",
-   "watch": [
-    "Whether the Nifty Bank index maintains its recent high levels",
-    "General market sentiment and profit-taking activity",
-    "Performance of the Financials sector index"
-   ],
-   "about": "ICICI Bank is a large financial services company and one of India's 50 largest listed firms.",
-   "basis": "7ddf7ecec909",
-   "items": 2,
-   "updated": "2026-11-18T10:47+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "BLUESTARCO": {
    "summary": "Blue Star shares jumped up to 8% as copper prices fell, lowering material costs for its air conditioners. Meanwhile, the consumer durables sector index slipped about 3% recently.",
    "why": "Lower copper costs can improve profit margins for shareholders, but the broader sector weakness could weigh on the stock.",
@@ -1224,6 +1223,22 @@
    "items": 1,
    "updated": "2026-11-19T13:01+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "ICICIBANK": {
+   "summary": "ICICI Bank shares are moving with the broader market, which recently saw a strong rise led by banking stocks. The Financials sector has gained 3.0% over the last five sessions.",
+   "why": "As a major player in the banking sector, ICICI Bank's share price often moves in line with the overall market and its sector index.",
+   "upside": "Banking stocks may continue to rise if the current positive market trend holds.",
+   "downside": "The recent market gains could reverse quickly if investors start selling to lock in profits.",
+   "watch": [
+    "Whether the Nifty Bank index maintains its recent high levels",
+    "General market sentiment and profit-taking activity",
+    "Performance of the Financials sector index"
+   ],
+   "about": "ICICI Bank is a large financial services company and one of India's 50 largest listed firms.",
+   "basis": "7ddf7ecec909",
+   "items": 2,
+   "updated": "2026-11-18T10:47+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "IDBI": {
    "summary": "IDBI Bank is part of the Financial Services sector, which has seen a 3.0% rise over the last five sessions. Recent news mentions a major investor selling a large stake in a related finance company, IIFL Finance, through a block deal.",
@@ -1574,22 +1589,6 @@
    "basis": "aba0ead03693",
    "items": 2,
    "updated": "2026-11-19T11:45+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "BANKINDIA": {
-   "summary": "Bank of India shares are part of a broader market rally where bank stocks helped push the main index higher. However, recent falls in government bond prices may increase borrowing costs for the bank.",
-   "why": "Changes in bond prices can affect how much it costs the bank to borrow money, which directly influences its profits and, in turn, the value of its shares.",
-   "upside": "The recent strong performance of the overall stock market suggests that bank shares, including Bank of India, may continue to see positive momentum.",
-   "downside": "If government bond prices continue to fall, the bank could face higher borrowing costs that might reduce its profits.",
-   "watch": [
-    "Trends in government bond prices and interest rates",
-    "Whether the current stock market rally continues or reverses due to profit-taking",
-    "Performance of the Financials sector index"
-   ],
-   "about": "Bank of India is a financial services company listed on the NSE.",
-   "basis": "9cb7ca2a5f54",
-   "items": 2,
-   "updated": "2026-11-19T08:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ULTRACEMCO": {
