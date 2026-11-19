@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T14:17:01+05:30",
+ "updated": "2026-11-19T14:32:26+05:30",
  "summary": {
-  "calls": 1822,
-  "scored_calls": 655,
+  "calls": 1828,
+  "scored_calls": 661,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "6208dced900e1a1c",
+   "symbol": "ADANIENSOL",
+   "time": "2026-11-19T14:25:31+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "ADANI ENERGY SOLUTIONS: CO SAYS PROJECT TO ADD 881 CKMS OF TRANSMISSION LINES AND 3,160 MVA CAPACITY; ANNUAL TARIFF ESTIMATED AT ₹500 CR ON COMMISSIONING.",
+   "url": "https://t.me/Indiaredboxglobal/9698",
+   "entry_date": "2026-11-18",
+   "entry": 1490.0
+  },
+  {
+   "id": "45488a26457fc002",
+   "symbol": "ADANIENSOL",
+   "time": "2026-11-19T14:24:16+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "ADANI ENERGY SOLUTIONS: WINS BIHAR TRANSMISSION PROJECT TO EVACUATE 2,400 MW FROM ADANI POWER'S PLANNED PIRPAINTI PLANT",
+   "url": "https://t.me/Indiaredboxglobal/9697",
+   "entry_date": "2026-11-18",
+   "entry": 1490.0
+  },
+  {
+   "id": "45488a26457fc002",
+   "symbol": "ADANIPOWER",
+   "time": "2026-11-19T14:24:16+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "ADANI ENERGY SOLUTIONS: WINS BIHAR TRANSMISSION PROJECT TO EVACUATE 2,400 MW FROM ADANI POWER'S PLANNED PIRPAINTI PLANT",
+   "url": "https://t.me/Indiaredboxglobal/9697",
+   "entry_date": "2026-11-18",
+   "entry": 205.3
+  },
+  {
+   "id": "3ba80867c5be1622",
+   "symbol": "IGL",
+   "time": "2026-11-19T14:10:14+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "IGL Spirits Limited: IGL Spirits Limited has informed the Exchange about Investor Presentation |SUBJECT: Investor Presentation",
+   "url": "https://nsearchives.nseindia.com/corporate/IGLSPIRITS_19112026141000_Investor_Presentation_Upload.pdf",
+   "entry_date": "2026-11-18",
+   "entry": 149.14
+  },
   {
    "id": "689b6ef3992cc901",
    "symbol": "OIL",
@@ -776,6 +828,19 @@
    "entry": 2379.5
   },
   {
+   "id": "c15a6e51c9744e19",
+   "symbol": "JSWSTEEL",
+   "time": "2026-11-19T08:25:38+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "JSW Steel Share Price Live Updates: JSW Steel Sees Modest Gain",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/jsw-steel-share-price-today-live-updates-19-nov-2026/liveblog/135975977.cms",
+   "entry_date": "2026-11-18",
+   "entry": 1315.9
+  },
+  {
    "id": "b428a494210c83a9",
    "symbol": "CYIENT",
    "time": "2026-11-19T08:24:57+05:30",
@@ -787,6 +852,19 @@
    "url": "https://nsearchives.nseindia.com/corporate/CYIENT_19112026082431_19112026PR_FinalSigned.pdf",
    "entry_date": "2026-11-18",
    "entry": 1086.4
+  },
+  {
+   "id": "0930f5c6ab78f6a7",
+   "symbol": "HEROMOTOCO",
+   "time": "2026-11-19T08:17:06+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Hero MotoCorp Share Price Live Updates: Hero MotoCorp's Stock Shows Positive Momentum",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/hero-motocorp-stock-price-live-updates-19-nov-2026/liveblog/135975880.cms",
+   "entry_date": "2026-11-18",
+   "entry": 5253.0
   },
   {
    "id": "efb0feeaaed9fd5a",

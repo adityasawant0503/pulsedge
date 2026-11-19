@@ -2,19 +2,6 @@
  "note": "The last 60 runs of the AI classifier: items sorted by AI, set aside as routine, or left to keyword rules.",
  "runs": [
   {
-   "time": "2026-11-18T09:00+05:30",
-   "new": 3,
-   "ai": 3,
-   "routine": 0,
-   "rules": 0,
-   "models": {
-    "qwen/qwen3.8-27b": 3
-   },
-   "errors": [
-    "gemini-3.8-flash: HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To"
-   ]
-  },
-  {
    "time": "2026-11-18T09:15+05:30",
    "new": 2,
    "ai": 2,
@@ -815,6 +802,20 @@
    },
    "errors": [
     "gemini-3.8-flash: The read operation timed out"
+   ]
+  },
+  {
+   "time": "2026-11-19T14:30+05:30",
+   "new": 13,
+   "ai": 12,
+   "routine": 1,
+   "rules": 0,
+   "models": {
+    "openai/gpt-oss-120b": 12
+   },
+   "errors": [
+    "gemini-3.8-flash: The read operation timed out",
+    "qwen/qwen3.8-27b: HTTP 429 Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m7d9eshkezkr1pmsab9xhv8e` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 1987"
    ]
   }
  ]

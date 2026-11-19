@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T14:16+05:30",
+ "updated": "2026-11-19T14:32+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -219,22 +219,6 @@
    "updated": "2026-11-19T11:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "ONGC": {
-   "summary": "ONGC recently won a subsea installation contract worth about ₹100 crore for a pipeline project. At the same time, the company managed a gas leak at a well site by evacuating nearby residents and cutting power to ensure safety.",
-   "why": "The new contract adds to the company's revenue, while the gas leak may cause short-term delays or extra costs that affect operations.",
-   "upside": "The new pipeline contract could boost revenue and improve the company's outlook.",
-   "downside": "The gas leak incident might lead to operational delays, regulatory scrutiny, or higher costs.",
-   "watch": [
-    "Updates on the gas leak situation and when normal operations resume",
-    "Progress on the new ₹100 crore subsea installation contract",
-    "Any regulatory actions or fines related to the safety incident"
-   ],
-   "about": "ONGC is a major Indian company in the oil and gas sector and is one of the 50 largest listed companies in India.",
-   "basis": "9ea1781c9cef",
-   "items": 4,
-   "updated": "2026-11-19T11:31+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "LTFOODS": {
    "summary": "LT Foods announced it will buy a US-based food company called MK Foods Holdings for about ₹54.2 crore. This news caused the company's share price to rise sharply, breaking a recent losing streak.",
    "why": "This matters to shareholders because buying another business can help the company grow faster and reach new customers. The stock price reacted strongly to this announcement, showing that investors are paying close attention to this move.",
@@ -250,6 +234,22 @@
    "items": 3,
    "updated": "2026-11-19T12:01+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "ADANIENSOL": {
+   "summary": "Adani Energy Solutions announced a new 881‑km transmission project expected to generate about ₹500 crore in annual tariff revenue and won a Bihar contract to evacuate 2,400 MW from a planned plant.",
+   "why": "The projects could increase earnings and support long‑term growth, but they also carry execution risk.",
+   "upside": "If the transmission lines are completed on schedule and within budget, the expected tariff revenue will boost earnings.",
+   "downside": "Delays or cost overruns on the projects could hurt profitability.",
+   "watch": [
+    "Progress on the 881 km transmission project",
+    "Execution of the Bihar 2,400 MW evacuation contract",
+    "Movement of the Energy sector index"
+   ],
+   "about": "Adani Energy Solutions builds and operates power transmission infrastructure.",
+   "basis": "2c054ee15b8d",
+   "items": 2,
+   "updated": "2026-11-19T14:32+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "MANAPPURAM": {
    "summary": "Manappuram Finance shares fell about 4‑5% as gold prices dropped. The lower gold price reduces the value of the collateral that backs its loans.",
@@ -329,6 +329,22 @@
    "basis": "ecdef1fcd294",
    "items": 1,
    "updated": "2026-11-19T00:20+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "ONGC": {
+   "summary": "ONGC secured a subsea installation contract worth about ₹100 crore for a pipeline replacement project. The oil‑and‑gas sector index has slipped modestly, down 0.1% in the last session and 0.5% over five sessions.",
+   "why": "The contract could add revenue and improve the company’s outlook for shareholders.",
+   "upside": "If the project proceeds on schedule and within budget, it could lift earnings.",
+   "downside": "Delays or cost overruns could hurt the expected financial benefit.",
+   "watch": [
+    "Progress on the pipeline replacement project",
+    "Any further contract wins or losses",
+    "Movement of the oil‑and‑gas sector index"
+   ],
+   "about": "ONGC explores, produces and transports oil and natural gas in India.",
+   "basis": "235382f3533a",
+   "items": 1,
+   "updated": "2026-11-19T14:32+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "INOXINDIA": {
@@ -1049,6 +1065,22 @@
    "updated": "2026-11-18T11:02+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "JSWSTEEL": {
+   "summary": "JSW Steel shares showed a modest gain in live trading, while steel prices have been rising. The broader metals sector index has been falling, down 2.5% in the last session and 4.4% over five sessions.",
+   "why": "Higher steel prices can improve the company’s earnings, which matters to shareholders. At the same time, a weak sector index could weigh on the stock.",
+   "upside": "If steel prices continue to rise, JSW Steel’s profit margins could improve.",
+   "downside": "A reversal in steel price gains or further sector weakness could pull the share price down.",
+   "watch": [
+    "Short‑term movement of JSW Steel’s share price",
+    "Trends in global steel prices",
+    "Performance of the Metals sector index"
+   ],
+   "about": "JSW Steel Ltd. is an Indian steel producer.",
+   "basis": "28a0955e951d",
+   "items": 2,
+   "updated": "2026-11-19T14:32+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "BHARATFORG": {
    "summary": "Bharat Forge has been placed on a watchlist and has announced an amalgamation or merger, while its auto sector index fell 1.4% in the last session and 4% over five sessions.",
    "why": "The merger could change the company’s size, debt and growth prospects, and being on a watchlist may increase share price volatility.",
@@ -1209,22 +1241,6 @@
    "updated": "2026-11-17T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "JSWSTEEL": {
-   "summary": "Steel prices are climbing again, and experts see this as a positive sign for JSW Steel. The broader metals sector, however, has slipped 1.5% in the last session and 1.7% over five sessions.",
-   "why": "Higher steel prices can boost JSW Steel’s earnings, which matters to shareholders, but the sector’s recent weakness could weigh on the stock.",
-   "upside": "If steel prices keep rising, the company could see stronger profits.",
-   "downside": "A slowdown in global steel demand could erode price gains and hurt earnings.",
-   "watch": [
-    "Continued movement in steel prices",
-    "Signs of global steel demand changes",
-    "Metals sector index performance"
-   ],
-   "about": "JSW Steel Ltd. is one of India’s leading steel producers.",
-   "basis": "cd9df50499cb",
-   "items": 1,
-   "updated": "2026-11-17T15:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "JINDALSTEL": {
    "summary": "Steel prices are rising, which could boost Jindal Steel Ltd.'s earnings, even as the broader metals index has slipped recently.",
    "why": "Higher steel prices can lift profits and potentially support the share price for investors.",
@@ -1287,6 +1303,22 @@
    "basis": "f5e73a423695",
    "items": 1,
    "updated": "2026-11-18T11:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "ADANIPOWER": {
+   "summary": "Adani Power is set to benefit from a new transmission contract won by its subsidiary Adani Energy Solutions to evacuate 2,400 MW from the planned Pirpanti plant in Bihar. A recent Morgan Stanley note also highlighted the stock among large‑cap picks, adding investor interest.",
+   "why": "The transmission project could boost long‑term revenue, while analyst attention may influence share demand.",
+   "upside": "Successful completion of the Bihar transmission line could increase power sales and cash flow.",
+   "downside": "Delays or cost overruns on the infrastructure project could hurt earnings.",
+   "watch": [
+    "Progress on the Bihar transmission project and its timeline",
+    "Any updates to Morgan Stanley’s overweight view or other analyst coverage",
+    "Movement of the Energy sector index, which has been down 0.5% today and 1.5% over five sessions"
+   ],
+   "about": "Adani Power Ltd generates electricity in India.",
+   "basis": "09ced8994970",
+   "items": 2,
+   "updated": "2026-11-19T14:32+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ETERNAL": {
@@ -1368,22 +1400,6 @@
    "items": 1,
    "updated": "2026-11-19T13:11+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "ADANIPOWER": {
-   "summary": "Adani Power is part of the Nifty 500 index of large companies. Its wider energy sector recently saw a decline of 0.5 percent in the last session and 1.5 percent over five sessions.",
-   "why": "Brokers and market experts sometimes share positive views on large companies like this one. When that happens, it can influence other investors' interest in the shares.",
-   "upside": "A major investment bank recently included largecap stocks in an overweight list, suggesting some companies might do better than the wider market.",
-   "downside": "Analyst ratings are not guarantees of future performance, and the broader energy sector has seen recent declines.",
-   "watch": [
-    "Brokers' ratings and expert views on largecap stocks",
-    "Performance of the Nifty 500 and the energy sector",
-    "General market sentiment towards power companies"
-   ],
-   "about": "Adani Power Ltd. operates in the power sector.",
-   "basis": "64095123798e",
-   "items": 1,
-   "updated": "2026-11-19T12:01+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "TRENT": {
    "summary": "Trent Ltd. is one of India's 50 largest listed companies in the consumer services sector. Recently, a major investment bank included it in a list of large-cap stocks it expects to outperform the broader market.",
