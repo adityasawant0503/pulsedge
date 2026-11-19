@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T12:15+05:30",
+ "updated": "2026-11-19T12:30+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Payment stocks like Paytm and Pine Labs fell sharply because a new fee rule for digital payments may be delayed. Meanwhile, auto and bank stocks showed strength, with car makers rising up to 5%. BLS Polymers hit a record high after reporting strong profits. Dalmia Bharat is set to discuss a share buyback plan next week.",
+  "summary": "PulsEdge flagged a flat Sensex and Nifty slipping below 25,200 as payment stocks fell after a delay in the UPI MDR fee rollout, which could cut earnings. LT Foods jumped about 10% on its US acquisition, while BLS Polymers hit a record high on strong Q2 results. MIDHANI signalled higher growth and new orders, and NBCC won an 85‑crore contract, adding optimism for industrials.",
   "themes": [
-   "Uncertainty over digital payment fees hurt fintech stocks",
-   "Auto and banking sectors showed resilience",
-   "Strong earnings boosted specific company shares"
+   "Payment companies pressured by the UPI MDR fee delay",
+   "Corporate deals and earnings lift LT Foods and BLS Polymers",
+   "Industrial growth signals from MIDHANI and NBCC"
   ],
   "watch": [
-   "Dalmia Bharat board meeting on November 23 for buyback details",
-   "Potential impact of the UPI fee delay on payment company earnings",
-   "Whether auto sector gains continue or reverse"
+   "Dalmia Bharat board meeting on Nov 23 to consider a share buyback",
+   "CFO resignation at Jubilant Ingrevia effective Nov 30 may affect financial guidance",
+   "Cyient’s semiconductor unit receives strategic investment from GlobalFoundries, could impact future earnings"
   ],
   "date": "2026-11-19",
-  "basis": "643b78af155c",
-  "updated": "2026-11-19T11:31+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 56
+  "basis": "f7382f9456fe",
+  "updated": "2026-11-19T12:30+05:30",
+  "model": "openai/gpt-oss-120b",
+  "items": 78
  },
  "stocks": {
   "PAYTM": {
@@ -634,22 +634,6 @@
    "updated": "2026-11-18T03:28+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "TATACHEM": {
-   "summary": "Tata Chemicals shares jumped about 11% in three days as market chatter linked the rally to a possible Tata Sons IPO. The company said it has no knowledge of any IPO talks, and the stock exchange has asked it to clarify the rumors. The hype could lift the stock, but the rally may be fragile if the listing does not materialise soon.",
-   "why": "Investors care because a Tata Sons IPO could raise the value of Tata Chemicals shares, while a loss of hype could push the price down.",
-   "upside": "If a Tata Sons IPO is confirmed, the share price could benefit further.",
-   "downside": "If the IPO does not happen or the rumors fade, the recent rally could reverse.",
-   "watch": [
-    "Official Tata Sons IPO announcement",
-    "Tata Chemicals' clarification to the exchange",
-    "Subsequent price movement after the denial"
-   ],
-   "about": "Tata Chemicals Ltd. is an Indian chemicals company.",
-   "basis": "ebe2ee93397f",
-   "items": 3,
-   "updated": "2026-11-19T12:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "SUPREMEIND": {
    "summary": "Supreme Industries Ltd. (SUPREMEIND) is listed in the Nifty 500 and operates in the capital goods sector. There are no specific recent announcements or events flagged for the company in the latest PulsEdge watch list.",
    "why": "Shareholders watch large‑cap capital‑goods firms for stability and any future growth catalysts; the lack of recent news means no new drivers are evident now.",
@@ -664,6 +648,22 @@
    "basis": "af2044457e93",
    "items": 2,
    "updated": "2026-11-18T15:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "TATACHEM": {
+   "summary": "Tata Chemicals shares jumped about 11% in three days on speculation that its parent Tata Group may soon list on the stock market, but the company has denied any knowledge of such IPO talks.",
+   "why": "The share price swing is driven by market rumors, so owners could see gains or losses depending on how the story unfolds.",
+   "upside": "If Tata Group confirms a listing, the rally could continue and the shares may rise further.",
+   "downside": "If the listing does not materialise, the recent rally may be seen as over‑extended and the stock could pull back.",
+   "watch": [
+    "Official announcement from Tata Group about an IPO or listing",
+    "Further share price reaction after the denial",
+    "Broader market sentiment on Tata Group stock moves"
+   ],
+   "about": "Tata Chemicals Ltd. is a chemicals manufacturer in the Tata Group, producing chemicals and related products.",
+   "basis": "42aca0770a7c",
+   "items": 2,
+   "updated": "2026-11-19T12:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "PWL": {
@@ -712,21 +712,6 @@
    "items": 1,
    "updated": "2026-11-19T11:15+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "TATAINVEST": {
-   "summary": "Tata Investment Corporation shares recently rallied up to 9% following news about a potential public offering by Tata Sons. The stock exchange has asked Tata Chemicals to clarify these reports.",
-   "why": "This news matters because a public offering could change the value of the parent company's shares and impact investors.",
-   "upside": "If the public offering plans move forward successfully, the recent positive momentum for the stock could continue.",
-   "downside": "If the public offering is delayed or cancelled, the stock might correct from its recent rally.",
-   "watch": [
-    "Clarifications from the company regarding the public offering news",
-    "Movements in the broader financial services sector index"
-   ],
-   "about": "Tata Investment Corporation Ltd. is a financial services company included in the Nifty 500 index.",
-   "basis": "285c8cdd82da",
-   "items": 1,
-   "updated": "2026-11-19T12:15+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "TITAN": {
    "summary": "Titan shares fell over 4-5% on Nov 18 as the broader market and consumer‑durables sector slipped, with the Nifty Consumer Durables index down 3% and the broader indices lower.",
@@ -1225,20 +1210,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "PNB": {
-   "summary": "Punjab National Bank shares have risen 31% in one month to hit an 8-year high. The bank recently announced a distribution partnership with SBI Mutual Fund, though it also reported regulatory actions taken against it.",
-   "why": "The sharp price increase means your investment value has grown significantly, but the recent regulatory news adds a layer of uncertainty to the bank's future performance.",
-   "upside": "The new partnership with SBI Mutual Fund could bring more customers to the bank and support its business growth.",
-   "downside": "Regulatory actions could lead to penalties or restrictions, and the stock's recent sharp rise makes it vulnerable to a price pullback.",
+   "summary": "Punjab National Bank’s shares have surged, rising about 27% in November and hitting an eight‑year high, as government‑owned banks rally toward record levels. The bank also announced a distribution partnership with SBI Mutual Fund, while reporting regulatory actions against it.",
+   "why": "The sharp price gains and new partnership could boost earnings, but regulatory scrutiny may weigh on future performance.",
+   "upside": "If the SBI partnership drives more customers and the rally sustains, the share price could rise further.",
+   "downside": "Regulatory actions could result in penalties or operational restrictions, hurting the bank’s outlook.",
    "watch": [
-    "Details of the regulatory actions reported to the exchange",
-    "How the SBI Mutual Fund distribution partnership progresses",
-    "Whether the stock price stabilizes after its recent 31% jump"
+    "Continuation of the PSU bank rally",
+    "Progress of the SBI mutual fund distribution partnership",
+    "Any further regulatory developments or penalties"
    ],
-   "about": "Punjab National Bank is a state-run lender in the financial services sector.",
-   "basis": "99a1b9a847d1",
-   "items": 4,
-   "updated": "2026-11-19T03:10+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Punjab National Bank is a government‑owned bank that offers a range of financial services in India.",
+   "basis": "e071174f1c6f",
+   "items": 5,
+   "updated": "2026-11-19T12:30+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "POLYCAB": {
    "summary": "Polycab reduced prices on its light‑duty cables and wires for the second time this week, and copper prices have dropped for the fifth straight day.",

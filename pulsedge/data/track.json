@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T12:16:39+05:30",
+ "updated": "2026-11-19T12:31:05+05:30",
  "summary": {
-  "calls": 1797,
-  "scored_calls": 630,
+  "calls": 1798,
+  "scored_calls": 631,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "91a3d70dd2c7e424",
+   "symbol": "PNB",
+   "time": "2026-11-19T12:17:32+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "PSU Bank index nears record high; SBI, PNB, BOI rally up 27% in November",
+   "url": "https://www.business-standard.com/markets/news/psu-bank-index-nears-record-high-sbi-pnb-boi-rally-up-27-in-november-126111900399_1.html",
+   "entry_date": "2026-11-18",
+   "entry": 149.57
+  },
   {
    "id": "4b38be199d80d01e",
    "symbol": "OIL",
