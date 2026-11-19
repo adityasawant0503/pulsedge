@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T03:10+05:30",
+ "updated": "2026-11-19T08:11+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,24 +57,40 @@
   ]
  },
  "today": {
-  "summary": "Three oil tankers caught fire in the Strait of Hormuz, adding to Middle East tensions that could push oil prices higher. US crude oil futures fell to $83.26 a barrel, while the Fed signalled more rate hikes, sending the Dow down over 500 points and gold to a one‑year low. Indian sector indices saw PSU banks and media gain modestly, but consumer durables, metals and auto fell sharply. An amendment from IIFL Capital Services was filed, adding a corporate event to watch.",
+  "summary": "Indian stocks were set to open lower as global markets fell and the US signaled it would keep interest rates high. Oil prices rose above $92 a barrel due to tensions in the Middle East, including tanker fires in the Strait of Hormuz. While foreign investors bought Indian stocks heavily in November, experts suggest this buying may slow down in December. Rising oil costs and inflation are key concerns that could affect the economy and stock prices.",
   "themes": [
-   "Middle East tensions and oil price risk",
-   "US monetary policy and global market volatility",
-   "Sector‑specific performance and corporate filings"
+   "Global weakness from high US interest rates pressured Asian markets.",
+   "Middle East conflicts pushed oil prices up, raising inflation worries in India.",
+   "Foreign investor buying may slow down after a strong November."
   ],
   "watch": [
-   "Oil price swings and their effect on oil‑related stocks",
-   "Fed rate‑hike signals and potential capital outflows",
-   "Details of the IIFL Capital Services amendment"
+   "How oil prices move after the tanker incidents in the Strait of Hormuz.",
+   "Whether foreign investors continue buying or start selling in December.",
+   "Inflation data in India and how the central bank responds to rising prices."
   ],
   "date": "2026-11-19",
-  "basis": "c643c5a9a2df",
-  "updated": "2026-11-19T03:10+05:30",
-  "model": "openai/gpt-oss-20b",
-  "items": 9
+  "basis": "d31feda4d076",
+  "updated": "2026-11-19T08:11+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 18
  },
  "stocks": {
+  "IIFL": {
+   "summary": "IIFL Finance shares jumped about 6% after Fairfax sold its entire 13.25% stake in a large block deal. This move coincided with reports of new institutional investment in the company.",
+   "why": "A large sale by a major investor can change how other traders view the stock, often leading to short-term price swings that affect the value of your holding.",
+   "upside": "The strong buying interest during the block deal and reports of new institutional capital suggest confidence in the company's future.",
+   "downside": "Traders may sell shares to lock in profits after the recent 6% jump, which could push the price back down.",
+   "watch": [
+    "How the share price reacts to the recent 6% jump",
+    "Details of the new institutional investment",
+    "General market volatility affecting financial stocks"
+   ],
+   "about": "IIFL Finance is a financial services company listed in India's Nifty 500 index.",
+   "basis": "aa80b1846d69",
+   "items": 6,
+   "updated": "2026-11-19T08:11+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "ONGC": {
    "summary": "ONGC secured a ₹100 crore subsea installation contract for a pipeline replacement, while a major gas leak at its Konaseema plant forced evacuations, power shutdowns and area cordons.",
    "why": "The contract could lift revenue, but the safety incident may hurt short‑term output and earnings.",
@@ -90,22 +106,6 @@
    "items": 6,
    "updated": "2026-11-18T13:14+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "IIFL": {
-   "summary": "IIFL Finance shares jumped about 6% after Fairfax sold its entire 13.25% stake in a large block deal. The company also received new investment from institutional investors recently.",
-   "why": "A large sale of shares can change how the market views the company, and new money from big investors may support the stock's value.",
-   "upside": "The strong buying interest during the block deal suggests other investors are confident in the company.",
-   "downside": "The recent price jump might lead to some investors selling to lock in their gains, which could push the price back down.",
-   "watch": [
-    "How the share price reacts in the days after the big sale",
-    "Any updates on the new institutional investment",
-    "Changes to the company's official filings"
-   ],
-   "about": "IIFL Finance is a financial services company listed in India's Nifty 500 index.",
-   "basis": "2befd06c814f",
-   "items": 5,
-   "updated": "2026-11-19T03:10+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "JIOFIN": {
    "summary": "Jio Financial Services Ltd. has announced an acquisition and entered a 50:50 joint venture with BlackRock for asset management. Both moves aim to strengthen its growth and earnings potential. The company is also one of India's 50 largest listed firms in the Nifty 50 index.",
@@ -218,6 +218,22 @@
    "items": 2,
    "updated": "2026-11-18T19:23+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "GMRAIRPORT": {
+   "summary": "PulsEdge flagged GMR Airports as one of the top two stocks to watch in the near term after analysts suggested it could rise soon. The company may benefit from the recent market dip and positive analyst coverage. However, overall market volatility remains a risk.",
+   "why": "Shareholders could see price movement if the positive analyst sentiment and market dip translate into buying interest, but volatility could also affect the stock.",
+   "upside": "If the market dip continues and analyst coverage stays positive, the stock could gain.",
+   "downside": "Broader market volatility could push the price down.",
+   "watch": [
+    "Analyst sentiment and coverage",
+    "Overall market volatility",
+    "Continuation of the recent market dip"
+   ],
+   "about": "",
+   "basis": "b49e164d950b",
+   "items": 1,
+   "updated": "2026-11-19T08:11+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "MUTHOOTFIN": {
    "summary": "Muthoot Finance shares fell about 4% as gold prices slipped. The lower gold price reduces the value of the gold pledged as collateral, putting pressure on gold‑loan lenders.",
@@ -348,20 +364,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "URBANCO": {
-   "summary": "Urban Company is raising ₹2,500 crore by selling new shares to large investors. The offer was oversubscribed six times, attracting ₹15,300 crore in bids. The company plans to use this money to launch a new cleaning service.",
-   "why": "Selling new shares means existing owners hold a smaller slice of the company, which can lower the share price. However, the high demand for the new shares suggests investors are confident in the company's plans.",
-   "upside": "The strong demand for the new shares indicates that investors believe the company's expansion plans are valuable.",
-   "downside": "The new shares reduce the ownership percentage of current holders, and the money raised might be spent on projects that do not return the expected profits.",
+   "summary": "Urban Company launched a ₹2,500‑crore qualified institutional placement (QIP) that was oversubscribed six times, but its shares slipped about 2% on the news. The funds are intended for a new cleaning service and possible acquisitions.",
+   "why": "Existing shareholders face dilution from the new share issue, while the raised capital could support growth initiatives.",
+   "upside": "Strong demand for the QIP could bolster the share price and fund expansion plans.",
+   "downside": "Dilution and the risk that any acquisitions may not deliver expected returns could pressure the stock.",
    "watch": [
-    "How the new cleaning service performs in the market",
-    "Whether the company uses the funds for acquisitions",
-    "Changes in the company's earnings per share"
+    "Final allocation and pricing of the QIP",
+    "How the raised capital is deployed, especially the new cleaning service and any acquisitions",
+    "Share price movement and market sentiment after the QIP announcement"
    ],
-   "about": "",
-   "basis": "5e57cf376349",
-   "items": 4,
-   "updated": "2026-11-18T03:28+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Urban Company provides consumer services such as home cleaning and other on‑demand household services.",
+   "basis": "bbf12ebf190a",
+   "items": 3,
+   "updated": "2026-11-19T08:11+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "HYUNDAI": {
    "summary": "Hyundai Motor India Ltd. is in the news after a financial advisor highlighted it as a top pick and after JPMorgan began testing AI agents for transactions with Hyundai Card. The auto sector index showed a modest rise of 0.7% in the last session but fell 0.6% over the past five sessions.",
@@ -778,19 +794,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "OIL": {
-   "summary": "Oil India is feeling the impact of recent global oil price swings and geopolitical news. Crude futures have moved both lower and higher, and a fire on three tankers in the Strait of Hormuz added uncertainty.",
-   "why": "Shareholders watch oil prices because they directly affect the company’s revenue and profit margins.",
-   "upside": "Higher crude prices, as seen when futures rose to $86.01, could boost earnings.",
-   "downside": "Falling crude prices, like the drop to $83.26, could reduce revenue.",
+   "summary": "Oil India is feeling the impact of recent oil price swings. US crude futures fell then rose, and the sector index slipped slightly. Geopolitical news from the Strait of Hormuz adds uncertainty.",
+   "why": "Oil price changes directly affect the profit Oil India makes on each barrel it sells, so investors should watch them closely.",
+   "upside": "Lower US inventories and a safer Strait of Hormuz could lift oil prices and boost earnings.",
+   "downside": "Falling crude prices or renewed geopolitical tension could cut revenue.",
    "watch": [
-    "Daily movements in US crude oil futures",
-    "Developments around the Strait of Hormuz",
-    "US crude oil inventory reports"
+    "US crude oil futures price movements",
+    "Global crude inventory levels",
+    "Developments in the Strait of Hormuz"
    ],
-   "about": "Oil India Ltd. is an Indian oil and gas exploration and production company.",
-   "basis": "1841999f1d04",
+   "about": "Oil India Ltd. explores and produces oil and gas in India.",
+   "basis": "80c7f71aadea",
    "items": 16,
-   "updated": "2026-11-19T03:10+05:30",
+   "updated": "2026-11-19T08:11+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "PRESTIGE": {
@@ -810,19 +826,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "COALINDIA": {
-   "summary": "PulsEdge flagged that Coal India Ltd. is preparing IPOs for its subsidiaries, including Mahanadi Coalfields and later Northern and Central Coalfields. The listings aim to monetize assets and raise cash, while the market watches the pricing and demand.",
-   "why": "Shareholders could see the value of their holdings change due to new cash inflows or dilution from the share sales.",
-   "upside": "If the IPOs price well and attract strong investor interest, Coal India could receive significant cash and a higher overall valuation.",
-   "downside": "Weak demand, pricing caps or a muted grey‑market premium could limit proceeds and put downward pressure on the existing share price.",
+   "summary": "Coal India is preparing IPOs for its subsidiaries, including Mahanadi Coalfields and the Northern and Central Coalfields, and has been placed on a watchlist as investors focus on the developments. The Oil & Gas sector index slipped slightly, down 0.1% in the last session.",
+   "why": "The IPOs could bring cash to the parent and affect the value of existing shares.",
+   "upside": "If the IPOs are priced well and attract strong demand, Coal India could receive cash that may support its operations.",
+   "downside": "If the share offering is met with weak demand, existing shares could be diluted and see price pressure.",
    "watch": [
-    "Pricing and subscription levels of the Mahanadi Coalfields IPO",
-    "Market response to the upcoming Northern and Central Coalfields IPO announcements",
-    "Overall sentiment in the Oil & Gas sector index and its impact on coal stocks"
+    "Mahanadi Coalfields IPO pricing and demand",
+    "Progress of Northern and Central Coalfields IPOs",
+    "Sector index movement and overall market sentiment"
    ],
-   "about": "Coal India Ltd. is India's largest coal mining company, operating a network of mines and supplying a major share of the country's coal.",
-   "basis": "0f666a542feb",
-   "items": 5,
-   "updated": "2026-11-19T00:20+05:30",
+   "about": "Coal India Ltd. is India's largest coal mining company, producing and supplying coal.",
+   "basis": "5a031a55768a",
+   "items": 6,
+   "updated": "2026-11-19T08:11+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "HDFCBANK": {
@@ -920,6 +936,22 @@
    "items": 3,
    "updated": "2026-11-18T10:32+05:30",
    "model": "openai/gpt-oss-20b"
+  },
+  "BHARATFORG": {
+   "summary": "Bharat Forge has been placed on a watchlist and has announced an amalgamation or merger, while its auto sector index fell 1.4% in the last session and 4% over five sessions.",
+   "why": "The merger could change the company’s size, debt and growth prospects, and being on a watchlist may increase share price volatility.",
+   "upside": "If the merger delivers synergies, the company could see stronger growth and improved earnings.",
+   "downside": "The merger could dilute existing shareholders or add debt, and a weak auto sector may weigh on performance.",
+   "watch": [
+    "Details of the announced amalgamation/merger",
+    "Further movement of the auto sector index",
+    "Any new news that puts the stock back on a watchlist or triggers price swings"
+   ],
+   "about": "Bharat Forge Ltd. manufactures forged components for the automobile and auto components industry.",
+   "basis": "1c24f350114c",
+   "items": 2,
+   "updated": "2026-11-19T08:11+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "DIXON": {
    "summary": "Dixon Technologies announced a new business deal while the broader consumer durables sector saw a 3% slide in the Nifty index. The sector index was down 0.2% in the last session but up 0.6% over the past five sessions.",
@@ -1065,21 +1097,6 @@
    "updated": "2026-11-18T14:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BHARATFORG": {
-   "summary": "Bharat Forge announced that it is merging with or absorbing another company. This corporate restructuring changes how the business is organized.",
-   "why": "Mergers can change the company's size, debt, and future growth, which directly affects share value and the ownership stake of current investors.",
-   "upside": "",
-   "downside": "The merger brings a potential dilution of existing shareholders.",
-   "watch": [
-    "Further updates on the amalgamation and merger process",
-    "Details on how the merger impacts company debt and size"
-   ],
-   "about": "Bharat Forge Ltd. is an auto components company operating in India.",
-   "basis": "04e63dc3659c",
-   "items": 1,
-   "updated": "2026-11-18T13:00+05:30",
-   "model": "gemini-flash-lite-latest"
-  },
   "IDBI": {
    "summary": "IDBI Bank is part of the Financial Services sector, which has seen a 3.0% rise over the last five sessions. Recent news mentions a major investor selling a large stake in a related finance company, IIFL Finance, through a block deal.",
    "why": "Large sales of shares by big investors can add supply to the market, which may temporarily affect how the stock is perceived by other traders.",
@@ -1208,36 +1225,20 @@
    "updated": "2026-11-18T11:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "TITAGARH": {
-   "summary": "Titagarh Rail Systems has set a target to produce 200 metro cars in the next financial year. It also aims to build 1,000 wagons per month by the end of that year.",
-   "why": "The company currently holds a large list of pending orders worth about ₹28,600 crore. This backlog suggests steady future work, which supports the company's revenue.",
-   "upside": "Meeting these high production targets would show the company can handle large orders efficiently.",
-   "downside": "There is a risk that the company may not be able to meet its ambitious production goals.",
-   "watch": [
-    "Progress toward the 200 metro car target",
-    "Wagon production levels by the fourth quarter",
-    "Changes in the total order book value"
-   ],
-   "about": "Titagarh Rail Systems is a capital goods company that manufactures trains and wagons.",
-   "basis": "789d8248a16d",
-   "items": 1,
-   "updated": "2026-11-17T00:55+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "DALBHARAT": {
-   "summary": "Dalmia Bharat Ltd. is set to discuss a possible share buyback at its board meeting on 23 November. The proposal is currently only on the agenda and not yet approved.",
-   "why": "A buyback can boost earnings per share and signal confidence in the stock, which matters to current shareholders.",
-   "upside": "If the buyback is approved, it could support the share price and improve shareholder returns.",
-   "downside": "The buyback could be delayed, altered, or cancelled, which would remove the potential benefit.",
+   "summary": "Dalmia Bharat Ltd. is currently on PulsEdge’s watchlist and is set to hold a board meeting on November 23 to consider a share buyback. The market is paying close attention to these developments, which could lead to increased stock activity.",
+   "why": "A buyback, if approved, can be seen as a sign that the company believes its shares are undervalued, which matters to existing shareholders.",
+   "upside": "Approval of the share buyback could boost earnings per share and support the stock price.",
+   "downside": "If the buyback is delayed or cancelled, the expected benefit to shareholders may not materialize.",
    "watch": [
-    "Outcome of the 23‑Nov board meeting",
-    "Official approval or rejection of the share buyback",
-    "Any follow‑up announcements from the company regarding the buyback"
+    "Outcome of the November 23 board meeting on the share buyback",
+    "Impact of being on the watchlist on stock volatility",
+    "Any further corporate announcements from Dalmia Bharat"
    ],
-   "about": "Dalmia Bharat Ltd. manufactures cement and other construction‑material products.",
-   "basis": "e939c32054d6",
-   "items": 2,
-   "updated": "2026-11-19T03:10+05:30",
+   "about": "Dalmia Bharat Ltd. manufactures cement and other construction materials.",
+   "basis": "002509414fb0",
+   "items": 3,
+   "updated": "2026-11-19T08:11+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "NTPC": {
@@ -1334,6 +1335,22 @@
    "items": 2,
    "updated": "2026-11-17T10:30+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "VIJAYA": {
+   "summary": "PulsEdge flagged a recent market guide that mentioned Deepak Fertilisers, but this did not include any specific news or recommendations for Vijaya Diagnostic Centre. The healthcare sector, where Vijaya operates, moved slightly up in the last session and down over the past five days.",
+   "why": "There is no new company-specific information in the flagged headlines, so the current relevance to shareholders is limited to general sector movements.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "Future headlines specifically mentioning Vijaya Diagnostic Centre",
+    "Trends in the broader Healthcare sector index",
+    "Any new broker reports or analyst notes on the stock"
+   ],
+   "about": "Vijaya Diagnostic Centre Ltd. is a healthcare company listed on the NSE.",
+   "basis": "2792e224f91a",
+   "items": 1,
+   "updated": "2026-11-19T08:11+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "CUMMINSIND": {
    "summary": "Cummins India is dealing with rising input costs while its price increases are lagging behind, squeezing profit margins. The higher expenses are not being fully offset by higher selling prices.",

@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T03:11:18+05:30",
+ "updated": "2026-11-19T08:12:47+05:30",
  "summary": {
-  "calls": 1753,
-  "scored_calls": 586,
+  "calls": 1758,
+  "scored_calls": 591,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,71 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "b17064c1096ba1de",
+   "symbol": "OIL",
+   "time": "2026-11-19T07:46:47+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "US dollar hovers near 19-month high, Aussie falls after soft jobs data",
+   "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/us-dollar-hovers-near-19-month-high-aussie-falls-after-soft-jobs-data/articleshow/135975502.cms",
+   "entry_date": "2026-11-18",
+   "entry": 435.5
+  },
+  {
+   "id": "2ab525e75ca33523",
+   "symbol": "BHARATFORG",
+   "time": "2026-11-19T07:41:12+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Top stocks to watch today: Coal India, Jio Financial, NALCO, Bharat Forge, Sky Gold, Dalmia Bharat and 7 others in focus",
+   "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-coal-india-jio-financial-nalco-bharat-forge-sky-gold-dalmia-bharat-and-7-others-in-focus-11795052380903.html",
+   "entry_date": "2026-11-18",
+   "entry": 1684.5
+  },
+  {
+   "id": "2ab525e75ca33523",
+   "symbol": "COALINDIA",
+   "time": "2026-11-19T07:41:12+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Top stocks to watch today: Coal India, Jio Financial, NALCO, Bharat Forge, Sky Gold, Dalmia Bharat and 7 others in focus",
+   "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-coal-india-jio-financial-nalco-bharat-forge-sky-gold-dalmia-bharat-and-7-others-in-focus-11795052380903.html",
+   "entry_date": "2026-11-18",
+   "entry": 388.0
+  },
+  {
+   "id": "8ec6b712af0c07ed",
+   "symbol": "GMRAIRPORT",
+   "time": "2026-11-19T06:02:55+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "GMR Airports, IIFL Finance shares: Top 2 stocks to buy in near term; check target price, stop loss by Nagaraj Shetti",
+   "url": "https://www.livemint.com/market/stock-market-news/gmr-airports-iifl-finance-shares-top-2-stocks-to-buy-in-near-term-check-target-price-stop-loss-by-nagaraj-shetti-11795014291243.html",
+   "entry_date": "2026-11-18",
+   "entry": 104.4
+  },
+  {
+   "id": "8ec6b712af0c07ed",
+   "symbol": "IIFL",
+   "time": "2026-11-19T06:02:55+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "GMR Airports, IIFL Finance shares: Top 2 stocks to buy in near term; check target price, stop loss by Nagaraj Shetti",
+   "url": "https://www.livemint.com/market/stock-market-news/gmr-airports-iifl-finance-shares-top-2-stocks-to-buy-in-near-term-check-target-price-stop-loss-by-nagaraj-shetti-11795014291243.html",
+   "entry_date": "2026-11-18",
+   "entry": 661.95
+  },
   {
    "id": "330e307c79caa733",
    "symbol": "OIL",

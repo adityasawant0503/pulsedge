@@ -1,18 +1,18 @@
 {
  "date": "2026-11-19",
- "updated": "2026-11-19T03:11:17+05:30",
- "sentiment": "Bearish",
+ "updated": "2026-11-19T08:12:47+05:30",
+ "sentiment": "Mildly bearish",
  "breadth": {
-  "up": 1,
-  "down": 4
+  "up": 0,
+  "down": 1
  },
  "checklist": [
   {
    "title": "Nifty 50 last close (GIFT Nifty not available from free sources)",
-   "dir": "down",
-   "value": "25,227.95 (-0.63%)",
+   "dir": "flat",
+   "value": "25,227.95 (+0.00%)",
    "detail": [
-    "Previous close 25,387.89"
+    "Previous close 25,227.95"
    ]
   },
   {
@@ -23,61 +23,60 @@
     "Dow 50,198.17 -1.11%",
     "S&P 7,323.63 -0.23%",
     "Nasdaq 24,429.88 +0.42%",
-    "Nasdaq futures now +0.61%"
+    "Nasdaq futures now +0.90%"
    ]
   },
   {
    "title": "Asian markets live - Nikkei, Hang Seng",
-   "dir": "down",
-   "value": "Asia lower",
+   "dir": "flat",
+   "value": "Asia mixed",
    "detail": [
-    "Nikkei 59,024.28 +0.00%",
-    "Hang Seng 23,294.75 -0.91%"
+    "Nikkei 59,175.66 +0.26%",
+    "Hang Seng 22,899.05 -1.70%"
    ]
   },
   {
    "title": "DXY + USDINR move",
-   "dir": "down",
-   "value": "Rupee under pressure",
+   "dir": "flat",
+   "value": "No major currency pressure",
    "detail": [
-    "DXY 103.80 +0.31%",
-    "USD/INR 93.450 -0.02%"
+    "DXY 103.86 -0.01%",
+    "USD/INR 93.450 +0.00%"
    ]
   },
   {
    "title": "Brent crude level",
-   "dir": "up",
-   "value": "$91.73 -1.51%",
+   "dir": "flat",
+   "value": "$92.16 +0.23%",
    "detail": []
   },
   {
    "title": "India VIX",
    "dir": "flat",
-   "value": "15.56 (+0.29%) — normal",
+   "value": "15.56 (+0.00%) — normal",
    "detail": []
   }
  ],
- "summary": "Bearish setup. Brent down 1.51% — relief for OMCs and paints; NASDAQ closed 0.42% higher; supportive for IT.",
+ "summary": "Mildly bearish setup. NASDAQ closed 0.42% higher; supportive for IT; Nikkei up, Hang Seng down.",
  "global_cues": [
-  "Brent down 1.51% — relief for OMCs and paints",
   "NASDAQ closed 0.42% higher; supportive for IT",
-  "Nikkei down, Hang Seng down"
+  "Nikkei up, Hang Seng down"
  ],
  "india_triggers": [
-  "9 filings and headlines worth a look so far today"
+  "18 filings and headlines worth a look so far today"
  ],
  "focus": [
   {
+   "symbol": "GMRAIRPORT",
+   "note": "GMR Airports, IIFL Finance shares: Top 2 stocks to buy in near term; c"
+  },
+  {
+   "symbol": "OIL",
+   "note": "US dollar hovers near 19-month high, Aussie falls after soft jobs data"
+  },
+  {
    "symbol": "OIL",
    "note": "THREE OIL TANKERS THAT WERE OFFENDING CAUGHT FIRE IN THE EASTERN STRAI"
-  },
-  {
-   "symbol": "OIL",
-   "note": "US CRUDE OIL FUTURES SETTLE AT $83.26 A BARREL, DOWN $2.75 OR 3.20%"
-  },
-  {
-   "symbol": "IIFL",
-   "note": "IIFL Capital Services Limited: IIFL Capital Services Limited has infor"
   }
  ],
  "sector_tags": [
@@ -91,37 +90,37 @@
   {
    "name": "BANK NIFTY",
    "value": "62,038.7",
-   "change": -0.38
-  },
-  {
-   "name": "S&P FUT",
-   "value": "7,346",
-   "change": -0.17
-  },
-  {
-   "name": "NASDAQ FUT",
-   "value": "27,242",
-   "change": 0.61
-  },
-  {
-   "name": "KOSPI",
-   "value": "5,067",
    "change": 0.0
   },
   {
+   "name": "S&P FUT",
+   "value": "7,378",
+   "change": 0.5
+  },
+  {
+   "name": "NASDAQ FUT",
+   "value": "27,431",
+   "change": 0.9
+  },
+  {
+   "name": "KOSPI",
+   "value": "5,015",
+   "change": -1.03
+  },
+  {
    "name": "WTI",
-   "value": "83.15",
-   "change": -3.33
+   "value": "83.28",
+   "change": 0.02
   },
   {
    "name": "GOLD",
-   "value": "3,730",
-   "change": -3.47
+   "value": "3,744",
+   "change": 0.05
   },
   {
    "name": "US 10Y",
-   "value": "5.07",
-   "change": -0.69
+   "value": "5.06",
+   "change": -0.04
   }
  ],
  "source": "CNBC / Yahoo Finance (unofficial, delayed)"
