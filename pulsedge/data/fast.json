@@ -1,7 +1,32 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-19T11:19:08+05:30",
+ "updated": "2026-11-19T11:27:07+05:30",
  "items": [
+  {
+   "id": "881b728223064864",
+   "time": "2026-11-19T11:25:59+05:30",
+   "headline": "SAUDI-LED COALITION: INTERCEPTED 4 MISSILES TARGETING SOUTH",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9662",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [],
+   "impact": 0,
+   "confidence": 0,
+   "category": "news",
+   "action": "",
+   "reason": [],
+   "risks": [],
+   "plain": "",
+   "why": "",
+   "check": "",
+   "original": "SAUDI-LED COALITION: INTERCEPTED 4 MISSILES TARGETING SOUTH",
+   "latency": 68.8,
+   "lane": "fast"
+  },
   {
    "id": "64670c0ea40c4061",
    "time": "2026-11-19T11:18:00+05:30",
@@ -1479,38 +1504,6 @@
    "check": "",
    "original": "LIMITS TO STOCK FREE FLOAT; NO DECISION YET ON LINKING MTF LIMITS TO STOCK FREE FLOAT",
    "latency": 41.7,
-   "lane": "fast"
-  },
-  {
-   "id": "6f7563470346a324",
-   "time": "2026-11-18T11:25:39+05:30",
-   "headline": "KARNATAKA BANK: APPOINTS UDAYA KUMAR HEBBAR AS MD & CEO FOR THREE YEARS; HE BRINGS OVER 40 YEARS OF EXPERIENCE ACROSS CREDITACCESS GRAMEEN, BARCLAYS, ICICI BANK AND CORPORATION BANK,",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9540",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Banking"
-   ],
-   "impact": 5,
-   "confidence": 10,
-   "category": "Corporate Governance",
-   "action": "No immediate trading action required for the listed candidates.",
-   "reason": [
-    "Karnataka Bank is a separate entity from the listed candidates.",
-    "The appointment of a new MD & CEO is routine corporate governance news for the bank itself."
-   ],
-   "risks": [
-    "Misattribution of news to unrelated listed banks."
-   ],
-   "plain": "A regional bank hired a new chief executive with decades of banking experience.",
-   "why": "This news affects the specific bank's management, not the other listed banks mentioned in the headline.",
-   "check": "",
-   "original": "KARNATAKA BANK: APPOINTS UDAYA KUMAR HEBBAR AS MD & CEO FOR THREE YEARS; HE BRINGS OVER 40 YEARS OF EXPERIENCE ACROSS CREDITACCESS GRAMEEN, BARCLAYS, ICICI BANK AND CORPORATION BANK,",
-   "latency": 51.2,
    "lane": "fast"
   }
  ]
