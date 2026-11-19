@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T12:45:45+05:30",
+ "updated": "2026-11-19T13:02:12+05:30",
  "summary": {
-  "calls": 1800,
-  "scored_calls": 633,
+  "calls": 1802,
+  "scored_calls": 635,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "22a552f5fef3c371",
+   "symbol": "BLUESTARCO",
+   "time": "2026-11-19T12:41:30+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "AC makers shine as copper extends fall; Voltas, Blue Star rally up to 8%",
+   "url": "https://www.business-standard.com/markets/news/ac-makers-shine-as-copper-extends-fall-voltas-blue-star-rally-up-to-8-126111900458_1.html",
+   "entry_date": "2026-11-18",
+   "entry": 1621.8
+  },
+  {
+   "id": "22a552f5fef3c371",
+   "symbol": "VOLTAS",
+   "time": "2026-11-19T12:41:30+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "AC makers shine as copper extends fall; Voltas, Blue Star rally up to 8%",
+   "url": "https://www.business-standard.com/markets/news/ac-makers-shine-as-copper-extends-fall-voltas-blue-star-rally-up-to-8-126111900458_1.html",
+   "entry_date": "2026-11-18",
+   "entry": 1134.6
+  },
   {
    "id": "788c549479ff4b9a",
    "symbol": "RELIANCE",

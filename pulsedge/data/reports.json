@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T12:45+05:30",
+ "updated": "2026-11-19T13:01+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -570,22 +570,6 @@
    "updated": "2026-11-19T11:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "NUVAMA": {
-   "summary": "Nuvama Wealth Management recently announced it is issuing new shares to raise fresh capital. This move adds to the context of a financial sector that has seen a slight rise in recent trading sessions.",
-   "why": "Issuing new shares increases the total number of shares available, which can reduce the value of each existing share held by current investors.",
-   "upside": "The new funds raised could be used for business growth, which might limit potential losses for the company.",
-   "downside": "The increase in total shares can dilute the ownership percentage of current shareholders, often putting downward pressure on the stock price.",
-   "watch": [
-    "How the company plans to use the newly raised funds",
-    "The final number of shares allotted in this issuance",
-    "Continued performance of the broader Financials sector index"
-   ],
-   "about": "",
-   "basis": "64ba87cecef2",
-   "items": 1,
-   "updated": "2026-11-18T12:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "AZAD": {
    "summary": "PulsEdge flagged several large trades in Azad Engineering shares on November 18, 2026. One investor sold about ₹800 crore worth of shares, while four other large investors bought a combined total of roughly ₹370 crore.",
    "why": "These trades show that large investors are actively changing their positions in the company, which can influence how other market participants view the stock.",
@@ -1081,22 +1065,6 @@
    "updated": "2026-11-18T14:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "HAVELLS": {
-   "summary": "Havells India announced a new super‑hi‑speed BLDC+ ceiling fan while the broader consumer durables sector showed modest weakness, slipping 0.2% in the last session.",
-   "why": "The product launch could boost future earnings, but sector weakness may pressure the stock.",
-   "upside": "Strong demand for the faster, quieter fan could improve revenue and margins.",
-   "downside": "Higher R&D and marketing expenses for the new fan may compress short‑term margins.",
-   "watch": [
-    "Consumer Durables index performance",
-    "Sales uptake of the Super Hi‑Speed BLDC+ fan",
-    "Margin trends amid R&D spending"
-   ],
-   "about": "Havells India Ltd manufactures electrical consumer durables such as fans, lighting and home appliances.",
-   "basis": "57957e45264e",
-   "items": 2,
-   "updated": "2026-11-18T14:01+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "KALYANKJIL": {
    "summary": "Kalyan Jewellers shares fell up to 5% as the Nifty Consumer Durables index slid about 3% and concerns grew over near‑term consumer demand despite lower gold prices.",
    "why": "The price drop reflects market worries that weaker retail demand could hurt sales volumes and profit margins for shareholders.",
@@ -1145,6 +1113,38 @@
    "updated": "2026-11-18T10:47+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "BLUESTARCO": {
+   "summary": "Blue Star shares jumped up to 8% as copper prices fell, lowering material costs for its air conditioners. Meanwhile, the consumer durables sector index slipped about 3% recently.",
+   "why": "Lower copper costs can improve profit margins for shareholders, but the broader sector weakness could weigh on the stock.",
+   "upside": "Sustained low copper prices could further boost Blue Star’s margins.",
+   "downside": "A rebound in copper prices could raise material costs and pressure earnings.",
+   "watch": [
+    "Copper price trends",
+    "Consumer durables sector index movement",
+    "Blue Star stock price momentum"
+   ],
+   "about": "Blue Star Ltd. manufactures air conditioners and other consumer durable products.",
+   "basis": "ac27675f1cb5",
+   "items": 1,
+   "updated": "2026-11-19T13:01+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "VOLTAS": {
+   "summary": "Voltas shares jumped up to 8% as copper prices fell, lowering the cost of a key material for its air conditioners. The broader consumer durables index remains weak, down about 3% recently.",
+   "why": "Lower copper costs could improve Voltas’ profit margins, while the sector’s decline may still pressure the stock.",
+   "upside": "Sustained low copper prices could boost margins and earnings.",
+   "downside": "A quick rebound in copper prices could raise costs and squeeze margins.",
+   "watch": [
+    "Copper price movements",
+    "Consumer durables index performance",
+    "Voltas sales or earnings updates"
+   ],
+   "about": "Voltas Ltd. manufactures air conditioners and related cooling equipment.",
+   "basis": "ac27675f1cb5",
+   "items": 1,
+   "updated": "2026-11-19T13:01+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "BATAINDIA": {
    "summary": "Bata India Ltd. is seeing its shares pressured as the Nifty Consumer Durables index fell about 3% today, reflecting broader concerns for the sector. The sector has been slightly up over the past five sessions but slipped 0.2% in the last session.",
    "why": "Sector sentiment can move Bata’s stock even without company‑specific news, so investors watch the broader consumer‑durables trend.",
@@ -1176,6 +1176,22 @@
    "items": 1,
    "updated": "2026-11-18T14:01+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "HAVELLS": {
+   "summary": "Havells India Ltd. is seeing pressure as the consumer durables sector fell about 3% in the latest session and over 3% across five sessions. The broader sell‑off in the sector could affect its stock performance.",
+   "why": "Shareholders feel the impact because sector sentiment often moves the stock even without company‑specific news.",
+   "upside": "If overall market sentiment improves, the consumer durables index could rebound, supporting Havells' share price.",
+   "downside": "A continued sector‑wide sell‑off could keep pressure on Havells' stock.",
+   "watch": [
+    "Consumer durables sector index movements",
+    "Broader market sentiment indicators",
+    "Any Havells‑specific news or earnings updates"
+   ],
+   "about": "Havells India Ltd. designs, manufactures and sells electrical lighting, fans and other consumer appliances.",
+   "basis": "266d2c7acd5a",
+   "items": 1,
+   "updated": "2026-11-19T13:01+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "IDBI": {
    "summary": "IDBI Bank is part of the Financial Services sector, which has seen a 3.0% rise over the last five sessions. Recent news mentions a major investor selling a large stake in a related finance company, IIFL Finance, through a block deal.",
