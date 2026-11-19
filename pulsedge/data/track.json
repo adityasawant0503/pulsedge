@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T08:16:03+05:30",
+ "updated": "2026-11-19T08:30:50+05:30",
  "summary": {
-  "calls": 1758,
-  "scored_calls": 591,
+  "calls": 1759,
+  "scored_calls": 592,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "b428a494210c83a9",
+   "symbol": "CYIENT",
+   "time": "2026-11-19T08:24:57+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Cyient Limited: Cyient Limited has informed the Exchange regarding a press release dated November 19, 2026, titled \"Cyient Semiconductors Secures Strategic Inve",
+   "url": "https://nsearchives.nseindia.com/corporate/CYIENT_19112026082431_19112026PR_FinalSigned.pdf",
+   "entry_date": "2026-11-18",
+   "entry": 1086.4
+  },
   {
    "id": "b17064c1096ba1de",
    "symbol": "OIL",
