@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T08:30+05:30",
+ "updated": "2026-11-19T08:45+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -825,6 +825,22 @@
    "updated": "2026-11-19T08:11+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "COALINDIA": {
+   "summary": "Coal India is preparing to sell parts of its business units, starting with Mahanadi Coalfields, through a public share offering. Early interest in this sale appears lower than expected, with modest gains indicated in the grey market.",
+   "why": "Selling these units can bring cash to the company, but it also means existing shareholders own a smaller slice of the total business, which might affect the stock's value.",
+   "upside": "The sale could unlock value and generate cash proceeds for the parent company.",
+   "downside": "Weak interest in the new share sale might make investors nervous about the parent company's value and lead to ownership dilution.",
+   "watch": [
+    "The final listing price of Mahanadi Coalfields.",
+    "Progress on IPO preparations for Northern and Central Coalfields.",
+    "General market liquidity as investors decide where to put their money."
+   ],
+   "about": "Coal India is a major coal company and one of India's 50 largest listed companies.",
+   "basis": "6b325c7853a3",
+   "items": 7,
+   "updated": "2026-11-19T08:45+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "PRESTIGE": {
    "summary": "Prestige Estates is actively expanding its business by buying a 50% stake in a hotel company and increasing its ownership in a housing project. The company also announced plans to create two new subsidiaries. These moves happened while the broader real estate sector saw strong gains in November.",
    "why": "These acquisitions and new entities could change how much money the company earns in the future. Shareholders need to watch how these new investments affect the company's cash and overall performance.",
@@ -840,22 +856,6 @@
    "items": 7,
    "updated": "2026-11-19T00:20+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "COALINDIA": {
-   "summary": "Coal India is preparing IPOs for its subsidiaries, including Mahanadi Coalfields and the Northern and Central Coalfields, and has been placed on a watchlist as investors focus on the developments. The Oil & Gas sector index slipped slightly, down 0.1% in the last session.",
-   "why": "The IPOs could bring cash to the parent and affect the value of existing shares.",
-   "upside": "If the IPOs are priced well and attract strong demand, Coal India could receive cash that may support its operations.",
-   "downside": "If the share offering is met with weak demand, existing shares could be diluted and see price pressure.",
-   "watch": [
-    "Mahanadi Coalfields IPO pricing and demand",
-    "Progress of Northern and Central Coalfields IPOs",
-    "Sector index movement and overall market sentiment"
-   ],
-   "about": "Coal India Ltd. is India's largest coal mining company, producing and supplying coal.",
-   "basis": "5a031a55768a",
-   "items": 6,
-   "updated": "2026-11-19T08:11+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "HDFCBANK": {
    "summary": "HDFC Bank shares have risen sharply, jumping about 20% from their October low as the Nifty Bank index hit a record high. Analysts note a technical breakout that could keep banks moving higher, though broader market moves could affect this.",

@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T08:30:50+05:30",
+ "updated": "2026-11-19T08:45:36+05:30",
  "summary": {
-  "calls": 1759,
-  "scored_calls": 592,
+  "calls": 1760,
+  "scored_calls": 593,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "5613eec38f3e503d",
+   "symbol": "COALINDIA",
+   "time": "2026-11-19T08:29:03+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Mahanadi Coalfields IPO GMP today at ₹3 vs ₹136 price band - Should you apply for Coal India arm's shares or not?",
+   "url": "https://www.livemint.com/market/ipo/mahanadi-coalfields-ipo-gmp-today-at-rs-3-vs-rs-136-price-band-should-you-apply-for-coal-india-arms-shares-or-not-11795054572842.html",
+   "entry_date": "2026-11-18",
+   "entry": 388.0
+  },
   {
    "id": "b428a494210c83a9",
    "symbol": "CYIENT",
