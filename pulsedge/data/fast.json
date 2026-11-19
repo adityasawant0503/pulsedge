@@ -1,7 +1,46 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-19T13:51:34+05:30",
+ "updated": "2026-11-19T13:56:49+05:30",
  "items": [
+  {
+   "id": "d88054cf8d07d3f7",
+   "time": "2026-11-19T13:54:33+05:30",
+   "headline": "INDIA OIL MINISTER SAYS INDIA'S PETCHEM DEMAND IS SEEN RISING TO 55M T BY 2030",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9692",
+   "section": "macro",
+   "call": "watch",
+   "horizon": "positional",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "OIL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Oil & Gas",
+    "Petrochemicals"
+   ],
+   "impact": 35,
+   "confidence": 60,
+   "category": "Policy/Outlook",
+   "action": "Monitor long-term petrochemical demand trends for potential upside in refining margins.",
+   "reason": [
+    "Rising petrochemical demand supports long-term volumes for oil marketing companies.",
+    "Positive sector outlook may attract institutional interest in OMCs."
+   ],
+   "risks": [
+    "Demand growth may be offset by global crude price volatility.",
+    "Execution of capacity expansion takes time and capital."
+   ],
+   "plain": "The oil minister says India's need for petrochemical products will grow significantly by 2030.",
+   "why": "Higher future demand suggests oil companies may sell more products, which is generally good for their long-term business.",
+   "check": "Look at recent quarterly reports to see if sales volumes are already increasing.",
+   "original": "INDIA OIL MINISTER SAYS INDIA'S PETCHEM DEMAND IS SEEN RISING TO 55M T BY 2030",
+   "latency": 136.8,
+   "lane": "fast"
+  },
   {
    "id": "cbc6521714fc23cd",
    "time": "2026-11-19T13:50:12+05:30",
@@ -1831,112 +1870,6 @@
    "check": "Look out for formal order wins resulting from this new technology partnership.",
    "original": "APOLLO MICRO SYSTEMS: CO. SIGNS MOU WITH REDON SYSTEMS FOR STRATEGIC COLLABORATION IN TETHERED DRONE AND LOITERING MUNITION SYSTEMS; AIMS TO SUPPORT INDIAN DEFENCE FORCES AND ALIGN WITH AATMANIRBHAR BHARAT INITIATIVE.",
    "latency": 126.9,
-   "lane": "fast"
-  },
-  {
-   "id": "f89541cfec786ff4",
-   "time": "2026-11-18T13:54:46+05:30",
-   "headline": "GOLDMAN SACHS: SEE INDIA FY27 GDP GROWTH AT 7.2% IN 2027 VS 7.6% IN 2026; TOTAL PRIVATE SECTOR CREDIT GROWTH AT AROUND 17% OCT-DEC",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9557",
-   "section": "macro",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "macro"
-   ],
-   "impact": 30,
-   "confidence": 30,
-   "category": "macro",
-   "action": "Watch for market reaction to the growth outlook in upcoming sessions",
-   "reason": [
-    "Forecast suggests strong GDP growth, could boost equities",
-    "Credit growth may improve financial sector outlook"
-   ],
-   "risks": [
-    "Projections may be revised downward",
-    "Global headwinds could dampen impact"
-   ],
-   "plain": "Goldman Sachs projects India's FY27 GDP at 7.2% and private credit growth around 17%.",
-   "why": "Higher growth expectations can lift market sentiment, but numbers may change, so impact is uncertain.",
-   "check": "Look at upcoming economic data releases for GDP and credit trends.",
-   "original": "GOLDMAN SACHS: SEE INDIA FY27 GDP GROWTH AT 7.2% IN 2027 VS 7.6% IN 2026; TOTAL PRIVATE SECTOR CREDIT GROWTH AT AROUND 17% OCT-DEC",
-   "latency": 45.8,
-   "lane": "fast"
-  },
-  {
-   "id": "efdb5646f06ac9c1",
-   "time": "2026-11-18T13:54:29+05:30",
-   "headline": "GOLDMAN SACHS: GLOBAL AI CAPEX IS PROJECTED TO APPROACH $2 TIN IN 2028; DEMAND, ROBUST EARNINGS TO MAKE INDIA ATTRACTIVE FOR AL",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9556",
-   "section": "macro",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "technology",
-    "AI"
-   ],
-   "impact": 25,
-   "confidence": 30,
-   "category": "macro",
-   "action": "Watch for sector moves as AI investment expectations evolve",
-   "reason": [
-    "AI spending surge could benefit Indian tech firms",
-    "Long‑term forecast may not translate into immediate price moves"
-   ],
-   "risks": [
-    "Forecast is long‑term and may not materialise",
-    "Competitive pressures could limit benefits"
-   ],
-   "plain": "Goldman Sachs expects global AI capex to near $2 trillion by 2028, making India attractive for AI.",
-   "why": "Strong AI investment could boost Indian technology stocks, but the outlook is distant and uncertain.",
-   "check": "Monitor AI‑related earnings updates from Indian technology companies.",
-   "original": "GOLDMAN SACHS: GLOBAL AI CAPEX IS PROJECTED TO APPROACH $2 TIN IN 2028; DEMAND, ROBUST EARNINGS TO MAKE INDIA ATTRACTIVE FOR AL",
-   "latency": 62.8,
-   "lane": "fast"
-  },
-  {
-   "id": "1c9a48f4b842d03a",
-   "time": "2026-11-18T13:54:04+05:30",
-   "headline": "GOLDMAN SACHS: FURTHER RISE IN CRUDE OIL PRICES MAY DERAIL GROWTH OUTLOOK; INDIA CAD TO REMAIN CONTAINED AT 1.1% OF GDP IN 2027",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9555",
-   "section": "macro",
-   "call": "watch",
-   "horizon": "positional",
-   "direction": "mixed",
-   "tickers": [
-    {
-     "symbol": "OIL",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Energy",
-    "Macro"
-   ],
-   "impact": 40,
-   "confidence": 60,
-   "category": "Research Note",
-   "action": "Monitor global crude benchmarks for sustained upward momentum before assuming sector-wide strength.",
-   "reason": [
-    "Goldman Sachs warns rising crude prices could hurt India's growth outlook.",
-    "However, the CAD impact is expected to remain contained at 1.1% of GDP in 2027."
-   ],
-   "risks": [
-    "Sustained high oil prices may squeeze corporate margins across the economy.",
-    "Growth slowdown could reduce overall market sentiment."
-   ],
-   "plain": "A major bank says rising oil prices might slow India's economic growth, but the trade deficit impact should stay small.",
-   "why": "Higher oil costs can hurt the economy and corporate profits, but the specific trade deficit risk is limited.",
-   "check": "Look at recent global oil price trends and India's monthly trade deficit data.",
-   "original": "GOLDMAN SACHS: FURTHER RISE IN CRUDE OIL PRICES MAY DERAIL GROWTH OUTLOOK; INDIA CAD TO REMAIN CONTAINED AT 1.1% OF GDP IN 2027",
-   "latency": 27.0,
    "lane": "fast"
   }
  ]
