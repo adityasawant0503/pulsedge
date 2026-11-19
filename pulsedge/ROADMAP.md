@@ -21,7 +21,7 @@ The full checklist (launch, payments, compliance, growth and routines) lives in 
 - Landing page with watchlist, broker CSV import, signups (Formspree) and GitHub Pages deploy
 - Pricing section (founding 15 seats, ₹499/month, ₹3,999/year) with Razorpay-ready buttons, and `welcome.html` for after payment
 - Waitlist page and terminal are separate pages; the waitlist no longer links to the terminal
-- PULSE terminal (`terminal.html`): status bar, pre-market checklist panel, signal feed with Trade ideas / Watch / RedBox / Filings / My stocks tabs
+- PULSE terminal (`terminal.html`): status bar, pre-market checklist panel, signal feed with All / Latest / Act now / Watch / Global / Filings / Big money / My stocks tabs
 - Live news pipeline (`pulsedge-bot/news_pipeline.py`): SEBI, RBI, NSE announcements and market news every 15 minutes in market hours, Nifty 500 ticker matching, AI or keyword-rule classification
 - Live pre-market panel (`pulsedge-bot/premarket.py`) from CNBC quotes, Yahoo as fallback
 - Track record (`track.html`, `pulsedge-bot/track_record.py`): every Watch/Act call on a named stock checked against NSE closes 1 and 5 sessions later
