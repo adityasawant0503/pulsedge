@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T09:45:37+05:30",
+ "updated": "2026-11-19T10:01:19+05:30",
  "summary": {
-  "calls": 1762,
-  "scored_calls": 595,
+  "calls": 1765,
+  "scored_calls": 598,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "00f7a1ed88c0087e",
+   "symbol": "BLS",
+   "time": "2026-11-19T09:58:20+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "BLS Polymers shares hit record high! Up 106% from IPO price, recently-listed multibagger stock soars 8% today | Buy?",
+   "url": "https://www.livemint.com/market/stock-market-news/bls-polymers-shares-hit-record-high-up-106-from-ipo-price-recently-listed-multibagger-stock-soars-8-today-buy-11795023009361.html",
+   "entry_date": "2026-11-18",
+   "entry": 227.75
+  },
   {
    "id": "5613eec38f3e503d",
    "symbol": "COALINDIA",
@@ -46,6 +59,32 @@
    "url": "https://nsearchives.nseindia.com/corporate/CYIENT_19112026082431_19112026PR_FinalSigned.pdf",
    "entry_date": "2026-11-18",
    "entry": 1086.4
+  },
+  {
+   "id": "f3e91c7fcad2506a",
+   "symbol": "PAYTM",
+   "time": "2026-11-19T07:59:56+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex flat, Nifty near 25,200; Paytm, Pine Labs fall up to 6%",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-19-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-mahanadi-coalfields-ipo-today-126111900101_1.html",
+   "entry_date": "2026-11-18",
+   "entry": 1890.0
+  },
+  {
+   "id": "f3e91c7fcad2506a",
+   "symbol": "PINELABS",
+   "time": "2026-11-19T07:59:56+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex flat, Nifty near 25,200; Paytm, Pine Labs fall up to 6%",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-19-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-mahanadi-coalfields-ipo-today-126111900101_1.html",
+   "entry_date": "2026-11-18",
+   "entry": 169.35
   },
   {
    "id": "2c17a475cf7a531f",
