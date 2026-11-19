@@ -1,7 +1,45 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-19T11:47:35+05:30",
+ "updated": "2026-11-19T11:49:36+05:30",
  "items": [
+  {
+   "id": "52807d12a811fd4b",
+   "time": "2026-11-19T11:49:06+05:30",
+   "headline": "NBCC (INDIA): COMPANY WINS ORDER VALUED AT 85 CRORE RUPEES",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9673",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "NBCC",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Construction"
+   ],
+   "impact": 60,
+   "confidence": 70,
+   "category": "company",
+   "action": "Watch for follow‑through in stock price after the order is reflected in quarterly results",
+   "reason": [
+    "Order adds to NBCC’s revenue pipeline",
+    "May improve upcoming quarterly earnings"
+   ],
+   "risks": [
+    "Execution risk could delay project",
+    "Potential cost overruns may affect margins"
+   ],
+   "plain": "NBCC secured a new construction contract worth 85 crore rupees.",
+   "why": "The contract adds revenue, which could lift earnings and support the share price.",
+   "check": "Look for the order’s inclusion in the next quarterly earnings release.",
+   "original": "NBCC (INDIA): COMPANY WINS ORDER VALUED AT 85 CRORE RUPEES",
+   "latency": 30.0,
+   "lane": "fast"
+  },
   {
    "id": "36ed65733f77b7e0",
    "time": "2026-11-19T11:47:09+05:30",
