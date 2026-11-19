@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T11:45+05:30",
+ "updated": "2026-11-19T12:01+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -217,6 +217,22 @@
    "basis": "9ea1781c9cef",
    "items": 4,
    "updated": "2026-11-19T11:31+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "LTFOODS": {
+   "summary": "LT Foods announced it will buy a US-based food company called MK Foods Holdings for about ₹54.2 crore. This news caused the company's share price to rise sharply, breaking a recent losing streak.",
+   "why": "This matters to shareholders because buying another business can help the company grow faster and reach new customers. The stock price reacted strongly to this announcement, showing that investors are paying close attention to this move.",
+   "upside": "The acquisition adds new brands and could help increase the company's earnings by reaching more customers.",
+   "downside": "Combining two companies can be difficult, and there is a risk that the integration process will face challenges.",
+   "watch": [
+    "How well the two companies work together after the deal is complete",
+    "Whether the new US brands bring in the expected sales",
+    "If the stock price stays high or settles down after the recent jump"
+   ],
+   "about": "LT Foods is a company in the Fast Moving Consumer Goods sector, which sells everyday items like food products.",
+   "basis": "79ea0efb4cf8",
+   "items": 3,
+   "updated": "2026-11-19T12:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ANGELONE": {
@@ -457,6 +473,22 @@
    "basis": "45e9046d3767",
    "items": 2,
    "updated": "2026-11-17T12:15+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "NBCC": {
+   "summary": "NBCC (India) Ltd. recently won a new construction contract worth 85 crore rupees. This adds to the company's order book and expected future revenue.",
+   "why": "For shareholders, new contracts mean the company has more work to do, which can lead to higher profits over time.",
+   "upside": "If the project is completed on schedule, it will add to the company's income and earnings.",
+   "downside": "Delays in building the project could push back when the money comes in.",
+   "watch": [
+    "Updates on the progress of the new 85 crore rupee project",
+    "Any news about delays or challenges in construction",
+    "Future announcements about new contracts"
+   ],
+   "about": "NBCC is a construction company listed on the Indian stock market.",
+   "basis": "bc773e1514a6",
+   "items": 1,
+   "updated": "2026-11-19T12:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "RVNL": {
@@ -745,22 +777,6 @@
    "updated": "2026-11-18T12:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "LTFOODS": {
-   "summary": "LT Foods snapped a four‑day losing streak, jumping about 8% after announcing a plan to acquire MK Foods for roughly 54 crore rupees. The move comes as the FMCG sector index was up 0.8% over the past five sessions.",
-   "why": "Shareholders care because the acquisition could speed growth and broaden the customer base, though it also brings integration risk.",
-   "upside": "Successful integration of MK Foods could boost revenue and earnings.",
-   "downside": "Integration challenges could hurt the company’s performance.",
-   "watch": [
-    "MK Foods acquisition progress and approvals",
-    "Integration execution and cost synergies",
-    "FMCG sector trends and broader market attention"
-   ],
-   "about": "LT Foods Ltd. is an Indian fast‑moving consumer goods company.",
-   "basis": "24dca9161f52",
-   "items": 2,
-   "updated": "2026-11-19T10:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "UPL": {
    "summary": "UPL's shares slipped below a key moving average, and media reports say the company may scrap its plan to change its corporate structure.",
    "why": "This matters because technical price signals can affect short‑term trading sentiment and a simpler corporate structure could influence investor appeal.",
@@ -906,19 +922,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is navigating mixed signals as US crude prices fell to $83.26 a barrel, while reports of tanker fires in the Strait of Hormuz raise supply concerns. Meanwhile, lower US oil inventories suggest tighter supply, which could support prices for producers.",
-   "why": "Shareholders should note that falling oil prices can reduce profits for fuel sellers, but potential supply disruptions might push prices back up. The company's earnings depend heavily on these global oil price swings.",
-   "upside": "Tighter global oil supply could lead to higher prices, increasing profits for oil producers like Oil India.",
-   "downside": "Recent drops in crude oil prices may lower the company's revenue, and high oil prices elsewhere could hurt the broader economy.",
+   "summary": "Oil India Ltd. is facing mixed signals as US crude prices fell to $83.26 a barrel, while US oil inventories dropped sharply. Geopolitical events, including tanker fires in the Strait of Hormuz, are adding uncertainty to the oil supply landscape.",
+   "why": "Shareholders need to watch how these price swings and supply risks affect the company's earnings, as lower crude prices can reduce profits for oil producers.",
+   "upside": "Lower US oil inventories suggest tighter supply, which could push prices back up and benefit oil producers.",
+   "downside": "The recent drop in crude prices and potential supply disruptions from tanker fires could hurt revenue and create volatility.",
    "watch": [
+    "Future movements in US crude oil prices",
     "Updates on the safety of the Strait of Hormuz",
-    "Changes in global crude oil inventory levels",
-    "Impact of oil prices on India's economic growth"
+    "Changes in US crude oil inventory levels"
    ],
-   "about": "",
-   "basis": "9153a6a19098",
-   "items": 12,
-   "updated": "2026-11-19T11:45+05:30",
+   "about": "Oil India Ltd. is an Indian company in the Oil Gas & Consumable Fuels sector.",
+   "basis": "96bd7c62f2ec",
+   "items": 13,
+   "updated": "2026-11-19T12:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "COALINDIA": {
@@ -938,20 +954,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "PRESTIGE": {
-   "summary": "Prestige Estates is actively expanding its business by buying a 50% stake in a hotel company and increasing its ownership in a housing project. The company also announced plans to create two new subsidiaries. These moves happened while the broader real estate sector saw strong gains in November.",
-   "why": "These acquisitions and new entities could change how much money the company earns in the future. Shareholders need to watch how these new investments affect the company's cash and overall performance.",
-   "upside": "The new hotel stake and increased project ownership could diversify income sources and support future growth.",
-   "downside": "These purchases require significant spending, which could strain the company's cash reserves or lead to integration challenges.",
+   "summary": "Prestige Estates Projects Ltd. is actively expanding its business, announcing the acquisition of a 50% stake in Advent Convention and Hotels International and increasing its ownership in the Prestige Vaishnaoi Projects to 42.83%. It also plans to set up two wholly‑owned subsidiaries.",
+   "why": "These moves could affect the company’s earnings and cash position, making them important for current shareholders.",
+   "upside": "Successful integration of the new hotel business and higher returns from the expanded project stake could boost earnings.",
+   "downside": "The acquisitions and subsidiary formation may strain cash reserves and face integration challenges, potentially hurting shareholder value.",
    "watch": [
-    "How the new hotel stake is financed and integrated",
-    "Details on the purpose of the two new subsidiaries",
-    "Whether the real estate sector's recent rise continues or corrects"
+    "Financing and integration of the Advent Convention and Hotels stake",
+    "Performance and profitability of the newly created subsidiaries",
+    "Cash flow impact of the increased stake in Prestige Vaishnaoi Projects"
    ],
-   "about": "Prestige Estates is a real estate company listed in the Nifty 500 index.",
-   "basis": "cc24feab3628",
-   "items": 7,
-   "updated": "2026-11-19T00:20+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Prestige Estates Projects Ltd. is a real‑estate development company.",
+   "basis": "d74944b06e09",
+   "items": 6,
+   "updated": "2026-11-19T12:01+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "SAIL": {
    "summary": "SAIL shares have fallen sharply as global metal prices dropped and the US dollar strengthened. The company led losses in the Nifty Metal index, which is down 4.4% over the last five sessions.",
@@ -1049,22 +1065,6 @@
    "updated": "2026-11-18T11:02+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "HDFCBANK": {
-   "summary": "HDFC Bank shares have rallied sharply, jumping about 20% from their October low as the Nifty Bank index hit a record high. Analysts note a technical breakout that could keep the bank’s stock moving higher, though recent sector weakness adds caution.",
-   "why": "Shareholders see the rally as a sign of strong market confidence, but the stock’s performance is tied to broader market and banking sector trends.",
-   "upside": "If the technical bias holds and the broader market stays supportive, the stock could continue to rise.",
-   "downside": "A pull‑back in the overall market or an overbought condition in the banking sector could stall or reverse gains.",
-   "watch": [
-    "Technical breakout and bias for banks",
-    "Broader market direction and potential falls",
-    "Financials sector index trends and comparison with peers like Axis Bank"
-   ],
-   "about": "HDFC Bank Ltd. is a leading Indian private‑sector bank offering retail, corporate and treasury banking services.",
-   "basis": "2a6cc64ea927",
-   "items": 3,
-   "updated": "2026-11-19T10:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "MARUTI": {
    "summary": "Maruti Suzuki shares rose sharply on November 19, 2026, as part of a broader rally in the auto sector. This move happened even though the wider auto sector index had fallen in the previous five sessions.",
    "why": "A sudden rise in share price can increase the value of your holdings, but it may also reflect short-term market excitement rather than long-term company performance.",
@@ -1145,20 +1145,20 @@
    "updated": "2026-11-19T03:10+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "GODREJPROP": {
-   "summary": "Godrej Properties reported a regulatory order, which is often a minor procedural issue. At the same time, the broader real estate sector has seen a sharp rise in stock prices this month.",
-   "why": "Shareholders need to know if the regulatory order leads to fines or operational problems. The sector's recent surge shows high investor interest, which can affect the stock's value.",
-   "upside": "Strong momentum in the real estate sector could continue to support the company's share price.",
-   "downside": "The regulatory order could result in financial penalties or compliance hurdles, and the sector may face a correction after its recent sharp rise.",
+  "HDFCBANK": {
+   "summary": "HDFC Bank shares have recovered from a recent sell-off, with analysts noting a technical breakout in the banking sector. The stock is currently being compared with Axis Bank as both look to regain momentum.",
+   "why": "This matters because a technical breakout suggests the stock might continue moving upward, but it also indicates that recent volatility has unsettled some investors.",
+   "upside": "If the technical breakout holds, the stock could rise along with other major banks.",
+   "downside": "If the broader market falls, the positive technical bias may not materialize, and the stock could stay flat or drop.",
    "watch": [
-    "Details of the regulatory order and any associated fines",
-    "Performance of the Nifty Realty index",
-    "Company announcements regarding compliance"
+    "Whether the Nifty Bank index maintains its new high",
+    "How HDFC Bank performs relative to Axis Bank",
+    "General market sentiment in the financial sector"
    ],
-   "about": "Godrej Properties is a real estate company listed in the Nifty 500 index.",
-   "basis": "64d45239a388",
+   "about": "HDFC Bank is a major financial services company and one of India's 50 largest listed firms.",
+   "basis": "ba23b89534c6",
    "items": 2,
-   "updated": "2026-11-18T12:01+05:30",
+   "updated": "2026-11-19T12:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ICICIBANK": {
@@ -1176,38 +1176,6 @@
    "items": 2,
    "updated": "2026-11-18T10:47+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "SOBHA": {
-   "summary": "Sobha Ltd. recently announced a new credit rating from an agency. At the same time, the broader real estate sector has seen a sharp rise in stock prices this month.",
-   "why": "The credit rating affects how easily Sobha can borrow money, which can influence its future costs. The sector's recent surge shows high investor interest, but it also suggests prices may have risen quickly.",
-   "upside": "Strong investor interest in the real estate sector could support the company's share price in the near term.",
-   "downside": "If the credit rating is a downgrade, it could increase the company's borrowing costs, and the sector's recent sharp rise might lead to a price correction.",
-   "watch": [
-    "The specific details and outcome of the new credit rating.",
-    "Whether the real estate sector continues to rise or pulls back after its recent surge.",
-    "Changes in the Nifty Realty index performance over the next few sessions."
-   ],
-   "about": "Sobha Ltd. is a real estate company listed on the NSE.",
-   "basis": "48f3dc4154f4",
-   "items": 2,
-   "updated": "2026-11-18T09:30+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "DLF": {
-   "summary": "DLF shares have risen to a 52‑week high, joining a group of stocks that rallied about 15% over the past month as the realty sector surged in November.",
-   "why": "The rise shows strong investor interest, which can affect the value of existing holdings.",
-   "upside": "If buying momentum continues, the stock could move higher.",
-   "downside": "A quick shift in market sentiment or an over‑extended sector could reverse the gains.",
-   "watch": [
-    "DLF price relative to the Nifty Realty index",
-    "Broader market sentiment changes",
-    "Any further 52‑week high tests or corrections"
-   ],
-   "about": "DLF Ltd. is a real estate developer in India.",
-   "basis": "d6752d9ced5a",
-   "items": 2,
-   "updated": "2026-11-18T08:17+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "BATAINDIA": {
    "summary": "Bata India Ltd. is seeing its shares pressured as the Nifty Consumer Durables index fell about 3% today, reflecting broader concerns for the sector. The sector has been slightly up over the past five sessions but slipped 0.2% in the last session.",
@@ -1289,22 +1257,6 @@
    "updated": "2026-11-17T15:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "LODHA": {
-   "summary": "The realty sector has surged about 14% in November, with some stocks hitting yearly highs, while the sector index fell 1.3% in the last session but rose 1.4% over the past five days. Lodha Developers, as part of this sector, is riding the current strong investor interest but faces short‑term volatility.",
-   "why": "Shareholders feel the impact of broad sector moves, which can lift or drag Lodha’s stock regardless of company‑specific news.",
-   "upside": "If the sector’s upward momentum continues, Lodha could benefit from higher demand and price appreciation.",
-   "downside": "A correction in the over‑extended realty market could pull Lodha’s shares lower.",
-   "watch": [
-    "Nifty Realty index daily performance",
-    "DLF stock movements as a sector peer",
-    "Overall sector index trend over the next sessions"
-   ],
-   "about": "Lodha Developers Ltd. is an Indian real estate development company.",
-   "basis": "fb74963cbe28",
-   "items": 1,
-   "updated": "2026-11-17T11:02+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "PNB": {
    "summary": "Punjab National Bank shares have risen 31% in one month to hit an 8-year high. The bank recently announced a distribution partnership with SBI Mutual Fund, though it also reported regulatory actions taken against it.",
    "why": "The sharp price increase means your investment value has grown significantly, but the recent regulatory news adds a layer of uncertainty to the bank's future performance.",
@@ -1353,22 +1305,6 @@
    "updated": "2026-11-18T11:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "ADANIPOWER": {
-   "summary": "Adani Power plans to increase its steady electricity generation capacity to 45 GW by 2032. A major investment bank recently listed the company among large-cap stocks it expects to perform well.",
-   "why": "This expansion plan signals long-term growth, but it will likely require significant borrowing to build new power plants.",
-   "upside": "The company aims to significantly grow its electricity output over the next several years.",
-   "downside": "Building new capacity requires heavy spending, which could increase the company's debt.",
-   "watch": [
-    "How much new debt the company takes on to fund the expansion",
-    "Progress toward the 45 GW capacity target by 2032",
-    "Performance of the broader energy sector index"
-   ],
-   "about": "Adani Power is a company in the power sector that generates electricity.",
-   "basis": "21df7826aa9c",
-   "items": 2,
-   "updated": "2026-11-19T10:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "NTPC": {
    "summary": "PulsEdge flagged a tragic accident at NTPC's Tandwa project where three workers died and two were injured, and an investigation is now under way. The Energy sector index was flat over the past five sessions, showing little market movement.",
    "why": "Shareholders should watch the incident because it could pause work, raise safety costs, or attract regulatory scrutiny that may affect earnings.",
@@ -1384,6 +1320,22 @@
    "items": 2,
    "updated": "2026-11-18T14:15+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "ADANIPOWER": {
+   "summary": "Adani Power is part of the Nifty 500 index of large companies. Its wider energy sector recently saw a decline of 0.5 percent in the last session and 1.5 percent over five sessions.",
+   "why": "Brokers and market experts sometimes share positive views on large companies like this one. When that happens, it can influence other investors' interest in the shares.",
+   "upside": "A major investment bank recently included largecap stocks in an overweight list, suggesting some companies might do better than the wider market.",
+   "downside": "Analyst ratings are not guarantees of future performance, and the broader energy sector has seen recent declines.",
+   "watch": [
+    "Brokers' ratings and expert views on largecap stocks",
+    "Performance of the Nifty 500 and the energy sector",
+    "General market sentiment towards power companies"
+   ],
+   "about": "Adani Power Ltd. operates in the power sector.",
+   "basis": "64095123798e",
+   "items": 1,
+   "updated": "2026-11-19T12:01+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "TRENT": {
    "summary": "Trent Ltd. is one of India's 50 largest listed companies in the consumer services sector. Recently, a major investment bank included it in a list of large-cap stocks it expects to outperform the broader market.",
