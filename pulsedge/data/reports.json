@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T11:31+05:30",
+ "updated": "2026-11-19T11:45+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -506,6 +506,22 @@
    "updated": "2026-11-18T14:31+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "JUBLINGREA": {
+   "summary": "Jubilant Ingrevia announced that its Chief Financial Officer, Varun Gupta, is resigning effective November 30, 2026. This news was reported by the company to the stock exchange and highlighted by financial news outlets.",
+   "why": "The departure of a top finance leader can create short-term uncertainty for investors who hold the company's shares. It may raise questions about the stability of the company's financial management.",
+   "upside": "",
+   "downside": "A delay in appointing a new CFO could affect the company's ability to execute its plans and provide clear financial guidance.",
+   "watch": [
+    "Who is appointed as the new Chief Financial Officer",
+    "Any updates on the company's financial guidance",
+    "How the stock price reacts to the leadership change"
+   ],
+   "about": "Jubilant Ingrevia is a company in the chemicals sector.",
+   "basis": "3cebb9cd12e8",
+   "items": 2,
+   "updated": "2026-11-19T11:45+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "NUVAMA": {
    "summary": "Nuvama Wealth Management recently announced it is issuing new shares to raise fresh capital. This move adds to the context of a financial sector that has seen a slight rise in recent trading sessions.",
    "why": "Issuing new shares increases the total number of shares available, which can reduce the value of each existing share held by current investors.",
@@ -568,22 +584,6 @@
    "basis": "de0111a61d64",
    "items": 2,
    "updated": "2026-11-19T11:01+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "CASTROLIND": {
-   "summary": "Castrol India received an open offer to sell a 26% stake at Rs199.45 per share. The offer could lift the stock, but it may face regulatory delays or rejection.",
-   "why": "Shareholders may see price movement from the offer and are exposed to the risk of the deal not being cleared.",
-   "upside": "If the open offer is completed, it could support the share price.",
-   "downside": "Regulatory delays or a rejected offer could dampen investor sentiment.",
-   "watch": [
-    "Outcome of the 26% stake open offer",
-    "Regulatory approval status",
-    "Performance of the Oil & Gas sector index"
-   ],
-   "about": "Castrol India operates in the oil, gas and consumable fuels sector.",
-   "basis": "0814de08dfdc",
-   "items": 1,
-   "updated": "2026-11-17T10:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "TATACHEM": {
@@ -906,20 +906,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "OIL": {
-   "summary": "Oil India Ltd is an Indian oil and gas company. Recent news about oil flow through the Strait of Hormuz, tanker fires, and price swings could affect its earnings.",
-   "why": "Shareholders should watch because oil price changes and supply disruptions directly impact the company's revenue.",
-   "upside": "Stable oil flow through the Strait of Hormuz could keep supply steady and support prices.",
-   "downside": "Supply disruptions like tanker fires could raise risk of price volatility.",
+   "summary": "Oil India Ltd. is navigating mixed signals as US crude prices fell to $83.26 a barrel, while reports of tanker fires in the Strait of Hormuz raise supply concerns. Meanwhile, lower US oil inventories suggest tighter supply, which could support prices for producers.",
+   "why": "Shareholders should note that falling oil prices can reduce profits for fuel sellers, but potential supply disruptions might push prices back up. The company's earnings depend heavily on these global oil price swings.",
+   "upside": "Tighter global oil supply could lead to higher prices, increasing profits for oil producers like Oil India.",
+   "downside": "Recent drops in crude oil prices may lower the company's revenue, and high oil prices elsewhere could hurt the broader economy.",
    "watch": [
-    "Strait of Hormuz incidents",
-    "US crude inventories",
-    "US crude futures price movements"
+    "Updates on the safety of the Strait of Hormuz",
+    "Changes in global crude oil inventory levels",
+    "Impact of oil prices on India's economic growth"
    ],
-   "about": "Oil India Ltd is an Indian oil and gas company listed on the NSE.",
-   "basis": "56ca75a8b72e",
-   "items": 13,
-   "updated": "2026-11-19T11:15+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "",
+   "basis": "9153a6a19098",
+   "items": 12,
+   "updated": "2026-11-19T11:45+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "COALINDIA": {
    "summary": "Coal India’s subsidiary Mahanadi Coalfields is launching an IPO, with shares being offered to the public and early interest appearing mixed.",
@@ -951,6 +951,22 @@
    "basis": "cc24feab3628",
    "items": 7,
    "updated": "2026-11-19T00:20+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "SAIL": {
+   "summary": "SAIL shares have fallen sharply as global metal prices dropped and the US dollar strengthened. The company led losses in the Nifty Metal index, which is down 4.4% over the last five sessions.",
+   "why": "Lower metal prices reduce the profit margins for steel companies, which can lower the earnings available to shareholders.",
+   "upside": "A sudden reversal in the US dollar or new stimulus from China could help metal prices recover.",
+   "downside": "Further declines in global metal prices would continue to pressure the company's earnings.",
+   "watch": [
+    "Global metal price trends",
+    "US dollar strength",
+    "Potential China stimulus news"
+   ],
+   "about": "SAIL is a major steel company listed in India's Metals & Mining sector.",
+   "basis": "c94bbd3d695c",
+   "items": 4,
+   "updated": "2026-11-19T11:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "TCS": {
@@ -1016,22 +1032,6 @@
    "items": 3,
    "updated": "2026-11-18T14:46+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "SAIL": {
-   "summary": "SAIL shares fell sharply as part of a broader drop in metal stocks, driven by lower global commodity prices and a stronger US dollar. The company was among the biggest losers in the Nifty Metal index during this period.",
-   "why": "Lower commodity prices can reduce the profit margins for steel producers, which may affect the value of shares held by investors.",
-   "upside": "A rebound in metal prices or a reversal in the US dollar trend could help support the stock.",
-   "downside": "Continued weakness in global commodity prices or a stronger US dollar could further squeeze profits.",
-   "watch": [
-    "Global steel and metal price trends",
-    "Movements in the US Dollar index",
-    "Any new economic stimulus announcements from China"
-   ],
-   "about": "SAIL is a major steel producer in India.",
-   "basis": "8553ec6374c1",
-   "items": 3,
-   "updated": "2026-11-18T12:30+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
    "summary": "Tata Steel's CEO noted that iron ore costs are rising in India while the company continues discussions with the Dutch government for financial assistance. Meanwhile, steel prices are increasing, which experts suggest could benefit the company's profits.",
@@ -1510,6 +1510,22 @@
    "basis": "ae07505f67af",
    "items": 1,
    "updated": "2026-11-18T08:46+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "NMDC": {
+   "summary": "NMDC is facing pressure from falling global metal prices, which has caused its sector to drop significantly over the last week. At the same time, a contractor won sub-contracts for civil work on NMDC township projects, indicating ongoing activity at the company.",
+   "why": "Lower metal prices can reduce the company's profits, which may affect the value of its shares. However, continued project work suggests the company is still executing its plans.",
+   "upside": "The completion of township projects could support operational activity for the company.",
+   "downside": "Further declines in global metal prices could hurt the company's earnings.",
+   "watch": [
+    "Global metal price trends",
+    "Progress on NMDC township projects",
+    "Overall performance of the Metals sector index"
+   ],
+   "about": "NMDC is a company in the Metals & Mining sector.",
+   "basis": "aba0ead03693",
+   "items": 2,
+   "updated": "2026-11-19T11:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "BANKINDIA": {

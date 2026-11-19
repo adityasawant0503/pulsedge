@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T11:31:23+05:30",
+ "updated": "2026-11-19T11:45:57+05:30",
  "summary": {
-  "calls": 1788,
-  "scored_calls": 621,
+  "calls": 1792,
+  "scored_calls": 625,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,58 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "d3fec271f09faed2",
+   "symbol": "JUBLINGREA",
+   "time": "2026-11-19T11:33:37+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Jubilant Ingrevia Limited: Jubilant Ingrevia Limited has informed the Exchange regarding Resignation of Mr Varun Gupta as Chief Financial Officer of the company",
+   "url": "https://nsearchives.nseindia.com/corporate/JUBLINGREA_19112026113312_SE_Intimation_Resignation_of_CFO.pdf",
+   "entry_date": "2026-11-18",
+   "entry": 586.85
+  },
+  {
+   "id": "f583fa1e70ae06eb",
+   "symbol": "JUBLINGREA",
+   "time": "2026-11-19T11:30:12+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "JUBILANT INGREVIA: SAYS CFO VARUN GUPTA RESIGNS, EFFECTIVE NOVEMBER 30, 2026",
+   "url": "https://t.me/Indiaredboxglobal/9663",
+   "entry_date": "2026-11-18",
+   "entry": 586.85
+  },
+  {
+   "id": "c14e4cc384312802",
+   "symbol": "NMDC",
+   "time": "2026-11-19T11:27:16+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Hind Copper, SAIL, NMDC among 6 stocks on analysts radar amid metals slide",
+   "url": "https://www.business-standard.com/markets/news/hind-copper-sail-nmdc-among-6-metal-stocks-on-analysts-radar-amid-sell-off-in-base-metal-commodites-126111900350_1.html",
+   "entry_date": "2026-11-18",
+   "entry": 68.24
+  },
+  {
+   "id": "c14e4cc384312802",
+   "symbol": "SAIL",
+   "time": "2026-11-19T11:27:16+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Hind Copper, SAIL, NMDC among 6 stocks on analysts radar amid metals slide",
+   "url": "https://www.business-standard.com/markets/news/hind-copper-sail-nmdc-among-6-metal-stocks-on-analysts-radar-amid-sell-off-in-base-metal-commodites-126111900350_1.html",
+   "entry_date": "2026-11-18",
+   "entry": 164.0
+  },
   {
    "id": "3865a62422575452",
    "symbol": "DALBHARAT",
