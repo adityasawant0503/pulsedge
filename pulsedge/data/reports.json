@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T11:01+05:30",
+ "updated": "2026-11-19T11:15+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -412,19 +412,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "URBANCO": {
-   "summary": "Urban Company launched a ₹2,500‑crore qualified institutional placement (QIP) that was oversubscribed six times, but its shares slipped about 2% on the news. The funds are intended for a new cleaning service and possible acquisitions.",
-   "why": "Existing shareholders face dilution from the new share issue, while the raised capital could support growth initiatives.",
-   "upside": "Strong demand for the QIP could bolster the share price and fund expansion plans.",
-   "downside": "Dilution and the risk that any acquisitions may not deliver expected returns could pressure the stock.",
+   "summary": "Urban Company raised ₹2,500 crore through a qualified institutional placement (QIP) that was oversubscribed six times, attracting about ₹15,300 crore in bids.",
+   "why": "The capital can fund expansion or acquisitions, which could affect future earnings for shareholders.",
+   "upside": "If the raised funds are deployed successfully for growth, earnings and cash flow could improve.",
+   "downside": "If the company pursues acquisitions that do not meet expectations, the investment could hurt profitability.",
    "watch": [
-    "Final allocation and pricing of the QIP",
-    "How the raised capital is deployed, especially the new cleaning service and any acquisitions",
-    "Share price movement and market sentiment after the QIP announcement"
+    "Use of QIP proceeds – expansion vs acquisitions",
+    "Any announced acquisition targets and their integration",
+    "Consumer services demand trends in the broader market"
    ],
-   "about": "Urban Company provides consumer services such as home cleaning and other on‑demand household services.",
-   "basis": "bbf12ebf190a",
-   "items": 3,
-   "updated": "2026-11-19T08:11+05:30",
+   "about": "Urban Company runs an on‑demand platform that connects consumers with professionals for home and personal services.",
+   "basis": "a94fea6bd4a2",
+   "items": 2,
+   "updated": "2026-11-19T11:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "EMBASSY": {
@@ -571,20 +571,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "TATACHEM": {
-   "summary": "Tata Chemicals shares jumped nearly 10% in a single day and rose 11% over three days due to rumors that its parent company, Tata Sons, may list on the stock market. The company has denied having any knowledge of these negotiations, and the stock exchange has asked for clarification on the recent news.",
-   "why": "If the parent company lists, it could increase the value of Tata Chemicals shares, but the recent price rise is based on unconfirmed rumors. The company's denial suggests the hype may be cooling down, which could affect the share price.",
-   "upside": "The stock could remain strong if the parent company's listing is confirmed and proceeds as expected.",
-   "downside": "The share price may drop if the listing is delayed or cancelled, as the recent rally was driven by speculation.",
+   "summary": "Tata Chemicals shares have jumped about 11% in three days as market chatter links the rally to possible Tata Group IPO plans. The company has denied any knowledge of such talks and the stock exchange has asked for clarification, leaving the price move uncertain.",
+   "why": "Shareholders could see the stock rise if a Tata Group listing materialises, but the price could also fall if the speculation fades or the IPO is delayed.",
+   "upside": "A confirmed Tata Group IPO could lift Tata Chemicals’ share value further.",
+   "downside": "If the IPO is delayed or cancelled, the recent rally may reverse.",
    "watch": [
-    "Official response from Tata Chemicals to the stock exchange's clarification request",
-    "Any new announcements regarding the Tata Sons IPO",
-    "Changes in trading volume and share price stability"
+    "Updates on the Tata Sons IPO rumors",
+    "Any official clarification from Tata Chemicals to the exchange",
+    "Announcements from Tata Group about a potential listing"
    ],
-   "about": "Tata Chemicals is a chemical company listed in India's Nifty 500 index.",
-   "basis": "c4dc2aa6c4e0",
-   "items": 6,
-   "updated": "2026-11-17T15:46+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Tata Chemicals Ltd. manufactures and sells chemicals and related products.",
+   "basis": "f597fcc69def",
+   "items": 5,
+   "updated": "2026-11-19T11:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "TMCV": {
    "summary": "Tata Motors saw its stock close above its long-term average, hinting at a potential recovery. At the same time, the company is dealing with struggles for its JLR brand in China and has been asked by the stock exchange to clarify news about a possible Tata Sons public offering.",
@@ -650,22 +650,6 @@
    "updated": "2026-11-18T15:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "HINDZINC": {
-   "summary": "Hindustan Zinc announced an Rs 80,000 crore plan to expand and become the world’s largest zinc and silver producer. The stock fell after the news because some investors think the share price is already high. The metals sector has also been slipping, down 2.5% in the last session.",
-   "why": "Shareholders could see higher future earnings from the expansion, but the large spending may pressure cash flow and the current valuation worries could keep the share price under pressure.",
-   "upside": "If the expansion is executed well, the company could boost earnings and capture a larger share of the global zinc market.",
-   "downside": "The massive capital outlay could strain cash flow and valuation concerns may keep the stock under pressure.",
-   "watch": [
-    "Progress and timing of the Rs 80,000 crore expansion spending",
-    "Cash‑flow and debt levels as the project ramps up",
-    "Valuation metrics and how the market prices the expansion plan"
-   ],
-   "about": "Hindustan Zinc mines and produces zinc and silver.",
-   "basis": "8e26d228bfe2",
-   "items": 2,
-   "updated": "2026-11-19T00:20+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "PWL": {
    "summary": "Physicswallah shares rose about 4% after the company announced ambitious FY30 earnings guidance, aiming to earn much more money in the coming years. The news sparked investor excitement but also highlighted the challenge of meeting high growth targets.",
    "why": "The guidance sets expectations for future profitability, which can move the share price if the company meets or misses them.",
@@ -696,6 +680,22 @@
    "items": 1,
    "updated": "2026-11-17T16:35+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "HINDZINC": {
+   "summary": "Hindustan Zinc announced a Rs 80,000 crore expansion plan to become the world’s largest zinc and silver producer. The move signals potential long‑term profit growth but also raises cash‑flow concerns.",
+   "why": "Shareholders need to know whether the massive spend will boost earnings or strain the company’s finances.",
+   "upside": "If the expansion delivers higher zinc and silver output, earnings could rise.",
+   "downside": "The large capital outlay could pressure cash flow and limit financial flexibility.",
+   "watch": [
+    "Progress on the Rs 80,000 crore expansion",
+    "Sector index movement for Metals & Mining",
+    "Company’s financing and cash‑flow updates"
+   ],
+   "about": "Hindustan Zinc Ltd. is a metals and mining company that produces zinc and silver.",
+   "basis": "56aa196a87a7",
+   "items": 1,
+   "updated": "2026-11-19T11:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "TITAN": {
    "summary": "Titan shares fell over 4-5% on Nov 18 as the broader market and consumer‑durables sector slipped, with the Nifty Consumer Durables index down 3% and the broader indices lower.",
@@ -890,20 +890,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "OIL": {
-   "summary": "Oil India is navigating a volatile oil market as crude prices have swung up and down and geopolitical events have raised supply concerns. The broader oil‑and‑gas sector has slipped slightly, down 0.1% in the last session and 0.5% over five sessions.",
-   "why": "Oil price moves directly affect the company’s profit per barrel, while inventory and route safety news can shift prices and demand.",
-   "upside": "Higher crude prices could boost Oil India’s earnings.",
-   "downside": "Falling oil prices or renewed geopolitical tension could cut revenue.",
+   "summary": "Oil India Ltd is an Indian oil and gas company. Recent news about oil flow through the Strait of Hormuz, tanker fires, and price swings could affect its earnings.",
+   "why": "Shareholders should watch because oil price changes and supply disruptions directly impact the company's revenue.",
+   "upside": "Stable oil flow through the Strait of Hormuz could keep supply steady and support prices.",
+   "downside": "Supply disruptions like tanker fires could raise risk of price volatility.",
    "watch": [
-    "Crude oil price trends (futures settlements)",
-    "US crude oil inventory reports",
-    "Developments around the Strait of Hormuz"
+    "Strait of Hormuz incidents",
+    "US crude inventories",
+    "US crude futures price movements"
    ],
-   "about": "Oil India Ltd. is an Indian oil and gas exploration and production company.",
-   "basis": "bdec06632604",
+   "about": "Oil India Ltd is an Indian oil and gas company listed on the NSE.",
+   "basis": "56ca75a8b72e",
    "items": 13,
-   "updated": "2026-11-19T10:15+05:30",
-   "model": "openai/gpt-oss-120b"
+   "updated": "2026-11-19T11:15+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "COALINDIA": {
    "summary": "Coal India’s subsidiary Mahanadi Coalfields is launching an IPO, with shares being offered to the public and early interest appearing mixed.",
@@ -935,6 +935,54 @@
    "basis": "cc24feab3628",
    "items": 7,
    "updated": "2026-11-19T00:20+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "TCS": {
+   "summary": "PulsEdge flagged that TCS shares are currently under pressure, with a small dip today and a 26% decline so far this year, while the broader IT index has also slipped. The company was recently highlighted as a leader in agentic application management services by HFS Research.",
+   "why": "The share price movement reflects market sentiment that can affect the value of existing holdings, and the research ranking could influence future client wins.",
+   "upside": "If the leader ranking translates into new contracts, the stock could benefit from improved revenue outlook.",
+   "downside": "Continued market weakness or negative news could push the share price lower.",
+   "watch": [
+    "Daily price trend of TCS after the recent dip",
+    "Performance of the IT sector index over the next sessions",
+    "Any further analyst or research recognitions that could affect sentiment"
+   ],
+   "about": "Tata Consultancy Services Ltd. provides IT services, consulting, and business solutions.",
+   "basis": "a6bcaeb354f8",
+   "items": 4,
+   "updated": "2026-11-19T11:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "M&M": {
+   "summary": "PulsEdge flagged a recent rally where Mahindra & Mahindra (M&M) and other auto stocks rose up to 5%, but the auto sector index has slipped 1.4% in the last session and 4% over the past five sessions.",
+   "why": "Share price moves for M&M tend to follow the broader auto sector, so sector swings directly affect shareholders.",
+   "upside": "If the positive sentiment that lifted auto stocks earlier continues, M&M could benefit from higher buying interest.",
+   "downside": "A continued decline in the auto sector index could weigh on M&M’s share price.",
+   "watch": [
+    "Auto sector index performance in the next sessions",
+    "Overall market trends such as Sensex and Nifty movements",
+    "Any new news that could trigger another auto rally or reversal"
+   ],
+   "about": "Mahindra & Mahindra Ltd. is a leading Indian automobile and auto components manufacturer and a Nifty 50 constituent.",
+   "basis": "7e7dfd3ec0e0",
+   "items": 3,
+   "updated": "2026-11-19T11:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "INFY": {
+   "summary": "Infosys shares have fallen significantly, losing about a quarter of their value over the past year. Recent news highlights a continued price drop and comparisons with rival TCS, while the broader IT sector has also declined recently.",
+   "why": "If you own Infosys shares, this means your investment value has decreased substantially. The recent price movements suggest investors are currently cautious about the company's performance and the wider technology industry.",
+   "upside": "Some analysts suggest the stock may have reached a low point and could start rising again.",
+   "downside": "Global spending on IT services remains uncertain, which could lead to further price declines if negative news emerges.",
+   "watch": [
+    "Updates on global IT spending trends",
+    "How the broader IT sector index performs in the coming days",
+    "Any new company-specific announcements or earnings data"
+   ],
+   "about": "Infosys is a large Indian information technology company that is part of the Nifty 50 index.",
+   "basis": "bd1d532906ab",
+   "items": 3,
+   "updated": "2026-11-19T11:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "HINDALCO": {
@@ -1001,37 +1049,21 @@
    "updated": "2026-11-19T10:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "TCS": {
-   "summary": "TCS stock fell 26% this year despite good business results, and the company has been named a leader in agentic application management services. The broader IT sector has also slipped, adding pressure on the stock.",
-   "why": "Shareholders may see the price drop as a risk to their investment, while the leadership recognition could signal future growth opportunities.",
-   "upside": "Being recognized as a leader in AI software management could help TCS win new customers and boost its reputation.",
-   "downside": "Ongoing market weakness and quick sentiment shifts could keep the share price low or cause further declines.",
+  "MARUTI": {
+   "summary": "Maruti Suzuki shares rose sharply on November 19, 2026, as part of a broader rally in the auto sector. This move happened even though the wider auto sector index had fallen in the previous five sessions.",
+   "why": "A sudden rise in share price can increase the value of your holdings, but it may also reflect short-term market excitement rather than long-term company performance.",
+   "upside": "Investors are currently showing optimism about the auto industry, which has pushed stock prices higher.",
+   "downside": "Sector-specific rallies can reverse quickly, meaning the recent price gains could disappear soon.",
    "watch": [
-    "TCS share price trend and any technical support levels",
-    "IT sector index performance over the next few sessions",
-    "Any new announcements about AI services or competitor moves"
+    "Whether the auto sector rally continues or reverses in the coming days.",
+    "How Maruti Suzuki's stock performs compared to the rest of the auto sector index.",
+    "Any new news about car and bike companies that might explain the price movement."
    ],
-   "about": "TCS is a major Indian IT services and solutions company.",
-   "basis": "7aa8c48732e4",
-   "items": 3,
-   "updated": "2026-11-18T10:32+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
-  "M&M": {
-   "summary": "Mahindra & Mahindra (M&M) is seeing mixed signals – the auto sector index has slipped 1.4% in the last session and 4% over five sessions, yet recent headlines noted a sharp rally of up to 5% in auto stocks including M&M. This shows investor sentiment can swing quickly in the industry.",
-   "why": "Shareholders feel the impact because sector moves often lift or weigh on M&M’s share price, and a rally could boost returns while a decline could pressure them.",
-   "upside": "If the current optimism in auto stocks sustains, M&M could benefit from further price gains.",
-   "downside": "A continued fall in the auto sector index could drag M&M’s shares lower, and any rally could reverse rapidly.",
-   "watch": [
-    "Auto sector index trend",
-    "Broad market (Sensex/Nifty) movements",
-    "Signs of continued rally or reversal in auto stocks"
-   ],
-   "about": "Mahindra & Mahindra Ltd. is an Indian automobile and auto components manufacturer and a Nifty 50 constituent.",
-   "basis": "4d0b2ba2e195",
+   "about": "Maruti Suzuki is a major automobile company listed in India's Nifty 50 index.",
+   "basis": "d8893001a666",
    "items": 2,
-   "updated": "2026-11-19T11:01+05:30",
-   "model": "openai/gpt-oss-120b"
+   "updated": "2026-11-19T11:15+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "BHARATFORG": {
    "summary": "Bharat Forge has been placed on a watchlist and has announced an amalgamation or merger, while its auto sector index fell 1.4% in the last session and 4% over five sessions.",
@@ -1047,22 +1079,6 @@
    "basis": "1c24f350114c",
    "items": 2,
    "updated": "2026-11-19T08:11+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "INFY": {
-   "summary": "Infosys shares have fallen about 25% over the past year and have recently been flagged as possibly having bottomed, while the broader IT sector has slipped 1.2% in the last session and 3.2% over five sessions.",
-   "why": "Owners may see a chance for recovery if the stock has indeed bottomed, but the outlook is clouded by uncertain global IT spending.",
-   "upside": "A rebound in demand for IT services could lift the share price.",
-   "downside": "Weak global IT spending could keep the stock under pressure.",
-   "watch": [
-    "Sector index performance",
-    "Global IT spending trends",
-    "Investor sentiment after TCS vs Infosys comparisons"
-   ],
-   "about": "Infosys Ltd. provides IT consulting and outsourcing services.",
-   "basis": "4159025b575c",
-   "items": 2,
-   "updated": "2026-11-19T11:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "DIXON": {
@@ -1175,22 +1191,6 @@
    "basis": "d6752d9ced5a",
    "items": 2,
    "updated": "2026-11-18T08:17+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "MARUTI": {
-   "summary": "Maruti Suzuki shares joined a sharp rally of up to 5% alongside peers, even as the broader auto index fell 1.4% today and 4% over the past five sessions.",
-   "why": "Shareholders see the rally as a sign of short‑term optimism, but the falling sector index signals broader pressure that could affect the stock.",
-   "upside": "If the rally sustains and the auto sector rebounds, the stock could gain further.",
-   "downside": "A continued decline in the auto index or a quick reversal of the rally could pull the share lower.",
-   "watch": [
-    "Auto sector index trend",
-    "Drivers of auto demand such as loan rates or policy changes",
-    "Overall market sentiment toward auto stocks"
-   ],
-   "about": "Maruti Suzuki is India’s largest passenger car maker.",
-   "basis": "13b1afba5bb5",
-   "items": 1,
-   "updated": "2026-11-19T11:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "BATAINDIA": {
@@ -1416,22 +1416,6 @@
    "updated": "2026-11-19T03:10+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "PNBHOUSING": {
-   "summary": "PNB Housing Finance announced that its Chief of Operations and Customer Service is resigning effective November 30, 2026. The company also disclosed the allotment of new securities, which may increase the total number of shares.",
-   "why": "Leadership changes and new share issuances can create uncertainty for investors and potentially reduce the value of each existing share.",
-   "upside": "",
-   "downside": "The departure of a senior executive and the issuance of new shares could lead to lower stock prices or reduced earnings per share.",
-   "watch": [
-    "Appointment of a new Chief of Operations",
-    "Details on the number of new shares allotted",
-    "Company statements explaining the reason for the resignation"
-   ],
-   "about": "PNB Housing Finance is a financial services company that provides housing loans.",
-   "basis": "c85fc628bb16",
-   "items": 3,
-   "updated": "2026-11-19T03:10+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "EICHERMOT": {
    "summary": "Eicher Motors shares rose 3% recently as brokerages highlighted growth in premium motorcycles, but the stock saw a price adjustment the following day. The company also announced the grant of 105 employee stock options.",
    "why": "Shareholders may see short-term price swings due to analyst sentiment and option grants, while the broader auto sector has recently declined.",
@@ -1444,6 +1428,22 @@
    ],
    "about": "Eicher Motors is an Indian automobile and auto components company that is part of the Nifty 50 index.",
    "basis": "3896b03687b5",
+   "items": 3,
+   "updated": "2026-11-19T03:10+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "PNBHOUSING": {
+   "summary": "PNB Housing Finance announced that its Chief of Operations and Customer Service is resigning effective November 30, 2026. The company also disclosed the allotment of new securities, which may increase the total number of shares.",
+   "why": "Leadership changes and new share issuances can create uncertainty for investors and potentially reduce the value of each existing share.",
+   "upside": "",
+   "downside": "The departure of a senior executive and the issuance of new shares could lead to lower stock prices or reduced earnings per share.",
+   "watch": [
+    "Appointment of a new Chief of Operations",
+    "Details on the number of new shares allotted",
+    "Company statements explaining the reason for the resignation"
+   ],
+   "about": "PNB Housing Finance is a financial services company that provides housing loans.",
+   "basis": "c85fc628bb16",
    "items": 3,
    "updated": "2026-11-19T03:10+05:30",
    "model": "qwen/qwen3.8-27b"
@@ -1463,22 +1463,6 @@
    "items": 2,
    "updated": "2026-11-17T12:30+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "YESBANK": {
-   "summary": "Yes Bank has denied a report of a $3.4 million cyber fraud, saying no loss and no government accounts were affected. The stock exchange has asked the bank to clarify the matter, keeping the issue open.",
-   "why": "Shareholders need to know whether the rumor could impact the bank’s finances or reputation, which can move the share price.",
-   "upside": "If the denial is confirmed and no fraud is found, confidence in the bank may improve.",
-   "downside": "If the alleged fraud is verified, the bank could face financial loss and reputational damage.",
-   "watch": [
-    "Exchange’s response to the clarification request",
-    "Any new evidence confirming or disproving the cyber fraud",
-    "Financials sector performance trends"
-   ],
-   "about": "Yes Bank Ltd. is a commercial bank that provides banking and financial services in India.",
-   "basis": "c4a4f9105422",
-   "items": 2,
-   "updated": "2026-11-17T10:30+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "VIJAYA": {
    "summary": "PulsEdge flagged a recent market guide that mentioned Deepak Fertilisers, but this did not include any specific news or recommendations for Vijaya Diagnostic Centre. The healthcare sector, where Vijaya operates, moved slightly up in the last session and down over the past five days.",

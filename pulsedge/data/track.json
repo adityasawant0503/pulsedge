@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T11:02:32+05:30",
+ "updated": "2026-11-19T11:16:32+05:30",
  "summary": {
-  "calls": 1781,
-  "scored_calls": 614,
+  "calls": 1787,
+  "scored_calls": 620,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "b13e46ce49e5b06b",
+   "symbol": "OIL",
+   "time": "2026-11-19T11:12:39+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "TRUMP: HE AND XI FEEL STRONGLY OIL SHOULD FLOW THROUGH STRAIT OF HORMUZ",
+   "url": "https://t.me/Indiaredboxglobal/9659",
+   "entry_date": "2026-11-18",
+   "entry": 435.5
+  },
   {
    "id": "0733e171ab6389ba",
    "symbol": "TATATECH",
@@ -59,6 +72,32 @@
    "url": "https://t.me/Indiaredboxglobal/9651",
    "entry_date": "2026-11-18",
    "entry": 18520.0
+  },
+  {
+   "id": "b9217cb82e366a62",
+   "symbol": "M&M",
+   "time": "2026-11-19T10:46:51+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Maruti, M&M, Hero Moto, Eicher rally up to 5%; what's driving auto stocks?",
+   "url": "https://www.business-standard.com/markets/news/maruti-m-m-hero-moto-eicher-rally-up-to-5-what-s-driving-auto-stocks-126111900282_1.html",
+   "entry_date": "2026-11-18",
+   "entry": 3359.1
+  },
+  {
+   "id": "b9217cb82e366a62",
+   "symbol": "MARUTI",
+   "time": "2026-11-19T10:46:51+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Maruti, M&M, Hero Moto, Eicher rally up to 5%; what's driving auto stocks?",
+   "url": "https://www.business-standard.com/markets/news/maruti-m-m-hero-moto-eicher-rally-up-to-5-what-s-driving-auto-stocks-126111900282_1.html",
+   "entry_date": "2026-11-18",
+   "entry": 12632.0
   },
   {
    "id": "03c79071e5f3b349",
@@ -230,6 +269,32 @@
    "entry": 2097.5
   },
   {
+   "id": "a32c45fb3177cd4a",
+   "symbol": "INFY",
+   "time": "2026-11-19T08:40:45+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Infosys Share Price Live Updates: Infosys experiences significant price drop",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/infosys-share-price-live-19-nov-2026/liveblog/135976140.cms",
+   "entry_date": "2026-11-18",
+   "entry": 1108.8
+  },
+  {
+   "id": "c37e65ea6b038b14",
+   "symbol": "EICHERMOT",
+   "time": "2026-11-19T08:40:05+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Eicher Motors Share Price Live Updates: Eicher Motors' stock price climbs today",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/eicher-motors-share-price-live-19-nov-2026/liveblog/135976122.cms",
+   "entry_date": "2026-11-18",
+   "entry": 7700.0
+  },
+  {
    "id": "5613eec38f3e503d",
    "symbol": "COALINDIA",
    "time": "2026-11-19T08:29:03+05:30",
@@ -241,6 +306,19 @@
    "url": "https://www.livemint.com/market/ipo/mahanadi-coalfields-ipo-gmp-today-at-rs-3-vs-rs-136-price-band-should-you-apply-for-coal-india-arms-shares-or-not-11795054572842.html",
    "entry_date": "2026-11-18",
    "entry": 388.0
+  },
+  {
+   "id": "a6b3147353f0d606",
+   "symbol": "TCS",
+   "time": "2026-11-19T08:26:12+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "TCS Share Price Live Updates: TCS Faces a Minor Setback",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/tcs-stock-price-livestock-price-today-live-updates-19-nov-2026/liveblog/135975985.cms",
+   "entry_date": "2026-11-18",
+   "entry": 2379.5
   },
   {
    "id": "b428a494210c83a9",
