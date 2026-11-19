@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T15:16+05:30",
+ "updated": "2026-11-19T15:30+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -187,22 +187,6 @@
    "updated": "2026-11-19T12:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "KAYNES": {
-   "summary": "Kaynes Technology has slowed smart meter deliveries to focus on collecting pending dues from state authorities, leading to a sharp drop in quarterly profit and a 16% fall in share price over two sessions.",
-   "why": "The slowdown signals revenue growth pressure and cash flow concerns, which can affect shareholder value.",
-   "upside": "",
-   "downside": "Revenue slowdown, margin pressure, and potential further decline if quarterly trends continue.",
-   "watch": [
-    "Recovery of pending dues from state authorities",
-    "Margin trends and analyst concerns",
-    "Share price reaction after the two-day drop"
-   ],
-   "about": "Kaynes Technology India Ltd. is an electronics manufacturer.",
-   "basis": "dc2740392f5f",
-   "items": 3,
-   "updated": "2026-11-18T19:23+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
   "CAPLIPOINT": {
    "summary": "Caplin Point Laboratories informed the exchange that the US FDA classified an inspection at its subsidiary, Caplin Steriles, as Official Action Indicated. This status signals serious compliance issues that could delay approvals for new products.",
    "why": "This matters to shareholders because delays in product approvals can affect the company's future revenue and growth prospects.",
@@ -265,6 +249,22 @@
    "basis": "d7b31c263760",
    "items": 3,
    "updated": "2026-11-19T15:02+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
+  "APLAPOLLO": {
+   "summary": "APL Apollo Tubes is in the news because its promoter family is looking to sell about 28% of the company, which could bring in roughly ₹17,000 crore. A major investment bank has also named the stock a conviction pick after its Q2 results, suggesting it could be a good buy for investors.",
+   "why": "Shareholders should watch because a large sale could dilute their holdings and affect the share price, while a bank’s endorsement might bring more buyers into the market.",
+   "upside": "If the bank’s recommendation attracts new investors, the share price could rise.",
+   "downside": "If the promoter sale goes through, it could dilute existing shareholders and push the price lower, and the deal may not close.",
+   "watch": [
+    "Whether the promoter sale deal closes and the size of the open offer",
+    "How the market reacts to Axis Securities’ conviction pick",
+    "Any updates on the company’s Q2 results"
+   ],
+   "about": "",
+   "basis": "ea8caa769cda",
+   "items": 2,
+   "updated": "2026-11-19T15:30+05:30",
    "model": "openai/gpt-oss-20b"
   },
   "MANAPPURAM": {
@@ -459,6 +459,22 @@
    "updated": "2026-11-18T13:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "KAYNES": {
+   "summary": "Kaynes Technology stock fell as the company slowed smart meter deliveries to collect pending dues from state authorities.",
+   "why": "The slowdown may hurt revenue growth and cash flow, affecting shareholders.",
+   "upside": "",
+   "downside": "Reduced deliveries could lower revenue and worsen cash flow.",
+   "watch": [
+    "Recovery of pending dues from state authorities",
+    "Speed of smart meter deliveries",
+    "Market reaction to the slowdown"
+   ],
+   "about": "Kaynes Technology India Ltd. manufactures electronics, including smart meters.",
+   "basis": "f98027efc4ed",
+   "items": 1,
+   "updated": "2026-11-19T15:30+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "HYUNDAI": {
    "summary": "Hyundai Motor India shares recently rose as part of a broader rally in auto stocks, driven by lower costs for metals and oil. However, the wider auto sector has seen a slight dip in the last few days.",
    "why": "Lower production costs can help the company keep more profit from each car sold, which may benefit shareholders. The recent price movement shows that investors are reacting to these cost changes.",
@@ -650,6 +666,22 @@
    "updated": "2026-11-19T11:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "PWL": {
+   "summary": "Physicswallah Ltd. shares recently rose after the online education company shared ambitious financial goals for the year 2030. A broker also shared a positive growth forecast, which boosted investor confidence.",
+   "why": "Setting high future targets means the company must work very hard to reach them, and expert forecasts can influence how investors view the stock.",
+   "upside": "Strong future growth guidance could help the company perform well if it meets its goals.",
+   "downside": "High valuation multiples and hard-to-reach growth targets may limit further gains.",
+   "watch": [
+    "Whether the company meets its FY30 targets",
+    "Changes in valuation multiples",
+    "Overall investor confidence"
+   ],
+   "about": "Physicswallah Ltd. is an online education company in the consumer services sector.",
+   "basis": "698552c2990f",
+   "items": 2,
+   "updated": "2026-11-19T15:30+05:30",
+   "model": "gemini-flash-lite-latest"
+  },
   "SUPREMEIND": {
    "summary": "Supreme Industries Ltd. (SUPREMEIND) is listed in the Nifty 500 and operates in the capital goods sector. There are no specific recent announcements or events flagged for the company in the latest PulsEdge watch list.",
    "why": "Shareholders watch large‑cap capital‑goods firms for stability and any future growth catalysts; the lack of recent news means no new drivers are evident now.",
@@ -664,22 +696,6 @@
    "basis": "af2044457e93",
    "items": 2,
    "updated": "2026-11-18T15:46+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "PWL": {
-   "summary": "Physicswallah shares rose about 4% after the company announced ambitious FY30 earnings guidance, aiming to earn much more money in the coming years. The news sparked investor excitement but also highlighted the challenge of meeting high growth targets.",
-   "why": "The guidance sets expectations for future profitability, which can move the share price if the company meets or misses them.",
-   "upside": "If the company achieves its FY30 earnings targets, earnings and share value could improve.",
-   "downside": "The high growth targets may be difficult to achieve, risking disappointment and a share price decline.",
-   "watch": [
-    "Progress on FY30 guidance milestones",
-    "Quarterly earnings reports",
-    "Updates on revenue growth and user acquisition"
-   ],
-   "about": "Physicswallah is an online education platform offering courses and learning resources.",
-   "basis": "6921a150900b",
-   "items": 1,
-   "updated": "2026-11-19T10:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "GRASIM": {
@@ -1273,20 +1289,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "PNB": {
-   "summary": "PulsEdge flagged that Punjab National Bank (PNB) shares have jumped sharply, up about 31% in a month and near an all‑time high, as PSU bank stocks rally. The bank also announced a distribution partnership with SBI Mutual Fund, while reporting regulatory actions taken against it.",
-   "why": "Shareholders see rapid price gains and a new partnership that could expand the bank’s customer base, but regulatory scrutiny could affect future performance.",
-   "upside": "If the SBI partnership rolls out smoothly, it could bring more customers and support the share price.",
-   "downside": "Regulatory actions could lead to penalties or operational restrictions, and the recent rally may be overextended.",
+   "summary": "Punjab National Bank shares are rallying as government-owned bank stocks approach record highs. The bank has also partnered with SBI Mutual Fund to distribute mutual fund products, while facing recent regulatory actions.",
+   "why": "Strong buying interest and new partnerships can influence the bank's business and visibility, while regulatory actions bring potential risks.",
+   "upside": "The new distribution partnership with SBI Mutual Fund could bring more customers to the bank.",
+   "downside": "Regulatory actions could lead to penalties or restrictions, and the recent bank rally might be overextended.",
    "watch": [
-    "Progress on the SBI mutual fund distribution network",
-    "Details and outcomes of the regulatory actions",
-    "Continuation of the PSU bank rally and sector momentum"
+    "Updates on the mutual fund distribution partnership",
+    "Further developments regarding regulatory actions",
+    "Performance of government-owned bank stocks"
    ],
-   "about": "Punjab National Bank is a government‑owned commercial bank in India that provides a range of banking services.",
-   "basis": "3aa1dde623a2",
-   "items": 4,
-   "updated": "2026-11-19T13:11+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Punjab National Bank is a government-owned bank operating in India's financial services sector.",
+   "basis": "b782ca279dbe",
+   "items": 3,
+   "updated": "2026-11-19T15:30+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "POLYCAB": {
    "summary": "Polycab reduced prices on its light‑duty cables and wires for the second time this week, and copper prices have dropped for the fifth straight day.",
@@ -1367,6 +1383,22 @@
    "items": 2,
    "updated": "2026-11-18T14:15+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "MOTHERSON": {
+   "summary": "Samvardhana Motherson International shares recently rose 4 percent alongside a surge in trading volume. The company is also liquidating a unit in Korea.",
+   "why": "This news matters to shareholders because business changes and analyst opinions can influence how a stock performs. However, closing a unit could also point to underlying operational issues.",
+   "upside": "Positive analyst views and efforts to simplify the business could help support the share price.",
+   "downside": "The liquidation of the Korean unit might signal deeper operational problems.",
+   "watch": [
+    "Updates on the Korea unit liquidation",
+    "Trading volume changes",
+    "Overall auto sector performance"
+   ],
+   "about": "Samvardhana Motherson International operates in the automobile and auto components sector.",
+   "basis": "91d62f73ed68",
+   "items": 1,
+   "updated": "2026-11-19T15:30+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "MRF": {
    "summary": "MRF is dealing with higher costs for making tires, which is reducing its profits. This has put pressure on the company's margins, making the path to recovery slower.",
@@ -1494,6 +1526,22 @@
    "items": 3,
    "updated": "2026-11-19T03:10+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "ITC": {
+   "summary": "ITC plans to raise cigarette prices gradually starting in 2027, with pack prices expected to increase by ₹10 to ₹15. The price hikes will apply to all cigarette brands.",
+   "why": "Higher prices might increase profits for the company in the future. However, because the change is far away, the immediate effect on the stock is likely to be limited.",
+   "upside": "Gradual price increases could help boost profits over time.",
+   "downside": "Higher prices might cause a consumer backlash and reduce the volume of cigarettes sold.",
+   "watch": [
+    "Any updates on the 2027 cigarette price hike plans",
+    "Consumer reaction to the proposed price increases",
+    "Movements in the FMCG sector index"
+   ],
+   "about": "ITC Ltd. is one of India's 50 largest listed companies operating in the Fast Moving Consumer Goods sector.",
+   "basis": "6fa91901add5",
+   "items": 1,
+   "updated": "2026-11-19T15:30+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "ABB": {
    "summary": "ABB India has received a record number of new orders for its electrical products. However, the cost of making these products is rising, which puts pressure on the company's profit margins.",
