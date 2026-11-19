@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T12:31:05+05:30",
+ "updated": "2026-11-19T12:45:45+05:30",
  "summary": {
-  "calls": 1798,
-  "scored_calls": 631,
+  "calls": 1800,
+  "scored_calls": 633,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "788c549479ff4b9a",
+   "symbol": "RELIANCE",
+   "time": "2026-11-19T12:39:29+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Reliance Industries shares: After 13% surge in 1 month, JPMorgan sees another 23% upside in Mukesh Ambani stock | Target",
+   "url": "https://www.livemint.com/market/stock-market-news/reliance-industries-shares-after-13-surge-in-1-month-jpmorgan-sees-another-23-upside-in-mukesh-ambani-stock-target-11795069231709.html",
+   "entry_date": "2026-11-18",
+   "entry": 1363.0
+  },
+  {
+   "id": "78fff5fa38602b49",
+   "symbol": "WAAREEENER",
+   "time": "2026-11-19T12:37:09+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "WAAREE ENERGIES: WINS ORDER WORTH 1 BILLION RUPEES",
+   "url": "https://t.me/Indiaredboxglobal/9685",
+   "entry_date": "2026-11-18",
+   "entry": 2392.0
+  },
   {
    "id": "91a3d70dd2c7e424",
    "symbol": "PNB",

@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T12:30+05:30",
+ "updated": "2026-11-19T12:45+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -138,6 +138,22 @@
    "items": 3,
    "updated": "2026-11-18T19:23+05:30",
    "model": "openai/gpt-oss-20b"
+  },
+  "RELIANCE": {
+   "summary": "Reliance Industries shares rose by 13% in the last month. JPMorgan recently noted that the stock has potential for further growth, while another advisor listed it as a top pick.",
+   "why": "These recent analyst comments suggest that some experts believe the company's performance may continue to improve, which could affect the value of your shares.",
+   "upside": "Analysts have indicated that the stock price could rise further if earnings growth meets expectations.",
+   "downside": "There is a risk that the company's earnings growth may not meet market expectations, which could impact the share price.",
+   "watch": [
+    "Upcoming earnings reports to see if growth matches expectations",
+    "Changes in analyst ratings or price targets",
+    "Performance of the broader Oil & Gas sector"
+   ],
+   "about": "Reliance Industries is a large Indian company operating in the Oil, Gas, and Consumable Fuels sector.",
+   "basis": "47571773eaa9",
+   "items": 2,
+   "updated": "2026-11-19T12:45+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "GROWW": {
    "summary": "PulsEdge flagged that major global and Indian investment funds, including BlackRock and Kotak MF, bought a combined stake worth roughly Rs 1,905 crore in Groww. At the same time, another large investor, Ribbit Capital, sold a significant portion of its holdings in the same period.",
@@ -1336,6 +1352,22 @@
    "updated": "2026-11-19T11:31+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "WAAREEENER": {
+   "summary": "Waaree Energies recently won a new contract worth one billion rupees. The company was also named a top performer in global solar quality tests for the fifth year in a row.",
+   "why": "These updates suggest the company is maintaining strong product quality and securing new business, which supports its long-term sales.",
+   "upside": "Global quality recognition may help the company win more customers and boost future sales.",
+   "downside": "The new order is small compared to the company's total value, and cheaper solar imports from other countries could squeeze profits.",
+   "watch": [
+    "Future quarterly sales figures",
+    "New contract announcements",
+    "Global solar industry pricing trends"
+   ],
+   "about": "Waaree Energies is a capital goods company that manufactures solar modules.",
+   "basis": "78f143b1a0d3",
+   "items": 3,
+   "updated": "2026-11-19T12:45+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "PNBHOUSING": {
    "summary": "PNB Housing Finance announced that its Chief of Operations and Customer Service is resigning effective November 30, 2026. The company also disclosed the allotment of new securities, which may increase the total number of shares.",
    "why": "Leadership changes and new share issuances can create uncertainty for investors and potentially reduce the value of each existing share.",
@@ -1460,22 +1492,6 @@
    ],
    "about": "Bank of India is a financial services company listed on the NSE.",
    "basis": "9cb7ca2a5f54",
-   "items": 2,
-   "updated": "2026-11-19T08:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "WAAREEENER": {
-   "summary": "Waaree Energies has been named a top performer in all eight categories of the 2026 Kiwa PVEL solar module reliability tests. This marks the fifth consecutive year the company has received this recognition, placing it among only seven global manufacturers to achieve this status.",
-   "why": "This third-party quality approval strengthens the company's reputation for reliability, which can help it win more customers and secure new orders.",
-   "upside": "Strong global quality ratings may improve the company's export profile and increase its chances of winning new business.",
-   "downside": "The company faces industry-wide pressure on profits due to cheaper solar cell imports from overseas, and quality awards do not guarantee immediate revenue growth.",
-   "watch": [
-    "How the company manages profit margins against cheaper overseas imports",
-    "Whether the quality recognition leads to new customer orders",
-    "Future updates on the company's export performance"
-   ],
-   "about": "Waaree Energies is a capital goods company that manufactures solar modules.",
-   "basis": "164334c8647c",
    "items": 2,
    "updated": "2026-11-19T08:15+05:30",
    "model": "qwen/qwen3.8-27b"
