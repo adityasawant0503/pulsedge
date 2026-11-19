@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T15:31:39+05:30",
+ "updated": "2026-11-19T15:47:24+05:30",
  "summary": {
-  "calls": 1839,
-  "scored_calls": 672,
+  "calls": 1841,
+  "scored_calls": 674,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "1c88b360f2aa5a3d",
+   "symbol": "BSE",
+   "time": "2026-11-19T15:33:46+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "NLC India Limited: NLC India Limited has informed the Exchange about NLC India Renewables Limited (NIRL), a whollyowned subsidiary Company of NLC India Limited,",
+   "url": "https://nsearchives.nseindia.com/corporate/NLCINDIA_19112026153229_SE_Intimation_DRHP_19_11_2026_Signed.pdf",
+   "entry_date": "2026-11-18",
+   "entry": 3755.7
+  },
+  {
+   "id": "ff6dead024d875ae",
+   "symbol": "ENGINERSIN",
+   "time": "2026-11-19T15:32:26+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Ameya Precision Engineers Limited: Company has received an order from Sulzer Pumps México, S.A. de C.V. for Supply of components pertaining to pump assemblies. ",
+   "url": "https://nsearchives.nseindia.com/corporate/AMEYA_19112026153047_Disclosure_Order_from_SULZER_PUMPS_MEXICO.pdf",
+   "entry_date": "2026-11-18",
+   "entry": 304.7
+  },
   {
    "id": "3f99efc892e4733a",
    "symbol": "ENGINERSIN",
