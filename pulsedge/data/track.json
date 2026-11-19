@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T10:16:28+05:30",
+ "updated": "2026-11-19T10:31:03+05:30",
  "summary": {
-  "calls": 1770,
-  "scored_calls": 603,
+  "calls": 1773,
+  "scored_calls": 606,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,45 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "bb01b3d451a63125",
+   "symbol": "PAYTM",
+   "time": "2026-11-19T10:11:26+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Paytm, Pine Labs shares drop up to 7% amid concerns on UPI MDR delay",
+   "url": "https://www.business-standard.com/markets/news/paytm-pine-labs-shares-drop-up-to-7-amid-concerns-on-upi-mdr-delay-126111900221_1.html",
+   "entry_date": "2026-11-18",
+   "entry": 1890.0
+  },
+  {
+   "id": "bb01b3d451a63125",
+   "symbol": "PINELABS",
+   "time": "2026-11-19T10:11:26+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Paytm, Pine Labs shares drop up to 7% amid concerns on UPI MDR delay",
+   "url": "https://www.business-standard.com/markets/news/paytm-pine-labs-shares-drop-up-to-7-amid-concerns-on-upi-mdr-delay-126111900221_1.html",
+   "entry_date": "2026-11-18",
+   "entry": 169.35
+  },
+  {
+   "id": "a4eb939875dc799f",
+   "symbol": "COALINDIA",
+   "time": "2026-11-19T10:11:00+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Mahanadi Coalfields IPO: Should you bid for Coal India arm? Analysts answer",
+   "url": "https://www.business-standard.com/markets/news/mahanadi-coalfields-ipo-analysts-bullish-on-reserves-growth-and-low-costs-126111900249_1.html",
+   "entry_date": "2026-11-18",
+   "entry": 388.0
+  },
   {
    "id": "4fb4969c7da717c3",
    "symbol": "PWL",

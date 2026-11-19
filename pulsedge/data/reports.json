@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T10:15+05:30",
+ "updated": "2026-11-19T10:30+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -76,36 +76,36 @@
  },
  "stocks": {
   "PAYTM": {
-   "summary": "Paytm shares fell by up to 6% recently, following a new fee rule for payment transactions. This drop happened alongside a general decline in the broader market.",
-   "why": "The new fee rule could lower the income Paytm earns from processing payments, which directly affects its business performance.",
-   "upside": "Investors might see a price recovery if they believe the long-term impact of the fee rule is less severe than the initial market reaction.",
-   "downside": "The new fee rule may permanently reduce the money Paytm earns from each transaction, hurting its profits.",
+   "summary": "Paytm’s shares fell up to 7% as investors react to a possible delay in the government’s new UPI merchant discount rate fee rule and a broader market sell‑off.",
+   "why": "The fee rule could cut the company’s transaction‑processing earnings and the market dip adds pressure on the stock.",
+   "upside": "A sharp rebound is possible if the market misreads the long‑term impact of the fee rule.",
+   "downside": "Further delays or the fee rule itself could reduce earnings and affect valuation models.",
    "watch": [
-    "How the new MDR fee rule changes Paytm's reported earnings",
-    "Whether the broader market stabilizes or continues to fall",
-    "Performance of other payment companies like Pine Labs"
+    "Resolution of the UPI MDR fee rule delay",
+    "Broader market movement in the Financials sector",
+    "Any new regulatory guidance on digital payments"
    ],
-   "about": "Paytm is a financial services company that processes payment transactions.",
-   "basis": "12913887acbc",
-   "items": 2,
-   "updated": "2026-11-19T10:00+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Paytm operates a digital payments platform and provides various financial services.",
+   "basis": "adfb6275595f",
+   "items": 3,
+   "updated": "2026-11-19T10:30+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "PINELABS": {
-   "summary": "Pine Labs shares fell by up to 6% as the broader market slipped. This drop coincided with a new fee rule announcement that affects payment companies.",
-   "why": "The new fee rule might reduce the money Pine Labs earns from processing transactions, which is why investors are worried about its future income.",
-   "upside": "The market might misinterpret the long-term impact of the fee rule, leading to a sharp rebound in the stock price.",
-   "downside": "The broader market could keep falling, which would pull Pine Labs down even without any specific company news.",
+   "summary": "Pine Labs shares fell up to 7% after news that the government may delay a new UPI merchant discount rate (MDR) fee rule, and the broader market also slipped. The drop reflects investor worries about reduced fee income in the short term.",
+   "why": "The possible delay could lower the company’s earnings from transaction fees, affecting valuation models for shareholders.",
+   "upside": "If the market overreacts, a clearer regulatory outcome could trigger a rebound in the stock.",
+   "downside": "Further delays or a continued market sell‑off could keep earnings pressure on the share price.",
    "watch": [
-    "How the new MDR fee rule actually changes Pine Labs' transaction income.",
-    "Whether the broader market stabilizes or continues to fall.",
-    "If the stock price rebounds after the initial drop."
+    "Resolution of the UPI MDR fee rule delay",
+    "Broader market direction of Sensex and Nifty",
+    "Performance of the Financials sector index"
    ],
-   "about": "",
-   "basis": "12913887acbc",
-   "items": 2,
-   "updated": "2026-11-19T10:00+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Pine Labs provides merchant payment and financial technology services.",
+   "basis": "adfb6275595f",
+   "items": 3,
+   "updated": "2026-11-19T10:30+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "IIFL": {
    "summary": "IIFL Finance shares jumped about 6% after Fairfax sold its entire 13.25% stake in a large block deal. This move coincided with reports of new institutional investment in the company.",
@@ -890,20 +890,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "COALINDIA": {
-   "summary": "Coal India is preparing to sell parts of its business units, starting with Mahanadi Coalfields, through a public share offering. Early interest in this sale appears lower than expected, with modest gains indicated in the grey market.",
-   "why": "Selling these units can bring cash to the company, but it also means existing shareholders own a smaller slice of the total business, which might affect the stock's value.",
-   "upside": "The sale could unlock value and generate cash proceeds for the parent company.",
-   "downside": "Weak interest in the new share sale might make investors nervous about the parent company's value and lead to ownership dilution.",
+   "summary": "Coal India’s subsidiary Mahanadi Coalfields is launching an IPO, with shares being offered to the public and early interest appearing mixed.",
+   "why": "The offering could change the value of Coal India’s shares through possible dilution or cash inflow.",
+   "upside": "If the IPO is well‑received, Coal India could receive cash and a higher valuation for its remaining business.",
+   "downside": "Weak demand or oversubscription could create selling pressure and dilute existing shareholders.",
    "watch": [
-    "The final listing price of Mahanadi Coalfields.",
-    "Progress on IPO preparations for Northern and Central Coalfields.",
-    "General market liquidity as investors decide where to put their money."
+    "IPO subscription levels and grey‑market premium",
+    "Impact on Coal India share price after the listing",
+    "Sector index performance and broader market sentiment"
    ],
-   "about": "Coal India is a major coal company and one of India's 50 largest listed companies.",
-   "basis": "6b325c7853a3",
-   "items": 7,
-   "updated": "2026-11-19T08:45+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Coal India Ltd is India’s largest coal mining company, a major player in the Oil & Gas & Consumable Fuels sector.",
+   "basis": "d1e993a4988d",
+   "items": 8,
+   "updated": "2026-11-19T10:30+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "PRESTIGE": {
    "summary": "Prestige Estates is actively expanding its business by buying a 50% stake in a hotel company and increasing its ownership in a housing project. The company also announced plans to create two new subsidiaries. These moves happened while the broader real estate sector saw strong gains in November.",

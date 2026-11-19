@@ -1,6 +1,64 @@
 {
- "updated": "2026-11-19T10:15:18+05:30",
+ "updated": "2026-11-19T10:30:26+05:30",
  "items": [
+  {
+   "id": "55aa9cfae2da13a2",
+   "time": "2026-11-19T10:25:12+05:30",
+   "headline": "Tanla Platforms share price falls 5%: Stock up 30% in 2026; should investors buy the dip? Key levels to watch",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/tanla-platforms-share-price-falls-5-stock-up-30-in-2026-should-investors-buy-the-dip-key-levels-to-watch-11795062211094.html",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [],
+   "sectors": [
+    "IT Services"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "Market Colour",
+   "action": "No specific action required as this is general market commentary.",
+   "reason": [
+    "Headline describes a price drop and analyst levels without new fundamental news.",
+    "No candidate symbol provided for Tanla Platforms."
+   ],
+   "risks": [
+    "Price volatility may continue based on technical levels."
+   ],
+   "plain": "A software company's stock price dropped 5% today despite being up 30% this year.",
+   "why": "This is just a report on the current price movement, not new news about the company's business.",
+   "check": "",
+   "original": "Tanla Platforms shares fell 5% on Thursday, despite gaining about 30% in 2026. Analysts identified support near ₹655–680, with further downside risks if support breaks, and resistance around ₹740–750. The co reported strong Q2 FY27 growth, including a 17.1% rise in profit."
+  },
+  {
+   "id": "85d1a12bd45fa52f",
+   "time": "2026-11-19T10:15:48+05:30",
+   "headline": "Mirae Asset Investment Managers (India) Private Limited: Company has informed the Exchange about Portfolio as on November 15, 2026 |SUBJECT: Portfolio",
+   "source": "NSE Announcements",
+   "url": "https://nsearchives.nseindia.com/corporate/MIRAEAMC_19112026101538_FortnightlyPortfolio15112026.pdf",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Financials"
+   ],
+   "impact": 5,
+   "confidence": 90,
+   "category": "Routine Filing",
+   "action": "No action needed for routine portfolio disclosures.",
+   "reason": [
+    "Standard regulatory filing for portfolio holdings.",
+    "No specific stock impact indicated."
+   ],
+   "risks": [],
+   "plain": "A fund manager filed a standard report listing the stocks they own.",
+   "why": "This is a routine legal requirement and does not change the value of any specific stock.",
+   "check": "",
+   "original": "Mirae Asset Investment Managers (India) Private Limited: Company has informed the Exchange about Portfolio as on November 15, 2026 |SUBJECT: Portfolio"
+  },
   {
    "id": "ed4f0d2ad2e959f3",
    "time": "2026-11-19T10:14:25+05:30",
@@ -26,6 +84,115 @@
    "why": "This is a normal business transaction that does not change the company's value or future plans.",
    "check": "",
    "original": "VALIANT COMMUNICATIONS: CO ALLOTED 50,000 SHARE TO INVESTOR MR. SHANKAR SHARMA AT 768 PER SHARE"
+  },
+  {
+   "id": "9b2f0b9288b0917d",
+   "time": "2026-11-19T10:14:21+05:30",
+   "headline": "Oil steady as supply surplus softens sentiment though Gulf war supports",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/commodities/oil-steady-as-supply-surplus-softens-sentiment-though-gulf-war-supports-126111900122_1.html",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [
+    {
+     "symbol": "OIL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Energy"
+   ],
+   "impact": 15,
+   "confidence": 60,
+   "category": "Commodity Prices",
+   "action": "Monitor oil prices for sustained movement above current levels.",
+   "reason": [
+    "Crude oil prices are steady with slight gains.",
+    "Supply surplus offsets geopolitical tensions."
+   ],
+   "risks": [
+    "Further supply increases could lower prices."
+   ],
+   "plain": "Global oil prices stayed mostly the same, with a tiny increase.",
+   "why": "Stable oil prices mean no sudden cost changes for companies that use fuel.",
+   "check": "Check if oil prices rise significantly in the next few days.",
+   "original": "Brent crude futures were trading up 17 cents, or 0.18%, at $92.12 ‌a barrel as of 0237 GMT while US West Texas Intermediate futures fell 9 cents, or 0.11%, to $83.17"
+  },
+  {
+   "id": "bb01b3d451a63125",
+   "time": "2026-11-19T10:11:26+05:30",
+   "headline": "Paytm, Pine Labs shares drop up to 7% amid concerns on UPI MDR delay",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/paytm-pine-labs-shares-drop-up-to-7-amid-concerns-on-upi-mdr-delay-126111900221_1.html",
+   "section": "news",
+   "call": "sell",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "PAYTM",
+     "direction": "down"
+    },
+    {
+     "symbol": "PINELABS",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Fintech"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "Regulatory Delay",
+   "action": "Watch for official government confirmation on the MDR timeline.",
+   "reason": [
+    "Delay in UPI Merchant Discount Rate (MDR) implementation reduces near-term revenue expectations.",
+    "Stocks already dropped up to 7% on the news."
+   ],
+   "risks": [
+    "Further delays could impact long-term valuation models."
+   ],
+   "plain": "The government may delay a new fee rule for digital payments until after state elections.",
+   "why": "This delay means these companies will earn less money from that fee than expected for a while.",
+   "check": "Look for official government statements about the payment fee timeline.",
+   "original": "Reports suggest the implementation of MDR on select UPI transactions could be deferred until after assembly elections in five states during H1CY27, amid concerns over merchant opposition."
+  },
+  {
+   "id": "a4eb939875dc799f",
+   "time": "2026-11-19T10:11:00+05:30",
+   "headline": "Mahanadi Coalfields IPO: Should you bid for Coal India arm? Analysts answer",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/mahanadi-coalfields-ipo-analysts-bullish-on-reserves-growth-and-low-costs-126111900249_1.html",
+   "section": "news",
+   "call": "watch",
+   "horizon": "positional",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "COALINDIA",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Energy"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "IPO/Corporate Action",
+   "action": "Monitor IPO subscription levels and Coal India's stake dilution impact.",
+   "reason": [
+    "Mahanadi Coalfields IPO is a significant event for the coal sector.",
+    "Coal India is the parent company, so sentiment may spill over."
+   ],
+   "risks": [
+    "IPO oversubscription could lead to short-term selling pressure on parent stock."
+   ],
+   "plain": "A major coal company owned by a larger listed firm is planning to sell shares to the public.",
+   "why": "This can affect the value of the parent company's shares depending on how investors react.",
+   "check": "Check the IPO opening date and how many people want to buy the new shares.",
+   "original": "Mahanadi Coalfields is India's largest single coal-producing company, supported by a sizeable reserve base, predominantly mechanised opencast operations and integrated rail and port evacuation infra"
   },
   {
    "id": "3e40b08914546a1b",
@@ -238,6 +405,34 @@
    "original": "BLS Polymers reported strong Q2FY27 results, with revenue up 28.92% year on year to ₹125.56 crore and profit after tax rising 130.63% to ₹10.54 crore. Shares climbed to a record high after already gaining about 103% from the IPO price."
   },
   {
+   "id": "ad22565ed76056dc",
+   "time": "2026-11-19T09:57:54+05:30",
+   "headline": "Star Health among 3 stocks showing RSI trending up",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/star-health-among-3-stocks-showing-rsi-trending-up/slideshow/135977535.cms",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "Mixed"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "Technical Scan",
+   "action": "No specific action as no candidate symbols are provided.",
+   "reason": [
+    "General technical analysis scan.",
+    "No specific fundamental news."
+   ],
+   "risks": [],
+   "plain": "A computer program found three stocks that are showing strong upward momentum.",
+   "why": "This is just a technical observation and does not tell you if the companies are good or bad.",
+   "check": "",
+   "original": "Three Nifty500 stocks that gained over 5% on November 18 featured in StockEdge’s RSI Trending Up scan, with their Relative Strength Index (RSI) crossing above 50 from below, signalling strengthening price momentum."
+  },
+  {
    "id": "19f615e5c79e7399",
    "time": "2026-11-19T09:53:19+05:30",
    "headline": "Purple United Sales Limited: Purple United Sales Limited has informed the Exchange about Transcript |SUBJECT: Analysts/Institutional Investor Meet/Con. Call Updates",
@@ -377,6 +572,36 @@
    "plain": "SC Agrotech’s shares surged after an update hinting at a possible split and bonus.",
    "why": "A split can make shares cheaper, drawing more buyers, but it’s not certain yet.",
    "check": "Look for the EGM resolution outcome.",
+   "original": "SC Agrotech shares hit their fourth consecutive upper circuit on November 19, rising 4.99% to a record ₹75.79. The company’s EGM will consider a stock split, bonus shares and increased authorised capital"
+  },
+  {
+   "id": "8584c7aaaa31d7be",
+   "time": "2026-11-19T09:44:13+05:30",
+   "headline": "227% rally in 6 months: Smallcap hits 4th upper circuit on business update - Stock split, bonus ahead - Do you own it?",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/190-rally-in-6-months-smallcap-hits-4th-upper-circuit-on-business-update-stock-split-bonus-ahead-do-you-own-it-11795060471139.html",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "Agro"
+   ],
+   "impact": 20,
+   "confidence": 50,
+   "category": "Price Movement",
+   "action": "No action as no candidate symbol is provided.",
+   "reason": [
+    "Stock hit upper circuit due to business update and split/bonus news.",
+    "No candidate symbol in the list."
+   ],
+   "risks": [
+    "High volatility for small-cap stocks."
+   ],
+   "plain": "A small company's stock price hit its daily limit up for the fourth day in a row.",
+   "why": "This is a short-term price spike, often driven by speculation rather than long-term value.",
+   "check": "",
    "original": "SC Agrotech shares hit their fourth consecutive upper circuit on November 19, rising 4.99% to a record ₹75.79. The company’s EGM will consider a stock split, bonus shares and increased authorised capital"
   },
   {
@@ -758,6 +983,38 @@
    "why": "This is a normal daily market fluctuation and does not indicate a change in company health.",
    "check": "",
    "original": "Seven Nifty 500 stocks, including CreditAccess Grameen, Swan Corp, Black Box and Torrent Pharmaceuticals, closed more than 1% below their respective Volume Weighted Average Prices (VWAPs) on November 18, according to StockEdge data. The technical scan identifies stocks that ended the session below t"
+  },
+  {
+   "id": "cd01455876b3289a",
+   "time": "2026-11-19T09:15:31+05:30",
+   "headline": "BPCL Share Price Live Updates: BPCL Stock Details",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/bpcl-stock-price-today-live-19-nov-2026/liveblog/135976658.cms",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [
+    {
+     "symbol": "BPCL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Energy"
+   ],
+   "impact": 5,
+   "confidence": 90,
+   "category": "Market Colour",
+   "action": "No specific news, just live price tracking.",
+   "reason": [
+    "Headline is a live price update with no new information."
+   ],
+   "risks": [],
+   "plain": "This is a live update of the current price of a fuel company's stock.",
+   "why": "It just shows the current price, not any new news about the company.",
+   "check": "",
+   "original": "BPCL Share Price Live Updates: BPCL Stock Details"
   },
   {
    "id": "b488a2d7a486ad98",
@@ -1307,6 +1564,33 @@
    "original": "HDFC Bank Share Price Live Updates: HNIs now own a record Rs 10 lakh crore worth of Indian stocks. Laurus Labs, Cupid among top 10 favourites"
   },
   {
+   "id": "d0a638c79cc02792",
+   "time": "2026-11-19T08:20:22+05:30",
+   "headline": "Power Grid Share Price Live Updates: Power Grid's Current Market Status",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/power-grid-share-price-today-live-19-nov-2026/liveblog/135975917.cms",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Power"
+   ],
+   "impact": 5,
+   "confidence": 90,
+   "category": "Market Colour",
+   "action": "No specific news, just live price tracking.",
+   "reason": [
+    "Headline is a live price update with no new information."
+   ],
+   "risks": [],
+   "plain": "This is a live update of the current price of a power company's stock.",
+   "why": "It just shows the current price, not any new news about the company.",
+   "check": "",
+   "original": "Power Grid Share Price Live Updates: Power Grid's Current Market Status"
+  },
+  {
    "id": "5ec86cc9c6ee664a",
    "time": "2026-11-19T08:20:05+05:30",
    "headline": "L&T Share Price Live Updates: L&T's Market Update",
@@ -1584,6 +1868,70 @@
    "original": "Elon Musk spoke about Jensen Huang, his U.S. midterms spending and overlaps between SpaceX and Tesla at the Dealbook Summit."
   },
   {
+   "id": "3ef5b12de0eaccac",
+   "time": "2026-11-19T08:11:18+05:30",
+   "headline": "M&M Share Price Live Updates: M&M Stock Performance",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/mm-stock-price-today-live-19-nov-2026/liveblog/135975819.cms",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [
+    {
+     "symbol": "M&M",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Auto"
+   ],
+   "impact": 5,
+   "confidence": 90,
+   "category": "Market Colour",
+   "action": "No specific news, just live price tracking.",
+   "reason": [
+    "Headline is a live price update with no new information."
+   ],
+   "risks": [],
+   "plain": "This is a live update of the current price of a vehicle maker's stock.",
+   "why": "It just shows the current price, not any new news about the company.",
+   "check": "",
+   "original": "M&M Share Price Live Updates: M&M Stock Performance"
+  },
+  {
+   "id": "66bd74e38a4370f1",
+   "time": "2026-11-19T08:11:00+05:30",
+   "headline": "Asian Paints Share Price Live Updates: Asian Paints Stock Details",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/asian-paints-stock-price-livestock-price-today-live-updates-19-nov-2026/liveblog/135975816.cms",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [
+    {
+     "symbol": "ASIANPAINT",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Consumer"
+   ],
+   "impact": 5,
+   "confidence": 90,
+   "category": "Market Colour",
+   "action": "No specific news, just live price tracking.",
+   "reason": [
+    "Headline is a live price update with no new information."
+   ],
+   "risks": [],
+   "plain": "This is a live update of the current price of a paint company's stock.",
+   "why": "It just shows the current price, not any new news about the company.",
+   "check": "",
+   "original": "Asian Paints Share Price Live Updates: Asian Paints Stock Details"
+  },
+  {
    "id": "ef7d26605441684e",
    "time": "2026-11-19T08:10:05+05:30",
    "headline": "NTPC Share Price Live Updates: NTPC Faces 2.02% Decline in Weekly Returns",
@@ -1682,6 +2030,38 @@
    "original": "Market sentiment remained subdued amid weak global cues, selling pressure across commodities, including gold, silver and other metals, a strengthening US dollar index and rising bond yields."
   },
   {
+   "id": "a1e132e56132c860",
+   "time": "2026-11-19T08:03:57+05:30",
+   "headline": "Nestle India Share Price Live Updates: Nestle India Stock Details",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/nestle-india-stock-price-livestock-price-today-live-updates-19-nov-2026/liveblog/135975745.cms",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [
+    {
+     "symbol": "NESTLEIND",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Consumer"
+   ],
+   "impact": 5,
+   "confidence": 90,
+   "category": "Market Colour",
+   "action": "No specific news, just live price tracking.",
+   "reason": [
+    "Headline is a live price update with no new information."
+   ],
+   "risks": [],
+   "plain": "This is a live update of the current price of a food company's stock.",
+   "why": "It just shows the current price, not any new news about the company.",
+   "check": "",
+   "original": "Nestle India Share Price Live Updates: Nestle India Stock Details"
+  },
+  {
    "id": "736f8fa4c714c160",
    "time": "2026-11-19T08:03:18+05:30",
    "headline": "Indian shares set to open lower as hawkish Fed minutes weigh",
@@ -1710,6 +2090,65 @@
    "why": "Higher interest rates make borrowing expensive and can slow down business growth, which often lowers stock prices.",
    "check": "Watch how the main market index moves in the first hour after the opening bell.",
    "original": "GIFT Nifty futures were at 25,161.5 points, as of 7:47 a.m. IST, indicating a negative start for the benchmark Nifty 50 index, which closed at 25,227.95 on Wednesday."
+  },
+  {
+   "id": "f50da3da327d92c8",
+   "time": "2026-11-19T08:03:08+05:30",
+   "headline": "SBI Life Share Price Live Updates: SBI Life Stock Details",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/sbi-life-share-price-live-19-nov-2026/liveblog/135975736.cms",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Insurance"
+   ],
+   "impact": 5,
+   "confidence": 90,
+   "category": "Market Colour",
+   "action": "No specific news, just live price tracking.",
+   "reason": [
+    "Headline is a live price update with no new information."
+   ],
+   "risks": [],
+   "plain": "This is a live update of the current price of an insurance company's stock.",
+   "why": "It just shows the current price, not any new news about the company.",
+   "check": "",
+   "original": "SBI Life Share Price Live Updates: SBI Life Stock Details"
+  },
+  {
+   "id": "4e264d50d722f81c",
+   "time": "2026-11-19T08:02:50+05:30",
+   "headline": "Axis Bank Share Price Live Updates: Axis Bank's Stock Price Overview",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/axis-bank-stock-price-livestock-price-today-live-updates-19-nov-2026/liveblog/135975731.cms",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [
+    {
+     "symbol": "AXISBANK",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Banking"
+   ],
+   "impact": 5,
+   "confidence": 90,
+   "category": "Market Colour",
+   "action": "No specific news, just live price tracking.",
+   "reason": [
+    "Headline is a live price update with no new information."
+   ],
+   "risks": [],
+   "plain": "This is a live update of the current price of a bank's stock.",
+   "why": "It just shows the current price, not any new news about the company.",
+   "check": "",
+   "original": "Axis Bank Share Price Live Updates: Axis Bank's Stock Price Overview"
   },
   {
    "id": "e01b9b0737de7331",
@@ -1800,6 +2239,33 @@
    "original": "Anthropic has made a remarkable debut with its initial public offering priced at $83 per share, successfully exceeding early projections. This valuation of around $1.5 trillion marks a major milestone in the tech industry. With $81 billion expected from the offering, this would break SpaceX's record"
   },
   {
+   "id": "0b102926092cb0f4",
+   "time": "2026-11-19T08:02:32+05:30",
+   "headline": "Dr Reddys Share Price Live Updates: Dr. Reddys Stock Details",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/dr-reddys-stock-price-live-updates-19-nov-2026/liveblog/135975723.cms",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Pharma"
+   ],
+   "impact": 5,
+   "confidence": 90,
+   "category": "Market Colour",
+   "action": "No specific news, just live price tracking.",
+   "reason": [
+    "Headline is a live price update with no new information."
+   ],
+   "risks": [],
+   "plain": "This is a live update of the current price of a medicine company's stock.",
+   "why": "It just shows the current price, not any new news about the company.",
+   "check": "",
+   "original": "Dr Reddys Share Price Live Updates: Dr. Reddys Stock Details"
+  },
+  {
    "id": "c80e6cdd07fad1fb",
    "time": "2026-11-19T08:02:13+05:30",
    "headline": "UPL Share Price Live Updates: UPL Rises Above 100-Day EMA Threshold",
@@ -1854,6 +2320,33 @@
    "why": "No material development, so it doesn't affect shareholders.",
    "check": "",
    "original": "Tata Consumer Share Price Live Updates: Tata Consumer's Daily Performance Update"
+  },
+  {
+   "id": "355da6ee5a176022",
+   "time": "2026-11-19T08:01:36+05:30",
+   "headline": "Apollo Hospital Share Price Live Updates: Apollo Hospital Stock Details",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/apollo-hospital-stock-price-livestock-price-today-live-updates-19-nov-2026/liveblog/135975711.cms",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Healthcare"
+   ],
+   "impact": 5,
+   "confidence": 90,
+   "category": "Market Colour",
+   "action": "No specific news, just live price tracking.",
+   "reason": [
+    "Headline is a live price update with no new information."
+   ],
+   "risks": [],
+   "plain": "This is a live update of the current price of a hospital chain's stock.",
+   "why": "It just shows the current price, not any new news about the company.",
+   "check": "",
+   "original": "Apollo Hospital Share Price Live Updates: Apollo Hospital Stock Details"
   },
   {
    "id": "efb0feeaaed9fd5a",
@@ -3280,163 +3773,6 @@
    "original": "MOODY'S SAYS IT EXPECTS THE US TO KEEP ITS LONG RECORD OF HIGHLY EFFECTIVE MONETARY POLICY, LED BY AN INDEPENDENT FED"
   },
   {
-   "id": "7004cf16d176bd7d",
-   "time": "2026-11-19T03:42:41+05:30",
-   "headline": "MOODY'S EXPECTS CONGRESS TO RAISE OR SUSPEND THE DEBT LIMIT BEFORE TREASURY RUNS OUT OF BORROWING CAPACITY, POSSIBLY AFTER LENGTHY NEGOTIATIONS",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9637",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "macro",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "Moody’s expects Congress to raise or suspend the debt limit before the Treasury runs out of borrowing capacity.",
-   "why": "U.S. debt‑limit talks are macro‑level and don’t directly affect Indian listed stocks.",
-   "check": "",
-   "original": "MOODY'S EXPECTS CONGRESS TO RAISE OR SUSPEND THE DEBT LIMIT BEFORE TREASURY RUNS OUT OF BORROWING CAPACITY, POSSIBLY AFTER LENGTHY NEGOTIATIONS"
-  },
-  {
-   "id": "a402b047e5789dc7",
-   "time": "2026-11-19T03:42:20+05:30",
-   "headline": "MOODY'S SAYS US ECONOMY HAS GROWN MORE STRONGLY THAN IT INITIALLY EXPECTED IN 2026",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9636",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "macro",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "Moody’s says the US economy has grown more strongly than initially expected in 2026.",
-   "why": "Positive US growth outlook is general market news without a clear Indian stock link.",
-   "check": "",
-   "original": "MOODY'S SAYS US ECONOMY HAS GROWN MORE STRONGLY THAN IT INITIALLY EXPECTED IN 2026"
-  },
-  {
-   "id": "beec5268eb0fd150",
-   "time": "2026-11-19T03:39:11+05:30",
-   "headline": "Foreign Holdings of US Treasuries Decline by Most Since March",
-   "source": "Mint Markets",
-   "url": "https://www.livemint.com/market/foreign-holdings-of-us-treasuries-decline-by-most-since-march-11795039752193.html",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "macro",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "Foreign holdings of US Treasuries fell in September, led by China and France, the biggest drop since March.",
-   "why": "Changes in US Treasury holdings are global finance news with no direct Indian equity impact.",
-   "check": "",
-   "original": "Foreign holdings of US Treasuries fell in September by the most in six months, led by decreases in the stockpiles of China and France."
-  },
-  {
-   "id": "8489cf59c9753f4d",
-   "time": "2026-11-19T03:07:35+05:30",
-   "headline": "Anthropic prices IPO at $83 per share, above expected range, source tells CNBC",
-   "source": "CNBC World Markets",
-   "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
-   "section": "global",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Technology"
-   ],
-   "impact": 10,
-   "confidence": 50,
-   "category": "Global Tech",
-   "action": "Monitor global tech sentiment for spillover into Indian IT stocks.",
-   "reason": [
-    "Anthropic is a US-based company not listed on NSE.",
-    "No direct listed Indian entity is named or materially affected."
-   ],
-   "risks": [
-    "Indirect sentiment impact on global AI sector."
-   ],
-   "plain": "A US AI company is selling its first shares to the public at a high price.",
-   "why": "This company is not listed in India, so it does not directly change the value of Indian stocks.",
-   "check": "Look at how global tech news affects Indian IT stocks later in the day.",
-   "original": "Anthropic stock is set to begin trading on the Nasdaq under the ticker symbol ANT on Thursday."
-  },
-  {
-   "id": "9aec4ccf3f5e6167",
-   "time": "2026-11-19T03:05:58+05:30",
-   "headline": "Nvidia interim CEO Kress tells employees ‘let’s move forward’ at first all-hands meeting since Jensen Huang exit",
-   "source": "CNBC Technology",
-   "url": "https://www.cnbc.com/2026/11/18/nvidia-interim-ceo-kress-addresses-staff-after-jensen-huang-exit-.html",
-   "section": "global",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Technology"
-   ],
-   "impact": 10,
-   "confidence": 50,
-   "category": "Global Tech",
-   "action": "No specific action required for Indian listed stocks.",
-   "reason": [
-    "Nvidia is a US company.",
-    "Leadership changes at US firms rarely have direct, immediate impact on NSE stocks."
-   ],
-   "risks": [
-    "Potential indirect impact on global semiconductor sentiment."
-   ],
-   "plain": "The head of a major US chip company told employees to move forward after a leadership change.",
-   "why": "This is internal news for a US company and does not directly affect Indian share prices.",
-   "check": "Check if global chip stocks are moving significantly.",
-   "original": "Nvidia's interim CEO Colette Kress urges staff forward and offers pay raises after Jensen Huang exit."
-  },
-  {
-   "id": "75fc56a0ee73a4e1",
-   "time": "2026-11-19T02:58:04+05:30",
-   "headline": "One of AI's most notorious 'doomers' stands to make billions in Anthropic's IPO",
-   "source": "CNBC World Markets",
-   "url": "https://www.cnbc.com/2026/11/18/jaan-tallinn-anthropic-ipo-series-a-investment.html",
-   "section": "global",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Technology"
-   ],
-   "impact": 5,
-   "confidence": 50,
-   "category": "Global Tech",
-   "action": "Ignore for direct trading decisions on Indian stocks.",
-   "reason": [
-    "News concerns a US investor's gain from a US IPO.",
-    "No Indian listed company is involved."
-   ],
-   "risks": [],
-   "plain": "A famous investor is expected to make a lot of money from a new US stock sale.",
-   "why": "This is about a US stock market event and has no direct link to Indian companies.",
-   "check": "None.",
-   "original": "An Estonian tech billionaire famous for his stance that AI could end humanity is expected to be one of the biggest winners in Anthropic's upcoming IPO."
-  },
-  {
    "id": "946a5ef4f35a63be",
    "time": "2026-11-19T02:48:37+05:30",
    "headline": "TEHRAN SAYS IT SHOWED 'MAXIMUM RESTRAINT' IN DEFENSIVE STRIKES, REPEATS CALL FOR NEIGHBOURS TO BLOCK US ATTACKS FROM THEIR TERRITORY",
@@ -3467,37 +3803,6 @@
    "why": "Tension in the Middle East can change oil prices and make investors nervous, which affects Indian markets.",
    "check": "Check if oil prices are rising or if defense stocks are moving.",
    "original": "TEHRAN SAYS IT SHOWED 'MAXIMUM RESTRAINT' IN DEFENSIVE STRIKES, REPEATS CALL FOR NEIGHBOURS TO BLOCK US ATTACKS FROM THEIR TERRITORY"
-  },
-  {
-   "id": "107c1f0a613c4e8c",
-   "time": "2026-11-19T02:44:54+05:30",
-   "headline": "Longer-dated Treasury yields fall as traders weigh Waller comments, Fed minutes",
-   "source": "CNBC World Markets",
-   "url": "https://www.cnbc.com/2026/11/18/treasury-yields-bonds-fed.html",
-   "section": "global",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Banks",
-    "Infrastructure"
-   ],
-   "impact": 20,
-   "confidence": 50,
-   "category": "Global Macro",
-   "action": "Monitor global bond yields for potential impact on Indian interest rates.",
-   "reason": [
-    "US Treasury yield movements can influence global capital flows.",
-    "No direct impact on specific Indian stocks without further context."
-   ],
-   "risks": [
-    "Rising global rates could pressure Indian bond markets."
-   ],
-   "plain": "The cost of borrowing money from the US government went down for long-term loans.",
-   "why": "Changes in US interest rates can slowly affect global money flows, but this is not a direct hit to Indian stocks.",
-   "check": "Look at how global interest rates are trending.",
-   "original": "Yields at the long end of the Treasury yield curve declined Wednesday."
   },
   {
    "id": "19c923f51738d11f",
@@ -3562,206 +3867,6 @@
    "why": "When interest rates are high, people often move money away from gold, which can lower the value of gold-related stocks.",
    "check": "Check the current price of gold and how gold-related stocks are reacting.",
    "original": "Gold tumbled over 3% to the lowest in over a year after Federal Reserve officials made the case for more interest-rate hikes to tackle stubborn inflation."
-  },
-  {
-   "id": "63ac2abf7ce4cb49",
-   "time": "2026-11-19T02:37:21+05:30",
-   "headline": "ANTHROPIC SAID TO PRICE IPO AT $83 PER SHARE",
-   "source": "Walter Bloomberg",
-   "url": "https://t.me/WalterBloomberg/38660",
-   "section": "global",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Technology"
-   ],
-   "impact": 10,
-   "confidence": 50,
-   "category": "Global Tech",
-   "action": "No specific action required.",
-   "reason": [
-    "Duplicate of headline 0.",
-    "No Indian listed company involved."
-   ],
-   "risks": [],
-   "plain": "A US AI company is selling its first shares to the public at a high price.",
-   "why": "This is a US market event and does not directly affect Indian stocks.",
-   "check": "None.",
-   "original": "( @WalterBloomberg )"
-  },
-  {
-   "id": "48ca19a849b7fbc2",
-   "time": "2026-11-19T02:37:14+05:30",
-   "headline": "CEO turned informant: How the FDA built a case against executives promising cheap medications",
-   "source": "CNBC World Markets",
-   "url": "https://www.cnbc.com/2026/11/18/fda-canarx-case-informant.html",
-   "section": "global",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Pharma"
-   ],
-   "impact": 10,
-   "confidence": 50,
-   "category": "Regulatory",
-   "action": "No specific action required for Indian pharma stocks.",
-   "reason": [
-    "FDA case is specific to a US alternative funding program.",
-    "No direct impact on Indian listed pharma companies."
-   ],
-   "risks": [
-    "Potential regulatory scrutiny on global pharma practices, but unlikely to impact Indian firms directly."
-   ],
-   "plain": "US regulators built a legal case against company leaders using information from a competitor.",
-   "why": "This is a specific legal issue in the US and does not directly change the value of Indian pharma stocks.",
-   "check": "None.",
-   "original": "The FDA's unprecedented criminal case against an alternative funding program hinged on the cooperation of a peer CEO, according to a court record."
-  },
-  {
-   "id": "5387624d2c5e33d8",
-   "time": "2026-11-19T02:33:54+05:30",
-   "headline": "Australian Wheat Hits Two-Year High as Buyers Flee Black Sea",
-   "source": "Mint Markets",
-   "url": "https://www.livemint.com/market/australian-wheat-hits-two-year-high-as-buyers-flee-black-sea-11795035834767.html",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Agriculture"
-   ],
-   "impact": 10,
-   "confidence": 50,
-   "category": "Commodities",
-   "action": "No specific action required for Indian listed stocks.",
-   "reason": [
-    "Australian wheat prices are not directly linked to major Indian listed stocks.",
-    "India is a net importer of wheat, but this specific news is about Australian exports."
-   ],
-   "risks": [
-    "Higher global wheat prices could slightly increase import costs for India, but impact is minimal on listed stocks."
-   ],
-   "plain": "Wheat from Australia is selling for a high price because buyers are looking for alternatives.",
-   "why": "This is a global commodity price movement that has very little direct effect on Indian stock prices.",
-   "check": "None.",
-   "original": "Australian wheat prices climbed to a two-year high as strong export demand overshadows the start of the harvest, with buyers racing to replace stalled Black Sea supplies."
-  },
-  {
-   "id": "94c64281a78c2ac1",
-   "time": "2026-11-19T02:32:43+05:30",
-   "headline": "NASDAQ COMPOSITE ENDS UP 87.55 POINTS, OR 0.36%, AT 24,415.93 IN UNOFFICIAL CLOSE",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9634",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "up",
-   "tickers": [],
-   "sectors": [
-    "Technology"
-   ],
-   "impact": 10,
-   "confidence": 50,
-   "category": "Global Markets",
-   "action": "No specific action required.",
-   "reason": [
-    "Nasdaq closing data is market color.",
-    "No new information or direct impact on Indian stocks."
-   ],
-   "risks": [],
-   "plain": "The US tech stock market ended the day slightly higher.",
-   "why": "This is just a report of how the US market closed and does not give new information for Indian stocks.",
-   "check": "None.",
-   "original": "NASDAQ COMPOSITE ENDS UP 87.55 POINTS, OR 0.36%, AT 24,415.93 IN UNOFFICIAL CLOSE"
-  },
-  {
-   "id": "5f88c7c25b957456",
-   "time": "2026-11-19T02:32:37+05:30",
-   "headline": "S&P 500 UNOFFICIALLY ENDS 18.34 POINTS LOWER, DOWN 0.25%, AT 7,322.19",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9633",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "down",
-   "tickers": [],
-   "sectors": [
-    "General"
-   ],
-   "impact": 10,
-   "confidence": 50,
-   "category": "Global Markets",
-   "action": "No specific action required.",
-   "reason": [
-    "S&P 500 closing data is market color.",
-    "No new information or direct impact on Indian stocks."
-   ],
-   "risks": [],
-   "plain": "The main US stock market index ended the day slightly lower.",
-   "why": "This is just a report of how the US market closed and does not give new information for Indian stocks.",
-   "check": "None.",
-   "original": "S&P 500 UNOFFICIALLY ENDS 18.34 POINTS LOWER, DOWN 0.25%, AT 7,322.19"
-  },
-  {
-   "id": "ebf9a7af716e89b2",
-   "time": "2026-11-19T02:32:34+05:30",
-   "headline": "DOW JONES FALLS 570.28 POINTS, OR 1.12%, TO CLOSE AT 50,189.14, UNOFFICIALLY",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9632",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "down",
-   "tickers": [],
-   "sectors": [
-    "General"
-   ],
-   "impact": 10,
-   "confidence": 50,
-   "category": "Global Markets",
-   "action": "No specific action required.",
-   "reason": [
-    "Dow Jones closing data is market color.",
-    "No new information or direct impact on Indian stocks."
-   ],
-   "risks": [],
-   "plain": "The US stock market index for large companies ended the day lower.",
-   "why": "This is just a report of how the US market closed and does not give new information for Indian stocks.",
-   "check": "None.",
-   "original": "DOW JONES FALLS 570.28 POINTS, OR 1.12%, TO CLOSE AT 50,189.14, UNOFFICIALLY"
-  },
-  {
-   "id": "d5149073eddcd6e1",
-   "time": "2026-11-19T02:23:18+05:30",
-   "headline": "Alphagrep Securities Private Limited: Record Date Updates |SUBJECT: Record Date Updates",
-   "source": "NSE Announcements",
-   "url": "https://nsearchives.nseindia.com/content/debt/WDM/90059_ags_19112026022052_INE961U07010-Record_Date_Intimation-DSC.pdf",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Financials"
-   ],
-   "impact": 5,
-   "confidence": 50,
-   "category": "Corporate Filing",
-   "action": "Ignore as it is a routine administrative update.",
-   "reason": [
-    "Record date updates are routine filings.",
-    "No material impact on stock price."
-   ],
-   "risks": [],
-   "plain": "A securities company updated the date for deciding who gets a dividend or bonus.",
-   "why": "This is a standard administrative task and does not change the value of the company's shares.",
-   "check": "None.",
-   "original": "Alphagrep Securities Private Limited: Record Date Updates |SUBJECT: Record Date Updates"
   },
   {
    "id": "ff8a1a7a67eff020",
@@ -16394,88 +16499,21 @@
    "why": "Safety accidents can stop work and make the company look risky, which can lower its stock price.",
    "check": "Look for updates on whether the company's operations have been stopped.",
    "original": "ONGC Share Price Live Updates: ONGC gas leak in Andhra's Konaseema forces evacuation of around 800 people"
-  },
-  {
-   "id": "27052a50042b7464",
-   "time": "2026-11-17T07:57:58+05:30",
-   "headline": "Global stocks fall as Nvidia earnings, Anthropic debut put AI rally to test",
-   "source": "Business Standard",
-   "url": "https://www.business-standard.com/markets/news/global-stocks-fall-as-nvidia-earnings-anthropic-debut-put-ai-rally-to-test-126111700032_1.html",
-   "section": "news",
-   "call": "watch",
-   "horizon": "intraday",
-   "direction": "down",
-   "tickers": [],
-   "sectors": [
-    "Technology",
-    "Semiconductors"
-   ],
-   "impact": 40,
-   "confidence": 60,
-   "category": "Global Tech Selloff",
-   "action": "Watch for contagion in Indian IT and semiconductor supply chain stocks.",
-   "reason": [
-    "Global semiconductor stocks are falling sharply.",
-    "Indian tech stocks often correlate with US tech sentiment."
-   ],
-   "risks": [
-    "Sentiment could spill over to Indian IT stocks."
-   ],
-   "plain": "Global computer chip stocks are falling because of earnings reports.",
-   "why": "This might make investors sell Indian tech stocks too, even if those companies are doing well.",
-   "check": "Check if Indian IT stocks are opening lower.",
-   "original": "Semiconductor shares led losses across major markets, with US chipmakers falling 5.3 per cent and stocks in South Korea and Taiwan declining 3.6 per cent and 6 per cent, respectively"
-  },
-  {
-   "id": "10258d5be909e95f",
-   "time": "2026-11-17T07:55:35+05:30",
-   "headline": "Stock Market LIVE: Sensex off 400 pts from day's high, Nifty below 25,400; IT, FMCG shares weigh",
-   "source": "Business Standard",
-   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-17-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-bse-share-price-126111700071_1.html",
-   "section": "macro",
-   "call": "watch",
-   "horizon": "intraday",
-   "direction": "down",
-   "tickers": [],
-   "sectors": [
-    "Broad Market",
-    "Information Technology",
-    "FMCG"
-   ],
-   "impact": 35,
-   "confidence": 80,
-   "category": "macro",
-   "action": "Monitor Nifty support around the 25,400 mark during afternoon trading.",
-   "reason": [
-    "Benchmark indices retreated 400 points from highs driven by IT and FMCG selling.",
-    "Midcap and smallcap outperformance highlights divergent market breadth."
-   ],
-   "risks": [
-    "Late-session institutional buying can reverse intraday index pullbacks."
-   ],
-   "plain": "Major stock indices dropped from day highs as large technology and consumer companies faced selling.",
-   "why": "Broader index pullbacks can drag down individual stocks even if mid-sized companies hold up.",
-   "check": "Track whether benchmark indices hold above their key support levels today.",
-   "original": "Sensex Today | Stock Market LIVE Updates Tuesday: In the broader markets, the Nifty MidCap and the Nifty SmallCap rose 0.62 per cent and 0.5 per cent, respectively"
   }
  ],
  "digest": {
   "date": "2026-11-19",
-  "act": 3,
-  "watch": 29,
+  "act": 4,
+  "watch": 30,
   "ignored": 100,
   "reasons": [
    {
-    "label": "news",
+    "label": "Market Colour",
     "count": 19
    },
    {
-    "label": "macro",
-    "count": 9
-   },
-   {
-    "label": "Market Colour",
-    "count": 9
+    "label": "news",
+    "count": 19
    },
    {
     "label": "market_colour",
@@ -16488,6 +16526,10 @@
    {
     "label": "routine",
     "count": 7
+   },
+   {
+    "label": "macro",
+    "count": 6
    }
   ]
  }
