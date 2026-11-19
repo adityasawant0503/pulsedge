@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T16:01+05:30",
+ "updated": "2026-11-19T16:15+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -696,22 +696,6 @@
    "updated": "2026-11-19T15:02+05:30",
    "model": "gemini-flash-lite-latest"
   },
-  "HINDZINC": {
-   "summary": "Hindustan Zinc announced a Rs 80,000 crore expansion plan to become the world’s largest zinc and silver producer. The move signals potential long‑term profit growth but also raises cash‑flow concerns.",
-   "why": "Shareholders need to know whether the massive spend will boost earnings or strain the company’s finances.",
-   "upside": "If the expansion delivers higher zinc and silver output, earnings could rise.",
-   "downside": "The large capital outlay could pressure cash flow and limit financial flexibility.",
-   "watch": [
-    "Progress on the Rs 80,000 crore expansion",
-    "Sector index movement for Metals & Mining",
-    "Company’s financing and cash‑flow updates"
-   ],
-   "about": "Hindustan Zinc Ltd. is a metals and mining company that produces zinc and silver.",
-   "basis": "56aa196a87a7",
-   "items": 1,
-   "updated": "2026-11-19T11:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "TITAN": {
    "summary": "Titan shares fell over 4-5% on Nov 18 as the broader market and consumer‑durables sector slipped, with the Nifty Consumer Durables index down 3% and the broader indices lower.",
    "why": "The drop hurts shareholders because it reflects weaker near‑term consumer demand and could pressure the company’s sales and margins.",
@@ -870,38 +854,6 @@
    "basis": "32b3eec3caa3",
    "items": 1,
    "updated": "2026-11-18T15:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "HFCL": {
-   "summary": "HFCL shares hit a 5% lower trading limit after a sharp rise in their price. This sudden drop made it hard for some investors to sell their shares immediately.",
-   "why": "If you own HFCL shares, this event shows that prices can fall quickly after a big run-up. It also highlights that trading limits can temporarily stop you from selling if the market is very active.",
-   "upside": "",
-   "downside": "If the selling pressure continues, the share price could drop further, and the trading limit might stay locked, preventing you from exiting your position.",
-   "watch": [
-    "Whether the 5% lower trading limit remains locked for extended periods.",
-    "If the sharp price run-up reverses into a longer-term decline.",
-    "General market sentiment towards telecom equipment makers."
-   ],
-   "about": "HFCL is a company in the telecommunication sector.",
-   "basis": "3e8c217a5fc7",
-   "items": 1,
-   "updated": "2026-11-17T14:31+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "STLTECH": {
-   "summary": "Sterlite Technologies shares hit a 5% lower trading limit after a sharp rise in price. This means the stock price dropped significantly in a short time, triggering a temporary halt in trading.",
-   "why": "If you own these shares, the trading halt can make it hard to sell your stock immediately because there are not enough buyers at the current price.",
-   "upside": "",
-   "downside": "The selling pressure might continue if the trading limit stays locked, making it difficult to exit your position.",
-   "watch": [
-    "Whether the trading limit unlocks and allows normal buying and selling to resume",
-    "If the sharp drop continues or if the price stabilizes",
-    "News about the company's telecom business that might explain the sudden drop"
-   ],
-   "about": "Sterlite Technologies is a company in the telecommunication sector.",
-   "basis": "3e8c217a5fc7",
-   "items": 1,
-   "updated": "2026-11-17T14:31+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
@@ -1463,22 +1415,6 @@
    "updated": "2026-11-19T03:10+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "EICHERMOT": {
-   "summary": "Eicher Motors shares recently rose, including a 3% jump that made it a top gainer in the auto sector. This happened while the broader auto sector index was falling over the last few days.",
-   "why": "Shareholders may see this as a sign that investors are confident in the company's performance, particularly in its premium motorcycle business, despite general weakness in the auto sector.",
-   "upside": "Growth in the premium motorcycle segment could continue to support the company's results.",
-   "downside": "Competition from other domestic and international bike makers in the 350cc-650cc range could limit growth, and new employee stock options might slightly reduce the value of existing shares.",
-   "watch": [
-    "How the stock performs compared to the rest of the auto sector.",
-    "Sales figures for premium motorcycles.",
-    "Whether the newly granted employee stock options are exercised."
-   ],
-   "about": "Eicher Motors is an Indian automobile and auto components manufacturer.",
-   "basis": "c3b1748de437",
-   "items": 4,
-   "updated": "2026-11-19T11:31+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "WAAREEENER": {
    "summary": "Waaree Energies recently won a new contract worth one billion rupees. The company was also named a top performer in global solar quality tests for the fifth year in a row.",
    "why": "These updates suggest the company is maintaining strong product quality and securing new business, which supports its long-term sales.",
@@ -1494,6 +1430,22 @@
    "items": 3,
    "updated": "2026-11-19T12:45+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "EICHERMOT": {
+   "summary": "Eicher Motors’ shares have risen sharply, jumping about 3% and climbing again today, while the auto sector index has slipped. The stock’s gain comes amid positive analyst comments on premium motorcycle growth.",
+   "why": "Shareholders see the rise because analysts are upbeat on premium motorcycle demand, but the sector’s weakness could still affect the stock.",
+   "upside": "If demand for premium motorcycles stays strong, the stock could keep gaining.",
+   "downside": "Intense competition in the 350‑cc to 650‑cc bike segment could pressure earnings.",
+   "watch": [
+    "Daily share price movements",
+    "Auto sector index performance",
+    "Competitive activity in the premium motorcycle segment"
+   ],
+   "about": "Eicher Motors manufactures motorcycles and commercial vehicles.",
+   "basis": "2bb342c1cf37",
+   "items": 3,
+   "updated": "2026-11-19T16:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "PNBHOUSING": {
    "summary": "PNB Housing Finance announced that its Chief of Operations and Customer Service is resigning effective November 30, 2026. The company also disclosed the allotment of new securities, which may increase the total number of shares.",
