@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T10:00+05:30",
+ "updated": "2026-11-19T10:15+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -395,6 +395,22 @@
    "updated": "2026-11-18T10:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "HYUNDAI": {
+   "summary": "Hyundai Motor India is in focus after Morgan Stanley listed it as overweight and a financial advisor highlighted it as a top pick, while JPMorgan and Hyundai Card test AI agents for transactions. The auto sector has been falling, down 1.4% today and 4% over five sessions.",
+   "why": "These mentions could influence investor sentiment, and AI initiatives may affect future profitability.",
+   "upside": "If AI agents improve efficiency, Hyundai Card’s margins could rise, supporting the broader Hyundai Motor business.",
+   "downside": "The auto sector’s recent decline and possible delays in AI implementation could weigh on the company.",
+   "watch": [
+    "Morgan Stanley’s overweight rating",
+    "Financial advisor’s top‑pick recommendation",
+    "Progress of AI agent trials with JPMorgan and Hyundai Card"
+   ],
+   "about": "Hyundai Motor India Ltd. manufactures and sells automobiles in the Indian market.",
+   "basis": "cd0814b10c53",
+   "items": 3,
+   "updated": "2026-11-19T10:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "URBANCO": {
    "summary": "Urban Company launched a ₹2,500‑crore qualified institutional placement (QIP) that was oversubscribed six times, but its shares slipped about 2% on the news. The funds are intended for a new cleaning service and possible acquisitions.",
    "why": "Existing shareholders face dilution from the new share issue, while the raised capital could support growth initiatives.",
@@ -409,22 +425,6 @@
    "basis": "bbf12ebf190a",
    "items": 3,
    "updated": "2026-11-19T08:11+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "HYUNDAI": {
-   "summary": "Hyundai Motor India Ltd. is in the news after a financial advisor highlighted it as a top pick and after JPMorgan began testing AI agents for transactions with Hyundai Card. The auto sector index showed a modest rise of 0.7% in the last session but fell 0.6% over the past five sessions.",
-   "why": "Shareholders watch these developments because AI testing could improve margins, while analyst attention may influence market sentiment.",
-   "upside": "If AI agents boost transaction efficiency, Hyundai Card’s margins could improve, benefiting the broader Hyundai group.",
-   "downside": "Delays in AI implementation could limit any expected efficiency gains.",
-   "watch": [
-    "Progress on AI agent transactions with JPMorgan",
-    "Market reaction to the financial advisor’s recommendation",
-    "Auto sector index movements"
-   ],
-   "about": "Hyundai Motor India Ltd. manufactures and sells automobiles in India.",
-   "basis": "220312878b27",
-   "items": 2,
-   "updated": "2026-11-18T08:17+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "EMBASSY": {
@@ -666,6 +666,22 @@
    "updated": "2026-11-19T00:20+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "PWL": {
+   "summary": "Physicswallah shares rose about 4% after the company announced ambitious FY30 earnings guidance, aiming to earn much more money in the coming years. The news sparked investor excitement but also highlighted the challenge of meeting high growth targets.",
+   "why": "The guidance sets expectations for future profitability, which can move the share price if the company meets or misses them.",
+   "upside": "If the company achieves its FY30 earnings targets, earnings and share value could improve.",
+   "downside": "The high growth targets may be difficult to achieve, risking disappointment and a share price decline.",
+   "watch": [
+    "Progress on FY30 guidance milestones",
+    "Quarterly earnings reports",
+    "Updates on revenue growth and user acquisition"
+   ],
+   "about": "Physicswallah is an online education platform offering courses and learning resources.",
+   "basis": "6921a150900b",
+   "items": 1,
+   "updated": "2026-11-19T10:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "GRASIM": {
    "summary": "Grasim Industries has released the transcript of its earnings call for the September quarter. The full financial results for the quarter and half-year are not yet available.",
    "why": "This matters because the upcoming release of full results can influence the share price based on how the numbers compare to what investors expect.",
@@ -712,6 +728,22 @@
    "items": 3,
    "updated": "2026-11-18T12:45+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "LTFOODS": {
+   "summary": "LT Foods snapped a four‑day losing streak, jumping about 8% after announcing a plan to acquire MK Foods for roughly 54 crore rupees. The move comes as the FMCG sector index was up 0.8% over the past five sessions.",
+   "why": "Shareholders care because the acquisition could speed growth and broaden the customer base, though it also brings integration risk.",
+   "upside": "Successful integration of MK Foods could boost revenue and earnings.",
+   "downside": "Integration challenges could hurt the company’s performance.",
+   "watch": [
+    "MK Foods acquisition progress and approvals",
+    "Integration execution and cost synergies",
+    "FMCG sector trends and broader market attention"
+   ],
+   "about": "LT Foods Ltd. is an Indian fast‑moving consumer goods company.",
+   "basis": "24dca9161f52",
+   "items": 2,
+   "updated": "2026-11-19T10:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "UPL": {
    "summary": "UPL's shares slipped below a key moving average, and media reports say the company may scrap its plan to change its corporate structure.",
@@ -842,20 +874,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is facing mixed signals as global oil prices fluctuate, with recent data showing both rises and falls in crude costs. Geopolitical events in the Strait of Hormuz, including tanker fires and safety deals, are adding uncertainty to the supply landscape.",
-   "why": "Since the company earns money by selling fuel, its profits depend heavily on the price of oil, which has been moving in both directions recently. These price swings directly affect how much revenue the company generates per liter sold.",
-   "upside": "Higher oil prices and tighter global supply could lead to increased profits for the company.",
-   "downside": "Falling oil prices or a slowdown in the broader economy due to high fuel costs could reduce the company's earnings.",
+   "summary": "Oil India is navigating a volatile oil market as crude prices have swung up and down and geopolitical events have raised supply concerns. The broader oil‑and‑gas sector has slipped slightly, down 0.1% in the last session and 0.5% over five sessions.",
+   "why": "Oil price moves directly affect the company’s profit per barrel, while inventory and route safety news can shift prices and demand.",
+   "upside": "Higher crude prices could boost Oil India’s earnings.",
+   "downside": "Falling oil prices or renewed geopolitical tension could cut revenue.",
    "watch": [
-    "Future movements in global crude oil prices",
-    "Developments regarding safety and supply in the Strait of Hormuz",
-    "Changes in U.S. oil inventory levels"
+    "Crude oil price trends (futures settlements)",
+    "US crude oil inventory reports",
+    "Developments around the Strait of Hormuz"
    ],
-   "about": "Oil India Ltd. is a company in the Oil Gas & Consumable Fuels sector that is part of the Nifty 500 index.",
-   "basis": "03c84c7d58fb",
-   "items": 14,
-   "updated": "2026-11-19T10:00+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Oil India Ltd. is an Indian oil and gas exploration and production company.",
+   "basis": "bdec06632604",
+   "items": 13,
+   "updated": "2026-11-19T10:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "COALINDIA": {
    "summary": "Coal India is preparing to sell parts of its business units, starting with Mahanadi Coalfields, through a public share offering. Early interest in this sale appears lower than expected, with modest gains indicated in the grey market.",
@@ -888,22 +920,6 @@
    "items": 7,
    "updated": "2026-11-19T00:20+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "HDFCBANK": {
-   "summary": "HDFC Bank shares have risen sharply, jumping about 20% from their October low as the Nifty Bank index hit a record high. Analysts note a technical breakout that could keep banks moving higher, though broader market moves could affect this.",
-   "why": "Shareholders may see further price movement if the bullish technical bias holds, but they also face risk if the market turns lower.",
-   "upside": "If the technical breakout and strong banking sector momentum continue, the stock could keep rising.",
-   "downside": "If the broader market falls or the sector becomes overbought, the stock could stall or retreat.",
-   "watch": [
-    "Technical breakout on Nifty Bank index",
-    "Overall market direction and any broad declines",
-    "Banking sector sentiment and overbought signals"
-   ],
-   "about": "HDFC Bank Ltd. is a leading Indian commercial bank offering retail and corporate banking services.",
-   "basis": "630bf2c39df4",
-   "items": 4,
-   "updated": "2026-11-18T10:47+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "INFY": {
    "summary": "Infosys shares have fallen sharply, losing about a quarter of investor wealth over the past year and recently slipping below the 100‑day exponential moving average. The broader IT sector is also down, and analysts note the price may have bottomed.",
@@ -968,6 +984,22 @@
    "items": 3,
    "updated": "2026-11-18T11:02+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "HDFCBANK": {
+   "summary": "HDFC Bank shares have rallied sharply, jumping about 20% from their October low as the Nifty Bank index hit a record high. Analysts note a technical breakout that could keep the bank’s stock moving higher, though recent sector weakness adds caution.",
+   "why": "Shareholders see the rally as a sign of strong market confidence, but the stock’s performance is tied to broader market and banking sector trends.",
+   "upside": "If the technical bias holds and the broader market stays supportive, the stock could continue to rise.",
+   "downside": "A pull‑back in the overall market or an overbought condition in the banking sector could stall or reverse gains.",
+   "watch": [
+    "Technical breakout and bias for banks",
+    "Broader market direction and potential falls",
+    "Financials sector index trends and comparison with peers like Axis Bank"
+   ],
+   "about": "HDFC Bank Ltd. is a leading Indian private‑sector bank offering retail, corporate and treasury banking services.",
+   "basis": "2a6cc64ea927",
+   "items": 3,
+   "updated": "2026-11-19T10:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "TCS": {
    "summary": "TCS stock fell 26% this year despite good business results, and the company has been named a leader in agentic application management services. The broader IT sector has also slipped, adding pressure on the stock.",
@@ -1289,6 +1321,22 @@
    "updated": "2026-11-19T08:11+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "ADANIPOWER": {
+   "summary": "Adani Power plans to increase its steady electricity generation capacity to 45 GW by 2032. A major investment bank recently listed the company among large-cap stocks it expects to perform well.",
+   "why": "This expansion plan signals long-term growth, but it will likely require significant borrowing to build new power plants.",
+   "upside": "The company aims to significantly grow its electricity output over the next several years.",
+   "downside": "Building new capacity requires heavy spending, which could increase the company's debt.",
+   "watch": [
+    "How much new debt the company takes on to fund the expansion",
+    "Progress toward the 45 GW capacity target by 2032",
+    "Performance of the broader energy sector index"
+   ],
+   "about": "Adani Power is a company in the power sector that generates electricity.",
+   "basis": "21df7826aa9c",
+   "items": 2,
+   "updated": "2026-11-19T10:15+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "NTPC": {
    "summary": "PulsEdge flagged a tragic accident at NTPC's Tandwa project where three workers died and two were injured, and an investigation is now under way. The Energy sector index was flat over the past five sessions, showing little market movement.",
    "why": "Shareholders should watch the incident because it could pause work, raise safety costs, or attract regulatory scrutiny that may affect earnings.",
@@ -1304,6 +1352,22 @@
    "items": 2,
    "updated": "2026-11-18T14:15+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "TRENT": {
+   "summary": "Trent Ltd. is one of India's 50 largest listed companies in the consumer services sector. Recently, a major investment bank included it in a list of large-cap stocks it expects to outperform the broader market.",
+   "why": "This matters because when large institutions highlight a company, it can attract more investor attention and interest in its shares.",
+   "upside": "The company might perform better than the rest of the market, as suggested by the investment bank's positive view.",
+   "downside": "Analyst ratings are not guarantees, so the company's future performance is not assured despite the positive outlook.",
+   "watch": [
+    "Whether other investors follow the investment bank's positive view",
+    "How the company performs compared to the broader market",
+    "Any changes in the investment bank's rating or outlook"
+   ],
+   "about": "Trent Ltd. operates in the consumer services sector and is one of India's 50 largest listed companies.",
+   "basis": "64095123798e",
+   "items": 1,
+   "updated": "2026-11-19T10:15+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "THERMAX": {
    "summary": "Thermax Ltd. is a capital goods company listed in the Nifty 500 index. PulsEdge flagged a recent headline about PI Industries hitting a 52-week low, but the provided facts do not confirm this applies to Thermax.",
@@ -1527,22 +1591,6 @@
    "items": 2,
    "updated": "2026-11-17T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "LAURUSLABS": {
-   "summary": "Laurus Labs clarified recent news about promoters selling their equity shares. The stock jumped sharply as it led the mid‑cap rally while the broader market rose. The healthcare sector index was up 0.4% in the last session.",
-   "why": "Shareholders need to watch promoter selling because it could affect ownership and stock price, and the recent price surge shows the stock is sensitive to market moves.",
-   "upside": "If the broader market rally continues, the stock could keep gaining.",
-   "downside": "Promoter selling pressure could weigh on the share price.",
-   "watch": [
-    "Promoter share sale activity",
-    "Mid‑cap rally momentum",
-    "Healthcare sector index trend"
-   ],
-   "about": "Laurus Labs Ltd. is a pharmaceutical company that develops and manufactures medicines.",
-   "basis": "dfcc72489ab9",
-   "items": 2,
-   "updated": "2026-11-18T08:29+05:30",
-   "model": "openai/gpt-oss-120b"
   }
  }
 }
