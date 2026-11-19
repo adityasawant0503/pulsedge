@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T13:11+05:30",
+ "updated": "2026-11-19T13:16+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a flat Sensex and Nifty slipping below 25,200 as payment stocks fell after a delay in the UPI MDR fee rollout, which could cut earnings. LT Foods jumped about 10% on its US acquisition, while BLS Polymers hit a record high on strong Q2 results. MIDHANI signalled higher growth and new orders, and NBCC won an 85‑crore contract, adding optimism for industrials.",
+  "summary": "The market stayed flat on Thursday, with the Sensex holding steady and the Nifty trading just below 25,200. Payment stocks like Paytm and Pine Labs fell sharply because a new fee rule for digital payments is being delayed. Meanwhile, LT Foods jumped 10% after announcing a new acquisition in the US. Some companies also reported strong results or new orders, which helped lift their share prices.",
   "themes": [
-   "Payment companies pressured by the UPI MDR fee delay",
-   "Corporate deals and earnings lift LT Foods and BLS Polymers",
-   "Industrial growth signals from MIDHANI and NBCC"
+   "Payment stocks dropped due to delays in a new government fee rule.",
+   "Several companies announced new business deals or strong earnings.",
+   "Key executives left two major companies, causing short-term uncertainty."
   ],
   "watch": [
-   "Dalmia Bharat board meeting on Nov 23 to consider a share buyback",
-   "CFO resignation at Jubilant Ingrevia effective Nov 30 may affect financial guidance",
-   "Cyient’s semiconductor unit receives strategic investment from GlobalFoundries, could impact future earnings"
+   "Dalmia Bharat's board meeting on November 23 to decide on a share buyback.",
+   "Whether the delay in the UPI fee rule affects payment companies' future income.",
+   "How LT Foods integrates its new US acquisition."
   ],
   "date": "2026-11-19",
-  "basis": "f7382f9456fe",
-  "updated": "2026-11-19T12:30+05:30",
-  "model": "openai/gpt-oss-120b",
-  "items": 78
+  "basis": "b17a38b9c434",
+  "updated": "2026-11-19T13:16+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 88
  },
  "stocks": {
   "PAYTM": {
@@ -443,6 +443,22 @@
    "updated": "2026-11-18T13:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "HYUNDAI": {
+   "summary": "Hyundai Motor India shares recently rose as part of a broader rally in auto stocks, driven by lower costs for metals and oil. However, the wider auto sector has seen a slight dip in the last few days.",
+   "why": "Lower production costs can help the company keep more profit from each car sold, which may benefit shareholders. The recent price movement shows that investors are reacting to these cost changes.",
+   "upside": "If metal and oil prices stay low, the company could see better profits.",
+   "downside": "If input costs rise again, the recent gains in share price might fade.",
+   "watch": [
+    "Changes in the price of metals and oil",
+    "The overall performance of the auto sector index",
+    "Updates on AI technology partnerships involving Hyundai Card"
+   ],
+   "about": "Hyundai Motor India is a company in the automobile and auto components sector.",
+   "basis": "0600aa006d6f",
+   "items": 4,
+   "updated": "2026-11-19T13:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "AXISBANK": {
    "summary": "Axis Bank is seeing positive momentum as analysts note a technical breakout for banks and the stock has recovered after a Q2 sell‑off. BlackRock recently increased its holding to 5%, adding institutional confidence amid a broader market rally.",
    "why": "Shareholders may benefit if the technical bias holds and the BlackRock stake supports sentiment, but the stock is still linked to overall market and banking sector trends.",
@@ -457,22 +473,6 @@
    "basis": "558f3c759dd5",
    "items": 4,
    "updated": "2026-11-18T10:47+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "HYUNDAI": {
-   "summary": "Hyundai Motor India is in focus after Morgan Stanley listed it as overweight and a financial advisor highlighted it as a top pick, while JPMorgan and Hyundai Card test AI agents for transactions. The auto sector has been falling, down 1.4% today and 4% over five sessions.",
-   "why": "These mentions could influence investor sentiment, and AI initiatives may affect future profitability.",
-   "upside": "If AI agents improve efficiency, Hyundai Card’s margins could rise, supporting the broader Hyundai Motor business.",
-   "downside": "The auto sector’s recent decline and possible delays in AI implementation could weigh on the company.",
-   "watch": [
-    "Morgan Stanley’s overweight rating",
-    "Financial advisor’s top‑pick recommendation",
-    "Progress of AI agent trials with JPMorgan and Hyundai Card"
-   ],
-   "about": "Hyundai Motor India Ltd. manufactures and sells automobiles in the Indian market.",
-   "basis": "cd0814b10c53",
-   "items": 3,
-   "updated": "2026-11-19T10:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "NBCC": {
@@ -937,6 +937,22 @@
    "updated": "2026-11-19T12:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "M&M": {
+   "summary": "Mahindra & Mahindra shares rose sharply on November 19 as cheaper metal and oil costs eased worries for the auto sector. This rally followed a broader market gain where the Nifty index topped 25,500 points.",
+   "why": "Lower costs for materials like metal and oil can improve a car maker's profits, which may make its shares more attractive to investors.",
+   "upside": "If metal and oil prices stay low, the company's production costs remain manageable, supporting its financial health.",
+   "downside": "The recent price jump could reverse quickly if input costs rise again or if investors sell their shares to lock in profits.",
+   "watch": [
+    "Changes in metal and oil prices",
+    "Whether the auto sector rally continues or fades",
+    "Overall market trends affecting large companies"
+   ],
+   "about": "Mahindra & Mahindra is an Indian company in the automobile and auto components sector.",
+   "basis": "1c872ff7a8d5",
+   "items": 4,
+   "updated": "2026-11-19T13:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "SAIL": {
    "summary": "SAIL shares have fallen sharply as global metal prices dropped and the US dollar strengthened. The company led losses in the Nifty Metal index, which is down 4.4% over the last five sessions.",
    "why": "Lower metal prices reduce the profit margins for steel companies, which can lower the earnings available to shareholders.",
@@ -953,6 +969,22 @@
    "updated": "2026-11-19T11:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "MARUTI": {
+   "summary": "Maruti Suzuki shares rose as the auto sector rallied, but the sector index fell 1.4% in the last session and 4% over five sessions.",
+   "why": "Share price moves reflect investor sentiment about the auto industry and cost pressures that affect the company.",
+   "upside": "Cheaper metal and oil could ease cost worries and support the rally.",
+   "downside": "Input‑costs could rise again, and sector rallies can reverse quickly.",
+   "watch": [
+    "Changes in metal and oil prices",
+    "Sector index performance",
+    "Potential reversal of the auto rally"
+   ],
+   "about": "Maruti Suzuki India Ltd. is a major automobile company in India.",
+   "basis": "20889272e336",
+   "items": 3,
+   "updated": "2026-11-19T13:16+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "HDFCBANK": {
    "summary": "PulsEdge flagged HDFC Bank as part of Goldman Sachs' high‑growth list and noted a technical view that banks are near a new high after a recent Q2 sell‑off recovery. The broader financial sector fell 0.7% in the last session but rose 1.2% over the past five sessions.",
    "why": "These signals could influence investor sentiment and affect the share price, which matters to current shareholders.",
@@ -967,22 +999,6 @@
    "basis": "0e41cc654459",
    "items": 3,
    "updated": "2026-11-19T13:11+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "M&M": {
-   "summary": "PulsEdge flagged a recent rally where Mahindra & Mahindra (M&M) and other auto stocks rose up to 5%, but the auto sector index has slipped 1.4% in the last session and 4% over the past five sessions.",
-   "why": "Share price moves for M&M tend to follow the broader auto sector, so sector swings directly affect shareholders.",
-   "upside": "If the positive sentiment that lifted auto stocks earlier continues, M&M could benefit from higher buying interest.",
-   "downside": "A continued decline in the auto sector index could weigh on M&M’s share price.",
-   "watch": [
-    "Auto sector index performance in the next sessions",
-    "Overall market trends such as Sensex and Nifty movements",
-    "Any new news that could trigger another auto rally or reversal"
-   ],
-   "about": "Mahindra & Mahindra Ltd. is a leading Indian automobile and auto components manufacturer and a Nifty 50 constituent.",
-   "basis": "7e7dfd3ec0e0",
-   "items": 3,
-   "updated": "2026-11-19T11:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "INFY": {
@@ -1047,22 +1063,6 @@
    "basis": "0ff87b881c3c",
    "items": 3,
    "updated": "2026-11-18T11:02+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "MARUTI": {
-   "summary": "Maruti Suzuki shares rose sharply on November 19, 2026, as part of a broader rally in the auto sector. This move happened even though the wider auto sector index had fallen in the previous five sessions.",
-   "why": "A sudden rise in share price can increase the value of your holdings, but it may also reflect short-term market excitement rather than long-term company performance.",
-   "upside": "Investors are currently showing optimism about the auto industry, which has pushed stock prices higher.",
-   "downside": "Sector-specific rallies can reverse quickly, meaning the recent price gains could disappear soon.",
-   "watch": [
-    "Whether the auto sector rally continues or reverses in the coming days.",
-    "How Maruti Suzuki's stock performs compared to the rest of the auto sector index.",
-    "Any new news about car and bike companies that might explain the price movement."
-   ],
-   "about": "Maruti Suzuki is a major automobile company listed in India's Nifty 50 index.",
-   "basis": "d8893001a666",
-   "items": 2,
-   "updated": "2026-11-19T11:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "BHARATFORG": {

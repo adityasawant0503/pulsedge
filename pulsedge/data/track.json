@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T13:12:19+05:30",
+ "updated": "2026-11-19T13:16:41+05:30",
  "summary": {
-  "calls": 1806,
-  "scored_calls": 639,
+  "calls": 1808,
+  "scored_calls": 641,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,32 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "db1094aa3b8120fd",
+   "symbol": "HYUNDAI",
+   "time": "2026-11-19T13:09:25+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Auto stocks hit the accelerator! Nifty Auto jumps 4%; Maruti, M&M, Hyundai lead the rally | What's behind the surge?",
+   "url": "https://www.livemint.com/market/stock-market-news/auto-stocks-hit-the-accelerator-nifty-auto-jumps-4-maruti-m-m-tata-motors-pv-lead-rally-whats-behind-the-surg-11795070748708.html",
+   "entry_date": "2026-11-18",
+   "entry": 2097.5
+  },
+  {
+   "id": "db1094aa3b8120fd",
+   "symbol": "M&M",
+   "time": "2026-11-19T13:09:25+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Auto stocks hit the accelerator! Nifty Auto jumps 4%; Maruti, M&M, Hyundai lead the rally | What's behind the surge?",
+   "url": "https://www.livemint.com/market/stock-market-news/auto-stocks-hit-the-accelerator-nifty-auto-jumps-4-maruti-m-m-tata-motors-pv-lead-rally-whats-behind-the-surg-11795070748708.html",
+   "entry_date": "2026-11-18",
+   "entry": 3359.1
+  },
   {
    "id": "d5a74dafcedc469d",
    "symbol": "ICICIAMC",
