@@ -1,14 +1,14 @@
 {
- "updated": "2026-11-19T15:46:54+05:30",
+ "updated": "2026-11-19T16:01:23+05:30",
  "source": "NSE (bulk and block deals, provisional FII/DII cash, participant-wise open interest); NSDL (daily FPI investment, when NSE's report can't be reached)",
  "cash": {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "source": "NSDL",
   "dii": null,
   "fii": {
-   "buy": 26444.96,
-   "sell": 15179.28,
-   "net": 11265.68
+   "buy": 21469.97,
+   "sell": 12740.08,
+   "net": 8729.89
   }
  },
  "cash_history": [
@@ -27,6 +27,12 @@
   {
    "date": "2026-11-18",
    "fii": 11265.68,
+   "dii": null,
+   "src": "NSDL"
+  },
+  {
+   "date": "2026-11-19",
+   "fii": 8729.89,
    "dii": null,
    "src": "NSDL"
   }
@@ -1558,7 +1564,7 @@
   "nifty_5d": -0.11,
   "fii_long_now": 32.5,
   "fii_long_5d_ago": 31.0,
-  "fii_cash_5d": 21938.19,
+  "fii_cash_5d": 30668.08,
   "dii_cash_5d": null
  }
 }

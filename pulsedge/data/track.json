@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T15:47:24+05:30",
+ "updated": "2026-11-19T16:01:29+05:30",
  "summary": {
-  "calls": 1841,
-  "scored_calls": 674,
+  "calls": 1842,
+  "scored_calls": 675,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "1a0d0166a739ed5a",
+   "symbol": "NLCINDIA",
+   "time": "2026-11-19T15:54:36+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "NLC INDIA LTD: NLC INDIA RENEWABLES LIMITED FILES DRAFT RED HERRING PROSPECTUS FOR IPO; FRESH ISSUE OF EQUITY SHARES AGGREGATING UP TO ₹33,000 MILLION AND OFFER",
+   "url": "https://t.me/Indiaredboxglobal/9704",
+   "entry_date": "2026-11-18",
+   "entry": 226.89
+  },
   {
    "id": "1c88b360f2aa5a3d",
    "symbol": "BSE",
