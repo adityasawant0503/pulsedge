@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T13:45:59+05:30",
+ "updated": "2026-11-19T14:02:45+05:30",
  "summary": {
-  "calls": 1814,
-  "scored_calls": 647,
+  "calls": 1820,
+  "scored_calls": 653,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,84 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "689b6ef3992cc901",
+   "symbol": "OIL",
+   "time": "2026-11-19T13:59:21+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "INDIA OIL MINISTER SAYS UNIQUELY POSITIONED TO SUPPLY SUSTAINABLE AVIATION FUEL",
+   "url": "https://t.me/Indiaredboxglobal/9695",
+   "entry_date": "2026-11-18",
+   "entry": 435.5
+  },
+  {
+   "id": "d88054cf8d07d3f7",
+   "symbol": "OIL",
+   "time": "2026-11-19T13:54:33+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "INDIA OIL MINISTER SAYS INDIA'S PETCHEM DEMAND IS SEEN RISING TO 55M T BY 2030",
+   "url": "https://t.me/Indiaredboxglobal/9692",
+   "entry_date": "2026-11-18",
+   "entry": 435.5
+  },
+  {
+   "id": "60c55f335013c52c",
+   "symbol": "MRF",
+   "time": "2026-11-19T13:49:04+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "MRF faces a long road to margin recovery as costs stay high",
+   "url": "https://www.livemint.com/market/mark-to-market/mrf-share-price-margin-pressure-raw-material-costs-tyre-industry-11795072540789.html",
+   "entry_date": "2026-11-18",
+   "entry": 128845.0
+  },
+  {
+   "id": "386b960d1d55ed32",
+   "symbol": "BDL",
+   "time": "2026-11-19T13:47:25+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "INDIA AND JAPAN ARE EXPECTED TO FINALISE AN ARRANGEMENT TODAY ALLOWING JAPANESE FORCES TO USE INDIAN MISSILE TEST RANGES FOR TRIALS OF LONG-RANGE WEAPONS, DEEPE",
+   "url": "https://t.me/Indiaredboxglobal/9690",
+   "entry_date": "2026-11-18",
+   "entry": 1013.4
+  },
+  {
+   "id": "4272257676eb04ef",
+   "symbol": "BRIGADE",
+   "time": "2026-11-19T13:46:00+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "BRIGADE ENTERPRISES: BRIGADE LAUNCHES 40-ACRE INTEGRATED DEVELOPMENT IN WHITEFIELD–KADUGODI, BENGALURU'S",
+   "url": "https://t.me/Indiaredboxglobal/9689",
+   "entry_date": "2026-11-18",
+   "entry": 565.95
+  },
+  {
+   "id": "e304a4374821e33b",
+   "symbol": "ABB",
+   "time": "2026-11-19T13:44:03+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "ABB India’s margin recovery in spotlight amid record order inflow",
+   "url": "https://www.livemint.com/market/mark-to-market/abb-india-record-order-inflow-margin-pressure-stock-outlook-11795069332409.html",
+   "entry_date": "2026-11-18",
+   "entry": 6851.0
+  },
   {
    "id": "3ffe1d658bccd745",
    "symbol": "ALKEM",
