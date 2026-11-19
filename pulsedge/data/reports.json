@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T12:01+05:30",
+ "updated": "2026-11-19T12:15+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -443,6 +443,22 @@
    "updated": "2026-11-19T10:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "NBCC": {
+   "summary": "NBCC won a new construction contract worth about 85 crore rupees and announced similar work orders of roughly the same value. The orders add to the company’s revenue pipeline.",
+   "why": "Shareholders care because additional revenue can lift earnings and support the share price.",
+   "upside": "If the project is completed on schedule and profitably, earnings could improve.",
+   "downside": "Execution delays or the modest size of the order relative to the company could limit the impact.",
+   "watch": [
+    "Progress on the 85 crore contract execution",
+    "Any further order wins or larger projects",
+    "Changes in the overall order book size"
+   ],
+   "about": "NBCC (India) Ltd is a construction company that undertakes infrastructure projects.",
+   "basis": "9e193188b829",
+   "items": 2,
+   "updated": "2026-11-19T12:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "URBANCO": {
    "summary": "Urban Company raised ₹2,500 crore through a qualified institutional placement (QIP) that was oversubscribed six times, attracting about ₹15,300 crore in bids.",
    "why": "The capital can fund expansion or acquisitions, which could affect future earnings for shareholders.",
@@ -473,22 +489,6 @@
    "basis": "45e9046d3767",
    "items": 2,
    "updated": "2026-11-17T12:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "NBCC": {
-   "summary": "NBCC (India) Ltd. recently won a new construction contract worth 85 crore rupees. This adds to the company's order book and expected future revenue.",
-   "why": "For shareholders, new contracts mean the company has more work to do, which can lead to higher profits over time.",
-   "upside": "If the project is completed on schedule, it will add to the company's income and earnings.",
-   "downside": "Delays in building the project could push back when the money comes in.",
-   "watch": [
-    "Updates on the progress of the new 85 crore rupee project",
-    "Any news about delays or challenges in construction",
-    "Future announcements about new contracts"
-   ],
-   "about": "NBCC is a construction company listed on the Indian stock market.",
-   "basis": "bc773e1514a6",
-   "items": 1,
-   "updated": "2026-11-19T12:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "RVNL": {
@@ -618,38 +618,6 @@
    "updated": "2026-11-19T11:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "TATACHEM": {
-   "summary": "Tata Chemicals shares have jumped about 11% in three days as market chatter links the rally to possible Tata Group IPO plans. The company has denied any knowledge of such talks and the stock exchange has asked for clarification, leaving the price move uncertain.",
-   "why": "Shareholders could see the stock rise if a Tata Group listing materialises, but the price could also fall if the speculation fades or the IPO is delayed.",
-   "upside": "A confirmed Tata Group IPO could lift Tata Chemicals’ share value further.",
-   "downside": "If the IPO is delayed or cancelled, the recent rally may reverse.",
-   "watch": [
-    "Updates on the Tata Sons IPO rumors",
-    "Any official clarification from Tata Chemicals to the exchange",
-    "Announcements from Tata Group about a potential listing"
-   ],
-   "about": "Tata Chemicals Ltd. manufactures and sells chemicals and related products.",
-   "basis": "f597fcc69def",
-   "items": 5,
-   "updated": "2026-11-19T11:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "TMCV": {
-   "summary": "Tata Motors saw its stock close above its long-term average, hinting at a potential recovery. At the same time, the company is dealing with struggles for its JLR brand in China and has been asked by the stock exchange to clarify news about a possible Tata Sons public offering.",
-   "why": "These mixed events matter because they can shift investor sentiment and change the value of the company's shares.",
-   "upside": "The stock might be starting to recover from a long period of decline, and strong sales in other markets could offset troubles in China.",
-   "downside": "Struggles in China could weigh on the share price, and a delayed or cancelled public offering might cause the stock to correct from its recent rally.",
-   "watch": [
-    "Trading volume to see if the stock's recent price rise is real",
-    "Updates on JLR sales in China and other markets",
-    "The company's official response to the stock exchange regarding the public offering news"
-   ],
-   "about": "Tata Motors Ltd. is a car company included in the Nifty 500 index of India's largest listed companies.",
-   "basis": "67015767faa6",
-   "items": 3,
-   "updated": "2026-11-18T19:23+05:30",
-   "model": "gemini-flash-lite-latest"
-  },
   "FIRSTCRY": {
    "summary": "Brainbees Solutions Ltd. has completed the acquisition of Swara Corp and updated its acquisition agreement. Q2 results show a 75% reduction in net loss and a revenue jump, leading to a 13% share rally.",
    "why": "Shareholders should note that the acquisition could change capital deployment and growth prospects, while the improved Q2 performance indicates a healthier business, though losses remain.",
@@ -666,20 +634,20 @@
    "updated": "2026-11-18T03:28+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "TATAINVEST": {
-   "summary": "The stock exchange has asked Tata Investment Corporation Ltd. to clarify recent news about a possible Tata Sons IPO, and the shares have rallied up to 9% after an RBI nudge. The financial services sector has also risen, gaining 0.6% in the last session and 2.7% over five sessions.",
-   "why": "Investors watch the IPO news because it could affect the value of the parent company's shares, and the recent rally could reverse if the offering is delayed or cancelled.",
-   "upside": "If the Tata Sons IPO proceeds as expected, it could support further gains for Tata Investment Corporation's stock.",
-   "downside": "If the IPO is delayed or cancelled, the stock could correct from its recent rally.",
+  "TATACHEM": {
+   "summary": "Tata Chemicals shares jumped about 11% in three days as market chatter linked the rally to a possible Tata Sons IPO. The company said it has no knowledge of any IPO talks, and the stock exchange has asked it to clarify the rumors. The hype could lift the stock, but the rally may be fragile if the listing does not materialise soon.",
+   "why": "Investors care because a Tata Sons IPO could raise the value of Tata Chemicals shares, while a loss of hype could push the price down.",
+   "upside": "If a Tata Sons IPO is confirmed, the share price could benefit further.",
+   "downside": "If the IPO does not happen or the rumors fade, the recent rally could reverse.",
    "watch": [
-    "Outcome of the exchange's clarification request",
-    "Official announcement on the Tata Sons IPO",
-    "Further RBI or regulatory actions affecting the company"
+    "Official Tata Sons IPO announcement",
+    "Tata Chemicals' clarification to the exchange",
+    "Subsequent price movement after the denial"
    ],
-   "about": "Tata Investment Corporation Ltd. is an investment company that manages a portfolio of listed securities.",
-   "basis": "03ce51d8a132",
+   "about": "Tata Chemicals Ltd. is an Indian chemicals company.",
+   "basis": "ebe2ee93397f",
    "items": 3,
-   "updated": "2026-11-17T11:17+05:30",
+   "updated": "2026-11-19T12:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "SUPREMEIND": {
@@ -744,6 +712,21 @@
    "items": 1,
    "updated": "2026-11-19T11:15+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "TATAINVEST": {
+   "summary": "Tata Investment Corporation shares recently rallied up to 9% following news about a potential public offering by Tata Sons. The stock exchange has asked Tata Chemicals to clarify these reports.",
+   "why": "This news matters because a public offering could change the value of the parent company's shares and impact investors.",
+   "upside": "If the public offering plans move forward successfully, the recent positive momentum for the stock could continue.",
+   "downside": "If the public offering is delayed or cancelled, the stock might correct from its recent rally.",
+   "watch": [
+    "Clarifications from the company regarding the public offering news",
+    "Movements in the broader financial services sector index"
+   ],
+   "about": "Tata Investment Corporation Ltd. is a financial services company included in the Nifty 500 index.",
+   "basis": "285c8cdd82da",
+   "items": 1,
+   "updated": "2026-11-19T12:15+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "TITAN": {
    "summary": "Titan shares fell over 4-5% on Nov 18 as the broader market and consumer‑durables sector slipped, with the Nifty Consumer Durables index down 3% and the broader indices lower.",
@@ -937,22 +920,6 @@
    "updated": "2026-11-19T12:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "COALINDIA": {
-   "summary": "Coal India’s subsidiary Mahanadi Coalfields is launching an IPO, with shares being offered to the public and early interest appearing mixed.",
-   "why": "The offering could change the value of Coal India’s shares through possible dilution or cash inflow.",
-   "upside": "If the IPO is well‑received, Coal India could receive cash and a higher valuation for its remaining business.",
-   "downside": "Weak demand or oversubscription could create selling pressure and dilute existing shareholders.",
-   "watch": [
-    "IPO subscription levels and grey‑market premium",
-    "Impact on Coal India share price after the listing",
-    "Sector index performance and broader market sentiment"
-   ],
-   "about": "Coal India Ltd is India’s largest coal mining company, a major player in the Oil & Gas & Consumable Fuels sector.",
-   "basis": "d1e993a4988d",
-   "items": 8,
-   "updated": "2026-11-19T10:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "PRESTIGE": {
    "summary": "Prestige Estates Projects Ltd. is actively expanding its business, announcing the acquisition of a 50% stake in Advent Convention and Hotels International and increasing its ownership in the Prestige Vaishnaoi Projects to 42.83%. It also plans to set up two wholly‑owned subsidiaries.",
    "why": "These moves could affect the company’s earnings and cash position, making them important for current shareholders.",
@@ -985,22 +952,6 @@
    "updated": "2026-11-19T11:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "TCS": {
-   "summary": "PulsEdge flagged that TCS shares are currently under pressure, with a small dip today and a 26% decline so far this year, while the broader IT index has also slipped. The company was recently highlighted as a leader in agentic application management services by HFS Research.",
-   "why": "The share price movement reflects market sentiment that can affect the value of existing holdings, and the research ranking could influence future client wins.",
-   "upside": "If the leader ranking translates into new contracts, the stock could benefit from improved revenue outlook.",
-   "downside": "Continued market weakness or negative news could push the share price lower.",
-   "watch": [
-    "Daily price trend of TCS after the recent dip",
-    "Performance of the IT sector index over the next sessions",
-    "Any further analyst or research recognitions that could affect sentiment"
-   ],
-   "about": "Tata Consultancy Services Ltd. provides IT services, consulting, and business solutions.",
-   "basis": "a6bcaeb354f8",
-   "items": 4,
-   "updated": "2026-11-19T11:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "M&M": {
    "summary": "PulsEdge flagged a recent rally where Mahindra & Mahindra (M&M) and other auto stocks rose up to 5%, but the auto sector index has slipped 1.4% in the last session and 4% over the past five sessions.",
    "why": "Share price moves for M&M tend to follow the broader auto sector, so sector swings directly affect shareholders.",
@@ -1031,6 +982,22 @@
    "basis": "bd1d532906ab",
    "items": 3,
    "updated": "2026-11-19T11:15+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "TCS": {
+   "summary": "TCS shares have fallen by 26% in 2026, despite the company reporting good business results. Recent trading shows a minor setback, with the stock price slightly down in the latest session.",
+   "why": "This matters to shareholders because the significant drop in value is driven by broader market trends rather than poor company performance, which may affect the overall worth of their investment.",
+   "upside": "The company has reported good business results, which provides a fundamental base for the stock even as its price falls.",
+   "downside": "The stock may continue to move down or stay flat if broader market weakness persists.",
+   "watch": [
+    "Whether the recent minor price drop continues or stabilizes",
+    "The overall trend of the IT sector index",
+    "Changes in investor sentiment regarding IT stocks"
+   ],
+   "about": "Tata Consultancy Services is a large software company in the Information Technology sector.",
+   "basis": "70369ad9dcc3",
+   "items": 3,
+   "updated": "2026-11-19T12:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "HINDALCO": {
@@ -1464,6 +1431,22 @@
    "updated": "2026-11-18T08:46+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "COALINDIA": {
+   "summary": "Coal India is currently in the news because its subsidiary, Mahanadi Coalfields, is selling shares to the public for the first time. Early signs suggest that investor interest in this new sale is lower than expected, with the grey market premium remaining low.",
+   "why": "This matters to you because the sale involves selling a part of a company you may already own, which can change how much the parent company is worth. If investors are not excited about the new shares, they might worry about the value of the main Coal India stock.",
+   "upside": "The sale could bring in cash for Coal India and help show the true value of its assets to the market.",
+   "downside": "If the new shares are not bought eagerly, it might make investors nervous and lead to selling pressure on Coal India's own stock.",
+   "watch": [
+    "How the Mahanadi Coalfields IPO performs on its first day of trading.",
+    "Whether Coal India's stock price drops due to the new shares being sold.",
+    "Any changes in government rules that affect coal prices or taxes."
+   ],
+   "about": "Coal India is one of India's largest listed companies in the oil, gas, and fuel sector.",
+   "basis": "8da940c35502",
+   "items": 7,
+   "updated": "2026-11-19T12:15+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "NMDC": {
    "summary": "NMDC is facing pressure from falling global metal prices, which has caused its sector to drop significantly over the last week. At the same time, a contractor won sub-contracts for civil work on NMDC township projects, indicating ongoing activity at the company.",
    "why": "Lower metal prices can reduce the company's profits, which may affect the value of its shares. However, continued project work suggests the company is still executing its plans.",
@@ -1511,6 +1494,22 @@
    "items": 2,
    "updated": "2026-11-19T08:15+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "TMCV": {
+   "summary": "Tata Motors' stock closed above its 200‑day moving average, hinting at a possible recovery after a long decline. At the same time, Jaguar Land Rover's (JLR) weak performance in China is seen as a drag on the group.",
+   "why": "Share price trends and JLR's China sales can directly impact the company's earnings and investor sentiment.",
+   "upside": "If the price breakout is supported by strong volume and other markets offset JLR's China weakness, the share could gain further.",
+   "downside": "A false breakout on low volume or continued JLR struggles in China could pull the share lower.",
+   "watch": [
+    "Trading volume behind the 200‑DMA price move",
+    "JLR's sales and market share in China",
+    "Performance of Tata Motors' other regional markets"
+   ],
+   "about": "Tata Motors manufactures passenger cars, commercial vehicles and trucks.",
+   "basis": "3309900b14ff",
+   "items": 2,
+   "updated": "2026-11-19T12:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "ULTRACEMCO": {
    "summary": "UltraTech Cement announced a credit rating update to the exchange. An investment advisor also highlighted the stock as one of three top picks in a recent note.",
