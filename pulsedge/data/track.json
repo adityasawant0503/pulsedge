@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T14:32:26+05:30",
+ "updated": "2026-11-19T14:47:30+05:30",
  "summary": {
-  "calls": 1828,
-  "scored_calls": 661,
+  "calls": 1830,
+  "scored_calls": 663,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "05721b7bd42e22ef",
+   "symbol": "ADANIENSOL",
+   "time": "2026-11-19T14:28:55+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Adani Energy Solutions Limited: Adani Energy Solutions Limited has informed the Exchange regarding a press release dated November 19, 2026, titled \"Adani Energy",
+   "url": "https://nsearchives.nseindia.com/corporate/ADANITRANS_19112026142813_AESL_Press_Release_Pirpainti_Transmission_Proj_win_.pdf",
+   "entry_date": "2026-11-18",
+   "entry": 1490.0
+  },
   {
    "id": "6208dced900e1a1c",
    "symbol": "ADANIENSOL",
@@ -485,6 +498,19 @@
    "scored": true,
    "source": "ET Markets",
    "headline": "Gold prices fall marginally, silver rises up to 1% on MCX: Gold Silver Rates Live Updates",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/live-updates-gold-rate-today-19th-november-24k-22k-20k-18-carat-mcx-gold-silver-price-in-delhi-hyderabad-chennai-bengaluru-citywise/liveblog/135979606.cms",
+   "entry_date": "2026-11-18",
+   "entry": 3619.0
+  },
+  {
+   "id": "17277829a2294ee3",
+   "symbol": "MCX",
+   "time": "2026-11-19T11:28:41+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Gold Rates Live Updates: Gold prices fall marginally, silver rises up to 0.5% on MCX",
    "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/live-updates-gold-rate-today-19th-november-24k-22k-20k-18-carat-mcx-gold-silver-price-in-delhi-hyderabad-chennai-bengaluru-citywise/liveblog/135979606.cms",
    "entry_date": "2026-11-18",
    "entry": 3619.0

@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T14:32+05:30",
+ "updated": "2026-11-19T14:47+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a mixed day for the Indian stock market on Thursday, 19 November 2026, as major indexes stayed relatively flat. Key events included a serious US regulatory warning for Alkem Laboratories and a drop in digital payment stocks due to a fee rule delay. Meanwhile, companies like LT Foods and MIDHANI made news with major business updates and new orders. Sector performance varied widely, with PSU Banks leading the gains while Consumer Durables saw sharp drops.",
+  "summary": "The market stayed flat on Thursday, with the Sensex holding steady and the Nifty trading just below 25,200. Payment stocks like Paytm and Pine Labs fell sharply because a new fee rule for digital payments is being delayed. In other news, Alkem Laboratories received a serious warning from US regulators regarding one of its key factories. Meanwhile, Adani Energy Solutions announced it won a new power transmission project in Bihar.",
   "themes": [
-   "Regulatory hurdles and fee delays impacting healthcare and fintech sectors",
-   "Corporate updates involving acquisitions, new orders, and leadership changes",
-   "Mixed sector performance with strong gains in PSU Banks contrasting with heavy losses in Consumer Durables"
+   "Payment stocks dropped due to delays in new government fee rules.",
+   "Regulatory risks emerged for Alkem after a US factory warning.",
+   "Energy and infrastructure firms reported new project wins."
   ],
   "watch": [
-   "Alkem Laboratories' updates regarding its US exports from the Daman facility",
-   "Dalmia Bharat's upcoming board meeting on November 23 to consider a share buyback proposal",
-   "Further developments on digital payment fee rules and their impact on fintech companies"
+   "How the delay in payment fees affects future earnings for Paytm and Pine Labs.",
+   "Any updates on Alkem's US factory and its impact on exports.",
+   "Progress on Adani Energy's new Bihar transmission project."
   ],
   "date": "2026-11-19",
-  "basis": "355917217cc2",
-  "updated": "2026-11-19T14:01+05:30",
-  "model": "gemini-flash-lite-latest",
-  "items": 100
+  "basis": "00bfb35a3091",
+  "updated": "2026-11-19T14:47+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 112
  },
  "stocks": {
   "ALKEM": {
@@ -219,6 +219,22 @@
    "updated": "2026-11-19T11:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "ADANIENSOL": {
+   "summary": "Adani Energy Solutions announced it won a transmission project in Bihar that will add 881 km of lines and 3,160 MVA capacity, with an estimated annual tariff revenue of about ₹500 crore. The sector index has been slipping, down 0.5% in the last session and 1.5% over five sessions.",
+   "why": "The new contract could increase future earnings for shareholders, but any delays or cost overruns could hurt profitability.",
+   "upside": "On‑time completion could deliver the projected ₹500 crore of annual tariff revenue.",
+   "downside": "Project execution delays or cost overruns could reduce expected earnings.",
+   "watch": [
+    "Progress on the Bihar transmission project timeline",
+    "Cost control and any overruns on the project",
+    "Movement of the Energy sector index"
+   ],
+   "about": "Adani Energy Solutions builds and operates power transmission infrastructure.",
+   "basis": "6332efaf7dc1",
+   "items": 3,
+   "updated": "2026-11-19T14:47+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "LTFOODS": {
    "summary": "LT Foods announced it will buy a US-based food company called MK Foods Holdings for about ₹54.2 crore. This news caused the company's share price to rise sharply, breaking a recent losing streak.",
    "why": "This matters to shareholders because buying another business can help the company grow faster and reach new customers. The stock price reacted strongly to this announcement, showing that investors are paying close attention to this move.",
@@ -234,22 +250,6 @@
    "items": 3,
    "updated": "2026-11-19T12:01+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "ADANIENSOL": {
-   "summary": "Adani Energy Solutions announced a new 881‑km transmission project expected to generate about ₹500 crore in annual tariff revenue and won a Bihar contract to evacuate 2,400 MW from a planned plant.",
-   "why": "The projects could increase earnings and support long‑term growth, but they also carry execution risk.",
-   "upside": "If the transmission lines are completed on schedule and within budget, the expected tariff revenue will boost earnings.",
-   "downside": "Delays or cost overruns on the projects could hurt profitability.",
-   "watch": [
-    "Progress on the 881 km transmission project",
-    "Execution of the Bihar 2,400 MW evacuation contract",
-    "Movement of the Energy sector index"
-   ],
-   "about": "Adani Energy Solutions builds and operates power transmission infrastructure.",
-   "basis": "2c054ee15b8d",
-   "items": 2,
-   "updated": "2026-11-19T14:32+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "MANAPPURAM": {
    "summary": "Manappuram Finance shares fell about 4‑5% as gold prices dropped. The lower gold price reduces the value of the collateral that backs its loans.",
@@ -906,20 +906,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is facing mixed signals as US crude prices fell to $83.26 a barrel, while government officials highlighted India's potential in sustainable aviation fuel and rising petrochemical demand. The sector index has dipped slightly over the last week, reflecting some caution in the market.",
-   "why": "Lower crude prices can reduce the profit margin on every liter of fuel the company sells, which may affect its earnings. However, long-term growth in demand for petrochemicals and new fuel types could support the business later.",
-   "upside": "Government statements suggest India is well-positioned to grow in sustainable aviation fuel and petrochemicals, which could open new revenue streams for the company.",
-   "downside": "Recent drops in crude oil prices and supply disruptions in the Strait of Hormuz create uncertainty that could hurt short-term profits and stock stability.",
+   "summary": "Oil India Ltd. (OIL) is in the news as the Indian oil minister highlighted the country’s potential to supply sustainable aviation fuel and noted a projected rise in petrochemical demand by 2030. Recent headlines also mention oil price movements and supply disruptions in the Strait of Hormuz, which could affect the company’s earnings. The sector index has slipped slightly, reflecting broader market sentiment.",
+   "why": "These developments could influence OIL’s revenue streams and profitability, as higher demand and new product areas may boost sales, while oil price swings and supply risks could impact costs.",
+   "upside": "Growth in sustainable aviation fuel and rising petrochemical demand could benefit the company.",
+   "downside": "Oil price volatility and potential supply disruptions could hurt earnings.",
    "watch": [
-    "Whether the government's plans for sustainable aviation fuel turn into specific projects with timelines.",
-    "How crude oil prices stabilize after the recent drop and tanker incidents.",
-    "The actual growth in India's petrochemical demand compared to the 2030 projections."
+    "Oil price changes in the next session",
+    "Any new details on sustainable aviation fuel projects",
+    "Updates on supply disruptions in the Strait of Hormuz"
    ],
-   "about": "Oil India Ltd. is a company in the Oil Gas & Consumable Fuels sector that is part of India's 500 largest listed companies.",
-   "basis": "d67aad57b23b",
-   "items": 15,
-   "updated": "2026-11-19T14:01+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "",
+   "basis": "6a4686924c84",
+   "items": 14,
+   "updated": "2026-11-19T14:47+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "PRESTIGE": {
    "summary": "Prestige Estates Projects Ltd. is actively expanding its business, announcing the acquisition of a 50% stake in Advent Convention and Hotels International and increasing its ownership in the Prestige Vaishnaoi Projects to 42.83%. It also plans to set up two wholly‑owned subsidiaries.",
@@ -1655,6 +1655,22 @@
    "items": 2,
    "updated": "2026-11-18T11:15+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "MCX": {
+   "summary": "Gold prices slipped a little while silver rose on MCX. Small changes in metal prices can shift the exchange’s trading volumes.",
+   "why": "Trading volume drives the fees MCX earns, so price moves matter to shareholders.",
+   "upside": "Higher volatility in metal prices could boost trading activity and fee income.",
+   "downside": "If metal price moves reverse, trading volume may fall and affect earnings.",
+   "watch": [
+    "Gold price direction",
+    "Silver price direction",
+    "Financial sector index performance"
+   ],
+   "about": "MCX runs India’s commodity exchange, where traders buy and sell items like gold and silver.",
+   "basis": "ae33298b5815",
+   "items": 2,
+   "updated": "2026-11-19T14:47+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "PHOENIXLTD": {
    "summary": "Phoenix Mills announced the allotment of 9,734 new shares. This move may slightly change the company's ownership structure.",
