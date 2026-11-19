@@ -600,12 +600,20 @@ def review_act(items, cands=None):
             + f"  (alert: {x['call'].upper()} {', '.join(t['symbol'] for t in x.get('tickers') or []) or 'no stock named'})"
             for n, x in enumerate(act)]
     for url, key, model in cands:
-        try:
-            out = ask_json(url, key, model, REVIEW, "Act alerts:\n" + "\n".join(rows))
-            verdict = {int(v["i"]): v for v in out.get("items", []) if isinstance(v, dict) and "i" in v}
-        except Exception as e:
-            log(f"  second check, {model}: {brief(str(e))}")
-            continue
+        verdict = None
+        for attempt in (1, 2):
+            try:
+                out = ask_json(url, key, model, REVIEW, "Act alerts:\n" + "\n".join(rows))
+                verdict = {int(v["i"]): v for v in out.get("items", []) if isinstance(v, dict) and "i" in v}
+                break
+            except Exception as e:
+                msg = str(e)
+                log(f"  second check, {model}: {brief(msg)}")
+                # over a per-minute limit: wait and ask the same model again, so one model judges every alert
+                if attempt == 1 and msg.startswith("HTTP 429") and not DAILY.search(msg):
+                    time.sleep(min(15.0, retry_after(msg, 10)))
+                    continue
+                break
         if not verdict:
             continue
         down = 0
