@@ -1,7 +1,46 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-19T10:37:08+05:30",
+ "updated": "2026-11-19T10:53:08+05:30",
  "items": [
+  {
+   "id": "c1eb7cb21e2ea975",
+   "time": "2026-11-19T10:52:08+05:30",
+   "headline": "ARMEE INFOTECH: CO SIGNS MOU WITH MSEDCL FOR 135 MW SOLAR",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9651",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "SOLARINDS",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Renewable Energy",
+    "Power"
+   ],
+   "impact": 45,
+   "confidence": 60,
+   "category": "Corporate Announcement",
+   "action": "Monitor if the MOU converts into firm orders and check for similar announcements from other solar EPC players.",
+   "reason": [
+    "Large order value (Rs 1,629 Cr) signals strong demand for solar EPC services.",
+    "MOU is non-binding, so revenue recognition is not guaranteed yet."
+   ],
+   "risks": [
+    "MOU may not lead to final contracts.",
+    "Execution delays or cost overruns in large projects."
+   ],
+   "plain": "A solar company signed a non-binding agreement to build a large power project in Maharashtra.",
+   "why": "It shows strong demand for their services, but the deal is not final yet, so it is a positive sign rather than a guaranteed win.",
+   "check": "Look for news about the final contract signing or revenue booking in the next few months.",
+   "original": "POWER PROJECT IN MAHARASHTRA; AGGREGATE ORDER VALUE OF RS 1,629 CRORE",
+   "latency": 60.1,
+   "lane": "fast"
+  },
   {
    "id": "0048bcaf0fdf17a0",
    "time": "2026-11-19T10:35:26+05:30",
@@ -1510,69 +1549,6 @@
    "check": "",
    "original": "TATA STEEL: CEO SAYS IMPORT COKING COAL MOSTLY FROM AUSTRALIA, LITTLE FROM INDONESIA",
    "latency": 76.2,
-   "lane": "fast"
-  },
-  {
-   "id": "1c030d6bca7fc107",
-   "time": "2026-11-18T10:45:14+05:30",
-   "headline": "AUSTRALIAN PREMIUM SOLAR: CO. PROJECTED CAGR OF 20- 25% FOR NEXT 3 YEARS",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9529",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "SOLARINDS",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Renewable Energy"
-   ],
-   "impact": 65,
-   "confidence": 70,
-   "category": "Earnings/Guidance",
-   "action": "Monitor if the stock holds above the opening price as the market digests the growth projection.",
-   "reason": [
-    "Management projects 20-25% CAGR for the next 3 years.",
-    "Positive outlook for the solar segment."
-   ],
-   "risks": [
-    "Execution risk in achieving projected growth.",
-    "Market may have already priced in the optimism."
-   ],
-   "plain": "The company expects its business to grow by 20 to 25 percent every year for the next three years.",
-   "why": "This suggests the company is confident in its future sales, which is generally good news for shareholders.",
-   "check": "Look at the company's recent quarterly results to see if sales are already growing.",
-   "original": "AUSTRALIAN PREMIUM SOLAR: CO. PROJECTED CAGR OF 20- 25% FOR NEXT 3 YEARS",
-   "latency": 70.0,
-   "lane": "fast"
-  },
-  {
-   "id": "d8d839a56295a36d",
-   "time": "2026-11-18T10:37:44+05:30",
-   "headline": "TRUMP: HAVE JUST CONSUMATED A TRADE DEAL WITH PHILIPPINES, MAGNIFICENT DEAL",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9528",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "ignore",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "A headline claimed a trade deal was made with the Philippines, but no company is mentioned.",
-   "why": "No listed company is identified, so it likely has no direct effect on stock prices.",
-   "check": "",
-   "original": "TRUMP: HAVE JUST CONSUMATED A TRADE DEAL WITH PHILIPPINES, MAGNIFICENT DEAL",
-   "latency": 40.4,
    "lane": "fast"
   }
  ]
