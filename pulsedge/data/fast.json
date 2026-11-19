@@ -1,7 +1,50 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-19T14:10:07+05:30",
+ "updated": "2026-11-19T14:26:32+05:30",
  "items": [
+  {
+   "id": "45488a26457fc002",
+   "time": "2026-11-19T14:24:16+05:30",
+   "headline": "ADANI ENERGY SOLUTIONS: WINS BIHAR TRANSMISSION PROJECT TO EVACUATE 2,400 MW FROM ADANI POWER'S PLANNED PIRPAINTI PLANT",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9697",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "ADANIENSOL",
+     "direction": "up"
+    },
+    {
+     "symbol": "ADANIPOWER",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Energy",
+    "Power"
+   ],
+   "impact": 45,
+   "confidence": 60,
+   "category": "Business Development",
+   "action": "Monitor order book updates and execution timelines for the Bihar transmission project.",
+   "reason": [
+    "Winning a 2,400 MW transmission project secures significant future revenue for Adani Energy Solutions.",
+    "The project facilitates power evacuation for Adani Power's planned plant, supporting its expansion."
+   ],
+   "risks": [
+    "Execution delays or cost overruns in large infrastructure projects.",
+    "Regulatory or policy changes affecting power transmission tariffs."
+   ],
+   "plain": "Adani Energy Solutions won a contract to build power lines for a new plant in Bihar.",
+   "why": "This brings new business and helps the power company sell its electricity, which is good for long-term growth.",
+   "check": "Look for official announcements about the project's start date and total cost.",
+   "original": "ADANI ENERGY SOLUTIONS: WINS BIHAR TRANSMISSION PROJECT TO EVACUATE 2,400 MW FROM ADANI POWER'S PLANNED PIRPAINTI PLANT",
+   "latency": 136.3,
+   "lane": "fast"
+  },
   {
    "id": "a914eb36d6acacc1",
    "time": "2026-11-19T14:08:09+05:30",
@@ -1818,88 +1861,6 @@
    "check": "Look for the next day’s trading volume and price movement.",
    "original": "ARISINFRA SOLUTIONS LTD: CO PROMOTER PURCHASES 5,00,000 EQUITY SHARES ON NOVEMBER 17",
    "latency": 103.9,
-   "lane": "fast"
-  },
-  {
-   "id": "2386dd6020d63729",
-   "time": "2026-11-18T14:25:47+05:30",
-   "headline": "INDIA AND THE PHILIPPINES ARE DISCUSSING A BROADER DEFENCE AND STRATEGIC PARTNERSHIP COVERING AKASH AND PINAKA MISSILE DEALS, BRAHMOS COOPERATION, A NEW DEFENCE PACT AND SPACE COLLABORATION.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9562",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "positional",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Defence"
-   ],
-   "impact": 0,
-   "confidence": 0,
-   "category": "Geopolitics",
-   "action": "No specific stock action required as no listed entity is named.",
-   "reason": [
-    "No specific Indian listed company is mentioned in the headline.",
-    "Broad diplomatic discussions do not provide immediate, actionable trading signals for specific stocks."
-   ],
-   "risks": [
-    "Speculative trading in defence stocks based on vague diplomatic news can lead to losses."
-   ],
-   "plain": "India and the Philippines are talking about working together more on defence and space projects.",
-   "why": "This is a general government discussion, not a specific business deal, so it does not directly change the value of any single company's shares.",
-   "check": "",
-   "original": "INDIA AND THE PHILIPPINES ARE DISCUSSING A BROADER DEFENCE AND STRATEGIC PARTNERSHIP COVERING AKASH AND PINAKA MISSILE DEALS, BRAHMOS COOPERATION, A NEW DEFENCE PACT AND SPACE COLLABORATION.",
-   "latency": 81.9,
-   "lane": "fast"
-  },
-  {
-   "id": "8211b16709f24c3e",
-   "time": "2026-11-18T14:15:50+05:30",
-   "headline": "GLASS WALL SYSTEMS INDIA: CO RECEIVES WORK ORDER FROM AN INDIAN CUSTOMER; ORDER CLASSIFIED AS BELOW 500 MLN RUPEES",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9561",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "up",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "news",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "",
-   "why": "",
-   "check": "",
-   "original": "GLASS WALL SYSTEMS INDIA: CO RECEIVES WORK ORDER FROM AN INDIAN CUSTOMER; ORDER CLASSIFIED AS BELOW 500 MLN RUPEES",
-   "latency": 75.1,
-   "lane": "fast"
-  },
-  {
-   "id": "47bfaa89634b81eb",
-   "time": "2026-11-18T14:12:35+05:30",
-   "headline": "GOLDMAN SACHS SEE INDIAN MKT OVERWEIGHT LED BY MID-TEEN EARNINGS GROWTH; PHARMA EARNINGS PROJECTED TO GROW 18% IN CY27, 19% IN CY28",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9560",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "macro",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "Goldman Sachs says Indian market is overweight with mid‑teen earnings growth and pharma earnings rising 18‑19%.",
-   "why": "It's a broad outlook without new company data, so it doesn't change any individual stock outlook.",
-   "check": "",
-   "original": "GOLDMAN SACHS SEE INDIAN MKT OVERWEIGHT LED BY MID-TEEN EARNINGS GROWTH; PHARMA EARNINGS PROJECTED TO GROW 18% IN CY27, 19% IN CY28",
-   "latency": 31.2,
    "lane": "fast"
   }
  ]
