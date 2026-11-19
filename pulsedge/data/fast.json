@@ -1,7 +1,39 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-19T14:00:40+05:30",
+ "updated": "2026-11-19T14:10:07+05:30",
  "items": [
+  {
+   "id": "a914eb36d6acacc1",
+   "time": "2026-11-19T14:08:09+05:30",
+   "headline": "BANK OF BARODA: BOMBAY HIGH COURT DECLINES BR SHETTY'S IMMEDIATE REQUEST FOR DOCUMENT DISCLOSURE IN HIS $15 BILLION LAWSUIT AGAINST BANK OF BARODA.",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9696",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Banking"
+   ],
+   "impact": 10,
+   "confidence": 80,
+   "category": "Legal",
+   "action": "No immediate trading action required; monitor for future court orders.",
+   "reason": [
+    "The court only denied a request for documents, not the lawsuit itself.",
+    "This is a procedural step in a long-term legal dispute with no immediate financial impact."
+   ],
+   "risks": [
+    "Future court orders could lead to significant liabilities or reputational damage."
+   ],
+   "plain": "A court denied a request to share documents in a large lawsuit against the bank.",
+   "why": "This is just a small step in a long legal fight and does not change the bank's current business or profits.",
+   "check": "Look for news about the next court hearing date.",
+   "original": "BANK OF BARODA: BOMBAY HIGH COURT DECLINES BR SHETTY'S IMMEDIATE REQUEST FOR DOCUMENT DISCLOSURE IN HIS $15 BILLION LAWSUIT AGAINST BANK OF BARODA.",
+   "latency": 118.4,
+   "lane": "fast"
+  },
   {
    "id": "689b6ef3992cc901",
    "time": "2026-11-19T13:59:21+05:30",
@@ -1868,79 +1900,6 @@
    "check": "",
    "original": "GOLDMAN SACHS SEE INDIAN MKT OVERWEIGHT LED BY MID-TEEN EARNINGS GROWTH; PHARMA EARNINGS PROJECTED TO GROW 18% IN CY27, 19% IN CY28",
    "latency": 31.2,
-   "lane": "fast"
-  },
-  {
-   "id": "3d78c4acaf190cb5",
-   "time": "2026-11-18T14:08:11+05:30",
-   "headline": "Polycab Takes 2nd Price Reduction This Week Average price reduction of 2.5% across light duty cables, wires Communication sent to channel partners/stockists Price reduction effective from today Total 5.5-6%% price reduct",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9559",
-   "section": "trading",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "down",
-   "tickers": [
-    {
-     "symbol": "POLYCAB",
-     "direction": "down"
-    }
-   ],
-   "sectors": [
-    "Capital Goods",
-    "Consumer Electricals"
-   ],
-   "impact": 45,
-   "confidence": 75,
-   "category": "operational",
-   "action": "Watch for pressure near support levels following the price cuts.",
-   "reason": [
-    "Second price cut in a week points to softening raw material costs or demand headwinds.",
-    "Cumulative cut of 5.5-6% may compress near-term realizations and margins."
-   ],
-   "risks": [
-    "Volume growth could offset lower price realization.",
-    "Drop in input copper prices might preserve gross margins."
-   ],
-   "plain": "The company reduced prices of its light-duty cables and wires for the second time this week.",
-   "why": "Repeated price cuts can lead to lower revenue growth unless sales volumes increase enough to compensate.",
-   "check": "Track changes in raw material prices like copper to see if margins remain protected.",
-   "original": "Polycab Takes 2nd Price Reduction This Week Average price reduction of 2.5% across light duty cables, wires Communication sent to channel partners/stockists Price reduction effective from today Total 5.5-6%% price reduct",
-   "latency": 96.9,
-   "lane": "fast"
-  },
-  {
-   "id": "ce1bcc482be3df94",
-   "time": "2026-11-18T14:07:41+05:30",
-   "headline": "APOLLO MICRO SYSTEMS: CO. SIGNS MOU WITH REDON SYSTEMS FOR STRATEGIC COLLABORATION IN TETHERED DRONE AND LOITERING MUNITION SYSTEMS; AIMS TO SUPPORT INDIAN DEFENCE FORCES AND ALIGN WITH AATMANIRBHAR BHARAT INITIATIVE.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9558",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [],
-   "sectors": [
-    "Defence",
-    "Electronics"
-   ],
-   "impact": 40,
-   "confidence": 70,
-   "category": "order_win",
-   "action": "Watch for conversion of the partnership agreement into firm defence supply contracts.",
-   "reason": [
-    "Partnership enters high-growth defence tech sectors like tethered drones and loitering munitions.",
-    "Aligns with indigenous procurement priorities under the Aatmanirbhar Bharat initiative."
-   ],
-   "risks": [
-    "An initial agreement is not a confirmed commercial purchase order.",
-    "Development and procurement cycles in defence can be long."
-   ],
-   "plain": "The electronics company signed a partnership to collaborate on military drones and ammunition systems.",
-   "why": "Entering modern defence technology partnerships can open up new government and military order pipelines over time.",
-   "check": "Look out for formal order wins resulting from this new technology partnership.",
-   "original": "APOLLO MICRO SYSTEMS: CO. SIGNS MOU WITH REDON SYSTEMS FOR STRATEGIC COLLABORATION IN TETHERED DRONE AND LOITERING MUNITION SYSTEMS; AIMS TO SUPPORT INDIAN DEFENCE FORCES AND ALIGN WITH AATMANIRBHAR BHARAT INITIATIVE.",
-   "latency": 126.9,
    "lane": "fast"
   }
  ]
