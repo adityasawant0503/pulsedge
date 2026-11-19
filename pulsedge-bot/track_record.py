@@ -96,9 +96,36 @@ def bhavcopy(d):
     return out or None
 
 
+def same_as_previous(sessions, key, px):
+    """True when px repeats the closes of the session before key for every stock: NSE serves a file on some holidays
+    (Dussehra and 10 Nov 2026 were stored as sessions this way, which made every move across them read 0%)."""
+    before = [k for k in sorted(sessions) if k < key]
+    if not before:
+        return False
+    prev = sessions[before[-1]]
+    common = [x for x in px if x in prev]
+    return len(common) > 50 and all(px[x] == prev[x] for x in common)
+
+
+def drop_holiday_sessions(closes):
+    """Removes stored sessions that are calendar holidays or repeat the previous session; returns them."""
+    sessions, holidays = closes.setdefault("sessions", {}), set(closes.setdefault("holidays", []))
+    cal = set(load(os.path.join(DATA, "calendar.json"), {}).get("holidays", []))
+    gone = [k for k in sorted(sessions) if k in cal or same_as_previous(sessions, k, sessions[k])]
+    for k in gone:
+        del sessions[k]
+        holidays.add(k)
+    closes["holidays"] = sorted(holidays)
+    return gone
+
+
 def refresh_closes(closes, wanted):
     """Fill in missing sessions from the last LOOKBACK_DAYS. closes = {"sessions": {date: {sym: px}}, "holidays": [...]}."""
+    gone = drop_holiday_sessions(closes)
+    if gone:
+        log(f"  dropped holiday sessions stored as trading days: {', '.join(gone)}")
     sessions, holidays = closes.setdefault("sessions", {}), set(closes.setdefault("holidays", []))
+    holidays |= set(load(os.path.join(DATA, "calendar.json"), {}).get("holidays", []))
     today = NOW.date()
     published = NOW.hour * 60 + NOW.minute >= 19 * 60  # bhavcopy is usually out by ~18:30 IST
     added = 0
@@ -119,7 +146,12 @@ def refresh_closes(closes, wanted):
                 holidays.add(key)  # no file for a past weekday: market holiday
             log(f"  bhavcopy {key}: none")
             continue
-        sessions[key] = {s: p for s, p in px.items() if s in wanted}
+        kept = {s: p for s, p in px.items() if s in wanted}
+        if same_as_previous(sessions, key, kept):
+            holidays.add(key)
+            log(f"  bhavcopy {key}: repeats the previous session; a holiday")
+            continue
+        sessions[key] = kept
         added += 1
         log(f"  bhavcopy {key}: {len(px)} stocks, kept {len(sessions[key])}")
     for k in sorted(sessions)[:-KEEP_SESSIONS]:
@@ -174,6 +206,8 @@ def score(track, closes):
     sessions = closes.get("sessions", {})
     days = sorted(sessions)
     for c in track["calls"]:
+        for k in ("entry_date", "entry", "r1", "r5", "hit1", "hit5"):   # recomputed from the sessions as they stand
+            c.pop(k, None)
         t = datetime.fromisoformat(c["time"])
         i = entry_session(t, days)
         if i is None:
