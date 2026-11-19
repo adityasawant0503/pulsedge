@@ -1,7 +1,32 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-19T11:14:08+05:30",
+ "updated": "2026-11-19T11:19:08+05:30",
  "items": [
+  {
+   "id": "64670c0ea40c4061",
+   "time": "2026-11-19T11:18:00+05:30",
+   "headline": "TRUMP: US, CHINA NEED TO ENSURE ENERGY FLOWS THROUGH STRAIT",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9661",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "swing",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [],
+   "impact": 0,
+   "confidence": 0,
+   "category": "macro",
+   "action": "",
+   "reason": [],
+   "risks": [],
+   "plain": "US President says US and China must keep energy flowing through the Strait.",
+   "why": "It doesn't affect Indian listed companies, so no impact on your portfolio.",
+   "check": "",
+   "original": "TRUMP: US, CHINA NEED TO ENSURE ENERGY FLOWS THROUGH STRAIT",
+   "latency": 68.3,
+   "lane": "fast"
+  },
   {
    "id": "b13e46ce49e5b06b",
    "time": "2026-11-19T11:12:39+05:30",
@@ -1486,66 +1511,6 @@
    "check": "",
    "original": "KARNATAKA BANK: APPOINTS UDAYA KUMAR HEBBAR AS MD & CEO FOR THREE YEARS; HE BRINGS OVER 40 YEARS OF EXPERIENCE ACROSS CREDITACCESS GRAMEEN, BARCLAYS, ICICI BANK AND CORPORATION BANK,",
    "latency": 51.2,
-   "lane": "fast"
-  },
-  {
-   "id": "06edd498970a5b5c",
-   "time": "2026-11-18T11:15:56+05:30",
-   "headline": "BRAHMAPUTRA INFRASTRUCTURE LTD: RECEIVED LETTER OF ACCEPTANCE FROM NHAI FOR CONTRACT WORTH ₹16.06 CRORE; PROJECT INVOLVES CONSTRUCTION OF MINOR BRIDGE, SERVICE ROAD, AND FOOT OVER BRIDGES IN ASSAM; EXECUTION TIMEFRAME IS",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9539",
-   "section": "trading",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 45,
-   "confidence": 30,
-   "category": "Trading",
-   "action": "Read the source before acting",
-   "reason": [
-    "Keyword rules (AI classification is off)"
-   ],
-   "risks": [],
-   "plain": "",
-   "why": "It names a listed company or a kind of event that often moves share prices.",
-   "check": "Open the source and read what the company actually said.",
-   "original": "BRAHMAPUTRA INFRASTRUCTURE LTD: RECEIVED LETTER OF ACCEPTANCE FROM NHAI FOR CONTRACT WORTH ₹16.06 CRORE; PROJECT INVOLVES CONSTRUCTION OF MINOR BRIDGE, SERVICE ROAD, AND FOOT OVER BRIDGES IN ASSAM; EXECUTION TIMEFRAME IS",
-   "latency": 33.8,
-   "lane": "fast"
-  },
-  {
-   "id": "63f071647228c8e9",
-   "time": "2026-11-18T11:14:53+05:30",
-   "headline": "HIRECT: RECEIVES A LETTER OF ACCEPTANCE FOR APPX. ₹ 136.26 CRORE ORDER FROM CHITTARANJAN LOCOMOTIVE WORKS FOR 900 TRACTION MOTORS FOR WAG-9 ELECTRIC LOCOMOTIVES",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9538",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "up",
-   "tickers": [],
-   "sectors": [
-    "Railways",
-    "Defense"
-   ],
-   "impact": 0,
-   "confidence": 0,
-   "category": "Corporate Announcement",
-   "action": "No specific listed stock action required as the beneficiary is not in the candidate list.",
-   "reason": [
-    "RedBox Global India is not a listed entity in the provided candidate list.",
-    "No direct price impact on the specified NSE symbols."
-   ],
-   "risks": [
-    "Misattribution of news to unrelated listed peers."
-   ],
-   "plain": "A private company received a large order for train parts from a government manufacturer.",
-   "why": "This news does not directly affect the specific stocks you are tracking, so it is safe to skip.",
-   "check": "",
-   "original": "HIRECT: RECEIVES A LETTER OF ACCEPTANCE FOR APPX. ₹ 136.26 CRORE ORDER FROM CHITTARANJAN LOCOMOTIVE WORKS FOR 900 TRACTION MOTORS FOR WAG-9 ELECTRIC LOCOMOTIVES",
-   "latency": 37.1,
    "lane": "fast"
   }
  ]
