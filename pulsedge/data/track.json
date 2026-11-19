@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T13:32:31+05:30",
+ "updated": "2026-11-19T13:45:59+05:30",
  "summary": {
-  "calls": 1813,
-  "scored_calls": 646,
+  "calls": 1814,
+  "scored_calls": 647,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,19 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "3ffe1d658bccd745",
+   "symbol": "ALKEM",
+   "time": "2026-11-19T13:42:16+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "ALKEM LABORATORIES: US FDA ISSUES WARNING LETTER TO AMALIYA'S DAMAN MANUFACTURING FACILITY AFTER INSPECTION IS CLASSED AS OFFICIAL ACTION INDICATED (OAI); 45% O",
+   "url": "https://t.me/Indiaredboxglobal/9688",
+   "entry_date": "2026-11-18",
+   "entry": 5222.5
+  },
   {
    "id": "44f1acd97214eb36",
    "symbol": "BDL",

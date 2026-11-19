@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T13:31+05:30",
+ "updated": "2026-11-19T13:45+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -75,6 +75,22 @@
   "items": 88
  },
  "stocks": {
+  "ALKEM": {
+   "summary": "The US FDA issued a serious warning letter to Alkem's Daman manufacturing facility, which produces 45% of the company's US revenue. On the same day, several large mutual funds bought shares, while one family trust sold a significant block of stock.",
+   "why": "The FDA warning creates a risk that US exports from this key factory could be suspended, which would directly impact the company's major income source. Shareholders need to monitor if this regulatory issue leads to actual business losses.",
+   "upside": "Multiple large mutual funds purchased shares on the same day as the warning, suggesting some institutional investors still see value in the stock.",
+   "downside": "The FDA warning could lead to a suspension of US exports from the Daman facility, threatening nearly half of the company's US revenue.",
+   "watch": [
+    "Any official response or corrective actions taken by Alkem regarding the FDA warning.",
+    "Whether the Daman facility faces a formal suspension of US exports.",
+    "Further large-scale buying or selling by institutional investors."
+   ],
+   "about": "",
+   "basis": "378960a487ed",
+   "items": 5,
+   "updated": "2026-11-19T13:45+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "PAYTM": {
    "summary": "Paytm’s shares fell 6‑7% after news that the rollout of a new UPI merchant discount rate (MDR) fee is delayed, raising concerns about future earnings. The broader market sell‑off also contributed to the drop.",
    "why": "A delayed MDR means lower transaction fee income, which could weigh on Paytm’s earnings and valuation for shareholders.",
@@ -491,22 +507,6 @@
    "updated": "2026-11-19T11:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "EMBASSY": {
-   "summary": "Embassy Developments, the parent company of Embassy Office Parks REIT, launched a new luxury residential project called Embassy One Residences. This addition increases the company's total development value for the upcoming fiscal year to about ₹9,000 crore.",
-   "why": "This matters to shareholders because a larger project pipeline can lead to higher future income from the company's real estate activities.",
-   "upside": "The new luxury project could boost future earnings and strengthen the company's reputation in the high-end market.",
-   "downside": "The luxury housing market is sensitive to economic slowdowns, and there is a risk of delays in building the new project.",
-   "watch": [
-    "Progress on the construction of Embassy One Residences",
-    "Sales performance of the new luxury units",
-    "Overall trends in the Indian real estate sector"
-   ],
-   "about": "Embassy Office Parks REIT is a real estate investment trust that owns and manages office parks in India.",
-   "basis": "45e9046d3767",
-   "items": 2,
-   "updated": "2026-11-17T12:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "RVNL": {
    "summary": "Rail Vikas Nigam Ltd. is a construction company included in the Nifty 500 index. Recent reports indicate its share price has dropped significantly from its highest point.",
    "why": "This matters to shareholders because the current price level reflects a major decline, and some analysts believe the stock may still be overpriced.",
@@ -536,6 +536,22 @@
    "basis": "0adc419934e1",
    "items": 1,
    "updated": "2026-11-18T11:02+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "EMBASSY": {
+   "summary": "Embassy Developments, the parent company of Embassy Office Parks REIT, launched a new luxury residential project worth ₹1,400 crore. This addition brings its total development value for the next fiscal year to ₹9,000 crore.",
+   "why": "This news matters because a larger project pipeline can lead to higher future income for the REIT, which may benefit shareholders.",
+   "upside": "The new project could increase future earnings if it is completed and sold as planned.",
+   "downside": "Delays in building or selling the new units could hurt the company's financial results.",
+   "watch": [
+    "Updates on the construction progress of Embassy One Residences",
+    "How the broader Realty sector performs in the coming weeks",
+    "Any changes in the company's overall development pipeline"
+   ],
+   "about": "",
+   "basis": "7962f8beeadd",
+   "items": 1,
+   "updated": "2026-11-19T13:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "BSE": {
@@ -586,22 +602,6 @@
    "updated": "2026-11-18T19:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "ALKEM": {
-   "summary": "Alkem Laboratories Ltd. (ALKEM) saw a large block sale of 6.0 lakh shares by the Samprada & Nanhamati Singh Family Trust, worth ₹302 crore, on 17 November 2026. On the same day, ICICI Prudential Mutual Fund, DSP Mutual Fund and Nippon India Mutual Fund each bought 1.6–1.8 lakh shares, each trade worth around ₹80–90 crore.",
-   "why": "These institutional trades can signal either confidence in the company or a need for liquidity, which may influence the stock’s trading activity.",
-   "upside": "Large purchases by mutual funds could support the share price.",
-   "downside": "The sizeable block sale could indicate reduced confidence or a need for cash.",
-   "watch": [
-    "Monitor subsequent institutional buying or selling activity for Alkem shares",
-    "Observe any short‑term price movement following the block deals",
-    "Track the healthcare sector index, which moved +0.4% in the last session and -1.0% over five sessions"
-   ],
-   "about": "Alkem Laboratories Ltd. operates in the healthcare sector.",
-   "basis": "c75282456faf",
-   "items": 4,
-   "updated": "2026-11-17T19:22+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
   "CYIENT": {
    "summary": "Cyient announced a strategic investment from GlobalFoundries into its semiconductor business and also reported the resignation of a senior director. The IT sector has been down recently.",
    "why": "The investment could bring new cash and a well‑known partner, while the resignation may raise concerns about leadership continuity.",
@@ -617,22 +617,6 @@
    "items": 2,
    "updated": "2026-11-19T11:01+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "FIRSTCRY": {
-   "summary": "Brainbees Solutions Ltd. has completed the acquisition of Swara Corp and updated its acquisition agreement. Q2 results show a 75% reduction in net loss and a revenue jump, leading to a 13% share rally.",
-   "why": "Shareholders should note that the acquisition could change capital deployment and growth prospects, while the improved Q2 performance indicates a healthier business, though losses remain.",
-   "upside": "If the acquisition integrates smoothly, it could expand market reach and support future growth.",
-   "downside": "Integration risks and the cost of the acquisition could hurt profitability, and the company still reports a loss.",
-   "watch": [
-    "Progress of Swara Corp integration",
-    "Cost impact of the acquisition",
-    "Future quarterly results"
-   ],
-   "about": "Parent company of FirstCry, an online baby products retailer.",
-   "basis": "309a68ca1fc9",
-   "items": 3,
-   "updated": "2026-11-18T03:28+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "SUPREMEIND": {
    "summary": "Supreme Industries Ltd. (SUPREMEIND) is listed in the Nifty 500 and operates in the capital goods sector. There are no specific recent announcements or events flagged for the company in the latest PulsEdge watch list.",
@@ -1607,6 +1591,22 @@
    "items": 2,
    "updated": "2026-11-18T08:29+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "FIRSTCRY": {
+   "summary": "Brainbees Solutions has completed the acquisition of Swara Corp. The company also filed an update with the exchange regarding this acquisition agreement.",
+   "why": "This matters because buying a new business changes how the company spends its money and could expand its market reach.",
+   "upside": "The acquisition could help the company grow by expanding its market reach.",
+   "downside": "The deal might be expensive, and there are risks involved in merging the two businesses.",
+   "watch": [
+    "How well the two companies integrate",
+    "The total cost of the acquisition",
+    "Future updates on the deal from the exchange"
+   ],
+   "about": "",
+   "basis": "ccab40e90af1",
+   "items": 2,
+   "updated": "2026-11-19T13:45+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "AMBUJACEM": {
    "summary": "Ambuja Cements is partnering with Adani Cement to deploy heavy-duty electric trucks for transporting clinker and cement. The plan aims to have 410 trucks running by March 2027 to reduce carbon emissions and logistics costs.",
