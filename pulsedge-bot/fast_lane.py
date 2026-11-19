@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""PulsEdge fast lane: the quickest sources, checked about once a minute instead of every 15 minutes.
+"""PulsEdge fast lane: the quickest sources, checked every 30 seconds instead of every 15 minutes.
 
 Sources marked "fast": true in sources.json (today: the RedBox Global India and Walter Bloomberg Telegram channels) are read every
 --every seconds. Each new post is sorted at once, with the same AI models and keyword rules as news_pipeline.py,
 and added to pulsedge/data/fast.json, which the terminal reads every minute. With --publish (GitHub Actions)
-every change is committed to master and the site redeployed, so a post reaches the terminal two to three
-minutes after it appears. The 15-minute news run then folds these items into feed.json as they are.
+Act cards and market-moving news go to the Telegram channel at once (pulse_bot.post_fast, recorded in
+state/fast_posted.json), then the change is committed to master and the site redeployed: a post reaches
+Telegram within about a minute and the terminal within two or three. The 15-minute news run then folds these items into feed.json as they are.
 
     python pulsedge-bot/fast_lane.py --dry-run                     # one check: show what is new, write nothing
     python pulsedge-bot/fast_lane.py --loop --publish --until 16:00 --minutes 345
@@ -25,6 +26,7 @@ from datetime import datetime, timedelta
 import news_pipeline as news
 
 FAST = os.path.join(news.DATA, "fast.json")
+FAST_POSTED = os.path.join(news.HERE, "state", "fast_posted.json")
 REPO_ROOT = os.path.normpath(os.path.join(news.HERE, ".."))
 KEEP = timedelta(hours=24)     # how long items stay in fast.json; the news run has long since taken them by then
 MAX_ITEMS = 80
@@ -74,7 +76,11 @@ class Sorter:
 
     def __init__(self):
         self.claude = bool(os.environ.get("ANTHROPIC_API_KEY"))
-        self.cands = [] if self.claude else news.ai_candidates()
+        # Groq answers in about a second, so it goes first here; a model that takes longer than AI_TIMEOUT is
+        # skipped for ten minutes rather than holding every alert up (Gemini once took 75 s to time out)
+        cands = [] if self.claude else news.ai_candidates()
+        self.cands = sorted(cands, key=lambda c: 0 if "groq.com" in c[0] else 1)
+        news.AI_TIMEOUT = 15
         self.rest = {}
 
     def describe(self):
@@ -90,7 +96,11 @@ class Sorter:
             if self.rest.get(i, 0) > time.time():
                 continue
             try:
-                return news.classify_compat(batch, universe, *cand), cand[2]
+                res = news.classify_compat(batch, universe, *cand)
+                if res:
+                    return res, cand[2]
+                log(f"  {cand[2]}: no usable answer; trying the next model")
+                continue
             except Exception as e:
                 msg = str(e)
                 log(f"  {cand[2]}: {news.brief(msg)}")
@@ -98,8 +108,8 @@ class Sorter:
                     self.rest[i] = time.time() + 3600
                 elif msg.startswith("HTTP 429"):
                     self.rest[i] = time.time() + news.retry_after(msg, 60)
-                else:
-                    self.rest[i] = time.time() + 120
+                else:                                # slow or busy: leave it alone for ten minutes
+                    self.rest[i] = time.time() + 600
         return None, "rules"
 
 
@@ -113,8 +123,25 @@ def sync():
         git("reset", "-q", "--hard", "origin/master")
 
 
+def telegram(items, dry):
+    """Act cards and market-moving news among the new items go to the channel now (pulse_bot.post_fast)."""
+    try:
+        import pulse_bot
+    except ImportError as e:                         # Pillow missing: the 15-minute run still posts them
+        log(f"  Telegram skipped ({e})")
+        return []
+    sent = pulse_bot.post_fast(items, dry=dry)
+    if sent:
+        log(f"  posted to Telegram: {', '.join(sent)}")
+        with open(FAST_POSTED, "w", encoding="utf-8") as fh:
+            json.dump((news.load_json(FAST_POSTED, []) + sent)[-600:], fh, indent=1)
+    return sent
+
+
 def publish(n):
     git("add", os.path.relpath(FAST, REPO_ROOT))
+    if os.path.exists(FAST_POSTED):
+        git("add", os.path.relpath(FAST_POSTED, REPO_ROOT))
     if git("commit", "-q", "-m", f"PulsEdge fast lane: {n} new post{'s' if n != 1 else ''}").returncode != 0:
         return
     for attempt in range(4):
@@ -177,11 +204,13 @@ def check(sources, sorter, universe, known, dry, publishing):
         "items": sorted(items + old, key=lambda x: x["time"], reverse=True)[:MAX_ITEMS],
     }
     if dry:
-        log(f"dry run: {len(items)} new, nothing written")
+        telegram(items, dry=True)
+        log(f"dry run: {len(items)} new, nothing written or posted")
         return len(items)
     with open(FAST, "w", encoding="utf-8") as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1)
     if publishing:
+        telegram(items, dry=False)      # first, so the channel hears within seconds; the commit records it
         publish(len(items))
     return len(items)
 
@@ -191,7 +220,7 @@ def main():
     ap.add_argument("--dry-run", action="store_true", help="show what is new; write nothing")
     ap.add_argument("--loop", action="store_true", help="keep checking until --until or --minutes")
     ap.add_argument("--publish", action="store_true", help="commit, push and redeploy the site after each change")
-    ap.add_argument("--every", type=int, default=int(os.environ.get("PULSEDGE_FAST_EVERY") or 60), help="seconds between checks")
+    ap.add_argument("--every", type=int, default=int(os.environ.get("PULSEDGE_FAST_EVERY") or 30), help="seconds between checks")
     ap.add_argument("--start", default="07:00", help="IST time the window opens (HH:MM)")
     ap.add_argument("--until", default="16:00", help="IST time the window closes (HH:MM)")
     ap.add_argument("--minutes", type=float, default=345, help="longest this run may keep checking")
