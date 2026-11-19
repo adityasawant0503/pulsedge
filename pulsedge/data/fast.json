@@ -1,7 +1,40 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-19T09:30:08+05:30",
+ "updated": "2026-11-19T10:09:08+05:30",
  "items": [
+  {
+   "id": "3e40b08914546a1b",
+   "time": "2026-11-19T10:08:49+05:30",
+   "headline": "AURIONPRO SOLUTIONS: CO. SECURES ADDITIONAL ORDER OF NEARLY ₹100 CRORE FROM GLOBAL HYPERSCALER, EXPANDS AI-READY DATA CENTRE ENGAGEMENT IN SOUTHERN INDIA",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9648",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "IT Services",
+    "Data Centers"
+   ],
+   "impact": 0,
+   "confidence": 0,
+   "category": "Corporate Update",
+   "action": "No specific listed stock to monitor for this announcement.",
+   "reason": [
+    "AurionPro Solutions is not a listed entity in the provided candidate list.",
+    "No direct price impact on the specified NSE symbols."
+   ],
+   "risks": [
+    "Misattribution of news to unrelated listed IT stocks."
+   ],
+   "plain": "A private company won a large contract to build data centers for a global tech firm.",
+   "why": "This company is not publicly traded, so its news does not directly move the prices of the listed stocks you might own.",
+   "check": "",
+   "original": "AURIONPRO SOLUTIONS: CO. SECURES ADDITIONAL ORDER OF NEARLY ₹100 CRORE FROM GLOBAL HYPERSCALER, EXPANDS AI-READY DATA CENTRE ENGAGEMENT IN SOUTHERN INDIA",
+   "latency": 19.3,
+   "lane": "fast"
+  },
   {
    "id": "452eed3da5eb7da5",
    "time": "2026-11-19T09:29:27+05:30",
@@ -1575,77 +1608,6 @@
    "check": "Look for the official earnings release date to verify these claims.",
    "original": "TATA POWER: CO SAYS NEXT QTR RESULTS WILL BE GOOD SHOWING 3X GROWTH COMPARE TO LAST QTR|| EXECUTION PACE WILL BE 3X HIGHER COMPARE TO H1: INTERVIEW",
    "latency": 110.3,
-   "lane": "fast"
-  },
-  {
-   "id": "5cd40c108ad8b404",
-   "time": "2026-11-18T09:59:35+05:30",
-   "headline": "INDIA TO LAUNCH ITS FIRST INDIGENOUSLY DEVELOPED INACTIVATED H5N1 BIRD FLU VACCINE FOR CHICKENS ON NOVEMBER 20, 2026",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9523",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "positional",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "AgriTech",
-    "Pharma"
-   ],
-   "impact": 10,
-   "confidence": 20,
-   "category": "Macro/Policy",
-   "action": "No immediate action required for general investors.",
-   "reason": [
-    "No specific listed company is named in the headline.",
-    "The news is a general policy update with no direct, immediate price impact on specific stocks."
-   ],
-   "risks": [
-    "Potential indirect impact on poultry feed or vaccine manufacturers not listed in the candidate pool."
-   ],
-   "plain": "India plans to launch its own bird flu vaccine for chickens in late 2026.",
-   "why": "This is a general government announcement that does not directly affect specific stock prices today.",
-   "check": "",
-   "original": "INDIA TO LAUNCH ITS FIRST INDIGENOUSLY DEVELOPED INACTIVATED H5N1 BIRD FLU VACCINE FOR CHICKENS ON NOVEMBER 20, 2026",
-   "latency": 49.3,
-   "lane": "fast"
-  },
-  {
-   "id": "bcffb29d4178746b",
-   "time": "2026-11-18T09:54:26+05:30",
-   "headline": "FEDERAL BANK: CO SAYS WONT DO ANY DEAL WITH JANA SMALL FINANCE BANK: INTERVIEW",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9522",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "down",
-   "tickers": [
-    {
-     "symbol": "FEDERALBNK",
-     "direction": "down"
-    }
-   ],
-   "sectors": [
-    "Banking"
-   ],
-   "impact": 30,
-   "confidence": 60,
-   "category": "company",
-   "action": "Watch for any follow‑up clarification on the bank’s partnership strategy.",
-   "reason": [
-    "Federal Bank ruled out a deal with Jana Small Finance Bank.",
-    "Potential synergies or revenue from the partnership are now unlikely."
-   ],
-   "risks": [
-    "Market may view the decision as cautious, limiting upside.",
-    "Future partnership opportunities could still emerge."
-   ],
-   "plain": "Federal Bank said it will not make any deal with Jana Small Finance Bank.",
-   "why": "Investors may see a missed growth opportunity, so the stock could face slight downside.",
-   "check": "Look for any official statement on future partnership plans.",
-   "original": "FEDERAL BANK: CO SAYS WONT DO ANY DEAL WITH JANA SMALL FINANCE BANK: INTERVIEW",
-   "latency": 119.9,
    "lane": "fast"
   }
  ]
