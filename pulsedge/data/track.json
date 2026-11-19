@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T13:16:41+05:30",
+ "updated": "2026-11-19T13:32:31+05:30",
  "summary": {
-  "calls": 1808,
-  "scored_calls": 641,
+  "calls": 1813,
+  "scored_calls": 646,
   "d1": {
    "scored": 549,
    "hits": 312,
@@ -21,6 +21,71 @@
  "method": "Entry is the NSE close of the last session that had ended when the news came out; 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "44f1acd97214eb36",
+   "symbol": "BDL",
+   "time": "2026-11-19T13:23:37+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "114 Rafales, 6 submarines! Defence stocks HAL, BEL, BDL shares jump up to 3% - Is a mega defence order boom coming?",
+   "url": "https://www.livemint.com/market/stock-market-news/114-rafales-6-submarines-defence-stocks-hal-bel-bdl-shares-jump-up-to-3-is-a-mega-defence-order-boom-coming-11795072244167.html",
+   "entry_date": "2026-11-18",
+   "entry": 1013.4
+  },
+  {
+   "id": "44f1acd97214eb36",
+   "symbol": "BEL",
+   "time": "2026-11-19T13:23:37+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "114 Rafales, 6 submarines! Defence stocks HAL, BEL, BDL shares jump up to 3% - Is a mega defence order boom coming?",
+   "url": "https://www.livemint.com/market/stock-market-news/114-rafales-6-submarines-defence-stocks-hal-bel-bdl-shares-jump-up-to-3-is-a-mega-defence-order-boom-coming-11795072244167.html",
+   "entry_date": "2026-11-18",
+   "entry": 395.8
+  },
+  {
+   "id": "93a7d2f29d85fdc4",
+   "symbol": "COALINDIA",
+   "time": "2026-11-19T13:19:12+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "NLC India Renewables files IPO papers, plans ₹3,300 crore fresh issue",
+   "url": "https://www.business-standard.com/companies/news/nlc-india-renewables-files-ipo-papers-plans-3-300-crore-fresh-issue-126111900441_1.html",
+   "entry_date": "2026-11-18",
+   "entry": 388.0
+  },
+  {
+   "id": "8612f8cee15bce87",
+   "symbol": "JUBLINGREA",
+   "time": "2026-11-19T13:15:49+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Jubilant Ingrevia Limited: Jubilant Ingrevia Limited has informed the Exchange about Resignation of Director/KMP/SMP |SUBJECT: Resignation of Director/KMP/SMP",
+   "url": "https://nsearchives.nseindia.com/corporate/JUBLINGREA_ROID_105030_KMP_Doc.zip",
+   "entry_date": "2026-11-18",
+   "entry": 586.85
+  },
+  {
+   "id": "5150a25cfc2f4f65",
+   "symbol": "IRB",
+   "time": "2026-11-19T13:13:19+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "IRB Infrastructure Developers Limited: IRB Infrastructure Developers Limited has informed the Exchange about Credit Rating |SUBJECT: Credit Rating",
+   "url": "https://nsearchives.nseindia.com/corporate/IRB_19112026130900_IRBIDL-Credit_Rating_-_CRISIL.pdf",
+   "entry_date": "2026-11-18",
+   "entry": 17.63
+  },
   {
    "id": "db1094aa3b8120fd",
    "symbol": "HYUNDAI",

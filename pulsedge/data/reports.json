@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-19T13:16+05:30",
+ "updated": "2026-11-19T13:31+05:30",
  "nifty50": {
   "updated": "2026-11-14",
   "symbols": [
@@ -363,22 +363,6 @@
    "updated": "2026-11-18T03:28+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "ADANIGREEN": {
-   "summary": "Adani Green Energy received a stop‑work notice for its Tarali hydro‑power project in Satara, which could delay the project and affect future earnings and cash flow. The broader energy sector index fell 0.3% in the last session but rose 1.1% over five sessions.",
-   "why": "A regulatory halt may reduce the company’s earnings and cash flow, directly impacting shareholders’ returns.",
-   "upside": "If the stop‑work notice is lifted and the hydro project resumes, earnings could improve.",
-   "downside": "Extended regulatory delays could keep the project halted, hurting earnings and cash flow.",
-   "watch": [
-    "Resolution of the stop‑work notice for the Tarali hydro project",
-    "Progress updates on the Tarali hydro‑power construction",
-    "Movement of the energy sector index"
-   ],
-   "about": "Adani Green Energy is a power company operating in India’s energy sector.",
-   "basis": "8105b29b4f74",
-   "items": 1,
-   "updated": "2026-11-17T12:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "SOLARINDS": {
    "summary": "Solar Industries India Ltd. (SOLARINDS) has had no recent company‑specific announcements; the latest PulsEdge alerts focus on other solar firms, highlighting activity in the broader solar sector.",
    "why": "Shareholders should watch sector trends because broader solar growth could influence market sentiment toward related companies.",
@@ -571,20 +555,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "JUBLINGREA": {
-   "summary": "Jubilant Ingrevia announced that its Chief Financial Officer, Varun Gupta, is resigning effective November 30, 2026. This news was reported by the company to the stock exchange and highlighted by financial news outlets.",
-   "why": "The departure of a top finance leader can create short-term uncertainty for investors who hold the company's shares. It may raise questions about the stability of the company's financial management.",
+   "summary": "Jubilant Ingrevia Ltd. announced the resignation of a senior director and its chief financial officer, effective at the end of November 2026.",
+   "why": "Shareholders may be concerned about possible management instability and uncertainty over future financial guidance.",
    "upside": "",
-   "downside": "A delay in appointing a new CFO could affect the company's ability to execute its plans and provide clear financial guidance.",
+   "downside": "The departures could create short‑term uncertainty and affect the company’s financial management and guidance.",
    "watch": [
-    "Who is appointed as the new Chief Financial Officer",
-    "Any updates on the company's financial guidance",
-    "How the stock price reacts to the leadership change"
+    "Appointment of a new CFO",
+    "Replacement for the resigned director",
+    "Impact on financial guidance and investor sentiment"
    ],
-   "about": "Jubilant Ingrevia is a company in the chemicals sector.",
-   "basis": "3cebb9cd12e8",
-   "items": 2,
-   "updated": "2026-11-19T11:45+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Jubilant Ingrevia Ltd. is a chemicals company.",
+   "basis": "6434363fdf91",
+   "items": 3,
+   "updated": "2026-11-19T13:31+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "AZAD": {
    "summary": "PulsEdge flagged several large trades in Azad Engineering shares on November 18, 2026. One investor sold about ₹800 crore worth of shares, while four other large investors bought a combined total of roughly ₹370 crore.",
@@ -761,6 +745,22 @@
    "updated": "2026-11-18T12:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "HAL": {
+   "summary": "The government is planning to increase spending on defence equipment, causing HAL shares to jump along with other defence stocks. WS Industries also secured civil sub‑contracts linked to HAL’s helicopter factory project, which could boost activity.",
+   "why": "More defence spending could bring additional orders for HAL, while the sub‑contracts may support its operations. However, the impact of the sub‑contracts might be limited.",
+   "upside": "Higher defence orders could lift HAL’s revenue and earnings.",
+   "downside": "The market may have already priced in the expected defence spending, limiting upside.",
+   "watch": [
+    "Government defence budget announcements",
+    "New defence contract awards to HAL",
+    "Progress on WS Industries sub‑contracts for the HAL helicopter factory"
+   ],
+   "about": "HAL designs and manufactures aircraft and helicopters for India’s defence forces.",
+   "basis": "018deeb3a054",
+   "items": 2,
+   "updated": "2026-11-19T13:31+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "UPL": {
    "summary": "UPL's shares slipped below a key moving average, and media reports say the company may scrap its plan to change its corporate structure.",
    "why": "This matters because technical price signals can affect short‑term trading sentiment and a simpler corporate structure could influence investor appeal.",
@@ -792,6 +792,38 @@
    "items": 2,
    "updated": "2026-11-17T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "BDL": {
+   "summary": "Bharat Dynamics Ltd (BDL) shares jumped about 3% after news that the Indian government plans to increase spending on defence equipment, which could bring more orders for the company.",
+   "why": "Higher defence spending could boost BDL's sales and earnings, but the market may have already priced in this expectation.",
+   "upside": "If large defence contracts are confirmed, BDL could see stronger revenue growth.",
+   "downside": "If the expected orders are delayed or do not materialise, the share price could fall.",
+   "watch": [
+    "Confirmation of new defence contracts",
+    "Official government defence spending announcements",
+    "Subsequent movement in BDL share price"
+   ],
+   "about": "Bharat Dynamics Ltd manufactures defence equipment, including missile systems, for the Indian armed forces.",
+   "basis": "17b9ed44a117",
+   "items": 1,
+   "updated": "2026-11-19T13:31+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "BEL": {
+   "summary": "BEL shares jumped about 3% as the market reacted to news of the government planning to spend much more on defence equipment. The rally reflects expectations of a possible defence order boom for the company.",
+   "why": "Higher defence spending could translate into more orders and revenue for BEL, but the recent price rise may already reflect that expectation.",
+   "upside": "If the government confirms large defence contracts for BEL, the company could see a boost in sales.",
+   "downside": "If the market has already priced in the spending plans, further upside may be limited.",
+   "watch": [
+    "Confirmation of specific defence contracts for BEL",
+    "Upcoming government defence budget announcements",
+    "Share price movement relative to peers HAL and BDL"
+   ],
+   "about": "Bharat Electronics Ltd. designs and manufactures defence electronics and equipment for the Indian armed forces.",
+   "basis": "17b9ed44a117",
+   "items": 1,
+   "updated": "2026-11-19T13:31+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "TATATECH": {
    "summary": "Tata Technologies outlined an ambitious plan to boost sales and profits by 2030, signalling confidence from management. The broader IT sector has been falling, down 1.2% today and 3.2% over the past week.",
@@ -888,22 +920,6 @@
    "items": 1,
    "updated": "2026-11-17T14:31+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "AETHER": {
-   "summary": "Aether Industries signed a facility development and supply agreement with Baker Petrolite LLC to be the exclusive manufacturer of drag‑reducing agents for India’s first dedicated plant in Panoli, Gujarat.",
-   "why": "The deal adds a reliable new customer and could increase future earnings for shareholders.",
-   "upside": "If the new facility is set up and supplies are delivered on schedule, revenue and profit could rise.",
-   "downside": "Delays or problems in building the plant could hinder expected gains.",
-   "watch": [
-    "Progress on the Panoli facility construction",
-    "Start of production and supply to Baker Petrolite",
-    "Any updates on the exclusive manufacturing agreement"
-   ],
-   "about": "Aether Industries Ltd. is a chemicals manufacturer.",
-   "basis": "210aaf13da72",
-   "items": 1,
-   "updated": "2026-11-17T11:45+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "OIL": {
    "summary": "Oil India Ltd. is facing mixed signals as US crude prices fell to $83.26 a barrel, while US oil inventories dropped sharply. Geopolitical events, including tanker fires in the Strait of Hormuz, are adding uncertainty to the oil supply landscape.",
@@ -1081,22 +1097,6 @@
    "updated": "2026-11-19T08:11+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "DIXON": {
-   "summary": "Dixon Technologies announced a new business deal while the broader consumer durables sector saw a 3% slide in the Nifty index. The sector index was down 0.2% in the last session but up 0.6% over the past five sessions.",
-   "why": "Shareholders watch the new deal because it could boost revenue, but the sector‑wide sell‑off may pressure the stock price.",
-   "upside": "If the new agreement brings more customers and revenue, the company could see earnings growth.",
-   "downside": "A continued sector‑wide sell‑off or unfavorable terms in the deal could hurt performance.",
-   "watch": [
-    "Consumer durables index movement",
-    "Details and terms of the new deal",
-    "Overall market sentiment"
-   ],
-   "about": "Dixon Technologies (India) Ltd. manufactures electronics and consumer durable products.",
-   "basis": "7ae0c7077ef4",
-   "items": 2,
-   "updated": "2026-11-18T14:01+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "KALYANKJIL": {
    "summary": "Kalyan Jewellers shares fell up to 5% as the Nifty Consumer Durables index slid about 3% and concerns grew over near‑term consumer demand despite lower gold prices.",
    "why": "The price drop reflects market worries that weaker retail demand could hurt sales volumes and profit margins for shareholders.",
@@ -1192,6 +1192,22 @@
    "items": 1,
    "updated": "2026-11-18T14:01+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "DIXON": {
+   "summary": "Dixon Technologies is part of the consumer durables sector, which fell about 3% on the last trading day and over 3% across five sessions.",
+   "why": "Sector weakness can pull Dixon’s share price lower even if the company’s own fundamentals are unchanged.",
+   "upside": "A bounce in the consumer durables index could lift Dixon’s stock.",
+   "downside": "Continued sell‑off in the sector could keep pressure on Dixon’s shares.",
+   "watch": [
+    "Consumer durables index trend",
+    "Overall market sentiment",
+    "News on peer companies like Titan or Kalyan Jewellers"
+   ],
+   "about": "Dixon Technologies manufactures consumer electronics and appliances.",
+   "basis": "266d2c7acd5a",
+   "items": 1,
+   "updated": "2026-11-19T13:31+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "HAVELLS": {
    "summary": "Havells India Ltd. is seeing pressure as the consumer durables sector fell about 3% in the latest session and over 3% across five sessions. The broader sell‑off in the sector could affect its stock performance.",
@@ -1513,20 +1529,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "COALINDIA": {
-   "summary": "Coal India is currently in the news because its subsidiary, Mahanadi Coalfields, is selling shares to the public for the first time. Early signs suggest that investor interest in this new sale is lower than expected, with the grey market premium remaining low.",
-   "why": "This matters to you because the sale involves selling a part of a company you may already own, which can change how much the parent company is worth. If investors are not excited about the new shares, they might worry about the value of the main Coal India stock.",
-   "upside": "The sale could bring in cash for Coal India and help show the true value of its assets to the market.",
-   "downside": "If the new shares are not bought eagerly, it might make investors nervous and lead to selling pressure on Coal India's own stock.",
+   "summary": "Coal India’s subsidiaries are moving to the market. Mahanadi Coalfields is launching an IPO and NLC India Renewables has filed for its own IPO. The parent company is under close watch as these listings could shift focus and affect its shares.",
+   "why": "Shareholders could see the parent’s cash position change and may face dilution from new shares.",
+   "upside": "If the IPOs are well‑received, Coal India could receive cash and a higher valuation.",
+   "downside": "Weak demand or oversubscription could lead to selling pressure and dilute existing holdings.",
    "watch": [
-    "How the Mahanadi Coalfields IPO performs on its first day of trading.",
-    "Whether Coal India's stock price drops due to the new shares being sold.",
-    "Any changes in government rules that affect coal prices or taxes."
+    "Mahanadi Coalfields IPO subscription levels",
+    "NLC India Renewables IPO pricing and demand",
+    "Oil & Gas sector index movement and any price volatility"
    ],
-   "about": "Coal India is one of India's largest listed companies in the oil, gas, and fuel sector.",
-   "basis": "8da940c35502",
-   "items": 7,
-   "updated": "2026-11-19T12:15+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Coal India Ltd is a state‑owned coal mining company in India.",
+   "basis": "ddf820f3aec1",
+   "items": 8,
+   "updated": "2026-11-19T13:31+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "NMDC": {
    "summary": "NMDC is facing pressure from falling global metal prices, which has caused its sector to drop significantly over the last week. At the same time, a contractor won sub-contracts for civil work on NMDC township projects, indicating ongoing activity at the company.",
