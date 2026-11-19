@@ -1,7 +1,40 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-19T10:15:07+05:30",
+ "updated": "2026-11-19T10:37:08+05:30",
  "items": [
+  {
+   "id": "0048bcaf0fdf17a0",
+   "time": "2026-11-19T10:35:26+05:30",
+   "headline": "INDIA PROPOSES SEPARATE LICENSING REGIME FOR WHOLESALE BULK DRUGS",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9650",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "positional",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Pharma"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "Regulatory",
+   "action": "Monitor future regulatory clarifications for potential sector-wide shifts.",
+   "reason": [
+    "No specific listed company is named in the headline.",
+    "The proposal is at the policy stage and lacks immediate operational details."
+   ],
+   "risks": [
+    "Regulatory uncertainty could affect wholesale margins.",
+    "Implementation details may vary from initial proposals."
+   ],
+   "plain": "India is considering new rules for how bulk medicines are sold in large quantities.",
+   "why": "It is too early to know how this will affect specific companies or prices.",
+   "check": "Look for official government notifications detailing the new licensing rules.",
+   "original": "INDIA PROPOSES SEPARATE LICENSING REGIME FOR WHOLESALE BULK DRUGS",
+   "latency": 102.3,
+   "lane": "fast"
+  },
   {
    "id": "ed4f0d2ad2e959f3",
    "time": "2026-11-19T10:14:25+05:30",
@@ -1540,102 +1573,6 @@
    "check": "",
    "original": "TRUMP: HAVE JUST CONSUMATED A TRADE DEAL WITH PHILIPPINES, MAGNIFICENT DEAL",
    "latency": 40.4,
-   "lane": "fast"
-  },
-  {
-   "id": "032168f023255497",
-   "time": "2026-11-18T10:32:35+05:30",
-   "headline": "UGAR SUGAR WORKS LTD: START OF SUGAR CRUSHING SEASON 2026-27 AT JEWARGI UNIT; CRUSHING BEGAN ON 17TH NOVEMBER 2026 AND WILL INCREASE TO FULL CAPACITY SOON.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9526",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "operational",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "Ugar Sugar started crushing at its Jewargi unit on Nov 17, 2026, and will ramp up to full capacity soon.",
-   "why": "It's a routine operational update, unlikely to move the share price significantly.",
-   "check": "",
-   "original": "UGAR SUGAR WORKS LTD: START OF SUGAR CRUSHING SEASON 2026-27 AT JEWARGI UNIT; CRUSHING BEGAN ON 17TH NOVEMBER 2026 AND WILL INCREASE TO FULL CAPACITY SOON.",
-   "latency": 109.8,
-   "lane": "fast"
-  },
-  {
-   "id": "3e3b21bf179457ed",
-   "time": "2026-11-18T10:30:56+05:30",
-   "headline": "HINDUSTAN ORGANIC CHEMICALS: TEMPORARY SHUTDOWN OF KOCHI PHENOL PLANT EXTENDED BY ONE WEEK; MAINTENANCE WORK ON H₂ SUPPLY PIPELINE AND OTHER ACTIVITIES REQUIRED.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9525",
-   "section": "news",
-   "call": "sell",
-   "horizon": "swing",
-   "direction": "down",
-   "tickers": [],
-   "sectors": [
-    "Chemicals"
-   ],
-   "impact": 60,
-   "confidence": 70,
-   "category": "operational",
-   "action": "Watch for any update on resumption and production volumes.",
-   "reason": [
-    "Plant shutdown reduces output and revenue",
-    "Maintenance may cause short‑term supply constraints"
-   ],
-   "risks": [
-    "Delay could extend beyond announced week",
-    "Market may have already priced in the outage"
-   ],
-   "plain": "The company's Kochi phenol plant will stay closed for another week for maintenance.",
-   "why": "A plant closure cuts production, which can temporarily lower earnings for shareholders.",
-   "check": "Look for the company's next update on when the plant will restart.",
-   "original": "HINDUSTAN ORGANIC CHEMICALS: TEMPORARY SHUTDOWN OF KOCHI PHENOL PLANT EXTENDED BY ONE WEEK; MAINTENANCE WORK ON H₂ SUPPLY PIPELINE AND OTHER ACTIVITIES REQUIRED.",
-   "latency": 89.6,
-   "lane": "fast"
-  },
-  {
-   "id": "b9f420ba72f99533",
-   "time": "2026-11-18T10:29:34+05:30",
-   "headline": "TATA POWER: CO SAYS NEXT QTR RESULTS WILL BE GOOD SHOWING 3X GROWTH COMPARE TO LAST QTR|| EXECUTION PACE WILL BE 3X HIGHER COMPARE TO H1: INTERVIEW",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9524",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "TATAPOWER",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Power"
-   ],
-   "impact": 65,
-   "confidence": 70,
-   "category": "Earnings Guidance",
-   "action": "Monitor pre-market sentiment and opening price action for confirmation of the bullish guidance.",
-   "reason": [
-    "Management explicitly projects 3x growth in the next quarter compared to the previous one.",
-    "Indicates a significant acceleration in execution pace relative to the first half of the year."
-   ],
-   "risks": [
-    "Guidance is forward-looking and not guaranteed; actual results may differ.",
-    "Market may have already priced in some of this optimism."
-   ],
-   "plain": "Company leaders say profits will triple next quarter due to faster project completion.",
-   "why": "Stronger expected profits can make the stock more attractive to investors, potentially raising its price.",
-   "check": "Look for the official earnings release date to verify these claims.",
-   "original": "TATA POWER: CO SAYS NEXT QTR RESULTS WILL BE GOOD SHOWING 3X GROWTH COMPARE TO LAST QTR|| EXECUTION PACE WILL BE 3X HIGHER COMPARE TO H1: INTERVIEW",
-   "latency": 110.3,
    "lane": "fast"
   }
  ]
