@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T15:47+05:30",
+ "updated": "2026-11-20T19:22+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "The Indian stock market on Friday saw mixed movements, with strong gains in sectors like Auto and Consumer Durables, while IT faced a dip. Several companies made headlines by securing major new contracts or facing project cancellations, impacting their individual fortunes. Meanwhile, gold loan companies saw their shares fall due to a drop in gold prices, and overall global tech concerns weighed on sentiment.",
+  "summary": "PulsEdge flagged a mix of major order wins and contract cancellations shaping the Indian stock market on Friday, November 20, 2026. Companies like Kirloskar Brothers and Jupiter Wagons secured large new contracts, while Ashoka Buildcon faced a project cancellation in Saudi Arabia. Meanwhile, gold price drops impacted gold loan companies, and global worries weighed on tech and small-cap stocks.",
   "themes": [
-   "Major contract wins and cancellations driving individual stock movements.",
-   "Sector divergence with strong gains in Auto and Consumer Durables alongside declines in IT.",
-   "Commodity price drops affecting related financial and lending companies."
+   "Major contract wins and orders boosting revenue visibility for select companies",
+   "Global tech worries and gold price drops impacting specific sectors",
+   "Large block deals and fundraising plans drawing investor attention"
   ],
   "watch": [
-   "Execution timelines and potential cost overruns for newly awarded large contracts.",
-   "Further movements in gold prices and their impact on gold loan companies.",
-   "Global tech and AI sentiment affecting Indian smallcaps and data center-linked stocks."
+   "Execution timelines and potential cost overruns for newly awarded large orders",
+   "Further movements in gold prices and their impact on gold loan companies",
+   "Updates on unconfirmed reports, such as potential new deals for pump makers"
   ],
   "date": "2026-11-20",
-  "basis": "b44260be5909",
-  "updated": "2026-11-20T15:47+05:30",
+  "basis": "7b158118ff9e",
+  "updated": "2026-11-20T19:22+05:30",
   "model": "gemini-flash-lite-latest",
-  "items": 100
+  "items": 132
  },
  "stocks": {
   "PAYTM": {
@@ -187,6 +187,22 @@
    "updated": "2026-11-20T15:16+05:30",
    "model": "openai/gpt-oss-20b"
   },
+  "IIFL": {
+   "summary": "IIFL Finance is part of the Financial Services sector, which has seen strong recent gains. A small investment firm recently bought a tiny stake in the company, and analysts have mentioned it as a potential short-term opportunity.",
+   "why": "Shareholders may see their holdings gain value if the broader financial sector continues its upward trend and if the company benefits from positive market attention.",
+   "upside": "The financial sector's recent strength and analyst interest could support the stock price in the near term.",
+   "downside": "General market volatility could weigh on the stock price, and the small recent share purchase is unlikely to have a significant impact.",
+   "watch": [
+    "Further details on the amendment to IIFL Capital Services' filing.",
+    "Continued performance of the Financials sector index.",
+    "Any new institutional investments or analyst updates."
+   ],
+   "about": "IIFL Finance is a financial services company listed on the NSE.",
+   "basis": "f41a491a17ea",
+   "items": 4,
+   "updated": "2026-11-20T19:22+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "MUTHOOTFIN": {
    "summary": "Muthoot Finance shares fell 4‑5% after gold prices dropped to a one‑year low. The decline reflects concerns that lower gold values could raise loan risk and reduce profitability. The company is part of the Nifty 500 and operates in the financial services sector.",
    "why": "Shareholders see a risk that falling gold prices could increase non‑performing assets and reduce loan demand, impacting earnings.",
@@ -267,22 +283,6 @@
    "updated": "2026-11-19T15:02+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "IIFL": {
-   "summary": "IIFL Finance is part of the Nifty 500 index and recently received investment from institutional investors. The Financials sector has seen a slight rise in share prices over the last week.",
-   "why": "New money from large investors can signal confidence in the company, which may support the value of your shares.",
-   "upside": "Institutional interest and a rising sector trend could help the stock price move higher.",
-   "downside": "General market volatility could cause the share price to fall despite positive news.",
-   "watch": [
-    "How the new institutional investment affects the company's capital",
-    "Trends in the broader Financials sector index",
-    "Any further announcements from IIFL Capital Services regarding filing amendments"
-   ],
-   "about": "IIFL Finance operates in the Financial Services sector.",
-   "basis": "df1bc8362544",
-   "items": 3,
-   "updated": "2026-11-20T14:31+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "MANAPPURAM": {
    "summary": "Manappuram Finance shares fell recently as gold prices dropped to a one-year low. Because the company lends money against gold, falling gold prices put pressure on its business.",
    "why": "This matters because lower gold values make the loans the company gives out riskier and less profitable.",
@@ -347,22 +347,6 @@
    "updated": "2026-11-19T08:11+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "ONGC": {
-   "summary": "ONGC secured a subsea installation contract worth about ₹100 crore for a pipeline replacement project. The oil‑and‑gas sector index has slipped modestly, down 0.1% in the last session and 0.5% over five sessions.",
-   "why": "The contract could add revenue and improve the company’s outlook for shareholders.",
-   "upside": "If the project proceeds on schedule and within budget, it could lift earnings.",
-   "downside": "Delays or cost overruns could hurt the expected financial benefit.",
-   "watch": [
-    "Progress on the pipeline replacement project",
-    "Any further contract wins or losses",
-    "Movement of the oil‑and‑gas sector index"
-   ],
-   "about": "ONGC explores, produces and transports oil and natural gas in India.",
-   "basis": "235382f3533a",
-   "items": 1,
-   "updated": "2026-11-19T14:32+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "DALBHARAT": {
    "summary": "Dalmia Bharat's board will meet on November 23 to consider a proposal to buy back some of its own shares. This plan is currently under review and has not yet been approved.",
    "why": "A share buyback can return cash to shareholders and often supports the stock price, which may benefit current owners if approved.",
@@ -394,22 +378,6 @@
    "items": 2,
    "updated": "2026-11-20T09:30+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "JSWENERGY": {
-   "summary": "A tribunal ordered power distributors to pay JSW Energy pending wind power tariffs with interest. The company also filed a regulatory notice regarding material litigation.",
-   "why": "This ruling may bring in significant cash that was previously stuck in legal disputes. It helps clarify the financial impact of ongoing legal cases for shareholders.",
-   "upside": "The court order could result in a large inflow of cash from unpaid bills and interest.",
-   "downside": "State power companies might delay payment or appeal the decision in higher courts.",
-   "watch": [
-    "Whether state distributors actually make the payments",
-    "Any new details in the company's litigation filing",
-    "If the sector index continues to move sideways"
-   ],
-   "about": "JSW Energy is a power company listed in India's Nifty 500 index.",
-   "basis": "4b793021d08c",
-   "items": 2,
-   "updated": "2026-11-18T13:30+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "SOLARINDS": {
    "summary": "Solar Industries India Ltd. (SOLARINDS) is a chemicals company listed on the NSE and part of the Nifty 500. No company‑specific news has been reported in the last few days. The market may be influenced by broader sentiment affecting active stocks.",
@@ -570,22 +538,6 @@
    "updated": "2026-11-20T13:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "SUPREMEIND": {
-   "summary": "Supreme Industries Ltd. (SUPREMEIND) is listed in the Nifty 500 and operates in the capital goods sector. There are no specific recent announcements or events flagged for the company in the latest PulsEdge watch list.",
-   "why": "Shareholders watch large‑cap capital‑goods firms for stability and any future growth catalysts; the lack of recent news means no new drivers are evident now.",
-   "upside": "",
-   "downside": "",
-   "watch": [
-    "Look for any new order or contract wins announced by Supreme Industries",
-    "Monitor regulatory or legal developments affecting capital‑goods companies",
-    "Watch for changes in its Nifty 500 status or index weighting"
-   ],
-   "about": "",
-   "basis": "af2044457e93",
-   "items": 2,
-   "updated": "2026-11-18T15:46+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "HFCL": {
    "summary": "HFCL shares have fallen sharply, dropping up to 29% in the past month as AI‑related sell‑off hits Indian small‑cap tech stocks.",
    "why": "The steep price decline creates volatility for current shareholders and may affect the value of their investment.",
@@ -618,22 +570,6 @@
    "updated": "2026-11-20T13:46+05:30",
    "model": "gemini-flash-lite-latest"
   },
-  "SIGNATURE": {
-   "summary": "Signatureglobal is expanding its land bank, buying two 10‑acre parcels in Gurugram and securing development rights over 10.18 acres in Sohna, while reporting 4,400 cr of project launches in H1 and targeting 10,000 cr of bookings for FY27.",
-   "why": "These actions could increase future sales and earnings, which matters to shareholders.",
-   "upside": "If the new land is developed on schedule and FY27 bookings are achieved, earnings could improve.",
-   "downside": "Execution delays or higher development costs could offset the expected benefits.",
-   "watch": [
-    "Progress on Gurugram land development",
-    "Achievement of FY27 bookings guidance",
-    "Realty sector index trends"
-   ],
-   "about": "Signatureglobal (India) Ltd. is a real estate developer that builds residential projects in India.",
-   "basis": "6e9236da86e9",
-   "items": 4,
-   "updated": "2026-11-20T11:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "BDL": {
    "summary": "PulsEdge flagged that the Indian government is planning a 20% increase in defence capital spending next year and that India and Japan may finalise an agreement for Japanese forces to use Indian missile test ranges. These developments have pushed BDL and other defence stocks up about 3% on expectations of more orders.",
    "why": "Higher defence spending and deeper Indo‑Japan cooperation could translate into more contracts and higher profits for BDL shareholders.",
@@ -665,6 +601,22 @@
    "items": 3,
    "updated": "2026-11-19T19:24+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "GALLANTT": {
+   "summary": "PulsEdge flagged three large block deals for Gallantt Ispat on November 20, 2026. One investor sold shares worth ₹84 crore, while two others bought shares worth ₹56 crore and ₹29 crore respectively.",
+   "why": "These trades show that large investors are actively changing their positions in the company. While one big seller exited, two other big buyers stepped in, suggesting mixed views on the stock's value.",
+   "upside": "Two separate investors bought a combined total of ₹85 crore in shares, which may indicate confidence in the company's future.",
+   "downside": "A single investor sold ₹84 crore worth of shares, which could signal a view that the stock has less room to grow or a need for cash.",
+   "watch": [
+    "Future block deals to see if the selling or buying trend continues",
+    "Company announcements regarding business performance",
+    "General market movements affecting the Capital Goods sector"
+   ],
+   "about": "",
+   "basis": "c9f2057310d9",
+   "items": 2,
+   "updated": "2026-11-20T19:22+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "BEL": {
    "summary": "The Indian government plans to significantly increase spending on defence equipment in the coming year. This move is expected to lead to more orders for companies like Bharat Electronics Ltd. that manufacture defence gear.",
@@ -699,20 +651,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. (OIL) is an oil and gas company listed in the Nifty 500. Recent headlines show oil prices rising due to geopolitical tensions and supply concerns, which could affect the company’s earnings. The sector index has gained 0.9% in the last session and over five sessions.",
-   "why": "Shareholders of OIL may see their investment influenced by changes in oil prices, as higher prices can improve revenue for oil producers.",
-   "upside": "Higher oil prices could boost OIL’s earnings.",
-   "downside": "Lower long‑term oil price forecasts or an oversupply could reduce earnings.",
+   "summary": "Oil India Ltd. is feeling the impact of recent oil‑price swings caused by geopolitical tensions and a growing global supply surplus. Analysts also see Brent crude averaging $75‑$85 by 2027, which could pressure earnings.",
+   "why": "Shareholder returns are closely tied to crude‑oil prices, so any move in global oil markets can affect the company’s profit outlook.",
+   "upside": "Higher oil prices from supply disruptions or stronger demand could lift earnings.",
+   "downside": "Falling long‑term oil prices and a surplus of crude supply could compress revenues.",
    "watch": [
-    "Future oil price forecasts and supply outlooks",
-    "Geopolitical events that may disrupt oil supply",
-    "OPEC+ policy decisions that could tighten or loosen supply"
+    "Brent price forecast of $75‑$85 by 2027",
+    "Geopolitical events such as Ukrainian drone strikes and Houthi attacks that may tighten supply",
+    "Global crude‑supply trends, including the drop in US sour‑crude premiums"
    ],
-   "about": "Oil India Ltd. is an Indian oil company involved in exploration and production.",
-   "basis": "949de74624c4",
-   "items": 19,
-   "updated": "2026-11-20T14:01+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "Oil India Ltd. explores, produces and sells crude oil and natural gas in India.",
+   "basis": "3a7e787d6944",
+   "items": 18,
+   "updated": "2026-11-20T19:22+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "MARUTI": {
    "summary": "Maruti Suzuki shares are part of a recent auto‑sector rally, with the Nifty Auto index up 4.4% in the last session and Maruti among the leading stocks. The company also appeared on a broker’s list of top stocks to buy, though this is just an opinion.",
@@ -730,6 +682,22 @@
    "updated": "2026-11-20T15:02+05:30",
    "model": "openai/gpt-oss-20b"
   },
+  "CROMPTON": {
+   "summary": "PulsEdge flagged that Crompton Greaves Consumer Electricals Ltd. received a new government permit and also reported a change in its key licences. The broader consumer durables sector showed a slight dip of 0.4% in the last session.",
+   "why": "Shareholders should watch the licence update because it can affect the company’s ability to launch products or enter new markets.",
+   "upside": "If the new permit allows the company to expand its product range or geographic reach, revenue could improve.",
+   "downside": "If the licence change involves a withdrawal or restriction, it could limit operations and hurt earnings.",
+   "watch": [
+    "Details of the new government permit and its scope",
+    "Any further licence withdrawals or suspensions",
+    "Movement of the Consumer Durables index and related peer performance"
+   ],
+   "about": "Crompton Greaves Consumer Electricals Ltd. manufactures and sells consumer electrical appliances.",
+   "basis": "a1c431907597",
+   "items": 3,
+   "updated": "2026-11-20T19:22+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "INFY": {
    "summary": "Infosys shares have fallen sharply, losing about a quarter of investor wealth over the past year, while the broader Indian IT sector recently rallied 2% even as global tech stocks slipped. The sector index is down 1.1% in the last session and 3.9% over five sessions, showing mixed momentum.",
    "why": "Shareholders feel the impact of both the price drop and the sector’s relative strength, which can affect the stock’s future value.",
@@ -746,54 +714,6 @@
    "updated": "2026-11-20T10:31+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "KALYANKJIL": {
-   "summary": "Kalyan Jewellers shares fell recently as gold prices dropped and the broader consumer durables sector weakened. This decline happened despite lower gold prices, which some investors see as a potential boost for future sales.",
-   "why": "Shareholders may see short-term losses because falling gold prices can reduce the value of the company's inventory and lower demand for gold loans. However, these factors can also influence how much profit the company makes on each item sold.",
-   "upside": "Lower gold prices might encourage more people to buy jewellery during the upcoming wedding and festive seasons.",
-   "downside": "Falling gold prices could lead to inventory write-downs and reduced demand for gold-backed loans, squeezing profits.",
-   "watch": [
-    "Changes in gold prices",
-    "Consumer demand during the wedding season",
-    "Performance of the Consumer Durables sector index"
-   ],
-   "about": "",
-   "basis": "3e9a7c5b1558",
-   "items": 3,
-   "updated": "2026-11-20T10:16+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "TITAN": {
-   "summary": "Titan Company Ltd. shares recently fell as gold prices slid and broader consumer durable stocks faced selling pressure. Investors are also watching concerns around near-term consumer demand for jewellery.",
-   "why": "This matters because sudden drops in gold prices can impact inventory values, while weaker retail demand can affect sales volumes and profit margins.",
-   "upside": "Lower gold prices or the upcoming wedding season demand could quickly trigger a rebound and stimulate consumer buying.",
-   "downside": "The sector-wide sell-off could continue if broader market sentiment weakens or if retail demand stays soft.",
-   "watch": [
-    "Changes in gold and bullion prices",
-    "Consumer demand during the wedding season",
-    "Broader market and sector-wide sentiment"
-   ],
-   "about": "Titan Company Ltd. operates in the consumer durables sector and is one of India's 50 largest listed companies.",
-   "basis": "3e9a7c5b1558",
-   "items": 3,
-   "updated": "2026-11-20T13:32+05:30",
-   "model": "gemini-flash-lite-latest"
-  },
-  "BHARATFORG": {
-   "summary": "Bharat Forge is in focus after announcing a merger and being highlighted as a defence stock that could benefit from a proposed 20% increase in government defence capex. The auto sector index has also risen recently, adding market attention.",
-   "why": "Shareholders may see profit growth from new defence orders and changes in the company's size or debt profile due to the merger.",
-   "upside": "If the defence spending boost is implemented quickly, Bharat Forge could receive larger orders and improve earnings.",
-   "downside": "Delays in policy rollout or dilution from the merger could hurt shareholder value.",
-   "watch": [
-    "Timeline and details of the announced amalgamation/merger",
-    "Government defence capex allocation and order pipeline",
-    "Continued performance of the auto sector index and market attention"
-   ],
-   "about": "Bharat Forge manufactures forged components for automotive and defence applications.",
-   "basis": "f7a97591beec",
-   "items": 3,
-   "updated": "2026-11-20T03:25+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "M&M": {
    "summary": "PulsEdge flagged that Mahindra & Mahindra (M&M) shares rose sharply today as part of a broader auto‑sector rally, helped by cheaper metal and oil prices. However, the auto index has slipped 1.4% in the last session and 4% over the past five sessions.",
    "why": "The recent price move shows how market sentiment can quickly lift or pull down M&M’s share value.",
@@ -808,6 +728,22 @@
    "basis": "20889272e336",
    "items": 3,
    "updated": "2026-11-19T15:16+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "BLUESTARCO": {
+   "summary": "PulsEdge flagged that Blue Star Ltd. disclosed a fine levied by the exchange, which could dent profits. At the same time, the stock rallied up to 8% as lower copper prices cut material costs for its air‑conditioner business.",
+   "why": "Shareholders should watch the fine because it may reduce earnings, while cheaper copper could improve margins on each unit sold.",
+   "upside": "If copper prices stay low, the company could enjoy higher profit margins on its air‑conditioners.",
+   "downside": "If the regulator imposes larger penalties, the fine could further erode profitability.",
+   "watch": [
+    "Resolution of the exchange fine and any additional penalties",
+    "Copper price movements and their impact on material costs",
+    "Overall performance of the consumer durables sector"
+   ],
+   "about": "Blue Star Ltd. makes air conditioners and other consumer‑durable appliances.",
+   "basis": "121ad3010d5b",
+   "items": 2,
+   "updated": "2026-11-20T19:22+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "INDUSINDBK": {
@@ -858,6 +794,38 @@
    "updated": "2026-11-20T15:02+05:30",
    "model": "openai/gpt-oss-20b"
   },
+  "KALYANKJIL": {
+   "summary": "Kalyan Jewellers shares fell up to 4% after a sharp slide in gold prices, and the broader Consumer Durables index also slipped. The drop reflects concerns about lower gold prices affecting inventory values and loan demand.",
+   "why": "Shareholders see the price movement because falling gold prices can lead to inventory write‑downs and reduced demand for gold‑backed loans.",
+   "upside": "Lower gold prices could boost consumer buying of jewellery during festive and wedding seasons.",
+   "downside": "A continued fall in gold prices may force the company to write down inventory and see weaker loan demand.",
+   "watch": [
+    "Gold price trends",
+    "Consumer Durables sector performance",
+    "Festive and wedding season jewellery demand"
+   ],
+   "about": "Kalyan Jewellers India Ltd. is a retailer that designs, manufactures, and sells jewellery.",
+   "basis": "bf393177c577",
+   "items": 2,
+   "updated": "2026-11-20T19:22+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "TITAN": {
+   "summary": "Titan's share price fell recently, dropping up to 4% in one session as gold prices dropped. The broader consumer durables sector also saw a decline, with the index sliding 3% in a single day.",
+   "why": "Lower gold prices can reduce the value of a company's existing stock and lower demand for gold-backed loans, which may affect Titan's short-term earnings.",
+   "upside": "Cheaper gold could encourage more people to buy jewellery during festive and wedding seasons.",
+   "downside": "If the general market mood stays weak, the sell-off in consumer durables stocks could continue.",
+   "watch": [
+    "How gold prices move in the coming days",
+    "Sales trends during the festive and wedding seasons",
+    "Performance of other companies in the consumer durables sector"
+   ],
+   "about": "Titan is a major Indian company in the consumer durables sector, known for products like watches and jewellery.",
+   "basis": "bf393177c577",
+   "items": 2,
+   "updated": "2026-11-20T19:22+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "INDIGO": {
    "summary": "IndiGo is flagged for a possible earnings downgrade as analysts expect lower profits than previously forecast.",
    "why": "Lower profit expectations can pressure the stock, affecting shareholders' returns.",
@@ -890,6 +858,22 @@
    "updated": "2026-11-20T08:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "BHARATFORG": {
+   "summary": "PulsEdge flagged Bharat Forge as a defence‑related stock that could benefit from the government's plan to raise defence capital spending by 20%. The company also appeared on a broader watchlist, drawing extra market attention.",
+   "why": "Higher defence orders could lift earnings, while being on a watchlist may increase trading activity and price volatility.",
+   "upside": "If the defence capex boost is implemented quickly, Bharat Forge could see new contracts and stronger profits.",
+   "downside": "Delays in policy rollout or order allocation could postpone any revenue uplift.",
+   "watch": [
+    "Progress of the government's 20% defence capex increase",
+    "Any new defence contract announcements for Bharat Forge",
+    "Movement of the auto sector index and related market sentiment"
+   ],
+   "about": "Bharat Forge manufactures automotive and auto components.",
+   "basis": "fd8f72968a42",
+   "items": 2,
+   "updated": "2026-11-20T19:22+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "HYUNDAI": {
    "summary": "Hyundai Motor India shares rose as part of a broader jump in auto stocks. This happened because cheaper metal and oil reduced worries about production costs.",
    "why": "Lower costs can help the company keep its profits healthy, which is good news for shareholders.",
@@ -905,38 +889,6 @@
    "items": 2,
    "updated": "2026-11-20T12:30+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "SAIL": {
-   "summary": "SAIL is in focus as metal prices have slipped, pressuring earnings. Metal stocks fell sharply after a global commodity price drop and a stronger US dollar.",
-   "why": "Earnings pressure from lower metal prices can affect the profitability of SAIL’s shares.",
-   "upside": "If global metal prices stabilize or rise, SAIL’s earnings could improve.",
-   "downside": "Further declines in global metal prices could hurt SAIL’s profit margins.",
-   "watch": [
-    "Metal price trends",
-    "US dollar index movements",
-    "China stimulus announcements"
-   ],
-   "about": "SAIL is a leading Indian steel producer.",
-   "basis": "cb4e465fc185",
-   "items": 2,
-   "updated": "2026-11-20T13:16+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "HINDALCO": {
-   "summary": "Hindalco Industries Ltd. recently saw its shares fall along with other metal stocks due to falling global commodity prices and a stronger US dollar. At the same time, an investment bank picked the company as a strong option following its recent earnings results.",
-   "why": "External factors like global commodity prices and currency changes can quickly impact the profits and share prices of metal producers. Broker recommendations can also influence whether other investors decide to buy or sell the stock.",
-   "upside": "Positive backing from major investment banks could attract new investors and help push the stock price up.",
-   "downside": "Falling global commodity prices and a stronger US dollar could continue to squeeze profit margins.",
-   "watch": [
-    "Global commodity price trends",
-    "Movements in the US dollar index",
-    "Any new stimulus announcements from China"
-   ],
-   "about": "Hindalco Industries Ltd. is a major metals and mining company that is part of India's Nifty 50 index.",
-   "basis": "a85cb5136dbd",
-   "items": 2,
-   "updated": "2026-11-20T13:32+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "JBMA": {
    "summary": "JBM Auto is seen as a potential beneficiary of the Indian government’s new PM E‑Bus Sewa payment portal, which aims to fund electric bus projects. The auto sector has also posted gains, up 4.4% in the last session.",
@@ -1066,22 +1018,6 @@
    "updated": "2026-11-19T16:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BLUESTARCO": {
-   "summary": "Blue Star shares jumped up to 8% as copper prices fell, lowering material costs for its air conditioners. Meanwhile, the consumer durables sector index slipped about 3% recently.",
-   "why": "Lower copper costs can improve profit margins for shareholders, but the broader sector weakness could weigh on the stock.",
-   "upside": "Sustained low copper prices could further boost Blue Star’s margins.",
-   "downside": "A rebound in copper prices could raise material costs and pressure earnings.",
-   "watch": [
-    "Copper price trends",
-    "Consumer durables sector index movement",
-    "Blue Star stock price momentum"
-   ],
-   "about": "Blue Star Ltd. manufactures air conditioners and other consumer durable products.",
-   "basis": "ac27675f1cb5",
-   "items": 1,
-   "updated": "2026-11-19T13:01+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "INOXWIND": {
    "summary": "PulsEdge flagged that Inox Wind Ltd. is targeting roughly ₹7,500 crore in revenue for FY28 along with a long‑term EBITDA margin of about 20%. The company is part of the Nifty 500 index.",
    "why": "These targets set expectations for future earnings, which can affect the value of existing shares.",
@@ -1096,6 +1032,22 @@
    "basis": "6e0fc1c0fa1e",
    "items": 1,
    "updated": "2026-11-20T07:57+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "SUPREMEIND": {
+   "summary": "Supreme Industries Ltd. (SUPREMEIND) is listed in the Nifty 500 and operates in the capital goods sector. There are no specific recent announcements or events flagged for the company in the latest PulsEdge watch list.",
+   "why": "Shareholders watch large‑cap capital‑goods firms for stability and any future growth catalysts; the lack of recent news means no new drivers are evident now.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "Look for any new order or contract wins announced by Supreme Industries",
+    "Monitor regulatory or legal developments affecting capital‑goods companies",
+    "Watch for changes in its Nifty 500 status or index weighting"
+   ],
+   "about": "",
+   "basis": "af2044457e93",
+   "items": 2,
+   "updated": "2026-11-18T15:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "BATAINDIA": {
@@ -1113,22 +1065,6 @@
    "items": 1,
    "updated": "2026-11-18T14:01+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "CROMPTON": {
-   "summary": "Crompton Greaves Consumer Electricals is part of the consumer durables sector, which saw a 3% drop in its index recently. This decline happened alongside other major companies in the same group, such as Titan and Kalyan Jewellers.",
-   "why": "If you own Crompton shares, this drop shows that the market is currently cautious about companies that sell durable goods like appliances. The value of your shares may fluctuate as investors adjust their views on this specific type of business.",
-   "upside": "",
-   "downside": "The sector-wide sell-off could continue if general market confidence weakens further.",
-   "watch": [
-    "Whether the consumer durables sector index stabilizes or continues to fall.",
-    "How other large companies in the Nifty 500 are performing.",
-    "General market sentiment for the next few sessions."
-   ],
-   "about": "",
-   "basis": "266d2c7acd5a",
-   "items": 1,
-   "updated": "2026-11-18T14:01+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "DIXON": {
    "summary": "Dixon Technologies is part of the consumer durables sector, which fell about 3% on the last trading day and over 3% across five sessions.",
@@ -1242,22 +1178,6 @@
    "updated": "2026-11-19T14:32+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "NTPC": {
-   "summary": "PulsEdge flagged a tragic accident at NTPC's Tandwa project where three workers died and two were injured, and an investigation is now under way. The Energy sector index was flat over the past five sessions, showing little market movement.",
-   "why": "Shareholders should watch the incident because it could pause work, raise safety costs, or attract regulatory scrutiny that may affect earnings.",
-   "upside": "If the investigation finds no major violations, the project could resume quickly and avoid additional costs.",
-   "downside": "Regulatory fines, safety audits, or prolonged project delays could increase expenses and hurt profitability.",
-   "watch": [
-    "Result of the accident investigation",
-    "Any regulatory actions or fines announced",
-    "Impact on project timelines and power output at Tandwa"
-   ],
-   "about": "NTPC Ltd. is a major Indian power generation company.",
-   "basis": "6d6aa8ded454",
-   "items": 2,
-   "updated": "2026-11-18T14:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "CANFINHOME": {
    "summary": "Can Fin Homes Ltd. has announced a change in one of its key government permits. The company notified the exchange about this change. This could affect its operations.",
    "why": "Permits are needed to do business; losing one could hurt the company.",
@@ -1368,6 +1288,22 @@
    "items": 1,
    "updated": "2026-11-19T03:10+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "NTPC": {
+   "summary": "PulsEdge flagged a tragic accident at NTPC's Tandwa project where three workers died and two were injured, and an investigation is now under way. The Energy sector index was flat over the past five sessions, showing little market movement.",
+   "why": "Shareholders should watch the incident because it could pause work, raise safety costs, or attract regulatory scrutiny that may affect earnings.",
+   "upside": "If the investigation finds no major violations, the project could resume quickly and avoid additional costs.",
+   "downside": "Regulatory fines, safety audits, or prolonged project delays could increase expenses and hurt profitability.",
+   "watch": [
+    "Result of the accident investigation",
+    "Any regulatory actions or fines announced",
+    "Impact on project timelines and power output at Tandwa"
+   ],
+   "about": "NTPC Ltd. is a major Indian power generation company.",
+   "basis": "6d6aa8ded454",
+   "items": 2,
+   "updated": "2026-11-18T14:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "PRESTIGE": {
    "summary": "Prestige Estates Projects Ltd. launched a new residential project called Prestige Avon in North Bengaluru and announced several corporate moves, including a 50% stake purchase in Advent Convention and Hotels International, the formation of two wholly owned subsidiaries, and an acquisition of another business. These actions aim to expand its portfolio and support future revenue growth.",
@@ -1561,6 +1497,22 @@
    "updated": "2026-11-20T08:16+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "HINDALCO": {
+   "summary": "Hindalco Industries Ltd. recently saw its shares fall along with other metal stocks due to falling global commodity prices and a stronger US dollar. At the same time, an investment bank picked the company as a strong option following its recent earnings results.",
+   "why": "External factors like global commodity prices and currency changes can quickly impact the profits and share prices of metal producers. Broker recommendations can also influence whether other investors decide to buy or sell the stock.",
+   "upside": "Positive backing from major investment banks could attract new investors and help push the stock price up.",
+   "downside": "Falling global commodity prices and a stronger US dollar could continue to squeeze profit margins.",
+   "watch": [
+    "Global commodity price trends",
+    "Movements in the US dollar index",
+    "Any new stimulus announcements from China"
+   ],
+   "about": "Hindalco Industries Ltd. is a major metals and mining company that is part of India's Nifty 50 index.",
+   "basis": "a85cb5136dbd",
+   "items": 2,
+   "updated": "2026-11-20T13:32+05:30",
+   "model": "gemini-flash-lite-latest"
+  },
   "IKS": {
    "summary": "Inventurus Knowledge Solutions has announced it will merge with Turbo Health Holdings. The company also filed a general update regarding this acquisition process.",
    "why": "Mergers can change a company's size, debt levels, and future earnings, which directly impacts the value of its shares.",
@@ -1592,6 +1544,22 @@
    "items": 2,
    "updated": "2026-11-20T15:02+05:30",
    "model": "openai/gpt-oss-20b"
+  },
+  "SIGNATURE": {
+   "summary": "Signatureglobal is expanding its land bank, buying two 10‑acre parcels in Gurugram and securing development rights over 10.18 acres in Sohna, while reporting 4,400 cr of project launches in H1 and targeting 10,000 cr of bookings for FY27.",
+   "why": "These actions could increase future sales and earnings, which matters to shareholders.",
+   "upside": "If the new land is developed on schedule and FY27 bookings are achieved, earnings could improve.",
+   "downside": "Execution delays or higher development costs could offset the expected benefits.",
+   "watch": [
+    "Progress on Gurugram land development",
+    "Achievement of FY27 bookings guidance",
+    "Realty sector index trends"
+   ],
+   "about": "Signatureglobal (India) Ltd. is a real estate developer that builds residential projects in India.",
+   "basis": "6e9236da86e9",
+   "items": 4,
+   "updated": "2026-11-20T11:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "ENGINERSIN": {
    "summary": "Engineers India Ltd is a construction company listed on the NSE and part of the Nifty 500 index. No company‑specific announcements have been flagged in recent days.",
