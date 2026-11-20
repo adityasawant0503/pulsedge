@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T12:15+05:30",
+ "updated": "2026-11-20T12:30+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Indian stocks opened lower as global worries about AI companies dragged down tech shares, but the market recovered later in the day. Hospital and auto stocks were the biggest winners, while metal and small-cap tech stocks fell. A stronger US dollar also hurt metal prices, and some large companies like Ashoka Buildcon saw shares drop after losing a major contract.",
+  "summary": "PulsEdge flagged a weak start on Friday as the GIFT Nifty fell sharply, pulling many stocks lower. AI‑related concerns kept small‑cap tech stocks under pressure while Indian IT firms rose, bucking the global trend. Metal indices slipped about 3% on a stronger US dollar, whereas hospital stocks surged and Jupiter Wagons won a repeat order worth over INR 128 crore. Ashoka Buildcon’s shares dropped after a Saudi project was cancelled, adding to sectoral volatility.",
   "themes": [
-   "Healthcare and auto stocks led the market higher while technology shares struggled.",
-   "Global AI concerns caused a sell-off in small-cap tech and metal stocks.",
-   "Company-specific news, like new orders or lost contracts, moved individual shares sharply."
+   "AI‑driven sell‑off hits small‑cap tech stocks",
+   "Strong US dollar drags down metal sector",
+   "Healthcare and IT stocks show relative strength"
   ],
   "watch": [
-   "Whether hospital stocks continue to rise or pull back after a strong monthly gain.",
-   "If the US dollar stays strong, which could keep metal prices low.",
-   "How Indian IT companies perform if global tech sentiment worsens further."
+   "Potential further project cancellations or delays for Ashoka Buildcon",
+   "Raw material cost trends that could affect Jupiter Wagons and metal miners",
+   "Bond yield movements that may shift investor flow away from equities"
   ],
   "date": "2026-11-20",
-  "basis": "fe0dc8dcc3c7",
-  "updated": "2026-11-20T11:31+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 43
+  "basis": "f0950fdfc1fe",
+  "updated": "2026-11-20T12:30+05:30",
+  "model": "openai/gpt-oss-120b",
+  "items": 53
  },
  "stocks": {
   "PAYTM": {
@@ -172,20 +172,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "RELIANCE": {
-   "summary": "Reliance Industries shares rose by 13% in the last month. JPMorgan recently noted that the stock has potential for further growth, while another advisor listed it as a top pick.",
-   "why": "These recent analyst comments suggest that some experts believe the company's performance may continue to improve, which could affect the value of your shares.",
-   "upside": "Analysts have indicated that the stock price could rise further if earnings growth meets expectations.",
-   "downside": "There is a risk that the company's earnings growth may not meet market expectations, which could impact the share price.",
+   "summary": "Reliance shares have jumped 13% over the past month and analysts see further upside, while the oil and gas sector index rose modestly.",
+   "why": "Shareholders should watch because analyst sentiment could influence the stock’s momentum and earnings expectations matter.",
+   "upside": "If earnings grow as expected, the stock could continue to rise.",
+   "downside": "If earnings growth falls short, the stock could face pressure.",
    "watch": [
-    "Upcoming earnings reports to see if growth matches expectations",
-    "Changes in analyst ratings or price targets",
-    "Performance of the broader Oil & Gas sector"
+    "JPMorgan’s analyst outlook",
+    "Upcoming earnings reports",
+    "Oil & Gas sector index performance"
    ],
-   "about": "Reliance Industries is a large Indian company operating in the Oil, Gas, and Consumable Fuels sector.",
-   "basis": "47571773eaa9",
-   "items": 2,
-   "updated": "2026-11-19T12:45+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Reliance Industries Ltd. is a large Indian conglomerate with major operations in oil, gas and petrochemicals.",
+   "basis": "b59bbff23020",
+   "items": 1,
+   "updated": "2026-11-20T12:30+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "POLICYBZR": {
    "summary": "PB Fintech announced it is selling a business unit and reported changes in its board of directors. Additionally, co-founder Alok Bansal stepped down from his daily role, which caused the stock price to drop.",
@@ -747,20 +747,36 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. has been making headlines amid shifting global oil prices driven by geopolitical tensions, supply concerns, and potential production changes by world leaders. At the same time, Indian officials highlighted rising domestic demand for petrochemicals and a strong position in sustainable aviation fuel.",
-   "why": "PulsEdge noted that global crude price movements directly affect revenues for oil producers, while long-term demand trends and new fuel areas can shape the company's future growth.",
-   "upside": "Higher global oil prices and rising domestic demand for petrochemicals could boost the company's earnings.",
-   "downside": "Global supply surpluses, sudden de-escalations, or a broader downtrend in crude prices could limit gains.",
+   "summary": "Oil India Ltd. is seeing its sector rise as global oil prices edge higher amid geopolitical tensions and supply concerns. At the same time, statements about India's potential in sustainable aviation fuel hint at new growth avenues.",
+   "why": "Higher oil prices can boost the company's revenue, while any price drop from increased supply could pressure earnings.",
+   "upside": "If oil prices stay elevated or the sustainable aviation fuel projects materialize, the company's earnings could improve.",
+   "downside": "A surge in global supply or policy actions that lower crude prices could reduce revenue.",
    "watch": [
-    "Geopolitical updates affecting global oil supply and tanker disruptions",
-    "Global crude price trends and OPEC+ policy decisions",
-    "Updates on India's petrochemical demand and sustainable aviation fuel plans"
+    "Oil price movements after geopolitical events",
+    "Developments in sustainable aviation fuel projects in India",
+    "OPEC+ policy decisions affecting supply"
    ],
-   "about": "Oil India Ltd. is an oil and gas company engaged in exploring, drilling, and producing crude oil and natural gas.",
-   "basis": "414fe508d29f",
-   "items": 17,
-   "updated": "2026-11-20T11:15+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "Oil India Ltd. explores, produces and sells crude oil and natural gas in India.",
+   "basis": "96aceeea6ade",
+   "items": 18,
+   "updated": "2026-11-20T12:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "HDFCBANK": {
+   "summary": "PulsEdge flagged that HDFC Bank is part of a strong rally in bank stocks, with the Nifty Bank index hitting a new high and HDFC Bank rising up to 21% in November. The bank was also named by Goldman Sachs as a high‑growth stock, adding to the positive sentiment.",
+   "why": "This matters to shareholders because upbeat market sentiment and analyst endorsement could support the share price, while a reversal in sector rotation could affect returns.",
+   "upside": "If the bank rally and high‑growth endorsement continue, the stock could see further gains.",
+   "downside": "A shift of investor focus to other sectors or a broader market decline could pull the stock lower.",
+   "watch": [
+    "Nifty Bank index performance",
+    "Signs of sector rotation",
+    "New analyst commentary on HDFC Bank"
+   ],
+   "about": "HDFC Bank is a major Indian private‑sector bank offering retail and wholesale banking services.",
+   "basis": "554492856b09",
+   "items": 4,
+   "updated": "2026-11-20T12:30+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "MARUTI": {
    "summary": "Maruti Suzuki shares have risen sharply as the auto sector rallied, with the Nifty Auto index up 4.4% in the last session and 1.3% over five sessions. The stock also appeared in a recent list of top picks by a broker.",
@@ -792,6 +808,38 @@
    "basis": "c94bbd3d695c",
    "items": 4,
    "updated": "2026-11-19T11:45+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "TATASTEEL": {
+   "summary": "Tata Steel is facing higher iron‑ore costs and is still discussing financial assistance with the Dutch government while metal stocks have been falling.",
+   "why": "Higher raw‑material costs and uncertain financing can affect earnings and cash flow for shareholders.",
+   "upside": "If steel prices rise enough to offset ore cost hikes or Dutch aid is secured, profitability could improve.",
+   "downside": "Rising ore costs without offsetting steel price gains and no financial assistance could squeeze margins.",
+   "watch": [
+    "US dollar strength and its impact on metal prices",
+    "Domestic steel price trends",
+    "Progress on Dutch government financial assistance talks"
+   ],
+   "about": "Tata Steel Ltd. is one of India’s largest steel manufacturers.",
+   "basis": "153fd9ae2d7d",
+   "items": 3,
+   "updated": "2026-11-20T12:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "ICICIBANK": {
+   "summary": "ICICI Bank shares have risen significantly in November, contributing to a new high for the Nifty Bank index. The Financials sector has also shown steady growth over the last week.",
+   "why": "This matters because strong performance in the banking sector can boost the value of your shares if the trend continues. However, it also means the stock has already increased in price recently.",
+   "upside": "Investors are currently favoring bank stocks, which could support further gains if this preference persists.",
+   "downside": "If other market sectors start gaining momentum, money may move out of banks, causing prices to fall or stay flat.",
+   "watch": [
+    "Whether the Nifty Bank index holds its recent high.",
+    "If the broader market remains stable or starts to fall.",
+    "Changes in investor interest across different sectors."
+   ],
+   "about": "ICICI Bank is a major financial services company and one of India's 50 largest listed firms.",
+   "basis": "44829cf4e54b",
+   "items": 3,
+   "updated": "2026-11-20T12:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "INFY": {
@@ -842,22 +890,6 @@
    "updated": "2026-11-20T10:16+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "HDFCBANK": {
-   "summary": "HDFC Bank is currently being highlighted in several market watchlists and analyst reports. The broader financial sector has seen a slight rise in recent sessions, with bank stocks showing positive technical trends.",
-   "why": "These mentions can attract short-term trading interest, which may cause the share price to move up or down without any specific company news.",
-   "upside": "Positive technical signals and sector-wide gains could support the stock price in the near term.",
-   "downside": "If the broader market falls or the technical trends reverse, the stock price may decline or stay flat.",
-   "watch": [
-    "Whether the Nifty Bank index maintains its recent upward trend",
-    "Any new specific news or earnings updates from HDFC Bank",
-    "Overall market sentiment and sector-wide performance"
-   ],
-   "about": "HDFC Bank is a major financial services company and one of India's 50 largest listed firms.",
-   "basis": "d3c70f26d9e6",
-   "items": 3,
-   "updated": "2026-11-20T08:30+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "BHARATFORG": {
    "summary": "Bharat Forge is in focus after announcing a merger and being highlighted as a defence stock that could benefit from a proposed 20% increase in government defence capex. The auto sector index has also risen recently, adding market attention.",
    "why": "Shareholders may see profit growth from new defence orders and changes in the company's size or debt profile due to the merger.",
@@ -872,22 +904,6 @@
    "basis": "f7a97591beec",
    "items": 3,
    "updated": "2026-11-20T03:25+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "HYUNDAI": {
-   "summary": "Hyundai Motor India saw its shares rise as the auto sector jumped about 4% on cheaper metal and oil easing cost concerns. The rally is noted as potentially temporary if input costs climb again.",
-   "why": "Shareholders feel the sector’s lift could boost Hyundai’s stock, but rising input costs could squeeze margins.",
-   "upside": "Sustained lower metal and oil prices could keep costs down and support earnings.",
-   "downside": "A rebound in metal or oil prices could raise input costs and pressure profitability.",
-   "watch": [
-    "Trends in metal and oil prices affecting input costs",
-    "Movement of the Nifty Auto index and sector momentum",
-    "Any new analyst commentary or rating changes for Hyundai"
-   ],
-   "about": "Hyundai Motor India Ltd. manufactures and sells automobiles in the Indian market.",
-   "basis": "cc1680b14009",
-   "items": 3,
-   "updated": "2026-11-20T12:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "M&M": {
@@ -922,6 +938,22 @@
    "updated": "2026-11-18T14:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "JSWSTEEL": {
+   "summary": "JSW Steel shares saw a small rise in recent trading, but the broader metals sector has fallen sharply over the last week. Experts are currently comparing JSW Steel with other major metal companies to see how they might handle the current market drop.",
+   "why": "The recent drop in the sector means the value of your shares has likely decreased, and the small recent gain may not last if the wider market trend continues downward.",
+   "upside": "The sector index showed a small gain in the most recent session, suggesting a brief pause in the recent decline.",
+   "downside": "A stronger US dollar is putting pressure on metal prices, which could keep the sector under stress.",
+   "watch": [
+    "Whether the small recent share price gain holds or reverses.",
+    "How the US dollar strength affects metal prices.",
+    "How JSW Steel performs compared to peers like Tata Steel and Hindustan Zinc."
+   ],
+   "about": "JSW Steel is a large Indian company in the metals and mining sector.",
+   "basis": "e3cabe334d84",
+   "items": 2,
+   "updated": "2026-11-20T12:30+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "INDIGO": {
    "summary": "IndiGo is flagged for a possible earnings downgrade as analysts expect lower profits than previously forecast.",
    "why": "Lower profit expectations can pressure the stock, affecting shareholders' returns.",
@@ -952,22 +984,6 @@
    "basis": "68915273e31c",
    "items": 2,
    "updated": "2026-11-20T09:47+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "ICICIBANK": {
-   "summary": "ICICI Bank was highlighted in a recent list of top stocks by Axis Direct and analysts note a technical breakout that could push Nifty Bank banks toward new highs. The broader financial sector index rose modestly in the last session and over the past five sessions.",
-   "why": "These signals could influence the bank's share movement, affecting investors' portfolio value.",
-   "upside": "If the technical bias holds and market sentiment stays positive, the stock could see upward momentum.",
-   "downside": "If the broader market declines or the broker's view lags, the stock may remain flat or drop.",
-   "watch": [
-    "Inclusion in Axis Direct's top‑stock list",
-    "Technical breakout expectations for Nifty Bank banks",
-    "Financials sector index performance"
-   ],
-   "about": "ICICI Bank is a leading Indian private‑sector bank offering a range of financial services.",
-   "basis": "01b849ce79e8",
-   "items": 2,
-   "updated": "2026-11-20T09:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "AXISBANK": {
@@ -1001,6 +1017,38 @@
    "items": 2,
    "updated": "2026-11-20T08:30+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "HYUNDAI": {
+   "summary": "Hyundai Motor India shares rose as part of a broader jump in auto stocks. This happened because cheaper metal and oil reduced worries about production costs.",
+   "why": "Lower costs can help the company keep its profits healthy, which is good news for shareholders.",
+   "upside": "If metal and oil prices stay low, the company may continue to benefit from reduced expenses.",
+   "downside": "The recent rise in share prices could reverse if input costs start going up again.",
+   "watch": [
+    "Changes in metal and oil prices",
+    "Future updates on the company's financial performance",
+    "Overall trends in the auto sector index"
+   ],
+   "about": "Hyundai Motor India operates in the automobile and auto components sector.",
+   "basis": "5b3216a92cd5",
+   "items": 2,
+   "updated": "2026-11-20T12:30+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "HINDZINC": {
+   "summary": "Hindustan Zinc's shares have fallen along with the broader metal sector, prompting analysts to compare it with Tata Steel and JSW Steel to gauge relative safety. The metals index rose 0.6% in the last session but is down 3.7% over the past five sessions, reflecting ongoing industry weakness.",
+   "why": "Shareholders need to watch how sector-wide price drops and a strong US dollar could affect Hindustan Zinc's earnings and stock performance.",
+   "upside": "If Hindustan Zinc shows more resilience than its peers, it could outperform the struggling metal stocks.",
+   "downside": "A stronger US dollar may continue to suppress metal prices, hurting the company's profitability.",
+   "watch": [
+    "Relative performance versus Tata Steel and JSW Steel",
+    "Impact of US dollar strength on metal prices",
+    "Trend of the Metals sector index"
+   ],
+   "about": "Hindustan Zinc Ltd. is a metals and mining company listed in India's Nifty 500.",
+   "basis": "0455655dce14",
+   "items": 1,
+   "updated": "2026-11-20T12:30+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "NH": {
    "summary": "Hospital stocks have surged, with Narayana Hrudayalaya jumping about 5% while the broader market lagged. The healthcare sector has shown modest gains but may be nearing an overextension after a 20% monthly rise.",
@@ -1559,22 +1607,6 @@
    "basis": "aba0ead03693",
    "items": 2,
    "updated": "2026-11-19T11:45+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "TATASTEEL": {
-   "summary": "Tata Steel's CEO reported that iron ore costs in India are rising, which can lower profits on each ton of steel sold. The company is also still discussing financial assistance with the Dutch government, a deal that remains uncertain.",
-   "why": "Higher raw material costs can squeeze the money the company keeps from sales, while the outcome of the Dutch talks could affect its overall financial stability.",
-   "upside": "Steel prices might rise along with costs, which could help offset the higher spending on iron ore.",
-   "downside": "The deal with the Dutch government is still under discussion, leaving the company's future funding plans uncertain.",
-   "watch": [
-    "Whether steel prices rise to match the higher iron ore costs",
-    "Updates on the financial assistance talks with the Dutch government",
-    "The overall trend of the Metals sector index"
-   ],
-   "about": "Tata Steel is a major player in the Metals & Mining sector and is one of India's 50 largest listed companies.",
-   "basis": "dd3149782ba4",
-   "items": 2,
-   "updated": "2026-11-20T08:46+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "AMBUJACEM": {
