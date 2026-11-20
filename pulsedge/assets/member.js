@@ -254,7 +254,7 @@
     var title=h("h2",{text:ended?(a.trial?"Your free trial has ended":"Your access has ended"):"Try PULSE free for "+TRIAL_SESSIONS+" trading sessions"});
     var kids=[k,title];
     if(ended){
-      kids.push(h("p",{text:a.trial?"You've used all "+a.trial.total+" trading sessions. Keep the terminal with Pro, or take one of the 15 founding seats.":"Your "+(a.label||"access")+" ran until "+nice(a.until)+". Renew to keep live signals."}));
+      kids.push(h("p",{text:a.trial?"You've used all "+a.trial.total+" trading sessions. Keep the terminal with Pro or Complete; yearly plans cost the least.":"Your "+(a.label||"access")+" ran until "+nice(a.until)+". Renew to keep live signals."}));
       kids.push(h("div",{"class":"pe-row"},[h("a",{"class":"pe-b",href:"pay.html",text:"Get Pro"}),(function(){var b=h("button",{"class":"pe-b ghost",type:"button",text:"Send feedback"});b.onclick=function(){feedback(a)};return b})()]));
     }else{
       kids.push(h("p",{text:"Live signals sorted into Ignore, Watch and Act, the pre-market checklist, and alerts for your own stocks. No card or payment details."}));
@@ -294,7 +294,7 @@
       if(text.length<3){msg.textContent="Write a few words first.";msg.className="pe-msg err";return}
       send.disabled=true;msg.textContent="Sending…";msg.className="pe-msg";
       post({message:text,email:em.value.trim(),source:"feedback",plan:a&&a.plan||"",_subject:"PulsEdge feedback"})
-        .then(function(){msg.textContent="Thanks — it goes straight to the founder.";msg.className="pe-msg ok";ta.value="";setTimeout(close,1400)},
+        .then(function(){msg.textContent="Thanks — we read every message.";msg.className="pe-msg ok";ta.value="";setTimeout(close,1400)},
               function(){msg.textContent="Couldn't send. Message us on Telegram instead: t.me/pulsedgein";msg.className="pe-msg err"})
         .then(function(){send.disabled=false});
     });

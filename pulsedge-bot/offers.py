@@ -4,7 +4,6 @@
   python pulsedge-bot/offers.py list
   python pulsedge-bot/offers.py add YOUTUBE10 --pct 10 [--plans complete_m,complete_y] [--until 2027-03-31] [--label "YouTube"]
   python pulsedge-bot/offers.py remove YOUTUBE10
-  python pulsedge-bot/offers.py founding 12      # Founding 100 seats taken so far (the site shows how many are left)
   python pulsedge-bot/offers.py add ASHA10 --pct 10 --label "Partner Asha"   # a partner's code (sell.html)
   python pulsedge-bot/offers.py qr               # UPI QR codes for every price the site can show (needs: pip install segno)
   python pulsedge-bot/offers.py check            # prices, codes, QR files and the pages' built-in prices agree
@@ -14,7 +13,7 @@ Prices live in pulsedge/data/prices.json; codes in pulsedge/data/offers.json, st
 Keep your own list of codes and who has each one.
 
 Honest pricing (India's dark-pattern guidelines, 2023): a struck-through "list" price must be a price you will really
-charge after launch_until, and the Founding 100 count must be the real number of seats sold. Update both here.
+charge after launch_until, the last day of the current offer. Move the date or the prices here.
 """
 import argparse
 import hashlib
@@ -96,9 +95,6 @@ def cmd_check(prices, offers):
     for key, p in prices["plans"].items():
         if p.get("list") and p["list"] <= p["price"]:
             bad.append(f"{key}: list price ₹{p['list']} isn't above the price ₹{p['price']}")
-    f = prices.get("founding", {})
-    if not 0 <= f.get("taken", 0) <= f.get("seats", 0):
-        bad.append("founding: taken must be between 0 and seats")
     # the pages carry the same prices as a fallback for when prices.json can't load
     for page in ("index.html", "pay.html"):
         html = open(os.path.join(SITE, page), encoding="utf-8").read()
@@ -119,7 +115,7 @@ def cmd_check(prices, offers):
     sell = open(os.path.join(SITE, "sell.html"), encoding="utf-8").read()
     pl = prices["plans"]
     earn = {k: round(round(pl[k]["price"] * 0.9) * 0.2) for k in ("complete_y", "pro_y", "alerts_y")}
-    want = [f"₹{round(pl[k]['price'] * 0.9):,}" for k in earn] + [f"₹{v:,}" for v in earn.values()] + [f"₹{round(pl['founding']['price'] * 0.2):,}"]
+    want = [f"₹{round(pl[k]['price'] * 0.9):,}" for k in earn] + [f"₹{v:,}" for v in earn.values()]
     want.append(f"EARN={{c:{earn['complete_y']},p:{earn['pro_y']},a:{earn['alerts_y']}}}")
     for w in want:
         if w not in sell:
@@ -136,10 +132,10 @@ def cmd_check(prices, offers):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("cmd", choices=["list", "add", "remove", "founding", "qr", "check"])
+    ap.add_argument("cmd", choices=["list", "add", "remove", "qr", "check"])
     ap.add_argument("arg", nargs="?")
     ap.add_argument("--pct", type=float, help="add: percent off")
-    ap.add_argument("--plans", default="", help="add: comma-separated plan keys (default: every plan but founding)")
+    ap.add_argument("--plans", default="", help="add: comma-separated plan keys (default: every plan)")
     ap.add_argument("--until", default="", help="add: last day the code works, YYYY-MM-DD")
     ap.add_argument("--label", default="", help="add: shown to the visitor, e.g. 'YouTube viewers'")
     a = ap.parse_args()
@@ -151,13 +147,11 @@ def main():
     if a.cmd == "list":
         for o in offers["offers"]:
             print(f"{o['label']:28} {o['pct']:g}% off  plans: {','.join(o.get('plans') or ['all'])}  until: {o.get('until') or 'no end'}")
-        f = prices["founding"]
-        print(f"Founding 100: {f['taken']} of {f['seats']} taken")
         return
     if a.cmd == "add":
         if not a.arg or not a.pct or not 0 < a.pct < 100:
             sys.exit("usage: offers.py add CODE --pct 10 [--plans ...] [--until YYYY-MM-DD] [--label ...]")
-        plans = [p for p in a.plans.split(",") if p] or [k for k in prices["plans"] if k != "founding"]
+        plans = [p for p in a.plans.split(",") if p] or list(prices["plans"])
         unknown = [p for p in plans if p not in prices["plans"]]
         if unknown:
             sys.exit(f"unknown plans: {', '.join(unknown)} (plans: {', '.join(prices['plans'])})")
@@ -174,11 +168,6 @@ def main():
         offers["offers"] = [o for o in offers["offers"] if o["h"] != h]
         save(OFFERS, offers)
         print("removed" if len(offers["offers"]) < n else "no such code")
-        return
-    if a.cmd == "founding":
-        prices["founding"]["taken"] = int(a.arg or 0)
-        save(PRICES, prices)
-        print(f"Founding 100: {prices['founding']['taken']} of {prices['founding']['seats']} taken")
         return
     if a.cmd == "qr":
         cmd_qr(prices, offers)

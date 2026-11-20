@@ -167,6 +167,20 @@ h1 .hl{color:var(--acc)}
 .tk{font:500 11px/1.5 var(--mono);color:#c9b6ff;border:1px solid #a58bff55;border-radius:4px;padding:0 5px}
 @media (max-width:820px){.dv-body{grid-template-columns:1fr}.dv-pm{display:none}.dv-bar .hide-s{display:none}.sg{grid-template-columns:58px minmax(0,1fr);gap:4px 10px}.sg .t{display:none}.stage{margin-top:44px}}
 
+/* scale row and reviews */
+.scale{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px 24px;margin-top:22px}
+.scale div{min-width:0;border-top:1px solid var(--line);padding-top:12px}
+.scale b{display:block;font:500 22px/1.1 var(--mono);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.scale span{display:block;color:var(--mute);font-size:var(--fs-xs);margin-top:4px}
+.rv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.rv figure{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--elev);display:flex;flex-direction:column;gap:12px;min-width:0}
+.rv .st{color:#e3a008;letter-spacing:2px;font-size:15px}
+.rv blockquote{margin:0;font-size:var(--fs-sm);color:var(--ink2);line-height:1.6}
+.rv figcaption{font-size:var(--fs-xs);color:var(--mute)}
+.rv figcaption b{color:var(--ink);font-weight:600}
+.rvline{margin:-6px 0 18px;font-size:var(--fs-sm);color:var(--ink2)}
+.rvline .st{color:#e3a008;letter-spacing:1px}
+@media (max-width:860px){.scale{grid-template-columns:repeat(2,minmax(0,1fr))}.rv{grid-template-columns:1fr}}
 /* proof */
 .proof{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:72px;border:1px solid var(--line);border-radius:18px;background:var(--panel);box-shadow:var(--elev);overflow:hidden}
 .proof div{padding:22px 24px;border-right:1px solid var(--line);min-width:0}
@@ -359,14 +373,7 @@ h2{font-size:var(--fs-h2);line-height:1.04;letter-spacing:-.04em;font-weight:600
 .plan .go:active{transform:scale(.97)}
 .paynote{font-size:var(--fs-xs);color:var(--faint);margin:18px 0 0;max-width:80ch}
 @media (max-width:920px){.plans{grid-template-columns:1fr}}
-/* pricing v2: founding offer, billing switch, anchors, codes, partners */
-.found{display:flex;align-items:center;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;border:1px solid color-mix(in srgb,var(--acc) 45%,var(--line));border-radius:18px;padding:22px 24px;margin-bottom:22px;background:var(--acc-soft)}
-.found .fl{display:flex;flex-direction:column;gap:6px;min-width:0;flex:1 1 420px}
-.found .fl b{font-weight:600;font-size:21px;letter-spacing:-.015em}
-.found .fl span:last-child{font-size:var(--fs-sm);color:var(--mute)}
-.found .badge{align-self:flex-start}
-.found .fr{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
-.seats{font:500 13px/1.3 var(--mono);color:var(--acc)}
+/* pricing: billing switch, offer prices, codes, partners */
 .bill{display:inline-flex;gap:4px;padding:4px;border:1px solid var(--line2);border-radius:999px;margin:0 0 16px}
 .bill button{border:0;background:transparent;color:var(--mute);font:500 14px/1 var(--sans);padding:9px 16px;border-radius:999px;cursor:pointer}
 .bill button span{font:500 12px/1 var(--mono);color:var(--acc);margin-left:6px}
@@ -542,7 +549,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
   <section class="hero">
     <canvas class="h3d" id="h3d" aria-hidden="true"></canvas>
     <div class="w">
-      <a class="pill" href="#proof"><span class="livedot"></span><span id="h-pill">Live beta · reading today's market news</span></a>
+      <a class="pill" href="#proof"><span class="livedot"></span><span id="h-pill">Live · reading today's market news</span></a>
       <h1>Indian market news, <span class="hl">triaged</span> for the stocks you own.</h1>
       <p class="sub"><strong>Every NSE filing, SEBI and RBI release and market headline gets a verdict: ignore, watch or act.</strong> With the reason, and a link to the source.</p>
       <div class="ctas">
@@ -580,6 +587,12 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
         <div><b class="num" id="p-ign">–</b><span>set aside, with a reason</span></div>
       </div>
       <p class="pnote" id="p-note">Live numbers from the PulsEdge pipeline.</p>
+      <div class="scale" aria-label="PulsEdge in numbers">
+        <div><b>500</b><span>NSE companies covered: the whole Nifty 500</span></div>
+        <div><b id="s-ver">1,900+</b><span>verdicts checked against NSE closing prices</span></div>
+        <div><b>~1 min</b><span>from a market-moving post to your phone</span></div>
+        <div><b>9:15</b><span>the pre-market brief lands before the open, every trading day</span></div>
+      </div>
       <div class="srcs" aria-label="Sources PulsEdge reads"><b>Reads</b><span>NSE announcements</span><span>SEBI</span><span>RBI</span><span>Economic Times Markets</span><span>Mint</span><span>Business Standard</span><span>Moneycontrol</span></div>
     </div>
   </section>
@@ -613,7 +626,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
         <ol>
           <li>What matters should reach you before 9:15, not after the move.</li>
           <li>Every verdict should show its reason and its source.</li>
-          <li>Every call should be scored in public, misses included.</li>
+          <li>Every verdict should be checked in public, misses included.</li>
           <li>You decide. We never sell tips or trade for you.</li>
         </ol>
       </div>
@@ -724,28 +737,24 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
       <div>
         <p class="kick">Track record</p>
         <h2>Every call, <span class="dim">checked against the closing price.</span></h2>
-        <p class="lede">Each Watch and Act call on a named stock is logged the moment it's made, then <strong>checked against NSE's official close one and five trading sessions later.</strong> Nothing is removed.</p>
+        <p class="lede">Each Watch and Act verdict on a named stock is logged the moment it's made, then <strong>checked against NSE's official close one and five trading sessions later.</strong> Nothing is removed.</p>
         <a class="btn ghost" href="track.html">See the full track record <span class="arr" aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
 
+  <section class="s w" id="reviews" hidden>
+    <p class="kick">Reviews</p>
+    <h2>What members say. <span class="dim" id="rv-avg"></span></h2>
+    <div class="rv" id="rv-list"></div>
+    <p class="paynote">Reviews from paying members, published with their permission, as they wrote them. <a href="review.html">Leave a review</a>.</p>
+  </section>
+
   <section class="s w" id="pricing">
     <p class="kick">Pricing</p>
-    <h2>Launch prices. <span class="dim">Kept for as long as you renew.</span></h2>
+    <h2>One plan for how you invest. <span class="dim">The same price every year you renew.</span></h2>
     <p class="lede">Choose how you want the news: <strong>on your phone the moment it breaks</strong>, in the PULSE terminal, or both. Every plan starts with the free trial.</p>
-
-    <div class="found" id="found">
-      <div class="fl">
-        <span class="badge">Founding 100</span>
-        <b>PulsEdge Complete for a year at <span class="mono" data-price="founding">₹5,999</span></b>
-        <span><s data-list="founding">₹14,999</s> after launch. For the first 100 members only; your price stays while you renew, and you get a direct WhatsApp line to the founder.</span>
-      </div>
-      <div class="fr">
-        <span class="seats" id="seats">For the first 100 members</span>
-        <a class="btn pri" id="found-go" href="pay.html?plan=founding">Claim a founding seat <span class="arr" aria-hidden="true">&rarr;</span></a>
-      </div>
-    </div>
+    <p class="rvline" id="rv-line" hidden></p>
 
     <div class="bill" role="group" aria-label="Billing period">
       <button type="button" id="bill-y" aria-pressed="true">Yearly <span id="bill-save">save up to 35%</span></button>
@@ -783,7 +792,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
     </div>
 
     <div class="pfoot">
-      <p class="launch" id="launch">Launch prices until 31 January 2027. From 1 February the plans cost the struck-through prices; anyone who joins before then keeps their price for as long as they renew.</p>
+      <p class="launch" id="launch">Offer prices until 31 January 2027. From 1 February the plans cost the struck-through prices; anyone who joins before then keeps their price for as long as they renew.</p>
       <div class="also">
         <a href="pay.html?plan=complete_y&amp;gift=1">Buying for a parent? <b>Gift a year</b> <span aria-hidden="true">&rarr;</span></a>
         <a href="business.html">An advisory team or firm? <b>Annual packages</b> <span aria-hidden="true">&rarr;</span></a>
@@ -836,7 +845,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
       <details><summary>Which plan should I choose?</summary><p>Alerts if you want the important news on your phone the moment it breaks, in a private Telegram channel. Pro if you'd rather read it in the PULSE terminal with your own holdings, the pre-market checklist and stock briefs. Complete gives you both. The free Telegram channel gets a few of the same alerts, 30 minutes later.</p></details>
       <details><summary>Do you work with wealth managers and advisers?</summary><p>Yes, through agreements with the firm: seats for advisers, and client seats the firm can include in its service at its own price. SEBI-registered firms get a news-only edition without verdicts. Use the form in <a href="#partners">Partners</a> and we'll reply within a day.</p></details>
       <details><summary>Where does the news come from?</summary><p>Public sources: NSE corporate announcements, SEBI and RBI releases, and markets coverage from Economic Times, Mint, Business Standard and Moneycontrol. Every item links back to where it was published.</p></details>
-      <details><summary>How are verdicts made?</summary><p>Each headline is matched to Nifty 500 companies and classified as ignore, watch or act, with a horizon and a one-line reason. During the beta some verdicts come from rules and some from an AI model, and each verdict says which. The <a href="track.html">track record</a> shows how they've done.</p></details>
+      <details><summary>How are verdicts made?</summary><p>Each headline is matched to Nifty 500 companies and classified as ignore, watch or act, with a horizon and a one-line reason. Most verdicts come from AI models, with a second check on Act verdicts; when no model is available, keyword rules decide, and each verdict says which. The <a href="track.html">track record</a> shows how they've done.</p></details>
       <details><summary>How does the free trial work?</summary><p>Enter your email in the terminal and you get 5 NSE trading sessions, usually one calendar week. Weekends and market holidays don't count. No card is needed and nothing is charged when it ends.</p></details>
       <details><summary>Do you see my holdings?</summary><p>No. Holdings you add, typed or imported from a CSV, are saved in your own browser and never uploaded to us.</p></details>
       <details><summary>Which stocks are covered?</summary><p>The Nifty 500, refreshed weekly from NSE's official list. That covers most of the market's value and the stocks most portfolios hold.</p></details>
@@ -851,15 +860,15 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
       <p>Open the terminal, add your stocks, and see what today's news means for them.</p>
       <div class="ctas"><a class="btn pri lg" href="terminal.html#trial">Start free trial <span class="arr" aria-hidden="true">→</span></a><a class="btn ghost lg" href="https://t.me/pulsedgein" target="_blank" rel="noopener">Follow on Telegram</a></div>
       <form class="f" data-form="cta">
-        <input id="email-cta" type="email" required placeholder="Or get launch updates by email" aria-label="Email address" autocomplete="email">
+        <input id="email-cta" type="email" required placeholder="Or get PulsEdge updates by email" aria-label="Email address" autocomplete="email">
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
-        <button type="submit">Notify me</button>
+        <button type="submit">Subscribe</button>
       </form>
-      <p class="note" data-note>No spam. One email when paid plans open.</p>
+      <p class="note" data-note>No spam. Occasional updates; unsubscribe any time.</p>
     </section>
 
     <section class="admin" id="admin" hidden>
-      <h3>Waitlist signups <span id="admin-n"></span></h3>
+      <h3>Email subscribers <span id="admin-n"></span></h3>
       <p>Only you see this list. Visitors see the signup form.</p>
       <div class="tw"><ol id="admin-list"></ol></div>
     </section>
@@ -1109,7 +1118,27 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
     if(f&&Array.isArray(f.items)&&f.items.length){ITEMS=f.items.filter(function(x){return x&&x.headline}).sort(function(a,b){return (Date.parse(b.time)||0)-(Date.parse(a.time)||0)})}
     PM=r[1];
     renderHero();renderStory();if(f)renderProof(f);renderTrack(r[2]);
+    var calls=r[2]&&r[2].summary&&r[2].summary.calls;
+    if(calls>=100)$("s-ver").textContent=(Math.floor(calls/100)*100).toLocaleString("en-IN")+"+";
   });
+  // member reviews (data/reviews.json): shown only once there are at least 3 real ones
+  getJson("data/reviews.json").then(function(d){
+    var rs=(d&&Array.isArray(d.reviews)?d.reviews:[]).filter(function(x){return x&&x.text&&x.name&&x.rating>=1&&x.rating<=5});
+    if(rs.length<3)return;
+    rs.sort(function(a,b){return String(b.date||"").localeCompare(String(a.date||""))});
+    var avg=rs.reduce(function(t,x){return t+x.rating},0)/rs.length,a1=avg.toFixed(1);
+    function stars(n){return "\u2605\u2605\u2605\u2605\u2605".slice(0,Math.round(n))+"\u2606\u2606\u2606\u2606\u2606".slice(0,5-Math.round(n))}
+    $("rv-avg").textContent=a1+" out of 5 from "+rs.length+" reviews.";
+    var list=$("rv-list");
+    rs.slice(0,6).forEach(function(x){
+      var f=el("figure"),cap=el("figcaption");
+      cap.append(el("b",null,x.name),document.createTextNode([x.role,x.place].filter(Boolean).length?" · "+[x.role,x.place].filter(Boolean).join(", "):""));
+      f.append(el("span","st",stars(x.rating)),el("blockquote",null,"\u201c"+x.text+"\u201d"),cap);list.appendChild(f);
+    });
+    $("reviews").hidden=false;
+    var line=$("rv-line");line.textContent="";line.append(el("span","st",stars(avg))," "+a1+" out of 5 from "+rs.length+" member reviews · ");
+    var a=el("a",null,"read them");a.href="#reviews";line.appendChild(a);line.hidden=false;
+  }).catch(function(){});
   renderHero();renderStory();
 
   // claude.ai runtime (absent when the page is hosted elsewhere)
@@ -1126,7 +1155,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
   function setNote(n,msg,cls){n.textContent=msg;n.className="note"+(cls?" "+cls:"")}
   document.querySelectorAll("[data-form]").forEach(function(f){
     var note=f.nextElementSibling,btn=f.querySelector("button"),input=f.querySelector("input[type=email]"),trap=f.querySelector("input[name=_gotcha]");
-    function done(email){setNote(note,f.dataset.form==="founding"?"Application received. We'll email "+email+".":"You're on the list. We'll email "+email+" when paid plans open.","ok");input.value=""}
+    function done(email){setNote(note,f.dataset.form==="founding"?"Application received. We'll email "+email+".":"You're subscribed. We'll send PulsEdge updates to "+email+".","ok");input.value=""}
     f.addEventListener("submit",function(e){
       e.preventDefault();
       var email=input.value.trim().toLowerCase();
@@ -1137,7 +1166,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
         var rec={email:email,source:f.dataset.form,at:Date.now()};
         if(db&&uid)return db.doc("signups/"+uid).set(rec);
         if(SIGNUP_ENDPOINT)return fetch(SIGNUP_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
-          body:JSON.stringify({email:email,source:rec.source,_subject:f.dataset.form==="founding"?"PulsEdge founding application":"New PulsEdge waitlist signup"})})
+          body:JSON.stringify({email:email,source:rec.source,_subject:f.dataset.form==="founding"?"PulsEdge founding application":"New PulsEdge subscriber"})})
           .then(function(r){return r.json().catch(function(){return {}}).then(function(j){if(!r.ok)throw {code:"form",msg:j.errors&&j.errors[0]&&j.errors[0].message}})});
         throw {code:"no_backend"};
       }).then(function(){done(email)}).catch(function(err){
@@ -1389,10 +1418,10 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
 <script>
 // Pricing: plans from data/prices.json (PRICES_FALLBACK is the same list, used if that file can't load; pulsedge-bot/offers.py
 // check keeps them equal), discount codes from data/offers.json (SHA-256 hashes: the codes themselves aren't published),
-// the yearly/monthly switch, the Founding 100 count and the partner form. A link like index.html?code=YOUTUBE10#pricing
-// applies a code on arrival. Struck-through prices show only until launch_until: after that they'd no longer be true.
+// the yearly/monthly switch and the partner form. A link like index.html?code=YOUTUBE10#pricing
+// applies a code on arrival. Struck-through prices show only until launch_until (the end of the offer): after that they'd no longer be true.
 (function(){
-  var PRICES_FALLBACK={"launch_until":"2027-01-31","plans":{"alerts_m":{"price":499,"list":799,"name":"PulsEdge Alerts","period":"month"},"alerts_y":{"price":3999,"list":6999,"name":"PulsEdge Alerts","period":"year"},"pro_m":{"price":999,"list":1299,"name":"PulsEdge Pro","period":"month"},"pro_y":{"price":7999,"list":11999,"name":"PulsEdge Pro","period":"year"},"complete_m":{"price":1299,"list":1799,"name":"PulsEdge Complete","period":"month"},"complete_y":{"price":9999,"list":14999,"name":"PulsEdge Complete","period":"year"},"founding":{"price":5999,"list":14999,"name":"PulsEdge Founding 100","period":"year"}},"founding":{"seats":100,"taken":0}};//end
+  var PRICES_FALLBACK={"launch_until":"2027-01-31","plans":{"alerts_m":{"price":499,"list":799,"name":"PulsEdge Alerts","period":"month"},"alerts_y":{"price":3999,"list":6999,"name":"PulsEdge Alerts","period":"year"},"pro_m":{"price":999,"list":1299,"name":"PulsEdge Pro","period":"month"},"pro_y":{"price":7999,"list":11999,"name":"PulsEdge Pro","period":"year"},"complete_m":{"price":1299,"list":1799,"name":"PulsEdge Complete","period":"month"},"complete_y":{"price":9999,"list":14999,"name":"PulsEdge Complete","period":"year"}}};//end
   var $=function(id){return document.getElementById(id)};
   if(!$("pricing"))return;
   var P=PRICES_FALLBACK,OFFERS=[],period="y",code=null;
@@ -1416,14 +1445,9 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
       var cd=card.querySelector(".cd");cd.hidden=!off(key);cd.textContent=off(key)?"Code "+code.code+" applied: "+code.pct+"% off":"";
       card.querySelector(".go").href="pay.html?plan="+key+(off(key)?"&code="+encodeURIComponent(code.code):"");
     });
-    var f=P.plans.founding,fs=P.founding||{seats:100,taken:0},left=Math.max(0,(fs.seats||0)-(fs.taken||0));
-    document.querySelectorAll('[data-price="founding"]').forEach(function(e){e.textContent=inr(f.price)});
-    document.querySelectorAll('[data-list="founding"]').forEach(function(e){e.textContent=launchOn()?inr(f.list):"";e.hidden=!launchOn()});
-    $("seats").textContent=left<=0?"All "+fs.seats+" founding seats are taken":(fs.taken>=10?left+" of "+fs.seats+" seats left":"For the first "+fs.seats+" members");
-    $("found-go").hidden=left<=0;
     var l=$("launch");l.hidden=!launchOn();
     if(launchOn()){var after=new Date(new Date(P.launch_until+"T12:00:00+05:30").getTime()+864e5).toISOString().slice(0,10);
-      l.textContent="Launch prices until "+longDate(P.launch_until)+". From "+longDate(after).replace(/ \d{4}$/,"")+" the plans cost the struck-through prices; anyone who joins before then keeps their price for as long as they renew."}
+      l.textContent="Offer prices until "+longDate(P.launch_until)+". From "+longDate(after).replace(/ \d{4}$/,"")+" the plans cost the struck-through prices; anyone who joins before then keeps their price for as long as they renew."}
     var best=0;["alerts","pro","complete"].forEach(function(prod){var m=P.plans[prod+"_m"],y=P.plans[prod+"_y"];if(m&&y)best=Math.max(best,1-y.price/(12*m.price))});
     $("bill-save").textContent="save up to "+Math.floor(best*100)+"%";
   }
