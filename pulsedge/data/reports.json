@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T13:32+05:30",
+ "updated": "2026-11-20T13:46+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -187,6 +187,38 @@
    "updated": "2026-11-20T12:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "MANAPPURAM": {
+   "summary": "Manappuram Finance shares have fallen up to 5% as gold prices hit a one‑year low, putting pressure on its gold‑loan business.",
+   "why": "Shareholders see the stock dip and face risk of higher loan losses if falling gold values erode collateral.",
+   "upside": "A rebound in gold prices could improve collateral values and support earnings.",
+   "downside": "Further declines in gold prices could raise non‑performing assets and squeeze margins.",
+   "watch": [
+    "Gold price movements",
+    "Trends in gold‑loan non‑performing assets",
+    "Competitive lending rates and margin pressure"
+   ],
+   "about": "Manappuram Finance provides loans secured by gold jewellery.",
+   "basis": "7284e28e8994",
+   "items": 3,
+   "updated": "2026-11-20T13:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "MUTHOOTFIN": {
+   "summary": "Muthoot Finance shares fell 4‑5% after gold prices dropped to a one‑year low. The decline reflects concerns that lower gold values could raise loan risk and reduce profitability. The company is part of the Nifty 500 and operates in the financial services sector.",
+   "why": "Shareholders see a risk that falling gold prices could increase non‑performing assets and reduce loan demand, impacting earnings.",
+   "upside": "",
+   "downside": "Falling gold prices could raise non‑performing assets and lower loan demand, hurting profitability.",
+   "watch": [
+    "Gold price movements and any rebound",
+    "Changes in loan demand during festive seasons",
+    "Company’s non‑performing asset levels"
+   ],
+   "about": "Muthoot Finance is a gold‑loan company that lends against gold collateral.",
+   "basis": "d7fccec0dce0",
+   "items": 3,
+   "updated": "2026-11-20T13:46+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "POLICYBZR": {
    "summary": "PB Fintech announced it is selling a business unit and reported changes in its board of directors. Additionally, co-founder Alok Bansal stepped down from his daily role, which caused the stock price to drop.",
    "why": "These changes may alter the company's future revenue and strategy, which directly affects the value of the shares you own.",
@@ -251,22 +283,6 @@
    "updated": "2026-11-19T15:02+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "MUTHOOTFIN": {
-   "summary": "Muthoot Finance shares fell by up to 4% recently because gold prices dropped sharply. This decline affected the value of the gold used as security for loans and reduced demand for new gold-backed loans.",
-   "why": "Since the company lends money against gold, falling gold prices can lower the value of their collateral and impact their business performance, which directly affects the value of the shares.",
-   "upside": "Lower gold prices might encourage more people to buy jewelry during festive and wedding seasons, potentially increasing loan demand.",
-   "downside": "Continued low gold prices could reduce the value of the company's collateral and lead to financial write-downs on their inventory.",
-   "watch": [
-    "Future movements in gold prices",
-    "Changes in demand for gold-backed loans",
-    "Company announcements regarding inventory valuation"
-   ],
-   "about": "Muthoot Finance is a financial services company that provides loans secured by gold.",
-   "basis": "a8457d4544fa",
-   "items": 2,
-   "updated": "2026-11-20T10:16+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "APLAPOLLO": {
    "summary": "APL Apollo Tubes is in the news because its promoter family is looking to sell about 28% of the company, which could bring in roughly ₹17,000 crore. A major investment bank has also named the stock a conviction pick after its Q2 results, suggesting it could be a good buy for investors.",
    "why": "Shareholders should watch because a large sale could dilute their holdings and affect the share price, while a bank’s endorsement might bring more buyers into the market.",
@@ -282,22 +298,6 @@
    "items": 2,
    "updated": "2026-11-19T15:30+05:30",
    "model": "openai/gpt-oss-20b"
-  },
-  "MANAPPURAM": {
-   "summary": "Manappuram Finance shares fell about 4‑5% as gold prices dropped. The lower gold price reduces the value of the collateral that backs its loans.",
-   "why": "A fall in gold prices can squeeze profits for gold‑loan lenders and increase credit risk for shareholders.",
-   "upside": "A rebound in gold prices could restore collateral values and support earnings.",
-   "downside": "Further declines in gold prices or tighter competition could compress margins and hurt profitability.",
-   "watch": [
-    "Gold price movements",
-    "Competitive lending rates in the gold‑loan market",
-    "Financials sector index trends"
-   ],
-   "about": "Manappuram Finance provides loans secured by gold as collateral.",
-   "basis": "609a99f5a578",
-   "items": 2,
-   "updated": "2026-11-19T00:20+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "IREDA": {
    "summary": "IREDA shares rose 11% to a four‑month high, ending a six‑month decline. The rally reflects renewed investor confidence in the renewable‑energy business.",
@@ -603,20 +603,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "URBANCO": {
-   "summary": "Urban Company is raising 2,500 crore rupees from large institutional investors through a Qualified Institutions Placement. This move follows a recent board meeting and comes as SEBI plans to streamline processes for new listings and foreign investment.",
-   "why": "This matters because the company is bringing in significant cash to support its growth, but the issuance of new shares increases the total number of shares available, which can affect the value of existing holdings.",
-   "upside": "The new capital provides the company with resources to expand its operations and potentially strengthen its market position.",
-   "downside": "The introduction of new shares into the market may create selling pressure in the short term, which could impact the share price.",
+   "summary": "Urban Company Ltd. recently raised ₹2,500 crore through a Qualified Institutions Placement, bringing in cash from big investors. However, its stock price dipped by 4% following the announcement due to worries about new shares.",
+   "why": "This matters because creating new shares can make existing shares worth less, and it can cause the share price to fall even when the company raises money to grow.",
+   "upside": "The large amount of money raised gives the company cash to grow its business further.",
+   "downside": "There could be further selling pressure if the market views the company's valuation as too high.",
    "watch": [
-    "How the market reacts to the new share issuance",
-    "Updates on SEBI's regulatory changes for IPOs and foreign investors",
-    "Further details from upcoming board meetings or company announcements"
+    "Whether the new shares continue to cause selling pressure on the stock price.",
+    "How the company decides to use the ₹2,500 crore it raised.",
+    "Any updates on future operations following recent board decisions."
    ],
-   "about": "Urban Company is a consumer services company listed in India's Nifty 500 index.",
-   "basis": "25a73d2e7815",
-   "items": 3,
-   "updated": "2026-11-20T10:45+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "",
+   "basis": "adc1b1b80471",
+   "items": 4,
+   "updated": "2026-11-20T13:46+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "SIGNATURE": {
    "summary": "Signatureglobal is expanding its land bank, buying two 10‑acre parcels in Gurugram and securing development rights over 10.18 acres in Sohna, while reporting 4,400 cr of project launches in H1 and targeting 10,000 cr of bookings for FY27.",
@@ -729,22 +729,6 @@
    "items": 1,
    "updated": "2026-11-18T16:10+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "BIOCON": {
-   "summary": "Biocon received official permission to sell a cancer drug called Pertuzumab in Europe. This is the first biosimilar approved under a new, faster clinical review process in the EU.",
-   "why": "This approval allows Biocon to sell this drug in a large market, which could increase its future sales and profits.",
-   "upside": "Selling this drug in Europe could add a new source of income for the company.",
-   "downside": "The stock price might not rise much if investors already guessed this approval would happen.",
-   "watch": [
-    "How much revenue the new EU drug actually brings in.",
-    "Whether other countries approve the same drug next.",
-    "General trends in the healthcare sector."
-   ],
-   "about": "",
-   "basis": "32b3eec3caa3",
-   "items": 1,
-   "updated": "2026-11-18T15:01+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
    "summary": "Oil India Ltd. is seeing its sector rise as global oil prices edge higher amid geopolitical tensions and supply concerns. At the same time, statements about India's potential in sustainable aviation fuel hint at new growth avenues.",

@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T13:34:13+05:30",
+ "updated": "2026-11-20T13:47:18+05:30",
  "summary": {
-  "calls": 1905,
-  "scored_calls": 737,
+  "calls": 1907,
+  "scored_calls": 739,
   "d1": {
    "scored": 549,
    "hits": 225,
@@ -23,6 +23,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "fcf06d87503d4d25",
+   "symbol": "MANAPPURAM",
+   "time": "2026-11-20T13:39:00+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Gold price crash: Muthoot Finance, Manappuram shares lose sheen, down up to 5% | Is gold heading for deeper correction?",
+   "url": "https://www.livemint.com/market/stock-market-news/gold-price-crash-muthoot-finance-manappuram-shares-lose-sheen-down-up-to-5-is-gold-heading-for-deeper-correction-11795161489903.html",
+   "alert_px": 279.3,
+   "alert_move": -1.26,
+   "alert_at": "2026-11-20T13:46:42+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "fcf06d87503d4d25",
+   "symbol": "MUTHOOTFIN",
+   "time": "2026-11-20T13:39:00+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Gold price crash: Muthoot Finance, Manappuram shares lose sheen, down up to 5% | Is gold heading for deeper correction?",
+   "url": "https://www.livemint.com/market/stock-market-news/gold-price-crash-muthoot-finance-manappuram-shares-lose-sheen-down-up-to-5-is-gold-heading-for-deeper-correction-11795161489903.html",
+   "alert_px": 2551.1,
+   "alert_move": -2.56,
+   "alert_at": "2026-11-20T13:46:42+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "08b4bcdc655ec51e",
    "symbol": "URBANCO",
