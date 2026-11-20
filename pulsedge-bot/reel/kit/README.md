@@ -1,6 +1,6 @@
 # PulsEdge social kit
 
-Templates and tools for PulsEdge's Instagram posts: voiced reels, how-to walkthroughs made from real screens of the site, and carousels.
+The plan both channels follow is in `PLAYBOOK.md`. Below are the templates and tools for PulsEdge's Instagram posts (and Aditya's LinkedIn notes): voiced reels, how-to walkthroughs made from real screens of the site, and carousels.
 Everything renders from HTML with Playwright and ffmpeg, so a post can be rebuilt with new numbers in minutes.
 
 | Folder | Makes | Example |
@@ -8,6 +8,7 @@ Everything renders from HTML with Playwright and ffmpeg, so a post can be rebuil
 | `data-reel/` | a 25–35 s voiced reel built from numbers, with burned-in captions and a cover | "But this isn't 2021" |
 | `howto/` | short walkthroughs from real screenshots of the terminal: highlight rings, taps, captions; plus feed and highlight covers | "How to use PulsEdge", parts 1–3 |
 | `carousel/` | a 1080×1350 carousel: a PDF for LinkedIn and PNGs for Instagram | "Best week since 2021" |
+| `linkedin/` | Aditya's LinkedIn research note: a white 5-slide "Decoded" PDF with exhibits and signposts | "Same rally, different world" |
 | `tools/` | capture, voice timing, music and effects, rendering, review stills | |
 
 Fonts come from `../fonts` (IBM Plex), linked into each template folder.
@@ -52,9 +53,9 @@ Work in a scratch copy of a template folder, e.g. `cp -r data-reel /tmp/work && 
 5. Join the parts for the feed: `ffmpeg -f concat -safe 0 -i list.txt -c copy full.mp4`.
 6. Make the covers: `node tools/covers_howto.js <work>`.
 
-## A carousel
+## A carousel or LinkedIn note
 
-Edit `carousel/pulsedge-carousel.html`, then render it: `node tools/render_carousel.js carousel/pulsedge-carousel.html`.
+Edit `carousel/pulsedge-carousel.html` (or `linkedin/decoded-note.html`), then render it: `node tools/render_carousel.js carousel/pulsedge-carousel.html`.
 The report flags text running into the footer or across the margins, a footer pushed off the slide, and the smallest font size. Fix anything it lists, then look at every PNG.
 
 ## Rules for every post

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PulsEdge highlight covers</title>
+<!-- 1080x1080 highlight covers: one flat colour, one line icon, no text (Instagram prints the highlight's name under the circle).
+     Three colourways x three icons, plus a mock of the profile's highlight row for comparing them. -->
+<style>
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-500-normal.woff2) format("woff2");font-weight:500}
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-600-normal.woff2) format("woff2");font-weight:600}
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff}
+.cv{width:1080px;height:1080px;display:flex;align-items:center;justify-content:center}
+.cv svg{width:400px;height:400px;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.dark{background:#0d0b14}.dark svg{stroke:#c9b8ff}.dark svg .f{fill:#c9b8ff;stroke:none}
+.light{background:#f4f2fa}.light svg{stroke:#5b3fd6}.light svg .f{fill:#5b3fd6;stroke:none}
+.purple{background:#6c43f0}.purple svg{stroke:#fff}.purple svg .f{fill:#fff;stroke:none}
+/* mock of the profile's highlight row */
+#mock{width:1170px;padding:50px 40px 30px;background:#fff;font-family:Plex,sans-serif}
+#mock .row{display:flex;gap:46px;align-items:flex-start;margin-bottom:46px}
+#mock .tag{width:150px;padding-top:80px;font:600 30px/1.2 Plex,sans-serif;color:#8e8e93}
+#mock .hl{width:230px;text-align:center}
+#mock .ring{width:230px;height:230px;border-radius:50%;border:5px solid #dbdbdb;padding:8px;background:#fff}
+#mock .ring img{width:100%;height:100%;border-radius:50%;display:block}
+#mock .nm{margin-top:14px;font:500 34px/1 Plex,sans-serif;color:#111}
+</style>
+</head>
+<body>
+<template id="icons">
+  <svg data-k="howto" viewBox="0 0 24 24"><circle class="f" cx="5" cy="6.5" r="1.5"/><circle class="f" cx="5" cy="12" r="1.5"/><circle class="f" cx="5" cy="17.5" r="1.5"/><path d="M9.5 6.5h10M9.5 12h10M9.5 17.5h6.5"/></svg>
+  <svg data-k="start" viewBox="0 0 24 24"><path d="M4.5 12h14.5"/><path d="M13.5 6.5L19 12l-5.5 5.5"/></svg>
+  <svg data-k="explained" viewBox="0 0 24 24"><path d="M5.5 19V13"/><path d="M12 19V6"/><path d="M18.5 19v-9"/></svg>
+</template>
+<div id="covers"></div>
+<div id="mock"></div>
+<script>
+const KINDS = [["howto", "How to"], ["start", "Start"], ["explained", "Explained"]], WAYS = ["dark", "light", "purple"];
+const tpl = document.getElementById("icons").content, box = document.getElementById("covers");
+WAYS.forEach((w) => KINDS.forEach(([k]) => {
+  const d = document.createElement("div"); d.className = "cv " + w; d.id = `${w}-${k}`;
+  d.appendChild(tpl.querySelector(`[data-k="${k}"]`).cloneNode(true)); box.appendChild(d);
+}));
+</script>
+</body>
+</html>
