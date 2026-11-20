@@ -195,6 +195,14 @@ jobs:
       github.ref == 'refs/heads/master'
       && (needs.update.outputs.changed == 'true' || github.event.schedule == '53 13 * * 1-5' || inputs.digest)
     runs-on: ubuntu-24.04
+    env:
+      # PulsEdge Premium: set TELEGRAM_PRO_CHAT_ID (a private channel's id, -100...) and alerts go there first; the
+      # public channel then gets the morning brief, a few delayed alerts and the evening summary (see pulse_bot.py)
+      TELEGRAM_PRO_CHAT_ID: ${{ vars.TELEGRAM_PRO_CHAT_ID }}
+      PULSEDGE_PREMIUM_URL: ${{ vars.PULSEDGE_PREMIUM_URL }}
+      PULSEDGE_YOUTUBE_URL: ${{ vars.PULSEDGE_YOUTUBE_URL }}
+      PULSEDGE_FREE_PER_DAY: ${{ vars.PULSEDGE_FREE_PER_DAY }}
+      PULSEDGE_FREE_DELAY_MIN: ${{ vars.PULSEDGE_FREE_DELAY_MIN }}
     steps:
     - uses: actions/checkout@v5
       with:
@@ -203,6 +211,14 @@ jobs:
       with:
         python-version: '3.12'
     - run: pip install --quiet pillow==10.4.0
+    - name: Morning brief
+      # once a trading day, 08:15-09:20 IST: GIFT Nifty's opening indication and the checklist, to both channels
+      continue-on-error: true
+      env:
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
+      run: python pulse_bot.py brief
+      working-directory: pulsedge-bot
     - name: Post new Act signals
       env:
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -217,6 +233,14 @@ jobs:
         TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
       run: python pulse_bot.py news
       working-directory: pulsedge-bot
+    - name: Free channel preview
+      # premium mode only: one Act card members got at least 30 minutes ago, up to 3 a day
+      continue-on-error: true
+      env:
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
+      run: python pulse_bot.py teaser
+      working-directory: pulsedge-bot
     - name: Evening summary
       if: github.event.schedule == '53 13 * * 1-5' || inputs.digest
       env:
@@ -227,10 +251,11 @@ jobs:
       working-directory: pulsedge-bot
     - name: Remember what was posted
       run: |
-        if [ -n "$(git status --porcelain pulsedge-bot/posted.json)" ]; then
+        files="pulsedge-bot/posted.json pulsedge-bot/state/posted_at.json pulsedge-bot/state/free_posted.json"
+        if [ -n "$(git status --porcelain $files)" ]; then
           git config user.name "pulsedge-bot"
           git config user.email "pulsedge-bot@users.noreply.github.com"
-          git add pulsedge-bot/posted.json
+          git add $(ls $files 2>/dev/null)
           git commit -q -m "PulsEdge bot: record posted events"
           git pull --rebase -q && git push
         fi

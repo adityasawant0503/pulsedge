@@ -49,6 +49,7 @@ jobs:
       PULSEDGE_FAST_EVERY: ${{ vars.PULSEDGE_FAST_EVERY }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
+      TELEGRAM_PRO_CHAT_ID: ${{ vars.TELEGRAM_PRO_CHAT_ID }}
     steps:
     - uses: actions/checkout@v5
     - uses: actions/setup-python@v5
