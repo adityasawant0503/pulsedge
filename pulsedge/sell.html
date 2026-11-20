@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>try{var t=localStorage.getItem("th");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PulsEdge Partner Programme</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PulsEdge">
+<meta property="og:title" content="Earn with PulsEdge: the partner programme">
+<meta property="og:description" content="Introduce PulsEdge to people you know and earn 20% of what they pay in their first year. Students welcome. Paid monthly.">
+<meta property="og:url" content="https://adityasawant0503.github.io/pulsedge/sell.html">
+<meta property="og:image" content="https://adityasawant0503.github.io/pulsedge/assets/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PulsEdge: Indian market news sorted into Ignore, Watch and Act">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="The PulsEdge partner programme: 20% commission on what your customers pay in their first year, 10% off for them, monthly payouts. Students welcome.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/doc.css">
+<style>
+/* The partner programme: what you earn (table + calculator), how it works, the rules, the terms, and the application.
+   Commission figures follow data/prices.json at 10% off for the customer and 20% to the partner; offers.py check compares them. */
+.w.wide{max-width:900px}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card);box-shadow:var(--elev);margin:12px 0}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:14.5px}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line)}
+th{font:600 11.5px/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+tr:last-child td{border-bottom:0}
+td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+td.n b{color:var(--pur)}
+.calc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,1.3fr);gap:10px;align-items:end;border:1px solid var(--line);border-radius:12px;padding:16px;background:var(--card);box-shadow:var(--elev)}
+.calc label{display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:var(--mute)}
+.calc input{font-family:var(--mono);text-align:right}
+.calc .res{display:flex;flex-direction:column;gap:2px;padding:4px 0 0 6px}
+.calc .res b{font:600 30px/1.1 var(--mono);letter-spacing:-.03em;color:var(--pur);font-variant-numeric:tabular-nums}
+.calc .res span{font-size:13px;color:var(--mute)}
+.steps{padding-left:22px}.steps li{margin-bottom:8px}
+.rules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.rules>div{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--card)}
+.rules h3{margin:0 0 6px;font-size:15px}
+.rules ul{margin:0;padding-left:18px}
+.rules li{font-size:14.5px}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:14.5px}
+.chk input{width:auto;margin-top:5px;accent-color:var(--pur)}
+.q{font-size:14.5px;margin:4px 0 -4px}
+.stop{border-left:3px solid #c8323c;padding:8px 12px;font-size:14px;background:var(--card);border-radius:0 8px 8px 0}
+@media (max-width:760px){.calc,.rules,.two{grid-template-columns:1fr}.calc .res{padding:6px 0 0}}
+</style>
+</head>
+<body>
+<main class="w wide">
+  <div class="head">
+    <a href="index.html" aria-label="PulsEdge home"><img class="logo lt" src="assets/icon.png" alt="PulsEdge" width="44" height="44"><img class="logo dk" src="assets/icon-dark.png" alt="PulsEdge" width="44" height="44"></a>
+    <div class="r"><a href="index.html">Home</a><a href="partner-kit.html">Seller's kit</a>
+      <button class="thm" id="thm" type="button" aria-label="Switch to dark mode"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true" hidden><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button></div>
+  </div>
+  <p class="kick">Partner programme</p>
+  <h1>Earn with PulsEdge</h1>
+  <p class="upd">20% of what your customers pay in their first year · paid monthly</p>
+
+  <div class="box"><p><b>In short.</b> PulsEdge reads Indian market news as it breaks and tells investors which of it touches the stocks they own. You introduce it to people you know with your own code: they save 10%, and you earn 20% of everything they pay in their first year. No targets, no fees to join, and you choose your hours. Students and freshers are welcome.</p></div>
+
+  <h2>What you earn</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Your customer buys</th><th>They pay, with your code</th><th>You earn</th></tr></thead>
+    <tbody>
+      <tr><td>Complete, a year</td><td class="n">₹8,999</td><td class="n"><b>₹1,800</b></td></tr>
+      <tr><td>Pro, a year</td><td class="n">₹7,199</td><td class="n"><b>₹1,440</b></td></tr>
+      <tr><td>Alerts, a year</td><td class="n">₹3,599</td><td class="n"><b>₹720</b></td></tr>
+      <tr><td>Founding 100 (while seats last)</td><td class="n">₹5,999</td><td class="n"><b>₹1,200</b></td></tr>
+      <tr><td>Any monthly plan</td><td class="n">₹449–1,169 a month</td><td class="n"><b>20% of every month</b> in their first year</td></tr>
+      <tr><td>A firm you introduce signs a business package</td><td class="n">from ₹49,999</td><td class="n"><b>10% of the first year</b></td></tr>
+    </tbody>
+  </table></div>
+  <p><b>Milestone bonuses</b>, on top: ₹2,000 at your 10th paid customer, ₹5,000 at your 25th and ₹10,000 at your 50th.</p>
+
+  <div class="calc" aria-label="Earnings calculator">
+    <label for="c-c">Complete a year, sold a month<input type="number" id="c-c" min="0" max="500" value="5"></label>
+    <label for="c-p">Pro a year<input type="number" id="c-p" min="0" max="500" value="2"></label>
+    <label for="c-a">Alerts a year<input type="number" id="c-a" min="0" max="500" value="3"></label>
+    <div class="res" aria-live="polite"><b id="c-out">₹14,040</b><span id="c-sub">a month, before bonuses and tax</span></div>
+  </div>
+  <p class="muted">These are examples, not a promise. What you earn depends only on what you sell, and many partners sell nothing in some months.</p>
+
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><b>Apply</b> with the form below. We reply on WhatsApp within two working days.</li>
+    <li><b>A 15-minute call</b> to walk you through the product, the rules and the <a href="partner-kit.html">seller's kit</a>.</li>
+    <li><b>Get your code and link</b>, for example <code>index.html?code=ASHA10</code>. Anyone who opens the link gets 10% off on its own.</li>
+    <li><b>Share it</b> with people who invest: family, seniors at work, investing groups you're already part of.</li>
+    <li><b>They pay</b> on the PulsEdge checkout. The payment carries your code, so every sale is credited to you.</li>
+    <li><b>Get paid</b> by the 10th of each month, by UPI or bank transfer, with a statement of your sales.</li>
+  </ol>
+
+  <h2>The rules</h2>
+  <div class="rules">
+    <div>
+      <h3>Always</h3>
+      <ul>
+        <li>Say you earn a commission: "I earn a commission if you join with my code."</li>
+        <li>Show the real product: the free trial and the free Telegram channel.</li>
+        <li>Describe PulsEdge as news and information that helps people decide what to read.</li>
+        <li>Send people to the PulsEdge checkout to pay.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Never</h3>
+      <ul>
+        <li>Promise profits, returns or accuracy, or call alerts "tips" or "calls".</li>
+        <li>Tell anyone which stock to buy or sell, in PulsEdge's name or your own.</li>
+        <li>Take payment yourself, or offer extra discounts or cashback from your commission.</li>
+        <li>Message strangers in bulk, post fake screenshots or reviews, or say you work for PulsEdge.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="stop">Not open to employees or agents of SEBI-registered brokers, advisers, research analysts or distributors. SEBI's 2024 rules don't let them take commission from services like PulsEdge. Firms can work with us through <a href="business.html">PulsEdge for Business</a>.</p>
+
+  <h2 id="terms">Programme terms</h2>
+  <ul>
+    <li><b>Who can join:</b> anyone 18 or older living in India, with a PAN for payouts, who isn't covered by the line above. Joining is free.</li>
+    <li><b>What counts:</b> a payment made on the PulsEdge checkout with your code, by someone who isn't already a paying member. Commission is 20% of what that customer pays in their first 12 months, and 10% of the first year of a business package you introduce.</li>
+    <li><b>Only your own sales.</b> You earn nothing for recruiting other partners, and nobody earns from your sales but you.</li>
+    <li><b>When it's paid:</b> once a payment is past the 7-day refund window. We pay by the 10th of each month for payments cleared in the month before. Refunded payments earn nothing.</li>
+    <li><b>Tax:</b> commission is your income. Once your commission for the year crosses the limit in the Income Tax Act, we deduct TDS under Section 194H and give you the certificate.</li>
+    <li><b>Breaking the rules:</b> we close the code. Sales made in breach of the rules don't earn commission; commission already earned fairly is still paid.</li>
+    <li>We can change the rates for future sales with 30 days' notice, or end the programme; commission already earned is always paid. Being a partner doesn't make you an employee or agent of PulsEdge. The PulsEdge <a href="terms.html">terms</a> also apply.</li>
+  </ul>
+
+  <h2 id="apply">Apply</h2>
+  <form id="sf" novalidate>
+    <div class="two">
+      <input type="text" id="sf-name" required placeholder="Your name" autocomplete="name" aria-label="Your name">
+      <input type="email" id="sf-email" required placeholder="you@email.com" autocomplete="email" aria-label="Email">
+      <input type="tel" id="sf-wa" required placeholder="WhatsApp number" autocomplete="tel" aria-label="WhatsApp number">
+      <input type="text" id="sf-city" placeholder="City" autocomplete="address-level2" aria-label="City">
+      <input type="text" id="sf-what" placeholder="College or work" aria-label="College or work">
+      <select id="sf-how" aria-label="How you'd find customers"><option value="">How would you find customers?</option><option>Family and friends</option><option>College or alumni network</option><option>Colleagues at work</option><option>Social media following</option><option>Investing groups or communities</option><option>Other</option></select>
+    </div>
+    <label for="sf-reg" class="q">Do you work for, or act for, a SEBI-registered broker, adviser, research analyst or distributor?</label>
+    <select id="sf-reg"><option value="">Choose</option><option value="no">No</option><option value="yes">Yes</option></select>
+    <label class="chk"><input type="checkbox" id="sf-age"> <span>I'm 18 or older and live in India.</span></label>
+    <label class="chk"><input type="checkbox" id="sf-ok"> <span>I've read the rules and the programme terms, and I'll follow them.</span></label>
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+    <button class="btn" type="submit">Apply to be a partner</button>
+    <p class="note" id="sf-note" aria-live="polite"></p>
+  </form>
+
+  <footer>
+    <p>Educational information only. Not SEBI-registered investment advice. Trading involves substantial risk of loss.</p>
+    <p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds &amp; delivery</a> · <a href="disclosures.html">Disclosures</a> · <a href="contact.html">Contact</a> · <a href="https://t.me/pulsedgein" target="_blank" rel="noopener">Telegram</a></p>
+    <p>&copy; 2026 Aditya Sawant (PulsEdge) · Bengaluru, India</p>
+  </footer>
+</main>
+<script src="assets/theme.js"></script>
+<script>
+(function(){
+  function $(id){return document.getElementById(id)}
+  // what a partner earns on each yearly sale (20% of the price after the customer's 10% off)
+  var EARN={c:1800,p:1440,a:720};
+  function n(id){var v=parseInt($(id).value,10);return isFinite(v)&&v>0?Math.min(v,500):0}
+  function calc(){
+    var c=n("c-c"),p=n("c-p"),a=n("c-a"),total=c*EARN.c+p*EARN.p+a*EARN.a,sales=c+p+a;
+    $("c-out").textContent="₹"+total.toLocaleString("en-IN");
+    var b=sales>=50?"₹17,000 in milestone bonuses the first month":sales>=25?"₹7,000 in milestone bonuses the first month":sales>=10?"₹2,000 milestone bonus the first month":"a month, before bonuses and tax";
+    $("c-sub").textContent=sales>=10?"a month, plus "+b:b;
+  }
+  ["c-c","c-p","c-a"].forEach(function(id){$(id).addEventListener("input",calc)});calc();
+
+  var f=$("sf"),note=$("sf-note"),btn=f.querySelector("button");
+  function say(t,c){note.textContent=t;note.className="note"+(c?" "+c:"")}
+  $("sf-reg").addEventListener("change",function(){if(this.value==="yes")say("Thanks for telling us. SEBI's rules don't let staff or agents of registered firms take commission from PulsEdge, but your firm can work with us: see PulsEdge for Business.","err");else say("")});
+  f.addEventListener("submit",function(e){
+    e.preventDefault();
+    var name=$("sf-name").value.trim(),email=$("sf-email").value.trim(),wa=$("sf-wa").value.trim();
+    if(name.length<2){say("Enter your name.","err");return}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){say("Enter a full email address.","err");return}
+    if(wa.replace(/\D/g,"").length<10){say("Enter your WhatsApp number; that's where we reply.","err");return}
+    if(!$("sf-reg").value){say("Tell us whether you work for a SEBI-registered firm.","err");return}
+    if($("sf-reg").value==="yes"){say("Staff and agents of SEBI-registered firms can't join the programme. Your firm can work with us through PulsEdge for Business.","err");return}
+    if(!$("sf-age").checked){say("Partners need to be 18 or older and live in India.","err");return}
+    if(!$("sf-ok").checked){say("Please read and accept the rules and the programme terms.","err");return}
+    if(f.querySelector("[name=_gotcha]").value){say("Thanks, we'll be in touch.","ok");return}
+    btn.disabled=true;say("Sending…");
+    fetch("https://formspree.io/f/mkjoaaga",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
+      body:JSON.stringify({source:"sales_partner",name:name,email:email,whatsapp:wa,city:$("sf-city").value.trim(),college_or_work:$("sf-what").value.trim(),
+        channel:$("sf-how").value,sebi_registered_firm:"no",accepted_terms:true,_subject:"PulsEdge partner application: "+name})})
+      .then(function(r){if(!r.ok)throw 0;say("Thanks, "+name.split(" ")[0]+". We'll message you on WhatsApp within two working days. Meanwhile, read the seller's kit.","ok");f.reset()})
+      .catch(function(){say("Couldn't send. WhatsApp +91 80737 08940 instead.","err")})
+      .then(function(){btn.disabled=false});
+  });
+})();
+</script>
+</body>
+</html>

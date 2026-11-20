@@ -5,6 +5,7 @@
   python pulsedge-bot/offers.py add YOUTUBE10 --pct 10 [--plans complete_m,complete_y] [--until 2027-03-31] [--label "YouTube"]
   python pulsedge-bot/offers.py remove YOUTUBE10
   python pulsedge-bot/offers.py founding 12      # Founding 100 seats taken so far (the site shows how many are left)
+  python pulsedge-bot/offers.py add ASHA10 --pct 10 --label "Partner Asha"   # a partner's code (sell.html)
   python pulsedge-bot/offers.py qr               # UPI QR codes for every price the site can show (needs: pip install segno)
   python pulsedge-bot/offers.py check            # prices, codes, QR files and the pages' built-in prices agree
 
@@ -114,6 +115,15 @@ def cmd_check(prices, offers):
     for key, pk in prices.get("business", {}).get("packages", {}).items():
         if pk.get("price") and f"₹{pk['price']:,}" not in biz:
             bad.append(f"business.html doesn't show {pk['name']} at ₹{pk['price']:,}")
+    # the partner page's commission table and calculator: 20% of the price after the customer's 10% off
+    sell = open(os.path.join(SITE, "sell.html"), encoding="utf-8").read()
+    pl = prices["plans"]
+    earn = {k: round(round(pl[k]["price"] * 0.9) * 0.2) for k in ("complete_y", "pro_y", "alerts_y")}
+    want = [f"₹{round(pl[k]['price'] * 0.9):,}" for k in earn] + [f"₹{v:,}" for v in earn.values()] + [f"₹{round(pl['founding']['price'] * 0.2):,}"]
+    want.append(f"EARN={{c:{earn['complete_y']},p:{earn['pro_y']},a:{earn['alerts_y']}}}")
+    for w in want:
+        if w not in sell:
+            bad.append(f"sell.html doesn't show {w} (commission figures out of date)")
     today = date.today().isoformat()
     for o in offers.get("offers", []):
         if o.get("until") and o["until"] < today:
