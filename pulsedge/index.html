@@ -377,7 +377,15 @@ h2{font-size:var(--fs-h2);line-height:1.04;letter-spacing:-.04em;font-weight:600
 .pr .was:empty{display:none}
 .plan .cd{margin:0;font:500 12.5px/1.4 var(--mono);color:var(--acc)}
 .pfoot{display:flex;flex-wrap:wrap;gap:14px 32px;align-items:flex-start;justify-content:space-between;margin-top:20px}
+.pfoot>.launch{flex:1 1 100%}
 .launch{font-size:var(--fs-sm);color:var(--ink2);max-width:62ch;margin:0}
+.pfoot>.also{display:flex;flex-direction:column;gap:8px;min-width:0;flex:1 1 260px}
+.pfoot>.also a{font-size:var(--fs-sm);color:var(--ink2);text-decoration:none}
+.pfoot>.also a b{color:var(--acc);font-weight:600}
+.wa-fab{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;display:inline-flex;align-items:center;gap:8px;padding:11px 16px 11px 13px;border-radius:999px;background:var(--btn);color:var(--btnfg);font:500 14px/1 var(--sans);text-decoration:none;box-shadow:0 10px 30px -10px rgba(0,0,0,.45);transition:transform 160ms cubic-bezier(.2,.8,.2,1)}
+.wa-fab svg{width:18px;height:18px;fill:currentColor;flex:none}
+.wa-fab:active{transform:scale(.97)}
+@media (max-width:560px){.wa-fab span{display:none}.wa-fab{padding:12px}}
 .code{display:flex;flex-direction:column;gap:8px;min-width:0;flex:0 1 380px}
 .code label{font-size:var(--fs-sm);font-weight:500}
 .code .note{margin:0}
@@ -519,7 +527,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
       <a href="#demo">Try it</a>
       <a href="track.html">Track record</a>
       <a href="#pricing">Pricing</a>
-      <a href="#partners">Partners</a>
+      <a href="business.html">For business</a>
       <a href="#faq">FAQ</a>
     </nav>
     <div class="right">
@@ -776,6 +784,10 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
 
     <div class="pfoot">
       <p class="launch" id="launch">Launch prices until 31 January 2027. From 1 February the plans cost the struck-through prices; anyone who joins before then keeps their price for as long as they renew.</p>
+      <div class="also">
+        <a href="pay.html?plan=complete_y&amp;gift=1">Buying for a parent? <b>Gift a year</b> <span aria-hidden="true">&rarr;</span></a>
+        <a href="business.html">An advisory team or firm? <b>Annual packages</b> <span aria-hidden="true">&rarr;</span></a>
+      </div>
       <form class="code" id="code-f" autocomplete="off" novalidate>
         <label for="code-in">Have a code?</label>
         <div class="f"><input type="text" id="code-in" placeholder="e.g. YOUTUBE10" autocapitalize="characters" spellcheck="false" aria-describedby="code-note"><button type="submit">Apply</button></div>
@@ -793,7 +805,8 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
       <div class="ptn">
         <h3>Wealth and advisory firms</h3>
         <ul><li><span>Seats for your advisers and relationship managers, billed to the firm</span></li><li><span>Client seats you can include in your service, at your own price</span></li><li><span>A news-only edition without verdicts, for SEBI-registered firms</span></li><li><span>A compliance pack: sources, method and disclosures for your team to review</span></li></ul>
-        <p class="ps">Volume pricing from 25 seats. Agreements are with the firm.</p>
+        <p class="ps">Annual packages from ₹49,999 for 5 advisers, with a free 30-day pilot. Agreements are with the firm.</p>
+        <a class="btn ghost" href="business.html">See business packages <span class="arr" aria-hidden="true">&rarr;</span></a>
       </div>
       <div class="ptn">
         <h3>Communities and creators</h3>
@@ -856,14 +869,15 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
           <a class="logo" href="#top"><img class="lt" src="assets/icon.png" alt="" width="30" height="30"><img class="dk" src="assets/icon-dark.png" alt="" width="30" height="30">PulsEdge</a>
           <p>Indian market news, triaged for the stocks you own.</p>
         </div>
-        <div><h4>Product</h4><ul><li><a href="terminal.html">Terminal</a></li><li><a href="track.html">Track record</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#partners">Partners</a></li><li><a href="terminal.html#trial">Free trial</a></li></ul></div>
+        <div><h4>Product</h4><ul><li><a href="terminal.html">Terminal</a></li><li><a href="track.html">Track record</a></li><li><a href="#pricing">Pricing</a></li><li><a href="business.html">For business</a></li><li><a href="#partners">Partners</a></li><li><a href="terminal.html#trial">Free trial</a></li></ul></div>
         <div><h4>Company</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="https://t.me/pulsedgein" target="_blank" rel="noopener">Telegram</a></li><li><a href="https://www.instagram.com/pulsedge.in/" target="_blank" rel="noopener">Instagram</a></li></ul></div>
-        <div><h4>Legal</h4><ul><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="refund.html">Refunds &amp; delivery</a></li></ul></div>
+        <div><h4>Legal</h4><ul><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="refund.html">Refunds &amp; delivery</a></li><li><a href="disclosures.html">Disclosures</a></li></ul></div>
       </div>
       <div class="legal"><p>Educational information only. PulsEdge is not registered with SEBI as an investment adviser or research analyst. Trading involves substantial risk of loss. Past performance doesn't predict future results.</p><p>&copy; 2026 Aditya Sawant (PulsEdge) · Bengaluru, India · <a href="contact.html#biz">Business details</a></p></div>
     </footer>
   </div>
 </main>
+<a class="wa-fab" href="https://wa.me/918073708940?text=Hi%2C%20which%20PulsEdge%20plan%20suits%20me%3F" target="_blank" rel="noopener" aria-label="Ask us on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg><span>Questions? WhatsApp us</span></a>
 <dialog class="vbox" id="vbox" aria-label="PulsEdge intro video">
   <div class="vin"><button class="vclose" id="vclose" type="button">Close ✕</button><video id="vfull" controls playsinline preload="none" poster="assets/intro-poster.jpg"></video></div>
 </dialog>
@@ -1395,7 +1409,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
       card.querySelector(".was").textContent=was?inr(was):"";
       card.querySelector(".amt").textContent=inr(now);
       card.querySelector(".per").textContent=period==="y"?"/ year":"/ month";
-      card.querySelector(".em").textContent=period==="y"?inr(now/12)+" a month":"Pay month to month";
+      card.querySelector(".em").textContent=period==="y"?inr(now/12)+" a month":"Try a month: it counts towards a year";
       var more=card.querySelector(".more"),pro=P.plans["pro_"+period];
       if(more&&pro)more.textContent=inr(now-price("pro_"+period))+(period==="y"?" a year":" a month")+" more than Pro";
       var cd=card.querySelector(".cd");cd.hidden=!off(key);cd.textContent=off(key)?"Code "+code.code+" applied: "+code.pct+"% off":"";

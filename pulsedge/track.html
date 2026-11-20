@@ -8,14 +8,14 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="PulsEdge">
 <meta property="og:title" content="PulsEdge track record">
-<meta property="og:description" content="Every PulsEdge call on a named stock, with the NSE closing price 1 and 5 sessions later.">
+<meta property="og:description" content="Every PulsEdge verdict on a named stock, with the NSE closing price 1 and 5 sessions later.">
 <meta property="og:url" content="https://adityasawant0503.github.io/pulsedge/track.html">
 <meta property="og:image" content="https://adityasawant0503.github.io/pulsedge/assets/share.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="PulsEdge: Indian market news sorted into Ignore, Watch and Act">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="description" content="Every PulsEdge call on a named stock, with the NSE closing price 1 and 5 sessions later.">
+<meta name="description" content="Every PulsEdge verdict on a named stock, with the NSE closing price 1 and 5 sessions later.">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,19 +102,19 @@ footer{margin-top:36px;font-size:12px;color:var(--mute)}
   </div>
 
   <p class="kick">Track record</p>
-  <h1>How our calls did.</h1>
-  <p class="lede">Every Watch and Act call on a named stock is logged the moment it's made, then checked against NSE's official closing prices. We measure from the first close after the news reached you, the earliest price you could have traded at, not from before the news broke. Nothing is removed.</p>
+  <h1>How our verdicts did.</h1>
+  <p class="lede">Every Watch and Act verdict on a named stock is logged the moment it's made, then checked against NSE's official closing prices. We measure from the first close after the news reached you, the earliest price you could have traded at, not from before the news broke. Nothing is removed.</p>
 
   <div class="tiles">
-    <div class="tile"><b id="t-calls">–</b><span>calls tracked</span></div>
+    <div class="tile"><b id="t-calls">–</b><span>verdicts tracked</span></div>
     <div class="tile"><b id="t-h1">–</b><span id="t-h1s">1-day hit rate</span></div>
     <div class="tile"><b id="t-h5">–</b><span id="t-h5s">5-day hit rate</span></div>
     <div class="tile"><b id="t-mv">–</b><span>avg 1-day move after news</span></div>
   </div>
-  <p class="note" id="note">A call counts as a hit when the stock moved the way the AI said it would after that close. Most of a news move happens before anyone can act on it, so these numbers are lower than a measure from before the news would show. That is the honest version. Calls made by keyword rules (while AI is off) carry no direction, so they show the price move but are never counted.</p>
+  <p class="note" id="note">A verdict counts as a hit when the stock moved the way the AI said it would after that close. Most of a news move happens before anyone can act on it, so these numbers are lower than a measure from before the news would show. That is the honest version. Verdicts made by keyword rules (while AI is off) carry no direction, so they show the price move but are never counted.</p>
 
   <div class="bar">
-    <div class="seg" role="group" aria-label="Filter calls">
+    <div class="seg" role="group" aria-label="Filter verdicts">
       <button type="button" data-f="all" aria-pressed="true">All</button>
       <button type="button" data-f="scored" aria-pressed="false">Scored</button>
       <button type="button" data-f="act" aria-pressed="false">Act</button>
@@ -126,7 +126,7 @@ footer{margin-top:36px;font-size:12px;color:var(--mute)}
     <tbody id="rows"><tr><td class="empty" colspan="8">Loading…</td></tr></tbody>
   </table>
 
-  <footer>Prices: NSE end-of-day bhavcopy. Entry is the first NSE close after the news reached readers (15 minutes after it came out); until 20 Nov 2026 this page measured from the close before the news, which overstated results; every call since 26 Oct has been re-measured the new way. Past results don't predict future ones. Educational information only, not investment advice.<br><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="contact.html">Contact</a></footer>
+  <footer>Prices: NSE end-of-day bhavcopy. Entry is the first NSE close after the news reached readers (15 minutes after it came out); until 20 Nov 2026 this page measured from the close before the news, which overstated results; every verdict since 26 Oct has been re-measured the new way. Past results don't predict future ones. Educational information only, not investment advice.<br><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="disclosures.html">Disclosures</a> · <a href="contact.html">Contact</a></footer>
 </main>
 <script>
 (function(){
@@ -148,7 +148,7 @@ footer{margin-top:36px;font-size:12px;color:var(--mute)}
   }
   function render(){
     var calls=(data&&data.calls||[]).filter(function(c){return filter==="all"||(filter==="scored"?c.scored:c.call==="act"||c.call==="buy"||c.call==="sell")});
-    if(!calls.length){$("rows").innerHTML='<tr><td class="empty" colspan="8">'+(data&&data.calls&&data.calls.length?"No calls match this filter yet.":"Tracking has started. Calls appear here as they're made, and prices fill in after each NSE close.")+'</td></tr>';return}
+    if(!calls.length){$("rows").innerHTML='<tr><td class="empty" colspan="8">'+(data&&data.calls&&data.calls.length?"No verdicts match this filter yet.":"Tracking has started. Calls appear here as they're made, and prices fill in after each NSE close.")+'</td></tr>';return}
     $("rows").innerHTML=calls.slice(0,400).map(function(c){
       var dir=c.dir?(c.dir==="up"?" ↑":" ↓"):"";
       return '<tr><td class="c-date">'+day(c.time)+'</td><td class="sym">'+esc(c.symbol)+'</td><td><span class="tag">'+esc(c.call)+dir+'</span></td>'+

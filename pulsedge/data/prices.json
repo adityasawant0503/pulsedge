@@ -2,13 +2,82 @@
  "note": "Plan prices for the website (index.html pricing) and checkout (pay.html). Change them here, then run python pulsedge-bot/offers.py qr && python pulsedge-bot/offers.py check. 'list' is the price from the day after launch_until: only show it while you mean to charge it then.",
  "launch_until": "2027-01-31",
  "plans": {
-  "alerts_m": {"name": "PulsEdge Alerts", "product": "alerts", "period": "month", "price": 499, "list": 799},
-  "alerts_y": {"name": "PulsEdge Alerts", "product": "alerts", "period": "year", "price": 3999, "list": 6999},
-  "pro_m": {"name": "PulsEdge Pro", "product": "pro", "period": "month", "price": 999, "list": 1299},
-  "pro_y": {"name": "PulsEdge Pro", "product": "pro", "period": "year", "price": 7999, "list": 11999},
-  "complete_m": {"name": "PulsEdge Complete", "product": "complete", "period": "month", "price": 1299, "list": 1799},
-  "complete_y": {"name": "PulsEdge Complete", "product": "complete", "period": "year", "price": 9999, "list": 14999},
-  "founding": {"name": "PulsEdge Founding 100", "product": "complete", "period": "year", "price": 5999, "list": 14999}
+  "alerts_m": {
+   "name": "PulsEdge Alerts",
+   "product": "alerts",
+   "period": "month",
+   "price": 499,
+   "list": 799
+  },
+  "alerts_y": {
+   "name": "PulsEdge Alerts",
+   "product": "alerts",
+   "period": "year",
+   "price": 3999,
+   "list": 6999
+  },
+  "pro_m": {
+   "name": "PulsEdge Pro",
+   "product": "pro",
+   "period": "month",
+   "price": 999,
+   "list": 1299
+  },
+  "pro_y": {
+   "name": "PulsEdge Pro",
+   "product": "pro",
+   "period": "year",
+   "price": 7999,
+   "list": 11999
+  },
+  "complete_m": {
+   "name": "PulsEdge Complete",
+   "product": "complete",
+   "period": "month",
+   "price": 1299,
+   "list": 1799
+  },
+  "complete_y": {
+   "name": "PulsEdge Complete",
+   "product": "complete",
+   "period": "year",
+   "price": 9999,
+   "list": 14999
+  },
+  "founding": {
+   "name": "PulsEdge Founding 100",
+   "product": "complete",
+   "period": "year",
+   "price": 5999,
+   "list": 14999
+  }
  },
- "founding": {"seats": 100, "taken": 0}
+ "founding": {
+  "seats": 100,
+  "taken": 0
+ },
+ "business": {
+  "note": "Annual business packages on business.html (one invoice a year, bank transfer or UPI). offers.py check confirms business.html shows these prices.",
+  "packages": {
+   "team5": {
+    "name": "Team 5",
+    "seats": 5,
+    "price": 49999
+   },
+   "team10": {
+    "name": "Team 10",
+    "seats": 10,
+    "price": 89999
+   },
+   "firm": {
+    "name": "Firm",
+    "seats": "25+",
+    "price": null
+   }
+  },
+  "pilot": {
+   "seats": 3,
+   "days": 30
+  }
+ }
 }
