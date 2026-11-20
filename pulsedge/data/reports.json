@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T10:00+05:30",
+ "updated": "2026-11-20T10:16+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -251,6 +251,22 @@
    "updated": "2026-11-19T15:02+05:30",
    "model": "openai/gpt-oss-20b"
   },
+  "MUTHOOTFIN": {
+   "summary": "Muthoot Finance shares fell by up to 4% recently because gold prices dropped sharply. This decline affected the value of the gold used as security for loans and reduced demand for new gold-backed loans.",
+   "why": "Since the company lends money against gold, falling gold prices can lower the value of their collateral and impact their business performance, which directly affects the value of the shares.",
+   "upside": "Lower gold prices might encourage more people to buy jewelry during festive and wedding seasons, potentially increasing loan demand.",
+   "downside": "Continued low gold prices could reduce the value of the company's collateral and lead to financial write-downs on their inventory.",
+   "watch": [
+    "Future movements in gold prices",
+    "Changes in demand for gold-backed loans",
+    "Company announcements regarding inventory valuation"
+   ],
+   "about": "Muthoot Finance is a financial services company that provides loans secured by gold.",
+   "basis": "a8457d4544fa",
+   "items": 2,
+   "updated": "2026-11-20T10:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "APLAPOLLO": {
    "summary": "APL Apollo Tubes is in the news because its promoter family is looking to sell about 28% of the company, which could bring in roughly ₹17,000 crore. A major investment bank has also named the stock a conviction pick after its Q2 results, suggesting it could be a good buy for investors.",
    "why": "Shareholders should watch because a large sale could dilute their holdings and affect the share price, while a bank’s endorsement might bring more buyers into the market.",
@@ -313,22 +329,6 @@
    "basis": "b49e164d950b",
    "items": 1,
    "updated": "2026-11-19T08:11+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "MUTHOOTFIN": {
-   "summary": "Muthoot Finance shares fell about 4% as gold prices slipped. The lower gold price reduces the value of the gold pledged as collateral, putting pressure on gold‑loan lenders.",
-   "why": "Shareholders should watch because weaker collateral can affect loan quality and earnings.",
-   "upside": "A quick rebound in gold prices could improve collateral values and ease pressure on the loan book.",
-   "downside": "Prolonged low gold prices could further erode collateral values and strain loan performance.",
-   "watch": [
-    "Gold price movements",
-    "Muthoot Finance's loan growth and asset quality",
-    "Financial sector index trends"
-   ],
-   "about": "Muthoot Finance provides gold‑backed loans to retail customers.",
-   "basis": "ecdef1fcd294",
-   "items": 1,
-   "updated": "2026-11-19T00:20+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ONGC": {
@@ -650,6 +650,22 @@
    "updated": "2026-11-20T07:57+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "TITAN": {
+   "summary": "Titan shares fell sharply over the last few days, dropping up to 5% in a single session. This decline happened alongside a broader market sell-off and a drop in gold prices, which affected other jewellery companies too.",
+   "why": "If you own these shares, the recent price drop means the value of your holding has decreased. The movement is linked to wider market trends and changes in gold prices, not just company-specific news.",
+   "upside": "Lower gold prices might encourage more people to buy jewellery during the upcoming wedding season, which could boost sales.",
+   "downside": "Falling gold prices can lead to lower profits from inventory and reduced demand for gold loans, which may hurt the company's earnings.",
+   "watch": [
+    "How gold prices move in the coming weeks",
+    "Sales performance during the wedding season",
+    "Whether the broader stock market stabilizes"
+   ],
+   "about": "Titan is a major Indian company in the consumer durables sector, known for selling jewellery and watches.",
+   "basis": "4d0ebac781c5",
+   "items": 5,
+   "updated": "2026-11-20T10:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "SIGNATURE": {
    "summary": "Signature Global has been actively buying land in Gurugram and Maharashtra to expand its project pipeline. The company also reported launching properties worth 4,400 crore rupees in the first half of the year.",
    "why": "These land purchases and new launches could lead to higher future sales and earnings, which is important for the value of the company's shares.",
@@ -665,22 +681,6 @@
    "items": 5,
    "updated": "2026-11-20T03:25+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "TITAN": {
-   "summary": "Titan shares fell over 4-5% on Nov 18 as the broader market and consumer‑durables sector slipped, with the Nifty Consumer Durables index down 3% and the broader indices lower.",
-   "why": "The drop hurts shareholders because it reflects weaker near‑term consumer demand and could pressure the company’s sales and margins.",
-   "upside": "A rebound in wedding‑season demand could lift sales and support the share price.",
-   "downside": "A sector‑wide sell‑off could continue if broader market sentiment weakens, further pressuring the stock.",
-   "watch": [
-    "Consumer‑durables index movement",
-    "Wedding‑season demand trends",
-    "Broad market sentiment and technical support levels"
-   ],
-   "about": "Titan Company makes jewellery, watches and related accessories.",
-   "basis": "157e842de832",
-   "items": 4,
-   "updated": "2026-11-18T14:01+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "BDL": {
    "summary": "PulsEdge flagged that the Indian government is planning a 20% increase in defence capital spending next year and that India and Japan may finalise an agreement for Japanese forces to use Indian missile test ranges. These developments have pushed BDL and other defence stocks up about 3% on expectations of more orders.",
@@ -842,6 +842,22 @@
    "updated": "2026-11-19T11:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "KALYANKJIL": {
+   "summary": "Kalyan Jewellers shares fell recently as gold prices dropped and the broader consumer durables sector weakened. This decline happened despite lower gold prices, which some investors see as a potential boost for future sales.",
+   "why": "Shareholders may see short-term losses because falling gold prices can reduce the value of the company's inventory and lower demand for gold loans. However, these factors can also influence how much profit the company makes on each item sold.",
+   "upside": "Lower gold prices might encourage more people to buy jewellery during the upcoming wedding and festive seasons.",
+   "downside": "Falling gold prices could lead to inventory write-downs and reduced demand for gold-backed loans, squeezing profits.",
+   "watch": [
+    "Changes in gold prices",
+    "Consumer demand during the wedding season",
+    "Performance of the Consumer Durables sector index"
+   ],
+   "about": "",
+   "basis": "3e9a7c5b1558",
+   "items": 3,
+   "updated": "2026-11-20T10:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "HDFCBANK": {
    "summary": "HDFC Bank is currently being highlighted in several market watchlists and analyst reports. The broader financial sector has seen a slight rise in recent sessions, with bank stocks showing positive technical trends.",
    "why": "These mentions can attract short-term trading interest, which may cause the share price to move up or down without any specific company news.",
@@ -984,22 +1000,6 @@
    "basis": "91d26b90aa4d",
    "items": 2,
    "updated": "2026-11-20T07:57+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "KALYANKJIL": {
-   "summary": "Kalyan Jewellers shares fell up to 5% as the Nifty Consumer Durables index slid about 3% and concerns grew over near‑term consumer demand despite lower gold prices.",
-   "why": "The price drop reflects market worries that weaker retail demand could hurt sales volumes and profit margins for shareholders.",
-   "upside": "A rebound in demand during the upcoming wedding season could lift sales and support the share price.",
-   "downside": "A broader sector‑wide sell‑off or continued weak consumer demand could further compress margins and push the stock lower.",
-   "watch": [
-    "Movement of the Consumer Durables sector index",
-    "Retail demand trends, especially wedding season activity",
-    "Gold price changes and their impact on jewellery pricing"
-   ],
-   "about": "Kalyan Jewellers India Ltd is a retailer of jewellery and related consumer products.",
-   "basis": "538f8ef109c2",
-   "items": 2,
-   "updated": "2026-11-19T03:10+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "BEML": {
@@ -1338,20 +1338,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "PRESTIGE": {
-   "summary": "Prestige Estates Projects Ltd. launched a new residential project called Prestige Avon in North Bengaluru and announced several strategic moves, including a 50% stake purchase in Advent Convention and Hotels International, the creation of two wholly‑owned subsidiaries, and additional acquisitions and stake increases in its own projects. These actions aim to expand its portfolio and support future revenue growth.",
-   "why": "Shareholders should watch these developments because they could boost the company's earnings but also require cash and successful execution.",
-   "upside": "If the new project sells well and the hotel and other acquisitions integrate smoothly, the company could see stronger revenue and profit growth.",
-   "downside": "Delays in project delivery, higher cash outflows for acquisitions, or integration challenges could pressure earnings and cash reserves.",
+   "summary": "Prestige Estates has been active in expanding its business, launching a new residential project in North Bengaluru and acquiring a 50% stake in a hotel company. The company also announced plans to create two new subsidiaries and increase its ownership in an existing housing project.",
+   "why": "These moves show the company is investing in new areas, which could help grow its future income. However, spending money on new projects and acquisitions can put pressure on cash flow while the results are still pending.",
+   "upside": "New projects and acquisitions could lead to higher sales and revenue growth if they perform well.",
+   "downside": "Delays in building new projects or difficulties in merging new businesses could hurt profits.",
    "watch": [
-    "Booking levels and construction progress of the Prestige Avon project",
-    "Integration and performance of the Advent Convention and Hotels International stake",
-    "Financial impact and operational results of the newly formed subsidiaries and recent acquisitions"
+    "Initial sales numbers for the new Prestige Avon project",
+    "Details on how the new hotel stake will be managed",
+    "Information about the purpose of the two new subsidiaries"
    ],
-   "about": "Prestige Estates Projects Ltd. is a real‑estate developer that builds residential and commercial projects in India.",
-   "basis": "e24f6b91a14c",
-   "items": 6,
-   "updated": "2026-11-20T09:47+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Prestige Estates is a real estate company that develops residential projects.",
+   "basis": "c7dd259c545f",
+   "items": 5,
+   "updated": "2026-11-20T10:16+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "WAAREEENER": {
    "summary": "Waaree Energies recently won a new contract worth one billion rupees. The company was also named a top performer in global solar quality tests for the fifth year in a row.",
@@ -1623,6 +1623,22 @@
    "basis": "4c9f18228e23",
    "items": 2,
    "updated": "2026-11-20T08:46+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "SCHNEIDER": {
+   "summary": "Schneider Electric Infrastructure Ltd. announced that a director or key manager has resigned. The company also reported a broader change in its board or management team.",
+   "why": "Changes in leadership can create short-term uncertainty about how the company is run, though these are often planned transitions.",
+   "upside": "",
+   "downside": "The departure of a key person could lead to temporary confusion or delays in decision-making.",
+   "watch": [
+    "Who has been appointed to replace the resigning director or manager.",
+    "Any official statements from the company explaining the reason for the change.",
+    "How the company's day-to-day operations are affected in the coming weeks."
+   ],
+   "about": "Schneider Electric Infrastructure Ltd. is a capital goods company listed on the NSE.",
+   "basis": "71c282c4c16f",
+   "items": 2,
+   "updated": "2026-11-20T10:16+05:30",
    "model": "qwen/qwen3.8-27b"
   }
  }
