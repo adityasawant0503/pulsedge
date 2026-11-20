@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T10:16:33+05:30",
+ "updated": "2026-11-20T10:32:19+05:30",
  "summary": {
-  "calls": 1889,
-  "scored_calls": 721,
+  "calls": 1892,
+  "scored_calls": 724,
   "d1": {
    "scored": 549,
    "hits": 225,
@@ -23,6 +23,51 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "7a5ce34ff3f7f19d",
+   "symbol": "IDFCFIRSTB",
+   "time": "2026-11-20T10:24:37+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "IDFC First Bank Limited: IDFC First Bank Limited has informed the Exchange about Rumour Verification - Regulation 30(11) |SUBJECT: Rumour Verification - Regulat",
+   "url": "https://nsearchives.nseindia.com/corporate/IDFCFIRSTB_20112026102343_Disclosure_Rumor_Verification.pdf",
+   "alert_px": 85.53,
+   "alert_move": -0.6,
+   "alert_at": "2026-11-20T10:31:41+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "23a4e6d15f8cecf6",
+   "symbol": "INFY",
+   "time": "2026-11-20T10:19:37+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Infosys, TCS, HCL Tech: Indian IT stocks buck global AI rout trend; Nifty IT jumps 2% - Key reasons | Top shares to buy",
+   "url": "https://www.livemint.com/market/stock-market-news/infosys-tcs-hcl-tech-indian-it-stocks-buck-global-ai-rout-trend-nifty-it-jumps-2-key-reasons-top-shares-to-buy-11795103694291.html",
+   "alert_px": 1110.2,
+   "alert_move": 1.68,
+   "alert_at": "2026-11-20T10:31:41+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "23a4e6d15f8cecf6",
+   "symbol": "TCS",
+   "time": "2026-11-20T10:19:37+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Infosys, TCS, HCL Tech: Indian IT stocks buck global AI rout trend; Nifty IT jumps 2% - Key reasons | Top shares to buy",
+   "url": "https://www.livemint.com/market/stock-market-news/infosys-tcs-hcl-tech-indian-it-stocks-buck-global-ai-rout-trend-nifty-it-jumps-2-key-reasons-top-shares-to-buy-11795103694291.html",
+   "alert_px": 2388.2,
+   "alert_move": 1.94,
+   "alert_at": "2026-11-20T10:31:41+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "74b45f60181dc0ed",
    "symbol": "KALYANKJIL",

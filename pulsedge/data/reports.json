@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T10:16+05:30",
+ "updated": "2026-11-20T10:31+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -842,6 +842,38 @@
    "updated": "2026-11-19T11:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "INFY": {
+   "summary": "Infosys shares have fallen sharply, losing about a quarter of investor wealth over the past year, while the broader Indian IT sector recently rallied 2% even as global tech stocks slipped. The sector index is down 1.1% in the last session and 3.9% over five sessions, showing mixed momentum.",
+   "why": "Shareholders feel the impact of both the price drop and the sector’s relative strength, which can affect the stock’s future value.",
+   "upside": "A recent note suggests the stock may have bottomed, offering a chance for a rebound.",
+   "downside": "Further declines are possible if negative news emerges or global tech sentiment worsens.",
+   "watch": [
+    "Indian IT sector performance versus global tech sentiment",
+    "Global IT spending trends",
+    "Any new price movement in Infosys stock"
+   ],
+   "about": "Infosys provides software development, consulting and outsourcing services.",
+   "basis": "8550f6bfb4ea",
+   "items": 3,
+   "updated": "2026-11-20T10:31+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "TCS": {
+   "summary": "TCS shares dipped slightly today as the IT sector fell 1.1% in the last session. Indian IT stocks have outperformed global tech stocks recently, showing a preference for local IT firms. The market trend for TCS remains mixed.",
+   "why": "Shareholders see the price move as a reflection of market sentiment that can affect their portfolio value.",
+   "upside": "A continued preference for Indian IT firms could support TCS’s share price.",
+   "downside": "A reversal in global tech sentiment or broader market weakness could push the share price lower.",
+   "watch": [
+    "TCS share price trend the next day",
+    "IT sector performance in the coming sessions",
+    "global tech market sentiment"
+   ],
+   "about": "TCS is a major Indian IT services company.",
+   "basis": "bbc05122b0cc",
+   "items": 3,
+   "updated": "2026-11-20T10:31+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "KALYANKJIL": {
    "summary": "Kalyan Jewellers shares fell recently as gold prices dropped and the broader consumer durables sector weakened. This decline happened despite lower gold prices, which some investors see as a potential boost for future sales.",
    "why": "Shareholders may see short-term losses because falling gold prices can reduce the value of the company's inventory and lower demand for gold loans. However, these factors can also influence how much profit the company makes on each item sold.",
@@ -1210,22 +1242,6 @@
    "updated": "2026-11-19T14:32+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "TCS": {
-   "summary": "TCS shares slipped slightly today after a larger 26% drop this year, while the broader IT sector fell 1.1% in the last session and 3.9% over five sessions. The price dip is modest but follows a broader market weakness.",
-   "why": "Share price moves affect the value of shareholders' holdings and reflect how market sentiment is treating the company despite its solid business results.",
-   "upside": "Good business results could help the stock stabilize if broader market sentiment improves.",
-   "downside": "Further declines are possible if negative news appears or market weakness continues.",
-   "watch": [
-    "Today's TCS share price movement",
-    "IT sector index trends",
-    "Any emerging negative news affecting TCS"
-   ],
-   "about": "Tata Consultancy Services Ltd. provides information technology services and consulting.",
-   "basis": "600724caadb8",
-   "items": 2,
-   "updated": "2026-11-20T08:16+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "NTPC": {
    "summary": "PulsEdge flagged a tragic accident at NTPC's Tandwa project where three workers died and two were injured, and an investigation is now under way. The Energy sector index was flat over the past five sessions, showing little market movement.",
    "why": "Shareholders should watch the incident because it could pause work, raise safety costs, or attract regulatory scrutiny that may affect earnings.",
@@ -1338,20 +1354,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "PRESTIGE": {
-   "summary": "Prestige Estates has been active in expanding its business, launching a new residential project in North Bengaluru and acquiring a 50% stake in a hotel company. The company also announced plans to create two new subsidiaries and increase its ownership in an existing housing project.",
-   "why": "These moves show the company is investing in new areas, which could help grow its future income. However, spending money on new projects and acquisitions can put pressure on cash flow while the results are still pending.",
-   "upside": "New projects and acquisitions could lead to higher sales and revenue growth if they perform well.",
-   "downside": "Delays in building new projects or difficulties in merging new businesses could hurt profits.",
+   "summary": "Prestige Estates Projects Ltd. launched a new residential project called Prestige Avon in North Bengaluru and announced several corporate moves, including a 50% stake purchase in Advent Convention and Hotels International, the formation of two wholly owned subsidiaries, and an acquisition of another business. These actions aim to expand its portfolio and support future revenue growth.",
+   "why": "These developments could affect the company’s earnings and share price, making them important for current shareholders.",
+   "upside": "Successful bookings for Prestige Avon and smooth integration of the Advent stake and new acquisitions could boost revenue and earnings.",
+   "downside": "Execution delays, slower bookings, or integration challenges could hurt profitability and shareholder value.",
    "watch": [
-    "Initial sales numbers for the new Prestige Avon project",
-    "Details on how the new hotel stake will be managed",
-    "Information about the purpose of the two new subsidiaries"
+    "Initial sales and construction progress of the Prestige Avon project",
+    "Integration and performance of the Advent Convention and Hotels International stake",
+    "Details and financial contribution of the two new subsidiaries"
    ],
-   "about": "Prestige Estates is a real estate company that develops residential projects.",
-   "basis": "c7dd259c545f",
-   "items": 5,
-   "updated": "2026-11-20T10:16+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Prestige Estates Projects Ltd. is a real estate developer focused on residential and commercial projects in India.",
+   "basis": "4fcf9aeae4c1",
+   "items": 4,
+   "updated": "2026-11-20T10:31+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "WAAREEENER": {
    "summary": "Waaree Energies recently won a new contract worth one billion rupees. The company was also named a top performer in global solar quality tests for the fifth year in a row.",
@@ -1544,22 +1560,6 @@
    "items": 2,
    "updated": "2026-11-19T11:45+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "INFY": {
-   "summary": "Infosys shares have fallen sharply, losing about a quarter of investor wealth over the past year, and the stock dropped again today.",
-   "why": "The decline directly impacts shareholders’ portfolio value, while a possible bottom could offer a recovery opportunity.",
-   "upside": "If the stock has indeed bottomed, a rebound could occur as investor sentiment improves.",
-   "downside": "Further price drops are possible if negative news appears or global IT spending stays weak.",
-   "watch": [
-    "Daily share price movements",
-    "IT sector index trends",
-    "Global IT spending outlook"
-   ],
-   "about": "Infosys is a major Indian IT services and consulting company.",
-   "basis": "9292f8cb5183",
-   "items": 2,
-   "updated": "2026-11-20T08:30+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "TATASTEEL": {
    "summary": "Tata Steel's CEO reported that iron ore costs in India are rising, which can lower profits on each ton of steel sold. The company is also still discussing financial assistance with the Dutch government, a deal that remains uncertain.",
