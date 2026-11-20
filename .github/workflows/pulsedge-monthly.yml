@@ -6,10 +6,10 @@ name: PulsEdge monthly report
 #   sees a draft in report.html.
 # - Run by hand with action "publish" once the draft is right: members can see it, and both Telegram channels are told.
 #   Run with action "draft" and "redo" ticked to write a draft again (never over a published report).
-# On any other branch (push): a dry run of this month so far, with the AI summaries, nothing written.
+# On any other branch: a dry run of this month so far, nothing written (with the AI summaries only when started by hand).
 on:
   schedule:
-    - cron: '7 2 1 * *'               # 07:37 IST on the 1st
+    - cron: '47 0 1 * *'              # 06:17 IST on the 1st: after Groq's daily reset, before the morning news
   workflow_dispatch:
     inputs:
       action:
@@ -74,7 +74,9 @@ jobs:
         echo "Month: $M"
     - name: Dry run (branches)
       if: github.ref != 'refs/heads/master'
-      run: python pulsedge-bot/monthly_report.py draft --month "${{ steps.m.outputs.month }}" --dry-run
+      # the AI summaries only when started by hand: a run uses about a quarter of a free model's daily tokens,
+      # which the live alerts need
+      run: python pulsedge-bot/monthly_report.py draft --month "${{ steps.m.outputs.month }}" --dry-run ${{ github.event_name == 'workflow_dispatch' && ' ' || '--no-ai' }}
     - name: Draft
       id: draft
       if: github.ref == 'refs/heads/master' && (github.event_name == 'schedule' || inputs.action == 'draft')

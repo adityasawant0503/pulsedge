@@ -235,7 +235,7 @@ h3{font-size:15px;margin:22px 0 8px}
       if(r.status!=="published"&&!owner){R=null;$("title").textContent=r.title;$("headline").textContent="This report is being prepared. It's sent to members in the first days of the next month.";$("mine-body").textContent="";return}
       R=r;
       var dr=$("draft");dr.hidden=r.status==="published";
-      if(!dr.hidden){dr.textContent="";dr.append(el("b",null,"Draft for your review. "),document.createTextNode("Members can't see it until you publish it. "+((r.flags||[]).length?(r.flags.length+" notes are flagged for advice-like wording; they're first in the review list at the bottom."):"Nothing is flagged.")+" Summaries by "+((r.overview&&r.overview.model)||"headlines (no AI)")+"."))}
+      if(!dr.hidden){dr.textContent="";dr.append(el("b",null,"Draft for your review. "),document.createTextNode("Members can't see it until you publish it. "+((r.flags||[]).length?(r.flags.length+" notes are flagged for advice-like wording; they're first in the review list at the bottom."):"Nothing is flagged.")+" Summaries by "+((r.overview&&r.overview.model)||"headlines (no AI)")+(r.notes_by_ai!=null?"; "+r.notes_by_ai+" of "+Object.keys(r.stocks||{}).length+" stock notes by AI, the rest show the news item's own summary (run the draft again with redo for more)":"")+"."))}
       renderMarket();renderMine();renderReview();
     }).catch(function(){$("headline").textContent="Couldn't load this report. Refresh to try again."});
   }

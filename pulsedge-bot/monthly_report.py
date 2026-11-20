@@ -229,14 +229,30 @@ SYSTEM = ("You write PulsEdge's monthly market review for Indian retail investor
           "'should'. Don't invent numbers or events that aren't in the facts. Answer with a JSON object only.")
 
 
+SPENT = set()        # models whose daily quota ran out during this run: not asked again
+
+
 def ask(cands, user, max_tokens=2500):
+    """The first model that answers. A per-minute limit is waited out and retried once; a daily one is skipped from
+    then on, so the run doesn't eat the quota the live alerts need."""
+    import time
     import news_pipeline as news
     news.AI_TIMEOUT = 60
     for url, key, model in cands:
-        try:
-            return news.ask_json(url, key, model, SYSTEM, user, max_tokens), model
-        except Exception as e:
-            log(f"    {model}: {type(e).__name__}: {str(e)[:120]}")
+        if model in SPENT:
+            continue
+        for attempt in (1, 2):
+            try:
+                return news.ask_json(url, key, model, SYSTEM, user, max_tokens), model
+            except Exception as e:
+                msg = str(e)
+                log(f"    {model}: {type(e).__name__}: {msg[:110]}")
+                if "429" in msg and news.DAILY.search(msg):
+                    SPENT.add(model)
+                elif "429" in msg and attempt == 1:
+                    time.sleep(news.retry_after(msg, 20))
+                    continue
+                break
     return None, None
 
 
@@ -273,6 +289,9 @@ def write_stock_notes(cands, stocks):
             if s in batch and isinstance(t, str) and t.strip():
                 notes[s] = t.strip()[:400]
         log(f"  stock notes: {len(notes)} of {min(len(syms), i + 25)}")
+        if i + 25 < len(syms):
+            import time
+            time.sleep(6)                                 # spread the batches over minutes: free tiers limit tokens a minute
     return notes
 
 
@@ -338,6 +357,7 @@ def build(month, ref, use_ai):
         st["note_by"] = "ai" if s in notes else "headline"
         del st["weight"], st["top"]
     rep["stocks"] = stocks
+    rep["notes_by_ai"] = sum(1 for st in stocks.values() if st["note_by"] == "ai")
     rep["moves"] = moves                                  # {symbol: [close before the month, last close in it, % change]}
     rep["flags"] = [{"where": f"stocks.{s}", "text": st["note"]} for s, st in stocks.items() if ADVICE.search(st["note"])]
     rep["flags"] += [{"where": f"overview.{k}", "text": v} for k, v in overview.items() if k != "model" and isinstance(v, str) and ADVICE.search(v)]
