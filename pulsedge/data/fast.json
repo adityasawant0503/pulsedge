@@ -1,7 +1,41 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-20T08:12:57+05:30",
+ "updated": "2026-11-20T10:34:26+05:30",
  "items": [
+  {
+   "id": "97938ec014c8db12",
+   "time": "2026-11-20T10:33:31+05:30",
+   "headline": "INDIAN RUPEE GAINS PAST 93 PER DOLLAR FOR FIRST TIME SINCE APRIL, UP 0.3% FROM PREVIOUS CLOSE TO 93.29",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9773",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Currency",
+    "Macro"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "Market Colour",
+   "action": "Monitor how the stronger rupee affects import-heavy sectors like aviation and IT in the coming sessions.",
+   "reason": [
+    "Routine daily currency movement.",
+    "No specific company news or structural change."
+   ],
+   "risks": [
+    "Sudden reversal in currency trends.",
+    "Impact on export-oriented companies."
+   ],
+   "plain": "The Indian rupee became stronger against the US dollar, crossing a key level for the first time in months.",
+   "why": "This is a normal daily market update. It does not signal a specific problem or opportunity for any single company.",
+   "check": "",
+   "original": "INDIAN RUPEE GAINS PAST 93 PER DOLLAR FOR FIRST TIME SINCE APRIL, UP 0.3% FROM PREVIOUS CLOSE TO 93.29",
+   "latency": 55.5,
+   "lane": "fast"
+  },
   {
    "id": "f7c4f6957c284eb9",
    "time": "2026-11-20T08:11:51+05:30",
@@ -1603,92 +1637,6 @@
    "check": "Look for official government notifications detailing the new licensing rules.",
    "original": "INDIA PROPOSES SEPARATE LICENSING REGIME FOR WHOLESALE BULK DRUGS",
    "latency": 102.3,
-   "lane": "fast"
-  },
-  {
-   "id": "ed4f0d2ad2e959f3",
-   "time": "2026-11-19T10:14:25+05:30",
-   "headline": "VALIANT COMMUNICATIONS: CO ALLOTED 50,000 SHARE TO INVESTOR MR. SHANKAR SHARMA AT 768 PER SHARE",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9649",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "corporate-action",
-   "action": "No specific action required as this is a minor private placement detail.",
-   "reason": [
-    "Routine allotment to a single investor.",
-    "No material impact on listed stock price."
-   ],
-   "risks": [],
-   "plain": "A company gave 50,000 shares to one investor at a fixed price.",
-   "why": "This is a small, routine transaction that does not change the company's overall value or stock price.",
-   "check": "",
-   "original": "VALIANT COMMUNICATIONS: CO ALLOTED 50,000 SHARE TO INVESTOR MR. SHANKAR SHARMA AT 768 PER SHARE",
-   "latency": 42.6,
-   "lane": "fast"
-  },
-  {
-   "id": "3e40b08914546a1b",
-   "time": "2026-11-19T10:08:49+05:30",
-   "headline": "AURIONPRO SOLUTIONS: CO. SECURES ADDITIONAL ORDER OF NEARLY ₹100 CRORE FROM GLOBAL HYPERSCALER, EXPANDS AI-READY DATA CENTRE ENGAGEMENT IN SOUTHERN INDIA",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9648",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "IT Services",
-    "Data Centers"
-   ],
-   "impact": 0,
-   "confidence": 0,
-   "category": "Corporate Update",
-   "action": "No specific listed stock to monitor for this announcement.",
-   "reason": [
-    "AurionPro Solutions is not a listed entity in the provided candidate list.",
-    "No direct price impact on the specified NSE symbols."
-   ],
-   "risks": [
-    "Misattribution of news to unrelated listed IT stocks."
-   ],
-   "plain": "A private company won a large contract to build data centers for a global tech firm.",
-   "why": "This company is not publicly traded, so its news does not directly move the prices of the listed stocks you might own.",
-   "check": "",
-   "original": "AURIONPRO SOLUTIONS: CO. SECURES ADDITIONAL ORDER OF NEARLY ₹100 CRORE FROM GLOBAL HYPERSCALER, EXPANDS AI-READY DATA CENTRE ENGAGEMENT IN SOUTHERN INDIA",
-   "latency": 19.3,
-   "lane": "fast"
-  },
-  {
-   "id": "452eed3da5eb7da5",
-   "time": "2026-11-19T09:29:27+05:30",
-   "headline": "ECON AFFAIRS SECY: GOVT OPEN TO FEEDBACK AND WILLING TO RESPOND TO STAKEHOLDER CONCERNS",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9647",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "macro",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "The government says it will consider feedback and address stakeholder concerns.",
-   "why": "No direct effect on any listed company, so it can be skipped.",
-   "check": "",
-   "original": "ECON AFFAIRS SECY: GOVT OPEN TO FEEDBACK AND WILLING TO RESPOND TO STAKEHOLDER CONCERNS",
-   "latency": 41.6,
    "lane": "fast"
   }
  ]
