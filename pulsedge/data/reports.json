@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T13:16+05:30",
+ "updated": "2026-11-20T13:32+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -602,6 +602,22 @@
    "updated": "2026-11-20T07:57+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "URBANCO": {
+   "summary": "Urban Company is raising 2,500 crore rupees from large institutional investors through a Qualified Institutions Placement. This move follows a recent board meeting and comes as SEBI plans to streamline processes for new listings and foreign investment.",
+   "why": "This matters because the company is bringing in significant cash to support its growth, but the issuance of new shares increases the total number of shares available, which can affect the value of existing holdings.",
+   "upside": "The new capital provides the company with resources to expand its operations and potentially strengthen its market position.",
+   "downside": "The introduction of new shares into the market may create selling pressure in the short term, which could impact the share price.",
+   "watch": [
+    "How the market reacts to the new share issuance",
+    "Updates on SEBI's regulatory changes for IPOs and foreign investors",
+    "Further details from upcoming board meetings or company announcements"
+   ],
+   "about": "Urban Company is a consumer services company listed in India's Nifty 500 index.",
+   "basis": "25a73d2e7815",
+   "items": 3,
+   "updated": "2026-11-20T10:45+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "SIGNATURE": {
    "summary": "Signatureglobal is expanding its land bank, buying two 10‑acre parcels in Gurugram and securing development rights over 10.18 acres in Sohna, while reporting 4,400 cr of project launches in H1 and targeting 10,000 cr of bookings for FY27.",
    "why": "These actions could increase future sales and earnings, which matters to shareholders.",
@@ -762,22 +778,6 @@
    "updated": "2026-11-20T12:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "TITAN": {
-   "summary": "Titan shares have slipped 4‑5% in recent sessions as falling gold prices and weaker retail demand weigh on the jeweller, even as the broader consumer durables index showed a modest gain of 3.6% in the last session.",
-   "why": "Shareholders see price pressure from potential inventory write‑downs and lower loan demand, while demand cycles could affect future earnings.",
-   "upside": "A rebound in wedding and festive season demand or lower gold prices boosting consumer buying could lift the stock.",
-   "downside": "Further declines in gold prices or continued weak consumer demand could deepen the share fall.",
-   "watch": [
-    "Gold price trends",
-    "Wedding/festive season demand",
-    "Consumer durables sector sentiment"
-   ],
-   "about": "Titan Company makes jewellery, watches and other consumer durables in India.",
-   "basis": "882e77d1cc25",
-   "items": 4,
-   "updated": "2026-11-20T13:16+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "MARUTI": {
    "summary": "Maruti Suzuki shares have risen sharply as the auto sector rallied, with the Nifty Auto index up 4.4% in the last session and 1.3% over five sessions. The stock also appeared in a recent list of top picks by a broker.",
    "why": "A sector rally can lift the share price, but the gains may be fragile if costs rise again.",
@@ -874,6 +874,22 @@
    "updated": "2026-11-20T10:16+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "TITAN": {
+   "summary": "Titan Company Ltd. shares recently fell as gold prices slid and broader consumer durable stocks faced selling pressure. Investors are also watching concerns around near-term consumer demand for jewellery.",
+   "why": "This matters because sudden drops in gold prices can impact inventory values, while weaker retail demand can affect sales volumes and profit margins.",
+   "upside": "Lower gold prices or the upcoming wedding season demand could quickly trigger a rebound and stimulate consumer buying.",
+   "downside": "The sector-wide sell-off could continue if broader market sentiment weakens or if retail demand stays soft.",
+   "watch": [
+    "Changes in gold and bullion prices",
+    "Consumer demand during the wedding season",
+    "Broader market and sector-wide sentiment"
+   ],
+   "about": "Titan Company Ltd. operates in the consumer durables sector and is one of India's 50 largest listed companies.",
+   "basis": "3e9a7c5b1558",
+   "items": 3,
+   "updated": "2026-11-20T13:32+05:30",
+   "model": "gemini-flash-lite-latest"
+  },
   "BHARATFORG": {
    "summary": "Bharat Forge is in focus after announcing a merger and being highlighted as a defence stock that could benefit from a proposed 20% increase in government defence capex. The auto sector index has also risen recently, adding market attention.",
    "why": "Shareholders may see profit growth from new defence orders and changes in the company's size or debt profile due to the merger.",
@@ -904,22 +920,6 @@
    "basis": "20889272e336",
    "items": 3,
    "updated": "2026-11-19T15:16+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "HINDALCO": {
-   "summary": "Hindalco shares have been falling amid a broader drop in metal stocks, driven by lower global commodity prices and a stronger US dollar. At the same time, Axis Securities highlighted Hindalco as a conviction pick after its Q2 results, setting higher price targets.",
-   "why": "Share price moves affect the value of investors' holdings, and lower commodity prices can squeeze the company's profit margins.",
-   "upside": "The Axis Securities recommendation could attract buying interest and support the share price.",
-   "downside": "Weak commodity prices and a strong US dollar could continue to pressure margins and keep the stock under pressure.",
-   "watch": [
-    "Axis Securities' target and any follow‑up analyst commentary",
-    "Global metal price trends and commodity price movements",
-    "US dollar index changes and potential China stimulus news"
-   ],
-   "about": "Hindalco Industries Ltd is a large Indian metal producer.",
-   "basis": "accb212cc931",
-   "items": 3,
-   "updated": "2026-11-18T14:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "JSWSTEEL": {
@@ -1033,6 +1033,22 @@
    "items": 2,
    "updated": "2026-11-20T13:16+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "HINDALCO": {
+   "summary": "Hindalco Industries Ltd. recently saw its shares fall along with other metal stocks due to falling global commodity prices and a stronger US dollar. At the same time, an investment bank picked the company as a strong option following its recent earnings results.",
+   "why": "External factors like global commodity prices and currency changes can quickly impact the profits and share prices of metal producers. Broker recommendations can also influence whether other investors decide to buy or sell the stock.",
+   "upside": "Positive backing from major investment banks could attract new investors and help push the stock price up.",
+   "downside": "Falling global commodity prices and a stronger US dollar could continue to squeeze profit margins.",
+   "watch": [
+    "Global commodity price trends",
+    "Movements in the US dollar index",
+    "Any new stimulus announcements from China"
+   ],
+   "about": "Hindalco Industries Ltd. is a major metals and mining company that is part of India's Nifty 50 index.",
+   "basis": "a85cb5136dbd",
+   "items": 2,
+   "updated": "2026-11-20T13:32+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "JBMA": {
    "summary": "JBM Auto is seen as a potential beneficiary of the Indian government’s new PM E‑Bus Sewa payment portal, which aims to fund electric bus projects. The auto sector has also posted gains, up 4.4% in the last session.",
@@ -1289,22 +1305,6 @@
    "items": 4,
    "updated": "2026-11-20T07:57+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "URBANCO": {
-   "summary": "Urban Company is raising 2,500 crore rupees from large institutional investors through a Qualified Institutions Placement. This move follows a recent board meeting and comes as SEBI plans to streamline processes for new listings and foreign investment.",
-   "why": "This matters because the company is bringing in significant cash to support its growth, but the issuance of new shares increases the total number of shares available, which can affect the value of existing holdings.",
-   "upside": "The new capital provides the company with resources to expand its operations and potentially strengthen its market position.",
-   "downside": "The introduction of new shares into the market may create selling pressure in the short term, which could impact the share price.",
-   "watch": [
-    "How the market reacts to the new share issuance",
-    "Updates on SEBI's regulatory changes for IPOs and foreign investors",
-    "Further details from upcoming board meetings or company announcements"
-   ],
-   "about": "Urban Company is a consumer services company listed in India's Nifty 500 index.",
-   "basis": "25a73d2e7815",
-   "items": 3,
-   "updated": "2026-11-20T10:45+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "ADANIPOWER": {
    "summary": "Adani Power is set to benefit from a new transmission contract won by its subsidiary Adani Energy Solutions to evacuate 2,400 MW from the planned Pirpanti plant in Bihar. A recent Morgan Stanley note also highlighted the stock among large‑cap picks, adding investor interest.",

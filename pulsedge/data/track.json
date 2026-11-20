@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T13:17:44+05:30",
+ "updated": "2026-11-20T13:34:13+05:30",
  "summary": {
-  "calls": 1904,
-  "scored_calls": 736,
+  "calls": 1905,
+  "scored_calls": 737,
   "d1": {
    "scored": 549,
    "hits": 225,
@@ -23,6 +23,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "08b4bcdc655ec51e",
+   "symbol": "URBANCO",
+   "time": "2026-11-20T13:29:38+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Urban Company shares dip 4% after ₹2,500 crore fundraising; opportunity to buy on the dip? Target, stop-loss",
+   "url": "https://www.livemint.com/market/stock-market-news/urban-company-shares-dip-4-after-rs-2-500-crore-fundraising-opportunity-to-buy-on-the-dip-target-stoploss-11795160058174.html",
+   "alert_px": 168.21,
+   "alert_move": -4.45,
+   "alert_at": "2026-11-20T13:32:22+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "3594d7a1426500a2",
    "symbol": "PWL",
