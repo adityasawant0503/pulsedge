@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T10:31+05:30",
+ "updated": "2026-11-20T10:45+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "The day saw a mix of corporate news and market moves. Jupiter Wagons Limited secured a repeat order worth over 128 crore rupees from JSW, while Natco Pharma received an FDA inspection report that could ease regulatory hurdles. Urban Company raised 2,500 crore through a placement, giving it more cash but also more shares. Oil prices edged up because of Houthi attacks on Riyadh, and tech stocks fell as investors worried about AI companies.",
+  "summary": "Indian markets opened weak as global worries about AI stocks dragged down Asian markets, but local IT shares actually rose against this trend. A stronger US dollar pushed down metal and gold prices, hurting those sectors. Meanwhile, individual companies faced mixed news, with some winning new orders and others losing big contracts or facing lower profit expectations.",
   "themes": [
-   "AI worries hit tech stocks",
-   "Contracts and approvals lift some companies",
-   "Oil price moves tied to geopolitics"
+   "Global AI fears hurt tech stocks, but Indian IT firms moved in the opposite direction.",
+   "A strong US dollar lowered the value of metals and gold, squeezing profits for related companies.",
+   "Company-specific news, like new orders or project cancellations, caused sharp moves in individual stocks."
   ],
   "watch": [
-   "Jupiter Wagons order – watch execution and cost risks",
-   "Natco Pharma FDA report – watch for any follow‑up observations",
-   "Oil price volatility – watch for changes after Houthi attacks"
+   "Whether Indian IT stocks can hold their gains while global tech sentiment remains shaky.",
+   "If bond returns continue to rise, which might pull money out of the stock market.",
+   "How oil prices react to ongoing supply concerns in the Middle East."
   ],
   "date": "2026-11-20",
-  "basis": "2305074928b3",
-  "updated": "2026-11-20T09:47+05:30",
-  "model": "openai/gpt-oss-20b",
-  "items": 23
+  "basis": "c706956d18f9",
+  "updated": "2026-11-20T10:45+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 37
  },
  "stocks": {
   "PAYTM": {
@@ -427,22 +427,6 @@
    "updated": "2026-11-18T13:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "URBANCO": {
-   "summary": "Urban Company raised 2,500 crore rupees through a Qualified Institutional Placement (QIP), which was oversubscribed six times. The new capital gives the firm cash for growth, but also adds more shares to the market.",
-   "why": "Shareholders see the cash as a chance to fund expansion, while the extra shares could dilute existing holdings.",
-   "upside": "Strong demand for the QIP could lift the share price and support expansion plans.",
-   "downside": "The issuance of new shares may create short‑term selling pressure and funds could be spent on acquisitions that may not meet expectations.",
-   "watch": [
-    "Use of the 2,500 crore capital for growth or acquisitions",
-    "Updates on SEBI’s faster IPO and foreign investor rules",
-    "Market reaction to the QIP and any share price movement"
-   ],
-   "about": "Urban Company runs a platform that connects consumers with professionals for home and personal services.",
-   "basis": "9c31f0a3c971",
-   "items": 4,
-   "updated": "2026-11-20T09:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "HYUNDAI": {
    "summary": "Hyundai Motor India shares recently rose as part of a broader rally in auto stocks, driven by lower costs for metals and oil. However, the wider auto sector has seen a slight dip in the last few days.",
    "why": "Lower production costs can help the company keep more profit from each car sold, which may benefit shareholders. The recent price movement shows that investors are reacting to these cost changes.",
@@ -457,22 +441,6 @@
    "basis": "0600aa006d6f",
    "items": 4,
    "updated": "2026-11-19T13:16+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "AXISBANK": {
-   "summary": "Axis Bank is one of India's largest listed companies and was recently added to a list of stocks to watch. BlackRock, a major global investment firm, increased its ownership stake in the bank to 5%.",
-   "why": "A large investor increasing its stake can signal confidence in the company, which may influence how other investors view the stock. The bank's stock is also being watched for potential technical moves as the broader banking sector rises.",
-   "upside": "The increase in BlackRock's stake suggests strong institutional interest, which could support the share price.",
-   "downside": "If BlackRock decides to sell shares in the future, it could create selling pressure and lower investor confidence.",
-   "watch": [
-    "Whether the banking sector continues its recent upward trend.",
-    "Any future changes in BlackRock's ownership percentage.",
-    "General market movements, as the stock is currently being watched for short-term trades without specific news."
-   ],
-   "about": "Axis Bank is a major financial services company in India.",
-   "basis": "6e9d79cbcef7",
-   "items": 3,
-   "updated": "2026-11-20T08:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "NBCC": {
@@ -1002,6 +970,22 @@
    "updated": "2026-11-20T09:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "AXISBANK": {
+   "summary": "Axis Bank is one of India's largest listed companies and was recently added to a list of stocks to watch. BlackRock, a major global investment firm, increased its ownership stake in the bank to 5%.",
+   "why": "A large investor increasing its stake can signal confidence in the company, which may influence how other investors view the stock. The bank's stock is also being watched for potential technical moves as the broader banking sector rises.",
+   "upside": "The increase in BlackRock's stake suggests strong institutional interest, which could support the share price.",
+   "downside": "If BlackRock decides to sell shares in the future, it could create selling pressure and lower investor confidence.",
+   "watch": [
+    "Whether the banking sector continues its recent upward trend.",
+    "Any future changes in BlackRock's ownership percentage.",
+    "General market movements, as the stock is currently being watched for short-term trades without specific news."
+   ],
+   "about": "Axis Bank is a major financial services company in India.",
+   "basis": "6e9d79cbcef7",
+   "items": 3,
+   "updated": "2026-11-20T08:30+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "VOLTAS": {
    "summary": "Voltas shares recently rose by up to 8% because the cost of copper, a key material for air conditioners, has dropped. The stock was also listed in a recent 'stocks to watch' roundup, though no specific new company news was attached to that mention.",
    "why": "Lower copper costs can help the company earn more profit on each air conditioner it sells, which is generally good for shareholders.",
@@ -1017,22 +1001,6 @@
    "items": 2,
    "updated": "2026-11-20T08:30+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "GROWW": {
-   "summary": "Large investors such as Kotak MF, BlackRock, Fidelity and others bought a sizable stake in Groww through block deals. The purchases were flagged as a sign of confidence but also carry a risk of volatility.",
-   "why": "Shareholder changes can move the stock and affect future earnings distribution for existing investors.",
-   "upside": "If the new investors hold the shares for the long term, it could support the stock price.",
-   "downside": "If the investors sell quickly or the block deals were done at a discount, the stock could face downward pressure.",
-   "watch": [
-    "Any further buying or selling activity by the large investors",
-    "Price reaction in the days following the block deals",
-    "Performance of the Financials sector, which has been modestly up"
-   ],
-   "about": "Groww is a popular investing and stock‑trading app operating in India's financial services sector.",
-   "basis": "91d26b90aa4d",
-   "items": 2,
-   "updated": "2026-11-20T07:57+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "BEML": {
    "summary": "PulsEdge flagged that BEML is among five defence stocks that could benefit from a proposed 20% increase in government defence capital expenditure next year.",
@@ -1225,6 +1193,22 @@
    "items": 4,
    "updated": "2026-11-20T07:57+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "URBANCO": {
+   "summary": "Urban Company is raising 2,500 crore rupees from large institutional investors through a Qualified Institutions Placement. This move follows a recent board meeting and comes as SEBI plans to streamline processes for new listings and foreign investment.",
+   "why": "This matters because the company is bringing in significant cash to support its growth, but the issuance of new shares increases the total number of shares available, which can affect the value of existing holdings.",
+   "upside": "The new capital provides the company with resources to expand its operations and potentially strengthen its market position.",
+   "downside": "The introduction of new shares into the market may create selling pressure in the short term, which could impact the share price.",
+   "watch": [
+    "How the market reacts to the new share issuance",
+    "Updates on SEBI's regulatory changes for IPOs and foreign investors",
+    "Further details from upcoming board meetings or company announcements"
+   ],
+   "about": "Urban Company is a consumer services company listed in India's Nifty 500 index.",
+   "basis": "25a73d2e7815",
+   "items": 3,
+   "updated": "2026-11-20T10:45+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "ADANIPOWER": {
    "summary": "Adani Power is set to benefit from a new transmission contract won by its subsidiary Adani Energy Solutions to evacuate 2,400 MW from the planned Pirpanti plant in Bihar. A recent Morgan Stanley note also highlighted the stock among large‑cap picks, adding investor interest.",
