@@ -1,0 +1,47 @@
+{
+ "note": "Discount codes, stored as SHA-256 hashes. Manage with pulsedge-bot/offers.py.",
+ "offers": [
+  {
+   "h": "aea9f3422e37fdcd7daac41573d216fec8b6e7adabf203db67470e3ee712cde7",
+   "pct": 10.0,
+   "plans": [
+    "alerts_m",
+    "alerts_y",
+    "pro_m",
+    "pro_y",
+    "complete_m",
+    "complete_y"
+   ],
+   "until": "",
+   "label": "YouTube viewers"
+  },
+  {
+   "h": "5bed0f53778a06fe5f23b7058f865f983a70444b91e0260b8d2fd04175a47f74",
+   "pct": 10.0,
+   "plans": [
+    "alerts_m",
+    "alerts_y",
+    "pro_m",
+    "pro_y",
+    "complete_m",
+    "complete_y"
+   ],
+   "until": "",
+   "label": "Telegram members"
+  },
+  {
+   "h": "03b27ed8fb43e9f40e5d2acca92145269e09ea813762a27d1938fe94b81848e1",
+   "pct": 15.0,
+   "plans": [
+    "alerts_m",
+    "alerts_y",
+    "pro_m",
+    "pro_y",
+    "complete_m",
+    "complete_y"
+   ],
+   "until": "2027-01-31",
+   "label": "Personal invite"
+  }
+ ]
+}
