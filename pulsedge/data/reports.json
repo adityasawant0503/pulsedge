@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T08:30+05:30",
+ "updated": "2026-11-20T08:46+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Indian small-cap tech stocks fell sharply as global investors worried about AI companies, while oil prices rose slightly due to supply concerns in Saudi Arabia. The US stock market dropped over two percent overnight, which often makes Indian markets open lower. However, Indian auto and bank stocks performed well in the previous session, showing some local strength despite global weakness.",
+  "summary": "Indian markets opened cautiously after a sharp drop in US tech stocks, which also hit Indian small-cap tech companies. Oil prices rose slightly due to supply concerns in Saudi Arabia, while rising inflation worries suggest interest rates may stay high. Auto and consumer stocks showed strength in the previous session, but IT stocks remained weak.",
   "themes": [
-   "AI worries hit Indian tech shares",
-   "Oil prices rise on supply fears",
-   "US market drop weighs on global sentiment"
+   "Global tech weakness is pressuring Indian small-cap and software stocks.",
+   "Inflation concerns are keeping interest rate expectations high.",
+   "Oil supply risks are creating mixed signals for energy-related stocks."
   ],
   "watch": [
-   "How Indian IT stocks react to the US tech drop",
-   "If oil prices stay high or fall back down",
-   "PB Fintech's sale of a business unit"
+   "How Indian IT stocks react to continued US tech volatility.",
+   "Updates on Natco Pharma's US FDA inspection report.",
+   "Changes in foreign fund positioning in index futures."
   ],
   "date": "2026-11-20",
-  "basis": "c16df528c7fd",
-  "updated": "2026-11-20T07:57+05:30",
+  "basis": "d718119c5c88",
+  "updated": "2026-11-20T08:46+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 9
+  "items": 15
  },
  "stocks": {
   "PAYTM": {
@@ -714,6 +714,22 @@
    "updated": "2026-11-19T19:24+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "NATCOPHARM": {
+   "summary": "NATCO Pharma has received an Establishment Inspection Report from the US Food and Drug Administration. This follows a recent inspection of the company's facilities.",
+   "why": "Clearing US FDA inspections is important because it reduces regulatory risks and can allow the company to seek approval for new products in the US market.",
+   "upside": "If the inspection report is clean, it removes a major regulatory hurdle for future product approvals.",
+   "downside": "The report may contain observations that require procedural follow-ups to resolve.",
+   "watch": [
+    "The specific details of the FDA inspection report",
+    "Any required corrective actions or follow-ups",
+    "Updates on product approval timelines"
+   ],
+   "about": "NATCO Pharma is a healthcare company listed on the NSE.",
+   "basis": "fe0997a941e6",
+   "items": 1,
+   "updated": "2026-11-20T08:46+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "NETWEB": {
    "summary": "Netweb Technologies reported record profits and a large backlog of AI‑related work, and its shares have jumped 42% from the 52‑week low. The broader IT index has been falling, down 0.9% in the last session and 2.5% over five sessions.",
    "why": "Strong future orders could keep earnings high, which matters to shareholders. However, the recent price surge may lead some investors to book profits, which could pressure the stock.",
@@ -779,20 +795,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "PRESTIGE": {
-   "summary": "Prestige Estates Projects Ltd. is actively expanding its business, announcing the acquisition of a 50% stake in Advent Convention and Hotels International and increasing its ownership in the Prestige Vaishnaoi Projects to 42.83%. It also plans to set up two wholly‑owned subsidiaries.",
-   "why": "These moves could affect the company’s earnings and cash position, making them important for current shareholders.",
-   "upside": "Successful integration of the new hotel business and higher returns from the expanded project stake could boost earnings.",
-   "downside": "The acquisitions and subsidiary formation may strain cash reserves and face integration challenges, potentially hurting shareholder value.",
+   "summary": "Prestige Estates launched a new residential project in North Bengaluru and acquired a 50% stake in a convention and hotels company. The company also announced plans to create two new subsidiaries and increase its ownership in an existing housing project.",
+   "why": "These moves show the company is actively expanding its business, which could influence future revenue and how much cash it has available for shareholders.",
+   "upside": "New projects and acquisitions may generate additional sales and broaden the company's income sources over time.",
+   "downside": "Buying new businesses and building projects requires significant spending, which could strain cash reserves or lead to integration issues.",
    "watch": [
-    "Financing and integration of the Advent Convention and Hotels stake",
-    "Performance and profitability of the newly created subsidiaries",
-    "Cash flow impact of the increased stake in Prestige Vaishnaoi Projects"
+    "How quickly the new North Bengaluru project receives bookings.",
+    "Details on how the hotel acquisition is being financed.",
+    "The specific purpose of the two new subsidiaries."
    ],
-   "about": "Prestige Estates Projects Ltd. is a real‑estate development company.",
-   "basis": "d74944b06e09",
-   "items": 6,
-   "updated": "2026-11-19T12:01+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Prestige Estates is a realty company that develops residential projects.",
+   "basis": "877e2b9936c7",
+   "items": 7,
+   "updated": "2026-11-20T08:46+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "SAIL": {
    "summary": "SAIL shares have fallen sharply as global metal prices dropped and the US dollar strengthened. The company led losses in the Nifty Metal index, which is down 4.4% over the last five sessions.",
@@ -1530,19 +1546,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel's CEO noted that iron ore costs are rising in India while the company continues discussions with the Dutch government for financial assistance. Meanwhile, steel prices are increasing, which experts suggest could benefit the company's profits.",
-   "why": "Higher raw material costs can reduce the profit made on each ton of steel, but rising steel prices might offset this. The outcome of the Dutch government talks could also affect the company's financial stability.",
-   "upside": "Rising steel prices could lead to higher profits for the company.",
-   "downside": "Increasing iron ore costs may reduce profits if steel prices do not rise enough to cover them.",
+   "summary": "Tata Steel's CEO reported that iron ore costs in India are rising, which can lower profits on each ton of steel sold. The company is also still discussing financial assistance with the Dutch government, a deal that remains uncertain.",
+   "why": "Higher raw material costs can squeeze the money the company keeps from sales, while the outcome of the Dutch talks could affect its overall financial stability.",
+   "upside": "Steel prices might rise along with costs, which could help offset the higher spending on iron ore.",
+   "downside": "The deal with the Dutch government is still under discussion, leaving the company's future funding plans uncertain.",
    "watch": [
+    "Whether steel prices rise to match the higher iron ore costs",
     "Updates on the financial assistance talks with the Dutch government",
-    "Changes in domestic iron ore prices",
-    "Trends in global steel demand"
+    "The overall trend of the Metals sector index"
    ],
-   "about": "Tata Steel is a major company in the metals and mining sector in India.",
-   "basis": "0ff87b881c3c",
-   "items": 3,
-   "updated": "2026-11-18T11:02+05:30",
+   "about": "Tata Steel is a major player in the Metals & Mining sector and is one of India's 50 largest listed companies.",
+   "basis": "dd3149782ba4",
+   "items": 2,
+   "updated": "2026-11-20T08:46+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ULTRACEMCO": {
@@ -1560,22 +1576,6 @@
    "items": 2,
    "updated": "2026-11-18T08:29+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "FIRSTCRY": {
-   "summary": "Brainbees Solutions has completed the acquisition of Swara Corp. The company also filed an update with the exchange regarding this acquisition agreement.",
-   "why": "This matters because buying a new business changes how the company spends its money and could expand its market reach.",
-   "upside": "The acquisition could help the company grow by expanding its market reach.",
-   "downside": "The deal might be expensive, and there are risks involved in merging the two businesses.",
-   "watch": [
-    "How well the two companies integrate",
-    "The total cost of the acquisition",
-    "Future updates on the deal from the exchange"
-   ],
-   "about": "",
-   "basis": "ccab40e90af1",
-   "items": 2,
-   "updated": "2026-11-19T13:45+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "AMBUJACEM": {
    "summary": "Ambuja Cements is partnering with Adani Cement to deploy heavy-duty electric trucks for transporting clinker and cement. The plan aims to have 410 trucks running by March 2027 to reduce carbon emissions and logistics costs.",
@@ -1610,20 +1610,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "EICHERMOT": {
-   "summary": "Eicher Motors’ shares have risen sharply, jumping about 3% and climbing again today, while the auto sector index has slipped. The stock’s gain comes amid positive analyst comments on premium motorcycle growth.",
-   "why": "Shareholders see the rise because analysts are upbeat on premium motorcycle demand, but the sector’s weakness could still affect the stock.",
-   "upside": "If demand for premium motorcycles stays strong, the stock could keep gaining.",
-   "downside": "Intense competition in the 350‑cc to 650‑cc bike segment could pressure earnings.",
+   "summary": "Eicher Motors shares have seen recent price movements, including a climb on the latest day. The broader auto sector has also shown strength, rising in both the last session and over the past five days.",
+   "why": "As a major player in the auto sector, Eicher Motors' stock often moves with the industry. Sector-wide gains can lift the company's share price, but individual stock moves can also be temporary.",
+   "upside": "Continued strength in the auto sector could support the company's share price.",
+   "downside": "Recent price changes could signal broader weakness, and short-term gains may not last.",
    "watch": [
-    "Daily share price movements",
-    "Auto sector index performance",
-    "Competitive activity in the premium motorcycle segment"
+    "Further movements in the auto sector index",
+    "Whether the recent stock price climb continues or reverses",
+    "Any new company-specific news that might explain the price adjustments"
    ],
-   "about": "Eicher Motors manufactures motorcycles and commercial vehicles.",
-   "basis": "2bb342c1cf37",
-   "items": 3,
-   "updated": "2026-11-19T16:15+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Eicher Motors is an Indian automobile and auto components company.",
+   "basis": "4c9f18228e23",
+   "items": 2,
+   "updated": "2026-11-20T08:46+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "PHOENIXLTD": {
    "summary": "Phoenix Mills announced the allotment of 9,734 new shares. This move may slightly change the company's ownership structure.",
