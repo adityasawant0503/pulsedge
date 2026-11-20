@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>try{var t=localStorage.getItem("th");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Review PulsEdge</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PulsEdge">
+<meta property="og:title" content="Review PulsEdge">
+<meta property="og:description" content="Tell other investors what PulsEdge has done for you.">
+<meta property="og:url" content="https://adityasawant0503.github.io/pulsedge/review.html">
+<meta property="og:image" content="https://adityasawant0503.github.io/pulsedge/assets/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PulsEdge: Indian market news sorted into Ignore, Watch and Act">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Leave a review of PulsEdge.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/doc.css">
+<style>
+/* Star rating: five radio buttons styled as stars, keyboard-friendly (arrow keys move between them). */
+.stars{display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:4px;border:0;padding:0;margin:0}
+.stars legend{font-weight:600;margin-bottom:6px;float:left;width:100%}
+.stars input{position:absolute;opacity:0;width:1px;height:1px}
+.stars label{font-size:34px;line-height:1;color:var(--line);cursor:pointer;padding:0 2px}
+.stars input:checked~label,.stars label:hover,.stars label:hover~label{color:#e3a008}
+.stars input:focus-visible+label{outline:2px solid var(--pur);outline-offset:2px;border-radius:4px}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:14.5px}
+.chk input{width:auto;margin-top:5px;accent-color:var(--pur)}
+@media (max-width:600px){.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="w">
+  <div class="head">
+    <a href="index.html" aria-label="PulsEdge home"><img class="logo lt" src="assets/icon.png" alt="PulsEdge" width="44" height="44"><img class="logo dk" src="assets/icon-dark.png" alt="PulsEdge" width="44" height="44"></a>
+    <div class="r"><a href="index.html">Home</a>
+      <button class="thm" id="thm" type="button" aria-label="Switch to dark mode"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true" hidden><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button></div>
+  </div>
+  <p class="kick">Reviews</p>
+  <h1>How is PulsEdge working for you?</h1>
+  <p class="upd">Two minutes · helps other investors decide</p>
+
+  <form id="rf" novalidate>
+    <fieldset class="stars" id="stars">
+      <legend>Your rating</legend>
+      <input type="radio" name="r" id="r5" value="5"><label for="r5" title="5 stars">&#9733;</label>
+      <input type="radio" name="r" id="r4" value="4"><label for="r4" title="4 stars">&#9733;</label>
+      <input type="radio" name="r" id="r3" value="3"><label for="r3" title="3 stars">&#9733;</label>
+      <input type="radio" name="r" id="r2" value="2"><label for="r2" title="2 stars">&#9733;</label>
+      <input type="radio" name="r" id="r1" value="1"><label for="r1" title="1 star">&#9733;</label>
+    </fieldset>
+    <textarea id="rf-text" placeholder="What has PulsEdge helped you with? For example, news you'd otherwise have missed on a stock you hold." aria-label="Your review"></textarea>
+    <div class="two">
+      <input type="text" id="rf-name" placeholder="Name to show, e.g. Ramesh K." autocomplete="name" aria-label="Name to show">
+      <input type="text" id="rf-place" placeholder="City" autocomplete="address-level2" aria-label="City">
+      <input type="text" id="rf-role" placeholder="What you do (optional), e.g. retired banker" aria-label="What you do">
+      <select id="rf-plan" aria-label="Your plan"><option value="">Your plan</option><option>Alerts</option><option>Pro</option><option>Complete</option><option>Through my firm</option></select>
+    </div>
+    <input type="email" id="rf-email" placeholder="Your email, so we can confirm you're a member (not shown)" autocomplete="email" aria-label="Email">
+    <label class="chk"><input type="checkbox" id="rf-ok"> <span>PulsEdge may publish this review with my name, city and what I do.</span></label>
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+    <button class="btn" type="submit">Send review</button>
+    <p class="note" id="rf-note" aria-live="polite"></p>
+  </form>
+  <p class="muted">We publish reviews as members write them, critical ones included, and only from people who have paid for PulsEdge. If we need to shorten one, we ask first.</p>
+
+  <footer>
+    <p>Educational information only. Not SEBI-registered investment advice. Trading involves substantial risk of loss.</p>
+    <p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="disclosures.html">Disclosures</a> · <a href="contact.html">Contact</a></p>
+  </footer>
+</main>
+<script src="assets/theme.js"></script>
+<script>
+(function(){
+  function $(id){return document.getElementById(id)}
+  var f=$("rf"),note=$("rf-note"),btn=f.querySelector("button");
+  function say(t,c){note.textContent=t;note.className="note"+(c?" "+c:"")}
+  f.addEventListener("submit",function(e){
+    e.preventDefault();
+    var r=f.querySelector("input[name=r]:checked"),text=$("rf-text").value.trim(),name=$("rf-name").value.trim(),email=$("rf-email").value.trim();
+    if(!r){say("Choose a rating from 1 to 5 stars.","err");return}
+    if(text.length<20){say("Write a sentence or two about how you use PulsEdge.","err");return}
+    if(name.length<2){say("Enter the name to show with your review.","err");return}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){say("Enter your email, so we can confirm you're a member.","err");return}
+    if(!$("rf-ok").checked){say("Tick the box to let us publish your review.","err");return}
+    if(f.querySelector("[name=_gotcha]").value){say("Thanks for your review.","ok");return}
+    btn.disabled=true;say("Sending\u2026");
+    fetch("https://formspree.io/f/mkjoaaga",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
+      body:JSON.stringify({source:"review",rating:+r.value,text:text,name:name,place:$("rf-place").value.trim(),role:$("rf-role").value.trim(),plan:$("rf-plan").value,email:email,permission:true,
+        _subject:"PulsEdge review: "+r.value+" stars from "+name})})
+      .then(function(x){if(!x.ok)throw 0;say("Thank you, "+name.split(" ")[0]+". Your review means a lot to us.","ok");f.reset()})
+      .catch(function(){say("Couldn't send. WhatsApp it to +91 80737 08940 instead.","err")})
+      .then(function(){btn.disabled=false});
+  });
+})();
+</script>
+</body>
+</html>

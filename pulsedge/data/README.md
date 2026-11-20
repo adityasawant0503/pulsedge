@@ -15,6 +15,7 @@ site, the terminal and the Telegram bot switch to it within a couple of minutes.
 | `revoked.json`   | Access-link ids that no longer work         | none |
 | `prices.json`    | Plan prices, launch date and Founding 100 seats for `index.html` pricing and `pay.html`. Edit, then run `python pulsedge-bot/offers.py qr` and `check` | none |
 | `offers.json`    | Discount codes, stored as SHA-256 hashes; manage with `pulsedge-bot/offers.py` | none |
+| `reviews.json`   | Real member reviews (from `review.html`, with permission). The landing page shows them, with the average, once there are 3 or more | none |
 
 ## `feed.json`: signals
 

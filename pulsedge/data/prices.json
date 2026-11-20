@@ -1,5 +1,5 @@
 {
- "note": "Plan prices for the website (index.html pricing) and checkout (pay.html). Change them here, then run python pulsedge-bot/offers.py qr && python pulsedge-bot/offers.py check. 'list' is the price from the day after launch_until: only show it while you mean to charge it then.",
+ "note": "Plan prices for the website (index.html pricing) and checkout (pay.html). Change them here, then run python pulsedge-bot/offers.py qr && python pulsedge-bot/offers.py check. 'list' is the regular price from the day after launch_until (the end of the current offer): only show it while you mean to charge it then.",
  "launch_until": "2027-01-31",
  "plans": {
   "alerts_m": {
@@ -43,18 +43,7 @@
    "period": "year",
    "price": 9999,
    "list": 14999
-  },
-  "founding": {
-   "name": "PulsEdge Founding 100",
-   "product": "complete",
-   "period": "year",
-   "price": 5999,
-   "list": 14999
   }
- },
- "founding": {
-  "seats": 100,
-  "taken": 0
  },
  "business": {
   "note": "Annual business packages on business.html (one invoice a year, bank transfer or UPI). offers.py check confirms business.html shows these prices.",
