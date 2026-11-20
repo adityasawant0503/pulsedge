@@ -1,7 +1,66 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-20T13:10:26+05:30",
+ "updated": "2026-11-20T13:11:27+05:30",
  "items": [
+  {
+   "id": "cf9983777dc1fae1",
+   "time": "2026-11-20T13:10:12+05:30",
+   "headline": "INDIA GOVT LAUNCHES PM E BUS SEWA PAYMENT SECURITY PORTAL WITH RS 34.35B OUTLAY ( OLECTRA GREENTECH, JBM AUTO )",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9780",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "JBMA",
+     "direction": "up"
+    },
+    {
+     "symbol": "OLECTRA",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Automobile",
+    "Electric Vehicles"
+   ],
+   "impact": 60,
+   "confidence": 55,
+   "category": "policy",
+   "action": "Watch for order announcements from the portal in the coming weeks",
+   "reason": [
+    "Large government outlay signals support for the electric‑bus ecosystem",
+    "Potential increase in sales for e‑bus manufacturers"
+   ],
+   "risks": [
+    "Implementation delays could postpone orders",
+    "Strong competition may limit benefit"
+   ],
+   "plain": "The government launched a payment portal for electric buses with a 34.35 billion‑rupee budget.",
+   "why": "It could boost demand for electric bus makers, benefiting companies like JBM Auto and Olectra Greentech.",
+   "check": "Look for any new contracts or orders announced by the portal for e‑bus manufacturers.",
+   "original": "INDIA GOVT LAUNCHES PM E BUS SEWA PAYMENT SECURITY PORTAL WITH RS 34.35B OUTLAY ( OLECTRA GREENTECH, JBM AUTO )",
+   "latency": 75.9,
+   "lane": "fast",
+   "quotes": {
+    "JBMA": {
+     "px": 483.5,
+     "prev": 488.05,
+     "move": -0.93,
+     "at": "2026-11-20T13:11:27+05:30",
+     "delay": 900
+    },
+    "OLECTRA": {
+     "px": 997.4,
+     "prev": 1004.6,
+     "move": -0.72,
+     "at": "2026-11-20T13:11:27+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "2f3599c91844ce1a",
    "time": "2026-11-20T13:09:35+05:30",
