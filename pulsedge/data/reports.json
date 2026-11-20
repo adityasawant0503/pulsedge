@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T09:01+05:30",
+ "updated": "2026-11-20T09:30+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -124,19 +124,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "IIFL": {
-   "summary": "IIFL Finance shares jumped about 6% after Fairfax sold its entire 13.25% stake in a large block deal. This move coincided with reports of new institutional investment in the company.",
-   "why": "A large sale by a major investor can change how other traders view the stock, often leading to short-term price swings that affect the value of your holding.",
-   "upside": "The strong buying interest during the block deal and reports of new institutional capital suggest confidence in the company's future.",
-   "downside": "Traders may sell shares to lock in profits after the recent 6% jump, which could push the price back down.",
+   "summary": "IIFL Finance shares jumped about 6% after Fairfax sold its entire 13.25% stake in a large block deal. The stock also received positive attention from analysts who noted it may benefit from recent market dips.",
+   "why": "A large sale by a major investor can change how other traders view the stock, often leading to short-term price swings. The recent jump shows high trading interest, which can affect the value of your holding quickly.",
+   "upside": "Analysts suggest the stock could rise further as it recovers from recent market dips.",
+   "downside": "Traders might sell their shares to lock in profits after the recent 6% jump, which could push the price back down.",
    "watch": [
-    "How the share price reacts to the recent 6% jump",
-    "Details of the new institutional investment",
-    "General market volatility affecting financial stocks"
+    "How the stock price settles after the recent 6% jump.",
+    "Any new details about the amendment to IIFL Capital Services' filing.",
+    "Whether the Financials sector continues its recent upward trend."
    ],
-   "about": "IIFL Finance is a financial services company listed in India's Nifty 500 index.",
-   "basis": "aa80b1846d69",
-   "items": 6,
-   "updated": "2026-11-19T08:11+05:30",
+   "about": "IIFL Finance is a company in the Financial Services sector.",
+   "basis": "071353f9a293",
+   "items": 5,
+   "updated": "2026-11-20T09:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "JIOFIN": {
@@ -379,6 +379,22 @@
    "updated": "2026-11-19T11:31+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "JWL": {
+   "summary": "Jupiter Wagons Ltd secured a repeat order worth over INR 128 crore from JSW (South) Rail Logistics, adding to its order book.",
+   "why": "The order adds revenue potential, but its size relative to the company's total sales is uncertain.",
+   "upside": "If the order is executed on time and cost‑efficiently, it could lift earnings.",
+   "downside": "Higher raw‑material costs or the order’s modest size could limit its positive impact.",
+   "watch": [
+    "Order execution timeline",
+    "Raw material price trends",
+    "Future order wins or pipeline"
+   ],
+   "about": "Jupiter Wagons manufactures railway freight wagons.",
+   "basis": "0304c538ae38",
+   "items": 2,
+   "updated": "2026-11-20T09:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "ACMESOLAR": {
    "summary": "Acme Solar Holdings recently signed a new agreement to sell electricity and reported receiving additional orders. These moves suggest the company is securing future work in the power sector.",
    "why": "New contracts and agreements can lead to higher future revenue, which may support the value of the company for shareholders.",
@@ -411,21 +427,21 @@
    "updated": "2026-11-18T13:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "JWL": {
-   "summary": "Jupiter Wagons Ltd. has secured a repeat order worth over 128 crore rupees from JSW (South) Rail Logistics Private Limited. This deal adds to the company's revenue pipeline and indicates steady demand for its rail products.",
-   "why": "For shareholders, this order suggests the company is winning business from major clients, which supports future income. However, the actual benefit depends on whether the company can deliver the order on time and manage costs.",
-   "upside": "The repeat nature of the order shows strong ongoing demand, which could lead to more consistent business in the future.",
-   "downside": "Delays in execution or rising costs for raw materials could reduce the profit from this order.",
+  "URBANCO": {
+   "summary": "Urban Company raised 2,500 crore rupees through a Qualified Institutional Placement (QIP), which was oversubscribed six times. The new capital gives the firm cash for growth, but also adds more shares to the market.",
+   "why": "Shareholders see the cash as a chance to fund expansion, while the extra shares could dilute existing holdings.",
+   "upside": "Strong demand for the QIP could lift the share price and support expansion plans.",
+   "downside": "The issuance of new shares may create short‑term selling pressure and funds could be spent on acquisitions that may not meet expectations.",
    "watch": [
-    "Updates on the delivery timeline for the JSW order",
-    "Changes in raw material costs",
-    "Future announcements from the NSE regarding new contracts"
+    "Use of the 2,500 crore capital for growth or acquisitions",
+    "Updates on SEBI’s faster IPO and foreign investor rules",
+    "Market reaction to the QIP and any share price movement"
    ],
-   "about": "Jupiter Wagons Ltd. is a capital goods company that manufactures rail products.",
-   "basis": "934c958a66a5",
-   "items": 1,
-   "updated": "2026-11-20T09:01+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Urban Company runs a platform that connects consumers with professionals for home and personal services.",
+   "basis": "9c31f0a3c971",
+   "items": 4,
+   "updated": "2026-11-20T09:30+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "HYUNDAI": {
    "summary": "Hyundai Motor India shares recently rose as part of a broader rally in auto stocks, driven by lower costs for metals and oil. However, the wider auto sector has seen a slight dip in the last few days.",
@@ -458,22 +474,6 @@
    "items": 3,
    "updated": "2026-11-20T08:30+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "URBANCO": {
-   "summary": "Urban Company recently held a board meeting and saw its ₹2,500-crore QIP (Qualified Institutional Placement, a way for listed companies to raise money from the public) oversubscribed six times, attracting ₹15,300 crore in bids. Meanwhile, broader market updates show SEBI (Securities and Exchange Board of India, the stock market regulator) planning faster IPOs and easier foreign investor access.",
-   "why": "This matters to shareholders because high demand for share sales shows strong investor interest, while board decisions and regulatory changes can shape future business growth.",
-   "upside": "Strong demand in the share offering could fund expansion plans and boost the company's growth.",
-   "downside": "Funds raised might be used for acquisitions that fail to deliver the expected returns.",
-   "watch": [
-    "Details on how the raised funds will be used",
-    "Further updates from board meetings",
-    "SEBI regulatory changes affecting market access"
-   ],
-   "about": "",
-   "basis": "d9ebc7458cb5",
-   "items": 3,
-   "updated": "2026-11-20T07:57+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "NBCC": {
    "summary": "NBCC won a new construction contract worth about 85 crore rupees and announced similar work orders of roughly the same value. The orders add to the company’s revenue pipeline.",
@@ -826,6 +826,22 @@
    "updated": "2026-11-20T08:46+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "MARUTI": {
+   "summary": "Maruti Suzuki shares have risen sharply as the auto sector rallied, with the Nifty Auto index up 4.4% in the last session and 1.3% over five sessions. The stock also appeared in a recent list of top picks by a broker.",
+   "why": "A sector rally can lift the share price, but the gains may be fragile if costs rise again.",
+   "upside": "If cheaper metal and oil keep input costs low, the rally could extend.",
+   "downside": "Higher metal or oil prices could push costs up and reverse the rally.",
+   "watch": [
+    "Metal and oil price trends",
+    "Continuation of the auto sector rally",
+    "New broker recommendations or list inclusions"
+   ],
+   "about": "Maruti Suzuki India Ltd. manufactures and sells passenger cars in India.",
+   "basis": "65f676b1d1d6",
+   "items": 4,
+   "updated": "2026-11-20T09:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "SAIL": {
    "summary": "SAIL shares have fallen sharply as global metal prices dropped and the US dollar strengthened. The company led losses in the Nifty Metal index, which is down 4.4% over the last five sessions.",
    "why": "Lower metal prices reduce the profit margins for steel companies, which can lower the earnings available to shareholders.",
@@ -890,22 +906,6 @@
    "updated": "2026-11-19T15:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "MARUTI": {
-   "summary": "Maruti Suzuki shares rose as the auto sector rallied, but the sector index fell 1.4% in the last session and 4% over five sessions.",
-   "why": "Share price moves reflect investor sentiment about the auto industry and cost pressures that affect the company.",
-   "upside": "Cheaper metal and oil could ease cost worries and support the rally.",
-   "downside": "Input‑costs could rise again, and sector rallies can reverse quickly.",
-   "watch": [
-    "Changes in metal and oil prices",
-    "Sector index performance",
-    "Potential reversal of the auto rally"
-   ],
-   "about": "Maruti Suzuki India Ltd. is a major automobile company in India.",
-   "basis": "20889272e336",
-   "items": 3,
-   "updated": "2026-11-19T13:16+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
   "HINDALCO": {
    "summary": "Hindalco shares have been falling amid a broader drop in metal stocks, driven by lower global commodity prices and a stronger US dollar. At the same time, Axis Securities highlighted Hindalco as a conviction pick after its Q2 results, setting higher price targets.",
    "why": "Share price moves affect the value of investors' holdings, and lower commodity prices can squeeze the company's profit margins.",
@@ -920,6 +920,22 @@
    "basis": "accb212cc931",
    "items": 3,
    "updated": "2026-11-18T14:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "ICICIBANK": {
+   "summary": "ICICI Bank was highlighted in a recent list of top stocks by Axis Direct and analysts note a technical breakout that could push Nifty Bank banks toward new highs. The broader financial sector index rose modestly in the last session and over the past five sessions.",
+   "why": "These signals could influence the bank's share movement, affecting investors' portfolio value.",
+   "upside": "If the technical bias holds and market sentiment stays positive, the stock could see upward momentum.",
+   "downside": "If the broader market declines or the broker's view lags, the stock may remain flat or drop.",
+   "watch": [
+    "Inclusion in Axis Direct's top‑stock list",
+    "Technical breakout expectations for Nifty Bank banks",
+    "Financials sector index performance"
+   ],
+   "about": "ICICI Bank is a leading Indian private‑sector bank offering a range of financial services.",
+   "basis": "01b849ce79e8",
+   "items": 2,
+   "updated": "2026-11-20T09:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "VOLTAS": {
@@ -1097,38 +1113,6 @@
    "items": 1,
    "updated": "2026-11-19T13:01+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "ICICIBANK": {
-   "summary": "PulsEdge flagged a technical breakout view on ICICI Bank, suggesting the bank could rise if the bullish bias holds. However, a broader market decline could keep the price flat.",
-   "why": "Shareholders may see price movement tied to the breakout signal and overall market direction.",
-   "upside": "If the technical breakout sustains, the stock could move higher.",
-   "downside": "If the broader market falls, the stock may stay flat or decline.",
-   "watch": [
-    "Confirmation of the technical breakout on price charts",
-    "Overall movement of the broader Indian market",
-    "Trend of the Financials sector index"
-   ],
-   "about": "ICICI Bank Ltd. is a leading Indian bank providing a range of financial services.",
-   "basis": "35437cec350a",
-   "items": 1,
-   "updated": "2026-11-19T15:16+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "IDBI": {
-   "summary": "IDBI Bank is part of the Financial Services sector, which has seen a 3.0% rise over the last five sessions. Recent news mentions a major investor selling a large stake in a related finance company, IIFL Finance, through a block deal.",
-   "why": "Large sales of shares by big investors can add supply to the market, which may temporarily affect how the stock is perceived by other traders.",
-   "upside": "",
-   "downside": "The sale of a large stake in a related company could weigh on near-term market sentiment for the sector.",
-   "watch": [
-    "How the Financials sector index performs in the coming days.",
-    "Any further news regarding large stake sales in related financial companies.",
-    "General market reaction to block deals in the financial sector."
-   ],
-   "about": "IDBI Bank Ltd. is a company in the Financial Services sector.",
-   "basis": "c1304b5c9184",
-   "items": 1,
-   "updated": "2026-11-17T19:22+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "PNB": {
    "summary": "Punjab National Bank (PNB) was highlighted in a watchlist and is part of a strong rally among government‑owned banks. It has entered a distribution partnership with SBI Mutual Fund to sell mutual fund products, and it has also reported regulatory actions against it. The sector index for financials is up modestly.",
@@ -1576,22 +1560,6 @@
    "items": 2,
    "updated": "2026-11-20T08:46+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "ULTRACEMCO": {
-   "summary": "UltraTech Cement announced a credit rating update to the exchange. An investment advisor also highlighted the stock as one of three top picks in a recent note.",
-   "why": "The rating can influence the cost of borrowing for the company, affecting profitability. Investor attention from the advisor could move the share price.",
-   "upside": "A strong credit rating could allow cheaper financing for growth projects.",
-   "downside": "A downgrade or weaker rating could raise borrowing costs and pressure earnings.",
-   "watch": [
-    "Outcome of the credit rating announcement",
-    "Market reaction to the advisor’s top‑stock mention",
-    "Potential changes in the company’s financing costs"
-   ],
-   "about": "UltraTech Cement Ltd. is a leading cement manufacturer in India.",
-   "basis": "d685963bb379",
-   "items": 2,
-   "updated": "2026-11-18T08:29+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "AMBUJACEM": {
    "summary": "Ambuja Cements is partnering with Adani Cement to deploy heavy-duty electric trucks for transporting clinker and cement. The plan aims to have 410 trucks running by March 2027 to reduce carbon emissions and logistics costs.",
