@@ -1,7 +1,55 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-20T14:48:11+05:30",
+ "updated": "2026-11-20T14:55:39+05:30",
  "items": [
+  {
+   "id": "f1a45052dbf80739",
+   "time": "2026-11-20T14:55:15+05:30",
+   "headline": "KIRLOSKAR BROTHERS: CO AND ITS JV UNIT KIRLOSKAR EBARA PUMPS SECURE LANDMARK RS 165 CRORE ORDER FROM DANGOTE PETROLEUM REFINERY & PETROCHEMICALS",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9787",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "KIRLOSBROS",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Industrial",
+    "Pumps"
+   ],
+   "impact": 65,
+   "confidence": 70,
+   "category": "Order Win",
+   "action": "Monitor if the stock sustains gains above the opening price to confirm market acceptance of the order.",
+   "reason": [
+    "Secured a significant Rs 165 crore order from a major global client.",
+    "Demonstrates strong demand for the company's pump solutions in the petrochemical sector."
+   ],
+   "risks": [
+    "Execution delays could impact revenue recognition.",
+    "Market may have already priced in the news if announced previously."
+   ],
+   "plain": "The company won a large contract worth 165 crore rupees to supply pumps to a major refinery.",
+   "why": "This shows strong demand for their products and could lead to higher future profits for shareholders.",
+   "check": "Check if the stock price reacts positively in the first hour of trading.",
+   "original": "KIRLOSKAR BROTHERS: CO AND ITS JV UNIT KIRLOSKAR EBARA PUMPS SECURE LANDMARK RS 165 CRORE ORDER FROM DANGOTE PETROLEUM REFINERY & PETROCHEMICALS",
+   "latency": 24.7,
+   "lane": "fast",
+   "quotes": {
+    "KIRLOSBROS": {
+     "px": 1615.0,
+     "prev": 1590.2,
+     "move": 1.56,
+     "at": "2026-11-20T14:55:39+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "6a62482568662259",
    "time": "2026-11-20T14:47:07+05:30",
@@ -709,39 +757,6 @@
    "check": "Look for the company's next earnings release for updated profit forecasts.",
    "original": "ITC: PLANS STAGGERED CIGARETTE PRICE HIKES ACROSS ALL BRANDS IN 2027, WITH PRICES OF 64–74 MM AND 84 MM CIGARETTES EXPECTED TO RISE BY ₹10–15 PER 10-STICK PACK.",
    "latency": 52.1,
-   "lane": "fast"
-  },
-  {
-   "id": "6e96c09d96139ad3",
-   "time": "2026-11-19T14:50:07+05:30",
-   "headline": "MV ELECTROSYSTEMS: RECEIVED LETTER OF INTENT FOR ALLOTMENT OF 40,064 SQ. METRES LAND IN TELECOM MANUFACTURING ZONE, GWALIOR; TO SET UP INDUSTRIAL MANUFACTURING UNIT",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9700",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [],
-   "sectors": [
-    "Industrial Goods"
-   ],
-   "impact": 45,
-   "confidence": 60,
-   "category": "company",
-   "action": "Watch for project approvals and capital allocation details",
-   "reason": [
-    "Positive land allocation could enable new manufacturing capacity",
-    "Expansion may boost future revenues"
-   ],
-   "risks": [
-    "Project may face delays or regulatory hurdles",
-    "Capital expenditure could strain cash flow"
-   ],
-   "plain": "MV Electrosystems got a letter to acquire land for a new telecom manufacturing unit.",
-   "why": "If the company is listed, this expansion could increase its production capacity and earnings potential.",
-   "check": "Check future announcements for project timelines and funding plans.",
-   "original": "MV ELECTROSYSTEMS: RECEIVED LETTER OF INTENT FOR ALLOTMENT OF 40,064 SQ. METRES LAND IN TELECOM MANUFACTURING ZONE, GWALIOR; TO SET UP INDUSTRIAL MANUFACTURING UNIT",
-   "latency": 110.3,
    "lane": "fast"
   }
  ]
