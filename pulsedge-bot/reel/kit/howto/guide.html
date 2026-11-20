@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PulsEdge how-to: three short episodes</title>
+<!-- 1080x1920. One player for the three how-to episodes (story/reel length), built from real screenshots of the site (cap/*.png,
+     390px-wide phone screens at 3x). The renderer calls init({timing, meta}) once (timing.ep picks the episode), then render(t)
+     per frame; nothing animates on its own. The screen window shows the site at 2.4x. Smallest text 26px. -->
+<style>
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-500-normal.woff2) format("woff2");font-weight:500}
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-600-normal.woff2) format("woff2");font-weight:600}
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-700-normal.woff2) format("woff2");font-weight:700}
+@font-face{font-family:PlexMono;src:url(fonts/ibm-plex-mono-latin-500-normal.woff2) format("woff2");font-weight:500}
+@font-face{font-family:PlexMono;src:url(fonts/ibm-plex-mono-latin-600-normal.woff2) format("woff2");font-weight:600}
+:root{--bg:#09080e;--ink:#f6f5fb;--mute:#b3afc2;--dim:#77738a;--line:#3a3550;--acc:#a58bff;--accl:#c9b8ff;--green:#2ee6a0;--amber:#ffc24d}
+*{box-sizing:border-box}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:var(--bg)}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;color:var(--ink);font-family:Plex,sans-serif;-webkit-font-smoothing:antialiased}
+#glow{position:absolute;inset:-100px;background:radial-gradient(55% 35% at 75% 18%,#6c43f088,transparent 70%),radial-gradient(45% 30% at 15% 82%,#6c43f044,transparent 70%)}
+#grid{position:absolute;inset:0;opacity:.3;background:linear-gradient(#ffffff10 1px,transparent 1px) 0 0/90px 90px,linear-gradient(90deg,#ffffff10 1px,transparent 1px) 0 0/90px 90px;-webkit-mask-image:radial-gradient(80% 60% at 50% 45%,#000 30%,transparent 85%)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;mix-blend-mode:screen}
+#bars{position:absolute;left:72px;right:72px;top:206px;height:6px;border-radius:3px;background:#ffffff1f;overflow:hidden}
+#bars b{display:block;height:100%;width:0;background:var(--ink)}
+#brand{position:absolute;left:72px;top:250px;display:flex;align-items:center;gap:14px;font:600 30px/1 PlexMono,monospace;letter-spacing:.16em}
+#brand span{width:16px;height:16px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 6px #a58bff2e,0 0 26px var(--acc)}
+#brand em{font-style:normal;color:var(--mute);letter-spacing:.12em}
+#step{position:absolute;right:72px;top:240px;font:600 30px/1 PlexMono,monospace;letter-spacing:.1em;color:#1a1230;background:var(--accl);border-radius:12px;padding:12px 18px;transform-origin:100% 50%}
+#foot{position:absolute;left:72px;right:72px;top:1586px;font:500 26px/1.3 Plex,sans-serif;color:var(--dim);text-align:center}
+#win{position:absolute;left:72px;top:330px;width:936px;height:960px;border-radius:44px;overflow:hidden;background:#0b0a10;border:3px solid var(--line);box-shadow:0 50px 140px -40px #6c43f0cc,0 0 0 10px #ffffff08;transform-origin:50% 45%}
+.shot{position:absolute;left:0;top:0;width:936px;opacity:0;will-change:transform,opacity}
+.shot img{display:block;width:936px;height:auto}
+#ov{position:absolute;left:0;top:0;width:936px;height:0}
+.hl{position:absolute;border:6px solid var(--green);border-radius:20px;box-shadow:0 0 0 6px #2ee6a033,0 0 50px #2ee6a088,inset 0 0 30px #2ee6a022;opacity:0}
+.tap{position:absolute;width:0;height:0;opacity:0}
+.tap i{position:absolute;left:-34px;top:-34px;width:68px;height:68px;border-radius:50%;background:#ffffffee;box-shadow:0 6px 30px #000a}
+.tap b{position:absolute;left:-34px;top:-34px;width:68px;height:68px;border-radius:50%;border:6px solid #fff}
+#scrim{position:absolute;left:0;right:0;top:0;bottom:0;background:linear-gradient(transparent,#09080ef0 18%);opacity:0}
+/* ep 2: ACT / WATCH / IGNORE */
+#tags{position:absolute;left:54px;right:54px;top:250px;display:grid;gap:40px}
+.tg{display:flex;align-items:center;gap:30px;opacity:0;transform-origin:0 50%}
+.tg b{font:600 66px/1 PlexMono,monospace;letter-spacing:.06em;border-radius:18px;padding:20px 28px;min-width:330px;text-align:center}
+.tg span{font:600 46px/1.15 Plex,sans-serif;color:var(--ink)}
+.tg.ig b{border:4px solid #5b5869;color:#b9b5c8}.tg.wa b{border:4px solid var(--amber);color:var(--amber)}.tg.ac b{background:var(--green);color:#00281a;border:4px solid var(--green)}
+/* ep 1: the trial, in big type */
+#over{position:absolute;left:60px;right:60px;top:300px;text-align:left}
+#over .a{font:700 150px/0.95 Plex,sans-serif;letter-spacing:-.05em;color:var(--green);opacity:0}
+#over .b{font:700 84px/1.05 Plex,sans-serif;letter-spacing:-.03em;margin-top:16px;opacity:0}
+#over .c{display:inline-block;margin-top:44px;font:600 40px/1 PlexMono,monospace;letter-spacing:.08em;color:#1a1230;background:var(--accl);border-radius:14px;padding:16px 22px;opacity:0}
+/* end cards */
+.end{position:absolute;left:72px;right:72px;top:330px;height:960px;text-align:center;opacity:0}
+.end .ring{width:200px;height:200px;border-radius:50%;margin:40px auto 0;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle,#a58bff33,transparent 70%);box-shadow:0 0 0 3px #ffffff14,0 40px 120px -20px #6c43f0}
+.end .ring i{display:block;width:58px;height:58px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 20px #a58bff2e,0 0 70px var(--acc)}
+.end .h{font:700 104px/1.04 Plex,sans-serif;letter-spacing:-.045em;margin-top:56px}
+.end .h.b{color:var(--accl);margin-top:14px}
+.end .nx{margin-top:70px;font:600 34px/1 PlexMono,monospace;letter-spacing:.14em;color:var(--mute)}
+.end .nt{margin-top:22px;font:700 68px/1.1 Plex,sans-serif;letter-spacing:-.03em}
+.end .pill{display:inline-block;margin-top:50px;background:var(--ink);color:#09080e;font:700 54px/1 Plex,sans-serif;border-radius:999px;padding:32px 60px}
+.end .sub{font:600 42px/1.2 Plex,sans-serif;color:var(--mute);margin-top:28px}
+.end .bio{font:600 36px/1 PlexMono,monospace;color:var(--accl);letter-spacing:.1em;margin-top:28px}
+.pop{opacity:0}
+#cap{position:absolute;left:60px;right:60px;top:1318px;height:200px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0 26px;text-align:center}
+#cap span{display:inline-block;font:700 76px/1.15 Plex,sans-serif;letter-spacing:-.02em;color:#fff;
+  text-shadow:0 0 2px #000,0 4px 0 #000,0 0 30px #000c,3px 3px 0 #000,-3px -3px 0 #000,3px -3px 0 #000,-3px 3px 0 #000}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="glow"></div><div id="grid"></div>
+  <div id="bars"><b></b></div>
+  <div id="brand"><span></span>PULSEDGE <em>· HOW TO</em></div>
+  <div id="step"></div>
+
+  <div id="win">
+    <div id="shots"></div>
+    <div id="ov"></div>
+    <div id="scrim"></div>
+    <div id="tags">
+      <div class="tg ac" data-cue="act"><b>ACT</b><span>worth<br>reading now</span></div>
+      <div class="tg wa" data-cue="watch"><b>WATCH</b><span>keep an<br>eye on it</span></div>
+      <div class="tg ig" data-cue="ignore"><b>IGNORE</b><span>routine,<br>safe to skip</span></div>
+    </div>
+    <div id="over"><div class="a">5 trading<br>sessions</div><div class="b">free. No card.</div><div class="c">JUST YOUR EMAIL</div></div>
+  </div>
+
+  <div class="end" id="end1">
+    <div class="ring pop" data-cue="end" data-d="0"><i></i></div>
+    <div class="h pop" data-cue="end" data-d="0.05">You're in.</div>
+    <div class="nx pop" data-cue="end" data-d="0.35">NEXT · PART 2 OF 3</div>
+    <div class="nt pop" data-cue="end" data-d="0.45">How to read the feed →</div>
+    <div class="bio pop" data-cue="end" data-d="0.7" style="margin-top:60px">TRY IT FREE · LINK IN BIO</div>
+  </div>
+  <div class="end" id="end2">
+    <div class="ring pop" data-cue="end" data-d="0"><i></i></div>
+    <div class="h pop" data-cue="end" data-d="0.05">That's the feed.</div>
+    <div class="nx pop" data-cue="end" data-d="0.35">NEXT · PART 3 OF 3</div>
+    <div class="nt pop" data-cue="end" data-d="0.45">Make it yours →</div>
+    <div class="bio pop" data-cue="end" data-d="0.7" style="margin-top:60px">TRY IT FREE · LINK IN BIO</div>
+  </div>
+  <div class="end" id="end3">
+    <div class="ring pop" data-cue="end" data-d="0"><i></i></div>
+    <div class="h pop" data-cue="end" data-d="0.05">It explains the news.</div>
+    <div class="h b pop" data-cue="end" data-d="0.3">The decision stays yours.</div>
+    <div class="pop" data-cue="end" data-d="0.8"><span class="pill">Try it free</span></div>
+    <div class="sub pop" data-cue="end" data-d="1.0">5 trading sessions · no card</div>
+    <div class="bio pop" data-cue="end" data-d="1.2">LINK IN BIO</div>
+  </div>
+
+  <div id="cap"></div>
+  <div id="flash"></div>
+  <div id="foot">Educational information only · Not investment advice</div>
+</div>
+<script>
+const S = 2.4;
+let T = null, C = null, M = null, EP = 1, SHOTS = [], HLS = [], TAPS = [], STEPS = [], PAGES = [];
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const eo = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const io = (x) => { x = clamp(x); return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+const back = (x) => { x = clamp(x); const c = 1.9; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const mid = (r) => [r[0] + r[2] / 2, r[1] + r[3] / 2];
+const grow = (r, p) => [r[0] - p, r[1] - p, r[2] + 2 * p, r[3] + 2 * p];
+
+function init(data) {
+  T = data.timing; C = T.cues; M = data.meta; EP = T.ep;
+  const shot = (from, img, y0, y1, mv, xf, lin) => SHOTS.push({ from, img, y0, y1: y1 == null ? y0 : y1, mv: mv || 0.6, xf: xf == null ? 0.18 : xf, lin: !!lin });
+  const hl = (from, to, r, pad) => HLS.push({ from, to, r: grow(r, pad == null ? 6 : pad) });
+  const tap = (t, r) => TAPS.push({ t, p: mid(r) });
+  if (EP === 1) {
+    STEPS = [[0, "PART 1/3 · START"]];
+    shot(0, "home", 24, 150, C.cta - 0.1, 0, true);
+    hl(C.cta + 0.1, C.tap1 + 0.1, M.home.cta, 4); tap(C.tap1, M.home.cta);
+    shot(C.tap1 + 0.3, "gate-0", 215);
+    [3, 7, 11, 15].forEach((n, i) => shot(C.type + 0.1 + (C.tap2 - 0.5 - C.type) * i / 3, "gate-" + n, 215, null, null, 0));
+    hl(C.tap1 + 0.45, C.tap2 - 0.1, M["gate-0"].input, 4); tap(C.tap2, M["gate-0"].btn);
+    shot(C.tap2 + 0.3, "term", 0);
+    hl(C.mkt, C.left - 0.05, M.term.market, 8); hl(C.left, C.end, M.term.plan, 8);
+  } else if (EP === 2) {
+    STEPS = [[0, "PART 2/3 · READ"]];
+    shot(0, "card", 40, 90, 1.2, 0);
+    hl(C.label + 0.1, C.act - 0.2, M.card.label, 6);
+    shot(C.story, "card", 90);
+    hl(C.plain, C.why - 0.05, M.card.head, 8); hl(C.why, C.check - 0.05, M.card.why, 8); hl(C.check, C.tabs - 0.05, M.card.check, 8);
+    shot(C.tabs, "tabs", 150);
+    hl(C.tabs + 0.25, C.money - 0.1, M.tabs.bar, 6);
+    shot(C.money, "money", 150);
+    hl(C.money + 0.15, C.pm - 0.1, M.money.tab, 6);
+    shot(C.pm, "pm", 90);
+    hl(C.panel - 0.1, C.end, [M.pm.panel[0], M.pm.panel[1], M.pm.panel[2], 300], 6);
+  } else {
+    STEPS = [[0, "PART 3/3 · YOURS"]];
+    shot(0, "search-0", 60);
+    hl(0.4, C.pick - 0.1, M["search-0"].box, 4);
+    [2, 4, 6].forEach((n, i) => shot(C.search + 0.35 + 0.3 * i, "search-" + n, 60, null, null, 0));
+    tap(C.pick, M["search-6"].opt);
+    shot(C.brief, "brief", 80);
+    hl(C.brief + 0.3, C.add - 0.05, M.brief.say, 8);
+    hl(C.add, C.tapadd + 0.1, M.brief.add, 6); tap(C.tapadd, M.brief.add);
+    shot(C.tapadd + 0.25, "brief-added", 80, null, null, 0.08);
+    hl(C.tapadd + 0.3, C.mine - 0.05, M["brief-added"].add, 6);
+    shot(C.mine, "mine", 200);
+    hl(C.mine + 0.2, C.ask - 0.05, M.mine.tab, 6);
+    shot(C.ask, "ask-fab", 444);
+    hl(C.ask + 0.2, C.tapfab + 0.1, M["ask-fab"].fab, 6); tap(C.tapfab, M["ask-fab"].fab);
+    shot(C.tapfab + 0.3, "chat-open", 150);
+    hl(C.tapfab + 0.45, C.chip + 0.1, M["chat-open"].chip, 6); tap(C.chip, M["chat-open"].chip);
+    shot(C.answer, "chat-answer", 50, 190, C.end - C.answer + 0.2, 0.18, true);
+  }
+  SHOTS.forEach((s, i) => { s.to = i + 1 < SHOTS.length ? SHOTS[i + 1].from : C.end + 0.3; });
+  document.querySelectorAll(".end").forEach((e) => { e.style.display = e.id === "end" + EP ? "block" : "none"; });
+  const box = document.getElementById("shots");
+  SHOTS.forEach((s) => { const d = document.createElement("div"); d.className = "shot"; const im = new Image(); im.src = "cap/" + s.img + ".png"; d.appendChild(im); box.appendChild(d); s.el = d; });
+  const ov = document.getElementById("ov");
+  HLS.forEach((h) => { const d = document.createElement("div"); d.className = "hl"; d.style.cssText = `left:${h.r[0] * S}px;top:${h.r[1] * S}px;width:${h.r[2] * S}px;height:${h.r[3] * S}px`; ov.appendChild(d); h.el = d; });
+  TAPS.forEach((p) => { const d = document.createElement("div"); d.className = "tap"; d.style.cssText = `left:${p.p[0] * S}px;top:${p.p[1] * S}px`; d.innerHTML = "<b></b><i></i>"; ov.appendChild(d); p.el = d; });
+  let cur = [];
+  const flush = () => { if (cur.length) PAGES.push(cur); cur = []; };
+  T.words.forEach((w) => { const len = cur.reduce((a, x) => a + x.w.length + 1, 0); if (cur.length && (cur[0].c !== w.c || cur.length >= 3 || len + w.w.length > 16)) flush(); cur.push(w); });
+  flush();
+  PAGES.forEach((p, i) => { p.a = p[0].t; const nx = PAGES[i + 1]; p.b = nx && nx[0].t - T.lines[p[0].c].b < 0.5 ? nx[0].t : T.lines[p[p.length - 1].c].b + 0.3; });
+  return { ep: EP, shots: SHOTS.length, highlights: HLS.length, taps: TAPS.length, pages: PAGES.length };
+}
+
+function render(t) {
+  let k = 0; SHOTS.forEach((s, i) => { if (t >= s.from) k = i; });
+  const camOf = (s, tt) => { const p = (Math.min(tt, s.to) - s.from) / s.mv; return s.y0 + (s.y1 - s.y0) * (s.lin ? clamp(p) : io(p)); };
+  const cur = SHOTS[k], prev = SHOTS[k - 1], camY = camOf(cur, t);
+  SHOTS.forEach((s) => { s.el.style.opacity = 0; });
+  if (prev && cur.xf && t - cur.from < cur.xf) { prev.el.style.opacity = 1; prev.el.style.transform = `translateY(${-camOf(prev, prev.to) * S}px)`; }
+  cur.el.style.opacity = cur.xf ? clamp((t - cur.from) / cur.xf) : 1;
+  cur.el.style.transform = `translateY(${-camY * S}px)`;
+  document.getElementById("ov").style.transform = `translateY(${-camY * S}px)`;
+  HLS.forEach((h) => {
+    const a = (t - h.from) / 0.22, b = (h.to - t) / 0.12;
+    h.el.style.opacity = t < h.from || t > h.to ? 0 : Math.min(clamp(a), clamp(b));
+    h.el.style.transform = `scale(${1.12 - 0.12 * back(a)})`;
+  });
+  TAPS.forEach((p) => {
+    const d = t - p.t, dot = p.el.querySelector("i"), ring = p.el.querySelector("b");
+    p.el.style.opacity = d < -0.3 || d > 0.5 ? 0 : 1;
+    dot.style.opacity = d < 0 ? clamp((d + 0.3) / 0.15) : 1 - clamp(d / 0.25);
+    dot.style.transform = `translateY(${d < 0 ? (1 - eo((d + 0.3) / 0.3)) * 70 : 0}px) scale(${d < 0 ? 1 : 1 - 0.3 * clamp(d / 0.12)})`;
+    ring.style.opacity = d < 0 ? 0 : 1 - clamp(d / 0.5);
+    ring.style.transform = `scale(${1 + 2.2 * eo(d / 0.5)})`;
+  });
+  // overlays over the screen: ep 2's three labels, ep 1's free-trial card
+  let sOn = 0;
+  if (EP === 2) {
+    const a = C.act - 0.15, b = C.story;
+    sOn = t >= a && t < b ? clamp((t - a) / 0.25) * (1 - clamp((t - (b - 0.15)) / 0.15)) : 0;
+    document.querySelectorAll(".tg").forEach((el) => {
+      const p = (t - C[el.dataset.cue]) / 0.35;
+      el.style.opacity = t >= b ? 0 : clamp(p * 3) * (1 - clamp((t - (b - 0.15)) / 0.15));
+      el.style.transform = `translateX(${(1 - eo(p)) * -60}px) scale(${0.8 + 0.2 * back(p)})`;
+    });
+  } else document.getElementById("tags").style.display = "none";
+  if (EP === 1) {
+    const a = C.five - 0.2, b = C.top;
+    sOn = t >= a && t < b ? clamp((t - a) / 0.25) * (1 - clamp((t - (b - 0.15)) / 0.15)) : 0;
+    const ov = document.getElementById("over"), fade = 1 - clamp((t - (b - 0.15)) / 0.15);
+    [["a", C.five], ["b", C.card], ["c", C.card + 0.35]].forEach(([c, at]) => {
+      const el = ov.querySelector("." + c), p = (t - at) / 0.35;
+      el.style.opacity = t >= b ? 0 : clamp(p * 3) * fade;
+      el.style.transform = `translateY(${(1 - eo(p)) * 40}px) scale(${0.86 + 0.14 * back(p)})`;
+    });
+  } else document.getElementById("over").style.display = "none";
+  document.getElementById("scrim").style.opacity = sOn;
+  const st = document.getElementById("step"); st.textContent = STEPS[0][1];
+  st.style.opacity = t >= C.end ? 0 : 1; st.style.transform = `scale(${0.7 + 0.3 * back(t / 0.35)})`;
+  const win = document.getElementById("win"), out = clamp((t - C.end) / 0.3);
+  win.style.transform = `scale(${1 - 0.12 * out})`; win.style.opacity = 1 - out;
+  let fl = 0; [C.end].forEach((s) => { const d = t - s; if (d >= 0 && d < 0.22) fl = Math.max(fl, 0.28 * (1 - d / 0.22)); });
+  document.getElementById("flash").style.opacity = fl;
+  const end = document.getElementById("end" + EP); end.style.opacity = clamp((t - C.end) / 0.2);
+  end.querySelectorAll(".pop").forEach((el) => {
+    const p = (t - C[el.dataset.cue] - (+el.dataset.d || 0)) / 0.4;
+    el.style.opacity = clamp(p * 2.5); el.style.transform = `translateY(${(1 - eo(p)) * 60}px) scale(${0.85 + 0.15 * back(p)})`;
+  });
+  document.querySelector("#bars b").style.width = (100 * clamp(t / T.end)) + "%";
+  const page = PAGES.find((p) => t >= p.a - 0.02 && t < p.b), cap = document.getElementById("cap");
+  if (!page) { cap.innerHTML = ""; return; }
+  cap.innerHTML = page.map((w) => {
+    const on = t >= w.t - 0.03 && t < w.e + 0.05, pp = clamp((t - w.t) / 0.12);
+    return `<span style="color:${on ? "#2ee6a0" : "#fff"};transform:scale(${(on ? 1.02 + 0.05 * (1 - Math.abs(1 - 2 * pp)) : 1).toFixed(3)})">${w.w}</span>`;
+  }).join("");
+  const pa = clamp((t - page.a) / 0.12);
+  cap.style.transform = `scale(${0.9 + 0.1 * pa})`; cap.style.opacity = pa;
+}
+</script>
+</body>
+</html>

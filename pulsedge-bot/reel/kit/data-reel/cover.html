@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PulsEdge reel cover: this isn't 2021</title>
+<!-- 1080x1920 reel cover. Everything that matters sits in the middle 1080x1350 (y 285..1635) so the profile-grid crop keeps it. -->
+<style>
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-600-normal.woff2) format("woff2");font-weight:600}
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-700-normal.woff2) format("woff2");font-weight:700}
+@font-face{font-family:PlexMono;src:url(fonts/ibm-plex-mono-latin-600-normal.woff2) format("woff2");font-weight:600}
+:root{--ink:#f6f5fb;--mute:#b9b5c8;--dim:#8c889b;--acc:#a58bff;--green:#2ee6a0;--red:#ff4d5e;--amber:#ffc24d}
+*{box-sizing:border-box}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#07060b}
+#c{position:relative;width:1080px;height:1920px;overflow:hidden;color:var(--ink);font-family:Plex,sans-serif;-webkit-font-smoothing:antialiased}
+.bg{position:absolute;inset:0;background:radial-gradient(55% 32% at 80% 30%,#ff4d5e44,transparent 70%),radial-gradient(60% 35% at 15% 75%,#6c43f055,transparent 70%),linear-gradient(170deg,#1a0710 0%,#07060b 50%,#0c0820 100%)}
+.grid{position:absolute;inset:0;opacity:.3;background:linear-gradient(#ffffff10 1px,transparent 1px) 0 0/90px 90px,linear-gradient(90deg,#ffffff10 1px,transparent 1px) 0 0/90px 90px;-webkit-mask-image:radial-gradient(80% 60% at 50% 50%,#000 30%,transparent 85%)}
+.brand{position:absolute;left:72px;top:318px;display:flex;align-items:center;gap:14px;font:600 30px/1 PlexMono,monospace;letter-spacing:.16em}
+.brand i{width:16px;height:16px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 6px #a58bff33,0 0 24px var(--acc)}
+.brand b{font-weight:600;color:var(--mute);letter-spacing:.12em}
+.chip{position:absolute;left:72px;top:392px;font:600 34px/1 PlexMono,monospace;letter-spacing:.1em;background:var(--green);color:#00281a;border-radius:12px;padding:14px 20px}
+.k1{position:absolute;left:72px;top:488px;font:700 112px/1 Plex,sans-serif;letter-spacing:-.045em}
+.yr{position:absolute;left:62px;top:600px;font:700 330px/0.9 Plex,sans-serif;letter-spacing:-.06em}
+.yr i{position:absolute;left:-20px;top:44%;width:115%;height:34px;background:var(--red);border-radius:17px;transform:rotate(-8deg);box-shadow:0 0 50px #ff4d5eaa}
+.rows{position:absolute;left:72px;right:72px;top:1000px;border-top:2px solid #ffffff22}
+.r{display:grid;grid-template-columns:330px 1fr;align-items:baseline;padding:22px 0;border-bottom:2px solid #ffffff22}
+.r .l{font:600 30px/1 PlexMono,monospace;letter-spacing:.1em;color:var(--dim)}
+.r .v{font:700 64px/1 Plex,sans-serif;letter-spacing:-.03em;color:var(--mute)}
+.r .v b{color:var(--red);font-weight:700}
+.r .v s{text-decoration:none;color:var(--dim);font-size:52px;margin:0 14px}
+.cta{position:absolute;left:0;right:0;top:1470px;text-align:center}
+.cta span{display:inline-flex;align-items:center;gap:18px;background:var(--ink);color:#07060b;font:700 50px/1 Plex,sans-serif;border-radius:999px;padding:30px 52px;box-shadow:0 20px 60px -10px #ff4d5e88}
+.cta span i{display:inline-block;width:0;height:0;border-left:30px solid #07060b;border-top:18px solid transparent;border-bottom:18px solid transparent}
+</style>
+</head>
+<body>
+<div id="c">
+  <div class="bg"></div><div class="grid"></div>
+  <div class="brand"><i></i>PULSEDGE <b>· EXPLAINED</b></div>
+  <div class="chip">▲ NIFTY +8.58% · BEST WEEK SINCE 2021</div>
+  <div class="k1">But this isn't</div>
+  <div class="yr">2021<i></i></div>
+  <div class="rows">
+    <div class="r"><span class="l">US 10-YR YIELD</span><span class="v">1.2%<s>→</s><b>5.1%</b></span></div>
+    <div class="r"><span class="l">RBI RATE</span><span class="v">4% low<s>→</s><b>Hike due</b></span></div>
+    <div class="r"><span class="l">INFLATION</span><span class="v">4.6%<s>→</s><b>6.1%</b></span></div>
+  </div>
+  <div class="cta"><span><i></i>What changed?</span></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PulsEdge Explained: best week since 2021</title>
+<!-- Eight 1080x1350 Instagram carousel slides in the PulsEdge look (dark, IBM Plex, red/green semantics, PULSEDGE · EXPLAINED mark).
+     Brand voice: descriptive explainer, no personal views, no buy/sell calls, no targets. Smallest text is 20px.
+     2026 figures as of 18 Nov 2026. 2021 column: market data as of 5 Feb 2021; inflation = Dec 2020 print, the latest then. -->
+<style>
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-500-normal.woff2) format("woff2");font-weight:500}
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-600-normal.woff2) format("woff2");font-weight:600}
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-700-normal.woff2) format("woff2");font-weight:700}
+@font-face{font-family:PlexMono;src:url(fonts/ibm-plex-mono-latin-500-normal.woff2) format("woff2");font-weight:500}
+@font-face{font-family:PlexMono;src:url(fonts/ibm-plex-mono-latin-600-normal.woff2) format("woff2");font-weight:600}
+@font-face{font-family:Rupee;src:local("Inter Bold"),local("Inter-Bold"),local("Inter");unicode-range:U+20B9}
+@page{size:1080px 1350px;margin:0}
+:root{--bg:#09080e;--ink:#f6f5fb;--mute:#b9b5c8;--dim:#8c889b;--acc:#a58bff;--deep:#6c43f0;--green:#2ee6a0;--red:#ff4d5e;--amber:#ffc24d;--line:rgba(255,255,255,.12)}
+html,body{margin:0;background:var(--bg)}
+*{box-sizing:border-box}
+.s{width:1080px;height:1350px;padding:62px 80px 54px;background:var(--bg);color:var(--ink);font-family:Rupee,Plex,sans-serif;display:flex;flex-direction:column;position:relative;overflow:hidden;break-after:page;-webkit-font-smoothing:antialiased}
+.s>*{position:relative;z-index:1}
+.s>.bgl{position:absolute;inset:0;z-index:0}
+.grid{position:absolute;inset:0;z-index:0;opacity:.22;background:linear-gradient(#ffffff10 1px,transparent 1px) 0 0/90px 90px,linear-gradient(90deg,#ffffff10 1px,transparent 1px) 0 0/90px 90px;-webkit-mask-image:radial-gradient(80% 60% at 50% 45%,#000 30%,transparent 85%)}
+.top{display:flex;justify-content:space-between;align-items:center;font:600 22px/1 PlexMono,monospace;letter-spacing:.18em}
+.top .b{display:flex;align-items:center;gap:14px}
+.top .b i{width:16px;height:16px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 6px #a58bff33,0 0 22px var(--acc)}
+.top .b span{color:var(--mute);letter-spacing:.14em}
+.top .pg{color:var(--dim);letter-spacing:.08em}
+.tag{align-self:flex-start;margin-top:40px;display:inline-flex;align-items:center;gap:12px;font:600 22px/1 PlexMono,monospace;letter-spacing:.12em;padding:12px 18px;border-radius:10px}
+.tag.g{background:var(--green);color:#03140d}.tag.r{background:var(--red);color:#2a0007}.tag.a{background:var(--amber);color:#2a1d00}.tag.p{background:var(--acc);color:#150c33}
+.h{margin:22px 0 0;font-weight:700;font-size:68px;line-height:1.04;letter-spacing:-.025em}
+.sub{margin:16px 0 0;font-size:30px;line-height:1.4;color:var(--mute);font-weight:500}
+.mid{flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;padding:26px 0 18px}
+.card{background:rgba(255,255,255,.04);border:1.5px solid var(--line);border-radius:20px}
+.mono{font-family:Rupee,PlexMono,monospace}
+.lbl{font:600 20px/1.2 PlexMono,monospace;letter-spacing:.14em;color:var(--dim)}
+.big{font-weight:700;letter-spacing:-.035em;line-height:.95}
+.src{font-size:20px;line-height:1.42;color:var(--dim);margin:14px 0 18px}
+.foot{margin-top:auto;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;font-size:20px;color:var(--dim)}
+.foot b{color:var(--ink);font-weight:600}
+.g{color:var(--green)}.r{color:var(--red)}.a{color:var(--amber)}.p{color:var(--acc)}
+.chip{display:inline-block;font:600 20px/1 PlexMono,monospace;letter-spacing:.04em;padding:8px 12px;border-radius:8px;white-space:nowrap}
+.chip.r{background:rgba(255,77,94,.14);color:#ff8a95;border:1px solid rgba(255,77,94,.45)}
+.chip.n{background:rgba(165,139,255,.14);color:#c9b8ff;border:1px solid rgba(165,139,255,.45)}
+.tv{display:grid;grid-template-columns:248px 156px 226px 1fr;align-items:center}
+.tv>div{padding:20px 0;border-bottom:1px solid var(--line)}
+.row3>div{display:grid;grid-template-columns:230px 1fr;align-items:center;gap:20px;padding:26px 30px}
+.step{display:flex;align-items:center;gap:24px}
+.step .n{width:52px;height:52px;flex:0 0 auto;border-radius:26px;border:2px solid var(--acc);display:flex;align-items:center;justify-content:center;font:600 20px/1 PlexMono,monospace;color:var(--acc);background:var(--bg)}
+.dl{display:grid;grid-template-columns:200px 1fr;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}
+.dl .d{font:600 22px/1.2 PlexMono,monospace;letter-spacing:.06em;color:var(--green)}
+.dl .e{font-size:28px;font-weight:600}
+</style>
+</head>
+<body>
+
+<!-- 1 · COVER -->
+<section class="s">
+  <div class="bgl" style="background:radial-gradient(60% 40% at 85% 12%,#6c43f066,transparent 70%),radial-gradient(70% 45% at 10% 70%,#2ee6a033,transparent 70%),linear-gradient(170deg,#120c26 0%,#09080e 55%,#05120d 100%)"></div><div class="grid"></div>
+  <div class="top"><div class="b"><i></i>PULSEDGE <span>· EXPLAINED</span></div><div class="pg">01/08</div></div>
+  <div class="mid">
+    <div class="tag g" style="margin-top:0">▲ NIFTY 50 · 2–6 NOV 2026</div>
+    <div class="big g" style="margin-top:22px;font-size:224px;text-shadow:0 0 70px rgba(46,230,160,.35)">+8.58%</div>
+    <h1 class="h" style="font-size:88px;margin-top:22px">Best week since<br>Feb 2021.</h1>
+    <p class="sub" style="font-size:34px;margin-top:20px">Same size rally as Budget week 2021.<br>A very different world.</p>
+    <div style="align-self:flex-start;margin-top:44px;display:inline-flex;align-items:center;gap:16px;background:var(--ink);color:var(--bg);font-weight:700;font-size:36px;border-radius:999px;padding:24px 40px;box-shadow:0 20px 60px -10px #a58bff88">What's different? <span style="font-size:34px">→</span></div>
+  </div>
+  <div class="foot"><span><b>PulsEdge</b> · Educational, not investment advice</span><span>@pulsedge.in</span></div>
+</section>
+
+<!-- 2 · THEN VS NOW -->
+<section class="s">
+  <div class="bgl" style="background:radial-gradient(60% 40% at 90% 5%,#6c43f04d,transparent 70%),#09080e"></div><div class="grid"></div>
+  <div class="top"><div class="b"><i></i>PULSEDGE <span>· EXPLAINED</span></div><div class="pg">02/08</div></div>
+  <div class="tag p">THEN VS NOW</div>
+  <h2 class="h">Last time this happened: Budget week, Feb 2021.</h2>
+  <div class="mid">
+    <div class="tv">
+      <div class="lbl" style="border-bottom-color:rgba(255,255,255,.3)">&nbsp;</div>
+      <div class="lbl" style="border-bottom-color:rgba(255,255,255,.3)">FEB 2021</div>
+      <div class="lbl" style="border-bottom-color:rgba(255,255,255,.3);color:var(--ink)">NOV 2026</div>
+      <div class="lbl" style="border-bottom-color:rgba(255,255,255,.3)">CHANGE</div>
+
+      <div style="font-size:25px;color:var(--mute)">Nifty, that week</div><div style="font-size:28px;color:var(--mute)">+9.5%</div><div style="font-size:30px;font-weight:700">+8.6%</div><div><span class="chip n">Similar size</span></div>
+      <div style="font-size:25px;color:var(--mute)">RBI policy rate</div><div style="font-size:28px;color:var(--mute)">4% <span style="font-size:20px">(low)</span></div><div style="font-size:28px;font-weight:700">Hike expected</div><div><span class="chip r">Easing → tightening</span></div>
+      <div style="font-size:25px;color:var(--mute)">Retail inflation</div><div style="font-size:28px;color:var(--mute)">4.6%</div><div style="font-size:30px;font-weight:700">6.1%</div><div><span class="chip r">+1.5 pts</span></div>
+      <div style="font-size:25px;color:var(--mute)">US 10-year yield</div><div style="font-size:28px;color:var(--mute)">~1.2%</div><div style="font-size:30px;font-weight:700">~5.1%</div><div><span class="chip r">~4× higher</span></div>
+      <div style="font-size:25px;color:var(--mute)">Brent crude</div><div style="font-size:28px;color:var(--mute)">~$59</div><div style="font-size:30px;font-weight:700">~$95</div><div><span class="chip r">~60% higher</span></div>
+      <div style="font-size:25px;color:var(--mute)">Rupee per $</div><div style="font-size:28px;color:var(--mute)">~₹73</div><div style="font-size:30px;font-weight:700">~₹94</div><div><span class="chip r">~22% weaker</span></div>
+    </div>
+    <p style="margin:36px 0 0;font-size:34px;line-height:1.3;font-weight:700;letter-spacing:-.01em">2021's rally rode <span class="g">cheap money</span>.<br>This one runs against <span class="r">expensive money</span>.</p>
+  </div>
+  <p class="src">2021: market data on 5 Feb 2021; inflation is the Dec 2020 print. 2026: as of 18 Nov. Sources: NSE, RBI, MoSPI, US Treasury, press reports.</p>
+  <div class="foot"><span><b>PulsEdge</b> · Educational, not investment advice</span><span>@pulsedge.in</span></div>
+</section>
+
+<!-- 3 · WHAT DROVE IT -->
+<section class="s">
+  <div class="bgl" style="background:radial-gradient(55% 35% at 15% 30%,#ff4d5e26,transparent 70%),radial-gradient(60% 40% at 85% 65%,#2ee6a026,transparent 70%),#09080e"></div><div class="grid"></div>
+  <div class="top"><div class="b"><i></i>PULSEDGE <span>· EXPLAINED</span></div><div class="pg">03/08</div></div>
+  <div class="tag g">WHAT DROVE IT</div>
+  <h2 class="h">Foreign investors flipped.</h2>
+  <div class="mid">
+    <div class="card" style="padding:26px 32px;background:rgba(255,77,94,.07);border-color:rgba(255,77,94,.45)">
+      <div class="mono r" style="font-size:22px;font-weight:600;letter-spacing:.12em">▼ SOLD · JAN–OCT 2026</div>
+      <div class="big r" style="margin-top:14px;font-size:84px">−₹2.95 L Cr</div>
+      <div style="margin-top:10px;font-size:26px;color:var(--mute)">net, pulled out of Indian stocks</div>
+    </div>
+    <div class="card" style="margin-top:16px;padding:26px 32px;background:rgba(46,230,160,.07);border-color:rgba(46,230,160,.45)">
+      <div class="mono g" style="font-size:22px;font-weight:600;letter-spacing:.12em">▲ BOUGHT · 2–13 NOV 2026</div>
+      <div class="big g" style="margin-top:14px;font-size:84px">+₹79,302 Cr</div>
+      <div class="mono" style="margin-top:14px;font-size:22px;color:var(--mute)">Week 1 &nbsp;<b style="color:var(--ink)">₹45,960 Cr</b> &nbsp;·&nbsp; Week 2 &nbsp;<b style="color:var(--ink)">₹33,342 Cr</b></div>
+    </div>
+    <div class="lbl" style="margin-top:36px">WHY THEY CAME BACK</div>
+    <div style="margin-top:14px;display:flex;flex-direction:column;gap:14px;font-size:26px;line-height:1.35">
+      <div style="display:flex;gap:20px"><span class="mono p" style="font-weight:600">01</span><span><b>Tax-cut hopes.</b> <span style="color:var(--mute)">A reported proposal (2 Nov) to scrap long-term gains tax for foreign investors.</span></span></div>
+      <div style="display:flex;gap:20px"><span class="mono p" style="font-weight:600">02</span><span><b>Cheaper oil.</b> <span style="color:var(--mute)">Brent near $95, from $110+ in May.</span></span></div>
+      <div style="display:flex;gap:20px"><span class="mono p" style="font-weight:600">03</span><span><b>US vote done.</b> <span style="color:var(--mute)">The midterms (3 Nov) were out of the way.</span></span></div>
+    </div>
+  </div>
+  <p class="src">Sources: NSDL via press reports (Jan–Oct); NSE provisional data (Nov); Reuters, Business Today.</p>
+  <div class="foot"><span><b>PulsEdge</b> · Educational, not investment advice</span><span>@pulsedge.in</span></div>
+</section>
+
+<!-- 4 · THE CATCH -->
+<section class="s">
+  <div class="bgl" style="background:radial-gradient(60% 40% at 80% 20%,#ffc24d1f,transparent 70%),#09080e"></div><div class="grid"></div>
+  <div class="top"><div class="b"><i></i>PULSEDGE <span>· EXPLAINED</span></div><div class="pg">04/08</div></div>
+  <div class="tag a">THE CATCH</div>
+  <h2 class="h">Only ~27% of the year's selling has come back.</h2>
+  <div class="mid">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end">
+      <div><div class="big g" style="font-size:44px;letter-spacing:-.02em">₹79,302 Cr</div><div class="mono" style="margin-top:8px;font-size:20px;color:var(--mute)">BACK · 2–13 NOV</div></div>
+      <div style="text-align:right"><div class="big r" style="font-size:44px;letter-spacing:-.02em">~₹2.16 L Cr</div><div class="mono" style="margin-top:8px;font-size:20px;color:var(--mute)">NOT YET REVERSED</div></div>
+    </div>
+    <!-- 2.95 L Cr = 920px; 79,302 = 247px -->
+    <div role="img" aria-label="Of about 2.95 lakh crore rupees sold from January to October, 79,302 crore, about 27 percent, came back from 2 to 13 November" style="margin-top:18px;display:flex;height:84px;border-radius:14px;overflow:hidden">
+      <div style="width:247px;background:var(--green);color:#03140d;display:flex;align-items:center;padding-left:20px;font-size:30px;font-weight:700">27%</div>
+      <div style="flex:1;margin-left:4px;background:rgba(255,77,94,.75);color:#2a0007;display:flex;align-items:center;justify-content:flex-end;padding-right:20px;font-size:30px;font-weight:700">73%</div>
+    </div>
+    <div class="mono" style="margin-top:12px;font-size:20px;color:var(--dim);text-align:right">OF ~₹2.95 L CR SOLD, JAN–OCT</div>
+
+    <div class="card" style="margin-top:50px;padding:28px 32px">
+      <div class="lbl">MEANWHILE · INDIAN FUNDS · 2–13 NOV</div>
+      <div class="big r" style="margin-top:16px;font-size:80px">−₹49,089 Cr</div>
+      <div style="margin-top:14px;font-size:27px;line-height:1.4;color:var(--mute)">Domestic institutions sold into the rally, taking money off the table as foreign investors piled in.</div>
+    </div>
+  </div>
+  <p class="src">Jan–Oct: NSDL FPI data via press reports. Nov: NSE provisional data. Different series, so the 27% is indicative.</p>
+  <div class="foot"><span><b>PulsEdge</b> · Educational, not investment advice</span><span>@pulsedge.in</span></div>
+</section>
+
+<!-- 5 · FACTOR 1: INFLATION -->
+<section class="s">
+  <div class="bgl" style="background:radial-gradient(60% 40% at 20% 25%,#ff4d5e2e,transparent 70%),#09080e"></div><div class="grid"></div>
+  <div class="top"><div class="b"><i></i>PULSEDGE <span>· EXPLAINED</span></div><div class="pg">05/08</div></div>
+  <div class="tag r">FACTOR 1 · INFLATION</div>
+  <div class="mid">
+    <div class="big r" style="font-size:210px;text-shadow:0 0 70px rgba(255,77,94,.3)">8.94%</div>
+    <div style="margin-top:18px;font-size:46px;font-weight:700;letter-spacing:-.02em">Food inflation in October.</div>
+    <div style="margin-top:10px;font-size:29px;color:var(--mute)">Up from 7.74% in September: <b style="color:var(--ink)">+1.2 points in one month.</b></div>
+
+    <div class="card" style="margin-top:40px;padding:26px 30px">
+      <div class="lbl">OVERALL RETAIL INFLATION VS THE RBI'S BAND</div>
+      <!-- 0–10% across 856px -->
+      <div role="img" aria-label="Overall retail inflation was 6.09 percent in October, just above the RBI's 2 to 6 percent band" style="position:relative;margin-top:20px;height:150px">
+        <div class="abs" style="position:absolute;left:478px;top:0;width:120px;text-align:center;font-size:34px;font-weight:700">6.09%</div>
+        <div style="position:absolute;left:0;right:0;top:56px;height:40px;border-radius:8px;background:rgba(255,255,255,.07)"></div>
+        <div style="position:absolute;left:171px;width:343px;top:56px;height:40px;background:rgba(165,139,255,.3)"></div>
+        <div style="position:absolute;left:518px;top:46px;width:6px;height:60px;border-radius:3px;background:var(--ink)"></div>
+        <div style="position:absolute;left:171px;width:343px;top:108px;text-align:center;font-size:21px;color:var(--mute)">RBI comfort band: 2–6%</div>
+        <div style="position:absolute;left:0;top:108px;font-size:20px;color:var(--dim)">0%</div>
+        <div style="position:absolute;right:0;top:108px;font-size:20px;color:var(--dim)">10%</div>
+      </div>
+    </div>
+    <div style="margin-top:26px;font-size:28px;line-height:1.42"><b>Most economists expect a 0.25% RBI rate hike in December.</b> <span style="color:var(--mute)">Higher rates make loans costlier and can slow spending and company profits.</span></div>
+  </div>
+  <p class="src">Sources: MoSPI CPI, Oct 2026 (provisional). Rate view: SBI Research, ICRA, via Business Today.</p>
+  <div class="foot"><span><b>PulsEdge</b> · Educational, not investment advice</span><span>@pulsedge.in</span></div>
+</section>
+
+<!-- 6 · FACTOR 2: WEATHER -->
+<section class="s">
+  <div class="bgl" style="background:radial-gradient(60% 40% at 85% 20%,#ffc24d24,transparent 70%),#09080e"></div><div class="grid"></div>
+  <div class="top"><div class="b"><i></i>PULSEDGE <span>· EXPLAINED</span></div><div class="pg">06/08</div></div>
+  <div class="tag a">FACTOR 2 · WEATHER</div>
+  <h2 class="h">Weak monsoon.<br>Hot summer ahead?</h2>
+  <div class="mid">
+    <div class="row3" style="display:flex;flex-direction:column;gap:16px">
+      <div class="card"><div class="big a" style="font-size:72px">−12%</div><div style="font-size:27px;line-height:1.38;color:var(--mute)"><b style="color:var(--ink)">Monsoon rain vs normal</b> this year. The weakest since 2015.</div></div>
+      <div class="card"><div class="big p" style="font-size:64px">El Niño</div><div style="font-size:27px;line-height:1.38;color:var(--mute)"><b style="color:var(--ink)">Strong, and expected to last into Mar–May:</b> India's peak summer (NOAA).</div></div>
+      <div class="card"><div class="big r" style="font-size:72px">+80%</div><div style="font-size:27px;line-height:1.38;color:var(--mute)"><b style="color:var(--ink)">Potato and onion prices</b> during the 2024 heatwave.</div></div>
+    </div>
+    <p style="margin:40px 0 0;font-size:34px;line-height:1.3;font-weight:700;letter-spacing:-.01em">Heat hits food first.<br><span class="a">And food feeds straight into inflation.</span></p>
+  </div>
+  <p class="src">Sources: IMD via press reports; NOAA Climate Prediction Center, 16 Nov 2026; Bank of Baroda research (2024).</p>
+  <div class="foot"><span><b>PulsEdge</b> · Educational, not investment advice</span><span>@pulsedge.in</span></div>
+</section>
+
+<!-- 7 · FACTOR 3: GLOBAL RATES -->
+<section class="s">
+  <div class="bgl" style="background:radial-gradient(60% 40% at 85% 15%,#6c43f052,transparent 70%),#09080e"></div><div class="grid"></div>
+  <div class="top"><div class="b"><i></i>PULSEDGE <span>· EXPLAINED</span></div><div class="pg">07/08</div></div>
+  <div class="tag p">FACTOR 3 · GLOBAL RATES</div>
+  <h2 class="h">Safe US bonds now pay <span class="p">~5.1%.</span></h2>
+  <div class="mid">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="card" style="padding:26px 28px"><div class="big" style="font-size:72px">~95%</div><div style="margin-top:14px;font-size:25px;line-height:1.38;color:var(--mute)">Odds markets give a <b style="color:var(--ink)">US rate hike</b> in December</div></div>
+      <div class="card" style="padding:26px 28px"><div class="big r" style="font-size:72px">~₹94</div><div style="margin-top:14px;font-size:25px;line-height:1.38;color:var(--mute)">Per dollar. This year's <b style="color:var(--ink)">record low</b> was past ₹96</div></div>
+    </div>
+    <div class="lbl" style="margin-top:44px">HOW IT REACHES INDIA</div>
+    <div style="position:relative;margin-top:20px">
+      <div style="position:absolute;left:25px;top:30px;bottom:30px;width:2px;background:rgba(165,139,255,.4)"></div>
+      <div style="display:flex;flex-direction:column;gap:22px;position:relative">
+        <div class="step"><div class="n">01</div><div style="font-size:29px;font-weight:600">US yields rise, so safe returns look better</div></div>
+        <div class="step"><div class="n">02</div><div style="font-size:29px;font-weight:600">The dollar tends to strengthen</div></div>
+        <div class="step"><div class="n">03</div><div style="font-size:29px;font-weight:600">The rupee weakens, cutting foreign returns</div></div>
+        <div class="step"><div class="n" style="background:var(--acc);color:#150c33">04</div><div style="font-size:29px;font-weight:700" class="p">Money flowing into India can slow</div></div>
+      </div>
+    </div>
+  </div>
+  <p class="src">Sources: press reports on US Treasury yields, rate-futures pricing and the rupee, as of 18 Nov 2026.</p>
+  <div class="foot"><span><b>PulsEdge</b> · Educational, not investment advice</span><span>@pulsedge.in</span></div>
+</section>
+
+<!-- 8 · DATES TO WATCH + CTA -->
+<section class="s">
+  <div class="bgl" style="background:radial-gradient(60% 40% at 85% 10%,#6c43f04d,transparent 70%),radial-gradient(60% 40% at 10% 90%,#2ee6a01f,transparent 70%),#09080e"></div><div class="grid"></div>
+  <div class="top"><div class="b"><i></i>PULSEDGE <span>· EXPLAINED</span></div><div class="pg">08/08</div></div>
+  <div class="tag g">SAVE THIS</div>
+  <h2 class="h">Dates to watch.</h2>
+  <div class="mid">
+    <div style="border-top:1px solid rgba(255,255,255,.3)">
+      <div class="dl"><div class="d">EARLY DEC</div><div class="e">RBI policy decision</div></div>
+      <div class="dl"><div class="d">10 DEC</div><div class="e">NOAA El Niño update</div></div>
+      <div class="dl"><div class="d">MID-DEC</div><div class="e">November inflation data</div></div>
+      <div class="dl"><div class="d">MID-DEC</div><div class="e">US Fed meeting</div></div>
+      <div class="dl"><div class="d">1 FEB</div><div class="e">Union Budget</div></div>
+      <div class="dl"><div class="d">LATE FEB</div><div class="e">IMD summer outlook</div></div>
+    </div>
+    <div class="card" style="margin-top:36px;padding:26px 30px;border-color:rgba(165,139,255,.5);background:rgba(108,67,240,.12)">
+      <div class="lbl" style="color:var(--acc)">THE SHORT VERSION</div>
+      <div style="margin-top:10px;font-size:32px;line-height:1.3;font-weight:700">Foreign money drove the rally. Prices, rates and rain decide what comes next.</div>
+    </div>
+    <div style="align-self:flex-start;margin-top:30px;display:inline-flex;align-items:center;gap:14px;background:var(--ink);color:var(--bg);font-weight:700;font-size:28px;border-radius:999px;padding:18px 32px">Follow @pulsedge.in · market news, sorted</div>
+  </div>
+  <p class="src">For information and education only. Not investment advice or a recommendation to buy or sell any security. Figures as of 18 Nov 2026; provisional data may be revised. Investments in securities markets are subject to market risks.</p>
+  <div class="foot"><span><b>PulsEdge</b> · Educational, not investment advice</span><span>@pulsedge.in</span></div>
+</section>
+
+</body>
+</html>
