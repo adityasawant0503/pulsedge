@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T11:31:21+05:30",
+ "updated": "2026-11-20T11:46:05+05:30",
  "summary": {
-  "calls": 1893,
-  "scored_calls": 725,
+  "calls": 1895,
+  "scored_calls": 727,
   "d1": {
    "scored": 549,
    "hits": 225,
@@ -23,6 +23,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "b2a74951bb555fb5",
+   "symbol": "BANKBARODA",
+   "time": "2026-11-20T11:28:49+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "SBI, PNB, 3 other PSBs zoom up to 27% in Nov; here's what tech analysts say",
+   "url": "https://www.business-standard.com/markets/news/sbi-pnb-3-other-psu-bank-stocks-rally-up-to-27-in-nov-here-s-what-tech-analysts-say-126112000334_1.html",
+   "alert_px": 284.13,
+   "alert_move": -0.62,
+   "alert_at": "2026-11-20T11:45:54+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "b2a74951bb555fb5",
+   "symbol": "BANKINDIA",
+   "time": "2026-11-20T11:28:49+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "SBI, PNB, 3 other PSBs zoom up to 27% in Nov; here's what tech analysts say",
+   "url": "https://www.business-standard.com/markets/news/sbi-pnb-3-other-psu-bank-stocks-rally-up-to-27-in-nov-here-s-what-tech-analysts-say-126112000334_1.html",
+   "alert_px": 160.65,
+   "alert_move": -0.77,
+   "alert_at": "2026-11-20T11:45:54+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "f8c5714840be49dd",
    "symbol": "NH",
