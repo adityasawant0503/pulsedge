@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T08:17:28+05:30",
+ "updated": "2026-11-20T08:31:23+05:30",
  "summary": {
-  "calls": 1871,
-  "scored_calls": 703,
+  "calls": 1875,
+  "scored_calls": 707,
   "d1": {
    "scored": 549,
    "hits": 225,
@@ -23,6 +23,50 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "ff63c24459bc101f",
+   "symbol": "COALINDIA",
+   "time": "2026-11-20T08:13:47+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Top stocks to watch today: Coal India, Paytm, Ashoka Buildcon, Hexaware Tech, JK Cement, ACME Solar & 5 others in focus",
+   "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-coal-india-paytm-ashoka-buildcon-hexaware-tech-jk-cement-acme-solar-5-others-in-fo-11795140323116.html"
+  },
+  {
+   "id": "ff63c24459bc101f",
+   "symbol": "PAYTM",
+   "time": "2026-11-20T08:13:47+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Top stocks to watch today: Coal India, Paytm, Ashoka Buildcon, Hexaware Tech, JK Cement, ACME Solar & 5 others in focus",
+   "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-coal-india-paytm-ashoka-buildcon-hexaware-tech-jk-cement-acme-solar-5-others-in-fo-11795140323116.html"
+  },
+  {
+   "id": "6a7425bb78d37505",
+   "symbol": "AXISBANK",
+   "time": "2026-11-20T08:12:21+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stocks to watch: Voltas, Dilip Buildcon, Paytm, NLC India, Axis Bank, PNB",
+   "url": "https://www.business-standard.com/markets/news/stocks-to-watch-voltas-dilip-buildcon-paytm-nlc-india-axis-bank-pnb-126112000127_1.html"
+  },
+  {
+   "id": "6a7425bb78d37505",
+   "symbol": "COALINDIA",
+   "time": "2026-11-20T08:12:21+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stocks to watch: Voltas, Dilip Buildcon, Paytm, NLC India, Axis Bank, PNB",
+   "url": "https://www.business-standard.com/markets/news/stocks-to-watch-voltas-dilip-buildcon-paytm-nlc-india-axis-bank-pnb-126112000127_1.html"
+  },
   {
    "id": "06a44fa58be3e5ef",
    "symbol": "BANKINDIA",
