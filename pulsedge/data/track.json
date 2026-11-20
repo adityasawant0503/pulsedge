@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T11:00:48+05:30",
+ "updated": "2026-11-20T11:16:11+05:30",
  "summary": {
-  "calls": 1892,
-  "scored_calls": 724,
+  "calls": 1893,
+  "scored_calls": 725,
   "d1": {
    "scored": 549,
    "hits": 225,
@@ -23,6 +23,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "f8c5714840be49dd",
+   "symbol": "NH",
+   "time": "2026-11-20T11:03:36+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "BSE Hospitals index soars 3%; Apollo, Max, Narayana Hrudayalaya surge 5%",
+   "url": "https://www.business-standard.com/markets/news/bse-hospitals-index-soars-3-apollo-max-narayana-hrudayalaya-surge-5-126112000298_1.html",
+   "alert_px": 1926.9,
+   "alert_move": 2.87,
+   "alert_at": "2026-11-20T11:15:40+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "7a5ce34ff3f7f19d",
    "symbol": "IDFCFIRSTB",

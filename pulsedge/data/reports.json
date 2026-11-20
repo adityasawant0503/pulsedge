@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T11:00+05:30",
+ "updated": "2026-11-20T11:15+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -635,20 +635,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "SIGNATURE": {
-   "summary": "Signature Global has been actively buying land in Gurugram and Maharashtra to expand its project pipeline. The company also reported launching properties worth 4,400 crore rupees in the first half of the year.",
-   "why": "These land purchases and new launches could lead to higher future sales and earnings, which is important for the value of the company's shares.",
-   "upside": "Securing more land and strong initial launches could boost future income if the projects are completed and sold on time.",
-   "downside": "Delays in building the new projects or high costs could reduce profits, and buying land might strain the company's cash reserves.",
+   "summary": "Signatureglobal is expanding its land bank, buying two 10‑acre parcels in Gurugram and securing development rights over 10.18 acres in Sohna, while reporting 4,400 cr of project launches in H1 and targeting 10,000 cr of bookings for FY27.",
+   "why": "These actions could increase future sales and earnings, which matters to shareholders.",
+   "upside": "If the new land is developed on schedule and FY27 bookings are achieved, earnings could improve.",
+   "downside": "Execution delays or higher development costs could offset the expected benefits.",
    "watch": [
-    "How quickly the new land parcels in Gurugram and Maharashtra are developed.",
-    "Whether the company meets its sales goals for the year.",
-    "The overall trend of the Realty sector index."
+    "Progress on Gurugram land development",
+    "Achievement of FY27 bookings guidance",
+    "Realty sector index trends"
    ],
-   "about": "Signature Global is a realty company that develops and sells property projects.",
-   "basis": "b38588db575c",
-   "items": 5,
-   "updated": "2026-11-20T03:25+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Signatureglobal (India) Ltd. is a real estate developer that builds residential projects in India.",
+   "basis": "6e9236da86e9",
+   "items": 4,
+   "updated": "2026-11-20T11:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "BDL": {
    "summary": "PulsEdge flagged that the Indian government is planning a 20% increase in defence capital spending next year and that India and Japan may finalise an agreement for Japanese forces to use Indian missile test ranges. These developments have pushed BDL and other defence stocks up about 3% on expectations of more orders.",
@@ -763,20 +763,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is facing mixed signals as global oil prices rise slightly due to geopolitical tensions in Saudi Arabia, but this is offset by reports of surging global supply and plans by major leaders to boost production. The company's sector index has moved up by 0.9% in the last session and over the past five sessions.",
-   "why": "Changes in oil prices directly affect the company's revenue, so rising prices can improve profits, while increased global supply could push prices down and reduce earnings.",
-   "upside": "Higher oil prices driven by supply disruptions could lead to better profits for the company.",
-   "downside": "Increased global oil production and surging supplies could lower oil prices, which would reduce the company's revenue.",
+   "summary": "Oil India Ltd. has been making headlines amid shifting global oil prices driven by geopolitical tensions, supply concerns, and potential production changes by world leaders. At the same time, Indian officials highlighted rising domestic demand for petrochemicals and a strong position in sustainable aviation fuel.",
+   "why": "PulsEdge noted that global crude price movements directly affect revenues for oil producers, while long-term demand trends and new fuel areas can shape the company's future growth.",
+   "upside": "Higher global oil prices and rising domestic demand for petrochemicals could boost the company's earnings.",
+   "downside": "Global supply surpluses, sudden de-escalations, or a broader downtrend in crude prices could limit gains.",
    "watch": [
-    "How quickly the geopolitical situation in Saudi Arabia resolves or escalates.",
-    "Actual changes in global oil supply levels from OPEC+ and other producers.",
-    "Specific details or timelines for India's sustainable aviation fuel projects."
+    "Geopolitical updates affecting global oil supply and tanker disruptions",
+    "Global crude price trends and OPEC+ policy decisions",
+    "Updates on India's petrochemical demand and sustainable aviation fuel plans"
    ],
-   "about": "Oil India Ltd. is an Indian company in the oil and gas sector that is part of the Nifty 500 index.",
-   "basis": "01dbd4111ec4",
-   "items": 19,
-   "updated": "2026-11-20T09:01+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Oil India Ltd. is an oil and gas company engaged in exploring, drilling, and producing crude oil and natural gas.",
+   "basis": "414fe508d29f",
+   "items": 17,
+   "updated": "2026-11-20T11:15+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "MARUTI": {
    "summary": "Maruti Suzuki shares have risen sharply as the auto sector rallied, with the Nifty Auto index up 4.4% in the last session and 1.3% over five sessions. The stock also appeared in a recent list of top picks by a broker.",
@@ -1001,6 +1001,22 @@
    "items": 2,
    "updated": "2026-11-20T08:30+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "NH": {
+   "summary": "Hospital stocks have surged, with Narayana Hrudayalaya jumping about 5% while the broader market lagged. The healthcare sector has shown modest gains but may be nearing an overextension after a 20% monthly rise.",
+   "why": "Share price movements are tied to sector momentum, so investors in NH could see further upside or face a pull‑back if the rally cools.",
+   "upside": "If the strong buying interest in hospital stocks continues, NH could benefit from further price appreciation.",
+   "downside": "If the sector is deemed overextended, a correction could pressure NH’s share price.",
+   "watch": [
+    "Whether the BSE Hospitals index sustains its recent surge",
+    "Signs of a broader market correction after the 20% monthly gain",
+    "Any new policy or demand news affecting Indian hospitals"
+   ],
+   "about": "Narayana Hrudayalaya Ltd. operates a network of hospitals across India.",
+   "basis": "3cffbab3a3d5",
+   "items": 1,
+   "updated": "2026-11-20T11:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "BEML": {
    "summary": "PulsEdge flagged that BEML is among five defence stocks that could benefit from a proposed 20% increase in government defence capital expenditure next year.",

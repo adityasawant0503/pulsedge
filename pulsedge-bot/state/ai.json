@@ -2,19 +2,6 @@
  "note": "The last 60 runs of the AI classifier: items sorted by AI, set aside as routine, or left to keyword rules.",
  "runs": [
   {
-   "time": "2026-11-18T14:45+05:30",
-   "new": 6,
-   "ai": 3,
-   "routine": 3,
-   "rules": 0,
-   "models": {
-    "qwen/qwen3.8-27b": 3
-   },
-   "errors": [
-    "gemini-3.8-flash: The read operation timed out"
-   ]
-  },
-  {
    "time": "2026-11-18T15:00+05:30",
    "new": 26,
    "ai": 21,
@@ -815,6 +802,19 @@
    "rules": 0,
    "models": {
     "qwen/qwen3.8-27b": 4
+   },
+   "errors": [
+    "gemini-3.8-flash: HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To"
+   ]
+  },
+  {
+   "time": "2026-11-20T11:15+05:30",
+   "new": 14,
+   "ai": 14,
+   "routine": 0,
+   "rules": 0,
+   "models": {
+    "qwen/qwen3.8-27b": 14
    },
    "errors": [
     "gemini-3.8-flash: HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To"
