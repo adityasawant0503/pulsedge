@@ -19,6 +19,7 @@ on:
       - 'pulsedge-bot/fast_lane.py'
       - 'pulsedge-bot/eval_act.py'
       - 'pulsedge-bot/quotes.py'
+      - 'pulsedge-bot/probe_live.py'
       - 'pulsedge-bot/eval/**'
       - '.github/workflows/pulsedge-fast.yml'
 
@@ -61,6 +62,9 @@ jobs:
     - name: Live price source (branches)
       if: github.ref != 'refs/heads/master'
       run: python pulsedge-bot/quotes.py RELIANCE TCS M\&M HDFCBANK TMPV KAYNES URBANCO
+    - name: Live source probe (branches, temporary)
+      if: github.ref != 'refs/heads/master'
+      run: python pulsedge-bot/probe_live.py
     - name: Act checks on past alerts (branches)
       if: github.ref != 'refs/heads/master'
       # the rules only on a push; the AI second check (about 90 requests) only when started by hand, because on
