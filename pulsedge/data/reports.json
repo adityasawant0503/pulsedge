@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T15:30+05:30",
+ "updated": "2026-11-20T15:47+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a mix of contract wins and losses on 20 November 2026. Jupiter Wagons secured a repeat order worth over ₹128 crore from JSW Rail Logistics, while Ashoka Buildcon lost a ₹846 crore Saudi project. The tech sector saw a sell‑off linked to AI concerns, and gold prices fell to a one‑year low, dragging gold‑loan firms down. Sector indices were mixed, with Auto and Consumer Durables up, but IT and Media were weak.",
+  "summary": "The Indian stock market on Friday saw mixed movements, with strong gains in sectors like Auto and Consumer Durables, while IT faced a dip. Several companies made headlines by securing major new contracts or facing project cancellations, impacting their individual fortunes. Meanwhile, gold loan companies saw their shares fall due to a drop in gold prices, and overall global tech concerns weighed on sentiment.",
   "themes": [
-   "Contract wins and losses",
-   "Tech and AI volatility",
-   "Gold price impact on loan firms"
+   "Major contract wins and cancellations driving individual stock movements.",
+   "Sector divergence with strong gains in Auto and Consumer Durables alongside declines in IT.",
+   "Commodity price drops affecting related financial and lending companies."
   ],
   "watch": [
-   "Kirloskar brothers close to a large US data‑center contract",
-   "Jupiter Wagons order execution and raw‑material cost risk",
-   "Gold price decline affecting gold‑loan companies"
+   "Execution timelines and potential cost overruns for newly awarded large contracts.",
+   "Further movements in gold prices and their impact on gold loan companies.",
+   "Global tech and AI sentiment affecting Indian smallcaps and data center-linked stocks."
   ],
   "date": "2026-11-20",
-  "basis": "cef6ffe1943d",
-  "updated": "2026-11-20T15:02+05:30",
-  "model": "openai/gpt-oss-20b",
-  "items": 84
+  "basis": "b44260be5909",
+  "updated": "2026-11-20T15:47+05:30",
+  "model": "gemini-flash-lite-latest",
+  "items": 100
  },
  "stocks": {
   "PAYTM": {
@@ -810,6 +810,22 @@
    "updated": "2026-11-19T15:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "INDUSINDBK": {
+   "summary": "PulsEdge flagged: IndusInd Bank shares jumped 8‑8.5% on high trading volume, approaching a 52‑week high. The move is part of a broader rally in the Financials sector, which rose 1.1% in the last session.",
+   "why": "PulsEdge flagged: The sharp rise shows strong buyer interest, but shareholders should note the risk of profit booking near resistance levels.",
+   "upside": "PulsEdge flagged: Continued momentum could push the stock higher.",
+   "downside": "PulsEdge flagged: The rally may reverse quickly, especially if profit taking occurs.",
+   "watch": [
+    "High trading volume",
+    "Price near 52‑week high",
+    "Potential momentum reversal"
+   ],
+   "about": "IndusInd Bank is a major private bank in India.",
+   "basis": "b9edaf434e15",
+   "items": 2,
+   "updated": "2026-11-20T15:47+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "JSWSTEEL": {
    "summary": "JSW Steel shares saw a small rise in recent trading, but the broader metals sector has fallen sharply over the last week. Experts are currently comparing JSW Steel with other major metal companies to see how they might handle the current market drop.",
    "why": "The recent drop in the sector means the value of your shares has likely decreased, and the small recent gain may not last if the wider market trend continues downward.",
@@ -921,22 +937,6 @@
    "items": 2,
    "updated": "2026-11-20T13:32+05:30",
    "model": "gemini-flash-lite-latest"
-  },
-  "INDUSINDBK": {
-   "summary": "IndusInd Bank shares surged 8.5% and are on a strong weekly rally. The move may signal momentum but could reverse quickly.",
-   "why": "Shareholders should watch for potential reversal as momentum may be short‑lived.",
-   "upside": "If the bullish trend continues, shares could keep rising.",
-   "downside": "Momentum could reverse quickly, causing a drop.",
-   "watch": [
-    "Price action for reversal signs",
-    "Sector index movement",
-    "Weekly rally trend"
-   ],
-   "about": "IndusInd Bank Ltd. is a bank providing financial services.",
-   "basis": "0655d3d2ebe4",
-   "items": 1,
-   "updated": "2026-11-20T15:16+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "JBMA": {
    "summary": "JBM Auto is seen as a potential beneficiary of the Indian government’s new PM E‑Bus Sewa payment portal, which aims to fund electric bus projects. The auto sector has also posted gains, up 4.4% in the last session.",
