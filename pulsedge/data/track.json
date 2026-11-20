@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T07:58:35+05:30",
+ "updated": "2026-11-20T08:17:28+05:30",
  "summary": {
-  "calls": 1870,
-  "scored_calls": 702,
+  "calls": 1871,
+  "scored_calls": 703,
   "d1": {
    "scored": 549,
    "hits": 225,
@@ -23,6 +23,17 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "06a44fa58be3e5ef",
+   "symbol": "BANKINDIA",
+   "time": "2026-11-20T08:00:36+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Spectre of El Nino: CPI to average above 6% between November and March, says Elara's Garima Kapoor",
+   "url": "https://www.livemint.com/market/mark-to-market/spectre-of-el-nino-cpi-to-average-above-6-between-november-march-says-garima-kapoor-of-elara-11795079302692.html"
+  },
   {
    "id": "bc92d391034b7d52",
    "symbol": "OIL",

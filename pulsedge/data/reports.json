@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T07:57+05:30",
+ "updated": "2026-11-20T08:16+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -507,19 +507,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "BSE": {
-   "summary": "PulsEdge flagged that a subsidiary of NLC India has filed for an IPO on BSE, while the exchange faces competition from NSE’s new equity‑option strategy and possible SEBI curbs on multi‑commodity trading platforms. These developments bring both growth potential and regulatory risk for BSE.",
-   "why": "Shareholders could see earnings rise if the new listing boosts trading activity, but tighter SEBI rules or stronger competition may pressure revenue.",
-   "upside": "If the NLC India Renewables IPO proceeds, it could bring fresh business and fee income to BSE.",
-   "downside": "Stricter SEBI restrictions on multi‑commodity trading could cut BSE’s fee earnings.",
+   "summary": "BSE Ltd. is in the news as a platform for a new subsidiary IPO, faces competition from NSE over equity‑option contracts, and is watching possible SEBI curbs on multi‑commodity trading platforms. These developments could influence its trading volumes and fee income.",
+   "why": "Shareholders should watch because new listings can boost revenues while regulatory changes or competition could cut earnings.",
+   "upside": "A successful IPO listing on BSE could increase fee revenue.",
+   "downside": "Stricter SEBI rules on MTFs could reduce trading income.",
    "watch": [
-    "Progress and approval of the NLC India Renewables IPO filing",
-    "SEBI’s final decision on multi‑commodity trading platform curbs",
-    "Impact of NSE’s equity‑option script on BSE’s trading volumes"
+    "Outcome of NLC India Renewables Ltd. IPO filing on BSE",
+    "NSE's use of equity‑option script and its impact on BSE's market share",
+    "Potential SEBI restrictions on multi‑commodity trading platforms"
    ],
-   "about": "BSE Ltd. runs India’s oldest stock exchange, offering equity, debt and derivatives trading services.",
-   "basis": "5ce228cb5405",
-   "items": 4,
-   "updated": "2026-11-19T15:46+05:30",
+   "about": "BSE Ltd. operates India’s oldest stock exchange, providing trading, clearing and related services.",
+   "basis": "76084ced6e0b",
+   "items": 3,
+   "updated": "2026-11-20T08:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "JUBLINGREA": {
@@ -763,20 +763,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is facing mixed signals in the oil market, with recent geopolitical tensions pushing prices up while increased global supply pushes them down. The company's sector index has risen by 0.9% in the last session and over the past five sessions.",
-   "why": "Oil India earns money by selling oil, so higher crude prices generally mean more profit, but falling prices can reduce its revenue. Shareholders need to watch how these opposing forces balance out.",
-   "upside": "Higher oil prices driven by supply concerns could increase the company's profits.",
-   "downside": "A surge in global oil supply from major producers could lower prices and reduce the company's earnings.",
+   "summary": "Oil India is seeing mixed market signals as oil prices tick up after Houthi attacks in Saudi Arabia, while global crude premiums have fallen due to a surge in supply. The sector index rose 0.9% recently, indicating modest positive sentiment.",
+   "why": "Higher oil prices can lift OIL’s earnings, but a possible oversupply could push prices down, affecting profitability.",
+   "upside": "If oil prices stay elevated or the company secures sustainable aviation fuel projects, earnings could improve.",
+   "downside": "A rapid drop in crude prices from excess supply or OPEC+ tightening could cut revenues.",
    "watch": [
-    "Updates on global oil supply from major producers like the US, China, and Russia.",
-    "Developments regarding India's plans for sustainable aviation fuel.",
-    "Changes in global tanker disruptions and supply-demand balances."
+    "Oil price trends after geopolitical events",
+    "Progress on sustainable aviation fuel and petrochemical demand in India",
+    "Global supply dynamics such as US diesel exports and OPEC+ actions"
    ],
-   "about": "",
-   "basis": "73507779c72e",
-   "items": 19,
-   "updated": "2026-11-20T07:57+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Oil India Ltd. explores, produces and sells crude oil and related products in India.",
+   "basis": "b7b0883167ed",
+   "items": 18,
+   "updated": "2026-11-20T08:16+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "PRESTIGE": {
    "summary": "Prestige Estates Projects Ltd. is actively expanding its business, announcing the acquisition of a 50% stake in Advent Convention and Hotels International and increasing its ownership in the Prestige Vaishnaoi Projects to 42.83%. It also plans to set up two wholly‑owned subsidiaries.",
@@ -1178,37 +1178,21 @@
    "updated": "2026-11-19T14:32+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "ETERNAL": {
-   "summary": "Eternal Ltd. was named by Goldman Sachs as a high‑growth stock and has joined five stocks that recently hit 52‑week highs, with its share price rallying up to 15% over the past month.",
-   "why": "These developments can influence investor sentiment and may affect the market price of the shares you hold.",
-   "upside": "If the positive momentum and analyst attention continue, the stock could keep climbing.",
-   "downside": "A shift in broader market sentiment could quickly reverse the rally.",
-   "watch": [
-    "Goldman Sachs' high‑growth stock list inclusion",
-    "Sustaining the 52‑week high and recent price rally",
-    "Overall market sentiment and any new analyst commentary"
-   ],
-   "about": "Eternal Ltd. operates in the consumer services sector and is a constituent of India's Nifty 50 index.",
-   "basis": "893fe07b7a30",
-   "items": 2,
-   "updated": "2026-11-19T13:11+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "TCS": {
-   "summary": "TCS shares have fallen by 26% in 2026, despite the company reporting good business results. Recent trading shows a minor setback, with the stock price slightly down in the latest session.",
-   "why": "This matters to shareholders because the significant drop in value is driven by broader market trends rather than poor company performance, which may affect the overall worth of their investment.",
-   "upside": "The company has reported good business results, which provides a fundamental base for the stock even as its price falls.",
-   "downside": "The stock may continue to move down or stay flat if broader market weakness persists.",
+   "summary": "TCS shares slipped slightly today after a larger 26% drop this year, while the broader IT sector fell 1.1% in the last session and 3.9% over five sessions. The price dip is modest but follows a broader market weakness.",
+   "why": "Share price moves affect the value of shareholders' holdings and reflect how market sentiment is treating the company despite its solid business results.",
+   "upside": "Good business results could help the stock stabilize if broader market sentiment improves.",
+   "downside": "Further declines are possible if negative news appears or market weakness continues.",
    "watch": [
-    "Whether the recent minor price drop continues or stabilizes",
-    "The overall trend of the IT sector index",
-    "Changes in investor sentiment regarding IT stocks"
+    "Today's TCS share price movement",
+    "IT sector index trends",
+    "Any emerging negative news affecting TCS"
    ],
-   "about": "Tata Consultancy Services is a large software company in the Information Technology sector.",
-   "basis": "70369ad9dcc3",
-   "items": 3,
-   "updated": "2026-11-19T12:15+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Tata Consultancy Services Ltd. provides information technology services and consulting.",
+   "basis": "600724caadb8",
+   "items": 2,
+   "updated": "2026-11-20T08:16+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "NTPC": {
    "summary": "PulsEdge flagged a tragic accident at NTPC's Tandwa project where three workers died and two were injured, and an investigation is now under way. The Energy sector index was flat over the past five sessions, showing little market movement.",
@@ -1272,6 +1256,22 @@
    "basis": "e5f80fc59bf5",
    "items": 1,
    "updated": "2026-11-19T13:11+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "ETERNAL": {
+   "summary": "Goldman Sachs has placed Eternal Ltd. in its list of 22 high‑growth stocks, highlighting it as a good long‑term bet.",
+   "why": "Shareholders may see increased attention from investors following the recommendation, which could affect the stock’s demand.",
+   "upside": "If investors act on the recommendation, the stock could attract more buying interest.",
+   "downside": "The rating is an opinion and does not guarantee performance, so expectations may not be met.",
+   "watch": [
+    "Eternal’s upcoming earnings results",
+    "Further analyst coverage or upgrades",
+    "Broader market reaction to the high‑growth list"
+   ],
+   "about": "",
+   "basis": "e5f80fc59bf5",
+   "items": 1,
+   "updated": "2026-11-20T08:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "INDIGO": {
@@ -1338,20 +1338,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "PNBHOUSING": {
-   "summary": "PNB Housing Finance announced that its Chief of Operations and Customer Service is resigning effective November 30, 2026. The company also disclosed the allotment of new securities, which may increase the total number of shares.",
-   "why": "Leadership changes and new share issuances can create uncertainty for investors and potentially reduce the value of each existing share.",
+   "summary": "PNB Housing Finance announced the resignation of a senior director and its chief operating officer, effective at the end of November. The financial services sector index rose modestly in recent sessions.",
+   "why": "Leadership changes can affect the company's strategy and operational performance, which matters to shareholders.",
    "upside": "",
-   "downside": "The departure of a senior executive and the issuance of new shares could lead to lower stock prices or reduced earnings per share.",
+   "downside": "The departures may cause internal disagreements and a gap in leadership if a new COO is not appointed quickly.",
    "watch": [
-    "Appointment of a new Chief of Operations",
-    "Details on the number of new shares allotted",
-    "Company statements explaining the reason for the resignation"
+    "Appointment of a new chief operating officer",
+    "Further senior management changes",
+    "Impact of sector momentum on the stock"
    ],
-   "about": "PNB Housing Finance is a financial services company that provides housing loans.",
-   "basis": "c85fc628bb16",
-   "items": 3,
-   "updated": "2026-11-19T03:10+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "PNB Housing Finance provides home loan and related financing services in India.",
+   "basis": "eef1a0768f92",
+   "items": 2,
+   "updated": "2026-11-20T08:16+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "ITC": {
    "summary": "ITC plans to raise cigarette prices gradually starting in 2027, with pack prices expected to increase by ₹10 to ₹15. The price hikes will apply to all cigarette brands.",
@@ -1418,20 +1418,52 @@
    "model": "openai/gpt-oss-120b"
   },
   "COALINDIA": {
-   "summary": "Coal India’s subsidiaries are moving to the market. Mahanadi Coalfields is launching an IPO and NLC India Renewables has filed for its own IPO. The parent company is under close watch as these listings could shift focus and affect its shares.",
-   "why": "Shareholders could see the parent’s cash position change and may face dilution from new shares.",
-   "upside": "If the IPOs are well‑received, Coal India could receive cash and a higher valuation.",
-   "downside": "Weak demand or oversubscription could lead to selling pressure and dilute existing holdings.",
+   "summary": "Coal India is in the news because its subsidiary, Mahanadi Coalfields, is launching a public share sale. This event is drawing significant attention from investors and may influence how the market views the parent company.",
+   "why": "The sale of shares in a major subsidiary could change the value of Coal India’s assets and how investors perceive its overall worth. It may also affect the company's cash position and focus.",
+   "upside": "The share sale could bring in cash for Coal India and potentially unlock more value in its assets.",
+   "downside": "Early interest in the new share sale seems lower than expected, which might worry investors about the parent company's value or lead to short-term selling pressure.",
    "watch": [
-    "Mahanadi Coalfields IPO subscription levels",
-    "NLC India Renewables IPO pricing and demand",
-    "Oil & Gas sector index movement and any price volatility"
+    "How the Mahanadi Coalfields share sale performs on its first day of trading.",
+    "Any changes in Coal India's stock price following the subsidiary's listing.",
+    "News about NLC India Renewables' separate green energy share sale."
    ],
-   "about": "Coal India Ltd is a state‑owned coal mining company in India.",
-   "basis": "ddf820f3aec1",
-   "items": 8,
-   "updated": "2026-11-19T13:31+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Coal India is a major coal company and one of India's 50 largest listed companies.",
+   "basis": "746246ab21b8",
+   "items": 7,
+   "updated": "2026-11-20T08:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "BANKINDIA": {
+   "summary": "Bank of India is facing a mixed environment where rising consumer prices might keep interest rates high, while government bond yields have recently slipped. This creates a tug-of-war between higher borrowing costs for customers and potentially lower funding costs for the bank.",
+   "why": "Changes in interest rates and bond prices directly affect how much it costs the bank to borrow money and how much it earns from lending, which influences its profits.",
+   "upside": "If government bond yields stay low, the bank's funding costs could drop, potentially supporting its financial performance.",
+   "downside": "If inflation stays high and interest rates remain elevated, borrowing becomes more expensive for people and businesses, which could slow down loan growth.",
+   "watch": [
+    "Updates on consumer price inflation and interest rate decisions.",
+    "Movements in Indian government bond yields.",
+    "Performance of the broader Financials sector index."
+   ],
+   "about": "",
+   "basis": "3f5adc5bbae9",
+   "items": 3,
+   "updated": "2026-11-20T08:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "ABDL": {
+   "summary": "Allied Blenders and Distillers has disclosed ongoing legal cases and an update on arbitration proceedings. The company also reported receiving a regulatory order or notice from authorities.",
+   "why": "These legal and regulatory matters could lead to fines or compensation costs, which might reduce the company's profits.",
+   "upside": "The regulatory order may be minor or related to routine tax disputes, meaning the financial impact could be limited.",
+   "downside": "An unfavorable outcome in the legal disputes could result in significant fines or compensation payments.",
+   "watch": [
+    "Updates on the status of the arbitration proceedings",
+    "Details regarding the specific regulatory order received",
+    "Any new disclosures about other pending litigation"
+   ],
+   "about": "",
+   "basis": "1c16c76faa5a",
+   "items": 3,
+   "updated": "2026-11-20T08:16+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "ENGINERSIN": {
    "summary": "Engineers India Ltd is a construction company listed on the NSE and part of the Nifty 500 index. No company‑specific announcements have been flagged in recent days.",
