@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T12:30+05:30",
+ "updated": "2026-11-20T13:16+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a weak start on Friday as the GIFT Nifty fell sharply, pulling many stocks lower. AI‑related concerns kept small‑cap tech stocks under pressure while Indian IT firms rose, bucking the global trend. Metal indices slipped about 3% on a stronger US dollar, whereas hospital stocks surged and Jupiter Wagons won a repeat order worth over INR 128 crore. Ashoka Buildcon’s shares dropped after a Saudi project was cancelled, adding to sectoral volatility.",
+  "summary": "PulsEdge flagged a weak market start with the GIFT Nifty dropping sharply, while Indian IT stocks rose against a global AI sell‑off that hit small‑cap tech names. Metals fell as a stronger US dollar squeezed commodity prices, but auto and consumer durables posted gains. Corporate news included Jupiter Wagons winning a repeat order worth over ₹128 crore and Ashoka Buildcon losing a Saudi project worth ₹846 crore. The government also launched a ₹34.35 billion e‑bus payment portal, which could lift electric‑bus makers.",
   "themes": [
-   "AI‑driven sell‑off hits small‑cap tech stocks",
-   "Strong US dollar drags down metal sector",
-   "Healthcare and IT stocks show relative strength"
+   "Mixed sector moves: IT up, metals down, autos and durables strong",
+   "Key corporate updates: new order for Jupiter Wagons, project loss for Ashoka Buildcon, Natco clears US FDA inspection",
+   "Market sentiment: weak opening, bond yields attracting funds, AI concerns weighing on tech small‑caps"
   ],
   "watch": [
-   "Potential further project cancellations or delays for Ashoka Buildcon",
-   "Raw material cost trends that could affect Jupiter Wagons and metal miners",
-   "Bond yield movements that may shift investor flow away from equities"
+   "Execution of Jupiter Wagons' new order and raw‑material cost impact",
+   "Roll‑out of the PM E‑Bus portal and order flow to Olectra Greentech and JBM Auto",
+   "Stability of AI‑related small‑cap stocks and continuation of the IT rally amid global tech sentiment"
   ],
   "date": "2026-11-20",
-  "basis": "f0950fdfc1fe",
-  "updated": "2026-11-20T12:30+05:30",
+  "basis": "b2cdd250382b",
+  "updated": "2026-11-20T13:16+05:30",
   "model": "openai/gpt-oss-120b",
-  "items": 53
+  "items": 62
  },
  "stocks": {
   "PAYTM": {
@@ -348,20 +348,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "SOLARINDS": {
-   "summary": "PulsEdge flagged that Solar Industries India is part of a broader market watchlist where a weaker open could affect its share price. Meanwhile, news about other solar companies winning large contracts shows growing activity in the sector.",
-   "why": "Market-wide sentiment can move the stock price even if the company's own business is stable, so investors should watch how it reacts to broader market trends.",
-   "upside": "Positive news from other solar firms may increase investor interest in the entire solar industry, including Solar Industries.",
-   "downside": "A weak market start could pull the stock price down regardless of the company's specific performance.",
+   "summary": "Solar Industries India Ltd. (SOLARINDS) has no specific company news recently, but PulsEdge flagged it as part of a broader market watch where a weaker opening could affect active stocks.",
+   "why": "Shareholders should note that overall market sentiment can move the stock even if the company’s fundamentals stay unchanged.",
+   "upside": "",
+   "downside": "A soft market start or negative sentiment could pull the share lower despite solid fundamentals.",
    "watch": [
-    "Early trading moves on days when the market opens lower",
-    "General news about the solar sector",
-    "Broader market sentiment affecting Nifty 500 stocks"
+    "Early market movement on the trading day",
+    "Overall Nifty 500 performance",
+    "Any sector‑specific news affecting chemicals companies"
    ],
-   "about": "Solar Industries India is a company in the Chemicals sector.",
-   "basis": "087955046428",
-   "items": 7,
-   "updated": "2026-11-20T08:30+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Solar Industries India Ltd. produces and sells industrial chemicals.",
+   "basis": "b3c49533bf3c",
+   "items": 6,
+   "updated": "2026-11-20T13:16+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "DALBHARAT": {
    "summary": "Dalmia Bharat's board will meet on November 23 to consider a proposal to buy back some of its own shares. This plan is currently under review and has not yet been approved.",
@@ -555,20 +555,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "PWL": {
-   "summary": "Physicswallah Ltd. shares recently rose after the online education company shared ambitious financial goals for the year 2030. A broker also shared a positive growth forecast, which boosted investor confidence.",
-   "why": "Setting high future targets means the company must work very hard to reach them, and expert forecasts can influence how investors view the stock.",
-   "upside": "Strong future growth guidance could help the company perform well if it meets its goals.",
-   "downside": "High valuation multiples and hard-to-reach growth targets may limit further gains.",
+   "summary": "Physicswallah Ltd. announced an ambitious FY30 revenue target of ₹10,000 crore, prompting the share price to rise 4‑6% in recent trading. The market is watching whether the company can execute its growth blueprint.",
+   "why": "If the revenue goal is met, earnings could improve, but the execution risk makes the outcome uncertain for shareholders.",
+   "upside": "Achieving the FY30 revenue target could boost earnings and support higher valuations.",
+   "downside": "The company may fall short of its high growth targets, limiting earnings growth.",
    "watch": [
-    "Whether the company meets its FY30 targets",
-    "Changes in valuation multiples",
-    "Overall investor confidence"
+    "Progress on the FY30 revenue target",
+    "Execution of online and offline growth plans",
+    "Impact of valuation multiples on share price"
    ],
-   "about": "Physicswallah Ltd. is an online education company in the consumer services sector.",
-   "basis": "698552c2990f",
-   "items": 2,
-   "updated": "2026-11-19T15:30+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "Physicswallah Ltd. provides online education services.",
+   "basis": "52077b2c723d",
+   "items": 3,
+   "updated": "2026-11-20T13:16+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "SUPREMEIND": {
    "summary": "Supreme Industries Ltd. (SUPREMEIND) is listed in the Nifty 500 and operates in the capital goods sector. There are no specific recent announcements or events flagged for the company in the latest PulsEdge watch list.",
@@ -601,22 +601,6 @@
    "items": 1,
    "updated": "2026-11-20T07:57+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "TITAN": {
-   "summary": "Titan shares fell sharply over the last few days, dropping up to 5% in a single session. This decline happened alongside a broader market sell-off and a drop in gold prices, which affected other jewellery companies too.",
-   "why": "If you own these shares, the recent price drop means the value of your holding has decreased. The movement is linked to wider market trends and changes in gold prices, not just company-specific news.",
-   "upside": "Lower gold prices might encourage more people to buy jewellery during the upcoming wedding season, which could boost sales.",
-   "downside": "Falling gold prices can lead to lower profits from inventory and reduced demand for gold loans, which may hurt the company's earnings.",
-   "watch": [
-    "How gold prices move in the coming weeks",
-    "Sales performance during the wedding season",
-    "Whether the broader stock market stabilizes"
-   ],
-   "about": "Titan is a major Indian company in the consumer durables sector, known for selling jewellery and watches.",
-   "basis": "4d0ebac781c5",
-   "items": 5,
-   "updated": "2026-11-20T10:16+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "SIGNATURE": {
    "summary": "Signatureglobal is expanding its land bank, buying two 10‑acre parcels in Gurugram and securing development rights over 10.18 acres in Sohna, while reporting 4,400 cr of project launches in H1 and targeting 10,000 cr of bookings for FY27.",
@@ -778,6 +762,22 @@
    "updated": "2026-11-20T12:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "TITAN": {
+   "summary": "Titan shares have slipped 4‑5% in recent sessions as falling gold prices and weaker retail demand weigh on the jeweller, even as the broader consumer durables index showed a modest gain of 3.6% in the last session.",
+   "why": "Shareholders see price pressure from potential inventory write‑downs and lower loan demand, while demand cycles could affect future earnings.",
+   "upside": "A rebound in wedding and festive season demand or lower gold prices boosting consumer buying could lift the stock.",
+   "downside": "Further declines in gold prices or continued weak consumer demand could deepen the share fall.",
+   "watch": [
+    "Gold price trends",
+    "Wedding/festive season demand",
+    "Consumer durables sector sentiment"
+   ],
+   "about": "Titan Company makes jewellery, watches and other consumer durables in India.",
+   "basis": "882e77d1cc25",
+   "items": 4,
+   "updated": "2026-11-20T13:16+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "MARUTI": {
    "summary": "Maruti Suzuki shares have risen sharply as the auto sector rallied, with the Nifty Auto index up 4.4% in the last session and 1.3% over five sessions. The stock also appeared in a recent list of top picks by a broker.",
    "why": "A sector rally can lift the share price, but the gains may be fragile if costs rise again.",
@@ -793,22 +793,6 @@
    "items": 4,
    "updated": "2026-11-20T09:30+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "SAIL": {
-   "summary": "SAIL shares have fallen sharply as global metal prices dropped and the US dollar strengthened. The company led losses in the Nifty Metal index, which is down 4.4% over the last five sessions.",
-   "why": "Lower metal prices reduce the profit margins for steel companies, which can lower the earnings available to shareholders.",
-   "upside": "A sudden reversal in the US dollar or new stimulus from China could help metal prices recover.",
-   "downside": "Further declines in global metal prices would continue to pressure the company's earnings.",
-   "watch": [
-    "Global metal price trends",
-    "US dollar strength",
-    "Potential China stimulus news"
-   ],
-   "about": "SAIL is a major steel company listed in India's Metals & Mining sector.",
-   "basis": "c94bbd3d695c",
-   "items": 4,
-   "updated": "2026-11-19T11:45+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
    "summary": "Tata Steel is facing higher iron‑ore costs and is still discussing financial assistance with the Dutch government while metal stocks have been falling.",
@@ -1033,6 +1017,54 @@
    "items": 2,
    "updated": "2026-11-20T12:30+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "SAIL": {
+   "summary": "SAIL is in focus as metal prices have slipped, pressuring earnings. Metal stocks fell sharply after a global commodity price drop and a stronger US dollar.",
+   "why": "Earnings pressure from lower metal prices can affect the profitability of SAIL’s shares.",
+   "upside": "If global metal prices stabilize or rise, SAIL’s earnings could improve.",
+   "downside": "Further declines in global metal prices could hurt SAIL’s profit margins.",
+   "watch": [
+    "Metal price trends",
+    "US dollar index movements",
+    "China stimulus announcements"
+   ],
+   "about": "SAIL is a leading Indian steel producer.",
+   "basis": "cb4e465fc185",
+   "items": 2,
+   "updated": "2026-11-20T13:16+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "JBMA": {
+   "summary": "JBM Auto is seen as a potential beneficiary of the Indian government’s new PM E‑Bus Sewa payment portal, which aims to fund electric bus projects. The auto sector has also posted gains, up 4.4% in the last session.",
+   "why": "Shareholders watch because the portal could translate into more electric‑bus orders for JBM, but any delay in rollout may push those orders back.",
+   "upside": "Timely implementation of the portal could generate new orders and boost revenue.",
+   "downside": "Implementation delays could postpone expected orders and affect earnings.",
+   "watch": [
+    "Progress on the PM E‑Bus Sewa portal rollout",
+    "Actual government or state transport bus order bookings",
+    "Further developments in India’s EV policy and auto sector trends"
+   ],
+   "about": "JBM Auto designs and manufactures electric buses and other automotive components.",
+   "basis": "73e69bed927b",
+   "items": 1,
+   "updated": "2026-11-20T13:16+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "OLECTRA": {
+   "summary": "The Indian government has launched a payment portal for electric buses with a budget of 34.35 billion rupees. This new portal is designed to support the PM E-Bus Sewa scheme.",
+   "why": "This development matters to shareholders because it could boost demand for electric bus makers like Olectra Greentech.",
+   "upside": "Government funding and the new payment portal could increase orders for the company's electric buses.",
+   "downside": "Implementation delays could postpone expected orders.",
+   "watch": [
+    "Progress on the PM E-Bus Sewa payment portal",
+    "Any announcements of new bus orders",
+    "Movement in the Auto sector index"
+   ],
+   "about": "Olectra Greentech Ltd. is an auto and auto components company that makes electric buses.",
+   "basis": "73e69bed927b",
+   "items": 1,
+   "updated": "2026-11-20T13:16+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "HINDZINC": {
    "summary": "Hindustan Zinc's shares have fallen along with the broader metal sector, prompting analysts to compare it with Tata Steel and JSW Steel to gauge relative safety. The metals index rose 0.6% in the last session but is down 3.7% over the past five sessions, reflecting ongoing industry weakness.",

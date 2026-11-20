@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T13:01:53+05:30",
+ "updated": "2026-11-20T13:17:44+05:30",
  "summary": {
-  "calls": 1901,
-  "scored_calls": 733,
+  "calls": 1904,
+  "scored_calls": 736,
   "d1": {
    "scored": 549,
    "hits": 225,
@@ -23,6 +23,51 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "3594d7a1426500a2",
+   "symbol": "PWL",
+   "time": "2026-11-20T13:11:10+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Can Physicswallah deliver on its ambitious growth blueprint?",
+   "url": "https://www.livemint.com/market/mark-to-market/physicswallah-edtech-online-education-offline-coaching-revenue-growth-ebitda-margins-jee-neet-ai-tutor-11795156474405.html",
+   "alert_px": 137.0,
+   "alert_move": 0.58,
+   "alert_at": "2026-11-20T13:16:46+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "cf9983777dc1fae1",
+   "symbol": "JBMA",
+   "time": "2026-11-20T13:10:12+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "INDIA GOVT LAUNCHES PM E BUS SEWA PAYMENT SECURITY PORTAL WITH RS 34.35B OUTLAY ( OLECTRA GREENTECH, JBM AUTO )",
+   "url": "https://t.me/Indiaredboxglobal/9780",
+   "alert_px": 483.5,
+   "alert_move": -0.93,
+   "alert_at": "2026-11-20T13:11:27+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "cf9983777dc1fae1",
+   "symbol": "OLECTRA",
+   "time": "2026-11-20T13:10:12+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "INDIA GOVT LAUNCHES PM E BUS SEWA PAYMENT SECURITY PORTAL WITH RS 34.35B OUTLAY ( OLECTRA GREENTECH, JBM AUTO )",
+   "url": "https://t.me/Indiaredboxglobal/9780",
+   "alert_px": 997.4,
+   "alert_move": -0.72,
+   "alert_at": "2026-11-20T13:11:27+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "506f1c99f6f69c97",
    "symbol": "OIL",
