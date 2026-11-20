@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T15:16+05:30",
+ "updated": "2026-11-20T15:30+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -697,22 +697,6 @@
    "items": 1,
    "updated": "2026-11-20T08:46+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "NETWEB": {
-   "summary": "Netweb Technologies reported record profits and a large backlog of AI‑related work, and its shares have jumped 42% from the 52‑week low. The broader IT index has been falling, down 0.9% in the last session and 2.5% over five sessions.",
-   "why": "Strong future orders could keep earnings high, which matters to shareholders. However, the recent price surge may lead some investors to book profits, which could pressure the stock.",
-   "upside": "If the AI backlog turns into revenue, earnings could stay strong.",
-   "downside": "If many investors sell to lock in gains, the share price could fall.",
-   "watch": [
-    "Next earnings release",
-    "Progress on AI project deliveries",
-    "Any sharp moves in the stock after the recent rally"
-   ],
-   "about": "Netweb Technologies India Ltd. provides information technology services.",
-   "basis": "f7d30fcc4e4d",
-   "items": 1,
-   "updated": "2026-11-18T11:30+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "OIL": {
    "summary": "Oil India Ltd. (OIL) is an oil and gas company listed in the Nifty 500. Recent headlines show oil prices rising due to geopolitical tensions and supply concerns, which could affect the company’s earnings. The sector index has gained 0.9% in the last session and over five sessions.",
@@ -1577,6 +1561,22 @@
    "updated": "2026-11-20T08:16+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "IKS": {
+   "summary": "Inventurus Knowledge Solutions has announced it will merge with Turbo Health Holdings. The company also filed a general update regarding this acquisition process.",
+   "why": "Mergers can change a company's size, debt levels, and future earnings, which directly impacts the value of its shares.",
+   "upside": "The merger could increase the company’s overall size and earnings.",
+   "downside": "Integration challenges and merger uncertainty may lead to volatility in the share price.",
+   "watch": [
+    "Official merger completion dates",
+    "How the combined company manages debt",
+    "Progress of the integration process"
+   ],
+   "about": "",
+   "basis": "45c7c0fe2a3b",
+   "items": 2,
+   "updated": "2026-11-20T15:30+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "IPCALAB": {
    "summary": "IPCA Laboratories announced it will sell a business unit and shut a manufacturing operation. The company plans to sell the land and buildings associated with the closed unit.",
    "why": "These moves can change the company’s earnings and cash balance, which matters to shareholders.",
@@ -1642,20 +1642,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "MCX": {
-   "summary": "Gold prices slipped a little while silver rose on MCX. Small changes in metal prices can shift the exchange’s trading volumes.",
-   "why": "Trading volume drives the fees MCX earns, so price moves matter to shareholders.",
-   "upside": "Higher volatility in metal prices could boost trading activity and fee income.",
-   "downside": "If metal price moves reverse, trading volume may fall and affect earnings.",
+   "summary": "Multi Commodity Exchange of India Ltd. (MCX) has seen recent fluctuations in gold and silver prices on its platform. These price movements can influence the volume of trades and the fees MCX collects. The exchange is part of the Nifty 500 and operates within the financial services sector.",
+   "why": "Changes in metal prices directly affect MCX’s trading activity and fee income, which can impact the company’s earnings and shareholder value.",
+   "upside": "A rebound in gold or silver prices could lift trading volumes and boost MCX’s revenue.",
+   "downside": "Continued declines in metal prices may reduce trading volumes and lower fee income.",
    "watch": [
-    "Gold price direction",
-    "Silver price direction",
-    "Financial sector index performance"
+    "Gold price trend on MCX",
+    "Silver price trend on MCX",
+    "Trading volume and fee levels"
    ],
-   "about": "MCX runs India’s commodity exchange, where traders buy and sell items like gold and silver.",
-   "basis": "ae33298b5815",
-   "items": 2,
-   "updated": "2026-11-19T14:47+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Multi Commodity Exchange of India Ltd. operates a commodity exchange platform for trading metals and other commodities.",
+   "basis": "39363cede4c4",
+   "items": 3,
+   "updated": "2026-11-20T15:30+05:30",
+   "model": "openai/gpt-oss-20b"
   }
  }
 }
