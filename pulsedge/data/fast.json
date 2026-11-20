@@ -1,7 +1,40 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-20T10:34:26+05:30",
+ "updated": "2026-11-20T11:03:56+05:30",
  "items": [
+  {
+   "id": "632c904e3b256308",
+   "time": "2026-11-20T11:02:52+05:30",
+   "headline": "GREAVES COTTON: AMPERE ACHIEVES 6% E2W MARKET SHARE, CONSOLIDATING ITS TOP 5 POSITION; VOLUMES UP 70% OVER MTD OCTOBER, AHEAD OF OVERALL EV TWO-WHEELER MARKET GROWTH OF 20%",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9774",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "EV",
+    "Auto Components"
+   ],
+   "impact": 0,
+   "confidence": 0,
+   "category": "Market Color",
+   "action": "No specific listed stock action required as the named entity is not in the candidate list.",
+   "reason": [
+    "Ampere is the subject, but no candidate ticker is provided.",
+    "General market growth data does not trigger specific stock moves without a listed proxy."
+   ],
+   "risks": [
+    "None"
+   ],
+   "plain": "Ampere reports strong sales growth in electric two-wheelers, outpacing the overall market.",
+   "why": "Since Ampere is not a listed company in your watchlist, this news does not directly affect your holdings.",
+   "check": "",
+   "original": "GREAVES COTTON: AMPERE ACHIEVES 6% E2W MARKET SHARE, CONSOLIDATING ITS TOP 5 POSITION; VOLUMES UP 70% OVER MTD OCTOBER, AHEAD OF OVERALL EV TWO-WHEELER MARKET GROWTH OF 20%",
+   "latency": 64.6,
+   "lane": "fast"
+  },
   {
    "id": "97938ec014c8db12",
    "time": "2026-11-20T10:33:31+05:30",
@@ -1497,146 +1530,6 @@
    "check": "",
    "original": "TRUMP SAYS GRATEFUL TO XI FOR WARM WELCOME BACK TO CHINA",
    "latency": 80.6,
-   "lane": "fast"
-  },
-  {
-   "id": "0733e171ab6389ba",
-   "time": "2026-11-19T10:58:14+05:30",
-   "headline": "TATA TECHNOLOGIES (TATA TECH) – STRONG INVESTOR DAY OUTLOOK",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9654",
-   "section": "news",
-   "call": "watch",
-   "horizon": "positional",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "TATATECH",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "IT Services"
-   ],
-   "impact": 65,
-   "confidence": 70,
-   "category": "Corporate Strategy",
-   "action": "Monitor if the stock holds its recent gains as the market digests the long-term targets.",
-   "reason": [
-    "Management outlined aggressive revenue and margin targets for FY30.",
-    "Significant margin expansion (15.5% to >20%) suggests strong operational leverage."
-   ],
-   "risks": [
-    "Targets are for FY30, so execution risk remains high over the next 4 years.",
-    "Market may already be pricing in some of this optimism."
-   ],
-   "plain": "The company shared a plan to grow sales and profits significantly by 2030.",
-   "why": "It shows management is confident in future earnings, which can make the stock more attractive to long-term investors.",
-   "check": "Look at how the stock price reacts in the coming days to see if investors agree with the plan.",
-   "original": "Strong long-term growth ambitions outlined at Investor Day. FY30 Revenue Target: $1.1–$1.3 billion. EBITDA Margin Target: Above 20%, versus FY26 margin of 15.5%. Software Business: Target to double the software business in 3 years. Aerospace: Target $100 million revenue by FY28.",
-   "latency": 53.9,
-   "lane": "fast"
-  },
-  {
-   "id": "fe24b53d30a9afca",
-   "time": "2026-11-19T10:53:02+05:30",
-   "headline": "SAUDI ARABIA ISSUES WARNING OF POTENTIAL DANGER IN ABHA",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9652",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "geopolitical",
-   "action": "No specific stock action required; monitor general market sentiment if broader regional tensions escalate.",
-   "reason": [
-    "No Indian listed company is named or directly impacted.",
-    "Geopolitical warning in Saudi Arabia has no clear, immediate transmission to specific NSE stocks."
-   ],
-   "risks": [
-    "Potential indirect impact on oil prices or defense sector sentiment if conflict escalates."
-   ],
-   "plain": "Saudi Arabia issued a safety warning for the Abha region.",
-   "why": "This is a local geopolitical event with no direct link to specific Indian companies.",
-   "check": "",
-   "original": "SAUDI ARABIA ISSUES WARNING OF POTENTIAL DANGER IN ABHA",
-   "latency": 65.6,
-   "lane": "fast"
-  },
-  {
-   "id": "c1eb7cb21e2ea975",
-   "time": "2026-11-19T10:52:08+05:30",
-   "headline": "ARMEE INFOTECH: CO SIGNS MOU WITH MSEDCL FOR 135 MW SOLAR",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9651",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "SOLARINDS",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Renewable Energy",
-    "Power"
-   ],
-   "impact": 45,
-   "confidence": 60,
-   "category": "Corporate Announcement",
-   "action": "Monitor if the MOU converts into firm orders and check for similar announcements from other solar EPC players.",
-   "reason": [
-    "Large order value (Rs 1,629 Cr) signals strong demand for solar EPC services.",
-    "MOU is non-binding, so revenue recognition is not guaranteed yet."
-   ],
-   "risks": [
-    "MOU may not lead to final contracts.",
-    "Execution delays or cost overruns in large projects."
-   ],
-   "plain": "A solar company signed a non-binding agreement to build a large power project in Maharashtra.",
-   "why": "It shows strong demand for their services, but the deal is not final yet, so it is a positive sign rather than a guaranteed win.",
-   "check": "Look for news about the final contract signing or revenue booking in the next few months.",
-   "original": "POWER PROJECT IN MAHARASHTRA; AGGREGATE ORDER VALUE OF RS 1,629 CRORE",
-   "latency": 60.1,
-   "lane": "fast"
-  },
-  {
-   "id": "0048bcaf0fdf17a0",
-   "time": "2026-11-19T10:35:26+05:30",
-   "headline": "INDIA PROPOSES SEPARATE LICENSING REGIME FOR WHOLESALE BULK DRUGS",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9650",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "positional",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Pharma"
-   ],
-   "impact": 10,
-   "confidence": 50,
-   "category": "Regulatory",
-   "action": "Monitor future regulatory clarifications for potential sector-wide shifts.",
-   "reason": [
-    "No specific listed company is named in the headline.",
-    "The proposal is at the policy stage and lacks immediate operational details."
-   ],
-   "risks": [
-    "Regulatory uncertainty could affect wholesale margins.",
-    "Implementation details may vary from initial proposals."
-   ],
-   "plain": "India is considering new rules for how bulk medicines are sold in large quantities.",
-   "why": "It is too early to know how this will affect specific companies or prices.",
-   "check": "Look for official government notifications detailing the new licensing rules.",
-   "original": "INDIA PROPOSES SEPARATE LICENSING REGIME FOR WHOLESALE BULK DRUGS",
-   "latency": 102.3,
    "lane": "fast"
   }
  ]
