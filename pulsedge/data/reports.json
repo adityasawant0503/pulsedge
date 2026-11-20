@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T19:22+05:30",
+ "updated": "2026-11-21T00:18+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a mix of major order wins and contract cancellations shaping the Indian stock market on Friday, November 20, 2026. Companies like Kirloskar Brothers and Jupiter Wagons secured large new contracts, while Ashoka Buildcon faced a project cancellation in Saudi Arabia. Meanwhile, gold price drops impacted gold loan companies, and global worries weighed on tech and small-cap stocks.",
+  "summary": "PulsEdge flagged several AI‑related headlines that could sway Indian IT stocks, including a US Senate hearing on former Nvidia CEO Jensen Huang and a volatile IPO for Anthropic. A US political promise to tax overseas data centres may also affect metal and IT shares. In today’s market banks led gains, while media and metals lagged. Foreign fund futures stayed steady with 34% long positions.",
   "themes": [
-   "Major contract wins and orders boosting revenue visibility for select companies",
-   "Global tech worries and gold price drops impacting specific sectors",
-   "Large block deals and fundraising plans drawing investor attention"
+   "AI and chip news abroad likely to move Indian IT stocks",
+   "Banking sector showed solid strength while media and metals slipped",
+   "US policy signals could impact metal and data‑center related shares"
   ],
   "watch": [
-   "Execution timelines and potential cost overruns for newly awarded large orders",
-   "Further movements in gold prices and their impact on gold loan companies",
-   "Updates on unconfirmed reports, such as potential new deals for pump makers"
+   "Watch for the US Senate hearing of Jensen Huang and its effect on Indian IT stocks",
+   "Monitor any US tax moves on overseas data centres for possible metal and IT reactions",
+   "See how Indian IT shares respond to today’s AI headlines in the next session"
   ],
-  "date": "2026-11-20",
-  "basis": "7b158118ff9e",
-  "updated": "2026-11-20T19:22+05:30",
-  "model": "gemini-flash-lite-latest",
-  "items": 132
+  "date": "2026-11-21",
+  "basis": "109f9336b5b1",
+  "updated": "2026-11-21T00:18+05:30",
+  "model": "openai/gpt-oss-120b",
+  "items": 4
  },
  "stocks": {
   "PAYTM": {
@@ -300,20 +300,20 @@
    "model": "gemini-flash-lite-latest"
   },
   "APLAPOLLO": {
-   "summary": "APL Apollo Tubes is in the news because its promoter family is looking to sell about 28% of the company, which could bring in roughly ₹17,000 crore. A major investment bank has also named the stock a conviction pick after its Q2 results, suggesting it could be a good buy for investors.",
-   "why": "Shareholders should watch because a large sale could dilute their holdings and affect the share price, while a bank’s endorsement might bring more buyers into the market.",
-   "upside": "If the bank’s recommendation attracts new investors, the share price could rise.",
-   "downside": "If the promoter sale goes through, it could dilute existing shareholders and push the price lower, and the deal may not close.",
+   "summary": "The promoter Gupta family is exploring a sale of about 28% of APL Apollo Tubes, valued at roughly ₹17,000 crore, with the total deal possibly exceeding ₹32,000 crore including a mandatory open offer.",
+   "why": "This matters because a large stake sale could affect the share price and ownership structure for existing shareholders.",
+   "upside": "",
+   "downside": "The sale could dilute existing shareholders and put downward pressure on the share price.",
    "watch": [
-    "Whether the promoter sale deal closes and the size of the open offer",
-    "How the market reacts to Axis Securities’ conviction pick",
-    "Any updates on the company’s Q2 results"
+    "Whether the promoter stake sale is finalized",
+    "Details of the mandatory open offer",
+    "Market reaction to the potential dilution"
    ],
    "about": "",
-   "basis": "ea8caa769cda",
-   "items": 2,
-   "updated": "2026-11-19T15:30+05:30",
-   "model": "openai/gpt-oss-20b"
+   "basis": "9c99b49de97d",
+   "items": 1,
+   "updated": "2026-11-21T00:18+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "IREDA": {
    "summary": "IREDA shares rose 11% to a four‑month high, ending a six‑month decline. The rally reflects renewed investor confidence in the renewable‑energy business.",
@@ -380,20 +380,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "SOLARINDS": {
-   "summary": "Solar Industries India Ltd. (SOLARINDS) is a chemicals company listed on the NSE and part of the Nifty 500. No company‑specific news has been reported in the last few days. The market may be influenced by broader sentiment affecting active stocks.",
-   "why": "Shareholders should note that the company’s performance is tied to overall market movements and sector trends.",
-   "upside": "",
-   "downside": "",
+   "summary": "Solar Industries India Ltd (SOLARINDS) is a chemicals company in the Nifty 500. Recent sector news shows new solar capacity being built and several solar firms receiving orders, while broader market sentiment may be weaker at the open.",
+   "why": "Shareholders should note that rising solar demand could boost the company’s sales, but execution delays and market sentiment could affect its performance.",
+   "upside": "Higher demand for solar‑related chemicals could lift revenue if new capacity and orders materialise.",
+   "downside": "Project delays or a weak market start could pressure the stock.",
    "watch": [
-    "Any new filings or press releases from Solar Industries",
-    "Market moves affecting the chemicals sector",
-    "Changes in Nifty 500 composition"
+    "Progress on Vikram Solar’s 9 GW facility commissioning by March 2027",
+    "Early market movements affecting Nifty 500 stocks",
+    "Updates on solar MoUs or order receipts indicating sector demand"
    ],
-   "about": "Solar Industries India Ltd. is a chemicals company listed on the NSE.",
-   "basis": "88e1c6931af2",
+   "about": "Solar Industries India Ltd operates in the chemicals sector.",
+   "basis": "f05f6ae9886f",
    "items": 5,
-   "updated": "2026-11-20T15:16+05:30",
-   "model": "openai/gpt-oss-20b"
+   "updated": "2026-11-21T00:18+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "NBCC": {
    "summary": "NBCC won a new construction contract worth about 85 crore rupees and announced similar work orders of roughly the same value. The orders add to the company’s revenue pipeline.",
@@ -427,37 +427,6 @@
    "updated": "2026-11-20T14:01+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "RVNL": {
-   "summary": "Rail Vikas Nigam Ltd. is a construction company included in the Nifty 500 index. Recent reports indicate its share price has dropped significantly from its highest point.",
-   "why": "This matters to shareholders because the current price level reflects a major decline, and some analysts believe the stock may still be overpriced.",
-   "upside": "",
-   "downside": "Some investment firms believe the stock is still too expensive and could fall further in value.",
-   "watch": [
-    "Whether the share price stabilizes or continues to decline",
-    "How the company's construction projects affect its financial health"
-   ],
-   "about": "Rail Vikas Nigam Ltd. is a company in the construction sector.",
-   "basis": "dfea7d9e9a03",
-   "items": 1,
-   "updated": "2026-11-19T00:20+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "BSE": {
-   "summary": "BSE Ltd. is in the news as a platform for a new subsidiary IPO, faces competition from NSE over equity‑option contracts, and is watching possible SEBI curbs on multi‑commodity trading platforms. These developments could influence its trading volumes and fee income.",
-   "why": "Shareholders should watch because new listings can boost revenues while regulatory changes or competition could cut earnings.",
-   "upside": "A successful IPO listing on BSE could increase fee revenue.",
-   "downside": "Stricter SEBI rules on MTFs could reduce trading income.",
-   "watch": [
-    "Outcome of NLC India Renewables Ltd. IPO filing on BSE",
-    "NSE's use of equity‑option script and its impact on BSE's market share",
-    "Potential SEBI restrictions on multi‑commodity trading platforms"
-   ],
-   "about": "BSE Ltd. operates India’s oldest stock exchange, providing trading, clearing and related services.",
-   "basis": "76084ced6e0b",
-   "items": 3,
-   "updated": "2026-11-20T08:16+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "JUBLINGREA": {
    "summary": "Jubilant Ingrevia Ltd. announced the resignation of a senior director and its chief financial officer, effective at the end of November 2026.",
    "why": "Shareholders may be concerned about possible management instability and uncertainty over future financial guidance.",
@@ -473,22 +442,6 @@
    "items": 3,
    "updated": "2026-11-19T13:31+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "ANGELONE": {
-   "summary": "Angel One Ltd. shares dropped up to 3 percent alongside other capital market stocks. This happened because the regulator, SEBI, is considering new curbs on MTF, a way traders borrow money to buy shares.",
-   "why": "Stricter rules from the regulator could change how these companies operate and potentially lower their earnings.",
-   "upside": "",
-   "downside": "Regulatory action could turn out to be more severe than expected.",
-   "watch": [
-    "Updates on SEBI and potential MTF curbs",
-    "Stock price movement for Angel One and the Financials sector",
-    "Changes in trading volumes"
-   ],
-   "about": "Angel One Ltd. is a financial services company operating in India's stock market.",
-   "basis": "e176c1439303",
-   "items": 1,
-   "updated": "2026-11-19T15:16+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "AZAD": {
    "summary": "PulsEdge flagged several large trades in Azad Engineering shares on November 18, 2026. One investor sold about ₹800 crore worth of shares, while four other large investors bought a combined total of roughly ₹370 crore.",
@@ -651,20 +604,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is feeling the impact of recent oil‑price swings caused by geopolitical tensions and a growing global supply surplus. Analysts also see Brent crude averaging $75‑$85 by 2027, which could pressure earnings.",
-   "why": "Shareholder returns are closely tied to crude‑oil prices, so any move in global oil markets can affect the company’s profit outlook.",
-   "upside": "Higher oil prices from supply disruptions or stronger demand could lift earnings.",
-   "downside": "Falling long‑term oil prices and a surplus of crude supply could compress revenues.",
+   "summary": "Oil India Ltd. is navigating a mixed market where oil prices have fallen for three straight weeks due to high supply, but recent geopolitical attacks have caused short-term price spikes. The broader oil sector has seen a slight gain over the last five days.",
+   "why": "Since Oil India produces oil, its profits depend heavily on the price of crude; falling prices reduce revenue, while sudden spikes from conflicts can boost earnings temporarily.",
+   "upside": "Geopolitical tensions, such as attacks on shipping lanes or refineries, could restrict supply and push oil prices higher, benefiting the company's revenue.",
+   "downside": "A continued surplus in global oil supply is expected to keep prices lower in the long term, which would reduce the company's profits.",
    "watch": [
-    "Brent price forecast of $75‑$85 by 2027",
-    "Geopolitical events such as Ukrainian drone strikes and Houthi attacks that may tighten supply",
-    "Global crude‑supply trends, including the drop in US sour‑crude premiums"
+    "Whether the recent mine incident in the Hormuz Strait leads to lasting supply disruptions.",
+    "If the three-week decline in oil prices continues despite geopolitical news.",
+    "How the Nifty 500 index performs, as it may influence overall market sentiment for large companies like OIL."
    ],
-   "about": "Oil India Ltd. explores, produces and sells crude oil and natural gas in India.",
-   "basis": "3a7e787d6944",
-   "items": 18,
-   "updated": "2026-11-20T19:22+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Oil India Ltd. is an Indian company in the Oil Gas & Consumable Fuels sector that is part of the Nifty 500 index.",
+   "basis": "36d31cd9c505",
+   "items": 20,
+   "updated": "2026-11-21T00:18+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "MARUTI": {
    "summary": "Maruti Suzuki shares are part of a recent auto‑sector rally, with the Nifty Auto index up 4.4% in the last session and Maruti among the leading stocks. The company also appeared on a broker’s list of top stocks to buy, though this is just an opinion.",
@@ -681,22 +634,6 @@
    "items": 5,
    "updated": "2026-11-20T15:02+05:30",
    "model": "openai/gpt-oss-20b"
-  },
-  "CROMPTON": {
-   "summary": "PulsEdge flagged that Crompton Greaves Consumer Electricals Ltd. received a new government permit and also reported a change in its key licences. The broader consumer durables sector showed a slight dip of 0.4% in the last session.",
-   "why": "Shareholders should watch the licence update because it can affect the company’s ability to launch products or enter new markets.",
-   "upside": "If the new permit allows the company to expand its product range or geographic reach, revenue could improve.",
-   "downside": "If the licence change involves a withdrawal or restriction, it could limit operations and hurt earnings.",
-   "watch": [
-    "Details of the new government permit and its scope",
-    "Any further licence withdrawals or suspensions",
-    "Movement of the Consumer Durables index and related peer performance"
-   ],
-   "about": "Crompton Greaves Consumer Electricals Ltd. manufactures and sells consumer electrical appliances.",
-   "basis": "a1c431907597",
-   "items": 3,
-   "updated": "2026-11-20T19:22+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "INFY": {
    "summary": "Infosys shares have fallen sharply, losing about a quarter of investor wealth over the past year, while the broader Indian IT sector recently rallied 2% even as global tech stocks slipped. The sector index is down 1.1% in the last session and 3.9% over five sessions, showing mixed momentum.",
@@ -793,38 +730,6 @@
    "items": 2,
    "updated": "2026-11-20T15:02+05:30",
    "model": "openai/gpt-oss-20b"
-  },
-  "KALYANKJIL": {
-   "summary": "Kalyan Jewellers shares fell up to 4% after a sharp slide in gold prices, and the broader Consumer Durables index also slipped. The drop reflects concerns about lower gold prices affecting inventory values and loan demand.",
-   "why": "Shareholders see the price movement because falling gold prices can lead to inventory write‑downs and reduced demand for gold‑backed loans.",
-   "upside": "Lower gold prices could boost consumer buying of jewellery during festive and wedding seasons.",
-   "downside": "A continued fall in gold prices may force the company to write down inventory and see weaker loan demand.",
-   "watch": [
-    "Gold price trends",
-    "Consumer Durables sector performance",
-    "Festive and wedding season jewellery demand"
-   ],
-   "about": "Kalyan Jewellers India Ltd. is a retailer that designs, manufactures, and sells jewellery.",
-   "basis": "bf393177c577",
-   "items": 2,
-   "updated": "2026-11-20T19:22+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "TITAN": {
-   "summary": "Titan's share price fell recently, dropping up to 4% in one session as gold prices dropped. The broader consumer durables sector also saw a decline, with the index sliding 3% in a single day.",
-   "why": "Lower gold prices can reduce the value of a company's existing stock and lower demand for gold-backed loans, which may affect Titan's short-term earnings.",
-   "upside": "Cheaper gold could encourage more people to buy jewellery during festive and wedding seasons.",
-   "downside": "If the general market mood stays weak, the sell-off in consumer durables stocks could continue.",
-   "watch": [
-    "How gold prices move in the coming days",
-    "Sales trends during the festive and wedding seasons",
-    "Performance of other companies in the consumer durables sector"
-   ],
-   "about": "Titan is a major Indian company in the consumer durables sector, known for products like watches and jewellery.",
-   "basis": "bf393177c577",
-   "items": 2,
-   "updated": "2026-11-20T19:22+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "INDIGO": {
    "summary": "IndiGo is flagged for a possible earnings downgrade as analysts expect lower profits than previously forecast.",
@@ -1035,83 +940,35 @@
    "model": "openai/gpt-oss-120b"
   },
   "SUPREMEIND": {
-   "summary": "Supreme Industries Ltd. (SUPREMEIND) is listed in the Nifty 500 and operates in the capital goods sector. There are no specific recent announcements or events flagged for the company in the latest PulsEdge watch list.",
-   "why": "Shareholders watch large‑cap capital‑goods firms for stability and any future growth catalysts; the lack of recent news means no new drivers are evident now.",
-   "upside": "",
-   "downside": "",
+   "summary": "Supreme Industries is a capital goods company listed in the Nifty 500. Recent news highlights that a related entity, Supreme Power Equipment Limited, won a new contract.",
+   "why": "Winning new contracts can signal future sales growth, which may influence how investors view the company's stability.",
+   "upside": "The new contract could boost future sales and investor confidence.",
+   "downside": "The order size might be small compared to the company's total revenue.",
    "watch": [
-    "Look for any new order or contract wins announced by Supreme Industries",
-    "Monitor regulatory or legal developments affecting capital‑goods companies",
-    "Watch for changes in its Nifty 500 status or index weighting"
+    "The specific size of the new contract",
+    "Future announcements from Supreme Power Equipment Limited",
+    "General performance of the capital goods sector"
    ],
-   "about": "",
-   "basis": "af2044457e93",
-   "items": 2,
-   "updated": "2026-11-18T15:46+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "BATAINDIA": {
-   "summary": "Bata India Ltd. is seeing its shares pressured as the Nifty Consumer Durables index fell about 3% today, reflecting broader concerns for the sector. The sector has been slightly up over the past five sessions but slipped 0.2% in the last session.",
-   "why": "Sector sentiment can move Bata’s stock even without company‑specific news, so investors watch the broader consumer‑durables trend.",
-   "upside": "A rebound in the consumer‑durables index, which has been modestly positive over five days, could lift Bata’s shares.",
-   "downside": "If the sector‑wide sell‑off continues because market sentiment weakens, Bata’s stock could face further pressure.",
-   "watch": [
-    "Consumer durables index movement (daily and 5‑day)",
-    "Overall market sentiment toward consumer‑durables stocks",
-    "Any new company‑specific news or earnings releases"
-   ],
-   "about": "",
-   "basis": "266d2c7acd5a",
+   "about": "Supreme Industries operates in the capital goods sector.",
+   "basis": "54f730e34960",
    "items": 1,
-   "updated": "2026-11-18T14:01+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "DIXON": {
-   "summary": "Dixon Technologies is part of the consumer durables sector, which fell about 3% on the last trading day and over 3% across five sessions.",
-   "why": "Sector weakness can pull Dixon’s share price lower even if the company’s own fundamentals are unchanged.",
-   "upside": "A bounce in the consumer durables index could lift Dixon’s stock.",
-   "downside": "Continued sell‑off in the sector could keep pressure on Dixon’s shares.",
-   "watch": [
-    "Consumer durables index trend",
-    "Overall market sentiment",
-    "News on peer companies like Titan or Kalyan Jewellers"
-   ],
-   "about": "Dixon Technologies manufactures consumer electronics and appliances.",
-   "basis": "266d2c7acd5a",
-   "items": 1,
-   "updated": "2026-11-19T13:31+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "HAVELLS": {
-   "summary": "Havells India Ltd. is seeing pressure as the consumer durables sector fell about 3% in the latest session and over 3% across five sessions. The broader sell‑off in the sector could affect its stock performance.",
-   "why": "Shareholders feel the impact because sector sentiment often moves the stock even without company‑specific news.",
-   "upside": "If overall market sentiment improves, the consumer durables index could rebound, supporting Havells' share price.",
-   "downside": "A continued sector‑wide sell‑off could keep pressure on Havells' stock.",
-   "watch": [
-    "Consumer durables sector index movements",
-    "Broader market sentiment indicators",
-    "Any Havells‑specific news or earnings updates"
-   ],
-   "about": "Havells India Ltd. designs, manufactures and sells electrical lighting, fans and other consumer appliances.",
-   "basis": "266d2c7acd5a",
-   "items": 1,
-   "updated": "2026-11-19T13:01+05:30",
-   "model": "openai/gpt-oss-120b"
+   "updated": "2026-11-21T00:18+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "PNB": {
-   "summary": "Punjab National Bank shares have risen sharply in November, contributing to a record high for the public sector bank index. The bank recently announced a distribution partnership with SBI Mutual Fund and reported regulatory actions taken against it.",
-   "why": "A large price increase can lead to short-term selling as investors take profits, while the new partnership may help the bank attract more customers over time.",
-   "upside": "The partnership with SBI Mutual Fund could bring additional business and customers to the bank.",
-   "downside": "Regulatory actions reported by the bank may result in penalties or restrictions that affect its operations.",
+   "summary": "Punjab National Bank shares have risen sharply, joining other public sector banks in a 27% surge this month. The bank recently announced a partnership with SBI Mutual Fund to sell investment products, though it also reported regulatory actions taken against it.",
+   "why": "A large price jump in a short time can make shares feel expensive, which might lead to temporary pauses in buying or selling as investors take profits. The new partnership could help the bank attract more customers, but regulatory issues add uncertainty.",
+   "upside": "The new deal with SBI Mutual Fund may bring more customers and business to the bank.",
+   "downside": "Regulatory actions could lead to penalties or restrictions, and the recent sharp price rise might reverse if investors sell to lock in gains.",
    "watch": [
-    "How the market reacts to the recent regulatory actions",
-    "Whether the sharp price rise continues or leads to profit-taking",
-    "Progress of the mutual fund distribution partnership"
+    "How the bank handles the reported regulatory actions.",
+    "Whether the share price stabilizes after the recent 27% rise.",
+    "Progress of the mutual fund distribution partnership with SBI."
    ],
-   "about": "Punjab National Bank is a public sector bank in the financial services sector.",
-   "basis": "cd0c7e678a25",
-   "items": 5,
-   "updated": "2026-11-20T11:45+05:30",
+   "about": "Punjab National Bank is a financial services company listed in India's top 500 largest companies.",
+   "basis": "a14015fe0d39",
+   "items": 6,
+   "updated": "2026-11-21T00:18+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "HDFCBANK": {
@@ -1289,37 +1146,21 @@
    "updated": "2026-11-19T03:10+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "NTPC": {
-   "summary": "PulsEdge flagged a tragic accident at NTPC's Tandwa project where three workers died and two were injured, and an investigation is now under way. The Energy sector index was flat over the past five sessions, showing little market movement.",
-   "why": "Shareholders should watch the incident because it could pause work, raise safety costs, or attract regulatory scrutiny that may affect earnings.",
-   "upside": "If the investigation finds no major violations, the project could resume quickly and avoid additional costs.",
-   "downside": "Regulatory fines, safety audits, or prolonged project delays could increase expenses and hurt profitability.",
-   "watch": [
-    "Result of the accident investigation",
-    "Any regulatory actions or fines announced",
-    "Impact on project timelines and power output at Tandwa"
-   ],
-   "about": "NTPC Ltd. is a major Indian power generation company.",
-   "basis": "6d6aa8ded454",
-   "items": 2,
-   "updated": "2026-11-18T14:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "PRESTIGE": {
-   "summary": "Prestige Estates Projects Ltd. launched a new residential project called Prestige Avon in North Bengaluru and announced several corporate moves, including a 50% stake purchase in Advent Convention and Hotels International, the formation of two wholly owned subsidiaries, and an acquisition of another business. These actions aim to expand its portfolio and support future revenue growth.",
-   "why": "These developments could affect the company’s earnings and share price, making them important for current shareholders.",
-   "upside": "Successful bookings for Prestige Avon and smooth integration of the Advent stake and new acquisitions could boost revenue and earnings.",
-   "downside": "Execution delays, slower bookings, or integration challenges could hurt profitability and shareholder value.",
+   "summary": "Prestige Estates launched a new residential project in North Bengaluru and acquired a 50% stake in a convention and hotel company. The company also announced plans to create two new wholly owned subsidiaries.",
+   "why": "These moves could help grow the company's business and support its revenue over time, which is important for the long-term value of its shares.",
+   "upside": "New project launches and the hotel investment may generate presales and expand the company's portfolio.",
+   "downside": "Execution delays, slower-than-expected bookings, or integration issues with the new hotel stake could affect performance.",
    "watch": [
-    "Initial sales and construction progress of the Prestige Avon project",
-    "Integration and performance of the Advent Convention and Hotels International stake",
-    "Details and financial contribution of the two new subsidiaries"
+    "Initial bookings for the new North Bengaluru project",
+    "Details on the purpose and expected returns of the two new subsidiaries",
+    "Progress in integrating the Advent Convention and Hotels stake"
    ],
-   "about": "Prestige Estates Projects Ltd. is a real estate developer focused on residential and commercial projects in India.",
-   "basis": "4fcf9aeae4c1",
-   "items": 4,
-   "updated": "2026-11-20T10:31+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Prestige Estates is a realty company listed in India's Nifty 500 index.",
+   "basis": "56130011a6ea",
+   "items": 3,
+   "updated": "2026-11-21T00:18+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "WAAREEENER": {
    "summary": "Waaree Energies recently won a new contract worth one billion rupees. The company was also named a top performer in global solar quality tests for the fifth year in a row.",
@@ -1352,6 +1193,38 @@
    "items": 2,
    "updated": "2026-11-20T08:16+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "KALYANKJIL": {
+   "summary": "Kalyan Jewellers shares fell up to 4% after a sharp slide in gold prices, while the consumer durables index slipped 0.4% in the last session. The drop reflects market concerns over lower gold prices.",
+   "why": "Gold‑price declines raise the risk of inventory write‑downs and could reduce demand for gold‑backed loans, affecting earnings.",
+   "upside": "Lower gold prices might boost consumer buying during the festive and wedding seasons.",
+   "downside": "Falling gold prices could force inventory write‑downs and curb gold‑loan demand.",
+   "watch": [
+    "Gold price movements",
+    "Consumer demand in upcoming festive/wedding period",
+    "Consumer durables sector index trends"
+   ],
+   "about": "Kalyan Jewellers India Ltd. is a jewellery retailer in India.",
+   "basis": "9853f658684f",
+   "items": 1,
+   "updated": "2026-11-21T00:18+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "TITAN": {
+   "summary": "Titan shares fell up to 4% as gold prices slid, causing a drop in jewellery and gold‑loan stocks.",
+   "why": "The fall in gold prices can lead to inventory write‑downs and lower demand for gold‑backed loans, affecting Titan’s earnings.",
+   "upside": "Lower gold prices could boost consumer demand during festive and wedding seasons.",
+   "downside": "Inventory write‑downs and reduced loan demand could hurt Titan’s profitability.",
+   "watch": [
+    "Gold price movements",
+    "Inventory write‑down risk",
+    "Demand for gold‑backed loans"
+   ],
+   "about": "Titan Company Ltd. is a consumer durables company.",
+   "basis": "9853f658684f",
+   "items": 1,
+   "updated": "2026-11-21T00:18+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "ITC": {
    "summary": "ITC plans to raise cigarette prices gradually starting in 2027, with pack prices expected to increase by ₹10 to ₹15. The price hikes will apply to all cigarette brands.",
@@ -1417,22 +1290,6 @@
    "updated": "2026-11-18T15:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "POLYCAB": {
-   "summary": "Polycab India Ltd. has cut prices of its light‑duty cables and wires for the second time this week, with an average reduction of about 2.5% and a total cut of 5.5‑6%. The price cuts are effective from today.",
-   "why": "Shareholders should note that repeated price reductions could lower revenue unless sales volumes rise to offset the lower prices.",
-   "upside": "If sales volumes increase enough, the company could maintain revenue levels despite the price cuts.",
-   "downside": "If volume growth does not offset the lower prices, revenue growth could decline.",
-   "watch": [
-    "Effectiveness of the price cuts from today",
-    "Changes in sales volume for light‑duty cables and wires",
-    "Overall revenue impact of the price reductions"
-   ],
-   "about": "",
-   "basis": "e7c74b8e6a30",
-   "items": 1,
-   "updated": "2026-11-20T15:16+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
   "COALINDIA": {
    "summary": "Coal India is in focus as its subsidiary Mahanadi Coalfields is launching an IPO and the market is watching early price movements, while broader market sentiment could also affect its stock.",
    "why": "Shareholders should watch the IPO because it may dilute ownership or bring new capital, influencing the parent’s share value.",
@@ -1496,22 +1353,6 @@
    "items": 3,
    "updated": "2026-11-20T08:16+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "HINDALCO": {
-   "summary": "Hindalco Industries Ltd. recently saw its shares fall along with other metal stocks due to falling global commodity prices and a stronger US dollar. At the same time, an investment bank picked the company as a strong option following its recent earnings results.",
-   "why": "External factors like global commodity prices and currency changes can quickly impact the profits and share prices of metal producers. Broker recommendations can also influence whether other investors decide to buy or sell the stock.",
-   "upside": "Positive backing from major investment banks could attract new investors and help push the stock price up.",
-   "downside": "Falling global commodity prices and a stronger US dollar could continue to squeeze profit margins.",
-   "watch": [
-    "Global commodity price trends",
-    "Movements in the US dollar index",
-    "Any new stimulus announcements from China"
-   ],
-   "about": "Hindalco Industries Ltd. is a major metals and mining company that is part of India's Nifty 50 index.",
-   "basis": "a85cb5136dbd",
-   "items": 2,
-   "updated": "2026-11-20T13:32+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "IKS": {
    "summary": "Inventurus Knowledge Solutions has announced it will merge with Turbo Health Holdings. The company also filed a general update regarding this acquisition process.",
@@ -1624,6 +1465,38 @@
    "items": 3,
    "updated": "2026-11-20T15:30+05:30",
    "model": "openai/gpt-oss-20b"
+  },
+  "BSE": {
+   "summary": "BSE Ltd. is in the news as a platform for a new subsidiary IPO, faces competition from NSE over equity‑option contracts, and is watching possible SEBI curbs on multi‑commodity trading platforms. These developments could influence its trading volumes and fee income.",
+   "why": "Shareholders should watch because new listings can boost revenues while regulatory changes or competition could cut earnings.",
+   "upside": "A successful IPO listing on BSE could increase fee revenue.",
+   "downside": "Stricter SEBI rules on MTFs could reduce trading income.",
+   "watch": [
+    "Outcome of NLC India Renewables Ltd. IPO filing on BSE",
+    "NSE's use of equity‑option script and its impact on BSE's market share",
+    "Potential SEBI restrictions on multi‑commodity trading platforms"
+   ],
+   "about": "BSE Ltd. operates India’s oldest stock exchange, providing trading, clearing and related services.",
+   "basis": "76084ced6e0b",
+   "items": 3,
+   "updated": "2026-11-20T08:16+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "CROMPTON": {
+   "summary": "PulsEdge flagged that Crompton Greaves Consumer Electricals Ltd. received a new government permit and also reported a change in its key licences. The broader consumer durables sector showed a slight dip of 0.4% in the last session.",
+   "why": "Shareholders should watch the licence update because it can affect the company’s ability to launch products or enter new markets.",
+   "upside": "If the new permit allows the company to expand its product range or geographic reach, revenue could improve.",
+   "downside": "If the licence change involves a withdrawal or restriction, it could limit operations and hurt earnings.",
+   "watch": [
+    "Details of the new government permit and its scope",
+    "Any further licence withdrawals or suspensions",
+    "Movement of the Consumer Durables index and related peer performance"
+   ],
+   "about": "Crompton Greaves Consumer Electricals Ltd. manufactures and sells consumer electrical appliances.",
+   "basis": "a1c431907597",
+   "items": 3,
+   "updated": "2026-11-20T19:22+05:30",
+   "model": "openai/gpt-oss-120b"
   }
  }
 }
