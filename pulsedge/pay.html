@@ -7,8 +7,8 @@
 <title>Pay for PulsEdge</title>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="PulsEdge">
-<meta property="og:title" content="Get PulsEdge Pro">
-<meta property="og:description" content="Pay by UPI. Pro from ₹999 a month, or ₹7,999 a year.">
+<meta property="og:title" content="Get PulsEdge">
+<meta property="og:description" content="Pay by UPI. Plans from ₹499 a month, with launch prices kept while you renew.">
 <meta property="og:url" content="https://adityasawant0503.github.io/pulsedge/pay.html">
 <meta property="og:image" content="https://adityasawant0503.github.io/pulsedge/assets/share.jpg">
 <meta property="og:image:width" content="1200">
@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/doc.css">
 <style>
-.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0 8px}
+.plans{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:18px 0 8px}
 .plans label{position:relative;display:block;border:1px solid var(--line);border-radius:12px;padding:14px;cursor:pointer;background:var(--card)}
 .plans input{position:absolute;top:0;left:0;width:1px;height:1px;margin:0;opacity:0;pointer-events:none}
 .plans label:has(input:checked){border-color:var(--pur);box-shadow:0 0 0 1px var(--pur)}
@@ -36,6 +36,16 @@
 .pay .vpa{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:10px 0;font:500 15px/1.4 var(--mono)}
 .pay .copy{font:500 13px var(--sans);padding:5px 10px;border-radius:8px;border:1px solid var(--line);background:transparent;color:inherit;cursor:pointer}
 .pay .app{display:none;margin-top:6px}
+.bill{display:inline-flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:999px;margin:6px 0 4px}
+.bill button{border:0;background:transparent;color:var(--mute);font:500 14px/1 var(--sans);padding:8px 14px;border-radius:999px;cursor:pointer}
+.bill button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.bill[hidden]{display:none}
+.code{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 0}
+.code input{flex:0 1 220px;min-width:0;text-transform:uppercase}
+.code .note{flex-basis:100%;margin:0}
+.pay s{font:400 18px/1 var(--mono);color:var(--mute);margin-left:8px}
+.pay .noqr{width:200px;height:200px;border:1px dashed var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;font-size:13px;color:var(--mute)}
+@media (max-width:900px){.plans{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.plans{grid-template-columns:1fr}.pay{grid-template-columns:1fr;justify-items:start}.pay .app{display:inline-block}}
 .steps{margin:6px 0 0;padding-left:20px}
 .steps li{margin:4px 0}
@@ -54,17 +64,28 @@
 
   <h2>1. Choose your plan</h2>
   <div class="plans" role="radiogroup" aria-label="Plan">
-    <label><input type="radio" name="plan" value="yearly"><b>Pro yearly</b><span class="amt">₹7,999</span><small>₹667 a month · best value</small></label>
-    <label><input type="radio" name="plan" value="monthly"><b>Pro monthly</b><span class="amt">₹999</span><small>per month</small></label>
-    <label><input type="radio" name="plan" value="founding"><b>Founding member</b><span class="amt">₹4,999</span><small>per year, price kept while you renew · 15 seats</small></label>
+    <label><input type="radio" name="prod" value="alerts"><b>Alerts</b><span class="amt" data-prod="alerts">₹3,999</span><small>Private Telegram channel</small></label>
+    <label><input type="radio" name="prod" value="pro"><b>Pro</b><span class="amt" data-prod="pro">₹7,999</span><small>PULSE terminal</small></label>
+    <label><input type="radio" name="prod" value="complete"><b>Complete</b><span class="amt" data-prod="complete">₹9,999</span><small>Terminal and alerts · recommended</small></label>
+    <label><input type="radio" name="prod" value="founding"><b>Founding 100</b><span class="amt" data-prod="founding">₹5,999</span><small>Complete for a year · first 100 members</small></label>
   </div>
+  <div class="bill" id="bill" role="group" aria-label="Billing period">
+    <button type="button" id="bill-y" aria-pressed="true">Yearly</button>
+    <button type="button" id="bill-m" aria-pressed="false">Monthly</button>
+  </div>
+  <form class="code" id="code-f" autocomplete="off" novalidate>
+    <input type="text" id="code-in" placeholder="Code (optional)" spellcheck="false" aria-label="Discount code" aria-describedby="code-note">
+    <button class="btn" type="submit">Apply</button>
+    <p class="note" id="code-note" aria-live="polite"></p>
+  </form>
 
   <h2>2. Pay</h2>
   <div class="pay">
-    <img id="qr" src="assets/pay/upi-yearly.svg" alt="UPI QR code for the selected plan" width="200" height="200">
+    <img id="qr" src="assets/pay/upi-9999.svg" alt="UPI QR code for the amount shown" width="200" height="200">
+    <div class="noqr" id="noqr" hidden>Pay the amount shown to the UPI ID.</div>
     <div>
-      <div class="big" id="amt">₹7,999</div>
-      <div class="muted" id="pname">PulsEdge Pro yearly</div>
+      <div class="big"><span id="amt">₹9,999</span><s id="was" hidden></s></div>
+      <div class="muted" id="pname">PulsEdge Complete · yearly</div>
       <div class="vpa"><span>UPI ID: <b id="vpa">8073708940@ybl</b></span><button class="copy" id="copy" type="button">Copy</button></div>
       <p class="muted">Paid to <b>Aditya Sawant (PulsEdge)</b>. Scan the code with your UPI app, or pay the UPI ID above the amount shown.</p>
       <a class="btn app" id="app" href="#">Open my UPI app</a>
@@ -87,7 +108,7 @@
     <p><b>What happens next</b></p>
     <ol class="steps">
       <li>We match your transaction ID with the payment, usually within a few hours (9 am to 9 pm IST).</li>
-      <li>You get your PULSE terminal access link by email, and on WhatsApp if you gave a number.</li>
+      <li>By email, and on WhatsApp if you gave a number, you get your PULSE terminal link (Pro, Complete, Founding 100) and an invite to the private Telegram channel (Alerts, Complete, Founding 100).</li>
       <li>Open the link once on each device you use. It stays unlocked for your plan.</li>
     </ol>
     <p class="muted">Questions or a problem with a payment? WhatsApp <a href="https://wa.me/918073708940" target="_blank" rel="noopener">+91 80737 08940</a> or email <a href="mailto:asawant.work@gmail.com">asawant.work@gmail.com</a>. Full refund on a first payment within 7 days: see the <a href="refund.html">refund policy</a>.</p>
@@ -102,30 +123,73 @@
 <script src="assets/theme.js"></script>
 <script>
 (function(){
-  // Prices live here and in index.html's pricing section; QR codes in assets/pay/ carry the same amounts.
+  // Prices come from data/prices.json (PRICES_FALLBACK is the same list, for when it can't load; pulsedge-bot/offers.py check
+  // keeps them equal). Codes from data/offers.json, stored as SHA-256 hashes. Each amount has its own QR code in
+  // assets/pay/upi-<amount>.svg (offers.py qr makes them); the UPI ID and the app button work for any amount.
+  var PRICES_FALLBACK={"launch_until":"2027-01-31","plans":{"alerts_m":{"price":499,"list":799,"name":"PulsEdge Alerts","period":"month"},"alerts_y":{"price":3999,"list":6999,"name":"PulsEdge Alerts","period":"year"},"pro_m":{"price":999,"list":1299,"name":"PulsEdge Pro","period":"month"},"pro_y":{"price":7999,"list":11999,"name":"PulsEdge Pro","period":"year"},"complete_m":{"price":1299,"list":1799,"name":"PulsEdge Complete","period":"month"},"complete_y":{"price":9999,"list":14999,"name":"PulsEdge Complete","period":"year"},"founding":{"price":5999,"list":14999,"name":"PulsEdge Founding 100","period":"year"}},"founding":{"seats":100,"taken":0}};//end
   var VPA="8073708940@ybl",PAYEE="Aditya Sawant";
-  var PLANS={yearly:{name:"PulsEdge Pro yearly",amount:7999},monthly:{name:"PulsEdge Pro monthly",amount:999},founding:{name:"PulsEdge Founding member",amount:4999}};
+  var LEGACY={monthly:"pro_m",yearly:"pro_y",founding:"founding"};
+  var P=PRICES_FALLBACK,OFFERS=[],code=null;
   function $(id){return document.getElementById(id)}
-  var plan=(new URLSearchParams(location.search).get("plan")||"").toLowerCase();
-  if(!PLANS[plan])plan="yearly";
-  function show(p){
-    plan=p;var x=PLANS[p];
-    $("qr").src="assets/pay/upi-"+p+".svg";
-    $("amt").textContent="₹"+x.amount.toLocaleString("en-IN");
-    $("pname").textContent=x.name;
-    $("app").href="upi://pay?pa="+VPA+"&pn="+encodeURIComponent(PAYEE)+"&am="+x.amount+".00&cu=INR&tn="+encodeURIComponent(x.name);
-    document.querySelectorAll("input[name=plan]").forEach(function(r){r.checked=r.value===p});
-    try{history.replaceState(null,"","?plan="+p)}catch(e){}
+  function inr(n){return "\u20b9"+Math.round(n).toLocaleString("en-IN")}
+  function today(){return new Date(Date.now()+330*60000).toISOString().slice(0,10)}
+  var q=new URLSearchParams(location.search),plan=(q.get("plan")||"").toLowerCase();
+  plan=LEGACY[plan]||plan;if(!P.plans[plan])plan="complete_y";
+  function prod(){return plan==="founding"?"founding":plan.split("_")[0]}
+  function per(){return plan==="founding"?"y":plan.split("_")[1]}
+  function off(key){return code&&code.plans.indexOf(key)>=0?code.pct:0}
+  function amount(key){var p=P.plans[key],o=off(key);return o?Math.round(p.price*(1-o/100)):p.price}
+  function show(){
+    var x=P.plans[plan],a=amount(plan),name=x.name+(plan==="founding"?"":(per()==="y"?" · yearly":" · monthly"));
+    $("amt").textContent=inr(a);
+    $("was").hidden=!off(plan);$("was").textContent=off(plan)?inr(x.price):"";
+    $("pname").textContent=name+(off(plan)?" · code "+code.code:"");
+    $("qr").hidden=false;$("noqr").hidden=true;$("qr").src="assets/pay/upi-"+a+".svg";
+    $("app").href="upi://pay?pa="+VPA+"&pn="+encodeURIComponent(PAYEE)+"&am="+a+".00&cu=INR&tn="+encodeURIComponent(name);
+    document.querySelectorAll("input[name=prod]").forEach(function(r){r.checked=r.value===prod()});
+    document.querySelectorAll("[data-prod]").forEach(function(e){var k=e.getAttribute("data-prod");k=k==="founding"?k:k+"_"+per();if(P.plans[k])e.textContent=inr(amount(k))+(k==="founding"?" / yr":per()==="y"?" / yr":" / mo")});
+    $("bill").hidden=plan==="founding";
+    if(code)csay(off(plan)?"Code "+code.code+": "+code.pct+"% off"+(code.label?" ("+code.label+")":"")+".":"Code "+code.code+" doesn't apply to "+x.name+"; it works on the other plans.","ok");
+    $("bill-y").setAttribute("aria-pressed",String(per()==="y"));$("bill-m").setAttribute("aria-pressed",String(per()==="m"));
+    try{history.replaceState(null,"","?plan="+plan+(code?"&code="+encodeURIComponent(code.code):""))}catch(e){}
   }
-  document.querySelectorAll("input[name=plan]").forEach(function(r){r.addEventListener("change",function(){show(r.value)})});
-  show(plan);
+  $("qr").addEventListener("error",function(){this.hidden=true;$("noqr").hidden=false});
+  document.querySelectorAll("input[name=prod]").forEach(function(r){r.addEventListener("change",function(){plan=r.value==="founding"?"founding":r.value+"_"+(per()==="m"?"m":"y");show()})});
+  $("bill-y").addEventListener("click",function(){if(plan!=="founding"){plan=prod()+"_y";show()}});
+  $("bill-m").addEventListener("click",function(){if(plan!=="founding"){plan=prod()+"_m";show()}});
+
+  function norm(c){return String(c||"").replace(/\s+/g,"").toUpperCase()}
+  function sha(t){return crypto.subtle.digest("SHA-256",new TextEncoder().encode(t)).then(function(b){return Array.prototype.map.call(new Uint8Array(b),function(x){return ("0"+x.toString(16)).slice(-2)}).join("")})}
+  var cn=$("code-note");
+  function csay(t,c){cn.textContent=t;cn.className="note"+(c?" "+c:"")}
+  function apply(raw,quiet){
+    var c=norm(raw);
+    if(!c){code=null;csay("");show();return Promise.resolve()}
+    if(!window.crypto||!crypto.subtle){csay("This browser can't check codes. Pay the full amount and mention the code below; we'll refund the difference.","err");return Promise.resolve()}
+    return sha("pulsedge:"+c).then(function(h){
+      var o=OFFERS.filter(function(x){return x.h===h})[0];
+      if(!o||(o.until&&o.until<today())){code=null;if(!quiet)csay(o?"Code "+c+" has ended.":"That code isn't valid. Check the spelling.","err");show();return}
+      code={code:c,pct:o.pct,plans:o.plans||[],label:o.label||""};
+      try{sessionStorage.setItem("pe_code",c)}catch(e){}
+      show();
+    });
+  }
+  $("code-f").addEventListener("submit",function(e){e.preventDefault();apply($("code-in").value)});
+  show();
+  function getJson(u){return fetch(u,{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error(u);return r.json()})}
+  Promise.all([getJson("data/prices.json").catch(function(){return null}),getJson("data/offers.json").catch(function(){return null})]).then(function(r){
+    if(r[0]&&r[0].plans)P=r[0];if(!P.plans[plan])plan="complete_y";
+    OFFERS=r[1]&&Array.isArray(r[1].offers)?r[1].offers:[];
+    var want=q.get("code");if(!want){try{want=sessionStorage.getItem("pe_code")}catch(e){}}
+    show();
+    if(want){$("code-in").value=norm(want);apply(want,true)}
+  });
 
   $("copy").addEventListener("click",function(){
     var b=this;
     (navigator.clipboard?navigator.clipboard.writeText(VPA):Promise.reject()).then(function(){b.textContent="Copied"},function(){b.textContent="Select and copy"})
       .then(function(){setTimeout(function(){b.textContent="Copy"},2000)});
   });
-
   var f=$("pf"),note=$("pf-note"),btn=f.querySelector("button");
   function say(t,c){note.textContent=t;note.className="note"+(c?" "+c:"")}
   f.addEventListener("submit",function(e){
@@ -135,12 +199,12 @@
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){say("Enter a full email address, like you@email.com.","err");return}
     if(!/^[A-Za-z0-9]{10,23}$/.test(utr)){say("The transaction ID is usually 12 digits. Copy it from your UPI app's receipt.","err");return}
     if(f.querySelector("[name=_gotcha]").value){say("Thanks, we'll be in touch.","ok");return}
-    var x=PLANS[plan];
-    btn.disabled=true;say("Sending…");
+    var x=P.plans[plan],a=amount(plan),c=off(plan)?code:null;
+    btn.disabled=true;say("Sending\u2026");
     fetch("https://formspree.io/f/mkjoaaga",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
-      body:JSON.stringify({source:"payment",plan:plan,amount:x.amount,name:name,email:email,whatsapp:wa,utr:utr,
-        _subject:"PulsEdge payment: "+x.name+" ₹"+x.amount+" from "+name})})
-      .then(function(r){if(!r.ok)throw 0;say("Thanks, "+name.split(" ")[0]+". We'll check payment "+utr+" and send your access link to "+email+" within a few hours.","ok");f.reset();show(plan)})
+      body:JSON.stringify({source:"payment",plan:plan,amount:a,full_price:x.price,code:c?c.code:"",code_label:c?c.label:"",name:name,email:email,whatsapp:wa,utr:utr,
+        _subject:"PulsEdge payment: "+$("pname").textContent+" "+inr(a)+" from "+name})})
+      .then(function(r){if(!r.ok)throw 0;say("Thanks, "+name.split(" ")[0]+". We'll check payment "+utr+" and send your access to "+email+" within a few hours.","ok");f.reset()})
       .catch(function(){say("Couldn't send. WhatsApp +91 80737 08940 with your transaction ID instead.","err")})
       .then(function(){btn.disabled=false});
   });

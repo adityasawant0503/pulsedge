@@ -13,6 +13,8 @@ site, the terminal and the Telegram bot switch to it within a couple of minutes.
 | `calendar.json`  | NSE trading holidays; trials count trading sessions with it | built into `assets/member.js` |
 | `keys.json`      | Public keys allowed to sign access links (one per PulsEdge HQ device) | none |
 | `revoked.json`   | Access-link ids that no longer work         | none |
+| `prices.json`    | Plan prices, launch date and Founding 100 seats for `index.html` pricing and `pay.html`. Edit, then run `python pulsedge-bot/offers.py qr` and `check` | none |
+| `offers.json`    | Discount codes, stored as SHA-256 hashes; manage with `pulsedge-bot/offers.py` | none |
 
 ## `feed.json`: signals
 

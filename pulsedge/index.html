@@ -359,6 +359,43 @@ h2{font-size:var(--fs-h2);line-height:1.04;letter-spacing:-.04em;font-weight:600
 .plan .go:active{transform:scale(.97)}
 .paynote{font-size:var(--fs-xs);color:var(--faint);margin:18px 0 0;max-width:80ch}
 @media (max-width:920px){.plans{grid-template-columns:1fr}}
+/* pricing v2: founding offer, billing switch, anchors, codes, partners */
+.found{display:flex;align-items:center;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;border:1px solid color-mix(in srgb,var(--acc) 45%,var(--line));border-radius:18px;padding:22px 24px;margin-bottom:22px;background:var(--acc-soft)}
+.found .fl{display:flex;flex-direction:column;gap:6px;min-width:0;flex:1 1 420px}
+.found .fl b{font-weight:600;font-size:21px;letter-spacing:-.015em}
+.found .fl span:last-child{font-size:var(--fs-sm);color:var(--mute)}
+.found .badge{align-self:flex-start}
+.found .fr{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.seats{font:500 13px/1.3 var(--mono);color:var(--acc)}
+.bill{display:inline-flex;gap:4px;padding:4px;border:1px solid var(--line2);border-radius:999px;margin:0 0 16px}
+.bill button{border:0;background:transparent;color:var(--mute);font:500 14px/1 var(--sans);padding:9px 16px;border-radius:999px;cursor:pointer}
+.bill button span{font:500 12px/1 var(--mono);color:var(--acc);margin-left:6px}
+.bill button[aria-pressed="true"]{background:var(--btn);color:var(--btnfg)}
+.bill button[aria-pressed="true"] span{color:inherit;opacity:.8}
+.who{margin:-6px 0 0;font-size:var(--fs-sm);color:var(--ink2)}
+.pr .was{font:400 18px/1 var(--mono);color:var(--faint);letter-spacing:0;margin-right:4px}
+.pr .was:empty{display:none}
+.plan .cd{margin:0;font:500 12.5px/1.4 var(--mono);color:var(--acc)}
+.pfoot{display:flex;flex-wrap:wrap;gap:14px 32px;align-items:flex-start;justify-content:space-between;margin-top:20px}
+.launch{font-size:var(--fs-sm);color:var(--ink2);max-width:62ch;margin:0}
+.code{display:flex;flex-direction:column;gap:8px;min-width:0;flex:0 1 380px}
+.code label{font-size:var(--fs-sm);font-weight:500}
+.code .note{margin:0}
+.note.err{color:#c8323c}
+:root[data-theme="dark"] .note.err{color:#ff7a7a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .note.err{color:#ff7a7a}}
+.pp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.ptn{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:12px;min-width:0;box-shadow:var(--elev)}
+.ptn h3{margin:0;font-size:20px;letter-spacing:-.01em}
+.ptn ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;font-size:var(--fs-sm);color:var(--ink2)}
+.ptn li{display:grid;grid-template-columns:16px minmax(0,1fr);gap:8px}
+.ptn li::before{content:"";width:7px;height:7px;margin-top:9px;background:var(--acc);transform:rotate(45deg)}
+.pform{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:18px}
+.pform input,.pform select{min-width:0;background:var(--fld);border:1px solid transparent;border-radius:12px;padding:12px 14px;font:inherit;font-size:15px;color:inherit}
+.pform input:focus,.pform select:focus{border-color:var(--acc);outline:none}
+.pform .btn{justify-self:start}
+.pform .note{grid-column:1/-1;margin:0}
+@media (max-width:760px){.pp{grid-template-columns:1fr}.pform{grid-template-columns:1fr}}
 
 /* forms */
 .f{display:flex;gap:8px;max-width:460px}
@@ -482,6 +519,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
       <a href="#demo">Try it</a>
       <a href="track.html">Track record</a>
       <a href="#pricing">Pricing</a>
+      <a href="#partners">Partners</a>
       <a href="#faq">FAQ</a>
     </nav>
     <div class="right">
@@ -686,36 +724,94 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
 
   <section class="s w" id="pricing">
     <p class="kick">Pricing</p>
-    <h2>Try it free. <span class="dim">Pay only if it earns its place.</span></h2>
-    <p class="lede">Membership opens the PULSE terminal: the pre-market checklist, <strong>every verdict with its reason</strong>, and a feed of your own stocks.</p>
-    <div class="trial">
-      <div><b>Start with the full terminal, free</b><span>5 trading sessions, about a week. No card, nothing charged when it ends.</span></div>
-      <a class="btn pri" href="terminal.html#trial">Start free trial <span class="arr" aria-hidden="true">→</span></a>
+    <h2>Launch prices. <span class="dim">Kept for as long as you renew.</span></h2>
+    <p class="lede">Choose how you want the news: <strong>on your phone the moment it breaks</strong>, in the PULSE terminal, or both. Every plan starts with the free trial.</p>
+
+    <div class="found" id="found">
+      <div class="fl">
+        <span class="badge">Founding 100</span>
+        <b>PulsEdge Complete for a year at <span class="mono" data-price="founding">₹5,999</span></b>
+        <span><s data-list="founding">₹14,999</s> after launch. For the first 100 members only; your price stays while you renew, and you get a direct WhatsApp line to the founder.</span>
+      </div>
+      <div class="fr">
+        <span class="seats" id="seats">For the first 100 members</span>
+        <a class="btn pri" id="found-go" href="pay.html?plan=founding">Claim a founding seat <span class="arr" aria-hidden="true">&rarr;</span></a>
+      </div>
     </div>
+
+    <div class="bill" role="group" aria-label="Billing period">
+      <button type="button" id="bill-y" aria-pressed="true">Yearly <span id="bill-save">save up to 35%</span></button>
+      <button type="button" id="bill-m" aria-pressed="false">Monthly</button>
+    </div>
+
     <div class="plans">
-      <div class="plan">
-        <div class="pn"><span>Founding member</span><span class="badge">15 seats</span></div>
-        <div class="pr">₹4,999 <small>/ year</small></div>
-        <p class="ps">Everything in Pro yearly, at this price for as long as you renew.</p>
-        <ul><li><span>Every Pro feature</span></li><li><span>Direct WhatsApp line to the founder</span></li><li><span>Shape what gets built next</span></li></ul>
-        <a class="go" href="pay.html?plan=founding">Claim a founding seat</a>
+      <div class="plan" data-product="alerts">
+        <div class="pn"><span>Alerts</span></div>
+        <p class="who">For traders who live on their phone</p>
+        <div class="pr"><s class="was">₹6,999</s> <span class="amt">₹3,999</span> <small class="per">/ year</small></div>
+        <p class="ps eq"><span class="em">₹333 a month</span></p>
+        <ul><li><span>Private Telegram channel: every Act alert about a minute after the news</span></li><li><span>Market-moving global and India news as it breaks</span></li><li><span>Morning brief before 9:15 with GIFT Nifty's opening read</span></li><li><span>Evening summary of what mattered today</span></li></ul>
+        <p class="cd" hidden></p>
+        <a class="go" href="pay.html?plan=alerts_y">Get Alerts</a>
       </div>
-      <div class="plan hi">
-        <div class="pn"><span>Pro yearly</span><span class="badge">best value</span></div>
-        <div class="pr">₹7,999 <small>/ year</small></div>
-        <p class="ps">Works out to ₹667 a month. Save a third against monthly.</p>
-        <ul><li><span>PULSE terminal with AI verdicts through the day</span></li><li><span>Reason and source on every verdict</span></li><li><span>Search any stock for a one-page brief in plain English</span></li><li><span>Simple view for beginners, Pro view for the full detail</span></li><li><span>My stocks: news for your holdings only</span></li><li><span>Pre-market checklist before 9:15, with live GIFT Nifty and global prices</span></li><li><span>Big money: bulk and block deals, FII positioning</span></li><li><span>Global news mapped to Indian sectors</span></li></ul>
-        <a class="go" href="pay.html?plan=yearly">Get Pro yearly</a>
+      <div class="plan" data-product="pro">
+        <div class="pn"><span>Pro</span></div>
+        <p class="who">For investors who want the full picture</p>
+        <div class="pr"><s class="was">₹11,999</s> <span class="amt">₹7,999</span> <small class="per">/ year</small></div>
+        <p class="ps eq"><span class="em">₹667 a month</span></p>
+        <ul><li><span>PULSE terminal: a verdict and its reason on every headline</span></li><li><span>My stocks: news on your own holdings only</span></li><li><span>Pre-market checklist with live GIFT Nifty and global prices</span></li><li><span>Search any stock for a one-page brief in plain English</span></li><li><span>Big money: bulk and block deals, FII positioning</span></li><li><span>Simple view for beginners, Pro view for the detail</span></li></ul>
+        <p class="cd" hidden></p>
+        <a class="go" href="pay.html?plan=pro_y">Get Pro</a>
       </div>
-      <div class="plan">
-        <div class="pn"><span>Pro monthly</span></div>
-        <div class="pr">₹999 <small>/ month</small></div>
-        <p class="ps">Everything in Pro. Pay month to month, stop any time.</p>
-        <ul><li><span>Every Pro feature</span></li><li><span>Renew month to month</span></li></ul>
-        <a class="go" href="pay.html?plan=monthly">Get Pro monthly</a>
+      <div class="plan hi" data-product="complete">
+        <div class="pn"><span>Complete</span><span class="badge">recommended</span></div>
+        <p class="who">The terminal and the alerts together</p>
+        <div class="pr"><s class="was">₹14,999</s> <span class="amt">₹9,999</span> <small class="per">/ year</small></div>
+        <p class="ps eq"><span class="em">₹833 a month</span> · <span class="more">₹2,000 a year more than Pro</span></p>
+        <ul><li><span>Everything in Pro</span></li><li><span>Everything in Alerts</span></li><li><span>Priority help on WhatsApp</span></li></ul>
+        <p class="cd" hidden></p>
+        <a class="go" href="pay.html?plan=complete_y">Get Complete</a>
       </div>
     </div>
-    <p class="paynote" id="paynote">Every plan starts with the free trial. Pay by UPI from any app; your terminal access link follows by email and WhatsApp, usually within a few hours. Prices in Indian rupees. Full refund on a first payment within 7 days: see the <a href="refund.html">refund policy</a>.</p>
+
+    <div class="pfoot">
+      <p class="launch" id="launch">Launch prices until 31 January 2027. From 1 February the plans cost the struck-through prices; anyone who joins before then keeps their price for as long as they renew.</p>
+      <form class="code" id="code-f" autocomplete="off" novalidate>
+        <label for="code-in">Have a code?</label>
+        <div class="f"><input type="text" id="code-in" placeholder="e.g. YOUTUBE10" autocapitalize="characters" spellcheck="false" aria-describedby="code-note"><button type="submit">Apply</button></div>
+        <p class="note" id="code-note" aria-live="polite"></p>
+      </form>
+    </div>
+    <p class="paynote" id="paynote">Pay by UPI from any app; your terminal link and Telegram invite follow by email and WhatsApp, usually within a few hours. Plans don't renew by themselves. Prices in Indian rupees. Full refund on a first payment within 7 days: see the <a href="refund.html">refund policy</a>.</p>
+  </section>
+
+  <section class="s w" id="partners">
+    <p class="kick">Partners</p>
+    <h2>For wealth firms, advisers <span class="dim">and communities.</span></h2>
+    <p class="lede">Your clients want to know when news touches their holdings, before they read it in the paper. PulsEdge does the watching; you keep the relationship.</p>
+    <div class="pp">
+      <div class="ptn">
+        <h3>Wealth and advisory firms</h3>
+        <ul><li><span>Seats for your advisers and relationship managers, billed to the firm</span></li><li><span>Client seats you can include in your service, at your own price</span></li><li><span>A news-only edition without verdicts, for SEBI-registered firms</span></li><li><span>A compliance pack: sources, method and disclosures for your team to review</span></li></ul>
+        <p class="ps">Volume pricing from 25 seats. Agreements are with the firm.</p>
+      </div>
+      <div class="ptn">
+        <h3>Communities and creators</h3>
+        <ul><li><span>Your own code: your audience saves 10% on any plan</span></li><li><span>You earn 20% of what they pay in their first year</span></li><li><span>A monthly statement of sign-ups and payouts</span></li></ul>
+        <p class="ps">Not for SEBI-registered intermediaries or their staff, who should use the firm plan.</p>
+      </div>
+    </div>
+    <form class="pform" id="partner-f" novalidate>
+      <input type="text" id="pt-name" placeholder="Your name" autocomplete="name" aria-label="Your name" required>
+      <input type="text" id="pt-org" placeholder="Firm or community" autocomplete="organization" aria-label="Firm or community">
+      <input type="email" id="pt-email" placeholder="you@firm.com" autocomplete="email" aria-label="Email" required>
+      <input type="tel" id="pt-phone" placeholder="WhatsApp number" autocomplete="tel" aria-label="WhatsApp number">
+      <select id="pt-kind" aria-label="Partnership type"><option value="firm">Wealth or advisory firm</option><option value="community">Community or creator</option></select>
+      <input type="text" id="pt-msg" placeholder="How many clients or members? (optional)" aria-label="Message">
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+      <button class="btn pri" type="submit">Talk to us</button>
+      <p class="note" id="pt-note" aria-live="polite"></p>
+    </form>
   </section>
 
   <section class="s w" id="faq">
@@ -723,6 +819,8 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
     <h2>Before you start. <span class="dim">Quick answers.</span></h2>
     <div class="faq">
       <details><summary>Is PulsEdge investment advice?</summary><p>No. PulsEdge is not registered with SEBI as an investment adviser or research analyst. Verdicts are automated triage of public news that tell you what to read, not what to buy or sell. Always check the source and make your own decision.</p></details>
+      <details><summary>Which plan should I choose?</summary><p>Alerts if you want the important news on your phone the moment it breaks, in a private Telegram channel. Pro if you'd rather read it in the PULSE terminal with your own holdings, the pre-market checklist and stock briefs. Complete gives you both. The free Telegram channel gets a few of the same alerts, 30 minutes later.</p></details>
+      <details><summary>Do you work with wealth managers and advisers?</summary><p>Yes, through agreements with the firm: seats for advisers, and client seats the firm can include in its service at its own price. SEBI-registered firms get a news-only edition without verdicts. Use the form in <a href="#partners">Partners</a> and we'll reply within a day.</p></details>
       <details><summary>Where does the news come from?</summary><p>Public sources: NSE corporate announcements, SEBI and RBI releases, and markets coverage from Economic Times, Mint, Business Standard and Moneycontrol. Every item links back to where it was published.</p></details>
       <details><summary>How are verdicts made?</summary><p>Each headline is matched to Nifty 500 companies and classified as ignore, watch or act, with a horizon and a one-line reason. During the beta some verdicts come from rules and some from an AI model, and each verdict says which. The <a href="track.html">track record</a> shows how they've done.</p></details>
       <details><summary>How does the free trial work?</summary><p>Enter your email in the terminal and you get 5 NSE trading sessions, usually one calendar week. Weekends and market holidays don't count. No card is needed and nothing is charged when it ends.</p></details>
@@ -758,7 +856,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
           <a class="logo" href="#top"><img class="lt" src="assets/icon.png" alt="" width="30" height="30"><img class="dk" src="assets/icon-dark.png" alt="" width="30" height="30">PulsEdge</a>
           <p>Indian market news, triaged for the stocks you own.</p>
         </div>
-        <div><h4>Product</h4><ul><li><a href="terminal.html">Terminal</a></li><li><a href="track.html">Track record</a></li><li><a href="#pricing">Pricing</a></li><li><a href="terminal.html#trial">Free trial</a></li></ul></div>
+        <div><h4>Product</h4><ul><li><a href="terminal.html">Terminal</a></li><li><a href="track.html">Track record</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#partners">Partners</a></li><li><a href="terminal.html#trial">Free trial</a></li></ul></div>
         <div><h4>Company</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="https://t.me/pulsedgein" target="_blank" rel="noopener">Telegram</a></li><li><a href="https://www.instagram.com/pulsedge.in/" target="_blank" rel="noopener">Instagram</a></li></ul></div>
         <div><h4>Legal</h4><ul><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="refund.html">Refunds &amp; delivery</a></li></ul></div>
       </div>
@@ -1271,6 +1369,101 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
   if(mq.addEventListener)mq.addEventListener("change",onSys);else mq.addListener(onSys);
   window.addEventListener("storage",function(e){if(e.key!=="th")return;if(e.newValue)d.setAttribute("data-theme",e.newValue);else d.removeAttribute("data-theme");sync()});
   sync();
+})();
+</script>
+<script>
+// Pricing: plans from data/prices.json (PRICES_FALLBACK is the same list, used if that file can't load; pulsedge-bot/offers.py
+// check keeps them equal), discount codes from data/offers.json (SHA-256 hashes: the codes themselves aren't published),
+// the yearly/monthly switch, the Founding 100 count and the partner form. A link like index.html?code=YOUTUBE10#pricing
+// applies a code on arrival. Struck-through prices show only until launch_until: after that they'd no longer be true.
+(function(){
+  var PRICES_FALLBACK={"launch_until":"2027-01-31","plans":{"alerts_m":{"price":499,"list":799,"name":"PulsEdge Alerts","period":"month"},"alerts_y":{"price":3999,"list":6999,"name":"PulsEdge Alerts","period":"year"},"pro_m":{"price":999,"list":1299,"name":"PulsEdge Pro","period":"month"},"pro_y":{"price":7999,"list":11999,"name":"PulsEdge Pro","period":"year"},"complete_m":{"price":1299,"list":1799,"name":"PulsEdge Complete","period":"month"},"complete_y":{"price":9999,"list":14999,"name":"PulsEdge Complete","period":"year"},"founding":{"price":5999,"list":14999,"name":"PulsEdge Founding 100","period":"year"}},"founding":{"seats":100,"taken":0}};//end
+  var $=function(id){return document.getElementById(id)};
+  if(!$("pricing"))return;
+  var P=PRICES_FALLBACK,OFFERS=[],period="y",code=null;
+  function inr(n){return "\u20b9"+Math.round(n).toLocaleString("en-IN")}
+  function today(){return new Date(Date.now()+330*60000).toISOString().slice(0,10)}
+  function launchOn(){return !!P.launch_until&&today()<=P.launch_until}
+  function off(key){return code&&code.plans.indexOf(key)>=0?code.pct:0}
+  function price(key){var p=P.plans[key],o=off(key);return o?Math.round(p.price*(1-o/100)):p.price}
+  function longDate(d){var x=new Date(d+"T12:00:00+05:30");return x.toLocaleDateString("en-IN",{day:"numeric",month:"long",year:"numeric",timeZone:"Asia/Kolkata"})}
+  function render(){
+    ["alerts","pro","complete"].forEach(function(prod){
+      var key=prod+"_"+period,p=P.plans[key],card=document.querySelector('.plan[data-product="'+prod+'"]');
+      if(!p||!card)return;
+      var now=price(key),was=off(key)?p.price:(launchOn()&&p.list?p.list:0);
+      card.querySelector(".was").textContent=was?inr(was):"";
+      card.querySelector(".amt").textContent=inr(now);
+      card.querySelector(".per").textContent=period==="y"?"/ year":"/ month";
+      card.querySelector(".em").textContent=period==="y"?inr(now/12)+" a month":"Pay month to month";
+      var more=card.querySelector(".more"),pro=P.plans["pro_"+period];
+      if(more&&pro)more.textContent=inr(now-price("pro_"+period))+(period==="y"?" a year":" a month")+" more than Pro";
+      var cd=card.querySelector(".cd");cd.hidden=!off(key);cd.textContent=off(key)?"Code "+code.code+" applied: "+code.pct+"% off":"";
+      card.querySelector(".go").href="pay.html?plan="+key+(off(key)?"&code="+encodeURIComponent(code.code):"");
+    });
+    var f=P.plans.founding,fs=P.founding||{seats:100,taken:0},left=Math.max(0,(fs.seats||0)-(fs.taken||0));
+    document.querySelectorAll('[data-price="founding"]').forEach(function(e){e.textContent=inr(f.price)});
+    document.querySelectorAll('[data-list="founding"]').forEach(function(e){e.textContent=launchOn()?inr(f.list):"";e.hidden=!launchOn()});
+    $("seats").textContent=left<=0?"All "+fs.seats+" founding seats are taken":(fs.taken>=10?left+" of "+fs.seats+" seats left":"For the first "+fs.seats+" members");
+    $("found-go").hidden=left<=0;
+    var l=$("launch");l.hidden=!launchOn();
+    if(launchOn()){var after=new Date(new Date(P.launch_until+"T12:00:00+05:30").getTime()+864e5).toISOString().slice(0,10);
+      l.textContent="Launch prices until "+longDate(P.launch_until)+". From "+longDate(after).replace(/ \d{4}$/,"")+" the plans cost the struck-through prices; anyone who joins before then keeps their price for as long as they renew."}
+    var best=0;["alerts","pro","complete"].forEach(function(prod){var m=P.plans[prod+"_m"],y=P.plans[prod+"_y"];if(m&&y)best=Math.max(best,1-y.price/(12*m.price))});
+    $("bill-save").textContent="save up to "+Math.floor(best*100)+"%";
+  }
+  function setPeriod(p){period=p;$("bill-y").setAttribute("aria-pressed",String(p==="y"));$("bill-m").setAttribute("aria-pressed",String(p==="m"));render()}
+  $("bill-y").addEventListener("click",function(){setPeriod("y")});
+  $("bill-m").addEventListener("click",function(){setPeriod("m")});
+
+  function norm(c){return String(c||"").replace(/\s+/g,"").toUpperCase()}
+  function sha(t){return crypto.subtle.digest("SHA-256",new TextEncoder().encode(t)).then(function(b){return Array.prototype.map.call(new Uint8Array(b),function(x){return ("0"+x.toString(16)).slice(-2)}).join("")})}
+  var note=$("code-note");
+  function say(t,c){note.textContent=t;note.className="note"+(c?" "+c:"")}
+  function apply(raw,quiet){
+    var c=norm(raw);
+    if(!c){code=null;render();say("");return Promise.resolve()}
+    if(!window.crypto||!crypto.subtle){say("This browser can't check codes. Enter the code at checkout instead.","err");return Promise.resolve()}
+    return sha("pulsedge:"+c).then(function(h){
+      var o=OFFERS.filter(function(x){return x.h===h})[0];
+      if(!o){if(!quiet)say("That code isn't valid. Check the spelling, or WhatsApp us.","err");code=null;render();return}
+      if(o.until&&o.until<today()){say("Code "+c+" ended on "+longDate(o.until)+".","err");code=null;render();return}
+      code={code:c,pct:o.pct,plans:o.plans||[],label:o.label||""};
+      say("Code "+c+" applied: "+o.pct+"% off"+(o.label?" ("+o.label+")":"")+". The prices below include it.","ok");
+      try{sessionStorage.setItem("pe_code",c)}catch(e){}
+      render();
+    });
+  }
+  $("code-f").addEventListener("submit",function(e){e.preventDefault();apply($("code-in").value)});
+
+  function getJson(u){return fetch(u,{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error(u);return r.json()})}
+  render();
+  Promise.all([getJson("data/prices.json").catch(function(){return null}),getJson("data/offers.json").catch(function(){return null})]).then(function(r){
+    if(r[0]&&r[0].plans)P=r[0];
+    OFFERS=r[1]&&Array.isArray(r[1].offers)?r[1].offers:[];
+    var want=new URLSearchParams(location.search).get("code");
+    if(!want){try{want=sessionStorage.getItem("pe_code")}catch(e){}}
+    render();
+    if(want){$("code-in").value=norm(want);apply(want,true)}
+  });
+
+  // partner enquiries
+  var pf=$("partner-f"),pn=$("pt-note");
+  if(pf)pf.addEventListener("submit",function(e){
+    e.preventDefault();
+    var name=$("pt-name").value.trim(),email=$("pt-email").value.trim(),btn=pf.querySelector("button");
+    function ps(t,c){pn.textContent=t;pn.className="note"+(c?" "+c:"")}
+    if(name.length<2){ps("Enter your name.","err");return}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ps("Enter a full email address.","err");return}
+    if(pf.querySelector("[name=_gotcha]").value){ps("Thanks, we'll be in touch.","ok");return}
+    btn.disabled=true;ps("Sending\u2026");
+    fetch("https://formspree.io/f/mkjoaaga",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
+      body:JSON.stringify({source:"partner",kind:$("pt-kind").value,name:name,org:$("pt-org").value.trim(),email:email,whatsapp:$("pt-phone").value.trim(),
+        message:$("pt-msg").value.trim(),_subject:"PulsEdge partner enquiry: "+($("pt-org").value.trim()||name)})})
+      .then(function(r){if(!r.ok)throw 0;ps("Thanks, "+name.split(" ")[0]+". We'll reply within a day.","ok");pf.reset()})
+      .catch(function(){ps("Couldn't send. WhatsApp +91 80737 08940 instead.","err")})
+      .then(function(){btn.disabled=false});
+  });
 })();
 </script>
 <script src="assets/hero3d.js" defer></script>
