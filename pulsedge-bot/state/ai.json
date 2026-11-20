@@ -2,21 +2,6 @@
  "note": "The last 60 runs of the AI classifier: items sorted by AI, set aside as routine, or left to keyword rules.",
  "runs": [
   {
-   "time": "2026-11-19T10:15+05:30",
-   "new": 27,
-   "ai": 24,
-   "routine": 3,
-   "rules": 0,
-   "models": {
-    "qwen/qwen3.8-27b": 20,
-    "openai/gpt-oss-120b": 4
-   },
-   "errors": [
-    "gemini-3.8-flash: HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To",
-    "qwen/qwen3.8-27b: HTTP 429 Request too large for model `qwen/qwen3.8-27b` in organization `org_01m7d9eshkezkr1pmsab9xhv8e` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, R"
-   ]
-  },
-  {
    "time": "2026-11-19T10:30+05:30",
    "new": 16,
    "ai": 16,
@@ -810,6 +795,22 @@
    },
    "errors": [
     "gemini-3.8-flash: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'",
+    "gemini-3.8-flash: HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To",
+    "qwen/qwen3.8-27b: HTTP 429 Request too large for model `qwen/qwen3.8-27b` in organization `org_01m7d9eshkezkr1pmsab9xhv8e` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, R",
+    "openai/gpt-oss-120b: HTTP 429 Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m7d9eshkezkr1pmsab9xhv8e` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 1",
+    "gemini-flash-latest: HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To"
+   ]
+  },
+  {
+   "time": "2026-11-20T15:56+05:30",
+   "new": 10,
+   "ai": 4,
+   "routine": 6,
+   "rules": 0,
+   "models": {
+    "gemini-flash-lite-latest": 4
+   },
+   "errors": [
     "gemini-3.8-flash: HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To",
     "qwen/qwen3.8-27b: HTTP 429 Request too large for model `qwen/qwen3.8-27b` in organization `org_01m7d9eshkezkr1pmsab9xhv8e` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, R",
     "openai/gpt-oss-120b: HTTP 429 Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m7d9eshkezkr1pmsab9xhv8e` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 1",
