@@ -1,7 +1,34 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-19T15:54:44+05:30",
+ "updated": "2026-11-20T08:12:57+05:30",
  "items": [
+  {
+   "id": "f7c4f6957c284eb9",
+   "time": "2026-11-20T08:11:51+05:30",
+   "headline": "$ANT - JAPAN’S NIKKEI PLUNGES NEARLY 5% AS ANTHROPIC IPO FAILS TO REVIVE AI CONFIDENCE",
+   "source": "Walter Bloomberg",
+   "url": "https://t.me/WalterBloomberg/38733",
+   "section": "global",
+   "call": "ignore",
+   "horizon": "swing",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "IT"
+   ],
+   "impact": 0,
+   "confidence": 0,
+   "category": "macro",
+   "action": "",
+   "reason": [],
+   "risks": [],
+   "plain": "Japan's Nikkei fell about 5% as an AI IPO disappointment hurt tech stocks.",
+   "why": "It mainly affects Japanese companies; Indian stocks are unlikely to be directly impacted.",
+   "check": "",
+   "original": "Japan’s Nikkei plunged as much as 4.85%, hitting a seven-month low, as technology stocks suffered heavy selling. 🔸 SoftBank Group: -14.4% 🔸 Kioxia: -11.62% 🔸 Advantest: -10.15% 🔸 Tokyo Electron: -6.07% Anthropic opened 34% above its $83 IPO price but closed at $97.17, trimming gains to 17%. The fadi",
+   "latency": 66.1,
+   "lane": "fast"
+  },
   {
    "id": "1a0d0166a739ed5a",
    "time": "2026-11-19T15:54:36+05:30",
@@ -1662,39 +1689,6 @@
    "check": "",
    "original": "ECON AFFAIRS SECY: GOVT OPEN TO FEEDBACK AND WILLING TO RESPOND TO STAKEHOLDER CONCERNS",
    "latency": 41.6,
-   "lane": "fast"
-  },
-  {
-   "id": "cf04c259b121ec1e",
-   "time": "2026-11-18T15:59:09+05:30",
-   "headline": "SIGNING OF INDIA-US TRADE DEAL TO TAKE TIME: COMMERCE SECY",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9575",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "positional",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Macro",
-    "Trade"
-   ],
-   "impact": 0,
-   "confidence": 0,
-   "category": "macro",
-   "action": "No specific stock action required; monitor broader market sentiment for trade-related shifts.",
-   "reason": [
-    "General macro statement with no specific company impact.",
-    "No listed Indian stocks are directly named or affected in a material way."
-   ],
-   "risks": [
-    "Potential market volatility if trade deal details change significantly."
-   ],
-   "plain": "The commerce secretary said the India-US trade deal will take time to sign.",
-   "why": "This is a general government update that does not directly change the value of any specific company's shares.",
-   "check": "",
-   "original": "SIGNING OF INDIA-US TRADE DEAL TO TAKE TIME: COMMERCE SECY",
-   "latency": 19.6,
    "lane": "fast"
   }
  ]
