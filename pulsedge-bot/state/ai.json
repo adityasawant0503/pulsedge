@@ -2,17 +2,6 @@
  "note": "The last 60 runs of the AI classifier: items sorted by AI, set aside as routine, or left to keyword rules.",
  "runs": [
   {
-   "time": "2026-11-18T12:30+05:30",
-   "new": 16,
-   "ai": 14,
-   "routine": 2,
-   "rules": 0,
-   "models": {
-    "gemini-3.8-flash": 14
-   },
-   "errors": []
-  },
-  {
    "time": "2026-11-18T12:45+05:30",
    "new": 11,
    "ai": 11,
@@ -824,6 +813,17 @@
    "errors": [
     "gemini-3.8-flash: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'"
    ]
+  },
+  {
+   "time": "2026-11-20T09:00+05:30",
+   "new": 4,
+   "ai": 4,
+   "routine": 0,
+   "rules": 0,
+   "models": {
+    "gemini-3.8-flash": 4
+   },
+   "errors": []
   }
  ]
 }

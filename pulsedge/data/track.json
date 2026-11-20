@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T08:46:21+05:30",
+ "updated": "2026-11-20T09:01:44+05:30",
  "summary": {
-  "calls": 1877,
-  "scored_calls": 709,
+  "calls": 1879,
+  "scored_calls": 711,
   "d1": {
    "scored": 549,
    "hits": 225,
@@ -23,6 +23,28 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "3cb2fe9c287d2999",
+   "symbol": "JWL",
+   "time": "2026-11-20T08:59:10+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Jupiter Wagons Limited: Jupiter Wagons Limited secures repeat order worth over INR 128 crore from JSW (South) Rail Logistics Private Limited. |SUBJECT: General ",
+   "url": "https://nsearchives.nseindia.com/corporate/CEBBCO_20112026085859_REG30LOI_JSW_south_Rail.pdf"
+  },
+  {
+   "id": "080f8f3dce88d092",
+   "symbol": "OIL",
+   "time": "2026-11-20T08:44:12+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Oil prices rise on Houthi attacks on Riyadh, supply disruption concerns",
+   "url": "https://www.business-standard.com/markets/commodities/oil-prices-rise-on-houthi-attacks-on-riyadh-supply-disruption-concerns-126112000113_1.html"
+  },
   {
    "id": "67b36b679ca17e77",
    "symbol": "PRESTIGE",
