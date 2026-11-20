@@ -68,5 +68,22 @@
    "seats": 3,
    "days": 30
   }
+ },
+ "partner": {
+  "note": "Partner programme (sell.html): one fixed bonus per new customer, paid once on their first payment; renewals, upgrades and later payments earn nothing. offers.py check confirms sell.html shows these amounts.",
+  "customer_discount_pct": 10,
+  "bonus": {
+   "complete_y": 1800,
+   "pro_y": 1400,
+   "alerts_y": 700,
+   "monthly": 150,
+   "team5": 5000,
+   "team10": 10000
+  },
+  "milestones": {
+   "10": 2000,
+   "25": 5000,
+   "50": 10000
+  }
  }
 }

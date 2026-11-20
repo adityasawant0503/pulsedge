@@ -111,15 +111,17 @@ def cmd_check(prices, offers):
     for key, pk in prices.get("business", {}).get("packages", {}).items():
         if pk.get("price") and f"₹{pk['price']:,}" not in biz:
             bad.append(f"business.html doesn't show {pk['name']} at ₹{pk['price']:,}")
-    # the partner page's commission table and calculator: 20% of the price after the customer's 10% off
+    # the partner page: what the customer pays with a code, and the fixed bonus per sale (prices.json "partner")
     sell = open(os.path.join(SITE, "sell.html"), encoding="utf-8").read()
-    pl = prices["plans"]
-    earn = {k: round(round(pl[k]["price"] * 0.9) * 0.2) for k in ("complete_y", "pro_y", "alerts_y")}
-    want = [f"₹{round(pl[k]['price'] * 0.9):,}" for k in earn] + [f"₹{v:,}" for v in earn.values()]
-    want.append(f"EARN={{c:{earn['complete_y']},p:{earn['pro_y']},a:{earn['alerts_y']}}}")
+    pl, pt = prices["plans"], prices.get("partner", {})
+    pct, bonus = pt.get("customer_discount_pct", 10), pt.get("bonus", {})
+    want = [f"₹{round(pl[k]['price'] * (1 - pct / 100)):,}" for k in ("complete_y", "pro_y", "alerts_y")]
+    want += [f"<b>₹{v:,}</b>" for v in bonus.values()]
+    want.append(f"EARN={{c:{bonus.get('complete_y')},p:{bonus.get('pro_y')},a:{bonus.get('alerts_y')}}}")
+    want += [f"₹{v:,} at your {n}th" for n, v in pt.get("milestones", {}).items()]
     for w in want:
         if w not in sell:
-            bad.append(f"sell.html doesn't show {w} (commission figures out of date)")
+            bad.append(f"sell.html doesn't show {w} (partner figures out of date)")
     today = date.today().isoformat()
     for o in offers.get("offers", []):
         if o.get("until") and o["until"] < today:
