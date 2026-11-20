@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T13:47:18+05:30",
+ "updated": "2026-11-20T14:02:45+05:30",
  "summary": {
-  "calls": 1907,
-  "scored_calls": 739,
+  "calls": 1912,
+  "scored_calls": 744,
   "d1": {
    "scored": 549,
    "hits": 225,
@@ -23,6 +23,51 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "626fc91a73034be7",
+   "symbol": "KIRLOSBROS",
+   "time": "2026-11-20T13:54:33+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "KIRLOSKAR BROTHERS VERY CLOSE TO SIGNING A VERY LARGE FRAMEWORK ORDER CONTRACT WITH DATA CENTRE OPERATOR IN USA -",
+   "url": "https://t.me/Indiaredboxglobal/9784",
+   "alert_px": 1572.0,
+   "alert_move": -1.14,
+   "alert_at": "2026-11-20T13:55:39+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "c1e8881188a9b22f",
+   "symbol": "IPCALAB",
+   "time": "2026-11-20T13:52:02+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "IPCA Laboratories Limited: IPCA Laboratories Limited has informed the Exchange about \"CLOSING OF MANUFACTURING OPERATION AND SALE OF LEASEHOLD LAND AND OLD FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/IPCALAB_20112026135147_IpcaSaleofMahadUnit.pdf",
+   "alert_px": 1840.1,
+   "alert_move": -1.07,
+   "alert_at": "2026-11-20T14:01:50+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "6a5e76d749522730",
+   "symbol": "HDFCBANK",
+   "time": "2026-11-20T13:41:31+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "HDFC Bank regains ₹13 trillion market-cap; stock hits 8-month high",
+   "url": "https://www.business-standard.com/markets/news/hdfc-bank-regains-13-trillion-market-cap-stock-hits-8-month-high-126112000503_1.html",
+   "alert_px": 844.4,
+   "alert_move": 2.75,
+   "alert_at": "2026-11-20T14:01:50+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "fcf06d87503d4d25",
    "symbol": "MANAPPURAM",
@@ -51,6 +96,21 @@
    "alert_px": 2551.1,
    "alert_move": -2.56,
    "alert_at": "2026-11-20T13:46:42+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "6a6dec5fd813c0d8",
+   "symbol": "OIL",
+   "time": "2026-11-20T13:38:29+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Brent seen at $75-85 in 2027 as oil surplus builds: Mirae Asset Sharekhan",
+   "url": "https://www.business-standard.com/markets/news/brent-seen-at-75-85-in-2027-as-oil-surplus-builds-mirae-asset-sharekhan-126112000518_1.html",
+   "alert_px": 430.55,
+   "alert_move": -1.68,
+   "alert_at": "2026-11-20T14:01:50+05:30",
    "alert_delay": 900
   },
   {
@@ -530,6 +590,21 @@
    "source": "Business Standard",
    "headline": "Stocks to watch: Voltas, Dilip Buildcon, Paytm, NLC India, Axis Bank, PNB",
    "url": "https://www.business-standard.com/markets/news/stocks-to-watch-voltas-dilip-buildcon-paytm-nlc-india-axis-bank-pnb-126112000127_1.html"
+  },
+  {
+   "id": "c91060041a6f8846",
+   "symbol": "MEESHO",
+   "time": "2026-11-20T08:08:02+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex jumps 700 pts, Nifty above 25,700; Meesho hits new high",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-20-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-126112000118_1.html",
+   "alert_px": 259.79,
+   "alert_move": 0.36,
+   "alert_at": "2026-11-20T14:01:50+05:30",
+   "alert_delay": 900
   },
   {
    "id": "06a44fa58be3e5ef",

@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T13:46+05:30",
+ "updated": "2026-11-20T14:01+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a weak market start with the GIFT Nifty dropping sharply, while Indian IT stocks rose against a global AI sell‑off that hit small‑cap tech names. Metals fell as a stronger US dollar squeezed commodity prices, but auto and consumer durables posted gains. Corporate news included Jupiter Wagons winning a repeat order worth over ₹128 crore and Ashoka Buildcon losing a Saudi project worth ₹846 crore. The government also launched a ₹34.35 billion e‑bus payment portal, which could lift electric‑bus makers.",
+  "summary": "Jupiter Wagons secured a repeat order worth over 128 crore rupees from a major logistics firm, boosting its revenue outlook. Ashoka Buildcon lost a big Saudi Arabia project worth more than 800 crore rupees, hurting its future earnings. AI‑related tech stocks fell and gold prices hit a one‑year low, dragging gold‑loan companies down. Meanwhile, Indian IT stocks rose while metal stocks fell as the dollar strengthened.",
   "themes": [
-   "Mixed sector moves: IT up, metals down, autos and durables strong",
-   "Key corporate updates: new order for Jupiter Wagons, project loss for Ashoka Buildcon, Natco clears US FDA inspection",
-   "Market sentiment: weak opening, bond yields attracting funds, AI concerns weighing on tech small‑caps"
+   "Contract wins and losses shape company earnings",
+   "AI and gold price swings hit tech and gold‑loan stocks",
+   "Sector moves: metals down, IT up, hospitals up"
   ],
   "watch": [
-   "Execution of Jupiter Wagons' new order and raw‑material cost impact",
-   "Roll‑out of the PM E‑Bus portal and order flow to Olectra Greentech and JBM Auto",
-   "Stability of AI‑related small‑cap stocks and continuation of the IT rally amid global tech sentiment"
+   "Kirloskar Brothers may sign a large US data‑center contract",
+   "Government launch of an e‑bus payment portal could lift electric‑bus makers",
+   "Metal stocks face pressure from a stronger US dollar"
   ],
   "date": "2026-11-20",
-  "basis": "b2cdd250382b",
-  "updated": "2026-11-20T13:16+05:30",
-  "model": "openai/gpt-oss-120b",
-  "items": 62
+  "basis": "b60cd6e16b77",
+  "updated": "2026-11-20T14:01+05:30",
+  "model": "openai/gpt-oss-20b",
+  "items": 73
  },
  "stocks": {
   "PAYTM": {
@@ -124,20 +124,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "IIFL": {
-   "summary": "IIFL Finance shares jumped about 6% after Fairfax sold its entire 13.25% stake in a large block deal. The stock also received positive attention from analysts who noted it may benefit from recent market dips.",
-   "why": "A large sale by a major investor can change how other traders view the stock, often leading to short-term price swings. The recent jump shows high trading interest, which can affect the value of your holding quickly.",
-   "upside": "Analysts suggest the stock could rise further as it recovers from recent market dips.",
-   "downside": "Traders might sell their shares to lock in profits after the recent 6% jump, which could push the price back down.",
+   "summary": "Fairfax recently sold its entire 13.25% stake in IIFL Finance through a large block deal, which caused the stock to jump about 6%. Meanwhile, IIFL Capital Services announced an amendment to its filing, and analysts suggest the stock could rise soon.",
+   "why": "Big changes in who owns the company's shares and new analyst coverage can shift how the market views the stock and affect trading.",
+   "upside": "The company may benefit from the recent market dip, positive analyst coverage, and new capital from institutional investors.",
+   "downside": "Overall market volatility and potential profit-taking after the recent price jump could weigh on the stock.",
    "watch": [
-    "How the stock price settles after the recent 6% jump.",
-    "Any new details about the amendment to IIFL Capital Services' filing.",
-    "Whether the Financials sector continues its recent upward trend."
+    "Market volatility and potential profit-taking",
+    "Further updates regarding institutional investors and capital",
+    "Updates on the company's filings and disclosures"
    ],
-   "about": "IIFL Finance is a company in the Financial Services sector.",
-   "basis": "071353f9a293",
-   "items": 5,
-   "updated": "2026-11-20T09:30+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "IIFL Finance Ltd. is a financial services company included in the Nifty 500 index.",
+   "basis": "a6f57ab61a2f",
+   "items": 4,
+   "updated": "2026-11-20T14:01+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "JIOFIN": {
    "summary": "Jio Financial Services Ltd. has announced an acquisition and entered a 50:50 joint venture with BlackRock for asset management. Both moves aim to strengthen its growth and earnings potential. The company is also one of India's 50 largest listed firms in the Nifty 50 index.",
@@ -395,22 +395,6 @@
    "updated": "2026-11-20T09:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "ACMESOLAR": {
-   "summary": "Acme Solar Holdings recently signed a new agreement to sell electricity and reported receiving additional orders. These moves suggest the company is securing future work in the power sector.",
-   "why": "New contracts and agreements can lead to higher future revenue, which may support the value of the company for shareholders.",
-   "upside": "The new orders and power purchase agreement could increase future income if the projects are completed on time.",
-   "downside": "The company noted that projects may face execution delays, which could affect when revenue is actually earned.",
-   "watch": [
-    "Details on the value of the new power purchase agreement",
-    "Progress on executing the newly received orders",
-    "Performance of the broader Energy sector index"
-   ],
-   "about": "Acme Solar Holdings is a company in the power sector that sells electricity under power purchase agreements.",
-   "basis": "b36e77da67ad",
-   "items": 2,
-   "updated": "2026-11-18T19:23+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "JSWENERGY": {
    "summary": "A tribunal ordered power distributors to pay JSW Energy pending wind power tariffs with interest. The company also filed a regulatory notice regarding material litigation.",
    "why": "This ruling may bring in significant cash that was previously stuck in legal disputes. It helps clarify the financial impact of ongoing legal cases for shareholders.",
@@ -442,6 +426,22 @@
    "items": 2,
    "updated": "2026-11-19T12:15+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "ACMESOLAR": {
+   "summary": "ACME Solar Holdings announced it has received new orders/contracts, which could boost future revenue. The company faces potential execution delays that could affect delivery timelines.",
+   "why": "Shareholders may benefit from increased revenue but must watch for delays that could impact earnings.",
+   "upside": "New orders could increase future revenue.",
+   "downside": "Execution delays could hurt revenue.",
+   "watch": [
+    "Growth of order backlog",
+    "Timeline for project execution",
+    "Sector index movement"
+   ],
+   "about": "ACME Solar Holdings is a power sector company.",
+   "basis": "fa516855019b",
+   "items": 1,
+   "updated": "2026-11-20T14:01+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "RVNL": {
    "summary": "Rail Vikas Nigam Ltd. is a construction company included in the Nifty 500 index. Recent reports indicate its share price has dropped significantly from its highest point.",
@@ -553,6 +553,22 @@
    "items": 2,
    "updated": "2026-11-19T11:01+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "KIRLOSBROS": {
+   "summary": "Kirloskar Brothers Ltd. is reportedly close to signing a very large framework order with a U.S. data centre operator. The deal is not yet confirmed and could bring significant new business.",
+   "why": "If the contract goes through, it could increase the company’s revenue and strengthen its position in the pump market.",
+   "upside": "A successful large contract could boost sales and earnings.",
+   "downside": "The deal may not materialise or could be smaller than expected.",
+   "watch": [
+    "Confirmation of the contract signing",
+    "Final value of the framework order",
+    "Impact on the company’s revenue and earnings"
+   ],
+   "about": "Kirloskar Brothers Ltd. is a pump maker.",
+   "basis": "3c1b320352ac",
+   "items": 1,
+   "updated": "2026-11-20T14:01+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "PWL": {
    "summary": "Physicswallah Ltd. announced an ambitious FY30 revenue target of ₹10,000 crore, prompting the share price to rise 4‑6% in recent trading. The market is watching whether the company can execute its growth blueprint.",
@@ -731,36 +747,36 @@
    "model": "openai/gpt-oss-120b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is seeing its sector rise as global oil prices edge higher amid geopolitical tensions and supply concerns. At the same time, statements about India's potential in sustainable aviation fuel hint at new growth avenues.",
-   "why": "Higher oil prices can boost the company's revenue, while any price drop from increased supply could pressure earnings.",
-   "upside": "If oil prices stay elevated or the sustainable aviation fuel projects materialize, the company's earnings could improve.",
-   "downside": "A surge in global supply or policy actions that lower crude prices could reduce revenue.",
+   "summary": "Oil India Ltd. (OIL) is an oil and gas company listed in the Nifty 500. Recent headlines show oil prices rising due to geopolitical tensions and supply concerns, which could affect the company’s earnings. The sector index has gained 0.9% in the last session and over five sessions.",
+   "why": "Shareholders of OIL may see their investment influenced by changes in oil prices, as higher prices can improve revenue for oil producers.",
+   "upside": "Higher oil prices could boost OIL’s earnings.",
+   "downside": "Lower long‑term oil price forecasts or an oversupply could reduce earnings.",
    "watch": [
-    "Oil price movements after geopolitical events",
-    "Developments in sustainable aviation fuel projects in India",
-    "OPEC+ policy decisions affecting supply"
+    "Future oil price forecasts and supply outlooks",
+    "Geopolitical events that may disrupt oil supply",
+    "OPEC+ policy decisions that could tighten or loosen supply"
    ],
-   "about": "Oil India Ltd. explores, produces and sells crude oil and natural gas in India.",
-   "basis": "96aceeea6ade",
-   "items": 18,
-   "updated": "2026-11-20T12:30+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Oil India Ltd. is an Indian oil company involved in exploration and production.",
+   "basis": "949de74624c4",
+   "items": 19,
+   "updated": "2026-11-20T14:01+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "HDFCBANK": {
-   "summary": "PulsEdge flagged that HDFC Bank is part of a strong rally in bank stocks, with the Nifty Bank index hitting a new high and HDFC Bank rising up to 21% in November. The bank was also named by Goldman Sachs as a high‑growth stock, adding to the positive sentiment.",
-   "why": "This matters to shareholders because upbeat market sentiment and analyst endorsement could support the share price, while a reversal in sector rotation could affect returns.",
-   "upside": "If the bank rally and high‑growth endorsement continue, the stock could see further gains.",
-   "downside": "A shift of investor focus to other sectors or a broader market decline could pull the stock lower.",
+   "summary": "HDFC Bank’s market value has just crossed ₹13 trillion, lifting its share price to an eight‑month high. The bank also rallied up to 21% in November, and has been highlighted by analysts as a high‑growth pick.",
+   "why": "Shareholders see these moves as a sign of strong investor interest and analyst support, which can influence the bank’s stock price.",
+   "upside": "If the sector continues to favor banks, the rally could keep going.",
+   "downside": "The valuation may be stretched and a shift in sector rotation or a broader market pullback could hurt the price.",
    "watch": [
-    "Nifty Bank index performance",
-    "Signs of sector rotation",
-    "New analyst commentary on HDFC Bank"
+    "HDFC Bank’s market cap crossing ₹13 trillion",
+    "Performance of the Nifty Bank index",
+    "Analyst coverage from Goldman Sachs and other research houses"
    ],
-   "about": "HDFC Bank is a major Indian private‑sector bank offering retail and wholesale banking services.",
-   "basis": "554492856b09",
-   "items": 4,
-   "updated": "2026-11-20T12:30+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "HDFC Bank is a major Indian bank that provides a range of financial services.",
+   "basis": "91d9936a4136",
+   "items": 5,
+   "updated": "2026-11-20T14:01+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "MARUTI": {
    "summary": "Maruti Suzuki shares have risen sharply as the auto sector rallied, with the Nifty Auto index up 4.4% in the last session and 1.3% over five sessions. The stock also appeared in a recent list of top picks by a broker.",
@@ -938,22 +954,6 @@
    "updated": "2026-11-20T09:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "TMCV": {
-   "summary": "PulsEdge flagged that Tata Motors may see earnings downgraded, meaning analysts expect lower profit. At the same time, the stock closed above its 200‑day moving average, a level that can hint at a technical recovery.",
-   "why": "Lower earnings expectations can pressure the share price, while a price above the long‑term average may attract buying interest.",
-   "upside": "If the company reports earnings that beat the lowered forecasts, the stock could rally.",
-   "downside": "If actual earnings fall short of even the reduced expectations, the share price could fall further.",
-   "watch": [
-    "Upcoming earnings release and whether results beat the downgraded view",
-    "Trading volume on days the price stays above the 200‑day moving average",
-    "Any new analyst revisions to earnings forecasts"
-   ],
-   "about": "Tata Motors Ltd. designs, manufactures and sells automobiles and commercial vehicles.",
-   "basis": "68915273e31c",
-   "items": 2,
-   "updated": "2026-11-20T09:47+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "AXISBANK": {
    "summary": "Axis Bank was recently highlighted in a watchlist and in a technical note suggesting a possible breakout, but there’s no specific news driving the price.",
    "why": "Being on a watchlist can trigger short‑term trading activity, and a technical bias could influence the share’s movement.",
@@ -1097,6 +1097,22 @@
    "items": 1,
    "updated": "2026-11-20T11:15+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "TMCV": {
+   "summary": "Tata Motors Ltd. (TMCV) has been flagged by a research firm as one of ten Nifty stocks likely to see earnings downgraded. This suggests analysts expect the company to earn less than previously projected.",
+   "why": "If earnings are lower than expected, investors may react negatively, which can affect the share price of TMCV holders.",
+   "upside": "",
+   "downside": "A downgrade could lead to a decline in the stock price if the market believes the company will not meet its earnings targets.",
+   "watch": [
+    "Upcoming earnings report for Tata Motors",
+    "Actual earnings results versus downgraded expectations",
+    "Market reaction to the earnings announcement"
+   ],
+   "about": "",
+   "basis": "8b1637ee71c5",
+   "items": 1,
+   "updated": "2026-11-20T14:01+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "BEML": {
    "summary": "PulsEdge flagged that BEML is among five defence stocks that could benefit from a proposed 20% increase in government defence capital expenditure next year.",
