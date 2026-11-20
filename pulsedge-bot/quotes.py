@@ -23,33 +23,52 @@ from datetime import datetime, timedelta, timezone
 
 IST = timezone(timedelta(hours=5, minutes=30))
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-SCAN = "https://scanner.tradingview.com/india/scan"
+SCAN = "https://scanner.tradingview.com/india/scan"      # NSE stocks
+GLOBAL = "https://scanner.tradingview.com/global/scan"   # any exchange: GIFT Nifty, world indices, futures, currencies
 TIMEOUT = 8
 
 
-def quotes(symbols):
-    symbols = sorted({str(s).upper() for s in symbols if s})
-    out, now = {}, datetime.now(IST).isoformat(timespec="seconds")
-    for i in range(0, len(symbols), 100):
-        chunk = symbols[i:i + 100]
-        body = json.dumps({"symbols": {"tickers": [f"NSE:{s}" for s in chunk]},
-                           "columns": ["close", "change", "update_mode"]}).encode()
+def scan(tickers, url=GLOBAL, columns=("close", "change", "update_mode")):
+    """TradingView screener rows for full tickers ("NSEIX:NIFTY1!", "TVC:NI225"): {ticker: [values in column order]}.
+    Up to 100 tickers a request; a ticker it doesn't know, or a request that fails, is simply missing."""
+    tickers = list(dict.fromkeys(str(t) for t in tickers if t))
+    out = {}
+    for i in range(0, len(tickers), 100):
+        body = json.dumps({"symbols": {"tickers": tickers[i:i + 100]}, "columns": list(columns)}).encode()
         try:
-            req = urllib.request.Request(SCAN, data=body, headers={"User-Agent": UA, "Content-Type": "application/json"})
+            req = urllib.request.Request(url, data=body, headers={"User-Agent": UA, "Content-Type": "application/json"})
             with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
                 rows = json.loads(r.read()).get("data") or []
         except Exception:
             continue
         for row in rows:
-            try:
-                sym, (px, chg, mode) = row["s"].split(":", 1)[1], row["d"][:3]
-                if not px or chg is None:
-                    continue
-                delay = int(str(mode).rsplit("_", 1)[1]) if "delayed" in str(mode) else 0
-                out[sym] = {"px": round(float(px), 2), "prev": round(float(px) / (1 + float(chg) / 100), 2),
-                            "move": round(float(chg), 2), "at": now, "delay": delay}
-            except (KeyError, ValueError, TypeError, IndexError):
+            if isinstance(row, dict) and row.get("s") and isinstance(row.get("d"), list):
+                out[row["s"]] = row["d"]
+    return out
+
+
+def delay_of(mode):
+    """Seconds a price lags, from TradingView's update_mode ("streaming" = real time, "delayed_streaming_900" = 15 min)."""
+    try:
+        return int(str(mode).rsplit("_", 1)[1]) if "delayed" in str(mode) else 0
+    except (IndexError, ValueError):
+        return 0
+
+
+def quotes(symbols):
+    symbols = sorted({str(s).upper() for s in symbols if s})
+    now = datetime.now(IST).isoformat(timespec="seconds")
+    out = {}
+    tv = {f"NSE:{s.replace('-', '_')}": s for s in symbols}     # TradingView writes BAJAJ-AUTO as BAJAJ_AUTO
+    for t, d in scan(tv, SCAN).items():
+        try:
+            px, chg, mode = d[:3]
+            if not px or chg is None:
                 continue
+            out[tv.get(t, t.split(":", 1)[1])] = {"px": round(float(px), 2), "prev": round(float(px) / (1 + float(chg) / 100), 2),
+                                       "move": round(float(chg), 2), "at": now, "delay": delay_of(mode)}
+        except (ValueError, TypeError, ZeroDivisionError):
+            continue
     return out
 
 
