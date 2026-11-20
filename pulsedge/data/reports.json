@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T14:01+05:30",
+ "updated": "2026-11-20T14:31+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -122,22 +122,6 @@
    "items": 2,
    "updated": "2026-11-20T03:25+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "IIFL": {
-   "summary": "Fairfax recently sold its entire 13.25% stake in IIFL Finance through a large block deal, which caused the stock to jump about 6%. Meanwhile, IIFL Capital Services announced an amendment to its filing, and analysts suggest the stock could rise soon.",
-   "why": "Big changes in who owns the company's shares and new analyst coverage can shift how the market views the stock and affect trading.",
-   "upside": "The company may benefit from the recent market dip, positive analyst coverage, and new capital from institutional investors.",
-   "downside": "Overall market volatility and potential profit-taking after the recent price jump could weigh on the stock.",
-   "watch": [
-    "Market volatility and potential profit-taking",
-    "Further updates regarding institutional investors and capital",
-    "Updates on the company's filings and disclosures"
-   ],
-   "about": "IIFL Finance Ltd. is a financial services company included in the Nifty 500 index.",
-   "basis": "a6f57ab61a2f",
-   "items": 4,
-   "updated": "2026-11-20T14:01+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "JIOFIN": {
    "summary": "Jio Financial Services Ltd. has announced an acquisition and entered a 50:50 joint venture with BlackRock for asset management. Both moves aim to strengthen its growth and earnings potential. The company is also one of India's 50 largest listed firms in the Nifty 50 index.",
@@ -282,6 +266,22 @@
    "items": 3,
    "updated": "2026-11-19T15:02+05:30",
    "model": "openai/gpt-oss-20b"
+  },
+  "IIFL": {
+   "summary": "IIFL Finance is part of the Nifty 500 index and recently received investment from institutional investors. The Financials sector has seen a slight rise in share prices over the last week.",
+   "why": "New money from large investors can signal confidence in the company, which may support the value of your shares.",
+   "upside": "Institutional interest and a rising sector trend could help the stock price move higher.",
+   "downside": "General market volatility could cause the share price to fall despite positive news.",
+   "watch": [
+    "How the new institutional investment affects the company's capital",
+    "Trends in the broader Financials sector index",
+    "Any further announcements from IIFL Capital Services regarding filing amendments"
+   ],
+   "about": "IIFL Finance operates in the Financial Services sector.",
+   "basis": "df1bc8362544",
+   "items": 3,
+   "updated": "2026-11-20T14:31+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "APLAPOLLO": {
    "summary": "APL Apollo Tubes is in the news because its promoter family is looking to sell about 28% of the company, which could bring in roughly ₹17,000 crore. A major investment bank has also named the stock a conviction pick after its Q2 results, suggesting it could be a good buy for investors.",
