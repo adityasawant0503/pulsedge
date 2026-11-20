@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T14:31+05:30",
+ "updated": "2026-11-20T15:02+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Jupiter Wagons secured a repeat order worth over 128 crore rupees from a major logistics firm, boosting its revenue outlook. Ashoka Buildcon lost a big Saudi Arabia project worth more than 800 crore rupees, hurting its future earnings. AI‑related tech stocks fell and gold prices hit a one‑year low, dragging gold‑loan companies down. Meanwhile, Indian IT stocks rose while metal stocks fell as the dollar strengthened.",
+  "summary": "PulsEdge flagged a mix of contract wins and losses on 20 November 2026. Jupiter Wagons secured a repeat order worth over ₹128 crore from JSW Rail Logistics, while Ashoka Buildcon lost a ₹846 crore Saudi project. The tech sector saw a sell‑off linked to AI concerns, and gold prices fell to a one‑year low, dragging gold‑loan firms down. Sector indices were mixed, with Auto and Consumer Durables up, but IT and Media were weak.",
   "themes": [
-   "Contract wins and losses shape company earnings",
-   "AI and gold price swings hit tech and gold‑loan stocks",
-   "Sector moves: metals down, IT up, hospitals up"
+   "Contract wins and losses",
+   "Tech and AI volatility",
+   "Gold price impact on loan firms"
   ],
   "watch": [
-   "Kirloskar Brothers may sign a large US data‑center contract",
-   "Government launch of an e‑bus payment portal could lift electric‑bus makers",
-   "Metal stocks face pressure from a stronger US dollar"
+   "Kirloskar brothers close to a large US data‑center contract",
+   "Jupiter Wagons order execution and raw‑material cost risk",
+   "Gold price decline affecting gold‑loan companies"
   ],
   "date": "2026-11-20",
-  "basis": "b60cd6e16b77",
-  "updated": "2026-11-20T14:01+05:30",
+  "basis": "cef6ffe1943d",
+  "updated": "2026-11-20T15:02+05:30",
   "model": "openai/gpt-oss-20b",
-  "items": 73
+  "items": 84
  },
  "stocks": {
   "PAYTM": {
@@ -171,22 +171,6 @@
    "updated": "2026-11-20T12:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "MANAPPURAM": {
-   "summary": "Manappuram Finance shares have fallen up to 5% as gold prices hit a one‑year low, putting pressure on its gold‑loan business.",
-   "why": "Shareholders see the stock dip and face risk of higher loan losses if falling gold values erode collateral.",
-   "upside": "A rebound in gold prices could improve collateral values and support earnings.",
-   "downside": "Further declines in gold prices could raise non‑performing assets and squeeze margins.",
-   "watch": [
-    "Gold price movements",
-    "Trends in gold‑loan non‑performing assets",
-    "Competitive lending rates and margin pressure"
-   ],
-   "about": "Manappuram Finance provides loans secured by gold jewellery.",
-   "basis": "7284e28e8994",
-   "items": 3,
-   "updated": "2026-11-20T13:46+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "MUTHOOTFIN": {
    "summary": "Muthoot Finance shares fell 4‑5% after gold prices dropped to a one‑year low. The decline reflects concerns that lower gold values could raise loan risk and reduce profitability. The company is part of the Nifty 500 and operates in the financial services sector.",
    "why": "Shareholders see a risk that falling gold prices could increase non‑performing assets and reduce loan demand, impacting earnings.",
@@ -282,6 +266,22 @@
    "items": 3,
    "updated": "2026-11-20T14:31+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "MANAPPURAM": {
+   "summary": "Manappuram Finance shares fell recently as gold prices dropped to a one-year low. Because the company lends money against gold, falling gold prices put pressure on its business.",
+   "why": "This matters because lower gold values make the loans the company gives out riskier and less profitable.",
+   "upside": "Gold prices could rebound quickly.",
+   "downside": "A further drop in gold prices could increase bad loans.",
+   "watch": [
+    "The movement of gold prices",
+    "Share price reactions of gold loan companies",
+    "Updates on loan risks"
+   ],
+   "about": "Manappuram Finance Ltd. is a financial services company that lends money against gold.",
+   "basis": "b3ff4fd13421",
+   "items": 2,
+   "updated": "2026-11-20T15:02+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "APLAPOLLO": {
    "summary": "APL Apollo Tubes is in the news because its promoter family is looking to sell about 28% of the company, which could bring in roughly ₹17,000 crore. A major investment bank has also named the stock a conviction pick after its Q2 results, suggesting it could be a good buy for investors.",
@@ -458,22 +458,6 @@
    "updated": "2026-11-19T00:20+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "HINDCOPPER": {
-   "summary": "Hindustan Copper shares fell by 3% because copper prices dropped to their lowest level in five months. This happened even though the company reported a significant increase in profits for the current quarter.",
-   "why": "Shareholders may see lower share values because investors are worried that cheaper copper will reduce the company's future earnings.",
-   "upside": "Copper prices could rise again, which would limit how much the share price can fall.",
-   "downside": "If copper prices stay low, the company's future profits might decrease.",
-   "watch": [
-    "Future copper price trends",
-    "The company's next quarterly profit report",
-    "Overall performance of the Metals sector index"
-   ],
-   "about": "Hindustan Copper is a company in the Metals and Mining sector.",
-   "basis": "0adc419934e1",
-   "items": 1,
-   "updated": "2026-11-18T11:02+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "BSE": {
    "summary": "BSE Ltd. is in the news as a platform for a new subsidiary IPO, faces competition from NSE over equity‑option contracts, and is watching possible SEBI curbs on multi‑commodity trading platforms. These developments could influence its trading volumes and fee income.",
    "why": "Shareholders should watch because new listings can boost revenues while regulatory changes or competition could cut earnings.",
@@ -538,6 +522,22 @@
    "updated": "2026-11-18T19:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "KIRLOSBROS": {
+   "summary": "Kirloskar Brothers Ltd. secured a 165 crore rupee contract to supply pumps for Africa’s largest refinery and is close to signing a large framework order with a U.S. data centre operator.",
+   "why": "The new contracts could add significant future income and boost profits for shareholders.",
+   "upside": "If the U.S. data centre deal materialises, it could bring in substantial new business.",
+   "downside": "Execution delays or cost overruns on the international projects could hurt revenue recognition.",
+   "watch": [
+    "Execution of the Africa refinery contract",
+    "Confirmation of the U.S. data centre framework order",
+    "Potential cost overruns on the international project"
+   ],
+   "about": "Kirloskar Brothers Ltd. is a capital goods company.",
+   "basis": "4d5a8b64f1f2",
+   "items": 3,
+   "updated": "2026-11-20T15:02+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "CYIENT": {
    "summary": "Cyient announced a strategic investment from GlobalFoundries into its semiconductor business and also reported the resignation of a senior director. The IT sector has been down recently.",
    "why": "The investment could bring new cash and a well‑known partner, while the resignation may raise concerns about leadership continuity.",
@@ -553,22 +553,6 @@
    "items": 2,
    "updated": "2026-11-19T11:01+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "KIRLOSBROS": {
-   "summary": "Kirloskar Brothers Ltd. is reportedly close to signing a very large framework order with a U.S. data centre operator. The deal is not yet confirmed and could bring significant new business.",
-   "why": "If the contract goes through, it could increase the company’s revenue and strengthen its position in the pump market.",
-   "upside": "A successful large contract could boost sales and earnings.",
-   "downside": "The deal may not materialise or could be smaller than expected.",
-   "watch": [
-    "Confirmation of the contract signing",
-    "Final value of the framework order",
-    "Impact on the company’s revenue and earnings"
-   ],
-   "about": "Kirloskar Brothers Ltd. is a pump maker.",
-   "basis": "3c1b320352ac",
-   "items": 1,
-   "updated": "2026-11-20T14:01+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "PWL": {
    "summary": "Physicswallah Ltd. announced an ambitious FY30 revenue target of ₹10,000 crore, prompting the share price to rise 4‑6% in recent trading. The market is watching whether the company can execute its growth blueprint.",
@@ -730,22 +714,6 @@
    "updated": "2026-11-18T11:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "TATAPOWER": {
-   "summary": "Tata Power says its profit could triple in the next quarter as it speeds up project completion. The company expects its execution pace to be three times higher than in the first half of the year. The broader energy index was slightly down yesterday.",
-   "why": "Higher profits could boost earnings per share and potentially improve returns for shareholders.",
-   "upside": "If the profit growth materialises, earnings could rise sharply.",
-   "downside": "The profit guidance is forward‑looking and may not be met.",
-   "watch": [
-    "Quarterly earnings release",
-    "Progress on project execution",
-    "Energy sector index movement"
-   ],
-   "about": "Tata Power generates, transmits and distributes electricity in India.",
-   "basis": "3e72a9621c05",
-   "items": 1,
-   "updated": "2026-11-18T16:10+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "OIL": {
    "summary": "Oil India Ltd. (OIL) is an oil and gas company listed in the Nifty 500. Recent headlines show oil prices rising due to geopolitical tensions and supply concerns, which could affect the company’s earnings. The sector index has gained 0.9% in the last session and over five sessions.",
    "why": "Shareholders of OIL may see their investment influenced by changes in oil prices, as higher prices can improve revenue for oil producers.",
@@ -762,37 +730,21 @@
    "updated": "2026-11-20T14:01+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "HDFCBANK": {
-   "summary": "HDFC Bank’s market value has just crossed ₹13 trillion, lifting its share price to an eight‑month high. The bank also rallied up to 21% in November, and has been highlighted by analysts as a high‑growth pick.",
-   "why": "Shareholders see these moves as a sign of strong investor interest and analyst support, which can influence the bank’s stock price.",
-   "upside": "If the sector continues to favor banks, the rally could keep going.",
-   "downside": "The valuation may be stretched and a shift in sector rotation or a broader market pullback could hurt the price.",
-   "watch": [
-    "HDFC Bank’s market cap crossing ₹13 trillion",
-    "Performance of the Nifty Bank index",
-    "Analyst coverage from Goldman Sachs and other research houses"
-   ],
-   "about": "HDFC Bank is a major Indian bank that provides a range of financial services.",
-   "basis": "91d9936a4136",
-   "items": 5,
-   "updated": "2026-11-20T14:01+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
   "MARUTI": {
-   "summary": "Maruti Suzuki shares have risen sharply as the auto sector rallied, with the Nifty Auto index up 4.4% in the last session and 1.3% over five sessions. The stock also appeared in a recent list of top picks by a broker.",
-   "why": "A sector rally can lift the share price, but the gains may be fragile if costs rise again.",
-   "upside": "If cheaper metal and oil keep input costs low, the rally could extend.",
-   "downside": "Higher metal or oil prices could push costs up and reverse the rally.",
+   "summary": "Maruti Suzuki shares are part of a recent auto‑sector rally, with the Nifty Auto index up 4.4% in the last session and Maruti among the leading stocks. The company also appeared on a broker’s list of top stocks to buy, though this is just an opinion.",
+   "why": "As a Nifty 50 constituent, Maruti’s performance can influence the overall market index and affect investors holding large‑cap stocks.",
+   "upside": "The rally could continue if lower metal and oil prices keep input costs down.",
+   "downside": "The rally may fade if input costs rise again or if the sector reverses.",
    "watch": [
-    "Metal and oil price trends",
-    "Continuation of the auto sector rally",
-    "New broker recommendations or list inclusions"
+    "Changes in metal and oil prices that affect input costs",
+    "Potential reversal of the auto‑sector rally",
+    "Movement of the broader market indices such as Sensex and Nifty"
    ],
-   "about": "Maruti Suzuki India Ltd. manufactures and sells passenger cars in India.",
-   "basis": "65f676b1d1d6",
-   "items": 4,
-   "updated": "2026-11-20T09:30+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Maruti Suzuki India Ltd. is a major automobile manufacturer in India.",
+   "basis": "ada234d5e3f3",
+   "items": 5,
+   "updated": "2026-11-20T15:02+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "TATASTEEL": {
    "summary": "Tata Steel is facing higher iron‑ore costs and is still discussing financial assistance with the Dutch government while metal stocks have been falling.",
@@ -810,22 +762,6 @@
    "updated": "2026-11-20T12:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "ICICIBANK": {
-   "summary": "ICICI Bank shares have risen significantly in November, contributing to a new high for the Nifty Bank index. The Financials sector has also shown steady growth over the last week.",
-   "why": "This matters because strong performance in the banking sector can boost the value of your shares if the trend continues. However, it also means the stock has already increased in price recently.",
-   "upside": "Investors are currently favoring bank stocks, which could support further gains if this preference persists.",
-   "downside": "If other market sectors start gaining momentum, money may move out of banks, causing prices to fall or stay flat.",
-   "watch": [
-    "Whether the Nifty Bank index holds its recent high.",
-    "If the broader market remains stable or starts to fall.",
-    "Changes in investor interest across different sectors."
-   ],
-   "about": "ICICI Bank is a major financial services company and one of India's 50 largest listed firms.",
-   "basis": "44829cf4e54b",
-   "items": 3,
-   "updated": "2026-11-20T12:30+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "INFY": {
    "summary": "Infosys shares have fallen sharply, losing about a quarter of investor wealth over the past year, while the broader Indian IT sector recently rallied 2% even as global tech stocks slipped. The sector index is down 1.1% in the last session and 3.9% over five sessions, showing mixed momentum.",
    "why": "Shareholders feel the impact of both the price drop and the sector’s relative strength, which can affect the stock’s future value.",
@@ -841,22 +777,6 @@
    "items": 3,
    "updated": "2026-11-20T10:31+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "TCS": {
-   "summary": "TCS shares dipped slightly today as the IT sector fell 1.1% in the last session. Indian IT stocks have outperformed global tech stocks recently, showing a preference for local IT firms. The market trend for TCS remains mixed.",
-   "why": "Shareholders see the price move as a reflection of market sentiment that can affect their portfolio value.",
-   "upside": "A continued preference for Indian IT firms could support TCS’s share price.",
-   "downside": "A reversal in global tech sentiment or broader market weakness could push the share price lower.",
-   "watch": [
-    "TCS share price trend the next day",
-    "IT sector performance in the coming sessions",
-    "global tech market sentiment"
-   ],
-   "about": "TCS is a major Indian IT services company.",
-   "basis": "bbc05122b0cc",
-   "items": 3,
-   "updated": "2026-11-20T10:31+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "KALYANKJIL": {
    "summary": "Kalyan Jewellers shares fell recently as gold prices dropped and the broader consumer durables sector weakened. This decline happened despite lower gold prices, which some investors see as a potential boost for future sales.",
@@ -938,6 +858,22 @@
    "updated": "2026-11-20T12:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "TCS": {
+   "summary": "TCS shares dipped slightly today, while the broader Indian IT index rose 2% against a global AI rout. The sector index, however, fell 1.1% in the last session and 3.9% over five sessions, showing mixed momentum. The recent drop in TCS price is a small setback amid overall sector gains.",
+   "why": "Shareholders should note that TCS’s price movement reflects both company‑specific and sector‑wide dynamics, which can affect portfolio value.",
+   "upside": "If the rally in Indian IT stocks continues, TCS could see a price lift.",
+   "downside": "A reversal in global tech sentiment could push the rally back and further pressure TCS shares.",
+   "watch": [
+    "TCS price trend in the next trading session",
+    "global technology market sentiment",
+    "performance of the IT sector index"
+   ],
+   "about": "TCS is a major Indian IT services company.",
+   "basis": "c46635924ac3",
+   "items": 2,
+   "updated": "2026-11-20T15:02+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "INDIGO": {
    "summary": "IndiGo is flagged for a possible earnings downgrade as analysts expect lower profits than previously forecast.",
    "why": "Lower profit expectations can pressure the stock, affecting shareholders' returns.",
@@ -952,22 +888,6 @@
    "basis": "bb832b385d3c",
    "items": 2,
    "updated": "2026-11-20T09:47+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "AXISBANK": {
-   "summary": "Axis Bank was recently highlighted in a watchlist and in a technical note suggesting a possible breakout, but there’s no specific news driving the price.",
-   "why": "Being on a watchlist can trigger short‑term trading activity, and a technical bias could influence the share’s movement.",
-   "upside": "If the technical breakout bias holds, the stock could move higher.",
-   "downside": "If the broader market falls, the stock may stay flat or decline.",
-   "watch": [
-    "Sector index performance",
-    "Broader market direction",
-    "Any new catalyst or news for Axis Bank"
-   ],
-   "about": "Axis Bank provides banking and financial services in India.",
-   "basis": "504ba71125e9",
-   "items": 2,
-   "updated": "2026-11-20T11:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "VOLTAS": {
@@ -1290,6 +1210,22 @@
    "updated": "2026-11-18T11:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "HDFCBANK": {
+   "summary": "HDFC Bank’s market value has crossed ₹13 trillion, lifting its share price to an eight‑month high. Bank stocks rallied 21% in November, and the bank was named a high‑growth stock by Goldman Sachs.",
+   "why": "Shareholders see a rise in market value and share price, indicating strong investor interest, and the high‑growth label may influence market sentiment.",
+   "upside": "The bank rally and inclusion in a high‑growth list could support the share price.",
+   "downside": "Valuation may be stretched and sector rotation could reverse, affecting the stock.",
+   "watch": [
+    "Market cap above ₹13 trillion",
+    "Bank stocks rally 21% in November",
+    "Goldman Sachs high‑growth list inclusion"
+   ],
+   "about": "HDFC Bank Ltd. is a major Indian bank offering banking and financial services.",
+   "basis": "884099a072ec",
+   "items": 5,
+   "updated": "2026-11-20T15:02+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "INDIACEM": {
    "summary": "India Cements Ltd. won a Supreme Court case against a rival, removing a legal risk that had been hanging over the company. The market may already have taken this win into account.",
    "why": "The removal of a major legal uncertainty can make shareholders feel more secure and may improve the company’s risk profile.",
@@ -1305,6 +1241,22 @@
    "items": 4,
    "updated": "2026-11-20T07:57+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "ICICIBANK": {
+   "summary": "ICICI Bank shares have jumped as part of a broader rally in bank stocks, with the Nifty Bank index reaching a new high and the bank up to 21% in November. The bank was also highlighted by a broker as a top pick. The Financials sector index rose 1.1% in the last session and 0.9% over five sessions.",
+   "why": "Shareholders see the bank benefiting from strong market sentiment toward banks, which could support its share price.",
+   "upside": "The rally could continue if banks remain favored by investors.",
+   "downside": "If the market shifts to other sectors, the bank’s gains could reverse.",
+   "watch": [
+    "Nifty Bank index performance",
+    "Possible sector rotation toward non‑bank sectors",
+    "Broker recommendations and how they evolve"
+   ],
+   "about": "ICICI Bank is a major Indian bank listed in the Nifty 50.",
+   "basis": "7d4aa4d8e01d",
+   "items": 2,
+   "updated": "2026-11-20T15:02+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "ADANIPOWER": {
    "summary": "Adani Power is set to benefit from a new transmission contract won by its subsidiary Adani Energy Solutions to evacuate 2,400 MW from the planned Pirpanti plant in Bihar. A recent Morgan Stanley note also highlighted the stock among large‑cap picks, adding investor interest.",
@@ -1562,20 +1514,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "BANKINDIA": {
-   "summary": "Bank of India shares have risen sharply, joining other public sector banks in a strong November performance. This surge has led to technical reviews suggesting the stock may face a pause or pullback as investors take profits.",
-   "why": "For shareholders, this rapid rise means the stock price may stabilize or dip slightly in the short term as traders lock in gains. It also highlights how sensitive the bank's value is to broader economic factors like interest rates.",
-   "upside": "Lower government bond yields could reduce the bank's funding costs, potentially supporting its share price.",
-   "downside": "Rising inflation might keep interest rates high, which can make borrowing expensive and slow down economic growth, hurting bank profits.",
+   "summary": "Bank of India is a public sector bank listed in the Nifty 500. Recent market activity shows foreign investors are overweight India, public sector banks including Bank of India surged up to 27% in November, and bond market movements could affect bank funding costs.",
+   "why": "Shareholders may see the bank’s price move with foreign investor sentiment, sector performance, and changes in bond yields that influence borrowing costs.",
+   "upside": "Higher foreign interest in Indian equities could lift the bank’s share price.",
+   "downside": "Rising bond yields could increase the bank’s borrowing costs and pressure profits.",
    "watch": [
-    "Signs of profit-taking or consolidation after the recent sharp rise.",
-    "Changes in government bond yields and interest rate expectations.",
-    "Inflation data that could influence how long interest rates stay high."
+    "Foreign investor sentiment toward Indian equities",
+    "Bond yield movements and their impact on bank funding costs",
+    "Potential profit‑taking or consolidation after the November surge"
    ],
-   "about": "Bank of India is a financial services company listed in India's Nifty 500 index.",
-   "basis": "2b7991d424ea",
-   "items": 4,
-   "updated": "2026-11-20T11:45+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Bank of India is a public sector bank that offers banking services.",
+   "basis": "9b983ca86169",
+   "items": 5,
+   "updated": "2026-11-20T15:02+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "ABDL": {
    "summary": "Allied Blenders and Distillers has disclosed ongoing legal cases and an update on arbitration proceedings. The company also reported receiving a regulatory order or notice from authorities.",
@@ -1592,6 +1544,22 @@
    "items": 3,
    "updated": "2026-11-20T08:16+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "IPCALAB": {
+   "summary": "IPCA Laboratories announced it will sell a business unit and shut a manufacturing operation. The company plans to sell the land and buildings associated with the closed unit.",
+   "why": "These moves can change the company’s earnings and cash balance, which matters to shareholders.",
+   "upside": "The sale could provide cash to strengthen the balance sheet.",
+   "downside": "Closing the unit may reduce output and risk loss of market share.",
+   "watch": [
+    "Completion of the unit sale",
+    "Impact on cash balance",
+    "Effect on production output"
+   ],
+   "about": "",
+   "basis": "017c2f2b65d7",
+   "items": 2,
+   "updated": "2026-11-20T15:02+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "ENGINERSIN": {
    "summary": "Engineers India Ltd is a construction company listed on the NSE and part of the Nifty 500 index. No company‑specific announcements have been flagged in recent days.",
@@ -1672,22 +1640,6 @@
    "items": 2,
    "updated": "2026-11-19T14:47+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "EICHERMOT": {
-   "summary": "Eicher Motors shares have seen recent price movements, including a climb on the latest day. The broader auto sector has also shown strength, rising in both the last session and over the past five days.",
-   "why": "As a major player in the auto sector, Eicher Motors' stock often moves with the industry. Sector-wide gains can lift the company's share price, but individual stock moves can also be temporary.",
-   "upside": "Continued strength in the auto sector could support the company's share price.",
-   "downside": "Recent price changes could signal broader weakness, and short-term gains may not last.",
-   "watch": [
-    "Further movements in the auto sector index",
-    "Whether the recent stock price climb continues or reverses",
-    "Any new company-specific news that might explain the price adjustments"
-   ],
-   "about": "Eicher Motors is an Indian automobile and auto components company.",
-   "basis": "4c9f18228e23",
-   "items": 2,
-   "updated": "2026-11-20T08:46+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "SCHNEIDER": {
    "summary": "Schneider Electric Infrastructure Ltd. announced that a director or key manager has resigned. The company also reported a broader change in its board or management team.",
