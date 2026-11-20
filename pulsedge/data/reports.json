@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T15:02+05:30",
+ "updated": "2026-11-20T15:16+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -170,6 +170,22 @@
    "items": 1,
    "updated": "2026-11-20T12:30+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "KIRLOSBROS": {
+   "summary": "Kirloskar Brothers Ltd. (KIRLOSBROS) has secured a landmark 165‑crore rupee contract to supply pumps for Africa’s largest refinery, Dangote Petroleum Refinery & Petrochemicals. The company’s joint venture, Kirloskar Ebara Pumps Limited, is also reportedly close to signing a large framework order with a U.S. data‑centre operator. These developments signal potential growth in international sales.",
+   "why": "The new contracts could boost the company’s future revenue and earnings, which matters to shareholders looking for long‑term value.",
+   "upside": "Successful execution of the Dangote and U.S. data‑centre contracts could increase future sales and profits.",
+   "downside": "Execution delays or cost overruns on the international projects could hurt profitability, and the U.S. deal may not materialise or could be smaller than reported.",
+   "watch": [
+    "Execution progress of the Dangote refinery contract",
+    "Confirmation and size of the U.S. data‑centre framework order",
+    "Any cost overruns or delays reported by the company"
+   ],
+   "about": "Kirloskar Brothers Ltd. manufactures pumps for industrial applications.",
+   "basis": "755e60f4f5c7",
+   "items": 4,
+   "updated": "2026-11-20T15:16+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "MUTHOOTFIN": {
    "summary": "Muthoot Finance shares fell 4‑5% after gold prices dropped to a one‑year low. The decline reflects concerns that lower gold values could raise loan risk and reduce profitability. The company is part of the Nifty 500 and operates in the financial services sector.",
@@ -347,22 +363,6 @@
    "updated": "2026-11-19T14:32+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "SOLARINDS": {
-   "summary": "Solar Industries India Ltd. (SOLARINDS) has no specific company news recently, but PulsEdge flagged it as part of a broader market watch where a weaker opening could affect active stocks.",
-   "why": "Shareholders should note that overall market sentiment can move the stock even if the company’s fundamentals stay unchanged.",
-   "upside": "",
-   "downside": "A soft market start or negative sentiment could pull the share lower despite solid fundamentals.",
-   "watch": [
-    "Early market movement on the trading day",
-    "Overall Nifty 500 performance",
-    "Any sector‑specific news affecting chemicals companies"
-   ],
-   "about": "Solar Industries India Ltd. produces and sells industrial chemicals.",
-   "basis": "b3c49533bf3c",
-   "items": 6,
-   "updated": "2026-11-20T13:16+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "DALBHARAT": {
    "summary": "Dalmia Bharat's board will meet on November 23 to consider a proposal to buy back some of its own shares. This plan is currently under review and has not yet been approved.",
    "why": "A share buyback can return cash to shareholders and often supports the stock price, which may benefit current owners if approved.",
@@ -410,6 +410,22 @@
    "items": 2,
    "updated": "2026-11-18T13:30+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "SOLARINDS": {
+   "summary": "Solar Industries India Ltd. (SOLARINDS) is a chemicals company listed on the NSE and part of the Nifty 500. No company‑specific news has been reported in the last few days. The market may be influenced by broader sentiment affecting active stocks.",
+   "why": "Shareholders should note that the company’s performance is tied to overall market movements and sector trends.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "Any new filings or press releases from Solar Industries",
+    "Market moves affecting the chemicals sector",
+    "Changes in Nifty 500 composition"
+   ],
+   "about": "Solar Industries India Ltd. is a chemicals company listed on the NSE.",
+   "basis": "88e1c6931af2",
+   "items": 5,
+   "updated": "2026-11-20T15:16+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "NBCC": {
    "summary": "NBCC won a new construction contract worth about 85 crore rupees and announced similar work orders of roughly the same value. The orders add to the company’s revenue pipeline.",
@@ -521,22 +537,6 @@
    "items": 5,
    "updated": "2026-11-18T19:23+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "KIRLOSBROS": {
-   "summary": "Kirloskar Brothers Ltd. secured a 165 crore rupee contract to supply pumps for Africa’s largest refinery and is close to signing a large framework order with a U.S. data centre operator.",
-   "why": "The new contracts could add significant future income and boost profits for shareholders.",
-   "upside": "If the U.S. data centre deal materialises, it could bring in substantial new business.",
-   "downside": "Execution delays or cost overruns on the international projects could hurt revenue recognition.",
-   "watch": [
-    "Execution of the Africa refinery contract",
-    "Confirmation of the U.S. data centre framework order",
-    "Potential cost overruns on the international project"
-   ],
-   "about": "Kirloskar Brothers Ltd. is a capital goods company.",
-   "basis": "4d5a8b64f1f2",
-   "items": 3,
-   "updated": "2026-11-20T15:02+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "CYIENT": {
    "summary": "Cyient announced a strategic investment from GlobalFoundries into its semiconductor business and also reported the resignation of a senior director. The IT sector has been down recently.",
@@ -746,22 +746,6 @@
    "updated": "2026-11-20T15:02+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "TATASTEEL": {
-   "summary": "Tata Steel is facing higher iron‑ore costs and is still discussing financial assistance with the Dutch government while metal stocks have been falling.",
-   "why": "Higher raw‑material costs and uncertain financing can affect earnings and cash flow for shareholders.",
-   "upside": "If steel prices rise enough to offset ore cost hikes or Dutch aid is secured, profitability could improve.",
-   "downside": "Rising ore costs without offsetting steel price gains and no financial assistance could squeeze margins.",
-   "watch": [
-    "US dollar strength and its impact on metal prices",
-    "Domestic steel price trends",
-    "Progress on Dutch government financial assistance talks"
-   ],
-   "about": "Tata Steel Ltd. is one of India’s largest steel manufacturers.",
-   "basis": "153fd9ae2d7d",
-   "items": 3,
-   "updated": "2026-11-20T12:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "INFY": {
    "summary": "Infosys shares have fallen sharply, losing about a quarter of investor wealth over the past year, while the broader Indian IT sector recently rallied 2% even as global tech stocks slipped. The sector index is down 1.1% in the last session and 3.9% over five sessions, showing mixed momentum.",
    "why": "Shareholders feel the impact of both the price drop and the sector’s relative strength, which can affect the stock’s future value.",
@@ -954,6 +938,22 @@
    "updated": "2026-11-20T13:32+05:30",
    "model": "gemini-flash-lite-latest"
   },
+  "INDUSINDBK": {
+   "summary": "IndusInd Bank shares surged 8.5% and are on a strong weekly rally. The move may signal momentum but could reverse quickly.",
+   "why": "Shareholders should watch for potential reversal as momentum may be short‑lived.",
+   "upside": "If the bullish trend continues, shares could keep rising.",
+   "downside": "Momentum could reverse quickly, causing a drop.",
+   "watch": [
+    "Price action for reversal signs",
+    "Sector index movement",
+    "Weekly rally trend"
+   ],
+   "about": "IndusInd Bank Ltd. is a bank providing financial services.",
+   "basis": "0655d3d2ebe4",
+   "items": 1,
+   "updated": "2026-11-20T15:16+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "JBMA": {
    "summary": "JBM Auto is seen as a potential beneficiary of the Indian government’s new PM E‑Bus Sewa payment portal, which aims to fund electric bus projects. The auto sector has also posted gains, up 4.4% in the last session.",
    "why": "Shareholders watch because the portal could translate into more electric‑bus orders for JBM, but any delay in rollout may push those orders back.",
@@ -1001,6 +1001,22 @@
    "items": 1,
    "updated": "2026-11-20T12:30+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "TATASTEEL": {
+   "summary": "Tata Steel is being compared with other metal stocks after a recent drop in metal prices. The metals sector index fell 3.7% over five sessions but rose 0.6% in the last session.",
+   "why": "The comparison highlights Tata Steel’s relative safety in a struggling metal industry, which matters to shareholders assessing risk.",
+   "upside": "",
+   "downside": "A stronger US dollar continues to hurt metal prices, which could weigh on Tata Steel’s performance.",
+   "watch": [
+    "Metal stock performance relative to peers",
+    "Impact of US dollar strength on metal prices",
+    "Trend of the metals sector index in upcoming sessions"
+   ],
+   "about": "Tata Steel is a metals and mining company listed in India.",
+   "basis": "0455655dce14",
+   "items": 1,
+   "updated": "2026-11-20T15:16+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "NH": {
    "summary": "Hospital stocks have surged, with Narayana Hrudayalaya jumping about 5% while the broader market lagged. The healthcare sector has shown modest gains but may be nearing an overextension after a 20% monthly rise.",
@@ -1178,38 +1194,6 @@
    "updated": "2026-11-20T11:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "POLYCAB": {
-   "summary": "Polycab reduced prices on its light‑duty cables and wires for the second time this week, and copper prices have dropped for the fifth straight day.",
-   "why": "Price cuts could pressure revenue growth, while cheaper copper may boost profit margins if sales volumes stay steady.",
-   "upside": "Lower copper costs could improve margins if demand remains stable.",
-   "downside": "Repeated price reductions may hurt revenue unless the company can sell enough extra volume.",
-   "watch": [
-    "Any further price adjustments for cables and wires",
-    "Trends in copper prices and their impact on input costs",
-    "Sales volume trends for light‑duty cable products"
-   ],
-   "about": "Polycab India Ltd manufactures electrical cables and wires for power and telecom applications.",
-   "basis": "c7b4a2f3f745",
-   "items": 2,
-   "updated": "2026-11-18T14:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "KEI": {
-   "summary": "KEI Industries and peers slipped up to 3% as copper prices fell for the fifth consecutive day, pulling the stock lower. The drop reflects market reaction to cheaper raw material costs for cable makers.",
-   "why": "Changes in copper prices directly affect KEI's production costs and thus its profitability for shareholders.",
-   "upside": "If lower copper prices boost margins without hurting demand, earnings could improve.",
-   "downside": "A sustained copper decline might indicate weak demand, potentially reducing sales volumes for KEI.",
-   "watch": [
-    "Copper price movements",
-    "Demand trends for electrical cables",
-    "KEI's profit margin reports"
-   ],
-   "about": "KEI Industries manufactures electrical cables and related products.",
-   "basis": "f5e73a423695",
-   "items": 1,
-   "updated": "2026-11-18T11:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "HDFCBANK": {
    "summary": "HDFC Bank’s market value has crossed ₹13 trillion, lifting its share price to an eight‑month high. Bank stocks rallied 21% in November, and the bank was named a high‑growth stock by Goldman Sachs.",
    "why": "Shareholders see a rise in market value and share price, indicating strong investor interest, and the high‑growth label may influence market sentiment.",
@@ -1226,22 +1210,6 @@
    "updated": "2026-11-20T15:02+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "INDIACEM": {
-   "summary": "India Cements Ltd. won a Supreme Court case against a rival, removing a legal risk that had been hanging over the company. The market may already have taken this win into account.",
-   "why": "The removal of a major legal uncertainty can make shareholders feel more secure and may improve the company’s risk profile.",
-   "upside": "If investors had not fully priced in the court win, the reduced risk could lift sentiment toward the stock.",
-   "downside": "If the win was already reflected in the share price, there may be little immediate benefit, and any other undisclosed disputes could still pose a risk.",
-   "watch": [
-    "Further updates on any pending litigation involving India Cements",
-    "How the market actually reacts to the court decision in the coming days",
-    "Overall demand and pricing trends in the Indian cement sector"
-   ],
-   "about": "India Cements Ltd. manufactures and sells cement and related construction materials in India.",
-   "basis": "9ec71d97c65a",
-   "items": 4,
-   "updated": "2026-11-20T07:57+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "ICICIBANK": {
    "summary": "ICICI Bank shares have jumped as part of a broader rally in bank stocks, with the Nifty Bank index reaching a new high and the bank up to 21% in November. The bank was also highlighted by a broker as a top pick. The Financials sector index rose 1.1% in the last session and 0.9% over five sessions.",
    "why": "Shareholders see the bank benefiting from strong market sentiment toward banks, which could support its share price.",
@@ -1256,6 +1224,22 @@
    "basis": "7d4aa4d8e01d",
    "items": 2,
    "updated": "2026-11-20T15:02+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
+  "INDIACEM": {
+   "summary": "India Cements Ltd. (INDIACEM) won a Supreme Court case against rival Zuari Cement, and the company has announced the outcome to the stock exchange. The legal victory removes a significant risk for the firm. The market may have already priced in the win, so the immediate impact could be limited.",
+   "why": "A legal win reduces uncertainty and can boost investor confidence in the company’s stability. It also signals that the company can defend its interests effectively.",
+   "upside": "Removal of a major legal risk could improve the company’s risk profile.",
+   "downside": "The market may have already priced in the win, limiting any further positive effect.",
+   "watch": [
+    "Market reaction to the Supreme Court win",
+    "Any new litigation or disputes involving the company",
+    "Future company announcements related to legal matters"
+   ],
+   "about": "India Cements Ltd. is a construction materials company.",
+   "basis": "33e8fda669e0",
+   "items": 2,
+   "updated": "2026-11-20T15:16+05:30",
    "model": "openai/gpt-oss-20b"
   },
   "ADANIPOWER": {
@@ -1289,6 +1273,22 @@
    "items": 2,
    "updated": "2026-11-18T14:15+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "CANFINHOME": {
+   "summary": "Can Fin Homes Ltd. has announced a change in one of its key government permits. The company notified the exchange about this change. This could affect its operations.",
+   "why": "Permits are needed to do business; losing one could hurt the company.",
+   "upside": "",
+   "downside": "Withdrawal of a license could severely restrict business operations.",
+   "watch": [
+    "Status of the key license",
+    "Any regulatory actions",
+    "Effect on operations"
+   ],
+   "about": "",
+   "basis": "e9d78b3fd950",
+   "items": 1,
+   "updated": "2026-11-20T15:16+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "MOTHERSON": {
    "summary": "Samvardhana Motherson International shares recently rose 4 percent alongside a surge in trading volume. The company is also liquidating a unit in Korea.",
@@ -1497,6 +1497,22 @@
    "updated": "2026-11-18T15:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "POLYCAB": {
+   "summary": "Polycab India Ltd. has cut prices of its light‑duty cables and wires for the second time this week, with an average reduction of about 2.5% and a total cut of 5.5‑6%. The price cuts are effective from today.",
+   "why": "Shareholders should note that repeated price reductions could lower revenue unless sales volumes rise to offset the lower prices.",
+   "upside": "If sales volumes increase enough, the company could maintain revenue levels despite the price cuts.",
+   "downside": "If volume growth does not offset the lower prices, revenue growth could decline.",
+   "watch": [
+    "Effectiveness of the price cuts from today",
+    "Changes in sales volume for light‑duty cables and wires",
+    "Overall revenue impact of the price reductions"
+   ],
+   "about": "",
+   "basis": "e7c74b8e6a30",
+   "items": 1,
+   "updated": "2026-11-20T15:16+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "COALINDIA": {
    "summary": "Coal India is in focus as its subsidiary Mahanadi Coalfields is launching an IPO and the market is watching early price movements, while broader market sentiment could also affect its stock.",
    "why": "Shareholders should watch the IPO because it may dilute ownership or bring new capital, influencing the parent’s share value.",
@@ -1527,6 +1543,22 @@
    "basis": "9b983ca86169",
    "items": 5,
    "updated": "2026-11-20T15:02+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
+  "SCHNEIDER": {
+   "summary": "Schneider Electric Infrastructure Ltd. has recently reported regulatory actions and changes in its board. A regulator has issued an order affecting the company, and a director has resigned while another director change was announced.",
+   "why": "These events could affect the company’s operations and governance, which matters to shareholders who rely on stable management and compliance.",
+   "upside": "",
+   "downside": "The regulatory order could lead to fines or operational restrictions, and the director changes may create short‑term leadership uncertainty.",
+   "watch": [
+    "Regulatory order details and any fines or restrictions",
+    "Resignation of a key director",
+    "Appointment of a new director"
+   ],
+   "about": "",
+   "basis": "c284c60b8bdd",
+   "items": 4,
+   "updated": "2026-11-20T15:16+05:30",
    "model": "openai/gpt-oss-20b"
   },
   "ABDL": {
@@ -1609,22 +1641,6 @@
    "updated": "2026-11-19T11:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "AMBUJACEM": {
-   "summary": "Ambuja Cements is partnering with Adani Cement to deploy heavy-duty electric trucks for transporting clinker and cement. The plan aims to have 410 trucks running by March 2027 to reduce carbon emissions and logistics costs.",
-   "why": "This matters because lower transportation costs and a greener image could improve the company's profits and appeal to investors who care about sustainability.",
-   "upside": "Using electric trucks could significantly cut logistics expenses and reduce carbon emissions, potentially boosting profitability.",
-   "downside": "The high cost of buying electric trucks could strain the company's cash flow, and delays in implementation might limit the expected benefits.",
-   "watch": [
-    "Progress toward the target of 410 electric trucks by March 2027",
-    "Actual impact on logistics costs and cash flow",
-    "Any delays in the deployment of the electric vehicle fleet"
-   ],
-   "about": "Ambuja Cements is a construction materials company that manufactures cement.",
-   "basis": "1b3685b9fc21",
-   "items": 2,
-   "updated": "2026-11-18T11:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "MCX": {
    "summary": "Gold prices slipped a little while silver rose on MCX. Small changes in metal prices can shift the exchange’s trading volumes.",
    "why": "Trading volume drives the fees MCX earns, so price moves matter to shareholders.",
@@ -1640,22 +1656,6 @@
    "items": 2,
    "updated": "2026-11-19T14:47+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "SCHNEIDER": {
-   "summary": "Schneider Electric Infrastructure Ltd. announced that a director or key manager has resigned. The company also reported a broader change in its board or management team.",
-   "why": "Changes in leadership can create short-term uncertainty about how the company is run, though these are often planned transitions.",
-   "upside": "",
-   "downside": "The departure of a key person could lead to temporary confusion or delays in decision-making.",
-   "watch": [
-    "Who has been appointed to replace the resigning director or manager.",
-    "Any official statements from the company explaining the reason for the change.",
-    "How the company's day-to-day operations are affected in the coming weeks."
-   ],
-   "about": "Schneider Electric Infrastructure Ltd. is a capital goods company listed on the NSE.",
-   "basis": "71c282c4c16f",
-   "items": 2,
-   "updated": "2026-11-20T10:16+05:30",
-   "model": "qwen/qwen3.8-27b"
   }
  }
 }
