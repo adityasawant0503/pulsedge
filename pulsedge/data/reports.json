@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T03:25+05:30",
+ "updated": "2026-11-20T07:57+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "US stock markets fell sharply overnight, with major indices dropping nearly two percent. This global weakness often makes Indian tech stocks start the day lower. Meanwhile, oil prices moved in mixed directions due to supply issues and tanker disruptions. Indian auto and bank stocks were strong in the previous session, while IT stocks lagged.",
+  "summary": "Indian small-cap tech stocks fell sharply as global investors worried about AI companies, while oil prices rose slightly due to supply concerns in Saudi Arabia. The US stock market dropped over two percent overnight, which often makes Indian markets open lower. However, Indian auto and bank stocks performed well in the previous session, showing some local strength despite global weakness.",
   "themes": [
-   "Global tech sell-off may pressure Indian IT stocks",
-   "Oil price volatility creates mixed signals for energy companies",
-   "Auto and banking sectors showed recent strength"
+   "AI worries hit Indian tech shares",
+   "Oil prices rise on supply fears",
+   "US market drop weighs on global sentiment"
   ],
   "watch": [
-   "How Indian IT stocks react to the US market drop",
-   "PB Fintech's announcement about selling a business unit",
-   "Changes in PB Fintech's board of directors"
+   "How Indian IT stocks react to the US tech drop",
+   "If oil prices stay high or fall back down",
+   "PB Fintech's sale of a business unit"
   ],
   "date": "2026-11-20",
-  "basis": "d9f014299723",
-  "updated": "2026-11-20T03:25+05:30",
+  "basis": "c16df528c7fd",
+  "updated": "2026-11-20T07:57+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 7
+  "items": 9
  },
  "stocks": {
   "PAYTM": {
@@ -283,22 +283,6 @@
    "updated": "2026-11-19T00:20+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "INOXWIND": {
-   "summary": "Inox Wind is setting a target of roughly ₹7,500 crore in revenue for FY28, aiming for a 20% EBITDA margin. The company has seen a significant drop in its share price over the past year, but recent news highlights its long-term financial goals.",
-   "why": "These targets show the company's plans for future growth and profitability, which can influence how investors view the stock's potential.",
-   "upside": "Meeting these revenue and margin goals could strengthen investor confidence in the company's recovery.",
-   "downside": "If the company fails to hit these targets or delays in executing new orders, it may lead to disappointment among investors.",
-   "watch": [
-    "Progress toward the FY28 revenue target",
-    "Actual EBITDA margins compared to the 20% goal",
-    "Timely execution of new orders"
-   ],
-   "about": "",
-   "basis": "62cb1dde20d7",
-   "items": 2,
-   "updated": "2026-11-18T19:23+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "IREDA": {
    "summary": "IREDA shares rose 11% to a four‑month high, ending a six‑month decline. The rally reflects renewed investor confidence in the renewable‑energy business.",
    "why": "The rebound signals that investors see potential in IREDA's renewable‑energy projects.",
@@ -362,22 +346,6 @@
    "items": 1,
    "updated": "2026-11-19T14:32+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "INOXINDIA": {
-   "summary": "INOX India Ltd. is a capital goods company listed in the Nifty 500 index. Recent news highlights a significant drop in its share price over the past year, followed by a strong rally.",
-   "why": "This matters to shareholders because the stock has experienced high volatility, with a 60% decline in one year and a recent upward movement.",
-   "upside": "The recent strong rally suggests the share price may continue to recover from its previous lows.",
-   "downside": "There is a risk that the execution of new orders may lag behind expectations, which could affect future performance.",
-   "watch": [
-    "Progress on executing new orders",
-    "Continuation of the recent share price rally",
-    "Company updates on renewable energy projects"
-   ],
-   "about": "",
-   "basis": "7705eac36285",
-   "items": 1,
-   "updated": "2026-11-18T03:28+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "SOLARINDS": {
    "summary": "Solar Industries India Ltd. (SOLARINDS) has had no recent company‑specific announcements; the latest PulsEdge alerts focus on other solar firms, highlighting activity in the broader solar sector.",
@@ -443,22 +411,6 @@
    "updated": "2026-11-18T13:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "URBANCO": {
-   "summary": "Urban Company recently completed a ₹2,500-crore capital raise that was oversubscribed six times. The company also held a board meeting on November 19, 2026, to discuss its next steps.",
-   "why": "The strong demand for the new shares suggests investors are confident in the company's future plans. The raised funds may be used for expansion, which could affect the company's growth trajectory.",
-   "upside": "The high demand for the capital raise indicates strong investor interest in the company.",
-   "downside": "The new funds might be spent on acquisitions that do not generate the expected returns.",
-   "watch": [
-    "How the company uses the ₹2,500 crore raised from the QIP",
-    "Details from the November 19, 2026 board meeting",
-    "SEBI's progress on speeding up IPO approvals"
-   ],
-   "about": "",
-   "basis": "28af678cb5b8",
-   "items": 4,
-   "updated": "2026-11-20T03:25+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "HYUNDAI": {
    "summary": "Hyundai Motor India shares recently rose as part of a broader rally in auto stocks, driven by lower costs for metals and oil. However, the wider auto sector has seen a slight dip in the last few days.",
    "why": "Lower production costs can help the company keep more profit from each car sold, which may benefit shareholders. The recent price movement shows that investors are reacting to these cost changes.",
@@ -474,6 +426,22 @@
    "items": 4,
    "updated": "2026-11-19T13:16+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "URBANCO": {
+   "summary": "Urban Company recently held a board meeting and saw its ₹2,500-crore QIP (Qualified Institutional Placement, a way for listed companies to raise money from the public) oversubscribed six times, attracting ₹15,300 crore in bids. Meanwhile, broader market updates show SEBI (Securities and Exchange Board of India, the stock market regulator) planning faster IPOs and easier foreign investor access.",
+   "why": "This matters to shareholders because high demand for share sales shows strong investor interest, while board decisions and regulatory changes can shape future business growth.",
+   "upside": "Strong demand in the share offering could fund expansion plans and boost the company's growth.",
+   "downside": "Funds raised might be used for acquisitions that fail to deliver the expected returns.",
+   "watch": [
+    "Details on how the raised funds will be used",
+    "Further updates from board meetings",
+    "SEBI regulatory changes affecting market access"
+   ],
+   "about": "",
+   "basis": "d9ebc7458cb5",
+   "items": 3,
+   "updated": "2026-11-20T07:57+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "NBCC": {
    "summary": "NBCC won a new construction contract worth about 85 crore rupees and announced similar work orders of roughly the same value. The orders add to the company’s revenue pipeline.",
@@ -650,6 +618,22 @@
    "updated": "2026-11-18T15:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "HFCL": {
+   "summary": "HFCL shares have fallen sharply, dropping up to 29% in the past month as AI‑related sell‑off hits Indian small‑cap tech stocks.",
+   "why": "The steep price decline creates volatility for current shareholders and may affect the value of their investment.",
+   "upside": "If the sell‑off leads to lower valuations, the stock could become more attractively priced.",
+   "downside": "Valuations may stay high despite the price drop, limiting any recovery.",
+   "watch": [
+    "Continued sentiment toward AI and data‑center stocks",
+    "Global investor appetite for Indian tech small‑caps",
+    "HFCL's valuation relative to peers"
+   ],
+   "about": "HFCL Ltd. operates in the telecommunications sector.",
+   "basis": "0abc9edaae6f",
+   "items": 1,
+   "updated": "2026-11-20T07:57+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "SIGNATURE": {
    "summary": "Signature Global has been actively buying land in Gurugram and Maharashtra to expand its project pipeline. The company also reported launching properties worth 4,400 crore rupees in the first half of the year.",
    "why": "These land purchases and new launches could lead to higher future sales and earnings, which is important for the value of the company's shares.",
@@ -779,20 +763,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. (OIL) is part of the Nifty 500 and its sector index, Oil & Gas, rose 0.9% in the last session. Global oil markets saw a slight uptick in prices due to tanker disruptions, while sour crude premiums fell sharply as supply increased.",
-   "why": "Shareholders may see earnings affected by changes in crude prices and by new opportunities such as sustainable aviation fuel and growing petrochemical demand.",
-   "upside": "Higher crude prices and the potential for sustainable aviation fuel could boost earnings.",
-   "downside": "Lower crude prices and supply volatility could reduce revenues.",
+   "summary": "Oil India Ltd. is facing mixed signals in the oil market, with recent geopolitical tensions pushing prices up while increased global supply pushes them down. The company's sector index has risen by 0.9% in the last session and over the past five sessions.",
+   "why": "Oil India earns money by selling oil, so higher crude prices generally mean more profit, but falling prices can reduce its revenue. Shareholders need to watch how these opposing forces balance out.",
+   "upside": "Higher oil prices driven by supply concerns could increase the company's profits.",
+   "downside": "A surge in global oil supply from major producers could lower prices and reduce the company's earnings.",
    "watch": [
-    "Global crude price trend and sour premium changes",
-    "Oil minister’s plans for sustainable aviation fuel",
-    "US fuel export moves to Europe and tanker disruptions"
+    "Updates on global oil supply from major producers like the US, China, and Russia.",
+    "Developments regarding India's plans for sustainable aviation fuel.",
+    "Changes in global tanker disruptions and supply-demand balances."
    ],
-   "about": "Oil India Ltd. is an Indian oil company listed on the NSE.",
-   "basis": "f96b1ac48fba",
-   "items": 17,
-   "updated": "2026-11-20T03:25+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "",
+   "basis": "73507779c72e",
+   "items": 19,
+   "updated": "2026-11-20T07:57+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "PRESTIGE": {
    "summary": "Prestige Estates Projects Ltd. is actively expanding its business, announcing the acquisition of a 50% stake in Advent Convention and Hotels International and increasing its ownership in the Prestige Vaishnaoi Projects to 42.83%. It also plans to set up two wholly‑owned subsidiaries.",
@@ -874,38 +858,6 @@
    "updated": "2026-11-19T13:16+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "INFY": {
-   "summary": "Infosys shares have fallen significantly, losing about a quarter of their value over the past year. Recent news highlights a continued price drop and comparisons with rival TCS, while the broader IT sector has also declined recently.",
-   "why": "If you own Infosys shares, this means your investment value has decreased substantially. The recent price movements suggest investors are currently cautious about the company's performance and the wider technology industry.",
-   "upside": "Some analysts suggest the stock may have reached a low point and could start rising again.",
-   "downside": "Global spending on IT services remains uncertain, which could lead to further price declines if negative news emerges.",
-   "watch": [
-    "Updates on global IT spending trends",
-    "How the broader IT sector index performs in the coming days",
-    "Any new company-specific announcements or earnings data"
-   ],
-   "about": "Infosys is a large Indian information technology company that is part of the Nifty 50 index.",
-   "basis": "bd1d532906ab",
-   "items": 3,
-   "updated": "2026-11-19T11:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "TCS": {
-   "summary": "TCS shares have fallen by 26% in 2026, despite the company reporting good business results. Recent trading shows a minor setback, with the stock price slightly down in the latest session.",
-   "why": "This matters to shareholders because the significant drop in value is driven by broader market trends rather than poor company performance, which may affect the overall worth of their investment.",
-   "upside": "The company has reported good business results, which provides a fundamental base for the stock even as its price falls.",
-   "downside": "The stock may continue to move down or stay flat if broader market weakness persists.",
-   "watch": [
-    "Whether the recent minor price drop continues or stabilizes",
-    "The overall trend of the IT sector index",
-    "Changes in investor sentiment regarding IT stocks"
-   ],
-   "about": "Tata Consultancy Services is a large software company in the Information Technology sector.",
-   "basis": "70369ad9dcc3",
-   "items": 3,
-   "updated": "2026-11-19T12:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "HINDALCO": {
    "summary": "Hindalco shares have been falling amid a broader drop in metal stocks, driven by lower global commodity prices and a stronger US dollar. At the same time, Axis Securities highlighted Hindalco as a conviction pick after its Q2 results, setting higher price targets.",
    "why": "Share price moves affect the value of investors' holdings, and lower commodity prices can squeeze the company's profit margins.",
@@ -923,35 +875,35 @@
    "model": "openai/gpt-oss-120b"
   },
   "HDFCBANK": {
-   "summary": "PulsEdge flagged HDFC Bank as part of Goldman Sachs' high‑growth list and noted a technical view that banks are near a new high after a recent Q2 sell‑off recovery. The broader financial sector fell 0.7% in the last session but rose 1.2% over the past five sessions.",
-   "why": "These signals could influence investor sentiment and affect the share price, which matters to current shareholders.",
-   "upside": "If the high‑growth label and technical breakout attract more buying, the stock could see further gains.",
-   "downside": "A broader market decline or weakness in the financial sector could limit any upside.",
+   "summary": "HDFC Bank is one of India's largest listed companies and is currently part of the Nifty 50 index. Recent reports note that the bank is included in a list of high-growth stocks by a major investment bank, while technical analysts suggest banking stocks may be near new highs.",
+   "why": "These reports matter to shareholders because they indicate that large institutions and market analysts are paying close attention to the bank's potential performance.",
+   "upside": "Positive analyst attention and technical signals could lead to increased investor interest in the stock.",
+   "downside": "Analyst opinions are not guarantees, and the stock may not rise if the broader market falls or if the technical outlook does not hold.",
    "watch": [
-    "Goldman Sachs' inclusion of HDFC Bank in its high‑growth list",
-    "Technical breakout expectations as Nifty Bank quotes near new highs",
-    "Recovery momentum after the Q2 sell‑off"
+    "Whether the Nifty Bank index continues to move toward new highs",
+    "How the broader market performs, as it can affect banking stocks",
+    "Future updates from major investment banks regarding the bank's growth status"
    ],
-   "about": "HDFC Bank Ltd. is a leading Indian commercial bank offering retail and wholesale banking services.",
-   "basis": "0e41cc654459",
-   "items": 3,
-   "updated": "2026-11-19T13:11+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "HDFC Bank operates in the Financial Services sector.",
+   "basis": "92fb79b329b7",
+   "items": 2,
+   "updated": "2026-11-20T07:57+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "GROWW": {
-   "summary": "Large institutional investors, including Kotak MF, BlackRock and others, bought a stake worth about Rs 1,905 cr in Groww, while Ribbit Capital sold shares worth over Rs 1,900 cr in block deals.",
-   "why": "The buying suggests confidence from big funds, but the selling could add volatility for existing shareholders.",
-   "upside": "If the buying by major investors continues, it could support the share price and signal long‑term confidence.",
-   "downside": "If large investors keep selling, it could pressure the share price and increase volatility.",
+   "summary": "Large investors such as Kotak MF, BlackRock, Fidelity and others bought a sizable stake in Groww through block deals. The purchases were flagged as a sign of confidence but also carry a risk of volatility.",
+   "why": "Shareholder changes can move the stock and affect future earnings distribution for existing investors.",
+   "upside": "If the new investors hold the shares for the long term, it could support the stock price.",
+   "downside": "If the investors sell quickly or the block deals were done at a discount, the stock could face downward pressure.",
    "watch": [
-    "Further block‑deal activity by institutions",
-    "Movement of the Financials sector index",
-    "Any new announcements from the company or investors"
+    "Any further buying or selling activity by the large investors",
+    "Price reaction in the days following the block deals",
+    "Performance of the Financials sector, which has been modestly up"
    ],
-   "about": "Billionbrains Garage Ventures Ltd. runs a popular investing and stock‑trading app.",
-   "basis": "5a59ff3d508b",
-   "items": 8,
-   "updated": "2026-11-19T19:24+05:30",
+   "about": "Groww is a popular investing and stock‑trading app operating in India's financial services sector.",
+   "basis": "91d26b90aa4d",
+   "items": 2,
+   "updated": "2026-11-20T07:57+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "KALYANKJIL": {
@@ -968,6 +920,22 @@
    "basis": "538f8ef109c2",
    "items": 2,
    "updated": "2026-11-19T03:10+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "BEML": {
+   "summary": "PulsEdge flagged that BEML is among five defence stocks that could benefit from a proposed 20% increase in government defence capital expenditure next year.",
+   "why": "Higher defence spending could translate into more orders and better earnings for shareholders.",
+   "upside": "If the defence capex boost is approved and implemented quickly, BEML could see a rise in order intake and revenue.",
+   "downside": "Delays in policy implementation could postpone the expected increase in orders.",
+   "watch": [
+    "Timeline for government approval of the defence capex increase",
+    "Growth in BEML's defence order book",
+    "Competitive dynamics with BEL, HAL, L&T and Bharat Forge"
+   ],
+   "about": "BEML Ltd. designs and manufactures defence equipment and other capital goods.",
+   "basis": "3e23f7059ad2",
+   "items": 1,
+   "updated": "2026-11-20T07:57+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "NLCINDIA": {
@@ -1016,6 +984,22 @@
    "basis": "ac27675f1cb5",
    "items": 1,
    "updated": "2026-11-19T13:01+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "INOXWIND": {
+   "summary": "PulsEdge flagged that Inox Wind Ltd. is targeting roughly ₹7,500 crore in revenue for FY28 along with a long‑term EBITDA margin of about 20%. The company is part of the Nifty 500 index.",
+   "why": "These targets set expectations for future earnings, which can affect the value of existing shares.",
+   "upside": "If Inox Wind meets or exceeds the revenue and margin goals, earnings could improve.",
+   "downside": "Missing the FY28 revenue or margin targets could disappoint investors.",
+   "watch": [
+    "Progress toward the ₹7,500 cr revenue goal",
+    "Achievement of the 20% EBITDA margin",
+    "Any updates on FY28 performance versus targets"
+   ],
+   "about": "",
+   "basis": "6e0fc1c0fa1e",
+   "items": 1,
+   "updated": "2026-11-20T07:57+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "BATAINDIA": {
@@ -1163,20 +1147,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "INDIACEM": {
-   "summary": "PulsEdge flagged news that Ambuja Cements is deploying electric trucks for cement transport. This move aims to cut logistics costs and reduce carbon emissions at the Sanghi plant.",
-   "why": "For India Cements shareholders, this matters because it signals a sector-wide shift toward greener, potentially cheaper logistics. While the news is about a competitor, it may influence industry standards and cost structures that affect all major cement companies.",
-   "upside": "If electric trucks successfully lower transport costs, it could improve profit margins across the cement sector, including for India Cements.",
-   "downside": "The high cost of buying electric trucks could strain cash flow, and delays in implementation might limit the expected savings.",
+   "summary": "India Cements Ltd. won a Supreme Court case against a rival, removing a legal risk that had been hanging over the company. The market may already have taken this win into account.",
+   "why": "The removal of a major legal uncertainty can make shareholders feel more secure and may improve the company’s risk profile.",
+   "upside": "If investors had not fully priced in the court win, the reduced risk could lift sentiment toward the stock.",
+   "downside": "If the win was already reflected in the share price, there may be little immediate benefit, and any other undisclosed disputes could still pose a risk.",
    "watch": [
-    "Whether India Cements announces similar green logistics initiatives.",
-    "The actual cost savings reported by Ambuja Cements after the trucks are fully deployed.",
-    "Any regulatory changes in India regarding cement transport emissions."
+    "Further updates on any pending litigation involving India Cements",
+    "How the market actually reacts to the court decision in the coming days",
+    "Overall demand and pricing trends in the Indian cement sector"
    ],
-   "about": "India Cements Ltd. is a company in the Construction Materials sector.",
-   "basis": "1b3685b9fc21",
-   "items": 2,
-   "updated": "2026-11-18T11:15+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "India Cements Ltd. manufactures and sells cement and related construction materials in India.",
+   "basis": "9ec71d97c65a",
+   "items": 4,
+   "updated": "2026-11-20T07:57+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "ADANIPOWER": {
    "summary": "Adani Power is set to benefit from a new transmission contract won by its subsidiary Adani Energy Solutions to evacuate 2,400 MW from the planned Pirpanti plant in Bihar. A recent Morgan Stanley note also highlighted the stock among large‑cap picks, adding investor interest.",
@@ -1209,6 +1193,22 @@
    "items": 2,
    "updated": "2026-11-19T13:11+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "TCS": {
+   "summary": "TCS shares have fallen by 26% in 2026, despite the company reporting good business results. Recent trading shows a minor setback, with the stock price slightly down in the latest session.",
+   "why": "This matters to shareholders because the significant drop in value is driven by broader market trends rather than poor company performance, which may affect the overall worth of their investment.",
+   "upside": "The company has reported good business results, which provides a fundamental base for the stock even as its price falls.",
+   "downside": "The stock may continue to move down or stay flat if broader market weakness persists.",
+   "watch": [
+    "Whether the recent minor price drop continues or stabilizes",
+    "The overall trend of the IT sector index",
+    "Changes in investor sentiment regarding IT stocks"
+   ],
+   "about": "Tata Consultancy Services is a large software company in the Information Technology sector.",
+   "basis": "70369ad9dcc3",
+   "items": 3,
+   "updated": "2026-11-19T12:15+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "NTPC": {
    "summary": "PulsEdge flagged a tragic accident at NTPC's Tandwa project where three workers died and two were injured, and an investigation is now under way. The Energy sector index was flat over the past five sessions, showing little market movement.",
@@ -1479,6 +1479,22 @@
    "basis": "aba0ead03693",
    "items": 2,
    "updated": "2026-11-19T11:45+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "INFY": {
+   "summary": "Infosys shares have fallen significantly, losing about a quarter of their value over the past year. Recent news highlights a continued price drop and comparisons with rival TCS, while the broader IT sector has also declined recently.",
+   "why": "If you own Infosys shares, this means your investment value has decreased substantially. The recent price movements suggest investors are currently cautious about the company's performance and the wider technology industry.",
+   "upside": "Some analysts suggest the stock may have reached a low point and could start rising again.",
+   "downside": "Global spending on IT services remains uncertain, which could lead to further price declines if negative news emerges.",
+   "watch": [
+    "Updates on global IT spending trends",
+    "How the broader IT sector index performs in the coming days",
+    "Any new company-specific announcements or earnings data"
+   ],
+   "about": "Infosys is a large Indian information technology company that is part of the Nifty 50 index.",
+   "basis": "bd1d532906ab",
+   "items": 3,
+   "updated": "2026-11-19T11:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {

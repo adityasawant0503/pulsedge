@@ -1,18 +1,18 @@
 {
  "date": "2026-11-20",
- "updated": "2026-11-20T03:26:39+05:30",
+ "updated": "2026-11-20T07:58:35+05:30",
  "sentiment": "Mildly bearish",
  "breadth": {
-  "up": 1,
+  "up": 0,
   "down": 2
  },
  "checklist": [
   {
    "title": "Nifty 50 last close (GIFT Nifty not available from free sources)",
-   "dir": "up",
-   "value": "25,514.30 (+1.14%)",
+   "dir": "flat",
+   "value": "25,514.30 (+0.00%)",
    "detail": [
-    "Previous close 25,226.72"
+    "Previous close 25,514.30"
    ]
   },
   {
@@ -23,7 +23,7 @@
     "Dow 49,097.06 -2.19%",
     "S&P 7,175.83 -2.02%",
     "Nasdaq 23,879.20 -2.25%",
-    "Nasdaq futures now -2.69%"
+    "Nasdaq futures now -0.48%"
    ]
   },
   {
@@ -31,8 +31,8 @@
    "dir": "down",
    "value": "Asia lower",
    "detail": [
-    "Nikkei 59,444.21 +0.00%",
-    "Hang Seng 22,841.62 -1.95%"
+    "Nikkei 56,906.03 -4.27%",
+    "Hang Seng 22,407.01 -1.90%"
    ]
   },
   {
@@ -40,20 +40,20 @@
    "dir": "flat",
    "value": "No major currency pressure",
    "detail": [
-    "DXY 103.95 +0.08%",
-    "USD/INR 93.290 -0.17%"
+    "DXY 103.91 +0.01%",
+    "USD/INR 93.290 +0.00%"
    ]
   },
   {
    "title": "Brent crude level",
    "dir": "flat",
-   "value": "$92.62 +0.73%",
+   "value": "$92.45 +0.51%",
    "detail": []
   },
   {
    "title": "India VIX",
    "dir": "flat",
-   "value": "16.11 (+3.50%) — normal",
+   "value": "16.11 (+0.00%) — normal",
    "detail": []
   }
  ],
@@ -63,21 +63,20 @@
   "Nikkei down, Hang Seng down"
  ],
  "india_triggers": [
-  "7 filings and headlines worth a look so far today",
-  "India VIX up 3.5% — expect wider ranges"
+  "9 filings and headlines worth a look so far today"
  ],
  "focus": [
   {
+   "symbol": "HFCL",
+   "note": "AI sell-off hits Indian smallcaps; Sterlite, HFCL down up to 29% in a "
+  },
+  {
+   "symbol": "OIL",
+   "note": "Oil prices edge higher as Houthi attacks on Riyadh raise supply concer"
+  },
+  {
    "symbol": "OIL",
    "note": "Oil prices inch up as tanker disruptions offset surplus supply outlook"
-  },
-  {
-   "symbol": "OIL",
-   "note": "US Sour Crude’s War Premium Vanishes as Supply Surges"
-  },
-  {
-   "symbol": "POLICYBZR",
-   "note": "PB Fintech Limited: PB Fintech Limited has informed the Exchange regar"
   }
  ],
  "sector_tags": [
@@ -91,37 +90,37 @@
   {
    "name": "BANK NIFTY",
    "value": "63,063.0",
-   "change": 1.65
-  },
-  {
-   "name": "S&P FUT",
-   "value": "7,174",
-   "change": -2.27
-  },
-  {
-   "name": "NASDAQ FUT",
-   "value": "26,457",
-   "change": -2.69
-  },
-  {
-   "name": "KOSPI",
-   "value": "5,138",
    "change": 0.0
   },
   {
+   "name": "S&P FUT",
+   "value": "7,186",
+   "change": -0.15
+  },
+  {
+   "name": "NASDAQ FUT",
+   "value": "26,472",
+   "change": -0.48
+  },
+  {
+   "name": "KOSPI",
+   "value": "4,910",
+   "change": -4.44
+  },
+  {
    "name": "WTI",
-   "value": "83.85",
-   "change": 0.71
+   "value": "83.53",
+   "change": 0.38
   },
   {
    "name": "GOLD",
-   "value": "3,628",
-   "change": -3.03
+   "value": "3,543",
+   "change": -3.86
   },
   {
    "name": "US 10Y",
-   "value": "5.05",
-   "change": -0.36
+   "value": "5.02",
+   "change": -0.55
   }
  ],
  "source": "CNBC / Yahoo Finance (unofficial, delayed)"

@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T03:26:40+05:30",
+ "updated": "2026-11-20T07:58:35+05:30",
  "summary": {
-  "calls": 1867,
-  "scored_calls": 699,
+  "calls": 1870,
+  "scored_calls": 702,
   "d1": {
    "scored": 549,
    "hits": 225,
@@ -23,6 +23,28 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "bc92d391034b7d52",
+   "symbol": "OIL",
+   "time": "2026-11-20T07:49:44+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Oil prices edge higher as Houthi attacks on Riyadh raise supply concerns",
+   "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-prices-edge-higher-as-houthi-attacks-on-riyadh-raise-supply-concerns/articleshow/136010331.cms"
+  },
+  {
+   "id": "99fb95e0584f3fd4",
+   "symbol": "HFCL",
+   "time": "2026-11-20T07:44:49+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "AI sell-off hits Indian smallcaps; Sterlite, HFCL down up to 29% in a month",
+   "url": "https://www.business-standard.com/markets/news/ai-sell-off-hits-indian-smallcaps-sterlite-hfcl-down-up-to-29-in-a-month-126111900713_1.html"
+  },
   {
    "id": "dd08cdd0344943c0",
    "symbol": "OIL",
@@ -66,6 +88,17 @@
    "source": "Mint Markets",
    "headline": "Oil prices inch up as tanker disruptions offset surplus supply outlook",
    "url": "https://www.livemint.com/market/oil-prices-inch-up-as-tanker-disruptions-offset-surplus-supply-outlook-11795113669203.html"
+  },
+  {
+   "id": "041794f4609b4c56",
+   "symbol": "OIL",
+   "time": "2026-11-19T22:31:41+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "CNBC World Markets",
+   "headline": "Trump, Xi, Putin said they plan to boost oil production, revamp UN after trilateral talks",
+   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html"
   },
   {
    "id": "9b79344b9759a73a",
