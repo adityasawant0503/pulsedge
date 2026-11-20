@@ -4,9 +4,15 @@
   python pulsedge-bot/premarket.py            # write premarket.json
   python pulsedge-bot/premarket.py --dry-run  # print it instead
 
-Quotes come from CNBC's public quote service, with Yahoo Finance's chart endpoint for anything
-CNBC misses (both unofficial, personal use; swap for a licensed feed before charging for access). Stocks in focus come from today's feed.json.
+Quotes come from TradingView's public screener first (it is also the only free source of GIFT Nifty), then CNBC's
+public quote service and Yahoo Finance's chart endpoint for anything it misses (all unofficial, personal use; swap for a
+licensed feed before charging for access). Stocks in focus come from today's feed.json.
 Any quote that can't be fetched is left out rather than guessed.
+
+Outside NSE hours the first checklist item is GIFT Nifty's opening indication: GIFT Nifty (NSE IX, traded from 06:30 IST
+and overnight) against Nifty futures' last close on NSE. Comparing it with the Nifty 50 index instead would add the
+futures premium and overstate the gap. The terminal shows the same prices live (it reads TradingView from the
+visitor's browser); this file is the 15-minute snapshot.
 """
 import argparse
 import http.cookiejar
@@ -20,6 +26,8 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+import quotes as tv  # noqa: E402  (TradingView's screener)
 DATA = os.path.join(HERE, "..", "pulsedge", "data")
 IST = timezone(timedelta(hours=5, minutes=30))
 NOW = datetime.now(IST)
@@ -30,6 +38,16 @@ QUOTES = {
     "dow": "^DJI", "spx": "^GSPC", "nasdaq": "^IXIC", "nqf": "NQ=F", "esf": "ES=F",
     "nikkei": "^N225", "hangseng": "^HSI", "kospi": "^KS11",
     "dxy": "DX-Y.NYB", "usdinr": "INR=X", "brent": "BZ=F", "wti": "CL=F", "gold": "GC=F", "us10y": "^TNX",
+}
+
+
+# The same instruments on TradingView, plus GIFT Nifty and Nifty futures for the opening indication.
+TV = {
+    "gift": "NSEIX:NIFTY1!", "niftyfut": "NSE:NIFTY1!",
+    "nifty": "NSE:NIFTY", "banknifty": "NSE:BANKNIFTY", "vix": "NSE:INDIAVIX",
+    "dow": "DJ:DJI", "spx": "SP:SPX", "nasdaq": "NASDAQ:IXIC", "nqf": "CME_MINI:NQ1!", "esf": "CME_MINI:ES1!",
+    "nikkei": "TVC:NI225", "hangseng": "TVC:HSI", "kospi": "TVC:KOSPI",
+    "dxy": "TVC:DXY", "usdinr": "FX_IDC:USDINR", "brent": "ICEEUR:BRN1!", "wti": "NYMEX:CL1!", "gold": "TVC:GOLD", "us10y": "TVC:US10Y",
 }
 
 
@@ -75,6 +93,28 @@ def cnbc_quotes():
                 out[k] = {"price": price, "prev": prev, "chg": (price / prev - 1) * 100}
                 break
     return out
+
+
+def tv_quotes():
+    rows = tv.scan(TV.values())
+    out = {}
+    for k, t in TV.items():
+        try:
+            price, chg = float(rows[t][0]), float(rows[t][1])
+        except (KeyError, IndexError, TypeError, ValueError):
+            continue
+        if price and chg > -100:
+            out[k] = {"price": price, "prev": price / (1 + chg / 100), "chg": chg, "delay": tv.delay_of(rows[t][2])}
+    return out
+
+
+def opening_word(gp):
+    """GIFT Nifty's gap against Nifty futures, in words."""
+    if abs(gp) < 0.15:
+        return "flat start indicated"
+    if abs(gp) < 0.5:
+        return "slightly higher start indicated" if gp > 0 else "slightly lower start indicated"
+    return "gap-up start indicated" if gp > 0 else "gap-down start indicated"
 
 
 _SESSION = {}
@@ -137,10 +177,18 @@ def main():
 
     q = {}
     try:
-        q = cnbc_quotes()
-        log(f"  CNBC: {len(q)}/{len(QUOTES)}")
+        q = tv_quotes()
+        log(f"  TradingView: {len(q)}/{len(TV)}")
     except Exception as e:
-        log(f"  CNBC: failed ({type(e).__name__}: {e})")
+        log(f"  TradingView: failed ({type(e).__name__}: {e})")
+    if any(k not in q for k in CNBC):
+        try:
+            got = cnbc_quotes()
+            for k, v in got.items():
+                q.setdefault(k, v)
+            log(f"  CNBC: {len(got)}/{len(CNBC)}")
+        except Exception as e:
+            log(f"  CNBC: failed ({type(e).__name__}: {e})")
     misses = 0
     for k, sym in QUOTES.items():
         if k in q:
@@ -155,7 +203,7 @@ def main():
         except Exception as e:
             misses += 1
             log(f"  {sym}: skipped ({type(e).__name__}: {e})")
-    log(f"quotes: {len(q)}/{len(QUOTES)}")
+    log(f"quotes: {len(q)} of {len(set(TV) | set(QUOTES))}")
     if len(q) < 5:
         log("too few quotes; leaving premarket.json unchanged")
         return
@@ -174,10 +222,27 @@ def main():
         good = ch > 0 if not inverse else ch < 0
         return "up" if good else "down"
 
-    if "nifty" in q:
+    in_hours = NOW.weekday() < 5 and (9, 15) <= (NOW.hour, NOW.minute) < (15, 30)
+    opening = None
+    if not in_hours and "gift" in q and "niftyfut" in q:
+        g, f = q["gift"]["price"], q["niftyfut"]["price"]
+        gap, gp = g - f, (g / f - 1) * 100
+        opening = opening_word(gp)
+        det = []
+        if "nifty" in q:
+            n = q["nifty"]
+            det += [f"Nifty 50 last close {fmt(n['price'])} ({pct(n['chg'])})",
+                    f"Implied open near {fmt(n['price'] * (1 + gp / 100), 0)}"]
+        det.append(f"Against Nifty futures' last close {fmt(f, 1)}")
+        add("GIFT Nifty - opening indication", tone(gp, band=0.15),
+            f"{fmt(g, 1)} · {gap:+,.0f} pts ({gp:+.2f}%) · {opening}", det)
+    elif "nifty" in q:
         n = q["nifty"]
-        add("Nifty 50 last close (GIFT Nifty not available from free sources)", tone(n["chg"]),
-            f"{fmt(n['price'])} ({pct(n['chg'])})", [f"Previous close {fmt(n['prev'])}"])
+        det = [f"Previous close {fmt(n['prev'])}"]
+        if "gift" in q:
+            det.append(f"GIFT Nifty {fmt(q['gift']['price'], 1)} ({pct(q['gift']['chg'])})")
+        add("Nifty 50 now (15 min delayed)" if in_hours else "Nifty 50 last close", tone(n["chg"]),
+            f"{fmt(n['price'])} ({pct(n['chg'])})", det)
     us = [k for k in ("dow", "spx", "nasdaq") if k in q]
     if us:
         higher = sum(q[k]["chg"] > 0 for k in us)
@@ -220,6 +285,9 @@ def main():
                  "Bearish" if score <= -3 else "Mildly bearish" if score <= -1 else "Neutral")
 
     cues = []
+    if opening:
+        g = q["gift"]["price"] - q["niftyfut"]["price"]
+        cues.append(f"GIFT Nifty: {opening} ({g:+,.0f} pts)")
     if "brent" in q and abs(q["brent"]["chg"]) >= 1:
         cues.append(f"Brent {'up' if q['brent']['chg'] > 0 else 'down'} {abs(q['brent']['chg']):.2f}%"
                     + (" — pressure on OMCs, paints and aviation" if q["brent"]["chg"] > 0 else " — relief for OMCs and paints"))
@@ -267,7 +335,7 @@ def main():
                        + ([{"label": "IT", "tone": "watch"}] if "nasdaq" in q and abs(q["nasdaq"]["chg"]) > 0.3 else []),
         "key_risk": risks[0] if risks else "",
         "also": [{"name": n, "value": fmt(q[k]["price"], d), "change": round(q[k]["chg"], 2)} for n, k, d in also_keys if k in q],
-        "source": "CNBC / Yahoo Finance (unofficial, delayed)",
+        "source": "TradingView / CNBC / Yahoo Finance (unofficial; NSE prices 15 min delayed)",
     }
     if dry:
         print(json.dumps(out, indent=1, ensure_ascii=False))

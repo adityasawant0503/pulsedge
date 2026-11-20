@@ -157,6 +157,24 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .risk{background:var(--amber-soft);border-left:3px solid var(--amber);border-radius:6px;padding:10px 12px;font-size:14.5px}
 .risk b{color:var(--amber-l)}
 .also{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+/* live prices (TradingView, read by the browser) */
+.live{padding:14px 16px 12px;border-bottom:1px solid var(--line)}
+.lvh{display:flex;align-items:center;gap:8px;margin-bottom:8px;font:600 11.5px/1.2 var(--mono);letter-spacing:.08em;color:var(--pur-l)}
+.lvh .at{margin-left:auto;font-weight:400;letter-spacing:0;color:var(--mute)}
+.ldot{flex:none;width:7px;height:7px;border-radius:50%;background:var(--green-l);animation:lvp 2s infinite}
+@keyframes lvp{0%{box-shadow:0 0 0 0 #22c55e73}70%{box-shadow:0 0 0 6px #22c55e00}100%{box-shadow:0 0 0 0 #22c55e00}}
+.tile .tr{display:flex;justify-content:space-between;align-items:baseline;gap:4px}
+.tile .tr i{font:400 10.5px/1.2 var(--mono);font-style:normal;white-space:nowrap}
+.tile .tr i.rt{color:var(--green-l)}.tile .tr i.dl{color:var(--dim)}
+.live .tile small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile b.tku{animation:tku 1.4s ease-out}.tile b.tkd{animation:tkd 1.4s ease-out}
+@keyframes tku{from{color:var(--green-l)}}@keyframes tkd{from{color:var(--red-l)}}
+.live .opn{margin:10px 0 0;font-size:13px;line-height:1.5}
+.live .opn b{font-weight:600}
+.live .lbl{margin:12px 0 8px}
+.lvnote{margin:10px 0 0;font-size:11.5px;color:var(--mute)}
+.gift{display:inline-flex;align-items:center;gap:6px;font:500 12.5px/1.4 var(--mono);border:1px solid var(--line);border-radius:4px;padding:2px 7px;white-space:nowrap}
+@media (prefers-reduced-motion:reduce){.ldot,.tile b.tku,.tile b.tkd{animation:none}}
 .tile{border:1px solid var(--line);box-shadow:inset 0 1px 0 rgba(255,255,255,.04);border-radius:8px;padding:8px 10px;background:var(--panel2);font-family:var(--mono)}
 .tile small{display:block;color:var(--mute);font-size:11.5px}
 .tile b{display:block;font-weight:500;font-size:16px;font-variant-numeric:tabular-nums}
@@ -251,6 +269,7 @@ footer{padding-block:24px 32px;text-align:center;color:var(--dim);font-size:13.5
   .bul{gap:3px}.bul li{font-size:12.5px}.bul li::before{margin-top:7px}
   .tag,.risk{font-size:12px}.risk{padding:8px 10px}
   .also{gap:6px;grid-template-columns:repeat(3,1fr)}
+  .live{padding:12px 12px 10px}.live .opn{font-size:12.5px}
   .tile{padding:6px 8px}.tile small{font-size:10px}.tile b{font-size:13.5px}.tile span{font-size:11px}
   .tabs{gap:6px;margin-bottom:8px}.tab{padding:5px 11px;font-size:12.5px}
   .feed{gap:8px}
@@ -460,6 +479,7 @@ dialog.gl::backdrop{background:rgba(8,7,12,.6)}
         <span class="pmt" id="pm-t">PRE-MARKET</span>
         <span class="sent neutral" id="pm-sent">–</span>
         <span class="breadth" id="pm-br" hidden></span>
+        <span class="gift" id="pm-gift" hidden title="GIFT Nifty, real time"></span>
       </div>
       <div class="pmr">
         <span class="prog" id="pm-prog" hidden>0/0 ✓</span>
@@ -468,6 +488,7 @@ dialog.gl::backdrop{background:rgba(8,7,12,.6)}
       </div>
     </div>
     <div class="pmb" id="pm-body">
+      <div class="live" id="pm-live" hidden></div>
       <ul class="cl" id="pm-cl"></ul>
       <div class="notes" id="pm-notes"></div>
       <div class="notes" id="pm-flows" hidden></div>
@@ -542,6 +563,85 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
   tick();setInterval(tick,1000);
   fetch("data/calendar.json").then(function(r){return r.ok?r.json():{}}).then(function(c){(c.holidays||[]).forEach(function(x){HOL[x]=1})}).catch(function(){});
 
+  // ---------- live prices in the pre-market card ----------
+  // This browser reads TradingView's public screener every 20 seconds while the page is open (it answers requests
+  // from any site, so no server is needed). GIFT Nifty, Asia, currencies, gold and bond yields are real time; NSE
+  // prices are 15 minutes delayed and US futures 10, and each tile says which. Free and unofficial: right for a
+  // glance, not a licensed feed. If it stops answering, the card keeps the 15-minute snapshot (data/premarket.json).
+  var LIVE_URL="https://scanner.tradingview.com/global/scan",LIVE_FUT="NSE:NIFTY1!",LIVE_GIFT="NSEIX:NIFTY1!";
+  var LIVE_SET=[[LIVE_GIFT,"GIFT Nifty",1],["NSE:NIFTY","Nifty 50",2],["NSE:BANKNIFTY","Bank Nifty",2],["NSE:INDIAVIX","India VIX",2],
+    ["CBOT_MINI:YM1!","Dow fut",0],["CME_MINI:ES1!","S&P 500 fut",2],["CME_MINI:NQ1!","Nasdaq fut",2],
+    ["TVC:NI225","Nikkei",0],["TVC:HSI","Hang Seng",0],["TVC:KOSPI","KOSPI",2],
+    ["FX_IDC:USDINR","USD/INR",3],["TVC:DXY","Dollar index",2],["ICEEUR:BRN1!","Brent",2],["TVC:GOLD","Gold",1],["TVC:US10Y","US 10Y",3]];
+  var lv={q:{},at:0,fails:0,timer:null,ok:false,started:false};
+  function tvNse(s){return "NSE:"+s.replace(/-/g,"_")}
+  function liveMine(){var seen={};return hold.map(function(h){return String(h.s||"").toUpperCase()}).filter(function(s){if(!s||seen[s])return false;seen[s]=1;return true}).slice(0,24)}
+  function liveFetch(){
+    var t=LIVE_SET.map(function(x){return x[0]}).concat(LIVE_FUT,liveMine().map(tvNse));
+    // a plain-text body keeps this a "simple" request, so the browser sends no preflight (TradingView's would refuse a JSON content type)
+    return fetch(LIVE_URL,{method:"POST",body:JSON.stringify({symbols:{tickers:t},columns:["close","change","update_mode"]}),credentials:"omit",cache:"no-store"})
+      .then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json()})
+      .then(function(j){
+        var q={};
+        (j&&Array.isArray(j.data)?j.data:[]).forEach(function(r){
+          var d=r&&r.d;if(!d||typeof d[0]!=="number"||!d[0])return;
+          var m=/delayed_streaming_(\d+)/.exec(String(d[2]||""));
+          q[r.s]={px:d[0],ch:typeof d[1]==="number"?d[1]:null,dl:m?+m[1]:0};
+        });
+        return q;
+      });
+  }
+  function nseOpen(){var d=ist(),m=d.getHours()*60+d.getMinutes(),hol=!!HOL[d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate())];return d.getDay()>=1&&d.getDay()<=5&&!hol&&m>=555&&m<930}
+  function livePoll(){
+    clearTimeout(lv.timer);lv.timer=null;
+    if(lv.busy||document.visibilityState==="hidden")return;   // a hidden page is picked up again when it's visible
+    lv.busy=true;
+    liveFetch().then(function(q){
+      var old=lv.q;lv.q=q;lv.at=Date.now();lv.fails=0;lv.ok=!!q[LIVE_GIFT]||Object.keys(q).length>=5;renderLive(old);
+    }).catch(function(){lv.fails++;if(lv.fails>=3&&lv.ok){lv.ok=false;renderLive({})}}).then(function(){
+      lv.busy=false;var d=ist(),wkend=d.getDay()===0||d.getDay()===6;
+      lv.timer=setTimeout(livePoll,lv.fails?Math.min(300000,20000*Math.pow(2,lv.fails)):(wkend?120000:20000));
+    });
+  }
+  function num(v,d){return v.toLocaleString("en-IN",{minimumFractionDigits:d,maximumFractionDigits:d})}
+  function sgn(v,d){return (v>=0?"+":"\u2212")+num(Math.abs(v),d)}
+  function liveTile(name,q,d,old){
+    var t=el("div","tile"),b=el("b",null,num(q.px,d)),tr=el("div","tr");
+    if(old&&old.px!==q.px)b.className=q.px>old.px?"tku":"tkd";
+    tr.append(el("span",q.ch==null?"flat":q.ch>=0?"up":"down",q.ch==null?"":sgn(q.ch,2)+"%"),q.dl?el("i","dl",Math.round(q.dl/60)+" min"):el("i","rt","\u25cf live"));
+    t.title=q.dl?name+": "+Math.round(q.dl/60)+" minutes delayed":name+": real time";
+    t.append(el("small",null,name),b,tr);
+    return t;
+  }
+  function renderLive(old){
+    var box=document.getElementById("pm-live"),chip=document.getElementById("pm-gift"),also=document.getElementById("pm-also");
+    if(also)also.hidden=lv.ok;
+    if(!lv.ok){box.hidden=true;chip.hidden=true;return}
+    old=old||{};box.textContent="";box.hidden=false;
+    var at=new Date(lv.at),h=el("div","lvh");
+    h.append(el("span","ldot"),el("span",null,"LIVE PRICES"),el("span","at","updated "+at.toLocaleTimeString("en-IN",{timeZone:"Asia/Kolkata",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false})));
+    box.appendChild(h);
+    var g=el("div","also");
+    LIVE_SET.forEach(function(x){var q=lv.q[x[0]];if(q)g.appendChild(liveTile(x[1],q,x[2],old[x[0]]))});
+    box.appendChild(g);
+    // GIFT Nifty against Nifty futures' last close: the usual read of how NSE will open (not during NSE hours)
+    var gi=lv.q[LIVE_GIFT],fu=lv.q[LIVE_FUT],ni=lv.q["NSE:NIFTY"];
+    if(gi&&fu&&!nseOpen()){
+      var gap=gi.px-fu.px,gp=gap/fu.px*100,a=Math.abs(gp);
+      var word=a<0.15?"a flat start":a<0.5?(gp>0?"a slightly higher start":"a slightly lower start"):(gp>0?"a gap-up start":"a gap-down start");
+      var p=el("p","opn");p.append(el("b",null,"Opening indication: "),document.createTextNode("GIFT Nifty is "+num(Math.abs(Math.round(gap)),0)+" pts "+(gap>=0?"above":"below")+" Nifty futures' last close ("+sgn(gp,2)+"%), pointing to "+word+(ni?"; Nifty 50 near "+num(Math.round(ni.px*(1+gp/100)),0):"")+"."));
+      box.appendChild(p);
+    }
+    var mine=liveMine().filter(function(s){return lv.q[tvNse(s)]});
+    if(mine.length){
+      box.appendChild(el("div","lbl","Your stocks"));
+      var g2=el("div","also");mine.forEach(function(s){g2.appendChild(liveTile(s,lv.q[tvNse(s)],2,old[tvNse(s)]))});box.appendChild(g2);
+    }
+    box.appendChild(el("p","lvnote","From TradingView's public data, read by your browser every 20 seconds. Tiles marked live are real time; the rest are delayed by the minutes shown (NSE 15, US futures 10). For a quick look, not for placing orders."));
+    if(gi){chip.hidden=false;chip.textContent="";chip.append(el("span","ldot"),document.createTextNode("GIFT "+num(gi.px,1)+" "),el("span",gi.ch==null?"flat":gi.ch>=0?"up":"down",gi.ch==null?"":sgn(gi.ch,2)+"%"))}
+    else chip.hidden=true;
+  }
+
   // ---------- pre-market ----------
   var pm=null,pmKey="";
   function pmDone(){try{return JSON.parse(store(pmKey)||"[]")||[]}catch(e){return []}}
@@ -592,7 +692,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     }
     if(pm.key_risk){var r=el("div","risk");r.append(el("b",null,"Key risk: "),document.createTextNode(pm.key_risk));n.appendChild(r)}
     if(Array.isArray(pm.also)&&pm.also.length){
-      var w2=el("div");w2.appendChild(el("div","lbl","Also"));var g=el("div","also");
+      var w2=el("div");w2.id="pm-also";w2.hidden=lv.ok;w2.appendChild(el("div","lbl","Also"));var g=el("div","also");
       pm.also.forEach(function(a){
         var t=el("div","tile"),ch=typeof a.change==="number"?a.change:null;
         t.append(el("small",null,a.name),el("b",null,a.value),el("span",ch==null?"flat":ch>=0?"up":"down",ch==null?"":(ch>=0?"+":"")+ch.toFixed(2)+"%"));
@@ -1463,6 +1563,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       document.getElementById("demo").hidden=live&&!!(pm&&pm._live);
       var eng=document.getElementById("eng");eng.className="pill eng"+(live?" live":"");document.getElementById("eng-t").textContent=live?"live":"demo";
       renderPM();renderFlows();render();
+      if(!lv.started){lv.started=true;livePoll()}
     });
   }
   (window.PulseAccess?PulseAccess.guard():Promise.resolve({mode:"live"})).then(function(g){mode=g.mode;if(g.access&&g.access.plan==="owner"&&g.access.granted)loadPaper();return load()}).catch(function(){var ul=document.getElementById("feed");ul.textContent="";var e=el("li","empty");e.append(el("b",null,"Couldn't load signals"),document.createTextNode("Refresh the page to try again."));ul.appendChild(e)});
@@ -1497,6 +1598,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
   // back from the background (a Home Screen app has no pull-to-refresh): fetch at once instead of up to a minute later
   var lastLoad=Date.now();
   document.addEventListener("visibilitychange",function(){
+    if(document.visibilityState==="visible"&&lv.started&&!lv.timer&&!lv.busy)livePoll();
     if(document.visibilityState==="visible"&&live&&Date.now()-lastLoad>15000){lastLoad=Date.now();load().catch(function(){})}
   });
 })();
