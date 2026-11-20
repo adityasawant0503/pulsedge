@@ -1,7 +1,38 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-20T12:26:26+05:30",
+ "updated": "2026-11-20T12:39:57+05:30",
  "items": [
+  {
+   "id": "beff0b1fd3eba435",
+   "time": "2026-11-20T12:38:35+05:30",
+   "headline": "EMS: EMS WINS ORDER WORTH 14 CRORE RUPEES",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9778",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [],
+   "impact": 30,
+   "confidence": 60,
+   "category": "company",
+   "action": "Watch for any follow‑up announcements on contract execution",
+   "reason": [
+    "Order adds revenue",
+    "Impact depends on profit margin"
+   ],
+   "risks": [
+    "Execution risk",
+    "Order size may be small relative to earnings"
+   ],
+   "plain": "The company announced it secured a contract worth 14 crore rupees.",
+   "why": "This could boost revenue, but the amount is modest so impact may be limited.",
+   "check": "Look for future updates on the contract’s progress and earnings reports.",
+   "original": "EMS: EMS WINS ORDER WORTH 14 CRORE RUPEES",
+   "latency": 82.8,
+   "lane": "fast"
+  },
   {
    "id": "04859b8c0fcbcc3b",
    "time": "2026-11-20T12:26:16+05:30",
@@ -809,45 +840,6 @@
    "check": "",
    "original": "GPT INFRAPROJECTS: WOS DECLARED L1 IN ORDER WORTH ₹120.95 CR FROM NER HQ-S AND T/NORTH EASTERN RLY; CONTRACT INVOLVES DESIGN, INSTALLATION, AND COMMISSIONING OF ELECTRONIC INTERLOCKING SYSTEM.",
    "latency": 59.1,
-   "lane": "fast"
-  },
-  {
-   "id": "78fff5fa38602b49",
-   "time": "2026-11-19T12:37:09+05:30",
-   "headline": "WAAREE ENERGIES: WINS ORDER WORTH 1 BILLION RUPEES",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9685",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "WAAREEENER",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Renewable Energy",
-    "Solar"
-   ],
-   "impact": 45,
-   "confidence": 60,
-   "category": "Order Win",
-   "action": "Monitor if the stock holds its opening gains to confirm market acceptance of the order news.",
-   "reason": [
-    "Winning a 1 billion rupee order adds to the company's backlog and revenue pipeline.",
-    "It signals continued demand for the company's solar products."
-   ],
-   "risks": [
-    "The order value is modest relative to the company's total market capitalization.",
-    "Execution delays or margin pressure could offset the revenue benefit."
-   ],
-   "plain": "The company announced it won a new contract worth one billion rupees.",
-   "why": "This adds to their future sales, which is generally good for the business, but the amount is not huge.",
-   "check": "Look at the company's recent quarterly results to see how profitable their orders are.",
-   "original": "WAAREE ENERGIES: WINS ORDER WORTH 1 BILLION RUPEES",
-   "latency": 86.1,
    "lane": "fast"
   }
  ]
