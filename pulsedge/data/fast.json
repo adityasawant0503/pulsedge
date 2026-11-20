@@ -1,7 +1,38 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-20T13:55:39+05:30",
+ "updated": "2026-11-20T14:35:39+05:30",
  "items": [
+  {
+   "id": "a1a98502c75f35fe",
+   "time": "2026-11-20T14:35:12+05:30",
+   "headline": "ONE MOBIKWIK SYSTEMS: MOBIKWIK SYSTEMS' DIWALI PAYMENTS GMV CLIMBS 80% TO INR 3,018 CRORE; TIER 2 CITIES MAKE UP 77% OF TRANSACTIONS",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9785",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Fintech",
+    "Payments"
+   ],
+   "impact": 0,
+   "confidence": 0,
+   "category": "Market Colour",
+   "action": "No specific listed stock action required.",
+   "reason": [
+    "No listed Indian company is named in the headline.",
+    "Mobiwik Systems is not in the candidate list."
+   ],
+   "risks": [],
+   "plain": "A payments company reported a large increase in transaction volume during the Diwali festival.",
+   "why": "This news does not directly affect any specific listed stock you might own, so it is safe to skip.",
+   "check": "",
+   "original": "ONE MOBIKWIK SYSTEMS: MOBIKWIK SYSTEMS' DIWALI PAYMENTS GMV CLIMBS 80% TO INR 3,018 CRORE; TIER 2 CITIES MAKE UP 77% OF TRANSACTIONS",
+   "latency": 27.8,
+   "lane": "fast"
+  },
   {
    "id": "626fc91a73034be7",
    "time": "2026-11-20T13:54:33+05:30",
@@ -648,191 +679,6 @@
    "check": "Check future announcements for project timelines and funding plans.",
    "original": "MV ELECTROSYSTEMS: RECEIVED LETTER OF INTENT FOR ALLOTMENT OF 40,064 SQ. METRES LAND IN TELECOM MANUFACTURING ZONE, GWALIOR; TO SET UP INDUSTRIAL MANUFACTURING UNIT",
    "latency": 110.3,
-   "lane": "fast"
-  },
-  {
-   "id": "6208dced900e1a1c",
-   "time": "2026-11-19T14:25:31+05:30",
-   "headline": "ADANI ENERGY SOLUTIONS: CO SAYS PROJECT TO ADD 881 CKMS OF TRANSMISSION LINES AND 3,160 MVA CAPACITY; ANNUAL TARIFF ESTIMATED AT ₹500 CR ON COMMISSIONING.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9698",
-   "section": "news",
-   "call": "buy",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "ADANIENSOL",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Power"
-   ],
-   "impact": 70,
-   "confidence": 80,
-   "category": "company",
-   "action": "Watch for follow‑through above the first 15‑min high if the stock gaps up.",
-   "reason": [
-    "New transmission capacity expands revenue base",
-    "Estimated ₹500 cr annual tariff indicates strong cash flow"
-   ],
-   "risks": [
-    "Project delays or cost overruns",
-    "Regulatory tariff revisions could affect earnings",
-    ""
-   ],
-   "plain": "Adani Energy announced a new transmission project expected to generate about ₹500 crore in annual tariff revenue.",
-   "why": "The added lines could boost the company’s earnings, making the stock potentially more attractive.",
-   "check": "Look for updates on the project’s construction progress and expected commissioning date.",
-   "original": "ADANI ENERGY SOLUTIONS: CO SAYS PROJECT TO ADD 881 CKMS OF TRANSMISSION LINES AND 3,160 MVA CAPACITY; ANNUAL TARIFF ESTIMATED AT ₹500 CR ON COMMISSIONING.",
-   "latency": 71.5,
-   "lane": "fast"
-  },
-  {
-   "id": "45488a26457fc002",
-   "time": "2026-11-19T14:24:16+05:30",
-   "headline": "ADANI ENERGY SOLUTIONS: WINS BIHAR TRANSMISSION PROJECT TO EVACUATE 2,400 MW FROM ADANI POWER'S PLANNED PIRPAINTI PLANT",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9697",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "ADANIENSOL",
-     "direction": "up"
-    },
-    {
-     "symbol": "ADANIPOWER",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Energy",
-    "Power"
-   ],
-   "impact": 45,
-   "confidence": 60,
-   "category": "Business Development",
-   "action": "Monitor order book updates and execution timelines for the Bihar transmission project.",
-   "reason": [
-    "Winning a 2,400 MW transmission project secures significant future revenue for Adani Energy Solutions.",
-    "The project facilitates power evacuation for Adani Power's planned plant, supporting its expansion."
-   ],
-   "risks": [
-    "Execution delays or cost overruns in large infrastructure projects.",
-    "Regulatory or policy changes affecting power transmission tariffs."
-   ],
-   "plain": "Adani Energy Solutions won a contract to build power lines for a new plant in Bihar.",
-   "why": "This brings new business and helps the power company sell its electricity, which is good for long-term growth.",
-   "check": "Look for official announcements about the project's start date and total cost.",
-   "original": "ADANI ENERGY SOLUTIONS: WINS BIHAR TRANSMISSION PROJECT TO EVACUATE 2,400 MW FROM ADANI POWER'S PLANNED PIRPAINTI PLANT",
-   "latency": 136.3,
-   "lane": "fast"
-  },
-  {
-   "id": "a914eb36d6acacc1",
-   "time": "2026-11-19T14:08:09+05:30",
-   "headline": "BANK OF BARODA: BOMBAY HIGH COURT DECLINES BR SHETTY'S IMMEDIATE REQUEST FOR DOCUMENT DISCLOSURE IN HIS $15 BILLION LAWSUIT AGAINST BANK OF BARODA.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9696",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Banking"
-   ],
-   "impact": 10,
-   "confidence": 80,
-   "category": "Legal",
-   "action": "No immediate trading action required; monitor for future court orders.",
-   "reason": [
-    "The court only denied a request for documents, not the lawsuit itself.",
-    "This is a procedural step in a long-term legal dispute with no immediate financial impact."
-   ],
-   "risks": [
-    "Future court orders could lead to significant liabilities or reputational damage."
-   ],
-   "plain": "A court denied a request to share documents in a large lawsuit against the bank.",
-   "why": "This is just a small step in a long legal fight and does not change the bank's current business or profits.",
-   "check": "Look for news about the next court hearing date.",
-   "original": "BANK OF BARODA: BOMBAY HIGH COURT DECLINES BR SHETTY'S IMMEDIATE REQUEST FOR DOCUMENT DISCLOSURE IN HIS $15 BILLION LAWSUIT AGAINST BANK OF BARODA.",
-   "latency": 118.4,
-   "lane": "fast"
-  },
-  {
-   "id": "689b6ef3992cc901",
-   "time": "2026-11-19T13:59:21+05:30",
-   "headline": "INDIA OIL MINISTER SAYS UNIQUELY POSITIONED TO SUPPLY SUSTAINABLE AVIATION FUEL",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9695",
-   "section": "news",
-   "call": "watch",
-   "horizon": "positional",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "OIL",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Oil & Gas",
-    "Energy"
-   ],
-   "impact": 40,
-   "confidence": 60,
-   "category": "Policy/Strategy",
-   "action": "Monitor for specific contract announcements or production targets to confirm the strategic shift.",
-   "reason": [
-    "Ministerial statement highlights India's potential in sustainable aviation fuel (SAF), a growing niche.",
-    "OIL is a major player in the oil sector and could benefit from long-term policy support and demand."
-   ],
-   "risks": [
-    "SAF is a long-term play with high capital intensity; immediate revenue impact is negligible.",
-    "Global oil price volatility remains the primary driver for OIL's stock price."
-   ],
-   "plain": "The Oil Minister said India is well-placed to make fuel for planes that is more eco-friendly.",
-   "why": "This suggests the government supports this new type of fuel, which could help oil companies in the long run.",
-   "check": "Look for news about actual production plans or new investments in green fuel.",
-   "original": "INDIA OIL MINISTER SAYS UNIQUELY POSITIONED TO SUPPLY SUSTAINABLE AVIATION FUEL",
-   "latency": 79.6,
-   "lane": "fast"
-  },
-  {
-   "id": "071f21d062b919a0",
-   "time": "2026-11-19T13:56:51+05:30",
-   "headline": "CHINA CALLS MEETING BETWEEN XI, TRUMP 'POSITIVE, CONSTRUCTIVE'",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9694",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "macro"
-   ],
-   "impact": 10,
-   "confidence": 20,
-   "category": "geopolitics",
-   "action": "Monitor broad market sentiment for any immediate reaction to trade headlines.",
-   "reason": [
-    "General geopolitical news with no specific Indian company impact.",
-    "Market color without new actionable data for listed stocks."
-   ],
-   "risks": [
-    "Potential for broader market volatility if trade tensions escalate."
-   ],
-   "plain": "China said a recent meeting between its leader and the US president was helpful.",
-   "why": "This is general world news that does not directly change the business of specific Indian companies.",
-   "check": "",
-   "original": "CHINA CALLS MEETING BETWEEN XI, TRUMP 'POSITIVE, CONSTRUCTIVE'",
-   "latency": 68.9,
    "lane": "fast"
   }
  ]
