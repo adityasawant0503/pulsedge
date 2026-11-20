@@ -1,7 +1,55 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-20T13:35:27+05:30",
+ "updated": "2026-11-20T13:55:39+05:30",
  "items": [
+  {
+   "id": "626fc91a73034be7",
+   "time": "2026-11-20T13:54:33+05:30",
+   "headline": "KIRLOSKAR BROTHERS VERY CLOSE TO SIGNING A VERY LARGE FRAMEWORK ORDER CONTRACT WITH DATA CENTRE OPERATOR IN USA -",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9784",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "KIRLOSBROS",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Industrial",
+    "Pumps"
+   ],
+   "impact": 75,
+   "confidence": 40,
+   "category": "Business Development",
+   "action": "Monitor for an official company press release or exchange filing to confirm the deal details.",
+   "reason": [
+    "A large framework order with a US data centre operator could significantly boost future revenue.",
+    "The news is currently unconfirmed and relies on a media report rather than an official announcement."
+   ],
+   "risks": [
+    "The deal may not materialize or could be smaller than reported.",
+    "Market may have already priced in the speculation, leading to a sell-off on confirmation."
+   ],
+   "plain": "A news report says a pump maker is close to signing a big contract with a US data center company.",
+   "why": "If true, this could bring in a lot of new business, but it is not officially confirmed yet.",
+   "check": "Look for an official company statement on the stock exchange website to verify the news.",
+   "original": "UPCOMING LARGE OPPORTUNITY FOR COMPANY",
+   "latency": 66.5,
+   "lane": "fast",
+   "quotes": {
+    "KIRLOSBROS": {
+     "px": 1572.0,
+     "prev": 1590.2,
+     "move": -1.14,
+     "at": "2026-11-20T13:55:39+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "df178f00312704c4",
    "time": "2026-11-20T13:34:58+05:30",
@@ -785,186 +833,6 @@
    "check": "",
    "original": "CHINA CALLS MEETING BETWEEN XI, TRUMP 'POSITIVE, CONSTRUCTIVE'",
    "latency": 68.9,
-   "lane": "fast"
-  },
-  {
-   "id": "d88054cf8d07d3f7",
-   "time": "2026-11-19T13:54:33+05:30",
-   "headline": "INDIA OIL MINISTER SAYS INDIA'S PETCHEM DEMAND IS SEEN RISING TO 55M T BY 2030",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9692",
-   "section": "macro",
-   "call": "watch",
-   "horizon": "positional",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "OIL",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Oil & Gas",
-    "Petrochemicals"
-   ],
-   "impact": 35,
-   "confidence": 60,
-   "category": "Policy/Outlook",
-   "action": "Monitor long-term petrochemical demand trends for potential upside in refining margins.",
-   "reason": [
-    "Rising petrochemical demand supports long-term volumes for oil marketing companies.",
-    "Positive sector outlook may attract institutional interest in OMCs."
-   ],
-   "risks": [
-    "Demand growth may be offset by global crude price volatility.",
-    "Execution of capacity expansion takes time and capital."
-   ],
-   "plain": "The oil minister says India's need for petrochemical products will grow significantly by 2030.",
-   "why": "Higher future demand suggests oil companies may sell more products, which is generally good for their long-term business.",
-   "check": "Look at recent quarterly reports to see if sales volumes are already increasing.",
-   "original": "INDIA OIL MINISTER SAYS INDIA'S PETCHEM DEMAND IS SEEN RISING TO 55M T BY 2030",
-   "latency": 136.8,
-   "lane": "fast"
-  },
-  {
-   "id": "cbc6521714fc23cd",
-   "time": "2026-11-19T13:50:12+05:30",
-   "headline": "ADITYA VISION LTD: CO. OPENS TWO NEW SHOWROOMS IN UTTAR PRADESH; LOCATIONS INCLUDE KANPUR AND MAINPURI; NOW TOTAL OF 223 SHOWROOMS.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9691",
-   "section": "trading",
-   "call": "ignore",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 8,
-   "confidence": 30,
-   "category": "No listed-stock impact",
-   "action": "No action",
-   "reason": [
-    "Keyword rules (AI classification is off)"
-   ],
-   "risks": [],
-   "plain": "",
-   "why": "No listed company is clearly affected.",
-   "check": "",
-   "original": "ADITYA VISION LTD: CO. OPENS TWO NEW SHOWROOMS IN UTTAR PRADESH; LOCATIONS INCLUDE KANPUR AND MAINPURI; NOW TOTAL OF 223 SHOWROOMS.",
-   "latency": 82.1,
-   "lane": "fast"
-  },
-  {
-   "id": "386b960d1d55ed32",
-   "time": "2026-11-19T13:47:25+05:30",
-   "headline": "INDIA AND JAPAN ARE EXPECTED TO FINALISE AN ARRANGEMENT TODAY ALLOWING JAPANESE FORCES TO USE INDIAN MISSILE TEST RANGES FOR TRIALS OF LONG-RANGE WEAPONS, DEEPENING THEIR DEFENCE COOPERATION.(BDL)",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9690",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "BDL",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Defence"
-   ],
-   "impact": 40,
-   "confidence": 60,
-   "category": "Geopolitical/Strategic Partnership",
-   "action": "Monitor for official government statements or contract awards to confirm the operational scope.",
-   "reason": [
-    "Deepening defence ties with Japan may lead to future collaboration or orders for BDL.",
-    "Use of Indian ranges for long-range trials signals trust in Indian infrastructure and capabilities."
-   ],
-   "risks": [
-    "News is about infrastructure use, not immediate revenue or contract value.",
-    "Geopolitical developments can be slow to translate into financial results."
-   ],
-   "plain": "India and Japan are expected to agree on letting Japanese military use Indian missile test sites.",
-   "why": "This shows stronger military cooperation, which could lead to future business for Indian defence companies.",
-   "check": "Look for official government press releases confirming the specific terms of the agreement.",
-   "original": "INDIA AND JAPAN ARE EXPECTED TO FINALISE AN ARRANGEMENT TODAY ALLOWING JAPANESE FORCES TO USE INDIAN MISSILE TEST RANGES FOR TRIALS OF LONG-RANGE WEAPONS, DEEPENING THEIR DEFENCE COOPERATION.(BDL)",
-   "latency": 69.6,
-   "lane": "fast"
-  },
-  {
-   "id": "4272257676eb04ef",
-   "time": "2026-11-19T13:46:00+05:30",
-   "headline": "BRIGADE ENTERPRISES: BRIGADE LAUNCHES 40-ACRE INTEGRATED DEVELOPMENT IN WHITEFIELD–KADUGODI, BENGALURU'S",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9689",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "BRIGADE",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Real Estate"
-   ],
-   "impact": 35,
-   "confidence": 60,
-   "category": "Business Expansion",
-   "action": "Monitor pre-launch sales data and booking trends in the coming weeks to gauge market appetite.",
-   "reason": [
-    "Launch of a 40-acre integrated development signals continued expansion in a high-growth micro-market.",
-    "Whitefield-Kadugodi is a premium corridor, potentially supporting higher average ticket sizes."
-   ],
-   "risks": [
-    "Real estate demand is sensitive to interest rate changes and broader economic sentiment.",
-    "Execution risk in large-scale integrated developments can delay revenue recognition."
-   ],
-   "plain": "Brigade has started selling a new large housing project in a popular area of Bengaluru.",
-   "why": "It shows the company is actively growing its business, which is generally a positive sign for shareholders.",
-   "check": "Look for updates on how many units have been sold in the first few weeks.",
-   "original": "BRIGADE ENTERPRISES: BRIGADE LAUNCHES 40-ACRE INTEGRATED DEVELOPMENT IN WHITEFIELD–KADUGODI, BENGALURU'S",
-   "latency": 94.8,
-   "lane": "fast"
-  },
-  {
-   "id": "3ffe1d658bccd745",
-   "time": "2026-11-19T13:42:16+05:30",
-   "headline": "ALKEM LABORATORIES: US FDA ISSUES WARNING LETTER TO AMALIYA'S DAMAN MANUFACTURING FACILITY AFTER INSPECTION IS CLASSED AS OFFICIAL ACTION INDICATED (OAI); 45% OF OUR U.S. REVENUE COMES FROM THIS FACILITY",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/9688",
-   "section": "news",
-   "call": "sell",
-   "horizon": "swing",
-   "direction": "down",
-   "tickers": [
-    {
-     "symbol": "ALKEM",
-     "direction": "down"
-    }
-   ],
-   "sectors": [
-    "Pharma"
-   ],
-   "impact": 85,
-   "confidence": 90,
-   "category": "Regulatory",
-   "action": "Expect significant downside volatility; monitor for immediate clarification on export suspension or remediation timelines.",
-   "reason": [
-    "FDA Warning Letter is a severe regulatory action indicating serious compliance failures.",
-    "45% of US revenue is tied to the affected facility, creating direct financial exposure."
-   ],
-   "risks": [
-    "Potential suspension of US exports from the Daman facility.",
-    "Costly and time-consuming remediation process may delay revenue recovery."
-   ],
-   "plain": "US regulators issued a serious warning to a key factory owned by the company.",
-   "why": "This factory makes nearly half of the company's US sales, so the warning threatens major income.",
-   "check": "Read the company's official statement to see if they plan to stop shipping from that factory.",
-   "original": "ALKEM LABORATORIES: US FDA ISSUES WARNING LETTER TO AMALIYA'S DAMAN MANUFACTURING FACILITY AFTER INSPECTION IS CLASSED AS OFFICIAL ACTION INDICATED (OAI); 45% OF OUR U.S. REVENUE COMES FROM THIS FACILITY",
-   "latency": 79.3,
    "lane": "fast"
   }
  ]
