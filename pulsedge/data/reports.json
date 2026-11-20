@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T09:30+05:30",
+ "updated": "2026-11-20T09:47+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Indian markets opened cautiously after a sharp drop in US tech stocks, which also hit Indian small-cap tech companies. Oil prices rose slightly due to supply concerns in Saudi Arabia, while rising inflation worries suggest interest rates may stay high. Auto and consumer stocks showed strength in the previous session, but IT stocks remained weak.",
+  "summary": "The day saw a mix of corporate news and market moves. Jupiter Wagons Limited secured a repeat order worth over 128 crore rupees from JSW, while Natco Pharma received an FDA inspection report that could ease regulatory hurdles. Urban Company raised 2,500 crore through a placement, giving it more cash but also more shares. Oil prices edged up because of Houthi attacks on Riyadh, and tech stocks fell as investors worried about AI companies.",
   "themes": [
-   "Global tech weakness is pressuring Indian small-cap and software stocks.",
-   "Inflation concerns are keeping interest rate expectations high.",
-   "Oil supply risks are creating mixed signals for energy-related stocks."
+   "AI worries hit tech stocks",
+   "Contracts and approvals lift some companies",
+   "Oil price moves tied to geopolitics"
   ],
   "watch": [
-   "How Indian IT stocks react to continued US tech volatility.",
-   "Updates on Natco Pharma's US FDA inspection report.",
-   "Changes in foreign fund positioning in index futures."
+   "Jupiter Wagons order – watch execution and cost risks",
+   "Natco Pharma FDA report – watch for any follow‑up observations",
+   "Oil price volatility – watch for changes after Houthi attacks"
   ],
   "date": "2026-11-20",
-  "basis": "d718119c5c88",
-  "updated": "2026-11-20T08:46+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 15
+  "basis": "2305074928b3",
+  "updated": "2026-11-20T09:47+05:30",
+  "model": "openai/gpt-oss-20b",
+  "items": 23
  },
  "stocks": {
   "PAYTM": {
@@ -810,22 +810,6 @@
    "updated": "2026-11-20T09:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "PRESTIGE": {
-   "summary": "Prestige Estates launched a new residential project in North Bengaluru and acquired a 50% stake in a convention and hotels company. The company also announced plans to create two new subsidiaries and increase its ownership in an existing housing project.",
-   "why": "These moves show the company is actively expanding its business, which could influence future revenue and how much cash it has available for shareholders.",
-   "upside": "New projects and acquisitions may generate additional sales and broaden the company's income sources over time.",
-   "downside": "Buying new businesses and building projects requires significant spending, which could strain cash reserves or lead to integration issues.",
-   "watch": [
-    "How quickly the new North Bengaluru project receives bookings.",
-    "Details on how the hotel acquisition is being financed.",
-    "The specific purpose of the two new subsidiaries."
-   ],
-   "about": "Prestige Estates is a realty company that develops residential projects.",
-   "basis": "877e2b9936c7",
-   "items": 7,
-   "updated": "2026-11-20T08:46+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "MARUTI": {
    "summary": "Maruti Suzuki shares have risen sharply as the auto sector rallied, with the Nifty Auto index up 4.4% in the last session and 1.3% over five sessions. The stock also appeared in a recent list of top picks by a broker.",
    "why": "A sector rally can lift the share price, but the gains may be fragile if costs rise again.",
@@ -920,6 +904,38 @@
    "basis": "accb212cc931",
    "items": 3,
    "updated": "2026-11-18T14:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "INDIGO": {
+   "summary": "IndiGo is flagged for a possible earnings downgrade as analysts expect lower profits than previously forecast.",
+   "why": "Lower profit expectations can pressure the stock, affecting shareholders' returns.",
+   "upside": "If the company reports earnings that beat the revised expectations, the share price could recover.",
+   "downside": "If earnings fall short of even the lowered forecasts, the stock could face further declines.",
+   "watch": [
+    "Upcoming quarterly earnings announcement",
+    "Any revisions to profit forecasts by analysts",
+    "Broader Nifty 50 movement and investor sentiment"
+   ],
+   "about": "InterGlobe Aviation Ltd operates IndiGo, India's largest low‑cost airline.",
+   "basis": "bb832b385d3c",
+   "items": 2,
+   "updated": "2026-11-20T09:47+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "TMCV": {
+   "summary": "PulsEdge flagged that Tata Motors may see earnings downgraded, meaning analysts expect lower profit. At the same time, the stock closed above its 200‑day moving average, a level that can hint at a technical recovery.",
+   "why": "Lower earnings expectations can pressure the share price, while a price above the long‑term average may attract buying interest.",
+   "upside": "If the company reports earnings that beat the lowered forecasts, the stock could rally.",
+   "downside": "If actual earnings fall short of even the reduced expectations, the share price could fall further.",
+   "watch": [
+    "Upcoming earnings release and whether results beat the downgraded view",
+    "Trading volume on days the price stays above the 200‑day moving average",
+    "Any new analyst revisions to earnings forecasts"
+   ],
+   "about": "Tata Motors Ltd. designs, manufactures and sells automobiles and commercial vehicles.",
+   "basis": "68915273e31c",
+   "items": 2,
+   "updated": "2026-11-20T09:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ICICIBANK": {
@@ -1290,22 +1306,6 @@
    "updated": "2026-11-20T08:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "INDIGO": {
-   "summary": "PulsEdge flagged no company‑specific news for InterGlobe Aviation Ltd. (INDIGO) in the recent days. The only note is that it remains one of the 50 largest listed firms in India’s Nifty 50 index.",
-   "why": "Being part of the Nifty 50 means the stock can be affected by broader index movements and fund flows that track the index.",
-   "upside": "",
-   "downside": "",
-   "watch": [
-    "Changes in the Nifty 50 composition or weighting",
-    "Any future inclusion in high‑growth stock lists by major banks",
-    "Quarterly earnings and passenger traffic trends"
-   ],
-   "about": "InterGlobe Aviation Ltd. operates IndiGo, a low‑cost airline and one of India’s largest carriers.",
-   "basis": "e5f80fc59bf5",
-   "items": 1,
-   "updated": "2026-11-19T13:11+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "TRENT": {
    "summary": "Trent Ltd. is one of India's 50 largest listed companies in the consumer services sector. Recently, a major investment bank included it in a list of large-cap stocks it expects to outperform the broader market.",
    "why": "This matters because when large institutions highlight a company, it can attract more investor attention and interest in its shares.",
@@ -1336,6 +1336,22 @@
    "items": 1,
    "updated": "2026-11-19T03:10+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "PRESTIGE": {
+   "summary": "Prestige Estates Projects Ltd. launched a new residential project called Prestige Avon in North Bengaluru and announced several strategic moves, including a 50% stake purchase in Advent Convention and Hotels International, the creation of two wholly‑owned subsidiaries, and additional acquisitions and stake increases in its own projects. These actions aim to expand its portfolio and support future revenue growth.",
+   "why": "Shareholders should watch these developments because they could boost the company's earnings but also require cash and successful execution.",
+   "upside": "If the new project sells well and the hotel and other acquisitions integrate smoothly, the company could see stronger revenue and profit growth.",
+   "downside": "Delays in project delivery, higher cash outflows for acquisitions, or integration challenges could pressure earnings and cash reserves.",
+   "watch": [
+    "Booking levels and construction progress of the Prestige Avon project",
+    "Integration and performance of the Advent Convention and Hotels International stake",
+    "Financial impact and operational results of the newly formed subsidiaries and recent acquisitions"
+   ],
+   "about": "Prestige Estates Projects Ltd. is a real‑estate developer that builds residential and commercial projects in India.",
+   "basis": "e24f6b91a14c",
+   "items": 6,
+   "updated": "2026-11-20T09:47+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "WAAREEENER": {
    "summary": "Waaree Energies recently won a new contract worth one billion rupees. The company was also named a top performer in global solar quality tests for the fifth year in a row.",

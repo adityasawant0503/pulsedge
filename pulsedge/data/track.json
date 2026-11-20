@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T09:31:18+05:30",
+ "updated": "2026-11-20T09:47:27+05:30",
  "summary": {
-  "calls": 1883,
-  "scored_calls": 715,
+  "calls": 1885,
+  "scored_calls": 717,
   "d1": {
    "scored": 549,
    "hits": 225,
@@ -23,6 +23,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "598de4a0dffc17df",
+   "symbol": "INDIGO",
+   "time": "2026-11-20T09:11:57+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "IndiGo, Tata Motors PV among 10 Nifty stocks facing earnings downgrades",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/indigo-tata-motors-pv-among-10-nifty-stocks-facing-earnings-downgrades/slideshow/136012225.cms",
+   "alert_px": 5434.0,
+   "alert_move": -0.75,
+   "alert_at": "2026-11-20T09:46:55+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "598de4a0dffc17df",
+   "symbol": "TMCV",
+   "time": "2026-11-20T09:11:57+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "IndiGo, Tata Motors PV among 10 Nifty stocks facing earnings downgrades",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/indigo-tata-motors-pv-among-10-nifty-stocks-facing-earnings-downgrades/slideshow/136012225.cms",
+   "alert_px": 441.9,
+   "alert_move": -0.89,
+   "alert_at": "2026-11-20T09:46:55+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "f36ae214d5509194",
    "symbol": "ICICIBANK",
