@@ -8,9 +8,17 @@ feed.sample.json), so whatever shows in the terminal is what goes to Telegram.
   python pulse_bot.py post   [--event ID] [--dry-run]   # post new Act signals to Telegram
   python pulse_bot.py news   [--dry-run]                # post the most market-moving global and India news
   python pulse_bot.py digest [--dry-run] [--any-hour]   # post the day's evening summary (once a day)
+  python pulse_bot.py brief  [--dry-run] [--any-hour]   # post the morning pre-market brief (once a day)
+  python pulse_bot.py teaser [--dry-run]                # premium mode: a few delayed Act alerts for the free channel
 
 Posting needs TELEGRAM_BOT_TOKEN, and TELEGRAM_CHAT_ID (defaults to @pulsedgein).
 Events already posted are recorded in posted.json so nothing is sent twice.
+
+PulsEdge Premium: with the repository variable TELEGRAM_PRO_CHAT_ID set (a private channel's id, -100...; the bot must
+be one of its admins), every Act card and market-moving story goes to that channel the moment it is found, here and
+in the fast lane. The public channel becomes the free tier: the morning brief, up to FREE_PER_DAY Act cards a day,
+each posted FREE_DELAY after members got it and saying when they did, and the evening summary with a line on what
+members got that day. Without the variable everything goes to the public channel, as before.
 
 Market-moving news: Watch items in the global or macro (economy and policy) sections with impact of at
 least NEWS_MIN: the headline, why it matters and the sectors to watch, with the source credited and linked. At most
@@ -41,6 +49,13 @@ POSTED = os.path.join(HERE, "posted.json")
 # read here so the 15-minute run never posts those again (each lane writes only its own file)
 FAST_POSTED = os.path.join(HERE, "state", "fast_posted.json")
 IST = timezone(timedelta(hours=5, minutes=30))
+# premium mode: when each Act card went to the alert channel (each lane writes its own file), and what the free
+# channel has had
+POSTED_AT = os.path.join(HERE, "state", "posted_at.json")
+FAST_POSTED_AT = os.path.join(HERE, "state", "fast_posted_at.json")
+FREE_POSTED = os.path.join(HERE, "state", "free_posted.json")
+FREE_PER_DAY = int(os.environ.get("PULSEDGE_FREE_PER_DAY") or 3)
+FREE_DELAY = timedelta(minutes=int(os.environ.get("PULSEDGE_FREE_DELAY_MIN") or 30))
 
 # card palette, matches terminal.html (PULSE design)
 BG, PANEL, LINE = (11, 11, 16), (18, 18, 25), (38, 37, 50)
@@ -117,6 +132,53 @@ def normalize(item):
         "original": str(item.get("original") or ""),
         "quotes": item.get("quotes") if isinstance(item.get("quotes"), dict) else {},
     }
+
+
+def public_chat():
+    return os.environ.get("TELEGRAM_CHAT_ID") or "@pulsedgein"
+
+
+def pro_chat():
+    return os.environ.get("TELEGRAM_PRO_CHAT_ID", "").strip()
+
+
+def alert_chat():
+    """Where alerts go the moment they are found: the premium channel when there is one."""
+    return pro_chat() or public_chat()
+
+
+def premium_url():
+    return os.environ.get("PULSEDGE_PREMIUM_URL") or SITE + "index.html#pricing"
+
+
+def read_times(path):
+    try:
+        with open(path, encoding="utf-8") as fh:
+            v = json.load(fh)
+        return v if isinstance(v, dict) else {}
+    except (OSError, ValueError):
+        return {}
+
+
+def write_times(path, times, now):
+    """Keep four days of {id: ISO time} (enough for any free-channel delay and the evening count)."""
+    keep = {k: v for k, v in times.items() if parse_iso(v) and now - parse_iso(v) < timedelta(days=4)}
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump(keep, fh, indent=1, sort_keys=True)
+
+
+def parse_iso(v):
+    try:
+        t = datetime.fromisoformat(str(v))
+        return t if t.tzinfo else t.replace(tzinfo=IST)
+    except ValueError:
+        return None
+
+
+def alert_times():
+    """{id: when it went to the alert channel}, from both lanes."""
+    return {k: t for k, t in ((k, parse_iso(v)) for k, v in {**read_times(FAST_POSTED_AT), **read_times(POSTED_AT)}.items()) if t}
 
 
 def postable(ev):
@@ -360,7 +422,7 @@ def render(ev):
 
 # ---------- Telegram ----------
 
-def caption(ev):
+def caption(ev, extra=None):
     head = "<b>ACT · worth reading now</b>" if ev["call"] in ("buy", "sell") else f"<b>{ev['call'].upper()}</b>"
     if ev["horizon"]:
         head += f" · {HZ.get(ev['horizon'], ev['horizon'].title())}"
@@ -382,9 +444,16 @@ def caption(ev):
         lines += ["", f"Why: {html.escape(ev['reason'][0])}"]
     if ev["url"]:
         lines += ["", f'<a href="{html.escape(ev["url"], quote=True)}">Source</a>']
+    if extra:
+        lines += [""] + extra
     lines += ["", "<i>Educational information only, not investment advice. AI can be wrong: check the source.</i>"]
     text = "\n".join(lines)
-    return text if len(text) <= 1024 else text[:1000].rsplit("\n", 1)[0] + "\n…"
+    if len(text) <= 1024:
+        return text
+    if extra:                                        # keep the members line; shorten the rest
+        tail = "\n\n" + "\n".join(extra) + "\n\n<i>Educational information only, not investment advice.</i>"
+        return text[:1020 - len(tail)].rsplit("\n", 1)[0] + "\n…" + tail
+    return text[:1000].rsplit("\n", 1)[0] + "\n…"
 
 
 def send_photo(token, chat_id, png, text):
@@ -477,7 +546,7 @@ def post_fast(items, dry=False):
     at once, instead of waiting for the next 15-minute run. Returns the entries to record in FAST_POSTED."""
     now = datetime.now(IST)
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
-    chat = os.environ.get("TELEGRAM_CHAT_ID") or "@pulsedgein"
+    chat = alert_chat()
     if quiet_hours(now) or not (token or dry):
         return []
     seen = read_list(POSTED) + read_list(FAST_POSTED)
@@ -486,7 +555,7 @@ def post_fast(items, dry=False):
     for ev in sorted((e for e in events if postable(e) and e["id"] not in seen),
                      key=lambda e: e["time"] or datetime.min.replace(tzinfo=IST)):
         if dry:
-            print(f"--- would post card {ev['id']}\n{caption(ev)}\n")
+            print(f"--- would post card {ev['id']} to {chat}\n{caption(ev)}\n")
             continue
         try:
             send_photo(token, chat, png_bytes(render(ev)), caption(ev))
@@ -507,6 +576,74 @@ def post_fast(items, dry=False):
     return done
 
 
+# ---------- morning brief, free-channel previews ----------
+
+def brief_text(pm, now):
+    """The morning pre-market brief from premarket.json: GIFT Nifty's opening indication first, then the checklist."""
+    if not pm or pm.get("date") != now.strftime("%Y-%m-%d"):
+        return None
+    cl = [c for c in pm.get("checklist") or [] if isinstance(c, dict) and c.get("title")]
+    if not cl:
+        return None
+    br = pm.get("breadth") or {}
+    lines = [f"☀️ <b>PulsEdge pre-market · {now:%a} {now.day} {now:%b}</b>"]
+    gift = next((c for c in cl if str(c["title"]).startswith("GIFT Nifty")), None)
+    if gift:
+        lines.append(f"<b>GIFT Nifty:</b> {html.escape(str(gift.get('value', '')))}")
+    lines.append(f"<b>Setup:</b> {html.escape(str(pm.get('sentiment') or 'Neutral'))} "
+                 f"({br.get('up', 0)}▲ {br.get('down', 0)}▼)")
+    lines.append("")
+    for c in cl:
+        if c is gift:
+            continue
+        t = re.sub(r"\s+-\s+.*$", "", re.sub(r"\s*\(.*?\)\s*", " ", str(c["title"]))).strip()
+        lines.append(f"{ARROW.get(c.get('dir'), '●')} {html.escape(t)}: {html.escape(str(c.get('value', '')))}")
+    if pm.get("key_risk"):
+        lines += ["", f"<b>Key risk:</b> {html.escape(str(pm['key_risk']))}"]
+    focus = [str(f.get("symbol")) for f in pm.get("focus") or [] if isinstance(f, dict) and f.get("symbol")]
+    if focus:
+        lines.append("<b>Stocks in focus:</b> " + html.escape(", ".join(focus[:4])))
+    lines.append("")
+    yt = os.environ.get("PULSEDGE_YOUTUBE_URL", "").strip()
+    if yt:
+        lines.append(f'📺 <a href="{html.escape(yt, quote=True)}">Watch PulsEdge Live</a> from 8:45')
+    lines.append(f'<a href="{SITE}terminal.html">Open the PULSE terminal</a> · live GIFT Nifty and global prices')
+    lines.append("<i>Educational information only. Not investment advice.</i>")
+    return "\n".join(lines)
+
+
+def teaser_picks(events, now):
+    """Premium mode: Act cards members got at least FREE_DELAY ago (today, within 4 hours), not yet in the free
+    channel, best first; one a run so the day's few spread out, and none once FREE_PER_DAY is reached."""
+    day = now.strftime("%Y-%m-%d")
+    free = read_list(FREE_POSTED)
+    if sum(p.startswith(f"free:{day}:") for p in free) >= FREE_PER_DAY:
+        return []
+    had = {p.split(":", 2)[2] for p in free if p.startswith("free:")}
+    times = alert_times()
+    out = []
+    for ev in events:
+        t = times.get(ev["id"])
+        if (t and ev["id"] not in had and postable(ev) and consistent(ev) and t.strftime("%Y-%m-%d") == day
+                and FREE_DELAY <= now - t <= timedelta(hours=4)):
+            out.append((ev, t))
+    out.sort(key=lambda p: (-(p[0]["impact"] or 0), p[1]))
+    return out[:1]
+
+
+def members_line(t, now):
+    mins = max(1, round((now - t).total_seconds() / 60))
+    ago = f"{mins} min earlier" if mins < 120 else f"{mins // 60} h {mins % 60} min earlier"
+    return [f"🔒 <b>PulsEdge Premium members got this at {t:%H:%M}</b>, {ago}.",
+            f'<a href="{html.escape(premium_url(), quote=True)}">Get every alert the moment it is found</a>']
+
+
+def members_today(now):
+    day = now.strftime("%Y-%m-%d")
+    got = sorted(t for t in alert_times().values() if t.strftime("%Y-%m-%d") == day)
+    return len(got), (got[0] if got else None)
+
+
 def png_bytes(img):
     buf = io.BytesIO()
     img.save(buf, "PNG", optimize=True)
@@ -515,11 +652,11 @@ def png_bytes(img):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("cmd", choices=["render", "post", "news", "digest"])
+    ap.add_argument("cmd", choices=["render", "post", "news", "digest", "brief", "teaser"])
     ap.add_argument("--event", help="only this event id")
     ap.add_argument("--out", default=os.path.join(HERE, "out"), help="render: output folder")
     ap.add_argument("--dry-run", action="store_true", help="post: show what would be sent")
-    ap.add_argument("--any-hour", action="store_true", help="digest: post it even before 18:00 IST")
+    ap.add_argument("--any-hour", action="store_true", help="digest/brief: post it outside its usual hours")
     a = ap.parse_args()
 
     feed, source = load_feed()
@@ -546,13 +683,95 @@ def main():
         if not token:
             print("TELEGRAM_BOT_TOKEN isn't set; skipping.")
             return
-        send_message(token, os.environ.get("TELEGRAM_CHAT_ID") or "@pulsedgein", text)
+        send_message(token, alert_chat(), text)
+        if pro_chat():
+            n, first = members_today(now)
+            free = text
+            if n:
+                free = text.replace("\n<i>Educational", f"\n🔒 PulsEdge Premium members got {n} alert{'s' if n != 1 else ''} "
+                                    f"today, the first at {first:%H:%M}. <a href=\"{html.escape(premium_url(), quote=True)}\">Join</a>"
+                                    "\n<i>Educational", 1)
+            try:
+                send_message(token, public_chat(), free)
+            except Exception as e:
+                print(f"free channel summary not posted ({type(e).__name__}: {str(e)[:120]})")
         posted.append(f"digest:{day}")
         with open(POSTED, "w") as fh:
             json.dump(posted[-2000:], fh, indent=1)
         print("posted summary for", day)
         return
+    if a.cmd == "brief":
+        now = datetime.now(IST)
+        posted = read_list(POSTED)
+        pm = None
+        try:
+            with open(os.path.join(DATA, "premarket.json"), encoding="utf-8") as fh:
+                pm = json.load(fh)
+        except (OSError, ValueError):
+            pass
+        text = brief_text(pm, now)
+        if a.dry_run:
+            print(text or "No pre-market data for today.")
+            return
+        if not text:
+            print("No pre-market data for today; no brief.")
+            return
+        if f"brief:{now:%Y-%m-%d}" in posted:
+            print("Today's brief already posted.")
+            return
+        if not trading_day(now.date()):
+            print("NSE is closed today; no brief.")
+            return
+        upd = parse_iso(pm.get("updated"))
+        if not a.any_hour and (not (8 * 60 + 15 <= now.hour * 60 + now.minute < 9 * 60 + 20)
+                               or not upd or now - upd > timedelta(minutes=40)):
+            print("The brief goes out between 08:15 and 09:20 IST, from pre-market data under 40 minutes old.")
+            return
+        token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+        if not token:
+            print("TELEGRAM_BOT_TOKEN isn't set; skipping.")
+            return
+        for chat in [public_chat()] + ([pro_chat()] if pro_chat() else []):
+            try:
+                send_message(token, chat, text)
+            except Exception as e:
+                print(f"brief not posted to {chat} ({type(e).__name__}: {str(e)[:120]})")
+        posted.append(f"brief:{now:%Y-%m-%d}")
+        with open(POSTED, "w") as fh:
+            json.dump(posted[-2000:], fh, indent=1)
+        print("posted the morning brief")
+        return
+
     events = [normalize(x) for x in feed.get("items", []) if x.get("headline")]
+    if a.cmd == "teaser":
+        now = datetime.now(IST)
+        if not pro_chat():
+            print("No premium channel (TELEGRAM_PRO_CHAT_ID); the public channel already gets every alert.")
+            return
+        picks = teaser_picks(events, now)
+        if not picks:
+            print("No preview for the free channel this run.")
+            return
+        ev, t = picks[0]
+        text = caption(ev, members_line(t, now))
+        if a.dry_run:
+            print(f"--- would post {ev['id']} to {public_chat()}\n{text}\n")
+            return
+        if quiet_hours(now) or source != "feed.json":
+            print("Quiet hours or sample data; no preview.")
+            return
+        token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+        if not token:
+            print("TELEGRAM_BOT_TOKEN isn't set; skipping.")
+            return
+        send_photo(token, public_chat(), png_bytes(render(ev)), text)
+        free = read_list(FREE_POSTED) + [f"free:{now:%Y-%m-%d}:{ev['id']}"]
+        os.makedirs(os.path.dirname(FREE_POSTED), exist_ok=True)
+        with open(FREE_POSTED, "w", encoding="utf-8") as fh:
+            json.dump(free[-500:], fh, indent=1)
+        print("posted a preview to the free channel:", ev["id"])
+        return
+
     if a.event:
         events = [e for e in events if e["id"] == a.event]
         if not events:
@@ -579,7 +798,7 @@ def main():
         if not token:
             print("TELEGRAM_BOT_TOKEN isn't set; skipping.")
             return
-        send_message(token, os.environ.get("TELEGRAM_CHAT_ID") or "@pulsedgein", text)
+        send_message(token, alert_chat(), text)
         posted += [f"news:{now:%Y-%m-%d}:{e['id']}" for e in picks]
         with open(POSTED, "w") as fh:
             json.dump(posted[-2000:], fh, indent=1)
@@ -598,7 +817,7 @@ def main():
         print("Only sample data is present (feed.sample.json); not posting it to the channel.")
         return
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
-    chat = os.environ.get("TELEGRAM_CHAT_ID") or "@pulsedgein"
+    chat = alert_chat()
     if not token and not a.dry_run:
         print("TELEGRAM_BOT_TOKEN isn't set; skipping. Add it as a repository secret to turn posting on.")
         return
@@ -612,16 +831,19 @@ def main():
     if not todo:
         print("Nothing new to post.")
         return
+    times = read_times(POSTED_AT)
     for ev in todo:
         if a.dry_run:
             print(f"--- would post {ev['id']} to {chat}\n{caption(ev)}\n")
             continue
         send_photo(token, chat, png_bytes(render(ev)), caption(ev))
         posted.append(ev["id"])
+        times[ev["id"]] = datetime.now(IST).isoformat(timespec="seconds")
         print("posted", ev["id"])
     if not a.dry_run:
         with open(POSTED, "w") as fh:
             json.dump(posted[-2000:], fh, indent=1)
+        write_times(POSTED_AT, times, datetime.now(IST))
 
 
 if __name__ == "__main__":

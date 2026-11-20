@@ -132,16 +132,22 @@ def telegram(items, dry):
         return []
     sent = pulse_bot.post_fast(items, dry=dry)
     if sent:
-        log(f"  posted to Telegram: {', '.join(sent)}")
+        log(f"  posted to Telegram ({pulse_bot.alert_chat()}): {', '.join(sent)}")
         with open(FAST_POSTED, "w", encoding="utf-8") as fh:
             json.dump((news.load_json(FAST_POSTED, []) + sent)[-600:], fh, indent=1)
+        # when each card went out: the free channel's "members got this at" (premium mode) and the evening count
+        t = now()
+        times = pulse_bot.read_times(pulse_bot.FAST_POSTED_AT)
+        times.update({i: t.isoformat(timespec="seconds") for i in sent if not i.startswith("news:")})
+        pulse_bot.write_times(pulse_bot.FAST_POSTED_AT, times, t)
     return sent
 
 
 def publish(n):
     git("add", os.path.relpath(FAST, REPO_ROOT))
-    if os.path.exists(FAST_POSTED):
-        git("add", os.path.relpath(FAST_POSTED, REPO_ROOT))
+    for f in (FAST_POSTED, os.path.join(news.HERE, "state", "fast_posted_at.json")):
+        if os.path.exists(f):
+            git("add", os.path.relpath(f, REPO_ROOT))
     if git("commit", "-q", "-m", f"PulsEdge fast lane: {n} new post{'s' if n != 1 else ''}").returncode != 0:
         return
     for attempt in range(4):
