@@ -24,7 +24,7 @@
   var FORMSPREE="https://formspree.io/f/mkjoaaga";
   var TRIAL_SESSIONS=5;
   var CLOSE_MIN=15*60+30;
-  var PLANS={trial7:"Free trial",trial14:"Extended trial",monthly:"Pro",yearly:"Pro yearly",complete:"Complete",founding:"Founding member",desk:"Partner seat",comp:"Guest access",owner:"Owner"};
+  var PLANS={trial7:"Free trial",trial14:"Extended trial",monthly:"Pro",yearly:"Pro yearly",complete:"Complete",report:"Portfolio Report",founding:"Founding member",desk:"Partner seat",comp:"Guest access",owner:"Owner"};
   // Fallback when data/calendar.json can't be read; keep in step with it.
   var HOLIDAYS=["2026-01-15","2026-01-26","2026-03-03","2026-03-26","2026-03-31","2026-04-03","2026-04-14","2026-05-01",
     "2026-05-28","2026-06-26","2026-09-14","2026-10-02","2026-11-10","2026-11-24","2026-12-25"];
@@ -306,7 +306,7 @@
     var t=a.trial,c;
     if(t)c=h("button",{type:"button","class":"pill plan"+(t.left<=1?" warn":""),
       text:t.lastDay?"TRIAL · LAST DAY":t.left?"TRIAL · "+t.left+" LEFT":"TRIAL · ENDS "+nice(t.next).split(",")[0].toUpperCase()});
-    else c=h("button",{type:"button","class":"pill plan",text:(a.plan==="founding"?"FOUNDING":a.plan==="complete"?"COMPLETE":a.plan==="desk"?"PARTNER":a.plan==="comp"?"GUEST":a.plan==="owner"?"OWNER":"PRO")});
+    else c=h("button",{type:"button","class":"pill plan",text:(a.plan==="founding"?"FOUNDING":a.plan==="complete"?"COMPLETE":a.plan==="report"?"REPORT":a.plan==="desk"?"PARTNER":a.plan==="comp"?"GUEST":a.plan==="owner"?"OWNER":"PRO")});
     c.setAttribute("aria-haspopup","dialog");
     c.onclick=function(e){e.stopPropagation();popover(a,c)};
     anchor.parentNode.insertBefore(c,anchor);

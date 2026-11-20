@@ -4,13 +4,14 @@
 //   PULSEDGE_SIGNING_KEY="$(cat key.json)" node pulsedge-bot/issue_pass.js --email a@b.com --plan trial14 [--start 2026-10-26]
 //   node pulsedge-bot/issue_pass.js --key key.json --email a@b.com --plan monthly --until 2026-11-26
 //
-// Plans: trial7 (5 sessions), trial14 (10 sessions), monthly, yearly (Pro), complete, founding, desk (a partner firm's seat),
+// Plans: trial7 (5 sessions), trial14 (10 sessions), monthly, yearly (Pro), complete, report (Portfolio Report), founding,
+// desk (a partner firm's seat),
 // comp, owner (until a date).
 // The key is the private JWK whose public half is in pulsedge/assets/member.js. Never commit it.
 const fs = require("fs");
 const args = Object.fromEntries(process.argv.slice(2).reduce((a, v, i, all) => (v.startsWith("--") ? a.concat([[v.slice(2), all[i + 1]]]) : a), []));
 const SITE = args.site || "https://adityasawant0503.github.io/pulsedge/";
-const PLANS = { trial7: 5, trial14: 10, monthly: 0, yearly: 0, complete: 0, founding: 0, desk: 0, comp: 0, owner: 0 };
+const PLANS = { trial7: 5, trial14: 10, monthly: 0, yearly: 0, complete: 0, report: 0, founding: 0, desk: 0, comp: 0, owner: 0 };
 
 function b64u(buf) { return Buffer.from(buf).toString("base64").replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, ""); }
 function ist() { return new Date(Date.now() + 330 * 60000).toISOString().slice(0, 10); }

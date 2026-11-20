@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>try{var t=localStorage.getItem("th");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PulsEdge Monthly Report</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PulsEdge">
+<meta property="og:title" content="PulsEdge monthly report">
+<meta property="og:description" content="The month in Indian markets: the news that mattered, sectors, FII flows, and what it meant for your own stocks.">
+<meta property="og:url" content="https://adityasawant0503.github.io/pulsedge/report.html">
+<meta property="og:image" content="https://adityasawant0503.github.io/pulsedge/assets/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="The PulsEdge monthly report: the month's market news in plain English, and a section on your own holdings.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/doc.css">
+<style>
+/* The monthly report. Holdings come from this browser (the same list as the terminal's My stocks) and are matched
+   here against data/monthly/<month>.json; nothing about them is sent anywhere. Drafts show only to the owner. */
+.w.wide{max-width:900px}
+.up{color:#0f8a4b}.down{color:#c8323c}
+:root[data-theme="dark"] .up{color:#3ddc84}:root[data-theme="dark"] .down{color:#ff6b74}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .up{color:#3ddc84}:root:not([data-theme="light"]) .down{color:#ff6b74}}
+.mbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:0 0 18px;font-size:13.5px;color:var(--mute)}
+.mbar select{width:auto;padding:7px 10px;font-size:14px}
+.mbar .pdf{font:500 13px var(--sans);padding:7px 12px;border-radius:8px;border:1px solid var(--line);background:transparent;color:var(--fg);cursor:pointer;margin-left:auto}
+.draft{border:1px solid #f59e0b;background:#f59e0b14;border-radius:12px;padding:12px 14px;margin:0 0 18px;font-size:14.5px}
+.lead{font-size:20px;line-height:1.45;letter-spacing:-.01em;margin:4px 0 22px;max-width:62ch}
+section{margin:34px 0 0}
+section>h2{font-size:22px;letter-spacing:-.02em;margin:0 0 12px}
+h3{font-size:15px;margin:22px 0 8px}
+.card{border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:var(--elev);padding:16px 18px}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0}
+.kpis>div{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--card);min-width:0}
+.kpis b{display:block;font:500 22px/1.15 var(--mono);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.kpis span{display:block;font-size:12.5px;color:var(--mute);margin-top:4px}
+.ov p{margin:0 0 10px}.ov b{font-weight:600}
+.bars{display:grid;gap:6px}
+.bar{display:grid;grid-template-columns:130px minmax(0,1fr) 64px;gap:10px;align-items:center;font-size:13.5px}
+.bar .tr{height:10px;border-radius:5px;background:var(--line);position:relative;overflow:hidden}
+.bar .tr i{position:absolute;top:0;bottom:0;border-radius:5px}
+.bar .v{font-family:var(--mono);text-align:right;font-variant-numeric:tabular-nums}
+.stories{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.stories li{border-bottom:1px solid var(--line);padding:0 0 10px;margin:0}
+.stories li:last-child{border-bottom:0}
+.stories .d{font:500 12px var(--mono);color:var(--mute)}
+.stories a{color:var(--fg);text-decoration:none;font-weight:500}
+.stories p{margin:2px 0 0;font-size:14px;color:var(--mute)}
+.port{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 14px}
+.port>div{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--card);min-width:0}
+.port b{display:block;font:500 22px/1.15 var(--mono);font-variant-numeric:tabular-nums}
+.port span{display:block;font-size:12.5px;color:var(--mute);margin-top:4px}
+.hold{display:grid;gap:10px}
+.hc{border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:var(--card);box-shadow:var(--elev)}
+.hc.major{border-left:4px solid var(--pur)}
+.hc .top{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px}
+.hc .sym{font:600 16px var(--mono)}
+.hc .nm{color:var(--mute);font-size:13.5px}
+.hc .chg{margin-left:auto;font:500 16px var(--mono)}
+.badge{font:600 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:4px 7px;border-radius:5px;background:var(--pur-soft);color:var(--pur)}
+.hc .note{margin:8px 0 6px}
+.hc ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--mute)}
+.hc ul a{color:inherit}
+.quiet{font-size:14px;color:var(--mute)}
+.quiet b{font-family:var(--mono);color:var(--fg);font-weight:500}
+.lock{border:1px dashed var(--pur);border-radius:14px;padding:18px;background:var(--pur-soft)}
+.lock p{margin:0 0 10px}
+.ed{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.ed input{flex:1 1 220px;width:auto}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.chip{display:inline-flex;align-items:center;gap:6px;font:500 13px var(--mono);border:1px solid var(--line);border-radius:999px;padding:4px 6px 4px 10px;background:var(--card)}
+.chip button{border:0;background:none;color:var(--mute);cursor:pointer;font-size:15px;line-height:1;padding:0 4px}
+.flag{border-left:3px solid #f59e0b;padding-left:10px}
+.rv .hc{box-shadow:none}
+.empty{color:var(--mute)}
+@media (max-width:720px){.kpis,.port{grid-template-columns:repeat(2,minmax(0,1fr))}.bar{grid-template-columns:96px minmax(0,1fr) 56px}.lead{font-size:18px}}
+@media print{.head .r,.mbar select,.mbar .pdf,.ed,.chips button,.no-print{display:none!important}body{background:#fff;color:#000}.card,.hc,.kpis>div,.port>div{box-shadow:none}section{break-inside:avoid-page}}
+</style>
+</head>
+<body>
+<main class="w wide">
+  <div class="head">
+    <a href="index.html" aria-label="PulsEdge home"><img class="logo lt" src="assets/icon.png" alt="PulsEdge" width="44" height="44"><img class="logo dk" src="assets/icon-dark.png" alt="PulsEdge" width="44" height="44"></a>
+    <div class="r"><a href="terminal.html">Terminal</a><a href="index.html#pricing">Plans</a>
+      <button class="thm" id="thm" type="button" aria-label="Switch to dark mode"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true" hidden><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button></div>
+  </div>
+  <p class="kick">PulsEdge monthly report</p>
+  <h1 id="title">Monthly report</h1>
+  <div class="mbar"><label for="m-sel">Month</label><select id="m-sel"></select><span id="period"></span><button class="pdf" id="pdf" type="button">Save as PDF</button></div>
+  <div class="draft" id="draft" hidden></div>
+  <p class="lead" id="headline">Loading the report…</p>
+
+  <section id="mine" aria-labelledby="mine-h">
+    <h2 id="mine-h">Your holdings this month</h2>
+    <div id="mine-body"></div>
+  </section>
+
+  <section aria-labelledby="ov-h">
+    <h2 id="ov-h">The month in review</h2>
+    <div class="kpis" id="kpis"></div>
+    <div class="ov" id="ov"></div>
+    <h3>Sectors over the month</h3>
+    <div class="bars" id="sectors"></div>
+    <h3>The biggest stories in India</h3>
+    <ul class="stories" id="india"></ul>
+    <h3>Around the world</h3>
+    <ul class="stories" id="global"></ul>
+    <h3>Policy and the economy</h3>
+    <ul class="stories" id="policy"></ul>
+  </section>
+
+  <section class="rv no-print" id="review" hidden aria-labelledby="rv-h">
+    <h2 id="rv-h">Review: every stock note</h2>
+    <p class="muted">Only you see this. Each member's holdings section is built from these notes, so checking them here checks every report. Flagged notes first.</p>
+    <div class="hold" id="rv-list"></div>
+  </section>
+
+  <footer>
+    <p>News and information only, not investment advice. PulsEdge is not registered with SEBI as an investment adviser or research analyst. Price changes are past moves from NSE closing prices and don't predict future ones. AI can be wrong: check the source.</p>
+    <p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="disclosures.html">Disclosures</a> · <a href="contact.html">Contact</a></p>
+  </footer>
+</main>
+<script src="assets/theme.js"></script>
+<script src="assets/member.js"></script>
+<script>
+(function(){
+  "use strict";
+  function $(id){return document.getElementById(id)}
+  function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+  function getJson(u){return fetch(u,{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error(u);return r.json()})}
+  function pct(v){return v==null?"–":(v>=0?"+":"−")+Math.abs(v).toFixed(1)+"%"}
+  function cls(v){return v==null?"":v>=0?"up":"down"}
+  function cr(v){return v==null?"–":(v>=0?"+":"−")+"₹"+Math.round(Math.abs(v)).toLocaleString("en-IN")+" cr"}
+  function dshort(d){var x=new Date(d+"T12:00:00+05:30");return isNaN(x)?d:x.toLocaleDateString("en-IN",{day:"numeric",month:"short",timeZone:"Asia/Kolkata"})}
+  function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+  var hold=[];try{hold=JSON.parse(store("pe_hold")||"[]")||[]}catch(e){hold=[]}
+  var R=null,member=false,owner=false,uni=[];
+
+  $("pdf").addEventListener("click",function(){window.print()});
+
+  // ---------- the month in review ----------
+  function renderMarket(){
+    $("title").textContent=R.title;document.title="PulsEdge report · "+R.title;
+    var p=R.period||{};$("period").textContent=(p.news_from?"News "+dshort(p.news_from)+" to "+dshort(p.news_to):"")+(p.prices_to?" · prices to "+dshort(p.prices_to):"");
+    $("headline").textContent=(R.overview&&R.overview.headline)||R.title;
+    var k=$("kpis");k.textContent="";
+    (R.markets||[]).forEach(function(m){var d=el("div");d.append(el("b",cls(m.chg),pct(m.chg)),el("span",null,m.label));k.appendChild(d)});
+    var f=R.flows||{};if(f.fii_net_cr!=null){var d=el("div");d.append(el("b",cls(f.fii_net_cr),cr(f.fii_net_cr)),el("span",null,"FII net in cash, "+f.days+" day"+(f.days===1?"":"s")+" of data"));k.appendChild(d)}
+    var ov=$("ov");ov.textContent="";var o=R.overview||{};
+    [["india","India"],["global","Global"],["flows","Money flows"],["sectors","Sectors"]].forEach(function(x){if(o[x[0]]){var pp=el("p");pp.append(el("b",null,x[1]+". "),document.createTextNode(o[x[0]]));ov.appendChild(pp)}});
+    var sb=$("sectors");sb.textContent="";var max=Math.max.apply(null,(R.sectors||[]).map(function(s){return Math.abs(s.chg)}).concat([1]));
+    (R.sectors||[]).forEach(function(s){var r=el("div","bar"),tr=el("div","tr"),i=el("i");
+      i.style.width=Math.max(2,Math.abs(s.chg)/max*50)+"%";i.style.left=s.chg>=0?"50%":(50-Math.abs(s.chg)/max*50)+"%";i.style.background=s.chg>=0?"#0f8a4b":"#c8323c";tr.appendChild(i);
+      r.append(el("span",null,s.label),tr,el("span","v "+cls(s.chg),pct(s.chg)));sb.appendChild(r)});
+    [["india","india"],["global","global"],["policy","policy"]].forEach(function(x){
+      var ul=$(x[0]);ul.textContent="";var list=R[x[1]]||[];
+      if(!list.length){ul.appendChild(el("li","empty","Nothing major this month."));return}
+      list.forEach(function(s){var li=el("li");li.appendChild(el("span","d",dshort(s.date)+(s.source?" · "+s.source:"")));li.appendChild(document.createElement("br"));
+        var a=el("a",null,s.headline);if(s.url){a.href=s.url;a.target="_blank";a.rel="noopener"}li.appendChild(a);if(s.why)li.appendChild(el("p",null,s.why));ul.appendChild(li)});
+    });
+  }
+
+  // ---------- your holdings (computed here, from this browser's list) ----------
+  function saveHold(){store("pe_hold",JSON.stringify(hold));renderMine()}
+  function editor(box){
+    var w=el("div","no-print"),ed=el("div","ed"),inp=el("input");inp.type="text";inp.placeholder="Add a stock: symbol or name, e.g. RELIANCE";inp.setAttribute("list","uni");inp.setAttribute("aria-label","Add a stock");
+    var btn=el("button","btn","Add");btn.type="button";
+    function add(){var v=inp.value.trim().toUpperCase();if(!v)return;var m=uni.filter(function(u){return u.symbol===v||u.name.toUpperCase()===v})[0]||uni.filter(function(u){return u.name.toUpperCase().indexOf(v)===0})[0];
+      var s=m?m.symbol:v;if(!hold.some(function(h){return h.s===s}))hold.push({s:s,q:null});inp.value="";saveHold()}
+    btn.addEventListener("click",add);inp.addEventListener("keydown",function(e){if(e.key==="Enter"){e.preventDefault();add()}});
+    ed.append(inp,btn);w.appendChild(ed);
+    var ch=el("div","chips");hold.forEach(function(h){var c=el("span","chip",h.s),x=el("button",null,"×");x.type="button";x.setAttribute("aria-label","Remove "+h.s);
+      x.addEventListener("click",function(){hold=hold.filter(function(y){return y.s!==h.s});saveHold()});c.appendChild(x);ch.appendChild(c)});
+    w.appendChild(ch);w.appendChild(el("p","muted","Your list stays on this device. It's the same list as My stocks in the PULSE terminal; quantities you add there make the portfolio change exact."));
+    box.appendChild(w);
+  }
+  function renderMine(){
+    var box=$("mine-body");box.textContent="";
+    if(!member){
+      var l=el("div","lock");
+      l.append(el("p",null,"Members see this section for their own stocks: each holding's move this month, the news that touched it, and why it matters, in plain English."));
+      var a=el("a","btn","Get the Portfolio Report");a.href="pay.html?plan=report_y";l.appendChild(a);
+      l.appendChild(el("p","muted","Included with Pro and Complete. Already a member? Open the access link you were sent, on this device."));
+      box.appendChild(l);return;
+    }
+    if(!R)return;
+    if(!hold.length){box.appendChild(el("p",null,"Add the stocks you hold and this section fills in for them."));editor(box);return}
+    var mv=R.moves||{},st=R.stocks||{},syms=hold.map(function(h){return h.s});
+    var v0=0,v1=0,withQ=0,sum=0,n=0,best=null,worst=null;
+    hold.forEach(function(h){var m=mv[h.s];if(!m)return;n++;sum+=m[2];
+      if(h.q>0){v0+=h.q*m[0];v1+=h.q*m[1];withQ++}
+      if(!best||m[2]>best.c)best={s:h.s,c:m[2]};if(!worst||m[2]<worst.c)worst={s:h.s,c:m[2]}});
+    var port=el("div","port");
+    var pc=withQ===n&&n?(v1/v0-1)*100:(n?sum/n:null);
+    var d1=el("div");d1.append(el("b",cls(pc),pct(pc)),el("span",null,withQ===n&&n?"your portfolio this month":"average move of your stocks"));port.appendChild(d1);
+    var major=syms.filter(function(s){return st[s]&&st[s].level==="major"}).length,some=syms.filter(function(s){return st[s]}).length;
+    var d2=el("div");d2.append(el("b",null,String(some)),el("span",null,"of your "+syms.length+" stocks had news"+(major?", "+major+" major":"")));port.appendChild(d2);
+    if(best){var d3=el("div");d3.append(el("b",cls(best.c),best.s+" "+pct(best.c)),el("span",null,worst&&worst.s!==best.s?"best; weakest "+worst.s+" "+pct(worst.c):"best this month"));port.appendChild(d3)}
+    box.appendChild(port);
+    var list=el("div","hold");
+    syms.filter(function(s){return st[s]}).sort(function(a,b){var la=st[a].level==="major"?0:1,lb=st[b].level==="major"?0:1;return la-lb||Math.abs((mv[b]||[0,0,0])[2])-Math.abs((mv[a]||[0,0,0])[2])})
+      .forEach(function(s){list.appendChild(stockCard(s,st[s],mv[s]))});
+    if(list.childNodes.length)box.appendChild(list);
+    var quiet=syms.filter(function(s){return !st[s]});
+    if(quiet.length){var q=el("p","quiet");q.appendChild(document.createTextNode("A quiet month, with no news worth a look, for: "));
+      quiet.forEach(function(s,i){q.appendChild(el("b",null,s));q.appendChild(document.createTextNode(" "+(mv[s]?pct(mv[s][2]):"(no price)")+(i<quiet.length-1?", ":".")))});box.appendChild(q)}
+    var det=el("details","no-print");det.appendChild(el("summary",null,"Change your stocks"));editor(det);box.appendChild(det);
+  }
+  function stockCard(s,x,m,showFlag){
+    var c=el("div","hc"+(x.level==="major"?" major":"")),top=el("div","top");
+    top.append(el("span","sym",s),el("span","nm",x.name||""));
+    if(x.level==="major")top.appendChild(el("span","badge","major news"));
+    var ch=m?m[2]:x.chg;top.appendChild(el("span","chg "+cls(ch),pct(ch)));c.appendChild(top);
+    var note=el("p","note"+(showFlag?" flag":""),x.note||"");c.appendChild(note);
+    var ul=el("ul");(x.items||[]).slice(0,3).forEach(function(i){var li=el("li");li.appendChild(document.createTextNode(dshort(i.date)+" · "));var a=el("a",null,i.headline);if(i.url){a.href=i.url;a.target="_blank";a.rel="noopener"}li.appendChild(a);ul.appendChild(li)});
+    c.appendChild(ul);return c;
+  }
+
+  // ---------- owner review ----------
+  function renderReview(){
+    var sec=$("review"),box=$("rv-list");sec.hidden=!owner||!R;if(sec.hidden)return;box.textContent="";
+    var flagged={};(R.flags||[]).forEach(function(f){flagged[f.where.replace("stocks.","")]=1});
+    var syms=Object.keys(R.stocks||{}).sort(function(a,b){return (flagged[b]?1:0)-(flagged[a]?1:0)||((R.stocks[a].level==="major"?0:1)-(R.stocks[b].level==="major"?0:1))||a.localeCompare(b)});
+    $("rv-h").textContent="Review: every stock note ("+syms.length+", "+(R.flags||[]).length+" flagged)";
+    syms.forEach(function(s){box.appendChild(stockCard(s,R.stocks[s],(R.moves||{})[s],!!flagged[s]))});
+  }
+
+  // ---------- load ----------
+  function show(m,list){
+    getJson("data/monthly/"+m+".json").then(function(r){
+      if(r.status!=="published"&&!owner){R=null;$("title").textContent=r.title;$("headline").textContent="This report is being prepared. It's sent to members in the first days of the next month.";$("mine-body").textContent="";return}
+      R=r;
+      var dr=$("draft");dr.hidden=r.status==="published";
+      if(!dr.hidden){dr.textContent="";dr.append(el("b",null,"Draft for your review. "),document.createTextNode("Members can't see it until you publish it. "+((r.flags||[]).length?(r.flags.length+" notes are flagged for advice-like wording; they're first in the review list at the bottom."):"Nothing is flagged.")+" Summaries by "+((r.overview&&r.overview.model)||"headlines (no AI)")+"."))}
+      renderMarket();renderMine();renderReview();
+    }).catch(function(){$("headline").textContent="Couldn't load this report. Refresh to try again."});
+  }
+  var access=window.PulseAccess?window.PulseAccess.ready.then(function(a){member=!!(a&&a.granted);owner=member&&a.plan==="owner"}).catch(function(){}):Promise.resolve();
+  getJson("data/universe.json").then(function(u){uni=u.stocks||[];var dl=el("datalist");dl.id="uni";uni.forEach(function(s){var o=el("option");o.value=s.symbol;o.label=s.name;dl.appendChild(o)});document.body.appendChild(dl)}).catch(function(){});
+  Promise.all([access,getJson("data/monthly/index.json").catch(function(){return {reports:[]}})]).then(function(r){
+    var reps=(r[1].reports||[]).filter(function(x){return owner||x.status==="published"});
+    var sel=$("m-sel");sel.textContent="";
+    reps.forEach(function(x){var o=el("option",null,x.title+(x.status!=="published"?" (draft)":""));o.value=x.month;sel.appendChild(o)});
+    var want=new URLSearchParams(location.search).get("m");
+    var m=(want&&reps.some(function(x){return x.month===want}))?want:(reps[0]&&reps[0].month);
+    if(!m){$("headline").textContent="The first monthly report is on its way: it reaches members in the first days of next month.";renderMine();return}
+    sel.value=m;sel.addEventListener("change",function(){history.replaceState(null,"","?m="+sel.value);show(sel.value)});
+    show(m);
+  });
+  window.addEventListener("storage",function(e){if(e.key==="pe_hold"){try{hold=JSON.parse(e.newValue||"[]")||[]}catch(x){hold=[]}renderMine()}});
+})();
+</script>
+</body>
+</html>

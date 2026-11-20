@@ -23,7 +23,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/doc.css">
 <style>
-.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0 8px}
+.plans{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:18px 0 8px}
+@media (max-width:900px){.plans{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .plans label{position:relative;display:block;border:1px solid var(--line);border-radius:12px;padding:14px;cursor:pointer;background:var(--card)}
 .plans input{position:absolute;top:0;left:0;width:1px;height:1px;margin:0;opacity:0;pointer-events:none}
 .plans label:has(input:checked){border-color:var(--pur);box-shadow:0 0 0 1px var(--pur)}
@@ -71,6 +72,7 @@
     <label><input type="radio" name="prod" value="alerts"><b>Alerts</b><span class="amt" data-prod="alerts">₹3,999</span><small>Private Telegram channel</small></label>
     <label><input type="radio" name="prod" value="pro"><b>Pro</b><span class="amt" data-prod="pro">₹7,999</span><small>PULSE terminal</small></label>
     <label><input type="radio" name="prod" value="complete"><b>Complete</b><span class="amt" data-prod="complete">₹9,999</span><small>Terminal and alerts · recommended</small></label>
+    <label><input type="radio" name="prod" value="report"><b>Portfolio Report</b><span class="amt" data-prod="report">₹1,999</span><small>A monthly report on your holdings · yearly</small></label>
   </div>
   <div class="bill" id="bill" role="group" aria-label="Billing period">
     <button type="button" id="bill-y" aria-pressed="true">Yearly</button>
@@ -122,7 +124,7 @@
     <p><b>What happens next</b></p>
     <ol class="steps">
       <li>We match your transaction ID with the payment, usually within a few hours (9 am to 9 pm IST).</li>
-      <li>By email, and on WhatsApp if you gave a number, you get your PULSE terminal link (Pro and Complete) and an invite to the private Telegram channel (Alerts and Complete).</li>
+      <li>By email, and on WhatsApp if you gave a number, you get your PULSE terminal link (Pro and Complete), an invite to the private Telegram channel (Alerts and Complete), or the link that unlocks your monthly report (Portfolio Report; your first report arrives at the start of next month).</li>
       <li>Open the link once on each device you use. It stays unlocked for your plan.</li>
     </ol>
     <p class="muted">Questions or a problem with a payment? WhatsApp <a href="https://wa.me/918073708940" target="_blank" rel="noopener">+91 80737 08940</a> or email <a href="mailto:asawant.work@gmail.com">asawant.work@gmail.com</a>. Full refund on a first payment within 7 days: see the <a href="refund.html">refund policy</a>.</p>
@@ -140,7 +142,7 @@
   // Prices come from data/prices.json (PRICES_FALLBACK is the same list, for when it can't load; pulsedge-bot/offers.py check
   // keeps them equal). Codes from data/offers.json, stored as SHA-256 hashes. Each amount has its own QR code in
   // assets/pay/upi-<amount>.svg (offers.py qr makes them); the UPI ID and the app button work for any amount.
-  var PRICES_FALLBACK={"launch_until":"2027-01-31","plans":{"alerts_m":{"price":499,"list":799,"name":"PulsEdge Alerts","period":"month"},"alerts_y":{"price":3999,"list":6999,"name":"PulsEdge Alerts","period":"year"},"pro_m":{"price":999,"list":1299,"name":"PulsEdge Pro","period":"month"},"pro_y":{"price":7999,"list":11999,"name":"PulsEdge Pro","period":"year"},"complete_m":{"price":1299,"list":1799,"name":"PulsEdge Complete","period":"month"},"complete_y":{"price":9999,"list":14999,"name":"PulsEdge Complete","period":"year"}}};//end
+  var PRICES_FALLBACK={"launch_until":"2027-01-31","plans":{"alerts_m":{"price":499,"list":799,"name":"PulsEdge Alerts","period":"month"},"alerts_y":{"price":3999,"list":6999,"name":"PulsEdge Alerts","period":"year"},"pro_m":{"price":999,"list":1299,"name":"PulsEdge Pro","period":"month"},"pro_y":{"price":7999,"list":11999,"name":"PulsEdge Pro","period":"year"},"complete_m":{"price":1299,"list":1799,"name":"PulsEdge Complete","period":"month"},"complete_y":{"price":9999,"list":14999,"name":"PulsEdge Complete","period":"year"},"report_y":{"price":1999,"list":2999,"name":"PulsEdge Portfolio Report","period":"year"}}};//end
   var VPA="8073708940@ybl",PAYEE="Aditya Sawant";
   var LEGACY={monthly:"pro_m",yearly:"pro_y",founding:"complete_y"};
   var P=PRICES_FALLBACK,OFFERS=[],code=null,upgrade=false,gift=false;
@@ -167,7 +169,8 @@
     $("qr").hidden=false;$("noqr").hidden=true;$("qr").src="assets/pay/upi-"+a+".svg";
     $("app").href="upi://pay?pa="+VPA+"&pn="+encodeURIComponent(PAYEE)+"&am="+a+".00&cu=INR&tn="+encodeURIComponent(name);
     document.querySelectorAll("input[name=prod]").forEach(function(r){r.checked=r.value===prod()});
-    document.querySelectorAll("[data-prod]").forEach(function(e){var k=e.getAttribute("data-prod")+"_"+per();if(P.plans[k])e.textContent=inr(amount(k))+(per()==="y"?" / yr":" / mo")});
+    document.querySelectorAll("[data-prod]").forEach(function(e){var b=e.getAttribute("data-prod"),k=P.plans[b+"_"+per()]?b+"_"+per():b+"_y";if(P.plans[k])e.textContent=inr(amount(k))+(k.slice(-2)==="_y"?" / yr":" / mo")});
+    $("bill").hidden=!P.plans[prod()+"_m"];
     if(code&&credit())csay("Codes don't combine with the month credit. Untick it to use your code instead.","ok");
     else if(code)csay(off(plan)?"Code "+code.code+": "+code.pct+"% off"+(code.label?" ("+code.label+")":"")+".":"Code "+code.code+" doesn't apply to "+x.name+"; it works on the other plans.","ok");
     $("bill-y").setAttribute("aria-pressed",String(per()==="y"));$("bill-m").setAttribute("aria-pressed",String(per()==="m"));
@@ -177,9 +180,9 @@
   $("opt-up").addEventListener("change",function(){upgrade=this.checked;show()});
   $("opt-gift").addEventListener("change",function(){gift=this.checked;show()});
   $("qr").addEventListener("error",function(){this.hidden=true;$("noqr").hidden=false});
-  document.querySelectorAll("input[name=prod]").forEach(function(r){r.addEventListener("change",function(){plan=r.value+"_"+per();show()})});
+  document.querySelectorAll("input[name=prod]").forEach(function(r){r.addEventListener("change",function(){var k=r.value+"_"+per();plan=P.plans[k]?k:r.value+"_y";show()})});
   $("bill-y").addEventListener("click",function(){plan=prod()+"_y";show()});
-  $("bill-m").addEventListener("click",function(){plan=prod()+"_m";show()});
+  $("bill-m").addEventListener("click",function(){if(P.plans[prod()+"_m"]){plan=prod()+"_m";show()}});
 
   function norm(c){return String(c||"").replace(/\s+/g,"").toUpperCase()}
   function sha(t){return crypto.subtle.digest("SHA-256",new TextEncoder().encode(t)).then(function(b){return Array.prototype.map.call(new Uint8Array(b),function(x){return ("0"+x.toString(16)).slice(-2)}).join("")})}
