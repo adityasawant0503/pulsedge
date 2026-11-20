@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-20T11:45+05:30",
+ "updated": "2026-11-20T12:15+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -76,20 +76,20 @@
  },
  "stocks": {
   "PAYTM": {
-   "summary": "Paytm shares fell sharply this week because a new fee for digital payments is being delayed. The company also announced new investments in Singapore and other affiliates.",
-   "why": "The delay in the payment fee means the company may earn less money than expected, which can lower the value of its shares.",
-   "upside": "New partnerships and investments in Singapore could help the company grow its business abroad.",
-   "downside": "If the payment fee delay continues, the company's future income may be lower than planned.",
+   "summary": "Paytm announced several new investments, including a stake in Singapore’s Cardup and additional funding for its affiliates. At the same time the stock fell after concerns that a key transaction fee (MDR) rollout was delayed. Large banks have flagged the stock positively, but market sentiment remains mixed.",
+   "why": "Shareholders could see growth from the new investments, but the MDR delay may pressure future earnings.",
+   "upside": "If the Singapore partnership and other investments start delivering revenue, the company could see stronger earnings.",
+   "downside": "The delay in the MDR fee rollout could reduce transaction income and weigh on the share price.",
    "watch": [
-    "Updates on when the UPI MDR fee will start",
-    "Details on the new Singapore partnership",
-    "How the stock reacts to broader market news"
+    "MDR fee rollout and regulatory clarity",
+    "Progress of Paytm Singapore investments",
+    "Overall market sentiment and early‑day price moves"
    ],
-   "about": "One 97 Communications is a financial services company listed in India's Nifty 500 index.",
-   "basis": "ff8654753e46",
-   "items": 10,
-   "updated": "2026-11-20T08:30+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "One97 Communications runs Paytm, a digital payments and financial services platform in India.",
+   "basis": "200defed64c0",
+   "items": 11,
+   "updated": "2026-11-20T12:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "PINELABS": {
    "summary": "Pine Labs shares fell by up to 9% on November 19, 2026, due to concerns that a new fee for digital payments (MDR) will be delayed. This delay means the company may earn less money from transactions than investors expected.",
@@ -425,22 +425,6 @@
    "basis": "4b793021d08c",
    "items": 2,
    "updated": "2026-11-18T13:30+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "HYUNDAI": {
-   "summary": "Hyundai Motor India shares recently rose as part of a broader rally in auto stocks, driven by lower costs for metals and oil. However, the wider auto sector has seen a slight dip in the last few days.",
-   "why": "Lower production costs can help the company keep more profit from each car sold, which may benefit shareholders. The recent price movement shows that investors are reacting to these cost changes.",
-   "upside": "If metal and oil prices stay low, the company could see better profits.",
-   "downside": "If input costs rise again, the recent gains in share price might fade.",
-   "watch": [
-    "Changes in the price of metals and oil",
-    "The overall performance of the auto sector index",
-    "Updates on AI technology partnerships involving Hyundai Card"
-   ],
-   "about": "Hyundai Motor India is a company in the automobile and auto components sector.",
-   "basis": "0600aa006d6f",
-   "items": 4,
-   "updated": "2026-11-19T13:16+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "NBCC": {
@@ -888,6 +872,22 @@
    "basis": "f7a97591beec",
    "items": 3,
    "updated": "2026-11-20T03:25+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "HYUNDAI": {
+   "summary": "Hyundai Motor India saw its shares rise as the auto sector jumped about 4% on cheaper metal and oil easing cost concerns. The rally is noted as potentially temporary if input costs climb again.",
+   "why": "Shareholders feel the sector’s lift could boost Hyundai’s stock, but rising input costs could squeeze margins.",
+   "upside": "Sustained lower metal and oil prices could keep costs down and support earnings.",
+   "downside": "A rebound in metal or oil prices could raise input costs and pressure profitability.",
+   "watch": [
+    "Trends in metal and oil prices affecting input costs",
+    "Movement of the Nifty Auto index and sector momentum",
+    "Any new analyst commentary or rating changes for Hyundai"
+   ],
+   "about": "Hyundai Motor India Ltd. manufactures and sells automobiles in the Indian market.",
+   "basis": "cc1680b14009",
+   "items": 3,
+   "updated": "2026-11-20T12:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "M&M": {

@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T12:01:55+05:30",
+ "updated": "2026-11-20T12:15:47+05:30",
  "summary": {
-  "calls": 1895,
-  "scored_calls": 727,
+  "calls": 1896,
+  "scored_calls": 728,
   "d1": {
    "scored": 549,
    "hits": 225,
@@ -23,6 +23,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "13f725d06fd42ee0",
+   "symbol": "PAYTM",
+   "time": "2026-11-20T12:02:42+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Paytm snaps 2-day losing run on S'pore investment plan; Nomura retains Buy",
+   "url": "https://www.business-standard.com/markets/news/paytm-snaps-2-day-losing-run-on-singapore-investment-plan-nomura-retains-buy-126112000373_1.html",
+   "alert_px": 1731.4,
+   "alert_move": 0.32,
+   "alert_at": "2026-11-20T12:15:31+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "b2a74951bb555fb5",
    "symbol": "BANKBARODA",
