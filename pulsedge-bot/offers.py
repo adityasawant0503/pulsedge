@@ -65,6 +65,9 @@ def amounts(prices, offers):
         for o in offers.get("offers", []):
             if not o.get("plans") or key in o["plans"]:
                 out.add(discounted(p["price"], o["pct"]))
+        m = prices["plans"].get(key[:-2] + "_m") if key.endswith("_y") else None
+        if m:                                       # month-to-year credit: the yearly price less the month paid
+            out.add(p["price"] - m["price"])
     return sorted(out)
 
 
@@ -107,6 +110,10 @@ def cmd_check(prices, offers):
             q = fb.get("plans", {}).get(key)
             if not q or q.get("price") != p["price"] or q.get("list") != p.get("list"):
                 bad.append(f"{page}: fallback price for {key} differs from prices.json")
+    biz = open(os.path.join(SITE, "business.html"), encoding="utf-8").read()
+    for key, pk in prices.get("business", {}).get("packages", {}).items():
+        if pk.get("price") and f"₹{pk['price']:,}" not in biz:
+            bad.append(f"business.html doesn't show {pk['name']} at ₹{pk['price']:,}")
     today = date.today().isoformat()
     for o in offers.get("offers", []):
         if o.get("until") and o["until"] < today:

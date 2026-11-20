@@ -43,6 +43,11 @@
 .code{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 0}
 .code input{flex:0 1 220px;min-width:0;text-transform:uppercase}
 .code .note{flex-basis:100%;margin:0}
+.opts{display:flex;flex-direction:column;gap:8px;margin:12px 0 0}
+.opt{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;cursor:pointer}
+.opt input{width:auto;margin-top:5px;accent-color:var(--pur)}
+.gift{display:grid;gap:10px}
+.gift p{margin:4px 0 0}
 .pay s{font:400 18px/1 var(--mono);color:var(--mute);margin-left:8px}
 .pay .noqr{width:200px;height:200px;border:1px dashed var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;font-size:13px;color:var(--mute)}
 @media (max-width:900px){.plans{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -78,6 +83,10 @@
     <button class="btn" type="submit">Apply</button>
     <p class="note" id="code-note" aria-live="polite"></p>
   </form>
+  <div class="opts">
+    <label class="opt" id="opt-up-l"><input type="checkbox" id="opt-up"> <span>I paid for this plan for a month in the last 30 days: take it off the yearly price</span></label>
+    <label class="opt"><input type="checkbox" id="opt-gift"> <span>This is a gift for someone else</span></label>
+  </div>
 
   <h2>2. Pay</h2>
   <div class="pay">
@@ -99,6 +108,13 @@
     <input type="email" id="pf-email" required placeholder="you@email.com" autocomplete="email" aria-label="Your email">
     <input type="tel" id="pf-wa" placeholder="WhatsApp number (optional)" autocomplete="tel" aria-label="WhatsApp number">
     <input type="text" id="pf-utr" required placeholder="UPI transaction ID, e.g. 431234567890" inputmode="numeric" aria-label="UPI transaction ID">
+    <input type="text" id="pf-prev" placeholder="Transaction ID of your monthly payment" inputmode="numeric" aria-label="Transaction ID of your monthly payment" hidden>
+    <div class="gift" id="gift-f" hidden>
+      <p class="muted">Who is the gift for? We send their access to them, and a note that it's from you.</p>
+      <input type="text" id="pf-gname" placeholder="Their name" aria-label="Their name">
+      <input type="text" id="pf-gcontact" placeholder="Their WhatsApp number or email" aria-label="Their WhatsApp number or email">
+      <input type="text" id="pf-gmsg" placeholder="A message for them (optional)" aria-label="A message for them">
+    </div>
     <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
     <button class="btn" type="submit">I've paid: send my access link</button>
     <p class="note" id="pf-note" aria-live="polite"></p>
@@ -116,7 +132,7 @@
 
   <footer>
     <p>Educational information only. Not SEBI-registered investment advice. Trading involves substantial risk of loss.</p>
-    <p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds &amp; delivery</a> · <a href="contact.html">Contact</a> · <a href="https://t.me/pulsedgein" target="_blank" rel="noopener">Telegram</a></p>
+    <p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds &amp; delivery</a> · <a href="disclosures.html">Disclosures</a> · <a href="contact.html">Contact</a> · <a href="https://t.me/pulsedgein" target="_blank" rel="noopener">Telegram</a></p>
     <p>&copy; 2026 Aditya Sawant (PulsEdge) · Kalena Agrahara, Bannerghatta Road, Bengaluru, Karnataka</p>
   </footer>
 </main>
@@ -129,7 +145,7 @@
   var PRICES_FALLBACK={"launch_until":"2027-01-31","plans":{"alerts_m":{"price":499,"list":799,"name":"PulsEdge Alerts","period":"month"},"alerts_y":{"price":3999,"list":6999,"name":"PulsEdge Alerts","period":"year"},"pro_m":{"price":999,"list":1299,"name":"PulsEdge Pro","period":"month"},"pro_y":{"price":7999,"list":11999,"name":"PulsEdge Pro","period":"year"},"complete_m":{"price":1299,"list":1799,"name":"PulsEdge Complete","period":"month"},"complete_y":{"price":9999,"list":14999,"name":"PulsEdge Complete","period":"year"},"founding":{"price":5999,"list":14999,"name":"PulsEdge Founding 100","period":"year"}},"founding":{"seats":100,"taken":0}};//end
   var VPA="8073708940@ybl",PAYEE="Aditya Sawant";
   var LEGACY={monthly:"pro_m",yearly:"pro_y",founding:"founding"};
-  var P=PRICES_FALLBACK,OFFERS=[],code=null;
+  var P=PRICES_FALLBACK,OFFERS=[],code=null,upgrade=false,gift=false;
   function $(id){return document.getElementById(id)}
   function inr(n){return "\u20b9"+Math.round(n).toLocaleString("en-IN")}
   function today(){return new Date(Date.now()+330*60000).toISOString().slice(0,10)}
@@ -139,20 +155,30 @@
   function per(){return plan==="founding"?"y":plan.split("_")[1]}
   function off(key){return code&&code.plans.indexOf(key)>=0?code.pct:0}
   function amount(key){var p=P.plans[key],o=off(key);return o?Math.round(p.price*(1-o/100)):p.price}
+  // month-to-year credit: the same plan bought for a month in the last 30 days comes off the yearly price (no code on top)
+  function canUp(){return plan!=="founding"&&per()==="y"&&!!P.plans[prod()+"_m"]}
+  function credit(){return upgrade&&canUp()}
+  function due(){return credit()?P.plans[plan].price-P.plans[prod()+"_m"].price:amount(plan)}
   function show(){
-    var x=P.plans[plan],a=amount(plan),name=x.name+(plan==="founding"?"":(per()==="y"?" · yearly":" · monthly"));
+    var x=P.plans[plan],a=due(),name=x.name+(plan==="founding"?"":(per()==="y"?" · yearly":" · monthly"));
+    var cut=credit()||off(plan);
     $("amt").textContent=inr(a);
-    $("was").hidden=!off(plan);$("was").textContent=off(plan)?inr(x.price):"";
-    $("pname").textContent=name+(off(plan)?" · code "+code.code:"");
+    $("was").hidden=!cut;$("was").textContent=cut?inr(x.price):"";
+    $("pname").textContent=name+(credit()?" · less the month you paid":off(plan)?" · code "+code.code:"")+(gift?" · gift":"");
+    $("opt-up-l").hidden=!canUp();$("pf-prev").hidden=!credit();$("gift-f").hidden=!gift;
     $("qr").hidden=false;$("noqr").hidden=true;$("qr").src="assets/pay/upi-"+a+".svg";
     $("app").href="upi://pay?pa="+VPA+"&pn="+encodeURIComponent(PAYEE)+"&am="+a+".00&cu=INR&tn="+encodeURIComponent(name);
     document.querySelectorAll("input[name=prod]").forEach(function(r){r.checked=r.value===prod()});
     document.querySelectorAll("[data-prod]").forEach(function(e){var k=e.getAttribute("data-prod");k=k==="founding"?k:k+"_"+per();if(P.plans[k])e.textContent=inr(amount(k))+(k==="founding"?" / yr":per()==="y"?" / yr":" / mo")});
     $("bill").hidden=plan==="founding";
-    if(code)csay(off(plan)?"Code "+code.code+": "+code.pct+"% off"+(code.label?" ("+code.label+")":"")+".":"Code "+code.code+" doesn't apply to "+x.name+"; it works on the other plans.","ok");
+    if(code&&credit())csay("Codes don't combine with the month credit. Untick it to use your code instead.","ok");
+    else if(code)csay(off(plan)?"Code "+code.code+": "+code.pct+"% off"+(code.label?" ("+code.label+")":"")+".":"Code "+code.code+" doesn't apply to "+x.name+"; it works on the other plans.","ok");
     $("bill-y").setAttribute("aria-pressed",String(per()==="y"));$("bill-m").setAttribute("aria-pressed",String(per()==="m"));
-    try{history.replaceState(null,"","?plan="+plan+(code?"&code="+encodeURIComponent(code.code):""))}catch(e){}
+    try{history.replaceState(null,"","?plan="+plan+(code&&!credit()?"&code="+encodeURIComponent(code.code):"")+(credit()?"&upgrade=1":"")+(gift?"&gift=1":""))}catch(e){}
   }
+  upgrade=q.get("upgrade")==="1";gift=q.get("gift")==="1";$("opt-up").checked=upgrade;$("opt-gift").checked=gift;
+  $("opt-up").addEventListener("change",function(){upgrade=this.checked;show()});
+  $("opt-gift").addEventListener("change",function(){gift=this.checked;show()});
   $("qr").addEventListener("error",function(){this.hidden=true;$("noqr").hidden=false});
   document.querySelectorAll("input[name=prod]").forEach(function(r){r.addEventListener("change",function(){plan=r.value==="founding"?"founding":r.value+"_"+(per()==="m"?"m":"y");show()})});
   $("bill-y").addEventListener("click",function(){if(plan!=="founding"){plan=prod()+"_y";show()}});
@@ -198,13 +224,17 @@
     if(name.length<2){say("Enter your name.","err");return}
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){say("Enter a full email address, like you@email.com.","err");return}
     if(!/^[A-Za-z0-9]{10,23}$/.test(utr)){say("The transaction ID is usually 12 digits. Copy it from your UPI app's receipt.","err");return}
+    var prev=$("pf-prev").value.replace(/\s+/g,""),gname=$("pf-gname").value.trim(),gcon=$("pf-gcontact").value.trim();
+    if(credit()&&!/^[A-Za-z0-9]{10,23}$/.test(prev)){say("Enter the transaction ID of your monthly payment, so we can match the credit.","err");return}
+    if(gift&&(gname.length<2||gcon.length<6)){say("Enter the name and WhatsApp number or email of the person the gift is for.","err");return}
     if(f.querySelector("[name=_gotcha]").value){say("Thanks, we'll be in touch.","ok");return}
-    var x=P.plans[plan],a=amount(plan),c=off(plan)?code:null;
+    var x=P.plans[plan],a=due(),c=off(plan)&&!credit()?code:null;
     btn.disabled=true;say("Sending\u2026");
     fetch("https://formspree.io/f/mkjoaaga",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
       body:JSON.stringify({source:"payment",plan:plan,amount:a,full_price:x.price,code:c?c.code:"",code_label:c?c.label:"",name:name,email:email,whatsapp:wa,utr:utr,
+        month_credit:credit(),monthly_utr:credit()?prev:"",gift:gift,gift_name:gift?gname:"",gift_contact:gift?gcon:"",gift_message:gift?$("pf-gmsg").value.trim():"",
         _subject:"PulsEdge payment: "+$("pname").textContent+" "+inr(a)+" from "+name})})
-      .then(function(r){if(!r.ok)throw 0;say("Thanks, "+name.split(" ")[0]+". We'll check payment "+utr+" and send your access to "+email+" within a few hours.","ok");f.reset()})
+      .then(function(r){if(!r.ok)throw 0;say("Thanks, "+name.split(" ")[0]+". We'll check payment "+utr+" and send "+(gift?"the gift to "+gname+", with a copy to "+email:"your access to "+email)+" within a few hours.","ok");f.reset()})
       .catch(function(){say("Couldn't send. WhatsApp +91 80737 08940 with your transaction ID instead.","err")})
       .then(function(){btn.disabled=false});
   });

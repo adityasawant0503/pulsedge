@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>try{var t=localStorage.getItem("th");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PulsEdge for Business</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PulsEdge">
+<meta property="og:title" content="PulsEdge for wealth and advisory teams">
+<meta property="og:description" content="Annual packages for advisory teams and wealth firms: news on your clients' holdings within about a minute. One invoice a year, free 30-day pilot.">
+<meta property="og:url" content="https://adityasawant0503.github.io/pulsedge/business.html">
+<meta property="og:image" content="https://adityasawant0503.github.io/pulsedge/assets/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PulsEdge: Indian market news sorted into Ignore, Watch and Act">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="PulsEdge for wealth and advisory teams: annual packages, a free 30-day pilot, a news-only edition for SEBI-registered firms, and one invoice a year.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/doc.css">
+<style>
+/* Wider than the text pages: three package cards side by side on a laptop. Prices also live in data/prices.json (offers.py check compares them). */
+.w.wide{max-width:960px}
+.pk{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0 8px}
+.pk>div{border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--card);box-shadow:var(--elev);display:flex;flex-direction:column;gap:6px;min-width:0}
+.pk>div.hi{border-color:var(--pur);box-shadow:var(--elev),0 0 0 1px var(--pur)}
+.pk .nm{font:600 12px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mute);display:flex;justify-content:space-between;gap:8px}
+.pk .nm span{color:var(--pur)}
+.pk .amt{font:600 30px/1.1 var(--mono);letter-spacing:-.03em}
+.pk .amt small{font:400 14px/1 var(--sans);color:var(--mute);letter-spacing:0}
+.pk .per{font:400 13px/1.4 var(--mono);color:var(--mute);margin:0}
+.pk .fit{margin:4px 0 0;font-size:14.5px}
+.inc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 24px;padding-left:20px}
+.steps{padding-left:22px}.steps li{margin-bottom:8px}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:8px 0 0}
+.wa{font:500 14px/1 var(--sans);text-decoration:none;border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--fg)}
+@media (max-width:760px){.pk,.inc,.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="w wide">
+  <div class="head">
+    <a href="index.html" aria-label="PulsEdge home"><img class="logo lt" src="assets/icon.png" alt="PulsEdge" width="44" height="44"><img class="logo dk" src="assets/icon-dark.png" alt="PulsEdge" width="44" height="44"></a>
+    <div class="r"><a href="index.html">Home</a><a href="index.html#pricing">Plans for individuals</a>
+      <button class="thm" id="thm" type="button" aria-label="Switch to dark mode"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true" hidden><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button></div>
+  </div>
+  <p class="kick">For business</p>
+  <h1>PulsEdge for wealth and advisory teams</h1>
+  <p class="upd">Annual packages · one invoice a year · no monthly mandates</p>
+
+  <div class="box"><p><b>In short.</b> Your clients' holdings get news every day, and most of it doesn't matter. PulsEdge reads every NSE filing and market headline as it comes out, sets aside the routine ones, and puts what could matter on your advisers' phones within about a minute, with a plain-English reason and the source. Start with a free 30-day pilot for 3 advisers.</p></div>
+
+  <h2>Packages</h2>
+  <div class="pk">
+    <div>
+      <div class="nm">Team 5</div>
+      <div class="amt">₹49,999 <small>/ year</small></div>
+      <p class="per">5 adviser seats · ₹10,000 a seat</p>
+      <p class="fit">For a small advisory practice or one branch.</p>
+    </div>
+    <div class="hi">
+      <div class="nm">Team 10 <span>lowest per seat</span></div>
+      <div class="amt">₹89,999 <small>/ year</small></div>
+      <p class="per">10 adviser seats · ₹9,000 a seat</p>
+      <p class="fit">For a wealth desk or a regional team.</p>
+    </div>
+    <div>
+      <div class="nm">Firm</div>
+      <div class="amt">Quote</div>
+      <p class="per">25 or more seats, plus Client Edition</p>
+      <p class="fit">For firms rolling it out across teams, or to clients.</p>
+    </div>
+  </div>
+  <p class="muted">An individual PulsEdge Complete plan costs ₹14,999 a year from 1 February 2027. Prices are in Indian rupees for 12 months from the start date.</p>
+
+  <h2>Every seat includes</h2>
+  <ul class="inc">
+    <li>PulsEdge Complete: the PULSE terminal and the private alert channel</li>
+    <li>Watchlists for the stocks your clients hold, kept on the adviser's device</li>
+    <li>The pre-market brief with GIFT Nifty's opening read, before 9:15</li>
+    <li>Market-moving global and India news as it breaks</li>
+    <li>Bulk and block deals and FII positioning</li>
+    <li>Seats can move to another adviser during the year</li>
+  </ul>
+  <h2>For the firm</h2>
+  <ul class="inc">
+    <li>A news-only edition on request, without verdict labels or direction arrows, for SEBI-registered firms</li>
+    <li>A compliance pack: sources, method, disclosures and data handling</li>
+    <li>An onboarding session for the team and a named contact on WhatsApp</li>
+    <li>One annual invoice; pay by bank transfer (NEFT, RTGS, IMPS) or UPI; purchase orders accepted</li>
+  </ul>
+
+  <h2>Client Edition</h2>
+  <p>For firms with 50 or more clients who want PulsEdge as part of their service.</p>
+  <ul>
+    <li>Your clients get the news on their own holdings, with your firm's name on the welcome message.</li>
+    <li>You decide what clients pay for it, or include it in your fee.</li>
+    <li>Annual, per client seat, from 50 seats. Priced on request.</li>
+    <li>Uses the news-only edition.</li>
+  </ul>
+
+  <h2>How buying works</h2>
+  <ol class="steps">
+    <li>Send the form below or WhatsApp us. We reply within one working day.</li>
+    <li>A 30-minute demo with your team, on a call or in person in Bengaluru.</li>
+    <li>A free 30-day pilot with 3 adviser seats. No payment and no commitment.</li>
+    <li>An annual order form and invoice. Access within one working day of payment.</li>
+    <li>A review call at six months, and a renewal reminder 30 days before the year ends.</li>
+  </ol>
+
+  <h2>Compliance</h2>
+  <ul>
+    <li>PulsEdge is a news and information service. It is not registered with SEBI as an investment adviser or research analyst, and it doesn't recommend buying, selling or holding any security.</li>
+    <li>Agreements are with the firm. We don't pay referral fees or commissions to employees or agents of SEBI-registered intermediaries, in line with SEBI's 2024 rules on associations with unregistered persons.</li>
+    <li>PulsEdge never needs client names, PANs or portfolios. Advisers' watchlists stay on their own devices.</li>
+    <li>Read the full <a href="disclosures.html">disclosures</a> and <a href="terms.html">terms</a>.</li>
+  </ul>
+
+  <h2>Talk to us</h2>
+  <form id="bf" novalidate>
+    <div class="two">
+      <input type="text" id="bf-name" required placeholder="Your name" autocomplete="name" aria-label="Your name">
+      <input type="text" id="bf-role" placeholder="Designation" autocomplete="organization-title" aria-label="Designation">
+      <input type="text" id="bf-firm" required placeholder="Firm" autocomplete="organization" aria-label="Firm">
+      <input type="email" id="bf-email" required placeholder="you@firm.com" autocomplete="email" aria-label="Work email">
+      <input type="tel" id="bf-phone" placeholder="Phone or WhatsApp" autocomplete="tel" aria-label="Phone or WhatsApp">
+      <select id="bf-size" aria-label="Team size"><option value="">Team size</option><option>1–4 advisers</option><option>5–9 advisers</option><option>10–24 advisers</option><option>25 or more</option></select>
+    </div>
+    <select id="bf-want" aria-label="Interested in"><option>A team package</option><option>Client Edition</option><option>Both</option><option>Not sure yet</option></select>
+    <textarea id="bf-msg" placeholder="Anything we should know? (optional)" aria-label="Message"></textarea>
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+    <div class="cta"><button class="btn" type="submit">Request a demo</button><a class="wa" href="https://wa.me/918073708940?text=Hi%2C%20I'd%20like%20a%20PulsEdge%20demo%20for%20my%20team." target="_blank" rel="noopener">WhatsApp +91 80737 08940</a></div>
+    <p class="note" id="bf-note" aria-live="polite"></p>
+  </form>
+
+  <footer>
+    <p>Educational information only. Not SEBI-registered investment advice. Trading involves substantial risk of loss.</p>
+    <p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds &amp; delivery</a> · <a href="disclosures.html">Disclosures</a> · <a href="contact.html">Contact</a> · <a href="https://t.me/pulsedgein" target="_blank" rel="noopener">Telegram</a></p>
+    <p>&copy; 2026 Aditya Sawant (PulsEdge) · Bengaluru, India</p>
+  </footer>
+</main>
+<script src="assets/theme.js"></script>
+<script>
+(function(){
+  var f=document.getElementById("bf"),note=document.getElementById("bf-note"),btn=f.querySelector("button");
+  function $(id){return document.getElementById(id)}
+  function say(t,c){note.textContent=t;note.className="note"+(c?" "+c:"")}
+  f.addEventListener("submit",function(e){
+    e.preventDefault();
+    var name=$("bf-name").value.trim(),firm=$("bf-firm").value.trim(),email=$("bf-email").value.trim();
+    if(name.length<2){say("Enter your name.","err");return}
+    if(firm.length<2){say("Enter your firm's name.","err");return}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){say("Enter a full email address.","err");return}
+    if(f.querySelector("[name=_gotcha]").value){say("Thanks, we'll be in touch.","ok");return}
+    btn.disabled=true;say("Sending…");
+    fetch("https://formspree.io/f/mkjoaaga",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
+      body:JSON.stringify({source:"business",name:name,designation:$("bf-role").value.trim(),firm:firm,email:email,phone:$("bf-phone").value.trim(),
+        team_size:$("bf-size").value,interested_in:$("bf-want").value,message:$("bf-msg").value.trim(),_subject:"PulsEdge business enquiry: "+firm})})
+      .then(function(r){if(!r.ok)throw 0;say("Thanks, "+name.split(" ")[0]+". We'll reply within one working day.","ok");f.reset()})
+      .catch(function(){say("Couldn't send. WhatsApp +91 80737 08940 instead.","err")})
+      .then(function(){btn.disabled=false});
+  });
+})();
+</script>
+</body>
+</html>
