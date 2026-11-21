@@ -1,0 +1,121 @@
+name: PulsEdge monthly report
+
+# The monthly report (pulsedge-bot/monthly_report.py, read at report.html):
+# - On the 1st (and from the news run's backstop on the 1st-3rd if the schedule didn't fire): writes last month's
+#   draft to pulsedge/data/monthly/, deploys the site and opens an issue so the owner knows it's ready. Only the owner
+#   sees a draft in report.html.
+# - Run by hand with action "publish" once the draft is right: members can see it, and both Telegram channels are told.
+#   Run with action "draft" and "redo" ticked to write a draft again (never over a published report).
+# On any other branch: a dry run of this month so far, nothing written (with the AI summaries only when started by hand).
+on:
+  schedule:
+    - cron: '47 0 1 * *'              # 06:17 IST on the 1st: after Groq's daily reset, before the morning news
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "draft or publish"
+        type: choice
+        options: [draft, publish]
+        default: draft
+      month:
+        description: "YYYY-MM (blank = last month)"
+        required: false
+      redo:
+        description: "draft: write it again even if a draft exists"
+        type: boolean
+        default: false
+  push:
+    branches-ignore:
+      - master
+    paths:
+      - 'pulsedge-bot/monthly_report.py'
+      - '.github/workflows/pulsedge-monthly.yml'
+
+permissions:
+  contents: write
+  issues: write
+  actions: write
+
+concurrency:
+  group: pulsedge-monthly-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      GROQ_MODEL: ${{ vars.GROQ_MODEL }}
+      AI_API_KEY: ${{ secrets.AI_API_KEY }}
+      AI_BASE_URL: ${{ vars.AI_BASE_URL }}
+      AI_MODEL: ${{ vars.AI_MODEL }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
+      TELEGRAM_PRO_CHAT_ID: ${{ vars.TELEGRAM_PRO_CHAT_ID }}
+    steps:
+    - uses: actions/checkout@v5
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - run: pip install --quiet pillow==10.4.0
+    - name: Which month
+      id: m
+      run: |
+        M="${{ inputs.month }}"
+        if [ "${{ github.event_name }}" = "push" ]; then M=$(TZ=Asia/Kolkata date +%Y-%m); fi
+        if [ -z "$M" ]; then M=$(TZ=Asia/Kolkata date -d "$(TZ=Asia/Kolkata date +%Y-%m-01) -1 day" +%Y-%m); fi
+        echo "month=$M" >> "$GITHUB_OUTPUT"
+        echo "title=$(date -d "$M-01" '+%B %Y')" >> "$GITHUB_OUTPUT"
+        # the month's feed.json history: from five days before it
+        git fetch -q --shallow-since="$(date -d "$M-01 -5 days" +%Y-%m-%d)" origin "+refs/heads/master:refs/remotes/origin/master"
+        echo "Month: $M"
+    - name: Dry run (branches)
+      if: github.ref != 'refs/heads/master'
+      # the AI summaries only when started by hand: a run uses about a quarter of a free model's daily tokens,
+      # which the live alerts need
+      run: python pulsedge-bot/monthly_report.py draft --month "${{ steps.m.outputs.month }}" --dry-run ${{ github.event_name == 'workflow_dispatch' && ' ' || '--no-ai' }}
+    - name: Draft
+      id: draft
+      if: github.ref == 'refs/heads/master' && (github.event_name == 'schedule' || inputs.action == 'draft')
+      run: |
+        F="pulsedge/data/monthly/${{ steps.m.outputs.month }}.json"
+        before=$(sha1sum "$F" 2>/dev/null || true)
+        # without "redo": skip a published report or one written after the month ended (a mid-month preview is redone)
+        python pulsedge-bot/monthly_report.py draft --month "${{ steps.m.outputs.month }}" ${{ inputs.redo && ' ' || '--if-needed' }}
+        if [ "$(sha1sum "$F" 2>/dev/null || true)" != "$before" ]; then echo "wrote=1" >> "$GITHUB_OUTPUT"; fi
+    - name: Publish
+      id: publish
+      if: github.ref == 'refs/heads/master' && inputs.action == 'publish'
+      run: |
+        python pulsedge-bot/monthly_report.py publish --month "${{ steps.m.outputs.month }}" --announce
+        echo "wrote=1" >> "$GITHUB_OUTPUT"
+    - name: Save and deploy
+      if: steps.draft.outputs.wrote == '1' || steps.publish.outputs.wrote == '1'
+      run: |
+        git config user.name "pulsedge-bot"
+        git config user.email "pulsedge-bot@users.noreply.github.com"
+        git add pulsedge/data/monthly
+        git commit -q -m "PulsEdge monthly report: ${{ steps.m.outputs.month }} ${{ steps.publish.outputs.wrote == '1' && 'published' || 'draft' }}"
+        for i in 1 2 3 4; do git pull --rebase -q origin master && git push -q origin HEAD:master && break; sleep $((i*3)); done
+        gh workflow run pulsedge-pages.yml --repo "$REPO" --ref master
+    - name: Tell the owner the draft is ready
+      if: steps.draft.outputs.wrote == '1'
+      continue-on-error: true
+      run: |
+        URL="https://adityasawant0503.github.io/pulsedge/report.html?m=${{ steps.m.outputs.month }}"
+        gh issue create --repo "$REPO" --title "Monthly report for ${{ steps.m.outputs.title }}: ready for review" --body "The draft of the ${{ steps.m.outputs.title }} report is ready.
+
+        1. Open $URL on a device where your owner link is saved (the site takes a minute or two to update). The draft shows only to you.
+        2. Read the month in review, then the list of every stock note at the bottom. Notes flagged for advice-like wording come first.
+        3. Want changes? Ask Claude, or run this workflow again with action **draft** and **redo** ticked.
+        4. When it's right: Actions, PulsEdge monthly report, Run workflow, action **publish**, month ${{ steps.m.outputs.month }}. Members can then see it, and both Telegram channels are told."
+    - name: Close the review issue
+      if: steps.publish.outputs.wrote == '1'
+      continue-on-error: true
+      run: |
+        for n in $(gh issue list --repo "$REPO" --state open --search "Monthly report for ${{ steps.m.outputs.title }} in:title" --json number --jq '.[].number'); do
+          gh issue close "$n" --repo "$REPO" --comment "Published, and announced on Telegram."
+        done

@@ -385,6 +385,14 @@ h2{font-size:var(--fs-h2);line-height:1.04;letter-spacing:-.04em;font-weight:600
 .plan .cd{margin:0;font:500 12.5px/1.4 var(--mono);color:var(--acc)}
 .pfoot{display:flex;flex-wrap:wrap;gap:14px 32px;align-items:flex-start;justify-content:space-between;margin-top:20px}
 .pfoot>.launch{flex:1 1 100%}
+.rpt{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 28px;margin-top:16px;border:1px solid var(--line);border-radius:18px;padding:22px 24px;background:var(--panel);box-shadow:var(--elev)}
+.rpt .rl{display:flex;flex-direction:column;gap:6px;min-width:0;flex:1 1 420px}
+.rpt .rl b{font-weight:600;font-size:19px;letter-spacing:-.01em}
+.rpt .rl>span:last-child{font-size:var(--fs-sm);color:var(--mute)}
+.rpt .badge{align-self:flex-start}
+.rpt .rr{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.rpt .pr{font-size:32px}
+.rpt .incl{font-size:var(--fs-xs);color:var(--mute)}
 .launch{font-size:var(--fs-sm);color:var(--ink2);max-width:62ch;margin:0}
 .pfoot>.also{display:flex;flex-direction:column;gap:8px;min-width:0;flex:1 1 260px}
 .pfoot>.also a{font-size:var(--fs-sm);color:var(--ink2);text-decoration:none}
@@ -776,7 +784,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
         <p class="who">For investors who want the full picture</p>
         <div class="pr"><s class="was">₹11,999</s> <span class="amt">₹7,999</span> <small class="per">/ year</small></div>
         <p class="ps eq"><span class="em">₹667 a month</span></p>
-        <ul><li><span>PULSE terminal: a verdict and its reason on every headline</span></li><li><span>My stocks: news on your own holdings only</span></li><li><span>Pre-market checklist with live GIFT Nifty and global prices</span></li><li><span>Search any stock for a one-page brief in plain English</span></li><li><span>Big money: bulk and block deals, FII positioning</span></li><li><span>Simple view for beginners, Pro view for the detail</span></li></ul>
+        <ul><li><span>PULSE terminal: a verdict and its reason on every headline</span></li><li><span>My stocks: news on your own holdings only</span></li><li><span>Pre-market checklist with live GIFT Nifty and global prices</span></li><li><span>Search any stock for a one-page brief in plain English</span></li><li><span>Big money: bulk and block deals, FII positioning</span></li><li><span>A monthly report on your holdings, checked by us before it's sent</span></li><li><span>Simple view for beginners, Pro view for the detail</span></li></ul>
         <p class="cd" hidden></p>
         <a class="go" href="pay.html?plan=pro_y">Get Pro</a>
       </div>
@@ -785,10 +793,15 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
         <p class="who">The terminal and the alerts together</p>
         <div class="pr"><s class="was">₹14,999</s> <span class="amt">₹9,999</span> <small class="per">/ year</small></div>
         <p class="ps eq"><span class="em">₹833 a month</span> · <span class="more">₹2,000 a year more than Pro</span></p>
-        <ul><li><span>Everything in Pro</span></li><li><span>Everything in Alerts</span></li><li><span>Priority help on WhatsApp</span></li></ul>
+        <ul><li><span>Everything in Pro</span></li><li><span>Everything in Alerts</span></li><li><span>The monthly report on your holdings</span></li><li><span>Priority help on WhatsApp</span></li></ul>
         <p class="cd" hidden></p>
         <a class="go" href="pay.html?plan=complete_y">Get Complete</a>
       </div>
+    </div>
+
+    <div class="rpt" id="rpt">
+      <div class="rl"><span class="badge">Portfolio Report</span><b>Just want a monthly review of your stocks?</b><span>Each month: the news that mattered in India and abroad, FII flows and sectors, and a section on your own holdings, each stock's move and the news behind it. Checked by us before it's sent. Your stock list never leaves your device.</span></div>
+      <div class="rr"><div class="pr"><s class="was" data-list="report_y">₹2,999</s> <span class="amt" data-price="report_y">₹1,999</span> <small>/ year</small></div><a class="btn ghost" id="rpt-go" href="pay.html?plan=report_y">Get the report <span class="arr" aria-hidden="true">&rarr;</span></a><small class="incl">Included with Pro and Complete · <a href="report.html">See a report</a></small></div>
     </div>
 
     <div class="pfoot">
@@ -843,6 +856,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
     <div class="faq">
       <details><summary>Is PulsEdge investment advice?</summary><p>No. PulsEdge is not registered with SEBI as an investment adviser or research analyst. Verdicts are automated triage of public news that tell you what to read, not what to buy or sell. Always check the source and make your own decision.</p></details>
       <details><summary>Which plan should I choose?</summary><p>Alerts if you want the important news on your phone the moment it breaks, in a private Telegram channel. Pro if you'd rather read it in the PULSE terminal with your own holdings, the pre-market checklist and stock briefs. Complete gives you both. The free Telegram channel gets a few of the same alerts, 30 minutes later.</p></details>
+      <details><summary>What's in the monthly report?</summary><p>At the start of each month: the month's biggest news in India and abroad, FII flows and sector moves in plain English, and a section on your own stocks, with each one's move and the news behind it. We check every report before it goes out. It comes with Pro and Complete, or on its own as the Portfolio Report. Your stock list stays on your device: the report is put together in your browser.</p></details>
       <details><summary>Do you work with wealth managers and advisers?</summary><p>Yes, through agreements with the firm: seats for advisers, and client seats the firm can include in its service at its own price. SEBI-registered firms get a news-only edition without verdicts. Use the form in <a href="#partners">Partners</a> and we'll reply within a day.</p></details>
       <details><summary>Where does the news come from?</summary><p>Public sources: NSE corporate announcements, SEBI and RBI releases, and markets coverage from Economic Times, Mint, Business Standard and Moneycontrol. Every item links back to where it was published.</p></details>
       <details><summary>How are verdicts made?</summary><p>Each headline is matched to Nifty 500 companies and classified as ignore, watch or act, with a horizon and a one-line reason. Most verdicts come from AI models, with a second check on Act verdicts; when no model is available, keyword rules decide, and each verdict says which. The <a href="track.html">track record</a> shows how they've done.</p></details>
@@ -1421,7 +1435,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
 // the yearly/monthly switch and the partner form. A link like index.html?code=YOUTUBE10#pricing
 // applies a code on arrival. Struck-through prices show only until launch_until (the end of the offer): after that they'd no longer be true.
 (function(){
-  var PRICES_FALLBACK={"launch_until":"2027-01-31","plans":{"alerts_m":{"price":499,"list":799,"name":"PulsEdge Alerts","period":"month"},"alerts_y":{"price":3999,"list":6999,"name":"PulsEdge Alerts","period":"year"},"pro_m":{"price":999,"list":1299,"name":"PulsEdge Pro","period":"month"},"pro_y":{"price":7999,"list":11999,"name":"PulsEdge Pro","period":"year"},"complete_m":{"price":1299,"list":1799,"name":"PulsEdge Complete","period":"month"},"complete_y":{"price":9999,"list":14999,"name":"PulsEdge Complete","period":"year"}}};//end
+  var PRICES_FALLBACK={"launch_until":"2027-01-31","plans":{"alerts_m":{"price":499,"list":799,"name":"PulsEdge Alerts","period":"month"},"alerts_y":{"price":3999,"list":6999,"name":"PulsEdge Alerts","period":"year"},"pro_m":{"price":999,"list":1299,"name":"PulsEdge Pro","period":"month"},"pro_y":{"price":7999,"list":11999,"name":"PulsEdge Pro","period":"year"},"complete_m":{"price":1299,"list":1799,"name":"PulsEdge Complete","period":"month"},"complete_y":{"price":9999,"list":14999,"name":"PulsEdge Complete","period":"year"},"report_y":{"price":1999,"list":2999,"name":"PulsEdge Portfolio Report","period":"year"}}};//end
   var $=function(id){return document.getElementById(id)};
   if(!$("pricing"))return;
   var P=PRICES_FALLBACK,OFFERS=[],period="y",code=null;
@@ -1445,6 +1459,10 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
       var cd=card.querySelector(".cd");cd.hidden=!off(key);cd.textContent=off(key)?"Code "+code.code+" applied: "+code.pct+"% off":"";
       card.querySelector(".go").href="pay.html?plan="+key+(off(key)?"&code="+encodeURIComponent(code.code):"");
     });
+    var rp=P.plans.report_y;
+    if(rp){document.querySelectorAll('[data-price="report_y"]').forEach(function(e){e.textContent=inr(price("report_y"))});
+      document.querySelectorAll('[data-list="report_y"]').forEach(function(e){var w=off("report_y")?rp.price:(launchOn()&&rp.list?rp.list:0);e.textContent=w?inr(w):""});
+      $("rpt-go").href="pay.html?plan=report_y"+(off("report_y")?"&code="+encodeURIComponent(code.code):"")}
     var l=$("launch");l.hidden=!launchOn();
     if(launchOn()){var after=new Date(new Date(P.launch_until+"T12:00:00+05:30").getTime()+864e5).toISOString().slice(0,10);
       l.textContent="Offer prices until "+longDate(P.launch_until)+". From "+longDate(after).replace(/ \d{4}$/,"")+" the plans cost the struck-through prices; anyone who joins before then keeps their price for as long as they renew."}

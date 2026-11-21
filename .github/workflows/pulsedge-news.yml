@@ -140,6 +140,21 @@ jobs:
         if [ "$HM" -lt 700 ] || [ "$HM" -ge 1550 ]; then echo "Outside the fast lane's hours."; exit 0; fi
         n=$(gh api "repos/$REPO/actions/workflows/pulsedge-fast.yml/runs?per_page=10" --jq '[.workflow_runs[] | select(.status != "completed")] | length')
         if [ "$n" = "0" ]; then gh workflow run pulsedge-fast.yml --repo "$REPO" --ref master && echo "Started the fast lane."; else echo "Fast lane running."; fi
+    - name: Make sure last month's report draft exists
+      # the monthly workflow's schedule can be skipped by GitHub; on the 1st-3rd this run starts it if it hasn't run
+      if: github.ref == 'refs/heads/master' && github.event_name != 'push'
+      continue-on-error: true
+      env:
+        GH_TOKEN: ${{ github.token }}
+        REPO: ${{ github.repository }}
+      run: |
+        D=$(TZ=Asia/Kolkata date +%-d)
+        if [ "$D" -gt 3 ]; then exit 0; fi
+        M=$(TZ=Asia/Kolkata date -d "$(TZ=Asia/Kolkata date +%Y-%m-01) -1 day" +%Y-%m)
+        # done when the report is published or was written after the month ended (a mid-month preview doesn't count)
+        if python3 -c "import json,sys;r=json.load(open('pulsedge/data/monthly/$M.json'));sys.exit(0 if r.get('status')=='published' or r.get('generated','')[:7]>'$M' else 1)" 2>/dev/null; then echo "Report for $M exists."; exit 0; fi
+        busy=$(gh api "repos/$REPO/actions/workflows/pulsedge-monthly.yml/runs?per_page=5" --jq '[.workflow_runs[] | select(.status != "completed" or (.created_at > (now - 7200 | todate)))] | length')
+        if [ "$busy" = "0" ]; then gh workflow run pulsedge-monthly.yml --repo "$REPO" --ref master && echo "Started the $M report."; else echo "The report job ran or is running."; fi
 
   deploy:
     needs: update
