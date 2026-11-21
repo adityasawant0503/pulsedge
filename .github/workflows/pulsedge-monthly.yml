@@ -43,7 +43,7 @@ concurrency:
 jobs:
   report:
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 50                 # the AI stock notes took 20 minutes for November, with free-tier pacing
     env:
       GH_TOKEN: ${{ github.token }}
       REPO: ${{ github.repository }}
