@@ -43,7 +43,7 @@ ADVICE = re.compile(r"\b(?:(?:should|consider|time to|good time to|worth|better 
 # tip-style pieces from other sites ("stock to buy", "target price", "buying opportunity") stay out of the report,
 # with the pipeline's own rules for brokers' views, round-ups of several stocks and live blogs
 TIPS = re.compile(r"\b(?:stocks? to (?:buy|sell|watch)|to buy now|buying opportunity|target price|price target|stop[- ]?loss|"
-                  r"multibagger|should you (?:buy|sell)|technical charts? suggests?|key levels)\b", re.I)
+                  r"multibagger|should you (?:buy|sell)|technical charts? suggests?|key levels|stocks? under (?:₹|rs\.?\s?)\s?\d+)", re.I)
 SECTION = {"global": "global", "macro": "policy"}           # everything else with a stock or Indian news is "india"
 MAX_ITEMS_PER_STOCK = 5
 
@@ -141,8 +141,16 @@ def same_story(a, b):
     return bool(wa and wb) and len(wa & wb) / min(len(wa), len(wb)) >= 0.6
 
 
+# a tips-style tail some sites add to news headlines ("... - Buy, sell or hold?"): not repeated in the report
+TIP_TAIL = re.compile(r"\s*(?:[-\u2013\u2014|:,]\s*)?(?:buy,? sell,? or hold|still a (?:buy|sell)|time to (?:buy|sell)|is it a "
+                      r"(?:buy|sell)|should you (?:buy|sell|hold)[^|?]*|what (?:stock )?market experts say|"
+                      r"(?:analysts|experts) (?:say|suggest)[^|?]*)\s*\??\s*$", re.I)
+
+
 def clean_head(h):
     h = str(h or "").split(" |SUBJECT")[0]
+    while TIP_TAIL.search(h):
+        h = TIP_TAIL.sub("", h)
     m = re.match(r"^(.+?):\s+(.+)$", h)
     if m:
         co, rest = m.group(1), m.group(2)
@@ -163,7 +171,10 @@ def top_stories(items, section, n):
     pool = sorted((x for x in items if SECTION.get(x.get("section"), "india") == section), key=lambda x: (-score(x), x.get("time", "")))
     out = []
     for x in pool:
-        if any(same_story(x["headline"], y["headline"]) for y in out):
+        tick = {t.get("symbol") for t in (x.get("tickers") or []) if t.get("symbol")}
+        # one story per company, and no story twice
+        if any(same_story(x["headline"], y["headline"]) or (tick and tick & {t.get("symbol") for t in (y.get("tickers") or [])})
+               for y in out):
             continue
         out.append(x)
         if len(out) >= n:
