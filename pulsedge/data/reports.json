@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T11:15+05:30",
+ "updated": "2026-11-23T11:31+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -138,6 +138,22 @@
    "items": 4,
    "updated": "2026-11-23T09:46+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "SOLARINDS": {
+   "summary": "There are no recent PulsEdge flagged news items specifically about Solar Industries India Ltd. The company is listed in the Nifty 500 chemicals sector, but no new developments were reported in the last few days.",
+   "why": "Shareholders have limited new information to assess short‑term catalysts, so the stock may remain driven by broader sector trends.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "Renewable energy demand trends in India",
+    "Execution of large solar projects by peers",
+    "Potential margin impact from project delays"
+   ],
+   "about": "Solar Industries India Ltd. is a chemicals company.",
+   "basis": "19502dd52742",
+   "items": 2,
+   "updated": "2026-11-23T11:31+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "GALLANTT": {
    "summary": "PulsEdge flagged three large block deals for Gallantt Ispat on November 20, 2026. One investor sold shares worth ₹84 crore, while two others bought shares worth ₹56 crore and ₹29 crore respectively.",
@@ -348,19 +364,19 @@
    "model": "openai/gpt-oss-20b"
   },
   "BANKINDIA": {
-   "summary": "Bank of India is facing tighter RBI scrutiny of its gold loan portfolio while broader market conditions are supportive, with a stronger rupee and foreign investors showing renewed interest in Indian banks.",
-   "why": "Higher monitoring could force the bank to set aside more provisions for potential loan losses, while a stronger rupee and FII buying could improve its funding and valuation.",
-   "upside": "If the rupee stays strong and foreign investors continue to favor Indian banks, Bank of India could see better funding conditions and share demand.",
-   "downside": "Increased RBI oversight of gold loans may lead to higher non‑performing assets and tighter profit margins.",
+   "summary": "Bank of India is under increased RBI scrutiny of its gold loan portfolio after a recent drop in bullion prices. At the same time, the RBI’s new Treasury Bill auction and a stronger rupee are influencing funding costs and foreign investor interest.",
+   "why": "Higher monitoring may force the bank to set aside more provisions, affecting profitability. A stronger rupee and foreign inflows could improve its attractiveness to investors.",
+   "upside": "If foreign investors continue to favor Indian banks and the rupee stays strong, the bank could see improved earnings and share demand.",
+   "downside": "If gold loan defaults rise or Treasury Bill yields increase, the bank may face higher non‑performing assets and compressed margins.",
    "watch": [
-    "RBI's gold‑loan monitoring and provisioning",
-    "Treasury bill auction yields and bank funding costs",
-    "Rupee level and foreign investor inflows into Indian banks"
+    "RBI monitoring of gold loan portfolios",
+    "Treasury Bill auction yields and funding costs",
+    "Rupee movement and foreign investor sentiment"
    ],
-   "about": "Bank of India is a public sector bank that offers retail and corporate banking services across India.",
-   "basis": "b4b6fcf5a0c1",
-   "items": 5,
-   "updated": "2026-11-23T10:15+05:30",
+   "about": "Bank of India is a commercial bank offering retail and corporate banking services in India.",
+   "basis": "779e4899e629",
+   "items": 4,
+   "updated": "2026-11-23T11:31+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "MARUTI": {
@@ -427,22 +443,6 @@
    "updated": "2026-11-23T08:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "PNB": {
-   "summary": "PulsEdge flagged that Punjab National Bank (PNB) surged up to 27% in November along with other public sector banks, while its Financials sector index rose 2.0% in the last session and 3.6% over five sessions.",
-   "why": "The sharp price jump may attract profit‑taking, which could affect the share price for current investors.",
-   "upside": "",
-   "downside": "A rapid November rally could trigger profit‑taking and a short‑term price pullback.",
-   "watch": [
-    "Potential profit‑taking after the November surge",
-    "Financials sector index performance",
-    "Technical analysis signals for PNB"
-   ],
-   "about": "Punjab National Bank is a public sector bank in India providing a range of financial services.",
-   "basis": "ba6301e0c641",
-   "items": 2,
-   "updated": "2026-11-23T08:31+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "IKS": {
    "summary": "Inventurus Knowledge Solutions has announced it will merge with Turbo Health Holdings. The company also filed a general update regarding this acquisition process.",
    "why": "Mergers can change a company's size, debt levels, and future earnings, which directly impacts the value of its shares.",
@@ -505,22 +505,6 @@
    "basis": "a5357c663254",
    "items": 2,
    "updated": "2026-11-23T11:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "CANBK": {
-   "summary": "Canara Bank recently shared an update on its credit rating with the stock exchange. At the same time, several public sector banks, including Canara, saw strong price increases in November.",
-   "why": "A credit rating update can affect how safe investors view the bank, while the recent price rise may lead to some investors selling to lock in profits.",
-   "upside": "A positive credit rating update could make the bank look safer to investors.",
-   "downside": "If the credit rating was downgraded, or if investors sell after the recent price jump, the stock price could fall.",
-   "watch": [
-    "The specific outcome of the credit rating update",
-    "Whether the stock price stabilizes after the recent rise",
-    "General trends in the Financial Services sector"
-   ],
-   "about": "Canara Bank is a financial services company listed on the NSE.",
-   "basis": "1a28f0e1afcc",
-   "items": 2,
-   "updated": "2026-11-21T03:04+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "BSE": {

@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T11:16:03+05:30",
+ "updated": "2026-11-23T11:32:06+05:30",
  "summary": {
-  "calls": 1999,
-  "scored_calls": 829,
+  "calls": 2000,
+  "scored_calls": 830,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "9003829370d179f9",
+   "symbol": "SOLARINDS",
+   "time": "2026-11-23T11:24:49+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "STERLING AND WILSON RENEWABLE ENERGY LIMITED: CO. BAGS THREE DOMESTIC ORDERS INCLUDING L1 POSITION FOR A MARQUEE PROJECT VALUED OVER INR 2050 CRORE; INCLUDES 60",
+   "url": "https://t.me/Indiaredboxglobal/9860",
+   "alert_px": 18342.0,
+   "alert_move": -1.97,
+   "alert_at": "2026-11-23T11:25:17+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "9ffb59ac5c7f9443",
    "symbol": "TATACHEM",
