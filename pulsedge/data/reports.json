@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T09:31+05:30",
+ "updated": "2026-11-23T09:46+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Tata Steel announced it will buy a 26.38% stake in APL Apollo Tubes for about ₹15,511 crore, a move that could affect both companies' share values. The Indian market was expected to open higher, with the GIFT Nifty jumping 180 points overnight. Banks and financial sectors showed strength in the previous session, while media stocks lagged. Investors are watching how this large deal impacts Tata Steel's cash flow and debt levels.",
+  "summary": "The Indian stock market opened higher on Monday, with the Sensex rising 200 points and the Nifty crossing 25,850. The biggest news was Tata Steel announcing a plan to buy a 26.38% stake in APL Apollo Tubes for about ₹15,511 crore. This move caused APL Apollo's stock to hit its daily lower limit, meaning it fell by the maximum allowed amount. Meanwhile, IndusInd Bank shares dipped slightly after the bank fired its former CEO and reclaimed his compensation.",
   "themes": [
-   "Major steel industry consolidation through a large acquisition.",
-   "Strong performance in banking and financial sectors.",
-   "Global market volatility driving interest in safe assets like gold."
+   "Major steel merger talks between Tata Steel and APL Apollo Tubes",
+   "Leadership changes at IndusInd Bank affecting investor confidence",
+   "Global oil tensions from Yemen impacting market sentiment"
   ],
   "watch": [
-   "Details of the open offer for additional APL Apollo shares.",
-   "Potential impact on Tata Steel's debt and earnings.",
-   "Whether the positive market opening trend continues despite global tech stock falls."
+   "How APL Apollo Tubes shares react to the acquisition offer",
+   "Any legal disputes arising from the IndusInd Bank CEO termination",
+   "Further updates on oil prices following the Saudi refinery attacks"
   ],
   "date": "2026-11-23",
-  "basis": "9b73f35c8be8",
-  "updated": "2026-11-23T09:01+05:30",
+  "basis": "873a6a22b55b",
+  "updated": "2026-11-23T09:46+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 21
+  "items": 26
  },
  "stocks": {
   "KIRLOSBROS": {
@@ -121,6 +121,22 @@
    "basis": "90032f4a1f10",
    "items": 6,
    "updated": "2026-11-23T09:31+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "INDUSINDBK": {
+   "summary": "IndusInd Bank shares recently surged nearly 9% on high trading volume, approaching their 52-week high. However, the stock dropped 1% after the bank terminated its former CEO and reclaimed his compensation.",
+   "why": "The sharp rise suggests strong investor interest, but the sudden leadership change and potential legal disputes could create uncertainty for shareholders.",
+   "upside": "The recent surge in trading volume and price indicates strong buyer interest and improving business momentum.",
+   "downside": "Leadership turmoil and potential legal disputes from the CEO termination could hurt confidence and worsen performance.",
+   "watch": [
+    "Any legal actions or disputes arising from the former CEO's termination",
+    "Whether the stock can hold its recent gains or faces profit booking",
+    "Future announcements regarding new leadership or strategic changes"
+   ],
+   "about": "IndusInd Bank is a private sector bank operating in the financial services sector.",
+   "basis": "329c597691b7",
+   "items": 4,
+   "updated": "2026-11-23T09:46+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "GALLANTT": {
@@ -202,22 +218,6 @@
    "items": 8,
    "updated": "2026-11-23T09:17+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "INDUSINDBK": {
-   "summary": "IndusInd Bank shares recently jumped about 8.5% on high trading volume, moving close to their highest level in a year. The stock is currently in focus alongside other major companies, with investors watching for further price swings.",
-   "why": "This matters because the sharp rise suggests strong buyer interest, but it also means the stock is near a peak where some investors might sell to lock in profits.",
-   "upside": "The strong weekly rally and high trading volume indicate that many buyers are confident in the bank's recent business momentum.",
-   "downside": "The stock is near its 52-week high, which increases the risk that investors may sell to take profits, causing the price to drop quickly.",
-   "watch": [
-    "Whether the stock holds its recent gains or faces a pullback near its 52-week high.",
-    "Trading volume levels to see if buyer interest remains strong.",
-    "Overall movement in the Financials sector index, which has risen recently."
-   ],
-   "about": "",
-   "basis": "60b29d84894c",
-   "items": 3,
-   "updated": "2026-11-23T08:15+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "JBMA": {
    "summary": "JBM Auto is seen as a potential beneficiary of the Indian government’s new PM E‑Bus Sewa payment portal, which aims to fund electric bus projects. The auto sector has also posted gains, up 4.4% in the last session.",

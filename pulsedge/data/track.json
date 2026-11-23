@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T09:31:53+05:30",
+ "updated": "2026-11-23T09:46:15+05:30",
  "summary": {
-  "calls": 1979,
-  "scored_calls": 809,
+  "calls": 1981,
+  "scored_calls": 811,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "b5df776f601c9246",
+   "symbol": "LT",
+   "time": "2026-11-23T09:34:04+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Larsen & Toubro Limited: Larsen & Toubro Limited has informed the Exchange about Bagging/Receiving of orders/contracts |SUBJECT: Bagging/Receiving of orders/con",
+   "url": "https://nsearchives.nseindia.com/corporate/PAM_23112026093338_PressRelease23112026.pdf",
+   "alert_px": 4188.9,
+   "alert_move": -0.48,
+   "alert_at": "2026-11-23T09:46:04+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "57b390a1b8cc7dd1",
+   "symbol": "INDUSINDBK",
+   "time": "2026-11-23T09:26:52+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "IndusInd Bank down 1% after terminating ex-CEO Kathpalia, invoking clawback",
+   "url": "https://www.business-standard.com/markets/news/indusind-bank-down-1-after-terminating-ex-ceo-kathpalia-invoking-clawback-126112300170_1.html",
+   "alert_px": 977.4,
+   "alert_move": -2.55,
+   "alert_at": "2026-11-23T09:46:04+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "9a32ffd41dd6f5f0",
    "symbol": "OIL",
