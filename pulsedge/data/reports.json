@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T09:01+05:30",
+ "updated": "2026-11-23T09:17+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -188,20 +188,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is facing a mixed environment where global oil prices have fallen for three straight weeks due to high supply, but recent geopolitical incidents like a tanker attack and drone strikes on refineries could push prices back up. The company is part of the Nifty 500, and its sector index has risen slightly over the last five sessions.",
-   "why": "Since Oil India produces oil, lower global crude prices can reduce its earnings, while higher prices driven by supply disruptions could boost its profits.",
-   "upside": "Geopolitical events like the mine incident in the Strait of Hormuz or damage to Russian refineries could restrict oil supply and raise prices, potentially increasing the company's revenue.",
-   "downside": "A continued surplus in global oil supply and falling crude prices could lead to lower earnings for the company.",
+   "summary": "Oil India Ltd is seeing pressure from falling global oil prices, as Brent and WTI have slipped in recent sessions. The broader oil‑and‑gas sector in India has risen modestly, up 0.4% in the last session and 2.0% over five sessions.",
+   "why": "Lower crude prices can reduce the company’s revenue and profit margins, which matters to shareholders.",
+   "upside": "If geopolitical tensions rise or OPEC+ cuts output, oil prices could rebound, boosting earnings.",
+   "downside": "Continued price declines and a surplus of supply could further compress earnings.",
    "watch": [
-    "The upcoming OPEC+ meeting decision on oil output levels.",
-    "Any further escalation in the Middle East that affects shipping lanes.",
-    "Global demand trends that might reverse the current price decline."
+    "OPEC+ output decision and its impact on oil supply",
+    "Trends in Brent and WTI crude prices",
+    "Geopolitical developments such as attacks on oil facilities in the Middle East"
    ],
-   "about": "Oil India Ltd. is an oil-producing company listed in the Oil Gas & Consumable Fuels sector.",
-   "basis": "b1029b95ecd1",
-   "items": 7,
-   "updated": "2026-11-23T08:46+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Oil India Ltd explores, produces and markets crude oil and natural gas in India.",
+   "basis": "f901fe4a0d6e",
+   "items": 8,
+   "updated": "2026-11-23T09:17+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "INDUSINDBK": {
    "summary": "IndusInd Bank shares recently jumped about 8.5% on high trading volume, moving close to their highest level in a year. The stock is currently in focus alongside other major companies, with investors watching for further price swings.",
@@ -331,38 +331,6 @@
    "updated": "2026-11-23T07:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "INDIGO": {
-   "summary": "InterGlobe Aviation Ltd. is one of India's 50 largest listed companies. A research firm recently noted that it is among ten Nifty stocks facing expected earnings downgrades.",
-   "why": "Lower expected profits can lead investors to sell shares, which may cause the share price to drop.",
-   "upside": "Actual earnings might still beat the lowered expectations, potentially causing the share price to bounce back.",
-   "downside": "If the company earns less than expected, investors may sell their shares, leading to a price decline.",
-   "watch": [
-    "The company's upcoming earnings report",
-    "Changes in analyst expectations for its profits",
-    "General market reaction to the Nifty 50 index"
-   ],
-   "about": "",
-   "basis": "8b1637ee71c5",
-   "items": 1,
-   "updated": "2026-11-23T07:23+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "TMCV": {
-   "summary": "Tata Motors Ltd. (TMCV) has been flagged by a research firm as one of ten Nifty stocks likely to see earnings downgraded. This suggests analysts expect the company to earn less than previously projected.",
-   "why": "If earnings are lower than expected, investors may react negatively, which can affect the share price of TMCV holders.",
-   "upside": "",
-   "downside": "A downgrade could lead to a decline in the stock price if the market believes the company will not meet its earnings targets.",
-   "watch": [
-    "Upcoming earnings report for Tata Motors",
-    "Actual earnings results versus downgraded expectations",
-    "Market reaction to the earnings announcement"
-   ],
-   "about": "",
-   "basis": "8b1637ee71c5",
-   "items": 1,
-   "updated": "2026-11-20T14:01+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
   "HDFCBANK": {
    "summary": "HDFC Bank's share price recently hit an eight-month high, pushing its total market value above ₹13 trillion. This rise is part of a broader trend where bank stocks have outperformed other sectors in November.",
    "why": "If you own these shares, their value has increased significantly due to strong investor interest. However, this recent jump is driven by market sentiment rather than new company news, so the price may be sensitive to changes in investor mood.",
@@ -379,22 +347,6 @@
    "updated": "2026-11-23T08:46+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "ICICIBANK": {
-   "summary": "ICICI Bank shares have jumped as part of a broader rally in bank stocks, with the Nifty Bank index reaching a new high and the bank up to 21% in November. The bank was also highlighted by a broker as a top pick. The Financials sector index rose 1.1% in the last session and 0.9% over five sessions.",
-   "why": "Shareholders see the bank benefiting from strong market sentiment toward banks, which could support its share price.",
-   "upside": "The rally could continue if banks remain favored by investors.",
-   "downside": "If the market shifts to other sectors, the bank’s gains could reverse.",
-   "watch": [
-    "Nifty Bank index performance",
-    "Possible sector rotation toward non‑bank sectors",
-    "Broker recommendations and how they evolve"
-   ],
-   "about": "ICICI Bank is a major Indian bank listed in the Nifty 50.",
-   "basis": "7d4aa4d8e01d",
-   "items": 2,
-   "updated": "2026-11-20T15:02+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
   "CANFINHOME": {
    "summary": "Can Fin Homes Ltd. has announced a change in one of its key government permits. The company notified the exchange about this change. This could affect its operations.",
    "why": "Permits are needed to do business; losing one could hurt the company.",
@@ -410,6 +362,22 @@
    "items": 1,
    "updated": "2026-11-20T15:16+05:30",
    "model": "openai/gpt-oss-20b"
+  },
+  "ICICIBANK": {
+   "summary": "ICICI Bank shares have rallied up to 21% in November as bank stocks lead the market, with the Nifty Bank index hitting a new high.",
+   "why": "The strong rally boosts shareholder value and reflects investor confidence in the banking sector.",
+   "upside": "If the bank‑focused rotation continues, the stock could keep gaining.",
+   "downside": "A shift of investor interest to other sectors could curb the rally.",
+   "watch": [
+    "Nifty Bank index performance",
+    "Financials sector index trends",
+    "Signs of sector rotation"
+   ],
+   "about": "ICICI Bank Ltd. is a major Indian commercial bank offering a range of financial services.",
+   "basis": "dce21e5f47f6",
+   "items": 1,
+   "updated": "2026-11-23T09:17+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "BLUESTARCO": {
    "summary": "Blue Star Ltd. has been fined by the stock exchange, a move that could reduce its profits. The fine was disclosed in a recent exchange announcement.",
@@ -475,22 +443,6 @@
    "updated": "2026-11-20T15:16+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "MARUTI": {
-   "summary": "Maruti Suzuki India Ltd. is drawing attention in the stock market following recent announcements and mentions by market observers. Its sector index, the Auto index, has seen positive movement recently, gaining in both the last session and over the past five sessions.",
-   "why": "Such focus and sector momentum matter to shareholders because they can lead to increased trading activity and price swings for the stock.",
-   "upside": "Positive momentum in the auto sector could continue to support the company's market presence.",
-   "downside": "High volatility is expected due to the current market focus, which can cause sudden price changes.",
-   "watch": [
-    "Recent company announcements",
-    "Overall auto sector movements",
-    "Stock price volatility"
-   ],
-   "about": "Maruti Suzuki India Ltd. operates in the automobile and auto components sector and is one of India's 50 largest listed companies.",
-   "basis": "38464d4a66fa",
-   "items": 3,
-   "updated": "2026-11-23T08:15+05:30",
-   "model": "gemini-flash-lite-latest"
-  },
   "PERSISTENT": {
    "summary": "Persistent Systems recently issued a statement to the stock exchange, though the specific details are not yet public. At the same time, a technical indicator called RSI moved above 50, which suggests the stock may be gaining upward momentum.",
    "why": "The company statement could contain important information that affects the value of the shares, while the rising RSI indicates potential short-term strength in the stock price.",
@@ -506,6 +458,22 @@
    "items": 2,
    "updated": "2026-11-23T08:46+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "MARUTI": {
+   "summary": "Maruti Suzuki is in the spotlight as investors watch for recent announcements, and the stock may see higher volatility. The auto sector has been gaining, up 0.7% in the last session and 3.1% over five sessions.",
+   "why": "Shareholders could experience noticeable price swings because the stock is flagged for high volatility.",
+   "upside": "A continued rise in the auto sector could lift Maruti Suzuki’s share price.",
+   "downside": "Sharp moves from the heightened volatility could push the stock lower.",
+   "watch": [
+    "Sector index performance",
+    "Any new corporate announcements from Maruti Suzuki",
+    "Volatility levels during the trading day"
+   ],
+   "about": "Maruti Suzuki India Ltd. manufactures and sells passenger vehicles in India.",
+   "basis": "e0e3292dc10e",
+   "items": 2,
+   "updated": "2026-11-23T09:17+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "RVNL": {
    "summary": "Rail Vikas Nigam Ltd. reported an 8.3% increase in profit for the second quarter of FY27, even though its revenue fell by 8.2%. The stock is currently being watched closely by investors due to these recent results.",

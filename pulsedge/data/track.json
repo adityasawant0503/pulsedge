@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T09:01:13+05:30",
+ "updated": "2026-11-23T09:17:36+05:30",
  "summary": {
-  "calls": 1976,
-  "scored_calls": 806,
+  "calls": 1978,
+  "scored_calls": 808,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "9a32ffd41dd6f5f0",
+   "symbol": "OIL",
+   "time": "2026-11-23T09:10:39+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "CNBC World Markets",
+   "headline": "Yemen's Houthis claim attacks on Saudi oil refinery as Trump warns of new strikes next year",
+   "url": "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html",
+   "alert_px": 432.0,
+   "alert_move": -1.35,
+   "alert_at": "2026-11-23T09:17:14+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "775062761f05fb46",
+   "symbol": "LTTS",
+   "time": "2026-11-23T08:55:57+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "L&T Technology Services Limited: L&T Technology Services Limited has informed the Exchange regarding a press release dated November 23, 2026, titled \"L&T Techno",
+   "url": "https://nsearchives.nseindia.com/corporate/LTTS_23112026085541_23112026LTTSPRessreleasesd.pdf",
+   "alert_px": 4082.5,
+   "alert_move": 1.15,
+   "alert_at": "2026-11-23T09:17:14+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "59cddd0c073ad3f4",
    "symbol": "TATASTEEL",
