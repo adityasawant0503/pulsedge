@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T14:47:01+05:30",
+ "updated": "2026-11-23T15:02:56+05:30",
  "summary": {
-  "calls": 2036,
-  "scored_calls": 866,
+  "calls": 2039,
+  "scored_calls": 869,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,51 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "cfa3f13ce888da41",
+   "symbol": "CAMS",
+   "time": "2026-11-23T14:52:19+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Computer Age Management Services Limited: \"CAMS Wins Awards at League of American Communications Professionals (LACP) Spotlight Awards for the year 2026\". |SUBJ",
+   "url": "https://nsearchives.nseindia.com/corporate/Jaiganesh_23112026145207_LACP_Award_23112026_final.pdf",
+   "alert_px": 726.7,
+   "alert_move": 0.28,
+   "alert_at": "2026-11-23T15:01:53+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "1ff03c1f106535e4",
+   "symbol": "APLAPOLLO",
+   "time": "2026-11-23T14:37:44+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stocks at 52-week low: Tata Power, Cochin Shipyard, APL Apollo, Aadhar Hsg",
+   "url": "https://www.business-standard.com/markets/news/stocks-at-52-week-low-tata-power-cochin-shipyard-apl-apollo-aadhar-housing-126112300552_1.html",
+   "alert_px": 1679.1,
+   "alert_move": -20.86,
+   "alert_at": "2026-11-23T15:01:53+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "1ff03c1f106535e4",
+   "symbol": "BSE",
+   "time": "2026-11-23T14:37:44+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stocks at 52-week low: Tata Power, Cochin Shipyard, APL Apollo, Aadhar Hsg",
+   "url": "https://www.business-standard.com/markets/news/stocks-at-52-week-low-tata-power-cochin-shipyard-apl-apollo-aadhar-housing-126112300552_1.html",
+   "alert_px": 3757.9,
+   "alert_move": -0.61,
+   "alert_at": "2026-11-23T15:01:53+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "0454676fd2f0f89e",
    "symbol": "APLAPOLLO",
