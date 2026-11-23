@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T15:02+05:30",
+ "updated": "2026-11-23T15:17+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a major development as Tata Steel agreed to acquire a large stake in APL Apollo, causing shares of both companies to fall amid concerns over high spending and deal terms. Meanwhile, Dalmia Bharat approved a share buyback, and Sterling and Wilson gained after winning new orders worth over two thousand crore rupees. On the other hand, Kalahridhaan Trendz entered a formal legal process for debt resolution, and telecom stocks like Sterlite Tech and HFCL faced heavy selling pressure.",
+  "summary": "PulsEdge flagged that Tata Steel's plan to buy a large stake in APL Apollo caused both stocks to drop sharply, with APL Apollo hitting its daily trading limit. Meanwhile, Dalmia Bharat announced a 700 crore rupee share buyback, which helped its stock price stabilize. The broader market saw banks and financials lead gains, while media and metals sectors lagged. Foreign investors kept their buying positions steady at 34% long.",
   "themes": [
-   "Large steel sector acquisition causes stock drops due to spending concerns",
-   "Company actions include buybacks and securing major new orders",
-   "Financial distress and heavy selling pressure impact select smaller firms"
+   "Major steel industry consolidation triggered by Tata Steel's acquisition of APL Apollo.",
+   "Corporate actions like Dalmia Bharat's buyback influencing individual stock stability.",
+   "Sector rotation with banks and financials outperforming media and metals."
   ],
   "watch": [
-   "Regulatory approval processes for the Tata Steel and APL Apollo acquisition",
-   "Whether Sterlite Tech and HFCL can stabilize after sharp recent falls",
-   "Execution of new project orders by Sterling and Wilson"
+   "Regulatory approval status for the Tata Steel and APL Apollo deal.",
+   "Whether Dalmia Bharat proceeds with its buyback without delays.",
+   "If telecom stocks like Sterlite Tech and HFCL continue to fall or stabilize."
   ],
   "date": "2026-11-23",
-  "basis": "2e1f5fd2a9c0",
-  "updated": "2026-11-23T14:31+05:30",
-  "model": "gemini-flash-lite-latest",
-  "items": 88
+  "basis": "77919575e248",
+  "updated": "2026-11-23T15:17+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 102
  },
  "stocks": {
   "DALBHARAT": {
@@ -89,22 +89,6 @@
    "basis": "9d7c37673c2f",
    "items": 4,
    "updated": "2026-11-23T14:46+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "KIRLOSBROS": {
-   "summary": "Kirloskar Brothers Ltd. announced that it and its joint venture partner, Kirloskar Ebara Pumps Limited, secured a major contract to supply pumps for the Dangote refinery in Africa. This is described as a landmark order for the company.",
-   "why": "Winning large contracts like this can lead to higher future sales and profits, which may impact the value of the company's shares.",
-   "upside": "The successful completion of this large order could boost the company's revenue and earnings.",
-   "downside": "Delays in delivering the pumps or costs going over budget could reduce the profit made from this contract.",
-   "watch": [
-    "Updates on the delivery schedule for the refinery pumps",
-    "Any news about changes in project costs",
-    "Future announcements about new contracts"
-   ],
-   "about": "Kirloskar Brothers Ltd. is a capital goods company that manufactures industrial equipment, including pumps.",
-   "basis": "b6314441addf",
-   "items": 1,
-   "updated": "2026-11-23T15:02+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
@@ -347,22 +331,6 @@
    "updated": "2026-11-23T12:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "CANFINHOME": {
-   "summary": "Can Fin Homes Ltd. has announced a change in one of its key government permits. The company notified the exchange about this change. This could affect its operations.",
-   "why": "Permits are needed to do business; losing one could hurt the company.",
-   "upside": "",
-   "downside": "Withdrawal of a license could severely restrict business operations.",
-   "watch": [
-    "Status of the key license",
-    "Any regulatory actions",
-    "Effect on operations"
-   ],
-   "about": "",
-   "basis": "e9d78b3fd950",
-   "items": 1,
-   "updated": "2026-11-20T15:16+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
   "BSE": {
    "summary": "BSE Ltd. is facing potential leadership changes due to new rules proposed by the market regulator, SEBI. At the same time, SEBI is considering easing disclosure rules for foreign investors, which could impact major stock exchanges.",
    "why": "These regulatory shifts and leadership rules matter because they can influence the exchange's operations and how investors view the company.",
@@ -588,19 +556,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "BANKINDIA": {
-   "summary": "Bank of India is under increased RBI scrutiny of its gold loan portfolio after a recent drop in bullion prices. At the same time, the RBI’s new Treasury Bill auction and a stronger rupee are influencing funding costs and foreign investor interest.",
-   "why": "Higher monitoring may force the bank to set aside more provisions, affecting profitability. A stronger rupee and foreign inflows could improve its attractiveness to investors.",
-   "upside": "If foreign investors continue to favor Indian banks and the rupee stays strong, the bank could see improved earnings and share demand.",
-   "downside": "If gold loan defaults rise or Treasury Bill yields increase, the bank may face higher non‑performing assets and compressed margins.",
+   "summary": "Bank of India is under increased RBI monitoring of its gold loan portfolio after a recent drop in gold prices. At the same time, the RBI’s new Treasury Bill auction could affect the bank’s funding costs, while a stronger rupee is making Indian banks more appealing to foreign investors.",
+   "why": "Shareholders should watch for higher loan loss provisions if gold loan defaults rise, and for changes in funding costs that could affect profitability.",
+   "upside": "If the rupee stays strong, foreign investors may increase their holdings, supporting the bank’s share demand.",
+   "downside": "If the RBI’s scrutiny leads to higher provisions or if Treasury yields rise sharply, the bank’s earnings could be pressured.",
    "watch": [
     "RBI monitoring of gold loan portfolios",
-    "Treasury Bill auction yields and funding costs",
-    "Rupee movement and foreign investor sentiment"
+    "Outcomes of the Treasury Bill auction and yield movements",
+    "Rupee exchange rate trends"
    ],
-   "about": "Bank of India is a commercial bank offering retail and corporate banking services in India.",
-   "basis": "779e4899e629",
-   "items": 4,
-   "updated": "2026-11-23T11:31+05:30",
+   "about": "Bank of India is a commercial bank that offers a range of banking and financial services across India.",
+   "basis": "01eac4cae42e",
+   "items": 3,
+   "updated": "2026-11-23T15:17+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "TCS": {
