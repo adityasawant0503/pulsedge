@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-21T03:04+05:30",
+ "updated": "2026-11-23T07:23+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,120 +57,24 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge noted that Shalimar Paints announced plans to become an integrated building-materials company, though its success depends on execution and could be capital-intensive. Meanwhile, global AI news, including US policy threats on data centers and Anthropic's market debut turbulence, caught attention because such developments often move Indian IT and metals shares. In the domestic market, banking and financial sectors showed strength, while media and consumer durables lagged. Foreign funds kept their index-futures positions steady at 34% long.",
+  "summary": "Indian bank and financial stocks led the market higher, while media and consumer goods stocks fell. Global news about potential conflict in the Middle East and warnings from a major bank about falling stock prices added to investor caution. Indian IT companies reported a better quarter but are still struggling to find new customers. Foreign investors kept their buying position steady, showing no major change in their outlook.",
   "themes": [
-   "Shalimar Paints shifts toward building materials",
-   "Global AI market turbulence and US data center policies",
-   "Sector divergence with strong banks and weak media"
+   "Banking and financial sectors outperformed the rest of the market.",
+   "Global tensions and market uncertainty weighed on investor confidence.",
+   "IT companies face challenges in securing new business despite recent improvements."
   ],
   "watch": [
-   "Further details on the Shalimar Paints expansion",
-   "How global AI and chip news impacts Indian IT shares",
-   "Foreign investor positioning in index futures"
+   "How global oil prices react to news about potential strikes on Iran.",
+   "Whether Indian IT companies can secure new client contracts in the coming months.",
+   "If global stock markets stabilize or continue to decline."
   ],
-  "date": "2026-11-21",
-  "basis": "632da6609f5f",
-  "updated": "2026-11-21T03:04+05:30",
-  "model": "gemini-flash-lite-latest",
-  "items": 5
+  "date": "2026-11-23",
+  "basis": "1f401585beba",
+  "updated": "2026-11-23T07:23+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 3
  },
  "stocks": {
-  "PAYTM": {
-   "summary": "Paytm announced several new investments, including a stake in Singapore’s Cardup and additional funding for its affiliates. At the same time the stock fell after concerns that a key transaction fee (MDR) rollout was delayed. Large banks have flagged the stock positively, but market sentiment remains mixed.",
-   "why": "Shareholders could see growth from the new investments, but the MDR delay may pressure future earnings.",
-   "upside": "If the Singapore partnership and other investments start delivering revenue, the company could see stronger earnings.",
-   "downside": "The delay in the MDR fee rollout could reduce transaction income and weigh on the share price.",
-   "watch": [
-    "MDR fee rollout and regulatory clarity",
-    "Progress of Paytm Singapore investments",
-    "Overall market sentiment and early‑day price moves"
-   ],
-   "about": "One97 Communications runs Paytm, a digital payments and financial services platform in India.",
-   "basis": "200defed64c0",
-   "items": 11,
-   "updated": "2026-11-20T12:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "PINELABS": {
-   "summary": "Pine Labs shares fell by up to 9% on November 19, 2026, due to concerns that a new fee for digital payments (MDR) will be delayed. This delay means the company may earn less money from transactions than investors expected.",
-   "why": "If the fee is postponed, the company's future income could be lower, which might make its shares less attractive to investors.",
-   "upside": "If regulators provide clear timelines or reverse the delay, the stock price could recover as confidence returns.",
-   "downside": "Further delays in the fee rollout could worsen the company's earnings outlook and keep pressure on the share price.",
-   "watch": [
-    "Official government announcements on the UPI MDR fee timeline",
-    "The company's next earnings report to see how the delay affects revenue",
-    "General market trends, as broader sell-offs can also impact the stock"
-   ],
-   "about": "Pine Labs is a financial services company involved in digital payments.",
-   "basis": "770b2b8a6402",
-   "items": 5,
-   "updated": "2026-11-20T03:25+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "ALKEM": {
-   "summary": "The US FDA issued a serious warning letter to Alkem's Daman manufacturing facility after an inspection. This factory produces 45% of the company's revenue from the US market.",
-   "why": "This matters because the warning threatens the company's ability to sell products in the US, which is a major source of its income.",
-   "upside": "",
-   "downside": "The facility could face a suspension of US exports, which would significantly reduce the company's sales.",
-   "watch": [
-    "Any official decision from the FDA regarding the Daman facility.",
-    "Updates on whether US exports from this factory will continue.",
-    "How the company plans to address the issues raised in the warning letter."
-   ],
-   "about": "Alkem Laboratories is a healthcare company listed in India's Nifty 500 index.",
-   "basis": "efec5c5555c2",
-   "items": 2,
-   "updated": "2026-11-20T03:25+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "JIOFIN": {
-   "summary": "Jio Financial Services Ltd. has announced an acquisition and entered a 50:50 joint venture with BlackRock for asset management. Both moves aim to strengthen its growth and earnings potential. The company is also one of India's 50 largest listed firms in the Nifty 50 index.",
-   "why": "These developments could increase the company's revenue streams and market presence, directly affecting shareholder value.",
-   "upside": "The acquisition and the JV with BlackRock could boost growth and earnings.",
-   "downside": "The acquisition may face regulatory delays, and the JV's performance could lag expectations.",
-   "watch": [
-    "Regulatory approval status of the acquisition",
-    "Performance of the Jio BlackRock Asset Management JV",
-    "Integration progress between Jio and BlackRock"
-   ],
-   "about": "Jio Financial Services Ltd. operates in the financial services sector.",
-   "basis": "e95c0c2e4329",
-   "items": 3,
-   "updated": "2026-11-18T19:23+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
-  "TATATECH": {
-   "summary": "Tata Technologies shares rose 10% after the company announced a target to reach $1.1 to $1.3 billion in revenue by 2030. Management highlighted growth plans in aerospace and industrial machinery during an investor day.",
-   "why": "This matters because a higher revenue goal suggests the company expects to earn more money in the future, which can influence the stock's value.",
-   "upside": "If the company successfully grows its sales in new areas like aerospace, it could lead to stronger profits.",
-   "downside": "The revenue targets are for 2030, so there is a risk that the company may not meet these goals over the next four years.",
-   "watch": [
-    "Progress toward the 2030 revenue target",
-    "Performance in the aerospace and industrial machinery sectors",
-    "Overall trends in the IT sector index"
-   ],
-   "about": "Tata Technologies is an Information Technology company listed in India's Nifty 500 index.",
-   "basis": "a51f192c96ed",
-   "items": 2,
-   "updated": "2026-11-19T15:02+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "RELIANCE": {
-   "summary": "Reliance shares have jumped 13% over the past month and analysts see further upside, while the oil and gas sector index rose modestly.",
-   "why": "Shareholders should watch because analyst sentiment could influence the stock’s momentum and earnings expectations matter.",
-   "upside": "If earnings grow as expected, the stock could continue to rise.",
-   "downside": "If earnings growth falls short, the stock could face pressure.",
-   "watch": [
-    "JPMorgan’s analyst outlook",
-    "Upcoming earnings reports",
-    "Oil & Gas sector index performance"
-   ],
-   "about": "Reliance Industries Ltd. is a large Indian conglomerate with major operations in oil, gas and petrochemicals.",
-   "basis": "b59bbff23020",
-   "items": 1,
-   "updated": "2026-11-20T12:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "KIRLOSBROS": {
    "summary": "Kirloskar Brothers Ltd. (KIRLOSBROS) has secured a landmark 165‑crore rupee contract to supply pumps for Africa’s largest refinery, Dangote Petroleum Refinery & Petrochemicals. The company’s joint venture, Kirloskar Ebara Pumps Limited, is also reportedly close to signing a large framework order with a U.S. data‑centre operator. These developments signal potential growth in international sales.",
    "why": "The new contracts could boost the company’s future revenue and earnings, which matters to shareholders looking for long‑term value.",
@@ -187,182 +91,6 @@
    "updated": "2026-11-20T15:16+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "IIFL": {
-   "summary": "IIFL Finance is part of the Financial Services sector, which has seen strong recent gains. A small investment firm recently bought a tiny stake in the company, and analysts have mentioned it as a potential short-term opportunity.",
-   "why": "Shareholders may see their holdings gain value if the broader financial sector continues its upward trend and if the company benefits from positive market attention.",
-   "upside": "The financial sector's recent strength and analyst interest could support the stock price in the near term.",
-   "downside": "General market volatility could weigh on the stock price, and the small recent share purchase is unlikely to have a significant impact.",
-   "watch": [
-    "Further details on the amendment to IIFL Capital Services' filing.",
-    "Continued performance of the Financials sector index.",
-    "Any new institutional investments or analyst updates."
-   ],
-   "about": "IIFL Finance is a financial services company listed on the NSE.",
-   "basis": "f41a491a17ea",
-   "items": 4,
-   "updated": "2026-11-20T19:22+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "MUTHOOTFIN": {
-   "summary": "Muthoot Finance shares fell 4‑5% after gold prices dropped to a one‑year low. The decline reflects concerns that lower gold values could raise loan risk and reduce profitability. The company is part of the Nifty 500 and operates in the financial services sector.",
-   "why": "Shareholders see a risk that falling gold prices could increase non‑performing assets and reduce loan demand, impacting earnings.",
-   "upside": "",
-   "downside": "Falling gold prices could raise non‑performing assets and lower loan demand, hurting profitability.",
-   "watch": [
-    "Gold price movements and any rebound",
-    "Changes in loan demand during festive seasons",
-    "Company’s non‑performing asset levels"
-   ],
-   "about": "Muthoot Finance is a gold‑loan company that lends against gold collateral.",
-   "basis": "d7fccec0dce0",
-   "items": 3,
-   "updated": "2026-11-20T13:46+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
-  "POLICYBZR": {
-   "summary": "PB Fintech announced it is selling a business unit and reported changes in its board of directors. Additionally, co-founder Alok Bansal stepped down from his daily role, which caused the stock price to drop.",
-   "why": "These changes may alter the company's future revenue and strategy, which directly affects the value of the shares you own.",
-   "upside": "Selling a business unit could simplify the company's operations or free up resources for other areas.",
-   "downside": "The sale might be at a low price, and the departure of a co-founder could create uncertainty about the company's direction.",
-   "watch": [
-    "Details of the subsidiary sale, including the price and terms.",
-    "Who the new board members are and their backgrounds.",
-    "How the company explains the co-founder's departure in future updates."
-   ],
-   "about": "",
-   "basis": "be21767fac68",
-   "items": 3,
-   "updated": "2026-11-20T03:25+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "ADANIENSOL": {
-   "summary": "Adani Energy Solutions announced it won a transmission project in Bihar that will add 881 km of lines and 3,160 MVA capacity, with an estimated annual tariff revenue of about ₹500 crore. The sector index has been slipping, down 0.5% in the last session and 1.5% over five sessions.",
-   "why": "The new contract could increase future earnings for shareholders, but any delays or cost overruns could hurt profitability.",
-   "upside": "On‑time completion could deliver the projected ₹500 crore of annual tariff revenue.",
-   "downside": "Project execution delays or cost overruns could reduce expected earnings.",
-   "watch": [
-    "Progress on the Bihar transmission project timeline",
-    "Cost control and any overruns on the project",
-    "Movement of the Energy sector index"
-   ],
-   "about": "Adani Energy Solutions builds and operates power transmission infrastructure.",
-   "basis": "6332efaf7dc1",
-   "items": 3,
-   "updated": "2026-11-19T14:47+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "LTFOODS": {
-   "summary": "LT Foods announced it will buy a US-based food company called MK Foods Holdings for about ₹54.2 crore. This news caused the company's share price to rise sharply, breaking a recent losing streak.",
-   "why": "This matters to shareholders because buying another business can help the company grow faster and reach new customers. The stock price reacted strongly to this announcement, showing that investors are paying close attention to this move.",
-   "upside": "The acquisition adds new brands and could help increase the company's earnings by reaching more customers.",
-   "downside": "Combining two companies can be difficult, and there is a risk that the integration process will face challenges.",
-   "watch": [
-    "How well the two companies work together after the deal is complete",
-    "Whether the new US brands bring in the expected sales",
-    "If the stock price stays high or settles down after the recent jump"
-   ],
-   "about": "LT Foods is a company in the Fast Moving Consumer Goods sector, which sells everyday items like food products.",
-   "basis": "79ea0efb4cf8",
-   "items": 3,
-   "updated": "2026-11-19T12:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "BLS": {
-   "summary": "No new events reported for BLS International Services Ltd. in the provided data.",
-   "why": "There are no recent developments to affect shareholders.",
-   "upside": "",
-   "downside": "",
-   "watch": [
-    "Look for upcoming quarterly results",
-    "Monitor any regulatory filings",
-    "Watch for changes in sector performance"
-   ],
-   "about": "BLS International Services Ltd. operates in the consumer services sector.",
-   "basis": "d7b31c263760",
-   "items": 3,
-   "updated": "2026-11-19T15:02+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
-  "MANAPPURAM": {
-   "summary": "Manappuram Finance shares fell recently as gold prices dropped to a one-year low. Because the company lends money against gold, falling gold prices put pressure on its business.",
-   "why": "This matters because lower gold values make the loans the company gives out riskier and less profitable.",
-   "upside": "Gold prices could rebound quickly.",
-   "downside": "A further drop in gold prices could increase bad loans.",
-   "watch": [
-    "The movement of gold prices",
-    "Share price reactions of gold loan companies",
-    "Updates on loan risks"
-   ],
-   "about": "Manappuram Finance Ltd. is a financial services company that lends money against gold.",
-   "basis": "b3ff4fd13421",
-   "items": 2,
-   "updated": "2026-11-20T15:02+05:30",
-   "model": "gemini-flash-lite-latest"
-  },
-  "APLAPOLLO": {
-   "summary": "The promoter Gupta family is exploring a sale of about 28% of APL Apollo Tubes, valued at roughly ₹17,000 crore, with the total deal possibly exceeding ₹32,000 crore including a mandatory open offer.",
-   "why": "This matters because a large stake sale could affect the share price and ownership structure for existing shareholders.",
-   "upside": "",
-   "downside": "The sale could dilute existing shareholders and put downward pressure on the share price.",
-   "watch": [
-    "Whether the promoter stake sale is finalized",
-    "Details of the mandatory open offer",
-    "Market reaction to the potential dilution"
-   ],
-   "about": "",
-   "basis": "9c99b49de97d",
-   "items": 1,
-   "updated": "2026-11-21T00:18+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "IREDA": {
-   "summary": "IREDA shares rose 11% to a four‑month high, ending a six‑month decline. The rally reflects renewed investor confidence in the renewable‑energy business.",
-   "why": "The rebound signals that investors see potential in IREDA's renewable‑energy projects.",
-   "upside": "A positive policy shift could boost subsidies for renewable projects.",
-   "downside": "Policy changes could reduce subsidies, hurting the business.",
-   "watch": [
-    "Policy announcements on renewable subsidies",
-    "IREDA's quarterly earnings release",
-    "Sector index performance"
-   ],
-   "about": "",
-   "basis": "f3d44f5bb4aa",
-   "items": 1,
-   "updated": "2026-11-19T15:02+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
-  "GMRAIRPORT": {
-   "summary": "PulsEdge flagged GMR Airports as one of the top two stocks to watch in the near term after analysts suggested it could rise soon. The company may benefit from the recent market dip and positive analyst coverage. However, overall market volatility remains a risk.",
-   "why": "Shareholders could see price movement if the positive analyst sentiment and market dip translate into buying interest, but volatility could also affect the stock.",
-   "upside": "If the market dip continues and analyst coverage stays positive, the stock could gain.",
-   "downside": "Broader market volatility could push the price down.",
-   "watch": [
-    "Analyst sentiment and coverage",
-    "Overall market volatility",
-    "Continuation of the recent market dip"
-   ],
-   "about": "",
-   "basis": "b49e164d950b",
-   "items": 1,
-   "updated": "2026-11-19T08:11+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "DALBHARAT": {
-   "summary": "Dalmia Bharat's board will meet on November 23 to consider a proposal to buy back some of its own shares. This plan is currently under review and has not yet been approved.",
-   "why": "A share buyback can return cash to shareholders and often supports the stock price, which may benefit current owners if approved.",
-   "upside": "If the board approves the buyback, it could signal that the company believes its shares are undervalued, potentially boosting investor confidence.",
-   "downside": "The buyback is only on the agenda and may be delayed, cancelled, or approved at a size that disappoints market expectations.",
-   "watch": [
-    "The outcome of the November 23 board meeting regarding the buyback proposal.",
-    "The specific size and terms of the buyback if it is approved.",
-    "General market attention on the stock, which can lead to higher price volatility."
-   ],
-   "about": "Dalmia Bharat is a company in the construction materials sector.",
-   "basis": "0873e2a128a0",
-   "items": 4,
-   "updated": "2026-11-19T11:31+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "JWL": {
    "summary": "Jupiter Wagons Ltd secured a repeat order worth over INR 128 crore from JSW (South) Rail Logistics, adding to its order book.",
    "why": "The order adds revenue potential, but its size relative to the company's total sales is uncertain.",
@@ -377,118 +105,6 @@
    "basis": "0304c538ae38",
    "items": 2,
    "updated": "2026-11-20T09:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "SOLARINDS": {
-   "summary": "Solar Industries India Ltd (SOLARINDS) is a chemicals company in the Nifty 500. Recent sector news shows new solar capacity being built and several solar firms receiving orders, while broader market sentiment may be weaker at the open.",
-   "why": "Shareholders should note that rising solar demand could boost the company’s sales, but execution delays and market sentiment could affect its performance.",
-   "upside": "Higher demand for solar‑related chemicals could lift revenue if new capacity and orders materialise.",
-   "downside": "Project delays or a weak market start could pressure the stock.",
-   "watch": [
-    "Progress on Vikram Solar’s 9 GW facility commissioning by March 2027",
-    "Early market movements affecting Nifty 500 stocks",
-    "Updates on solar MoUs or order receipts indicating sector demand"
-   ],
-   "about": "Solar Industries India Ltd operates in the chemicals sector.",
-   "basis": "f05f6ae9886f",
-   "items": 5,
-   "updated": "2026-11-21T00:18+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "NBCC": {
-   "summary": "NBCC won a new construction contract worth about 85 crore rupees and announced similar work orders of roughly the same value. The orders add to the company’s revenue pipeline.",
-   "why": "Shareholders care because additional revenue can lift earnings and support the share price.",
-   "upside": "If the project is completed on schedule and profitably, earnings could improve.",
-   "downside": "Execution delays or the modest size of the order relative to the company could limit the impact.",
-   "watch": [
-    "Progress on the 85 crore contract execution",
-    "Any further order wins or larger projects",
-    "Changes in the overall order book size"
-   ],
-   "about": "NBCC (India) Ltd is a construction company that undertakes infrastructure projects.",
-   "basis": "9e193188b829",
-   "items": 2,
-   "updated": "2026-11-19T12:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "ACMESOLAR": {
-   "summary": "ACME Solar Holdings announced it has received new orders/contracts, which could boost future revenue. The company faces potential execution delays that could affect delivery timelines.",
-   "why": "Shareholders may benefit from increased revenue but must watch for delays that could impact earnings.",
-   "upside": "New orders could increase future revenue.",
-   "downside": "Execution delays could hurt revenue.",
-   "watch": [
-    "Growth of order backlog",
-    "Timeline for project execution",
-    "Sector index movement"
-   ],
-   "about": "ACME Solar Holdings is a power sector company.",
-   "basis": "fa516855019b",
-   "items": 1,
-   "updated": "2026-11-20T14:01+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
-  "JUBLINGREA": {
-   "summary": "Jubilant Ingrevia Ltd. announced the resignation of a senior director and its chief financial officer, effective at the end of November 2026.",
-   "why": "Shareholders may be concerned about possible management instability and uncertainty over future financial guidance.",
-   "upside": "",
-   "downside": "The departures could create short‑term uncertainty and affect the company’s financial management and guidance.",
-   "watch": [
-    "Appointment of a new CFO",
-    "Replacement for the resigned director",
-    "Impact on financial guidance and investor sentiment"
-   ],
-   "about": "Jubilant Ingrevia Ltd. is a chemicals company.",
-   "basis": "6434363fdf91",
-   "items": 3,
-   "updated": "2026-11-19T13:31+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "AZAD": {
-   "summary": "PulsEdge flagged several large trades in Azad Engineering shares on November 18, 2026. One investor sold about ₹800 crore worth of shares, while four other large investors bought a combined total of roughly ₹370 crore.",
-   "why": "These trades show that large investors are actively changing their positions in the company, which can influence how other market participants view the stock.",
-   "upside": "The significant buying by multiple large funds, including a government pension fund, may indicate confidence in the company's future.",
-   "downside": "The large sale by a single investor could suggest that some big holders are reducing their exposure or need cash.",
-   "watch": [
-    "Future bulk or block deals involving these same investors",
-    "Any official company announcements explaining the large share sale",
-    "General market trends in the Capital Goods sector"
-   ],
-   "about": "",
-   "basis": "68deb283c665",
-   "items": 5,
-   "updated": "2026-11-18T19:23+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "CYIENT": {
-   "summary": "Cyient announced a strategic investment from GlobalFoundries into its semiconductor business and also reported the resignation of a senior director. The IT sector has been down recently.",
-   "why": "The investment could bring new cash and a well‑known partner, while the resignation may raise concerns about leadership continuity.",
-   "upside": "The partnership with GlobalFoundries could help Cyient grow its semiconductor offerings and earnings.",
-   "downside": "The market may have already priced in the investment and the leadership change could disrupt strategy.",
-   "watch": [
-    "Progress of the GlobalFoundries investment",
-    "Any further senior management changes",
-    "Performance of the IT sector index"
-   ],
-   "about": "Cyient provides engineering, manufacturing and digital technology services as an IT services firm.",
-   "basis": "de0111a61d64",
-   "items": 2,
-   "updated": "2026-11-19T11:01+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "PWL": {
-   "summary": "Physicswallah Ltd. announced an ambitious FY30 revenue target of ₹10,000 crore, prompting the share price to rise 4‑6% in recent trading. The market is watching whether the company can execute its growth blueprint.",
-   "why": "If the revenue goal is met, earnings could improve, but the execution risk makes the outcome uncertain for shareholders.",
-   "upside": "Achieving the FY30 revenue target could boost earnings and support higher valuations.",
-   "downside": "The company may fall short of its high growth targets, limiting earnings growth.",
-   "watch": [
-    "Progress on the FY30 revenue target",
-    "Execution of online and offline growth plans",
-    "Impact of valuation multiples on share price"
-   ],
-   "about": "Physicswallah Ltd. provides online education services.",
-   "basis": "52077b2c723d",
-   "items": 3,
-   "updated": "2026-11-20T13:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "HFCL": {
@@ -507,54 +123,6 @@
    "updated": "2026-11-20T07:57+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "URBANCO": {
-   "summary": "Urban Company Ltd. recently raised ₹2,500 crore through a Qualified Institutions Placement, bringing in cash from big investors. However, its stock price dipped by 4% following the announcement due to worries about new shares.",
-   "why": "This matters because creating new shares can make existing shares worth less, and it can cause the share price to fall even when the company raises money to grow.",
-   "upside": "The large amount of money raised gives the company cash to grow its business further.",
-   "downside": "There could be further selling pressure if the market views the company's valuation as too high.",
-   "watch": [
-    "Whether the new shares continue to cause selling pressure on the stock price.",
-    "How the company decides to use the ₹2,500 crore it raised.",
-    "Any updates on future operations following recent board decisions."
-   ],
-   "about": "",
-   "basis": "adc1b1b80471",
-   "items": 4,
-   "updated": "2026-11-20T13:46+05:30",
-   "model": "gemini-flash-lite-latest"
-  },
-  "BDL": {
-   "summary": "PulsEdge flagged that the Indian government is planning a 20% increase in defence capital spending next year and that India and Japan may finalise an agreement for Japanese forces to use Indian missile test ranges. These developments have pushed BDL and other defence stocks up about 3% on expectations of more orders.",
-   "why": "Higher defence spending and deeper Indo‑Japan cooperation could translate into more contracts and higher profits for BDL shareholders.",
-   "upside": "If the capex boost and the test‑range agreement lead to new orders, BDL could see a revenue lift.",
-   "downside": "Implementation of the spending plan may be delayed and the stock may already reflect the optimism.",
-   "watch": [
-    "Actual government defence capex announcements and order allocations",
-    "Progress on the India‑Japan missile test‑range agreement",
-    "Bharat Dynamics' contract wins and order book updates"
-   ],
-   "about": "Bharat Dynamics Ltd manufactures defence equipment, including missile systems, for the Indian armed forces.",
-   "basis": "b27b5978e061",
-   "items": 3,
-   "updated": "2026-11-19T19:24+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "HAL": {
-   "summary": "PulsEdge flagged that the Indian government is planning a big increase in defence spending, including a 20% boost in capital expenditure. This could lead to more orders for HAL and other defence makers, and the market has already reacted with a modest share rise.",
-   "why": "Shareholders care because higher defence orders can lift HAL's revenue and profit margins.",
-   "upside": "New government contracts and higher capex could boost HAL's earnings.",
-   "downside": "Implementation of the spending plan may be slow or the stock may already reflect the news.",
-   "watch": [
-    "Government approval and timing of the 20% defence capex increase",
-    "Any official order announcements for HAL, such as Rafale jets or submarines",
-    "Progress on the HAL helicopter factory project and related sub‑contracts"
-   ],
-   "about": "Hindustan Aeronautics Ltd. designs and builds aircraft, helicopters and other defence equipment for India’s armed forces.",
-   "basis": "6211978d2236",
-   "items": 3,
-   "updated": "2026-11-19T19:24+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "GALLANTT": {
    "summary": "PulsEdge flagged three large block deals for Gallantt Ispat on November 20, 2026. One investor sold shares worth ₹84 crore, while two others bought shares worth ₹56 crore and ₹29 crore respectively.",
    "why": "These trades show that large investors are actively changing their positions in the company. While one big seller exited, two other big buyers stepped in, suggesting mixed views on the stock's value.",
@@ -571,21 +139,53 @@
    "updated": "2026-11-20T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BEL": {
-   "summary": "The Indian government plans to significantly increase spending on defence equipment in the coming year. This move is expected to lead to more orders for companies like Bharat Electronics Ltd. that manufacture defence gear.",
-   "why": "If the government follows through on this spending plan, the company could see higher sales and profits, which may benefit its shareholders.",
-   "upside": "A larger defence budget could result in a significant increase in new orders for the company.",
-   "downside": "The stock price may have already risen to reflect this good news, and the actual implementation of the new spending plan might take time.",
+  "MUTHOOTFIN": {
+   "summary": "Muthoot Finance shares fell recently because gold prices dropped to a one-year low. This decline affected the company alongside other major gold loan providers.",
+   "why": "Since the company lends money against gold, lower gold values make its loans riskier and can reduce profits. Shareholders may see their investment value drop if this trend continues.",
+   "upside": "Lower gold prices might encourage more people to buy jewellery during festive and wedding seasons.",
+   "downside": "If gold prices fall further, the company could face more bad loans, known as non-performing assets.",
    "watch": [
-    "Official announcements regarding the specific amount of the defence budget increase.",
-    "New contract awards or order confirmations for Bharat Electronics Ltd.",
-    "Updates on the timeline for implementing the proposed capital expenditure boost."
+    "Future movements in gold prices",
+    "Changes in the company's loan quality",
+    "Consumer demand for jewellery"
    ],
-   "about": "Bharat Electronics Ltd. is a major Indian company in the capital goods sector that manufactures defence equipment.",
-   "basis": "9d23116b5f5d",
+   "about": "Muthoot Finance is a financial services company that lends money against gold.",
+   "basis": "a4e28ca51732",
    "items": 2,
-   "updated": "2026-11-19T19:24+05:30",
+   "updated": "2026-11-23T07:23+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "URBANCO": {
+   "summary": "Urban Company raised 2,500 crore rupees from large institutional investors. This move caused the stock price to drop by 4% as investors reacted to the increase in total shares.",
+   "why": "The new money gives the company cash to grow, but the extra shares can make each existing share worth less in the short term.",
+   "upside": "The raised funds provide the company with more cash to expand its business.",
+   "downside": "The market may continue to sell the stock if it views the company's value as too high, leading to further price drops.",
+   "watch": [
+    "How the stock price reacts in the coming days after the initial dip",
+    "Whether the company announces how it plans to use the new funds",
+    "General market sentiment regarding the company's valuation"
+   ],
+   "about": "",
+   "basis": "5e1001036ff2",
+   "items": 2,
+   "updated": "2026-11-23T07:23+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "MANAPPURAM": {
+   "summary": "Manappuram Finance shares fell up to 5% after gold prices dropped to a one‑year low, making its gold‑loan business riskier. The broader financial sector index rose about 2% in the last session.",
+   "why": "Shareholders see a price dip and face the possibility of higher loan defaults if gold values stay low.",
+   "upside": "A rebound in gold prices could improve the profitability of its gold‑loan portfolio.",
+   "downside": "Further declines in gold prices could raise non‑performing assets and pressure earnings.",
+   "watch": [
+    "Gold price trends",
+    "Manappuram’s non‑performing asset levels",
+    "Financial sector index movement"
+   ],
+   "about": "Manappuram Finance provides gold‑backed loans and other financial services.",
+   "basis": "c30079531b90",
+   "items": 1,
+   "updated": "2026-11-23T07:23+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "NATCOPHARM": {
    "summary": "NATCO Pharma has received an Establishment Inspection Report from the US Food and Drug Administration. This follows a recent inspection of the company's facilities.",
@@ -604,84 +204,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is navigating a mixed market where oil prices have fallen for three straight weeks due to high supply, but recent geopolitical attacks have caused short-term price spikes. The broader oil sector has seen a slight gain over the last five days.",
-   "why": "Since Oil India produces oil, its profits depend heavily on the price of crude; falling prices reduce revenue, while sudden spikes from conflicts can boost earnings temporarily.",
-   "upside": "Geopolitical tensions, such as attacks on shipping lanes or refineries, could restrict supply and push oil prices higher, benefiting the company's revenue.",
-   "downside": "A continued surplus in global oil supply is expected to keep prices lower in the long term, which would reduce the company's profits.",
+   "summary": "Oil India Ltd. is facing mixed signals as global oil prices have fallen for three straight weeks due to high supply, yet recent geopolitical attacks have caused short-term price spikes. Analysts are waiting for an upcoming OPEC+ meeting that could change how much oil is produced.",
+   "why": "Since Oil India earns money by selling oil, lower global prices can reduce its profits, while sudden supply disruptions can push prices up and boost earnings. Shareholders need to watch how these opposing forces balance out.",
+   "upside": "Recent attacks on shipping lanes and refineries have raised supply concerns, which can push oil prices higher and increase profits for producers.",
+   "downside": "Oil prices have dropped for three weeks because there is plenty of supply, and analysts expect prices to stay lower in the long term, which could cut into company earnings.",
    "watch": [
-    "Whether the recent mine incident in the Hormuz Strait leads to lasting supply disruptions.",
-    "If the three-week decline in oil prices continues despite geopolitical news.",
-    "How the Nifty 500 index performs, as it may influence overall market sentiment for large companies like OIL."
+    "The upcoming OPEC+ meeting decision on oil output",
+    "Whether geopolitical conflicts in the Middle East continue or settle down",
+    "If the broader stock market rally continues to support oil stocks"
    ],
-   "about": "Oil India Ltd. is an Indian company in the Oil Gas & Consumable Fuels sector that is part of the Nifty 500 index.",
-   "basis": "36d31cd9c505",
-   "items": 20,
-   "updated": "2026-11-21T00:18+05:30",
+   "about": "Oil India Ltd. is an Indian company in the oil and gas sector that produces and sells crude oil.",
+   "basis": "a9d9a8baca39",
+   "items": 8,
+   "updated": "2026-11-23T07:23+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "MARUTI": {
-   "summary": "Maruti Suzuki shares are part of a recent auto‑sector rally, with the Nifty Auto index up 4.4% in the last session and Maruti among the leading stocks. The company also appeared on a broker’s list of top stocks to buy, though this is just an opinion.",
-   "why": "As a Nifty 50 constituent, Maruti’s performance can influence the overall market index and affect investors holding large‑cap stocks.",
-   "upside": "The rally could continue if lower metal and oil prices keep input costs down.",
-   "downside": "The rally may fade if input costs rise again or if the sector reverses.",
-   "watch": [
-    "Changes in metal and oil prices that affect input costs",
-    "Potential reversal of the auto‑sector rally",
-    "Movement of the broader market indices such as Sensex and Nifty"
-   ],
-   "about": "Maruti Suzuki India Ltd. is a major automobile manufacturer in India.",
-   "basis": "ada234d5e3f3",
-   "items": 5,
-   "updated": "2026-11-20T15:02+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
-  "INFY": {
-   "summary": "Infosys shares have fallen sharply, losing about a quarter of investor wealth over the past year, while the broader Indian IT sector recently rallied 2% even as global tech stocks slipped. The sector index is down 1.1% in the last session and 3.9% over five sessions, showing mixed momentum.",
-   "why": "Shareholders feel the impact of both the price drop and the sector’s relative strength, which can affect the stock’s future value.",
-   "upside": "A recent note suggests the stock may have bottomed, offering a chance for a rebound.",
-   "downside": "Further declines are possible if negative news emerges or global tech sentiment worsens.",
-   "watch": [
-    "Indian IT sector performance versus global tech sentiment",
-    "Global IT spending trends",
-    "Any new price movement in Infosys stock"
-   ],
-   "about": "Infosys provides software development, consulting and outsourcing services.",
-   "basis": "8550f6bfb4ea",
-   "items": 3,
-   "updated": "2026-11-20T10:31+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "M&M": {
-   "summary": "PulsEdge flagged that Mahindra & Mahindra (M&M) shares rose sharply today as part of a broader auto‑sector rally, helped by cheaper metal and oil prices. However, the auto index has slipped 1.4% in the last session and 4% over the past five sessions.",
-   "why": "The recent price move shows how market sentiment can quickly lift or pull down M&M’s share value.",
-   "upside": "If input‑costs stay low, the rally could extend and support M&M’s share price.",
-   "downside": "Rising metal or oil costs could reverse the rally and pressure the stock.",
-   "watch": [
-    "Trends in metal and oil prices that affect input costs",
-    "The auto sector index performance over the next sessions",
-    "Whether the current rally sustains or fades quickly"
-   ],
-   "about": "Mahindra & Mahindra Ltd. is a leading Indian automobile and auto‑components manufacturer and a Nifty 50 constituent.",
-   "basis": "20889272e336",
-   "items": 3,
-   "updated": "2026-11-19T15:16+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "BLUESTARCO": {
-   "summary": "PulsEdge flagged that Blue Star Ltd. disclosed a fine levied by the exchange, which could dent profits. At the same time, the stock rallied up to 8% as lower copper prices cut material costs for its air‑conditioner business.",
-   "why": "Shareholders should watch the fine because it may reduce earnings, while cheaper copper could improve margins on each unit sold.",
-   "upside": "If copper prices stay low, the company could enjoy higher profit margins on its air‑conditioners.",
-   "downside": "If the regulator imposes larger penalties, the fine could further erode profitability.",
-   "watch": [
-    "Resolution of the exchange fine and any additional penalties",
-    "Copper price movements and their impact on material costs",
-    "Overall performance of the consumer durables sector"
-   ],
-   "about": "Blue Star Ltd. makes air conditioners and other consumer‑durable appliances.",
-   "basis": "121ad3010d5b",
-   "items": 2,
-   "updated": "2026-11-20T19:22+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "INDUSINDBK": {
    "summary": "PulsEdge flagged: IndusInd Bank shares jumped 8‑8.5% on high trading volume, approaching a 52‑week high. The move is part of a broader rally in the Financials sector, which rose 1.1% in the last session.",
@@ -698,102 +234,6 @@
    "items": 2,
    "updated": "2026-11-20T15:47+05:30",
    "model": "openai/gpt-oss-20b"
-  },
-  "JSWSTEEL": {
-   "summary": "JSW Steel shares saw a small rise in recent trading, but the broader metals sector has fallen sharply over the last week. Experts are currently comparing JSW Steel with other major metal companies to see how they might handle the current market drop.",
-   "why": "The recent drop in the sector means the value of your shares has likely decreased, and the small recent gain may not last if the wider market trend continues downward.",
-   "upside": "The sector index showed a small gain in the most recent session, suggesting a brief pause in the recent decline.",
-   "downside": "A stronger US dollar is putting pressure on metal prices, which could keep the sector under stress.",
-   "watch": [
-    "Whether the small recent share price gain holds or reverses.",
-    "How the US dollar strength affects metal prices.",
-    "How JSW Steel performs compared to peers like Tata Steel and Hindustan Zinc."
-   ],
-   "about": "JSW Steel is a large Indian company in the metals and mining sector.",
-   "basis": "e3cabe334d84",
-   "items": 2,
-   "updated": "2026-11-20T12:30+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "TCS": {
-   "summary": "TCS shares dipped slightly today, while the broader Indian IT index rose 2% against a global AI rout. The sector index, however, fell 1.1% in the last session and 3.9% over five sessions, showing mixed momentum. The recent drop in TCS price is a small setback amid overall sector gains.",
-   "why": "Shareholders should note that TCS’s price movement reflects both company‑specific and sector‑wide dynamics, which can affect portfolio value.",
-   "upside": "If the rally in Indian IT stocks continues, TCS could see a price lift.",
-   "downside": "A reversal in global tech sentiment could push the rally back and further pressure TCS shares.",
-   "watch": [
-    "TCS price trend in the next trading session",
-    "global technology market sentiment",
-    "performance of the IT sector index"
-   ],
-   "about": "TCS is a major Indian IT services company.",
-   "basis": "c46635924ac3",
-   "items": 2,
-   "updated": "2026-11-20T15:02+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
-  "INDIGO": {
-   "summary": "IndiGo is flagged for a possible earnings downgrade as analysts expect lower profits than previously forecast.",
-   "why": "Lower profit expectations can pressure the stock, affecting shareholders' returns.",
-   "upside": "If the company reports earnings that beat the revised expectations, the share price could recover.",
-   "downside": "If earnings fall short of even the lowered forecasts, the stock could face further declines.",
-   "watch": [
-    "Upcoming quarterly earnings announcement",
-    "Any revisions to profit forecasts by analysts",
-    "Broader Nifty 50 movement and investor sentiment"
-   ],
-   "about": "InterGlobe Aviation Ltd operates IndiGo, India's largest low‑cost airline.",
-   "basis": "bb832b385d3c",
-   "items": 2,
-   "updated": "2026-11-20T09:47+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "VOLTAS": {
-   "summary": "Voltas shares recently rose by up to 8% because the cost of copper, a key material for air conditioners, has dropped. The stock was also listed in a recent 'stocks to watch' roundup, though no specific new company news was attached to that mention.",
-   "why": "Lower copper costs can help the company earn more profit on each air conditioner it sells, which is generally good for shareholders.",
-   "upside": "If copper prices stay low, Voltas could see improved profits from its air conditioning business.",
-   "downside": "Copper prices might rise again, which would increase manufacturing costs and reduce potential savings.",
-   "watch": [
-    "Future changes in global copper prices",
-    "Whether the recent stock price rise continues or reverses",
-    "Any new official announcements from Voltas"
-   ],
-   "about": "Voltas is a company in the consumer durables sector that manufactures air conditioners.",
-   "basis": "dd3b758a4c1d",
-   "items": 2,
-   "updated": "2026-11-20T08:30+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "BHARATFORG": {
-   "summary": "PulsEdge flagged Bharat Forge as a defence‑related stock that could benefit from the government's plan to raise defence capital spending by 20%. The company also appeared on a broader watchlist, drawing extra market attention.",
-   "why": "Higher defence orders could lift earnings, while being on a watchlist may increase trading activity and price volatility.",
-   "upside": "If the defence capex boost is implemented quickly, Bharat Forge could see new contracts and stronger profits.",
-   "downside": "Delays in policy rollout or order allocation could postpone any revenue uplift.",
-   "watch": [
-    "Progress of the government's 20% defence capex increase",
-    "Any new defence contract announcements for Bharat Forge",
-    "Movement of the auto sector index and related market sentiment"
-   ],
-   "about": "Bharat Forge manufactures automotive and auto components.",
-   "basis": "fd8f72968a42",
-   "items": 2,
-   "updated": "2026-11-20T19:22+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "HYUNDAI": {
-   "summary": "Hyundai Motor India shares rose as part of a broader jump in auto stocks. This happened because cheaper metal and oil reduced worries about production costs.",
-   "why": "Lower costs can help the company keep its profits healthy, which is good news for shareholders.",
-   "upside": "If metal and oil prices stay low, the company may continue to benefit from reduced expenses.",
-   "downside": "The recent rise in share prices could reverse if input costs start going up again.",
-   "watch": [
-    "Changes in metal and oil prices",
-    "Future updates on the company's financial performance",
-    "Overall trends in the auto sector index"
-   ],
-   "about": "Hyundai Motor India operates in the automobile and auto components sector.",
-   "basis": "5b3216a92cd5",
-   "items": 2,
-   "updated": "2026-11-20T12:30+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "JBMA": {
    "summary": "JBM Auto is seen as a potential beneficiary of the Indian government’s new PM E‑Bus Sewa payment portal, which aims to fund electric bus projects. The auto sector has also posted gains, up 4.4% in the last session.",
@@ -826,6 +266,22 @@
    "items": 1,
    "updated": "2026-11-20T13:16+05:30",
    "model": "gemini-flash-lite-latest"
+  },
+  "JSWSTEEL": {
+   "summary": "JSW Steel's shares have fallen along with the broader metal sector, prompting analysts to compare it with peers like Hindustan Zinc and Tata Steel to gauge relative safety. The industry is under pressure from a stronger US dollar that is weighing on metal prices.",
+   "why": "Shareholders need to watch how sector weakness and currency effects could impact JSW Steel's earnings and stock performance.",
+   "upside": "If JSW Steel shows greater resilience than its peers, it could outperform the struggling metal sector.",
+   "downside": "A continued strong US dollar could keep metal prices low, hurting the company's profitability.",
+   "watch": [
+    "Relative performance versus Hindustan Zinc and Tata Steel",
+    "Impact of US dollar strength on metal prices",
+    "Trend of the Metals sector index"
+   ],
+   "about": "JSW Steel Ltd. is a major Indian steel manufacturer.",
+   "basis": "0455655dce14",
+   "items": 1,
+   "updated": "2026-11-23T07:23+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "HINDZINC": {
    "summary": "Hindustan Zinc's shares have fallen along with the broader metal sector, prompting analysts to compare it with Tata Steel and JSW Steel to gauge relative safety. The metals index rose 0.6% in the last session but is down 3.7% over the past five sessions, reflecting ongoing industry weakness.",
@@ -875,6 +331,54 @@
    "updated": "2026-11-20T11:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "INFY": {
+   "summary": "Infosys saw its stock rise as Indian IT companies bucked a global AI‑related sell‑off. The Nifty IT index jumped about 2% even as tech stocks elsewhere fell.",
+   "why": "Shareholders may see a short‑term boost in value if the positive sentiment continues, but the rally could reverse if global tech sentiment worsens.",
+   "upside": "A sustained rally in Indian IT could lift Infosys’s share price.",
+   "downside": "A further deterioration in global tech sentiment could pull the rally back.",
+   "watch": [
+    "Continuation of the Indian IT rally",
+    "Global AI/tech sentiment trends",
+    "Sector index performance over the next sessions"
+   ],
+   "about": "Infosys provides IT services, consulting and outsourcing solutions.",
+   "basis": "6420981ac70b",
+   "items": 1,
+   "updated": "2026-11-23T07:23+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "TCS": {
+   "summary": "Indian IT stocks, including TCS, rose recently while tech stocks in other countries fell. The Nifty IT index gained 1.3% in the last session, though it dropped 1.9% over the past five days.",
+   "why": "This matters because investors may be favoring Indian software companies over global peers, which can support the value of TCS shares.",
+   "upside": "If investors continue to prefer Indian IT firms, the recent price gains could continue.",
+   "downside": "The recent rise could reverse if global tech market sentiment worsens.",
+   "watch": [
+    "Global tech stock trends",
+    "Nifty IT index performance",
+    "Investor sentiment toward Indian IT companies"
+   ],
+   "about": "Tata Consultancy Services is a major Indian information technology company.",
+   "basis": "6420981ac70b",
+   "items": 1,
+   "updated": "2026-11-23T07:23+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "INDIGO": {
+   "summary": "InterGlobe Aviation Ltd. is one of India's 50 largest listed companies. A research firm recently noted that it is among ten Nifty stocks facing expected earnings downgrades.",
+   "why": "Lower expected profits can lead investors to sell shares, which may cause the share price to drop.",
+   "upside": "Actual earnings might still beat the lowered expectations, potentially causing the share price to bounce back.",
+   "downside": "If the company earns less than expected, investors may sell their shares, leading to a price decline.",
+   "watch": [
+    "The company's upcoming earnings report",
+    "Changes in analyst expectations for its profits",
+    "General market reaction to the Nifty 50 index"
+   ],
+   "about": "",
+   "basis": "8b1637ee71c5",
+   "items": 1,
+   "updated": "2026-11-23T07:23+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "TMCV": {
    "summary": "Tata Motors Ltd. (TMCV) has been flagged by a research firm as one of ten Nifty stocks likely to see earnings downgraded. This suggests analysts expect the company to earn less than previously projected.",
    "why": "If earnings are lower than expected, investors may react negatively, which can affect the share price of TMCV holders.",
@@ -890,86 +394,6 @@
    "items": 1,
    "updated": "2026-11-20T14:01+05:30",
    "model": "openai/gpt-oss-20b"
-  },
-  "BEML": {
-   "summary": "PulsEdge flagged that BEML is among five defence stocks that could benefit from a proposed 20% increase in government defence capital expenditure next year.",
-   "why": "Higher defence spending could translate into more orders and better earnings for shareholders.",
-   "upside": "If the defence capex boost is approved and implemented quickly, BEML could see a rise in order intake and revenue.",
-   "downside": "Delays in policy implementation could postpone the expected increase in orders.",
-   "watch": [
-    "Timeline for government approval of the defence capex increase",
-    "Growth in BEML's defence order book",
-    "Competitive dynamics with BEL, HAL, L&T and Bharat Forge"
-   ],
-   "about": "BEML Ltd. designs and manufactures defence equipment and other capital goods.",
-   "basis": "3e23f7059ad2",
-   "items": 1,
-   "updated": "2026-11-20T07:57+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "NLCINDIA": {
-   "summary": "NLC India's renewable energy division has filed a draft prospectus for an Initial Public Offering (IPO). This plan involves issuing new shares to raise up to ₹33 billion and selling existing shares worth ₹10 billion.",
-   "why": "This matters to shareholders because the new share issue could reduce their ownership percentage, known as dilution. However, the raised funds may support growth in the renewable energy sector.",
-   "upside": "The capital raised could fund new renewable energy projects, potentially driving future growth for the company.",
-   "downside": "There is a risk that the new projects may not be executed successfully, which could affect the stock's value.",
-   "watch": [
-    "The final approval and launch date of the IPO",
-    "The specific terms of the share offering",
-    "Updates on the execution of new renewable energy projects"
-   ],
-   "about": "NLC India is a company in the power sector.",
-   "basis": "81670eb6eab2",
-   "items": 1,
-   "updated": "2026-11-19T16:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "INOXWIND": {
-   "summary": "PulsEdge flagged that Inox Wind Ltd. is targeting roughly ₹7,500 crore in revenue for FY28 along with a long‑term EBITDA margin of about 20%. The company is part of the Nifty 500 index.",
-   "why": "These targets set expectations for future earnings, which can affect the value of existing shares.",
-   "upside": "If Inox Wind meets or exceeds the revenue and margin goals, earnings could improve.",
-   "downside": "Missing the FY28 revenue or margin targets could disappoint investors.",
-   "watch": [
-    "Progress toward the ₹7,500 cr revenue goal",
-    "Achievement of the 20% EBITDA margin",
-    "Any updates on FY28 performance versus targets"
-   ],
-   "about": "",
-   "basis": "6e0fc1c0fa1e",
-   "items": 1,
-   "updated": "2026-11-20T07:57+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "SUPREMEIND": {
-   "summary": "Supreme Industries is a capital goods company listed in the Nifty 500. Recent news highlights that a related entity, Supreme Power Equipment Limited, won a new contract.",
-   "why": "Winning new contracts can signal future sales growth, which may influence how investors view the company's stability.",
-   "upside": "The new contract could boost future sales and investor confidence.",
-   "downside": "The order size might be small compared to the company's total revenue.",
-   "watch": [
-    "The specific size of the new contract",
-    "Future announcements from Supreme Power Equipment Limited",
-    "General performance of the capital goods sector"
-   ],
-   "about": "Supreme Industries operates in the capital goods sector.",
-   "basis": "54f730e34960",
-   "items": 1,
-   "updated": "2026-11-21T00:18+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "PNB": {
-   "summary": "Punjab National Bank shares have risen sharply, joining other public sector banks in a 27% surge this month. The bank recently announced a partnership with SBI Mutual Fund to sell investment products, though it also reported regulatory actions taken against it.",
-   "why": "A large price jump in a short time can make shares feel expensive, which might lead to temporary pauses in buying or selling as investors take profits. The new partnership could help the bank attract more customers, but regulatory issues add uncertainty.",
-   "upside": "The new deal with SBI Mutual Fund may bring more customers and business to the bank.",
-   "downside": "Regulatory actions could lead to penalties or restrictions, and the recent sharp price rise might reverse if investors sell to lock in gains.",
-   "watch": [
-    "How the bank handles the reported regulatory actions.",
-    "Whether the share price stabilizes after the recent 27% rise.",
-    "Progress of the mutual fund distribution partnership with SBI."
-   ],
-   "about": "Punjab National Bank is a financial services company listed in India's top 500 largest companies.",
-   "basis": "a14015fe0d39",
-   "items": 6,
-   "updated": "2026-11-21T00:18+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "HDFCBANK": {
    "summary": "HDFC Bank’s market value has crossed ₹13 trillion, lifting its share price to an eight‑month high. Bank stocks rallied 21% in November, and the bank was named a high‑growth stock by Goldman Sachs.",
@@ -1003,38 +427,6 @@
    "updated": "2026-11-20T15:02+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "INDIACEM": {
-   "summary": "India Cements Ltd. (INDIACEM) won a Supreme Court case against rival Zuari Cement, and the company has announced the outcome to the stock exchange. The legal victory removes a significant risk for the firm. The market may have already priced in the win, so the immediate impact could be limited.",
-   "why": "A legal win reduces uncertainty and can boost investor confidence in the company’s stability. It also signals that the company can defend its interests effectively.",
-   "upside": "Removal of a major legal risk could improve the company’s risk profile.",
-   "downside": "The market may have already priced in the win, limiting any further positive effect.",
-   "watch": [
-    "Market reaction to the Supreme Court win",
-    "Any new litigation or disputes involving the company",
-    "Future company announcements related to legal matters"
-   ],
-   "about": "India Cements Ltd. is a construction materials company.",
-   "basis": "33e8fda669e0",
-   "items": 2,
-   "updated": "2026-11-20T15:16+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
-  "ADANIPOWER": {
-   "summary": "Adani Power is set to benefit from a new transmission contract won by its subsidiary Adani Energy Solutions to evacuate 2,400 MW from the planned Pirpanti plant in Bihar. A recent Morgan Stanley note also highlighted the stock among large‑cap picks, adding investor interest.",
-   "why": "The transmission project could boost long‑term revenue, while analyst attention may influence share demand.",
-   "upside": "Successful completion of the Bihar transmission line could increase power sales and cash flow.",
-   "downside": "Delays or cost overruns on the infrastructure project could hurt earnings.",
-   "watch": [
-    "Progress on the Bihar transmission project and its timeline",
-    "Any updates to Morgan Stanley’s overweight view or other analyst coverage",
-    "Movement of the Energy sector index, which has been down 0.5% today and 1.5% over five sessions"
-   ],
-   "about": "Adani Power Ltd generates electricity in India.",
-   "basis": "09ced8994970",
-   "items": 2,
-   "updated": "2026-11-19T14:32+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "CANFINHOME": {
    "summary": "Can Fin Homes Ltd. has announced a change in one of its key government permits. The company notified the exchange about this change. This could affect its operations.",
    "why": "Permits are needed to do business; losing one could hurt the company.",
@@ -1051,147 +443,20 @@
    "updated": "2026-11-20T15:16+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "MOTHERSON": {
-   "summary": "Samvardhana Motherson International shares recently rose 4 percent alongside a surge in trading volume. The company is also liquidating a unit in Korea.",
-   "why": "This news matters to shareholders because business changes and analyst opinions can influence how a stock performs. However, closing a unit could also point to underlying operational issues.",
-   "upside": "Positive analyst views and efforts to simplify the business could help support the share price.",
-   "downside": "The liquidation of the Korean unit might signal deeper operational problems.",
+  "BLUESTARCO": {
+   "summary": "PulsEdge flagged that Blue Star Ltd. disclosed a fine levied by the exchange, which could dent profits. At the same time, the stock rallied up to 8% as lower copper prices cut material costs for its air‑conditioner business.",
+   "why": "Shareholders should watch the fine because it may reduce earnings, while cheaper copper could improve margins on each unit sold.",
+   "upside": "If copper prices stay low, the company could enjoy higher profit margins on its air‑conditioners.",
+   "downside": "If the regulator imposes larger penalties, the fine could further erode profitability.",
    "watch": [
-    "Updates on the Korea unit liquidation",
-    "Trading volume changes",
-    "Overall auto sector performance"
+    "Resolution of the exchange fine and any additional penalties",
+    "Copper price movements and their impact on material costs",
+    "Overall performance of the consumer durables sector"
    ],
-   "about": "Samvardhana Motherson International operates in the automobile and auto components sector.",
-   "basis": "91d62f73ed68",
-   "items": 1,
-   "updated": "2026-11-19T15:30+05:30",
-   "model": "gemini-flash-lite-latest"
-  },
-  "MRF": {
-   "summary": "MRF is dealing with higher costs for making tires, which is reducing its profits. This has put pressure on the company's margins, making the path to recovery slower.",
-   "why": "Lower profits mean less money is left over for shareholders, which can make the stock less attractive to investors.",
-   "upside": "If commodity prices drop, margins could recover faster than expected.",
-   "downside": "High costs are currently reducing profits, which may make the stock less appealing to investors.",
-   "watch": [
-    "Changes in commodity prices",
-    "The performance of the Auto sector index",
-    "Future updates on margin recovery"
-   ],
-   "about": "MRF is in the Automobile and Auto Components sector.",
-   "basis": "aa91be473cdc",
-   "items": 1,
-   "updated": "2026-11-19T14:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "BHARTIARTL": {
-   "summary": "PulsEdge flagged that Goldman Sachs listed Bharti Airtel among its 22 high‑growth stocks, highlighting it as a potential long‑term winner.",
-   "why": "The mention may draw attention from investors who follow big‑bank lists, possibly influencing the stock’s demand.",
-   "upside": "If investors act on the recommendation, buying pressure could lift the share price.",
-   "downside": "Analyst opinions are not guarantees; the stock could underperform if expectations are not met.",
-   "watch": [
-    "Any follow‑up commentary from Goldman Sachs or other analysts",
-    "Changes in investor sentiment after the high‑growth list release",
-    "Upcoming earnings or financial disclosures from Bharti Airtel"
-   ],
-   "about": "Bharti Airtel Ltd. is a leading Indian telecommunications company providing mobile and broadband services.",
-   "basis": "e5f80fc59bf5",
-   "items": 1,
-   "updated": "2026-11-19T13:11+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "ETERNAL": {
-   "summary": "Goldman Sachs has placed Eternal Ltd. in its list of 22 high‑growth stocks, highlighting it as a good long‑term bet.",
-   "why": "Shareholders may see increased attention from investors following the recommendation, which could affect the stock’s demand.",
-   "upside": "If investors act on the recommendation, the stock could attract more buying interest.",
-   "downside": "The rating is an opinion and does not guarantee performance, so expectations may not be met.",
-   "watch": [
-    "Eternal’s upcoming earnings results",
-    "Further analyst coverage or upgrades",
-    "Broader market reaction to the high‑growth list"
-   ],
-   "about": "",
-   "basis": "e5f80fc59bf5",
-   "items": 1,
-   "updated": "2026-11-20T08:16+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "TRENT": {
-   "summary": "Trent Ltd. is one of India's 50 largest listed companies in the consumer services sector. Recently, a major investment bank included it in a list of large-cap stocks it expects to outperform the broader market.",
-   "why": "This matters because when large institutions highlight a company, it can attract more investor attention and interest in its shares.",
-   "upside": "The company might perform better than the rest of the market, as suggested by the investment bank's positive view.",
-   "downside": "Analyst ratings are not guarantees, so the company's future performance is not assured despite the positive outlook.",
-   "watch": [
-    "Whether other investors follow the investment bank's positive view",
-    "How the company performs compared to the broader market",
-    "Any changes in the investment bank's rating or outlook"
-   ],
-   "about": "Trent Ltd. operates in the consumer services sector and is one of India's 50 largest listed companies.",
-   "basis": "64095123798e",
-   "items": 1,
-   "updated": "2026-11-19T10:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "THERMAX": {
-   "summary": "Thermax Ltd. is a capital goods company listed in the Nifty 500 index. PulsEdge flagged a recent headline about PI Industries hitting a 52-week low, but the provided facts do not confirm this applies to Thermax.",
-   "why": "Since the specific news item refers to a different company, this report does not provide information on why this matters for Thermax shareholders based on the given facts.",
-   "upside": "",
-   "downside": "",
-   "watch": [
-    "Clarification on whether the 52-week low news applies to Thermax or only PI Industries",
-    "General market trends for the Capital Goods sector"
-   ],
-   "about": "Thermax Ltd. operates in the Capital Goods sector.",
-   "basis": "4b3f7b0954af",
-   "items": 1,
-   "updated": "2026-11-19T03:10+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "PRESTIGE": {
-   "summary": "Prestige Estates launched a new residential project in North Bengaluru and acquired a 50% stake in a convention and hotel company. The company also announced plans to create two new wholly owned subsidiaries.",
-   "why": "These moves could help grow the company's business and support its revenue over time, which is important for the long-term value of its shares.",
-   "upside": "New project launches and the hotel investment may generate presales and expand the company's portfolio.",
-   "downside": "Execution delays, slower-than-expected bookings, or integration issues with the new hotel stake could affect performance.",
-   "watch": [
-    "Initial bookings for the new North Bengaluru project",
-    "Details on the purpose and expected returns of the two new subsidiaries",
-    "Progress in integrating the Advent Convention and Hotels stake"
-   ],
-   "about": "Prestige Estates is a realty company listed in India's Nifty 500 index.",
-   "basis": "56130011a6ea",
-   "items": 3,
-   "updated": "2026-11-21T00:18+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "WAAREEENER": {
-   "summary": "Waaree Energies recently won a new contract worth one billion rupees. The company was also named a top performer in global solar quality tests for the fifth year in a row.",
-   "why": "These updates suggest the company is maintaining strong product quality and securing new business, which supports its long-term sales.",
-   "upside": "Global quality recognition may help the company win more customers and boost future sales.",
-   "downside": "The new order is small compared to the company's total value, and cheaper solar imports from other countries could squeeze profits.",
-   "watch": [
-    "Future quarterly sales figures",
-    "New contract announcements",
-    "Global solar industry pricing trends"
-   ],
-   "about": "Waaree Energies is a capital goods company that manufactures solar modules.",
-   "basis": "78f143b1a0d3",
-   "items": 3,
-   "updated": "2026-11-19T12:45+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "PNBHOUSING": {
-   "summary": "PNB Housing Finance announced the resignation of a senior director and its chief operating officer, effective at the end of November. The financial services sector index rose modestly in recent sessions.",
-   "why": "Leadership changes can affect the company's strategy and operational performance, which matters to shareholders.",
-   "upside": "",
-   "downside": "The departures may cause internal disagreements and a gap in leadership if a new COO is not appointed quickly.",
-   "watch": [
-    "Appointment of a new chief operating officer",
-    "Further senior management changes",
-    "Impact of sector momentum on the stock"
-   ],
-   "about": "PNB Housing Finance provides home loan and related financing services in India.",
-   "basis": "eef1a0768f92",
+   "about": "Blue Star Ltd. makes air conditioners and other consumer‑durable appliances.",
+   "basis": "121ad3010d5b",
    "items": 2,
-   "updated": "2026-11-20T08:16+05:30",
+   "updated": "2026-11-20T19:22+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "KALYANKJIL": {
@@ -1226,86 +491,6 @@
    "updated": "2026-11-21T00:18+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "ITC": {
-   "summary": "ITC plans to raise cigarette prices gradually starting in 2027, with pack prices expected to increase by ₹10 to ₹15. The price hikes will apply to all cigarette brands.",
-   "why": "Higher prices might increase profits for the company in the future. However, because the change is far away, the immediate effect on the stock is likely to be limited.",
-   "upside": "Gradual price increases could help boost profits over time.",
-   "downside": "Higher prices might cause a consumer backlash and reduce the volume of cigarettes sold.",
-   "watch": [
-    "Any updates on the 2027 cigarette price hike plans",
-    "Consumer reaction to the proposed price increases",
-    "Movements in the FMCG sector index"
-   ],
-   "about": "ITC Ltd. is one of India's 50 largest listed companies operating in the Fast Moving Consumer Goods sector.",
-   "basis": "6fa91901add5",
-   "items": 1,
-   "updated": "2026-11-19T15:30+05:30",
-   "model": "gemini-flash-lite-latest"
-  },
-  "ABB": {
-   "summary": "ABB India has received a record number of new orders for its electrical products. However, the cost of making these products is rising, which puts pressure on the company's profit margins.",
-   "why": "For a shareholder, this means the company is growing its business but may earn less profit from each sale due to higher expenses.",
-   "upside": "The high volume of new orders could lead to strong business growth if the company manages its costs effectively.",
-   "downside": "If spending by other businesses on equipment remains low, the flow of new orders might slow down.",
-   "watch": [
-    "How the company manages rising production costs",
-    "Whether new order inflows continue at a high level",
-    "General spending trends in the industrial sector"
-   ],
-   "about": "ABB India is a capital goods company that manufactures electrical products.",
-   "basis": "c758503a5144",
-   "items": 1,
-   "updated": "2026-11-19T14:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "VIJAYA": {
-   "summary": "PulsEdge flagged a recent market guide that mentioned Deepak Fertilisers, but this did not include any specific news or recommendations for Vijaya Diagnostic Centre. The healthcare sector, where Vijaya operates, moved slightly up in the last session and down over the past five days.",
-   "why": "There is no new company-specific information in the flagged headlines, so the current relevance to shareholders is limited to general sector movements.",
-   "upside": "",
-   "downside": "",
-   "watch": [
-    "Future headlines specifically mentioning Vijaya Diagnostic Centre",
-    "Trends in the broader Healthcare sector index",
-    "Any new broker reports or analyst notes on the stock"
-   ],
-   "about": "Vijaya Diagnostic Centre Ltd. is a healthcare company listed on the NSE.",
-   "basis": "2792e224f91a",
-   "items": 1,
-   "updated": "2026-11-19T08:11+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "CUMMINSIND": {
-   "summary": "Cummins India is dealing with rising input costs while its price increases are lagging behind, squeezing profit margins. The higher expenses are not being fully offset by higher selling prices.",
-   "why": "Profit pressure can affect earnings per share and dividend potential for shareholders.",
-   "upside": "If the company successfully passes higher costs onto customers, margins could improve.",
-   "downside": "If costs continue to outpace price hikes, earnings may fall.",
-   "watch": [
-    "Trend in raw material and component cost inflation",
-    "Effectiveness of price hike implementation",
-    "Quarterly profit margin performance"
-   ],
-   "about": "Cummins India manufactures and sells engines and related power equipment.",
-   "basis": "d6b82dab147e",
-   "items": 1,
-   "updated": "2026-11-18T15:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "COALINDIA": {
-   "summary": "Coal India is currently in focus as the market watches its broader movement and plans related to its subsidiary, Mahanadi Coalfields, which is working on an Initial Public Offering (IPO, when a company sells shares to the public for the first time). Early interest and grey market sentiment for this public share sale appear muted. Meanwhile, the broader market sentiment could also influence the stock's short-term direction.",
-   "why": "Corporate actions like subsidiary share sales can impact the value, focus, or ownership dilution of the parent company that you hold. Broader market trends can also sway the stock regardless of company fundamentals.",
-   "upside": "Investor interest in the Mahanadi Coalfields share sale could turn out well if demand picks up.",
-   "downside": "A weak share sale or lower-than-expected interest in the subsidiary could make investors nervous about the parent company's value or lead to short-term selling pressure.",
-   "watch": [
-    "Updates on the Mahanadi Coalfields IPO and investor demand.",
-    "Broader market sentiment and early stock moves.",
-    "Potential impacts of subsidiary share sales on the parent company."
-   ],
-   "about": "Coal India Ltd. is one of India's largest listed companies operating in the oil, gas, and consumable fuels sector.",
-   "basis": "200972a684cd",
-   "items": 8,
-   "updated": "2026-11-21T03:04+05:30",
-   "model": "gemini-flash-lite-latest"
-  },
   "BANKINDIA": {
    "summary": "Bank of India shares have risen sharply in November, joining other public sector banks in a strong monthly run-up. This movement coincides with a broader surge in the financial sector and renewed interest from foreign investors in Indian stocks.",
    "why": "A quick rise in share price can lead to temporary selling as investors take profits, which may cause the stock price to pause or dip even if the company is doing well.",
@@ -1338,21 +523,53 @@
    "updated": "2026-11-20T15:16+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "ABDL": {
-   "summary": "Allied Blenders and Distillers has disclosed ongoing legal cases and an update on arbitration proceedings. The company also reported receiving a regulatory order or notice from authorities.",
-   "why": "These legal and regulatory matters could lead to fines or compensation costs, which might reduce the company's profits.",
-   "upside": "The regulatory order may be minor or related to routine tax disputes, meaning the financial impact could be limited.",
-   "downside": "An unfavorable outcome in the legal disputes could result in significant fines or compensation payments.",
+  "PNB": {
+   "summary": "Punjab National Bank shares have risen sharply, joining other public sector banks in a 27% surge this month. The bank recently announced a partnership with SBI Mutual Fund to sell investment products, though it also reported regulatory actions taken against it.",
+   "why": "A large price jump in a short time can make shares feel expensive, which might lead to temporary pauses in buying or selling as investors take profits. The new partnership could help the bank attract more customers, but regulatory issues add uncertainty.",
+   "upside": "The new deal with SBI Mutual Fund may bring more customers and business to the bank.",
+   "downside": "Regulatory actions could lead to penalties or restrictions, and the recent sharp price rise might reverse if investors sell to lock in gains.",
    "watch": [
-    "Updates on the status of the arbitration proceedings",
-    "Details regarding the specific regulatory order received",
-    "Any new disclosures about other pending litigation"
+    "How the bank handles the reported regulatory actions.",
+    "Whether the share price stabilizes after the recent 27% rise.",
+    "Progress of the mutual fund distribution partnership with SBI."
    ],
-   "about": "",
-   "basis": "1c16c76faa5a",
-   "items": 3,
-   "updated": "2026-11-20T08:16+05:30",
+   "about": "Punjab National Bank is a financial services company listed in India's top 500 largest companies.",
+   "basis": "a14015fe0d39",
+   "items": 6,
+   "updated": "2026-11-21T00:18+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "PAYTM": {
+   "summary": "Paytm announced several new investments, including a stake in Singapore’s Cardup and additional funding for its affiliates. At the same time the stock fell after concerns that a key transaction fee (MDR) rollout was delayed. Large banks have flagged the stock positively, but market sentiment remains mixed.",
+   "why": "Shareholders could see growth from the new investments, but the MDR delay may pressure future earnings.",
+   "upside": "If the Singapore partnership and other investments start delivering revenue, the company could see stronger earnings.",
+   "downside": "The delay in the MDR fee rollout could reduce transaction income and weigh on the share price.",
+   "watch": [
+    "MDR fee rollout and regulatory clarity",
+    "Progress of Paytm Singapore investments",
+    "Overall market sentiment and early‑day price moves"
+   ],
+   "about": "One97 Communications runs Paytm, a digital payments and financial services platform in India.",
+   "basis": "200defed64c0",
+   "items": 11,
+   "updated": "2026-11-20T12:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "SOLARINDS": {
+   "summary": "Solar Industries India Ltd (SOLARINDS) is a chemicals company in the Nifty 500. Recent sector news shows new solar capacity being built and several solar firms receiving orders, while broader market sentiment may be weaker at the open.",
+   "why": "Shareholders should note that rising solar demand could boost the company’s sales, but execution delays and market sentiment could affect its performance.",
+   "upside": "Higher demand for solar‑related chemicals could lift revenue if new capacity and orders materialise.",
+   "downside": "Project delays or a weak market start could pressure the stock.",
+   "watch": [
+    "Progress on Vikram Solar’s 9 GW facility commissioning by March 2027",
+    "Early market movements affecting Nifty 500 stocks",
+    "Updates on solar MoUs or order receipts indicating sector demand"
+   ],
+   "about": "Solar Industries India Ltd operates in the chemicals sector.",
+   "basis": "f05f6ae9886f",
+   "items": 5,
+   "updated": "2026-11-21T00:18+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "IKS": {
    "summary": "Inventurus Knowledge Solutions has announced it will merge with Turbo Health Holdings. The company also filed a general update regarding this acquisition process.",
@@ -1386,69 +603,21 @@
    "updated": "2026-11-20T15:02+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "SIGNATURE": {
-   "summary": "Signatureglobal (India) Ltd. has acquired new land and secured development rights for large parcels in Gurugram and Sohna. These moves expand the real estate company's potential area for future housing projects.",
-   "why": "This matters to shareholders because securing more land and development rights gives the company space to build and sell more homes, which can affect future income.",
-   "upside": "Having more land for projects could lead to higher sales and potentially boost earnings.",
-   "downside": "Development costs and execution delays could offset these potential benefits.",
+  "MARUTI": {
+   "summary": "Maruti Suzuki shares are part of a recent auto‑sector rally, with the Nifty Auto index up 4.4% in the last session and Maruti among the leading stocks. The company also appeared on a broker’s list of top stocks to buy, though this is just an opinion.",
+   "why": "As a Nifty 50 constituent, Maruti’s performance can influence the overall market index and affect investors holding large‑cap stocks.",
+   "upside": "The rally could continue if lower metal and oil prices keep input costs down.",
+   "downside": "The rally may fade if input costs rise again or if the sector reverses.",
    "watch": [
-    "Progress on the new Gurugram and Sohna land projects",
-    "Any updates on development costs and execution timelines",
-    "Movements in the broader realty sector"
+    "Changes in metal and oil prices that affect input costs",
+    "Potential reversal of the auto‑sector rally",
+    "Movement of the broader market indices such as Sensex and Nifty"
    ],
-   "about": "Signatureglobal (India) Ltd. is a real estate development company operating in the realty sector.",
-   "basis": "4ac9df620d75",
-   "items": 2,
-   "updated": "2026-11-21T03:04+05:30",
-   "model": "gemini-flash-lite-latest"
-  },
-  "ENGINERSIN": {
-   "summary": "Engineers India Ltd is a construction company listed on the NSE and part of the Nifty 500 index. No company‑specific announcements have been flagged in recent days.",
-   "why": "Being in the Nifty 500 signals a large, liquid stock that can be affected by broader market moves.",
-   "upside": "",
-   "downside": "",
-   "watch": [
-    "Quarterly earnings release",
-    "New project wins or contract announcements",
-    "Trends in the Indian construction sector"
-   ],
-   "about": "Engineers India Ltd provides engineering and construction services.",
-   "basis": "6cd9a6316097",
-   "items": 2,
-   "updated": "2026-11-19T15:46+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "BRIGADE": {
-   "summary": "Brigade Enterprises has launched a new 40-acre premium housing project in East Bengaluru. This move signals that the company is actively expanding its business operations in a key market.",
-   "why": "For shareholders, launching new projects suggests the company is generating future sales opportunities, which can support long-term growth.",
-   "upside": "If buyers show strong interest in the new development, it could boost the company's revenue and demonstrate healthy market demand.",
-   "downside": "Real estate sales can be slow to materialize, and demand may weaken if interest rates rise or economic sentiment turns negative.",
-   "watch": [
-    "Early sales figures for the new Brigade Autograph project",
-    "Changes in interest rates that affect home loan costs",
-    "Overall performance of the Realty sector index"
-   ],
-   "about": "Brigade Enterprises is a realty company that develops and sells housing projects.",
-   "basis": "586459bc63ff",
-   "items": 2,
-   "updated": "2026-11-19T14:16+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "NMDC": {
-   "summary": "NMDC is facing pressure from falling global metal prices, which has caused its sector to drop significantly over the last week. At the same time, a contractor won sub-contracts for civil work on NMDC township projects, indicating ongoing activity at the company.",
-   "why": "Lower metal prices can reduce the company's profits, which may affect the value of its shares. However, continued project work suggests the company is still executing its plans.",
-   "upside": "The completion of township projects could support operational activity for the company.",
-   "downside": "Further declines in global metal prices could hurt the company's earnings.",
-   "watch": [
-    "Global metal price trends",
-    "Progress on NMDC township projects",
-    "Overall performance of the Metals sector index"
-   ],
-   "about": "NMDC is a company in the Metals & Mining sector.",
-   "basis": "aba0ead03693",
-   "items": 2,
-   "updated": "2026-11-19T11:45+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Maruti Suzuki India Ltd. is a major automobile manufacturer in India.",
+   "basis": "ada234d5e3f3",
+   "items": 5,
+   "updated": "2026-11-20T15:02+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "CANBK": {
    "summary": "Canara Bank recently shared an update on its credit rating with the stock exchange. At the same time, several public sector banks, including Canara, saw strong price increases in November.",
@@ -1466,22 +635,6 @@
    "updated": "2026-11-21T03:04+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "MCX": {
-   "summary": "Multi Commodity Exchange of India Ltd. (MCX) has seen recent fluctuations in gold and silver prices on its platform. These price movements can influence the volume of trades and the fees MCX collects. The exchange is part of the Nifty 500 and operates within the financial services sector.",
-   "why": "Changes in metal prices directly affect MCX’s trading activity and fee income, which can impact the company’s earnings and shareholder value.",
-   "upside": "A rebound in gold or silver prices could lift trading volumes and boost MCX’s revenue.",
-   "downside": "Continued declines in metal prices may reduce trading volumes and lower fee income.",
-   "watch": [
-    "Gold price trend on MCX",
-    "Silver price trend on MCX",
-    "Trading volume and fee levels"
-   ],
-   "about": "Multi Commodity Exchange of India Ltd. operates a commodity exchange platform for trading metals and other commodities.",
-   "basis": "39363cede4c4",
-   "items": 3,
-   "updated": "2026-11-20T15:30+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
   "BSE": {
    "summary": "PulsEdge noted that BSE is linked to news about potential rule changes for foreign investors and a new company planning to list on the stock exchange. The financial sector index, which includes BSE, saw positive movement over the last few sessions.",
    "why": "This matters to shareholders because changes in market rules can affect foreign investment, and new company listings can influence exchange activity.",
@@ -1495,6 +648,22 @@
    "about": "BSE Ltd. is one of India's largest listed companies operating in the financial services sector.",
    "basis": "cb0aa392dcec",
    "items": 2,
+   "updated": "2026-11-21T03:04+05:30",
+   "model": "gemini-flash-lite-latest"
+  },
+  "COALINDIA": {
+   "summary": "Coal India is currently in focus as the market watches its broader movement and plans related to its subsidiary, Mahanadi Coalfields, which is working on an Initial Public Offering (IPO, when a company sells shares to the public for the first time). Early interest and grey market sentiment for this public share sale appear muted. Meanwhile, the broader market sentiment could also influence the stock's short-term direction.",
+   "why": "Corporate actions like subsidiary share sales can impact the value, focus, or ownership dilution of the parent company that you hold. Broader market trends can also sway the stock regardless of company fundamentals.",
+   "upside": "Investor interest in the Mahanadi Coalfields share sale could turn out well if demand picks up.",
+   "downside": "A weak share sale or lower-than-expected interest in the subsidiary could make investors nervous about the parent company's value or lead to short-term selling pressure.",
+   "watch": [
+    "Updates on the Mahanadi Coalfields IPO and investor demand.",
+    "Broader market sentiment and early stock moves.",
+    "Potential impacts of subsidiary share sales on the parent company."
+   ],
+   "about": "Coal India Ltd. is one of India's largest listed companies operating in the oil, gas, and consumable fuels sector.",
+   "basis": "200972a684cd",
+   "items": 8,
    "updated": "2026-11-21T03:04+05:30",
    "model": "gemini-flash-lite-latest"
   },
