@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T15:17+05:30",
+ "updated": "2026-11-23T15:32+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -172,19 +172,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "INDUSINDBK": {
-   "summary": "IndusInd Bank shares recently jumped 8% on high trading volume, approaching their 52-week high. However, the stock dropped 1% after the bank terminated its former CEO and reclaimed his compensation.",
-   "why": "Leadership changes and legal disputes can affect investor confidence and the bank's future performance, causing price swings for shareholders.",
-   "upside": "The recent sharp rise in share price was backed by high trading volume, suggesting strong buyer interest and improving business momentum.",
-   "downside": "The termination of the former CEO and the invocation of a clawback clause could lead to legal disputes that worsen the bank's performance.",
+   "summary": "IndusInd Bank recently terminated its former CEO and invoked a clawback clause to reclaim his compensation. The stock is currently under close observation by investors due to this leadership change.",
+   "why": "Changes in top management can affect how the bank is run and how confident investors feel about its future performance.",
+   "upside": "",
+   "downside": "Legal disputes arising from the termination and compensation recovery could negatively impact the bank's operations and reputation.",
    "watch": [
-    "Any legal disputes arising from the former CEO's termination.",
-    "Whether the stock can hold its recent gains near the 52-week high.",
-    "General market volatility as the stock remains in focus."
+    "Any legal actions or disputes related to the former CEO",
+    "How the bank's new leadership team handles day-to-day operations",
+    "The overall trend of the Financial Services sector index"
    ],
-   "about": "IndusInd Bank is a financial services company listed in India's Nifty 500 index.",
-   "basis": "df22e751566d",
-   "items": 3,
-   "updated": "2026-11-23T15:02+05:30",
+   "about": "IndusInd Bank is a financial services company listed on the NSE.",
+   "basis": "4a3a5e7bc17e",
+   "items": 2,
+   "updated": "2026-11-23T15:32+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "TITAGARH": {
@@ -681,6 +681,22 @@
    "basis": "a5357c663254",
    "items": 2,
    "updated": "2026-11-23T11:15+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "JMFINANCIL": {
+   "summary": "JM Financial is investing about ₹41 crore into its overseas subsidiary to support international business growth. The company is part of the Nifty 500 index, which tracks India's 500 largest listed firms.",
+   "why": "Expanding into new countries could help the company earn more money in the long run, which may benefit shareholders. However, this move involves spending significant capital on foreign operations.",
+   "upside": "Successful international expansion could lead to higher future earnings for the company.",
+   "downside": "International business carries higher risks and costs, which could hurt profits if the expansion does not go well.",
+   "watch": [
+    "Updates on the performance of the overseas subsidiary",
+    "The company's upcoming earnings reports",
+    "General trends in the Financials sector index"
+   ],
+   "about": "JM Financial is a company in the Financial Services sector.",
+   "basis": "7ee10697dd89",
+   "items": 2,
+   "updated": "2026-11-23T15:32+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "CROMPTON": {

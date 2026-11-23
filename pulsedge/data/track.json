@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T15:17:37+05:30",
+ "updated": "2026-11-23T15:32:08+05:30",
  "summary": {
-  "calls": 2039,
-  "scored_calls": 869,
+  "calls": 2040,
+  "scored_calls": 870,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,17 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "a9e9bdcb6ee79ed0",
+   "symbol": "JMFINANCIL",
+   "time": "2026-11-23T15:06:05+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Milky Mist gains 5% on JM Financial's bullish call, up 140% from IPO price",
+   "url": "https://www.business-standard.com/markets/news/milky-mist-gains-5-on-jm-financial-s-bullish-call-up-140-from-ipo-price-126112300622_1.html"
+  },
   {
    "id": "cfa3f13ce888da41",
    "symbol": "CAMS",
