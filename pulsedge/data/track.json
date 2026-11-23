@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T12:00:44+05:30",
+ "updated": "2026-11-23T12:16:14+05:30",
  "summary": {
-  "calls": 2007,
-  "scored_calls": 837,
+  "calls": 2009,
+  "scored_calls": 839,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "4c7b9830e3bc1721",
+   "symbol": "ABREL",
+   "time": "2026-11-23T12:05:20+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "BSE Realty index soars 17% in November; what's driving real estate stocks?",
+   "url": "https://www.business-standard.com/markets/news/bse-realty-index-soars-17-in-november-what-s-driving-real-estate-stocks-126112300352_1.html",
+   "alert_px": 1224.6,
+   "alert_move": 0.74,
+   "alert_at": "2026-11-23T12:15:38+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "4c7b9830e3bc1721",
+   "symbol": "GODREJPROP",
+   "time": "2026-11-23T12:05:20+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "BSE Realty index soars 17% in November; what's driving real estate stocks?",
+   "url": "https://www.business-standard.com/markets/news/bse-realty-index-soars-17-in-november-what-s-driving-real-estate-stocks-126112300352_1.html",
+   "alert_px": 1931.9,
+   "alert_move": 0.09,
+   "alert_at": "2026-11-23T12:15:38+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "5f86f510bacfebe0",
    "symbol": "VMM",
