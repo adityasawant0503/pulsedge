@@ -1,7 +1,55 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-23T13:01:47+05:30",
+ "updated": "2026-11-23T13:20:32+05:30",
  "items": [
+  {
+   "id": "6ca9725aa303625d",
+   "time": "2026-11-23T13:20:15+05:30",
+   "headline": "SOLARWORLD ENERGY SOLUTIONS: SOLARWORLD ENERGY SOLUTIONS LTD: CO. ANNOUNCES COMMERCIAL OPERATION OF 45 MW SOLAR PV POWER PROJECT IN ASSAM; PROJECT EXECUTED FOR SJVN GREEN ENERGY LIMITED WITH A VALUE OF ₹291.44 CRORE.",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9869",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "SJVN",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Power",
+    "Renewable Energy"
+   ],
+   "impact": 35,
+   "confidence": 60,
+   "category": "Corporate Update",
+   "action": "Monitor if this capacity addition is highlighted in upcoming quarterly results or earnings calls.",
+   "reason": [
+    "SJVN Green Energy commissioned a 45 MW solar project, adding to its renewable energy portfolio.",
+    "The project was executed by a third party (SolarWorld) for SJVN, indicating SJVN is the asset owner/operator."
+   ],
+   "risks": [
+    "Single project contribution may be small relative to SJVN's total revenue.",
+    "Market may have already priced in the renewable energy expansion."
+   ],
+   "plain": "A state power company has started generating electricity from a new solar farm in Assam.",
+   "why": "It adds to the company's green energy output, which is a positive long-term trend for its business.",
+   "check": "Look at the company's next quarterly report to see how this new plant affects total power generation.",
+   "original": "SOLARWORLD ENERGY SOLUTIONS: SOLARWORLD ENERGY SOLUTIONS LTD: CO. ANNOUNCES COMMERCIAL OPERATION OF 45 MW SOLAR PV POWER PROJECT IN ASSAM; PROJECT EXECUTED FOR SJVN GREEN ENERGY LIMITED WITH A VALUE OF ₹291.44 CRORE.",
+   "latency": 17.5,
+   "lane": "fast",
+   "quotes": {
+    "SJVN": {
+     "px": 54.99,
+     "prev": 55.78,
+     "move": -1.42,
+     "at": "2026-11-23T13:20:32+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "17ffa9c9dc34bc5b",
    "time": "2026-11-23T13:00:36+05:30",
