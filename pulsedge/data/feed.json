@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T09:15:18+05:30",
+ "updated": "2026-11-23T09:30:23+05:30",
  "items": [
   {
    "id": "9a32ffd41dd6f5f0",
@@ -713,6 +713,52 @@
    "original": "Sensex Today | Stock Market LIVE Updates Monday: The GIFT Nifty indicated a gap-up open for the Nifty50 index. Asian markets extended losses amid a sell-off in technology stocks"
   },
   {
+   "id": "96adfc3d41606386",
+   "time": "2026-11-23T08:04:01+05:30",
+   "headline": "Stock Market LIVE: Sensex rises 200 pts, Nifty tops 25,850; APL Apollo Tubes hits 10% lower circuit",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-23-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-ipo-today-126112300084_1.html",
+   "section": "trading",
+   "call": "watch",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "APLAPOLLO",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Metals",
+    "Steel"
+   ],
+   "impact": 80,
+   "confidence": 95,
+   "category": "Price Action",
+   "action": "Monitor if the stock stabilizes or continues to trade at the lower circuit limit.",
+   "reason": [
+    "APL Apollo Tubes hit the 10% lower circuit, indicating extreme selling pressure.",
+    "This is a material intraday event for the specific stock."
+   ],
+   "risks": [
+    "Potential for further decline if selling pressure persists.",
+    "Liquidity may be low at the circuit limit."
+   ],
+   "plain": "One steel company's stock price fell by the maximum allowed amount for the day.",
+   "why": "A maximum drop signals strong selling interest, which can affect the value of shares held.",
+   "check": "Look at the trading volume to see if many shares were actually sold.",
+   "original": "Sensex Today | Stock Market LIVE Updates Monday: In the broader markets, the Nifty MidCap and the Nifty SmallCap rose 0.3 per cent and 0.2 per cent, respectively",
+   "quotes": {
+    "APLAPOLLO": {
+     "px": 1923.1,
+     "prev": 2121.6,
+     "move": -9.36,
+     "at": "2026-11-23T09:31:48+05:30",
+     "delay": 900
+    }
+   }
+  },
+  {
    "id": "6e49685086cc9b6f",
    "time": "2026-11-23T08:02:15+05:30",
    "headline": "Stocks to watch: Tata Steel, Waaree, Adani Energy, Maruti, IndusInd Bank",
@@ -1272,6 +1318,36 @@
    "why": "This is about the South Korean market and does not directly affect Indian companies.",
    "check": "",
    "original": "South Korean shares fell approximately 3% on Monday amid government efforts to stabilize the market. The KOSPI index dropped to its lowest level since January, raising investor concerns. Major technology stocks, including Samsung Electronics and SK Hynix, experienced significant losses during this d"
+  },
+  {
+   "id": "565866c1194d86ab",
+   "time": "2026-11-23T07:13:21+05:30",
+   "headline": "Stock Market Live Updates: Sensex surges over 500 pts in pre-opening session; Nifty above 25,900",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/bse-sensex-today-nifty50-stock-market-live-updates-gift-nifty-maruti-adani-energy-share-price-23-november-2026/liveblog/136086783.cms",
+   "section": "trading",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "Market"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "Market Color",
+   "action": "No specific action required for individual stocks.",
+   "reason": [
+    "General market movement without specific company news.",
+    "Pre-opening surge is often a temporary sentiment shift."
+   ],
+   "risks": [
+    "Market sentiment can reverse quickly after opening."
+   ],
+   "plain": "The overall stock market started the day higher than yesterday.",
+   "why": "General market moves do not usually change the specific value of individual companies.",
+   "check": "",
+   "original": "Stock Market Live Updates: Sensex surges over 500 pts in pre-opening session; Nifty above 25,900"
   },
   {
    "id": "8caa30430107bdf9",
@@ -9384,43 +9460,13 @@
    "check": "Look at the company's recent news to see if they have other large projects secured.",
    "original": "Ashoka Buildcon share price: According to a press release shared by the company, a Saudi Arabia project worth Rs ₹846.38 crore was cancelled by Diriyah Company due to internal factors.",
    "checked": "price already moved"
-  },
-  {
-   "id": "38e5a23fdffffc02",
-   "time": "2026-11-20T09:20:11+05:30",
-   "headline": "Asian stocks head for worst week since 2020 as AI rally loses steam",
-   "source": "Business Standard",
-   "url": "https://www.business-standard.com/markets/news/asian-stocks-head-for-worst-week-since-2020-as-ai-rally-loses-steam-126112000154_1.html",
-   "section": "macro",
-   "call": "watch",
-   "horizon": "intraday",
-   "direction": "down",
-   "tickers": [],
-   "sectors": [
-    "Global Markets"
-   ],
-   "impact": 40,
-   "confidence": 70,
-   "category": "Global Sentiment",
-   "action": "Monitor opening gaps in Indian indices for potential contagion from Asian losses.",
-   "reason": [
-    "Broad Asian market sell-off due to AI rally fatigue.",
-    "Risk aversion may spill over to Indian markets."
-   ],
-   "risks": [
-    "Global tech weakness could drag down Indian IT and high-beta stocks."
-   ],
-   "plain": "Stock markets in Asia are falling because investors are worried about tech stocks.",
-   "why": "When global markets fall, Indian markets often follow, which can lower share prices.",
-   "check": "Watch how the Indian market opens in the first 15 minutes.",
-   "original": "MSCI's Asia-Pacific index fell 3.2% on Friday and was down 8.3% for the week, while Japan's Nikkei and South Korea's Kospi slid as investor risk aversion deepened"
   }
  ],
  "digest": {
   "date": "2026-11-23",
   "act": 0,
-  "watch": 23,
-  "ignored": 40,
+  "watch": 24,
+  "ignored": 41,
   "reasons": [
    {
     "label": "Global Macro",
