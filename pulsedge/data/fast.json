@@ -1,7 +1,55 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-23T13:26:32+05:30",
+ "updated": "2026-11-23T13:38:02+05:30",
  "items": [
+  {
+   "id": "8e794dcb52499229",
+   "time": "2026-11-23T13:37:27+05:30",
+   "headline": "RVNL: CO ON TRACK TO ACHIEVE RUPEES 25,000 CR ORDERBOOK IN FY27, OUT OF WHICH CO ALREADY BAGGED ORDERS WORTH RUPEES 8,000 CR IN H1",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9872",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "RVNL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Infrastructure",
+    "Railways"
+   ],
+   "impact": 45,
+   "confidence": 60,
+   "category": "Order Book",
+   "action": "Monitor if the stock holds support after the announcement to confirm sustained interest.",
+   "reason": [
+    "Securing 8,000 Cr in H1 against a 25,000 Cr target shows strong execution.",
+    "A large order book provides revenue visibility for the next fiscal year."
+   ],
+   "risks": [
+    "Execution delays could impact revenue recognition.",
+    "Market may have already priced in the positive outlook."
+   ],
+   "plain": "The company has already won orders worth 8,000 crore rupees in the first half of the year.",
+   "why": "This shows the company is busy with work, which suggests steady future income and job security for the business.",
+   "check": "Look at the company's recent quarterly results to see if profits are growing.",
+   "original": "RVNL: CO ON TRACK TO ACHIEVE RUPEES 25,000 CR ORDERBOOK IN FY27, OUT OF WHICH CO ALREADY BAGGED ORDERS WORTH RUPEES 8,000 CR IN H1",
+   "latency": 35.9,
+   "lane": "fast",
+   "quotes": {
+    "RVNL": {
+     "px": 187.01,
+     "prev": 191.0,
+     "move": -2.09,
+     "at": "2026-11-23T13:38:02+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "c2367b1683ef7e49",
    "time": "2026-11-23T13:25:43+05:30",
