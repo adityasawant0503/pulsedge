@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T13:30+05:30",
+ "updated": "2026-11-23T13:46+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged that Tata Steel announced a 26.38% stake purchase in APL Apollo Tubes, causing both companies’ shares to fall. Dalmia Bharat approved a share buyback at Rs 1,850 per share, which could lift its stock if market sentiment stays positive. The market saw modest gains in banks and financials, while the metals index slipped slightly. IndusInd Bank’s leadership change and Welspun Enterprises’ growth targets were also highlighted.",
+  "summary": "PulsEdge flagged that Tata Steel’s plan to buy a large stake in APL Apollo Tubes pushed both stocks down about 5%, as investors worry about the cost and possible debt rise. Dalma Bharat announced a share buyback at Rs 1850 per share, a move that can lift the price by cutting supply and signalling confidence. Some telecom and metal stocks, like Sterlite Tech and HFCL, fell sharply and hit circuit‑breaker limits, showing strong selling pressure. Overall, banks led the market higher while media and metals lagged.",
   "themes": [
-   "Tata Steel acquisition and its market impact",
-   "Share buybacks and corporate confidence",
-   "Sector performance and corporate announcements"
+   "Tata Steel’s big acquisition sparked a sell‑off in steel stocks",
+   "Dalma Bharat’s buyback could support its share price",
+   "Sharp drops and circuit‑breaker hits in telecom and metal stocks signal stress"
   ],
   "watch": [
-   "Regulatory approval status for the Tata Steel–APL Apollo deal",
-   "Effect of Dalmia Bharat’s buyback on its share price",
-   "Future orders and expansion plans for Titagarh Rail Systems"
+   "Regulatory clearance for the Tata Steel‑APL Apollo deal could shape future price moves",
+   "Progress and market reaction to Dalma Bharat’s share buyback",
+   "Whether telecom stocks like Sterlite Tech and HFCL stay under circuit‑breaker pressure or stabilize"
   ],
   "date": "2026-11-23",
-  "basis": "13b93aea9e03",
-  "updated": "2026-11-23T13:00+05:30",
-  "model": "openai/gpt-oss-20b",
-  "items": 65
+  "basis": "0d1313d2b51d",
+  "updated": "2026-11-23T13:46+05:30",
+  "model": "openai/gpt-oss-120b",
+  "items": 78
  },
  "stocks": {
   "KIRLOSBROS": {
@@ -140,36 +140,36 @@
    "model": "gemini-flash-lite-latest"
   },
   "HFCL": {
-   "summary": "HFCL shares fell sharply, slipping up to 41% from October highs and triggering a circuit‑breaker halt, indicating strong selling pressure.",
-   "why": "The move can affect the value of existing holdings and may limit investors’ ability to exit their positions.",
-   "upside": "If selling pressure eases, the stock could stabilize after the fall.",
-   "downside": "Continued pressure could push the price lower and the circuit‑breaker might stay locked, trapping investors.",
+   "summary": "HFCL shares fell sharply on November 23, 2026, hitting the daily lower circuit limit. This drop follows a period where the stock rose 160% in 2026, but it has now slipped 41% from its October peak.",
+   "why": "The sharp decline indicates strong selling pressure, which can make it difficult for investors to sell their shares if trading is halted by circuit breakers.",
+   "upside": "",
+   "downside": "The stock may continue to fall before it stabilizes, and circuit breakers could prevent investors from exiting their positions.",
    "watch": [
-    "Circuit‑breaker status",
-    "Price movement after the drop",
-    "Sector trends including Sterlite Tech"
+    "Whether the lower circuit limit remains locked, preventing trading.",
+    "If the selling pressure continues or if the price stabilizes.",
+    "How the stock performs compared to its 160% rise earlier in 2026."
    ],
-   "about": "HFCL Ltd. operates in the telecommunications sector.",
-   "basis": "7c87c8d1ec29",
-   "items": 1,
-   "updated": "2026-11-23T13:24+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "HFCL is a company in the Telecommunication sector.",
+   "basis": "9c172c6863a3",
+   "items": 2,
+   "updated": "2026-11-23T13:46+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "STLTECH": {
-   "summary": "Sterlite Technologies shares fell sharply, hitting a trading limit that halted trading temporarily. The drop indicates strong selling pressure and the price may continue to decline before stabilizing.",
-   "why": "Strong selling pressure can reduce the share value, and a circuit breaker lock may prevent investors from exiting their positions.",
+   "summary": "Sterlite Technologies shares fell sharply, hitting circuit‑breaker limits and triggering a trading halt. The drop mirrors a similar plunge in HFCL, reflecting strong selling pressure in telecom stocks.",
+   "why": "The steep decline could erode the value of current holdings and limit exit options for investors.",
    "upside": "",
-   "downside": "The price may keep falling and the trading halt could remain in place, limiting exit options.",
+   "downside": "Further falls may be constrained by circuit‑breaker restrictions, making it hard for investors to sell their positions.",
    "watch": [
-    "Whether the trading limit is lifted and trading resumes",
-    "Price trend after the halt",
-    "Any news explaining the cause of the sharp drop"
+    "Circuit‑breaker status and any re‑opening",
+    "Trading volume and liquidity conditions",
+    "Signs of market sentiment reversal"
    ],
-   "about": "Sterlite Technologies Ltd. operates in the telecommunications sector.",
-   "basis": "7c87c8d1ec29",
-   "items": 1,
-   "updated": "2026-11-23T13:24+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "Sterlite Technologies Ltd. operates in the telecom sector, providing network infrastructure and fiber‑optic solutions.",
+   "basis": "9c172c6863a3",
+   "items": 2,
+   "updated": "2026-11-23T13:46+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "INDUSINDBK": {
    "summary": "IndusInd Bank shares recently surged nearly 9% on high trading volume, approaching their 52-week high. However, the stock dropped 1% after the bank terminated its former CEO and reclaimed his compensation.",
@@ -235,53 +235,21 @@
    "updated": "2026-11-20T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "MANAPPURAM": {
-   "summary": "Manappuram Finance shares fell up to 5% after gold prices dropped to a one‑year low, making its gold‑loan business riskier. The broader financial sector index rose about 2% in the last session.",
-   "why": "Shareholders see a price dip and face the possibility of higher loan defaults if gold values stay low.",
-   "upside": "A rebound in gold prices could improve the profitability of its gold‑loan portfolio.",
-   "downside": "Further declines in gold prices could raise non‑performing assets and pressure earnings.",
-   "watch": [
-    "Gold price trends",
-    "Manappuram’s non‑performing asset levels",
-    "Financial sector index movement"
-   ],
-   "about": "Manappuram Finance provides gold‑backed loans and other financial services.",
-   "basis": "c30079531b90",
-   "items": 1,
-   "updated": "2026-11-23T07:23+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "MUTHOOTFIN": {
-   "summary": "Muthoot Finance shares fell up to 5% after gold prices dropped to a one‑year low, raising concerns about the value of its gold‑backed loans. The dip comes as the broader financial sector index rose, highlighting a contrast between the company and its peers.",
-   "why": "Shareholders watch loan‑book quality; a fall in gold values can increase risky loans and pressure earnings.",
-   "upside": "If gold prices stabilize or recover, loan performance could improve and the share price may rebound.",
-   "downside": "A further slide in gold prices could raise non‑performing assets and hurt profitability.",
-   "watch": [
-    "Gold price movements",
-    "Muthoot Finance's non‑performing asset trends",
-    "Financial sector index performance"
-   ],
-   "about": "Muthoot Finance provides gold‑backed loans to retail customers.",
-   "basis": "c30079531b90",
-   "items": 1,
-   "updated": "2026-11-23T10:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "OIL": {
-   "summary": "Oil India Ltd. is facing a mixed market environment where oil prices have fallen for three straight weeks due to high supply, but recent attacks on shipping lanes and refineries in the Middle East could push prices back up. The company's sector index has risen slightly over the last five days, suggesting some stability despite the price drops.",
-   "why": "Since Oil India earns money by selling oil, falling global oil prices can reduce its profits, while sudden spikes in prices due to conflicts can boost them. Shareholders need to watch how these opposing forces affect the company's earnings.",
-   "upside": "Recent attacks on oil facilities and shipping routes could restrict supply and cause oil prices to rise, which would benefit Oil India's revenue.",
-   "downside": "Oil prices have declined for three consecutive weeks due to an oversupply of crude, which could lower the company's earnings if the trend continues.",
+   "summary": "Oil India is seeing pressure as global oil prices have fallen for the third week, driven by ample supply and a recent dip in Brent and WTI crude. At the same time, its sector index has risen modestly, gaining 0.4% in the last session and 2.0% over five sessions.",
+   "why": "Lower oil prices can cut the earnings of Oil India, which relies on oil sales for revenue.",
+   "upside": "If OPEC+ decides to cut output or geopolitical tensions push prices higher, Oil India's earnings could improve.",
+   "downside": "If the supply glut persists and oil prices keep falling, the company's profits may be further squeezed.",
    "watch": [
-    "The upcoming OPEC+ meeting decision on oil production levels.",
-    "Any further incidents in the Strait of Hormuz that might block oil shipments.",
-    "Whether global oil prices stabilize or continue to fall."
+    "OPEC+ output decision and its impact on oil supply",
+    "Trends in Brent and WTI crude prices",
+    "Geopolitical events that could disrupt oil flows, such as attacks or shipping incidents"
    ],
-   "about": "Oil India Ltd. is an oil-producing company listed in the Oil Gas & Consumable Fuels sector.",
-   "basis": "b5b50e074a48",
-   "items": 8,
-   "updated": "2026-11-23T12:31+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Oil India Ltd. is an Indian company engaged in the exploration, production and marketing of oil and gas.",
+   "basis": "bc45e45551d1",
+   "items": 7,
+   "updated": "2026-11-23T13:46+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "LT": {
    "summary": "PulsEdge flagged that L&T announced it has bagged new orders and contracts on Nov 23. The announcements indicate fresh work for the construction firm. The exact size and timing of the orders were not disclosed.",
@@ -379,6 +347,22 @@
    "updated": "2026-11-20T15:16+05:30",
    "model": "openai/gpt-oss-20b"
   },
+  "RVNL": {
+   "summary": "RVNL is on track to hit a 25,000 cr orderbook for FY27, having already secured 8,000 cr in the first half. The latest quarter showed an 8.3% rise in profit but an 8.2% fall in revenue.",
+   "why": "The growing orderbook points to future cash flow, while the revenue dip raises questions about demand and execution.",
+   "upside": "If RVNL converts more orders and meets the FY27 target, earnings could improve further.",
+   "downside": "Delays in executing the won orders could hurt revenue recognition and profit.",
+   "watch": [
+    "Progress toward the 25,000 cr FY27 orderbook target",
+    "Revenue trends in the next quarters",
+    "Execution timelines for the 8,000 cr of orders already secured"
+   ],
+   "about": "RVNL builds and maintains railway infrastructure projects.",
+   "basis": "7712a046dbd4",
+   "items": 3,
+   "updated": "2026-11-23T13:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "BRIGADE": {
    "summary": "Brigade Enterprises is moving closer to its sales targets by launching a new real estate project. At the same time, the company expects its hotel business to see faster growth in the second half of the year.",
    "why": "New projects and stronger hotel revenue can boost the company's overall business, but investors are still waiting to see if the new projects sell well.",
@@ -427,6 +411,22 @@
    "updated": "2026-11-23T08:15+05:30",
    "model": "openai/gpt-oss-20b"
   },
+  "MARUTI": {
+   "summary": "Maruti Suzuki’s shares rose about 2% after the company announced a price hike, while the broader market showed mixed moves. The stock is also being highlighted as a relatively safer bet amid recent market volatility.",
+   "why": "Higher prices could lift earnings, but they may also curb demand among price‑sensitive buyers.",
+   "upside": "Earnings could improve if the price increase sustains without a major drop in sales.",
+   "downside": "Demand could shift to competitors if buyers react negatively to higher prices, and overall market volatility could pull the stock down.",
+   "watch": [
+    "Impact of price hike on sales volumes",
+    "Broader market volatility and its effect on the stock",
+    "Auto sector performance trends"
+   ],
+   "about": "Maruti Suzuki India Ltd. manufactures and sells passenger cars in India.",
+   "basis": "de2624923622",
+   "items": 4,
+   "updated": "2026-11-23T13:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "BANKINDIA": {
    "summary": "Bank of India is under increased RBI scrutiny of its gold loan portfolio after a recent drop in bullion prices. At the same time, the RBI’s new Treasury Bill auction and a stronger rupee are influencing funding costs and foreign investor interest.",
    "why": "Higher monitoring may force the bank to set aside more provisions, affecting profitability. A stronger rupee and foreign inflows could improve its attractiveness to investors.",
@@ -442,22 +442,6 @@
    "items": 4,
    "updated": "2026-11-23T11:31+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "MARUTI": {
-   "summary": "Maruti Suzuki raised its car prices, which helped its shares rise by 2% in the latest session. The stock has climbed 14% over the past week, outperforming the broader auto sector.",
-   "why": "Higher car prices can lead to better profits for the company, which is a positive sign for shareholders. However, this move also makes the stock a major focus for investors, leading to potential price swings.",
-   "upside": "The price increase could improve the company's earnings if customers continue to buy their cars.",
-   "downside": "Buyers who are sensitive to cost might switch to rival brands, reducing Maruti Suzuki's sales volume.",
-   "watch": [
-    "How much demand for Maruti cars changes after the price hike",
-    "Daily stock price movements due to high investor focus",
-    "Performance of the overall auto sector index"
-   ],
-   "about": "Maruti Suzuki is a major automobile company in India that is part of the Nifty 50 index.",
-   "basis": "98a612d890b5",
-   "items": 3,
-   "updated": "2026-11-23T11:15+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "LTTS": {
    "summary": "L&T Technology Services addressed reports of a cybersecurity incident and launched a new software tool called SDVault.ai for the automotive sector. The company is part of the IT sector, which has seen recent price fluctuations.",
@@ -507,22 +491,6 @@
    "updated": "2026-11-23T10:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "HDFCBANK": {
-   "summary": "HDFC Bank showed a White Marubozu candlestick, a sign of strong buying, and its market‑cap climbed back above ₹13 trillion, pushing the stock to an eight‑month high. The broader Financials index also rose, supporting the move.",
-   "why": "Shareholders see the price rise and buying signal, but the uplift is driven more by market sentiment than new fundamentals, raising valuation concerns.",
-   "upside": "If the White Marubozu pattern holds, it could lead to a short‑term price gain.",
-   "downside": "The pattern could fail if the broader market turns lower, and the high valuation may limit further upside.",
-   "watch": [
-    "Confirmation of the White Marubozu buying pattern",
-    "Sector index performance for Financials",
-    "Sustaining the ₹13 trillion market‑cap level"
-   ],
-   "about": "HDFC Bank Ltd. is a leading Indian private‑sector bank offering a range of banking and financial services.",
-   "basis": "27be27d45c92",
-   "items": 2,
-   "updated": "2026-11-23T12:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "PERSISTENT": {
    "summary": "Persistent Systems recently issued a statement to the stock exchange, though the specific details are not yet public. At the same time, a technical indicator called RSI moved above 50, which suggests the stock may be gaining upward momentum.",
    "why": "The company statement could contain important information that affects the value of the shares, while the rising RSI indicates potential short-term strength in the stock price.",
@@ -537,22 +505,6 @@
    "basis": "8e5aefbe23de",
    "items": 2,
    "updated": "2026-11-23T08:46+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "RVNL": {
-   "summary": "Rail Vikas Nigam Ltd. reported an 8.3% increase in profit for the second quarter of FY27, even though its revenue fell by 8.2%. The stock is currently being watched closely by investors due to these recent results.",
-   "why": "The drop in revenue suggests that the company is taking in less money from its projects, which creates uncertainty for shareholders despite the higher profit.",
-   "upside": "The rise in profit could support the share price if investors view the cost management positively.",
-   "downside": "The decline in revenue might signal weaker demand for the company's services, which could hurt future earnings.",
-   "watch": [
-    "Future revenue trends to see if the drop continues",
-    "Market reaction to the recent profit and revenue figures",
-    "General volatility in the construction sector"
-   ],
-   "about": "Rail Vikas Nigam Ltd. is a construction company listed in the Nifty 500 index.",
-   "basis": "029746f77985",
-   "items": 2,
-   "updated": "2026-11-23T08:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "IKS": {
