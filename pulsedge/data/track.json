@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T10:47:35+05:30",
+ "updated": "2026-11-23T11:00:45+05:30",
  "summary": {
-  "calls": 1996,
-  "scored_calls": 826,
+  "calls": 1997,
+  "scored_calls": 827,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "a6c2e92e36299257",
+   "symbol": "TITAN",
+   "time": "2026-11-23T10:49:48+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Titan’s stock is losing its shine. Is falling gold to blame?",
+   "url": "https://www.livemint.com/market/mark-to-market/titan-share-price-fall-gold-price-correction-impact-on-jewellery-margins-11795407212708.html",
+   "alert_px": 4648.0,
+   "alert_move": 0.61,
+   "alert_at": "2026-11-23T11:00:40+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "31ef700508b2fd22",
    "symbol": "WELSPUNLIV",
