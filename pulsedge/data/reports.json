@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T14:01+05:30",
+ "updated": "2026-11-23T14:15+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -172,19 +172,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "SOLARINDS": {
-   "summary": "Solar Industries India Ltd. is a chemicals company listed in the Nifty 500. There are no recent company-specific news items flagged by PulsEdge.",
-   "why": "Shareholders should note its position in the chemicals sector and inclusion in the Nifty 500, which can affect its visibility and liquidity.",
+   "summary": "There have been no recent company‑specific headlines for Solar Industries India Ltd. in the last few days. The recent PulsEdge flags relate to other solar‑related firms, not Solar Industries.",
+   "why": "Shareholders have no new information about Solar Industries’ operations or projects at this time.",
    "upside": "",
    "downside": "",
    "watch": [
-    "Quarterly earnings release",
-    "Any new product or capacity announcements",
-    "Overall chemicals sector demand trends"
+    "Monitor for any announcements of new order wins or contracts",
+    "Watch for any technology or product launches by Solar Industries",
+    "Look out for upcoming earnings or financial results releases"
    ],
-   "about": "Solar Industries India Ltd. manufactures and sells chemicals.",
-   "basis": "d21163387e75",
-   "items": 3,
-   "updated": "2026-11-23T11:45+05:30",
+   "about": "",
+   "basis": "15c40911612a",
+   "items": 4,
+   "updated": "2026-11-23T14:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "INDUSINDBK": {
@@ -457,6 +457,38 @@
    "basis": "779e4899e629",
    "items": 4,
    "updated": "2026-11-23T11:31+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "TCS": {
+   "summary": "TCS shares rose while the broader market fell, with analysts noting a shift of money from pricey AI stocks to cheaper Indian IT firms. The stock is being seen as a relatively safe play amid market volatility.",
+   "why": "This trend could help share prices if investors continue moving funds into Indian software companies, and the stock’s perceived safety may attract more buying.",
+   "upside": "If the flow of capital from expensive AI tech to Indian IT firms continues, TCS could benefit.",
+   "downside": "A reversal in global AI sentiment or broader market volatility could pull the stock down.",
+   "watch": [
+    "Global AI sentiment and its impact on Indian IT stocks",
+    "Overall market volatility and its effect on crash‑proof stocks",
+    "Performance of the IT sector index in the coming sessions"
+   ],
+   "about": "Tata Consultancy Services provides IT services, consulting and business solutions.",
+   "basis": "72f572801305",
+   "items": 2,
+   "updated": "2026-11-23T14:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "INFY": {
+   "summary": "Infosys shares rose while the broader market fell, as investors shift money from pricey AI tech to cheaper Indian software firms. The IT sector index gained 1.3% in the last session but is down 1.9% over five sessions.",
+   "why": "This shift could support Infosys share prices and the stock is being viewed as a safer bet in a volatile market.",
+   "upside": "If investors keep moving funds from expensive AI names to cost‑effective Indian IT firms, Infosys could see further price support.",
+   "downside": "A reversal in global AI sentiment or broader market volatility could pull the stock down.",
+   "watch": [
+    "Global AI sentiment and its effect on Indian IT stocks",
+    "Overall market volatility in the Sensex/Nifty",
+    "Short‑term movement of the IT sector index"
+   ],
+   "about": "Infosys Ltd. provides information technology services and consulting.",
+   "basis": "72f572801305",
+   "items": 2,
+   "updated": "2026-11-23T14:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "LTTS": {

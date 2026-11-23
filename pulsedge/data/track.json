@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T14:02:18+05:30",
+ "updated": "2026-11-23T14:15:55+05:30",
  "summary": {
-  "calls": 2029,
-  "scored_calls": 859,
+  "calls": 2031,
+  "scored_calls": 861,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "c563a1936c46394c",
+   "symbol": "TCS",
+   "time": "2026-11-23T13:59:48+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "TCS vs Infosys vs Wipro shares: Despite global AI bloodbath, why are Indian IT stocks rising? Experts decode",
+   "url": "https://www.livemint.com/market/stock-market-news/tcs-vs-infosys-vs-wipro-shares-despite-global-ai-bloodbath-why-are-indian-it-stocks-rising-experts-decode-11795416602297.html",
+   "alert_px": 2463.7,
+   "alert_move": 3.68,
+   "alert_at": "2026-11-23T14:15:32+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "c563a1936c46394c",
+   "symbol": "INFY",
+   "time": "2026-11-23T13:59:48+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "TCS vs Infosys vs Wipro shares: Despite global AI bloodbath, why are Indian IT stocks rising? Experts decode",
+   "url": "https://www.livemint.com/market/stock-market-news/tcs-vs-infosys-vs-wipro-shares-despite-global-ai-bloodbath-why-are-indian-it-stocks-rising-experts-decode-11795416602297.html",
+   "alert_px": 1108.2,
+   "alert_move": 0.93,
+   "alert_at": "2026-11-23T14:15:32+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "c2ec5b5bed13d1fe",
    "symbol": "RAILTEL",
