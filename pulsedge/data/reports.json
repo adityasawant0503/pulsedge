@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T11:31+05:30",
+ "updated": "2026-11-23T11:45+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged that Tata Steel’s announcement to buy a 26.38% stake in APL Apollo Tubes for about ₹15,511 crore drove both Tata Steel and APL Apollo shares sharply lower, with drops of around 5% and up to 15% respectively. Investors are worried about the large cash outlay, higher debt and possible regulatory delays. Meanwhile, banks and financials posted modest gains, while the metals index slipped slightly. The market showed mixed sentiment as the steel deal created short‑term pain but could have longer‑term benefits.",
+  "summary": "Tata Steel announced a major deal to buy a large stake in APL Apollo Tubes, which caused both companies' share prices to drop sharply. APL Apollo hit its daily lower limit, while Tata Steel fell by about 5% as investors worried about the high cost. Meanwhile, the broader market stayed positive, with the Sensex rising 200 points and bank stocks leading the gains. Sterling and Wilson also reported winning large new contracts for solar and battery projects.",
   "themes": [
-   "Tata Steel’s big acquisition of APL Apollo Tubes dominates headlines",
-   "Investor concerns over cash use, debt rise and regulatory approval risk",
-   "Sector moves: banks and financials up, metals index weakens"
+   "Big mergers causing short-term price drops",
+   "Banking sector showing strength",
+   "Renewable energy companies winning new business"
   ],
   "watch": [
-   "Regulatory clearance progress for the Tata Steel‑APL Apollo transaction",
-   "Further price movement in Tata Steel and APL Apollo as the market digests the deal",
-   "Impact of IndusInd Bank’s leadership change and any legal disputes"
+   "Regulatory approval for the Tata Steel and APL Apollo deal",
+   "Whether Tata Steel's debt levels rise due to the acquisition",
+   "IndusInd Bank's response to the former CEO termination"
   ],
   "date": "2026-11-23",
-  "basis": "37760e98a1cb",
-  "updated": "2026-11-23T10:47+05:30",
-  "model": "openai/gpt-oss-120b",
-  "items": 40
+  "basis": "c53ec2440f5e",
+  "updated": "2026-11-23T11:45+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 52
  },
  "stocks": {
   "KIRLOSBROS": {
@@ -90,6 +90,22 @@
    "items": 4,
    "updated": "2026-11-20T15:16+05:30",
    "model": "openai/gpt-oss-20b"
+  },
+  "DALBHARAT": {
+   "summary": "The board approved a share buyback at Rs 1850 per share via the open market. The buyback aims to reduce share supply and signal confidence.",
+   "why": "Existing shareholders could benefit if the buyback supports the share price.",
+   "upside": "If the buyback is sizable and market sentiment stays positive, the share price could improve.",
+   "downside": "If the buyback size is small relative to the market cap or sentiment turns negative, the impact may be limited.",
+   "watch": [
+    "Execution of the buyback program",
+    "Market sentiment around the stock",
+    "Buyback size compared to market capitalization"
+   ],
+   "about": "Dalmia Bharat Ltd manufactures construction materials.",
+   "basis": "a6a86fd2d592",
+   "items": 2,
+   "updated": "2026-11-23T11:45+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "TATASTEEL": {
    "summary": "Tata Steel has announced a major plan to acquire a significant stake in APL Apollo Tubes and sell its own tube business, causing its stock price to fall sharply. Investors are weighing the heavy spending and deal costs against future changes to the company structure.",
@@ -140,19 +156,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "SOLARINDS": {
-   "summary": "There are no recent PulsEdge flagged news items specifically about Solar Industries India Ltd. The company is listed in the Nifty 500 chemicals sector, but no new developments were reported in the last few days.",
-   "why": "Shareholders have limited new information to assess short‑term catalysts, so the stock may remain driven by broader sector trends.",
+   "summary": "Solar Industries India Ltd. is a chemicals company listed in the Nifty 500. There are no recent company-specific news items flagged by PulsEdge.",
+   "why": "Shareholders should note its position in the chemicals sector and inclusion in the Nifty 500, which can affect its visibility and liquidity.",
    "upside": "",
    "downside": "",
    "watch": [
-    "Renewable energy demand trends in India",
-    "Execution of large solar projects by peers",
-    "Potential margin impact from project delays"
+    "Quarterly earnings release",
+    "Any new product or capacity announcements",
+    "Overall chemicals sector demand trends"
    ],
-   "about": "Solar Industries India Ltd. is a chemicals company.",
-   "basis": "19502dd52742",
-   "items": 2,
-   "updated": "2026-11-23T11:31+05:30",
+   "about": "Solar Industries India Ltd. manufactures and sells chemicals.",
+   "basis": "d21163387e75",
+   "items": 3,
+   "updated": "2026-11-23T11:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "GALLANTT": {
@@ -394,6 +410,22 @@
    "items": 3,
    "updated": "2026-11-23T11:15+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "TITAN": {
+   "summary": "Titan’s shares slipped as gold prices fell, causing short‑term volatility. The broader consumer durables index was slightly down, showing modest weakness.",
+   "why": "Shareholders see the stock move with gold because the company’s jewellery business is tied to gold price swings.",
+   "upside": "A rebound in gold prices could improve sentiment and lift the share price.",
+   "downside": "Further declines in gold prices could keep pressure on the stock.",
+   "watch": [
+    "Gold price movements",
+    "Consumer durables index performance",
+    "Any upcoming Titan earnings or sales data"
+   ],
+   "about": "Titan Company makes jewellery, watches and related accessories.",
+   "basis": "111d599213ba",
+   "items": 2,
+   "updated": "2026-11-23T11:45+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "ENGINERSIN": {
    "summary": "Engineers India Ltd is a construction company listed on the NSE and part of the Nifty 500 index. No recent announcements or news items have been flagged for the company.",
