@@ -1,7 +1,71 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-23T10:28:47+05:30",
+ "updated": "2026-11-23T10:31:47+05:30",
  "items": [
+  {
+   "id": "1bcc8f2bb3b8b4ac",
+   "time": "2026-11-23T10:30:58+05:30",
+   "headline": "INDIA (NOV) HSBC INDIA PMI COMPOSITE ACTUAL: 56.3 VS 56.2 PREVIOUS",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9856",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "macro"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "macro",
+   "action": "Monitor broad market sentiment for a slight positive bias.",
+   "reason": [
+    "Composite PMI slightly above previous month.",
+    "No specific company impact."
+   ],
+   "risks": [
+    "Market may already have priced in the data."
+   ],
+   "plain": "A measure of overall business activity in India came in slightly higher than expected.",
+   "why": "It shows the economy is doing well, but the change is too small to affect specific stocks.",
+   "check": "Look at how the main market index opens to see if traders are optimistic.",
+   "original": "INDIA (NOV) HSBC INDIA PMI COMPOSITE ACTUAL: 56.3 VS 56.2 PREVIOUS",
+   "latency": 49.0,
+   "lane": "fast"
+  },
+  {
+   "id": "af5e439fd60f992d",
+   "time": "2026-11-23T10:30:49+05:30",
+   "headline": "INDIA (NOV) HSBC INDIA PMI MFG ACTUAL: 56 VS 54.7 PREVIOUS",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9855",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "macro"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "macro",
+   "action": "Monitor broad market sentiment for a slight positive bias.",
+   "reason": [
+    "Manufacturing PMI slightly above previous month.",
+    "No specific company impact."
+   ],
+   "risks": [
+    "Market may already have priced in the data."
+   ],
+   "plain": "A measure of factory activity in India came in slightly higher than expected.",
+   "why": "It shows factories are busy, but the change is too small to affect specific stocks.",
+   "check": "Look at how the main market index opens to see if traders are optimistic.",
+   "original": "INDIA (NOV) HSBC INDIA PMI MFG ACTUAL: 56 VS 54.7 PREVIOUS",
+   "latency": 58.0,
+   "lane": "fast"
+  },
   {
    "id": "31ef700508b2fd22",
    "time": "2026-11-23T10:28:39+05:30",
