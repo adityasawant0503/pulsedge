@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T10:30+05:30",
+ "updated": "2026-11-23T10:47+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "The Indian stock market opened higher on Monday, with the Sensex rising 200 points and the Nifty crossing 25,850. The biggest news was Tata Steel announcing a plan to buy a 26.38% stake in APL Apollo Tubes for about ₹15,511 crore. This move caused APL Apollo's stock to hit its daily lower limit, meaning it fell by the maximum allowed amount. Meanwhile, IndusInd Bank shares dipped slightly after the bank fired its former CEO and reclaimed his compensation.",
+  "summary": "PulsEdge flagged that Tata Steel’s announcement to buy a 26.38% stake in APL Apollo Tubes for about ₹15,511 crore drove both Tata Steel and APL Apollo shares sharply lower, with drops of around 5% and up to 15% respectively. Investors are worried about the large cash outlay, higher debt and possible regulatory delays. Meanwhile, banks and financials posted modest gains, while the metals index slipped slightly. The market showed mixed sentiment as the steel deal created short‑term pain but could have longer‑term benefits.",
   "themes": [
-   "Major steel merger talks between Tata Steel and APL Apollo Tubes",
-   "Leadership changes at IndusInd Bank affecting investor confidence",
-   "Global oil tensions from Yemen impacting market sentiment"
+   "Tata Steel’s big acquisition of APL Apollo Tubes dominates headlines",
+   "Investor concerns over cash use, debt rise and regulatory approval risk",
+   "Sector moves: banks and financials up, metals index weakens"
   ],
   "watch": [
-   "How APL Apollo Tubes shares react to the acquisition offer",
-   "Any legal disputes arising from the IndusInd Bank CEO termination",
-   "Further updates on oil prices following the Saudi refinery attacks"
+   "Regulatory clearance progress for the Tata Steel‑APL Apollo transaction",
+   "Further price movement in Tata Steel and APL Apollo as the market digests the deal",
+   "Impact of IndusInd Bank’s leadership change and any legal disputes"
   ],
   "date": "2026-11-23",
-  "basis": "873a6a22b55b",
-  "updated": "2026-11-23T09:46+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 26
+  "basis": "37760e98a1cb",
+  "updated": "2026-11-23T10:47+05:30",
+  "model": "openai/gpt-oss-120b",
+  "items": 40
  },
  "stocks": {
   "KIRLOSBROS": {
@@ -92,20 +92,20 @@
    "model": "openai/gpt-oss-20b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel announced it will buy a 26.38% stake in APL Apollo Tubes for ₹15,511 crore and will make an open offer for another 26%. The announcement caused Tata Steel shares to fall about 5% as investors worry about cash, debt, and regulatory approval.",
-   "why": "The deal could affect Tata Steel's cash position, earnings, and debt levels, which matters to shareholders who hold its shares.",
-   "upside": "Potential long‑term benefits from the acquisition could strengthen Tata Steel's product portfolio and earnings.",
-   "downside": "Regulatory approval delays and increased debt could hurt the company.",
+   "summary": "Tata Steel has announced a major plan to acquire a significant stake in APL Apollo Tubes and sell its own tube business, causing its stock price to fall sharply. Investors are weighing the heavy spending and deal costs against future changes to the company structure.",
+   "why": "This matters because large acquisitions and asset sales can change how the company is run, impact its cash levels, and cause immediate price swings for shareholders.",
+   "upside": "Experts believe the long-term value and strength of the combined businesses could remain strong.",
+   "downside": "High acquisition costs could increase Tata Steel's debt and hurt its profits.",
    "watch": [
-    "Regulatory approval status of the acquisition",
-    "Impact on Tata Steel's debt levels",
-    "Share price reaction to integration progress"
+    "Regulatory approval updates for the acquisition",
+    "Any further changes to Tata Steel's debt or cash levels",
+    "Short-term stock volatility"
    ],
-   "about": "Tata Steel Ltd. is a major Indian steel company in the metals and mining sector.",
-   "basis": "cf2299ab1145",
-   "items": 14,
-   "updated": "2026-11-23T10:30+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "Tata Steel Ltd. operates in the metals and mining sector as one of India's largest listed companies.",
+   "basis": "39b200194a8d",
+   "items": 16,
+   "updated": "2026-11-23T10:47+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "APLAPOLLO": {
    "summary": "Tata Steel has announced a plan to buy a 26.38% stake in APL Apollo Tubes for approximately ₹15,511 crore, with plans to make an open offer for another 26%. Following this news, APL Apollo shares hit the 10% lower circuit, marking a significant drop in the stock price.",
@@ -204,19 +204,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd is seeing pressure from falling global oil prices, as Brent and WTI have slipped in recent sessions. The broader oil‑and‑gas sector in India has risen modestly, up 0.4% in the last session and 2.0% over five sessions.",
-   "why": "Lower crude prices can reduce the company’s revenue and profit margins, which matters to shareholders.",
-   "upside": "If geopolitical tensions rise or OPEC+ cuts output, oil prices could rebound, boosting earnings.",
-   "downside": "Continued price declines and a surplus of supply could further compress earnings.",
+   "summary": "Oil India is seeing pressure as global oil prices have fallen for a third straight week amid ample supply and mixed geopolitical news. The broader oil‑and‑gas sector in India has risen modestly, up 0.4% in the last session.",
+   "why": "Lower crude prices can reduce the company’s earnings, which matters to shareholders.",
+   "upside": "A rebound in oil prices from supply cuts or heightened geopolitical tension could improve earnings.",
+   "downside": "Continued price declines from a supply glut could further squeeze profits.",
    "watch": [
-    "OPEC+ output decision and its impact on oil supply",
-    "Trends in Brent and WTI crude prices",
-    "Geopolitical developments such as attacks on oil facilities in the Middle East"
+    "Outcome of the upcoming OPEC+ output decision",
+    "Weekly movements in Brent and WTI crude prices",
+    "Geopolitical developments affecting oil supply, such as attacks on facilities or shipping incidents"
    ],
-   "about": "Oil India Ltd explores, produces and markets crude oil and natural gas in India.",
-   "basis": "f901fe4a0d6e",
-   "items": 8,
-   "updated": "2026-11-23T09:17+05:30",
+   "about": "Oil India Ltd. explores, produces and sells crude oil and natural gas in India.",
+   "basis": "4bc0da4064ab",
+   "items": 9,
+   "updated": "2026-11-23T10:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "JBMA": {
@@ -377,6 +377,22 @@
    "basis": "b4b6fcf5a0c1",
    "items": 5,
    "updated": "2026-11-23T10:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "ENGINERSIN": {
+   "summary": "Engineers India Ltd is a construction company listed on the NSE and part of the Nifty 500 index. No recent announcements or news items have been flagged for the company.",
+   "why": "Its inclusion in the Nifty 500 signals a large, liquid stock, which matters for shareholders seeking stability and market exposure.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "Upcoming quarterly earnings release",
+    "Changes in the order book or new contract wins",
+    "Any regulatory or policy updates affecting the construction sector"
+   ],
+   "about": "Engineers India Ltd provides engineering and construction services.",
+   "basis": "468df8bbd14d",
+   "items": 2,
+   "updated": "2026-11-23T10:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "PERSISTENT": {
