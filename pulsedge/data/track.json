@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T12:31:36+05:30",
+ "updated": "2026-11-23T12:46:53+05:30",
  "summary": {
-  "calls": 2010,
-  "scored_calls": 840,
+  "calls": 2011,
+  "scored_calls": 841,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "952d75d3a6e0df16",
+   "symbol": "ITI",
+   "time": "2026-11-23T12:29:26+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "137% up in five years, ITI shares rally 11% today despite stock market crash | Check stock returns, buy target price",
+   "url": "https://www.livemint.com/market/stock-market-news/137-up-in-five-years-iti-shares-rally-11-today-despite-stock-market-crash-check-stock-returns-buy-target-price-11795414053977.html",
+   "alert_px": 270.2,
+   "alert_move": 9.96,
+   "alert_at": "2026-11-23T12:46:50+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "d7db5e692acded33",
    "symbol": "LT",
