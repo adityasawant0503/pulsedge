@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T14:15:55+05:30",
+ "updated": "2026-11-23T14:31:25+05:30",
  "summary": {
-  "calls": 2031,
-  "scored_calls": 861,
+  "calls": 2032,
+  "scored_calls": 862,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "aa3536697f828588",
+   "symbol": "SUZLON",
+   "time": "2026-11-23T14:17:37+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Suzlon Energy Limited: Suzlon Energy Limited has informed the Exchange regarding 'Disclosure with respect to cyber incident'. |SUBJECT: Updates",
+   "url": "https://nsearchives.nseindia.com/corporate/SUZLON1_23112026141719_Suzlon23112026.pdf",
+   "alert_px": 36.1,
+   "alert_move": -2.33,
+   "alert_at": "2026-11-23T14:31:02+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "c563a1936c46394c",
    "symbol": "TCS",
