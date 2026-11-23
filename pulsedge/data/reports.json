@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T08:46+05:30",
+ "updated": "2026-11-23T09:01+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Tata Steel announced it will buy a stake in APL Apollo Tubes and has approved an open offer, while both companies reported board meeting outcomes and new agreements. APL Apollo Tubes also signed new deals that could boost sales. Sector indices saw banks, financials and realty rise, while media, consumer durables and metals fell. Foreign funds held a steady 34% long position and global tensions over a possible US‑Iran conflict could affect oil prices.",
+  "summary": "Tata Steel announced it will buy a 26.38% stake in APL Apollo Tubes for about ₹15,511 crore, a move that could affect both companies' share values. The Indian market was expected to open higher, with the GIFT Nifty jumping 180 points overnight. Banks and financial sectors showed strength in the previous session, while media stocks lagged. Investors are watching how this large deal impacts Tata Steel's cash flow and debt levels.",
   "themes": [
-   "Corporate actions – acquisitions and board decisions",
-   "Sector performance – banks and realty up, media and metals down",
-   "Geopolitical risk – potential oil price swings from US‑Iran tensions"
+   "Major steel industry consolidation through a large acquisition.",
+   "Strong performance in banking and financial sectors.",
+   "Global market volatility driving interest in safe assets like gold."
   ],
   "watch": [
-   "Details of Tata Steel’s stake acquisition in APL Apollo Tubes",
-   "Terms of the new agreements signed by APL Apollo Tubes",
-   "Impact of possible US‑Iran conflict on oil prices and market volatility"
+   "Details of the open offer for additional APL Apollo shares.",
+   "Potential impact on Tata Steel's debt and earnings.",
+   "Whether the positive market opening trend continues despite global tech stock falls."
   ],
   "date": "2026-11-23",
-  "basis": "ad368fcc132c",
-  "updated": "2026-11-23T08:15+05:30",
-  "model": "openai/gpt-oss-20b",
-  "items": 13
+  "basis": "9b73f35c8be8",
+  "updated": "2026-11-23T09:01+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 21
  },
  "stocks": {
   "KIRLOSBROS": {
@@ -90,22 +90,6 @@
    "items": 4,
    "updated": "2026-11-20T15:16+05:30",
    "model": "openai/gpt-oss-20b"
-  },
-  "JWL": {
-   "summary": "Jupiter Wagons Ltd secured a repeat order worth over INR 128 crore from JSW (South) Rail Logistics, adding to its order book.",
-   "why": "The order adds revenue potential, but its size relative to the company's total sales is uncertain.",
-   "upside": "If the order is executed on time and cost‑efficiently, it could lift earnings.",
-   "downside": "Higher raw‑material costs or the order’s modest size could limit its positive impact.",
-   "watch": [
-    "Order execution timeline",
-    "Raw material price trends",
-    "Future order wins or pipeline"
-   ],
-   "about": "Jupiter Wagons manufactures railway freight wagons.",
-   "basis": "0304c538ae38",
-   "items": 2,
-   "updated": "2026-11-20T09:30+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "TATASTEEL": {
    "summary": "Tata Steel announced it will buy a 26.38% stake in APL Apollo Tubes for about ₹15,511 crore and plans to make an open offer for another 26% of shares. The company's board also approved this acquisition and a partnership to build new steel products.",
@@ -171,22 +155,6 @@
    "updated": "2026-11-23T07:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "URBANCO": {
-   "summary": "Urban Company raised 2,500 crore rupees from large institutional investors. This move caused the stock price to drop by 4% as investors reacted to the increase in total shares.",
-   "why": "The new money gives the company cash to grow, but the extra shares can make each existing share worth less in the short term.",
-   "upside": "The raised funds provide the company with more cash to expand its business.",
-   "downside": "The market may continue to sell the stock if it views the company's value as too high, leading to further price drops.",
-   "watch": [
-    "How the stock price reacts in the coming days after the initial dip",
-    "Whether the company announces how it plans to use the new funds",
-    "General market sentiment regarding the company's valuation"
-   ],
-   "about": "",
-   "basis": "5e1001036ff2",
-   "items": 2,
-   "updated": "2026-11-23T07:23+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "MANAPPURAM": {
    "summary": "Manappuram Finance shares fell up to 5% after gold prices dropped to a one‑year low, making its gold‑loan business riskier. The broader financial sector index rose about 2% in the last session.",
    "why": "Shareholders see a price dip and face the possibility of higher loan defaults if gold values stay low.",
@@ -202,6 +170,22 @@
    "items": 1,
    "updated": "2026-11-23T07:23+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "URBANCO": {
+   "summary": "Urban Company raised 2,500 crore rupees, which caused its share price to fall by 4%. This drop happened because the new shares can reduce the value of existing ones, a process known as dilution.",
+   "why": "If you own shares, the introduction of new shares means your ownership percentage in the company becomes smaller, which can lower the price of your holdings.",
+   "upside": "",
+   "downside": "The share price may continue to fall if investors believe the company is valued too highly.",
+   "watch": [
+    "How the market reacts to the new shares over the coming days",
+    "Whether the company explains how it will use the raised funds",
+    "Changes in the stock price relative to the Nifty 500 index"
+   ],
+   "about": "Urban Company is a consumer services company listed in India's Nifty 500 index.",
+   "basis": "51a411ad403c",
+   "items": 1,
+   "updated": "2026-11-23T09:01+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
    "summary": "Oil India Ltd. is facing a mixed environment where global oil prices have fallen for three straight weeks due to high supply, but recent geopolitical incidents like a tanker attack and drone strikes on refineries could push prices back up. The company is part of the Nifty 500, and its sector index has risen slightly over the last five sessions.",
