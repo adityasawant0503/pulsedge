@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T12:46+05:30",
+ "updated": "2026-11-23T13:00+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Tata Steel announced a major deal to buy a large stake in APL Apollo Tubes, which caused both companies' share prices to drop sharply. APL Apollo hit its daily lower limit, while Tata Steel fell by about 5% as investors worried about the high cost. Meanwhile, the broader market stayed positive, with the Sensex rising 200 points and bank stocks leading the gains. Sterling and Wilson also reported winning large new contracts for solar and battery projects.",
+  "summary": "PulsEdge flagged that Tata Steel announced a 26.38% stake purchase in APL Apollo Tubes, causing both companies’ shares to fall. Dalmia Bharat approved a share buyback at Rs 1,850 per share, which could lift its stock if market sentiment stays positive. The market saw modest gains in banks and financials, while the metals index slipped slightly. IndusInd Bank’s leadership change and Welspun Enterprises’ growth targets were also highlighted.",
   "themes": [
-   "Big mergers causing short-term price drops",
-   "Banking sector showing strength",
-   "Renewable energy companies winning new business"
+   "Tata Steel acquisition and its market impact",
+   "Share buybacks and corporate confidence",
+   "Sector performance and corporate announcements"
   ],
   "watch": [
-   "Regulatory approval for the Tata Steel and APL Apollo deal",
-   "Whether Tata Steel's debt levels rise due to the acquisition",
-   "IndusInd Bank's response to the former CEO termination"
+   "Regulatory approval status for the Tata Steel–APL Apollo deal",
+   "Effect of Dalmia Bharat’s buyback on its share price",
+   "Future orders and expansion plans for Titagarh Rail Systems"
   ],
   "date": "2026-11-23",
-  "basis": "c53ec2440f5e",
-  "updated": "2026-11-23T11:45+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 52
+  "basis": "13b93aea9e03",
+  "updated": "2026-11-23T13:00+05:30",
+  "model": "openai/gpt-oss-20b",
+  "items": 65
  },
  "stocks": {
   "KIRLOSBROS": {
@@ -108,20 +108,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel has announced a major plan to acquire a significant stake in APL Apollo Tubes while also divesting its own tube business. These large corporate moves caused its stock price to drop sharply as investors weighed the heavy costs.",
-   "why": "This matters because major acquisitions and sales change the company's financial structure and debt levels, which directly impacts shareholder value.",
-   "upside": "Experts believe the long-term value and benefits of these structural changes could remain strong despite current concerns.",
-   "downside": "High spending could increase the company's debt or hurt profits, and the deal might face regulatory hurdles.",
+   "summary": "Tata Steel announced a $1.67 billion purchase of a large stake in APL Apollo, India's biggest steel pipe maker, and also sold its tube business. The announcements triggered a roughly 5% drop in Tata Steel’s share price as investors worried about the deal’s cost and timing.",
+   "why": "Shareholders see the stock fall and face uncertainty about how the acquisition will affect cash flow, debt and future earnings.",
+   "upside": "If the combined entity gains scale and synergies, it could improve long‑term profitability and unlock value.",
+   "downside": "The high acquisition price may pressure profits, raise debt and, if regulatory approval stalls, could cause further share weakness.",
    "watch": [
-    "Regulatory approvals for the acquisition",
-    "Updates on Tata Steel's debt and cash levels",
-    "Integration challenges regarding the new stake"
+    "Progress on regulatory approval for the APL Apollo acquisition",
+    "Changes in Tata Steel’s debt levels and cash flow after the deal",
+    "Market reaction to the divestment of the tube business"
    ],
-   "about": "Tata Steel Ltd. is one of India's largest listed metals and mining companies.",
-   "basis": "4ac87edc5fe2",
-   "items": 15,
-   "updated": "2026-11-23T12:31+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "Tata Steel Ltd. is a major Indian steel producer.",
+   "basis": "e278b6b0dad5",
+   "items": 16,
+   "updated": "2026-11-23T13:00+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "APLAPOLLO": {
    "summary": "Tata Steel has announced a plan to buy a 26.38% stake in APL Apollo Tubes for approximately ₹15,511 crore, with plans to make an open offer for another 26%. Following this news, APL Apollo shares hit the 10% lower circuit, marking a significant drop in the stock price.",
@@ -170,6 +170,22 @@
    "items": 3,
    "updated": "2026-11-23T11:45+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "TITAGARH": {
+   "summary": "Titagarh Rail Systems won a ₹77.09 crore order from JSW for 181 BFNSM1 wagons and 3 BVCM wagons and received approval to manufacture auto carrier wagons. It also delivered a DSC A21 naval system to the Indian Navy. These events add to its future income and show business expansion.",
+   "why": "The new order and product approval can boost the company's revenue streams, while the naval delivery confirms its ability to secure government contracts.",
+   "upside": "The expanded product line and new orders could increase future earnings.",
+   "downside": "The order value is modest compared to total revenue, and a single naval delivery may not immediately impact earnings.",
+   "watch": [
+    "Fulfillment of the JSW wagon order",
+    "Approval and launch of auto carrier wagon production",
+    "Impact of the DSC A21 delivery on future defence contracts"
+   ],
+   "about": "It manufactures railway wagons and naval systems.",
+   "basis": "c848c189b9f3",
+   "items": 2,
+   "updated": "2026-11-23T13:00+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "GALLANTT": {
    "summary": "PulsEdge flagged three large block deals for Gallantt Ispat on November 20, 2026. One investor sold shares worth ₹84 crore, while two others bought shares worth ₹56 crore and ₹29 crore respectively.",
@@ -379,6 +395,22 @@
    "updated": "2026-11-20T15:16+05:30",
    "model": "openai/gpt-oss-20b"
   },
+  "BRIGADE": {
+   "summary": "Brigade Enterprises is moving closer to its sales targets by launching a new real estate project. At the same time, the company expects its hotel business to see faster growth in the second half of the year.",
+   "why": "New projects and stronger hotel revenue can boost the company's overall business, but investors are still waiting to see if the new projects sell well.",
+   "upside": "The hotel business could hit double-digit growth, and new project launches could help the company reach its sales targets.",
+   "downside": "If the new projects do not sell well, the stock may continue to lag behind.",
+   "watch": [
+    "Sales results from the new project launch",
+    "Whether the hotel business reaches double-digit growth in the second half of the year",
+    "Overall movement in the realty sector"
+   ],
+   "about": "Brigade Enterprises Ltd. is a real estate company operating in India's realty sector.",
+   "basis": "d70a51a9da1c",
+   "items": 2,
+   "updated": "2026-11-23T13:00+05:30",
+   "model": "gemini-flash-lite-latest"
+  },
   "ITI": {
    "summary": "ITI shares rose by about 11% on November 23, 2026, even though the broader stock market fell that day. The stock has increased by 137% over the last five years.",
    "why": "This move shows that investors are buying ITI shares even when other stocks are dropping, which suggests strong interest in the company.",
@@ -441,6 +473,22 @@
    "basis": "98a612d890b5",
    "items": 3,
    "updated": "2026-11-23T11:15+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "LTTS": {
+   "summary": "L&T Technology Services addressed reports of a cybersecurity incident and launched a new software tool called SDVault.ai for the automotive sector. The company is part of the IT sector, which has seen recent price fluctuations.",
+   "why": "Shareholders need to know if the security reports are serious because trust is key for a tech firm. The new product launch shows the company is trying to grow, but it is too early to know if customers will buy it.",
+   "upside": "The new SDVault.ai tool could help the company attract new customers in the automotive industry.",
+   "downside": "If the cybersecurity incident is confirmed to be severe, it could hurt investor confidence and lead to a drop in the share price.",
+   "watch": [
+    "Official updates on the cybersecurity incident",
+    "Customer response to the new SDVault.ai product",
+    "Performance of the broader IT sector index"
+   ],
+   "about": "L&T Technology Services is an Information Technology company listed in India's Nifty 500 index.",
+   "basis": "c80099c38a30",
+   "items": 2,
+   "updated": "2026-11-23T13:00+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "TITAN": {
