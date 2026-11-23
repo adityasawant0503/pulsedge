@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T08:32:17+05:30",
+ "updated": "2026-11-23T08:47:03+05:30",
  "summary": {
-  "calls": 1971,
-  "scored_calls": 801,
+  "calls": 1976,
+  "scored_calls": 806,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,61 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "59cddd0c073ad3f4",
+   "symbol": "TATASTEEL",
+   "time": "2026-11-23T08:37:21+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Tata Steel share price in focus on announcement to acquire 26.38% stake in APL Apollo Tubes for ₹15,511 crore",
+   "url": "https://www.livemint.com/market/stock-market-news/tata-steel-share-price-in-focus-on-announcement-to-acquire-26-38-stake-in-apl-apollo-tubes-for-rs-15-511-crore-11795400975932.html"
+  },
+  {
+   "id": "59cddd0c073ad3f4",
+   "symbol": "APLAPOLLO",
+   "time": "2026-11-23T08:37:21+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Tata Steel share price in focus on announcement to acquire 26.38% stake in APL Apollo Tubes for ₹15,511 crore",
+   "url": "https://www.livemint.com/market/stock-market-news/tata-steel-share-price-in-focus-on-announcement-to-acquire-26-38-stake-in-apl-apollo-tubes-for-rs-15-511-crore-11795400975932.html"
+  },
+  {
+   "id": "315b7b6f38746f45",
+   "symbol": "HDFCBANK",
+   "time": "2026-11-23T08:25:27+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "HDFC Bank among 5 stocks showing White Marubozu pattern",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/hdfc-bank-among-5-stocks-showing-white-marubozu-pattern/slideshow/136087788.cms"
+  },
+  {
+   "id": "49bc32463bfea871",
+   "symbol": "OIL",
+   "time": "2026-11-23T08:20:56+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Oil prices fall amid equity selloff though Iran war attacks limit losses",
+   "url": "https://www.business-standard.com/markets/commodities/oil-prices-fall-amid-equity-selloff-though-iran-war-attacks-limit-losses-126112300089_1.html"
+  },
+  {
+   "id": "7a905e230433a304",
+   "symbol": "PERSISTENT",
+   "time": "2026-11-23T08:19:23+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Persistent Systems among 4 stocks showing RSI trending up",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/persistent-systems-among-4-stocks-showing-rsi-trending-up/slideshow/136087624.cms"
+  },
   {
    "id": "d139a973bd48ea80",
    "symbol": "TATASTEEL",
