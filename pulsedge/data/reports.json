@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T09:46+05:30",
+ "updated": "2026-11-23T10:00+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -92,36 +92,36 @@
    "model": "openai/gpt-oss-20b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel announced it will buy a 26.38% stake in APL Apollo Tubes for about ₹15,511 crore and plans to make an open offer for another 26% of shares. The company's board also approved this acquisition and a partnership to build new steel products.",
-   "why": "This large purchase uses significant cash, which could increase the company's debt and affect its earnings. Shareholders need to watch how this deal changes the company's financial health and future growth.",
-   "upside": "The partnership aims to create new steel products that could help the company sell more and earn more money in the future.",
-   "downside": "The acquisition may lead to higher debt and integration challenges as the companies combine their operations.",
+   "summary": "Tata Steel has agreed to acquire a large stake in APL Apollo Tubes for thousands of crores, leading to a drop in its share price. Investors are reacting to the massive spending and the open offer plan for additional shares.",
+   "why": "This matters because large acquisitions can heavily impact the company's cash reserves and overall debt levels. At the same time, the partnership aims to build a stronger steel tubes business.",
+   "upside": "The new venture could eventually help the company sell more products and grow stronger.",
+   "downside": "High acquisition costs and potential debt increases could continue to weigh on the company.",
    "watch": [
-    "Details of the open offer for APL Apollo shares",
-    "How the new partnership plans to execute its product goals",
-    "Changes in Tata Steel's debt levels after the purchase"
+    "Regulatory approval delays for the acquisition",
+    "Updates on the open offer details",
+    "Integration challenges and debt levels"
    ],
-   "about": "Tata Steel is a major player in the Metals & Mining sector and is one of India's 50 largest listed companies.",
-   "basis": "165d78ec2e97",
-   "items": 9,
-   "updated": "2026-11-23T08:46+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Tata Steel Ltd. is a major metals and mining company and one of India's 50 largest listed companies.",
+   "basis": "35b858652945",
+   "items": 12,
+   "updated": "2026-11-23T10:00+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "APLAPOLLO": {
-   "summary": "Tata Steel announced it will buy a 26.38% stake in APL Apollo Tubes for about ₹15,511 crore and plans an open offer for another 26%. On the same day, APL Apollo's stock price hit the 10% lower circuit, meaning it fell by the maximum allowed amount for the day.",
-   "why": "This matters because a large acquisition can change the company's ownership structure and future direction, while the sharp price drop shows strong selling interest that affects the value of shares held.",
-   "upside": "Shareholders may receive a premium on their shares as part of the acquisition deal.",
-   "downside": "The stock price has already fallen significantly, and there is a risk of further decline if selling pressure continues.",
+   "summary": "Tata Steel announced it will buy a 26.38% stake in APL Apollo Tubes for about ₹15,511 crore and will make an open offer for another 26%, causing APL Apollo shares to hit a 10% lower circuit and both stocks to fall. The company also disclosed new agreements and board decisions, while investors watch for regulatory approval and integration risks.",
+   "why": "Shareholders could receive a premium from the takeover, but the deal price and possible cash strain on Tata Steel raise concerns about the value of their holdings.",
+   "upside": "If the acquisition closes smoothly and the new agreements boost sales, shareholders may benefit from a higher valuation.",
+   "downside": "Delays in regulatory approval, integration challenges, or continued selling pressure could push the share price lower.",
    "watch": [
-    "Details of the new agreements signed by the company",
-    "Outcomes of the board meeting held on November 23, 2026",
-    "Whether the stock price stabilizes after hitting the lower circuit"
+    "Progress on regulatory approval for Tata Steel's stake purchase",
+    "Details and impact of the new agreements signed by APL Apollo",
+    "Further price movement and volatility after the lower‑circuit hit"
    ],
-   "about": "",
-   "basis": "90032f4a1f10",
-   "items": 6,
-   "updated": "2026-11-23T09:31+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "APL Apollo Tubes Ltd. manufactures steel tubes and related products in the capital goods sector.",
+   "basis": "dcc9daed0f74",
+   "items": 7,
+   "updated": "2026-11-23T10:00+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "INDUSINDBK": {
    "summary": "IndusInd Bank shares recently surged nearly 9% on high trading volume, approaching their 52-week high. However, the stock dropped 1% after the bank terminated its former CEO and reclaimed his compensation.",
@@ -427,22 +427,6 @@
    "updated": "2026-11-21T00:18+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "SCHNEIDER": {
-   "summary": "Schneider Electric Infrastructure Ltd. has recently reported regulatory actions and changes in its board. A regulator has issued an order affecting the company, and a director has resigned while another director change was announced.",
-   "why": "These events could affect the company’s operations and governance, which matters to shareholders who rely on stable management and compliance.",
-   "upside": "",
-   "downside": "The regulatory order could lead to fines or operational restrictions, and the director changes may create short‑term leadership uncertainty.",
-   "watch": [
-    "Regulatory order details and any fines or restrictions",
-    "Resignation of a key director",
-    "Appointment of a new director"
-   ],
-   "about": "",
-   "basis": "c284c60b8bdd",
-   "items": 4,
-   "updated": "2026-11-20T15:16+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
   "PERSISTENT": {
    "summary": "Persistent Systems recently issued a statement to the stock exchange, though the specific details are not yet public. At the same time, a technical indicator called RSI moved above 50, which suggests the stock may be gaining upward momentum.",
    "why": "The company statement could contain important information that affects the value of the shares, while the rising RSI indicates potential short-term strength in the stock price.",
@@ -522,6 +506,22 @@
    "items": 2,
    "updated": "2026-11-20T15:30+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "SCHNEIDER": {
+   "summary": "Schneider Electric Infrastructure Ltd. reported that a regulator has taken action or issued an order in one of its cases. The details of the decision are not disclosed yet.",
+   "why": "Regulatory actions can affect the company's costs or ability to operate, which matters to shareholders.",
+   "upside": "If the regulator's order is favorable or results in no penalty, the company could avoid extra costs.",
+   "downside": "An adverse order could lead to fines or operational restrictions that hurt earnings.",
+   "watch": [
+    "The specific details of the regulator's decision",
+    "Any follow‑up disclosures from the company",
+    "Potential impact on the company's financial results"
+   ],
+   "about": "",
+   "basis": "c60ed24f1450",
+   "items": 2,
+   "updated": "2026-11-23T10:00+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "IPCALAB": {
    "summary": "IPCA Laboratories announced it will sell a business unit and shut a manufacturing operation. The company plans to sell the land and buildings associated with the closed unit.",

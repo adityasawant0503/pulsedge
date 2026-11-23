@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T09:46:15+05:30",
+ "updated": "2026-11-23T10:01:15+05:30",
  "summary": {
-  "calls": 1981,
-  "scored_calls": 811,
+  "calls": 1985,
+  "scored_calls": 815,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,66 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "b671d42c902d92da",
+   "symbol": "TATASTEEL",
+   "time": "2026-11-23T09:57:02+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Tata Steel shares fall 5% as investors weigh ₹32,000 cr APL Apollo acquisition plan | Should you buy? Check key levels",
+   "url": "https://www.livemint.com/market/stock-market-news/tata-steel-shares-fall-5-as-investors-weigh-rs-32-000-cr-apl-apollo-acquisition-plan-should-you-buy-check-key-levels-11795406091656.html",
+   "alert_px": 169.4,
+   "alert_move": -4.83,
+   "alert_at": "2026-11-23T10:00:44+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "b671d42c902d92da",
+   "symbol": "APLAPOLLO",
+   "time": "2026-11-23T09:57:02+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Tata Steel shares fall 5% as investors weigh ₹32,000 cr APL Apollo acquisition plan | Should you buy? Check key levels",
+   "url": "https://www.livemint.com/market/stock-market-news/tata-steel-shares-fall-5-as-investors-weigh-rs-32-000-cr-apl-apollo-acquisition-plan-should-you-buy-check-key-levels-11795406091656.html",
+   "alert_px": 1837.5,
+   "alert_move": -13.39,
+   "alert_at": "2026-11-23T10:00:44+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "61f4806aa2a8d1a2",
+   "symbol": "TATASTEEL",
+   "time": "2026-11-23T09:56:49+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "CNBC World Markets",
+   "headline": "Tata Steel to buy $1.67 billion stake in India’s largest steel pipe maker; shares plunge nearly 5%",
+   "url": "https://www.cnbc.com/2026/11/23/tata-steel-acquisition-deal-apl-india.html",
+   "alert_px": 169.4,
+   "alert_move": -4.83,
+   "alert_at": "2026-11-23T10:00:44+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "84bc97ee3c04ab32",
+   "symbol": "TATASTEEL",
+   "time": "2026-11-23T09:38:57+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "APL Apollo tanks 10%, Tata Steel 5% on ₹28K-cr deal: What it means for cos",
+   "url": "https://www.business-standard.com/markets/news/apl-apollo-tanks-10-tata-steel-5-on-28k-cr-deal-what-it-means-for-cos-126112300182_1.html",
+   "alert_px": 169.4,
+   "alert_move": -4.83,
+   "alert_at": "2026-11-23T10:00:44+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "b5df776f601c9246",
    "symbol": "LT",
