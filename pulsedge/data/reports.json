@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T13:46+05:30",
+ "updated": "2026-11-23T14:01+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -75,22 +75,6 @@
   "items": 78
  },
  "stocks": {
-  "KIRLOSBROS": {
-   "summary": "Kirloskar Brothers Ltd. (KIRLOSBROS) has secured a landmark 165‑crore rupee contract to supply pumps for Africa’s largest refinery, Dangote Petroleum Refinery & Petrochemicals. The company’s joint venture, Kirloskar Ebara Pumps Limited, is also reportedly close to signing a large framework order with a U.S. data‑centre operator. These developments signal potential growth in international sales.",
-   "why": "The new contracts could boost the company’s future revenue and earnings, which matters to shareholders looking for long‑term value.",
-   "upside": "Successful execution of the Dangote and U.S. data‑centre contracts could increase future sales and profits.",
-   "downside": "Execution delays or cost overruns on the international projects could hurt profitability, and the U.S. deal may not materialise or could be smaller than reported.",
-   "watch": [
-    "Execution progress of the Dangote refinery contract",
-    "Confirmation and size of the U.S. data‑centre framework order",
-    "Any cost overruns or delays reported by the company"
-   ],
-   "about": "Kirloskar Brothers Ltd. manufactures pumps for industrial applications.",
-   "basis": "755e60f4f5c7",
-   "items": 4,
-   "updated": "2026-11-20T15:16+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
   "DALBHARAT": {
    "summary": "The board approved an open‑market buyback of its shares at Rs 1850 each, reducing the total share count.",
    "why": "Buybacks can lift the value of remaining shares, which matters to current shareholders.",
@@ -106,6 +90,22 @@
    "items": 3,
    "updated": "2026-11-23T13:24+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "KIRLOSBROS": {
+   "summary": "Kirloskar Brothers and its joint venture partner won a contract worth 165 crore rupees to supply pumps for a major refinery in Africa. This is described as a landmark order for the company.",
+   "why": "Winning large contracts like this means the company has secured future sales, which can lead to higher profits for shareholders.",
+   "upside": "The company has secured significant future income from this major international project.",
+   "downside": "Delays in completing the work or costs going over budget could reduce the profit from this contract.",
+   "watch": [
+    "Updates on the progress of the refinery project",
+    "Any news about delays or cost changes",
+    "Future announcements about new orders"
+   ],
+   "about": "The company operates in the capital goods sector and supplies pumps.",
+   "basis": "86d3d5eebc4e",
+   "items": 3,
+   "updated": "2026-11-23T14:01+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
    "summary": "Tata Steel announced a $1.67 billion purchase of a large stake in APL Apollo, India's biggest steel pipe maker, and also sold its tube business. The announcements triggered a roughly 5% drop in Tata Steel’s share price as investors worried about the deal’s cost and timing.",
@@ -171,22 +171,6 @@
    "updated": "2026-11-23T13:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "INDUSINDBK": {
-   "summary": "IndusInd Bank shares recently surged nearly 9% on high trading volume, approaching their 52-week high. However, the stock dropped 1% after the bank terminated its former CEO and reclaimed his compensation.",
-   "why": "The sharp rise suggests strong investor interest, but the sudden leadership change and potential legal disputes could create uncertainty for shareholders.",
-   "upside": "The recent surge in trading volume and price indicates strong buyer interest and improving business momentum.",
-   "downside": "Leadership turmoil and potential legal disputes from the CEO termination could hurt confidence and worsen performance.",
-   "watch": [
-    "Any legal actions or disputes arising from the former CEO's termination",
-    "Whether the stock can hold its recent gains or faces profit booking",
-    "Future announcements regarding new leadership or strategic changes"
-   ],
-   "about": "IndusInd Bank is a private sector bank operating in the financial services sector.",
-   "basis": "329c597691b7",
-   "items": 4,
-   "updated": "2026-11-23T09:46+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "SOLARINDS": {
    "summary": "Solar Industries India Ltd. is a chemicals company listed in the Nifty 500. There are no recent company-specific news items flagged by PulsEdge.",
    "why": "Shareholders should note its position in the chemicals sector and inclusion in the Nifty 500, which can affect its visibility and liquidity.",
@@ -202,6 +186,22 @@
    "items": 3,
    "updated": "2026-11-23T11:45+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "INDUSINDBK": {
+   "summary": "IndusInd Bank shares recently surged nearly 9% on high trading volume, approaching their 52-week high. However, the stock dropped 1% after the bank terminated its former CEO and reclaimed his compensation.",
+   "why": "The sharp rise suggests strong investor interest, but the sudden leadership change and potential legal disputes could create uncertainty for shareholders.",
+   "upside": "The recent surge in trading volume and price indicates strong buyer interest and improving business momentum.",
+   "downside": "Leadership turmoil and potential legal disputes from the CEO termination could hurt confidence and worsen performance.",
+   "watch": [
+    "Any legal actions or disputes arising from the former CEO's termination",
+    "Whether the stock can hold its recent gains or faces profit booking",
+    "Future announcements regarding new leadership or strategic changes"
+   ],
+   "about": "IndusInd Bank is a private sector bank operating in the financial services sector.",
+   "basis": "329c597691b7",
+   "items": 4,
+   "updated": "2026-11-23T09:46+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "TITAGARH": {
    "summary": "Titagarh Rail Systems won a ₹77.09 crore order from JSW for 181 BFNSM1 wagons and 3 BVCM wagons and received approval to manufacture auto carrier wagons. It also delivered a DSC A21 naval system to the Indian Navy. These events add to its future income and show business expansion.",
@@ -282,6 +282,22 @@
    "items": 2,
    "updated": "2026-11-23T12:15+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "RAILTEL": {
+   "summary": "Railtel Corporation of India announced that it has won new business contracts. This news was shared with the stock exchange as a standard update on company activities.",
+   "why": "New contracts can lead to more future work and income for the company, which is generally a positive sign for its business health.",
+   "upside": "The new orders could increase the company's future revenue if the projects are successfully completed.",
+   "downside": "The value of these new orders might be too small to make a significant difference to the company's overall earnings.",
+   "watch": [
+    "The specific value of the new contracts",
+    "Future announcements about additional business wins",
+    "The company's next quarterly financial results"
+   ],
+   "about": "Railtel is a company in the telecommunication sector that provides technology services related to railways.",
+   "basis": "795bd2e3a4a6",
+   "items": 1,
+   "updated": "2026-11-23T14:01+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "ABREL": {
    "summary": "Aditya Birla Real Estate Ltd. is part of the realty sector, which saw a 17% rise in the BSE Realty index last month. The sector index moved +1.7% in the last session and +1.9% over five sessions.",
@@ -538,22 +554,6 @@
    "items": 2,
    "updated": "2026-11-23T10:00+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "IPCALAB": {
-   "summary": "IPCA Laboratories announced it will sell a business unit and shut a manufacturing operation. The company plans to sell the land and buildings associated with the closed unit.",
-   "why": "These moves can change the company’s earnings and cash balance, which matters to shareholders.",
-   "upside": "The sale could provide cash to strengthen the balance sheet.",
-   "downside": "Closing the unit may reduce output and risk loss of market share.",
-   "watch": [
-    "Completion of the unit sale",
-    "Impact on cash balance",
-    "Effect on production output"
-   ],
-   "about": "",
-   "basis": "017c2f2b65d7",
-   "items": 2,
-   "updated": "2026-11-20T15:02+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "TATACHEM": {
    "summary": "Tata Chemicals shares rose 4.5% after news that Tata Sons may discuss staying private. This development has put the company's ownership structure in focus for investors.",

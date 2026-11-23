@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T13:46:42+05:30",
+ "updated": "2026-11-23T14:02:18+05:30",
  "summary": {
-  "calls": 2027,
-  "scored_calls": 857,
+  "calls": 2029,
+  "scored_calls": 859,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "c2ec5b5bed13d1fe",
+   "symbol": "RAILTEL",
+   "time": "2026-11-23T13:49:50+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Railtel Corporation Of India Limited: RailTel Corporation of India Limited has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Par",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_18826_WebXMLFile_20261123_134949105.xml",
+   "alert_px": 245.55,
+   "alert_move": -1.51,
+   "alert_at": "2026-11-23T14:01:49+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "aa75153edaa1fd45",
+   "symbol": "SOLARINDS",
+   "time": "2026-11-23T13:41:59+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Sterling and Wilson shares gain 7% on winning orders worth ₹2,050 crore",
+   "url": "https://www.business-standard.com/markets/news/sterling-and-wilson-shares-gain-7-on-winning-orders-worth-2-050-crore-126112300509_1.html",
+   "alert_px": 18307.0,
+   "alert_move": -2.15,
+   "alert_at": "2026-11-23T14:01:49+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "152ed45da1a2169b",
    "symbol": "INFY",
