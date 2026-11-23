@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T14:31:25+05:30",
+ "updated": "2026-11-23T14:47:01+05:30",
  "summary": {
-  "calls": 2032,
-  "scored_calls": 862,
+  "calls": 2036,
+  "scored_calls": 866,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,66 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "0454676fd2f0f89e",
+   "symbol": "APLAPOLLO",
+   "time": "2026-11-23T14:35:44+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "APL Apollo Tubes Limited: APL Apollo Tubes Limited has informed the Exchange regarding Shareholder agreements |SUBJECT: Agreements,Contracts,Arrangements,MOU-XB",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/ANN_AGREEMENT_5412_WebXMLFile_20261123_143543339.xml",
+   "alert_px": 1692.7,
+   "alert_move": -20.22,
+   "alert_at": "2026-11-23T14:46:14+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "7d9c25105085c020",
+   "symbol": "DALBHARAT",
+   "time": "2026-11-23T14:31:52+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Dalmia Bharat pares losses to trade flat after ₹700-cr buyback announcement",
+   "url": "https://www.business-standard.com/markets/news/dalmia-bharat-pares-losses-to-trade-flat-after-700-cr-buyback-announcement-126112300559_1.html",
+   "alert_px": 1574.0,
+   "alert_move": -0.26,
+   "alert_at": "2026-11-23T14:46:14+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "2ff634e75a3f9ef2",
+   "symbol": "AXISBANK",
+   "time": "2026-11-23T14:31:03+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Who is killing Nifty 50 rally? SBI, RIL, HDFC Bank, Axis Bank, Hindalco, JSW among stocks dragging index into red",
+   "url": "https://www.livemint.com/market/stock-market-news/who-is-killing-the-nifty-50-rally-sbi-ril-hdfc-axis-bank-hindalco-tata-steel-jsw-steel-among-key-stocks-giving-r-11795422323375.html",
+   "alert_px": 1401.0,
+   "alert_move": -3.11,
+   "alert_at": "2026-11-23T14:46:14+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "2ff634e75a3f9ef2",
+   "symbol": "HDFCBANK",
+   "time": "2026-11-23T14:31:03+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Who is killing Nifty 50 rally? SBI, RIL, HDFC Bank, Axis Bank, Hindalco, JSW among stocks dragging index into red",
+   "url": "https://www.livemint.com/market/stock-market-news/who-is-killing-the-nifty-50-rally-sbi-ril-hdfc-axis-bank-hindalco-tata-steel-jsw-steel-among-key-stocks-giving-r-11795422323375.html",
+   "alert_px": 822.35,
+   "alert_move": -2.8,
+   "alert_at": "2026-11-23T14:46:14+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "aa3536697f828588",
    "symbol": "SUZLON",

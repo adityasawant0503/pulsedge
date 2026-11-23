@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T14:31+05:30",
+ "updated": "2026-11-23T14:46+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -76,20 +76,20 @@
  },
  "stocks": {
   "DALBHARAT": {
-   "summary": "The board approved an open‑market buyback of its shares at Rs 1850 each, reducing the total share count.",
-   "why": "Buybacks can lift the value of remaining shares, which matters to current shareholders.",
-   "upside": "If the buyback proceeds as planned, it could support the share price.",
-   "downside": "If the buyback is delayed, scaled down, or market sentiment stays negative, the expected benefit may not materialise.",
+   "summary": "Dalmia Bharat's board approved a plan to buy back ₹700 crore worth of its own shares. The company will purchase these shares from the open market at a price of ₹1,850 per share.",
+   "why": "A buyback reduces the total number of shares available, which can make each remaining share more valuable for existing owners. It also signals that the company has the cash to return money to shareholders.",
+   "upside": "The reduced share count could lift the value of the remaining shares if the buyback is completed successfully.",
+   "downside": "The buyback might be delayed, scaled down, or under-subscribed due to regulatory issues or cash flow constraints.",
    "watch": [
-    "Execution timeline and size of the buyback",
-    "Company's cash flow and regulatory approvals",
-    "Market reaction to the buyback announcement"
+    "Regulatory approval for the buyback",
+    "The final number of shares actually bought back",
+    "Any changes to the company's cash flow status"
    ],
-   "about": "Dalmia Bharat Ltd. manufactures construction materials.",
-   "basis": "ee2f2f4f8a69",
-   "items": 3,
-   "updated": "2026-11-23T13:24+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Dalmia Bharat is a company in the construction materials sector.",
+   "basis": "9d7c37673c2f",
+   "items": 4,
+   "updated": "2026-11-23T14:46+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "KIRLOSBROS": {
    "summary": "Kirloskar Brothers and its joint venture partner won a contract worth 165 crore rupees to supply pumps for a major refinery in Africa. This is described as a landmark order for the company.",
@@ -108,36 +108,36 @@
    "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel announced a $1.67 billion purchase of a large stake in APL Apollo, India's biggest steel pipe maker, and also sold its tube business. The announcements triggered a roughly 5% drop in Tata Steel’s share price as investors worried about the deal’s cost and timing.",
-   "why": "Shareholders see the stock fall and face uncertainty about how the acquisition will affect cash flow, debt and future earnings.",
-   "upside": "If the combined entity gains scale and synergies, it could improve long‑term profitability and unlock value.",
-   "downside": "The high acquisition price may pressure profits, raise debt and, if regulatory approval stalls, could cause further share weakness.",
+   "summary": "Tata Steel shares fell about 5% after the company announced a $1.67 billion plan to buy a large stake in APL Apollo, a steel pipe maker. This news came as bank and metal stocks generally dragged the Nifty 50 index lower.",
+   "why": "The big spending may worry investors about the company's cash reserves or debt levels, which can affect the value of your shares in the short term.",
+   "upside": "Some experts believe the long-term value of the company remains strong despite the immediate price drop.",
+   "downside": "The market may continue to penalize the stock if investors view the high acquisition cost as a burden or if regulatory approval is delayed.",
    "watch": [
-    "Progress on regulatory approval for the APL Apollo acquisition",
-    "Changes in Tata Steel’s debt levels and cash flow after the deal",
-    "Market reaction to the divestment of the tube business"
+    "Regulatory approval for the APL Apollo acquisition",
+    "Whether the broader metal sector stabilizes",
+    "Company updates on how the deal will be funded"
    ],
-   "about": "Tata Steel Ltd. is a major Indian steel producer.",
-   "basis": "e278b6b0dad5",
-   "items": 16,
-   "updated": "2026-11-23T13:00+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Tata Steel is a major player in the Metals & Mining sector and is one of India's 50 largest listed companies.",
+   "basis": "5f84edd4fcd1",
+   "items": 17,
+   "updated": "2026-11-23T14:46+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "APLAPOLLO": {
-   "summary": "Tata Steel has announced a plan to acquire a large stake in APL Apollo Tubes for about ₹15,511 crore, followed by an open offer for more shares. This major deal caused APL Apollo's stock to drop sharply as investors reacted to the news. APL Apollo is part of the Nifty 500 index of India's largest companies.",
-   "why": "PulsEdge flagged that big corporate acquisitions can change how a company is run and valued, often causing immediate price swings for investors. Shareholders must now weigh the details of the buyout against the recent drop in share value.",
-   "upside": "The acquisition could bring long-term benefits or a premium for shareholders.",
-   "downside": "The deal might face regulatory approval hurdles, delays, or uncertainty that could hurt the stock.",
+   "summary": "Tata Steel announced it will buy a 26.38% stake in APL Apollo Tubes for about ₹15,511 crore, with plans to offer for another 26%. This news caused APL Apollo's share price to drop sharply, hitting the daily lower limit.",
+   "why": "The deal changes the company's ownership structure and may affect how it is run. Shareholders face uncertainty because the stock price fell significantly on the announcement.",
+   "upside": "The acquisition could bring long-term stability or strategic benefits from a larger parent company.",
+   "downside": "The deal might face regulatory delays, and the current share price drop reflects immediate investor concern.",
    "watch": [
-    "Updates on regulatory approvals for the acquisition",
-    "Further public announcements regarding the open offer",
-    "Stock price movement and market volatility"
+    "Regulatory approval status for the Tata Steel acquisition",
+    "Details of the new shareholder agreements announced by APL Apollo",
+    "Whether the share price stabilizes after the initial drop"
    ],
-   "about": "APL Apollo Tubes Ltd. is a steel tube company.",
-   "basis": "b448b91381bb",
-   "items": 10,
-   "updated": "2026-11-23T13:15+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "APL Apollo Tubes is a company in the Capital Goods sector that manufactures steel tubes.",
+   "basis": "cfefacf872ee",
+   "items": 11,
+   "updated": "2026-11-23T14:46+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "HFCL": {
    "summary": "HFCL shares fell sharply on November 23, 2026, hitting the daily lower circuit limit. This drop follows a period where the stock rose 160% in 2026, but it has now slipped 41% from its October peak.",
@@ -379,6 +379,38 @@
    "updated": "2026-11-23T13:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "HDFCBANK": {
+   "summary": "HDFC Bank shares recently showed a strong buying pattern, but the stock is currently part of a group of large companies dragging the Nifty 50 index down. The broader Financials sector has still risen slightly over the last week.",
+   "why": "If you own these shares, the current sell-off in major stocks may lower their price, though the recent strong buying suggests some investors are still interested.",
+   "upside": "The recent strong buying pattern could signal a short-term price increase if the broader market stops selling.",
+   "downside": "The stock may continue to fall if the broader market sell-off continues to weigh on large financial companies.",
+   "watch": [
+    "Whether the Nifty 50 index recovers from its recent drop",
+    "If the strong buying pattern in HDFC Bank holds up in the next few sessions",
+    "How other large bank stocks like SBI and Axis Bank perform"
+   ],
+   "about": "HDFC Bank is a major financial services company and one of India's 50 largest listed firms.",
+   "basis": "120b3bc00083",
+   "items": 2,
+   "updated": "2026-11-23T14:46+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "HINDALCO": {
+   "summary": "Hindalco shares have been part of a broader sell-off in bank and metal stocks, helping push the Nifty 50 index below 25,500. Separately, a smaller infrastructure company announced it won a contract from Hindalco to build a high-voltage power line.",
+   "why": "If you own Hindalco shares, the general market drop in metal stocks may lower the value of your holding, while the new infrastructure contract shows the company is continuing to invest in its operations.",
+   "upside": "The stock could rebound quickly as part of a wider market recovery.",
+   "downside": "The ongoing weakness in the metals sector could continue to pressure the share price.",
+   "watch": [
+    "Whether the Nifty 50 index recovers above 25,500",
+    "How the metals sector performs in the coming sessions",
+    "Details on the progress of the 400 KV transmission line project"
+   ],
+   "about": "Hindalco is a major Indian metals and mining company.",
+   "basis": "c1f8ed8b16c8",
+   "items": 2,
+   "updated": "2026-11-23T14:46+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "BRIGADE": {
    "summary": "Brigade Enterprises is moving closer to its sales targets by launching a new real estate project. At the same time, the company expects its hotel business to see faster growth in the second half of the year.",
    "why": "New projects and stronger hotel revenue can boost the company's overall business, but investors are still waiting to see if the new projects sell well.",
@@ -394,6 +426,38 @@
    "items": 2,
    "updated": "2026-11-23T13:00+05:30",
    "model": "gemini-flash-lite-latest"
+  },
+  "AXISBANK": {
+   "summary": "Axis Bank is among the stocks pulling the Nifty 50 index lower, keeping the benchmark below 25,500, even as the broader Financials sector has risen 2.0% today and 3.6% over the past five sessions.",
+   "why": "The bank’s performance can affect the overall market move, so its price may feel pressure from a wider sell‑off.",
+   "upside": "If the broader market rebounds, Axis Bank could recover quickly along with other lagging stocks.",
+   "downside": "Continued weakness in bank and metal stocks could keep the index down and weigh on Axis Bank’s share price.",
+   "watch": [
+    "Nifty 50 level around 25,500",
+    "Financials sector momentum",
+    "Any fresh news on bank earnings or credit quality"
+   ],
+   "about": "Axis Bank Ltd. is a leading Indian commercial bank that provides a range of banking and financial services.",
+   "basis": "ffd847bb0579",
+   "items": 1,
+   "updated": "2026-11-23T14:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "ICICIBANK": {
+   "summary": "ICICI Bank Ltd. is a major player in India’s Nifty 50 index. The financials sector index rose 2.0% in the last session and 3.6% over five sessions. However, bank stocks, including ICICI Bank, have been part of a sell‑off that pushed the Nifty 50 below 25,500.",
+   "why": "If you own ICICI Bank shares, the broader sell‑off in bank stocks could affect the share price.",
+   "upside": "",
+   "downside": "The broader sell‑off in bank stocks may hurt the share price.",
+   "watch": [
+    "Bank stocks dragging Nifty 50 into red",
+    "Sector index up 2.0% last session",
+    "Potential quick rebound of bank stocks"
+   ],
+   "about": "ICICI Bank Ltd. is a financial services company.",
+   "basis": "ffd847bb0579",
+   "items": 1,
+   "updated": "2026-11-23T14:46+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "ITI": {
    "summary": "ITI shares rose by about 11% on November 23, 2026, even though the broader stock market fell that day. The stock has increased by 137% over the last five years.",
