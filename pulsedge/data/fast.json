@@ -1,7 +1,53 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-23T11:25:17+05:30",
+ "updated": "2026-11-23T11:31:48+05:30",
  "items": [
+  {
+   "id": "354c5ef59f530037",
+   "time": "2026-11-23T11:30:56+05:30",
+   "headline": "DALMIA BHARAT: CO APPROVED BUYBACK SHARES AT PRICE OF RS 1850 PER SHARE VIA OPEN MARKET",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9861",
+   "section": "news",
+   "call": "buy",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "DALBHARAT",
+     "direction": "up"
+    }
+   ],
+   "sectors": [],
+   "impact": 70,
+   "confidence": 80,
+   "category": "company",
+   "action": "Watch for price reaction after the buyback announcement, especially on intraday volume spikes.",
+   "reason": [
+    "Buyback signals management confidence and reduces share count",
+    "Potential upward pressure on share price"
+   ],
+   "risks": [
+    "Negative market sentiment could offset buyback effect",
+    "Buyback may not be fully subscribed"
+   ],
+   "plain": "The company approved a share buyback at 1850 rupees per share.",
+   "why": "Buybacks can boost share price by reducing supply and showing confidence, so shareholders may benefit.",
+   "check": "Look at the upcoming buyback execution schedule and the company's cash reserves.",
+   "original": "DALMIA BHARAT: CO APPROVED BUYBACK SHARES AT PRICE OF RS 1850 PER SHARE VIA OPEN MARKET",
+   "latency": 52.0,
+   "lane": "fast",
+   "checked": "confirmed by a second AI check",
+   "quotes": {
+    "DALBHARAT": {
+     "px": 1552.3,
+     "prev": 1578.1,
+     "move": -1.63,
+     "at": "2026-11-23T11:31:49+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "9003829370d179f9",
    "time": "2026-11-23T11:24:49+05:30",
