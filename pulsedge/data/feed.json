@@ -1,6 +1,135 @@
 {
- "updated": "2026-11-23T11:45:17+05:30",
+ "updated": "2026-11-23T12:00:23+05:30",
  "items": [
+  {
+   "id": "f5817ade5d096c8b",
+   "time": "2026-11-23T11:52:31+05:30",
+   "headline": "Bull vs Bear: Why is stock market down today? Sensex, Nifty succumb to profit-booking, plunge nearly 1% - Top 3 reasons",
+   "source": "Mint Markets",
+   "url": "https://www.livemint.com/market/stock-market-news/bull-vs-bear-why-is-stock-market-down-today-sensex-nifty-succumb-to-profit-booking-plunge-nearly-1-top-3-reasons-11795411485763.html",
+   "section": "trading",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [],
+   "sectors": [
+    "Banking",
+    "Metals"
+   ],
+   "impact": 20,
+   "confidence": 80,
+   "category": "Market Colour",
+   "action": "Monitor sector-specific support levels for banking and metals stocks.",
+   "reason": [
+    "Broad market profit-booking after a rally is routine market noise.",
+    "No specific company news is provided."
+   ],
+   "risks": [
+    "Sector-wide weakness may continue if global cues remain negative."
+   ],
+   "plain": "The main stock market indices fell slightly because investors sold shares to lock in recent gains.",
+   "why": "This is a general market move, not news about a specific company, so it does not change individual stock fundamentals.",
+   "check": "Look at how your specific holdings are performing compared to the overall market index.",
+   "original": "Indian benchmarks fell on Monday as investors booked profits after a four-week rally. Banking and metal stocks led losses, while volatility ahead of monthly derivatives expiry added pressure. Despite the decline, the Nifty and Sensex remained up 11.4% and 12.2%, respectively, for November."
+  },
+  {
+   "id": "89c0fa61ba89d10f",
+   "time": "2026-11-23T11:48:19+05:30",
+   "headline": "Low P/E investing alone is a bad strategy: Harini Dedhia explains why",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/low-p-e-investing-alone-is-a-bad-strategy-harini-dedhia-explains-why-126112300319_1.html",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "positional",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Equity Strategy"
+   ],
+   "impact": 10,
+   "confidence": 90,
+   "category": "Opinion/Analysis",
+   "action": "Review your portfolio diversification strategy.",
+   "reason": [
+    "This is an educational article about investment strategies, not a corporate event.",
+    "No specific stock is targeted for a trade."
+   ],
+   "risks": [],
+   "plain": "An expert explains that buying only cheap stocks is not a reliable way to make money over the long term.",
+   "why": "This is general financial advice and does not provide new information about any specific company's performance.",
+   "check": "Read the full article to understand the difference between cheap and expensive stocks.",
+   "original": "For the past 10Y, NIFTY 50 has delivered a CAGR of 12.5 per cent. Only 2 of 10 companies from the 'Cheap Ten' have beaten that 10Y performance. For 'Expensive Ten' the number is 8 out 10."
+  },
+  {
+   "id": "5f86f510bacfebe0",
+   "time": "2026-11-23T11:48:18+05:30",
+   "headline": "Vishal Mega Mart gains 3%; here's why analysts are bullish on stock",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/vishal-mega-mart-gains-3-here-s-why-analysts-are-bullish-on-stock-126112300346_1.html",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "VMM",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Retail"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "Broker Note",
+   "action": "Watch for follow-through in trading volume to confirm the bullish sentiment.",
+   "reason": [
+    "ICICI Securities issued a bullish note on Vishal Mega Mart.",
+    "Analysts expect healthy demand in the upcoming quarter."
+   ],
+   "risks": [
+    "Broker ratings are opinions and do not guarantee price movement.",
+    "The stock has already moved 3%, so some news may be priced in."
+   ],
+   "plain": "Financial analysts believe a retail store chain's stock is a good buy because they expect strong sales soon.",
+   "why": "Positive analyst opinions can influence other investors to buy, potentially pushing the price higher, but it is not a guarantee.",
+   "check": "Check if the stock price continues to rise after the analyst note is published.",
+   "original": "Analysts at ICICI Securities reckon that Vishal Mega Mart offers an attractive near-term buying opportunity, supported by expected healthy demand traction in Q3FY27 and attractive valuations.",
+   "quotes": {
+    "VMM": {
+     "px": 95.1,
+     "prev": 91.98,
+     "move": 3.39,
+     "at": "2026-11-23T12:00:40+05:30",
+     "delay": 900
+    }
+   }
+  },
+  {
+   "id": "8dc4a31f63f02c6c",
+   "time": "2026-11-23T11:45:05+05:30",
+   "headline": "SUPREME COURT SUGGESTS ARBITRATION IN KALYANI FAMILY DISPUTE AFTER MEDIATION FAILS.",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9863",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [],
+   "impact": 0,
+   "confidence": 0,
+   "category": "news",
+   "action": "",
+   "reason": [],
+   "risks": [],
+   "plain": "Supreme Court suggested arbitration for the Kalyani family dispute after mediation failed.",
+   "why": "The ruling does not directly affect any listed company, so it likely has no immediate market impact.",
+   "check": "",
+   "original": "SUPREME COURT SUGGESTS ARBITRATION IN KALYANI FAMILY DISPUTE AFTER MEDIATION FAILS.",
+   "latency": 73.1,
+   "lane": "fast"
+  },
   {
    "id": "b19b08b52072d824",
    "time": "2026-11-23T11:40:26+05:30",
@@ -814,6 +943,36 @@
    "original": "Suntech Infra Solutions Limited: Suntech Infra Solutions Limited has informed the Exchange about Investor Presentation |SUBJECT: Investor Presentation"
   },
   {
+   "id": "cbd8cdfc13c84407",
+   "time": "2026-11-23T11:14:38+05:30",
+   "headline": "Global Markets: 5 key triggers to watch this week",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-markets-5-key-triggers-to-watch-this-week/slideshow/136091589.cms",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Global Markets"
+   ],
+   "impact": 15,
+   "confidence": 85,
+   "category": "Global Cues",
+   "action": "Monitor global market open for cues on Indian market direction.",
+   "reason": [
+    "General global market triggers do not directly impact specific Indian stocks.",
+    "No specific Indian company is named."
+   ],
+   "risks": [
+    "Negative global cues could lead to broader Indian market weakness."
+   ],
+   "plain": "Investors around the world are watching several economic events this week that could affect stock prices.",
+   "why": "These are general global events and do not provide specific news about any Indian company.",
+   "check": "Look at how global stock markets are performing before the Indian market opens.",
+   "original": "Global markets will track five key triggers this week, from Black Friday spending and ECB leadership changes to Asian inflation data, South Korea’s rate decision and business activity."
+  },
+  {
    "id": "7f8618727e0d3471",
    "time": "2026-11-23T11:11:45+05:30",
    "headline": "BLS Polymers Limited: BLS Polymers Limited has informed the Exchange about Transcript |SUBJECT: Analysts/Institutional Investor Meet/Con. Call Updates",
@@ -842,6 +1001,34 @@
    "why": "A routine notice that companies must file. It rarely affects the share price.",
    "check": "",
    "original": "BLS Polymers Limited: BLS Polymers Limited has informed the Exchange about Transcript |SUBJECT: Analysts/Institutional Investor Meet/Con. Call Updates"
+  },
+  {
+   "id": "01a8d18eb6a3e401",
+   "time": "2026-11-23T11:11:26+05:30",
+   "headline": "Why is SanDisk stock falling? 5 factors weighing on shares",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/why-is-sandisk-stock-falling-5-factors-weighing-on-shares/slideshow/136091195.cms",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [],
+   "sectors": [
+    "Semiconductors"
+   ],
+   "impact": 10,
+   "confidence": 95,
+   "category": "Global News",
+   "action": "None.",
+   "reason": [
+    "SanDisk is a US-listed company, not an Indian listed stock.",
+    "No Indian candidate symbols are provided or relevant."
+   ],
+   "risks": [],
+   "plain": "A US technology company's stock price fell because of lower expected sales for its memory chips.",
+   "why": "This news is about a foreign company and does not directly affect the price of Indian listed stocks.",
+   "check": "",
+   "original": "SanDisk shares plunged amid a broad semiconductor sell-off, with falling NAND price forecasts, weaker storage orders from Chinese cloud companies and concerns over AI spending weighing on sentiment. The stock has lost more than half its value over 30 trading sessions."
   },
   {
    "id": "342439acb1072602",
@@ -3602,6 +3789,36 @@
    "original": "Sensex Today | Stock Market LIVE Updates Monday: The GIFT Nifty indicated a gap-up open for the Nifty50 index. Asian markets extended losses amid a sell-off in technology stocks"
   },
   {
+   "id": "ead5a44ed5b34c3d",
+   "time": "2026-11-23T08:04:26+05:30",
+   "headline": "Stock Market LIVE: Sensex down 800 pts, Nifty below 25,600; Nifty Defence drops 1%",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-23-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-ipo-today-126112300084_1.html",
+   "section": "trading",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [],
+   "sectors": [
+    "Defence"
+   ],
+   "impact": 20,
+   "confidence": 80,
+   "category": "Market Colour",
+   "action": "Monitor defence sector stocks for any specific news drivers.",
+   "reason": [
+    "This is a live market update describing current index levels.",
+    "No specific company news is provided."
+   ],
+   "risks": [
+    "Defence sector weakness may continue if broader market sentiment remains negative."
+   ],
+   "plain": "The main stock market indices are down, and defence-related stocks are also falling slightly.",
+   "why": "This is a real-time snapshot of market prices and does not contain new information about any specific company.",
+   "check": "Check if there is any specific news about defence companies causing the drop.",
+   "original": "Sensex Today | Stock Market LIVE Updates Monday: In the broader markets, the Nifty MidCap and the Nifty SmallCap rose 0.3 per cent and 0.2 per cent, respectively"
+  },
+  {
    "id": "bfa2df1cb5061395",
    "time": "2026-11-23T08:04:26+05:30",
    "headline": "Stock Market LIVE: Sensex down 900 pts from day's high, Nifty below 25,700",
@@ -5953,167 +6170,6 @@
    "why": "Gold price movements do not directly affect Indian equities listed on NSE.",
    "check": "",
    "original": "Gold has fallen to around $3,510 an ounce after hitting a record $5,594.82 earlier in 2026, putting it on track for its first annual loss in five years. A stronger dollar, elevated bond yields, profit-booking and weaker safe-haven demand continue to pressure prices."
-  },
-  {
-   "id": "36c908e8070ad42d",
-   "time": "2026-11-22T13:36:42+05:30",
-   "headline": "WeWork India share price jumps 40% in 6 months; ICICI Direct sees 37% more gains ahead - Buy? Check Target",
-   "source": "Mint Markets",
-   "url": "https://www.livemint.com/market/stock-market-news/wework-india-share-price-jumps-40-in-6-months-icici-direct-sees-37-more-gains-ahead-buy-check-target-11795334473941.html",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "news",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "WeWork India shares fell 1.6% after a 40% gain over six months.",
-   "why": "WeWork India is not a listed company on NSE, so the move has no direct impact on NSE stocks.",
-   "check": "",
-   "original": "WeWork India shares fell 1.60% to ₹683.30 on Friday, extending weekly losses, but have gained about 40% in six months. ICICI Securities expects the company to fund planned capex internally and forecasts 22% revenue and EBITDA growth, maintaining a Buy rating with a ₹933 target."
-  },
-  {
-   "id": "8fe376023166e79e",
-   "time": "2026-11-22T12:26:08+05:30",
-   "headline": "InvIT IPO rush gathers pace, 4-5 trusts likely to go public by Mar 2027",
-   "source": "Business Standard",
-   "url": "https://www.business-standard.com/markets/ipo/invit-ipo-rush-gathers-pace-4-5-trusts-likely-to-go-public-by-mar-2027-126112200225_1.html",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "news",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "Four to five InvITs are expected to go public by March 2027, raising about Rs 17,000 crore.",
-   "why": "The announcement is about future offerings and does not affect any current listed stock directly.",
-   "check": "",
-   "original": "Four to five privately placed Infrastructure Investment Trusts (InvITs) are expected to tap the public markets by March 2027 to raise a combined Rs 17,000 crore, as infrastructure developers increasingly turn to this route to mobilise long-term capital and monetise operational assets, investment ban"
-  },
-  {
-   "id": "36b2965b95a746ae",
-   "time": "2026-11-22T12:24:55+05:30",
-   "headline": "What is future of gold rates? Price crash continues as AI selloff, Fed rate-hike concerns weigh on investors' sentiment",
-   "source": "Mint Markets",
-   "url": "https://www.livemint.com/market/commodities/what-is-future-of-gold-rates-price-crash-continues-as-ai-selloff-fed-rate-hike-concerns-weigh-on-investors-sentiment-11795325490076.html",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "macro",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "Gold prices continue to fall amid AI sell‑off and Fed rate‑hike concerns.",
-   "why": "The price move is a commodity trend, not a company‑specific event for Indian equities.",
-   "check": "",
-   "original": "Gold fell for a fifth consecutive day, recording its steepest weekly decline since March as expectations of a US Federal Reserve rate hike, a stronger dollar, and a selloff in AI-linked stocks weighed on precious metals."
-  },
-  {
-   "id": "18938d0befbb907c",
-   "time": "2026-11-22T12:15:10+05:30",
-   "headline": "InvIT IPO rush gathers pace; 4-5 private trusts likely to go public by Mar 2027",
-   "source": "ET Markets",
-   "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/invit-ipo-rush-gathers-pace-4-5-private-trusts-likely-to-go-public-by-mar-2027/articleshow/136069094.cms",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "news",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "InvIT IPO rush gathers pace; 4‑5 private trusts likely to go public by March 2027.",
-   "why": "Future InvIT listings do not impact existing NSE‑listed stocks today.",
-   "check": "",
-   "original": "Four to five Infrastructure Investment Trusts are expected to launch public offerings to raise Rs 17,000 crore by 2027. These offerings aim to mobilise long-term capital for infrastructure development while appealing to a broader pool of investors. Notable companies like Brookfield and Investcorp ar"
-  },
-  {
-   "id": "67b9dce543be3413",
-   "time": "2026-11-22T12:03:45+05:30",
-   "headline": "5 penny stocks plunge up to 68% in six months. Do you own any?",
-   "source": "ET Markets",
-   "url": "https://economictimes.indiatimes.com/markets/stocks/news/5-penny-stocks-plunge-up-to-68-in-six-months-do-you-own-any/slideshow/136069072.cms",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "news",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "Five BSE small‑cap penny stocks fell between 21% and 68% over recent months.",
-   "why": "The story mentions a group of small caps without naming specific NSE symbols, so no direct action is needed.",
-   "check": "",
-   "original": "Five BSE Smallcap penny stocks have fallen between 21% and 68% in recent months. Kalind and Empower India led the declines, plunging 68% and 62%, respectively."
-  },
-  {
-   "id": "a09a8c522d4ee9b3",
-   "time": "2026-11-22T11:30:01+05:30",
-   "headline": "Quantum computing’s first real-world payoff may come in energy, not drug discovery",
-   "source": "CNBC World Markets",
-   "url": "https://www.cnbc.com/2026/11/22/quantum-computing-energy-applications.html",
-   "section": "global",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "macro",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "Quantum computing may first benefit the energy sector through grid optimisation and material research.",
-   "why": "No Indian listed company is directly linked to the development discussed.",
-   "check": "",
-   "original": "Quantum computing firms are testing energy-grid optimization, solar materials and hydrogen catalysts as they pursue practical uses."
-  },
-  {
-   "id": "9bb62756e0044d25",
-   "time": "2026-11-22T11:14:52+05:30",
-   "headline": "Reliance Brands FY26 revenue up 3.8% to Rs 3,390.9 crore; loss narrows to Rs 137 crore",
-   "source": "ET Markets",
-   "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/reliance-brands-fy26-revenue-up-3-8-to-rs-3390-9-crore-loss-narrows-to-rs-137-crore/articleshow/136068185.cms",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "news",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "Reliance Brands posted FY26 revenue of Rs 3,390.9 crore and narrowed its loss to Rs 137 crore.",
-   "why": "Reliance Brands is a subsidiary; the headline does not materially affect Reliance Industries’ stock.",
-   "check": "",
-   "original": "Reliance Brands has marked a significant financial milestone, achieving a revenue of Rs 3,390.89 crore for FY26 and reducing losses. Operating more than 1,085 Points of Sale nationwide, the brand continues to collaborate with over 90 partner names. Recent acquisitions, including Hamleys and new entr"
   },
   {
    "id": "01a13b9fdca3cf1c",
@@ -9801,8 +9857,8 @@
  "digest": {
   "date": "2026-11-23",
   "act": 1,
-  "watch": 51,
-  "ignored": 108,
+  "watch": 52,
+  "ignored": 114,
   "reasons": [
    {
     "label": "Routine filing",
@@ -9821,12 +9877,12 @@
     "count": 7
    },
    {
-    "label": "Market Update",
-    "count": 5
+    "label": "Market Colour",
+    "count": 6
    },
    {
-    "label": "Market Colour",
-    "count": 4
+    "label": "Market Update",
+    "count": 5
    }
   ]
  }
