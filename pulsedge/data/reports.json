@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T13:00+05:30",
+ "updated": "2026-11-23T13:15+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -124,20 +124,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "APLAPOLLO": {
-   "summary": "Tata Steel has announced a plan to buy a 26.38% stake in APL Apollo Tubes for approximately ₹15,511 crore, with plans to make an open offer for another 26%. Following this news, APL Apollo shares hit the 10% lower circuit, marking a significant drop in the stock price.",
-   "why": "This acquisition could change how the company is run and valued, leading to immediate price swings that directly affect the value of shares held by investors.",
-   "upside": "Shareholders may receive a premium price for their shares as part of the acquisition deal.",
-   "downside": "The deal faces risks of regulatory approval delays and potential integration challenges that could impact the company's future.",
+   "summary": "Tata Steel has announced a plan to acquire a large stake in APL Apollo Tubes for about ₹15,511 crore, followed by an open offer for more shares. This major deal caused APL Apollo's stock to drop sharply as investors reacted to the news. APL Apollo is part of the Nifty 500 index of India's largest companies.",
+   "why": "PulsEdge flagged that big corporate acquisitions can change how a company is run and valued, often causing immediate price swings for investors. Shareholders must now weigh the details of the buyout against the recent drop in share value.",
+   "upside": "The acquisition could bring long-term benefits or a premium for shareholders.",
+   "downside": "The deal might face regulatory approval hurdles, delays, or uncertainty that could hurt the stock.",
    "watch": [
-    "Regulatory approval status for the acquisition",
-    "Details of new agreements signed by the company",
-    "Outcomes of the recent board meeting"
+    "Updates on regulatory approvals for the acquisition",
+    "Further public announcements regarding the open offer",
+    "Stock price movement and market volatility"
    ],
-   "about": "APL Apollo Tubes is a steel tube maker listed in the Capital Goods sector.",
-   "basis": "06a6fb6e6512",
-   "items": 9,
-   "updated": "2026-11-23T10:30+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "APL Apollo Tubes Ltd. is a steel tube company.",
+   "basis": "b448b91381bb",
+   "items": 10,
+   "updated": "2026-11-23T13:15+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "INDUSINDBK": {
    "summary": "IndusInd Bank shares recently surged nearly 9% on high trading volume, approaching their 52-week high. However, the stock dropped 1% after the bank terminated its former CEO and reclaimed his compensation.",
@@ -346,38 +346,6 @@
    "items": 1,
    "updated": "2026-11-23T12:15+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "JBMA": {
-   "summary": "JBM Auto is seen as a potential beneficiary of the Indian government’s new PM E‑Bus Sewa payment portal, which aims to fund electric bus projects. The auto sector has also posted gains, up 4.4% in the last session.",
-   "why": "Shareholders watch because the portal could translate into more electric‑bus orders for JBM, but any delay in rollout may push those orders back.",
-   "upside": "Timely implementation of the portal could generate new orders and boost revenue.",
-   "downside": "Implementation delays could postpone expected orders and affect earnings.",
-   "watch": [
-    "Progress on the PM E‑Bus Sewa portal rollout",
-    "Actual government or state transport bus order bookings",
-    "Further developments in India’s EV policy and auto sector trends"
-   ],
-   "about": "JBM Auto designs and manufactures electric buses and other automotive components.",
-   "basis": "73e69bed927b",
-   "items": 1,
-   "updated": "2026-11-20T13:16+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "OLECTRA": {
-   "summary": "The Indian government has launched a payment portal for electric buses with a budget of 34.35 billion rupees. This new portal is designed to support the PM E-Bus Sewa scheme.",
-   "why": "This development matters to shareholders because it could boost demand for electric bus makers like Olectra Greentech.",
-   "upside": "Government funding and the new payment portal could increase orders for the company's electric buses.",
-   "downside": "Implementation delays could postpone expected orders.",
-   "watch": [
-    "Progress on the PM E-Bus Sewa payment portal",
-    "Any announcements of new bus orders",
-    "Movement in the Auto sector index"
-   ],
-   "about": "Olectra Greentech Ltd. is an auto and auto components company that makes electric buses.",
-   "basis": "73e69bed927b",
-   "items": 1,
-   "updated": "2026-11-20T13:16+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "CANFINHOME": {
    "summary": "Can Fin Homes Ltd. has announced a change in one of its key government permits. The company notified the exchange about this change. This could affect its operations.",

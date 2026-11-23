@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T13:01:41+05:30",
+ "updated": "2026-11-23T13:16:10+05:30",
  "summary": {
-  "calls": 2016,
-  "scored_calls": 846,
+  "calls": 2018,
+  "scored_calls": 848,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "36f4053f6c1a4b98",
+   "symbol": "APLAPOLLO",
+   "time": "2026-11-23T13:01:24+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "APL Apollo Tubes Limited: Kotak Mahindra Capital Company Limited has Submitted to the Exchange a copy of public announcement for the attention of the public sha",
+   "url": "https://nsearchives.nseindia.com/corporate/team_sandeshc_23112026125413_APL.zip",
+   "alert_px": 1697.3,
+   "alert_move": -20.0,
+   "alert_at": "2026-11-23T13:15:47+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "17ffa9c9dc34bc5b",
+   "symbol": "INTELLECT",
+   "time": "2026-11-23T13:00:36+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "INTELLECT DESIGN ARENA: EMACH.AI 'S RETAIL 6DX NAMED REPRESENTATIVE VENDOR IN 2026 GARTNER MARKET OVERVIEW FOR UNIFIED COMMERCE POS PLATFORMS",
+   "url": "https://t.me/Indiaredboxglobal/9868",
+   "alert_px": 583.8,
+   "alert_move": 6.34,
+   "alert_at": "2026-11-23T13:01:47+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "534e430a7db7a569",
    "symbol": "BRIGADE",
