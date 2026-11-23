@@ -1,7 +1,40 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-23T10:31:47+05:30",
+ "updated": "2026-11-23T10:32:46+05:30",
  "items": [
+  {
+   "id": "e8acadbc10e0def8",
+   "time": "2026-11-23T10:32:14+05:30",
+   "headline": "INDIA (NOV) HSBC INDIA PMI SERVICES ACTUAL: 55.3 VS 55.8 PREVIOUS",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/9858",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "macro"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "economic_data",
+   "action": "Monitor broader market sentiment for any reaction to the slight data miss.",
+   "reason": [
+    "PMI services data came in slightly below the previous month's reading.",
+    "No specific listed company is named or directly impacted."
+   ],
+   "risks": [
+    "Market may react negatively to the slight slowdown in services activity.",
+    "Currency volatility could increase if the data is interpreted as a sign of slowing growth."
+   ],
+   "plain": "India's services industry activity slowed slightly compared to last month.",
+   "why": "This is a general economic number that does not directly change the value of any specific company's shares.",
+   "check": "",
+   "original": "INDIA (NOV) HSBC INDIA PMI SERVICES ACTUAL: 55.3 VS 55.8 PREVIOUS",
+   "latency": 32.7,
+   "lane": "fast"
+  },
   {
    "id": "1bcc8f2bb3b8b4ac",
    "time": "2026-11-23T10:30:58+05:30",
