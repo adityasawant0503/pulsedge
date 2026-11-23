@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T10:47+05:30",
+ "updated": "2026-11-23T11:15+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -283,22 +283,6 @@
    "updated": "2026-11-20T12:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "NH": {
-   "summary": "Hospital stocks have surged, with Narayana Hrudayalaya jumping about 5% while the broader market lagged. The healthcare sector has shown modest gains but may be nearing an overextension after a 20% monthly rise.",
-   "why": "Share price movements are tied to sector momentum, so investors in NH could see further upside or face a pull‑back if the rally cools.",
-   "upside": "If the strong buying interest in hospital stocks continues, NH could benefit from further price appreciation.",
-   "downside": "If the sector is deemed overextended, a correction could pressure NH’s share price.",
-   "watch": [
-    "Whether the BSE Hospitals index sustains its recent surge",
-    "Signs of a broader market correction after the 20% monthly gain",
-    "Any new policy or demand news affecting Indian hospitals"
-   ],
-   "about": "Narayana Hrudayalaya Ltd. operates a network of hospitals across India.",
-   "basis": "3cffbab3a3d5",
-   "items": 1,
-   "updated": "2026-11-20T11:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "HDFCBANK": {
    "summary": "HDFC Bank's share price recently hit an eight-month high, pushing its total market value above ₹13 trillion. This rise is part of a broader trend where bank stocks have outperformed other sectors in November.",
    "why": "If you own these shares, their value has increased significantly due to strong investor interest. However, this recent jump is driven by market sentiment rather than new company news, so the price may be sensitive to changes in investor mood.",
@@ -379,6 +363,22 @@
    "updated": "2026-11-23T10:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "MARUTI": {
+   "summary": "Maruti Suzuki raised its car prices, which helped its shares rise by 2% in the latest session. The stock has climbed 14% over the past week, outperforming the broader auto sector.",
+   "why": "Higher car prices can lead to better profits for the company, which is a positive sign for shareholders. However, this move also makes the stock a major focus for investors, leading to potential price swings.",
+   "upside": "The price increase could improve the company's earnings if customers continue to buy their cars.",
+   "downside": "Buyers who are sensitive to cost might switch to rival brands, reducing Maruti Suzuki's sales volume.",
+   "watch": [
+    "How much demand for Maruti cars changes after the price hike",
+    "Daily stock price movements due to high investor focus",
+    "Performance of the overall auto sector index"
+   ],
+   "about": "Maruti Suzuki is a major automobile company in India that is part of the Nifty 50 index.",
+   "basis": "98a612d890b5",
+   "items": 3,
+   "updated": "2026-11-23T11:15+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "ENGINERSIN": {
    "summary": "Engineers India Ltd is a construction company listed on the NSE and part of the Nifty 500 index. No recent announcements or news items have been flagged for the company.",
    "why": "Its inclusion in the Nifty 500 signals a large, liquid stock, which matters for shareholders seeking stability and market exposure.",
@@ -410,22 +410,6 @@
    "items": 2,
    "updated": "2026-11-23T08:46+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "MARUTI": {
-   "summary": "Maruti Suzuki is in the spotlight as investors watch for recent announcements, and the stock may see higher volatility. The auto sector has been gaining, up 0.7% in the last session and 3.1% over five sessions.",
-   "why": "Shareholders could experience noticeable price swings because the stock is flagged for high volatility.",
-   "upside": "A continued rise in the auto sector could lift Maruti Suzuki’s share price.",
-   "downside": "Sharp moves from the heightened volatility could push the stock lower.",
-   "watch": [
-    "Sector index performance",
-    "Any new corporate announcements from Maruti Suzuki",
-    "Volatility levels during the trading day"
-   ],
-   "about": "Maruti Suzuki India Ltd. manufactures and sells passenger vehicles in India.",
-   "basis": "e0e3292dc10e",
-   "items": 2,
-   "updated": "2026-11-23T09:17+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "RVNL": {
    "summary": "Rail Vikas Nigam Ltd. reported an 8.3% increase in profit for the second quarter of FY27, even though its revenue fell by 8.2%. The stock is currently being watched closely by investors due to these recent results.",
@@ -506,6 +490,22 @@
    "items": 2,
    "updated": "2026-11-20T15:02+05:30",
    "model": "openai/gpt-oss-20b"
+  },
+  "TATACHEM": {
+   "summary": "Tata Chemicals shares rose 4.5% after news that Tata Sons may discuss staying private. This development has put the company's ownership structure in focus for investors.",
+   "why": "The decision on whether Tata Sons stays private or goes public could change how Tata Chemicals is owned and managed, which directly affects the value of its shares.",
+   "upside": "Clarification on Tata Sons' status could stabilize investor sentiment and support the share price.",
+   "downside": "If the plan for Tata Sons stalls or faces delays, the share price could fall.",
+   "watch": [
+    "Official announcements regarding Tata Sons' listing status",
+    "Further news on the ownership structure of Tata Chemicals",
+    "General market reaction to the Tata group's strategic decisions"
+   ],
+   "about": "Tata Chemicals is a company in the chemicals sector.",
+   "basis": "a5357c663254",
+   "items": 2,
+   "updated": "2026-11-23T11:15+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "CANBK": {
    "summary": "Canara Bank recently shared an update on its credit rating with the stock exchange. At the same time, several public sector banks, including Canara, saw strong price increases in November.",

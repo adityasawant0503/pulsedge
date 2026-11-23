@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T11:00:45+05:30",
+ "updated": "2026-11-23T11:16:03+05:30",
  "summary": {
-  "calls": 1997,
-  "scored_calls": 827,
+  "calls": 1999,
+  "scored_calls": 829,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "9ffb59ac5c7f9443",
+   "symbol": "TATACHEM",
+   "time": "2026-11-23T11:02:11+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Tata Chemicals jumps 4.5% as Tata Sons listing debate puts stake in focus",
+   "url": "https://www.business-standard.com/markets/news/tata-chemicals-jumps-4-5-as-tata-sons-listing-debate-puts-stake-in-focus-126112300276_1.html",
+   "alert_px": 644.45,
+   "alert_move": 0.81,
+   "alert_at": "2026-11-23T11:15:49+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "83b13040242900b0",
+   "symbol": "MARUTI",
+   "time": "2026-11-23T11:01:11+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Maruti Suzuki gains 2% on price hike; stock up 14% in one week",
+   "url": "https://www.business-standard.com/markets/news/maruti-suzuki-jumps-2-on-price-hike-stock-up-14-in-one-week-126112300269_1.html",
+   "alert_px": 14250.0,
+   "alert_move": 1.71,
+   "alert_at": "2026-11-23T11:15:49+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "a6c2e92e36299257",
    "symbol": "TITAN",
