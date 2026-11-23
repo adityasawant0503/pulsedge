@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T16:01+05:30",
+ "updated": "2026-11-23T16:44+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -170,6 +170,22 @@
    "items": 4,
    "updated": "2026-11-23T14:15+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "ADANIENT": {
+   "summary": "Adani Enterprises is raising funds through its airport business, Adani Airport Holdings Limited (AAHL). The company plans to sell a small stake to an investor, bringing the total amount raised to about $1.35 billion.",
+   "why": "Selling new shares means existing owners will hold a slightly smaller slice of the company. This change in ownership can affect the value of the shares you already own.",
+   "upside": "The money raised might be used for growth projects that could benefit the company in the long run.",
+   "downside": "Adding new shares can reduce the ownership percentage of current shareholders, which might lower the share price.",
+   "watch": [
+    "How the new funds are actually used",
+    "The final size of the stake sold",
+    "General trends in the metals and mining sector"
+   ],
+   "about": "",
+   "basis": "d0ad272d89fa",
+   "items": 2,
+   "updated": "2026-11-23T16:44+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "INDUSINDBK": {
    "summary": "IndusInd Bank recently terminated its former CEO and invoked a clawback clause to reclaim his compensation. The stock is currently under close observation by investors due to this leadership change.",
@@ -587,22 +603,6 @@
    "updated": "2026-11-23T13:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "BANKINDIA": {
-   "summary": "Bank of India is under increased RBI monitoring of its gold loan portfolio after a recent drop in gold prices. At the same time, the RBI’s new Treasury Bill auction could affect the bank’s funding costs, while a stronger rupee is making Indian banks more appealing to foreign investors.",
-   "why": "Shareholders should watch for higher loan loss provisions if gold loan defaults rise, and for changes in funding costs that could affect profitability.",
-   "upside": "If the rupee stays strong, foreign investors may increase their holdings, supporting the bank’s share demand.",
-   "downside": "If the RBI’s scrutiny leads to higher provisions or if Treasury yields rise sharply, the bank’s earnings could be pressured.",
-   "watch": [
-    "RBI monitoring of gold loan portfolios",
-    "Outcomes of the Treasury Bill auction and yield movements",
-    "Rupee exchange rate trends"
-   ],
-   "about": "Bank of India is a commercial bank that offers a range of banking and financial services across India.",
-   "basis": "01eac4cae42e",
-   "items": 3,
-   "updated": "2026-11-23T15:17+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "TCS": {
    "summary": "TCS shares rose while the broader market fell, with analysts noting a shift of money from pricey AI stocks to cheaper Indian IT firms. The stock is being seen as a relatively safe play amid market volatility.",
    "why": "This trend could help share prices if investors continue moving funds into Indian software companies, and the stock’s perceived safety may attract more buying.",
@@ -682,6 +682,22 @@
    "items": 2,
    "updated": "2026-11-23T10:47+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "BANKINDIA": {
+   "summary": "The Reserve Bank of India is closely monitoring gold loan portfolios after recent drops in gold prices. Additionally, the RBI announced new Treasury Bill auctions that may influence bank funding costs.",
+   "why": "These developments could affect Bank of India's need to set aside money for potential loan losses and its overall profit margins.",
+   "upside": "The Financials sector index has risen 3.6% over the last five sessions, suggesting a positive trend for the group.",
+   "downside": "Banks may need to reserve more funds to cover losses on gold loans if borrowers default due to lower gold values.",
+   "watch": [
+    "Changes in gold prices and their impact on loan defaults",
+    "Interest rates from the new Treasury Bill auctions",
+    "Updates on the bank's non-performing assets"
+   ],
+   "about": "",
+   "basis": "9f47c794e78c",
+   "items": 2,
+   "updated": "2026-11-23T16:44+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "PERSISTENT": {
    "summary": "Persistent Systems recently issued a statement to the stock exchange, though the specific details are not yet public. At the same time, a technical indicator called RSI moved above 50, which suggests the stock may be gaining upward momentum.",
