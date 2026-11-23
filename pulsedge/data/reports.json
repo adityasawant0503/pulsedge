@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T15:32+05:30",
+ "updated": "2026-11-23T15:47+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -235,6 +235,22 @@
    "updated": "2026-11-23T13:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "ABREL": {
+   "summary": "Aditya Birla Real Estate Ltd. (ABREL) has announced a rights‑issue investment in its wholly‑owned subsidiary, Unnatam Properties. The real‑estate sector, including ABREL, has seen a strong rise, with the BSE Realty index up 17% in November and the sector index up 1.7% in the last session.",
+   "why": "The investment uses cash that could be deployed elsewhere and may dilute existing shareholders if they participate in the rights issue.",
+   "upside": "The investment could support the company’s expansion plans.",
+   "downside": "Share dilution risk if shareholders subscribe to the rights issue, and sector momentum could reverse after a large rise.",
+   "watch": [
+    "Details of the rights‑issue subscription terms",
+    "Performance of Unnatam Properties post‑investment",
+    "Overall real‑estate index trend"
+   ],
+   "about": "Aditya Birla Real Estate Ltd. is a real‑estate company.",
+   "basis": "919193353329",
+   "items": 2,
+   "updated": "2026-11-23T15:47+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "LT": {
    "summary": "PulsEdge flagged that L&T announced it has bagged new orders and contracts on Nov 23. The announcements indicate fresh work for the construction firm. The exact size and timing of the orders were not disclosed.",
    "why": "New contracts can increase future earnings, but the impact depends on how large the orders are and when they are executed.",
@@ -267,6 +283,22 @@
    "updated": "2026-11-23T12:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "CCL": {
+   "summary": "PulsEdge flagged that CCL Products is part of the FMCG sector, which has risen 3.6% over the last five sessions. The company is included in the Nifty 500 index, which tracks India's 500 largest listed companies.",
+   "why": "Being in the Nifty 500 means the company is one of India's larger listed firms, which can make its shares more visible to investors. The recent rise in the FMCG sector suggests general market interest in this type of business.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "Future news specific to CCL Products, as recent headlines were about a different company.",
+    "The performance of the FMCG sector index.",
+    "Changes in CCL's inclusion in major market indices."
+   ],
+   "about": "",
+   "basis": "9e9f468b0016",
+   "items": 1,
+   "updated": "2026-11-23T15:47+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "RAILTEL": {
    "summary": "Railtel Corporation of India announced that it has won new business contracts. This news was shared with the stock exchange as a standard update on company activities.",
    "why": "New contracts can lead to more future work and income for the company, which is generally a positive sign for its business health.",
@@ -282,22 +314,6 @@
    "items": 1,
    "updated": "2026-11-23T14:01+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "ABREL": {
-   "summary": "Aditya Birla Real Estate Ltd. is part of the realty sector, which saw a 17% rise in the BSE Realty index last month. The sector index moved +1.7% in the last session and +1.9% over five sessions.",
-   "why": "Shareholders may see the company's stock influenced by the overall sector momentum.",
-   "upside": "Sector rally could lift ABREL's share price.",
-   "downside": "Momentum may reverse after a large rise.",
-   "watch": [
-    "BSE Realty index trend",
-    "ABREL's own trading performance",
-    "Sector index movement"
-   ],
-   "about": "Aditya Birla Real Estate Ltd. operates in the real estate sector.",
-   "basis": "bce8aa99029e",
-   "items": 1,
-   "updated": "2026-11-23T12:15+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "GODREJPROP": {
    "summary": "Real estate stocks in India jumped about 17% in November, and the sector index rose 1.7% on the last session and 1.9% over five days. Godrej Properties, as part of the sector, is likely feeling this upward momentum.",
@@ -329,6 +345,38 @@
    "basis": "bce8aa99029e",
    "items": 1,
    "updated": "2026-11-23T12:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "HINDALCO": {
+   "summary": "Hindalco shares fell about 3% as the broader market slipped, dragging the Nifty 50 lower. The company also awarded a ₹136.29 cr contract for a 400 kV transmission line, showing ongoing infrastructure investment.",
+   "why": "The stock’s price is sensitive to the overall market sell‑off and to any news about its capital spending.",
+   "upside": "A quick rebound in the broader market or positive outcomes from the new infrastructure project could lift the share price.",
+   "downside": "Continued market weakness and volatility could keep the stock under pressure.",
+   "watch": [
+    "Nifty 50 and Metals index movements",
+    "Short‑term price swings in Hindalco shares",
+    "Updates on the 400 kV transmission line project"
+   ],
+   "about": "Hindalco Industries Ltd. is a major Indian metal producer.",
+   "basis": "84f3cfe502b4",
+   "items": 3,
+   "updated": "2026-11-23T15:47+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "AXISBANK": {
+   "summary": "Axis Bank shares fell about 4% as the broader market dropped sharply, pulling the Nifty 50 below 25,350. Despite the sell‑off, the Financials sector index rose 2% in the last session and 3.6% over five sessions.",
+   "why": "The stock’s price is being influenced by overall market sentiment rather than any new company‑specific news.",
+   "upside": "If the broader market stabilises, the recent strength in the Financials sector could help the share recover.",
+   "downside": "Continued market volatility and a weak Nifty 50 could keep pressure on the share price.",
+   "watch": [
+    "Nifty 50 movements and any reversal in the index trend",
+    "Financials sector index performance",
+    "Overall market volatility and sentiment"
+   ],
+   "about": "Axis Bank Ltd. is a major Indian bank that provides a range of financial services.",
+   "basis": "80e040863548",
+   "items": 2,
+   "updated": "2026-11-23T15:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "BSE": {
@@ -375,22 +423,6 @@
    ],
    "about": "HDFC Bank is a major financial services company and one of India's 50 largest listed firms.",
    "basis": "120b3bc00083",
-   "items": 2,
-   "updated": "2026-11-23T14:46+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "HINDALCO": {
-   "summary": "Hindalco shares have been part of a broader sell-off in bank and metal stocks, helping push the Nifty 50 index below 25,500. Separately, a smaller infrastructure company announced it won a contract from Hindalco to build a high-voltage power line.",
-   "why": "If you own Hindalco shares, the general market drop in metal stocks may lower the value of your holding, while the new infrastructure contract shows the company is continuing to invest in its operations.",
-   "upside": "The stock could rebound quickly as part of a wider market recovery.",
-   "downside": "The ongoing weakness in the metals sector could continue to pressure the share price.",
-   "watch": [
-    "Whether the Nifty 50 index recovers above 25,500",
-    "How the metals sector performs in the coming sessions",
-    "Details on the progress of the 400 KV transmission line project"
-   ],
-   "about": "Hindalco is a major Indian metals and mining company.",
-   "basis": "c1f8ed8b16c8",
    "items": 2,
    "updated": "2026-11-23T14:46+05:30",
    "model": "qwen/qwen3.8-27b"
@@ -473,22 +505,6 @@
    "basis": "9236c31ec4fe",
    "items": 1,
    "updated": "2026-11-23T15:02+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "AXISBANK": {
-   "summary": "Axis Bank is among the stocks pulling the Nifty 50 index lower, keeping the benchmark below 25,500, even as the broader Financials sector has risen 2.0% today and 3.6% over the past five sessions.",
-   "why": "The bank’s performance can affect the overall market move, so its price may feel pressure from a wider sell‑off.",
-   "upside": "If the broader market rebounds, Axis Bank could recover quickly along with other lagging stocks.",
-   "downside": "Continued weakness in bank and metal stocks could keep the index down and weigh on Axis Bank’s share price.",
-   "watch": [
-    "Nifty 50 level around 25,500",
-    "Financials sector momentum",
-    "Any fresh news on bank earnings or credit quality"
-   ],
-   "about": "Axis Bank Ltd. is a leading Indian commercial bank that provides a range of banking and financial services.",
-   "basis": "ffd847bb0579",
-   "items": 1,
-   "updated": "2026-11-23T14:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ICICIBANK": {
