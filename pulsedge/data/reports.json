@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T12:15+05:30",
+ "updated": "2026-11-23T12:31+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -108,19 +108,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel has announced a major plan to acquire a significant stake in APL Apollo Tubes and sell its own tube business, causing its stock price to fall sharply. Investors are weighing the heavy spending and deal costs against future changes to the company structure.",
-   "why": "This matters because large acquisitions and asset sales can change how the company is run, impact its cash levels, and cause immediate price swings for shareholders.",
-   "upside": "Experts believe the long-term value and strength of the combined businesses could remain strong.",
-   "downside": "High acquisition costs could increase Tata Steel's debt and hurt its profits.",
+   "summary": "Tata Steel has announced a major plan to acquire a significant stake in APL Apollo Tubes while also divesting its own tube business. These large corporate moves caused its stock price to drop sharply as investors weighed the heavy costs.",
+   "why": "This matters because major acquisitions and sales change the company's financial structure and debt levels, which directly impacts shareholder value.",
+   "upside": "Experts believe the long-term value and benefits of these structural changes could remain strong despite current concerns.",
+   "downside": "High spending could increase the company's debt or hurt profits, and the deal might face regulatory hurdles.",
    "watch": [
-    "Regulatory approval updates for the acquisition",
-    "Any further changes to Tata Steel's debt or cash levels",
-    "Short-term stock volatility"
+    "Regulatory approvals for the acquisition",
+    "Updates on Tata Steel's debt and cash levels",
+    "Integration challenges regarding the new stake"
    ],
-   "about": "Tata Steel Ltd. operates in the metals and mining sector as one of India's largest listed companies.",
-   "basis": "39b200194a8d",
-   "items": 16,
-   "updated": "2026-11-23T10:47+05:30",
+   "about": "Tata Steel Ltd. is one of India's largest listed metals and mining companies.",
+   "basis": "4ac87edc5fe2",
+   "items": 15,
+   "updated": "2026-11-23T12:31+05:30",
    "model": "gemini-flash-lite-latest"
   },
   "APLAPOLLO": {
@@ -236,19 +236,35 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India is seeing pressure as global oil prices have fallen for a third straight week amid ample supply and mixed geopolitical news. The broader oil‑and‑gas sector in India has risen modestly, up 0.4% in the last session.",
-   "why": "Lower crude prices can reduce the company’s earnings, which matters to shareholders.",
-   "upside": "A rebound in oil prices from supply cuts or heightened geopolitical tension could improve earnings.",
-   "downside": "Continued price declines from a supply glut could further squeeze profits.",
+   "summary": "Oil India Ltd. is facing a mixed market environment where oil prices have fallen for three straight weeks due to high supply, but recent attacks on shipping lanes and refineries in the Middle East could push prices back up. The company's sector index has risen slightly over the last five days, suggesting some stability despite the price drops.",
+   "why": "Since Oil India earns money by selling oil, falling global oil prices can reduce its profits, while sudden spikes in prices due to conflicts can boost them. Shareholders need to watch how these opposing forces affect the company's earnings.",
+   "upside": "Recent attacks on oil facilities and shipping routes could restrict supply and cause oil prices to rise, which would benefit Oil India's revenue.",
+   "downside": "Oil prices have declined for three consecutive weeks due to an oversupply of crude, which could lower the company's earnings if the trend continues.",
    "watch": [
-    "Outcome of the upcoming OPEC+ output decision",
-    "Weekly movements in Brent and WTI crude prices",
-    "Geopolitical developments affecting oil supply, such as attacks on facilities or shipping incidents"
+    "The upcoming OPEC+ meeting decision on oil production levels.",
+    "Any further incidents in the Strait of Hormuz that might block oil shipments.",
+    "Whether global oil prices stabilize or continue to fall."
    ],
-   "about": "Oil India Ltd. explores, produces and sells crude oil and natural gas in India.",
-   "basis": "4bc0da4064ab",
-   "items": 9,
-   "updated": "2026-11-23T10:47+05:30",
+   "about": "Oil India Ltd. is an oil-producing company listed in the Oil Gas & Consumable Fuels sector.",
+   "basis": "b5b50e074a48",
+   "items": 8,
+   "updated": "2026-11-23T12:31+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "LT": {
+   "summary": "PulsEdge flagged that L&T announced it has bagged new orders and contracts on Nov 23. The announcements indicate fresh work for the construction firm. The exact size and timing of the orders were not disclosed.",
+   "why": "New contracts can increase future earnings, but the impact depends on how large the orders are and when they are executed.",
+   "upside": "If the new contracts are sizable and executed on schedule, they could lift earnings.",
+   "downside": "If the orders are small or face delays or cancellations, the expected earnings boost may be limited.",
+   "watch": [
+    "Size of the newly announced orders relative to L&T's existing backlog",
+    "Execution timeline and any potential delays for the new contracts",
+    "Further updates on additional contract wins or cancellations"
+   ],
+   "about": "Larsen & Toubro Ltd. is a leading Indian construction and engineering company.",
+   "basis": "0f422557cba5",
+   "items": 2,
+   "updated": "2026-11-23T12:31+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "PHOENIXLTD": {
@@ -346,38 +362,6 @@
    "items": 1,
    "updated": "2026-11-20T13:16+05:30",
    "model": "gemini-flash-lite-latest"
-  },
-  "JSWSTEEL": {
-   "summary": "JSW Steel's shares have fallen along with the broader metal sector, prompting analysts to compare it with peers like Hindustan Zinc and Tata Steel to gauge relative safety. The industry is under pressure from a stronger US dollar that is weighing on metal prices.",
-   "why": "Shareholders need to watch how sector weakness and currency effects could impact JSW Steel's earnings and stock performance.",
-   "upside": "If JSW Steel shows greater resilience than its peers, it could outperform the struggling metal sector.",
-   "downside": "A continued strong US dollar could keep metal prices low, hurting the company's profitability.",
-   "watch": [
-    "Relative performance versus Hindustan Zinc and Tata Steel",
-    "Impact of US dollar strength on metal prices",
-    "Trend of the Metals sector index"
-   ],
-   "about": "JSW Steel Ltd. is a major Indian steel manufacturer.",
-   "basis": "0455655dce14",
-   "items": 1,
-   "updated": "2026-11-23T07:23+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "HINDZINC": {
-   "summary": "Hindustan Zinc's shares have fallen along with the broader metal sector, prompting analysts to compare it with Tata Steel and JSW Steel to gauge relative safety. The metals index rose 0.6% in the last session but is down 3.7% over the past five sessions, reflecting ongoing industry weakness.",
-   "why": "Shareholders need to watch how sector-wide price drops and a strong US dollar could affect Hindustan Zinc's earnings and stock performance.",
-   "upside": "If Hindustan Zinc shows more resilience than its peers, it could outperform the struggling metal stocks.",
-   "downside": "A stronger US dollar may continue to suppress metal prices, hurting the company's profitability.",
-   "watch": [
-    "Relative performance versus Tata Steel and JSW Steel",
-    "Impact of US dollar strength on metal prices",
-    "Trend of the Metals sector index"
-   ],
-   "about": "Hindustan Zinc Ltd. is a metals and mining company listed in India's Nifty 500.",
-   "basis": "0455655dce14",
-   "items": 1,
-   "updated": "2026-11-20T12:30+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "CANFINHOME": {
    "summary": "Can Fin Homes Ltd. has announced a change in one of its key government permits. The company notified the exchange about this change. This could affect its operations.",

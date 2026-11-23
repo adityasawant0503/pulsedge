@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T12:16:14+05:30",
+ "updated": "2026-11-23T12:31:36+05:30",
  "summary": {
-  "calls": 2009,
-  "scored_calls": 839,
+  "calls": 2010,
+  "scored_calls": 840,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "d7db5e692acded33",
+   "symbol": "LT",
+   "time": "2026-11-23T12:25:12+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Larsen & Toubro Limited: LARSEN & TOUBRO LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Rec",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_2203_WebXMLFile_20261123_122511343.xml",
+   "alert_px": 4152.9,
+   "alert_move": -1.34,
+   "alert_at": "2026-11-23T12:30:59+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "4c7b9830e3bc1721",
    "symbol": "ABREL",
