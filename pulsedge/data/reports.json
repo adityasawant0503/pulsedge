@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T13:15+05:30",
+ "updated": "2026-11-23T13:24+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -92,19 +92,19 @@
    "model": "openai/gpt-oss-20b"
   },
   "DALBHARAT": {
-   "summary": "The board approved a share buyback at Rs 1850 per share via the open market. The buyback aims to reduce share supply and signal confidence.",
-   "why": "Existing shareholders could benefit if the buyback supports the share price.",
-   "upside": "If the buyback is sizable and market sentiment stays positive, the share price could improve.",
-   "downside": "If the buyback size is small relative to the market cap or sentiment turns negative, the impact may be limited.",
+   "summary": "The board approved an open‑market buyback of its shares at Rs 1850 each, reducing the total share count.",
+   "why": "Buybacks can lift the value of remaining shares, which matters to current shareholders.",
+   "upside": "If the buyback proceeds as planned, it could support the share price.",
+   "downside": "If the buyback is delayed, scaled down, or market sentiment stays negative, the expected benefit may not materialise.",
    "watch": [
-    "Execution of the buyback program",
-    "Market sentiment around the stock",
-    "Buyback size compared to market capitalization"
+    "Execution timeline and size of the buyback",
+    "Company's cash flow and regulatory approvals",
+    "Market reaction to the buyback announcement"
    ],
-   "about": "Dalmia Bharat Ltd manufactures construction materials.",
-   "basis": "a6a86fd2d592",
-   "items": 2,
-   "updated": "2026-11-23T11:45+05:30",
+   "about": "Dalmia Bharat Ltd. manufactures construction materials.",
+   "basis": "ee2f2f4f8a69",
+   "items": 3,
+   "updated": "2026-11-23T13:24+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "TATASTEEL": {
@@ -138,6 +138,38 @@
    "items": 10,
    "updated": "2026-11-23T13:15+05:30",
    "model": "gemini-flash-lite-latest"
+  },
+  "HFCL": {
+   "summary": "HFCL shares fell sharply, slipping up to 41% from October highs and triggering a circuit‑breaker halt, indicating strong selling pressure.",
+   "why": "The move can affect the value of existing holdings and may limit investors’ ability to exit their positions.",
+   "upside": "If selling pressure eases, the stock could stabilize after the fall.",
+   "downside": "Continued pressure could push the price lower and the circuit‑breaker might stay locked, trapping investors.",
+   "watch": [
+    "Circuit‑breaker status",
+    "Price movement after the drop",
+    "Sector trends including Sterlite Tech"
+   ],
+   "about": "HFCL Ltd. operates in the telecommunications sector.",
+   "basis": "7c87c8d1ec29",
+   "items": 1,
+   "updated": "2026-11-23T13:24+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "STLTECH": {
+   "summary": "Sterlite Technologies shares fell sharply, hitting a trading limit that halted trading temporarily. The drop indicates strong selling pressure and the price may continue to decline before stabilizing.",
+   "why": "Strong selling pressure can reduce the share value, and a circuit breaker lock may prevent investors from exiting their positions.",
+   "upside": "",
+   "downside": "The price may keep falling and the trading halt could remain in place, limiting exit options.",
+   "watch": [
+    "Whether the trading limit is lifted and trading resumes",
+    "Price trend after the halt",
+    "Any news explaining the cause of the sharp drop"
+   ],
+   "about": "Sterlite Technologies Ltd. operates in the telecommunications sector.",
+   "basis": "7c87c8d1ec29",
+   "items": 1,
+   "updated": "2026-11-23T13:24+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "INDUSINDBK": {
    "summary": "IndusInd Bank shares recently surged nearly 9% on high trading volume, approaching their 52-week high. However, the stock dropped 1% after the bank terminated its former CEO and reclaimed his compensation.",

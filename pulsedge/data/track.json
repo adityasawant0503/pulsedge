@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T13:16:10+05:30",
+ "updated": "2026-11-23T13:25:11+05:30",
  "summary": {
-  "calls": 2018,
-  "scored_calls": 848,
+  "calls": 2022,
+  "scored_calls": 852,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,66 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "08e52b7155ca66e1",
+   "symbol": "DALBHARAT",
+   "time": "2026-11-23T13:22:37+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Dalmia Bharat Limited: DALMIA BHARAT LIMITED has informed the Exchange regarding Outcome of Board Meeting held on 23-Nov-2026 for Buy-back |SUBJECT: Outcome of ",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/OUTCOME_17144_WebXMLFile_20261123_132236224.xml",
+   "alert_px": 1547.8,
+   "alert_move": -1.92,
+   "alert_at": "2026-11-23T13:24:45+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "6ca9725aa303625d",
+   "symbol": "SJVN",
+   "time": "2026-11-23T13:20:15+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "SOLARWORLD ENERGY SOLUTIONS: SOLARWORLD ENERGY SOLUTIONS LTD: CO. ANNOUNCES COMMERCIAL OPERATION OF 45 MW SOLAR PV POWER PROJECT IN ASSAM; PROJECT EXECUTED FOR ",
+   "url": "https://t.me/Indiaredboxglobal/9869",
+   "alert_px": 54.99,
+   "alert_move": -1.42,
+   "alert_at": "2026-11-23T13:20:32+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "a9ffaf6b38498389",
+   "symbol": "HFCL",
+   "time": "2026-11-23T13:17:12+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Sterlite Tech, HFCL extend fall; slip up to 41% from October highs",
+   "url": "https://www.business-standard.com/markets/news/sterlite-tech-hfcl-extend-fall-slip-up-to-41-from-october-highs-126112300446_1.html",
+   "alert_px": 178.6,
+   "alert_move": -5.0,
+   "alert_at": "2026-11-23T13:24:45+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "a9ffaf6b38498389",
+   "symbol": "STLTECH",
+   "time": "2026-11-23T13:17:12+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Sterlite Tech, HFCL extend fall; slip up to 41% from October highs",
+   "url": "https://www.business-standard.com/markets/news/sterlite-tech-hfcl-extend-fall-slip-up-to-41-from-october-highs-126112300446_1.html",
+   "alert_px": 590.8,
+   "alert_move": -4.99,
+   "alert_at": "2026-11-23T13:24:45+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "36f4053f6c1a4b98",
    "symbol": "APLAPOLLO",
