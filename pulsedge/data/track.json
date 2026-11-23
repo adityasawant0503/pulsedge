@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T10:16:03+05:30",
+ "updated": "2026-11-23T10:31:14+05:30",
  "summary": {
-  "calls": 1989,
-  "scored_calls": 819,
+  "calls": 1993,
+  "scored_calls": 823,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "31ef700508b2fd22",
+   "symbol": "WELSPUNLIV",
+   "time": "2026-11-23T10:28:39+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "WELSPUN LIVING: CO'S DOMESTIC BRANDS ON TRACK FOR ₹1,500 CR IN THE MEDIUM-TERM; AIMS 20+% CAGR, 2X OF MARKET GROWTH RATE",
+   "url": "https://t.me/Indiaredboxglobal/9854",
+   "alert_px": 271.51,
+   "alert_move": 1.02,
+   "alert_at": "2026-11-23T10:28:47+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "1c6064f6596dad98",
+   "symbol": "EICHERMOT",
+   "time": "2026-11-23T10:12:21+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Eicher Motors hits all-time high; here's why stock rallied 17% in one month",
+   "url": "https://www.business-standard.com/markets/news/eicher-motors-hits-all-time-high-here-s-why-stock-rallied-17-in-one-month-126112300208_1.html",
+   "alert_px": 8169.0,
+   "alert_move": 0.69,
+   "alert_at": "2026-11-23T10:30:53+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "ea21d6a1f23b872a",
    "symbol": "BANKINDIA",
@@ -84,6 +114,36 @@
    "alert_px": 167.27,
    "alert_move": -6.03,
    "alert_at": "2026-11-23T10:15:36+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "31f8059ade65eb28",
+   "symbol": "APLAPOLLO",
+   "time": "2026-11-23T10:06:05+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "98% up in 5 years! APL Apollo shares crash 15% today; here's why | Check stock returns, target price",
+   "url": "https://www.livemint.com/market/stock-market-news/107-up-in-5-years-apl-apollo-shares-crash-10-today-heres-why-check-stock-returns-target-price-11795406789837.html",
+   "alert_px": 1797.0,
+   "alert_move": -15.3,
+   "alert_at": "2026-11-23T10:30:53+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "31f8059ade65eb28",
+   "symbol": "TATASTEEL",
+   "time": "2026-11-23T10:06:05+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "98% up in 5 years! APL Apollo shares crash 15% today; here's why | Check stock returns, target price",
+   "url": "https://www.livemint.com/market/stock-market-news/107-up-in-5-years-apl-apollo-shares-crash-10-today-heres-why-check-stock-returns-target-price-11795406789837.html",
+   "alert_px": 168.25,
+   "alert_move": -5.48,
+   "alert_at": "2026-11-23T10:30:53+05:30",
    "alert_delay": 900
   },
   {
