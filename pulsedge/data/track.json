@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T10:01:15+05:30",
+ "updated": "2026-11-23T10:16:03+05:30",
  "summary": {
-  "calls": 1985,
-  "scored_calls": 815,
+  "calls": 1989,
+  "scored_calls": 819,
   "d1": {
    "scored": 665,
    "hits": 284,
@@ -26,6 +26,66 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "ea21d6a1f23b872a",
+   "symbol": "BANKINDIA",
+   "time": "2026-11-23T10:11:44+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "RESERVE BANK OF INDIA (RBI) HAS INCREASED ITS MONITORING OF BANKS' AND NON-BANKING FINANCIAL COMPANIES' (NBFCS) GOLD LOAN PORTFOLIOS AFTER A SHARP CORRECTION IN",
+   "url": "https://t.me/Indiaredboxglobal/9853",
+   "alert_px": 160.0,
+   "alert_move": -2.85,
+   "alert_at": "2026-11-23T10:12:17+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "9a91d8d998d40868",
+   "symbol": "ENGINERSIN",
+   "time": "2026-11-23T10:08:11+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Eppeltone Engineers Limited: Eppeltone Engineers Limited has informed the Exchange about Bagging/Receiving of orders/contracts for the manufacture and supply of",
+   "url": "https://nsearchives.nseindia.com/corporate/EPPELTONE_23112026100748_Intimation_1.pdf",
+   "alert_px": 301.0,
+   "alert_move": 1.5,
+   "alert_at": "2026-11-23T10:15:36+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "85d2148d7244f755",
+   "symbol": "APLAPOLLO",
+   "time": "2026-11-23T10:06:05+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "107% up in 5 years! APL Apollo shares crash 15% today; here's why | Check stock returns, target price",
+   "url": "https://www.livemint.com/market/stock-market-news/107-up-in-5-years-apl-apollo-shares-crash-10-today-heres-why-check-stock-returns-target-price-11795406789837.html",
+   "alert_px": 1803.4,
+   "alert_move": -15.0,
+   "alert_at": "2026-11-23T10:15:36+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "85d2148d7244f755",
+   "symbol": "TATASTEEL",
+   "time": "2026-11-23T10:06:05+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "107% up in 5 years! APL Apollo shares crash 15% today; here's why | Check stock returns, target price",
+   "url": "https://www.livemint.com/market/stock-market-news/107-up-in-5-years-apl-apollo-shares-crash-10-today-heres-why-check-stock-returns-target-price-11795406789837.html",
+   "alert_px": 167.27,
+   "alert_move": -6.03,
+   "alert_at": "2026-11-23T10:15:36+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "b671d42c902d92da",
    "symbol": "TATASTEEL",
