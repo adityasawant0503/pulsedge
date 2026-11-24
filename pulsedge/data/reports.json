@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-24T10:46+05:30",
+ "updated": "2026-11-24T10:53+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -90,6 +90,22 @@
    "items": 5,
    "updated": "2026-11-23T19:22+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "RVNL": {
+   "summary": "Rail Vikas Nigam Ltd. recently won a contract to build a hospital in Chhattisgarh. The company has already secured orders worth 8,000 crore rupees in the first half of the year.",
+   "why": "New contracts mean the company has work to do, which can lead to future income. However, recent results showed a drop in revenue, which adds some uncertainty.",
+   "upside": "The company is on track to reach a large order book, suggesting steady future work.",
+   "downside": "Delays in finishing projects or lower revenue could hurt profits.",
+   "watch": [
+    "Whether the company reaches its target order book size.",
+    "How quickly the new hospital project starts.",
+    "Future revenue figures in upcoming reports."
+   ],
+   "about": "Rail Vikas Nigam Ltd. is a construction company.",
+   "basis": "b1802efdc80c",
+   "items": 4,
+   "updated": "2026-11-24T10:53+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
    "summary": "Tata Steel announced a $1.67 billion deal to buy a 26.4% stake in APL Apollo and also sold its tube business, triggering a sharp drop in its share price. The broader metals sector also fell, adding pressure on the stock.",
@@ -442,22 +458,6 @@
    "items": 3,
    "updated": "2026-11-24T06:49+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "RVNL": {
-   "summary": "RVNL is on track to hit a 25,000 cr orderbook for FY27, having already secured 8,000 cr in the first half. The latest quarter showed an 8.3% rise in profit but an 8.2% fall in revenue.",
-   "why": "The growing orderbook points to future cash flow, while the revenue dip raises questions about demand and execution.",
-   "upside": "If RVNL converts more orders and meets the FY27 target, earnings could improve further.",
-   "downside": "Delays in executing the won orders could hurt revenue recognition and profit.",
-   "watch": [
-    "Progress toward the 25,000 cr FY27 orderbook target",
-    "Revenue trends in the next quarters",
-    "Execution timelines for the 8,000 cr of orders already secured"
-   ],
-   "about": "RVNL builds and maintains railway infrastructure projects.",
-   "basis": "7712a046dbd4",
-   "items": 3,
-   "updated": "2026-11-23T13:46+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "ITI": {
    "summary": "ITI shares rose about 11% on November 23, 2026, even though the wider market fell. The stock exchange flagged a significant increase in trading volume for the company.",

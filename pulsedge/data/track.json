@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-24T10:46:55+05:30",
+ "updated": "2026-11-24T10:53:08+05:30",
  "summary": {
-  "calls": 2091,
-  "scored_calls": 898,
+  "calls": 2092,
+  "scored_calls": 899,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "96426d0ba0f5f26e",
+   "symbol": "RVNL",
+   "time": "2026-11-24T10:51:32+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "RAIL VIKAS NIGAM: CO RECEIVED LETTER OF AWARD OF CONTRACT FROM NMDC LIMITED FOR CONSTRUCTION OF SUPER-SPECIALITY HOSPITAL FOR WOMEN & CHILD CARE AT KIRANDUL, CH",
+   "url": "https://t.me/Indiaredboxglobal/9956",
+   "alert_px": 185.1,
+   "alert_move": -3.09,
+   "alert_at": "2026-11-24T10:53:01+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "cef5fe02e031ea62",
    "symbol": "OIL",
