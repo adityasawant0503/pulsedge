@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-24T11:45:42+05:30",
+ "updated": "2026-11-24T12:01:10+05:30",
  "summary": {
-  "calls": 2094,
-  "scored_calls": 901,
+  "calls": 2096,
+  "scored_calls": 903,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "33867fe3c60169ee",
+   "symbol": "ZYDUSLIFE",
+   "time": "2026-11-24T11:55:07+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Zydus Lifesciences Limited: Zydus Lifesciences Limited has informed the Exchange regarding Acquisition of to be incorporated companies |SUBJECT: Acquisition of ",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_Restructuring_1852_WebXMLFile_20261124_115506086.xml",
+   "alert_px": 1199.5,
+   "alert_move": -0.04,
+   "alert_at": "2026-11-24T12:01:00+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "c0dd70571b3583f0",
+   "symbol": "GLAXO",
+   "time": "2026-11-24T11:47:24+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "GlaxoSmithKline Pharmaceuticals Limited: GlaxoSmithKline Pharmaceuticals Limited has informed the Exchange regarding a press release dated November 24, 2026, ti",
+   "url": "https://nsearchives.nseindia.com/corporate/GLAXO1924_24112026114705_Press_release.pdf",
+   "alert_px": 2701.2,
+   "alert_move": -0.97,
+   "alert_at": "2026-11-24T12:01:00+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "8350c55aad3104b1",
    "symbol": "CLEANMAX",

@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-24T11:31+05:30",
+ "updated": "2026-11-24T12:01+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -330,6 +330,22 @@
    "items": 2,
    "updated": "2026-11-23T12:15+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "GLAXO": {
+   "summary": "GlaxoSmithKline Pharmaceuticals announced that its drug BLENREP received approval for treating a type of blood cancer called multiple myeloma. This allows the company to sell this new medicine in the market.",
+   "why": "For shareholders, a new approved product can lead to higher sales and profits over time. However, the stock price may have already adjusted to reflect this good news.",
+   "upside": "The new drug could generate additional revenue for the company.",
+   "downside": "Investors might have already priced in the approval, limiting immediate stock gains.",
+   "watch": [
+    "Sales figures for the new BLENREP drug",
+    "Overall performance of the healthcare sector",
+    "Company announcements regarding product launch details"
+   ],
+   "about": "GlaxoSmithKline Pharmaceuticals is a healthcare company listed on the Indian stock exchange.",
+   "basis": "e204e3a0017a",
+   "items": 1,
+   "updated": "2026-11-24T12:01+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "CCL": {
    "summary": "PulsEdge flagged that CCL Products is part of the FMCG sector, which has risen 3.6% over the last five sessions. The company is included in the Nifty 500 index, which tracks India's 500 largest listed companies.",
