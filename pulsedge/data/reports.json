@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-24T12:45+05:30",
+ "updated": "2026-11-24T13:01+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -75,6 +75,22 @@
   "items": 27
  },
  "stocks": {
+  "RVNL": {
+   "summary": "RVNL has secured new contracts, including a hospital project from NMDC and orders worth 8,000 cr in H1, while reporting profit growth but a drop in revenue for Q2 FY27.",
+   "why": "These developments affect the company’s future cash flow and earnings, which matter to shareholders.",
+   "upside": "If the company meets its FY27 order‑book target of 25,000 cr and executes the new contracts on schedule, earnings could improve.",
+   "downside": "Execution delays or slower revenue growth could hurt margins and earnings.",
+   "watch": [
+    "Progress on the NMDC hospital contract",
+    "Achievement of the 25,000 cr order‑book goal",
+    "Quarterly revenue trends and profit growth"
+   ],
+   "about": "RVNL builds and maintains railway infrastructure projects in India.",
+   "basis": "fa7e278df831",
+   "items": 5,
+   "updated": "2026-11-24T13:01+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "DALBHARAT": {
    "summary": "Dalmia Bharat Ltd. announced a ₹700 crore share buyback, targeting up to 3.78 million shares at ₹1,850 per share. The board approved the plan on 23 Nov 2026 and the company has informed the exchange of the approval.",
    "why": "A buyback reduces the number of shares outstanding, which can lift earnings per share and may support the stock price for existing shareholders.",
@@ -90,22 +106,6 @@
    "items": 5,
    "updated": "2026-11-23T19:22+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "RVNL": {
-   "summary": "Rail Vikas Nigam Ltd. recently won a contract to build a hospital in Chhattisgarh. The company has already secured orders worth 8,000 crore rupees in the first half of the year.",
-   "why": "New contracts mean the company has work to do, which can lead to future income. However, recent results showed a drop in revenue, which adds some uncertainty.",
-   "upside": "The company is on track to reach a large order book, suggesting steady future work.",
-   "downside": "Delays in finishing projects or lower revenue could hurt profits.",
-   "watch": [
-    "Whether the company reaches its target order book size.",
-    "How quickly the new hospital project starts.",
-    "Future revenue figures in upcoming reports."
-   ],
-   "about": "Rail Vikas Nigam Ltd. is a construction company.",
-   "basis": "b1802efdc80c",
-   "items": 4,
-   "updated": "2026-11-24T10:53+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
    "summary": "Tata Steel announced a $1.67 billion deal to buy a 26.4% stake in APL Apollo and also sold its tube business, triggering a sharp drop in its share price. The broader metals sector also fell, adding pressure on the stock.",
@@ -282,6 +282,22 @@
    "items": 3,
    "updated": "2026-11-23T16:01+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "HYUNDAI": {
+   "summary": "Hyundai Motor India announced it will raise car prices by up to INR 8,000 from Dec 1, 2026 as input costs rise. The move could affect both sales volumes and profit margins.",
+   "why": "Shareholders need to watch how the price hike impacts demand and earnings.",
+   "upside": "If customers continue buying, the higher price could lift profit margins.",
+   "downside": "If demand softens, sales could fall and the company might lose market share.",
+   "watch": [
+    "Sales trend after the price increase",
+    "Competitors' pricing response",
+    "Auto sector index performance"
+   ],
+   "about": "Hyundai Motor India Ltd. manufactures and sells passenger cars in India.",
+   "basis": "88bac6b00544",
+   "items": 2,
+   "updated": "2026-11-24T13:01+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "ABREL": {
    "summary": "Aditya Birla Real Estate Ltd. (ABREL) has announced a rights‑issue investment in its wholly‑owned subsidiary, Unnatam Properties. The real‑estate sector, including ABREL, has seen a strong rise, with the BSE Realty index up 17% in November and the sector index up 1.7% in the last session.",
