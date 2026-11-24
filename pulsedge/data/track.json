@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-24T10:00:45+05:30",
+ "updated": "2026-11-24T10:15:42+05:30",
  "summary": {
-  "calls": 2088,
-  "scored_calls": 895,
+  "calls": 2090,
+  "scored_calls": 897,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "173ba6aa62d9f687",
+   "symbol": "MSUMI",
+   "time": "2026-11-24T10:06:52+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Motherson Sumi Wiring India Limited: Motherson Sumi Wiring India Limited has informed the Exchange about Credit Rating |SUBJECT: Credit Rating",
+   "url": "https://nsearchives.nseindia.com/corporate/MSWIL_24112026100646_CreditRating.pdf",
+   "alert_px": 41.65,
+   "alert_move": -2.48,
+   "alert_at": "2026-11-24T10:15:36+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "173ba6aa62d9f687",
+   "symbol": "MOTHERSON",
+   "time": "2026-11-24T10:06:52+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Motherson Sumi Wiring India Limited: Motherson Sumi Wiring India Limited has informed the Exchange about Credit Rating |SUBJECT: Credit Rating",
+   "url": "https://nsearchives.nseindia.com/corporate/MSWIL_24112026100646_CreditRating.pdf",
+   "alert_px": 165.76,
+   "alert_move": -0.46,
+   "alert_at": "2026-11-24T10:15:36+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "5c4ba52e8133f09d",
    "symbol": "OIL",
