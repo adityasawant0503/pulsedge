@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-24T19:21+05:30",
+ "updated": "2026-11-25T04:50+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Two companies, Astron Paper and TV Vision, entered insolvency proceedings, which signals severe financial trouble and potential loss of value for their shareholders. In the auto sector, Tata Motors and Hyundai announced price hikes, a move that could boost profits per car but might slow down sales if buyers pull back. Meanwhile, global tensions in the Strait of Hormuz raised concerns about oil shipping, while foreign investors reduced their long-term bets on the Indian market.",
+  "summary": "Oil prices jumped after a tanker hit a sea mine near the Strait of Hormuz, which may help Indian oil companies. US court rulings against Huawei could worry tech firms that rely on Chinese suppliers. US consumer confidence rose after midterm elections, potentially boosting global risk appetite.",
   "themes": [
-   "Corporate distress: Two firms entered insolvency, raising delisting and liquidation risks.",
-   "Auto price hikes: Major car makers raised prices, balancing higher margins against potential lower sales volume.",
-   "Global oil risks: Naval incidents in the Strait of Hormuz threatened shipping routes and crude oil stability."
+   "Oil supply risks pushing crude prices higher",
+   "Tech supply chain concerns following Huawei verdicts",
+   "Shifting global sentiment from US elections and AI cooling"
   ],
   "watch": [
-   "Whether the insolvency processes for Astron Paper and TV Vision lead to restructuring or liquidation.",
-   "How car sales volumes respond to the recent price increases by Tata Motors and Hyundai.",
-   "The outcome of the USFDA inspection for Gland Pharma, which is a step toward selling in the US but not a final approval."
+   "Setco Automotive's half-year results due on 27 November",
+   "Further developments in the Strait of Hormuz affecting oil prices",
+   "Changes in foreign fund positions in Indian index futures"
   ],
-  "date": "2026-11-24",
-  "basis": "a24979e99fa1",
-  "updated": "2026-11-24T19:21+05:30",
+  "date": "2026-11-25",
+  "basis": "757cbb561adc",
+  "updated": "2026-11-25T04:50+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 87
+  "items": 9
  },
  "stocks": {
   "RVNL": {
@@ -219,6 +219,21 @@
    "updated": "2026-11-23T13:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "INDIANB": {
+   "summary": "Indian Bank is part of the Financial Services sector, which recently saw a slight dip in its overall index. Recent news highlights a regulatory approval for SBI Mutual Fund to invest in a different bank, South Indian Bank, rather than Indian Bank itself.",
+   "why": "While the news does not directly involve Indian Bank, movements in the broader banking sector can influence how investors view all major banks, including Indian Bank.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "How the Financial Services sector index performs in the coming days.",
+    "Any new announcements specific to Indian Bank's own capital or operations."
+   ],
+   "about": "Indian Bank is a financial services company listed on the NSE.",
+   "basis": "8107ad89174f",
+   "items": 1,
+   "updated": "2026-11-25T04:50+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "LENSKART": {
    "summary": "Lenskart Solutions has seen several large block trades today. Major investors bought and sold shares at ₹725 each. The trades involve both institutional buyers and sellers.",
    "why": "Large block trades can signal how confident big investors feel about the company.",
@@ -300,20 +315,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is facing a backdrop of falling global oil prices as supply increases, while geopolitical tensions in the Strait of Hormuz create short‑term price volatility.",
-   "why": "Lower crude prices can squeeze the company’s profit margins, whereas any price rise from supply disruptions could boost earnings.",
-   "upside": "A sudden supply shock or escalation in the Hormuz region could lift oil prices, improving revenue.",
-   "downside": "If low oil prices persist, the company’s profitability may be pressured.",
+   "summary": "Oil India Ltd. is facing mixed signals as global oil prices swing between falling on supply concerns and rising due to tanker attacks near the Strait of Hormuz. The company's sector index has recently declined, reflecting broader market caution in the oil and gas space.",
+   "why": "Since the company earns money by selling oil, changes in global crude prices directly affect how much revenue it brings in. Higher prices can boost earnings, while lower prices can squeeze profits.",
+   "upside": "Continued disruptions in oil shipping routes could keep crude prices elevated, potentially increasing the company's revenue per barrel.",
+   "downside": "If the geopolitical conflict de-escalates quickly or global demand softens, oil prices may drop, reducing the company's profitability.",
    "watch": [
-    "Crude oil price trends (e.g., US futures around $80)",
-    "Developments around the Strait of Hormuz (mines, military actions)",
-    "Movement of the Oil & Gas sector index and Indian bond market"
+    "Updates on the safety of the Strait of Hormuz shipping lane",
+    "Daily closing prices of Brent and US crude oil futures",
+    "Trends in the Oil & Gas sector index"
    ],
-   "about": "Oil India Ltd. explores, produces and markets crude oil and natural gas in India.",
-   "basis": "a31bb2a90477",
-   "items": 12,
-   "updated": "2026-11-24T11:15+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Oil India Ltd. is an Indian company in the Oil Gas & Consumable Fuels sector that is part of the Nifty 500 index.",
+   "basis": "ce8b44bad9de",
+   "items": 15,
+   "updated": "2026-11-25T04:50+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "JWL": {
    "summary": "Jupiter Wagons has signed a joint venture agreement with a Korean partner to manufacture metro trains and propulsion systems in India. The company will hold an 80% stake in this new venture, marking a significant expansion into modern city rail infrastructure.",

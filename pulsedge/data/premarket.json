@@ -1,31 +1,31 @@
 {
- "date": "2026-11-24",
- "updated": "2026-11-24T19:21:47+05:30",
- "sentiment": "Bullish",
+ "date": "2026-11-25",
+ "updated": "2026-11-25T04:50:18+05:30",
+ "sentiment": "Neutral",
  "breadth": {
-  "up": 3,
-  "down": 0
+  "up": 1,
+  "down": 1
  },
  "checklist": [
   {
    "title": "GIFT Nifty - opening indication",
    "dir": "up",
-   "value": "25,496.5 · +147 pts (+0.58%) · gap-up start indicated",
+   "value": "25,496.0 · +146 pts (+0.58%) · gap-up start indicated",
    "detail": [
     "Nifty 50 last close 25,349.65 (-1.75%)",
-    "Implied open near 25,497",
+    "Implied open near 25,496",
     "Against Nifty futures' last close 25,349.7"
    ]
   },
   {
    "title": "US close - Dow/S&P/Nasdaq direction",
-   "dir": "up",
-   "value": "Higher",
+   "dir": "down",
+   "value": "Mixed — 1/3 higher",
    "detail": [
-    "Dow 49,595.31 +3.01%",
-    "S&P 7,237.17 +4.73%",
-    "Nasdaq 24,089.56 +6.51%",
-    "Nasdaq futures now -2.07%"
+    "Dow 50,018.70 +0.85%",
+    "S&P 7,201.09 -0.50%",
+    "Nasdaq 23,733.54 -1.48%",
+    "Nasdaq futures now +0.23%"
    ]
   },
   {
@@ -42,14 +42,14 @@
    "dir": "flat",
    "value": "No major currency pressure",
    "detail": [
-    "DXY 103.89 -0.42%",
+    "DXY 103.85 -0.45%",
     "USD/INR 92.900 +0.00%"
    ]
   },
   {
    "title": "Brent crude level",
-   "dir": "up",
-   "value": "$87.46 -2.14%",
+   "dir": "flat",
+   "value": "$88.78 -0.66%",
    "detail": []
   },
   {
@@ -59,28 +59,27 @@
    "detail": []
   }
  ],
- "summary": "Bullish setup. GIFT Nifty: gap-up start indicated (+147 pts); Brent down 2.14% — relief for OMCs and paints.",
+ "summary": "Neutral setup. GIFT Nifty: gap-up start indicated (+146 pts); NASDAQ closed 1.48% lower; IT may open soft.",
  "global_cues": [
-  "GIFT Nifty: gap-up start indicated (+147 pts)",
-  "Brent down 2.14% — relief for OMCs and paints",
-  "NASDAQ closed 6.51% higher; supportive for IT",
+  "GIFT Nifty: gap-up start indicated (+146 pts)",
+  "NASDAQ closed 1.48% lower; IT may open soft",
   "Nikkei up, Hang Seng down"
  ],
  "india_triggers": [
-  "87 filings and headlines worth a look so far today"
+  "9 filings and headlines worth a look so far today"
  ],
  "focus": [
   {
-   "symbol": "IDBI",
-   "note": "Should you buy IDBI shares? Is it a good banking stock to bet on amid "
+   "symbol": "OIL",
+   "note": "IRGC NAVY REPORTS A FOURTH OIL TANKER EXPLOSION AFTER HITTING A SEA MI"
   },
   {
-   "symbol": "RVNL",
-   "note": "RAIL VIKAS NIGAM: CO RECEIVED LETTER OF AWARD OF CONTRACT FROM NMDC LI"
+   "symbol": "OIL",
+   "note": "BRENT CRUDE FUTURES CLOSE AT $91.40 PER BARREL, UP $2.03 OR 2.27%"
   },
   {
-   "symbol": "TMPV",
-   "note": "Tata Motors Passenger Vehicles Limited: Tata Motors Passenger Vehicles"
+   "symbol": "OIL",
+   "note": "U.S. CRUDE OIL FUTURES CLOSE AT $82.05 PER BARREL, UP $1.88 OR 2.35%"
   }
  ],
  "sector_tags": [
@@ -89,7 +88,7 @@
    "tone": "watch"
   }
  ],
- "key_risk": "",
+ "key_risk": "Weak US tech could weigh on Indian IT at the open",
  "also": [
   {
    "name": "BANK NIFTY",
@@ -98,13 +97,13 @@
   },
   {
    "name": "S&P FUT",
-   "value": "7,170",
-   "change": -1.16
+   "value": "7,221",
+   "change": 0.05
   },
   {
    "name": "NASDAQ FUT",
-   "value": "26,254",
-   "change": -2.07
+   "value": "26,337",
+   "change": 0.23
   },
   {
    "name": "KOSPI",
@@ -113,18 +112,18 @@
   },
   {
    "name": "WTI",
-   "value": "80.72",
-   "change": 0.69
+   "value": "81.59",
+   "change": -0.56
   },
   {
    "name": "GOLD",
-   "value": "3,619",
-   "change": -0.42
+   "value": "3,561",
+   "change": 0.13
   },
   {
    "name": "US 10Y",
-   "value": "4.89",
-   "change": -1.09
+   "value": "4.93",
+   "change": -0.28
   }
  ],
  "source": "TradingView / CNBC / Yahoo Finance (unofficial; NSE prices 15 min delayed)"
