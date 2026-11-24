@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-24T12:30:54+05:30",
+ "updated": "2026-11-24T12:45:45+05:30",
  "summary": {
-  "calls": 2098,
-  "scored_calls": 905,
+  "calls": 2099,
+  "scored_calls": 906,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "425a5dd8222ac76e",
+   "symbol": "ZYDUSLIFE",
+   "time": "2026-11-24T12:37:51+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "ZYDUS LIFESCIENCES: CO INCORPORATES WHOLLY OWNED SUBSIDIARY ZYDUS AUSTRALIA PTY. LIMITED IN AUSTRALIA; FOCUS ON SELLING AND DISTRIBUTING PHARMACEUTICAL PRODUCTS",
+   "url": "https://t.me/Indiaredboxglobal/9961",
+   "alert_px": 1199.5,
+   "alert_move": -0.04,
+   "alert_at": "2026-11-24T12:45:36+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "579905556c5ad2b4",
    "symbol": "HYUNDAI",
