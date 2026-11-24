@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-24T16:02+05:30",
+ "updated": "2026-11-24T18:25+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a new hospital contract for RVNL, adding revenue but with execution risk. Tata Motors and Hyundai announced price hikes for their cars, which could lift margins but may curb sales. Oil‑shipping incidents near the Strait of Hormuz and a strong US tech rally lifted sentiment for Indian oil and IT stocks. IT rose 1.7% while metals and banks fell sharply.",
+  "summary": "Banking and metal stocks fell sharply, while IT and consumer goods stocks rose. Tata Motors and Hyundai announced they will raise car prices in December. Three oil tankers were damaged in the Strait of Hormuz, which may push up global oil prices.",
   "themes": [
-   "Infrastructure wins boost construction outlook",
-   "Auto makers raise prices amid demand sensitivity",
-   "Global oil tensions and US tech rally lift Indian oil and IT sentiment"
+   "Car makers are raising prices to protect profits.",
+   "Oil supply risks are rising due to tanker incidents.",
+   "Banking and metal sectors faced heavy selling."
   ],
   "watch": [
-   "How auto price hikes affect Tata Motors and Hyundai sales volumes",
-   "Progress on RVNL's hospital project and any delays",
-   "Further developments in oil‑shipping routes and their impact on Indian oil companies"
+   "Whether car sales drop after the price hikes.",
+   "If the Strait of Hormuz situation worsens or calms down.",
+   "Regulatory approval for the potential IDBI bank acquisition."
   ],
   "date": "2026-11-24",
-  "basis": "1d1ff32991e7",
-  "updated": "2026-11-24T16:02+05:30",
-  "model": "openai/gpt-oss-120b",
-  "items": 40
+  "basis": "9d71196b4bad",
+  "updated": "2026-11-24T18:25+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 72
  },
  "stocks": {
   "RVNL": {
@@ -106,6 +106,38 @@
    "items": 5,
    "updated": "2026-11-23T19:22+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "BRIGADE": {
+   "summary": "Brigade Enterprises reported selling ₹1,600 crore worth of units during a launch weekend for a new project in Bengaluru. The company also bought land in Secunderabad for a premium residential project and noted that its hotel business saw 7% growth in the first half of the year.",
+   "why": "These sales and new land purchases show the company is actively expanding its business, which could lead to higher future income for the company.",
+   "upside": "Strong initial sales and new land acquisitions suggest the company has a pipeline of projects that could generate revenue in the coming years.",
+   "downside": "The high cost of the new land and the fact that launch-week sales might be a one-time event could limit profit margins or future growth.",
+   "watch": [
+    "Whether the new Secunderabad project sells as expected",
+    "If the hotel business achieves the double-digit growth it predicted for the second half of the year",
+    "How the overall real estate sector performs in the coming weeks"
+   ],
+   "about": "Brigade Enterprises is a real estate company that develops residential and mixed-use properties.",
+   "basis": "4512e02c2746",
+   "items": 5,
+   "updated": "2026-11-24T18:25+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "IGL": {
+   "summary": "Indraprastha Gas Ltd. is part of the Oil & Gas sector, which has seen a slight dip in recent trading. A subsidiary, IGL Finance, recently received a one-time cash settlement of ₹58.39 crore.",
+   "why": "This cash inflow improves the company's immediate liquidity, which can strengthen its financial position, though it is a one-off event rather than ongoing revenue.",
+   "upside": "The extra cash may help the company manage its debts or operations more comfortably in the short term.",
+   "downside": "Because the cash is a one-time settlement, it does not guarantee future earnings growth or long-term financial health.",
+   "watch": [
+    "How the company uses the ₹58.39 crore cash settlement",
+    "Future updates on the financial health of IGL Finance",
+    "Trends in the broader Oil & Gas sector index"
+   ],
+   "about": "",
+   "basis": "3bdaf01e356d",
+   "items": 1,
+   "updated": "2026-11-24T18:25+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
    "summary": "Tata Steel announced a $1.67 billion deal to buy a 26.4% stake in APL Apollo and also sold its tube business, triggering a sharp drop in its share price. The broader metals sector also fell, adding pressure on the stock.",
@@ -233,6 +265,22 @@
    "basis": "4a3a5e7bc17e",
    "items": 2,
    "updated": "2026-11-23T15:32+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "IDBI": {
+   "summary": "IDBI Bank is in the news because Canada’s Fairfax may buy the company at a price higher than the current market rate. This potential deal is currently under review and requires regulatory approval.",
+   "why": "If the deal is approved, the higher purchase price could lift the share price for existing owners. However, the process might take time, creating uncertainty.",
+   "upside": "A successful takeover at a premium could increase the value of the shares.",
+   "downside": "Regulatory approval might be delayed, which could keep the share price uncertain for a while.",
+   "watch": [
+    "Updates on regulatory approval status",
+    "Official announcements from Fairfax or IDBI",
+    "General movement in the Financials sector index"
+   ],
+   "about": "IDBI Bank is a financial services company listed in India's Nifty 500 index.",
+   "basis": "6ae24c0f53fa",
+   "items": 1,
+   "updated": "2026-11-24T18:25+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
@@ -491,6 +539,22 @@
    "updated": "2026-11-23T15:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "HEXT": {
+   "summary": "Hexaware Technologies has been named a Challenger in the 2026 Gartner Magic Quadrant for Service Integration and Management Services. This recognition highlights the company's standing in its sector.",
+   "why": "This award may help the company attract new business, which could support its future performance for shareholders.",
+   "upside": "The recognition could lead to new client contracts and increased revenue.",
+   "downside": "The award might not result in immediate financial gains or new business.",
+   "watch": [
+    "Any announcements about new client contracts",
+    "Future quarterly earnings reports",
+    "Movement of the IT sector index"
+   ],
+   "about": "Hexaware Technologies is an Information Technology company.",
+   "basis": "c2dc715c5c92",
+   "items": 1,
+   "updated": "2026-11-24T18:25+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "ENGINERSIN": {
    "summary": "Engineers India Ltd is a construction company listed on the NSE and part of the Nifty 500 index. No recent company-specific announcements have been flagged in the last few days.",
    "why": "Its size and sector placement affect its growth prospects and dividend potential for shareholders.",
@@ -506,22 +570,6 @@
    "items": 4,
    "updated": "2026-11-24T16:02+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "BRIGADE": {
-   "summary": "Brigade Enterprises bought a 2.25-acre land parcel in Secunderabad for 180 crore rupees to build a premium residential project. The company also reported that its hotel business grew by 7% in the first half of the year and expects faster growth in the second half.",
-   "why": "These moves could increase the company's future revenue, but the high cost of the new land may reduce the profit margin on that specific project.",
-   "upside": "The new residential project has a potential revenue of 1,000 crore rupees, and the hotel division is expected to see double-digit growth in the coming months.",
-   "downside": "The high land acquisition cost could squeeze profits, and the new project's success depends on whether pre-sales meet the company's targets.",
-   "watch": [
-    "Pre-sales figures for the new Secunderabad project",
-    "Actual revenue growth in the hotel business for the second half",
-    "Overall performance of the Realty sector index"
-   ],
-   "about": "Brigade Enterprises is a real estate company that also operates a hotel business.",
-   "basis": "e605733962cf",
-   "items": 4,
-   "updated": "2026-11-23T19:22+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "MAXHEALTH": {
    "summary": "Max Healthcare Institute Ltd. announced the resignation of a director and changes in its senior management personnel. These updates were filed with the stock exchange on November 23, 2026.",
@@ -699,6 +747,22 @@
    "updated": "2026-11-23T13:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "BANKINDIA": {
+   "summary": "Bank of India faces two key developments: the RBI is closely monitoring gold loan portfolios after a sharp drop in bullion prices, and a shift of pension and insurance funds into equities is reducing demand for government bonds that banks hold.",
+   "why": "These issues could affect the bank’s earnings and asset quality, impacting shareholders.",
+   "upside": "If bond prices remain stable and gold prices recover, the bank’s profitability could improve.",
+   "downside": "A fall in bond prices or higher losses on gold loans could hurt earnings and increase non‑performing assets.",
+   "watch": [
+    "RBI’s monitoring of gold loan portfolios",
+    "Bond market volatility due to pension/insurance fund shifts",
+    "Financials sector index performance"
+   ],
+   "about": "Bank of India is a commercial bank offering a range of banking and financial services in India.",
+   "basis": "ab8ab3eee08a",
+   "items": 2,
+   "updated": "2026-11-24T18:25+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "PRESTIGE": {
    "summary": "Prestige Estates Projects Ltd. has created two wholly‑owned subsidiaries, Prestige Worli North and South, to develop projects in Mumbai and has announced acquisition of additional to‑be‑incorporated companies. Both moves aim to expand its development pipeline, while high land costs could pressure project margins.",
    "why": "Shareholders may see future earnings growth from the new subsidiaries, but margin pressure from expensive land could affect profitability.",
@@ -826,6 +890,22 @@
    "items": 2,
    "updated": "2026-11-24T12:45+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "KFINTECH": {
+   "summary": "PulsEdge flagged two recent filings that KFin Technologies Ltd. is changing its corporate office address as the registrar and share transfer agent for Blackbuck Limited and Zensar Technologies Limited. The broader financial sector index fell 2.5% in the last session but rose 0.5% over the past five sessions.",
+   "why": "A change in the registrar’s office could affect how share transfers and corporate actions are processed for investors holding KFin’s shares.",
+   "upside": "If the new address improves operational efficiency, it could enhance service quality for shareholders.",
+   "downside": "The move could cause temporary confusion or delays in share transfer processes.",
+   "watch": [
+    "Further updates on the corporate office relocation",
+    "Any impact on share transfer and registrar services",
+    "Financial sector index trends"
+   ],
+   "about": "KFin Technologies provides registrar and share transfer services for listed companies.",
+   "basis": "0d2b5faf88ce",
+   "items": 2,
+   "updated": "2026-11-24T18:25+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "YESBANK": {
    "summary": "PulsEdge flagged recent regulatory disclosures from Yes Bank Ltd., including a change in directors, key managerial personnel, auditors and a senior management update. The broader financial sector index fell 2.5% in the last session but rose 0.5% over the past five sessions.",

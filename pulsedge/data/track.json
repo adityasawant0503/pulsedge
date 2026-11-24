@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-24T16:02:20+05:30",
+ "updated": "2026-11-24T18:26:22+05:30",
  "summary": {
-  "calls": 2108,
-  "scored_calls": 915,
+  "calls": 2120,
+  "scored_calls": 924,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,138 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "d3163aafaeaac0f4",
+   "symbol": "BANKINDIA",
+   "time": "2026-11-24T18:09:55+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Shift in pension and insurance money to equities dampens long-term G-sec demand: RBI DG",
+   "url": "https://economictimes.indiatimes.com/markets/bonds/shift-in-pension-and-insurance-money-to-equities-dampens-long-term-g-sec-demand-rbi-dg/articleshow/136130860.cms"
+  },
+  {
+   "id": "79fa2d956dee0334",
+   "symbol": "HEROMOTOCO",
+   "time": "2026-11-24T18:02:24+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Hero MotoCorp Limited: Pursuant to Regulation 30 of the SEBI Listing Regulations, please refer to the disclosure document regarding the update on Trade Registra",
+   "url": "https://nsearchives.nseindia.com/corporate/HEROMOTO_24112026180157_StockExchangeDisclosure.pdf"
+  },
+  {
+   "id": "c33f4a70b571159e",
+   "symbol": "IDBI",
+   "time": "2026-11-24T17:56:52+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Should you buy IDBI shares? Is it a good banking stock to bet on amid Fairfax stake sale deal — what market experts say",
+   "url": "https://www.livemint.com/market/stock-market-news/should-you-buy-idbi-shares-is-it-a-good-banking-stock-to-bet-on-amid-fairfax-stake-sale-deal-what-market-experts-say-11795518804386.html"
+  },
+  {
+   "id": "2be91ed6e70467ed",
+   "symbol": "AADHARHFC",
+   "time": "2026-11-24T17:32:16+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Aadhar Housing Finance Limited: Aadhar Housing Finance Limited has informed the Exchange about ESG Rating |SUBJECT: General Updates",
+   "url": "https://nsearchives.nseindia.com/corporate/AHFL2021_24112026173116_ESG_Rating_SE_Intimation.pdf"
+  },
+  {
+   "id": "8aad7d8c3677e6c5",
+   "symbol": "BRIGADE",
+   "time": "2026-11-24T17:32:14+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "BRIGADE ENTERPRISES: CO RECORDS ₹1,600 CRORES IN SALES DURING LAUNCH WEEKEND AT BRIGADE AUTOGRAPH; PROJECT IS A PREMIUM MIXED-USE TOWNSHIP IN BENGALURU WITH GDV",
+   "url": "https://t.me/Indiaredboxglobal/9971"
+  },
+  {
+   "id": "e96c1ee85adb0d67",
+   "symbol": "HEXT",
+   "time": "2026-11-24T17:30:26+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Hexaware Technologies Limited: Hexaware Technologies Limited has informed the Exchange regarding 'Hexaware Recognized as a Challenger in the 2026 Gartner® Magic",
+   "url": "https://nsearchives.nseindia.com/corporate/HEXAWARETECH_24112026172751_Press_Release.pdf"
+  },
+  {
+   "id": "2fc10c41551999b1",
+   "symbol": "IGL",
+   "time": "2026-11-24T17:29:02+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "INDIA GLYCOLS: CO WHOLLY OWNED SUBSIDIARY IGL FINANCE RECEIVES ₹58.39 CRORE UNDER ONE TIME SETTLEMENT SCHEME; AMOUNT RECEIVED ON NOVEMBER 23, 2026",
+   "url": "https://t.me/Indiaredboxglobal/9970"
+  },
+  {
+   "id": "168aa034216aa95f",
+   "symbol": "POONAWALLA",
+   "time": "2026-11-24T17:16:36+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Poonawalla Fincorp share price: After 25% jump in 1 month, JM Financial sees 21% further upside, raises target",
+   "url": "https://www.livemint.com/market/stock-market-news/poonawalla-fincorp-share-price-after-25-jump-in-1-month-jm-financial-sees-21-further-upside-raises-target-11795515723611.html"
+  },
+  {
+   "id": "cd2a4fa72b18e002",
+   "symbol": "BALKRISIND",
+   "time": "2026-11-24T17:02:38+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Balkrishna Paper Mills Limited: Balkrishna Paper Mills Limited has informed the Exchange regarding 'Conversion of land from Industrial to Residential/Commercial",
+   "url": "https://nsearchives.nseindia.com/corporate/BALKRISHNA_24112026170225_CLLandconversion.pdf"
+  },
+  {
+   "id": "c7fc05aed79c4556",
+   "symbol": "URBANCO",
+   "time": "2026-11-24T16:31:32+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "RedBox Global India",
+   "headline": "B-RIGHT REALESTATE: CO RECEIVED LETTER OF INTENT FOR GRANDEUR PROJECT IN MULUND, MUMBAI; PROJECT ESTIMATED GDV OF ₹2,132.6 CRORE; AIMS TO REHABILITATE 1,003 URB",
+   "url": "https://t.me/Indiaredboxglobal/9968"
+  },
+  {
+   "id": "9da71c7ebdc14acc",
+   "symbol": "KFINTECH",
+   "time": "2026-11-24T16:20:21+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "BLACKBUCK LIMITED: BLACKBUCK LIMITED has informed the Exchange regarding 'Intimation regarding change in Corporate Office Address of KFin Technologies Limited, ",
+   "url": "https://nsearchives.nseindia.com/corporate/ZINKA2015_24112026161957_BlackBuck_Intimation_KFin_Corporate_Office_Address.pdf"
+  },
+  {
+   "id": "9a25d912a571e97b",
+   "symbol": "KFINTECH",
+   "time": "2026-11-24T16:17:43+05:30",
+   "call": "watch",
+   "dir": null,
+   "scored": false,
+   "source": "NSE Announcements",
+   "headline": "Zensar Technologies Limited: Zensar Technologies Limited has informed the Exchange regarding intimation regarding change in the Corporate Office address of the ",
+   "url": "https://nsearchives.nseindia.com/corporate/ZENSARTECH_24112026161714_Change_of_Address.pdf"
+  },
   {
    "id": "99c8f06a5f7b1de8",
    "symbol": "ENGINERSIN",
