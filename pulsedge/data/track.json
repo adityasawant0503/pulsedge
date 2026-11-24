@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-24T09:02:00+05:30",
+ "updated": "2026-11-24T09:17:06+05:30",
  "summary": {
-  "calls": 2087,
-  "scored_calls": 894,
+  "calls": 2088,
+  "scored_calls": 895,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "5c4ba52e8133f09d",
+   "symbol": "OIL",
+   "time": "2026-11-24T08:34:17+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Japanese bond yields fall as lower oil prices ease inflation concerns",
+   "url": "https://economictimes.indiatimes.com/markets/bonds/japanese-bond-yields-fall-as-lower-oil-prices-ease-inflation-concerns/articleshow/136118046.cms",
+   "alert_px": 422.5,
+   "alert_move": -2.2,
+   "alert_at": "2026-11-24T09:16:54+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "51c9ece8fab61f43",
    "symbol": "OIL",
