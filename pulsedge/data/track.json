@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-24T10:31:58+05:30",
+ "updated": "2026-11-24T10:46:55+05:30",
  "summary": {
-  "calls": 2090,
-  "scored_calls": 897,
+  "calls": 2091,
+  "scored_calls": 898,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "cef5fe02e031ea62",
+   "symbol": "OIL",
+   "time": "2026-11-24T10:35:08+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "CNBC World Markets",
+   "headline": "Iran says three tankers hit mines in Hormuz despite U.S. escort, as Treasury widens sanctions",
+   "url": "https://www.cnbc.com/2026/11/24/iran-trump-hormuz-crude-.html",
+   "alert_px": 422.5,
+   "alert_move": -2.2,
+   "alert_at": "2026-11-24T10:46:49+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "173ba6aa62d9f687",
    "symbol": "MSUMI",
