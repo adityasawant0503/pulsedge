@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-24T18:25+05:30",
+ "updated": "2026-11-24T19:21+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Banking and metal stocks fell sharply, while IT and consumer goods stocks rose. Tata Motors and Hyundai announced they will raise car prices in December. Three oil tankers were damaged in the Strait of Hormuz, which may push up global oil prices.",
+  "summary": "Two companies, Astron Paper and TV Vision, entered insolvency proceedings, which signals severe financial trouble and potential loss of value for their shareholders. In the auto sector, Tata Motors and Hyundai announced price hikes, a move that could boost profits per car but might slow down sales if buyers pull back. Meanwhile, global tensions in the Strait of Hormuz raised concerns about oil shipping, while foreign investors reduced their long-term bets on the Indian market.",
   "themes": [
-   "Car makers are raising prices to protect profits.",
-   "Oil supply risks are rising due to tanker incidents.",
-   "Banking and metal sectors faced heavy selling."
+   "Corporate distress: Two firms entered insolvency, raising delisting and liquidation risks.",
+   "Auto price hikes: Major car makers raised prices, balancing higher margins against potential lower sales volume.",
+   "Global oil risks: Naval incidents in the Strait of Hormuz threatened shipping routes and crude oil stability."
   ],
   "watch": [
-   "Whether car sales drop after the price hikes.",
-   "If the Strait of Hormuz situation worsens or calms down.",
-   "Regulatory approval for the potential IDBI bank acquisition."
+   "Whether the insolvency processes for Astron Paper and TV Vision lead to restructuring or liquidation.",
+   "How car sales volumes respond to the recent price increases by Tata Motors and Hyundai.",
+   "The outcome of the USFDA inspection for Gland Pharma, which is a step toward selling in the US but not a final approval."
   ],
   "date": "2026-11-24",
-  "basis": "9d71196b4bad",
-  "updated": "2026-11-24T18:25+05:30",
+  "basis": "a24979e99fa1",
+  "updated": "2026-11-24T19:21+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 72
+  "items": 87
  },
  "stocks": {
   "RVNL": {
@@ -122,6 +122,22 @@
    "items": 5,
    "updated": "2026-11-24T18:25+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "HEROMOTOCO": {
+   "summary": "The high court has cancelled a ₹165 crore demand from the regional transport office, easing a regulatory burden on Hero MotoCorp. The company also filed an update on its trade registration certificate case.",
+   "why": "Removing the demand could improve the balance sheet, while ongoing legal matters could affect operations.",
+   "upside": "If no further regulatory penalties arise, the balance sheet could stay stronger.",
+   "downside": "Future regulatory actions or court decisions could impose fines or restrict operations.",
+   "watch": [
+    "Any new rulings on the trade registration certificate",
+    "Further RTO or regulatory demands",
+    "Auto sector index movement"
+   ],
+   "about": "Hero MotoCorp manufactures motorcycles and scooters.",
+   "basis": "794da23d0431",
+   "items": 2,
+   "updated": "2026-11-24T19:21+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "IGL": {
    "summary": "Indraprastha Gas Ltd. is part of the Oil & Gas sector, which has seen a slight dip in recent trading. A subsidiary, IGL Finance, recently received a one-time cash settlement of ₹58.39 crore.",
@@ -539,6 +555,22 @@
    "updated": "2026-11-23T15:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "TORNTPOWER": {
+   "summary": "PulsEdge flagged that Torrent Power Ltd. announced plans to acquire newly formed companies, which could boost its generation capacity. Details of the deal are still pending and execution risk remains.",
+   "why": "Shareholders should watch the potential capacity increase that could enhance earnings, while also considering the risk that execution delays may affect returns.",
+   "upside": "Successful acquisition and integration could expand generation capacity and improve profitability.",
+   "downside": "Execution challenges could delay benefits and impact shareholder returns.",
+   "watch": [
+    "Details and timeline of the acquisition",
+    "Progress on integrating the new companies",
+    "Energy sector index performance"
+   ],
+   "about": "Torrent Power Ltd. is a power company that generates and distributes electricity.",
+   "basis": "557283be2860",
+   "items": 1,
+   "updated": "2026-11-24T19:21+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "HEXT": {
    "summary": "Hexaware Technologies has been named a Challenger in the 2026 Gartner Magic Quadrant for Service Integration and Management Services. This recognition highlights the company's standing in its sector.",
    "why": "This award may help the company attract new business, which could support its future performance for shareholders.",
@@ -555,21 +587,37 @@
    "updated": "2026-11-24T18:25+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "FLUOROCHEM": {
+   "summary": "Gujarat Fluorochemicals Ltd. announced it will acquire newly incorporated companies, a move that could expand its business. Details of the deal are still pending, and integration could affect earnings.",
+   "why": "Shareholders should watch because the acquisition may increase the company’s size and revenue, but integration risks could impact profitability.",
+   "upside": "Successful integration could boost the company’s earnings and market position.",
+   "downside": "Integration challenges could weigh on earnings.",
+   "watch": [
+    "Details of the acquisition terms",
+    "Progress of integrating the new entities",
+    "Impact on quarterly earnings"
+   ],
+   "about": "",
+   "basis": "14112960f460",
+   "items": 2,
+   "updated": "2026-11-24T19:21+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "ENGINERSIN": {
-   "summary": "Engineers India Ltd is a construction company listed on the NSE and part of the Nifty 500 index. No recent company-specific announcements have been flagged in the last few days.",
-   "why": "Its size and sector placement affect its growth prospects and dividend potential for shareholders.",
+   "summary": "PulsEdge flagged that Engineers India Ltd. is part of the Nifty 500 index, which tracks India's 500 largest listed companies. The recent news items flagged in the system actually relate to other companies, specifically Vascon Engineers and Eppeltone Engineers, rather than Engineers India Ltd. itself.",
+   "why": "This distinction matters because news about other construction or engineering firms does not directly change the financial performance or share value of Engineers India Ltd.",
    "upside": "",
    "downside": "",
    "watch": [
-    "New order or contract announcements",
-    "Quarterly earnings release",
-    "Changes in construction sector demand"
+    "Official announcements from Engineers India Ltd. regarding its own new orders or contracts.",
+    "Quarterly financial results to see how the company is performing independently of peer news.",
+    "Updates on the Nifty 500 index composition to confirm the company's continued inclusion."
    ],
-   "about": "Engineers India Ltd offers engineering and construction services.",
-   "basis": "a1cb2825993f",
-   "items": 4,
-   "updated": "2026-11-24T16:02+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Engineers India Ltd. is a company in the construction sector.",
+   "basis": "a2149e9f901a",
+   "items": 5,
+   "updated": "2026-11-24T19:21+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "MAXHEALTH": {
    "summary": "Max Healthcare Institute Ltd. announced the resignation of a director and changes in its senior management personnel. These updates were filed with the stock exchange on November 23, 2026.",
