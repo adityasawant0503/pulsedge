@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-24T12:15:44+05:30",
+ "updated": "2026-11-24T12:30:54+05:30",
  "summary": {
-  "calls": 2097,
-  "scored_calls": 904,
+  "calls": 2098,
+  "scored_calls": 905,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "579905556c5ad2b4",
+   "symbol": "HYUNDAI",
+   "time": "2026-11-24T12:29:30+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "HYUNDAI: CO ANNOUNCES PRICE INCREASE OF UP TO INR 8,000 EFFECTIVE DECEMBER 1, 2026; DUE TO RISING INPUT COSTS AND NECESSITY TO PASS ON SOME COSTS TO CUSTOMERS",
+   "url": "https://t.me/Indiaredboxglobal/9960",
+   "alert_px": 2155.0,
+   "alert_move": -2.71,
+   "alert_at": "2026-11-24T12:30:38+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "f79e46deea1f33bc",
    "symbol": "GLAND",
