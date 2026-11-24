@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-24T14:00+05:30",
+ "updated": "2026-11-24T14:30+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -282,6 +282,22 @@
    "items": 3,
    "updated": "2026-11-23T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "TMPV": {
+   "summary": "Tata Motors Passenger Vehicles Ltd. announced a price increase for its vehicles. The auto sector index fell 1% in the last session but is up 3.3% over the past five sessions.",
+   "why": "Higher prices could boost profit per car, but may also dampen demand.",
+   "upside": "If customers accept the higher prices, profit margins could improve.",
+   "downside": "If demand is price‑sensitive, sales volumes could fall.",
+   "watch": [
+    "Impact of the price hike on sales volume",
+    "Overall trend in the auto sector",
+    "Any further pricing announcements"
+   ],
+   "about": "The company designs, manufactures and sells passenger vehicles in India.",
+   "basis": "0992726079d8",
+   "items": 1,
+   "updated": "2026-11-24T14:30+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "HYUNDAI": {
    "summary": "Hyundai Motor India announced it will raise car prices by up to INR 8,000 from Dec 1, 2026 as input costs rise. The move could affect both sales volumes and profit margins.",

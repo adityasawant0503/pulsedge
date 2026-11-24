@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-24T14:15:42+05:30",
+ "updated": "2026-11-24T14:30:54+05:30",
  "summary": {
-  "calls": 2101,
-  "scored_calls": 908,
+  "calls": 2102,
+  "scored_calls": 909,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "559d7118b03f3fba",
+   "symbol": "TMPV",
+   "time": "2026-11-24T14:25:44+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Tata Motors Passenger Vehicles Limited: Tata Motors Passenger Vehicles Limited has informed the Exchange regarding a press release dated November 24, 2026, titl",
+   "url": "https://nsearchives.nseindia.com/corporate/TATAMOTORSSJS_24112026142530_NSEBSEPriceHike.pdf",
+   "alert_px": 259.0,
+   "alert_move": -2.76,
+   "alert_at": "2026-11-24T14:30:40+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "35591802d0be7ba8",
    "symbol": "JWL",
