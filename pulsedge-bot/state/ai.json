@@ -2,19 +2,6 @@
  "note": "The last 60 runs of the AI classifier: items sorted by AI, set aside as routine, or left to keyword rules.",
  "runs": [
   {
-   "time": "2026-11-20T14:15+05:30",
-   "new": 5,
-   "ai": 3,
-   "routine": 2,
-   "rules": 0,
-   "models": {
-    "qwen/qwen3.8-27b": 3
-   },
-   "errors": [
-    "gemini-3.8-flash: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'"
-   ]
-  },
-  {
    "time": "2026-11-20T14:30+05:30",
    "new": 11,
    "ai": 9,
@@ -856,6 +843,19 @@
    "errors": [
     "gemini-3.8-flash: HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To",
     "qwen/qwen3.8-27b: HTTP 429 Request too large for model `qwen/qwen3.8-27b` in organization `org_01m7d9eshkezkr1pmsab9xhv8e` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, R"
+   ]
+  },
+  {
+   "time": "2026-11-24T11:00+05:30",
+   "new": 3,
+   "ai": 3,
+   "routine": 0,
+   "rules": 0,
+   "models": {
+    "qwen/qwen3.8-27b": 3
+   },
+   "errors": [
+    "gemini-3.8-flash: HTTP 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To"
    ]
   }
  ]
