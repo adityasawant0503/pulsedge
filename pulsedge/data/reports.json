@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-24T15:00+05:30",
+ "updated": "2026-11-24T16:02+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Global tech stocks surged overnight, which likely boosted Indian IT companies today. Meanwhile, tensions in the Strait of Hormuz raised concerns about oil shipping, though oil prices actually fell due to high supply. Two major car makers announced they will raise vehicle prices in December. Foreign investors reduced their long positions in Indian index futures, signaling some caution.",
+  "summary": "PulsEdge flagged a new hospital contract for RVNL, adding revenue but with execution risk. Tata Motors and Hyundai announced price hikes for their cars, which could lift margins but may curb sales. Oil‑shipping incidents near the Strait of Hormuz and a strong US tech rally lifted sentiment for Indian oil and IT stocks. IT rose 1.7% while metals and banks fell sharply.",
   "themes": [
-   "Global tech rally lifted Indian IT sector sentiment.",
-   "Car makers are raising prices, balancing profit against potential lower sales.",
-   "Geopolitical risks in oil shipping coexisted with falling crude prices."
+   "Infrastructure wins boost construction outlook",
+   "Auto makers raise prices amid demand sensitivity",
+   "Global oil tensions and US tech rally lift Indian oil and IT sentiment"
   ],
   "watch": [
-   "Whether Indian IT stocks hold their gains after the opening rally.",
-   "How car sales volumes react to the upcoming price hikes.",
-   "If oil prices stabilize or continue to fall despite shipping disruptions."
+   "How auto price hikes affect Tata Motors and Hyundai sales volumes",
+   "Progress on RVNL's hospital project and any delays",
+   "Further developments in oil‑shipping routes and their impact on Indian oil companies"
   ],
   "date": "2026-11-24",
-  "basis": "f38ac0fc014d",
-  "updated": "2026-11-24T14:45+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 36
+  "basis": "1d1ff32991e7",
+  "updated": "2026-11-24T16:02+05:30",
+  "model": "openai/gpt-oss-120b",
+  "items": 40
  },
  "stocks": {
   "RVNL": {
@@ -491,6 +491,22 @@
    "updated": "2026-11-23T15:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "ENGINERSIN": {
+   "summary": "Engineers India Ltd is a construction company listed on the NSE and part of the Nifty 500 index. No recent company-specific announcements have been flagged in the last few days.",
+   "why": "Its size and sector placement affect its growth prospects and dividend potential for shareholders.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "New order or contract announcements",
+    "Quarterly earnings release",
+    "Changes in construction sector demand"
+   ],
+   "about": "Engineers India Ltd offers engineering and construction services.",
+   "basis": "a1cb2825993f",
+   "items": 4,
+   "updated": "2026-11-24T16:02+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "BRIGADE": {
    "summary": "Brigade Enterprises bought a 2.25-acre land parcel in Secunderabad for 180 crore rupees to build a premium residential project. The company also reported that its hotel business grew by 7% in the first half of the year and expects faster growth in the second half.",
    "why": "These moves could increase the company's future revenue, but the high cost of the new land may reduce the profit margin on that specific project.",
@@ -761,22 +777,6 @@
    "basis": "111d599213ba",
    "items": 2,
    "updated": "2026-11-23T11:45+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "ENGINERSIN": {
-   "summary": "Engineers India Ltd is a construction company listed on the NSE and part of the Nifty 500 index. No recent announcements or news items have been flagged for the company.",
-   "why": "Its inclusion in the Nifty 500 signals a large, liquid stock, which matters for shareholders seeking stability and market exposure.",
-   "upside": "",
-   "downside": "",
-   "watch": [
-    "Upcoming quarterly earnings release",
-    "Changes in the order book or new contract wins",
-    "Any regulatory or policy updates affecting the construction sector"
-   ],
-   "about": "Engineers India Ltd provides engineering and construction services.",
-   "basis": "468df8bbd14d",
-   "items": 2,
-   "updated": "2026-11-23T10:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "PERSISTENT": {
