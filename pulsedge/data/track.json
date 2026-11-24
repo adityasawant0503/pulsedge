@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-24T11:00:40+05:30",
+ "updated": "2026-11-24T11:15:59+05:30",
  "summary": {
-  "calls": 2092,
-  "scored_calls": 899,
+  "calls": 2094,
+  "scored_calls": 901,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "8350c55aad3104b1",
+   "symbol": "CLEANMAX",
+   "time": "2026-11-24T11:12:13+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Clean Max Enviro Energy Solutions Limited: Clean Max Enviro Energy Solutions Limited has informed the Exchange about Sale or disposal |SUBJECT: Sale or disposal",
+   "url": "https://nsearchives.nseindia.com/corporate/CLEANMAX_24112026111102_Reg_30_Gangotri_GACL.pdf",
+   "alert_px": 1250.2,
+   "alert_move": 1.94,
+   "alert_at": "2026-11-24T11:15:47+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "5799ef94c98ada16",
+   "symbol": "OIL",
+   "time": "2026-11-24T11:00:54+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Oil prices extend losses, hover near three-month lows on supply concerns",
+   "url": "https://www.business-standard.com/markets/commodities/oil-prices-extend-losses-hover-near-three-month-lows-on-supply-concerns-126112400254_1.html",
+   "alert_px": 422.5,
+   "alert_move": -2.2,
+   "alert_at": "2026-11-24T11:15:47+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "96426d0ba0f5f26e",
    "symbol": "RVNL",

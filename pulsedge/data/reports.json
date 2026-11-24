@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-24T10:53+05:30",
+ "updated": "2026-11-24T11:15+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -236,20 +236,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is facing mixed signals as global oil prices dropped nearly 4% due to increased supply from the Middle East and Libya. However, tensions in the Strait of Hormuz, where three tankers were damaged, could potentially push prices back up.",
-   "why": "Lower oil prices generally mean less revenue for companies that extract oil, which can affect their profits. Shareholders need to watch how these price swings impact the company's earnings.",
-   "upside": "If the conflict in the Strait of Hormuz escalates, it could disrupt oil shipping and drive crude prices higher, benefiting the company.",
-   "downside": "If oil prices continue to fall due to increased global supply, the company's revenue and profit margins may decrease.",
+   "summary": "Oil India Ltd. is facing a backdrop of falling global oil prices as supply increases, while geopolitical tensions in the Strait of Hormuz create short‑term price volatility.",
+   "why": "Lower crude prices can squeeze the company’s profit margins, whereas any price rise from supply disruptions could boost earnings.",
+   "upside": "A sudden supply shock or escalation in the Hormuz region could lift oil prices, improving revenue.",
+   "downside": "If low oil prices persist, the company’s profitability may be pressured.",
    "watch": [
-    "Updates on the safety of shipping routes in the Strait of Hormuz",
-    "Changes in global crude oil prices",
-    "The company's next earnings report"
+    "Crude oil price trends (e.g., US futures around $80)",
+    "Developments around the Strait of Hormuz (mines, military actions)",
+    "Movement of the Oil & Gas sector index and Indian bond market"
    ],
-   "about": "Oil India Ltd. is a company in the Oil Gas & Consumable Fuels sector that extracts oil.",
-   "basis": "780bffd7d619",
-   "items": 11,
-   "updated": "2026-11-24T10:46+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Oil India Ltd. explores, produces and markets crude oil and natural gas in India.",
+   "basis": "a31bb2a90477",
+   "items": 12,
+   "updated": "2026-11-24T11:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "TITAGARH": {
    "summary": "Titagarh Rail Systems recently won a ₹77.09 crore order from JSW for railway wagons and received approval to manufacture auto carrier wagons. The company also delivered a naval system to the Indian Navy and secured an additional order from Presstonic Engineering for the Mumbai Metro Line 6 project.",
