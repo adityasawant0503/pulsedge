@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-23T19:22+05:30",
+ "updated": "2026-11-24T06:49+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Dalmia Bharat announced a ₹700 crore share buyback that could lift its stock, but the deal may face delays or low subscription. Tata Steel agreed to buy a large stake in APL Apollo Tubes, causing both companies’ shares to fall and raising concerns about the cost and debt impact. The market saw modest gains in IT and consumer durables, while metals and banks slipped. Foreign funds have cut their long positions in index futures, down from 34% to 20%.",
+  "summary": "Global oil prices dropped sharply as supply increased, which may lower fuel costs for Indian businesses. US tech stocks surged overnight, a move that often boosts sentiment for Indian software companies. Meanwhile, tensions in the Strait of Hormuz remain a risk that could quickly reverse these oil price gains.",
   "themes": [
-   "Share buybacks and their impact",
-   "Large acquisitions and market reaction",
-   "Foreign fund activity affecting indices"
+   "Oil prices fell on higher supply, but geopolitical risks remain",
+   "Strong US tech rally supports Indian IT sector sentiment",
+   "Foreign investors reduced their long positions in Indian markets"
   ],
   "watch": [
-   "Watch for the actual buyback execution by Dalmia Bharat and any subscription issues.",
-   "Monitor regulatory approval and cost details of Tata Steel’s stake in APL Apollo.",
-   "Keep an eye on foreign funds’ future positions as they may influence market direction."
+   "Whether oil prices stay low or spike due to new shipping disruptions",
+   "How Indian IT stocks react to the overnight US tech rally",
+   "Further changes in foreign fund positions in Indian index futures"
   ],
-  "date": "2026-11-23",
-  "basis": "1ef33ad760c3",
-  "updated": "2026-11-23T19:22+05:30",
-  "model": "openai/gpt-oss-20b",
-  "items": 172
+  "date": "2026-11-24",
+  "basis": "6627f65d0b9d",
+  "updated": "2026-11-24T06:49+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 10
  },
  "stocks": {
   "DALBHARAT": {
@@ -92,20 +92,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel announced it will buy a large stake in APL Apollo for $1.67 billion, which caused its share price to drop sharply. The company also sold its tube business, adding to the volatility in its stock price.",
-   "why": "The large spending on the acquisition may worry investors about the company's cash reserves and debt levels, leading to a sell-off in the stock.",
-   "upside": "Analysts suggest the sale of the tube business could unlock long-term value for the company.",
-   "downside": "The acquisition might increase the company's debt, and the deal could face regulatory delays or be seen as poorly timed by the market.",
+   "summary": "Tata Steel announced a $1.67 billion deal to buy a 26.4% stake in APL Apollo and also sold its tube business, triggering a sharp drop in its share price. The broader metals sector also fell, adding pressure on the stock.",
+   "why": "The large cash outlay and debt increase from the acquisition, plus the restructuring from the tube sale, can affect earnings and share volatility for investors.",
+   "upside": "If the APL Apollo stake and tube divestiture create long‑term value, the stock could recover.",
+   "downside": "Integration delays, regulatory approval hurdles, or further market concerns about cash use could push the share price lower.",
    "watch": [
-    "Whether the APL Apollo deal receives regulatory approval.",
-    "How the broader metals sector performs, as it has fallen recently.",
-    "Company statements on how the acquisition will be funded."
+    "Regulatory approval progress for the APL Apollo acquisition",
+    "Integration and performance of the APL Apollo stake",
+    "Impact of the tube business divestiture on earnings"
    ],
-   "about": "Tata Steel is a major Indian company in the metals and mining sector that produces steel.",
-   "basis": "0f5328b17e50",
-   "items": 18,
-   "updated": "2026-11-23T19:22+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Tata Steel Ltd. is a leading Indian steel manufacturer and a Nifty 50 constituent.",
+   "basis": "f0520462136c",
+   "items": 19,
+   "updated": "2026-11-24T06:49+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "APLAPOLLO": {
    "summary": "Tata Steel announced a plan to buy a 26.38% stake in APL Apollo Tubes for about ₹15,511 crore. Following this news, APL Apollo shares fell sharply, hitting the 10% lower circuit and reaching a 52-week low.",
@@ -219,6 +219,22 @@
    "updated": "2026-11-23T15:32+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "OIL": {
+   "summary": "Oil India shares are facing mixed signals as global oil prices dropped about 3% due to increased supply from the Middle East and Libya. However, tensions in the Strait of Hormuz, including tanker attacks and US military threats, could push prices back up.",
+   "why": "Since Oil India earns money by selling crude oil, falling global prices reduce the revenue for each barrel it produces, which can lower its profits.",
+   "upside": "If the conflict in the Strait of Hormuz escalates or shipping routes are blocked, oil prices could rise, boosting the company's earnings.",
+   "downside": "If the Middle East continues to increase oil supply and the Libyan pipeline stays open, oil prices may stay low, squeezing the company's profit margins.",
+   "watch": [
+    "Updates on shipping safety in the Strait of Hormuz",
+    "Changes in global oil supply from the Middle East and Libya",
+    "The overall trend in global crude oil prices"
+   ],
+   "about": "Oil India is a company in the Oil Gas & Consumable Fuels sector that is part of the Nifty 500 index.",
+   "basis": "56b8c530732f",
+   "items": 9,
+   "updated": "2026-11-24T06:49+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "TITAGARH": {
    "summary": "Titagarh Rail Systems recently won a ₹77.09 crore order from JSW for railway wagons and received approval to manufacture auto carrier wagons. The company also delivered a naval system to the Indian Navy and secured an additional order from Presstonic Engineering for the Mumbai Metro Line 6 project.",
    "why": "These new orders and approvals indicate that the company is expanding its product range and securing future income, which is relevant for shareholders tracking business growth.",
@@ -250,22 +266,6 @@
    "items": 3,
    "updated": "2026-11-23T16:01+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "OIL": {
-   "summary": "Oil India Ltd. (OIL) is facing a decline in oil prices, which could affect its earnings. The company is part of the Nifty 500 and its sector index has slipped in recent sessions. An upcoming OPEC+ meeting may influence global oil supply and prices.",
-   "why": "Shareholders may see the company's profitability and share price move with oil price changes.",
-   "upside": "A rebound in oil prices or a supply cut by OPEC+ could improve earnings.",
-   "downside": "Continued oil price decline could hurt earnings.",
-   "watch": [
-    "Oil price movements",
-    "OPEC+ output decision",
-    "Sector index performance"
-   ],
-   "about": "Oil India Ltd. operates in the oil and gas sector.",
-   "basis": "c7d8c204e020",
-   "items": 7,
-   "updated": "2026-11-23T19:22+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "ABREL": {
    "summary": "Aditya Birla Real Estate Ltd. (ABREL) has announced a rights‑issue investment in its wholly‑owned subsidiary, Unnatam Properties. The real‑estate sector, including ABREL, has seen a strong rise, with the BSE Realty index up 17% in November and the sector index up 1.7% in the last session.",
@@ -427,21 +427,21 @@
    "updated": "2026-11-23T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BSE": {
-   "summary": "BSE Ltd. is facing potential leadership changes due to new rules proposed by the market regulator, SEBI. At the same time, SEBI is considering easing disclosure rules for foreign investors, which could impact major stock exchanges.",
-   "why": "These regulatory shifts and leadership rules matter because they can influence the exchange's operations and how investors view the company.",
-   "upside": "Easier rules for foreign investors might bring more money into the stock market, which can help exchange companies like BSE.",
-   "downside": "The proposed regulatory changes and new leadership tenure rules are still uncertain and might not be finalized.",
+  "MAXHEALTH": {
+   "summary": "Max Healthcare Institute Ltd. announced the resignation of a director and changes in its senior management personnel. These updates were filed with the stock exchange on November 23, 2026.",
+   "why": "Changes in leadership can affect how the company is run and may influence how investors view its stability.",
+   "upside": "",
+   "downside": "Leadership transitions can sometimes create uncertainty or disrupt ongoing business plans.",
    "watch": [
-    "Updates on SEBI's final decisions regarding MD tenure rules.",
-    "Progress on the proposed disclosure rule changes for foreign investors.",
-    "Overall movement in the financial services sector."
+    "Who is appointed to replace the resigning director",
+    "Any further announcements about senior management changes",
+    "How the healthcare sector index performs in the coming days"
    ],
-   "about": "BSE Ltd. operates a stock exchange that facilitates trading in securities.",
-   "basis": "ad5e6b94b201",
+   "about": "Max Healthcare Institute Ltd. is a healthcare company and is one of India's 50 largest listed companies.",
+   "basis": "f22c04cb59c3",
    "items": 3,
-   "updated": "2026-11-23T15:02+05:30",
-   "model": "gemini-flash-lite-latest"
+   "updated": "2026-11-24T06:49+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "RVNL": {
    "summary": "RVNL is on track to hit a 25,000 cr orderbook for FY27, having already secured 8,000 cr in the first half. The latest quarter showed an 8.3% rise in profit but an 8.2% fall in revenue.",
@@ -460,20 +460,52 @@
    "model": "openai/gpt-oss-120b"
   },
   "ITI": {
-   "summary": "ITI shares rose by about 11% on November 23, 2026, even though the broader stock market fell that day. The stock has increased by 137% over the last five years.",
-   "why": "This move shows that investors are buying ITI shares even when other stocks are dropping, which suggests strong interest in the company.",
-   "upside": "The strong buying activity might continue if investors remain confident in the company's performance.",
-   "downside": "General market instability could cause the recent gains to be lost.",
+   "summary": "ITI shares rose about 11% on November 23, 2026, even though the wider market fell. The stock exchange flagged a significant increase in trading volume for the company.",
+   "why": "This matters because the stock moved strongly against the general market trend, which can indicate high investor interest or uncertainty.",
+   "upside": "The strong price jump suggests that some investors are actively buying the stock despite broader market weakness.",
+   "downside": "High market volatility could cause the recent gains to reverse quickly.",
    "watch": [
-    "Whether the stock price holds its new level in the coming days",
-    "How the broader stock market performs in the next few sessions",
-    "Any new news or announcements from ITI Ltd."
+    "Future trading volume levels",
+    "Official exchange announcements regarding the stock",
+    "Overall market stability"
    ],
    "about": "ITI is a company in the Telecommunication sector.",
-   "basis": "c96736f4787d",
-   "items": 1,
-   "updated": "2026-11-23T12:46+05:30",
+   "basis": "117e0080befe",
+   "items": 2,
+   "updated": "2026-11-24T06:49+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "JSWCEMENT": {
+   "summary": "JSW Cement recently filed a standard regulatory disclosure with the stock exchange. A stock advisor also recently shared a positive view on the company's shares.",
+   "why": "These events may influence how investors feel about the stock, which can affect its trading price.",
+   "upside": "Positive comments from advisors can sometimes encourage more people to buy the stock.",
+   "downside": "Broker opinions can change quickly, so a positive view today may not last.",
+   "watch": [
+    "Any follow-up details from the regulatory disclosure",
+    "Changes in the advisor's opinion on the stock",
+    "General news in the construction materials sector"
+   ],
+   "about": "JSW Cement is a company in the construction materials sector.",
+   "basis": "87c17a27e065",
+   "items": 2,
+   "updated": "2026-11-24T06:49+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "BSE": {
+   "summary": "BSE shares fell to a 52‑week low as broader market weakness hit the exchange, and a SEBI proposal to change managing‑director tenure rules could affect BSE’s leadership. The stock’s decline and regulatory uncertainty are the main headlines right now.",
+   "why": "These developments could influence BSE’s operational stability and how investors view the company, potentially impacting share value.",
+   "upside": "If the SEBI proposal is approved and leads to clearer governance, it could improve investor confidence.",
+   "downside": "Further macro‑economic pressure or uncertainty around regulatory approval could push the share price lower.",
+   "watch": [
+    "BSE share price relative to its 52‑week low",
+    "Outcome of SEBI’s MD tenure rule proposal",
+    "Financials sector index trend"
+   ],
+   "about": "BSE Ltd. runs India’s oldest stock exchange, providing trading and market infrastructure services.",
+   "basis": "a2369a400df3",
+   "items": 2,
+   "updated": "2026-11-24T06:49+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "HDFCBANK": {
    "summary": "HDFC Bank shares recently showed a strong buying pattern, but the stock is currently part of a group of large companies dragging the Nifty 50 index down. The broader Financials sector has still risen slightly over the last week.",
@@ -585,6 +617,22 @@
    "basis": "de2624923622",
    "items": 4,
    "updated": "2026-11-23T13:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "PRESTIGE": {
+   "summary": "Prestige Estates Projects Ltd. has created two wholly‑owned subsidiaries, Prestige Worli North and South, to develop projects in Mumbai and has announced acquisition of additional to‑be‑incorporated companies. Both moves aim to expand its development pipeline, while high land costs could pressure project margins.",
+   "why": "Shareholders may see future earnings growth from the new subsidiaries, but margin pressure from expensive land could affect profitability.",
+   "upside": "Successful execution of the new subsidiaries could increase revenue and earnings.",
+   "downside": "Rising land costs may compress profit margins on new projects.",
+   "watch": [
+    "Progress of Prestige Worli North and South projects",
+    "Impact of land acquisition costs on margins",
+    "Overall performance of the Realty sector index"
+   ],
+   "about": "Prestige Estates Projects Ltd. is an Indian real estate development company.",
+   "basis": "e45eccd21149",
+   "items": 2,
+   "updated": "2026-11-24T06:49+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "TCS": {
@@ -699,21 +747,21 @@
    "updated": "2026-11-23T11:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "JMFINANCIL": {
-   "summary": "JM Financial is investing about ₹41 crore into its overseas subsidiary to support international business growth. The company is part of the Nifty 500 index, which tracks India's 500 largest listed firms.",
-   "why": "Expanding into new countries could help the company earn more money in the long run, which may benefit shareholders. However, this move involves spending significant capital on foreign operations.",
-   "upside": "Successful international expansion could lead to higher future earnings for the company.",
-   "downside": "International business carries higher risks and costs, which could hurt profits if the expansion does not go well.",
+  "YESBANK": {
+   "summary": "PulsEdge flagged recent regulatory disclosures from Yes Bank Ltd., including a change in directors, key managerial personnel, auditors and a senior management update. The broader financial sector index fell 2.5% in the last session but rose 0.5% over the past five sessions.",
+   "why": "Shareholders watch management and board changes because they can affect the bank’s strategy and risk profile.",
+   "upside": "If the new directors and senior managers strengthen governance, the bank could benefit.",
+   "downside": "Uncertainty around the appointments could create short‑term volatility.",
    "watch": [
-    "Updates on the performance of the overseas subsidiary",
-    "The company's upcoming earnings reports",
-    "General trends in the Financials sector index"
+    "Details of the announced director and auditor changes",
+    "Further information on senior management personnel updates",
+    "Financials sector index movement"
    ],
-   "about": "JM Financial is a company in the Financial Services sector.",
-   "basis": "7ee10697dd89",
+   "about": "Yes Bank Ltd. is a commercial bank that provides banking and financial services in India.",
+   "basis": "0f5f3c596f8c",
    "items": 2,
-   "updated": "2026-11-23T15:32+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "updated": "2026-11-24T06:49+05:30",
+   "model": "openai/gpt-oss-120b"
   }
  }
 }

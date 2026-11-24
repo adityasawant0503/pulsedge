@@ -1,55 +1,55 @@
 {
- "date": "2026-11-23",
- "updated": "2026-11-23T19:23:33+05:30",
- "sentiment": "Mildly bearish",
+ "date": "2026-11-24",
+ "updated": "2026-11-24T06:50:31+05:30",
+ "sentiment": "Bullish",
  "breadth": {
-  "up": 1,
-  "down": 3
+  "up": 3,
+  "down": 0
  },
  "checklist": [
   {
    "title": "GIFT Nifty - opening indication",
-   "dir": "flat",
-   "value": "25,351.0 · +1 pts (+0.00%) · flat start indicated",
+   "dir": "up",
+   "value": "25,551.5 · +202 pts (+0.80%) · gap-up start indicated",
    "detail": [
     "Nifty 50 last close 25,349.65 (-1.75%)",
-    "Implied open near 25,351",
-    "Against Nifty futures' last close 25,349.8"
+    "Implied open near 25,552",
+    "Against Nifty futures' last close 25,349.7"
    ]
   },
   {
    "title": "US close - Dow/S&P/Nasdaq direction",
-   "dir": "down",
-   "value": "Lower",
+   "dir": "up",
+   "value": "Higher",
    "detail": [
-    "Dow 48,147.33 -1.93%",
-    "S&P 6,910.39 -3.70%",
-    "Nasdaq 22,617.73 -5.28%",
-    "Nasdaq futures now +3.21%"
+    "Dow 49,595.31 +3.01%",
+    "S&P 7,237.17 +4.73%",
+    "Nasdaq 24,089.56 +6.51%",
+    "Nasdaq futures now +0.78%"
    ]
   },
   {
    "title": "Asian markets live - Nikkei, Hang Seng",
-   "dir": "down",
-   "value": "Asia lower",
+   "dir": "flat",
+   "value": "Asia mixed",
    "detail": [
-    "Nikkei 56,436.65 -5.06%",
+    "Nikkei 58,924.81 +4.41%",
     "Hang Seng 22,383.75 -0.12%"
    ]
   },
   {
    "title": "DXY + USDINR move",
-   "dir": "down",
-   "value": "Rupee under pressure",
+   "dir": "flat",
+   "value": "No major currency pressure",
    "detail": [
-    "DXY 104.26 +0.41%",
-    "USD/INR 92.730 +0.08%"
+    "DXY 104.25 -0.07%",
+    "USD/INR 92.900 +0.00%"
    ]
   },
   {
    "title": "Brent crude level",
    "dir": "up",
-   "value": "$90.46 -2.28%",
+   "value": "$86.92 -2.74%",
    "detail": []
   },
   {
@@ -59,28 +59,28 @@
    "detail": []
   }
  ],
- "summary": "Mildly bearish setup. GIFT Nifty: flat start indicated (+1 pts); Brent down 2.28% — relief for OMCs and paints.",
+ "summary": "Bullish setup. GIFT Nifty: gap-up start indicated (+202 pts); Brent down 2.74% — relief for OMCs and paints.",
  "global_cues": [
-  "GIFT Nifty: flat start indicated (+1 pts)",
-  "Brent down 2.28% — relief for OMCs and paints",
-  "NASDAQ closed 5.28% lower; IT may open soft",
-  "Nikkei down, Hang Seng down"
+  "GIFT Nifty: gap-up start indicated (+202 pts)",
+  "Brent down 2.74% — relief for OMCs and paints",
+  "NASDAQ closed 6.51% higher; supportive for IT",
+  "Nikkei up, Hang Seng down"
  ],
  "india_triggers": [
-  "172 filings and headlines worth a look so far today"
+  "10 filings and headlines worth a look so far today"
  ],
  "focus": [
   {
-   "symbol": "TATASTEEL",
-   "note": "Tata Steel shares fall 5% as investors weigh ₹32,000 cr APL Apollo acq"
+   "symbol": "OIL",
+   "note": "IRAN'S REVOLUTIONARY GUARDS NAVY REPORTS THREE OIL TANKERS CAUGHT FIRE"
   },
   {
-   "symbol": "TATASTEEL",
-   "note": "APL Apollo tanks 10%, Tata Steel 5% on ₹28K-cr deal: What it means for"
+   "symbol": "OIL",
+   "note": "A US OFFICIAL SAYS THE US IS READY TO LAUNCH A LARGE-SCALE MILITARY ST"
   },
   {
-   "symbol": "HFCL",
-   "note": "Sterlite Tech, HFCL extend fall; slip up to 41% from October highs"
+   "symbol": "OIL",
+   "note": "Oil falls around 3% on increased Middle East flows, Libyan pipeline re"
   }
  ],
  "sector_tags": [
@@ -89,7 +89,7 @@
    "tone": "watch"
   }
  ],
- "key_risk": "Weak US tech could weigh on Indian IT at the open",
+ "key_risk": "",
  "also": [
   {
    "name": "BANK NIFTY",
@@ -98,33 +98,33 @@
   },
   {
    "name": "S&P FUT",
-   "value": "7,099",
-   "change": 2.36
+   "value": "7,294",
+   "change": 0.54
   },
   {
    "name": "NASDAQ FUT",
-   "value": "25,934",
-   "change": 3.21
+   "value": "27,016",
+   "change": 0.78
   },
   {
    "name": "KOSPI",
-   "value": "4,709",
-   "change": -3.31
+   "value": "5,049",
+   "change": 7.22
   },
   {
    "name": "WTI",
-   "value": "81.59",
-   "change": -2.18
+   "value": "80.31",
+   "change": 0.17
   },
   {
    "name": "GOLD",
-   "value": "3,615",
-   "change": 2.17
+   "value": "3,663",
+   "change": 0.79
   },
   {
    "name": "US 10Y",
-   "value": "4.91",
-   "change": -0.81
+   "value": "4.94",
+   "change": -0.08
   }
  ],
  "source": "TradingView / CNBC / Yahoo Finance (unofficial; NSE prices 15 min delayed)"
