@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-24T13:46:59+05:30",
+ "updated": "2026-11-24T14:00:53+05:30",
  "summary": {
-  "calls": 2100,
-  "scored_calls": 907,
+  "calls": 2101,
+  "scored_calls": 908,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "35591802d0be7ba8",
+   "symbol": "JWL",
+   "time": "2026-11-24T13:55:52+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Jupiter Wagons Limited: JUPITER WAGONS LIMITED has informed the Exchange regarding |SUBJECT: Agreements,Contracts,Arrangements,MOU-XBRL",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/ANN_AGREEMENT_3641_WebXMLFile_20261124_135551778.xml",
+   "alert_px": 185.39,
+   "alert_move": -3.05,
+   "alert_at": "2026-11-24T14:00:40+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "425a5dd8222ac76e",
    "symbol": "ZYDUSLIFE",

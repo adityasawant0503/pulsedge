@@ -2,19 +2,6 @@
  "note": "The last 60 runs of the AI classifier: items sorted by AI, set aside as routine, or left to keyword rules.",
  "runs": [
   {
-   "time": "2026-11-23T08:15+05:30",
-   "new": 19,
-   "ai": 19,
-   "routine": 0,
-   "rules": 0,
-   "models": {
-    "qwen/qwen3.8-27b": 19
-   },
-   "errors": [
-    "gemini-3.8-flash: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'"
-   ]
-  },
-  {
    "time": "2026-11-23T08:30+05:30",
    "new": 8,
    "ai": 7,
@@ -826,6 +813,19 @@
     "gemini-3.8-flash: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'",
     "gemini-3.8-flash: The read operation timed out",
     "qwen/qwen3.8-27b: HTTP 400 Failed to generate JSON. Please adjust your prompt. See \\'failed_generation\\' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_gene"
+   ]
+  },
+  {
+   "time": "2026-11-24T14:00+05:30",
+   "new": 6,
+   "ai": 2,
+   "routine": 4,
+   "rules": 0,
+   "models": {
+    "qwen/qwen3.8-27b": 2
+   },
+   "errors": [
+    "gemini-3.8-flash: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'"
    ]
   }
  ]

@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-24T13:15+05:30",
+ "updated": "2026-11-24T14:00+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a mix of global tech rallies and tensions in the Middle East that influenced market sentiment today. US stocks surged overnight after strong technology gains, while shipping incidents and fluctuating oil prices created mixed signals for energy sectors. Several Indian companies also made news through new contracts, US health regulator updates, and planned price increases.",
+  "summary": "Global oil prices fell about 3% due to increased supply, despite news of tankers hitting mines in the Strait of Hormuz. This drop in oil costs may pressure the profits of Indian fuel sellers. Meanwhile, Indian IT stocks gained strength, likely boosted by a major rally in US technology shares overnight. Foreign investors reduced their bullish bets on Indian stocks, shifting from 34% long to 20% long.",
   "themes": [
-   "Global tech rallies lifting market sentiment",
-   "Geopolitical tensions and fluctuating oil prices",
-   "Company updates including new contracts and regulatory approvals"
+   "Oil prices dropped on higher supply, creating mixed signals with geopolitical tensions.",
+   "US tech stock gains provided a lift for Indian IT sector sentiment.",
+   "Foreign fund managers significantly cut their long positions in Indian index futures."
   ],
   "watch": [
-   "Execution progress on new infrastructure contracts",
-   "Developments in Middle East shipping lanes affecting oil prices",
-   "Consumer demand following planned vehicle price increases"
+   "How Indian oil marketing companies react to the recent drop in global crude prices.",
+   "Whether the US tech rally continues to support Indian software exporters.",
+   "Further changes in foreign fund positioning in Indian markets."
   ],
   "date": "2026-11-24",
-  "basis": "82624f204213",
-  "updated": "2026-11-24T13:15+05:30",
-  "model": "gemini-flash-lite-latest",
-  "items": 30
+  "basis": "66ce2e5f3bd5",
+  "updated": "2026-11-24T14:00+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 32
  },
  "stocks": {
   "RVNL": {
@@ -251,6 +251,22 @@
    "updated": "2026-11-24T11:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "JWL": {
+   "summary": "Jupiter Wagons has signed a joint venture agreement with a Korean partner to manufacture metro trains and propulsion systems in India. The company will hold an 80% stake in this new venture, marking a significant expansion into modern city rail infrastructure.",
+   "why": "This move allows the company to enter a growing market for metro systems, which could lead to higher future sales and profits beyond its traditional wagon business.",
+   "upside": "Successfully building metro trains could open up a large new revenue stream in a rapidly expanding sector.",
+   "downside": "There is a risk that the new manufacturing setup takes longer than expected to become profitable or faces technical challenges.",
+   "watch": [
+    "Details on the size and value of the new business agreements",
+    "Progress in setting up the joint venture with the Korean partner",
+    "How the new metro business affects the company's overall revenue"
+   ],
+   "about": "Jupiter Wagons is a capital goods company that manufactures railway wagons and is now expanding into metro train production.",
+   "basis": "c18ce48bc829",
+   "items": 4,
+   "updated": "2026-11-24T14:00+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "TITAGARH": {
    "summary": "Titagarh Rail Systems recently won a ₹77.09 crore order from JSW for railway wagons and received approval to manufacture auto carrier wagons. The company also delivered a naval system to the Indian Navy and secured an additional order from Presstonic Engineering for the Mumbai Metro Line 6 project.",
    "why": "These new orders and approvals indicate that the company is expanding its product range and securing future income, which is relevant for shareholders tracking business growth.",
@@ -265,22 +281,6 @@
    "basis": "3e58a4009af3",
    "items": 3,
    "updated": "2026-11-23T19:22+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "JWL": {
-   "summary": "Jupiter Wagons has signed a deal with a Korean partner to build metro trains and their engines in India. The company will own 80% of this new joint venture.",
-   "why": "This move could help the company earn money from a growing area of the railway industry. It shows the business is expanding beyond its current operations.",
-   "upside": "The partnership opens a large new market that could lead to higher future profits.",
-   "downside": "It may take a long time for this new manufacturing project to show financial results, and there is a risk the setup fails.",
-   "watch": [
-    "Updates on the setup of the joint venture",
-    "First financial results from the new metro train business",
-    "Any delays in the manufacturing project"
-   ],
-   "about": "Jupiter Wagons is a company in the capital goods sector that makes railway wagons.",
-   "basis": "4ddf0006fba3",
-   "items": 3,
-   "updated": "2026-11-23T16:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "HYUNDAI": {
