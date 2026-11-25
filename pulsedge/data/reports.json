@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T15:02+05:30",
+ "updated": "2026-11-25T15:15+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Foreign investors returned to Indian stocks after two months of selling, with money flowing into 14 different sectors. L&T saw strong news as it won two major contracts, including a large battery storage project in Gujarat. On the other side, APL Apollo shares dropped sharply to a 52-week low after brokers lowered their ratings following a deal with Tata Steel. Tata Steel also faced pressure as investors worried about the debt involved in that same acquisition.",
+  "summary": "Foreign investors returned to Indian stocks after two months of selling, with money flowing into 14 different sectors. L&T saw positive news from winning large contracts, including a battery storage project in Gujarat. On the other hand, APL Apollo shares fell sharply after brokers lowered their ratings following a deal with Tata Steel. The metals sector was the weakest performer, dropping significantly as investors worried about debt and valuation.",
   "themes": [
    "Foreign money is flowing back into the market after a long pause.",
-   "Infrastructure and manufacturing companies are winning big new government contracts.",
-   "Investors are cautious about large deals that increase company debt."
+   "Large companies are announcing big new contracts and factory expansions.",
+   "Investors are cautious about deals that increase company debt."
   ],
   "watch": [
-   "Whether Tata Steel and APL Apollo finalize a restructuring plan for their deal.",
-   "If foreign investors continue buying stocks or if the money flows stop again.",
-   "How L&T manages the timing of its new large projects to avoid delays."
+   "Whether foreign investors continue buying or sell again quickly.",
+   "How the market reacts to the new share issue by Shukra Medtech in December.",
+   "If APL Apollo shares stabilize or continue to fall after the recent drop."
   ],
   "date": "2026-11-25",
-  "basis": "05e65a1ebebf",
-  "updated": "2026-11-25T14:23+05:30",
+  "basis": "28375cc40f42",
+  "updated": "2026-11-25T15:15+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 83
+  "items": 97
  },
  "stocks": {
   "LENSKART": {
@@ -729,6 +729,22 @@
    "updated": "2026-11-24T18:25+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "ZYDUSLIFE": {
+   "summary": "Zydus Lifesciences received a US FDA inspection report for its new API plant in Ankleshwar and an Export Inspection Report for its SEZ Ahmedabad facility, set up a wholly‑owned subsidiary in Australia and announced plans to acquire new businesses. These moves signal expansion but also bring regulatory and financial risks.",
+   "why": "The outcomes could affect the company’s ability to sell internationally and its cost structure, which matters to shareholders.",
+   "upside": "A clean FDA inspection and tax benefits from the SEZ could boost international sales and profitability.",
+   "downside": "Any adverse observations from the FDA or regulatory hurdles in Australia could delay growth and increase costs.",
+   "watch": [
+    "Final FDA inspection outcome for the Ankleshwar API plant",
+    "Implementation of SEZ benefits at the Ahmedabad facility",
+    "Progress of the Australian subsidiary and pending acquisitions"
+   ],
+   "about": "Zydus Lifesciences Ltd. develops, manufactures and sells pharmaceutical products.",
+   "basis": "c36c3e81383a",
+   "items": 4,
+   "updated": "2026-11-25T15:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "CGCL": {
    "summary": "Capri Global Capital Ltd. raised $30 million from the BlueOrchard Microfinance Fund, its first impact‑fundraise. The funding was announced on November 25, 2026.",
    "why": "The new capital could support business growth but may dilute existing shareholders if equity was issued.",
@@ -905,22 +921,6 @@
    "updated": "2026-11-24T06:49+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BSE": {
-   "summary": "BSE shares fell to a 52‑week low as broader market weakness hit the exchange, and a SEBI proposal to change managing‑director tenure rules could affect BSE’s leadership. The stock’s decline and regulatory uncertainty are the main headlines right now.",
-   "why": "These developments could influence BSE’s operational stability and how investors view the company, potentially impacting share value.",
-   "upside": "If the SEBI proposal is approved and leads to clearer governance, it could improve investor confidence.",
-   "downside": "Further macro‑economic pressure or uncertainty around regulatory approval could push the share price lower.",
-   "watch": [
-    "BSE share price relative to its 52‑week low",
-    "Outcome of SEBI’s MD tenure rule proposal",
-    "Financials sector index trend"
-   ],
-   "about": "BSE Ltd. runs India’s oldest stock exchange, providing trading and market infrastructure services.",
-   "basis": "a2369a400df3",
-   "items": 2,
-   "updated": "2026-11-24T06:49+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "POWERGRID": {
    "summary": "Power Grid Corporation of India expects its sales to drop by about a quarter starting in a few years. The company is looking for new business deals to help offset this expected decline.",
    "why": "Lower sales usually mean less profit, which can affect the value of the shares you own.",
@@ -968,6 +968,22 @@
    "items": 1,
    "updated": "2026-11-25T11:30+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "BSE": {
+   "summary": "BSE Ltd. is part of the Financial Services sector, which recently dropped 2.5% in one day but gained 0.5% over the last five days. Recent market news highlighted that several other stocks hit their lowest prices in a year, suggesting some overall market weakness.",
+   "why": "Because BSE is a major financial company, its share price often moves in line with the broader financial sector. If the sector continues to fall, BSE shares may also see pressure, even if the company itself has no specific bad news.",
+   "upside": "The financial sector showed a small gain over the last five days, which could suggest a slight recovery in investor confidence.",
+   "downside": "Broader market pressure could push prices lower, and the recent sector drop indicates that investors are currently cautious about financial stocks.",
+   "watch": [
+    "Whether the Financial Services sector continues to recover or falls further",
+    "If more stocks in the market hit their 52-week lows",
+    "General economic news that might affect investor confidence"
+   ],
+   "about": "BSE Ltd. is one of India's 50 largest listed companies and operates in the Financial Services sector.",
+   "basis": "9236c31ec4fe",
+   "items": 1,
+   "updated": "2026-11-25T15:15+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "COCHINSHIP": {
    "summary": "Cochin Shipyard shares recently fell to their lowest point in the past year. This drop happened alongside other major Indian companies hitting similar lows.",
@@ -1033,6 +1049,22 @@
    "updated": "2026-11-23T15:02+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "INFY": {
+   "summary": "Infosys shares rose while the broader market fell, as investors shift money from pricey AI tech to cheaper Indian software firms. The IT sector index gained 1.3% in the last session but is down 1.9% over five sessions.",
+   "why": "This shift could support Infosys share prices and the stock is being viewed as a safer bet in a volatile market.",
+   "upside": "If investors keep moving funds from expensive AI names to cost‑effective Indian IT firms, Infosys could see further price support.",
+   "downside": "A reversal in global AI sentiment or broader market volatility could pull the stock down.",
+   "watch": [
+    "Global AI sentiment and its effect on Indian IT stocks",
+    "Overall market volatility in the Sensex/Nifty",
+    "Short‑term movement of the IT sector index"
+   ],
+   "about": "Infosys Ltd. provides information technology services and consulting.",
+   "basis": "72f572801305",
+   "items": 2,
+   "updated": "2026-11-23T14:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "MARUTI": {
    "summary": "Maruti Suzuki’s shares rose about 2% after the company announced a price hike, while the broader market showed mixed moves. The stock is also being highlighted as a relatively safer bet amid recent market volatility.",
    "why": "Higher prices could lift earnings, but they may also curb demand among price‑sensitive buyers.",
@@ -1065,36 +1097,20 @@
    "updated": "2026-11-25T14:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "ZYDUSLIFE": {
-   "summary": "Zydus Lifesciences received a key certificate for its new factory in Ahmedabad, which may help with tax savings. The company also set up a new unit in Australia to sell medicines and announced it is buying new businesses.",
-   "why": "These moves show the company is expanding its operations and trying to grow in new markets, which could affect its future earnings.",
-   "upside": "The new factory certificate and Australian expansion could lead to cost savings and new sales opportunities over time.",
-   "downside": "Buying new businesses costs money, and selling medicines in Australia might face regulatory hurdles.",
-   "watch": [
-    "When the tax benefits from the new factory start showing up in financial reports",
-    "How the Australian unit handles local regulations",
-    "The cost of the new business acquisitions"
-   ],
-   "about": "Zydus Lifesciences is a healthcare company that sells and distributes pharmaceutical products.",
-   "basis": "53d9ecaf12c1",
-   "items": 3,
-   "updated": "2026-11-25T14:16+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "CLEANMAX": {
-   "summary": "Clean Max Enviro Energy Solutions has announced the sale of a subsidiary and other assets. The company is in the Power sector and is part of the Nifty 500 index.",
-   "why": "Selling parts of the business could change the company's future earnings and cash flow, which directly affects the value of its shares.",
-   "upside": "The sale may bring in cash that the company can use for other purposes.",
-   "downside": "Selling assets might reduce the company's long-term growth potential and shrink its earnings.",
+   "summary": "Clean Max Enviro Energy Solutions has announced it is acquiring another business while also selling off a subsidiary and other assets. These moves happened within the last two days, signaling a major shift in the company's structure.",
+   "why": "These changes could alter the company's future earnings and debt levels, which directly affects the value of its shares. The mix of buying and selling makes it hard to predict the immediate financial impact.",
+   "upside": "The acquisition could help the company grow its operations faster if the new business performs well.",
+   "downside": "Buying a new business costs money and may add debt, while selling assets could reduce the company's long-term growth potential.",
    "watch": [
-    "Details on how much money the company expects to receive from the sales",
-    "The specific strategic reasons given for selling these units",
-    "How the Power sector index continues to move"
+    "How much debt the acquisition adds to the company",
+    "Which specific assets are being sold and for how much",
+    "How the broader energy sector performs, as it has recently fallen"
    ],
-   "about": "",
-   "basis": "8c013e6b3ac1",
-   "items": 2,
-   "updated": "2026-11-25T11:15+05:30",
+   "about": "Clean Max Enviro Energy Solutions is a company in the power sector.",
+   "basis": "5e622653014e",
+   "items": 3,
+   "updated": "2026-11-25T15:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "MCX": {
@@ -1172,22 +1188,6 @@
     "Performance of the IT sector index in the coming sessions"
    ],
    "about": "Tata Consultancy Services provides IT services, consulting and business solutions.",
-   "basis": "72f572801305",
-   "items": 2,
-   "updated": "2026-11-23T14:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "INFY": {
-   "summary": "Infosys shares rose while the broader market fell, as investors shift money from pricey AI tech to cheaper Indian software firms. The IT sector index gained 1.3% in the last session but is down 1.9% over five sessions.",
-   "why": "This shift could support Infosys share prices and the stock is being viewed as a safer bet in a volatile market.",
-   "upside": "If investors keep moving funds from expensive AI names to cost‑effective Indian IT firms, Infosys could see further price support.",
-   "downside": "A reversal in global AI sentiment or broader market volatility could pull the stock down.",
-   "watch": [
-    "Global AI sentiment and its effect on Indian IT stocks",
-    "Overall market volatility in the Sensex/Nifty",
-    "Short‑term movement of the IT sector index"
-   ],
-   "about": "Infosys Ltd. provides information technology services and consulting.",
    "basis": "72f572801305",
    "items": 2,
    "updated": "2026-11-23T14:15+05:30",
