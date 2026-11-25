@@ -232,8 +232,8 @@ def update(dry=False, force=False):
     now = datetime.now(IST)
     old = load(OUT, {})
     try:
-        last = datetime.fromisoformat(old.get("fetched", ""))
-    except ValueError:
+        last = datetime.fromisoformat(old.get("fetched") or "")
+    except (TypeError, ValueError):
         last = None
     due = force or not last or now - last >= timedelta(hours=EVERY_HOURS)
     uni = load(os.path.join(DATA, "universe.json"), {}).get("stocks", [])
