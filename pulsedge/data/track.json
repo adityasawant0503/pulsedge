@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-25T09:45:48+05:30",
+ "updated": "2026-11-25T09:52:12+05:30",
  "summary": {
-  "calls": 2139,
-  "scored_calls": 943,
+  "calls": 2140,
+  "scored_calls": 944,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "0fae240c2e0c87cb",
+   "symbol": "BEML",
+   "time": "2026-11-25T09:49:52+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "BEML: CO SAYS EXPECT MANY ORDERS IN DEFENCE SECTORS AND INTERNATIONAL ORDERS || ON TRACK TO ACHIEVE DOUBLE DIGIT GROWTH: INTERVIEW",
+   "url": "https://t.me/Indiaredboxglobal/10005",
+   "alert_px": 2009.1,
+   "alert_move": 0.05,
+   "alert_at": "2026-11-25T09:50:25+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "358f4dc39c65aadf",
    "symbol": "CIPLA",
