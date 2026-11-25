@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T13:32+05:30",
+ "updated": "2026-11-25T13:47+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -188,19 +188,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel is revisiting the structure of its large APL Apollo Tubes acquisition, having already bought a 9.91% stake for about ₹5,825 crore. The deal has sparked concerns over valuation, debt and integration, pushing the stock lower while the metals sector is also under pressure.",
-   "why": "Shareholders face potential strain on cash and leverage from the big purchase, which could affect earnings and share price.",
-   "upside": "If the APL Apollo acquisition delivers strategic benefits and improves earnings, the stock could benefit.",
-   "downside": "Valuation and debt worries, plus integration risk, could keep pressure on the share price.",
+   "summary": "Tata Steel is negotiating a large acquisition of a 26.4% stake in APL Apollo Tubes, with talks about restructuring the deal and tweaking its structure. The market has reacted with share declines amid concerns over valuation, debt and integration risk.",
+   "why": "The outcome will affect the company’s cash position, debt load and future earnings, which matters to shareholders.",
+   "upside": "If the deal delivers strategic benefits and the restructuring eases financial pressure, the company could see improved earnings.",
+   "downside": "Valuation and debt concerns, possible regulatory hurdles or a failed deal could strain finances and weigh on the share price.",
    "watch": [
-    "Progress on tweaking the APL Apollo deal structure",
-    "Impact of the deal on Tata Steel’s debt and valuation",
-    "Sector performance and any integration updates"
+    "Progress of the APL Apollo restructuring and final deal terms",
+    "Impact of the acquisition on Tata Steel’s debt and valuation",
+    "Regulatory approvals and integration of APL Apollo assets"
    ],
-   "about": "Tata Steel Ltd. is a leading Indian steel producer and a Nifty 50 constituent.",
-   "basis": "640f96ecadd6",
-   "items": 25,
-   "updated": "2026-11-25T12:30+05:30",
+   "about": "Tata Steel Ltd. is a major Indian steel producer and a Nifty‑50 listed company.",
+   "basis": "60414610b519",
+   "items": 26,
+   "updated": "2026-11-25T13:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "APLAPOLLO": {
@@ -347,20 +347,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is facing mixed signals as global oil prices fluctuate between falling on supply concerns and rising due to shipping disruptions in the Strait of Hormuz. The company's sector index has recently declined, reflecting broader market pressure on oil stocks.",
-   "why": "Since Oil India earns money by selling crude oil, changes in global oil prices directly affect its potential profits. Investors need to watch how these price swings impact the company's bottom line.",
-   "upside": "Disruptions in the Strait of Hormuz could keep oil prices high, which would likely boost revenues for Indian oil producers.",
-   "downside": "If global oil supply remains high and prices stay low, it could reduce the earnings for oil producers like Oil India.",
+   "summary": "Oil India Ltd. (OIL) is being affected by recent swings in global oil prices, with Brent and WTI futures moving up and down in the last few hours. The company’s earnings could be sensitive to these price changes, as it is an oil producer. The market sentiment around oil is mixed, with some analysts expecting a rebound after a sharp fall.",
+   "why": "Shareholders of OIL should watch oil price movements because higher prices can improve the company’s earnings, while lower prices can squeeze margins.",
+   "upside": "Higher oil prices could boost OIL’s earnings.",
+   "downside": "Lower oil prices could reduce OIL’s earnings.",
    "watch": [
-    "Global crude oil price movements, particularly Brent and WTI levels.",
-    "News regarding shipping safety and disruptions in the Strait of Hormuz.",
-    "Performance of the Oil & Gas sector index in the coming sessions."
+    "Oil price trend (Brent and WTI)",
+    "Market sentiment on oil sector",
+    "Supply concerns affecting oil prices"
    ],
-   "about": "Oil India Ltd. is an Indian company in the Oil Gas & Consumable Fuels sector that is part of the Nifty 500 index.",
-   "basis": "9a5dc4de044e",
-   "items": 18,
-   "updated": "2026-11-25T08:30+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "",
+   "basis": "6071ae957c50",
+   "items": 19,
+   "updated": "2026-11-25T13:47+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "JWL": {
    "summary": "Jupiter Wagons Ltd. is investing about ₹1,000 crore over the next three years in its passenger‑rail business and has formed an 80%‑owned joint venture with Korea’s Woojin to build metro coaches and propulsion systems in India. The moves aim to broaden its product range and capture growth in urban rail, while also raising short‑term cash‑flow and execution concerns.",
@@ -377,6 +377,22 @@
    "items": 6,
    "updated": "2026-11-25T13:00+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "SUZLON": {
+   "summary": "Suzlon Energy is expanding its production capacity by starting construction on a new factory in Tamil Nadu. This new facility is expected to create over 1,000 jobs and will be powered entirely by renewable energy. However, the company also recently reported a cyber security incident involving unauthorized access to its systems.",
+   "why": "Expanding capacity could lead to higher future sales, but the cyber breach may result in repair costs and potential loss of customer trust.",
+   "upside": "The new factory, supported by state government involvement, signals growth and increased production capability.",
+   "downside": "The company faces risks from execution delays in the new factory and potential financial or reputational damage from the cyber incident.",
+   "watch": [
+    "Updates on the progress of the new factory construction",
+    "Details on the impact and resolution of the cyber security breach",
+    "Future announcements regarding production capacity increases"
+   ],
+   "about": "",
+   "basis": "9b5e9280ade4",
+   "items": 3,
+   "updated": "2026-11-25T13:47+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "TITAGARH": {
    "summary": "Titagarh Rail Systems recently won a ₹77.09 crore order from JSW for railway wagons and received approval to manufacture auto carrier wagons. The company also delivered a naval system to the Indian Navy and secured an additional order from Presstonic Engineering for the Mumbai Metro Line 6 project.",
@@ -872,6 +888,22 @@
    "items": 2,
    "updated": "2026-11-24T06:49+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "POWERGRID": {
+   "summary": "Power Grid Corporation of India expects its sales to drop by about a quarter starting in a few years. The company is looking for new business deals to help offset this expected decline.",
+   "why": "Lower sales usually mean less profit, which can affect the value of the shares you own.",
+   "upside": "The company is actively seeking new state deals and partnership bids to replace the lost revenue.",
+   "downside": "If the company fails to secure these new deals, the revenue drop could be worse than expected.",
+   "watch": [
+    "Whether the company wins new state monetization bids",
+    "Progress on consortium partnership deals",
+    "Performance of the broader Energy sector index"
+   ],
+   "about": "Power Grid is a major company in India's power sector and is one of the 50 largest listed companies in the country.",
+   "basis": "fd95ec8fc9ae",
+   "items": 1,
+   "updated": "2026-11-25T13:47+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "AARTIIND": {
    "summary": "Aarti Industries is starting up a new production line for a chemical called chlorotoluene. This chemical is used in farming and medicine products.",
