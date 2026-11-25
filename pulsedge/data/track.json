@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-25T09:52:12+05:30",
+ "updated": "2026-11-25T10:00:49+05:30",
  "summary": {
-  "calls": 2140,
-  "scored_calls": 944,
+  "calls": 2141,
+  "scored_calls": 945,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "26a61c91ed7dcd4a",
+   "symbol": "BHEL",
+   "time": "2026-11-25T09:58:06+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Bharat Heavy Electricals Limited: Bharat Heavy Electricals Limited has informed the Exchange about change in Management |SUBJECT: Change in Management",
+   "url": "https://nsearchives.nseindia.com/corporate/BHEL_25112026095758_SrManagement25112026.pdf",
+   "alert_px": 414.7,
+   "alert_move": -0.24,
+   "alert_at": "2026-11-25T10:00:32+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "0fae240c2e0c87cb",
    "symbol": "BEML",
