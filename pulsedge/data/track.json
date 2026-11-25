@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-25T08:47:03+05:30",
+ "updated": "2026-11-25T09:00:38+05:30",
  "summary": {
-  "calls": 2138,
-  "scored_calls": 942,
+  "calls": 2139,
+  "scored_calls": 943,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,17 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "358f4dc39c65aadf",
+   "symbol": "CIPLA",
+   "time": "2026-11-25T08:46:40+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Cipla Limited: Cipla Limited has informed the Exchange regarding a press release dated November 25, 2026, titled \"U.S. FDA Approves First ANDA Generic Flovent® ",
+   "url": "https://nsearchives.nseindia.com/corporate/CIPLA_25112026084353_Press_Release_Product_Launch_SE_Flovent_Signed.pdf"
+  },
   {
    "id": "72c149bdeb3b1fbb",
    "symbol": "OIL",
