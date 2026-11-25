@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-25T12:16:19+05:30",
+ "updated": "2026-11-25T12:31:00+05:30",
  "summary": {
-  "calls": 2171,
-  "scored_calls": 975,
+  "calls": 2173,
+  "scored_calls": 977,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "0a5e5062ab862322",
+   "symbol": "TATASTEEL",
+   "time": "2026-11-25T12:26:18+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "APL APOLLO: TATA STEEL IS WORKING ON TWEAKING THE APL APOLLO DEAL STRUCTURE",
+   "url": "https://t.me/Indiaredboxglobal/10018",
+   "alert_px": 162.16,
+   "alert_move": -0.52,
+   "alert_at": "2026-11-25T12:27:23+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "428f8676770ae87f",
    "symbol": "SIEMENS",
@@ -593,6 +608,21 @@
    "source": "Business Standard",
    "headline": "Oil correction gone too far; sharp rebound likely: Mirae Asset Sharekhan",
    "url": "https://www.business-standard.com/markets/news/oil-correction-gone-too-far-sharp-rebound-likely-mirae-asset-sharekhan-126112500068_1.html"
+  },
+  {
+   "id": "e44d8ba783cd945f",
+   "symbol": "ICICIBANK",
+   "time": "2026-11-25T07:11:52+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Stock Market Live Updates: Sensex zooms over 1,850 points, Nifty tops 25,900; HDFC, ICICI Bank rally 4% each",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/bse-sensex-today-nifty50-stock-market-live-updates-gift-nifty-tata-steel-hindalco-share-price-25-november-2026/liveblog/136145716.cms",
+   "alert_px": 1643.2,
+   "alert_move": 3.64,
+   "alert_at": "2026-11-25T12:30:39+05:30",
+   "alert_delay": 900
   },
   {
    "id": "5f7e6737c32d3393",

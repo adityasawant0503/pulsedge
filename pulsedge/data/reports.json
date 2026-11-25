@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T12:16+05:30",
+ "updated": "2026-11-25T12:30+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -188,19 +188,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel bought a large stake in APL Apollo Tubes, spending about ₹5,825 crore. The purchase has pushed Tata Steel’s share price lower as investors worry about valuation, debt and integration risks.",
-   "why": "The deal uses cash and may increase debt, which can affect earnings and the stock’s short‑term movement.",
-   "upside": "If the acquisition delivers the expected strategic benefits, it could improve Tata Steel’s long‑term outlook.",
-   "downside": "High valuation and debt concerns, plus execution risk, could keep pressure on the share price.",
+   "summary": "Tata Steel is revisiting the structure of its large APL Apollo Tubes acquisition, having already bought a 9.91% stake for about ₹5,825 crore. The deal has sparked concerns over valuation, debt and integration, pushing the stock lower while the metals sector is also under pressure.",
+   "why": "Shareholders face potential strain on cash and leverage from the big purchase, which could affect earnings and share price.",
+   "upside": "If the APL Apollo acquisition delivers strategic benefits and improves earnings, the stock could benefit.",
+   "downside": "Valuation and debt worries, plus integration risk, could keep pressure on the share price.",
    "watch": [
-    "How Tata Steel integrates APL Apollo’s operations",
-    "Changes in Tata Steel’s debt profile after the deal",
-    "Movement of the Metals sector index, which has been falling"
+    "Progress on tweaking the APL Apollo deal structure",
+    "Impact of the deal on Tata Steel’s debt and valuation",
+    "Sector performance and any integration updates"
    ],
-   "about": "Tata Steel Ltd. is a leading Indian steel manufacturer.",
-   "basis": "691a4cd805ca",
-   "items": 24,
-   "updated": "2026-11-25T11:46+05:30",
+   "about": "Tata Steel Ltd. is a leading Indian steel producer and a Nifty 50 constituent.",
+   "basis": "640f96ecadd6",
+   "items": 25,
+   "updated": "2026-11-25T12:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "APLAPOLLO": {
@@ -714,6 +714,22 @@
    "updated": "2026-11-24T19:21+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "ICICIBANK": {
+   "summary": "ICICI Bank shares jumped about 4% to a record high, leading a broader rally in bank stocks, but analysts note that valuation concerns favor peers like HDFC and Axis.",
+   "why": "Shareholders see rapid price gains that could reverse quickly, especially if earnings miss expectations or market sentiment shifts.",
+   "upside": "If the broader market stays strong and earnings meet forecasts, the stock could keep its upward momentum.",
+   "downside": "A short‑term pullback is possible if earnings disappoint or the financial sector’s recent decline drags the share lower.",
+   "watch": [
+    "Valuation comparison with HDFC and Axis banks",
+    "Financials sector index movement (-2.5% last session)",
+    "Overall market trends in Sensex and Nifty"
+   ],
+   "about": "ICICI Bank Ltd. is a leading Indian bank providing a range of financial services.",
+   "basis": "c7a8baf5e07b",
+   "items": 4,
+   "updated": "2026-11-25T12:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "HDFCBANK": {
    "summary": "HDFC Bank is in the spotlight as analysts compare it favorably with peers on valuation, it displayed a bullish White Marubozu candlestick, yet it is also listed among stocks pulling the Nifty 50 lower.",
    "why": "These signals could influence short‑term demand for the shares you hold.",
@@ -729,22 +745,6 @@
    "items": 3,
    "updated": "2026-11-25T11:15+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "ICICIBANK": {
-   "summary": "ICICI Bank shares recently hit a record high, rising 4% in a single day. However, the broader financial sector has seen some recent volatility, with the index dipping slightly in the last session.",
-   "why": "The recent price jump shows strong investor interest, but the mixed performance of the wider banking sector means the stock's value could fluctuate based on broader market trends.",
-   "upside": "The stock has strong momentum, having just reached an all-time high.",
-   "downside": "The recent gains could reverse quickly if the company's earnings do not meet expectations.",
-   "watch": [
-    "Upcoming earnings reports",
-    "Performance of the Financials sector index",
-    "Comparisons with other major banks like HDFC and Axis"
-   ],
-   "about": "ICICI Bank is a major financial services company and one of India's 50 largest listed firms.",
-   "basis": "95859ac27e94",
-   "items": 3,
-   "updated": "2026-11-25T11:15+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "MAXHEALTH": {
    "summary": "Max Healthcare Institute Ltd. announced the resignation of a director and changes in its senior management personnel. These updates were filed with the stock exchange on November 23, 2026.",
