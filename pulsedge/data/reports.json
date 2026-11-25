@@ -1,8 +1,8 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T19:23+05:30",
+ "updated": "2026-11-26T04:23+05:30",
  "nifty50": {
-  "updated": "2026-11-20",
+  "updated": "2026-11-26",
   "symbols": [
    "ADANIENT",
    "ADANIPORTS",
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a mixed day where defensive sectors like FMCG and Pharma led gains, while metals and media fell. Major companies announced significant moves, including L&T winning a large contract and TVS Motor planning a multi-year investment in Tamil Nadu. On the other hand, APL Apollo Tubes shares dropped sharply after brokers lowered their ratings following a recent acquisition. Foreign investors slightly increased their bullish bets, raising their long positions to 24%.",
+  "summary": "PulsEdge flagged that Enrin reported strong Q2 revenue growth, while L&T secured a major contract worth 10 to 25 billion rupees. APL Apollo Tubes shares fell sharply to a 52-week low after brokers lowered their ratings following a Tata Steel deal. TVS Motor signed a non-binding agreement to invest 2,000 crore rupees in Tamil Nadu, and foreign funds increased their long positions in index futures.",
   "themes": [
-   "Large corporate investments and new contracts boosted confidence in industrial stocks.",
-   "Defensive sectors like FMCG and Pharma outperformed as investors sought stability.",
-   "Broker downgrades and large share sales weighed on specific stocks like APL Apollo Tubes."
+   "Strong corporate results and new contracts boosted confidence in Enrin and L&T.",
+   "Investor caution emerged as APL Apollo Tubes shares dropped due to concerns over acquisition costs.",
+   "Foreign investors slightly increased their bullish stance, with long positions rising to 24%."
   ],
   "watch": [
-   "How APL Apollo Tubes reacts to further broker opinions after its recent share price drop.",
-   "Whether TVS Motor proceeds with its planned investment in Tamil Nadu over the next four years.",
-   "If foreign fund managers continue to increase their long positions in the coming sessions."
+   "Whether Enrin's future guidance matches its strong Q2 performance.",
+   "How the market reacts to TVS Motor's planned investment in Tamil Nadu.",
+   "If further brokerages downgrade APL Apollo Tubes, potentially extending the share price decline."
   ],
   "date": "2026-11-25",
-  "basis": "a8c2fdd820d2",
-  "updated": "2026-11-25T19:23+05:30",
+  "basis": "10dee179a2e8",
+  "updated": "2026-11-26T04:23+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 167
+  "items": 176
  },
  "stocks": {
   "LENSKART": {
@@ -107,22 +107,6 @@
    "updated": "2026-11-23T19:22+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "LT": {
-   "summary": "Larsen & Toubro has recently won several new contracts, including a 2,500 crore rupee battery storage project in Gujarat and another deal worth 10 to 25 billion rupees. These wins add to the company's list of upcoming work.",
-   "why": "New contracts mean the company has more future income, which can support its financial health and value for shareholders.",
-   "upside": "Successful completion of these projects could boost revenue and support growth in renewable energy areas.",
-   "downside": "Delays in these projects could hurt profit margins or cash flow.",
-   "watch": [
-    "Updates on the start date of the Gujarat battery storage project",
-    "Details on the specific scope of the 10-25 billion rupee contract",
-    "Any announcements about project delays or cancellations"
-   ],
-   "about": "Larsen & Toubro is a major construction company in India.",
-   "basis": "1cea0c63280e",
-   "items": 4,
-   "updated": "2026-11-25T13:32+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "TVSMOTOR": {
    "summary": "TVS Motor Company Ltd. (TVSMOTOR) has announced new business agreements and a non‑binding memorandum of understanding with the Government of Tamil Nadu, which includes a planned investment of ₹2000 crore over four years and creation of 1000 jobs.",
    "why": "Shareholders should note that these agreements could influence the company’s future earnings and expansion plans.",
@@ -138,6 +122,22 @@
    "items": 3,
    "updated": "2026-11-25T15:02+05:30",
    "model": "openai/gpt-oss-20b"
+  },
+  "LT": {
+   "summary": "Larsen & Toubro recently won a 2,500 crore rupee battery storage project in Gujarat and another contract worth 10 to 25 billion rupees. These new orders add to the company's list of upcoming work.",
+   "why": "New contracts mean the company has secured future income, which is generally a positive sign for the business.",
+   "upside": "The battery storage project supports growth in the renewable energy sector.",
+   "downside": "Delays in completing these projects could hurt the company's profits or cash flow.",
+   "watch": [
+    "Updates on the progress of the Gujarat battery storage project.",
+    "Details on the specific nature of the 10-25 billion rupee contract.",
+    "Any announcements regarding project timelines or delays."
+   ],
+   "about": "Larsen & Toubro is a major construction company in India.",
+   "basis": "83777c4136e1",
+   "items": 3,
+   "updated": "2026-11-26T04:23+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "RVNL": {
    "summary": "RVNL has received new contracts, including a hospital project from NMDC, and says it is on track to reach a 25,000 cr orderbook for FY27, having already secured about 8,000 cr in H1.",
@@ -170,6 +170,22 @@
    "items": 2,
    "updated": "2026-11-25T19:23+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "ENRIN": {
+   "summary": "Siemens Energy India reported strong growth in its second quarter, with revenue rising to 34.5 billion rupees from 26.5 billion rupees in the same period last year. The company also saw increases in profit and EBITDA.",
+   "why": "Stronger financial results can make the company more attractive to investors, potentially supporting the share price. However, future expectations may not match this recent performance.",
+   "upside": "The significant year-on-year increase in revenue and profit shows the company is growing its business.",
+   "downside": "Future guidance may be lower than investors expect, which could weigh on the stock.",
+   "watch": [
+    "Official company guidance for future quarters",
+    "How the market reacts to the Q2 earnings report",
+    "Changes in the Capital Goods sector"
+   ],
+   "about": "",
+   "basis": "5637ebb90494",
+   "items": 1,
+   "updated": "2026-11-26T04:23+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "BRIGADE": {
    "summary": "Brigade Enterprises reported selling ₹1,600 crore worth of units during a launch weekend for a new project in Bengaluru. The company also bought land in Secunderabad for a premium residential project and noted that its hotel business saw 7% growth in the first half of the year.",
@@ -252,35 +268,35 @@
    "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel is actively restructuring its deal to buy a stake in APL Apollo Tubes, with the company saying it is open to changing the plan. This news has caused Tata Steel shares to fall, even as the wider stock market rose.",
-   "why": "The deal involves a large cash outlay, which raises concerns about the company's debt levels and how it might affect future profits for shareholders.",
-   "upside": "If the restructuring succeeds, it could lead to a deal structure that is less risky for the company's finances.",
-   "downside": "The deal could fail or face regulatory hurdles, and the high cost might strain the company's cash and increase its debt.",
+   "summary": "Tata Steel is restructuring its deal to buy a 9.91% stake in APL Apollo Tubes for about ₹5,825 crore. The company says it is open to discussing a restructuring plan with APL Apollo, and shares fell over 2% while the broader market rose.",
+   "why": "This matters because the large purchase and potential debt could affect the company's cash flow and future profits, causing the share price to move unexpectedly.",
+   "upside": "The deal could bring strategic benefits that support the company's long-term position in the steel sector.",
+   "downside": "Investors are worried that the deal's cost and associated debt might strain the company's finances and pressure its share price.",
    "watch": [
     "Updates on the final structure of the APL Apollo deal",
-    "Any changes in the company's debt levels",
-    "How the stock price reacts compared to the rest of the metals sector"
+    "How the company manages its debt levels after the purchase",
+    "Broader trends in the Metals sector, which has fallen recently"
    ],
-   "about": "Tata Steel is a major company in the metals and mining sector and is one of India's 50 largest listed companies.",
-   "basis": "3463e18eda68",
-   "items": 19,
-   "updated": "2026-11-25T19:23+05:30",
+   "about": "Tata Steel is a major company in the Metals & Mining sector and is one of India's 50 largest listed companies.",
+   "basis": "6f0f1f917b0e",
+   "items": 12,
+   "updated": "2026-11-26T04:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "APLAPOLLO": {
-   "summary": "APL Apollo Tubes shares fell to a 52-week low after Tata Steel agreed to buy a 9.91% stake for about ₹5,825 crore. Brokers lowered their ratings on the stock, and a large fund sold shares worth ₹434 crore in a single trade.",
-   "why": "The sharp drop reflects investor worry that the cost of the deal might pressure the company's future profits. Existing owners may see their share of the company diluted or face lower prices due to this uncertainty.",
-   "upside": "The Tata Steel partnership could bring long-term benefits and stability to the company.",
-   "downside": "Further downgrades from brokers or regulatory issues with the acquisition could push the share price even lower.",
+   "summary": "APL Apollo Tubes shares fell to a 52-week low after Tata Steel bought a 9.91% stake in the company for about ₹5,825 crore. Brokers lowered their ratings on the stock, and a large fund sold shares worth ₹434 crore in a single trade.",
+   "why": "The sharp drop in share price reflects investor concern that the cost of the Tata Steel deal may pressure the company's future profits. Existing owners now face a market that is reassessing the value of their holdings.",
+   "upside": "The new shareholder agreements announced by the company could potentially support future business activities, though the exact financial impact is not yet clear.",
+   "downside": "Further downgrades from brokers or additional large sales by investors could lead to more declines in the share price.",
    "watch": [
-    "Regulatory approval for the Tata Steel acquisition",
-    "Details of the new shareholder agreements",
-    "Any further large investor sales or downgrades"
+    "How the market reacts to the new shareholder agreements",
+    "Whether other large investors sell more shares",
+    "Updates on the integration of the Tata Steel stake"
    ],
-   "about": "APL Apollo Tubes is a steel tube maker listed in the Capital Goods sector.",
-   "basis": "71c181ecd37d",
-   "items": 10,
-   "updated": "2026-11-25T19:23+05:30",
+   "about": "",
+   "basis": "c309dc64696f",
+   "items": 7,
+   "updated": "2026-11-26T04:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "INDIANB": {
@@ -411,36 +427,20 @@
    "updated": "2026-11-24T18:25+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "INDUSINDBK": {
-   "summary": "IndusInd Bank recently terminated its former CEO and invoked a clawback clause to reclaim his compensation. The stock is currently under close observation by investors due to this leadership change.",
-   "why": "Changes in top management can affect how the bank is run and how confident investors feel about its future performance.",
-   "upside": "",
-   "downside": "Legal disputes arising from the termination and compensation recovery could negatively impact the bank's operations and reputation.",
-   "watch": [
-    "Any legal actions or disputes related to the former CEO",
-    "How the bank's new leadership team handles day-to-day operations",
-    "The overall trend of the Financial Services sector index"
-   ],
-   "about": "IndusInd Bank is a financial services company listed on the NSE.",
-   "basis": "4a3a5e7bc17e",
-   "items": 2,
-   "updated": "2026-11-23T15:32+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "OIL": {
-   "summary": "Oil India Ltd. is facing mixed signals as crude oil prices fluctuate due to geopolitical tensions and supply concerns. While recent events like tanker incidents and refinery attacks suggest potential price increases, current market data shows oil prices have recently slipped slightly.",
-   "why": "Since the company sells oil, its profits depend heavily on the price of crude; higher prices generally mean more revenue, while lower prices can reduce earnings.",
-   "upside": "Geopolitical disruptions in oil supply could push crude prices higher, potentially boosting the company's revenues.",
-   "downside": "Recent drops in oil prices and concerns about a supply glut could pressure the company's earnings and stock value.",
+   "summary": "Oil India Ltd. shares are part of a broader market rally, with the stock up 10–43% in 2026 alongside other large Indian companies. However, recent news shows oil prices falling slightly due to supply concerns, which could pressure the company's earnings.",
+   "why": "Since Oil India sells oil, lower global oil prices can reduce its profits, making its share price more vulnerable to market shifts. The recent market rise may not last if these earnings pressures continue.",
+   "upside": "Conflicts in the Middle East, such as attacks on Russian refineries, could make oil harder to get and push prices up, which would benefit the company.",
+   "downside": "If oil prices stay low or fall further due to high supply, the company's earnings may drop, potentially causing its share price to decline.",
    "watch": [
-    "Crude oil price movements in the coming days",
-    "Updates on geopolitical conflicts affecting oil supply",
-    "Overall performance of the Oil & Gas sector index"
+    "Global oil price trends",
+    "RBI interest rate decisions",
+    "Geopolitical events affecting oil supply"
    ],
-   "about": "Oil India Ltd. is an Indian company in the Oil Gas & Consumable Fuels sector that produces oil.",
-   "basis": "4b2930840dab",
-   "items": 20,
-   "updated": "2026-11-25T17:12+05:30",
+   "about": "Oil India Ltd. is a company in the Oil Gas & Consumable Fuels sector that produces oil.",
+   "basis": "4f7f1b6df4d8",
+   "items": 21,
+   "updated": "2026-11-26T04:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "JWL": {
@@ -507,6 +507,22 @@
    "updated": "2026-11-23T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "FINCABLES": {
+   "summary": "Finolex Cables saw a block trade on Nov 25 where ORBITELECTRICALS PRIVATE LIMITED bought about 4.6 lakh shares worth ₹53 crore, while ARUNA MUKESH KATARA sold the same amount at ₹1,159 per share.",
+   "why": "Large investors buying or selling can signal confidence or concern, which matters to current shareholders.",
+   "upside": "If the buyer’s interest reflects confidence, the stock could attract more institutional buying.",
+   "downside": "If the seller’s action reflects a lack of upside, the stock could face selling pressure.",
+   "watch": [
+    "Further block deals involving Finolex Cables",
+    "Share‑price movement after the trade",
+    "Institutional participation on either side of future trades"
+   ],
+   "about": "",
+   "basis": "340d9e934011",
+   "items": 2,
+   "updated": "2026-11-26T04:23+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "TMPV": {
    "summary": "Tata Motors Passenger Vehicles announced a 0.5% price increase for its cars and SUVs starting Dec 1, 2026. The auto sector index fell 1% in the last session but is up 3.3% over five sessions.",
    "why": "Shareholders care because higher prices could boost profit per vehicle but might also curb sales if buyers react to higher costs.",
@@ -523,20 +539,20 @@
    "updated": "2026-11-24T15:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "WELSPUNLIV": {
-   "summary": "Welspun Living’s shares have jumped over 110% year‑to‑date as the company rolls out capex‑driven growth plans and targets ₹1,500 cr revenue from its domestic home‑brand portfolio, aiming for more than 20% annual growth.",
-   "why": "If the new investments boost sales and lower costs, earnings could rise for shareholders, but execution and supply risks remain.",
-   "upside": "Successful execution of the capex projects could lift earnings and sustain the share‑price rally.",
-   "downside": "Delays in capex, cotton supply shortages, or weaker consumer demand could hurt margins and growth.",
+  "SCHAEFFLER": {
+   "summary": "Schaeffler India is set for a block sale where its parent, Schaeffler AG, may sell a 6% stake at a discount, while the auto sector index has risen recently.",
+   "why": "A large share sale can increase supply and dilute existing holdings, which matters to current shareholders.",
+   "upside": "The auto sector’s recent gains could help support the stock.",
+   "downside": "The block sale could put downward pressure on the share price and cause dilution.",
    "watch": [
-    "Capex project execution",
-    "Cotton availability and pricing",
-    "Consumer demand trends for home textiles"
+    "Completion of the 6% block deal",
+    "Share price reaction after the sale",
+    "Any further share dilution announcements"
    ],
-   "about": "Welspun Living manufactures home textiles and related products.",
-   "basis": "3b7bde7b1b78",
-   "items": 3,
-   "updated": "2026-11-25T13:32+05:30",
+   "about": "Schaeffler India makes automotive components.",
+   "basis": "623e7a6bf643",
+   "items": 1,
+   "updated": "2026-11-26T04:23+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "HYUNDAI": {
@@ -553,6 +569,22 @@
    "basis": "4acb0afbbdbd",
    "items": 3,
    "updated": "2026-11-25T08:17+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "WELSPUNLIV": {
+   "summary": "Welspun Living’s shares have jumped more than 110% year‑to‑date and the company is planning new capital spending (capex) to boost growth. Analysts see upside but note risks around project execution and cotton supply.",
+   "why": "Shareholders could see earnings improve if the new investments and cost cuts work, but the same risks could affect returns.",
+   "upside": "Successful execution of the new capex projects could lift earnings.",
+   "downside": "Delays in projects or cotton shortages could hurt margins.",
+   "watch": [
+    "Progress on capex projects",
+    "Cotton availability and its impact on margins",
+    "Sales growth and cost‑reduction efforts"
+   ],
+   "about": "Welspun Living Ltd. is a textile company.",
+   "basis": "905c68de953b",
+   "items": 2,
+   "updated": "2026-11-26T04:23+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ABREL": {
@@ -778,6 +810,38 @@
    "updated": "2026-11-25T15:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "BSE": {
+   "summary": "BSE Ltd. is part of the Financial Services sector, which recently dropped 2.5% in one day but gained 0.5% over the last five days. Recent market news highlighted that several other stocks hit their lowest prices in a year, suggesting some overall market weakness.",
+   "why": "Because BSE is a major financial company, its share price often moves in line with the broader financial sector. If the sector continues to fall, BSE shares may also see pressure, even if the company itself has no specific bad news.",
+   "upside": "The financial sector showed a small gain over the last five days, which could suggest a slight recovery in investor confidence.",
+   "downside": "Broader market pressure could push prices lower, and the recent sector drop indicates that investors are currently cautious about financial stocks.",
+   "watch": [
+    "Whether the Financial Services sector continues to recover or falls further",
+    "If more stocks in the market hit their 52-week lows",
+    "General economic news that might affect investor confidence"
+   ],
+   "about": "BSE Ltd. is one of India's 50 largest listed companies and operates in the Financial Services sector.",
+   "basis": "9236c31ec4fe",
+   "items": 1,
+   "updated": "2026-11-25T15:15+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "TITAN": {
+   "summary": "Titan’s shares slipped as gold prices fell, causing short‑term volatility. The broader consumer durables index was slightly down, showing modest weakness.",
+   "why": "Shareholders see the stock move with gold because the company’s jewellery business is tied to gold price swings.",
+   "upside": "A rebound in gold prices could improve sentiment and lift the share price.",
+   "downside": "Further declines in gold prices could keep pressure on the stock.",
+   "watch": [
+    "Gold price movements",
+    "Consumer durables index performance",
+    "Any upcoming Titan earnings or sales data"
+   ],
+   "about": "Titan Company makes jewellery, watches and related accessories.",
+   "basis": "111d599213ba",
+   "items": 2,
+   "updated": "2026-11-23T11:45+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "CGCL": {
    "summary": "Capri Global Capital Ltd. raised $30 million from the BlueOrchard Microfinance Fund, its first impact‑fundraise. The funding was announced on November 25, 2026.",
    "why": "The new capital could support business growth but may dilute existing shareholders if equity was issued.",
@@ -842,21 +906,21 @@
    "updated": "2026-11-25T17:12+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "ENGINERSIN": {
-   "summary": "PulsEdge flagged that Engineers India Ltd. is part of the Nifty 500 index, which tracks India's 500 largest listed companies. The recent news items flagged in the system actually relate to other companies, specifically Vascon Engineers and Eppeltone Engineers, rather than Engineers India Ltd. itself.",
-   "why": "This distinction matters because news about other construction or engineering firms does not directly change the financial performance or share value of Engineers India Ltd.",
-   "upside": "",
-   "downside": "",
+  "LGEINDIA": {
+   "summary": "LG Electronics India’s promoter, LG Electronics Inc., intends to sell up to 2% of its shares in the open market to meet a minimum public‑shareholding rule by Dec 31 2026.",
+   "why": "The sale adds supply, which could pressure the share price for existing investors.",
+   "upside": "A broader market rally could absorb the extra supply and support the price.",
+   "downside": "The additional share supply may push the price lower.",
    "watch": [
-    "Official announcements from Engineers India Ltd. regarding its own new orders or contracts.",
-    "Quarterly financial results to see how the company is performing independently of peer news.",
-    "Updates on the Nifty 500 index composition to confirm the company's continued inclusion."
+    "Execution of the promoter’s 2% share sale",
+    "Share price reaction to the sale",
+    "Consumer durables sector index performance"
    ],
-   "about": "Engineers India Ltd. is a company in the construction sector.",
-   "basis": "a2149e9f901a",
-   "items": 5,
-   "updated": "2026-11-24T19:21+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "LG Electronics India Ltd. manufactures and sells consumer electronics and appliances in India.",
+   "basis": "d8b5bd0220c8",
+   "items": 2,
+   "updated": "2026-11-25T15:31+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "ICICIBANK": {
    "summary": "ICICI Bank shares jumped about 4% to a record high, leading a broader rally in bank stocks, but analysts note that valuation concerns favor peers like HDFC and Axis.",
@@ -890,6 +954,22 @@
    "updated": "2026-11-25T08:17+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "ENGINERSIN": {
+   "summary": "PulsEdge flagged that Engineers India Ltd. is part of the Nifty 500 index, which tracks India's 500 largest listed companies. The recent news items flagged in the system actually relate to other companies, specifically Vascon Engineers and Eppeltone Engineers, rather than Engineers India Ltd. itself.",
+   "why": "This distinction matters because news about other construction or engineering firms does not directly change the financial performance or share value of Engineers India Ltd.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "Official announcements from Engineers India Ltd. regarding its own new orders or contracts.",
+    "Quarterly financial results to see how the company is performing independently of peer news.",
+    "Updates on the Nifty 500 index composition to confirm the company's continued inclusion."
+   ],
+   "about": "Engineers India Ltd. is a company in the construction sector.",
+   "basis": "a2149e9f901a",
+   "items": 5,
+   "updated": "2026-11-24T19:21+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "MAXHEALTH": {
    "summary": "Max Healthcare Institute Ltd. announced the resignation of a director and changes in its senior management personnel. These updates were filed with the stock exchange on November 23, 2026.",
    "why": "Changes in leadership can affect how the company is run and may influence how investors view its stability.",
@@ -921,22 +1001,6 @@
    "items": 2,
    "updated": "2026-11-25T17:12+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "LGEINDIA": {
-   "summary": "LG Electronics India’s promoter, LG Electronics Inc., intends to sell up to 2% of its shares in the open market to meet a minimum public‑shareholding rule by Dec 31 2026.",
-   "why": "The sale adds supply, which could pressure the share price for existing investors.",
-   "upside": "A broader market rally could absorb the extra supply and support the price.",
-   "downside": "The additional share supply may push the price lower.",
-   "watch": [
-    "Execution of the promoter’s 2% share sale",
-    "Share price reaction to the sale",
-    "Consumer durables sector index performance"
-   ],
-   "about": "LG Electronics India Ltd. manufactures and sells consumer electronics and appliances in India.",
-   "basis": "d8b5bd0220c8",
-   "items": 2,
-   "updated": "2026-11-25T15:31+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "POONAWALLA": {
    "summary": "Poonawalla Fincorp issued ₹500 crore of 9.15% non‑convertible debentures that mature in November 2031, adding new debt to its balance sheet. The Financials sector index fell 2.5% in the last session but was up 0.5% over the past five sessions.",
@@ -1098,22 +1162,6 @@
    "updated": "2026-11-24T06:49+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BSE": {
-   "summary": "BSE Ltd. is part of the Financial Services sector, which recently dropped 2.5% in one day but gained 0.5% over the last five days. Recent market news highlighted that several other stocks hit their lowest prices in a year, suggesting some overall market weakness.",
-   "why": "Because BSE is a major financial company, its share price often moves in line with the broader financial sector. If the sector continues to fall, BSE shares may also see pressure, even if the company itself has no specific bad news.",
-   "upside": "The financial sector showed a small gain over the last five days, which could suggest a slight recovery in investor confidence.",
-   "downside": "Broader market pressure could push prices lower, and the recent sector drop indicates that investors are currently cautious about financial stocks.",
-   "watch": [
-    "Whether the Financial Services sector continues to recover or falls further",
-    "If more stocks in the market hit their 52-week lows",
-    "General economic news that might affect investor confidence"
-   ],
-   "about": "BSE Ltd. is one of India's 50 largest listed companies and operates in the Financial Services sector.",
-   "basis": "9236c31ec4fe",
-   "items": 1,
-   "updated": "2026-11-25T15:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "COCHINSHIP": {
    "summary": "Cochin Shipyard shares recently fell to their lowest point in the past year. This drop happened alongside other major Indian companies hitting similar lows.",
    "why": "If you own these shares, their value has decreased significantly over the last 12 months. This indicates that the market is currently less confident in the stock's performance.",
@@ -1194,21 +1242,21 @@
    "updated": "2026-11-25T15:31+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "EICHERMOT": {
-   "summary": "Eicher Motors signed a Rs 1,000 crore MoU with the Tamil Nadu government to expand its electric‑vehicle ecosystem, while its stock hit an all‑time high after a 17% rally driven by strong premium bike sales.",
-   "why": "The EV partnership could shape future growth, and the recent price surge reflects investor confidence that may affect share value.",
-   "upside": "Successful rollout of the EV ecosystem could boost earnings and market share.",
-   "downside": "The MoU is non‑binding and may take years to materialise, and the recent rally could trigger profit‑taking.",
+  "MCX": {
+   "summary": "Gold and silver prices on the Multi Commodity Exchange have recently fallen by about 1%. This drop in commodity values may lead to lower trading activity on the platform.",
+   "why": "MCX earns money from fees when people trade commodities, so less trading activity can reduce its income.",
+   "upside": "If commodity prices rebound quickly, trading activity and MCX's earnings could increase.",
+   "downside": "If silver and gold prices continue to fall, MCX's revenues may decline.",
    "watch": [
-    "Progress on the Tamil Nadu EV MoU",
-    "Sustaining premium bike sales momentum",
-    "Sector index trends and any profit‑taking activity"
+    "Future price movements of gold and silver on MCX",
+    "Overall trading volume on the exchange",
+    "Performance of the broader Financials sector index"
    ],
-   "about": "Eicher Motors manufactures motorcycles under the Royal Enfield brand and commercial vehicles.",
-   "basis": "e11cf964a522",
-   "items": 3,
-   "updated": "2026-11-25T14:47+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "MCX is a platform where people trade commodities like gold and silver.",
+   "basis": "b98722051240",
+   "items": 2,
+   "updated": "2026-11-25T11:30+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "CLEANMAX": {
    "summary": "Clean Max Enviro Energy Solutions has announced it is acquiring another business while also selling off a subsidiary and other assets. These moves happened within the last two days, signaling a major shift in the company's structure.",
@@ -1226,21 +1274,21 @@
    "updated": "2026-11-25T15:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "MCX": {
-   "summary": "Gold and silver prices on the Multi Commodity Exchange have recently fallen by about 1%. This drop in commodity values may lead to lower trading activity on the platform.",
-   "why": "MCX earns money from fees when people trade commodities, so less trading activity can reduce its income.",
-   "upside": "If commodity prices rebound quickly, trading activity and MCX's earnings could increase.",
-   "downside": "If silver and gold prices continue to fall, MCX's revenues may decline.",
+  "EICHERMOT": {
+   "summary": "Eicher Motors signed a Rs 1,000 crore MoU with the Tamil Nadu government to expand its electric‑vehicle ecosystem, while its stock hit an all‑time high after a 17% rally driven by strong premium bike sales.",
+   "why": "The EV partnership could shape future growth, and the recent price surge reflects investor confidence that may affect share value.",
+   "upside": "Successful rollout of the EV ecosystem could boost earnings and market share.",
+   "downside": "The MoU is non‑binding and may take years to materialise, and the recent rally could trigger profit‑taking.",
    "watch": [
-    "Future price movements of gold and silver on MCX",
-    "Overall trading volume on the exchange",
-    "Performance of the broader Financials sector index"
+    "Progress on the Tamil Nadu EV MoU",
+    "Sustaining premium bike sales momentum",
+    "Sector index trends and any profit‑taking activity"
    ],
-   "about": "MCX is a platform where people trade commodities like gold and silver.",
-   "basis": "b98722051240",
-   "items": 2,
-   "updated": "2026-11-25T11:30+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Eicher Motors manufactures motorcycles under the Royal Enfield brand and commercial vehicles.",
+   "basis": "e11cf964a522",
+   "items": 3,
+   "updated": "2026-11-25T14:47+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "TMCV": {
    "summary": "Tata Motors is raising the prices of its cars and SUVs by an average of 0.5% starting December 1, 2026. This move is a response to rising costs for the materials used to build the vehicles.",
@@ -1288,54 +1336,6 @@
    "basis": "72f572801305",
    "items": 2,
    "updated": "2026-11-23T14:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "MARUTI": {
-   "summary": "Maruti Suzuki’s shares rose about 2% after the company announced a price hike, while the broader market showed mixed moves. The stock is also being highlighted as a relatively safer bet amid recent market volatility.",
-   "why": "Higher prices could lift earnings, but they may also curb demand among price‑sensitive buyers.",
-   "upside": "Earnings could improve if the price increase sustains without a major drop in sales.",
-   "downside": "Demand could shift to competitors if buyers react negatively to higher prices, and overall market volatility could pull the stock down.",
-   "watch": [
-    "Impact of price hike on sales volumes",
-    "Broader market volatility and its effect on the stock",
-    "Auto sector performance trends"
-   ],
-   "about": "Maruti Suzuki India Ltd. manufactures and sells passenger cars in India.",
-   "basis": "de2624923622",
-   "items": 4,
-   "updated": "2026-11-23T13:46+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "LTTS": {
-   "summary": "L&T Technology Services addressed reports of a cybersecurity incident and launched a new software tool called SDVault.ai for the automotive sector. The company is part of the IT sector, which has seen recent price fluctuations.",
-   "why": "Shareholders need to know if the security reports are serious because trust is key for a tech firm. The new product launch shows the company is trying to grow, but it is too early to know if customers will buy it.",
-   "upside": "The new SDVault.ai tool could help the company attract new customers in the automotive industry.",
-   "downside": "If the cybersecurity incident is confirmed to be severe, it could hurt investor confidence and lead to a drop in the share price.",
-   "watch": [
-    "Official updates on the cybersecurity incident",
-    "Customer response to the new SDVault.ai product",
-    "Performance of the broader IT sector index"
-   ],
-   "about": "L&T Technology Services is an Information Technology company listed in India's Nifty 500 index.",
-   "basis": "c80099c38a30",
-   "items": 2,
-   "updated": "2026-11-23T13:00+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "TITAN": {
-   "summary": "Titan’s shares slipped as gold prices fell, causing short‑term volatility. The broader consumer durables index was slightly down, showing modest weakness.",
-   "why": "Shareholders see the stock move with gold because the company’s jewellery business is tied to gold price swings.",
-   "upside": "A rebound in gold prices could improve sentiment and lift the share price.",
-   "downside": "Further declines in gold prices could keep pressure on the stock.",
-   "watch": [
-    "Gold price movements",
-    "Consumer durables index performance",
-    "Any upcoming Titan earnings or sales data"
-   ],
-   "about": "Titan Company makes jewellery, watches and related accessories.",
-   "basis": "111d599213ba",
-   "items": 2,
-   "updated": "2026-11-23T11:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "CANHLIFE": {
