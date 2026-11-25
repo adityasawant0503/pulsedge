@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-25T13:15:41+05:30",
+ "updated": "2026-11-25T13:32:25+05:30",
  "summary": {
-  "calls": 2178,
-  "scored_calls": 982,
+  "calls": 2181,
+  "scored_calls": 985,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,51 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "cf3c20d471ced97a",
+   "symbol": "LT",
+   "time": "2026-11-25T13:19:52+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "L&T jumps over 2% on ₹2,500 crore battery storage project win in Gujarat",
+   "url": "https://www.business-standard.com/markets/news/l-t-jumps-over-2-on-2-500-crore-battery-storage-project-win-in-gujarat-126112500448_1.html",
+   "alert_px": 4132.3,
+   "alert_move": 0.79,
+   "alert_at": "2026-11-25T13:31:57+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "11269513e87af7fb",
+   "symbol": "WELSPUNLIV",
+   "time": "2026-11-25T13:13:43+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Welspun Living up 110% YTD; MOFSL bets on capex-led growth, sees 18% upside",
+   "url": "https://www.business-standard.com/markets/news/welspun-living-up-110-ytd-mofsl-bets-on-capex-led-growth-sees-18-upside-126112500444_1.html",
+   "alert_px": 276.72,
+   "alert_move": 2.2,
+   "alert_at": "2026-11-25T13:31:57+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "11269513e87af7fb",
+   "symbol": "MOTILALOFS",
+   "time": "2026-11-25T13:13:43+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Welspun Living up 110% YTD; MOFSL bets on capex-led growth, sees 18% upside",
+   "url": "https://www.business-standard.com/markets/news/welspun-living-up-110-ytd-mofsl-bets-on-capex-led-growth-sees-18-upside-126112500444_1.html",
+   "alert_px": 1228.75,
+   "alert_move": -0.51,
+   "alert_at": "2026-11-25T13:31:57+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "f9cc7fce42288d0d",
    "symbol": "JIOFIN",

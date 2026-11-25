@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T13:00+05:30",
+ "updated": "2026-11-25T13:32+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "L&T secured a 10‑25 billion rupee contract, while Goldman Sachs and Societe Generale bought a small stake in Lenskart. APL Apollo Tubes shares fell sharply after a Tata Steel stake purchase and broker downgrades, and BEML CEO said many defence orders are expected. The market saw a mix of gains in IT and insurance stocks but a drop in metals and banks, with Asian markets tumbling on AI and tariff worries. A new government scheme for power distribution companies was reported, and foreign funds reduced their long positions in Indian futures.",
+  "summary": "L&T shares rose after the company won two major contracts, including a large battery storage project in Gujarat. The metals sector fell sharply as Tata Steel and APL Apollo shares dropped following a new acquisition deal and lower broker ratings. Foreign investors reduced their bullish bets, cutting their long positions in index futures from 34% to 20%. Jupiter Wagons saw a sharp rebound after announcing a partnership to build metro trains in India.",
   "themes": [
-   "Contract wins and acquisitions driving company outlook",
-   "Sector swings with IT and insurance up, metals and banks down",
-   "Global market sentiment affecting Indian stocks"
+   "Infrastructure and railway companies gained attention through new contracts and partnerships.",
+   "Steel stocks faced pressure due to concerns over debt and valuation after a major acquisition.",
+   "Foreign investors became more cautious, reducing their long-term bets on the market."
   ],
   "watch": [
-   "Impact of L&T’s new contract on its earnings",
-   "Effects of Tata Steel’s stake in APL Apollo on both companies",
-   "Foreign funds’ shift from 34% to 20% long positions"
+   "Whether L&T can deliver its new contracts on time to support future profits.",
+   "How Tata Steel manages its debt levels after buying a stake in APL Apollo.",
+   "If Jupiter Wagons can successfully execute its new metro train manufacturing plans."
   ],
   "date": "2026-11-25",
-  "basis": "de3d3528faa6",
-  "updated": "2026-11-25T12:45+05:30",
-  "model": "openai/gpt-oss-20b",
-  "items": 58
+  "basis": "1f34b23709e2",
+  "updated": "2026-11-25T13:32+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 67
  },
  "stocks": {
   "LENSKART": {
@@ -124,19 +124,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "LT": {
-   "summary": "Larsen & Toubro has recently announced winning new contracts, including one valued between 10 and 25 billion rupees. These additions to its order book suggest ongoing demand for its construction services.",
-   "why": "New contracts mean more future work for the company, which can lead to higher revenue and earnings for shareholders over time.",
-   "upside": "The new contracts could boost the company's income and profits as the work is completed.",
-   "downside": "Delays in project execution might affect the company's cash flow, and some orders could potentially be cancelled.",
+   "summary": "Larsen & Toubro has recently won several new contracts, including a 2,500 crore rupee battery storage project in Gujarat and another deal worth 10 to 25 billion rupees. These wins add to the company's list of upcoming work.",
+   "why": "New contracts mean the company has more future income, which can support its financial health and value for shareholders.",
+   "upside": "Successful completion of these projects could boost revenue and support growth in renewable energy areas.",
+   "downside": "Delays in these projects could hurt profit margins or cash flow.",
    "watch": [
-    "Updates on the progress of the 10-25 billion rupee contract",
-    "Announcements regarding the total value of the recent new orders",
-    "Any reports of project delays or cancellations"
+    "Updates on the start date of the Gujarat battery storage project",
+    "Details on the specific scope of the 10-25 billion rupee contract",
+    "Any announcements about project delays or cancellations"
    ],
-   "about": "Larsen & Toubro is a major Indian construction company and one of the 50 largest listed companies in the Nifty 50 index.",
-   "basis": "9f15a1110956",
-   "items": 3,
-   "updated": "2026-11-25T11:30+05:30",
+   "about": "Larsen & Toubro is a major construction company in India.",
+   "basis": "1cea0c63280e",
+   "items": 4,
+   "updated": "2026-11-25T13:32+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "BRIGADE": {
@@ -410,6 +410,22 @@
    "updated": "2026-11-24T15:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "WELSPUNLIV": {
+   "summary": "Welspun Living’s shares have jumped over 110% year‑to‑date as the company rolls out capex‑driven growth plans and targets ₹1,500 cr revenue from its domestic home‑brand portfolio, aiming for more than 20% annual growth.",
+   "why": "If the new investments boost sales and lower costs, earnings could rise for shareholders, but execution and supply risks remain.",
+   "upside": "Successful execution of the capex projects could lift earnings and sustain the share‑price rally.",
+   "downside": "Delays in capex, cotton supply shortages, or weaker consumer demand could hurt margins and growth.",
+   "watch": [
+    "Capex project execution",
+    "Cotton availability and pricing",
+    "Consumer demand trends for home textiles"
+   ],
+   "about": "Welspun Living manufactures home textiles and related products.",
+   "basis": "3b7bde7b1b78",
+   "items": 3,
+   "updated": "2026-11-25T13:32+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "HYUNDAI": {
    "summary": "Hyundai Motor India announced a price increase of up to INR 8,000 per vehicle effective Dec 1, 2026, citing higher input costs. The move could boost profit per car but may also dampen demand if buyers react negatively.",
    "why": "Shareholders need to watch how the price hike affects sales volume and margins.",
@@ -457,6 +473,21 @@
    "items": 2,
    "updated": "2026-11-23T12:15+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "MOTILALOFS": {
+   "summary": "Motilal Oswal Financial Services is part of the Nifty 500 index. Recent news highlighted a separate company, Welspun Living, which has seen strong share price growth and plans for new investments.",
+   "why": "This matters because it shows the broader financial sector context, though the specific news about Welspun Living does not directly describe Motilal Oswal's own business performance.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "How the Financials sector index performs in the coming days",
+    "Any future announcements specifically from Motilal Oswal Financial Services"
+   ],
+   "about": "Motilal Oswal Financial Services operates in the Financial Services sector.",
+   "basis": "9d59d609cf5d",
+   "items": 1,
+   "updated": "2026-11-25T13:32+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "ADANIPOWER": {
    "summary": "The government is reportedly planning a new 50,000 crore rupee fund to support power distribution companies. This news was flagged because better-funded distributors may buy more electricity from producers like Adani Power.",
@@ -969,22 +1000,6 @@
    "items": 2,
    "updated": "2026-11-25T11:15+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "WELSPUNLIV": {
-   "summary": "Welspun Living is aiming for fast growth in its domestic home brands, targeting high annual growth rates in the medium term. New company plans also point toward potential improvements in overall profits and business growth.",
-   "why": "This matters because faster growth than the broader market shows the company is gaining popularity, which is important for long-term owners. However, success depends on whether these plans actually lower costs and boost sales.",
-   "upside": "Successful cost-lowering efforts and strong sales growth could lead to better profits for the company.",
-   "downside": "Cotton availability issues and softer consumer demand could hurt profit margins and stop medium-term targets from materializing.",
-   "watch": [
-    "Cotton availability and its impact on margins",
-    "Progress on domestic brand revenue targets",
-    "Changes in consumer demand"
-   ],
-   "about": "Welspun Living Ltd. is a textiles company included in India's Nifty 500 index.",
-   "basis": "f441a3171092",
-   "items": 2,
-   "updated": "2026-11-25T10:15+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "MCX": {
    "summary": "Gold and silver prices on the Multi Commodity Exchange have recently fallen by about 1%. This drop in commodity values may lead to lower trading activity on the platform.",
