@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-25T11:16:19+05:30",
+ "updated": "2026-11-25T11:31:18+05:30",
  "summary": {
-  "calls": 2155,
-  "scored_calls": 959,
+  "calls": 2160,
+  "scored_calls": 964,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,66 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "d25dbca11f4e9387",
+   "symbol": "APLAPOLLO",
+   "time": "2026-11-25T11:27:29+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Tata Steel share price: What should investors do after APL Apollo Tubes ₹5,825 crore deal; buy, sell or hold?",
+   "url": "https://www.livemint.com/market/stock-market-news/tata-steel-share-price-what-should-investors-do-after-apl-apollo-tubes-rs-5-825-crore-deal-buy-sell-or-hold-11795585659415.html",
+   "alert_px": 1520.5,
+   "alert_move": -8.95,
+   "alert_at": "2026-11-25T11:30:41+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "d25dbca11f4e9387",
+   "symbol": "TATASTEEL",
+   "time": "2026-11-25T11:27:29+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Tata Steel share price: What should investors do after APL Apollo Tubes ₹5,825 crore deal; buy, sell or hold?",
+   "url": "https://www.livemint.com/market/stock-market-news/tata-steel-share-price-what-should-investors-do-after-apl-apollo-tubes-rs-5-825-crore-deal-buy-sell-or-hold-11795585659415.html",
+   "alert_px": 163.63,
+   "alert_move": 0.39,
+   "alert_at": "2026-11-25T11:30:41+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "a8f10eaf47bc1315",
+   "symbol": "LT",
+   "time": "2026-11-25T11:22:30+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "L&T: CO WINS SIGNIFICANT CONTRACT || SIGNIFICANT CONTRACT VALUES BETWEEN 10B TO 25B RUPEES",
+   "url": "https://t.me/Indiaredboxglobal/10009",
+   "alert_px": 4163.0,
+   "alert_move": 1.54,
+   "alert_at": "2026-11-25T11:22:54+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "6cf084b8e59cd9a7",
+   "symbol": "AAVAS",
+   "time": "2026-11-25T11:19:41+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Aavas Financiers Limited: AAVAS FINANCIERS LIMITED has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteration Of Capital and Fund Raising-",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_16760_WebXMLFile_20261125_111941050.xml",
+   "alert_px": 1081.3,
+   "alert_move": -0.91,
+   "alert_at": "2026-11-25T11:30:41+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "f370be5e48fa2162",
    "symbol": "ADANIPOWER",
@@ -276,6 +336,21 @@
    "source": "NSE Announcements",
    "headline": "Cipla Limited: Cipla Limited has informed the Exchange regarding a press release dated November 25, 2026, titled \"U.S. FDA Approves First ANDA Generic Flovent® ",
    "url": "https://nsearchives.nseindia.com/corporate/CIPLA_25112026084353_Press_Release_Product_Launch_SE_Flovent_Signed.pdf"
+  },
+  {
+   "id": "8260279766c9158b",
+   "symbol": "MCX",
+   "time": "2026-11-25T08:19:04+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Gold Silver Rates Live Updates: Gold, silver fall up to 1% on MCX. Check key levels and estimates",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/live-updates-gold-rate-today-25th-november-24k-22k-20k-18-carat-mcx-gold-silver-price-in-delhi-hyderabad-chennai-bengaluru-citywise/liveblog/136146334.cms",
+   "alert_px": 3561.3,
+   "alert_move": -0.57,
+   "alert_at": "2026-11-25T11:30:41+05:30",
+   "alert_delay": 900
   },
   {
    "id": "72c149bdeb3b1fbb",
