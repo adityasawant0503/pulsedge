@@ -1,7 +1,56 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-25T15:14:11+05:30",
+ "updated": "2026-11-25T15:18:12+05:30",
  "items": [
+  {
+   "id": "aa12f63adf21e899",
+   "time": "2026-11-25T15:17:52+05:30",
+   "headline": "LG ELECTRONICS INDIA LTD: PROMOTER LG ELECTRONICS INC. TO SELL UP TO 2% OF EQUITY SHARES IN OPEN MARKET; AIMING TO COMPLY WITH MINIMUM PUBLIC SHAREHOLDING REQUIREMENT BY DEC 31, 2026.",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10045",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "LGEINDIA",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Technology"
+   ],
+   "impact": 45,
+   "confidence": 70,
+   "category": "corporate",
+   "action": "Watch for price reaction after the sale announcement; monitor volume and support levels.",
+   "reason": [
+    "Kept at Watch: uncertain materiality",
+    "Promoter divestment adds supply, potentially pressuring the share price.",
+    "Dilution may reduce earnings per share for existing shareholders."
+   ],
+   "risks": [
+    "Broad market rally could offset the negative impact.",
+    "If the sale is executed gradually, price impact may be limited."
+   ],
+   "plain": "The promoter plans to sell up to 2% of its shares to meet a public‑holding rule.",
+   "why": "Selling shares increases supply, which can push the price lower for current shareholders.",
+   "check": "Observe next‑day trading volume and price movement after the filing.",
+   "original": "LG ELECTRONICS INDIA LTD: PROMOTER LG ELECTRONICS INC. TO SELL UP TO 2% OF EQUITY SHARES IN OPEN MARKET; AIMING TO COMPLY WITH MINIMUM PUBLIC SHAREHOLDING REQUIREMENT BY DEC 31, 2026.",
+   "latency": 20.3,
+   "lane": "fast",
+   "checked": "uncertain materiality",
+   "quotes": {
+    "LGEINDIA": {
+     "px": 1828.0,
+     "prev": 1777.5,
+     "move": 2.84,
+     "at": "2026-11-25T15:18:13+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "ac285718f7951672",
    "time": "2026-11-25T15:12:52+05:30",
