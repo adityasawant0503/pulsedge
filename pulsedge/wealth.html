@@ -83,7 +83,7 @@ form{display:grid;gap:10px;max-width:720px}
     <h1>Every client holding's news, sorted and explained, about a minute after it lands.</h1>
     <p class="lede">PulsEdge reads NSE announcements, SEBI and RBI circulars and four newsrooms through the trading day for the Nifty 500. It sets aside the routine filings and explains the rest in plain English. Your advisers know what matters for each client's portfolio before the client calls, and clients can get the same view of their own holdings.</p>
     <div class="cta">
-      <a class="btn" href="https://wa.me/918073708940?text=Hi%20Aditya%2C%20I%27ve%20seen%20the%20PulsEdge%20preview.%20Can%20we%20set%20up%20a%20demo%3F" target="_blank" rel="noopener">Talk to Aditya on WhatsApp</a>
+      <a class="btn" href="#talk">Book a demo</a>
       <a class="ghost" href="calendar.html">Open the live product</a>
     </div>
     <div class="facts">
@@ -190,7 +190,7 @@ form{display:grid;gap:10px;max-width:720px}
     </div>
     <textarea id="wf-msg" placeholder="What would you like to see in the demo? (optional)" aria-label="Message"></textarea>
     <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
-    <div class="cta"><button class="btn" type="submit">Request a demo</button><a class="wa" href="https://wa.me/918073708940?text=Hi%20Aditya%2C%20I%27ve%20seen%20the%20PulsEdge%20preview.%20Can%20we%20set%20up%20a%20demo%3F" target="_blank" rel="noopener">WhatsApp +91 80737 08940</a></div>
+    <div class="cta"><button class="btn" type="submit">Request a demo</button><a class="wa" href="https://wa.me/918073708940?text=Hello%2C%20I%27ve%20seen%20the%20PulsEdge%20preview%20for%20wealth%20teams.%20Could%20we%20set%20up%20a%20demo%3F" target="_blank" rel="noopener">WhatsApp +91 80737 08940</a></div>
     <p class="note" id="wf-note" aria-live="polite"></p>
   </form>
 
@@ -217,7 +217,7 @@ form{display:grid;gap:10px;max-width:720px}
     fetch("https://formspree.io/f/mkjoaaga",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
       body:JSON.stringify({source:"wealth_preview",name:name,firm:firm,email:email,phone:$("wf-phone").value.trim(),
         message:$("wf-msg").value.trim(),_subject:"PulsEdge demo request (wealth preview): "+firm})})
-      .then(function(r){if(!r.ok)throw 0;say("Thanks, "+name.split(" ")[0]+". Aditya will reply within one working day.","ok");f.reset()})
+      .then(function(r){if(!r.ok)throw 0;say("Thanks, "+name.split(" ")[0]+". We'll reply within one working day.","ok");f.reset()})
       .catch(function(){say("Couldn't send. WhatsApp +91 80737 08940 instead.","err")})
       .then(function(){btn.disabled=false});
   });
