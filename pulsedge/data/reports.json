@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T12:30+05:30",
+ "updated": "2026-11-25T12:45+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "L&T secured a 10‑25 billion rupee contract, while Lenskart saw a 1% stake bought by Goldman Sachs and SocGen. APL Apollo Tubes shares fell 15% after a downgrade linked to Tata Steel’s 5,825 crore stake, and Tata Steel’s own share price was affected by the deal. BEML’s CEO said many defence and overseas orders are expected, and Jupiter Wagons rose 12% after a joint venture to build metro trains. Global market pressure from falling Asian stocks and oil prices also weighed on the session.",
+  "summary": "L&T secured a 10‑25 billion rupee contract, while Goldman Sachs and Societe Generale bought a small stake in Lenskart. APL Apollo Tubes shares fell sharply after a Tata Steel stake purchase and broker downgrades, and BEML CEO said many defence orders are expected. The market saw a mix of gains in IT and insurance stocks but a drop in metals and banks, with Asian markets tumbling on AI and tariff worries. A new government scheme for power distribution companies was reported, and foreign funds reduced their long positions in Indian futures.",
   "themes": [
-   "Corporate deals and acquisitions affecting shares",
-   "Investor confidence influenced by large institutional moves",
-   "Global market and commodity price movements impacting Indian stocks"
+   "Contract wins and acquisitions driving company outlook",
+   "Sector swings with IT and insurance up, metals and banks down",
+   "Global market sentiment affecting Indian stocks"
   ],
   "watch": [
-   "Tata Steel’s integration and execution risk after buying stake in APL Apollo Tubes",
-   "Potential government scheme for power distribution companies",
-   "Oil price fluctuations and their impact on oil producers"
+   "Impact of L&T’s new contract on its earnings",
+   "Effects of Tata Steel’s stake in APL Apollo on both companies",
+   "Foreign funds’ shift from 34% to 20% long positions"
   ],
   "date": "2026-11-25",
-  "basis": "eced2103b046",
-  "updated": "2026-11-25T11:46+05:30",
+  "basis": "de3d3528faa6",
+  "updated": "2026-11-25T12:45+05:30",
   "model": "openai/gpt-oss-20b",
-  "items": 42
+  "items": 58
  },
  "stocks": {
   "LENSKART": {
@@ -761,6 +761,22 @@
    "items": 3,
    "updated": "2026-11-24T06:49+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "POONAWALLA": {
+   "summary": "Poonawalla Fincorp issued ₹500 crore of 9.15% non‑convertible debentures that mature in November 2031, adding new debt to its balance sheet. The Financials sector index fell 2.5% in the last session but was up 0.5% over the past five sessions.",
+   "why": "The new debt increases leverage, which could affect earnings and therefore share value for existing investors.",
+   "upside": "If the capital raised from the debentures is deployed effectively, it could support earnings growth.",
+   "downside": "Higher debt levels may pressure earnings and cash flow.",
+   "watch": [
+    "Interest payment schedule and cash‑flow impact of the 9.15% debentures",
+    "Sector index performance and broader financial market trends",
+    "Any updates on how the raised capital is being utilized"
+   ],
+   "about": "Poonawalla Fincorp Ltd. is an Indian financial services company.",
+   "basis": "6e20b50a153a",
+   "items": 2,
+   "updated": "2026-11-25T12:45+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "SIEMENS": {
    "summary": "Siemens Ltd. said its profitability is being hit by volatile commodity prices and foreign‑exchange movements, keeping margins under pressure. The company gave no timeline for when margins might normalise.",
