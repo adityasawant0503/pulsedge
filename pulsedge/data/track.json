@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-25T15:16:35+05:30",
+ "updated": "2026-11-25T15:32:14+05:30",
  "summary": {
-  "calls": 2202,
-  "scored_calls": 1006,
+  "calls": 2204,
+  "scored_calls": 1008,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,32 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "aa12f63adf21e899",
+   "symbol": "LGEINDIA",
+   "time": "2026-11-25T15:17:52+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "LG ELECTRONICS INDIA LTD: PROMOTER LG ELECTRONICS INC. TO SELL UP TO 2% OF EQUITY SHARES IN OPEN MARKET; AIMING TO COMPLY WITH MINIMUM PUBLIC SHAREHOLDING REQUI",
+   "url": "https://t.me/Indiaredboxglobal/10045",
+   "alert_px": 1828.0,
+   "alert_move": 2.84,
+   "alert_at": "2026-11-25T15:18:13+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "c3742d9f568364b0",
+   "symbol": "LGEINDIA",
+   "time": "2026-11-25T15:15:05+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "LG Electronics India Limited: LG Electronics India Limited has informed the Exchange regarding 'Proposed sale of equity shares of the Company by LG Electronics ",
+   "url": "https://nsearchives.nseindia.com/corporate/LGEINDIA_25112026151138_Shares_Sale_by_Promoter.pdf"
+  },
   {
    "id": "3be3538404ea8b65",
    "symbol": "INFY",

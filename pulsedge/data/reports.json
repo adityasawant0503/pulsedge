@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T15:15+05:30",
+ "updated": "2026-11-25T15:31+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -857,6 +857,22 @@
    "updated": "2026-11-24T06:49+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "LGEINDIA": {
+   "summary": "LG Electronics India’s promoter, LG Electronics Inc., intends to sell up to 2% of its shares in the open market to meet a minimum public‑shareholding rule by Dec 31 2026.",
+   "why": "The sale adds supply, which could pressure the share price for existing investors.",
+   "upside": "A broader market rally could absorb the extra supply and support the price.",
+   "downside": "The additional share supply may push the price lower.",
+   "watch": [
+    "Execution of the promoter’s 2% share sale",
+    "Share price reaction to the sale",
+    "Consumer durables sector index performance"
+   ],
+   "about": "LG Electronics India Ltd. manufactures and sells consumer electronics and appliances in India.",
+   "basis": "d8b5bd0220c8",
+   "items": 2,
+   "updated": "2026-11-25T15:31+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "POONAWALLA": {
    "summary": "Poonawalla Fincorp issued ₹500 crore of 9.15% non‑convertible debentures that mature in November 2031, adding new debt to its balance sheet. The Financials sector index fell 2.5% in the last session but was up 0.5% over the past five sessions.",
    "why": "The new debt increases leverage, which could affect earnings and therefore share value for existing investors.",
@@ -1050,20 +1066,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "INFY": {
-   "summary": "Infosys shares rose while the broader market fell, as investors shift money from pricey AI tech to cheaper Indian software firms. The IT sector index gained 1.3% in the last session but is down 1.9% over five sessions.",
-   "why": "This shift could support Infosys share prices and the stock is being viewed as a safer bet in a volatile market.",
-   "upside": "If investors keep moving funds from expensive AI names to cost‑effective Indian IT firms, Infosys could see further price support.",
-   "downside": "A reversal in global AI sentiment or broader market volatility could pull the stock down.",
+   "summary": "Infosys announced it has become the world’s first organization to achieve CMMI AI Maturity Level 5, a top AI certification. The IT sector index rose 1.7% in the last session, and Indian IT stocks are gaining attention as investors shift from expensive AI tech to cheaper software firms.",
+   "why": "Shareholders may see that the AI certification positions Infosys as a leader in AI, which could help it win future business.",
+   "upside": "The certification could help Infosys win more business from other companies.",
+   "downside": "Certification alone does not guarantee immediate revenue growth.",
    "watch": [
-    "Global AI sentiment and its effect on Indian IT stocks",
-    "Overall market volatility in the Sensex/Nifty",
-    "Short‑term movement of the IT sector index"
+    "Impact of the AI certification on new business wins",
+    "Changes in market sentiment toward AI technology",
+    "Movement of the IT sector index in the coming sessions"
    ],
-   "about": "Infosys Ltd. provides information technology services and consulting.",
-   "basis": "72f572801305",
-   "items": 2,
-   "updated": "2026-11-23T14:15+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Infosys Ltd. is an information technology company.",
+   "basis": "76c52aee6922",
+   "items": 4,
+   "updated": "2026-11-25T15:31+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "MARUTI": {
    "summary": "Maruti Suzuki’s shares rose about 2% after the company announced a price hike, while the broader market showed mixed moves. The stock is also being highlighted as a relatively safer bet amid recent market volatility.",
