@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>try{var t=localStorage.getItem("th");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PulsEdge for Wealth Teams</title>
+<!-- A preview to share one to one with wealth and advisory teams: features only, no prices. Not linked from the site
+     and not indexed; prices for firms are on business.html once a conversation starts. -->
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PulsEdge">
+<meta property="og:title" content="PulsEdge for wealth and advisory teams">
+<meta property="og:description" content="Every client holding's news, sorted and explained about a minute after it lands, with what's coming up for each stock. A preview for wealth teams.">
+<meta property="og:url" content="https://adityasawant0503.github.io/pulsedge/wealth.html">
+<meta property="og:image" content="https://adityasawant0503.github.io/pulsedge/assets/tour/calendar.jpg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1012">
+<meta property="og:image:alt" content="The PulsEdge news calendar: each day's market news and how the stocks moved after it">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="PulsEdge for wealth and advisory teams: NSE filings and market news on your clients' holdings, sorted and explained, with the dates ahead.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/doc.css">
+<style>
+.w.wide{max-width:1080px}
+.hero h1{font-size:clamp(28px,4.4vw,44px);line-height:1.12;letter-spacing:-.025em;margin:6px 0 14px;max-width:22ch}
+.lede{font-size:17px;line-height:1.55;max-width:62ch;margin:0 0 18px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:6px 0 0}
+.ghost{font:500 15px/1 var(--sans);text-decoration:none;border:1px solid var(--line);border-radius:10px;padding:13px 16px;color:var(--fg);background:var(--card)}
+.btn{text-decoration:none;display:inline-block}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:28px 0 8px}
+.facts>div{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--card)}
+.facts b{display:block;font:600 15px/1.3 var(--mono);letter-spacing:-.01em}
+.facts span{font-size:13.5px;color:var(--mute)}
+.feat{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:28px;align-items:center;margin:40px 0}
+.feat.flip{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+.feat.flip figure{order:-1}
+.feat h3{font-size:21px;letter-spacing:-.015em;margin:2px 0 8px;line-height:1.25}
+.feat p{margin:0 0 10px}
+.feat ul{margin:0;padding-left:20px}
+.feat li{margin-bottom:6px}
+figure{margin:0}
+figure img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line);box-shadow:0 1px 2px rgba(0,0,0,.2),0 24px 50px -24px rgba(20,10,60,.55);background:#0b0b10}
+figure img+img{margin-top:12px}
+figcaption{font-size:12.5px;color:var(--mute);margin-top:8px}
+.tag{font:600 11.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--pur)}
+.grid4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0}
+.grid4>div,.use>div{border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--card);box-shadow:var(--elev)}
+.grid4 h3,.use h3{margin:0 0 6px;font-size:16px}
+.grid4 p{margin:0;font-size:14.5px;color:var(--mute)}
+.use{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0}
+.use ul{margin:6px 0 0;padding-left:20px;font-size:15px}
+.use li{margin-bottom:6px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0;padding:0;list-style:none;counter-reset:s}
+.steps li{border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--card);counter-increment:s}
+.steps li::before{content:"0" counter(s);display:block;font:600 12px/1 var(--mono);color:var(--pur);margin-bottom:8px;letter-spacing:.08em}
+.steps b{display:block;margin-bottom:4px}
+.steps span{font-size:14.5px;color:var(--mute)}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+form{display:grid;gap:10px;max-width:720px}
+.wa{font:500 14px/1 var(--sans);text-decoration:none;border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--fg)}
+@media (max-width:860px){
+  .feat,.feat.flip{grid-template-columns:1fr;gap:16px;margin:28px 0}
+  .feat.flip figure{order:0}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid4,.use,.steps,.two{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<main class="w wide">
+  <div class="head">
+    <a href="#top" aria-label="PulsEdge"><img class="logo lt" src="assets/icon.png" alt="PulsEdge" width="44" height="44"><img class="logo dk" src="assets/icon-dark.png" alt="PulsEdge" width="44" height="44"></a>
+    <div class="r"><a href="#talk">Talk to us</a><a href="calendar.html">Open the product</a>
+      <button class="thm" id="thm" type="button" aria-label="Switch to dark mode"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true" hidden><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button></div>
+  </div>
+
+  <section class="hero" id="top">
+    <p class="kick">PulsEdge for wealth and advisory teams</p>
+    <h1>Every client holding's news, sorted and explained, about a minute after it lands.</h1>
+    <p class="lede">PulsEdge reads NSE announcements, SEBI and RBI circulars and four newsrooms through the trading day for the Nifty 500. It sets aside the routine filings and explains the rest in plain English. Your advisers know what matters for each client's portfolio before the client calls, and clients can get the same view of their own holdings.</p>
+    <div class="cta">
+      <a class="btn" href="https://wa.me/918073708940?text=Hi%20Aditya%2C%20I%27ve%20seen%20the%20PulsEdge%20preview.%20Can%20we%20set%20up%20a%20demo%3F" target="_blank" rel="noopener">Talk to Aditya on WhatsApp</a>
+      <a class="ghost" href="calendar.html">Open the live product</a>
+    </div>
+    <div class="facts">
+      <div><b>Nifty 500</b><span>every NSE filing and market headline</span></div>
+      <div><b>About a minute</b><span>from a filing to an explained signal</span></div>
+      <div><b>Before 9:15</b><span>the pre-market read, with GIFT Nifty</span></div>
+      <div><b>On the device</b><span>holdings never reach our servers</span></div>
+    </div>
+  </section>
+
+  <h2 class="kick">What your team gets</h2>
+
+  <div class="feat">
+    <div>
+      <span class="tag">The terminal</span>
+      <h3>Each filing and headline, sorted into what to read now, what to watch and what to skip</h3>
+      <p>Every item comes with why it matters and what to check next, in words a client understands.</p>
+      <ul>
+        <li>Search any NSE stock for a one-page brief on its recent news.</li>
+        <li>Ask PulsEdge about a company, a market term or the day, and get a plain-English answer.</li>
+        <li>For SEBI-registered firms there is a news-only edition, without the labels or direction arrows.</li>
+      </ul>
+    </div>
+    <figure><img src="assets/tour/terminal.jpg" width="1600" height="1012" alt="The PULSE terminal: the pre-market checklist with live prices on the left, and news items with plain-English explanations on the right" loading="lazy"><figcaption>The terminal on 25 November 2026, with the pre-market checklist on the left.</figcaption></figure>
+  </div>
+
+  <div class="feat flip">
+    <div>
+      <span class="tag">My stocks and the news calendar</span>
+      <h3>Each client's holdings, and what happened to them</h3>
+      <p>Add the stocks a client holds: type them, paste a holding summary or upload a broker's file. Everything narrows to their news.</p>
+      <ul>
+        <li>A month on one screen. Hover over a day for the brief; tap it for every story and why it mattered.</li>
+        <li>For each stock, how it moved on the day of the news and since, so a review call starts with facts.</li>
+        <li>One timeline per holding, with a dot on every day it was in the news.</li>
+      </ul>
+    </div>
+    <figure><img src="assets/tour/calendar-mine.jpg" width="1600" height="1012" alt="The news calendar in My stocks view: each day shows which holdings had news, with the day's stories and price moves on the right" loading="lazy"><img src="assets/tour/holdings.jpg" width="1600" height="736" alt="One timeline per holding, with dots on each day it had news" loading="lazy"><figcaption>November 2026 for a sample list of eight holdings.</figcaption></figure>
+  </div>
+
+  <div class="feat">
+    <div>
+      <span class="tag">Coming up</span>
+      <h3>The dates ahead, for each holding and for the market</h3>
+      <ul>
+        <li>Results dates and board meetings, and ex-dates for dividends, splits, bonuses and buybacks, from NSE.</li>
+        <li>RBI policy, US Fed decisions in Indian time, the Union Budget and F&amp;O expiry.</li>
+        <li>One tap adds them to Google, Apple or Outlook calendars, with a reminder the day before.</li>
+      </ul>
+    </div>
+    <figure><img src="assets/tour/coming-up.jpg" width="1600" height="438" alt="Coming up: RBI policy decision on 4 December, US Fed decision on 10 December, monthly F&amp;O expiry on 29 December" loading="lazy"></figure>
+  </div>
+
+  <div class="grid4">
+    <div><h3>Pre-market checklist</h3><p>GIFT Nifty's opening indication, the US close, Asia, the rupee, crude and India VIX, with prices that update live, before 9:15.</p></div>
+    <div><h3>Big money</h3><p>Bulk and block deals, foreign investor flows and their positioning in index futures, explained.</p></div>
+    <div><h3>Monthly portfolio report</h3><p>A review of the month for each holding, read and approved by us before it goes out, and saved as a PDF to share.</p></div>
+    <div><h3>Alerts as they happen</h3><p>A private Telegram channel with the items that need attention, a morning brief and an evening summary.</p></div>
+  </div>
+
+  <h2 class="kick">How firms use it</h2>
+  <div class="use">
+    <div>
+      <h3>For advisers and relationship managers</h3>
+      <ul>
+        <li>A morning read of what changed for their clients' holdings, before the market opens.</li>
+        <li>A ready answer when a client asks what happened to their stock.</li>
+        <li>Monthly review conversations built on each holding's news and price moves.</li>
+        <li>Seats can move between advisers during the year.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>For your clients: Client Edition</h3>
+      <ul>
+        <li>Clients see the news on their own holdings, with your firm's name on the welcome message.</li>
+        <li>Each client gets the monthly report on their holdings, for your advisers to walk them through.</li>
+        <li>Runs on the news-only edition.</li>
+        <li>Include it in your service, or decide what clients pay.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="kick">Built for a regulated firm</h2>
+  <ul>
+    <li>PulsEdge is a news and information service. It is not registered with SEBI as an investment adviser or research analyst, and it doesn't recommend buying, selling or holding any security.</li>
+    <li>Agreements are with the firm. We don't pay referral fees or commissions to employees or agents of SEBI-registered intermediaries, in line with SEBI's 2024 rules on associations with unregistered persons.</li>
+    <li>No client names, PANs or portfolios are needed. Watchlists stay on each adviser's device.</li>
+    <li>A compliance pack covers our sources, method, disclosures and data handling. Read the <a href="disclosures.html">disclosures</a>.</li>
+  </ul>
+
+  <h2 class="kick" id="talk">Next step</h2>
+  <ol class="steps">
+    <li><b>A 30-minute demo</b><span>With your team, on a call or in person in Bengaluru.</span></li>
+    <li><b>A free 30-day pilot</b><span>Three adviser seats. No payment and no commitment.</span></li>
+    <li><b>A proposal for your team</b><span>Sized to your advisers and clients, with one invoice a year.</span></li>
+  </ol>
+
+  <form id="wf" novalidate>
+    <div class="two">
+      <input type="text" id="wf-name" required placeholder="Your name" autocomplete="name" aria-label="Your name">
+      <input type="text" id="wf-firm" required placeholder="Firm" autocomplete="organization" aria-label="Firm">
+      <input type="email" id="wf-email" required placeholder="you@firm.com" autocomplete="email" aria-label="Work email">
+      <input type="tel" id="wf-phone" placeholder="Phone or WhatsApp" autocomplete="tel" aria-label="Phone or WhatsApp">
+    </div>
+    <textarea id="wf-msg" placeholder="What would you like to see in the demo? (optional)" aria-label="Message"></textarea>
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+    <div class="cta"><button class="btn" type="submit">Request a demo</button><a class="wa" href="https://wa.me/918073708940?text=Hi%20Aditya%2C%20I%27ve%20seen%20the%20PulsEdge%20preview.%20Can%20we%20set%20up%20a%20demo%3F" target="_blank" rel="noopener">WhatsApp +91 80737 08940</a></div>
+    <p class="note" id="wf-note" aria-live="polite"></p>
+  </form>
+
+  <footer>
+    <p>Educational information only. Not SEBI-registered investment advice. Trading involves substantial risk of loss. Screens show real market data from November 2026 and a sample list of holdings.</p>
+    <p><a href="disclosures.html">Disclosures</a> · <a href="privacy.html">Privacy</a> · <a href="contact.html">Contact</a></p>
+    <p>&copy; 2026 Aditya Sawant (PulsEdge) · Bengaluru, India</p>
+  </footer>
+</main>
+<script src="assets/theme.js"></script>
+<script>
+(function(){
+  var f=document.getElementById("wf"),note=document.getElementById("wf-note"),btn=f.querySelector("button");
+  function $(id){return document.getElementById(id)}
+  function say(t,c){note.textContent=t;note.className="note"+(c?" "+c:"")}
+  f.addEventListener("submit",function(e){
+    e.preventDefault();
+    var name=$("wf-name").value.trim(),firm=$("wf-firm").value.trim(),email=$("wf-email").value.trim();
+    if(name.length<2){say("Enter your name.","err");return}
+    if(firm.length<2){say("Enter your firm's name.","err");return}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){say("Enter a full email address.","err");return}
+    if(f.querySelector("[name=_gotcha]").value){say("Thanks, we'll be in touch.","ok");return}
+    btn.disabled=true;say("Sending…");
+    fetch("https://formspree.io/f/mkjoaaga",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
+      body:JSON.stringify({source:"wealth_preview",name:name,firm:firm,email:email,phone:$("wf-phone").value.trim(),
+        message:$("wf-msg").value.trim(),_subject:"PulsEdge demo request (wealth preview): "+firm})})
+      .then(function(r){if(!r.ok)throw 0;say("Thanks, "+name.split(" ")[0]+". Aditya will reply within one working day.","ok");f.reset()})
+      .catch(function(){say("Couldn't send. WhatsApp +91 80737 08940 instead.","err")})
+      .then(function(){btn.disabled=false});
+  });
+})();
+</script>
+</body>
+</html>
