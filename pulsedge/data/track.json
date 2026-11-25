@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-25T13:00:53+05:30",
+ "updated": "2026-11-25T13:15:41+05:30",
  "summary": {
-  "calls": 2176,
-  "scored_calls": 980,
+  "calls": 2178,
+  "scored_calls": 982,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "f9cc7fce42288d0d",
+   "symbol": "JIOFIN",
+   "time": "2026-11-25T13:09:23+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Jio Financial Services vs Reliance vs Jio Platforms shares: Which Mukesh Ambani's stock to buy amid Dalal Street rally?",
+   "url": "https://www.livemint.com/market/stock-market-news/jio-financial-services-vs-reliance-vs-jio-platforms-shares-which-mukesh-ambanis-stock-to-buy-amid-dalal-street-rally-11795586335156.html",
+   "alert_px": 222.5,
+   "alert_move": 1.27,
+   "alert_at": "2026-11-25T13:15:34+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "f9cc7fce42288d0d",
+   "symbol": "RELIANCE",
+   "time": "2026-11-25T13:09:23+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Jio Financial Services vs Reliance vs Jio Platforms shares: Which Mukesh Ambani's stock to buy amid Dalal Street rally?",
+   "url": "https://www.livemint.com/market/stock-market-news/jio-financial-services-vs-reliance-vs-jio-platforms-shares-which-mukesh-ambanis-stock-to-buy-amid-dalal-street-rally-11795586335156.html",
+   "alert_px": 1371.0,
+   "alert_move": 1.48,
+   "alert_at": "2026-11-25T13:15:34+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "cfaab9ec337b5db6",
    "symbol": "CRAFTSMAN",
