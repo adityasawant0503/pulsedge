@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-25T10:00:49+05:30",
+ "updated": "2026-11-25T10:16:09+05:30",
  "summary": {
-  "calls": 2141,
-  "scored_calls": 945,
+  "calls": 2143,
+  "scored_calls": 947,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -27,6 +27,21 @@
  "source": "NSE end-of-day bhavcopy",
  "calls": [
   {
+   "id": "f8fad4e7cf22b94b",
+   "symbol": "WELSPUNLIV",
+   "time": "2026-11-25T10:00:56+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Welspun Living is not throwing in the towel yet",
+   "url": "https://www.livemint.com/market/mark-to-market/welspun-living-share-price-capex-growth-outlook-11795570337985.html",
+   "alert_px": 274.95,
+   "alert_move": 1.55,
+   "alert_at": "2026-11-25T10:15:40+05:30",
+   "alert_delay": 900
+  },
+  {
    "id": "26a61c91ed7dcd4a",
    "symbol": "BHEL",
    "time": "2026-11-25T09:58:06+05:30",
@@ -39,6 +54,21 @@
    "alert_px": 414.7,
    "alert_move": -0.24,
    "alert_at": "2026-11-25T10:00:32+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "84dce9ba694a894f",
+   "symbol": "ZEEL",
+   "time": "2026-11-25T09:56:11+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "ZEE shares defy market rally, tank 6% on record date for ₹600-crore buyback",
+   "url": "https://www.business-standard.com/markets/news/zee-shares-defy-market-rally-tank-6-on-record-date-for-600-crore-buyback-126112500179_1.html",
+   "alert_px": 68.03,
+   "alert_move": -5.04,
+   "alert_at": "2026-11-25T10:15:40+05:30",
    "alert_delay": 900
   },
   {

@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T10:00+05:30",
+ "updated": "2026-11-25T10:15+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -634,6 +634,22 @@
    "updated": "2026-11-24T19:21+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "ZEEL": {
+   "summary": "Zee Entertainment shares fell 6% on November 25, 2026, despite a broader market rally. This drop happened because the company set a record date for a ₹600-crore share buyback, leading investors to sell before the deadline.",
+   "why": "If you own these shares, the price drop may be temporary as investors sell to lock in gains before the buyback process begins.",
+   "upside": "The company is actively buying back its own shares, which can support the stock price once the selling pressure settles.",
+   "downside": "The share price may stay low until the buyback is fully completed.",
+   "watch": [
+    "The completion date of the ₹600-crore buyback",
+    "How the stock price reacts after the record date",
+    "Performance of the Media sector index"
+   ],
+   "about": "Zee Entertainment is a media company listed in India's Nifty 500 index.",
+   "basis": "2ab84deb85fe",
+   "items": 1,
+   "updated": "2026-11-25T10:15+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "ENGINERSIN": {
    "summary": "PulsEdge flagged that Engineers India Ltd. is part of the Nifty 500 index, which tracks India's 500 largest listed companies. The recent news items flagged in the system actually relate to other companies, specifically Vascon Engineers and Eppeltone Engineers, rather than Engineers India Ltd. itself.",
    "why": "This distinction matters because news about other construction or engineering firms does not directly change the financial performance or share value of Engineers India Ltd.",
@@ -825,6 +841,22 @@
    "items": 4,
    "updated": "2026-11-23T13:46+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "WELSPUNLIV": {
+   "summary": "Welspun Living is aiming for fast growth in its domestic home brands, targeting high annual growth rates in the medium term. New company plans also point toward potential improvements in overall profits and business growth.",
+   "why": "This matters because faster growth than the broader market shows the company is gaining popularity, which is important for long-term owners. However, success depends on whether these plans actually lower costs and boost sales.",
+   "upside": "Successful cost-lowering efforts and strong sales growth could lead to better profits for the company.",
+   "downside": "Cotton availability issues and softer consumer demand could hurt profit margins and stop medium-term targets from materializing.",
+   "watch": [
+    "Cotton availability and its impact on margins",
+    "Progress on domestic brand revenue targets",
+    "Changes in consumer demand"
+   ],
+   "about": "Welspun Living Ltd. is a textiles company included in India's Nifty 500 index.",
+   "basis": "f441a3171092",
+   "items": 2,
+   "updated": "2026-11-25T10:15+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "TMCV": {
    "summary": "Tata Motors is raising the prices of its cars and SUVs by an average of 0.5% starting December 1, 2026. This move is a response to rising costs for the materials used to build the vehicles.",
