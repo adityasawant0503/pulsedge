@@ -1,7 +1,89 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-25T12:10:53+05:30",
+ "updated": "2026-11-25T12:13:23+05:30",
  "items": [
+  {
+   "id": "428f8676770ae87f",
+   "time": "2026-11-25T12:12:35+05:30",
+   "headline": "Siemens Ltd CEO Sunil Mathur stated profitability remains impacted by commodity price volatility and forex (higher material costs). Q2 FY27 presentation notes elevated/volatile commodity and FX pressures. Analyst meet re",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10015",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "SIEMENS",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Industrial",
+    "Energy"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "Earnings/Management Commentary",
+   "action": "Monitor if the stock holds support despite margin pressure warnings from management.",
+   "reason": [
+    "CEO cites commodity and forex volatility as key profitability drags.",
+    "Q2 FY27 outlook suggests continued cost headwinds."
+   ],
+   "risks": [
+    "Sustained high input costs could compress margins further.",
+    "Forex movements may continue to erode net income."
+   ],
+   "plain": "The company's top executive said rising material costs and currency changes are hurting profits.",
+   "why": "Higher costs mean less money left over after expenses, which can lower the value of the shares.",
+   "check": "Look at the company's next quarterly report to see if costs actually went down.",
+   "original": "Siemens Ltd CEO Sunil Mathur stated profitability remains impacted by commodity price volatility and forex (higher material costs). Q2 FY27 presentation notes elevated/volatile commodity and FX pressures. Analyst meet re",
+   "latency": 48.3,
+   "lane": "fast",
+   "quotes": {
+    "SIEMENS": {
+     "px": 3606.8,
+     "prev": 3578.1,
+     "move": 0.8,
+     "at": "2026-11-25T12:13:23+05:30",
+     "delay": 900
+    }
+   }
+  },
+  {
+   "id": "0b9ff72a0e7ef101",
+   "time": "2026-11-25T12:12:12+05:30",
+   "headline": "EUROPEAN NATURAL GAS FALLS AS MUCH AS 5.2% TO €86.94/MWH",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10014",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Energy",
+    "Commodities"
+   ],
+   "impact": 10,
+   "confidence": 20,
+   "category": "Global Commodity Move",
+   "action": "No specific action needed for Indian listed stocks based on this headline alone.",
+   "reason": [
+    "Global gas price drop has limited direct impact on specific Indian listed stocks without further context.",
+    "No specific Indian company is named or directly linked."
+   ],
+   "risks": [
+    "Indirect effects on energy-intensive sectors are possible but unclear.",
+    "Market reaction may be muted or delayed."
+   ],
+   "plain": "The price of natural gas in Europe went down significantly.",
+   "why": "This is a global event that does not directly change the business of specific Indian companies listed here.",
+   "check": "",
+   "original": "EUROPEAN NATURAL GAS FALLS AS MUCH AS 5.2% TO €86.94/MWH",
+   "latency": 71.3,
+   "lane": "fast"
+  },
   {
    "id": "7dd0ed264273feae",
    "time": "2026-11-25T12:09:46+05:30",
