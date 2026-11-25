@@ -43,7 +43,7 @@ ADVICE = re.compile(r"\b(?:(?:should|consider|time to|good time to|worth|better 
 # tip-style pieces from other sites ("stock to buy", "target price", "buying opportunity") stay out of the report,
 # with the pipeline's own rules for brokers' views, round-ups of several stocks and live blogs
 TIPS = re.compile(r"\b(?:stocks? to (?:buy|sell|watch)|to buy now|buying opportunity|target price|price target|stop[- ]?loss|"
-                  r"multibagger|should you (?:buy|sell)|technical charts? suggests?|key levels|stocks? under (?:₹|rs\.?\s?)\s?\d+)", re.I)
+                  r"multibagger|should (?:you )?(?:still )?(?:buy|sell)|buy(?:ing)? the dip|tech(?:nical)? view|technical charts? suggests?|key levels|stocks? under (?:₹|rs\.?\s?)\s?\d+)", re.I)
 SECTION = {"global": "global", "macro": "policy"}           # everything else with a stock or Indian news is "india"
 MAX_ITEMS_PER_STOCK = 5
 

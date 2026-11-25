@@ -452,6 +452,7 @@ dialog.gl::backdrop{background:rgba(8,7,12,.6)}
     <span class="pill mkt-closed" id="mkt">MARKET CLOSED</span>
     <span class="pill eng" id="eng"><span>Engine</span><span class="dot"></span><b id="eng-t">idle</b></span>
     <span class="pill demo" id="demo" hidden>DEMO</span>
+    <a class="back" href="calendar.html">news calendar</a>
     <a class="back" href="track.html">track record</a>
     <a class="back" href="index.html">← pulsedge</a>
     <button class="thm" id="thm" type="button" aria-label="Switch to dark mode"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true" hidden><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button>
@@ -941,6 +942,9 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     firstLoad=false;
   }
   document.querySelectorAll(".tab").forEach(function(b){b.onclick=function(){tab=b.dataset.t;showRest=false;shown=20;document.querySelectorAll(".tab").forEach(function(x){x.setAttribute("aria-selected",x===b?"true":"false")});render()}});
+  // ?tab=mine (from the news calendar) opens that tab; the first render after the data loads shows it
+  (function(){var t=new URLSearchParams(location.search).get("tab"),b=t&&document.querySelector('.tab[data-t="'+t.replace(/[^a-z]/g,"")+'"]');
+    if(b){tab=b.dataset.t;document.querySelectorAll(".tab").forEach(function(x){x.setAttribute("aria-selected",x===b?"true":"false")})}})();
   window.addEventListener("storage",function(e){if(e.key==="pe_hold"){try{hold=JSON.parse(e.newValue||"[]")||[]}catch(x){hold=[]}render();renderPM()}});
 
   // ---------- My stocks: the holdings, and ways to add them (typed, a holding summary or a broker's CSV) ----------
@@ -995,6 +999,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     box.hidden=false;box.textContent="";
     box.append(el("div","mh",null));
     box.firstChild.append(el("b",null,"My stocks"),el("span","sub",hold.length?plural(hold.length,"holding")+" · saved in this browser":"Nothing added yet"));
+    if(hold.length){var cal=el("a","sub","See their news on the calendar →");cal.href="calendar.html?v=mine";box.firstChild.appendChild(cal)}
     if(hold.length){
       var ul=el("ul","hl");
       hold.forEach(function(h){

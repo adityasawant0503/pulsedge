@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>try{var t=localStorage.getItem("th");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>PulsEdge News Calendar</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PulsEdge">
+<meta property="og:title" content="PulsEdge News Calendar: what came out each day, and what the stocks did next">
+<meta property="og:description" content="Every day's Indian market news on one calendar. Hover over a day for the brief and see how each stock moved on the day and since. Switch to My stocks for your holdings.">
+<meta property="og:url" content="https://adityasawant0503.github.io/pulsedge/calendar.html">
+<meta property="og:image" content="https://adityasawant0503.github.io/pulsedge/assets/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="A calendar of Indian market news: each day's stories, why they mattered, and how the stocks moved since.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+/* The PULSE terminal's look (tokens copied from terminal.html): dark first, light from the system or the sun/moon button. */
+:root{
+  --bg:#0b0b10;--panel:#121219;--panel2:#171720;--line:#262532;--fg:#ecebf3;--mute:#8e8a9e;--dim:#5f5c6d;
+  --pur:#8b5cf6;--pur-l:#a78bfa;--pur-soft:#8b5cf61f;--pur-box:#1a1630;--pur-edge:#4c3d8f;
+  --green:#22c55e;--green-l:#4ade80;--green-soft:#22c55e1f;
+  --red:#ef4444;--red-l:#f87171;--red-soft:#ef44441f;
+  --amber:#f59e0b;--amber-l:#fbbf24;--amber-soft:#f59e0b1f;
+  --bear-bg:#7f1d1d66;--bull-bg:#14532d66;--neu-bg:#3f3f4666;--buy-bg:#14532d99;--sell-bg:#7f1d1d99;--watch-bg:#78350f99;--ign-bg:#3f3f4699;--track:#2a2935;--cb-border:#c9c7d3;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --elev:0 1px 2px rgba(0,0,0,.35),0 14px 34px -18px rgba(0,0,0,.7),inset 0 1px 0 rgba(255,255,255,.05);
+  color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)
+}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){
+  --bg:#f6f5fa;--panel:#ffffff;--panel2:#f3f2f8;--line:#e2e0ea;--fg:#17161c;--mute:#6b6878;--dim:#9b98a8;
+  --pur:#7c4dff;--pur-l:#6a3df0;--pur-soft:#7c4dff14;--pur-box:#f4efff;--pur-edge:#cbbcff;
+  --green:#16a34a;--green-l:#15803d;--green-soft:#16a34a14;--red:#dc2626;--red-l:#c02626;--red-soft:#dc262612;
+  --amber:#d97706;--amber-l:#b45309;--amber-soft:#d9770614;
+  --bear-bg:#fde2e2;--bull-bg:#dcfce7;--neu-bg:#ececf1;--buy-bg:#dcfce7;--sell-bg:#fee2e2;--watch-bg:#fef3c7;--ign-bg:#ececf1;--track:#e6e4ee;--cb-border:#b9b6c6;
+  --elev:0 1px 2px rgba(22,21,26,.04),0 10px 28px -14px rgba(22,21,26,.14),inset 0 1px 0 rgba(255,255,255,.7);
+  color-scheme:light}}
+:root[data-theme="light"]{
+  --bg:#f6f5fa;--panel:#ffffff;--panel2:#f3f2f8;--line:#e2e0ea;--fg:#17161c;--mute:#6b6878;--dim:#9b98a8;
+  --pur:#7c4dff;--pur-l:#6a3df0;--pur-soft:#7c4dff14;--pur-box:#f4efff;--pur-edge:#cbbcff;
+  --green:#16a34a;--green-l:#15803d;--green-soft:#16a34a14;--red:#dc2626;--red-l:#c02626;--red-soft:#dc262612;
+  --amber:#d97706;--amber-l:#b45309;--amber-soft:#d9770614;
+  --bear-bg:#fde2e2;--bull-bg:#dcfce7;--neu-bg:#ececf1;--buy-bg:#dcfce7;--sell-bg:#fee2e2;--watch-bg:#fef3c7;--ign-bg:#ececf1;--track:#e6e4ee;--cb-border:#b9b6c6;
+  --elev:0 1px 2px rgba(22,21,26,.04),0 10px 28px -14px rgba(22,21,26,.14),inset 0 1px 0 rgba(255,255,255,.7);
+  color-scheme:light}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--pur-l);outline-offset:2px}
+.mono{font-family:var(--mono)}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.up{color:var(--green-l)}.down{color:var(--red-l)}.flat{color:var(--mute)}
+
+/* status bar (as in the terminal) */
+.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.14em;font-size:17px;text-decoration:none;margin-right:6px}
+.brand i{width:12px;height:12px;border-radius:50%;background:var(--pur);box-shadow:0 0 0 4px var(--pur-soft),0 0 18px var(--pur)}
+.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:6px;padding:3px 9px;font:500 13px/1.4 var(--mono);white-space:nowrap;color:var(--pur-l)}
+.back{margin-left:auto;font-size:13px;color:var(--mute);text-decoration:none;display:inline-block}
+.back+.back{margin-left:0}
+.thm{display:inline-grid;place-items:center;width:34px;height:34px;padding:0;border:1px solid var(--line);border-radius:50%;background:none;color:var(--fg);flex:none}
+.thm svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:600px){.thm{width:30px;height:30px}.thm svg{width:15px;height:15px}.pill.ttl{display:none}}
+
+/* heading and controls */
+.head{padding-block:20px 6px;display:grid;gap:12px}
+h1{margin:0;font-size:24px;letter-spacing:-.01em}
+.lede{margin:0;color:var(--mute);max-width:70ch}
+.ctl{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.mnav{display:flex;align-items:center;gap:8px}
+.mnav b{font:700 16px/1 var(--mono);letter-spacing:.04em;min-width:10.5em;text-align:center}
+.nb{width:34px;height:34px;border-radius:8px;border:1px solid var(--line);background:var(--panel);font-size:18px;line-height:1}
+.nb:disabled{opacity:.35;cursor:default}
+.tabs{display:flex;gap:8px}
+.tab{flex:none;background:none;border:1px solid var(--line);border-radius:8px;padding:7px 14px;color:var(--mute);font-size:14.5px}
+.tab[aria-selected="true"]{background:var(--pur);border-color:var(--pur);color:#fff}
+.tab .n{font:500 11.5px/1 var(--mono);margin-left:6px;opacity:.8}
+.kpis{display:flex;flex-wrap:wrap;gap:8px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 12px;display:grid;gap:2px;min-width:0}
+.kpi small{color:var(--mute);font-size:12px}
+.kpi b{font:700 15px/1.3 var(--mono)}
+
+/* calendar + day panel */
+.main{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:20px;align-items:start;padding-block:10px 8px}
+.main>*{min-width:0}
+@media (max-width:980px){.main{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--elev)}
+.cal{padding:12px}
+.dow,.grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.dow span{font:500 11.5px/1 var(--mono);color:var(--mute);text-align:center;padding:4px 0 8px;letter-spacing:.06em}
+.cell{position:relative;min-height:84px;border:1px solid var(--line);border-radius:10px;background:var(--panel2);padding:7px 8px;text-align:left;display:flex;flex-direction:column;gap:3px;overflow:hidden;
+  transition:transform 140ms cubic-bezier(.2,.8,.2,1),border-color 140ms ease}
+.cell.pad{visibility:hidden}
+.cell.we{background:transparent}
+.cell.fut{opacity:.4;cursor:default}
+.cell.l1{background:color-mix(in srgb,var(--pur) 12%,var(--panel2))}
+.cell.l2{background:color-mix(in srgb,var(--pur) 26%,var(--panel2))}
+.cell.l3{background:color-mix(in srgb,var(--pur) 44%,var(--panel2))}
+.cell.l4{background:color-mix(in srgb,var(--pur) 66%,var(--panel2))}
+.cell.today{border-color:var(--fg)}
+.cell[aria-pressed="true"]{border-color:var(--pur-l);box-shadow:0 0 0 2px var(--pur-l)}
+@media (hover:hover){.cell:not(.fut):hover{transform:translateY(-1px);border-color:var(--pur-l)}}
+.cell .dn{font:700 14px/1 var(--mono)}
+.cell .nx{font:500 11.5px/1.2 var(--mono)}
+.cell .ct{margin-top:auto;display:flex;flex-wrap:wrap;align-items:center;gap:3px 5px;font:500 11.5px/1.2 var(--mono);color:var(--fg);opacity:.85}
+.cell .ct .n{white-space:nowrap}
+.cell .ab{border:1px solid currentColor;border-radius:4px;padding:0 4px;font-weight:700;font-size:10.5px}
+.cell .hol{font-size:11px;color:var(--mute)}
+.cell .tk{font:500 10.5px/1.25 var(--mono);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:520px){
+  .cal{padding:8px}.dow,.grid{gap:4px}
+  .cell{min-height:58px;padding:5px;border-radius:8px}
+  .cell .dn{font-size:12.5px}.cell .nx{font-size:9.5px}.cell .ct .n,.cell .hol,.cell .tk{display:none}
+}
+.legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin:12px 2px 2px;font-size:12.5px;color:var(--mute)}
+.scale{display:inline-flex;gap:3px;align-items:center}
+.scale i{width:16px;height:12px;border-radius:3px;border:1px solid var(--line);background:var(--panel2)}
+.scale i.l1{background:color-mix(in srgb,var(--pur) 12%,var(--panel2))}.scale i.l2{background:color-mix(in srgb,var(--pur) 26%,var(--panel2))}
+.scale i.l3{background:color-mix(in srgb,var(--pur) 44%,var(--panel2))}.scale i.l4{background:color-mix(in srgb,var(--pur) 66%,var(--panel2))}
+
+.day{padding:16px;position:sticky;top:76px;max-height:calc(100vh - 92px);max-height:calc(100dvh - 92px);overflow-y:auto;scrollbar-width:thin}
+@media (max-width:980px){.day{position:static;max-height:none;overflow:visible}}
+.day h2{margin:0;font-size:18px}
+.dsum{margin:4px 0 10px;color:var(--mute);font-size:13.5px}
+.fl{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.chip{border:1px solid var(--line);background:none;border-radius:999px;padding:4px 11px;font-size:13px;color:var(--mute)}
+.chip[aria-pressed="true"]{border-color:var(--pur);color:var(--fg);background:var(--pur-soft)}
+.list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.st{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--panel2);display:grid;gap:5px}
+.sh{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:12px;color:var(--mute)}
+.call{font:700 11.5px/1.4 var(--mono);letter-spacing:.04em;border-radius:4px;padding:1px 6px}
+.call.act{background:var(--pur-soft);color:var(--pur-l)}
+.call.watch{background:var(--watch-bg);color:var(--amber-l)}
+.hl{font-weight:600;font-size:14.5px;line-height:1.35;text-decoration:none}
+a.hl:hover{text-decoration:underline}
+.why{margin:0;color:var(--mute);font-size:13.5px}
+.mv{display:flex;flex-wrap:wrap;gap:6px}
+.mvx{display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;border:1px solid var(--line);border-radius:8px;padding:4px 8px;font:500 12px/1.35 var(--mono);text-decoration:none;background:var(--panel)}
+.mvx b{font-weight:700}
+.mvx small{color:var(--mute);font-family:var(--sans);font-size:11.5px}
+.mvx.mine{border-color:var(--pur-l)}
+.more{border:1px solid var(--line);background:none;border-radius:8px;padding:8px 12px;width:100%;color:var(--mute)}
+.lock{border:1px dashed var(--pur-edge);border-radius:10px;padding:12px;background:var(--pur-box);font-size:14px;display:grid;gap:8px}
+.lock button,.btn{justify-self:start;border:1px solid var(--pur);background:var(--pur);color:#fff;border-radius:8px;padding:8px 13px;font-weight:600;font-size:14px;text-decoration:none;display:inline-block}
+.empty{color:var(--mute);font-size:14px;margin:6px 0}
+
+/* My stocks strip and the movers */
+.sec{padding:16px;margin-top:20px;display:grid;gap:12px}
+.sec h2{margin:0;font-size:17px}
+.sec .lede{font-size:13.5px}
+.hrow{display:grid;grid-template-columns:200px minmax(0,1fr);gap:12px;align-items:center}
+@media (max-width:640px){.hrow{grid-template-columns:1fr;gap:6px}.mk{width:8px;height:8px}.mk.big{width:12px;height:12px}.track{height:22px}}
+.hn{display:flex;flex-direction:column;min-width:0}
+.hn b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px}
+.hn span{font:500 12px/1.3 var(--mono)}
+.track{display:grid;gap:2px;align-items:center;height:26px;border-radius:6px;background:var(--panel2);padding:0 2px;position:relative}
+.slot{height:100%;display:grid;place-items:center;min-width:0}
+.slot.we{background:color-mix(in srgb,var(--line) 35%,transparent)}
+.mk{width:12px;height:12px;border-radius:50%;border:0;padding:0;background:var(--amber)}
+.mk.up{background:var(--green)}.mk.down{background:var(--red)}
+.mk.big{width:18px;height:18px;box-shadow:0 0 0 3px color-mix(in srgb,currentColor 0%,var(--panel))}
+.mk.act{outline:2px solid var(--pur-l);outline-offset:1px}
+.axis{display:grid;gap:2px;font:500 10px/1 var(--mono);color:var(--dim);padding:0 2px}
+.axis span{text-align:center;white-space:nowrap;overflow:visible}
+.quiet{color:var(--mute);font-size:13px;margin:0}
+.mvl{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.mvc{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--panel2);display:grid;gap:4px;text-decoration:none}
+.mvc .r1{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.mvc .r1 b{font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mvc .r1 em{font:700 15px/1 var(--mono);font-style:normal}
+.mvc p{margin:0;font-size:13px;color:var(--mute);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.mvc small{font-size:12px;color:var(--dim)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:760px){.cols{grid-template-columns:1fr}}
+.cols h3{margin:0 0 8px;font-size:14px;color:var(--mute);font-weight:600}
+.cols>div{display:grid;gap:8px;align-content:start}
+
+/* hover brief */
+.tip{position:fixed;z-index:20;width:340px;max-width:calc(100vw - 24px);background:var(--panel);border:1px solid var(--pur-edge);border-radius:12px;padding:12px;box-shadow:0 18px 40px -12px rgba(0,0,0,.55);pointer-events:none;display:grid;gap:7px;font-size:13px}
+.tip h4{margin:0;font-size:14px}
+.tip .ts{color:var(--mute);font-size:12.5px}
+.tip ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.tip li{display:grid;gap:2px}
+.tip li .h{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-weight:600;line-height:1.3}
+.tip li .m{font:500 11.5px/1.3 var(--mono);color:var(--mute)}
+.tip .ft{color:var(--dim);font-size:12px}
+.fine{color:var(--mute);font-size:12.5px;max-width:90ch}
+.foot{display:flex;flex-direction:column;gap:6px;align-items:center;padding-block:24px 40px;color:var(--mute);font-size:13px;text-align:center}
+.foot a{color:var(--mute)}
+@media (prefers-reduced-motion:reduce){.cell{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="PulsEdge home"><i></i>PULSE</a>
+    <span class="pill ttl">NEWS CALENDAR</span>
+    <a class="back" href="terminal.html">terminal</a>
+    <a class="back" href="track.html">track record</a>
+    <a class="back" href="index.html">← pulsedge</a>
+    <button class="thm" id="thm" type="button" aria-label="Switch to dark mode"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true" hidden><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="head">
+    <h1>News calendar</h1>
+    <p class="lede" id="lede">Every day's market news on one page. Hover over a day for the brief, or tap it to see each story, why it mattered, and how the stocks moved on the day and since.</p>
+    <div class="ctl">
+      <div class="mnav"><button class="nb" id="prev" type="button" aria-label="Previous month">‹</button><b id="mname">…</b><button class="nb" id="next" type="button" aria-label="Next month">›</button></div>
+      <div class="tabs" role="tablist" aria-label="Whose news">
+        <button class="tab" role="tab" id="v-all" data-v="all" aria-selected="true">Market</button>
+        <button class="tab" role="tab" id="v-mine" data-v="mine" aria-selected="false">My stocks<span class="n" id="mine-n"></span></button>
+      </div>
+    </div>
+    <div class="kpis" id="kpis" aria-live="polite"></div>
+  </section>
+
+  <div class="main">
+    <section class="card cal" aria-labelledby="mname">
+      <div class="dow" aria-hidden="true"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span></div>
+      <div class="grid" id="grid"></div>
+      <div class="legend" id="legend"></div>
+    </section>
+    <aside class="card day" id="day" aria-live="polite" aria-label="The day's news"></aside>
+  </div>
+
+  <section class="card sec" id="strip" hidden aria-labelledby="strip-t"></section>
+  <section class="card sec" id="movers" aria-labelledby="movers-t"></section>
+
+  <p class="fine" id="fine">On the day: the stock's close on the first session after the story, against the close before it. Since: the latest close (or the 15-minute-delayed price while NSE is open) against that same close before the story. Prices move for many reasons, so this shows what happened next, not what the news caused. PulsEdge explains the news; it doesn't tell you to buy or sell.</p>
+</main>
+
+<div class="tip" id="tip" role="tooltip" hidden></div>
+
+<footer class="wrap foot">
+  <span>Not investment advice. AI summaries can be wrong; read the source before you act.</span>
+  <span><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="disclosures.html">Disclosures</a> · <a href="contact.html">Contact</a></span>
+</footer>
+
+<script src="assets/member.js"></script>
+<script src="assets/theme.js"></script>
+<script>
+(function(){
+  "use strict";
+  function $(id){return document.getElementById(id)}
+  function el(tag,cls,text){var e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e}
+  function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+  function getJson(u){return fetch(u,{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error(u);return r.json()})}
+  function pad(n){return ("0"+n).slice(-2)}
+  function ymd(d){return d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate())}
+  function parse(s){var p=s.split("-");return new Date(+p[0],+p[1]-1,+(p[2]||1))}
+  function ist(){return new Date(Date.now()+(330+new Date().getTimezoneOffset())*60000)}
+  var MONTHS=["January","February","March","April","May","June","July","August","September","October","November","December"];
+  function monthName(m){var d=parse(m+"-01");return MONTHS[d.getMonth()]+" "+d.getFullYear()}
+  function dayLong(s){return parse(s).toLocaleDateString("en-IN",{weekday:"long",day:"numeric",month:"long"})}
+  function dayShort(s){return parse(s).toLocaleDateString("en-IN",{weekday:"short",day:"numeric",month:"short"})}
+  function pct(x,dp){if(x==null||!isFinite(x))return "–";var v=x*100,d=dp==null?(Math.abs(v)>=10?1:2):dp;return (v>0?"+":v<0?"−":"")+Math.abs(v).toFixed(d)+"%"}
+  function cls(x){return x==null?"flat":x>0.0005?"up":x<-0.0005?"down":"flat"}
+  function plural(n,w){return n+" "+w+(n===1?"":"s")}
+  function short(n){return String(n||"").replace(/\s+(Limited|Ltd\.?|Industries Limited)$/i,"")}
+
+  var params=new URLSearchParams(location.search);
+  var S={idx:null,months:[],month:null,data:null,cache:{},view:params.get("v")==="mine"?"mine":"all",sel:params.get("d")||null,
+         filter:"all",shown:20,mode:"live",hol:{},live:{},liveAt:0};
+  var hold=[];
+  function readHold(){try{hold=(JSON.parse(store("pe_hold")||"[]")||[]).map(function(h){return String(h.s||"").toUpperCase()}).filter(Boolean)}catch(e){hold=[]}}
+  readHold();
+  function isMine(sym){return hold.indexOf(sym)>=0}
+
+  // ---------- prices: the close before a story, the first close after it, and the latest ----------
+  // The close before the story is the last session that ended before it came out (NSE closes at 15:30 IST).
+  function baseIdx(t){
+    var d=t.slice(0,10),hm=t.slice(11,16),b=-1,ss=S.data.sessions;
+    for(var i=0;i<ss.length;i++){if(ss[i]<d||(ss[i]===d&&hm>="15:30"))b=i;else break}
+    return b;
+  }
+  function moves(sym,t){
+    var xs=S.data.px[sym];if(!xs)return null;
+    var b=baseIdx(t);if(b<0||!xs[b])return null;
+    var p0=xs[b],ss=S.data.sessions,r={base:ss[b]};
+    if(xs[b+1]){r.day=xs[b+1]/p0-1;r.dayOn=ss[b+1]}
+    var lp=S.live[sym],last=S.idx&&S.idx.last||{};
+    if(lp){r.since=lp/p0-1;r.live=true}
+    else if(last.px&&last.px[sym]&&last.date>(r.dayOn||ss[b])){r.since=last.px[sym]/p0-1;r.asof=last.date}
+    return r;
+  }
+
+  // While NSE is open, "since" uses TradingView's public screener (15 minutes delayed), as the terminal does.
+  function nseOpen(){var d=ist(),m=d.getHours()*60+d.getMinutes();return d.getDay()>=1&&d.getDay()<=5&&!S.hol[ymd(d)]&&m>=555&&m<930}
+  function fetchLive(syms){
+    syms=syms.filter(function(s){return !(s in S.live)}).slice(0,40);
+    if(!syms.length||!nseOpen()||S.mode!=="live")return;
+    syms.forEach(function(s){S.live[s]=0});
+    fetch("https://scanner.tradingview.com/india/scan",{method:"POST",credentials:"omit",cache:"no-store",
+      body:JSON.stringify({symbols:{tickers:syms.map(function(s){return "NSE:"+s.replace(/-/g,"_")})},columns:["close"]})})
+      .then(function(r){if(!r.ok)throw new Error(r.status);return r.json()})
+      .then(function(j){var got=0;(j&&j.data||[]).forEach(function(r){var s=String(r.s||"").replace(/^NSE:/,"").replace(/_/g,"-");if(r.d&&r.d[0]>0){S.live[s]=r.d[0];got++}});if(got)renderDay()})
+      .catch(function(){});
+  }
+
+  // ---------- the month ----------
+  function load(m){
+    if(S.cache[m])return Promise.resolve(S.cache[m]);
+    return getJson("data/newscal/"+m+".json").then(function(j){S.cache[m]=j;return j});
+  }
+  function items(){
+    var it=S.data?S.data.items:[];
+    if(S.view==="mine")it=it.filter(function(r){return r.s.some(isMine)});
+    return it;
+  }
+  function byDay(){var o={};items().forEach(function(r){(o[r.t.slice(0,10)]=o[r.t.slice(0,10)]||[]).push(r)});return o}
+  function rank(a,b){return (b.v==="a")-(a.v==="a")||(b.m||0)-(a.m||0)||(a.t<b.t?-1:1)}
+  function niftyDay(d){var ss=S.data.sessions,i=ss.indexOf(d),n=S.data.nifty;if(i<1||!n[i]||!n[i-1])return null;return n[i]/n[i-1]-1}
+
+  // how busy a day was: market view, compared with the month's other days; My stocks, by its biggest story
+  function levels(days){
+    var out={};
+    if(S.view==="mine"){
+      Object.keys(days).forEach(function(d){var top=0,act=0;days[d].forEach(function(r){top=Math.max(top,r.m||30);act+=r.v==="a"});out[d]=act||top>=75?4:top>=60?3:top>=40?2:1});
+      return out;
+    }
+    var sc={},vals=[];
+    Object.keys(days).forEach(function(d){var s=0;days[d].forEach(function(r){s+=r.v==="a"?3:(r.m||0)>=60?1:0.15});sc[d]=s;vals.push(s)});
+    vals.sort(function(a,b){return a-b});
+    function q(p){return vals.length?vals[Math.min(vals.length-1,Math.floor(p*vals.length))]:0}
+    var q1=q(.25),q2=q(.5),q3=q(.8);
+    Object.keys(sc).forEach(function(d){var s=sc[d];out[d]=s>=q3?4:s>=q2?3:s>=q1?2:1});
+    return out;
+  }
+
+  function render(){
+    if(!S.data)return;
+    $("mname").textContent=monthName(S.month);
+    var i=S.months.indexOf(S.month);
+    $("prev").disabled=i<=0;$("next").disabled=i<0||i>=S.months.length-1;
+    $("v-all").setAttribute("aria-selected",S.view==="all");$("v-mine").setAttribute("aria-selected",S.view==="mine");
+    $("mine-n").textContent=hold.length?String(hold.length):"";
+    var days=byDay(),lv=levels(days),today=ymd(ist());
+    if(!S.sel||S.sel.slice(0,7)!==S.month){
+      var ks=Object.keys(days).sort();S.sel=ks.length?ks[ks.length-1]:(today.slice(0,7)===S.month?today:S.month+"-01");
+    }
+    renderKpis(days);
+    var g=$("grid");g.textContent="";
+    var first=parse(S.month+"-01"),lead=(first.getDay()+6)%7,n=new Date(first.getFullYear(),first.getMonth()+1,0).getDate();
+    for(var k=0;k<lead;k++)g.appendChild(el("span","cell pad"));
+    for(var day=1;day<=n;day++)g.appendChild(cell(S.month+"-"+pad(day),days,lv,today));
+    renderLegend();renderDay();renderStrip();renderMovers();
+    var u=new URL(location.href);u.searchParams.set("m",S.month);if(S.view==="mine")u.searchParams.set("v","mine");else u.searchParams.delete("v");u.searchParams.set("d",S.sel);
+    history.replaceState(null,"",u.pathname+u.search+u.hash);
+  }
+
+  function cell(d,days,lv,today){
+    var list=days[d]||[],w=parse(d).getDay(),we=w===0||w===6,fut=d>today;
+    var b=el("button","cell"+(we?" we":"")+(fut?" fut":"")+(d===today?" today":"")+(list.length&&lv[d]?" l"+lv[d]:""));
+    b.type="button";b.dataset.d=d;b.setAttribute("aria-pressed",d===S.sel?"true":"false");
+    if(fut)b.disabled=true;
+    b.appendChild(el("span","dn",String(+d.slice(8))));
+    var nx=niftyDay(d);
+    if(nx!=null){var s=el("span","nx "+cls(nx),pct(nx));s.title="Nifty 50 that day";b.appendChild(s)}
+    else if(S.hol[d])b.appendChild(el("span","hol","Holiday"));
+    var act=list.filter(function(r){return r.v==="a"}).length;
+    if(S.view==="mine"&&list.length){
+      var syms=[];list.slice().sort(rank).forEach(function(r){r.s.forEach(function(x){if(isMine(x)&&syms.indexOf(x)<0)syms.push(x)})});
+      b.appendChild(el("span","tk",syms[0]+(syms.length>1?" +"+(syms.length-1):"")));
+    }
+    if(list.length){
+      var ct=el("span","ct");
+      if(act){var a=el("span","ab",act+"A");a.title=plural(act,"Act story");ct.appendChild(a)}
+      ct.appendChild(el("span","n",stories(list.length)));
+      b.appendChild(ct);
+    }
+    var lbl=dayLong(d)+": "+(list.length?stories(list.length)+(act?", "+act+" Act":""):"no stories")+(nx!=null?", Nifty "+pct(nx):"");
+    b.setAttribute("aria-label",lbl);
+    b.addEventListener("click",function(){if(fut)return;S.sel=d;S.shown=20;S.filter="all";hideTip();render();if(matchMedia("(max-width:980px)").matches)$("day").scrollIntoView({behavior:"smooth",block:"start"})});
+    b.addEventListener("mouseenter",function(){if(matchMedia("(hover:hover)").matches&&!fut)showTip(b,d,list,nx)});
+    b.addEventListener("mouseleave",hideTip);
+    b.addEventListener("keydown",gridKeys);
+    return b;
+  }
+  function stories(n){return n+(n===1?" story":" stories")}
+  function gridKeys(e){
+    var step={ArrowLeft:-1,ArrowRight:1,ArrowUp:-7,ArrowDown:7}[e.key];if(!step)return;
+    var cs=Array.prototype.slice.call($("grid").querySelectorAll(".cell:not(.pad)")),i=cs.indexOf(e.currentTarget),j=i+step;
+    if(j>=0&&j<cs.length&&!cs[j].disabled){e.preventDefault();cs[j].focus()}
+  }
+
+  function renderLegend(){
+    var L=$("legend");L.textContent="";
+    var sc=el("span","scale");[0,1,2,3,4].forEach(function(l){sc.appendChild(el("i",l?"l"+l:""))});
+    L.append(el("span",null,S.view==="mine"?"Biggest story about your stocks: none":"News flow, against the rest of the month: none"),sc,el("span",null,S.view==="mine"?"major":"busiest"));
+    L.appendChild(el("span",null,"·  2A = two Act stories  ·  ±% = Nifty 50 that day"));
+  }
+
+  function renderKpis(days){
+    var K=$("kpis");K.textContent="";
+    function kpi(label,val,c){var d=el("div","kpi");d.append(el("small",null,label));var b=el("b",c||null,val);d.appendChild(b);K.appendChild(d)}
+    var n=S.data.nifty.filter(Boolean);
+    if(n.length>1)kpi("Nifty 50 this month",pct(n[n.length-1]/n[0]-1),cls(n[n.length-1]/n[0]-1));
+    var all=items(),act=all.filter(function(r){return r.v==="a"}).length;
+    kpi(S.view==="mine"?"Stories on your stocks":"Stories that mattered",String(all.length).replace(/\B(?=(\d{3})+(?!\d))/g,","));
+    kpi("Act",String(act));
+    var busy=Object.keys(days).sort(function(a,b){return days[b].length-days[a].length})[0];
+    if(busy)kpi(S.view==="mine"?"Busiest day for you":"Busiest day",dayShort(busy)+" · "+days[busy].length);
+    if(S.view==="mine"){var w=hold.filter(function(s){return all.some(function(r){return r.s.indexOf(s)>=0})}).length;kpi("Your stocks with news",w+" of "+hold.length)}
+  }
+
+  // ---------- the day panel ----------
+  function moveChips(r,max){
+    var box=el("div","mv"),syms=r.s.slice();
+    syms.sort(function(a,b){return isMine(b)-isMine(a)});
+    syms.slice(0,max||3).forEach(function(sym){
+      var mv=moves(sym,r.t),a=el("a","mvx"+(isMine(sym)?" mine":""));a.href="terminal.html?s="+encodeURIComponent(sym);
+      a.title="Open "+sym+" in the terminal";a.appendChild(el("b",null,sym));
+      if(mv){
+        if(mv.day!=null){a.append(el("small",null,"on the day"),el("span",cls(mv.day),pct(mv.day)))}
+        if(mv.since!=null){a.append(el("small",null,mv.live?"since (live)":"since"),el("span",cls(mv.since),pct(mv.since)))}
+        if(mv.day==null&&mv.since==null)a.appendChild(el("small",null,"reaction at the next close"));
+      }
+      box.appendChild(a);
+    });
+    if(r.s.length>(max||3))box.appendChild(el("span","mvx",null)).appendChild(el("small",null,"+"+(r.s.length-(max||3))+" more"));
+    return box;
+  }
+  function story(r){
+    var li=el("li","st"),h=el("div","sh");
+    h.append(el("span","call "+(r.v==="a"?"act":"watch"),r.v==="a"?"ACT":"WATCH"),el("span","mono",r.t.slice(11,16)+" IST"));
+    if(r.src)h.appendChild(el("span",null,r.src));
+    if(r.c==="global")h.appendChild(el("span",null,"· Global"));else if(r.c==="macro")h.appendChild(el("span",null,"· Economy"));
+    li.appendChild(h);
+    var hl=r.u&&/^https?:\/\//.test(r.u)?el("a","hl",r.h):el("span","hl",r.h);
+    if(hl.tagName==="A"){hl.href=r.u;hl.target="_blank";hl.rel="noopener noreferrer"}
+    li.appendChild(hl);
+    if(r.w)li.appendChild(el("p","why",r.w));
+    if(r.s.length)li.appendChild(moveChips(r));
+    return li;
+  }
+  function renderDay(){
+    var P=$("day");P.textContent="";if(!S.data||!S.sel)return;
+    var d=S.sel,list=(byDay()[d]||[]).slice().sort(rank),nx=niftyDay(d),act=list.filter(function(r){return r.v==="a"}).length;
+    P.appendChild(el("h2",null,dayLong(d)));
+    var sum=[];if(nx!=null)sum.push("Nifty 50 "+pct(nx));else if(S.hol[d])sum.push("NSE holiday");else if([0,6].indexOf(parse(d).getDay())>=0)sum.push("Weekend");
+    sum.push(stories(list.length));if(act)sum.push(act+" Act");
+    var p=el("p","dsum",sum.join(" · "));if(nx!=null)p.title="Nifty 50 close against the session before";P.appendChild(p);
+    if(!list.length){
+      if(S.view==="mine"&&!hold.length)P.appendChild(noHold());
+      else P.appendChild(el("p","empty",S.view==="mine"?"No news on your stocks this day.":"No stories this day."));
+      return;
+    }
+    var fl=el("div","fl");
+    [["all","All"],["act","Act ("+act+")"],["stocks","Named stocks"],["macro","Economy & global"]].forEach(function(f){
+      if(f[0]==="act"&&!act)return;
+      var c=el("button","chip",f[1]);c.type="button";c.setAttribute("aria-pressed",S.filter===f[0]);
+      c.onclick=function(){S.filter=f[0];S.shown=20;renderDay()};fl.appendChild(c);
+    });
+    if(S.view==="all")P.appendChild(fl);
+    var show=list.filter(function(r){return S.filter==="all"||(S.filter==="act"?r.v==="a":S.filter==="stocks"?r.s.length:(r.c==="macro"||r.c==="global"))});
+    var limit=S.mode==="sample"?3:S.shown,ol=el("ol","list");
+    show.slice(0,limit).forEach(function(r){ol.appendChild(story(r))});
+    P.appendChild(ol);
+    if(S.mode==="sample"&&show.length>3){
+      var lk=el("div","lock");lk.append(el("b",null,"See all "+stories(show.length)+" and how your own stocks did"),
+        el("span",null,"Start the free trial: 5 trading sessions with everything, no card needed."));
+      var go=el("button",null,"Start free trial");go.type="button";go.onclick=openGate;lk.appendChild(go);P.appendChild(lk);
+    }else if(show.length>limit){
+      var m=el("button","more","Show "+Math.min(20,show.length-limit)+" more of "+show.length);m.type="button";
+      m.onclick=function(){S.shown+=20;renderDay()};P.appendChild(m);
+    }
+    var syms=[];show.slice(0,limit).forEach(function(r){r.s.slice(0,3).forEach(function(s){if(syms.indexOf(s)<0)syms.push(s)})});
+    fetchLive(syms);
+  }
+  function noHold(){
+    var d=el("div","lock");
+    d.append(el("b",null,"Add your holdings to see their news here"),
+      el("span",null,"Add them in the terminal's My stocks tab: type them in, paste your holding summary or upload your broker's file. They stay in this browser; nothing is sent to us."));
+    var a=el("a","btn","Add my stocks");a.href="terminal.html?tab=mine#mine";d.appendChild(a);
+    return d;
+  }
+  function openGate(){var b=document.querySelector(".pe-bar button");if(b)b.click();else location.href="terminal.html#trial"}
+
+  // ---------- hover brief ----------
+  var tip=$("tip");
+  function showTip(anchor,d,list,nx){
+    tip.textContent="";
+    tip.appendChild(el("h4",null,dayLong(d)));
+    var act=list.filter(function(r){return r.v==="a"}).length,bits=[];
+    if(nx!=null)bits.push("Nifty 50 "+pct(nx));else if(S.hol[d])bits.push("NSE holiday");
+    bits.push(stories(list.length));if(act)bits.push(act+" Act");
+    tip.appendChild(el("div","ts",bits.join(" · ")));
+    if(list.length){
+      var ul=el("ul");
+      list.slice().sort(rank).slice(0,3).forEach(function(r){
+        var li=el("li"),h=el("span","h");
+        var tag=el("span","call "+(r.v==="a"?"act":"watch"),r.v==="a"?"ACT":"WATCH");tag.style.marginRight="6px";
+        h.append(tag,document.createTextNode(r.h));li.appendChild(h);
+        var sym=r.s.slice().sort(function(a,b){return isMine(b)-isMine(a)})[0];
+        if(sym){var mv=moves(sym,r.t),t=sym;if(mv&&mv.day!=null)t+="  on the day "+pct(mv.day);if(mv&&mv.since!=null)t+="  · since "+pct(mv.since);li.appendChild(el("span","m",t))}
+        else if(r.w)li.appendChild(el("span","m",r.w.length>110?r.w.slice(0,108)+"…":r.w));
+        ul.appendChild(li);
+      });
+      tip.appendChild(ul);
+      tip.appendChild(el("div","ft",list.length>3?"Click for all "+stories(list.length):"Click for the details"));
+    }
+    tip.hidden=false;
+    var r=anchor.getBoundingClientRect(),w=tip.offsetWidth,h=tip.offsetHeight;
+    var x=Math.min(Math.max(12,r.left+r.width/2-w/2),innerWidth-w-12),y=r.bottom+8;
+    if(y+h>innerHeight-8)y=Math.max(8,r.top-h-8);
+    tip.style.left=x+"px";tip.style.top=y+"px";
+  }
+  function hideTip(){tip.hidden=true}
+  addEventListener("scroll",hideTip,{passive:true});
+
+  // ---------- My stocks: one strip per holding ----------
+  function renderStrip(){
+    var X=$("strip");
+    if(S.view!=="mine"){X.hidden=true;return}
+    X.hidden=false;X.textContent="";
+    X.appendChild(el("h2",null,"Your stocks in "+monthName(S.month))).id="strip-t";
+    if(S.mode==="sample"){var lk=el("div","lock");lk.append(el("b",null,"Your stocks' month at a glance"),el("span",null,"Each holding on one line, with a dot on every day it had news. Start the free trial to see yours."));var go=el("button",null,"Start free trial");go.type="button";go.onclick=openGate;lk.appendChild(go);X.appendChild(lk);return}
+    if(!hold.length){X.appendChild(noHold());return}
+    X.appendChild(el("p","lede","A dot on each day a holding had news: green for news read as good for the stock, red as bad, amber mixed. Bigger dots are bigger stories; a purple ring is an Act story. Hover over or tap a dot."));
+    var n=new Date(parse(S.month+"-01").getFullYear(),parse(S.month+"-01").getMonth()+1,0).getDate(),cols="repeat("+n+",minmax(0,1fr))";
+    var all=S.data.items,quiet=[],rows=[];
+    hold.forEach(function(sym){
+      var its=all.filter(function(r){return r.s.indexOf(sym)>=0});
+      if(!its.length){quiet.push(sym);return}
+      rows.push({sym:sym,its:its,top:Math.max.apply(null,its.map(function(r){return (r.v==="a"?100:0)+(r.m||30)}))});
+    });
+    rows.sort(function(a,b){return b.top-a.top});
+    rows.forEach(function(rw){
+      var row=el("div","hrow"),hn=el("div","hn"),nm=(S.data.names||{})[rw.sym]||rw.sym;
+      hn.appendChild(el("b",null,short(nm))).title=nm;
+      var xs=S.data.px[rw.sym]||[],p0=xs[0],p1=null;for(var i=xs.length-1;i>0;i--)if(xs[i]){p1=xs[i];break}
+      var ch=p0&&p1?p1/p0-1:null;
+      hn.appendChild(el("span",cls(ch),rw.sym+(ch!=null?"  "+pct(ch)+" this month":"")));
+      row.appendChild(hn);
+      var tr=el("div","track");tr.style.gridTemplateColumns=cols;
+      var per={};rw.its.forEach(function(r){(per[r.t.slice(0,10)]=per[r.t.slice(0,10)]||[]).push(r)});
+      for(var dd=1;dd<=n;dd++){
+        var d=S.month+"-"+pad(dd),w=parse(d).getDay(),slot=el("span","slot"+(w===0||w===6?" we":""));
+        var list=per[d];
+        if(list){
+          list.sort(rank);var top=list[0],big=(top.m||0)>=60||top.v==="a";
+          var mk=el("button","mk "+(top.d==="up"?"up":top.d==="down"?"down":"mixed")+(big?" big":"")+(top.v==="a"?" act":""));
+          mk.type="button";mk.setAttribute("aria-label",rw.sym+", "+dayLong(d)+": "+top.h);
+          (function(d,list,mk){
+            mk.addEventListener("mouseenter",function(){if(matchMedia("(hover:hover)").matches)showTip(mk,d,list,niftyDay(d))});
+            mk.addEventListener("mouseleave",hideTip);
+            mk.addEventListener("click",function(){S.sel=d;S.shown=20;hideTip();render();$("day").scrollIntoView({behavior:"smooth",block:"start"})});
+          })(d,list,mk);
+          slot.appendChild(mk);
+        }
+        tr.appendChild(slot);
+      }
+      var wrap=el("div");wrap.appendChild(tr);row.appendChild(wrap);
+      X.appendChild(row);
+    });
+    if(rows.length){
+      var ax=el("div","hrow"),sp=el("div");ax.appendChild(sp);var a=el("div","axis");a.style.gridTemplateColumns=cols;
+      for(var k=1;k<=n;k++)a.appendChild(el("span",null,k===1||k%5===0?String(k):""));
+      ax.appendChild(a);X.appendChild(ax);
+    }
+    if(quiet.length)X.appendChild(el("p","quiet","No news this month: "+quiet.join(", ")+"."));
+  }
+
+  // ---------- what moved most after its news ----------
+  function renderMovers(){
+    var X=$("movers");X.textContent="";
+    var h=el("h2",null,S.view==="mine"?"How your stocks moved after their news":"What moved most after its news");h.id="movers-t";X.appendChild(h);
+    X.appendChild(el("p","lede","For each stock, its biggest story of the month and the change from the close before it to the latest close. A guide to what happened next, not proof the news caused it."));
+    if(S.view==="mine"&&S.mode==="sample"){X.appendChild(el("p","empty","Start the free trial to see your stocks here."));return}
+    var best={};
+    items().forEach(function(r){
+      if(!r.s.length||r.s.length>3)return;
+      r.s.forEach(function(sym){
+        if(S.view==="mine"&&!isMine(sym))return;
+        var sc=(r.v==="a"?100:0)+(r.m||30);
+        if(!best[sym]||sc>best[sym].sc)best[sym]={sym:sym,r:r,sc:sc};
+      });
+    });
+    var list=Object.keys(best).map(function(s){var b=best[s],mv=moves(s,b.r.t);b.since=mv&&mv.since!=null?mv.since:mv&&mv.day!=null?mv.day:null;return b}).filter(function(b){return b.since!=null&&(S.view==="mine"||b.sc>=55)});
+    if(!list.length){X.appendChild(el("p","empty",S.view==="mine"?(hold.length?"No price moves to show yet for your stocks this month.":"Add your holdings to see them here."):"No price moves to show yet."));return}
+    function card(b){
+      var a=el("a","mvc");a.href="terminal.html?s="+encodeURIComponent(b.sym);
+      var r1=el("div","r1");r1.append(el("b",null,short((S.data.names||{})[b.sym]||b.sym)),el("em",cls(b.since),pct(b.since)));
+      a.append(r1,el("p",null,b.r.h),el("small",null,b.sym+" · since "+dayShort(b.r.t.slice(0,10))+(b.r.v==="a"?" · Act":"")));
+      a.addEventListener("click",function(e){if(e.metaKey||e.ctrlKey)return;e.preventDefault();S.sel=b.r.t.slice(0,10);S.shown=40;S.filter="all";render();$("day").scrollIntoView({behavior:"smooth",block:"start"})});
+      return a;
+    }
+    if(S.view==="mine"){
+      var g=el("div","mvl");list.sort(function(a,b){return Math.abs(b.since)-Math.abs(a.since)}).forEach(function(b){g.appendChild(card(b))});X.appendChild(g);return;
+    }
+    var up=list.filter(function(b){return b.since>0}).sort(function(a,b){return b.since-a.since}).slice(0,6);
+    var dn=list.filter(function(b){return b.since<0}).sort(function(a,b){return a.since-b.since}).slice(0,6);
+    var cols=el("div","cols"),c1=el("div"),c2=el("div");
+    c1.appendChild(el("h3",null,"Rose most since"));up.forEach(function(b){c1.appendChild(card(b))});
+    c2.appendChild(el("h3",null,"Fell most since"));dn.forEach(function(b){c2.appendChild(card(b))});
+    if(S.mode==="sample"){[c1,c2].forEach(function(c){Array.prototype.slice.call(c.querySelectorAll(".mvc")).slice(2).forEach(function(x){x.remove()})})}
+    cols.append(c1,c2);X.appendChild(cols);
+  }
+
+  // ---------- controls ----------
+  function go(m){
+    if(!m||m===S.month)return;
+    S.month=m;S.sel=null;S.shown=20;S.filter="all";
+    $("mname").textContent=monthName(m);
+    load(m).then(function(j){S.data=j;render()}).catch(function(){$("day").textContent="Couldn't load "+monthName(m)+". Refresh to try again."});
+  }
+  $("prev").onclick=function(){go(S.months[S.months.indexOf(S.month)-1])};
+  $("next").onclick=function(){go(S.months[S.months.indexOf(S.month)+1])};
+  [$("v-all"),$("v-mine")].forEach(function(b){b.onclick=function(){S.view=b.dataset.v;S.sel=null;S.shown=20;S.filter="all";render()}});
+  addEventListener("storage",function(e){if(e.key==="pe_hold"){readHold();render()}});
+  addEventListener("keydown",function(e){if(e.key==="Escape")hideTip()});
+
+  // ---------- start ----------
+  getJson("data/calendar.json").then(function(c){(c.holidays||[]).forEach(function(x){S.hol[x]=1});if(S.data)render()}).catch(function(){});
+  var access=window.PulseAccess?PulseAccess.guard():Promise.resolve({mode:"live"});
+  Promise.all([access.catch(function(){return {mode:"sample"}}),getJson("data/newscal/index.json")]).then(function(r){
+    S.mode=r[0].mode||"live";S.idx=r[1];S.months=(r[1].months||[]).slice().sort();
+    var want=params.get("m");
+    S.month=S.months.indexOf(want)>=0?want:S.months[S.months.length-1];
+    if(!S.month)throw new Error("no months");
+    return load(S.month).then(function(j){S.data=j;render()});
+  }).catch(function(){$("day").textContent="Couldn't load the calendar. Refresh the page to try again."});
+})();
+</script>
+</body>
+</html>
