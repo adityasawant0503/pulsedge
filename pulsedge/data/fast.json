@@ -1,7 +1,41 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-25T14:36:11+05:30",
+ "updated": "2026-11-25T14:37:11+05:30",
  "items": [
+  {
+   "id": "373ef62959ccb7e5",
+   "time": "2026-11-25T14:36:40+05:30",
+   "headline": "NVIDIA SHARES DOWN 4.3% PREMARKET AFTER FALLING 5.9% IN THE LAST SESSION",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10036",
+   "section": "macro",
+   "call": "watch",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [],
+   "sectors": [
+    "IT",
+    "Semiconductors"
+   ],
+   "impact": 30,
+   "confidence": 60,
+   "category": "Global Tech Sentiment",
+   "action": "Monitor Indian IT and semiconductor stocks for early morning weakness if global tech sentiment remains negative.",
+   "reason": [
+    "NVIDIA is a bellwether for global AI and tech sentiment.",
+    "Negative moves in US tech often correlate with Indian IT and hardware stocks."
+   ],
+   "risks": [
+    "Indian IT stocks may decouple if domestic demand remains strong.",
+    "The drop may be specific to NVIDIA and not indicative of a broader tech sell-off."
+   ],
+   "plain": "A major US computer chip company's shares fell significantly before the US market opened.",
+   "why": "This can make investors cautious about technology stocks in India, potentially causing their prices to drop slightly.",
+   "check": "Check if other major US tech companies are also trading down.",
+   "original": "NVIDIA SHARES DOWN 4.3% PREMARKET AFTER FALLING 5.9% IN THE LAST SESSION",
+   "latency": 31.3,
+   "lane": "fast"
+  },
   {
    "id": "baf38a6a8e251227",
    "time": "2026-11-25T14:35:35+05:30",
