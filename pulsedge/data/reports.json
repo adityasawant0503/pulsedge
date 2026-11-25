@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T16:01+05:30",
+ "updated": "2026-11-25T17:12+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -363,20 +363,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India is seeing mixed oil‑price signals – crude fell a bit on supply‑glut worries, then Brent rose to about $91 a barrel. Geopolitical tensions in Ukraine and the Strait of Hormuz are also in play.",
-   "why": "The company’s earnings move with global oil prices, so price swings directly affect shareholder returns.",
-   "upside": "A rebound in crude prices could lift Oil India’s earnings.",
-   "downside": "Recent price declines and a falling sector index could pressure profits.",
+   "summary": "Oil India Ltd. is facing mixed signals as crude oil prices fluctuate due to geopolitical tensions and supply concerns. While recent events like tanker incidents and refinery attacks suggest potential price increases, current market data shows oil prices have recently slipped slightly.",
+   "why": "Since the company sells oil, its profits depend heavily on the price of crude; higher prices generally mean more revenue, while lower prices can reduce earnings.",
+   "upside": "Geopolitical disruptions in oil supply could push crude prices higher, potentially boosting the company's revenues.",
+   "downside": "Recent drops in oil prices and concerns about a supply glut could pressure the company's earnings and stock value.",
    "watch": [
-    "Brent and WTI price trends (e.g., Brent at $91.40, WTI at $82.05)",
-    "Geopolitical events affecting supply, such as Ukraine’s refinery attacks and the Strait of Hormuz incident",
-    "Performance of the Oil & Gas sector index (down 2% last session, –0.5% over five sessions)"
+    "Crude oil price movements in the coming days",
+    "Updates on geopolitical conflicts affecting oil supply",
+    "Overall performance of the Oil & Gas sector index"
    ],
-   "about": "Oil India Ltd. explores, produces and sells crude oil and natural gas in India.",
-   "basis": "f77e79ee89e2",
+   "about": "Oil India Ltd. is an Indian company in the Oil Gas & Consumable Fuels sector that produces oil.",
+   "basis": "4b2930840dab",
    "items": 20,
-   "updated": "2026-11-25T15:02+05:30",
-   "model": "openai/gpt-oss-120b"
+   "updated": "2026-11-25T17:12+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "JWL": {
    "summary": "Jupiter Wagons Ltd. is investing about ₹1,000 crore over the next three years in its passenger‑rail business and has formed an 80%‑owned joint venture with Korea’s Woojin to build metro coaches and propulsion systems in India. The moves aim to broaden its product range and capture growth in urban rail, while also raising short‑term cash‑flow and execution concerns.",
@@ -841,6 +841,22 @@
    "updated": "2026-11-25T12:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "BANKINDIA": {
+   "summary": "The Financials sector recently dropped by 2.5% in a single session, though it has gained 0.5% over the last five days. The Reserve Bank of India is now closely monitoring banks' gold loan portfolios after gold prices fell sharply. Additionally, there is a shift of investor money from government bonds to stocks, which may affect bond prices.",
+   "why": "Banks like Bank of India hold many government bonds and gold loans, so changes in bond prices or gold values can directly impact their profits and stability. Sector-wide movements also influence how the stock performs relative to the broader market.",
+   "upside": "If the shift of money from bonds to stocks continues, it could support overall market activity and bank performance.",
+   "downside": "A sharp drop in gold prices could force banks to set aside more money to cover potential losses on gold loans, hurting their profits.",
+   "watch": [
+    "Updates on RBI's monitoring of gold loan portfolios",
+    "Changes in government bond prices due to investor shifts",
+    "Future movements in the Financials sector index"
+   ],
+   "about": "Bank of India is a financial services company listed in India's Nifty 500 index.",
+   "basis": "f7fd035e0061",
+   "items": 3,
+   "updated": "2026-11-25T17:12+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "HDFCBANK": {
    "summary": "HDFC Bank is in the spotlight as analysts compare it favorably with peers on valuation, it displayed a bullish White Marubozu candlestick, yet it is also listed among stocks pulling the Nifty 50 lower.",
    "why": "These signals could influence short‑term demand for the shares you hold.",
@@ -871,6 +887,22 @@
    "basis": "f22c04cb59c3",
    "items": 3,
    "updated": "2026-11-24T06:49+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "ACMESOLAR": {
+   "summary": "ACME Solar Holdings has started operating a new battery storage system in Rajasthan. This adds to its total energy capacity, bringing the total to 193.63 MW.",
+   "why": "This matters because the company can now use this new capacity to potentially earn more money from selling energy services.",
+   "upside": "The new operational capacity could lead to higher income from energy storage services.",
+   "downside": "The company faces risks from grid connectivity issues and potential technical problems with the new system.",
+   "watch": [
+    "How well the new battery system performs technically",
+    "Any issues with connecting to the power grid",
+    "Overall trends in the Energy sector index"
+   ],
+   "about": "ACME Solar Holdings is a power sector company that operates battery energy storage systems.",
+   "basis": "3cfd92a8ece4",
+   "items": 2,
+   "updated": "2026-11-25T17:12+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "LGEINDIA": {
@@ -951,6 +983,22 @@
    "basis": "87c17a27e065",
    "items": 2,
    "updated": "2026-11-24T06:49+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "CENTRALBK": {
+   "summary": "Central Bank of India announced that its Company Secretary and Compliance Officer, Mr. Chandrakant Bhagwat, is resigning effective November 27, 2026. This administrative change occurred while the broader financial sector index dipped slightly in the last trading session.",
+   "why": "Changes in key compliance roles can affect how smoothly a company manages its legal and regulatory duties, which matters to shareholders concerned about corporate governance.",
+   "upside": "",
+   "downside": "The departure of the compliance officer could lead to a temporary gap in oversight or administrative delays until a replacement is appointed.",
+   "watch": [
+    "Announcement of the new Company Secretary",
+    "Any further regulatory filings related to the transition",
+    "Performance of the Financials sector index"
+   ],
+   "about": "Central Bank of India is a financial services company listed in India's Nifty 500 index.",
+   "basis": "e1fc69a8d623",
+   "items": 1,
+   "updated": "2026-11-25T17:12+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "POWERGRID": {
@@ -1176,22 +1224,6 @@
    "items": 2,
    "updated": "2026-11-25T08:17+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "BANKINDIA": {
-   "summary": "Bank of India faces two key developments: the RBI is closely monitoring gold loan portfolios after a sharp drop in bullion prices, and a shift of pension and insurance funds into equities is reducing demand for government bonds that banks hold.",
-   "why": "These issues could affect the bank’s earnings and asset quality, impacting shareholders.",
-   "upside": "If bond prices remain stable and gold prices recover, the bank’s profitability could improve.",
-   "downside": "A fall in bond prices or higher losses on gold loans could hurt earnings and increase non‑performing assets.",
-   "watch": [
-    "RBI’s monitoring of gold loan portfolios",
-    "Bond market volatility due to pension/insurance fund shifts",
-    "Financials sector index performance"
-   ],
-   "about": "Bank of India is a commercial bank offering a range of banking and financial services in India.",
-   "basis": "ab8ab3eee08a",
-   "items": 2,
-   "updated": "2026-11-24T18:25+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "PRESTIGE": {
    "summary": "Prestige Estates Projects Ltd. has created two wholly‑owned subsidiaries, Prestige Worli North and South, to develop projects in Mumbai and has announced acquisition of additional to‑be‑incorporated companies. Both moves aim to expand its development pipeline, while high land costs could pressure project margins.",
