@@ -85,7 +85,7 @@ h3{font-size:15px;margin:22px 0 8px}
 <main class="w wide">
   <div class="head">
     <a href="index.html" aria-label="PulsEdge home"><img class="logo lt" src="assets/icon.png" alt="PulsEdge" width="44" height="44"><img class="logo dk" src="assets/icon-dark.png" alt="PulsEdge" width="44" height="44"></a>
-    <div class="r"><a href="terminal.html">Terminal</a><a href="index.html#pricing">Plans</a>
+    <div class="r"><a href="terminal.html">Terminal</a><a href="calendar.html" id="cal-link">Calendar</a><a href="index.html#pricing">Plans</a>
       <button class="thm" id="thm" type="button" aria-label="Switch to dark mode"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true" hidden><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button></div>
   </div>
   <p class="kick">PulsEdge monthly report</p>
@@ -145,6 +145,7 @@ h3{font-size:15px;margin:22px 0 8px}
   // ---------- the month in review ----------
   function renderMarket(){
     $("title").textContent=R.title;document.title="PulsEdge report · "+R.title;
+    $("cal-link").href="calendar.html?m="+encodeURIComponent(R.month);
     var p=R.period||{};$("period").textContent=(p.news_from?"News "+dshort(p.news_from)+" to "+dshort(p.news_to):"")+(p.prices_to?" · prices to "+dshort(p.prices_to):"");
     $("headline").textContent=(R.overview&&R.overview.headline)||R.title;
     var k=$("kpis");k.textContent="";

@@ -16,6 +16,7 @@ site, the terminal and the Telegram bot switch to it within a couple of minutes.
 | `prices.json`    | Plan prices, launch date and Founding 100 seats for `index.html` pricing and `pay.html`. Edit, then run `python pulsedge-bot/offers.py qr` and `check` | none |
 | `offers.json`    | Discount codes, stored as SHA-256 hashes; manage with `pulsedge-bot/offers.py` | none |
 | `monthly/`       | Monthly reports (`<YYYY-MM>.json`) and their list (`index.json`), written by `pulsedge-bot/monthly_report.py` and read by `report.html`. Drafts show only to the owner until published | none |
+| `newscal/`       | The news calendar (`calendar.html`): each month's Act and Watch stories with the NSE closes for "on the day" and "since" (`<YYYY-MM>.json`), and the months plus every stock's latest close (`index.json`). Written by `pulsedge-bot/news_calendar.py` on every news run | none |
 | `reviews.json`   | Real member reviews (from `review.html`, with permission). The landing page shows them, with the average, once there are 3 or more | none |
 
 ## `feed.json`: signals
