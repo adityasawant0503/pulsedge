@@ -1,7 +1,54 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-25T11:47:53+05:30",
+ "updated": "2026-11-25T12:10:53+05:30",
  "items": [
+  {
+   "id": "7dd0ed264273feae",
+   "time": "2026-11-25T12:09:46+05:30",
+   "headline": "SIEMENS: CO SAYS MARGINS REMAIN STRESSED DUE TO FOREX AND COMMODITY INFLATION|| NO GUIDANCE ON MARGIN NORMALISATION TIME-LINE",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10013",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "SIEMENS",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Industrial"
+   ],
+   "impact": 45,
+   "confidence": 70,
+   "category": "Earnings/Management Commentary",
+   "action": "Monitor if the stock holds support despite margin concerns; look for volume confirmation before any entry.",
+   "reason": [
+    "CEO explicitly stated margins are stressed due to forex and commodity inflation.",
+    "Lack of a timeline for margin normalization creates uncertainty for near-term earnings."
+   ],
+   "risks": [
+    "Further margin compression if commodity prices rise.",
+    "Investor sentiment may worsen if competitors show better margin resilience."
+   ],
+   "plain": "The company's top executive said profits are squeezed by rising costs and currency issues, with no clear fix date.",
+   "why": "This suggests future earnings might be lower than expected, which could make the stock less attractive to investors.",
+   "check": "Look at the company's next quarterly report to see if costs actually went down.",
+   "original": "SIEMENS: CO SAYS MARGINS REMAIN STRESSED DUE TO FOREX AND COMMODITY INFLATION|| NO GUIDANCE ON MARGIN NORMALISATION TIME-LINE",
+   "latency": 67.7,
+   "lane": "fast",
+   "quotes": {
+    "SIEMENS": {
+     "px": 3608.2,
+     "prev": 3578.1,
+     "move": 0.84,
+     "at": "2026-11-25T12:10:53+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "9377a8a9c33719b5",
    "time": "2026-11-25T11:46:49+05:30",
