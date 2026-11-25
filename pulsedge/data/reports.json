@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T10:32+05:30",
+ "updated": "2026-11-25T10:46+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Goldman Sachs and Societe Generale bought a 1% stake in Lenskart, while BEML’s CEO said the company expects many defence and overseas orders. Tata Steel shares fell after concerns over the valuation and debt of its APL Apollo deal, and oil prices slipped slightly but later rose again, raising questions about the impact on energy stocks. Cipla received US FDA approval for a generic asthma medicine, and Tata Motors announced a price hike for its vehicles. Bharat Heavy Electricals announced a change in its top management and Indian shares were expected to open higher due to lower oil prices and foreign inflows.",
+  "summary": "Goldman Sachs and Societe Generale bought a 1% stake in Lenskart, which could lift investor confidence. APL Apollo shares fell 15% after brokers downgraded the company following a large acquisition deal. BEML’s CEO said the company expects many defence and overseas orders and aims for double‑digit growth. Global market worries, such as a tumble in Asian stocks and falling oil prices, added pressure on Indian shares.",
   "themes": [
-   "Foreign investment in retail optics",
-   "Defense sector growth outlook",
-   "Oil price volatility and its effect on energy stocks"
+   "Foreign investment boosting confidence",
+   "Large deals affecting metal and steel stocks",
+   "Global market spillover into India"
   ],
   "watch": [
-   "Lenskart stake and its potential influence on investor confidence",
-   "BEML’s expected defence and overseas orders and their execution risk",
-   "Oil price movements and their impact on Indian oil producers"
+   "APL Apollo share reaction to broker downgrades",
+   "BEML order pipeline and execution risk",
+   "Oil price movements impacting oil producers"
   ],
   "date": "2026-11-25",
-  "basis": "2b591e330974",
-  "updated": "2026-11-25T10:00+05:30",
+  "basis": "3c09645cf794",
+  "updated": "2026-11-25T10:46+05:30",
   "model": "openai/gpt-oss-20b",
-  "items": 19
+  "items": 28
  },
  "stocks": {
   "LENSKART": {
@@ -1002,21 +1002,21 @@
    "updated": "2026-11-23T08:46+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "TATACHEM": {
-   "summary": "Tata Chemicals shares rose 4.5% after news that Tata Sons may discuss staying private. This development has put the company's ownership structure in focus for investors.",
-   "why": "The decision on whether Tata Sons stays private or goes public could change how Tata Chemicals is owned and managed, which directly affects the value of its shares.",
-   "upside": "Clarification on Tata Sons' status could stabilize investor sentiment and support the share price.",
-   "downside": "If the plan for Tata Sons stalls or faces delays, the share price could fall.",
+  "CANHLIFE": {
+   "summary": "Canara HSBC Life Insurance Company Ltd. has announced the resignation of its CFO, Tarun Rustagi, effective 24 November 2026. The departure may cause short‑term concern among investors until a replacement is found.",
+   "why": "Shareholders may worry about potential management instability and delays in financial reporting during the transition.",
+   "upside": "",
+   "downside": "The CFO exit could lead to delays in financial reporting or strategic execution, and may increase management instability.",
    "watch": [
-    "Official announcements regarding Tata Sons' listing status",
-    "Further news on the ownership structure of Tata Chemicals",
-    "General market reaction to the Tata group's strategic decisions"
+    "CFO replacement announcement",
+    "Updates on financial reporting timelines",
+    "Sector index movement (Financials down 2.5% last session)"
    ],
-   "about": "Tata Chemicals is a company in the chemicals sector.",
-   "basis": "a5357c663254",
+   "about": "It provides life insurance products in India.",
+   "basis": "dad559dfd4d5",
    "items": 2,
-   "updated": "2026-11-23T11:15+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "updated": "2026-11-25T10:46+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "PWL": {
    "summary": "Physicswallah Ltd. is currently being watched closely by traders as part of a broader list of popular stocks. The company recently announced that the Punjab Government has officially notified its digital university in Patiala.",
