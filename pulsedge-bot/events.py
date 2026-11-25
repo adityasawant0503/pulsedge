@@ -6,13 +6,10 @@ import urllib.request
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 PROBES = [
-    ("nse rss board", "https://nsearchives.nseindia.com/content/RSS/Board_Meetings.xml", "https://www.nseindia.com/"),
-    ("nse rss actions", "https://nsearchives.nseindia.com/content/RSS/Corporate_action.xml", "https://www.nseindia.com/"),
-    ("nse rss results", "https://nsearchives.nseindia.com/content/RSS/Financial_Results.xml", "https://www.nseindia.com/"),
-    ("nse api events", "https://www.nseindia.com/api/event-calendar?index=equities", "https://www.nseindia.com/companies-listing/corporate-filings-event-calendar"),
-    ("nse api actions", "https://www.nseindia.com/api/corporates-corporateActions?index=equities", "https://www.nseindia.com/companies-listing/corporate-filings-actions"),
-    ("bse forthcoming results", "https://api.bseindia.com/BseIndiaAPI/api/Corpforthresults/w", "https://www.bseindia.com/"),
-    ("bse corp actions", "https://api.bseindia.com/BseIndiaAPI/api/DefaultData/w?Fdate=20261125&TDate=20261231&Purposecode=&strSearch=S&ddlindustrys=&ddlcategorys=E&segment=0", "https://www.bseindia.com/"),
+    ("nse api events range", "https://www.nseindia.com/api/event-calendar?index=equities&from_date=25-11-2026&to_date=31-01-2027", "https://www.nseindia.com/companies-listing/corporate-filings-event-calendar"),
+    ("nse api actions range", "https://www.nseindia.com/api/corporates-corporateActions?index=equities&from_date=25-11-2026&to_date=31-01-2027", "https://www.nseindia.com/companies-listing/corporate-filings-actions"),
+    ("nse api board range", "https://www.nseindia.com/api/corporate-board-meetings?index=equities&from_date=25-11-2026&to_date=31-01-2027", "https://www.nseindia.com/companies-listing/corporate-filings-board-meetings"),
+    ("nse api events plain", "https://www.nseindia.com/api/event-calendar?index=equities", "https://www.nseindia.com/companies-listing/corporate-filings-event-calendar"),
 ]
 
 
@@ -30,7 +27,15 @@ def probe():
             with op.open(req, timeout=20) as r:
                 b = r.read()
             print(f"== {name}: HTTP 200, {len(b)} bytes")
-            print(b[:1800].decode("utf-8", "replace"))
+            try:
+                import json
+                j = json.loads(b)
+                rows = j if isinstance(j, list) else j.get("data", j)
+                print("rows:", len(rows), "keys:", list(rows[0].keys()) if rows else None)
+                ds = sorted({str(r.get("date") or r.get("exDate") or r.get("bm_date") or "")[-8:] for r in rows})
+                print("dates:", ds[:3], "...", ds[-3:], "| sample:", json.dumps(rows[:2])[:700])
+            except Exception as e:  # noqa: BLE001
+                print("not json:", e, b[:400])
         except Exception as e:  # noqa: BLE001
             print(f"== {name}: {type(e).__name__} {str(e)[:150]}")
 
