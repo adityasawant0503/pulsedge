@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-25T13:47:48+05:30",
+ "updated": "2026-11-25T14:02:12+05:30",
  "summary": {
-  "calls": 2188,
-  "scored_calls": 992,
+  "calls": 2189,
+  "scored_calls": 993,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "10c21a2d1a0aad90",
+   "symbol": "SUZLON",
+   "time": "2026-11-25T13:41:58+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Suzlon Energy Limited: Suzlon Energy Limited has informed the Exchange about Capacity addition (Sub-para 3-Para B) |SUBJECT: Capacity addition (Sub-para 3-Para ",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_2328_WebXMLFile_20261125_134157078.xml",
+   "alert_px": 35.82,
+   "alert_move": -0.11,
+   "alert_at": "2026-11-25T14:01:46+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "b776a5213f132256",
    "symbol": "OIL",

@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T13:47+05:30",
+ "updated": "2026-11-25T14:01+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -138,6 +138,22 @@
    "items": 4,
    "updated": "2026-11-25T13:32+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "TVSMOTOR": {
+   "summary": "TVS Motor Company Ltd. has signed a non‑binding memorandum of understanding with the Government of Tamil Nadu to invest ₹2,000 crore over four years and create 1,000 jobs. The deal could lead to new factories and increased market presence. The company’s sector index has slipped 1.0% in the last session but gained 3.3% over five sessions.",
+   "why": "The investment plan may increase future earnings and strengthen the company’s position in the market, which is relevant for shareholders looking at long‑term growth.",
+   "upside": "If the investment is executed, it could boost earnings and expand the company’s footprint.",
+   "downside": "The agreement is non‑binding and execution risk remains, so the plan may not materialise.",
+   "watch": [
+    "Execution of the ₹2,000 crore investment plan",
+    "Creation of the 1,000 jobs in Tamil Nadu",
+    "Short‑term movement of the Auto sector index"
+   ],
+   "about": "TVS Motor Company Ltd. is an automobile and auto components company.",
+   "basis": "8ccf47c0c20e",
+   "items": 2,
+   "updated": "2026-11-25T14:01+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "BRIGADE": {
    "summary": "Brigade Enterprises reported selling ₹1,600 crore worth of units during a launch weekend for a new project in Bengaluru. The company also bought land in Secunderabad for a premium residential project and noted that its hotel business saw 7% growth in the first half of the year.",
@@ -379,20 +395,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "SUZLON": {
-   "summary": "Suzlon Energy is expanding its production capacity by starting construction on a new factory in Tamil Nadu. This new facility is expected to create over 1,000 jobs and will be powered entirely by renewable energy. However, the company also recently reported a cyber security incident involving unauthorized access to its systems.",
-   "why": "Expanding capacity could lead to higher future sales, but the cyber breach may result in repair costs and potential loss of customer trust.",
-   "upside": "The new factory, supported by state government involvement, signals growth and increased production capability.",
-   "downside": "The company faces risks from execution delays in the new factory and potential financial or reputational damage from the cyber incident.",
+   "summary": "Suzlon Energy announced it is adding production capacity and the Tamil Nadu chief minister laid the foundation for a 1 GW smart‑blade factory, while also disclosing a recent cyber security breach.",
+   "why": "Capacity expansion could lift future sales and earnings, whereas the cyber incident may hurt customer confidence and incur remediation costs.",
+   "upside": "If the new capacity and factory are built on schedule and within budget, they could drive higher revenue and profit.",
+   "downside": "Delays, cost overruns in the expansion or lingering effects of the cyber breach could weigh on performance.",
    "watch": [
-    "Updates on the progress of the new factory construction",
-    "Details on the impact and resolution of the cyber security breach",
-    "Future announcements regarding production capacity increases"
+    "Progress and timing of the announced capacity addition",
+    "Construction and commissioning milestones of the 1 GW smart‑blade factory",
+    "Updates on the resolution and impact of the cyber incident"
    ],
-   "about": "",
-   "basis": "9b5e9280ade4",
-   "items": 3,
-   "updated": "2026-11-25T13:47+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Suzlon Energy Ltd. manufactures wind turbines and related components.",
+   "basis": "d8d01f840279",
+   "items": 4,
+   "updated": "2026-11-25T14:01+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "TITAGARH": {
    "summary": "Titagarh Rail Systems recently won a ₹77.09 crore order from JSW for railway wagons and received approval to manufacture auto carrier wagons. The company also delivered a naval system to the Indian Navy and secured an additional order from Presstonic Engineering for the Mumbai Metro Line 6 project.",
