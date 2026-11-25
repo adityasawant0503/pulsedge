@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T04:50+05:30",
+ "updated": "2026-11-25T08:17+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,24 +57,40 @@
   ]
  },
  "today": {
-  "summary": "Oil prices jumped after a tanker hit a sea mine near the Strait of Hormuz, which may help Indian oil companies. US court rulings against Huawei could worry tech firms that rely on Chinese suppliers. US consumer confidence rose after midterm elections, potentially boosting global risk appetite.",
+  "summary": "PulsEdge flagged that Goldman Sachs and Societe Generale bought a small 1% stake in Lenskart, which could lift confidence in the stock. Tata Steel’s shares slipped as investors worried about valuation and debt from its APL Apollo deal. Oil prices rose, with Brent at $91.40 and US crude at $82.05, while a tanker hit a sea‑mine near the Strait of Hormuz, adding geopolitical risk. Auto makers are planning price hikes, creating uncertainty about demand, and foreign fund positions fell to 20% long, hinting at softer inflows.",
   "themes": [
-   "Oil supply risks pushing crude prices higher",
-   "Tech supply chain concerns following Huawei verdicts",
-   "Shifting global sentiment from US elections and AI cooling"
+   "Foreign investment in Lenskart may boost sentiment but the stake is modest",
+   "Valuation and debt worries weigh on Tata Steel despite possible long‑term gains",
+   "Oil price swings and geopolitical events create mixed signals for energy stocks"
   ],
   "watch": [
-   "Setco Automotive's half-year results due on 27 November",
-   "Further developments in the Strait of Hormuz affecting oil prices",
-   "Changes in foreign fund positions in Indian index futures"
+   "How Tata Motors and Hyundai respond to planned vehicle price increases",
+   "Whether oil prices stay high after the recent Brent and US crude gains and the Hormuz incident",
+   "Impact of Huawei’s US court verdict on Indian tech firms linked to Chinese suppliers"
   ],
   "date": "2026-11-25",
-  "basis": "757cbb561adc",
-  "updated": "2026-11-25T04:50+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 9
+  "basis": "ca81eb832964",
+  "updated": "2026-11-25T08:17+05:30",
+  "model": "openai/gpt-oss-120b",
+  "items": 15
  },
  "stocks": {
+  "LENSKART": {
+   "summary": "Lenskart saw mixed block‑deal activity on Nov 23, with institutions both buying and selling shares at ₹725, and on Nov 25 Goldman Sachs and SocGen bought a 1% stake for about ₹920 crore.",
+   "why": "Such large‑institution moves can influence investor sentiment and the stock’s price.",
+   "upside": "The new stake by Goldman Sachs and SocGen may boost confidence in the company.",
+   "downside": "The sizable sell‑offs by Steadview Capital and LTR Focus could weigh on sentiment.",
+   "watch": [
+    "Further institutional buying or selling in block deals",
+    "Share price reaction to the ₹725 block trades",
+    "Overall market volatility that could affect the stock"
+   ],
+   "about": "Lenskart Solutions Ltd. operates in the consumer services sector.",
+   "basis": "fba41b8f0ec4",
+   "items": 8,
+   "updated": "2026-11-25T08:17+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "RVNL": {
    "summary": "RVNL has secured new contracts, including a hospital project from NMDC and orders worth 8,000 cr in H1, while reporting profit growth but a drop in revenue for Q2 FY27.",
    "why": "These developments affect the company’s future cash flow and earnings, which matter to shareholders.",
@@ -156,20 +172,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel announced a $1.67 billion deal to buy a 26.4% stake in APL Apollo and also sold its tube business, triggering a sharp drop in its share price. The broader metals sector also fell, adding pressure on the stock.",
-   "why": "The large cash outlay and debt increase from the acquisition, plus the restructuring from the tube sale, can affect earnings and share volatility for investors.",
-   "upside": "If the APL Apollo stake and tube divestiture create long‑term value, the stock could recover.",
-   "downside": "Integration delays, regulatory approval hurdles, or further market concerns about cash use could push the share price lower.",
+   "summary": "Tata Steel shares fell recently after the company agreed to buy a 26.4 percent stake in APL Apollo for $1.67 billion. Investors worried about the valuation and potential debt linked to this deal. Meanwhile, broader market selling in metal stocks has also weighed on the company.",
+   "why": "These events matter because big corporate deals and wider market trends can directly affect the value of your shares in the short term. Understanding how the market views these transactions helps you stay informed about your investment.",
+   "upside": "Strategic benefits from the APL Apollo deal or long-term value from restructuring could materialise later, and stocks could potentially rebound.",
+   "downside": "Worry over debt, integration delays, or a negative market view of the deal could lead to further price declines.",
    "watch": [
-    "Regulatory approval progress for the APL Apollo acquisition",
-    "Integration and performance of the APL Apollo stake",
-    "Impact of the tube business divestiture on earnings"
+    "Updates on the APL Apollo acquisition and regulatory approvals",
+    "How the broader metal sector performs",
+    "Company debt levels and valuation concerns"
    ],
-   "about": "Tata Steel Ltd. is a leading Indian steel manufacturer and a Nifty 50 constituent.",
-   "basis": "f0520462136c",
-   "items": 19,
-   "updated": "2026-11-24T06:49+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Tata Steel Ltd. is a major metals and mining company that is one of India's 50 largest listed companies.",
+   "basis": "ec968b400c7f",
+   "items": 21,
+   "updated": "2026-11-25T08:17+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "APLAPOLLO": {
    "summary": "Tata Steel announced a plan to buy a 26.38% stake in APL Apollo Tubes for about ₹15,511 crore. Following this news, APL Apollo shares fell sharply, hitting the 10% lower circuit and reaching a 52-week low.",
@@ -234,22 +250,6 @@
    "updated": "2026-11-25T04:50+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "LENSKART": {
-   "summary": "Lenskart Solutions has seen several large block trades today. Major investors bought and sold shares at ₹725 each. The trades involve both institutional buyers and sellers.",
-   "why": "Large block trades can signal how confident big investors feel about the company.",
-   "upside": "The sizeable purchases by Societe Generale and Goldman Sachs could indicate confidence.",
-   "downside": "The significant sales by Steadview Capital and LTR Focus Fund may suggest concerns.",
-   "watch": [
-    "Next block deals involving Lenskart shares",
-    "Daily share price movement after the trades",
-    "Any announcements from the company"
-   ],
-   "about": "",
-   "basis": "6dbfbfa7e0e9",
-   "items": 6,
-   "updated": "2026-11-23T19:22+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
   "SOLARINDS": {
    "summary": "PulsEdge flagged that Solar Industries India Ltd. is part of the Nifty 500 index, which tracks India's 500 largest listed companies. The company operates in the chemicals sector. Recent news highlights focus on other renewable energy firms winning large projects, but no specific new orders or announcements were made by Solar Industries in these reports.",
    "why": "Being in the Nifty 500 means the company is one of India's larger listed firms, which can make it more visible to investors. However, the recent headlines provided do not contain specific financial news or operational updates for Solar Industries itself.",
@@ -267,19 +267,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "ADANIENT": {
-   "summary": "Adani Enterprises is raising funds through its airport business, Adani Airport Holdings Limited (AAHL). The company plans to sell a small stake to an investor, bringing the total amount raised to about $1.35 billion.",
-   "why": "Selling new shares means existing owners will hold a slightly smaller slice of the company. This change in ownership can affect the value of the shares you already own.",
-   "upside": "The money raised might be used for growth projects that could benefit the company in the long run.",
-   "downside": "Adding new shares can reduce the ownership percentage of current shareholders, which might lower the share price.",
+   "summary": "Adani Enterprises is raising additional funds by selling a small stake in its airport business arm, Airports Authority of India Limited (AAHL). This move increases the total amount of money being raised for the project.",
+   "why": "Selling new shares can slightly reduce the ownership percentage of current shareholders, which might affect the share price. However, the new money could be used for growth projects that benefit the company in the long run.",
+   "upside": "The raised funds may be invested in growth projects that could offset the impact of new shares being issued.",
+   "downside": "Issuing new shares means existing owners hold a smaller slice of the company, which can put downward pressure on the share price.",
    "watch": [
-    "How the new funds are actually used",
-    "The final size of the stake sold",
-    "General trends in the metals and mining sector"
+    "How the market reacts to the new share issuance in the coming days.",
+    "Performance of the broader Metals & Mining sector, which has recently fallen.",
+    "Updates on how the raised funds are being deployed in growth projects."
    ],
    "about": "",
-   "basis": "d0ad272d89fa",
-   "items": 2,
-   "updated": "2026-11-23T16:44+05:30",
+   "basis": "099eecd22ffe",
+   "items": 3,
+   "updated": "2026-11-25T08:17+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "INDUSINDBK": {
@@ -315,19 +315,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is facing mixed signals as global oil prices swing between falling on supply concerns and rising due to tanker attacks near the Strait of Hormuz. The company's sector index has recently declined, reflecting broader market caution in the oil and gas space.",
-   "why": "Since the company earns money by selling oil, changes in global crude prices directly affect how much revenue it brings in. Higher prices can boost earnings, while lower prices can squeeze profits.",
-   "upside": "Continued disruptions in oil shipping routes could keep crude prices elevated, potentially increasing the company's revenue per barrel.",
-   "downside": "If the geopolitical conflict de-escalates quickly or global demand softens, oil prices may drop, reducing the company's profitability.",
+   "summary": "Oil India Ltd. is facing mixed signals as global oil prices fluctuate between recent lows and a sharp rebound. Geopolitical tensions in the Strait of Hormuz have pushed crude prices up, while other reports suggest prices may have fallen too far and are due for a correction.",
+   "why": "Since the company earns money by selling oil, higher crude prices generally mean more revenue, but falling prices can reduce its profits.",
+   "upside": "If oil prices continue to rise due to supply disruptions or a rebound from recent lows, the company's earnings could increase.",
+   "downside": "If global demand weakens or supply remains high, oil prices could stay low, which would reduce the company's revenue.",
    "watch": [
-    "Updates on the safety of the Strait of Hormuz shipping lane",
-    "Daily closing prices of Brent and US crude oil futures",
-    "Trends in the Oil & Gas sector index"
+    "Global crude oil price movements",
+    "News about shipping safety in the Strait of Hormuz",
+    "Changes in global oil supply levels"
    ],
-   "about": "Oil India Ltd. is an Indian company in the Oil Gas & Consumable Fuels sector that is part of the Nifty 500 index.",
-   "basis": "ce8b44bad9de",
-   "items": 15,
-   "updated": "2026-11-25T04:50+05:30",
+   "about": "Oil India Ltd. is an Indian company in the oil and gas sector that is part of the Nifty 500 index.",
+   "basis": "78c4e0c1fcdf",
+   "items": 17,
+   "updated": "2026-11-25T08:17+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "JWL": {
@@ -379,19 +379,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "HYUNDAI": {
-   "summary": "Hyundai Motor India announced it will raise car prices by up to INR 8,000 from Dec 1, 2026 as input costs rise. The move could affect both sales volumes and profit margins.",
-   "why": "Shareholders need to watch how the price hike impacts demand and earnings.",
-   "upside": "If customers continue buying, the higher price could lift profit margins.",
-   "downside": "If demand softens, sales could fall and the company might lose market share.",
+   "summary": "Hyundai Motor India announced a price increase of up to INR 8,000 per vehicle effective Dec 1, 2026, citing higher input costs. The move could boost profit per car but may also dampen demand if buyers react negatively.",
+   "why": "Shareholders need to watch how the price hike affects sales volume and margins.",
+   "upside": "If customers continue buying, the higher prices could improve the company’s profit margins.",
+   "downside": "If the price rise deters buyers, sales could fall and the firm might lose market share to rivals.",
    "watch": [
-    "Sales trend after the price increase",
+    "Actual sales impact after the December price hike",
     "Competitors' pricing response",
-    "Auto sector index performance"
+    "Auto sector index trend and broader market sentiment"
    ],
-   "about": "Hyundai Motor India Ltd. manufactures and sells passenger cars in India.",
-   "basis": "88bac6b00544",
-   "items": 2,
-   "updated": "2026-11-24T13:01+05:30",
+   "about": "Hyundai Motor India Ltd. manufactures and sells automobiles in India.",
+   "basis": "4acb0afbbdbd",
+   "items": 3,
+   "updated": "2026-11-25T08:17+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ABREL": {
@@ -539,20 +539,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "HINDALCO": {
-   "summary": "Hindalco Industries is facing pressure as part of a broader market sell-off that dragged down the Nifty 50 index. At the same time, the company announced leadership updates, including the re-appointment of Mr. Satish Pai as Managing Director and the appointment of Mr. Hemant Sikka as Deputy Managing Director.",
-   "why": "Broader market drops and falling metal sector indexes can directly impact the daily value of your holdings.",
-   "upside": "These stocks could rebound quickly from the recent market drop.",
-   "downside": "High market volatility may cause larger swings and further price drops.",
+   "summary": "Hindalco shares fell about 3% as the market dropped sharply, and the company announced the re‑appointment of its Managing Director Satish Pai for 2028 and the appointment of Deputy Managing Director Hemant Sikka for 2027. It is also listed among stocks traders are watching today.",
+   "why": "The price move reflects broader market sentiment, while the leadership changes could influence the company’s future performance.",
+   "upside": "The stock could bounce back if the overall market or metals sector recovers.",
+   "downside": "Continued market volatility and a weak metals index may keep pressure on the share price.",
    "watch": [
-    "Broader market sentiment and the Nifty 50 index direction",
-    "Performance of the metal sector index",
-    "Upcoming leadership transition dates"
+    "Broader market volatility and Nifty 50 trends",
+    "Performance of the Metals sector index",
+    "Implementation of the new leadership appointments"
    ],
-   "about": "Hindalco Industries Ltd. operates in the metals and mining sector and is one of India's 50 largest listed companies.",
-   "basis": "4fca7b0aec9c",
-   "items": 4,
-   "updated": "2026-11-23T19:22+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "",
+   "basis": "94308915ac42",
+   "items": 5,
+   "updated": "2026-11-25T08:17+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "AXISBANK": {
    "summary": "Axis Bank shares fell about 4% as the broader market dropped sharply, pulling the Nifty 50 below 25,350. Despite the sell‑off, the Financials sector index rose 2% in the last session and 3.6% over five sessions.",
@@ -810,6 +810,22 @@
    "updated": "2026-11-23T13:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "TMCV": {
+   "summary": "Tata Motors is raising the prices of its cars and SUVs by an average of 0.5% starting December 1, 2026. This move is a response to rising costs for the materials used to build the vehicles.",
+   "why": "This matters to share owners because higher prices can help the company maintain its profit levels despite increased production costs.",
+   "upside": "The price increase may help the company keep its profits steady as input costs rise.",
+   "downside": "Customers might buy fewer cars if they find the new prices too high, which could lower overall sales.",
+   "watch": [
+    "How many cars are sold after the December 1 price change",
+    "Whether other car companies also raise their prices",
+    "Changes in the cost of raw materials for manufacturing"
+   ],
+   "about": "Tata Motors is a car maker that sells passenger vehicles, including cars and SUVs.",
+   "basis": "7dc6a4fe045f",
+   "items": 2,
+   "updated": "2026-11-25T08:17+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "BANKINDIA": {
    "summary": "Bank of India faces two key developments: the RBI is closely monitoring gold loan portfolios after a sharp drop in bullion prices, and a shift of pension and insurance funds into equities is reducing demand for government bonds that banks hold.",
    "why": "These issues could affect the bank’s earnings and asset quality, impacting shareholders.",
@@ -936,6 +952,22 @@
    "basis": "a5357c663254",
    "items": 2,
    "updated": "2026-11-23T11:15+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "PWL": {
+   "summary": "Physicswallah Ltd. is currently being watched closely by traders as part of a broader list of popular stocks. The company recently announced that the Punjab Government has officially notified its digital university in Patiala.",
+   "why": "This official recognition helps expand the company's educational offerings, which could influence how investors view its future growth potential.",
+   "upside": "Official government recognition of the digital university may help the company expand its educational reach and offerings.",
+   "downside": "The actual business impact depends on student uptake, and there are potential execution and regulatory hurdles in digital education.",
+   "watch": [
+    "Student enrollment numbers for the new digital university",
+    "Any new regulatory updates regarding digital education",
+    "General market volatility affecting the stock price"
+   ],
+   "about": "Physicswallah Ltd. is a consumer services company that operates in the education sector.",
+   "basis": "f16877ca4fd9",
+   "items": 2,
+   "updated": "2026-11-25T08:17+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ZYDUSLIFE": {
