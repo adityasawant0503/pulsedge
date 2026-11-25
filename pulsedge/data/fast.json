@@ -1,7 +1,55 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-25T13:11:54+05:30",
+ "updated": "2026-11-25T13:31:53+05:30",
  "items": [
+  {
+   "id": "1a3b0643079cd998",
+   "time": "2026-11-25T13:31:11+05:30",
+   "headline": "POWERGRID INFRASTRUCTURE INVESTMENT TRUST: CO SAYS MANAGEMENT PROJECTS A 23-24% REVENUE DIP STARTING FY28, SEEKING STATE MONETIZATIONS AND CONSORTIUM BIDS TO OFFSET THE DROP.",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10026",
+   "section": "news",
+   "call": "watch",
+   "horizon": "positional",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "POWERGRID",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Infrastructure",
+    "Power"
+   ],
+   "impact": 45,
+   "confidence": 60,
+   "category": "Earnings Guidance",
+   "action": "Monitor upcoming quarterly results for signs of revenue stabilization or new contract wins.",
+   "reason": [
+    "Management projects a 23-24% revenue dip starting FY28.",
+    "Reliance on state monetizations and consortium bids to offset the drop introduces execution risk."
+   ],
+   "risks": [
+    "Failure to secure new bids could worsen the revenue decline.",
+    "Long-term nature of the dip may pressure valuation multiples."
+   ],
+   "plain": "The company expects its sales to drop by about a quarter starting in a few years.",
+   "why": "This signals future lower earnings, which could make the stock less attractive to long-term investors.",
+   "check": "Look at the company's recent contract wins to see if they are replacing lost revenue.",
+   "original": "POWERGRID INFRASTRUCTURE INVESTMENT TRUST: CO SAYS MANAGEMENT PROJECTS A 23-24% REVENUE DIP STARTING FY28, SEEKING STATE MONETIZATIONS AND CONSORTIUM BIDS TO OFFSET THE DROP.",
+   "latency": 42.3,
+   "lane": "fast",
+   "quotes": {
+    "POWERGRID": {
+     "px": 263.55,
+     "prev": 264.85,
+     "move": -0.49,
+     "at": "2026-11-25T13:31:53+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "3c62c506d329e019",
    "time": "2026-11-25T13:10:51+05:30",
