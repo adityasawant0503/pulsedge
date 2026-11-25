@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-25T14:47:11+05:30",
+ "updated": "2026-11-25T15:02:17+05:30",
  "summary": {
-  "calls": 2196,
-  "scored_calls": 1000,
+  "calls": 2198,
+  "scored_calls": 1002,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "150e522c71d73b0e",
+   "symbol": "TVSMOTOR",
+   "time": "2026-11-25T14:57:00+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "TVS Motor Company Limited: TVS MOTOR COMPANY LIMITED has informed the Exchange about Agreements (Sub-para 5-Para B) |SUBJECT: Agreements (Sub-para 5-Para B)",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_1900_WebXMLFile_20261125_145659391.xml",
+   "alert_px": 4599.1,
+   "alert_move": 1.57,
+   "alert_at": "2026-11-25T15:01:55+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "7d434f8dd16eb065",
+   "symbol": "OIL",
+   "time": "2026-11-25T14:48:37+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "CNBC World Markets",
+   "headline": "Ukraine tells Putin to ‘stop complaining’ over oil refinery attacks as Russia promises retaliation",
+   "url": "https://www.cnbc.com/2026/11/25/ukraine-putin-russia-oil-refinery-attacks.html",
+   "alert_px": 422.4,
+   "alert_move": -0.02,
+   "alert_at": "2026-11-25T15:01:55+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "baf38a6a8e251227",
    "symbol": "EICHERMOT",
