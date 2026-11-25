@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-25T10:16:09+05:30",
+ "updated": "2026-11-25T10:32:21+05:30",
  "summary": {
-  "calls": 2143,
-  "scored_calls": 947,
+  "calls": 2146,
+  "scored_calls": 950,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,51 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "97baaf66efe8d2a8",
+   "symbol": "APLAPOLLO",
+   "time": "2026-11-25T10:25:55+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Why APL Apollo Tubes shares crashed 15% today to plunge at 52-week low; downgrade from brokerages after Tata Steel deal",
+   "url": "https://www.livemint.com/market/stock-market-news/why-apl-apollo-tubes-shares-crashed-15-today-to-plunge-at-52-week-low-downgrade-from-brokerages-after-tata-steel-deal-11795579639211.html",
+   "alert_px": 1428.9,
+   "alert_move": -14.44,
+   "alert_at": "2026-11-25T10:31:57+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "97baaf66efe8d2a8",
+   "symbol": "TATASTEEL",
+   "time": "2026-11-25T10:25:55+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Why APL Apollo Tubes shares crashed 15% today to plunge at 52-week low; downgrade from brokerages after Tata Steel deal",
+   "url": "https://www.livemint.com/market/stock-market-news/why-apl-apollo-tubes-shares-crashed-15-today-to-plunge-at-52-week-low-downgrade-from-brokerages-after-tata-steel-deal-11795579639211.html",
+   "alert_px": 163.37,
+   "alert_move": 0.23,
+   "alert_at": "2026-11-25T10:31:57+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "3e8d724e843bb4bc",
+   "symbol": "POLICYBZR",
+   "time": "2026-11-25T10:14:14+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Insurance stocks in demand: PB Fintech, Max Life, HDFC Life rally up to 8%",
+   "url": "https://www.business-standard.com/markets/news/insurance-stocks-in-demand-pb-fintech-max-life-hdfc-life-rally-up-to-8-126112500194_1.html",
+   "alert_px": 1140.4,
+   "alert_move": 4.71,
+   "alert_at": "2026-11-25T10:31:57+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "f8fad4e7cf22b94b",
    "symbol": "WELSPUNLIV",

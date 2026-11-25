@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T10:15+05:30",
+ "updated": "2026-11-25T10:32+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -172,35 +172,35 @@
    "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel shares fell recently after the company agreed to buy a 26.4 percent stake in APL Apollo for $1.67 billion. Investors worried about the valuation and potential debt linked to this deal. Meanwhile, broader market selling in metal stocks has also weighed on the company.",
-   "why": "These events matter because big corporate deals and wider market trends can directly affect the value of your shares in the short term. Understanding how the market views these transactions helps you stay informed about your investment.",
-   "upside": "Strategic benefits from the APL Apollo deal or long-term value from restructuring could materialise later, and stocks could potentially rebound.",
-   "downside": "Worry over debt, integration delays, or a negative market view of the deal could lead to further price declines.",
+   "summary": "Tata Steel’s shares have fallen sharply after it announced a $1.67 billion deal to buy a 26.4% stake in APL Apollo Tubes, sparking worries about valuation and debt. The broader metals sector is also under pressure, down 3.7% in the last session.",
+   "why": "The deal could strain the company’s balance sheet and weigh on short‑term earnings, which may affect the share price you own.",
+   "upside": "If the APL Apollo acquisition delivers the expected strategic benefits, it could improve long‑term earnings and unlock value.",
+   "downside": "Higher debt and valuation concerns, plus possible integration delays or further downgrades, could keep the stock under pressure.",
    "watch": [
-    "Updates on the APL Apollo acquisition and regulatory approvals",
-    "How the broader metal sector performs",
-    "Company debt levels and valuation concerns"
+    "Progress on integrating APL Apollo’s tube business",
+    "Any new rating downgrades or analyst revisions",
+    "Metals sector performance and broader market volatility"
    ],
-   "about": "Tata Steel Ltd. is a major metals and mining company that is one of India's 50 largest listed companies.",
-   "basis": "ec968b400c7f",
-   "items": 21,
-   "updated": "2026-11-25T08:17+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "Tata Steel Ltd. is one of India’s largest steel manufacturers.",
+   "basis": "13b7d78d5c36",
+   "items": 22,
+   "updated": "2026-11-25T10:32+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "APLAPOLLO": {
-   "summary": "Tata Steel announced a plan to buy a 26.38% stake in APL Apollo Tubes for about ₹15,511 crore. Following this news, APL Apollo shares fell sharply, hitting the 10% lower circuit and reaching a 52-week low.",
-   "why": "This matters because the acquisition could change how the company is run and valued. Shareholders are reacting to the deal price and the uncertainty of the transaction.",
-   "upside": "The deal may offer shareholders a premium over the current market price if the acquisition is completed.",
-   "downside": "The stock price has already dropped significantly, and further declines are possible if regulatory approval is delayed or if the market views the deal price as too low.",
+   "summary": "Tata Steel announced a plan to buy a 26.38% stake in APL Apollo Tubes for about ₹15,511 crore, with plans to acquire more shares later. This news caused APL Apollo's share price to drop 15% in a single day, hitting its lowest level in the past year.",
+   "why": "The sharp price drop reflects investor worry that the deal's cost might hurt future profits or that the offer price is too low for current owners. Brokers have also lowered their ratings on the stock, adding to the negative sentiment.",
+   "upside": "The acquisition could bring long-term stability and strategic benefits if the deal is successfully completed and approved by regulators.",
+   "downside": "The deal faces regulatory hurdles, and further downgrades from investment banks could push the share price even lower.",
    "watch": [
-    "Regulatory approval for the Tata Steel acquisition",
-    "Details of the new shareholder agreements announced by APL Apollo",
-    "Whether the stock price stabilizes after hitting the 52-week low"
+    "Regulatory approval status for the Tata Steel acquisition",
+    "New shareholder agreements announced by the company",
+    "Further changes in broker ratings or analyst views"
    ],
-   "about": "APL Apollo Tubes is a steel tube maker listed in the Capital Goods sector.",
-   "basis": "667269358c99",
-   "items": 12,
-   "updated": "2026-11-23T15:02+05:30",
+   "about": "APL Apollo Tubes is a steel tube maker listed in the Nifty 500 index.",
+   "basis": "5f48cc002dc5",
+   "items": 13,
+   "updated": "2026-11-25T10:32+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "HFCL": {
@@ -457,6 +457,22 @@
    "items": 2,
    "updated": "2026-11-23T12:15+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "POLICYBZR": {
+   "summary": "PB Fintech shares recently rose as part of a broader rally in insurance stocks. This movement happened even though the wider financial sector index fell in the last session.",
+   "why": "The company is part of the Nifty 500 index, which tracks India's 500 largest listed companies. Shareholders may see value if the company continues to show strong performance relative to the market.",
+   "upside": "If insurance companies continue to become more profitable, it could make their shares more attractive to investors.",
+   "downside": "A general drop in the overall market could wipe out the gains specific to the insurance sector.",
+   "watch": [
+    "Whether the insurance sector rally continues",
+    "Performance of the broader financial sector index",
+    "Company-specific profit updates"
+   ],
+   "about": "",
+   "basis": "0d531583ebd3",
+   "items": 1,
+   "updated": "2026-11-25T10:32+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "GLAND": {
    "summary": "Gland Pharma said it received an Establishment Inspection Report (EIR) from the US FDA for its new sterile oncology formulations facility. The letter indicates the factory meets US regulator’s expectations, but approval is not final.",
