@@ -191,7 +191,26 @@ jobs:
     - uses: actions/upload-pages-artifact@v3
       with:
         path: pulsedge
+    - name: Wait until GitHub lists the upload
+      # deploy-pages looks the upload up straight away, and GitHub sometimes lists it a few seconds late; the deploy
+      # then fails with "No artifacts named github-pages were found" (it did on 25 Nov 2026, again and again)
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        for i in $(seq 1 30); do
+          n=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts" --jq '[.artifacts[] | select(.name=="github-pages")] | length' 2>/dev/null || echo 0)
+          if [ "$n" != "0" ]; then echo "Listed after $(( (i-1)*3 )) s"; exit 0; fi
+          sleep 3
+        done
+        echo "Not listed after 90 s; deploying anyway"
     - id: deployment
+      uses: actions/deploy-pages@v4
+      continue-on-error: true
+    - name: Wait a little before trying again
+      if: steps.deployment.outcome == 'failure'
+      run: sleep 20
+    - name: Deploy again if that failed
+      if: steps.deployment.outcome == 'failure'
       uses: actions/deploy-pages@v4
 
   # Same update to the Cloudflare copy (https://pulsedge.pages.dev); a no-op until its secrets exist.
