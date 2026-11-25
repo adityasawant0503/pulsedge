@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-25T11:31:18+05:30",
+ "updated": "2026-11-25T11:47:15+05:30",
  "summary": {
-  "calls": 2160,
-  "scored_calls": 964,
+  "calls": 2162,
+  "scored_calls": 966,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "44380744368c33e4",
+   "symbol": "APLAPOLLO",
+   "time": "2026-11-25T11:29:02+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Despite stock market up today, why SG Mart shares hit 20% lower circuit; up 117% in 2026 | What lies ahead? Key levels",
+   "url": "https://www.livemint.com/market/stock-market-news/despite-stock-market-up-today-why-sg-mart-shares-hit-20-lower-circuit-up-117-in-2026-what-lies-ahead-key-levels-11795584028110.html",
+   "alert_px": 1476.0,
+   "alert_move": -11.62,
+   "alert_at": "2026-11-25T11:46:42+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "44380744368c33e4",
+   "symbol": "TATASTEEL",
+   "time": "2026-11-25T11:29:02+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Despite stock market up today, why SG Mart shares hit 20% lower circuit; up 117% in 2026 | What lies ahead? Key levels",
+   "url": "https://www.livemint.com/market/stock-market-news/despite-stock-market-up-today-why-sg-mart-shares-hit-20-lower-circuit-up-117-in-2026-what-lies-ahead-key-levels-11795584028110.html",
+   "alert_px": 163.39,
+   "alert_move": 0.24,
+   "alert_at": "2026-11-25T11:46:42+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "d25dbca11f4e9387",
    "symbol": "APLAPOLLO",

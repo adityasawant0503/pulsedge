@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T11:30+05:30",
+ "updated": "2026-11-25T11:46+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Goldman Sachs and Societe Generale bought a 1% stake in Lenskart, which could lift investor confidence. APL Apollo shares fell 15% after brokers downgraded the company following a large acquisition deal. BEML’s CEO said the company expects many defence and overseas orders and aims for double‑digit growth. Global market worries, such as a tumble in Asian stocks and falling oil prices, added pressure on Indian shares.",
+  "summary": "L&T secured a 10‑25 billion rupee contract, while Lenskart saw a 1% stake bought by Goldman Sachs and SocGen. APL Apollo Tubes shares fell 15% after a downgrade linked to Tata Steel’s 5,825 crore stake, and Tata Steel’s own share price was affected by the deal. BEML’s CEO said many defence and overseas orders are expected, and Jupiter Wagons rose 12% after a joint venture to build metro trains. Global market pressure from falling Asian stocks and oil prices also weighed on the session.",
   "themes": [
-   "Foreign investment boosting confidence",
-   "Large deals affecting metal and steel stocks",
-   "Global market spillover into India"
+   "Corporate deals and acquisitions affecting shares",
+   "Investor confidence influenced by large institutional moves",
+   "Global market and commodity price movements impacting Indian stocks"
   ],
   "watch": [
-   "APL Apollo share reaction to broker downgrades",
-   "BEML order pipeline and execution risk",
-   "Oil price movements impacting oil producers"
+   "Tata Steel’s integration and execution risk after buying stake in APL Apollo Tubes",
+   "Potential government scheme for power distribution companies",
+   "Oil price fluctuations and their impact on oil producers"
   ],
   "date": "2026-11-25",
-  "basis": "3c09645cf794",
-  "updated": "2026-11-25T10:46+05:30",
+  "basis": "eced2103b046",
+  "updated": "2026-11-25T11:46+05:30",
   "model": "openai/gpt-oss-20b",
-  "items": 28
+  "items": 42
  },
  "stocks": {
   "LENSKART": {
@@ -188,36 +188,36 @@
    "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel agreed to buy a 26.4% stake in APL Apollo Tubes for about $1.67 billion. Investors reacted negatively, causing Tata Steel's share price to fall due to concerns about the company's debt and valuation.",
-   "why": "This matters because the large cash outflow for the deal may strain the company's finances, which can pressure future profits and share value.",
-   "upside": "The strategic benefits of the partnership may materialize later, potentially limiting the downside.",
-   "downside": "Integration delays or further broker downgrades could extend the decline in share price.",
+   "summary": "Tata Steel bought a large stake in APL Apollo Tubes, spending about ₹5,825 crore. The purchase has pushed Tata Steel’s share price lower as investors worry about valuation, debt and integration risks.",
+   "why": "The deal uses cash and may increase debt, which can affect earnings and the stock’s short‑term movement.",
+   "upside": "If the acquisition delivers the expected strategic benefits, it could improve Tata Steel’s long‑term outlook.",
+   "downside": "High valuation and debt concerns, plus execution risk, could keep pressure on the share price.",
    "watch": [
-    "How the company manages its debt levels after the acquisition.",
-    "Whether APL Apollo remains listed as stated by executives.",
-    "The overall trend of the Metals sector index."
+    "How Tata Steel integrates APL Apollo’s operations",
+    "Changes in Tata Steel’s debt profile after the deal",
+    "Movement of the Metals sector index, which has been falling"
    ],
-   "about": "Tata Steel is a major player in the metals and mining sector in India.",
-   "basis": "8c6a3c837d0a",
-   "items": 23,
-   "updated": "2026-11-25T11:30+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Tata Steel Ltd. is a leading Indian steel manufacturer.",
+   "basis": "691a4cd805ca",
+   "items": 24,
+   "updated": "2026-11-25T11:46+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "APLAPOLLO": {
-   "summary": "Tata Steel has agreed to buy a 9.91% stake in APL Apollo Tubes for about ₹5,825 crore. Following this news, APL Apollo shares fell sharply, hitting a 52-week low.",
-   "why": "This matters because the deal changes who owns the company and may affect how it is run in the future. The sharp drop in share price reflects investor concern about the deal's cost and potential impact on profits.",
-   "upside": "The partnership with a major industry player like Tata Steel could bring long-term stability or new business opportunities.",
-   "downside": "Brokers have lowered their ratings on the stock, and the deal might face delays or problems during the approval process.",
+   "summary": "Tata Steel bought a 9.91% stake in APL Apollo Tubes for about ₹5,825 crore. The purchase triggered a 15% drop in APL Apollo’s shares, pushing them to a 52‑week low and prompting broker downgrades.",
+   "why": "The new ownership changes the company’s capital structure and could affect future earnings, while the share‑price fall reflects investor concern.",
+   "upside": "If the partnership with Tata Steel is integrated well and receives regulatory clearance, it could boost APL Apollo’s growth and profitability.",
+   "downside": "Regulatory approval delays, integration challenges, or further downgrades could keep the share price under pressure.",
    "watch": [
-    "Updates on whether regulators approve the Tata Steel deal",
-    "Details of the new shareholder agreements announced by the company",
-    "If more brokers change their ratings on the stock"
+    "Progress on regulatory approval of Tata Steel’s stake purchase",
+    "Any updates to the newly announced shareholder agreements",
+    "Future broker rating changes or analyst commentary"
    ],
-   "about": "APL Apollo Tubes is a company in the capital goods sector that makes steel tubes.",
-   "basis": "e617892b339e",
-   "items": 14,
-   "updated": "2026-11-25T11:30+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "APL Apollo Tubes Ltd. manufactures steel tubes for various industrial applications.",
+   "basis": "b0024cdd0663",
+   "items": 15,
+   "updated": "2026-11-25T11:46+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "HFCL": {
    "summary": "HFCL shares fell sharply on November 23, 2026, hitting the daily lower circuit limit. This drop follows a period where the stock rose 160% in 2026, but it has now slipped 41% from its October peak.",
