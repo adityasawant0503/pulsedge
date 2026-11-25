@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T17:12:22+05:30",
+ "updated": "2026-11-25T19:24:34+05:30",
  "start": "2026-11-20",
  "cost": 0.3,
  "note": "Paper trades only: no money is placed. Rules fixed on 20 Nov 2026 and never changed afterwards; entry is the first NSE close after the news reached readers, exit the close 'hold' sessions later, net of 0.3% round-trip costs. Educational; not investment advice.",
@@ -11,20 +11,55 @@
    "hold": 1,
    "earlier": "9-19 Nov replay: 24 trades, 58% won, +0.42% a trade after costs (8 of them on 18 Nov; not proven)",
    "summary": {
-    "closed": 4,
-    "open": 9,
-    "win_rate": 50,
-    "avg_net": -0.7,
-    "total_net": -2.82
+    "closed": 13,
+    "open": 4,
+    "win_rate": 46,
+    "avg_net": -1.54,
+    "total_net": -20.01
    },
    "trades": [
+    {
+     "date": "2026-11-25",
+     "symbol": "LLOYDSME",
+     "side": "long",
+     "entry": 1606.0,
+     "headline": "LLOYDS METALS AND ENERGY: CO APPROVES ISSUANCE OF NON-CONVERTIBLE DEBENTURES AGGREGATING UP TO ₹750 CRORE ON PRIVATE PLA",
+     "url": "https://t.me/Indiaredboxglobal/9976"
+    },
+    {
+     "date": "2026-11-25",
+     "symbol": "ZEEL",
+     "side": "long",
+     "entry": 67.21,
+     "headline": "ZEE shares defy market rally, tank 6% on record date for ₹600-crore buyback",
+     "url": "https://www.business-standard.com/markets/news/zee-shares-defy-market-rally-tank-6-on-record-date-for-600-crore-buyback-126112500179_1.html"
+    },
+    {
+     "date": "2026-11-25",
+     "symbol": "APLAPOLLO",
+     "side": "long",
+     "entry": 1476.0,
+     "headline": "Why APL Apollo Tubes shares crashed 15% today to plunge at 52-week low; downgrade from brokerages after Tata Steel deal",
+     "url": "https://www.livemint.com/market/stock-market-news/why-apl-apollo-tubes-shares-crashed-15-today-to-plunge-at-52-week-low-downgrade-from-brokerages-after-tata-steel-deal-11795579639211.html"
+    },
+    {
+     "date": "2026-11-25",
+     "symbol": "HFCL",
+     "side": "long",
+     "entry": 169.95,
+     "headline": "HFCL vs Sterlite Technologies: Both multibagger stocks hit 5% lower circuit again - Which one should you buy?",
+     "url": "https://www.livemint.com/market/stock-market-news/hfcl-vs-sterlite-technologies-both-multibagger-stocks-hit-5-lower-circuit-again-which-one-should-you-buy-11795587553516.html"
+    },
     {
      "date": "2026-11-23",
      "symbol": "AXISBANK",
      "side": "long",
      "entry": 1388.6,
      "headline": "Stock Market Live Updates | Closing Bell: Sensex crashes 1,484 pts, Nifty ends below 25,350; Axis Bank slides 4%, Hindal",
-     "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/bse-sensex-today-nifty50-stock-market-live-updates-gift-nifty-maruti-adani-energy-share-price-23-november-2026/liveblog/136086783.cms"
+     "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/bse-sensex-today-nifty50-stock-market-live-updates-gift-nifty-maruti-adani-energy-share-price-23-november-2026/liveblog/136086783.cms",
+     "exit_date": "2026-11-25",
+     "exit": 1418.1,
+     "net": 1.82
     },
     {
      "date": "2026-11-23",
@@ -32,7 +67,10 @@
      "side": "long",
      "entry": 900.45,
      "headline": "Stock Market Live Updates | Closing Bell: Sensex crashes 1,484 pts, Nifty ends below 25,350; Axis Bank slides 4%, Hindal",
-     "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/bse-sensex-today-nifty50-stock-market-live-updates-gift-nifty-maruti-adani-energy-share-price-23-november-2026/liveblog/136086783.cms"
+     "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/bse-sensex-today-nifty50-stock-market-live-updates-gift-nifty-maruti-adani-energy-share-price-23-november-2026/liveblog/136086783.cms",
+     "exit_date": "2026-11-25",
+     "exit": 889.9,
+     "net": -1.47
     },
     {
      "date": "2026-11-23",
@@ -40,7 +78,10 @@
      "side": "long",
      "entry": 1670.0,
      "headline": "Stock Market LIVE: Sensex rises 200 pts, Nifty tops 25,850; APL Apollo Tubes hits 10% lower circuit",
-     "url": "https://www.business-standard.com/markets/news/stock-market-live-november-23-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-ipo-today-126112300084_1.html"
+     "url": "https://www.business-standard.com/markets/news/stock-market-live-november-23-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-ipo-today-126112300084_1.html",
+     "exit_date": "2026-11-25",
+     "exit": 1476.0,
+     "net": -11.92
     },
     {
      "date": "2026-11-23",
@@ -48,7 +89,10 @@
      "side": "long",
      "entry": 163.0,
      "headline": "Tata Steel share price in focus on announcement to acquire 26.38% stake in APL Apollo Tubes for ₹15,511 crore",
-     "url": "https://www.livemint.com/market/stock-market-news/tata-steel-share-price-in-focus-on-announcement-to-acquire-26-38-stake-in-apl-apollo-tubes-for-rs-15-511-crore-11795400975932.html"
+     "url": "https://www.livemint.com/market/stock-market-news/tata-steel-share-price-in-focus-on-announcement-to-acquire-26-38-stake-in-apl-apollo-tubes-for-rs-15-511-crore-11795400975932.html",
+     "exit_date": "2026-11-25",
+     "exit": 159.3,
+     "net": -2.57
     },
     {
      "date": "2026-11-23",
@@ -56,7 +100,10 @@
      "side": "long",
      "entry": 963.0,
      "headline": "IndusInd Bank down 1% after terminating ex-CEO Kathpalia, invoking clawback",
-     "url": "https://www.business-standard.com/markets/news/indusind-bank-down-1-after-terminating-ex-ceo-kathpalia-invoking-clawback-126112300170_1.html"
+     "url": "https://www.business-standard.com/markets/news/indusind-bank-down-1-after-terminating-ex-ceo-kathpalia-invoking-clawback-126112300170_1.html",
+     "exit_date": "2026-11-25",
+     "exit": 973.7,
+     "net": 0.81
     },
     {
      "date": "2026-11-23",
@@ -64,7 +111,10 @@
      "side": "long",
      "entry": 159.01,
      "headline": "RESERVE BANK OF INDIA (RBI) HAS INCREASED ITS MONITORING OF BANKS' AND NON-BANKING FINANCIAL COMPANIES' (NBFCS) GOLD LOA",
-     "url": "https://t.me/Indiaredboxglobal/9853"
+     "url": "https://t.me/Indiaredboxglobal/9853",
+     "exit_date": "2026-11-25",
+     "exit": 159.89,
+     "net": 0.25
     },
     {
      "date": "2026-11-23",
@@ -72,7 +122,10 @@
      "side": "long",
      "entry": 178.6,
      "headline": "Sterlite Tech, HFCL extend fall; slip up to 41% from October highs",
-     "url": "https://www.business-standard.com/markets/news/sterlite-tech-hfcl-extend-fall-slip-up-to-41-from-october-highs-126112300446_1.html"
+     "url": "https://www.business-standard.com/markets/news/sterlite-tech-hfcl-extend-fall-slip-up-to-41-from-october-highs-126112300446_1.html",
+     "exit_date": "2026-11-25",
+     "exit": 169.95,
+     "net": -5.14
     },
     {
      "date": "2026-11-23",
@@ -80,7 +133,10 @@
      "side": "long",
      "entry": 590.8,
      "headline": "Sterlite Tech, HFCL extend fall; slip up to 41% from October highs",
-     "url": "https://www.business-standard.com/markets/news/sterlite-tech-hfcl-extend-fall-slip-up-to-41-from-october-highs-126112300446_1.html"
+     "url": "https://www.business-standard.com/markets/news/sterlite-tech-hfcl-extend-fall-slip-up-to-41-from-october-highs-126112300446_1.html",
+     "exit_date": "2026-11-25",
+     "exit": 579.9,
+     "net": -2.14
     },
     {
      "date": "2026-11-23",
@@ -88,7 +144,10 @@
      "side": "long",
      "entry": 817.8,
      "headline": "Who is killing Nifty 50 rally? SBI, RIL, HDFC Bank, Axis Bank, Hindalco, JSW among stocks dragging index into red",
-     "url": "https://www.livemint.com/market/stock-market-news/who-is-killing-the-nifty-50-rally-sbi-ril-hdfc-axis-bank-hindalco-tata-steel-jsw-steel-among-key-stocks-giving-r-11795422323375.html"
+     "url": "https://www.livemint.com/market/stock-market-news/who-is-killing-the-nifty-50-rally-sbi-ril-hdfc-axis-bank-hindalco-tata-steel-jsw-steel-among-key-stocks-giving-r-11795422323375.html",
+     "exit_date": "2026-11-25",
+     "exit": 846.2,
+     "net": 3.17
     },
     {
      "date": "2026-11-20",
@@ -171,12 +230,76 @@
    "earlier": "9-19 Nov replay: 28 trades, 75% won, +1.11% a trade after costs, 12 of them on 11 Nov (not proven)",
    "summary": {
     "closed": 0,
-    "open": 13,
+    "open": 21,
     "win_rate": null,
     "avg_net": null,
     "total_net": null
    },
    "trades": [
+    {
+     "date": "2026-11-25",
+     "symbol": "ABREL",
+     "side": "short",
+     "entry": 1282.9,
+     "headline": "Aditya Birla Real Estate Limited: Aditya Birla Real Estate Limited has informed the Exchange regarding Birla Estates inv",
+     "url": "https://nsearchives.nseindia.com/corporate/CENTURYTEX_23112026152849_NSEBSEINTIMATION.pdf"
+    },
+    {
+     "date": "2026-11-25",
+     "symbol": "JWL",
+     "side": "short",
+     "entry": 222.46,
+     "headline": "Jupiter Wagons Limited: Jupiter Wagons Limited has informed the Exchange about Execution of Framework Agreement - Jupite",
+     "url": "https://nsearchives.nseindia.com/corporate/CEBBCO_23112026154633_reg30_Woojin.pdf"
+    },
+    {
+     "date": "2026-11-25",
+     "symbol": "ZYDUSLIFE",
+     "side": "short",
+     "entry": 1236.0,
+     "headline": "Zydus Lifesciences Limited: Zydus Lifesciences Limited has informed the Exchange regarding Acquisition of to be incorpor",
+     "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_Restructuring_1852_WebXMLFile_20261124_115506086.xml"
+    },
+    {
+     "date": "2026-11-25",
+     "symbol": "HEROMOTOCO",
+     "side": "short",
+     "entry": 5751.5,
+     "headline": "HERO MOTOCORP: CO HIGH COURT QUASHES RTO DEMAND ORDER OF ₹165 CRORES FOR TEMPORARY REGISTRATION CERTIFICATES; PETITION F",
+     "url": "https://t.me/Indiaredboxglobal/9974"
+    },
+    {
+     "date": "2026-11-25",
+     "symbol": "ICICIBANK",
+     "side": "short",
+     "entry": 1640.0,
+     "headline": "Stock Market Live Updates: Sensex zooms over 1,850 points, Nifty tops 25,900; HDFC, ICICI Bank rally 4% each",
+     "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/bse-sensex-today-nifty50-stock-market-live-updates-gift-nifty-tata-steel-hindalco-share-price-25-november-2026/liveblog/136145716.cms"
+    },
+    {
+     "date": "2026-11-25",
+     "symbol": "TRENT",
+     "side": "short",
+     "entry": 3319.6,
+     "headline": "Stock Market LIVE: Trent, Bajaj Finserv lead 2,000-pt rally in Sensex; Nifty Financial Svcs gain 3%",
+     "url": "https://www.business-standard.com/markets/news/stock-market-live-november-25-gift-nifty-bse-sensex-today-nifty50-crude-oil-prices-ipo-today-126112500069_1.html"
+    },
+    {
+     "date": "2026-11-25",
+     "symbol": "POLICYBZR",
+     "side": "short",
+     "entry": 1123.8,
+     "headline": "Insurance stocks in demand: PB Fintech, Max Life, HDFC Life rally up to 8%",
+     "url": "https://www.business-standard.com/markets/news/insurance-stocks-in-demand-pb-fintech-max-life-hdfc-life-rally-up-to-8-126112500194_1.html"
+    },
+    {
+     "date": "2026-11-25",
+     "symbol": "HDFCBANK",
+     "side": "short",
+     "entry": 846.2,
+     "headline": "HDFC Bank vs ICICI Bank vs Axis Bank shares: Best banking stock to buy amid Bank Nifty bull run? What market experts say",
+     "url": "https://www.livemint.com/market/stock-market-news/hdfc-bank-vs-icici-bank-vs-axis-bank-shares-best-banking-stock-to-buy-amid-bank-nifty-bull-run-what-market-experts-say-11795581019827.html"
+    },
     {
      "date": "2026-11-23",
      "symbol": "INDUSINDBK",
@@ -290,20 +413,87 @@
    "hold": 1,
    "earlier": "9-19 Nov replay: 70 trades, 39% won, -0.18% a trade after costs",
    "summary": {
-    "closed": 3,
-    "open": 1,
-    "win_rate": 33,
-    "avg_net": 4.64,
-    "total_net": 13.93
+    "closed": 4,
+    "open": 8,
+    "win_rate": 50,
+    "avg_net": 3.76,
+    "total_net": 15.06
    },
    "trades": [
+    {
+     "date": "2026-11-25",
+     "symbol": "DALBHARAT",
+     "side": "long",
+     "entry": 1586.8,
+     "headline": "Dalmia Bharat approves ₹700 crore share buyback: From price per share to record date - what investors need to know",
+     "url": "https://www.livemint.com/market/dalmia-bharat-approves-rs-700-crore-share-buyback-from-price-per-share-to-record-date-what-investors-need-to-know-11795433750301.html"
+    },
+    {
+     "date": "2026-11-25",
+     "symbol": "RVNL",
+     "side": "long",
+     "entry": 185.09,
+     "headline": "RAIL VIKAS NIGAM: CO RECEIVED LETTER OF AWARD OF CONTRACT FROM NMDC LIMITED FOR CONSTRUCTION OF SUPER-SPECIALITY HOSPITA",
+     "url": "https://t.me/Indiaredboxglobal/9956"
+    },
+    {
+     "date": "2026-11-25",
+     "symbol": "IGL",
+     "side": "long",
+     "entry": 149.67,
+     "headline": "INDIA GLYCOLS: CO WHOLLY OWNED SUBSIDIARY IGL FINANCE RECEIVES ₹58.39 CRORE UNDER ONE TIME SETTLEMENT SCHEME; AMOUNT REC",
+     "url": "https://t.me/Indiaredboxglobal/9970"
+    },
+    {
+     "date": "2026-11-25",
+     "symbol": "BRIGADE",
+     "side": "long",
+     "entry": 589.7,
+     "headline": "BRIGADE ENTERPRISES: CO RECORDS ₹1,600 CRORES IN SALES DURING LAUNCH WEEKEND AT BRIGADE AUTOGRAPH; PROJECT IS A PREMIUM ",
+     "url": "https://t.me/Indiaredboxglobal/9971"
+    },
+    {
+     "date": "2026-11-25",
+     "symbol": "HEROMOTOCO",
+     "side": "long",
+     "entry": 5751.5,
+     "headline": "HERO MOTOCORP: CO HIGH COURT QUASHES RTO DEMAND ORDER OF ₹165 CRORES FOR TEMPORARY REGISTRATION CERTIFICATES; PETITION F",
+     "url": "https://t.me/Indiaredboxglobal/9974"
+    },
+    {
+     "date": "2026-11-25",
+     "symbol": "LENSKART",
+     "side": "long",
+     "entry": 720.55,
+     "headline": "Goldman Sachs, SocGen buy Rs 920 crore stake in Lenskart",
+     "url": "https://economictimes.indiatimes.com/markets/stocks/news/goldman-sachs-socgen-buy-rs-920-crore-stake-in-lenskart/articleshow/136145273.cms"
+    },
+    {
+     "date": "2026-11-25",
+     "symbol": "LT",
+     "side": "long",
+     "entry": 4156.0,
+     "headline": "L&T: CO WINS SIGNIFICANT CONTRACT || SIGNIFICANT CONTRACT VALUES BETWEEN 10B TO 25B RUPEES",
+     "url": "https://t.me/Indiaredboxglobal/10009"
+    },
+    {
+     "date": "2026-11-25",
+     "symbol": "TVSMOTOR",
+     "side": "long",
+     "entry": 4610.0,
+     "headline": "TVS MOTOR COMPANY LTD: CO. SIGNS NON-BINDING MOU WITH GOVERNMENT OF TAMIL NADU; PLANS TO INVEST ₹2000 CR OVER 4 YEARS AN",
+     "url": "https://t.me/Indiaredboxglobal/10028"
+    },
     {
      "date": "2026-11-23",
      "symbol": "DALBHARAT",
      "side": "long",
      "entry": 1564.4,
      "headline": "DALMIA BHARAT: CO APPROVED BUYBACK SHARES AT PRICE OF RS 1850 PER SHARE VIA OPEN MARKET",
-     "url": "https://t.me/Indiaredboxglobal/9861"
+     "url": "https://t.me/Indiaredboxglobal/9861",
+     "exit_date": "2026-11-25",
+     "exit": 1586.8,
+     "net": 1.13
     },
     {
      "date": "2026-11-20",

@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T17:12+05:30",
+ "updated": "2026-11-25T19:23+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Shukra Medtech plans to raise ₹648 crore by issuing new shares, which could increase supply and pressure the price. TVS Motor signed a non‑binding agreement to invest ₹2,000 crore in Tamil Nadu, aiming to create 1,000 jobs and boost future earnings. L&T secured a large contract worth up to ₹25 billion, while Tata Steel faced concerns over its APL Apollo deal, affecting market sentiment. Sector indices saw IT rise 1.7%, metals fall 3.7%, and banks drop 3.2%.",
+  "summary": "PulsEdge flagged a mixed day where defensive sectors like FMCG and Pharma led gains, while metals and media fell. Major companies announced significant moves, including L&T winning a large contract and TVS Motor planning a multi-year investment in Tamil Nadu. On the other hand, APL Apollo Tubes shares dropped sharply after brokers lowered their ratings following a recent acquisition. Foreign investors slightly increased their bullish bets, raising their long positions to 24%.",
   "themes": [
-   "Corporate capital moves and investment plans",
-   "Contract wins and strategic partnerships",
-   "Market sentiment around large deals and valuations"
+   "Large corporate investments and new contracts boosted confidence in industrial stocks.",
+   "Defensive sectors like FMCG and Pharma outperformed as investors sought stability.",
+   "Broker downgrades and large share sales weighed on specific stocks like APL Apollo Tubes."
   ],
   "watch": [
-   "Shukra Medtech’s ₹648 crore capital raise and its potential impact on share supply",
-   "TVS Motor’s ₹2,000 crore investment plan and the risk of execution delays",
-   "Valuation and debt concerns surrounding Tata Steel’s APL Apollo deal"
+   "How APL Apollo Tubes reacts to further broker opinions after its recent share price drop.",
+   "Whether TVS Motor proceeds with its planned investment in Tamil Nadu over the next four years.",
+   "If foreign fund managers continue to increase their long positions in the coming sessions."
   ],
   "date": "2026-11-25",
-  "basis": "f5fd2809a4fb",
-  "updated": "2026-11-25T16:01+05:30",
-  "model": "openai/gpt-oss-20b",
-  "items": 104
+  "basis": "a8c2fdd820d2",
+  "updated": "2026-11-25T19:23+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 167
  },
  "stocks": {
   "LENSKART": {
@@ -123,22 +123,6 @@
    "updated": "2026-11-25T13:32+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "RVNL": {
-   "summary": "Rail Vikas Nigam Ltd. recently secured a new contract to build a hospital in Chhattisgarh and has won orders worth 8,000 crore rupees in the first half of the year. The company is aiming for a total order book of 25,000 crore rupees by the end of the fiscal year.",
-   "why": "New contracts indicate that the company has steady work ahead, which supports its future income. This activity helps show that the business is active and generating revenue.",
-   "upside": "The company is on track to reach a large order book, which suggests a steady stream of future income.",
-   "downside": "Delays in completing the projects could affect the company's profits and when it recognizes revenue.",
-   "watch": [
-    "Updates on the progress of the new hospital construction project.",
-    "Whether the company reaches its 25,000 crore rupee order book target.",
-    "Any news about delays in executing current contracts."
-   ],
-   "about": "Rail Vikas Nigam Ltd. is a construction company that builds railway infrastructure and other projects.",
-   "basis": "7098234c76da",
-   "items": 4,
-   "updated": "2026-11-25T15:45+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "TVSMOTOR": {
    "summary": "TVS Motor Company Ltd. (TVSMOTOR) has announced new business agreements and a non‑binding memorandum of understanding with the Government of Tamil Nadu, which includes a planned investment of ₹2000 crore over four years and creation of 1000 jobs.",
    "why": "Shareholders should note that these agreements could influence the company’s future earnings and expansion plans.",
@@ -155,6 +139,38 @@
    "updated": "2026-11-25T15:02+05:30",
    "model": "openai/gpt-oss-20b"
   },
+  "RVNL": {
+   "summary": "RVNL has received new contracts, including a hospital project from NMDC, and says it is on track to reach a 25,000 cr orderbook for FY27, having already secured about 8,000 cr in H1.",
+   "why": "These contracts add revenue and suggest steady future cash flow for shareholders, though the size of each order relative to total revenue is a factor.",
+   "upside": "If RVNL successfully executes the new contracts and hits its FY27 orderbook target, revenue could rise significantly.",
+   "downside": "Delays in project execution could hurt margins and delay revenue recognition.",
+   "watch": [
+    "Progress on NMDC hospital contract",
+    "Achievement of FY27 25,000 cr orderbook target",
+    "Impact of order size on overall revenue"
+   ],
+   "about": "RVNL is a railway infrastructure company that builds and maintains rail projects.",
+   "basis": "aec6160d5a5b",
+   "items": 3,
+   "updated": "2026-11-25T19:23+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "TORNTPOWER": {
+   "summary": "Torrent Power bought 100% of Torrent Urja 42 Private Ltd and announced plans to acquire newly formed companies. The moves could add assets and generation capacity but bring financing and integration risks.",
+   "why": "Shareholders could see earnings improve if the acquisitions boost capacity, but higher debt may pressure cash flow.",
+   "upside": "Successful integration could increase earnings and generation capacity.",
+   "downside": "Higher debt and execution risks could strain cash flow.",
+   "watch": [
+    "Integration of Torrent Urja 42 assets",
+    "Progress on acquiring the new companies and capacity expansion",
+    "Debt levels and cash flow impact"
+   ],
+   "about": "Torrent Power Ltd is an Indian power generation and distribution company.",
+   "basis": "05925b97ed79",
+   "items": 2,
+   "updated": "2026-11-25T19:23+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "BRIGADE": {
    "summary": "Brigade Enterprises reported selling ₹1,600 crore worth of units during a launch weekend for a new project in Bengaluru. The company also bought land in Secunderabad for a premium residential project and noted that its hotel business saw 7% growth in the first half of the year.",
    "why": "These sales and new land purchases show the company is actively expanding its business, which could lead to higher future income for the company.",
@@ -169,6 +185,22 @@
    "basis": "4512e02c2746",
    "items": 5,
    "updated": "2026-11-24T18:25+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "360ONE": {
+   "summary": "360 ONE WAM recently issued convertible securities to raise new capital. This move increases the total number of shares, which can affect the value of existing holdings.",
+   "why": "Issuing new shares means the company's ownership is split among more people, which can lower the value of each share if the new funds do not create enough value to offset this change.",
+   "upside": "Analysts suggest that if the overall stock market remains strong, the company's profits might grow faster than expected.",
+   "downside": "The new shares could dilute the value of current holdings, and the raised money may not lead to the growth needed to support the stock price.",
+   "watch": [
+    "How the company plans to use the newly raised funds",
+    "Whether the broader stock market stays strong",
+    "Future announcements about the conversion of these securities"
+   ],
+   "about": "",
+   "basis": "6826fc39a25b",
+   "items": 3,
+   "updated": "2026-11-25T19:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "HEROMOTOCO": {
@@ -187,6 +219,22 @@
    "updated": "2026-11-24T19:21+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "KSB": {
+   "summary": "KSB Ltd. recently announced that it has been awarded a new contract. This news was shared with the stock exchange to inform investors of the company's latest business activity.",
+   "why": "New contracts can lead to higher sales and profits in the future, which is generally positive for the company's long-term health.",
+   "upside": "If the company successfully completes the work, it could boost future earnings.",
+   "downside": "The order might be delayed, which could push back the expected benefits.",
+   "watch": [
+    "Updates on the start date of the new contract",
+    "Any signs of delays in project execution",
+    "Future announcements regarding contract completion"
+   ],
+   "about": "KSB Ltd. operates in the Capital Goods sector.",
+   "basis": "180b81cf0f77",
+   "items": 1,
+   "updated": "2026-11-25T19:23+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "IGL": {
    "summary": "Indraprastha Gas Ltd. is part of the Oil & Gas sector, which has seen a slight dip in recent trading. A subsidiary, IGL Finance, recently received a one-time cash settlement of ₹58.39 crore.",
    "why": "This cash inflow improves the company's immediate liquidity, which can strengthen its financial position, though it is a one-off event rather than ongoing revenue.",
@@ -204,35 +252,51 @@
    "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel is in talks to restructure and tweak its deal with APL Apollo, having bought a 9.91% stake for about ₹5,825 crore. The news has pushed the stock down more than 2% even as the broader market rose, and investors are worried about valuation and debt impacts.",
-   "why": "The outcome of the APL Apollo transaction could affect Tata Steel’s cash position, earnings and share‑price volatility.",
-   "upside": "If the restructuring and acquisition deliver strategic benefits, the company’s financial health could improve.",
-   "downside": "Valuation concerns, added debt and integration risks could strain finances and weigh on the stock.",
+   "summary": "Tata Steel is actively restructuring its deal to buy a stake in APL Apollo Tubes, with the company saying it is open to changing the plan. This news has caused Tata Steel shares to fall, even as the wider stock market rose.",
+   "why": "The deal involves a large cash outlay, which raises concerns about the company's debt levels and how it might affect future profits for shareholders.",
+   "upside": "If the restructuring succeeds, it could lead to a deal structure that is less risky for the company's finances.",
+   "downside": "The deal could fail or face regulatory hurdles, and the high cost might strain the company's cash and increase its debt.",
    "watch": [
-    "Progress on the APL Apollo restructuring deal",
-    "Regulatory approvals or any deal fallout",
-    "Metals sector index performance and Tata Steel share movement"
+    "Updates on the final structure of the APL Apollo deal",
+    "Any changes in the company's debt levels",
+    "How the stock price reacts compared to the rest of the metals sector"
    ],
-   "about": "Tata Steel Ltd. is a leading Indian steel manufacturer and a Nifty 50 constituent.",
-   "basis": "2a819af23ff9",
-   "items": 27,
-   "updated": "2026-11-25T14:30+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Tata Steel is a major company in the metals and mining sector and is one of India's 50 largest listed companies.",
+   "basis": "3463e18eda68",
+   "items": 19,
+   "updated": "2026-11-25T19:23+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "APLAPOLLO": {
-   "summary": "Tata Steel bought a 9.91% stake in APL Apollo Tubes for about ₹5,825 crore. The purchase triggered a 15% drop in APL Apollo’s shares, pushing them to a 52‑week low and prompting broker downgrades.",
-   "why": "The new ownership changes the company’s capital structure and could affect future earnings, while the share‑price fall reflects investor concern.",
-   "upside": "If the partnership with Tata Steel is integrated well and receives regulatory clearance, it could boost APL Apollo’s growth and profitability.",
-   "downside": "Regulatory approval delays, integration challenges, or further downgrades could keep the share price under pressure.",
+   "summary": "APL Apollo Tubes shares fell to a 52-week low after Tata Steel agreed to buy a 9.91% stake for about ₹5,825 crore. Brokers lowered their ratings on the stock, and a large fund sold shares worth ₹434 crore in a single trade.",
+   "why": "The sharp drop reflects investor worry that the cost of the deal might pressure the company's future profits. Existing owners may see their share of the company diluted or face lower prices due to this uncertainty.",
+   "upside": "The Tata Steel partnership could bring long-term benefits and stability to the company.",
+   "downside": "Further downgrades from brokers or regulatory issues with the acquisition could push the share price even lower.",
    "watch": [
-    "Progress on regulatory approval of Tata Steel’s stake purchase",
-    "Any updates to the newly announced shareholder agreements",
-    "Future broker rating changes or analyst commentary"
+    "Regulatory approval for the Tata Steel acquisition",
+    "Details of the new shareholder agreements",
+    "Any further large investor sales or downgrades"
    ],
-   "about": "APL Apollo Tubes Ltd. manufactures steel tubes for various industrial applications.",
-   "basis": "b0024cdd0663",
-   "items": 15,
-   "updated": "2026-11-25T11:46+05:30",
+   "about": "APL Apollo Tubes is a steel tube maker listed in the Capital Goods sector.",
+   "basis": "71c181ecd37d",
+   "items": 10,
+   "updated": "2026-11-25T19:23+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "INDIANB": {
+   "summary": "Indian Bank’s shares are moving in line with the Financials sector, which rose 2.2% in the last session and 2.0% over the past five sessions.",
+   "why": "Sector strength can lift the bank’s stock, while a sector pull‑back could weigh on it.",
+   "upside": "Continued sector gains could boost Indian Bank’s share price.",
+   "downside": "A slowdown in the Financials sector could drag the stock lower.",
+   "watch": [
+    "Sector index performance",
+    "Upcoming earnings or regulatory updates for Indian Bank",
+    "Any changes in senior management or capital structure"
+   ],
+   "about": "Indian Bank is a commercial bank providing banking and financial services in India.",
+   "basis": "05cfe3da3f6a",
+   "items": 3,
+   "updated": "2026-11-25T19:23+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "HFCL": {
@@ -267,20 +331,21 @@
    "updated": "2026-11-25T12:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "INDIANB": {
-   "summary": "Indian Bank is part of the Financial Services sector, which recently saw a slight dip in its overall index. Recent news highlights a regulatory approval for SBI Mutual Fund to invest in a different bank, South Indian Bank, rather than Indian Bank itself.",
-   "why": "While the news does not directly involve Indian Bank, movements in the broader banking sector can influence how investors view all major banks, including Indian Bank.",
-   "upside": "",
-   "downside": "",
+  "MEDANTA": {
+   "summary": "PulsEdge flagged a series of large block and bulk trades in Global Health Ltd. on 25 Nov, with both buying and selling by major investors at ₹1,460 per share. The healthcare sector index rose 2.1% in the last session.",
+   "why": "These institutional trades can move the stock and signal how investors view the company's prospects.",
+   "upside": "If more institutions keep buying, it could support the share price.",
+   "downside": "The ₹930 cr sell order by Dunearn may create downward pressure.",
    "watch": [
-    "How the Financial Services sector index performs in the coming days.",
-    "Any new announcements specific to Indian Bank's own capital or operations."
+    "Further block or bulk deals by large investors",
+    "Changes in the healthcare sector index performance",
+    "Net balance of buying vs selling in upcoming trades"
    ],
-   "about": "Indian Bank is a financial services company listed on the NSE.",
-   "basis": "8107ad89174f",
-   "items": 1,
-   "updated": "2026-11-25T04:50+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Global Health Ltd. (MEDANTA) is a healthcare company listed on the NSE and part of the Nifty 500.",
+   "basis": "d650b0b12b4d",
+   "items": 9,
+   "updated": "2026-11-25T19:23+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "SOLARINDS": {
    "summary": "PulsEdge flagged that Solar Industries India Ltd. is part of the Nifty 500 index, which tracks India's 500 largest listed companies. The company operates in the chemicals sector. Recent news highlights focus on other renewable energy firms winning large projects, but no specific new orders or announcements were made by Solar Industries in these reports.",
@@ -314,22 +379,6 @@
    "updated": "2026-11-25T08:17+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "INDUSINDBK": {
-   "summary": "IndusInd Bank recently terminated its former CEO and invoked a clawback clause to reclaim his compensation. The stock is currently under close observation by investors due to this leadership change.",
-   "why": "Changes in top management can affect how the bank is run and how confident investors feel about its future performance.",
-   "upside": "",
-   "downside": "Legal disputes arising from the termination and compensation recovery could negatively impact the bank's operations and reputation.",
-   "watch": [
-    "Any legal actions or disputes related to the former CEO",
-    "How the bank's new leadership team handles day-to-day operations",
-    "The overall trend of the Financial Services sector index"
-   ],
-   "about": "IndusInd Bank is a financial services company listed on the NSE.",
-   "basis": "4a3a5e7bc17e",
-   "items": 2,
-   "updated": "2026-11-23T15:32+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "BEML": {
    "summary": "BEML's CEO says the company expects many new orders from the defence sector and international clients. The company aims to achieve double-digit growth.",
    "why": "If these new orders are secured, the company's revenue and profits could increase, which is generally positive for shareholders.",
@@ -360,6 +409,22 @@
    "basis": "6ae24c0f53fa",
    "items": 1,
    "updated": "2026-11-24T18:25+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "INDUSINDBK": {
+   "summary": "IndusInd Bank recently terminated its former CEO and invoked a clawback clause to reclaim his compensation. The stock is currently under close observation by investors due to this leadership change.",
+   "why": "Changes in top management can affect how the bank is run and how confident investors feel about its future performance.",
+   "upside": "",
+   "downside": "Legal disputes arising from the termination and compensation recovery could negatively impact the bank's operations and reputation.",
+   "watch": [
+    "Any legal actions or disputes related to the former CEO",
+    "How the bank's new leadership team handles day-to-day operations",
+    "The overall trend of the Financial Services sector index"
+   ],
+   "about": "IndusInd Bank is a financial services company listed on the NSE.",
+   "basis": "4a3a5e7bc17e",
+   "items": 2,
+   "updated": "2026-11-23T15:32+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
@@ -506,22 +571,6 @@
    "updated": "2026-11-23T15:47+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "PHOENIXLTD": {
-   "summary": "Phoenix Mills Ltd., a realty company in the Nifty 500, is riding a broad rally in Indian real estate stocks, with the sector index up 1.7% on the last session and 1.9% over five sessions.",
-   "why": "Shareholders see the sector’s optimism could lift Phoenix’s share price, but a sharp rise may also make the stock pricey.",
-   "upside": "If the real‑estate momentum continues, Phoenix could benefit from higher valuations.",
-   "downside": "A reversal in the sector’s rally could pull the stock lower.",
-   "watch": [
-    "BSE Realty index performance",
-    "Sector index trends over the next sessions",
-    "Any new broker commentary on Phoenix Mills"
-   ],
-   "about": "Phoenix Mills Ltd. is a real estate development company.",
-   "basis": "b9f6d81999bf",
-   "items": 2,
-   "updated": "2026-11-23T12:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "MOTILALOFS": {
    "summary": "Motilal Oswal Financial Services is part of the Nifty 500 index. Recent news highlighted a separate company, Welspun Living, which has seen strong share price growth and plans for new investments.",
    "why": "This matters because it shows the broader financial sector context, though the specific news about Welspun Living does not directly describe Motilal Oswal's own business performance.",
@@ -665,20 +714,20 @@
    "updated": "2026-11-23T12:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "HINDALCO": {
-   "summary": "Hindalco shares fell about 3% as the market dropped sharply, and the company announced the re‑appointment of its Managing Director Satish Pai for 2028 and the appointment of Deputy Managing Director Hemant Sikka for 2027. It is also listed among stocks traders are watching today.",
-   "why": "The price move reflects broader market sentiment, while the leadership changes could influence the company’s future performance.",
-   "upside": "The stock could bounce back if the overall market or metals sector recovers.",
-   "downside": "Continued market volatility and a weak metals index may keep pressure on the share price.",
+  "PHOENIXLTD": {
+   "summary": "Phoenix Mills Ltd., a realty company in the Nifty 500, is riding a broad rally in Indian real estate stocks, with the sector index up 1.7% on the last session and 1.9% over five sessions.",
+   "why": "Shareholders see the sector’s optimism could lift Phoenix’s share price, but a sharp rise may also make the stock pricey.",
+   "upside": "If the real‑estate momentum continues, Phoenix could benefit from higher valuations.",
+   "downside": "A reversal in the sector’s rally could pull the stock lower.",
    "watch": [
-    "Broader market volatility and Nifty 50 trends",
-    "Performance of the Metals sector index",
-    "Implementation of the new leadership appointments"
+    "BSE Realty index performance",
+    "Sector index trends over the next sessions",
+    "Any new broker commentary on Phoenix Mills"
    ],
-   "about": "",
-   "basis": "94308915ac42",
-   "items": 5,
-   "updated": "2026-11-25T08:17+05:30",
+   "about": "Phoenix Mills Ltd. is a real estate development company.",
+   "basis": "b9f6d81999bf",
+   "items": 2,
+   "updated": "2026-11-23T12:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "LLOYDSME": {
@@ -695,38 +744,6 @@
    "basis": "a6d7e6563a4d",
    "items": 3,
    "updated": "2026-11-25T11:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "AXISBANK": {
-   "summary": "Axis Bank shares recently dropped 4% as part of a sharp market-wide sell-off that pushed the Nifty 50 below 25,350. The bank is currently one of the stocks dragging the index down, alongside other major financial and metal companies.",
-   "why": "If you own these shares, the recent price drop reflects general market fear rather than specific bad news about the bank's business. This volatility can cause your portfolio value to swing up or down quickly.",
-   "upside": "Some market experts view the bank's current valuation as attractive compared to competitors, which could support interest in the stock.",
-   "downside": "The broader financial sector is under pressure, and high market volatility may lead to larger and faster price swings in the coming days.",
-   "watch": [
-    "Whether the Nifty 50 index stabilizes above the 25,350 level",
-    "How the Financials sector performs in the next few sessions",
-    "If the bank rebounds quickly from the recent 4% drop"
-   ],
-   "about": "Axis Bank is a major financial services company and one of India's 50 largest listed firms.",
-   "basis": "57ec0f9f6462",
-   "items": 3,
-   "updated": "2026-11-25T11:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "TORNTPOWER": {
-   "summary": "PulsEdge flagged that Torrent Power Ltd. announced plans to acquire newly formed companies, which could boost its generation capacity. Details of the deal are still pending and execution risk remains.",
-   "why": "Shareholders should watch the potential capacity increase that could enhance earnings, while also considering the risk that execution delays may affect returns.",
-   "upside": "Successful acquisition and integration could expand generation capacity and improve profitability.",
-   "downside": "Execution challenges could delay benefits and impact shareholder returns.",
-   "watch": [
-    "Details and timeline of the acquisition",
-    "Progress on integrating the new companies",
-    "Energy sector index performance"
-   ],
-   "about": "Torrent Power Ltd. is a power company that generates and distributes electricity.",
-   "basis": "557283be2860",
-   "items": 1,
-   "updated": "2026-11-24T19:21+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "HEXT": {
@@ -809,6 +826,22 @@
    "updated": "2026-11-25T10:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "BANKINDIA": {
+   "summary": "The Financials sector recently dropped by 2.5% in a single session, though it has gained 0.5% over the last five days. The Reserve Bank of India is now closely monitoring banks' gold loan portfolios after gold prices fell sharply. Additionally, there is a shift of investor money from government bonds to stocks, which may affect bond prices.",
+   "why": "Banks like Bank of India hold many government bonds and gold loans, so changes in bond prices or gold values can directly impact their profits and stability. Sector-wide movements also influence how the stock performs relative to the broader market.",
+   "upside": "If the shift of money from bonds to stocks continues, it could support overall market activity and bank performance.",
+   "downside": "A sharp drop in gold prices could force banks to set aside more money to cover potential losses on gold loans, hurting their profits.",
+   "watch": [
+    "Updates on RBI's monitoring of gold loan portfolios",
+    "Changes in government bond prices due to investor shifts",
+    "Future movements in the Financials sector index"
+   ],
+   "about": "Bank of India is a financial services company listed in India's Nifty 500 index.",
+   "basis": "f7fd035e0061",
+   "items": 3,
+   "updated": "2026-11-25T17:12+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "ENGINERSIN": {
    "summary": "PulsEdge flagged that Engineers India Ltd. is part of the Nifty 500 index, which tracks India's 500 largest listed companies. The recent news items flagged in the system actually relate to other companies, specifically Vascon Engineers and Eppeltone Engineers, rather than Engineers India Ltd. itself.",
    "why": "This distinction matters because news about other construction or engineering firms does not directly change the financial performance or share value of Engineers India Ltd.",
@@ -841,36 +874,20 @@
    "updated": "2026-11-25T12:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "BANKINDIA": {
-   "summary": "The Financials sector recently dropped by 2.5% in a single session, though it has gained 0.5% over the last five days. The Reserve Bank of India is now closely monitoring banks' gold loan portfolios after gold prices fell sharply. Additionally, there is a shift of investor money from government bonds to stocks, which may affect bond prices.",
-   "why": "Banks like Bank of India hold many government bonds and gold loans, so changes in bond prices or gold values can directly impact their profits and stability. Sector-wide movements also influence how the stock performs relative to the broader market.",
-   "upside": "If the shift of money from bonds to stocks continues, it could support overall market activity and bank performance.",
-   "downside": "A sharp drop in gold prices could force banks to set aside more money to cover potential losses on gold loans, hurting their profits.",
+  "HINDALCO": {
+   "summary": "Hindalco shares fell about 3% as the market dropped sharply, and the company announced the re‑appointment of its Managing Director Satish Pai for 2028 and the appointment of Deputy Managing Director Hemant Sikka for 2027. It is also listed among stocks traders are watching today.",
+   "why": "The price move reflects broader market sentiment, while the leadership changes could influence the company’s future performance.",
+   "upside": "The stock could bounce back if the overall market or metals sector recovers.",
+   "downside": "Continued market volatility and a weak metals index may keep pressure on the share price.",
    "watch": [
-    "Updates on RBI's monitoring of gold loan portfolios",
-    "Changes in government bond prices due to investor shifts",
-    "Future movements in the Financials sector index"
+    "Broader market volatility and Nifty 50 trends",
+    "Performance of the Metals sector index",
+    "Implementation of the new leadership appointments"
    ],
-   "about": "Bank of India is a financial services company listed in India's Nifty 500 index.",
-   "basis": "f7fd035e0061",
-   "items": 3,
-   "updated": "2026-11-25T17:12+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "HDFCBANK": {
-   "summary": "HDFC Bank is in the spotlight as analysts compare it favorably with peers on valuation, it displayed a bullish White Marubozu candlestick, yet it is also listed among stocks pulling the Nifty 50 lower.",
-   "why": "These signals could influence short‑term demand for the shares you hold.",
-   "upside": "If the bullish candlestick pattern holds and valuation arguments attract buyers, the stock could move higher.",
-   "downside": "A broader market sell‑off or failure of the candlestick pattern could push the price down.",
-   "watch": [
-    "Valuation comparison with Axis and ICICI banks",
-    "Nifty 50 index trend and broader sell‑off",
-    "Confirmation of the White Marubozu pattern in upcoming sessions"
-   ],
-   "about": "HDFC Bank provides banking and financial services in India.",
-   "basis": "bd24b3b66bf5",
-   "items": 3,
-   "updated": "2026-11-25T11:15+05:30",
+   "about": "",
+   "basis": "94308915ac42",
+   "items": 5,
+   "updated": "2026-11-25T08:17+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "MAXHEALTH": {
@@ -953,6 +970,38 @@
    "updated": "2026-11-25T12:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "HDFCBANK": {
+   "summary": "HDFC Bank is in the spotlight as analysts compare it favorably with peers on valuation, it displayed a bullish White Marubozu candlestick, yet it is also listed among stocks pulling the Nifty 50 lower.",
+   "why": "These signals could influence short‑term demand for the shares you hold.",
+   "upside": "If the bullish candlestick pattern holds and valuation arguments attract buyers, the stock could move higher.",
+   "downside": "A broader market sell‑off or failure of the candlestick pattern could push the price down.",
+   "watch": [
+    "Valuation comparison with Axis and ICICI banks",
+    "Nifty 50 index trend and broader sell‑off",
+    "Confirmation of the White Marubozu pattern in upcoming sessions"
+   ],
+   "about": "HDFC Bank provides banking and financial services in India.",
+   "basis": "bd24b3b66bf5",
+   "items": 3,
+   "updated": "2026-11-25T11:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "AXISBANK": {
+   "summary": "Axis Bank shares recently dropped 4% as part of a sharp market-wide sell-off that pushed the Nifty 50 below 25,350. The bank is currently one of the stocks dragging the index down, alongside other major financial and metal companies.",
+   "why": "If you own these shares, the recent price drop reflects general market fear rather than specific bad news about the bank's business. This volatility can cause your portfolio value to swing up or down quickly.",
+   "upside": "Some market experts view the bank's current valuation as attractive compared to competitors, which could support interest in the stock.",
+   "downside": "The broader financial sector is under pressure, and high market volatility may lead to larger and faster price swings in the coming days.",
+   "watch": [
+    "Whether the Nifty 50 index stabilizes above the 25,350 level",
+    "How the Financials sector performs in the next few sessions",
+    "If the bank rebounds quickly from the recent 4% drop"
+   ],
+   "about": "Axis Bank is a major financial services company and one of India's 50 largest listed firms.",
+   "basis": "57ec0f9f6462",
+   "items": 3,
+   "updated": "2026-11-25T11:15+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "ITI": {
    "summary": "ITI shares rose about 11% on November 23, 2026, even though the wider market fell. The stock exchange flagged a significant increase in trading volume for the company.",
    "why": "This matters because the stock moved strongly against the general market trend, which can indicate high investor interest or uncertainty.",
@@ -965,22 +1014,6 @@
    ],
    "about": "ITI is a company in the Telecommunication sector.",
    "basis": "117e0080befe",
-   "items": 2,
-   "updated": "2026-11-24T06:49+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "JSWCEMENT": {
-   "summary": "JSW Cement recently filed a standard regulatory disclosure with the stock exchange. A stock advisor also recently shared a positive view on the company's shares.",
-   "why": "These events may influence how investors feel about the stock, which can affect its trading price.",
-   "upside": "Positive comments from advisors can sometimes encourage more people to buy the stock.",
-   "downside": "Broker opinions can change quickly, so a positive view today may not last.",
-   "watch": [
-    "Any follow-up details from the regulatory disclosure",
-    "Changes in the advisor's opinion on the stock",
-    "General news in the construction materials sector"
-   ],
-   "about": "JSW Cement is a company in the construction materials sector.",
-   "basis": "87c17a27e065",
    "items": 2,
    "updated": "2026-11-24T06:49+05:30",
    "model": "qwen/qwen3.8-27b"
@@ -1048,6 +1081,22 @@
    "items": 1,
    "updated": "2026-11-25T11:30+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "JSWCEMENT": {
+   "summary": "JSW Cement recently filed a standard regulatory disclosure with the stock exchange. A stock advisor also recently shared a positive view on the company's shares.",
+   "why": "These events may influence how investors feel about the stock, which can affect its trading price.",
+   "upside": "Positive comments from advisors can sometimes encourage more people to buy the stock.",
+   "downside": "Broker opinions can change quickly, so a positive view today may not last.",
+   "watch": [
+    "Any follow-up details from the regulatory disclosure",
+    "Changes in the advisor's opinion on the stock",
+    "General news in the construction materials sector"
+   ],
+   "about": "JSW Cement is a company in the construction materials sector.",
+   "basis": "87c17a27e065",
+   "items": 2,
+   "updated": "2026-11-24T06:49+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "BSE": {
    "summary": "BSE Ltd. is part of the Financial Services sector, which recently dropped 2.5% in one day but gained 0.5% over the last five days. Recent market news highlighted that several other stocks hit their lowest prices in a year, suggesting some overall market weakness.",
@@ -1145,22 +1194,6 @@
    "updated": "2026-11-25T15:31+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "MARUTI": {
-   "summary": "Maruti Suzuki’s shares rose about 2% after the company announced a price hike, while the broader market showed mixed moves. The stock is also being highlighted as a relatively safer bet amid recent market volatility.",
-   "why": "Higher prices could lift earnings, but they may also curb demand among price‑sensitive buyers.",
-   "upside": "Earnings could improve if the price increase sustains without a major drop in sales.",
-   "downside": "Demand could shift to competitors if buyers react negatively to higher prices, and overall market volatility could pull the stock down.",
-   "watch": [
-    "Impact of price hike on sales volumes",
-    "Broader market volatility and its effect on the stock",
-    "Auto sector performance trends"
-   ],
-   "about": "Maruti Suzuki India Ltd. manufactures and sells passenger cars in India.",
-   "basis": "de2624923622",
-   "items": 4,
-   "updated": "2026-11-23T13:46+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "EICHERMOT": {
    "summary": "Eicher Motors signed a Rs 1,000 crore MoU with the Tamil Nadu government to expand its electric‑vehicle ecosystem, while its stock hit an all‑time high after a 17% rally driven by strong premium bike sales.",
    "why": "The EV partnership could shape future growth, and the recent price surge reflects investor confidence that may affect share value.",
@@ -1257,6 +1290,22 @@
    "updated": "2026-11-23T14:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "MARUTI": {
+   "summary": "Maruti Suzuki’s shares rose about 2% after the company announced a price hike, while the broader market showed mixed moves. The stock is also being highlighted as a relatively safer bet amid recent market volatility.",
+   "why": "Higher prices could lift earnings, but they may also curb demand among price‑sensitive buyers.",
+   "upside": "Earnings could improve if the price increase sustains without a major drop in sales.",
+   "downside": "Demand could shift to competitors if buyers react negatively to higher prices, and overall market volatility could pull the stock down.",
+   "watch": [
+    "Impact of price hike on sales volumes",
+    "Broader market volatility and its effect on the stock",
+    "Auto sector performance trends"
+   ],
+   "about": "Maruti Suzuki India Ltd. manufactures and sells passenger cars in India.",
+   "basis": "de2624923622",
+   "items": 4,
+   "updated": "2026-11-23T13:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "LTTS": {
    "summary": "L&T Technology Services addressed reports of a cybersecurity incident and launched a new software tool called SDVault.ai for the automotive sector. The company is part of the IT sector, which has seen recent price fluctuations.",
    "why": "Shareholders need to know if the security reports are serious because trust is key for a tech firm. The new product launch shows the company is trying to grow, but it is too early to know if customers will buy it.",
@@ -1288,22 +1337,6 @@
    "items": 2,
    "updated": "2026-11-23T11:45+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "PERSISTENT": {
-   "summary": "Persistent Systems recently issued a statement to the stock exchange, though the specific details are not yet public. At the same time, a technical indicator called RSI moved above 50, which suggests the stock may be gaining upward momentum.",
-   "why": "The company statement could contain important information that affects the value of the shares, while the rising RSI indicates potential short-term strength in the stock price.",
-   "upside": "The upward trend in the RSI suggests the stock might continue to gain strength in the near term.",
-   "downside": "The momentum indicated by the RSI could reverse quickly, and the content of the company statement is unknown, which creates uncertainty.",
-   "watch": [
-    "The full details of the company statement issued to the exchange.",
-    "Whether the RSI momentum continues or reverses.",
-    "Overall trends in the IT sector index."
-   ],
-   "about": "",
-   "basis": "8e5aefbe23de",
-   "items": 2,
-   "updated": "2026-11-23T08:46+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "CANHLIFE": {
    "summary": "Canara HSBC Life Insurance Company Ltd. has announced the resignation of its CFO, Tarun Rustagi, effective 24 November 2026. The departure may cause short‑term concern among investors until a replacement is found.",
