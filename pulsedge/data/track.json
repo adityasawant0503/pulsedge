@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-25T15:32:14+05:30",
+ "updated": "2026-11-25T15:45:52+05:30",
  "summary": {
-  "calls": 2204,
-  "scored_calls": 1008,
+  "calls": 2206,
+  "scored_calls": 1010,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,28 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "79953cb61f267f99",
+   "symbol": "FSL",
+   "time": "2026-11-25T15:36:45+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Firstsource Solutions Limited: Firstsource Solutions Limited has informed the Exchange regarding a press release dated November 25, 2026, titled \"Firstsource na",
+   "url": "https://nsearchives.nseindia.com/corporate/FSL_25112026153631_PressReleaseEverestPEAKMatrixAssessment2026BFSandFCCsigned.pdf"
+  },
+  {
+   "id": "92140c9bf54482fc",
+   "symbol": "360ONE",
+   "time": "2026-11-25T15:27:13+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Why 360 One could see steeper upgrades in estimates if markets stay buoyant",
+   "url": "https://www.livemint.com/market/mark-to-market/why-360-one-could-see-steeper-upgrades-in-estimates-if-markets-stay-buoyant-11795597956942.html"
+  },
   {
    "id": "aa12f63adf21e899",
    "symbol": "LGEINDIA",

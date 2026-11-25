@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T15:31+05:30",
+ "updated": "2026-11-25T15:45+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -91,22 +91,6 @@
    "updated": "2026-11-25T08:17+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "RVNL": {
-   "summary": "RVNL has secured new contracts, including a hospital project from NMDC and orders worth 8,000 cr in H1, while reporting profit growth but a drop in revenue for Q2 FY27.",
-   "why": "These developments affect the company’s future cash flow and earnings, which matter to shareholders.",
-   "upside": "If the company meets its FY27 order‑book target of 25,000 cr and executes the new contracts on schedule, earnings could improve.",
-   "downside": "Execution delays or slower revenue growth could hurt margins and earnings.",
-   "watch": [
-    "Progress on the NMDC hospital contract",
-    "Achievement of the 25,000 cr order‑book goal",
-    "Quarterly revenue trends and profit growth"
-   ],
-   "about": "RVNL builds and maintains railway infrastructure projects in India.",
-   "basis": "fa7e278df831",
-   "items": 5,
-   "updated": "2026-11-24T13:01+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "DALBHARAT": {
    "summary": "Dalmia Bharat Ltd. announced a ₹700 crore share buyback, targeting up to 3.78 million shares at ₹1,850 per share. The board approved the plan on 23 Nov 2026 and the company has informed the exchange of the approval.",
    "why": "A buyback reduces the number of shares outstanding, which can lift earnings per share and may support the stock price for existing shareholders.",
@@ -137,6 +121,22 @@
    "basis": "1cea0c63280e",
    "items": 4,
    "updated": "2026-11-25T13:32+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "RVNL": {
+   "summary": "Rail Vikas Nigam Ltd. recently secured a new contract to build a hospital in Chhattisgarh and has won orders worth 8,000 crore rupees in the first half of the year. The company is aiming for a total order book of 25,000 crore rupees by the end of the fiscal year.",
+   "why": "New contracts indicate that the company has steady work ahead, which supports its future income. This activity helps show that the business is active and generating revenue.",
+   "upside": "The company is on track to reach a large order book, which suggests a steady stream of future income.",
+   "downside": "Delays in completing the projects could affect the company's profits and when it recognizes revenue.",
+   "watch": [
+    "Updates on the progress of the new hospital construction project.",
+    "Whether the company reaches its 25,000 crore rupee order book target.",
+    "Any news about delays in executing current contracts."
+   ],
+   "about": "Rail Vikas Nigam Ltd. is a construction company that builds railway infrastructure and other projects.",
+   "basis": "7098234c76da",
+   "items": 4,
+   "updated": "2026-11-25T15:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "TVSMOTOR": {
