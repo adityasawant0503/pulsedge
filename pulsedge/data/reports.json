@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T15:45+05:30",
+ "updated": "2026-11-25T16:01+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Foreign investors returned to Indian stocks after two months of selling, with money flowing into 14 different sectors. L&T saw positive news from winning large contracts, including a battery storage project in Gujarat. On the other hand, APL Apollo shares fell sharply after brokers lowered their ratings following a deal with Tata Steel. The metals sector was the weakest performer, dropping significantly as investors worried about debt and valuation.",
+  "summary": "Shukra Medtech plans to raise ₹648 crore by issuing new shares, which could increase supply and pressure the price. TVS Motor signed a non‑binding agreement to invest ₹2,000 crore in Tamil Nadu, aiming to create 1,000 jobs and boost future earnings. L&T secured a large contract worth up to ₹25 billion, while Tata Steel faced concerns over its APL Apollo deal, affecting market sentiment. Sector indices saw IT rise 1.7%, metals fall 3.7%, and banks drop 3.2%.",
   "themes": [
-   "Foreign money is flowing back into the market after a long pause.",
-   "Large companies are announcing big new contracts and factory expansions.",
-   "Investors are cautious about deals that increase company debt."
+   "Corporate capital moves and investment plans",
+   "Contract wins and strategic partnerships",
+   "Market sentiment around large deals and valuations"
   ],
   "watch": [
-   "Whether foreign investors continue buying or sell again quickly.",
-   "How the market reacts to the new share issue by Shukra Medtech in December.",
-   "If APL Apollo shares stabilize or continue to fall after the recent drop."
+   "Shukra Medtech’s ₹648 crore capital raise and its potential impact on share supply",
+   "TVS Motor’s ₹2,000 crore investment plan and the risk of execution delays",
+   "Valuation and debt concerns surrounding Tata Steel’s APL Apollo deal"
   ],
   "date": "2026-11-25",
-  "basis": "28375cc40f42",
-  "updated": "2026-11-25T15:15+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 97
+  "basis": "f5fd2809a4fb",
+  "updated": "2026-11-25T16:01+05:30",
+  "model": "openai/gpt-oss-20b",
+  "items": 104
  },
  "stocks": {
   "LENSKART": {
@@ -409,6 +409,22 @@
    "items": 4,
    "updated": "2026-11-25T14:01+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "WIPRO": {
+   "summary": "Wipro has signed a large partnership with BP to overhaul BP’s finance operations, with 3,000 BP staff expected to join Wipro and a new operating model launching in 2027. The IT sector index rose 1.7% in the last session and fell 0.3% over five sessions.",
+   "why": "The deal could bring long‑term revenue and new business opportunities for Wipro shareholders, though the revenue may not be recognized immediately.",
+   "upside": "The BP partnership could lead to significant future revenue growth.",
+   "downside": "The long implementation timeline may delay tangible revenue recognition.",
+   "watch": [
+    "Progress toward the 2027 operating model launch",
+    "Timing of revenue recognition from the BP deal",
+    "Shifts in investor sentiment from AI to cheaper Indian software firms"
+   ],
+   "about": "Wipro is an Indian IT services company.",
+   "basis": "fece85212b03",
+   "items": 3,
+   "updated": "2026-11-25T16:01+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "TITAGARH": {
    "summary": "Titagarh Rail Systems recently won a ₹77.09 crore order from JSW for railway wagons and received approval to manufacture auto carrier wagons. The company also delivered a naval system to the Indian Navy and secured an additional order from Presstonic Engineering for the Mumbai Metro Line 6 project.",
