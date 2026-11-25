@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T08:17+05:30",
+ "updated": "2026-11-25T08:30+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -315,19 +315,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is facing mixed signals as global oil prices fluctuate between recent lows and a sharp rebound. Geopolitical tensions in the Strait of Hormuz have pushed crude prices up, while other reports suggest prices may have fallen too far and are due for a correction.",
-   "why": "Since the company earns money by selling oil, higher crude prices generally mean more revenue, but falling prices can reduce its profits.",
-   "upside": "If oil prices continue to rise due to supply disruptions or a rebound from recent lows, the company's earnings could increase.",
-   "downside": "If global demand weakens or supply remains high, oil prices could stay low, which would reduce the company's revenue.",
+   "summary": "Oil India Ltd. is facing mixed signals as global oil prices fluctuate between falling on supply concerns and rising due to shipping disruptions in the Strait of Hormuz. The company's sector index has recently declined, reflecting broader market pressure on oil stocks.",
+   "why": "Since Oil India earns money by selling crude oil, changes in global oil prices directly affect its potential profits. Investors need to watch how these price swings impact the company's bottom line.",
+   "upside": "Disruptions in the Strait of Hormuz could keep oil prices high, which would likely boost revenues for Indian oil producers.",
+   "downside": "If global oil supply remains high and prices stay low, it could reduce the earnings for oil producers like Oil India.",
    "watch": [
-    "Global crude oil price movements",
-    "News about shipping safety in the Strait of Hormuz",
-    "Changes in global oil supply levels"
+    "Global crude oil price movements, particularly Brent and WTI levels.",
+    "News regarding shipping safety and disruptions in the Strait of Hormuz.",
+    "Performance of the Oil & Gas sector index in the coming sessions."
    ],
-   "about": "Oil India Ltd. is an Indian company in the oil and gas sector that is part of the Nifty 500 index.",
-   "basis": "78c4e0c1fcdf",
-   "items": 17,
-   "updated": "2026-11-25T08:17+05:30",
+   "about": "Oil India Ltd. is an Indian company in the Oil Gas & Consumable Fuels sector that is part of the Nifty 500 index.",
+   "basis": "9a5dc4de044e",
+   "items": 18,
+   "updated": "2026-11-25T08:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "JWL": {
@@ -968,6 +968,22 @@
    "basis": "f16877ca4fd9",
    "items": 2,
    "updated": "2026-11-25T08:17+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "ABB": {
+   "summary": "ABB India is currently being watched closely by traders as part of a broader list of popular stocks. The company recently filed a general update with the stock exchange.",
+   "why": "Because ABB is a large company in the Nifty 500 index, its movements can reflect broader market trends. General updates may contain new information that affects how investors view the company.",
+   "upside": "",
+   "downside": "Market-wide volatility could cause the stock price to move significantly, regardless of the company's specific news.",
+   "watch": [
+    "Details of the general update filed with the exchange",
+    "Overall market volatility affecting large stocks",
+    "Traders' focus on ABB in daily market watchlists"
+   ],
+   "about": "ABB India operates in the Capital Goods sector.",
+   "basis": "fe914384eb58",
+   "items": 2,
+   "updated": "2026-11-25T08:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ZYDUSLIFE": {
