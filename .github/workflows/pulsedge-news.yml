@@ -41,6 +41,7 @@ on:
       - 'pulsedge-bot/premarket.py'
       - 'pulsedge-bot/track_record.py'
       - 'pulsedge-bot/news_calendar.py'
+      - 'pulsedge-bot/events.py'
       - 'pulsedge-bot/flows.py'
       - 'pulsedge-bot/reports.py'
       - 'pulsedge-bot/reel/**'
@@ -116,11 +117,18 @@ jobs:
       env:
         DRY: ${{ github.ref != 'refs/heads/master' && '--dry-run' || '' }}
       run: python pulsedge-bot/news_calendar.py update $DRY
+    - name: Upcoming events
+      # results dates, board meetings and ex-dates from NSE (at most every 3 hours), and RBI, Fed, Budget and expiry dates
+      timeout-minutes: 2
+      continue-on-error: true
+      env:
+        DRY: ${{ github.ref != 'refs/heads/master' && '--dry-run' || '' }}
+      run: python pulsedge-bot/events.py update $DRY
     - name: Commit new headlines
       id: commit
       if: github.ref == 'refs/heads/master'
       run: |
-        FILES="pulsedge/data/feed.json pulsedge/data/universe.json pulsedge/data/premarket.json pulsedge/data/track.json pulsedge/data/flows.json pulsedge/data/reports.json pulsedge/data/paper.json pulsedge/data/newscal pulsedge-bot/state"
+        FILES="pulsedge/data/feed.json pulsedge/data/universe.json pulsedge/data/premarket.json pulsedge/data/track.json pulsedge/data/flows.json pulsedge/data/reports.json pulsedge/data/paper.json pulsedge/data/newscal pulsedge/data/events.json pulsedge-bot/state"
         FILES=$(for f in $FILES; do [ -e "$f" ] && echo "$f"; done)
         if [ -n "$(git status --porcelain $FILES)" ]; then
           git config user.name "pulsedge-bot"
