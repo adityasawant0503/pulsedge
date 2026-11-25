@@ -1,7 +1,40 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-25T11:22:53+05:30",
+ "updated": "2026-11-25T11:33:22+05:30",
  "items": [
+  {
+   "id": "62e9ffeb575ac646",
+   "time": "2026-11-25T11:32:16+05:30",
+   "headline": "SPOT GOLD FALLS NEARLY 1% TO $3,517.03/OZ",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10010",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [],
+   "sectors": [
+    "Metals",
+    "Gold"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "commodity",
+   "action": "Monitor gold ETFs and jewellery stocks for intraday correlation with spot prices.",
+   "reason": [
+    "Spot gold price movement is a macro indicator.",
+    "No specific Indian listed company is named or directly impacted in a material way."
+   ],
+   "risks": [
+    "Commodity price volatility can affect sentiment in related sectors."
+   ],
+   "plain": "The global price of gold dropped by about one percent.",
+   "why": "This is a general market update that does not directly change the value of any specific Indian company's shares.",
+   "check": "",
+   "original": "SPOT GOLD FALLS NEARLY 1% TO $3,517.03/OZ",
+   "latency": 67.0,
+   "lane": "fast"
+  },
   {
    "id": "a8f10eaf47bc1315",
    "time": "2026-11-25T11:22:30+05:30",
