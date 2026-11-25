@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-25T14:30:57+05:30",
+ "updated": "2026-11-25T14:47:11+05:30",
  "summary": {
-  "calls": 2194,
-  "scored_calls": 998,
+  "calls": 2196,
+  "scored_calls": 1000,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "baf38a6a8e251227",
+   "symbol": "EICHERMOT",
+   "time": "2026-11-25T14:35:35+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "EICHER MOTORS: ROYAL ENFIELD SIGNS RS. 1,000 CRORE MOU WITH TAMIL NADU GOVERNMENT FOR EV ECOSYSTEM EXPANSION; INVESTMENT TO GENERATE 500 JOBS AND SUPPORT EV PRO",
+   "url": "https://t.me/Indiaredboxglobal/10035",
+   "alert_px": 8304.0,
+   "alert_move": 1.61,
+   "alert_at": "2026-11-25T14:36:11+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "026e9b8d41658d75",
+   "symbol": "EICHERMOT",
+   "time": "2026-11-25T14:31:09+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Eicher Motors Limited: Eicher Motors Limited has informed the Exchange regarding a press release dated November 25, 2026, titled \"ROYAL ENFIELD SIGNS RS. 1,000 ",
+   "url": "https://nsearchives.nseindia.com/corporate/rahulrathore_royalenfield_com_25112026143051_Press_Release_25-11-2026_Signed.pdf",
+   "alert_px": 8305.0,
+   "alert_move": 1.62,
+   "alert_at": "2026-11-25T14:46:57+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "0c379a0843cc97bf",
    "symbol": "ZYDUSLIFE",

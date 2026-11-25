@@ -2,19 +2,6 @@
  "note": "The last 60 runs of the AI classifier: items sorted by AI, set aside as routine, or left to keyword rules.",
  "runs": [
   {
-   "time": "2026-11-24T09:15+05:30",
-   "new": 5,
-   "ai": 5,
-   "routine": 0,
-   "rules": 0,
-   "models": {
-    "qwen/qwen3.8-27b": 5
-   },
-   "errors": [
-    "gemini-3.8-flash: The read operation timed out"
-   ]
-  },
-  {
    "time": "2026-11-24T09:30+05:30",
    "new": 2,
    "ai": 2,
@@ -822,6 +809,20 @@
    },
    "errors": [
     "gemini-3.8-flash: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'"
+   ]
+  },
+  {
+   "time": "2026-11-25T14:45+05:30",
+   "new": 13,
+   "ai": 9,
+   "routine": 4,
+   "rules": 0,
+   "models": {
+    "qwen/qwen3.8-27b": 9
+   },
+   "errors": [
+    "gemini-3.8-flash: HTTP 503 This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",     \"status\": \"UNAVAILABLE\"   } } ]'",
+    "gemini-3.8-flash: The read operation timed out"
    ]
   }
  ]
