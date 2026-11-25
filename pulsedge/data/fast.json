@@ -1,7 +1,54 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-25T11:06:23+05:30",
+ "updated": "2026-11-25T11:12:53+05:30",
  "items": [
+  {
+   "id": "f370be5e48fa2162",
+   "time": "2026-11-25T11:12:23+05:30",
+   "headline": "GOVT SAID TO BRING NEW SCHEME WORTH 50000 CRS FOR POWER DISTRIBUTION COS: ZEE BUSINESS (ADANI POWER)",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10008",
+   "section": "macro",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "ADANIPOWER",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Power"
+   ],
+   "impact": 60,
+   "confidence": 70,
+   "category": "policy",
+   "action": "Monitor official government circulars for specific allocation details before assuming direct benefit.",
+   "reason": [
+    "A ₹50,000 Cr scheme for power distribution could improve cash flows for the sector.",
+    "Adani Power may benefit indirectly through improved grid reliability and demand."
+   ],
+   "risks": [
+    "Scheme details are not yet officially confirmed.",
+    "Benefits may be concentrated in distribution companies rather than generation."
+   ],
+   "plain": "The government is reportedly planning a large new fund to help power distribution companies.",
+   "why": "Better-funded distribution companies can buy more electricity, which may help power producers sell their output.",
+   "check": "Look for the official government press release confirming the scheme's details.",
+   "original": "GOVT SAID TO BRING NEW SCHEME WORTH 50000 CRS FOR POWER DISTRIBUTION COS: ZEE BUSINESS (ADANI POWER)",
+   "latency": 30.1,
+   "lane": "fast",
+   "quotes": {
+    "ADANIPOWER": {
+     "px": 206.5,
+     "prev": 207.9,
+     "move": -0.67,
+     "at": "2026-11-25T11:12:53+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "de823d6ae8812a60",
    "time": "2026-11-25T11:05:41+05:30",
