@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-25T14:02:12+05:30",
+ "updated": "2026-11-25T14:17:04+05:30",
  "summary": {
-  "calls": 2189,
-  "scored_calls": 993,
+  "calls": 2193,
+  "scored_calls": 997,
   "d1": {
    "scored": 756,
    "hits": 320,
@@ -26,6 +26,66 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "0c379a0843cc97bf",
+   "symbol": "ZYDUSLIFE",
+   "time": "2026-11-25T14:12:26+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Zydus Lifesciences Limited: Zydus Lifesciences Limited has informed the Exchange regarding a press release dated November 25, 2026, titled \"Zydus receives EIR f",
+   "url": "https://nsearchives.nseindia.com/corporate/Cadilahc_25112026141110_PressRelease25112026.pdf",
+   "alert_px": 1221.7,
+   "alert_move": 1.85,
+   "alert_at": "2026-11-25T14:16:46+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "cd1bbb43ec0b6d17",
+   "symbol": "CGCL",
+   "time": "2026-11-25T14:02:49+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "CAPRI GLOBAL CAPITAL: RAISES USD 30 MLN FROM BLUEORCHARD MICROFINANCE FUND",
+   "url": "https://t.me/Indiaredboxglobal/10032",
+   "alert_px": 237.35,
+   "alert_move": 2.04,
+   "alert_at": "2026-11-25T14:04:11+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "e4e582a833a44b8b",
+   "symbol": "CGCL",
+   "time": "2026-11-25T14:01:01+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Capri Global Capital Limited: Capri Global Capital Limited has informed the Exchange regarding a press release dated November 25, 2026, titled \"Capri Global Rai",
+   "url": "https://nsearchives.nseindia.com/corporate/CGCL_25112026140052_CGCL_PressRelease.pdf",
+   "alert_px": 237.18,
+   "alert_move": 1.96,
+   "alert_at": "2026-11-25T14:16:46+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "e80e25c06f334b4d",
+   "symbol": "COFORGE",
+   "time": "2026-11-25T13:46:33+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Coforge Limited: Coforge Limited has informed the Exchange regarding a press release dated November 25, 2026, titled \"Coforge Nuuron Expands Agentic Capabilitie",
+   "url": "https://nsearchives.nseindia.com/corporate/COFORGE_25112026134625_SignedIntimationofPressReleasellNovember252026.pdf",
+   "alert_px": 2065.5,
+   "alert_move": -3.58,
+   "alert_at": "2026-11-25T14:16:46+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "10c21a2d1a0aad90",
    "symbol": "SUZLON",

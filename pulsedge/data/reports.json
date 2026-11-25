@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-25T14:01+05:30",
+ "updated": "2026-11-25T14:16+05:30",
  "nifty50": {
   "updated": "2026-11-20",
   "symbols": [
@@ -729,6 +729,22 @@
    "updated": "2026-11-24T18:25+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "CGCL": {
+   "summary": "Capri Global Capital Ltd. raised $30 million from the BlueOrchard Microfinance Fund, its first impact‑fundraise. The funding was announced on November 25, 2026.",
+   "why": "The new capital could support business growth but may dilute existing shareholders if equity was issued.",
+   "upside": "If the funds are deployed to expand lending or other services, earnings could improve.",
+   "downside": "If the raise involves issuing new shares, existing owners could see their ownership percentage fall.",
+   "watch": [
+    "Sector index performance – Financials fell 2.5% in the last session",
+    "Details on how the $30 million will be used",
+    "Any further equity issuance plans"
+   ],
+   "about": "Capri Global Capital Ltd. is a financial services company.",
+   "basis": "993d23826224",
+   "items": 2,
+   "updated": "2026-11-25T14:16+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "FLUOROCHEM": {
    "summary": "Gujarat Fluorochemicals Ltd. announced it will acquire newly incorporated companies, a move that could expand its business. Details of the deal are still pending, and integration could affect earnings.",
    "why": "Shareholders should watch because the acquisition may increase the company’s size and revenue, but integration risks could impact profitability.",
@@ -1033,6 +1049,22 @@
    "updated": "2026-11-23T13:46+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "ZYDUSLIFE": {
+   "summary": "Zydus Lifesciences received a key certificate for its new factory in Ahmedabad, which may help with tax savings. The company also set up a new unit in Australia to sell medicines and announced it is buying new businesses.",
+   "why": "These moves show the company is expanding its operations and trying to grow in new markets, which could affect its future earnings.",
+   "upside": "The new factory certificate and Australian expansion could lead to cost savings and new sales opportunities over time.",
+   "downside": "Buying new businesses costs money, and selling medicines in Australia might face regulatory hurdles.",
+   "watch": [
+    "When the tax benefits from the new factory start showing up in financial reports",
+    "How the Australian unit handles local regulations",
+    "The cost of the new business acquisitions"
+   ],
+   "about": "Zydus Lifesciences is a healthcare company that sells and distributes pharmaceutical products.",
+   "basis": "53d9ecaf12c1",
+   "items": 3,
+   "updated": "2026-11-25T14:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "CLEANMAX": {
    "summary": "Clean Max Enviro Energy Solutions has announced the sale of a subsidiary and other assets. The company is in the Power sector and is part of the Nifty 500 index.",
    "why": "Selling parts of the business could change the company's future earnings and cash flow, which directly affects the value of its shares.",
@@ -1239,22 +1271,6 @@
    "basis": "fe914384eb58",
    "items": 2,
    "updated": "2026-11-25T08:30+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "ZYDUSLIFE": {
-   "summary": "Zydus Lifesciences has set up a new business unit in Australia to sell its medicines. The company also announced it is acquiring new businesses that are currently being established.",
-   "why": "These moves show the company is trying to grow by entering new markets and buying other firms, which can add value for shareholders over time.",
-   "upside": "Expanding into Australia and acquiring new businesses could help the company grow its sales in the long run.",
-   "downside": "The company faces risks from regulatory hurdles in Australia and the cost of money spent on buying new businesses.",
-   "watch": [
-    "How the new Australian unit handles local regulations",
-    "Details on the new businesses being acquired",
-    "Performance of the Healthcare sector index"
-   ],
-   "about": "Zydus Lifesciences is a healthcare company that sells and distributes pharmaceutical products.",
-   "basis": "04367f24845e",
-   "items": 2,
-   "updated": "2026-11-24T12:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "KFINTECH": {
