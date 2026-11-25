@@ -1,7 +1,55 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-25T12:25:22+05:30",
+ "updated": "2026-11-25T12:27:23+05:30",
  "items": [
+  {
+   "id": "0a5e5062ab862322",
+   "time": "2026-11-25T12:26:18+05:30",
+   "headline": "APL APOLLO: TATA STEEL IS WORKING ON TWEAKING THE APL APOLLO DEAL STRUCTURE",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10018",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "mixed",
+   "tickers": [
+    {
+     "symbol": "TATASTEEL",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Metals",
+    "Steel"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "M&A",
+   "action": "Monitor official announcements for deal certainty before reacting to rumors.",
+   "reason": [
+    "Deal structure tweaks introduce uncertainty into the acquisition timeline.",
+    "Market may react to potential delays or changes in valuation."
+   ],
+   "risks": [
+    "Deal could fall through or face regulatory hurdles.",
+    "Short-term volatility due to conflicting media reports."
+   ],
+   "plain": "Tata Steel is changing how it plans to buy APL Apollo.",
+   "why": "Changes to a big deal can make the stock price move up or down unexpectedly.",
+   "check": "Look for official company statements confirming the new deal terms.",
+   "original": "APL APOLLO: TATA STEEL IS WORKING ON TWEAKING THE APL APOLLO DEAL STRUCTURE",
+   "latency": 65.3,
+   "lane": "fast",
+   "quotes": {
+    "TATASTEEL": {
+     "px": 162.16,
+     "prev": 163.0,
+     "move": -0.52,
+     "at": "2026-11-25T12:27:23+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "4adcc7ac31d9ae76",
    "time": "2026-11-25T12:24:12+05:30",
