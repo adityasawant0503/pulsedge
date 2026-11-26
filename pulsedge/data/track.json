@@ -1,31 +1,119 @@
 {
- "updated": "2026-11-26T16:59:31+05:30",
+ "updated": "2026-11-26T19:23:03+05:30",
  "summary": {
-  "calls": 2340,
-  "scored_calls": 1127,
+  "calls": 2348,
+  "scored_calls": 1135,
   "d1": {
-   "scored": 870,
-   "hits": 384,
-   "hit_rate": 44,
-   "avg_return": -0.14
+   "scored": 1004,
+   "hits": 453,
+   "hit_rate": 45,
+   "avg_return": -0.05
   },
   "d5": {
-   "scored": 444,
-   "hits": 182,
-   "hit_rate": 41,
-   "avg_return": -0.63
+   "scored": 549,
+   "hits": 242,
+   "hit_rate": 44,
+   "avg_return": -0.46
   },
-  "avg_abs_move_1d": 1.79,
-  "news_day_move": 1.02,
+  "avg_abs_move_1d": 1.8,
+  "news_day_move": 1.05,
   "after_alert_move": {
-   "n": 192,
-   "avg": 0.34
+   "n": 245,
+   "avg": 0.43
   },
   "since": "2026-10-26"
  },
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "99c0a5159b666c74",
+   "symbol": "BHARATCOAL",
+   "time": "2026-11-26T19:05:25+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Bharat Coking Coal Limited: Significant increase in volume has been observed in Bharat Coking Coal Limited. The Exchange, in order to ensure that investors have",
+   "url": ""
+  },
+  {
+   "id": "99c0a5159b666c74",
+   "symbol": "COALINDIA",
+   "time": "2026-11-26T19:05:25+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Bharat Coking Coal Limited: Significant increase in volume has been observed in Bharat Coking Coal Limited. The Exchange, in order to ensure that investors have",
+   "url": ""
+  },
+  {
+   "id": "017e7bf4ca1d9b3e",
+   "symbol": "BRIGADE",
+   "time": "2026-11-26T19:05:10+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Brigade Enterprises Limited: Brigade Enterprises Limited has informed the Exchange about Credit Rating |SUBJECT: Credit Rating",
+   "url": "https://nsearchives.nseindia.com/corporate/BRIGADE_26112026190503_37IntimationonCreditRatingCRISIL26062026.pdf"
+  },
+  {
+   "id": "755defaa631e6624",
+   "symbol": "VIJAYA",
+   "time": "2026-11-26T18:13:40+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Vijaya Diagnostic Centre Limited: VIJAYA DIAGNOSTIC CENTRE LIMITED has informed the Exchange regarding Update-Acquisition/Scheme/Sale/Disposal-XBRL |SUBJECT: Up",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_Restructuring_19532_WebXMLFile_20261126_181339200.xml"
+  },
+  {
+   "id": "87ceeee602fb83f8",
+   "symbol": "SAILIFE",
+   "time": "2026-11-26T18:10:26+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Sai Life Sciences Limited: Sai Life Sciences Limited has informed the Exchange about Credit Rating |SUBJECT: Credit Rating",
+   "url": "https://nsearchives.nseindia.com/corporate/SAILIFE_26112026181006_Stx_Credit_Rating_26112026_Signed.pdf"
+  },
+  {
+   "id": "46a245f70f732b33",
+   "symbol": "VIJAYA",
+   "time": "2026-11-26T18:05:22+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Vijaya Diagnostic Centre Limited: Vijaya Diagnostic Centre Limited has informed the Exchange regarding 'Completion of Acquisition of the Integrated Diagnostic B",
+   "url": "https://nsearchives.nseindia.com/corporate/VIJAYA_26112026180149_Signed_STX_intimation2611.pdf"
+  },
+  {
+   "id": "baff2d264c2f1c2b",
+   "symbol": "DALBHARAT",
+   "time": "2026-11-26T18:04:12+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Dalmia Bharat Limited: DALMIA BHARAT LIMITED has informed the Exchange about Issue Summary Document (ISD) for Buy-back of Pre Issue Stage through Open Market |S",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/BUYBACK_OPEN_MARKET_17144_WebXMLFile_20261126_180411204.xml"
+  },
+  {
+   "id": "150389b3f45c90da",
+   "symbol": "SOLARINDS",
+   "time": "2026-11-26T18:03:56+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "MANOMAY TEX INDIA: CO TO INVEST APPROXIMATELY ₹48.60 CRORE IN 8.80 MW AC / 13.20 MW DC SOLAR POWER PLANT IN RAJASTHAN, ALONGSIDE DENIM AND SPINNING CAPACITY EXP",
+   "url": "https://t.me/Indiaredboxglobal/10191"
+  },
   {
    "id": "c212b2d7284161b9",
    "symbol": "CIPLA",
@@ -303,7 +391,10 @@
    "scored": true,
    "source": "Business Standard",
    "headline": "IndiGo up 22% in a month; Anand Rathi sees macro tailwinds aiding recovery",
-   "url": "https://www.business-standard.com/markets/news/indigo-up-22-in-a-month-anand-rathi-sees-macro-tailwinds-aiding-recovery-126112600733_1.html"
+   "url": "https://www.business-standard.com/markets/news/indigo-up-22-in-a-month-anand-rathi-sees-macro-tailwinds-aiding-recovery-126112600733_1.html",
+   "entry_date": "2026-11-26",
+   "entry": 5625.0,
+   "news_day": -1.66
   },
   {
    "id": "6369ba163c7bb9cc",
@@ -318,7 +409,11 @@
    "alert_px": 307.25,
    "alert_move": -0.87,
    "alert_at": "2026-11-26T15:00:40+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 307.65,
+   "news_day": -0.74,
+   "after_alert": 0.13
   },
   {
    "id": "6369ba163c7bb9cc",
@@ -333,7 +428,11 @@
    "alert_px": 144.99,
    "alert_move": -1.89,
    "alert_at": "2026-11-26T15:00:40+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 144.42,
+   "news_day": -2.28,
+   "after_alert": -0.39
   },
   {
    "id": "b6ea3010b825fc4a",
@@ -348,7 +447,11 @@
    "alert_px": 641.05,
    "alert_move": 8.71,
    "alert_at": "2026-11-26T15:00:40+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 628.5,
+   "news_day": 6.58,
+   "after_alert": -1.96
   },
   {
    "id": "b6ea3010b825fc4a",
@@ -363,7 +466,11 @@
    "alert_px": 1836.7,
    "alert_move": 9.0,
    "alert_at": "2026-11-26T15:00:40+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 1832.1,
+   "news_day": 8.72,
+   "after_alert": -0.25
   },
   {
    "id": "642c66fc88e8eab8",
@@ -378,7 +485,11 @@
    "alert_px": 2245.3,
    "alert_move": 6.04,
    "alert_at": "2026-11-26T14:30:39+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 2232.8,
+   "news_day": 5.45,
+   "after_alert": -0.56
   },
   {
    "id": "f5c33c8c8c7106f8",
@@ -393,7 +504,11 @@
    "alert_px": 67.11,
    "alert_move": 0.63,
    "alert_at": "2026-11-26T14:30:39+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 67.24,
+   "news_day": 0.82,
+   "after_alert": 0.19
   },
   {
    "id": "523f326773e7742f",
@@ -408,7 +523,11 @@
    "alert_px": 6843.5,
    "alert_move": -1.39,
    "alert_at": "2026-11-26T13:59:37+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 6826.0,
+   "news_day": -1.64,
+   "after_alert": -0.26
   },
   {
    "id": "29e3862118dea04b",
@@ -423,7 +542,11 @@
    "alert_px": 6837.5,
    "alert_move": -1.48,
    "alert_at": "2026-11-26T14:00:51+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 6826.0,
+   "news_day": -1.64,
+   "after_alert": -0.17
   },
   {
    "id": "fbbe7cd885bbaba0",
@@ -438,7 +561,11 @@
    "alert_px": 2235.9,
    "alert_move": 5.59,
    "alert_at": "2026-11-26T14:09:43+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 2232.8,
+   "news_day": 5.45,
+   "after_alert": -0.14
   },
   {
    "id": "f020c5ee3814d5bd",
@@ -453,7 +580,11 @@
    "alert_px": 282.63,
    "alert_move": 2.19,
    "alert_at": "2026-11-26T13:30:54+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 280.35,
+   "news_day": 1.37,
+   "after_alert": -0.81
   },
   {
    "id": "419c6c1ef9b5e5df",
@@ -468,7 +599,11 @@
    "alert_px": 1965.0,
    "alert_move": -4.61,
    "alert_at": "2026-11-26T13:15:37+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 2000.0,
+   "news_day": -2.91,
+   "after_alert": 1.78
   },
   {
    "id": "16acbaa2772d66b1",
@@ -483,7 +618,11 @@
    "alert_px": 2219.7,
    "alert_move": 4.83,
    "alert_at": "2026-11-26T12:59:06+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 2232.8,
+   "news_day": 5.45,
+   "after_alert": 0.59
   },
   {
    "id": "757d8144d27dd8bd",
@@ -498,7 +637,11 @@
    "alert_px": 987.4,
    "alert_move": 5.72,
    "alert_at": "2026-11-26T13:00:32+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 995.0,
+   "news_day": 6.53,
+   "after_alert": 0.77
   },
   {
    "id": "a259d2dd7b4e00a4",
@@ -513,7 +656,11 @@
    "alert_px": 2042.8,
    "alert_move": -0.83,
    "alert_at": "2026-11-26T12:39:07+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 2000.0,
+   "news_day": -2.91,
+   "after_alert": -2.1
   },
   {
    "id": "a51e183820816768",
@@ -528,7 +675,11 @@
    "alert_px": 2042.8,
    "alert_move": -0.83,
    "alert_at": "2026-11-26T12:39:07+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 2000.0,
+   "news_day": -2.91,
+   "after_alert": -2.1
   },
   {
    "id": "00708ba11a31f25b",
@@ -543,7 +694,11 @@
    "alert_px": 609.0,
    "alert_move": 3.27,
    "alert_at": "2026-11-26T12:45:33+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 628.5,
+   "news_day": 6.58,
+   "after_alert": 3.2
   },
   {
    "id": "b266de3e9c01e0e5",
@@ -558,7 +713,11 @@
    "alert_px": 195.53,
    "alert_move": 3.43,
    "alert_at": "2026-11-26T12:45:33+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 196.54,
+   "news_day": 3.96,
+   "after_alert": 0.52
   },
   {
    "id": "ecfbfb818c7b4a7a",
@@ -573,7 +732,11 @@
    "alert_px": 129.16,
    "alert_move": -0.01,
    "alert_at": "2026-11-26T12:24:37+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 128.16,
+   "news_day": -0.78,
+   "after_alert": -0.77
   },
   {
    "id": "2869e4e956f69128",
@@ -588,7 +751,11 @@
    "alert_px": 5754.0,
    "alert_move": 0.04,
    "alert_at": "2026-11-26T12:15:30+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 5789.0,
+   "news_day": 0.65,
+   "after_alert": 0.61
   },
   {
    "id": "9c22459bffe543b7",
@@ -603,7 +770,11 @@
    "alert_px": 8219.0,
    "alert_move": -1.4,
    "alert_at": "2026-11-26T12:15:30+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 8180.0,
+   "news_day": -1.87,
+   "after_alert": -0.47
   },
   {
    "id": "e9c3c37ddc0171fb",
@@ -618,7 +789,11 @@
    "alert_px": 866.8,
    "alert_move": 2.43,
    "alert_at": "2026-11-26T12:00:48+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 862.0,
+   "news_day": 1.87,
+   "after_alert": -0.55
   },
   {
    "id": "95ee8fabbff7e492",
@@ -633,7 +808,11 @@
    "alert_px": 1158.1,
    "alert_move": 2.49,
    "alert_at": "2026-11-26T12:00:48+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 1183.0,
+   "news_day": 4.69,
+   "after_alert": 2.15
   },
   {
    "id": "95ee8fabbff7e492",
@@ -648,7 +827,11 @@
    "alert_px": 2548.5,
    "alert_move": 1.24,
    "alert_at": "2026-11-26T12:00:48+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 2640.3,
+   "news_day": 4.89,
+   "after_alert": 3.6
   },
   {
    "id": "6105462573268b28",
@@ -663,7 +846,11 @@
    "alert_px": 353.65,
    "alert_move": 1.29,
    "alert_at": "2026-11-26T11:45:45+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 358.0,
+   "news_day": 2.53,
+   "after_alert": 1.23
   },
   {
    "id": "95b4129582521125",
@@ -678,7 +865,11 @@
    "alert_px": 3191.7,
    "alert_move": 0.49,
    "alert_at": "2026-11-26T11:27:37+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 3160.0,
+   "news_day": -0.5,
+   "after_alert": -0.99
   },
   {
    "id": "ed7976d30656b135",
@@ -693,7 +884,11 @@
    "alert_px": 1164.0,
    "alert_move": 3.01,
    "alert_at": "2026-11-26T11:30:31+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 1183.0,
+   "news_day": 4.69,
+   "after_alert": 1.63
   },
   {
    "id": "7f7b044a437df842",
@@ -708,7 +903,11 @@
    "alert_px": 5107.0,
    "alert_move": 0.39,
    "alert_at": "2026-11-26T11:00:41+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 5098.0,
+   "news_day": 0.22,
+   "after_alert": -0.18
   },
   {
    "id": "fd4d3f0eac42da2d",
@@ -723,7 +922,11 @@
    "alert_px": 430.2,
    "alert_move": 1.22,
    "alert_at": "2026-11-26T11:15:29+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 427.1,
+   "news_day": 0.49,
+   "after_alert": -0.72
   },
   {
    "id": "967f17f5423d3a9f",
@@ -738,7 +941,11 @@
    "alert_px": 534.25,
    "alert_move": 2.8,
    "alert_at": "2026-11-26T11:00:41+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 526.6,
+   "news_day": 1.33,
+   "after_alert": -1.43
   },
   {
    "id": "d62623ecce75590e",
@@ -753,7 +960,11 @@
    "alert_px": 533.0,
    "alert_move": 2.56,
    "alert_at": "2026-11-26T10:52:36+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 526.6,
+   "news_day": 1.33,
+   "after_alert": -1.2
   },
   {
    "id": "24357d4e3ae2200f",
@@ -768,7 +979,11 @@
    "alert_px": 163.12,
    "alert_move": 2.02,
    "alert_at": "2026-11-26T11:15:29+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 160.29,
+   "news_day": 0.25,
+   "after_alert": -1.73
   },
   {
    "id": "24357d4e3ae2200f",
@@ -783,7 +998,11 @@
    "alert_px": 430.2,
    "alert_move": 1.22,
    "alert_at": "2026-11-26T11:15:29+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 427.1,
+   "news_day": 0.49,
+   "after_alert": -0.72
   },
   {
    "id": "77257c73941c0e78",
@@ -798,7 +1017,11 @@
    "alert_px": 3928.1,
    "alert_move": 4.05,
    "alert_at": "2026-11-26T11:00:41+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 3990.4,
+   "news_day": 5.7,
+   "after_alert": 1.59
   },
   {
    "id": "4701627019768088",
@@ -813,7 +1036,11 @@
    "alert_px": 221.35,
    "alert_move": 1.78,
    "alert_at": "2026-11-26T10:46:36+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 220.01,
+   "news_day": 1.16,
+   "after_alert": -0.61
   },
   {
    "id": "3cca3a8de0ca957d",
@@ -828,7 +1055,11 @@
    "alert_px": 3888.0,
    "alert_move": 2.99,
    "alert_at": "2026-11-26T10:30:44+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 3990.4,
+   "news_day": 5.7,
+   "after_alert": 2.63
   },
   {
    "id": "5c61e638a8e26138",
@@ -843,7 +1074,11 @@
    "alert_px": 2658.9,
    "alert_move": -0.36,
    "alert_at": "2026-11-26T10:45:36+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 2660.0,
+   "news_day": -0.32,
+   "after_alert": 0.04
   },
   {
    "id": "5c61e638a8e26138",
@@ -858,7 +1093,11 @@
    "alert_px": 207.18,
    "alert_move": 0.57,
    "alert_at": "2026-11-26T10:45:36+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 208.3,
+   "news_day": 1.12,
+   "after_alert": 0.54
   },
   {
    "id": "5fd66bec4cc3da67",
@@ -873,7 +1112,11 @@
    "alert_px": 1441.6,
    "alert_move": 0.59,
    "alert_at": "2026-11-26T10:15:38+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 1450.0,
+   "news_day": 1.17,
+   "after_alert": 0.58
   },
   {
    "id": "5fd66bec4cc3da67",
@@ -888,7 +1131,11 @@
    "alert_px": 2541.2,
    "alert_move": 1.0,
    "alert_at": "2026-11-26T10:15:38+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 2516.4,
+   "news_day": 0.02,
+   "after_alert": -0.98
   },
   {
    "id": "4d55490f7571f9f3",
@@ -903,7 +1150,11 @@
    "alert_px": 3674.6,
    "alert_move": 3.07,
    "alert_at": "2026-11-26T10:00:38+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 3835.0,
+   "news_day": 7.57,
+   "after_alert": 4.37
   },
   {
    "id": "c5c9d4f21997ce2f",
@@ -918,7 +1169,11 @@
    "alert_px": 2644.1,
    "alert_move": 0.07,
    "alert_at": "2026-11-26T09:56:06+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 2696.8,
+   "news_day": 2.07,
+   "after_alert": 1.99
   },
   {
    "id": "419554783d796fd8",
@@ -933,7 +1188,11 @@
    "alert_px": 234.02,
    "alert_move": 5.2,
    "alert_at": "2026-11-26T10:00:38+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 238.69,
+   "news_day": 7.3,
+   "after_alert": 2.0
   },
   {
    "id": "6971174ce367e537",
@@ -948,7 +1207,11 @@
    "alert_px": 3611.2,
    "alert_move": 0.84,
    "alert_at": "2026-11-26T10:00:38+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 3576.6,
+   "news_day": -0.13,
+   "after_alert": -0.96
   },
   {
    "id": "e8f971d035895dc8",
@@ -963,7 +1226,11 @@
    "alert_px": 3729.0,
    "alert_move": 4.6,
    "alert_at": "2026-11-26T11:00:41+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 3835.0,
+   "news_day": 7.57,
+   "after_alert": 2.84
   },
   {
    "id": "8a3252bdb2fa0391",
@@ -978,7 +1245,11 @@
    "alert_px": 3813.5,
    "alert_move": 6.97,
    "alert_at": "2026-11-26T12:30:35+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 3835.0,
+   "news_day": 7.57,
+   "after_alert": 0.56
   },
   {
    "id": "dc9b71987f406659",
@@ -993,7 +1264,11 @@
    "alert_px": 1762.1,
    "alert_move": -3.1,
    "alert_at": "2026-11-26T09:46:50+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 1758.1,
+   "news_day": -3.32,
+   "after_alert": -0.23
   },
   {
    "id": "d7b798ab9553e5b4",
@@ -1008,7 +1283,11 @@
    "alert_px": 721.05,
    "alert_move": 0.45,
    "alert_at": "2026-11-26T09:30:42+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 708.9,
+   "news_day": -1.25,
+   "after_alert": -1.69
   },
   {
    "id": "bf1c549b1f1cd24f",
@@ -1023,7 +1302,11 @@
    "alert_px": 426.15,
    "alert_move": 0.27,
    "alert_at": "2026-11-26T09:30:42+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 427.1,
+   "news_day": 0.49,
+   "after_alert": 0.22
   },
   {
    "id": "c3f32f50fca3a5ff",
@@ -1034,7 +1317,10 @@
    "scored": true,
    "source": "NSE Announcements",
    "headline": "Minda Corporation Limited: Minda Corporation Limited has informed the Exchange regarding Outcome of Board Meeting held on November 26, 2026. |SUBJECT: Outcome o",
-   "url": "https://nsearchives.nseindia.com/corporate/MINDACORP_26112026090740_ECoutcome261126.pdf"
+   "url": "https://nsearchives.nseindia.com/corporate/MINDACORP_26112026090740_ECoutcome261126.pdf",
+   "entry_date": "2026-11-26",
+   "entry": 708.9,
+   "news_day": -1.25
   },
   {
    "id": "18b233756432ca12",
@@ -1045,7 +1331,10 @@
    "scored": true,
    "source": "NSE Announcements",
    "headline": "Welspun Corp Limited: Welspun Corp Limited has informed the Exchange about Bagging/Receiving of orders/contracts - Receipt of Export Order for LSAW Pipes |SUBJE",
-   "url": "https://nsearchives.nseindia.com/corporate/WELCORP_26112026083153_SEsigned.pdf"
+   "url": "https://nsearchives.nseindia.com/corporate/WELCORP_26112026083153_SEsigned.pdf",
+   "entry_date": "2026-11-26",
+   "entry": 2232.8,
+   "news_day": 5.45
   },
   {
    "id": "0e94a59d4fd90b4b",
@@ -1056,7 +1345,10 @@
    "scored": true,
    "source": "NSE Announcements",
    "headline": "Acme Solar Holdings Limited: Acme Solar Holdings Limited has informed the Exchange about Commissioning of Battery Energy Storage Systems (BESS) Project |SUBJECT",
-   "url": "https://nsearchives.nseindia.com/corporate/ACME122002_26112026082635_Intimation26112026.pdf"
+   "url": "https://nsearchives.nseindia.com/corporate/ACME122002_26112026082635_Intimation26112026.pdf",
+   "entry_date": "2026-11-26",
+   "entry": 415.8,
+   "news_day": -0.22
   },
   {
    "id": "fba41ebabb78f5bf",
@@ -1071,7 +1363,11 @@
    "alert_px": 3674.6,
    "alert_move": 3.07,
    "alert_at": "2026-11-26T10:00:38+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 3835.0,
+   "news_day": 7.57,
+   "after_alert": 4.37
   },
   {
    "id": "b345d72544ae70aa",
@@ -1086,7 +1382,11 @@
    "alert_px": 3771.8,
    "alert_move": 5.8,
    "alert_at": "2026-11-26T12:00:48+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 3835.0,
+   "news_day": 7.57,
+   "after_alert": 1.68
   },
   {
    "id": "a3e1acda9afe4ff3",
@@ -1097,7 +1397,10 @@
    "scored": true,
    "source": "ET Markets",
    "headline": "Rupee has room to rally before RBI steps in, strategists say",
-   "url": "https://economictimes.indiatimes.com/markets/forex/rupee-has-room-to-rally-before-rbi-steps-in-strategists-say/articleshow/136176673.cms"
+   "url": "https://economictimes.indiatimes.com/markets/forex/rupee-has-room-to-rally-before-rbi-steps-in-strategists-say/articleshow/136176673.cms",
+   "entry_date": "2026-11-26",
+   "entry": 427.1,
+   "news_day": 0.49
   },
   {
    "id": "72b2ac864c51d867",
@@ -1108,7 +1411,10 @@
    "scored": true,
    "source": "Business Standard",
    "headline": "Stocks to watch: LG Electronics, Siemens Energy, Wipro, sugar stocks",
-   "url": "https://www.business-standard.com/markets/news/stocks-to-watch-lg-electronics-siemens-energy-wipro-sugar-stocks-126112600059_1.html"
+   "url": "https://www.business-standard.com/markets/news/stocks-to-watch-lg-electronics-siemens-energy-wipro-sugar-stocks-126112600059_1.html",
+   "entry_date": "2026-11-26",
+   "entry": 196.54,
+   "news_day": 3.96
   },
   {
    "id": "72b2ac864c51d867",
@@ -1119,7 +1425,10 @@
    "scored": true,
    "source": "Business Standard",
    "headline": "Stocks to watch: LG Electronics, Siemens Energy, Wipro, sugar stocks",
-   "url": "https://www.business-standard.com/markets/news/stocks-to-watch-lg-electronics-siemens-energy-wipro-sugar-stocks-126112600059_1.html"
+   "url": "https://www.business-standard.com/markets/news/stocks-to-watch-lg-electronics-siemens-energy-wipro-sugar-stocks-126112600059_1.html",
+   "entry_date": "2026-11-26",
+   "entry": 3576.6,
+   "news_day": -0.13
   },
   {
    "id": "ac4dd7f9134d8e47",
@@ -1134,7 +1443,11 @@
    "alert_px": 2729.6,
    "alert_move": 0.39,
    "alert_at": "2026-11-26T11:00:41+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 2740.2,
+   "news_day": 0.78,
+   "after_alert": 0.39
   },
   {
    "id": "b278eb93381215a9",
@@ -1149,7 +1462,11 @@
    "alert_px": 3771.8,
    "alert_move": 5.8,
    "alert_at": "2026-11-26T12:00:48+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 3835.0,
+   "news_day": 7.57,
+   "after_alert": 1.68
   },
   {
    "id": "dfeb0773e3790b3b",
@@ -1160,7 +1477,10 @@
    "scored": true,
    "source": "ET Markets",
    "headline": "Deutsche Bank, PNB ink pact to fund M&As",
-   "url": "https://economictimes.indiatimes.com/markets/stocks/news/deutsche-bank-pnb-ink-pact-to-fund-mas/articleshow/136176118.cms"
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/deutsche-bank-pnb-ink-pact-to-fund-mas/articleshow/136176118.cms",
+   "entry_date": "2026-11-26",
+   "entry": 147.5,
+   "news_day": -0.75
   },
   {
    "id": "cd18edfdd79d0898",
@@ -1171,7 +1491,10 @@
    "scored": true,
    "source": "ET Markets",
    "headline": "Stock Market Live Updates | Closing Bell: Sensex ends 390 pts higher, Nifty above 25,850; HCL Tech, BSE jump 6% each",
-   "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/bse-sensex-today-nifty50-stock-market-live-updates-gift-nifty-lg-electronics-hdfc-bank-share-price-26-november-2026/liveblog/136176167.cms"
+   "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/bse-sensex-today-nifty50-stock-market-live-updates-gift-nifty-lg-electronics-hdfc-bank-share-price-26-november-2026/liveblog/136176167.cms",
+   "entry_date": "2026-11-26",
+   "entry": 3990.4,
+   "news_day": 5.7
   },
   {
    "id": "97cea23f163027af",
@@ -1182,7 +1505,10 @@
    "scored": true,
    "source": "RedBox Global India",
    "headline": "US BAKER HUGHES RIG COUNT FOR 27-NOV WAS 607, UNCHANGED FROM 607 PREVIOUSLY, WITH ROTARY OIL RIGS AT 470 FROM 469 AND ROTARY GAS RIGS AT 127 FROM 128",
-   "url": "https://t.me/Indiaredboxglobal/10111"
+   "url": "https://t.me/Indiaredboxglobal/10111",
+   "entry_date": "2026-11-26",
+   "entry": 427.1,
+   "news_day": 0.49
   },
   {
    "id": "a1c54a08dac609ec",
@@ -1193,7 +1519,10 @@
    "scored": true,
    "source": "Mint Markets",
    "headline": "MCX gold plunges ₹4,420/10g, silver sheds nearly ₹8,800/kg as PCE data fuels December Fed rate hike bets",
-   "url": "https://www.livemint.com/market/commodities/mcx-gold-plunges-rs-4-500-10g-silver-sheds-nearly-rs-8-800-kg-as-pce-data-fuels-december-fed-rate-hike-fears-11795621934097.html"
+   "url": "https://www.livemint.com/market/commodities/mcx-gold-plunges-rs-4-500-10g-silver-sheds-nearly-rs-8-800-kg-as-pce-data-fuels-december-fed-rate-hike-fears-11795621934097.html",
+   "entry_date": "2026-11-26",
+   "entry": 3835.0,
+   "news_day": 7.57
   },
   {
    "id": "6bb21b12326670be",
@@ -1204,7 +1533,10 @@
    "scored": true,
    "source": "Business Standard",
    "headline": "Sensex, Nifty surge nearly 2% to post their best session since November 6",
-   "url": "https://www.business-standard.com/markets/news/sensex-nifty-surge-nearly-2-to-post-their-best-session-since-november-6-126112501149_1.html"
+   "url": "https://www.business-standard.com/markets/news/sensex-nifty-surge-nearly-2-to-post-their-best-session-since-november-6-126112501149_1.html",
+   "entry_date": "2026-11-26",
+   "entry": 427.1,
+   "news_day": 0.49
   },
   {
    "id": "0efc8fdaf0f3ac9a",
@@ -1215,7 +1547,10 @@
    "scored": true,
    "source": "ET Markets",
    "headline": "Carlyle pares 7.4% stake in Piramal Pharma for over Rs 2,211 crore",
-   "url": "https://economictimes.indiatimes.com/markets/stocks/news/carlyle-pares-7-4-stake-in-piramal-pharma-for-over-rs-2211-crore/articleshow/136165837.cms"
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/carlyle-pares-7-4-stake-in-piramal-pharma-for-over-rs-2211-crore/articleshow/136165837.cms",
+   "entry_date": "2026-11-26",
+   "entry": 235.6,
+   "news_day": 1.32
   },
   {
    "id": "bb58dc4359bbfabf",
@@ -1226,7 +1561,10 @@
    "scored": true,
    "source": "RedBox Global India",
    "headline": "ENRIN: Q2 REVENUE 34.5B RUPEES VS 26.5B (YOY)",
-   "url": "https://t.me/Indiaredboxglobal/10105"
+   "url": "https://t.me/Indiaredboxglobal/10105",
+   "entry_date": "2026-11-26",
+   "entry": 3058.0,
+   "news_day": 2.96
   },
   {
    "id": "b53c837d3e4bb1ee",
@@ -1237,7 +1575,10 @@
    "scored": true,
    "source": "Mint Markets",
    "headline": "LG Electronics shares to be in focus as promoter to sell 2% stake to meet public float norms; check details",
-   "url": "https://www.livemint.com/market/lg-electronics-shares-to-be-in-focus-as-promoter-to-sell-2-stake-to-meet-public-float-norms-check-details-11795612944008.html"
+   "url": "https://www.livemint.com/market/lg-electronics-shares-to-be-in-focus-as-promoter-to-sell-2-stake-to-meet-public-float-norms-check-details-11795612944008.html",
+   "entry_date": "2026-11-26",
+   "entry": 1758.1,
+   "news_day": -3.32
   },
   {
    "id": "9e41dd43400ac16d",
@@ -1248,7 +1589,10 @@
    "scored": true,
    "source": "RedBox Global India",
    "headline": "TORRENT POWER: CO ACQUIRES 100% STAKE IN TORRENT URJA 42 PRIVATE LIMITED",
-   "url": "https://t.me/Indiaredboxglobal/10093"
+   "url": "https://t.me/Indiaredboxglobal/10093",
+   "entry_date": "2026-11-26",
+   "entry": 1151.4,
+   "news_day": -0.98
   },
   {
    "id": "879b21873116bb72",
@@ -1259,7 +1603,10 @@
    "scored": true,
    "source": "Business Standard",
    "headline": "LG Electronics India promoter may offload 2% stake for ₹2,320.5 crore",
-   "url": "https://www.business-standard.com/companies/news/lg-electronics-india-promoter-may-offload-2-stake-for-2-320-5-crore-126112501137_1.html"
+   "url": "https://www.business-standard.com/companies/news/lg-electronics-india-promoter-may-offload-2-stake-for-2-320-5-crore-126112501137_1.html",
+   "entry_date": "2026-11-26",
+   "entry": 1758.1,
+   "news_day": -3.32
   },
   {
    "id": "130c94fc1952ac92",
@@ -1270,7 +1617,10 @@
    "scored": true,
    "source": "NSE Announcements",
    "headline": "The South Indian Bank Limited: The South Indian Bank Limited has informed the Exchange about Intimation under Regulation 30 of the SEBI (Listing Obligations and",
-   "url": "https://nsearchives.nseindia.com/corporate/SOUTHBANK_25112026190748_SD_STT_SENIORMGMTCHANGE_25NOV2026_f.pdf"
+   "url": "https://nsearchives.nseindia.com/corporate/SOUTHBANK_25112026190748_SD_STT_SENIORMGMTCHANGE_25NOV2026_f.pdf",
+   "entry_date": "2026-11-26",
+   "entry": 933.0,
+   "news_day": 0.32
   },
   {
    "id": "714ccf2046031c7f",
@@ -1281,7 +1631,10 @@
    "scored": true,
    "source": "NSE Announcements",
    "headline": "The South Indian Bank Limited: THE SOUTH INDIAN BANK LIMITED has informed the Exchange about Change in Directors/KMP/SMP/Auditor/RTA |SUBJECT: Change in Directo",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/CIM_1684_WebXMLFile_20261125_190504868.xml"
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/CIM_1684_WebXMLFile_20261125_190504868.xml",
+   "entry_date": "2026-11-26",
+   "entry": 933.0,
+   "news_day": 0.32
   },
   {
    "id": "4fd2aaa25428d7b7",
@@ -1292,7 +1645,10 @@
    "scored": true,
    "source": "NSE Announcements",
    "headline": "360 ONE WAM LIMITED: 360 ONE WAM LIMITED has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteration Of Capital and Fund Raising-XBRL",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_17593_WebXMLFile_20261125_190051583.xml"
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_17593_WebXMLFile_20261125_190051583.xml",
+   "entry_date": "2026-11-26",
+   "entry": 1210.0,
+   "news_day": 3.84
   },
   {
    "id": "fe336aa676e1528f",
@@ -1303,7 +1659,10 @@
    "scored": true,
    "source": "NSE Announcements",
    "headline": "Ksb Limited: KSB LIMITED has informed the Exchange about Awarding of order(s)/contract(s)-(Sub-para 4-Para B) |SUBJECT: Awarding of order(s)/contract(s)-(Sub-pa",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_1195_WebXMLFile_20261125_185507270.xml"
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_1195_WebXMLFile_20261125_185507270.xml",
+   "entry_date": "2026-11-26",
+   "entry": 644.75,
+   "news_day": -0.1
   },
   {
    "id": "725ac7f0ae45f90d",
@@ -1314,7 +1673,10 @@
    "scored": true,
    "source": "ET Markets",
    "headline": "RBI net buyer of dollars for fourth straight month in September, data shows",
-   "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rbi-net-buyer-of-dollars-for-fourth-straight-month-in-september-data-shows/articleshow/136163192.cms"
+   "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rbi-net-buyer-of-dollars-for-fourth-straight-month-in-september-data-shows/articleshow/136163192.cms",
+   "entry_date": "2026-11-26",
+   "entry": 160.29,
+   "news_day": 0.25
   },
   {
    "id": "11faca99850c109a",
@@ -1325,7 +1687,10 @@
    "scored": true,
    "source": "Mint Markets",
    "headline": "Schaeffler India block deal: Schaeffler AG likely to sell 6% stake at ₹3,400 apiece; deal size ₹3,188 crore: Report",
-   "url": "https://www.livemint.com/market/stock-market-news/schaeffler-india-block-deal-schaeffler-ag-to-offload-6-stake-at-rs-3-400-apiece-deal-size-rs-3-188-crore-report-11795612021351.html"
+   "url": "https://www.livemint.com/market/stock-market-news/schaeffler-india-block-deal-schaeffler-ag-to-offload-6-stake-at-rs-3-400-apiece-deal-size-rs-3-188-crore-report-11795612021351.html",
+   "entry_date": "2026-11-26",
+   "entry": 3701.7,
+   "news_day": 2.8
   },
   {
    "id": "0516132eb45762da",
@@ -1336,7 +1701,10 @@
    "scored": true,
    "source": "ET Markets",
    "headline": "RBI may opt for 25 bps rate hike as oil eases, inflation risks persist: Baroda BNP Paribas MF CIO",
-   "url": "https://economictimes.indiatimes.com/markets/stocks/news/rbi-may-opt-for-25-bps-rate-hike-as-oil-eases-inflation-risks-persist-baroda-bnp-paribas-mf-cio/articleshow/136162711.cms"
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/rbi-may-opt-for-25-bps-rate-hike-as-oil-eases-inflation-risks-persist-baroda-bnp-paribas-mf-cio/articleshow/136162711.cms",
+   "entry_date": "2026-11-26",
+   "entry": 160.29,
+   "news_day": 0.25
   },
   {
    "id": "0516132eb45762da",
@@ -1347,7 +1715,10 @@
    "scored": true,
    "source": "ET Markets",
    "headline": "RBI may opt for 25 bps rate hike as oil eases, inflation risks persist: Baroda BNP Paribas MF CIO",
-   "url": "https://economictimes.indiatimes.com/markets/stocks/news/rbi-may-opt-for-25-bps-rate-hike-as-oil-eases-inflation-risks-persist-baroda-bnp-paribas-mf-cio/articleshow/136162711.cms"
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/rbi-may-opt-for-25-bps-rate-hike-as-oil-eases-inflation-risks-persist-baroda-bnp-paribas-mf-cio/articleshow/136162711.cms",
+   "entry_date": "2026-11-26",
+   "entry": 427.1,
+   "news_day": 0.49
   },
   {
    "id": "06dffc0a7055d62b",
@@ -1358,7 +1729,10 @@
    "scored": true,
    "source": "NSE Announcements",
    "headline": "Bank of India: Bank of India has informed the Exchange about Notice of Strike. |SUBJECT: General Updates",
-   "url": "https://nsearchives.nseindia.com/corporate/BANKINDIA6_25112026183435_strike_25112026.pdf"
+   "url": "https://nsearchives.nseindia.com/corporate/BANKINDIA6_25112026183435_strike_25112026.pdf",
+   "entry_date": "2026-11-26",
+   "entry": 160.29,
+   "news_day": 0.25
   },
   {
    "id": "7dc7fa0ec98572c5",
@@ -1369,7 +1743,10 @@
    "scored": true,
    "source": "NSE Announcements",
    "headline": "360 ONE WAM LIMITED: 360 ONE WAM LIMITED has informed the Exchange regarding allotment of 3333333 securities pursuant to Convertible Securities at its meeting h",
-   "url": "https://nsearchives.nseindia.com/corporate/IIFLWAM_25112026183142_20261125_AllotmentofsharesSigned.pdf"
+   "url": "https://nsearchives.nseindia.com/corporate/IIFLWAM_25112026183142_20261125_AllotmentofsharesSigned.pdf",
+   "entry_date": "2026-11-26",
+   "entry": 1210.0,
+   "news_day": 3.84
   },
   {
    "id": "29bac5dc53b58e69",
@@ -1380,7 +1757,10 @@
    "scored": true,
    "source": "NSE Announcements",
    "headline": "HDB Financial Services Limited: HDB FINANCIAL SERVICES LTD has informed the Exchange about Board Meeting to be held on 30-Nov-2026 to consider Fund raising. |SU",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_24797_WebXMLFile_20261125_182332523.xml"
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_24797_WebXMLFile_20261125_182332523.xml",
+   "entry_date": "2026-11-26",
+   "entry": 551.7,
+   "news_day": -1.1
   },
   {
    "id": "ea0c3654778fa4bb",
@@ -1391,7 +1771,10 @@
    "scored": true,
    "source": "NSE Announcements",
    "headline": "CREDITACCESS GRAMEEN LIMITED: CREDITACCESS GRAMEEN LIMITED has informed the Exchange about Resignation of Director/KMP/SMP |SUBJECT: Resignation of Director/KMP",
-   "url": "https://nsearchives.nseindia.com/corporate/CREDITACC_ROID_105231_KMP_Doc.zip"
+   "url": "https://nsearchives.nseindia.com/corporate/CREDITACC_ROID_105231_KMP_Doc.zip",
+   "entry_date": "2026-11-26",
+   "entry": 1018.1,
+   "news_day": -0.17
   },
   {
    "id": "e15779e3dd098027",
@@ -1402,7 +1785,10 @@
    "scored": true,
    "source": "NSE Announcements",
    "headline": "CREDITACCESS GRAMEEN LIMITED: CreditAccess Grameen Limited has informed the Exchange about Change in Directors/KMP/SMP/Auditor/RTA |SUBJECT: Change in Directors",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/CIM_16550_WebXMLFile_20261125_181327180.xml"
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/CIM_16550_WebXMLFile_20261125_181327180.xml",
+   "entry_date": "2026-11-26",
+   "entry": 1018.1,
+   "news_day": -0.17
   },
   {
    "id": "8d2a345d9fbdf1ba",
@@ -1413,7 +1799,10 @@
    "scored": true,
    "source": "RBI",
    "headline": "47th Half-Yearly Report on Management of Foreign Exchange Reserves: April – September 2026",
-   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64042"
+   "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64042",
+   "entry_date": "2026-11-26",
+   "entry": 160.29,
+   "news_day": 0.25
   },
   {
    "id": "20268d5c74294048",
@@ -1424,7 +1813,10 @@
    "scored": true,
    "source": "Mint Markets",
    "headline": "BSE, Eternal, Titan, SBI among 18 Nifty 50 stocks that rallied 10–43% in 2026; what's driving gains?",
-   "url": "https://www.livemint.com/market/stock-market-news/bse-eternal-titan-sbi-among-18-nifty-50-stocks-that-rallied-10-43-in-2026-whats-driving-gains-11795607425766.html"
+   "url": "https://www.livemint.com/market/stock-market-news/bse-eternal-titan-sbi-among-18-nifty-50-stocks-that-rallied-10-43-in-2026-whats-driving-gains-11795607425766.html",
+   "entry_date": "2026-11-26",
+   "entry": 3990.4,
+   "news_day": 5.7
   },
   {
    "id": "20268d5c74294048",
@@ -1435,7 +1827,10 @@
    "scored": true,
    "source": "Mint Markets",
    "headline": "BSE, Eternal, Titan, SBI among 18 Nifty 50 stocks that rallied 10–43% in 2026; what's driving gains?",
-   "url": "https://www.livemint.com/market/stock-market-news/bse-eternal-titan-sbi-among-18-nifty-50-stocks-that-rallied-10-43-in-2026-whats-driving-gains-11795607425766.html"
+   "url": "https://www.livemint.com/market/stock-market-news/bse-eternal-titan-sbi-among-18-nifty-50-stocks-that-rallied-10-43-in-2026-whats-driving-gains-11795607425766.html",
+   "entry_date": "2026-11-26",
+   "entry": 367.7,
+   "news_day": -1.08
   },
   {
    "id": "7ce6f9071c1c5a09",
@@ -1446,7 +1841,10 @@
    "scored": true,
    "source": "ET Markets",
    "headline": "US Treasury gains lift India bonds ahead of RBI meet",
-   "url": "https://economictimes.indiatimes.com/markets/bonds/us-treasury-gains-lift-india-bonds-ahead-of-rbi-meet/articleshow/136161527.cms"
+   "url": "https://economictimes.indiatimes.com/markets/bonds/us-treasury-gains-lift-india-bonds-ahead-of-rbi-meet/articleshow/136161527.cms",
+   "entry_date": "2026-11-26",
+   "entry": 160.29,
+   "news_day": 0.25
   },
   {
    "id": "6ffb4826808e47a2",
@@ -1457,7 +1855,10 @@
    "scored": true,
    "source": "RedBox Global India",
    "headline": "CESC: CO SUBSIDIARY PURVAH GREEN POWER AWARDS 153.7 MW WIND PROJECT ORDER TO VENWIND REFEX POWER FOR WTG SUPPLY AND END-TO-END EXECUTION IN MADHYA PRADESH; COMP",
-   "url": "https://t.me/Indiaredboxglobal/10057"
+   "url": "https://t.me/Indiaredboxglobal/10057",
+   "entry_date": "2026-11-26",
+   "entry": 125.7,
+   "news_day": -0.14
   },
   {
    "id": "3b483715018440c4",
@@ -1468,7 +1869,10 @@
    "scored": true,
    "source": "NSE Announcements",
    "headline": "Dr. Reddy's Laboratories Limited: DR REDDY'S LABORATORIES LIMITED has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteration Of Capital an",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_251_WebXMLFile_20261125_170616847.xml"
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_251_WebXMLFile_20261125_170616847.xml",
+   "entry_date": "2026-11-26",
+   "entry": 1392.0,
+   "news_day": -0.43
   },
   {
    "id": "fb4ee7e0d7fd5b0e",
@@ -1479,7 +1883,10 @@
    "scored": true,
    "source": "RedBox Global India",
    "headline": "ACME SOLAR HOLDINGS: CO COMMISSIONS ADDITIONAL 17.91 MW / 74.323 MWH BESS CAPACITY IN RAJASTHAN FDRE PROJECT, TAKING CUMULATIVE COMMISSIONED CAPACITY TO 193.63 ",
-   "url": "https://t.me/Indiaredboxglobal/10056"
+   "url": "https://t.me/Indiaredboxglobal/10056",
+   "entry_date": "2026-11-26",
+   "entry": 415.8,
+   "news_day": -0.22
   },
   {
    "id": "9cb5da21d3d96e8b",
@@ -1490,7 +1897,10 @@
    "scored": true,
    "source": "NSE Announcements",
    "headline": "Acme Solar Holdings Limited: Acme Solar Holdings Limited has informed the Exchange about an update on commissioning of Battery Energy Storage System (BESS) Proj",
-   "url": "https://nsearchives.nseindia.com/corporate/ACMECS_25112026165230_intimation25112026.pdf"
+   "url": "https://nsearchives.nseindia.com/corporate/ACMECS_25112026165230_intimation25112026.pdf",
+   "entry_date": "2026-11-26",
+   "entry": 415.8,
+   "news_day": -0.22
   },
   {
    "id": "1ddbe66dbe547133",
@@ -1501,7 +1911,10 @@
    "scored": true,
    "source": "RedBox Global India",
    "headline": "PNB: CO SIGNS MOU WITH DEUTSCHE BANK AG TO EXPLORE COLLABORATION IN ACQUISITION FINANCING THROUGH UNDERWRITING, ARRANGEMENT, PARTICIPATION, SYNDICATION AND REFE",
-   "url": "https://t.me/Indiaredboxglobal/10052"
+   "url": "https://t.me/Indiaredboxglobal/10052",
+   "entry_date": "2026-11-26",
+   "entry": 147.5,
+   "news_day": -0.75
   },
   {
    "id": "c0b4da56a2745064",
@@ -1512,7 +1925,10 @@
    "scored": false,
    "source": "ET Markets",
    "headline": "Rupee scales 8-month high after holiday as foreign flows to Indian equities persist",
-   "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-scales-8-month-high-after-holiday-as-foreign-flows-to-indian-equities-persist/articleshow/136158513.cms"
+   "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-scales-8-month-high-after-holiday-as-foreign-flows-to-indian-equities-persist/articleshow/136158513.cms",
+   "entry_date": "2026-11-26",
+   "entry": 427.1,
+   "news_day": 0.49
   },
   {
    "id": "ee13672470e03c50",
@@ -1523,7 +1939,10 @@
    "scored": false,
    "source": "NSE Announcements",
    "headline": "Central Mine Planning & Design Institute Limited: Central Mine Planning & Design Institute Limited has informed the Exchange about change in address of corporat",
-   "url": "https://nsearchives.nseindia.com/corporate/CMPDI_25112026160214_Letter_to_Stock_exchange_change_in_corporate_address_of_RTA.pdf"
+   "url": "https://nsearchives.nseindia.com/corporate/CMPDI_25112026160214_Letter_to_Stock_exchange_change_in_corporate_address_of_RTA.pdf",
+   "entry_date": "2026-11-26",
+   "entry": 184.24,
+   "news_day": 1.7
   },
   {
    "id": "a783e2c77c1c6a3b",
@@ -1534,7 +1953,10 @@
    "scored": false,
    "source": "NSE Announcements",
    "headline": "Central Bank of India: Central Bank of India has informed the Exchange regarding Resignation of Mr Chandrakant Bhagwat as Company Secretary & Compliance Officer",
-   "url": "https://nsearchives.nseindia.com/corporate/CENTRALBK_25112026160231_SE_Resignation_CS_Merge.pdf"
+   "url": "https://nsearchives.nseindia.com/corporate/CENTRALBK_25112026160231_SE_Resignation_CS_Merge.pdf",
+   "entry_date": "2026-11-26",
+   "entry": 160.29,
+   "news_day": 0.25
   },
   {
    "id": "a783e2c77c1c6a3b",
@@ -1545,7 +1967,10 @@
    "scored": false,
    "source": "NSE Announcements",
    "headline": "Central Bank of India: Central Bank of India has informed the Exchange regarding Resignation of Mr Chandrakant Bhagwat as Company Secretary & Compliance Officer",
-   "url": "https://nsearchives.nseindia.com/corporate/CENTRALBK_25112026160231_SE_Resignation_CS_Merge.pdf"
+   "url": "https://nsearchives.nseindia.com/corporate/CENTRALBK_25112026160231_SE_Resignation_CS_Merge.pdf",
+   "entry_date": "2026-11-26",
+   "entry": 33.02,
+   "news_day": -0.87
   },
   {
    "id": "eb5a4bcba8501ea1",
@@ -1556,7 +1981,10 @@
    "scored": false,
    "source": "NSE bulk & block deals",
    "headline": "Block deal: DUNEARN INVESTMENTS (MAURITIUS) PTE LTD sold 63.7 lakh shares of Global Health at ₹1,460.0 (₹930.0 cr)",
-   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals"
+   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
+   "entry_date": "2026-11-26",
+   "entry": 1511.5,
+   "news_day": -1.11
   },
   {
    "id": "43074b5dfb00cb66",
@@ -1567,7 +1995,10 @@
    "scored": false,
    "source": "NSE bulk & block deals",
    "headline": "Block deal: HDFC MUTUAL FUND bought 38.9 lakh shares of Global Health at ₹1,460.0 (₹568.0 cr)",
-   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals"
+   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
+   "entry_date": "2026-11-26",
+   "entry": 1511.5,
+   "news_day": -1.11
   },
   {
    "id": "adf3dc5fdace5b80",
@@ -1578,7 +2009,10 @@
    "scored": false,
    "source": "NSE bulk & block deals",
    "headline": "Bulk deal: SMALLCAP WORLD FUND INC sold 30.7 lakh shares of APL Apollo Tubes at ₹1,411.37 (₹433.6 cr)",
-   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals"
+   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
+   "entry_date": "2026-11-26",
+   "entry": 1481.5,
+   "news_day": 0.37
   },
   {
    "id": "c3a975f5bc9684af",
@@ -1589,7 +2023,10 @@
    "scored": false,
    "source": "NSE bulk & block deals",
    "headline": "Bulk deal: HDFC MUTUAL FUND bought 28.6 lakh shares of Global Health at ₹1,460.0 (₹418.0 cr)",
-   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals"
+   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
+   "entry_date": "2026-11-26",
+   "entry": 1511.5,
+   "news_day": -1.11
   },
   {
    "id": "557e047a3bf1d5f2",
@@ -1600,7 +2037,10 @@
    "scored": false,
    "source": "NSE bulk & block deals",
    "headline": "Block deal: NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL bought 7.8 lakh shares of Global Health at ₹1,460.0 (₹114.0 cr)",
-   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals"
+   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
+   "entry_date": "2026-11-26",
+   "entry": 1511.5,
+   "news_day": -1.11
   },
   {
    "id": "1a88b9fa1e92a97a",
@@ -1611,7 +2051,10 @@
    "scored": false,
    "source": "NSE bulk & block deals",
    "headline": "Bulk deal: FAIRBRIDGE CAPITAL (MAURITIUS) LIMITED bought 53.0 lakh shares of Thomas Cook  (India) at ₹141.17 (₹74.8 cr)",
-   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals"
+   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
+   "entry_date": "2026-11-26",
+   "entry": 134.64,
+   "news_day": -10.0
   },
   {
    "id": "f0d261eef0db7229",
@@ -1622,7 +2065,10 @@
    "scored": false,
    "source": "NSE bulk & block deals",
    "headline": "Block deal: ORBITELECTRICALS PRIVATE LIMITED bought 4.6 lakh shares of Finolex Cables at ₹1,159.0 (₹53.3 cr)",
-   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals"
+   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
+   "entry_date": "2026-11-26",
+   "entry": 1152.6,
+   "news_day": -0.44
   },
   {
    "id": "59a5a8d19dc35952",
@@ -1633,7 +2079,10 @@
    "scored": false,
    "source": "NSE bulk & block deals",
    "headline": "Block deal: ARUNA MUKESH KATARA sold 4.6 lakh shares of Finolex Cables at ₹1,159.0 (₹53.3 cr)",
-   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals"
+   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
+   "entry_date": "2026-11-26",
+   "entry": 1152.6,
+   "news_day": -0.44
   },
   {
    "id": "6325804a1f61f4f9",
@@ -1644,7 +2093,10 @@
    "scored": false,
    "source": "NSE bulk & block deals",
    "headline": "Block deal: SBI MUTUAL FUND bought 3.4 lakh shares of Global Health at ₹1,460.0 (₹50.0 cr)",
-   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals"
+   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
+   "entry_date": "2026-11-26",
+   "entry": 1511.5,
+   "news_day": -1.11
   },
   {
    "id": "ab403cef2c221805",
@@ -1655,7 +2107,10 @@
    "scored": false,
    "source": "NSE bulk & block deals",
    "headline": "Block deal: WHITEOAK CAPITAL MUTUAL FUND bought 3.4 lakh shares of Global Health at ₹1,460.0 (₹50.0 cr)",
-   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals"
+   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
+   "entry_date": "2026-11-26",
+   "entry": 1511.5,
+   "news_day": -1.11
   },
   {
    "id": "e9f978032dd500ba",
@@ -1666,7 +2121,10 @@
    "scored": false,
    "source": "NSE bulk & block deals",
    "headline": "Block deal: CITIGROUP GLOBAL MARKETS SINGAPORE PTE LIMITED bought 2.1 lakh shares of Global Health at ₹1,460.0 (₹30.0 cr)",
-   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals"
+   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
+   "entry_date": "2026-11-26",
+   "entry": 1511.5,
+   "news_day": -1.11
   },
   {
    "id": "118d595b654d8601",
@@ -1677,7 +2135,10 @@
    "scored": false,
    "source": "NSE bulk & block deals",
    "headline": "Block deal: CANARA ROBECO MUTUAL FUND bought 1.7 lakh shares of Global Health at ₹1,460.0 (₹25.0 cr)",
-   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals"
+   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
+   "entry_date": "2026-11-26",
+   "entry": 1511.5,
+   "news_day": -1.11
   },
   {
    "id": "680dea19da5baefe",
@@ -1688,7 +2149,10 @@
    "scored": false,
    "source": "NSE bulk & block deals",
    "headline": "Block deal: GOLDMAN SACHS BANK EUROPE SE bought 1.7 lakh shares of Global Health at ₹1,460.0 (₹25.0 cr)",
-   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals"
+   "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
+   "entry_date": "2026-11-26",
+   "entry": 1511.5,
+   "news_day": -1.11
   },
   {
    "id": "c9cc99681b6b2e05",
@@ -1699,7 +2163,10 @@
    "scored": true,
    "source": "RedBox Global India",
    "headline": "WIPRO LIMITED: CO. ENTERS STRATEGIC PARTNERSHIP WITH BP TO TRANSFORM FINANCE OPERATIONS; AROUND 3,000 BP EMPLOYEES TO JOIN WIPRO; NEW OPERATING MODEL EFFECTIVE ",
-   "url": "https://t.me/Indiaredboxglobal/10046"
+   "url": "https://t.me/Indiaredboxglobal/10046",
+   "entry_date": "2026-11-26",
+   "entry": 196.54,
+   "news_day": 3.96
   },
   {
    "id": "7689daba123f37cb",
@@ -1710,7 +2177,10 @@
    "scored": true,
    "source": "NSE Announcements",
    "headline": "Wipro Limited: Wipro Limited has informed the Exchange regarding a press release dated November 25, 2026, titled \"bp signs strategic partnership with Wipro to b",
-   "url": "https://nsearchives.nseindia.com/corporate/Wipro_Secretarial_25112026154806_PR.pdf"
+   "url": "https://nsearchives.nseindia.com/corporate/Wipro_Secretarial_25112026154806_PR.pdf",
+   "entry_date": "2026-11-26",
+   "entry": 196.54,
+   "news_day": 3.96
   },
   {
    "id": "79953cb61f267f99",
@@ -1721,7 +2191,10 @@
    "scored": true,
    "source": "NSE Announcements",
    "headline": "Firstsource Solutions Limited: Firstsource Solutions Limited has informed the Exchange regarding a press release dated November 25, 2026, titled \"Firstsource na",
-   "url": "https://nsearchives.nseindia.com/corporate/FSL_25112026153631_PressReleaseEverestPEAKMatrixAssessment2026BFSandFCCsigned.pdf"
+   "url": "https://nsearchives.nseindia.com/corporate/FSL_25112026153631_PressReleaseEverestPEAKMatrixAssessment2026BFSandFCCsigned.pdf",
+   "entry_date": "2026-11-26",
+   "entry": 289.15,
+   "news_day": 0.09
   },
   {
    "id": "92140c9bf54482fc",
@@ -1732,7 +2205,10 @@
    "scored": true,
    "source": "Mint Markets",
    "headline": "Why 360 One could see steeper upgrades in estimates if markets stay buoyant",
-   "url": "https://www.livemint.com/market/mark-to-market/why-360-one-could-see-steeper-upgrades-in-estimates-if-markets-stay-buoyant-11795597956942.html"
+   "url": "https://www.livemint.com/market/mark-to-market/why-360-one-could-see-steeper-upgrades-in-estimates-if-markets-stay-buoyant-11795597956942.html",
+   "entry_date": "2026-11-26",
+   "entry": 1210.0,
+   "news_day": 0.74
   },
   {
    "id": "aa12f63adf21e899",
@@ -1747,7 +2223,11 @@
    "alert_px": 1828.0,
    "alert_move": 2.84,
    "alert_at": "2026-11-25T15:18:13+05:30",
-   "alert_delay": 900
+   "alert_delay": 900,
+   "entry_date": "2026-11-26",
+   "entry": 1758.1,
+   "news_day": -1.09,
+   "after_alert": -3.82
   },
   {
    "id": "c3742d9f568364b0",
@@ -1758,7 +2238,10 @@
    "scored": true,
    "source": "NSE Announcements",
    "headline": "LG Electronics India Limited: LG Electronics India Limited has informed the Exchange regarding 'Proposed sale of equity shares of the Company by LG Electronics ",
-   "url": "https://nsearchives.nseindia.com/corporate/LGEINDIA_25112026151138_Shares_Sale_by_Promoter.pdf"
+   "url": "https://nsearchives.nseindia.com/corporate/LGEINDIA_25112026151138_Shares_Sale_by_Promoter.pdf",
+   "entry_date": "2026-11-26",
+   "entry": 1758.1,
+   "news_day": -1.09
   },
   {
    "id": "3be3538404ea8b65",
@@ -1777,7 +2260,9 @@
    "entry_date": "2026-11-25",
    "entry": 1130.0,
    "news_day": 2.41,
-   "after_alert": 0.12
+   "after_alert": 0.12,
+   "r1": 4.69,
+   "hit1": true
   },
   {
    "id": "913e45e6e822c448",
@@ -1796,7 +2281,9 @@
    "entry_date": "2026-11-25",
    "entry": 1236.0,
    "news_day": 3.04,
-   "after_alert": 1.39
+   "after_alert": 1.39,
+   "r1": -3.38,
+   "hit1": false
   },
   {
    "id": "e95fa56067232860",
@@ -1815,7 +2302,9 @@
    "entry_date": "2026-11-25",
    "entry": 1130.0,
    "news_day": 2.41,
-   "after_alert": 0.23
+   "after_alert": 0.23,
+   "r1": 4.69,
+   "hit1": true
   },
   {
    "id": "150e522c71d73b0e",
@@ -1834,7 +2323,9 @@
    "entry_date": "2026-11-25",
    "entry": 4610.0,
    "news_day": 1.81,
-   "after_alert": 0.24
+   "after_alert": 0.24,
+   "r1": -1.3,
+   "hit1": false
   },
   {
    "id": "7d434f8dd16eb065",
@@ -1853,7 +2344,9 @@
    "entry_date": "2026-11-25",
    "entry": 425.0,
    "news_day": 0.59,
-   "after_alert": 0.62
+   "after_alert": 0.62,
+   "r1": 0.49,
+   "hit1": true
   },
   {
    "id": "baf38a6a8e251227",
@@ -1872,7 +2365,9 @@
    "entry_date": "2026-11-25",
    "entry": 8336.0,
    "news_day": 2.0,
-   "after_alert": 0.39
+   "after_alert": 0.39,
+   "r1": -1.87,
+   "hit1": false
   },
   {
    "id": "026e9b8d41658d75",
@@ -1891,7 +2386,9 @@
    "entry_date": "2026-11-25",
    "entry": 8336.0,
    "news_day": 2.0,
-   "after_alert": 0.37
+   "after_alert": 0.37,
+   "r1": -1.87,
+   "hit1": false
   },
   {
    "id": "0c379a0843cc97bf",
@@ -1910,7 +2407,9 @@
    "entry_date": "2026-11-25",
    "entry": 1236.0,
    "news_day": 3.04,
-   "after_alert": 1.17
+   "after_alert": 1.17,
+   "r1": -3.38,
+   "hit1": false
   },
   {
    "id": "cd1bbb43ec0b6d17",
@@ -1929,7 +2428,9 @@
    "entry_date": "2026-11-25",
    "entry": 237.17,
    "news_day": 1.96,
-   "after_alert": -0.08
+   "after_alert": -0.08,
+   "r1": -1.91,
+   "hit1": false
   },
   {
    "id": "e4e582a833a44b8b",
@@ -1948,7 +2449,9 @@
    "entry_date": "2026-11-25",
    "entry": 237.17,
    "news_day": 1.96,
-   "after_alert": -0.0
+   "after_alert": -0.0,
+   "r1": -1.91,
+   "hit1": false
   },
   {
    "id": "e80e25c06f334b4d",
@@ -1967,7 +2470,9 @@
    "entry_date": "2026-11-25",
    "entry": 2060.0,
    "news_day": -3.84,
-   "after_alert": -0.27
+   "after_alert": -0.27,
+   "r1": -2.91,
+   "hit1": false
   },
   {
    "id": "10c21a2d1a0aad90",
@@ -1986,7 +2491,9 @@
    "entry_date": "2026-11-25",
    "entry": 36.13,
    "news_day": 0.75,
-   "after_alert": 0.87
+   "after_alert": 0.87,
+   "r1": 0.44,
+   "hit1": true
   },
   {
    "id": "b776a5213f132256",
@@ -2005,7 +2512,9 @@
    "entry_date": "2026-11-25",
    "entry": 425.0,
    "news_day": 0.59,
-   "after_alert": 1.05
+   "after_alert": 1.05,
+   "r1": 0.49,
+   "hit1": true
   },
   {
    "id": "8cbec692c6e34305",
@@ -2024,7 +2533,9 @@
    "entry_date": "2026-11-25",
    "entry": 159.3,
    "news_day": -2.27,
-   "after_alert": -0.49
+   "after_alert": -0.49,
+   "r1": 2.66,
+   "hit1": false
   },
   {
    "id": "a3eab14d5392e75a",
@@ -2043,7 +2554,9 @@
    "entry_date": "2026-11-25",
    "entry": 4610.0,
    "news_day": 1.81,
-   "after_alert": 0.12
+   "after_alert": 0.12,
+   "r1": -1.3,
+   "hit1": false
   },
   {
    "id": "418ae4d7c914f066",
@@ -2062,7 +2575,9 @@
    "entry_date": "2026-11-25",
    "entry": 4610.0,
    "news_day": 1.81,
-   "after_alert": 0.3
+   "after_alert": 0.3,
+   "r1": -1.3,
+   "hit1": false
   },
   {
    "id": "33aee2a33addef3b",
@@ -2081,7 +2596,9 @@
    "entry_date": "2026-11-25",
    "entry": 36.13,
    "news_day": 0.75,
-   "after_alert": 1.03
+   "after_alert": 1.03,
+   "r1": 0.44,
+   "hit1": true
   },
   {
    "id": "26b3b6aef40a23dd",
@@ -2100,7 +2617,9 @@
    "entry_date": "2026-11-25",
    "entry": 36.13,
    "news_day": 0.75,
-   "after_alert": 0.7
+   "after_alert": 0.7,
+   "r1": 0.44,
+   "hit1": true
   },
   {
    "id": "1a3b0643079cd998",
@@ -2119,7 +2638,9 @@
    "entry_date": "2026-11-25",
    "entry": 266.75,
    "news_day": 0.72,
-   "after_alert": 1.21
+   "after_alert": 1.21,
+   "r1": 0.07,
+   "hit1": false
   },
   {
    "id": "cf3c20d471ced97a",
@@ -2138,7 +2659,9 @@
    "entry_date": "2026-11-25",
    "entry": 4156.0,
    "news_day": 1.37,
-   "after_alert": 0.57
+   "after_alert": 0.57,
+   "r1": -0.58,
+   "hit1": false
   },
   {
    "id": "11269513e87af7fb",
@@ -2157,7 +2680,9 @@
    "entry_date": "2026-11-25",
    "entry": 276.57,
    "news_day": 2.15,
-   "after_alert": -0.05
+   "after_alert": -0.05,
+   "r1": 1.37,
+   "hit1": true
   },
   {
    "id": "11269513e87af7fb",
@@ -2176,7 +2701,9 @@
    "entry_date": "2026-11-25",
    "entry": 1230.1,
    "news_day": -0.4,
-   "after_alert": 0.11
+   "after_alert": 0.11,
+   "r1": -1.21,
+   "hit1": false
   },
   {
    "id": "f9cc7fce42288d0d",
@@ -2195,7 +2722,9 @@
    "entry_date": "2026-11-25",
    "entry": 222.85,
    "news_day": 1.43,
-   "after_alert": 0.16
+   "after_alert": 0.16,
+   "r1": 1.86,
+   "hit1": true
   },
   {
    "id": "f9cc7fce42288d0d",
@@ -2214,7 +2743,9 @@
    "entry_date": "2026-11-25",
    "entry": 1373.9,
    "news_day": 1.7,
-   "after_alert": 0.21
+   "after_alert": 0.21,
+   "r1": 1.62,
+   "hit1": true
   },
   {
    "id": "cfaab9ec337b5db6",
@@ -2233,7 +2764,9 @@
    "entry_date": "2026-11-25",
    "entry": 11769.0,
    "news_day": 1.03,
-   "after_alert": 1.11
+   "after_alert": 1.11,
+   "r1": 0.77,
+   "hit1": true
   },
   {
    "id": "6348f2159dfa2270",
@@ -2252,7 +2785,9 @@
    "entry_date": "2026-11-25",
    "entry": 222.46,
    "news_day": 20.0,
-   "after_alert": 0.0
+   "after_alert": 0.0,
+   "r1": 7.3,
+   "hit1": true
   },
   {
    "id": "80ec706ef439263d",
@@ -2271,7 +2806,9 @@
    "entry_date": "2026-11-25",
    "entry": 513.45,
    "news_day": -0.76,
-   "after_alert": -2.05
+   "after_alert": -2.05,
+   "r1": -0.94,
+   "hit1": false
   },
   {
    "id": "0a5e5062ab862322",
@@ -2290,7 +2827,9 @@
    "entry_date": "2026-11-25",
    "entry": 159.3,
    "news_day": -2.27,
-   "after_alert": -1.76
+   "after_alert": -1.76,
+   "r1": 2.66,
+   "hit1": true
   },
   {
    "id": "428f8676770ae87f",
@@ -2309,7 +2848,9 @@
    "entry_date": "2026-11-25",
    "entry": 3581.1,
    "news_day": 0.08,
-   "after_alert": -0.71
+   "after_alert": -0.71,
+   "r1": -0.13,
+   "hit1": true
   },
   {
    "id": "bbb7f24c80a40165",
@@ -2328,7 +2869,9 @@
    "entry_date": "2026-11-25",
    "entry": 169.95,
    "news_day": -4.84,
-   "after_alert": 0.17
+   "after_alert": 0.17,
+   "r1": -3.34,
+   "hit1": true
   },
   {
    "id": "bbb7f24c80a40165",
@@ -2347,7 +2890,9 @@
    "entry_date": "2026-11-25",
    "entry": 579.9,
    "news_day": -1.84,
-   "after_alert": 3.31
+   "after_alert": 3.31,
+   "r1": 1.64,
+   "hit1": false
   },
   {
    "id": "7dd0ed264273feae",
@@ -2366,7 +2911,9 @@
    "entry_date": "2026-11-25",
    "entry": 3581.1,
    "news_day": 0.08,
-   "after_alert": -0.75
+   "after_alert": -0.75,
+   "r1": -0.13,
+   "hit1": true
   },
   {
    "id": "f094e217a60b6274",
@@ -2385,7 +2932,9 @@
    "entry_date": "2026-11-25",
    "entry": 232.54,
    "news_day": -1.84,
-   "after_alert": 3.09
+   "after_alert": 3.09,
+   "r1": 1.32,
+   "hit1": false
   },
   {
    "id": "9e959916fd3b50e2",
@@ -2404,7 +2953,9 @@
    "entry_date": "2026-11-25",
    "entry": 3579.4,
    "news_day": 2.49,
-   "after_alert": -2.2
+   "after_alert": -2.2,
+   "r1": -1.11,
+   "hit1": false
   },
   {
    "id": "9377a8a9c33719b5",
@@ -2423,7 +2974,9 @@
    "entry_date": "2026-11-25",
    "entry": 435.15,
    "news_day": -3.16,
-   "after_alert": -0.43
+   "after_alert": -0.43,
+   "r1": 0.56,
+   "hit1": true
   },
   {
    "id": "44380744368c33e4",
@@ -2442,7 +2995,9 @@
    "entry_date": "2026-11-25",
    "entry": 1476.0,
    "news_day": -11.62,
-   "after_alert": 0.0
+   "after_alert": 0.0,
+   "r1": 0.37,
+   "hit1": false
   },
   {
    "id": "44380744368c33e4",
@@ -2461,7 +3016,9 @@
    "entry_date": "2026-11-25",
    "entry": 159.3,
    "news_day": -2.27,
-   "after_alert": -2.5
+   "after_alert": -2.5,
+   "r1": 2.66,
+   "hit1": false
   },
   {
    "id": "d25dbca11f4e9387",
@@ -2480,7 +3037,9 @@
    "entry_date": "2026-11-25",
    "entry": 1476.0,
    "news_day": -11.62,
-   "after_alert": -2.93
+   "after_alert": -2.93,
+   "r1": 0.37,
+   "hit1": true
   },
   {
    "id": "d25dbca11f4e9387",
@@ -2499,7 +3058,9 @@
    "entry_date": "2026-11-25",
    "entry": 159.3,
    "news_day": -2.27,
-   "after_alert": -2.65
+   "after_alert": -2.65,
+   "r1": 2.66,
+   "hit1": false
   },
   {
    "id": "a8f10eaf47bc1315",
@@ -2518,7 +3079,9 @@
    "entry_date": "2026-11-25",
    "entry": 4156.0,
    "news_day": 1.37,
-   "after_alert": -0.17
+   "after_alert": -0.17,
+   "r1": -0.58,
+   "hit1": false
   },
   {
    "id": "6cf084b8e59cd9a7",
@@ -2537,7 +3100,9 @@
    "entry_date": "2026-11-25",
    "entry": 1081.2,
    "news_day": -0.92,
-   "after_alert": -0.01
+   "after_alert": -0.01,
+   "r1": 1.69,
+   "hit1": false
   },
   {
    "id": "f370be5e48fa2162",
@@ -2556,7 +3121,9 @@
    "entry_date": "2026-11-25",
    "entry": 206.0,
    "news_day": -0.91,
-   "after_alert": -0.24
+   "after_alert": -0.24,
+   "r1": 1.12,
+   "hit1": true
   },
   {
    "id": "683126f8089e9791",
@@ -2575,7 +3142,9 @@
    "entry_date": "2026-11-25",
    "entry": 846.2,
    "news_day": 3.47,
-   "after_alert": -0.25
+   "after_alert": -0.25,
+   "r1": 1.87,
+   "hit1": true
   },
   {
    "id": "683126f8089e9791",
@@ -2594,7 +3163,9 @@
    "entry_date": "2026-11-25",
    "entry": 1418.1,
    "news_day": 2.12,
-   "after_alert": -1.25
+   "after_alert": -1.25,
+   "r1": -0.71,
+   "hit1": false
   },
   {
    "id": "daaa9f30f0f8d81b",
@@ -2613,7 +3184,9 @@
    "entry_date": "2026-11-25",
    "entry": 1236.7,
    "news_day": -1.08,
-   "after_alert": -0.88
+   "after_alert": -0.88,
+   "r1": 1.41,
+   "hit1": true
   },
   {
    "id": "ada4a115b3e27d6d",
@@ -2632,7 +3205,9 @@
    "entry_date": "2026-11-25",
    "entry": 1236.7,
    "news_day": -1.08,
-   "after_alert": -0.58
+   "after_alert": -0.58,
+   "r1": 1.41,
+   "hit1": false
   },
   {
    "id": "c81f02667e51803d",
@@ -2651,7 +3226,9 @@
    "entry_date": "2026-11-25",
    "entry": 1640.0,
    "news_day": 3.44,
-   "after_alert": -0.35
+   "after_alert": -0.35,
+   "r1": -1.77,
+   "hit1": false
   },
   {
    "id": "c59a0ae0020e983c",
@@ -2670,7 +3247,9 @@
    "entry_date": "2026-11-25",
    "entry": 132.96,
    "news_day": 6.78,
-   "after_alert": 3.28
+   "after_alert": 3.28,
+   "r1": 0.11,
+   "hit1": false
   },
   {
    "id": "fc274f6fcfd2028e",
@@ -2689,7 +3268,9 @@
    "entry_date": "2026-11-25",
    "entry": 222.46,
    "news_day": 20.0,
-   "after_alert": 0.0
+   "after_alert": 0.0,
+   "r1": 7.3,
+   "hit1": true
   },
   {
    "id": "8901cd8ec1877b91",
@@ -2708,7 +3289,9 @@
    "entry_date": "2026-11-25",
    "entry": 132.96,
    "news_day": 6.78,
-   "after_alert": 3.16
+   "after_alert": 3.16,
+   "r1": 0.11,
+   "hit1": false
   },
   {
    "id": "95c518c2edbd67b9",
@@ -2727,7 +3310,9 @@
    "entry_date": "2026-11-25",
    "entry": 349.15,
    "news_day": 3.61,
-   "after_alert": 1.1
+   "after_alert": 1.1,
+   "r1": 2.53,
+   "hit1": false
   },
   {
    "id": "97baaf66efe8d2a8",
@@ -2746,7 +3331,9 @@
    "entry_date": "2026-11-25",
    "entry": 1476.0,
    "news_day": -11.62,
-   "after_alert": 3.3
+   "after_alert": 3.3,
+   "r1": 0.37,
+   "hit1": false
   },
   {
    "id": "97baaf66efe8d2a8",
@@ -2765,7 +3352,9 @@
    "entry_date": "2026-11-25",
    "entry": 159.3,
    "news_day": -2.27,
-   "after_alert": -2.49
+   "after_alert": -2.49,
+   "r1": 2.66,
+   "hit1": true
   },
   {
    "id": "3e8d724e843bb4bc",
@@ -2784,7 +3373,9 @@
    "entry_date": "2026-11-25",
    "entry": 1123.8,
    "news_day": 3.19,
-   "after_alert": -1.46
+   "after_alert": -1.46,
+   "r1": 4.11,
+   "hit1": true
   },
   {
    "id": "f8fad4e7cf22b94b",
@@ -2803,7 +3394,9 @@
    "entry_date": "2026-11-25",
    "entry": 276.57,
    "news_day": 2.15,
-   "after_alert": 0.59
+   "after_alert": 0.59,
+   "r1": 1.37,
+   "hit1": true
   },
   {
    "id": "26a61c91ed7dcd4a",
@@ -2822,7 +3415,9 @@
    "entry_date": "2026-11-25",
    "entry": 413.5,
    "news_day": -0.53,
-   "after_alert": -0.29
+   "after_alert": -0.29,
+   "r1": 1.32,
+   "hit1": true
   },
   {
    "id": "84dce9ba694a894f",
@@ -2841,7 +3436,9 @@
    "entry_date": "2026-11-25",
    "entry": 67.21,
    "news_day": -6.18,
-   "after_alert": -1.21
+   "after_alert": -1.21,
+   "r1": -1.8,
+   "hit1": true
   },
   {
    "id": "0fae240c2e0c87cb",
@@ -2860,7 +3457,9 @@
    "entry_date": "2026-11-25",
    "entry": 2041.2,
    "news_day": 1.65,
-   "after_alert": 1.6
+   "after_alert": 1.6,
+   "r1": -0.05,
+   "hit1": false
   },
   {
    "id": "358f4dc39c65aadf",
@@ -2874,7 +3473,9 @@
    "url": "https://nsearchives.nseindia.com/corporate/CIPLA_25112026084353_Press_Release_Product_Launch_SE_Flovent_Signed.pdf",
    "entry_date": "2026-11-25",
    "entry": 1433.2,
-   "news_day": 2.38
+   "news_day": 2.38,
+   "r1": 1.17,
+   "hit1": true
   },
   {
    "id": "8260279766c9158b",
@@ -2893,7 +3494,9 @@
    "entry_date": "2026-11-25",
    "entry": 3565.0,
    "news_day": -0.46,
-   "after_alert": 0.1
+   "after_alert": 0.1,
+   "r1": 7.57,
+   "hit1": false
   },
   {
    "id": "72c149bdeb3b1fbb",
@@ -2907,7 +3510,9 @@
    "url": "https://www.business-standard.com/markets/commodities/oil-prices-fall-as-supply-glut-concerns-offset-west-asia-disruption-fears-126112500071_1.html",
    "entry_date": "2026-11-25",
    "entry": 425.0,
-   "news_day": 0.59
+   "news_day": 0.59,
+   "r1": 0.49,
+   "hit1": false
   },
   {
    "id": "c3163ca6db48bbf7",
@@ -2921,7 +3526,9 @@
    "url": "https://www.livemint.com/market/stock-market-news/indian-shares-may-open-higher-as-foreign-inflows-lower-oil-prices-aid-sentiment-11795573521883.html",
    "entry_date": "2026-11-25",
    "entry": 425.0,
-   "news_day": 0.59
+   "news_day": 0.59,
+   "r1": 0.49,
+   "hit1": false
   },
   {
    "id": "c4895361b1b21a14",
@@ -2935,7 +3542,9 @@
    "url": "https://www.business-standard.com/markets/news/stocks-to-watch-tata-motors-pv-hyundai-motor-lenskart-gland-pharma-126112500074_1.html",
    "entry_date": "2026-11-25",
    "entry": 442.0,
-   "news_day": -2.6
+   "news_day": -2.6,
+   "r1": -2.49,
+   "hit1": true
   },
   {
    "id": "c4895361b1b21a14",
@@ -2949,7 +3558,9 @@
    "url": "https://www.business-standard.com/markets/news/stocks-to-watch-tata-motors-pv-hyundai-motor-lenskart-gland-pharma-126112500074_1.html",
    "entry_date": "2026-11-25",
    "entry": 2112.0,
-   "news_day": -2.0
+   "news_day": -2.0,
+   "r1": -0.37,
+   "hit1": true
   },
   {
    "id": "101bce77e4b84f5a",
@@ -2968,7 +3579,9 @@
    "entry_date": "2026-11-25",
    "entry": 159.3,
    "news_day": -2.27,
-   "after_alert": 1.0
+   "after_alert": 1.0,
+   "r1": 2.66,
+   "hit1": false
   },
   {
    "id": "24b44532fe859e30",
@@ -2987,7 +3600,9 @@
    "entry_date": "2026-11-25",
    "entry": 1925.0,
    "news_day": 2.39,
-   "after_alert": -2.13
+   "after_alert": -2.13,
+   "r1": -2.03,
+   "hit1": false
   },
   {
    "id": "24b44532fe859e30",
@@ -3006,7 +3621,9 @@
    "entry_date": "2026-11-25",
    "entry": 3319.6,
    "news_day": 3.48,
-   "after_alert": -0.58
+   "after_alert": -0.58,
+   "r1": -1.72,
+   "hit1": false
   },
   {
    "id": "1601ea1b711f5394",
@@ -3020,7 +3637,9 @@
    "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-tata-steel-lenskart-adani-enterprises-physicswallah-hindalco-abb-and-9-others-in-focus-11795571323811.html",
    "entry_date": "2026-11-25",
    "entry": 159.3,
-   "news_day": -2.27
+   "news_day": -2.27,
+   "r1": 2.66,
+   "hit1": true
   },
   {
    "id": "1601ea1b711f5394",
@@ -3034,7 +3653,9 @@
    "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-tata-steel-lenskart-adani-enterprises-physicswallah-hindalco-abb-and-9-others-in-focus-11795571323811.html",
    "entry_date": "2026-11-25",
    "entry": 889.9,
-   "news_day": -1.17
+   "news_day": -1.17,
+   "r1": 2.88,
+   "hit1": true
   },
   {
    "id": "0fcad67820bf581a",
@@ -3048,7 +3669,9 @@
    "url": "https://www.business-standard.com/markets/news/oil-correction-gone-too-far-sharp-rebound-likely-mirae-asset-sharekhan-126112500068_1.html",
    "entry_date": "2026-11-25",
    "entry": 425.0,
-   "news_day": 0.59
+   "news_day": 0.59,
+   "r1": 0.49,
+   "hit1": false
   },
   {
    "id": "e44d8ba783cd945f",
@@ -3067,7 +3690,9 @@
    "entry_date": "2026-11-25",
    "entry": 1640.0,
    "news_day": 3.44,
-   "after_alert": -0.19
+   "after_alert": -0.19,
+   "r1": -1.77,
+   "hit1": false
   },
   {
    "id": "5f7e6737c32d3393",
@@ -3081,7 +3706,9 @@
    "url": "https://economictimes.indiatimes.com/markets/stocks/news/goldman-sachs-socgen-buy-rs-920-crore-stake-in-lenskart/articleshow/136145273.cms",
    "entry_date": "2026-11-25",
    "entry": 720.55,
-   "news_day": 0.85
+   "news_day": 0.85,
+   "r1": -0.52,
+   "hit1": false
   },
   {
    "id": "e1109d0a4cf55dc2",
@@ -3095,7 +3722,9 @@
    "url": "https://www.livemint.com/market/mark-to-market/tata-steel-apl-apollo-acquisition-deal-review-11795510022151.html",
    "entry_date": "2026-11-25",
    "entry": 159.3,
-   "news_day": -2.27
+   "news_day": -2.27,
+   "r1": 2.66,
+   "hit1": false
   },
   {
    "id": "b09d8c6d46e4a997",
@@ -3109,7 +3738,9 @@
    "url": "https://t.me/Indiaredboxglobal/9999",
    "entry_date": "2026-11-25",
    "entry": 425.0,
-   "news_day": 0.59
+   "news_day": 0.59,
+   "r1": 0.49,
+   "hit1": true
   },
   {
    "id": "5e018b002d0e6cd3",
@@ -3123,7 +3754,9 @@
    "url": "https://t.me/Indiaredboxglobal/9995",
    "entry_date": "2026-11-25",
    "entry": 425.0,
-   "news_day": 0.59
+   "news_day": 0.59,
+   "r1": 0.49,
+   "hit1": true
   },
   {
    "id": "970796fa535f05f6",
@@ -3137,7 +3770,9 @@
    "url": "https://t.me/Indiaredboxglobal/9992",
    "entry_date": "2026-11-25",
    "entry": 425.0,
-   "news_day": 0.59
+   "news_day": 0.59,
+   "r1": 0.49,
+   "hit1": true
   },
   {
    "id": "d18b2f961aeb907b",
@@ -3151,7 +3786,9 @@
    "url": "https://t.me/Indiaredboxglobal/9984",
    "entry_date": "2026-11-25",
    "entry": 930.0,
-   "news_day": -0.32
+   "news_day": -0.32,
+   "r1": 0.32,
+   "hit1": true
   },
   {
    "id": "f55e504c3e004efb",
@@ -3165,7 +3802,9 @@
    "url": "https://t.me/Indiaredboxglobal/9976",
    "entry_date": "2026-11-25",
    "entry": 1606.0,
-   "news_day": -5.53
+   "news_day": -5.53,
+   "r1": -3.97,
+   "hit1": true
   },
   {
    "id": "66877af873d53e39",
@@ -3179,7 +3818,9 @@
    "url": "https://t.me/Indiaredboxglobal/9974",
    "entry_date": "2026-11-25",
    "entry": 5751.5,
-   "news_day": 3.91
+   "news_day": 3.91,
+   "r1": 0.65,
+   "hit1": true
   },
   {
    "id": "b3723003d7821070",
@@ -3193,7 +3834,9 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_Restructuring_2466_WebXMLFile_20261124_182450536.xml",
    "entry_date": "2026-11-25",
    "entry": 1162.8,
-   "news_day": -2.97
+   "news_day": -2.97,
+   "r1": -0.98,
+   "hit1": false
   },
   {
    "id": "d3163aafaeaac0f4",
@@ -3207,7 +3850,9 @@
    "url": "https://economictimes.indiatimes.com/markets/bonds/shift-in-pension-and-insurance-money-to-equities-dampens-long-term-g-sec-demand-rbi-dg/articleshow/136130860.cms",
    "entry_date": "2026-11-25",
    "entry": 159.89,
-   "news_day": 0.55
+   "news_day": 0.55,
+   "r1": 0.25,
+   "hit1": false
   },
   {
    "id": "79fa2d956dee0334",
@@ -3221,7 +3866,9 @@
    "url": "https://nsearchives.nseindia.com/corporate/HEROMOTO_24112026180157_StockExchangeDisclosure.pdf",
    "entry_date": "2026-11-25",
    "entry": 5751.5,
-   "news_day": 3.91
+   "news_day": 3.91,
+   "r1": 0.65,
+   "hit1": false
   },
   {
    "id": "c33f4a70b571159e",
@@ -3235,7 +3882,9 @@
    "url": "https://www.livemint.com/market/stock-market-news/should-you-buy-idbi-shares-is-it-a-good-banking-stock-to-bet-on-amid-fairfax-stake-sale-deal-what-market-experts-say-11795518804386.html",
    "entry_date": "2026-11-25",
    "entry": 78.03,
-   "news_day": -0.52
+   "news_day": -0.52,
+   "r1": -0.26,
+   "hit1": false
   },
   {
    "id": "2be91ed6e70467ed",
@@ -3249,7 +3898,9 @@
    "url": "https://nsearchives.nseindia.com/corporate/AHFL2021_24112026173116_ESG_Rating_SE_Intimation.pdf",
    "entry_date": "2026-11-25",
    "entry": 425.0,
-   "news_day": 2.36
+   "news_day": 2.36,
+   "r1": 0.45,
+   "hit1": true
   },
   {
    "id": "8aad7d8c3677e6c5",
@@ -3263,7 +3914,9 @@
    "url": "https://t.me/Indiaredboxglobal/9971",
    "entry_date": "2026-11-25",
    "entry": 589.7,
-   "news_day": 1.38
+   "news_day": 1.38,
+   "r1": 6.58,
+   "hit1": true
   },
   {
    "id": "e96c1ee85adb0d67",
@@ -3277,7 +3930,9 @@
    "url": "https://nsearchives.nseindia.com/corporate/HEXAWARETECH_24112026172751_Press_Release.pdf",
    "entry_date": "2026-11-25",
    "entry": 489.45,
-   "news_day": 1.31
+   "news_day": 1.31,
+   "r1": 2.59,
+   "hit1": true
   },
   {
    "id": "2fc10c41551999b1",
@@ -3291,7 +3946,9 @@
    "url": "https://t.me/Indiaredboxglobal/9970",
    "entry_date": "2026-11-25",
    "entry": 149.67,
-   "news_day": -2.37
+   "news_day": -2.37,
+   "r1": -0.96,
+   "hit1": false
   },
   {
    "id": "168aa034216aa95f",
@@ -3305,7 +3962,9 @@
    "url": "https://www.livemint.com/market/stock-market-news/poonawalla-fincorp-share-price-after-25-jump-in-1-month-jm-financial-sees-21-further-upside-raises-target-11795515723611.html",
    "entry_date": "2026-11-25",
    "entry": 513.45,
-   "news_day": -0.76
+   "news_day": -0.76,
+   "r1": -0.94,
+   "hit1": false
   },
   {
    "id": "cd2a4fa72b18e002",
@@ -3319,7 +3978,9 @@
    "url": "https://nsearchives.nseindia.com/corporate/BALKRISHNA_24112026170225_CLLandconversion.pdf",
    "entry_date": "2026-11-25",
    "entry": 2357.0,
-   "news_day": 0.5
+   "news_day": 0.5,
+   "r1": -1.24,
+   "hit1": false
   },
   {
    "id": "c7fc05aed79c4556",
@@ -3333,7 +3994,8 @@
    "url": "https://t.me/Indiaredboxglobal/9968",
    "entry_date": "2026-11-25",
    "entry": 164.85,
-   "news_day": -2.27
+   "news_day": -2.27,
+   "r1": 3.56
   },
   {
    "id": "9da71c7ebdc14acc",
@@ -3347,7 +4009,8 @@
    "url": "https://nsearchives.nseindia.com/corporate/ZINKA2015_24112026161957_BlackBuck_Intimation_KFin_Corporate_Office_Address.pdf",
    "entry_date": "2026-11-25",
    "entry": 934.0,
-   "news_day": 0.46
+   "news_day": 0.46,
+   "r1": 6.53
   },
   {
    "id": "9a25d912a571e97b",
@@ -3361,7 +4024,8 @@
    "url": "https://nsearchives.nseindia.com/corporate/ZENSARTECH_24112026161714_Change_of_Address.pdf",
    "entry_date": "2026-11-25",
    "entry": 934.0,
-   "news_day": 0.46
+   "news_day": 0.46,
+   "r1": 6.53
   },
   {
    "id": "02df20e48c077352",
@@ -3375,7 +4039,9 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_3064_WebXMLFile_20261124_160654023.xml",
    "entry_date": "2026-11-25",
    "entry": 288.45,
-   "news_day": -3.33
+   "news_day": -3.33,
+   "r1": 0.94,
+   "hit1": true
   },
   {
    "id": "fb5e14fe87785fb4",
@@ -3389,7 +4055,9 @@
    "url": "https://www.livemint.com/market/commodities/silver-price-crash-rates-today-in-india-down-rs-1-lakh-in-3-months-recovery-or-more-fall-ahead-for-mcx-silver-futures-11795511561513.html",
    "entry_date": "2026-11-25",
    "entry": 3565.0,
-   "news_day": -0.46
+   "news_day": -0.46,
+   "r1": 7.57,
+   "hit1": true
   },
   {
    "id": "99c8f06a5f7b1de8",
@@ -3403,7 +4071,9 @@
    "url": "https://t.me/Indiaredboxglobal/9965",
    "entry_date": "2026-11-25",
    "entry": 288.45,
-   "news_day": -3.33
+   "news_day": -3.33,
+   "r1": 0.94,
+   "hit1": true
   },
   {
    "id": "9c780c7a6b77a6b9",
@@ -3417,7 +4087,9 @@
    "url": "https://nsearchives.nseindia.com/corporate/VASCONEQ_24112026155249_24112026LetterofIntent_Kanakia_Sd.pdf",
    "entry_date": "2026-11-25",
    "entry": 288.45,
-   "news_day": -3.33
+   "news_day": -3.33,
+   "r1": 0.94,
+   "hit1": true
   },
   {
    "id": "ebf8f64915cda0c4",
@@ -3436,7 +4108,9 @@
    "entry_date": "2026-11-25",
    "entry": 404.3,
    "news_day": 2.15,
-   "after_alert": 2.15
+   "after_alert": 2.15,
+   "r1": 0.05,
+   "hit1": true
   },
   {
    "id": "ebf8f64915cda0c4",
@@ -3455,7 +4129,9 @@
    "entry_date": "2026-11-25",
    "entry": 4135.0,
    "news_day": -2.13,
-   "after_alert": -2.13
+   "after_alert": -2.13,
+   "r1": 0.48,
+   "hit1": true
   },
   {
    "id": "2a61c209aab66558",
@@ -3474,7 +4150,9 @@
    "entry_date": "2026-11-25",
    "entry": 442.0,
    "news_day": -2.6,
-   "after_alert": -2.6
+   "after_alert": -2.6,
+   "r1": -2.49,
+   "hit1": false
   },
   {
    "id": "2a61c209aab66558",
@@ -3493,7 +4171,9 @@
    "entry_date": "2026-11-25",
    "entry": 262.1,
    "news_day": 1.2,
-   "after_alert": 1.2
+   "after_alert": 1.2,
+   "r1": -0.04,
+   "hit1": false
   },
   {
    "id": "559d7118b03f3fba",
@@ -3512,7 +4192,9 @@
    "entry_date": "2026-11-25",
    "entry": 262.1,
    "news_day": 1.2,
-   "after_alert": 1.2
+   "after_alert": 1.2,
+   "r1": -0.04,
+   "hit1": false
   },
   {
    "id": "35591802d0be7ba8",
@@ -3531,7 +4213,9 @@
    "entry_date": "2026-11-25",
    "entry": 222.46,
    "news_day": 20.0,
-   "after_alert": 20.0
+   "after_alert": 20.0,
+   "r1": 7.3,
+   "hit1": true
   },
   {
    "id": "425a5dd8222ac76e",
@@ -3550,7 +4234,9 @@
    "entry_date": "2026-11-25",
    "entry": 1236.0,
    "news_day": 3.04,
-   "after_alert": 3.04
+   "after_alert": 3.04,
+   "r1": -3.38,
+   "hit1": false
   },
   {
    "id": "579905556c5ad2b4",
@@ -3569,7 +4255,9 @@
    "entry_date": "2026-11-25",
    "entry": 2112.0,
    "news_day": -2.0,
-   "after_alert": -2.0
+   "after_alert": -2.0,
+   "r1": -0.37,
+   "hit1": true
   },
   {
    "id": "3eea60fc030fe9e8",
@@ -3588,7 +4276,9 @@
    "entry_date": "2026-11-25",
    "entry": 2112.0,
    "news_day": -2.0,
-   "after_alert": -2.0
+   "after_alert": -2.0,
+   "r1": -0.37,
+   "hit1": false
   },
   {
    "id": "f79e46deea1f33bc",
@@ -3607,7 +4297,9 @@
    "entry_date": "2026-11-25",
    "entry": 3348.4,
    "news_day": 1.55,
-   "after_alert": 1.55
+   "after_alert": 1.55,
+   "r1": 0.67,
+   "hit1": true
   },
   {
    "id": "33867fe3c60169ee",
@@ -3626,7 +4318,9 @@
    "entry_date": "2026-11-25",
    "entry": 1236.0,
    "news_day": 3.04,
-   "after_alert": 3.04
+   "after_alert": 3.04,
+   "r1": -3.38,
+   "hit1": false
   },
   {
    "id": "c0dd70571b3583f0",
@@ -3645,7 +4339,9 @@
    "entry_date": "2026-11-25",
    "entry": 2714.0,
    "news_day": 0.47,
-   "after_alert": 0.47
+   "after_alert": 0.47,
+   "r1": 2.42,
+   "hit1": true
   },
   {
    "id": "8350c55aad3104b1",
@@ -3664,7 +4360,9 @@
    "entry_date": "2026-11-25",
    "entry": 1236.7,
    "news_day": -1.08,
-   "after_alert": -1.08
+   "after_alert": -1.08,
+   "r1": 1.41,
+   "hit1": true
   },
   {
    "id": "5799ef94c98ada16",
@@ -3683,7 +4381,9 @@
    "entry_date": "2026-11-25",
    "entry": 425.0,
    "news_day": 0.59,
-   "after_alert": 0.59
+   "after_alert": 0.59,
+   "r1": 0.49,
+   "hit1": false
   },
   {
    "id": "96426d0ba0f5f26e",
@@ -3702,7 +4402,9 @@
    "entry_date": "2026-11-25",
    "entry": 185.09,
    "news_day": -0.01,
-   "after_alert": -0.01
+   "after_alert": -0.01,
+   "r1": 1.11,
+   "hit1": true
   },
   {
    "id": "cef5fe02e031ea62",
@@ -3721,7 +4423,9 @@
    "entry_date": "2026-11-25",
    "entry": 425.0,
    "news_day": 0.59,
-   "after_alert": 0.59
+   "after_alert": 0.59,
+   "r1": 0.49,
+   "hit1": true
   },
   {
    "id": "173ba6aa62d9f687",
@@ -3740,7 +4444,9 @@
    "entry_date": "2026-11-25",
    "entry": 42.12,
    "news_day": 1.13,
-   "after_alert": 1.13
+   "after_alert": 1.13,
+   "r1": -0.43,
+   "hit1": false
   },
   {
    "id": "173ba6aa62d9f687",
@@ -3759,7 +4465,9 @@
    "entry_date": "2026-11-25",
    "entry": 166.26,
    "news_day": 0.3,
-   "after_alert": 0.3
+   "after_alert": 0.3,
+   "r1": -0.99,
+   "hit1": false
   },
   {
    "id": "5c4ba52e8133f09d",
@@ -3778,7 +4486,9 @@
    "entry_date": "2026-11-25",
    "entry": 425.0,
    "news_day": 0.59,
-   "after_alert": 0.59
+   "after_alert": 0.59,
+   "r1": 0.49,
+   "hit1": false
   },
   {
    "id": "51c9ece8fab61f43",
@@ -3792,7 +4502,9 @@
    "url": "https://t.me/Indiaredboxglobal/9948",
    "entry_date": "2026-11-25",
    "entry": 425.0,
-   "news_day": 0.59
+   "news_day": 0.59,
+   "r1": 0.49,
+   "hit1": true
   },
   {
    "id": "5a309f37d8459401",
@@ -3806,7 +4518,9 @@
    "url": "https://t.me/Indiaredboxglobal/9940",
    "entry_date": "2026-11-25",
    "entry": 425.0,
-   "news_day": 0.59
+   "news_day": 0.59,
+   "r1": 0.49,
+   "hit1": false
   },
   {
    "id": "4e0ae4052ab722c6",
@@ -3820,7 +4534,9 @@
    "url": "https://www.livemint.com/market/oil-falls-around-3-on-increased-middle-east-flows-libyan-pipeline-restart-11795461389950.html",
    "entry_date": "2026-11-25",
    "entry": 425.0,
-   "news_day": 0.59
+   "news_day": 0.59,
+   "r1": 0.49,
+   "hit1": false
   },
   {
    "id": "b7c621854da9eb4f",
@@ -3834,7 +4550,9 @@
    "url": "https://t.me/Indiaredboxglobal/9939",
    "entry_date": "2026-11-25",
    "entry": 425.0,
-   "news_day": 0.59
+   "news_day": 0.59,
+   "r1": 0.49,
+   "hit1": true
   },
   {
    "id": "05dcb951c0193775",
@@ -3848,7 +4566,9 @@
    "url": "https://www.cnbc.com/2026/11/23/tata-steel-acquisition-deal-apl-india.html",
    "entry_date": "2026-11-25",
    "entry": 159.3,
-   "news_day": -2.27
+   "news_day": -2.27,
+   "r1": 2.66,
+   "hit1": false
   },
   {
    "id": "3fc5d38527de17dd",
@@ -3862,7 +4582,9 @@
    "url": "https://www.livemint.com/market/stock-market-news/tech-mahindra-bonus-issue-record-date-out-get-1-extra-share-for-every-share-held-check-eligibility-ratio-returns-11795435897518.html",
    "entry_date": "2026-11-25",
    "entry": 1801.2,
-   "news_day": 1.33
+   "news_day": 1.33,
+   "r1": 2.97,
+   "hit1": true
   },
   {
    "id": "fbc71a6c4b597879",
@@ -3876,7 +4598,9 @@
    "url": "https://www.livemint.com/market/dalmia-bharat-approves-rs-700-crore-share-buyback-from-price-per-share-to-record-date-what-investors-need-to-know-11795433750301.html",
    "entry_date": "2026-11-25",
    "entry": 1586.8,
-   "news_day": 1.43
+   "news_day": 1.43,
+   "r1": -3.28,
+   "hit1": false
   },
   {
    "id": "b4958fccb5d3a41e",
@@ -3890,7 +4614,9 @@
    "url": "https://www.livemint.com/market/stock-market-news/itc-samhi-hotels-to-lemon-tree-top-6-hospitality-stocks-to-buy-up-to-75-listing-gain-predicted-by-ambit-capital-11795431513673.html",
    "entry_date": "2026-11-25",
    "entry": 309.25,
-   "news_day": 2.74
+   "news_day": 2.74,
+   "r1": -0.73,
+   "hit1": false
   },
   {
    "id": "adc1017ddd573e50",
@@ -3904,7 +4630,9 @@
    "url": "https://nsearchives.nseindia.com/corporate/9810411243_23112026190836_SEResignation_of_CFOsigned.pdf",
    "entry_date": "2026-11-25",
    "entry": 1546.6,
-   "news_day": 0.1
+   "news_day": 0.1,
+   "r1": -4.11,
+   "hit1": true
   },
   {
    "id": "a2e640dd03a6e85a",
@@ -3918,7 +4646,8 @@
    "url": "https://nsearchives.nseindia.com/corporate/MAXHEALTH_ROID_105167_KMP_Doc.zip",
    "entry_date": "2026-11-25",
    "entry": 1076.3,
-   "news_day": -1.22
+   "news_day": -1.22,
+   "r1": 0.46
   },
   {
    "id": "577cdcbf5d95446b",
@@ -3932,7 +4661,8 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/CIM_18642_WebXMLFile_20261123_190324814.xml",
    "entry_date": "2026-11-25",
    "entry": 1076.3,
-   "news_day": -1.22
+   "news_day": -1.22,
+   "r1": 0.46
   },
   {
    "id": "48b32df22858579c",
@@ -3946,7 +4676,8 @@
    "url": "https://nsearchives.nseindia.com/corporate/SGLOBAL_23112026185727_bmoutcomesigned.pdf",
    "entry_date": "2026-11-25",
    "entry": 847.1,
-   "news_day": -1.48
+   "news_day": -1.48,
+   "r1": 1.09
   },
   {
    "id": "367b769ac3097717",
@@ -3960,7 +4691,8 @@
    "url": "https://nsearchives.nseindia.com/corporate/HINDALCOIND_23112026185220_Reg_30_SE_231126_final_signed.pdf",
    "entry_date": "2026-11-25",
    "entry": 889.9,
-   "news_day": -1.17
+   "news_day": -1.17,
+   "r1": 2.88
   },
   {
    "id": "117024b37cc45dbe",
@@ -3974,7 +4706,8 @@
    "url": "https://nsearchives.nseindia.com/corporate/HINDALCOIND_23112026185253_Reg_30_SE_231126_final_signed.pdf",
    "entry_date": "2026-11-25",
    "entry": 889.9,
-   "news_day": -1.17
+   "news_day": -1.17,
+   "r1": 2.88
   },
   {
    "id": "74aa348cd1f22117",
@@ -3988,7 +4721,8 @@
    "url": "",
    "entry_date": "2026-11-25",
    "entry": 257.6,
-   "news_day": -6.74
+   "news_day": -6.74,
+   "r1": -0.84
   },
   {
    "id": "d0dcaa96f544c647",
@@ -4002,7 +4736,8 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/CIM_2304_WebXMLFile_20261123_183943550.xml",
    "entry_date": "2026-11-25",
    "entry": 17.71,
-   "news_day": -0.11
+   "news_day": -0.11,
+   "r1": -0.17
   },
   {
    "id": "30e4f17552e58ca9",
@@ -4016,7 +4751,8 @@
    "url": "https://nsearchives.nseindia.com/corporate/MAXHEALTH_23112026183702_SE_Intimation_SMP_Resignation.pdf",
    "entry_date": "2026-11-25",
    "entry": 1076.3,
-   "news_day": -1.22
+   "news_day": -1.22,
+   "r1": 0.46
   },
   {
    "id": "349b66871cf2e520",
@@ -4030,7 +4766,8 @@
    "url": "https://economictimes.indiatimes.com/markets/bonds/rupee-reversal-debt-supply-drag-india-bonds-in-holiday-shortened-week/articleshow/136103987.cms",
    "entry_date": "2026-11-25",
    "entry": 425.0,
-   "news_day": 0.59
+   "news_day": 0.59,
+   "r1": 0.49
   },
   {
    "id": "a7df2096b4566063",
@@ -4044,7 +4781,8 @@
    "url": "https://nsearchives.nseindia.com/corporate/YESBANK_23112026183149_SE_Intimation_Reappointment_of_CCO_Signed.pdf",
    "entry_date": "2026-11-25",
    "entry": 17.71,
-   "news_day": -0.11
+   "news_day": -0.11,
+   "r1": -0.17
   },
   {
    "id": "d5ccf7e88bdf76b9",
@@ -4058,7 +4796,8 @@
    "url": "https://nsearchives.nseindia.com/corporate/WABCOINDIA_23112026183040_SEsd__Fair_Disclosure_Policy.pdf",
    "entry_date": "2026-11-25",
    "entry": 2119.8,
-   "news_day": -1.84
+   "news_day": -1.84,
+   "r1": 3.31
   },
   {
    "id": "1453832bcd85eed5",
@@ -4072,7 +4811,8 @@
    "url": "https://t.me/Indiaredboxglobal/9907",
    "entry_date": "2026-11-25",
    "entry": 720.55,
-   "news_day": 0.85
+   "news_day": 0.85,
+   "r1": -0.52
   },
   {
    "id": "e27164f2fcd64949",
@@ -4086,7 +4826,8 @@
    "url": "https://t.me/Indiaredboxglobal/9906",
    "entry_date": "2026-11-25",
    "entry": 159.3,
-   "news_day": -2.27
+   "news_day": -2.27,
+   "r1": 2.66
   },
   {
    "id": "3a831614048eb9bc",
@@ -4100,7 +4841,8 @@
    "url": "https://nsearchives.nseindia.com/corporate/JSWCL_23112026182053_ReplyUpload.pdf",
    "entry_date": "2026-11-25",
    "entry": 126.88,
-   "news_day": 0.91
+   "news_day": 0.91,
+   "r1": -1.05
   },
   {
    "id": "448a9a0ad22f1de0",
@@ -4114,7 +4856,9 @@
    "url": "https://nsearchives.nseindia.com/corporate/BRIGADE_23112026180704_34PressReleaseandMaterialSecunderabad.pdf",
    "entry_date": "2026-11-25",
    "entry": 589.7,
-   "news_day": 1.38
+   "news_day": 1.38,
+   "r1": 6.58,
+   "hit1": true
   },
   {
    "id": "84c6375a62a03b19",
@@ -4128,7 +4872,9 @@
    "url": "https://t.me/Indiaredboxglobal/9905",
    "entry_date": "2026-11-25",
    "entry": 1685.1,
-   "news_day": -0.11
+   "news_day": -0.11,
+   "r1": 8.72,
+   "hit1": true
   },
   {
    "id": "719838b6d8945bb3",
@@ -4142,7 +4888,9 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_Restructuring_3661_WebXMLFile_20261123_180704149.xml",
    "entry_date": "2026-11-25",
    "entry": 1685.1,
-   "news_day": -0.11
+   "news_day": -0.11,
+   "r1": 8.72,
+   "hit1": true
   },
   {
    "id": "f399beab4b494e93",
@@ -4156,7 +4904,8 @@
    "url": "https://nsearchives.nseindia.com/corporate/ABB_23112026180251_Reg30Intimation23112026.pdf",
    "entry_date": "2026-11-25",
    "entry": 7028.5,
-   "news_day": 2.33
+   "news_day": 2.33,
+   "r1": -0.97
   },
   {
    "id": "99318977c23fa770",
@@ -4170,7 +4919,8 @@
    "url": "https://t.me/Indiaredboxglobal/9904",
    "entry_date": "2026-11-25",
    "entry": 697.5,
-   "news_day": -0.41
+   "news_day": -0.41,
+   "r1": 0.67
   },
   {
    "id": "337d287976d448b2",
@@ -4184,7 +4934,8 @@
    "url": "https://nsearchives.nseindia.com/corporate/PRESSTONIC_23112026180225_Intimation_Letter_23112026.pdf",
    "entry_date": "2026-11-25",
    "entry": 745.0,
-   "news_day": 3.82
+   "news_day": 3.82,
+   "r1": 0.38
   },
   {
    "id": "1d0d9019a0591429",
@@ -4198,7 +4949,8 @@
    "url": "https://t.me/Indiaredboxglobal/9903",
    "entry_date": "2026-11-25",
    "entry": 589.7,
-   "news_day": 1.38
+   "news_day": 1.38,
+   "r1": 6.58
   },
   {
    "id": "79e39c4aacc4c31d",
@@ -4212,7 +4964,9 @@
    "url": "https://t.me/Indiaredboxglobal/9890",
    "entry_date": "2026-11-25",
    "entry": 2668.5,
-   "news_day": -0.35
+   "news_day": -0.35,
+   "r1": -0.32,
+   "hit1": true
   },
   {
    "id": "6d9a9b558a3f8a26",
@@ -4226,7 +4980,9 @@
    "url": "https://t.me/Indiaredboxglobal/9889",
    "entry_date": "2026-11-25",
    "entry": 2668.5,
-   "news_day": -0.35
+   "news_day": -0.35,
+   "r1": -0.32,
+   "hit1": true
   },
   {
    "id": "c512336a75a02ddf",
@@ -4240,7 +4996,9 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_5462_WebXMLFile_20261123_163542693.xml",
    "entry_date": "2026-11-25",
    "entry": 717.85,
-   "news_day": -1.29
+   "news_day": -1.29,
+   "r1": -1.25,
+   "hit1": false
   },
   {
    "id": "87aa0b90285fe254",
@@ -4254,7 +5012,9 @@
    "url": "https://nsearchives.nseindia.com/corporate/NEAPSPW_23112026160912_PressreleaseIntimation.pdf",
    "entry_date": "2026-11-25",
    "entry": 135.66,
-   "news_day": -2.93
+   "news_day": -2.93,
+   "r1": 0.53,
+   "hit1": true
   },
   {
    "id": "cb4e4541b20d9173",
@@ -4268,7 +5028,9 @@
    "url": "https://nsearchives.nseindia.com/corporate/HDB_23112026155535_Intimation_-_ESOP_Allotment_Sd.pdf",
    "entry_date": "2026-11-25",
    "entry": 557.85,
-   "news_day": -1.74
+   "news_day": -1.74,
+   "r1": -1.1,
+   "hit1": true
   },
   {
    "id": "f64a9d5576561f7f",
@@ -4282,7 +5044,8 @@
    "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
    "entry_date": "2026-11-25",
    "entry": 720.55,
-   "news_day": 0.85
+   "news_day": 0.85,
+   "r1": -0.52
   },
   {
    "id": "8bf3f73575d38db3",
@@ -4296,7 +5059,8 @@
    "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
    "entry_date": "2026-11-25",
    "entry": 720.55,
-   "news_day": 0.85
+   "news_day": 0.85,
+   "r1": -0.52
   },
   {
    "id": "2a717b746da5f6c4",
@@ -4310,7 +5074,8 @@
    "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
    "entry_date": "2026-11-25",
    "entry": 720.55,
-   "news_day": 0.85
+   "news_day": 0.85,
+   "r1": -0.52
   },
   {
    "id": "c26d1a66b93889d6",
@@ -4324,7 +5089,8 @@
    "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
    "entry_date": "2026-11-25",
    "entry": 720.55,
-   "news_day": 0.85
+   "news_day": 0.85,
+   "r1": -0.52
   },
   {
    "id": "f70e2f32ff5a1a4f",
@@ -4338,7 +5104,8 @@
    "url": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
    "entry_date": "2026-11-25",
    "entry": 720.55,
-   "news_day": 0.85
+   "news_day": 0.85,
+   "r1": -0.52
   },
   {
    "id": "fbdfb104a329529c",
@@ -4352,7 +5119,9 @@
    "url": "https://t.me/Indiaredboxglobal/9887",
    "entry_date": "2026-11-25",
    "entry": 222.46,
-   "news_day": 20.0
+   "news_day": 20.0,
+   "r1": 7.3,
+   "hit1": true
   },
   {
    "id": "f71fbc965477f435",
@@ -4366,7 +5135,9 @@
    "url": "https://nsearchives.nseindia.com/corporate/CEBBCO_23112026155133_SEPRESSRELEASE.pdf",
    "entry_date": "2026-11-25",
    "entry": 222.46,
-   "news_day": 20.0
+   "news_day": 20.0,
+   "r1": 7.3,
+   "hit1": true
   },
   {
    "id": "9dcd223c3b9109ad",
@@ -4380,7 +5151,9 @@
    "url": "https://nsearchives.nseindia.com/corporate/CEBBCO_23112026154633_reg30_Woojin.pdf",
    "entry_date": "2026-11-25",
    "entry": 222.46,
-   "news_day": 20.0
+   "news_day": 20.0,
+   "r1": 7.3,
+   "hit1": true
   },
   {
    "id": "f04b2ba94164c3f7",
@@ -4394,7 +5167,9 @@
    "url": "https://nsearchives.nseindia.com/corporate/CENTURYTEX_23112026152849_NSEBSEINTIMATION.pdf",
    "entry_date": "2026-11-25",
    "entry": 1282.9,
-   "news_day": 5.54
+   "news_day": 5.54,
+   "r1": 0.42,
+   "hit1": true
   },
   {
    "id": "736349357dbb4f86",
@@ -4408,7 +5183,9 @@
    "url": "https://www.business-standard.com/markets/news/ratnaveer-precision-surges-10-on-huge-volume-zooms-215-thus-far-in-fy27-126112300644_1.html",
    "entry_date": "2026-11-25",
    "entry": 938.15,
-   "news_day": -1.56
+   "news_day": -1.56,
+   "r1": -0.69,
+   "hit1": false
   },
   {
    "id": "a9e9bdcb6ee79ed0",
@@ -10275,7 +11052,9 @@
    "entry": 1108.8,
    "news_day": -1.88,
    "r1": -1.52,
-   "hit1": false
+   "hit1": false,
+   "r5": 6.69,
+   "hit5": true
   },
   {
    "id": "b8e0a31ef443616f",
@@ -10291,7 +11070,9 @@
    "entry": 4005.0,
    "news_day": -1.48,
    "r1": 3.41,
-   "hit1": false
+   "hit1": false,
+   "r5": 2.39,
+   "hit5": false
   },
   {
    "id": "bbe26d3c82c68ff8",
@@ -10307,7 +11088,9 @@
    "entry": 2392.0,
    "news_day": -2.03,
    "r1": 1.71,
-   "hit1": true
+   "hit1": true,
+   "r5": -0.28,
+   "hit5": false
   },
   {
    "id": "9feaff69f9cb9978",
@@ -10323,7 +11106,9 @@
    "entry": 2392.0,
    "news_day": -2.03,
    "r1": 1.71,
-   "hit1": true
+   "hit1": true,
+   "r5": -0.28,
+   "hit5": false
   },
   {
    "id": "a43fefdc41181386",
@@ -10339,7 +11124,9 @@
    "entry": 388.0,
    "news_day": -0.91,
    "r1": 0.9,
-   "hit1": true
+   "hit1": true,
+   "r5": 0.23,
+   "hit5": true
   },
   {
    "id": "885384c4f3140ca0",
@@ -10355,7 +11142,9 @@
    "entry": 388.0,
    "news_day": -0.91,
    "r1": 0.9,
-   "hit1": true
+   "hit1": true,
+   "r5": 0.23,
+   "hit5": true
   },
   {
    "id": "3a7e43631e29390e",
@@ -10371,7 +11160,9 @@
    "entry": 3755.7,
    "news_day": -2.83,
    "r1": 0.25,
-   "hit1": true
+   "hit1": true,
+   "r5": 6.25,
+   "hit5": true
   },
   {
    "id": "5008a1df8240f28c",
@@ -10387,7 +11178,9 @@
    "entry": 189.0,
    "news_day": -3.32,
    "r1": 3.17,
-   "hit1": false
+   "hit1": false,
+   "r5": -0.98,
+   "hit5": true
   },
   {
    "id": "832e341e48d6c243",
@@ -10403,7 +11196,9 @@
    "entry": 338.3,
    "news_day": -3.29,
    "r1": -0.55,
-   "hit1": true
+   "hit1": true,
+   "r5": 5.82,
+   "hit5": false
   },
   {
    "id": "832e341e48d6c243",
@@ -10419,7 +11214,9 @@
    "entry": 3755.7,
    "news_day": -2.83,
    "r1": 0.25,
-   "hit1": false
+   "hit1": false,
+   "r5": 6.25,
+   "hit5": false
   },
   {
    "id": "3d78c4acaf190cb5",
@@ -10435,7 +11232,9 @@
    "entry": 7307.5,
    "news_day": -5.12,
    "r1": 3.32,
-   "hit1": false
+   "hit1": false,
+   "r5": 0.58,
+   "hit5": false
   },
   {
    "id": "997590e8f69ef31f",
@@ -10451,7 +11250,9 @@
    "entry": 2161.2,
    "news_day": -1.25,
    "r1": -0.62,
-   "hit1": false
+   "hit1": false,
+   "r5": -31.45,
+   "hit5": false
   },
   {
    "id": "997590e8f69ef31f",
@@ -10467,7 +11268,9 @@
    "entry": 900.0,
    "news_day": -2.99,
    "r1": 1.11,
-   "hit1": true
+   "hit1": true,
+   "r5": 1.72,
+   "hit5": true
   },
   {
    "id": "1c9a48f4b842d03a",
@@ -10483,7 +11286,9 @@
    "entry": 435.5,
    "news_day": 0.46,
    "r1": 0.55,
-   "hit1": true
+   "hit1": true,
+   "r5": -1.93,
+   "hit5": false
   },
   {
    "id": "f2a72a11545c26d6",
@@ -10499,7 +11304,9 @@
    "entry": 81.1,
    "news_day": -1.88,
    "r1": 3.9,
-   "hit1": true
+   "hit1": true,
+   "r5": 1.48,
+   "hit5": true
   },
   {
    "id": "0f36c80771ca625e",
@@ -10515,7 +11322,9 @@
    "entry": 624.0,
    "news_day": -1.46,
    "r1": 0.51,
-   "hit1": false
+   "hit1": false,
+   "r5": 1.23,
+   "hit5": false
   },
   {
    "id": "0f36c80771ca625e",
@@ -10531,7 +11340,9 @@
    "entry": 207.3,
    "news_day": -0.79,
    "r1": 6.13,
-   "hit1": false
+   "hit1": false,
+   "r5": 4.0,
+   "hit5": false
   },
   {
    "id": "a9bb10bd03326676",
@@ -10547,7 +11358,9 @@
    "entry": 320.4,
    "news_day": -0.44,
    "r1": 1.44,
-   "hit1": true
+   "hit1": true,
+   "r5": -0.05,
+   "hit5": false
   },
   {
    "id": "a9bb10bd03326676",
@@ -10563,7 +11376,9 @@
    "entry": 18520.0,
    "news_day": -1.3,
    "r1": 1.78,
-   "hit1": true
+   "hit1": true,
+   "r5": -1.46,
+   "hit5": false
   },
   {
    "id": "0b9fc38ad76e3ac2",
@@ -10579,7 +11394,9 @@
    "entry": 511.85,
    "news_day": -0.59,
    "r1": 0.62,
-   "hit1": true
+   "hit1": true,
+   "r5": -5.22,
+   "hit5": false
   },
   {
    "id": "4fb328315ed5c6bd",
@@ -10595,7 +11412,9 @@
    "entry": 511.85,
    "news_day": -0.59,
    "r1": 0.62,
-   "hit1": true
+   "hit1": true,
+   "r5": -5.22,
+   "hit5": false
   },
   {
    "id": "bb5fc7cabab792dc",
@@ -10611,7 +11430,9 @@
    "entry": 4648.1,
    "news_day": -5.3,
    "r1": 1.12,
-   "hit1": false
+   "hit1": false,
+   "r5": -0.37,
+   "hit5": true
   },
   {
    "id": "bb5fc7cabab792dc",
@@ -10627,7 +11448,9 @@
    "entry": 650.0,
    "news_day": -4.8,
    "r1": 1.69,
-   "hit1": false
+   "hit1": false,
+   "r5": -1.57,
+   "hit5": true
   },
   {
    "id": "f8847704e5631d3d",
@@ -10643,7 +11466,9 @@
    "entry": 320.4,
    "news_day": -0.44,
    "r1": 1.44,
-   "hit1": false
+   "hit1": false,
+   "r5": -0.05,
+   "hit5": true
   },
   {
    "id": "8b871a88ca76b33a",
@@ -10659,7 +11484,9 @@
    "entry": 225.0,
    "news_day": 0.66,
    "r1": -0.21,
-   "hit1": false
+   "hit1": false,
+   "r5": -0.94,
+   "hit5": false
   },
   {
    "id": "18a7ec16dd7b389d",
@@ -10675,7 +11502,9 @@
    "entry": 1684.5,
    "news_day": -1.76,
    "r1": 2.65,
-   "hit1": true
+   "hit1": true,
+   "r5": 3.53,
+   "hit5": true
   },
   {
    "id": "5fe9ae650561e86c",
@@ -10691,7 +11520,9 @@
    "entry": 3151.0,
    "news_day": -2.49,
    "r1": 1.82,
-   "hit1": true
+   "hit1": true,
+   "r5": 0.29,
+   "hit5": true
   },
   {
    "id": "1b5a79cd3542ca21",
@@ -10707,7 +11538,9 @@
    "entry": 162.45,
    "news_day": 1.21,
    "r1": 2.28,
-   "hit1": true
+   "hit1": true,
+   "r5": -3.88,
+   "hit5": false
   },
   {
    "id": "7e2a0248a0f1771e",
@@ -10723,7 +11556,9 @@
    "entry": 843.05,
    "news_day": 0.89,
    "r1": 0.72,
-   "hit1": true
+   "hit1": true,
+   "r5": 1.57,
+   "hit5": true
   },
   {
    "id": "c7ddb5e3e71ec9df",
@@ -10739,7 +11574,9 @@
    "entry": 843.05,
    "news_day": 0.89,
    "r1": 0.72,
-   "hit1": true
+   "hit1": true,
+   "r5": 1.57,
+   "hit5": true
   },
   {
    "id": "115559892df9b529",
@@ -10755,7 +11592,9 @@
    "entry": 900.0,
    "news_day": -2.99,
    "r1": 1.11,
-   "hit1": false
+   "hit1": false,
+   "r5": 1.72,
+   "hit5": false
   },
   {
    "id": "115559892df9b529",
@@ -10771,7 +11610,9 @@
    "entry": 164.0,
    "news_day": -4.27,
    "r1": 0.26,
-   "hit1": false
+   "hit1": false,
+   "r5": -1.85,
+   "hit5": true
   },
   {
    "id": "615ca5a9b87cbaca",
@@ -10787,7 +11628,9 @@
    "entry": 1666.3,
    "news_day": -0.38,
    "r1": -1.62,
-   "hit1": true
+   "hit1": true,
+   "r5": -7.82,
+   "hit5": true
   },
   {
    "id": "e1d5ed61280eb32a",
@@ -10803,7 +11646,9 @@
    "entry": 435.5,
    "news_day": 0.46,
    "r1": 0.55,
-   "hit1": false
+   "hit1": false,
+   "r5": -1.93,
+   "hit5": true
   },
   {
    "id": "d4462b9e9bdb8dca",
@@ -10819,7 +11664,9 @@
    "entry": 1877.6,
    "news_day": -0.78,
    "r1": 0.18,
-   "hit1": false
+   "hit1": false,
+   "r5": 6.75,
+   "hit5": false
   },
   {
    "id": "78931b6117fcd693",
@@ -10835,7 +11682,9 @@
    "entry": 1318.1,
    "news_day": -1.07,
    "r1": 0.21,
-   "hit1": false
+   "hit1": false,
+   "r5": -0.3,
+   "hit5": true
   },
   {
    "id": "fdf957392bfc616d",
@@ -10851,7 +11700,9 @@
    "entry": 4118.2,
    "news_day": 1.6,
    "r1": 2.12,
-   "hit1": true
+   "hit1": true,
+   "r5": -1.49,
+   "hit5": false
   },
   {
    "id": "5974bab17a9d039c",
@@ -10867,7 +11718,9 @@
    "entry": 3725.0,
    "news_day": -3.27,
    "r1": 2.72,
-   "hit1": false
+   "hit1": false,
+   "r5": -2.12,
+   "hit5": true
   },
   {
    "id": "5974bab17a9d039c",
@@ -10883,7 +11736,9 @@
    "entry": 7307.5,
    "news_day": -5.12,
    "r1": 3.32,
-   "hit1": false
+   "hit1": false,
+   "r5": 0.58,
+   "hit5": false
   },
   {
    "id": "7944765a17f8461f",
@@ -10899,7 +11754,9 @@
    "entry": 9694.5,
    "news_day": -0.48,
    "r1": 1.46,
-   "hit1": false
+   "hit1": false,
+   "r5": -4.16,
+   "hit5": true
   },
   {
    "id": "36f3122e9ab557c4",
@@ -10915,7 +11772,9 @@
    "entry": 384.8,
    "news_day": -1.38,
    "r1": 3.12,
-   "hit1": true
+   "hit1": true,
+   "r5": 1.6,
+   "hit5": true
   },
   {
    "id": "36f3122e9ab557c4",
@@ -10931,7 +11790,9 @@
    "entry": 310.05,
    "news_day": -3.56,
    "r1": 3.5,
-   "hit1": true
+   "hit1": true,
+   "r5": -0.1,
+   "hit5": false
   },
   {
    "id": "749fbe408b0dafd3",
@@ -10947,7 +11808,9 @@
    "entry": 384.8,
    "news_day": -1.38,
    "r1": 3.12,
-   "hit1": true
+   "hit1": true,
+   "r5": 1.6,
+   "hit5": true
   },
   {
    "id": "749fbe408b0dafd3",
@@ -10963,7 +11826,9 @@
    "entry": 310.05,
    "news_day": -3.56,
    "r1": 3.5,
-   "hit1": true
+   "hit1": true,
+   "r5": -0.1,
+   "hit5": false
   },
   {
    "id": "6116bbe5779144fa",
@@ -10979,7 +11844,9 @@
    "entry": 179.0,
    "news_day": -1.38,
    "r1": 1.06,
-   "hit1": false
+   "hit1": false,
+   "r5": -8.64,
+   "hit5": true
   },
   {
    "id": "f9008bbc6a0bd8de",
@@ -10995,7 +11862,9 @@
    "entry": 179.0,
    "news_day": -1.38,
    "r1": 1.06,
-   "hit1": true
+   "hit1": true,
+   "r5": -8.64,
+   "hit5": false
   },
   {
    "id": "1c030d6bca7fc107",
@@ -11011,7 +11880,9 @@
    "entry": 18520.0,
    "news_day": -1.3,
    "r1": 1.78,
-   "hit1": true
+   "hit1": true,
+   "r5": -1.46,
+   "hit5": false
   },
   {
    "id": "2406e9d592dd1db2",
@@ -11027,7 +11898,9 @@
    "entry": 283.0,
    "news_day": -4.59,
    "r1": -0.05,
-   "hit1": true
+   "hit1": true,
+   "r5": -4.59,
+   "hit5": true
   },
   {
    "id": "c5e9311258c2a400",
@@ -11043,7 +11916,9 @@
    "entry": 419.2,
    "news_day": -2.95,
    "r1": 1.49,
-   "hit1": false
+   "hit1": false,
+   "r5": -1.92,
+   "hit5": true
   },
   {
    "id": "b9f420ba72f99533",
@@ -11059,7 +11934,9 @@
    "entry": 338.0,
    "news_day": -1.89,
    "r1": 0.59,
-   "hit1": true
+   "hit1": true,
+   "r5": -4.29,
+   "hit5": false
   },
   {
    "id": "73b822903a2eacf0",
@@ -11075,7 +11952,9 @@
    "entry": 1360.0,
    "news_day": -0.66,
    "r1": 1.53,
-   "hit1": true
+   "hit1": true,
+   "r5": 3.53,
+   "hit5": true
   },
   {
    "id": "73b822903a2eacf0",
@@ -11091,7 +11970,9 @@
    "entry": 808.15,
    "news_day": -0.83,
    "r1": 1.69,
-   "hit1": true
+   "hit1": true,
+   "r5": 6.66,
+   "hit5": true
   },
   {
    "id": "af7fdf8076d54d43",
@@ -11107,7 +11988,9 @@
    "entry": 2379.5,
    "news_day": -1.13,
    "r1": -1.55,
-   "hit1": true
+   "hit1": true,
+   "r5": 10.96,
+   "hit5": false
   },
   {
    "id": "3b4ef2eb5b6500fa",
@@ -11123,7 +12006,9 @@
    "entry": 7700.0,
    "news_day": -1.64,
    "r1": 4.66,
-   "hit1": true
+   "hit1": true,
+   "r5": 6.23,
+   "hit5": true
   },
   {
    "id": "bcffb29d4178746b",
@@ -11139,7 +12024,9 @@
    "entry": 360.35,
    "news_day": -1.49,
    "r1": 1.15,
-   "hit1": false
+   "hit1": false,
+   "r5": -0.97,
+   "hit5": true
   },
   {
    "id": "a0f6ad911ce97199",
@@ -11155,7 +12042,9 @@
    "entry": 661.95,
    "news_day": 4.01,
    "r1": -2.64,
-   "hit1": false
+   "hit1": false,
+   "r5": -10.27,
+   "hit5": false
   },
   {
    "id": "6c205637903ed7dc",
@@ -11171,7 +12060,9 @@
    "entry": 661.95,
    "news_day": 4.01,
    "r1": -2.64,
-   "hit1": false
+   "hit1": false,
+   "r5": -10.27,
+   "hit5": false
   },
   {
    "id": "f2629ad98e9b3350",
@@ -11187,7 +12078,9 @@
    "entry": 1269.7,
    "news_day": -1.6,
    "r1": -0.02,
-   "hit1": false
+   "hit1": false,
+   "r5": 1.58,
+   "hit5": true
   },
   {
    "id": "85e9b927ef1a8ab8",
@@ -11203,7 +12096,9 @@
    "entry": 443.8,
    "news_day": -0.42,
    "r1": 0.46,
-   "hit1": true
+   "hit1": true,
+   "r5": -2.88,
+   "hit5": false
   },
   {
    "id": "c9b50b14b12e80bc",
@@ -11219,7 +12114,9 @@
    "entry": 409.7,
    "news_day": 1.51,
    "r1": -0.13,
-   "hit1": false
+   "hit1": false,
+   "r5": 1.49,
+   "hit5": true
   },
   {
    "id": "3c142e53e0c6ce8d",
@@ -11235,7 +12132,9 @@
    "entry": 2684.2,
    "news_day": -2.22,
    "r1": 0.7,
-   "hit1": false
+   "hit1": false,
+   "r5": -0.9,
+   "hit5": true
   },
   {
    "id": "798233d2cdd5122e",
@@ -11251,7 +12150,9 @@
    "entry": 361.95,
    "news_day": 0.71,
    "r1": 0.47,
-   "hit1": true
+   "hit1": true,
+   "r5": 0.84,
+   "hit5": true
   },
   {
    "id": "13303f5c96a2c544",
@@ -11267,7 +12168,9 @@
    "entry": 1417.0,
    "news_day": 2.09,
    "r1": 0.11,
-   "hit1": false
+   "hit1": false,
+   "r5": 2.33,
+   "hit5": false
   },
   {
    "id": "719205db3f266d1d",
@@ -11283,7 +12186,9 @@
    "entry": 900.0,
    "news_day": -2.99,
    "r1": 1.11,
-   "hit1": false
+   "hit1": false,
+   "r5": 1.72,
+   "hit5": false
   },
   {
    "id": "187a60fa195e8cab",
@@ -11299,7 +12204,9 @@
    "entry": 552.0,
    "news_day": 0.05,
    "r1": 3.22,
-   "hit1": false
+   "hit1": false,
+   "r5": 2.36,
+   "hit5": false
   },
   {
    "id": "716518130c4f8360",
@@ -11315,7 +12222,9 @@
    "entry": 4648.1,
    "news_day": -5.3,
    "r1": 1.12,
-   "hit1": false
+   "hit1": false,
+   "r5": -0.37,
+   "hit5": true
   },
   {
    "id": "e17e884536ffd2b3",
@@ -11331,7 +12240,9 @@
    "entry": 164.0,
    "news_day": -4.27,
    "r1": 0.26,
-   "hit1": false
+   "hit1": false,
+   "r5": -1.85,
+   "hit5": true
   },
   {
    "id": "c646f3bf34161993",
@@ -11347,7 +12258,9 @@
    "entry": 4648.1,
    "news_day": -5.3,
    "r1": 1.12,
-   "hit1": false
+   "hit1": false,
+   "r5": -0.37,
+   "hit5": true
   },
   {
    "id": "88f899720f161177",
@@ -11363,7 +12276,9 @@
    "entry": 164.0,
    "news_day": -4.27,
    "r1": 0.26,
-   "hit1": false
+   "hit1": false,
+   "r5": -1.85,
+   "hit5": true
   },
   {
    "id": "ba04ec760a7fe4c1",
@@ -11379,7 +12294,9 @@
    "entry": 18520.0,
    "news_day": -1.3,
    "r1": 1.78,
-   "hit1": true
+   "hit1": true,
+   "r5": -1.46,
+   "hit5": false
   },
   {
    "id": "df7ddccdbd8061a0",
@@ -11395,7 +12312,9 @@
    "entry": 389.05,
    "news_day": 2.34,
    "r1": 2.88,
-   "hit1": true
+   "hit1": true,
+   "r5": -0.51,
+   "hit5": false
   },
   {
    "id": "0fd65a0efd1e7f6c",
@@ -11411,7 +12330,9 @@
    "entry": 2097.5,
    "news_day": -1.12,
    "r1": 5.8,
-   "hit1": true
+   "hit1": true,
+   "r5": 0.32,
+   "hit5": true
   },
   {
    "id": "0fd65a0efd1e7f6c",
@@ -11427,7 +12348,9 @@
    "entry": 1363.0,
    "news_day": -0.29,
    "r1": 0.92,
-   "hit1": true
+   "hit1": true,
+   "r5": 2.44,
+   "hit5": true
   },
   {
    "id": "7f172028a62fcac5",
@@ -11443,7 +12366,9 @@
    "entry": 2097.5,
    "news_day": -1.12,
    "r1": 5.8,
-   "hit1": true
+   "hit1": true,
+   "r5": 0.32,
+   "hit5": true
   },
   {
    "id": "11134d85eb174fb4",
@@ -11459,7 +12384,9 @@
    "entry": 435.5,
    "news_day": 0.46,
    "r1": 0.55,
-   "hit1": true
+   "hit1": true,
+   "r5": -1.93,
+   "hit5": false
   },
   {
    "id": "4df7af2adf4ee263",
@@ -11475,7 +12402,9 @@
    "entry": 843.05,
    "news_day": 0.89,
    "r1": 0.72,
-   "hit1": true
+   "hit1": true,
+   "r5": 1.57,
+   "hit5": true
   },
   {
    "id": "c04e5b50e313756f",
@@ -11491,7 +12420,9 @@
    "entry": 435.5,
    "news_day": 0.46,
    "r1": 0.55,
-   "hit1": true
+   "hit1": true,
+   "r5": -1.93,
+   "hit5": false
   },
   {
    "id": "9aa1a3325c55b4a0",
@@ -11507,7 +12438,9 @@
    "entry": 1360.0,
    "news_day": -0.66,
    "r1": 1.53,
-   "hit1": true
+   "hit1": true,
+   "r5": 3.53,
+   "hit5": true
   },
   {
    "id": "72e0c7adc3208224",
@@ -11523,7 +12456,9 @@
    "entry": 172.73,
    "news_day": 6.87,
    "r1": 1.92,
-   "hit1": true
+   "hit1": true,
+   "r5": -1.16,
+   "hit5": false
   },
   {
    "id": "be25416fdc6f537a",
@@ -11539,7 +12474,9 @@
    "entry": 223.52,
    "news_day": -1.76,
    "r1": -1.18,
-   "hit1": false
+   "hit1": false,
+   "r5": -1.57,
+   "hit5": false
   },
   {
    "id": "f03341a24a564a46",
@@ -11555,7 +12492,9 @@
    "entry": 1657.4,
    "news_day": -2.02,
    "r1": -0.14,
-   "hit1": false
+   "hit1": false,
+   "r5": 10.54,
+   "hit5": true
   },
   {
    "id": "95adcc6db4b84f13",
@@ -11571,7 +12510,9 @@
    "entry": 2204.6,
    "news_day": -1.09,
    "r1": 1.49,
-   "hit1": true
+   "hit1": true,
+   "r5": 3.92,
+   "hit5": true
   },
   {
    "id": "50ab1d05b2a7abb8",
@@ -11587,7 +12528,9 @@
    "entry": 1657.4,
    "news_day": -2.02,
    "r1": -0.14,
-   "hit1": false
+   "hit1": false,
+   "r5": 10.54,
+   "hit5": true
   },
   {
    "id": "af7c2ae1af7c67ba",
@@ -11603,7 +12546,9 @@
    "entry": 2204.6,
    "news_day": -1.09,
    "r1": 1.49,
-   "hit1": true
+   "hit1": true,
+   "r5": 3.92,
+   "hit5": true
   },
   {
    "id": "5f6b3e5273855a82",
@@ -11619,7 +12564,9 @@
    "entry": 1657.4,
    "news_day": -2.02,
    "r1": -0.14,
-   "hit1": false
+   "hit1": false,
+   "r5": 10.54,
+   "hit5": true
   },
   {
    "id": "32b4d4a054dfc875",
@@ -11635,7 +12582,9 @@
    "entry": 2322.5,
    "news_day": -0.66,
    "r1": -0.71,
-   "hit1": false
+   "hit1": false,
+   "r5": 7.86,
+   "hit5": true
   },
   {
    "id": "ea302de64b80d13d",
@@ -11651,7 +12600,9 @@
    "entry": 12428.0,
    "news_day": 1.12,
    "r1": 1.06,
-   "hit1": true
+   "hit1": true,
+   "r5": 2.49,
+   "hit5": true
   },
   {
    "id": "79cab5c36903040e",
@@ -11667,7 +12618,9 @@
    "entry": 78.82,
    "news_day": -0.58,
    "r1": 0.98,
-   "hit1": true
+   "hit1": true,
+   "r5": -1.26,
+   "hit5": false
   },
   {
    "id": "79cab5c36903040e",
@@ -11683,7 +12636,9 @@
    "entry": 661.95,
    "news_day": 4.01,
    "r1": -2.64,
-   "hit1": true
+   "hit1": true,
+   "r5": -10.27,
+   "hit5": true
   },
   {
    "id": "2e283468afbbf096",
@@ -11699,7 +12654,9 @@
    "entry": 175.44,
    "news_day": -1.97,
    "r1": -0.44,
-   "hit1": false
+   "hit1": false,
+   "r5": -8.2,
+   "hit5": false
   },
   {
    "id": "d37474681dc26b24",
@@ -11715,7 +12672,9 @@
    "entry": 175.44,
    "news_day": -1.97,
    "r1": -0.44,
-   "hit1": false
+   "hit1": false,
+   "r5": -8.2,
+   "hit5": false
   },
   {
    "id": "5d47153c9e3483f7",
@@ -11731,7 +12690,9 @@
    "entry": 435.5,
    "news_day": 0.46,
    "r1": 0.55,
-   "hit1": false
+   "hit1": false,
+   "r5": -1.93,
+   "hit5": true
   },
   {
    "id": "e4ef34975874e883",
@@ -11747,7 +12708,9 @@
    "entry": 3755.7,
    "news_day": -2.83,
    "r1": 0.25,
-   "hit1": true
+   "hit1": true,
+   "r5": 6.25,
+   "hit5": true
   },
   {
    "id": "e4ef34975874e883",
@@ -11763,7 +12726,9 @@
    "entry": 764.3,
    "news_day": -0.22,
    "r1": 0.48,
-   "hit1": true
+   "hit1": true,
+   "r5": 5.69,
+   "hit5": true
   },
   {
    "id": "655100629dac89a3",
@@ -11779,7 +12744,9 @@
    "entry": 57.5,
    "news_day": -3.69,
    "r1": -0.92,
-   "hit1": false
+   "hit1": false,
+   "r5": -7.83,
+   "hit5": false
   },
   {
    "id": "655100629dac89a3",
@@ -11795,7 +12762,9 @@
    "entry": 2123.2,
    "news_day": 7.81,
    "r1": 0.21,
-   "hit1": true
+   "hit1": true,
+   "r5": 1.87,
+   "hit5": true
   },
   {
    "id": "4d56df26987fd4b4",
@@ -11811,7 +12780,9 @@
    "entry": 172.73,
    "news_day": 6.87,
    "r1": 1.92,
-   "hit1": true
+   "hit1": true,
+   "r5": -1.16,
+   "hit5": false
   },
   {
    "id": "e01bab81c4644a41",
@@ -11827,7 +12798,9 @@
    "entry": 1108.8,
    "news_day": -1.88,
    "r1": -1.52,
-   "hit1": false
+   "hit1": false,
+   "r5": 6.69,
+   "hit5": true
   },
   {
    "id": "e01bab81c4644a41",
@@ -11843,7 +12816,9 @@
    "entry": 2379.5,
    "news_day": -1.13,
    "r1": -1.55,
-   "hit1": false
+   "hit1": false,
+   "r5": 10.96,
+   "hit5": true
   },
   {
    "id": "3686cf9dc8b025b2",
@@ -11859,7 +12834,9 @@
    "entry": 3062.0,
    "news_day": 0.24,
    "r1": 1.6,
-   "hit1": true
+   "hit1": true,
+   "r5": 3.82,
+   "hit5": true
   },
   {
    "id": "08fab36668d96fe3",
@@ -11874,7 +12851,8 @@
    "entry_date": "2026-11-18",
    "entry": 223.52,
    "news_day": -1.76,
-   "r1": -1.18
+   "r1": -1.18,
+   "r5": -1.57
   },
   {
    "id": "e5348e1f98b8ebdf",
@@ -11889,7 +12867,8 @@
    "entry_date": "2026-11-18",
    "entry": 223.52,
    "news_day": -1.76,
-   "r1": -1.18
+   "r1": -1.18,
+   "r5": -1.57
   },
   {
    "id": "3c77bc3b87f8809b",
@@ -11904,7 +12883,8 @@
    "entry_date": "2026-11-18",
    "entry": 223.52,
    "news_day": -1.76,
-   "r1": -1.18
+   "r1": -1.18,
+   "r5": -1.57
   },
   {
    "id": "5501f87a323ca109",
@@ -11919,7 +12899,8 @@
    "entry_date": "2026-11-18",
    "entry": 5222.5,
    "news_day": 0.92,
-   "r1": -1.48
+   "r1": -1.48,
+   "r5": -1.26
   },
   {
    "id": "7b1cb168ccbe010a",
@@ -11934,7 +12915,8 @@
    "entry_date": "2026-11-18",
    "entry": 223.52,
    "news_day": -1.76,
-   "r1": -1.18
+   "r1": -1.18,
+   "r5": -1.57
   },
   {
    "id": "58f2ba187a99d5a7",
@@ -11949,7 +12931,8 @@
    "entry_date": "2026-11-18",
    "entry": 1778.9,
    "news_day": -5.13,
-   "r1": 1.96
+   "r1": 1.96,
+   "r5": 0.63
   },
   {
    "id": "7669f340ac5cef66",
@@ -11964,7 +12947,8 @@
    "entry_date": "2026-11-18",
    "entry": 533.2,
    "news_day": -0.15,
-   "r1": 1.08
+   "r1": 1.08,
+   "r5": 1.13
   },
   {
    "id": "284391fb020bdf62",
@@ -11979,7 +12963,8 @@
    "entry_date": "2026-11-18",
    "entry": 533.2,
    "news_day": -0.15,
-   "r1": 1.08
+   "r1": 1.08,
+   "r5": 1.13
   },
   {
    "id": "8121218fd68ab40d",
@@ -11994,7 +12979,8 @@
    "entry_date": "2026-11-18",
    "entry": 223.52,
    "news_day": -1.76,
-   "r1": -1.18
+   "r1": -1.18,
+   "r5": -1.57
   },
   {
    "id": "e21de5ae7d8c130b",
@@ -12009,7 +12995,8 @@
    "entry_date": "2026-11-18",
    "entry": 5222.5,
    "news_day": 0.92,
-   "r1": -1.48
+   "r1": -1.48,
+   "r5": -1.26
   },
   {
    "id": "76731da4f9f1e17f",
@@ -12024,7 +13011,8 @@
    "entry_date": "2026-11-18",
    "entry": 223.52,
    "news_day": -1.76,
-   "r1": -1.18
+   "r1": -1.18,
+   "r5": -1.57
   },
   {
    "id": "72aa61ec6dee6d2f",
@@ -12039,7 +13027,8 @@
    "entry_date": "2026-11-18",
    "entry": 5222.5,
    "news_day": 0.92,
-   "r1": -1.48
+   "r1": -1.48,
+   "r5": -1.26
   },
   {
    "id": "c8ed7f91adce31ae",
@@ -12054,7 +13043,8 @@
    "entry_date": "2026-11-18",
    "entry": 5222.5,
    "news_day": 0.92,
-   "r1": -1.48
+   "r1": -1.48,
+   "r5": -1.26
   },
   {
    "id": "c0eed518a0366452",
@@ -12069,7 +13059,8 @@
    "entry_date": "2026-11-18",
    "entry": 223.52,
    "news_day": -1.76,
-   "r1": -1.18
+   "r1": -1.18,
+   "r5": -1.57
   },
   {
    "id": "8da6c9682fc46eb6",
@@ -12084,7 +13075,8 @@
    "entry_date": "2026-11-18",
    "entry": 223.52,
    "news_day": -1.76,
-   "r1": -1.18
+   "r1": -1.18,
+   "r5": -1.57
   },
   {
    "id": "ad921c67e7d7f03a",
@@ -12099,7 +13091,8 @@
    "entry_date": "2026-11-18",
    "entry": 223.52,
    "news_day": -1.76,
-   "r1": -1.18
+   "r1": -1.18,
+   "r5": -1.57
   },
   {
    "id": "7e4e6db891f32702",
@@ -12114,7 +13107,8 @@
    "entry_date": "2026-11-18",
    "entry": 223.52,
    "news_day": -1.76,
-   "r1": -1.18
+   "r1": -1.18,
+   "r5": -1.57
   },
   {
    "id": "0afa4588c46674cd",
@@ -12129,7 +13123,8 @@
    "entry_date": "2026-11-18",
    "entry": 223.52,
    "news_day": -1.76,
-   "r1": -1.18
+   "r1": -1.18,
+   "r5": -1.57
   },
   {
    "id": "f74839183c7f25bf",
@@ -12144,7 +13139,8 @@
    "entry_date": "2026-11-18",
    "entry": 223.52,
    "news_day": -1.76,
-   "r1": -1.18
+   "r1": -1.18,
+   "r5": -1.57
   },
   {
    "id": "e7d2ead9e900e9e1",
@@ -12159,7 +13155,8 @@
    "entry_date": "2026-11-18",
    "entry": 223.52,
    "news_day": -1.76,
-   "r1": -1.18
+   "r1": -1.18,
+   "r5": -1.57
   },
   {
    "id": "6472590a58207fb0",
@@ -12175,7 +13172,9 @@
    "entry": 1125.3,
    "news_day": -1.12,
    "r1": 2.57,
-   "hit1": false
+   "hit1": false,
+   "r5": 4.06,
+   "hit5": false
   },
   {
    "id": "1b7acc7d6d84fa26",
@@ -12191,7 +13190,9 @@
    "entry": 1360.0,
    "news_day": -0.66,
    "r1": 1.53,
-   "hit1": true
+   "hit1": true,
+   "r5": 3.53,
+   "hit5": true
   },
   {
    "id": "1b7acc7d6d84fa26",
@@ -12207,7 +13208,9 @@
    "entry": 808.15,
    "news_day": -0.83,
    "r1": 1.69,
-   "hit1": true
+   "hit1": true,
+   "r5": 6.66,
+   "hit5": true
   },
   {
    "id": "25376039c86b64c7",
@@ -12223,7 +13226,9 @@
    "entry": 387.0,
    "news_day": -1.65,
    "r1": -0.78,
-   "hit1": false
+   "hit1": false,
+   "r5": -4.39,
+   "hit5": false
   },
   {
    "id": "9c9e9914af598475",
@@ -12239,7 +13244,9 @@
    "entry": 634.6,
    "news_day": 3.68,
    "r1": 2.43,
-   "hit1": true
+   "hit1": true,
+   "r5": 4.78,
+   "hit5": true
   },
   {
    "id": "de48e096d444c62c",

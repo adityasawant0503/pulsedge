@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T16:58+05:30",
+ "updated": "2026-11-26T19:22+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged that several Indian companies reported positive business updates, including new orders and cleared regulatory hurdles. Dalmia Bharat announced a share buyback, which can support the value of existing shares. Meanwhile, foreign investors increased their bullish bets on the market, raising their long positions from 20% to 24%.",
+  "summary": "PulsEdge flagged that Dalmia Bharat announced a share buyback, which can support the stock price by reducing the number of shares available. Patel Engineering secured a large hydro power project, while Panacea Biotec cleared a compliance issue to resume sales in Europe. Foreign investors increased their long positions in index futures, suggesting a slightly more positive outlook for the market.",
   "themes": [
-   "Companies secured new contracts or cleared compliance issues to boost future sales.",
-   "Regulatory actions and FDA responses created mixed signals for specific firms.",
-   "Foreign investors showed slightly more confidence by increasing their long positions."
+   "Companies are taking steps to support their share prices, such as buybacks and clearing regulatory hurdles.",
+   "New orders and project completions are boosting revenue expectations for engineering and energy firms.",
+   "Foreign investors are gradually increasing their bullish bets on the Indian market."
   ],
   "watch": [
-   "Whether the potential India-US trade deal progresses, which could affect exporters like Welspun.",
-   "How Zydus Lifesciences responds to the US FDA's request for more details on its new medicine.",
-   "The execution of Dalmia Bharat's share buyback program and its impact on the stock."
+   "Whether the potential India-US trade deal will lower taxes on exports, which could help companies like Welspun and Cipla.",
+   "If Zydus Lifesciences can quickly address the US FDA's request for more details on its new medicine.",
+   "How Exide Industries manages the integration of its new acquisition, which carries execution risks."
   ],
   "date": "2026-11-26",
-  "basis": "7244a22fba66",
-  "updated": "2026-11-26T16:58+05:30",
+  "basis": "d427f1c2295d",
+  "updated": "2026-11-26T19:22+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 124
+  "items": 141
  },
  "stocks": {
   "TORNTPOWER": {
@@ -156,20 +156,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "BRIGADE": {
-   "summary": "Brigade Enterprises has opened a 65,000 sq ft flexible workspace arm in Chennai, targeting ₹10 cr revenue and plans to add 1 lakh sq ft by FY28. The company also recorded ₹1,600 cr sales during a launch weekend in Bengaluru, boosting its stock 4%. The realty sector hit a 52‑week high, lifting Brigade along with peers.",
-   "why": "Shareholders see potential earnings growth from new workspace and strong residential sales, but must watch for execution and sustainability risks.",
-   "upside": "If the workspace revenue targets and residential sales momentum continue, earnings could rise.",
-   "downside": "Execution risk on further space rollout and the possibility that the sales spike is one‑off could hurt future performance.",
+   "summary": "Brigade Enterprises disclosed a new credit rating, opened 65,000 sq ft of flexible workspace in Chennai and reported strong sales of ₹1,600 cr in Bengaluru, while the broader realty sector rallied. The company is targeting further workspace expansion by FY28.",
+   "why": "A credit rating change can affect investor perception and the recent sales and workspace rollout could boost earnings, impacting share value.",
+   "upside": "If the flexible workspace arm meets its revenue and expansion targets, it could add a new growth stream.",
+   "downside": "A downgrade of the credit rating or execution challenges in the workspace rollout could pressure the stock.",
    "watch": [
-    "Execution of additional workspace rollout",
-    "Sustainability of the ₹1,600 cr sales spike",
-    "Potential reversal of the realty sector rally"
+    "Outcome of the new credit rating filing",
+    "Progress of BuzzWorks expansion to 1 lakh sq ft by FY28",
+    "Sustained sales momentum in Bengaluru and other projects"
    ],
-   "about": "Brigade Enterprises Ltd. is a real estate developer focusing on residential and mixed‑use projects.",
-   "basis": "8976ca119045",
-   "items": 4,
-   "updated": "2026-11-26T15:30+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "Brigade Enterprises is a real estate developer focused on residential and mixed‑use projects in India.",
+   "basis": "04acfe4484fe",
+   "items": 5,
+   "updated": "2026-11-26T19:22+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "WELCORP": {
    "summary": "Welspun Corp Ltd. announced receipt of new business contracts, including an export order for large‑diameter steel pipes, and its shares rose about 5% after the news. An executive also projected EBITDA could reach ₹5,000 cr in two years.",
@@ -188,20 +188,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "DALBHARAT": {
-   "summary": "Dalmia Bharat Ltd. has approved a plan to buy back up to 3.78 million of its own shares for a total of ₹700 crore. The company recently submitted the official public announcement for this buyback program to the stock exchange.",
-   "why": "A share buyback reduces the total number of shares in circulation, which can increase the earnings per share for remaining investors. It may also provide some support to the stock price.",
-   "upside": "The buyback could boost earnings per share and signal management confidence in the company's value.",
-   "downside": "The buyback might be delayed, not fully completed, or viewed as a sign that the company lacks better growth opportunities.",
+   "summary": "Dalmia Bharat Ltd announced an open‑market buy‑back of its pre‑issue stage shares, with the board approving a share repurchase program. The buy‑back is intended to support the stock and earnings per share.",
+   "why": "A buy‑back can lift the share price and improve earnings per share for existing shareholders, but it may also signal limited growth opportunities.",
+   "upside": "If the buy‑back is executed as planned, it could support the share price and boost earnings per share.",
+   "downside": "If the buy‑back size is smaller than expected or faces execution delays, its impact could be limited.",
    "watch": [
-    "The record date for the buyback",
-    "The price per share set for the buyback",
-    "Whether the full ₹700 crore is successfully executed"
+    "Final size of the buy‑back disclosed",
+    "Timeline for buy‑back execution",
+    "Market reaction to the buy‑back announcement"
    ],
-   "about": "Dalmia Bharat Ltd. is a company in the Construction Materials sector.",
-   "basis": "f1e4438ee119",
+   "about": "Dalmia Bharat Ltd manufactures cement and other construction materials.",
+   "basis": "2baabcb27bf7",
    "items": 3,
-   "updated": "2026-11-26T16:58+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "updated": "2026-11-26T19:22+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "HEROMOTOCO": {
    "summary": "Hero MotoCorp has issued a recent press release and updated the market on a court case where the high court cancelled a ₹165 crore demand related to temporary registration certificates. The company also filed a SEBI listing regulation disclosure about the trade registration certificate matter.",
@@ -316,19 +316,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel is restructuring its recent deal to buy a stake in APL Apollo Tubes, which has caused its share price to fall. The company is open to changing the deal structure to address concerns about debt and valuation.",
-   "why": "This matters because the deal involves a large cash outlay of ₹5,825 crore, which could strain the company's finances and affect future profits for shareholders.",
-   "upside": "The strategic partnership with APL Apollo could eventually strengthen Tata Steel's position in the steel tube market.",
-   "downside": "The deal may not go through, or the high cost could lead to further downgrades and a drop in the share price.",
+   "summary": "Tata Steel is restructuring its recent ₹5,825 crore investment in APL Apollo Tubes, signaling a shift in how it plans to manage this partnership. The company stated it is open to discussing a restructuring deal, which has caused its shares to fall despite a broader market rise.",
+   "why": "Changes to a large financial commitment can affect the company's cash flow and debt levels, which directly influence the value of its shares.",
+   "upside": "The strategic benefits of the APL Apollo partnership may still materialize, potentially limiting the downside for shareholders.",
+   "downside": "The deal could fall through, face regulatory hurdles, or involve asset sales that strain the company's finances.",
    "watch": [
     "Updates on the final structure of the APL Apollo deal",
-    "Changes in the Metals sector index performance",
-    "Company statements on debt levels and financial health"
+    "Changes in Tata Steel's debt levels",
+    "How the stock performs compared to the Metals sector index"
    ],
-   "about": "Tata Steel is a major Indian company in the metals and mining sector.",
-   "basis": "4820dff3f61e",
-   "items": 9,
-   "updated": "2026-11-26T16:01+05:30",
+   "about": "Tata Steel is a major player in the Metals & Mining sector and is one of India's 50 largest listed companies.",
+   "basis": "c6a50f3eb204",
+   "items": 8,
+   "updated": "2026-11-26T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "APLAPOLLO": {
@@ -428,19 +428,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is seeing mixed pressures as global oil prices rise while the Indian rupee weakens, raising import costs. At the same time, the sector index is modestly up, and there are hints of possible RBI rate hikes.",
-   "why": "Higher oil prices can boost revenues, but a weaker rupee makes imported oil costlier, affecting profitability.",
-   "upside": "If oil prices stay high and the rupee stabilises, the company’s earnings could improve.",
-   "downside": "A further drop in oil prices or continued rupee weakness could compress margins.",
+   "summary": "Oil India is navigating higher global oil prices and a weaker Indian rupee, while the oil‑gas sector posted modest gains.",
+   "why": "Shareholders feel the impact of oil price swings on revenue and the rupee’s weakness on import costs and financing.",
+   "upside": "If oil prices stay high, Oil India could see stronger earnings from higher sale prices.",
+   "downside": "A continued rupee decline and possible RBI rate hikes could raise costs and pressure profits.",
    "watch": [
-    "Brent crude price trends",
-    "Rupee movement against the dollar",
-    "RBI’s interest‑rate decisions"
+    "Brent crude price trends (e.g., > $95 per barrel)",
+    "Rupee movement against the dollar (around 92.40)",
+    "RBI monetary policy decisions (rate‑hike prospects)"
    ],
-   "about": "Oil India Ltd. explores, produces and sells oil and gas in India.",
-   "basis": "b5fb32b72f5b",
-   "items": 25,
-   "updated": "2026-11-26T16:58+05:30",
+   "about": "Oil India Ltd. explores, produces and markets oil and natural gas in India.",
+   "basis": "9a4c7f63e8c6",
+   "items": 22,
+   "updated": "2026-11-26T19:22+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "WIPRO": {
@@ -651,6 +651,22 @@
    "updated": "2026-11-25T08:17+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "SRF": {
+   "summary": "SRF is being watched because new US taxes on imports could affect its business. Analysts suggest these changes might hurt profits if the company sells a lot to the US.",
+   "why": "If SRF sells products to the US, higher taxes make those products more expensive for American buyers. This could reduce how much SRF sells and lower its earnings.",
+   "upside": "A potential India-US trade deal might lower these taxes, which could help SRF sell more in the US.",
+   "downside": "If the new US taxes stay in place, SRF's products may become less competitive, reducing its profits.",
+   "watch": [
+    "Updates on the India-US trade deal negotiations",
+    "Changes in US tariff rules for chemical imports",
+    "SRF's next earnings report"
+   ],
+   "about": "SRF is a company in the chemicals sector.",
+   "basis": "8ceaa5ad1bec",
+   "items": 2,
+   "updated": "2026-11-26T19:22+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "GLAXO": {
    "summary": "GlaxoSmithKline Pharmaceuticals recently received approval for a new medicine called BLENREP, which treats a type of blood cancer. The company also informed the stock exchange about a recent order or decision made by a regulatory body.",
    "why": "The new drug approval could lead to higher sales, while the regulatory order might affect the company's costs or how it operates.",
@@ -698,6 +714,22 @@
    "items": 2,
    "updated": "2026-11-26T10:45+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "KEI": {
+   "summary": "KEI Industries is a capital goods company included in the Nifty 500 index. Recent reports suggest that a potential India-US trade deal could lower taxes on Indian exports to the US.",
+   "why": "If the trade deal goes through, lower export taxes could help the company sell more products in the US and potentially increase its profits.",
+   "upside": "A finalized trade deal could boost sales and earnings by making it cheaper to sell goods in the US market.",
+   "downside": "The trade deal is still under political negotiation and may not be finalized, leaving the company exposed to current trade barriers.",
+   "watch": [
+    "Updates on the status of the India-US trade negotiations",
+    "Changes in US tariff policies affecting Indian exports",
+    "Company announcements regarding export orders"
+   ],
+   "about": "KEI Industries operates in the capital goods sector.",
+   "basis": "f0312a43be32",
+   "items": 1,
+   "updated": "2026-11-26T19:22+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "BAJAJ-AUTO": {
    "summary": "Bajaj Auto announced its electric three‑wheeler set a 394 km single‑charge record, marking a first for the segment. The auto sector index also rose, showing broader market strength.",
@@ -923,6 +955,22 @@
    "updated": "2026-11-26T08:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "VIJAYA": {
+   "summary": "Vijaya Diagnostic Centre has completed the acquisition of the diagnostic business from Arya Wellness Centre in Guwahati. The company has also filed an update with the stock exchange regarding this acquisition.",
+   "why": "This move expands the company's presence in a new region, which could potentially increase its revenue and market reach for existing shareholders.",
+   "upside": "Adding a new diagnostic unit in Assam may help the company grow its earnings by serving more patients.",
+   "downside": "Merging the new business with the existing one could be difficult and costly, which might reduce the benefits of the purchase.",
+   "watch": [
+    "How smoothly the new Guwahati unit integrates with the main company",
+    "Future announcements regarding the financial impact of the acquisition",
+    "Performance of the broader healthcare sector index"
+   ],
+   "about": "Vijaya Diagnostic Centre is a healthcare company that operates diagnostic centers.",
+   "basis": "f431a5893539",
+   "items": 2,
+   "updated": "2026-11-26T19:22+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "PPLPHARMA": {
    "summary": "Piramal Pharma’s shares fell about 7% after a 100‑million‑share block trade and after Carlyle trimmed its holding by selling roughly 9.86 crore shares. The stock is under pressure despite the broader Healthcare index gaining.",
    "why": "Large sell‑offs by a major investor can push the price down, though the impact may be limited if the fundamentals remain unchanged.",
@@ -1066,6 +1114,22 @@
    "items": 4,
    "updated": "2026-11-26T12:00+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "VBL": {
+   "summary": "Varun Beverages has acquired a 26% stake in Jager Renewables, a renewable energy firm. The company filed an update with the stock exchange regarding this acquisition.",
+   "why": "This move shows the company is expanding into new areas beyond beverages, which could impact its long-term growth and financial structure.",
+   "upside": "Diversifying into renewable energy could open new growth avenues for the company.",
+   "downside": "Entering a new sector where the company may lack expertise carries risk, and acquisitions can sometimes dilute value if not managed well.",
+   "watch": [
+    "Details of the Jager Renewables acquisition",
+    "How the company manages its new energy business",
+    "Future updates on other potential acquisitions"
+   ],
+   "about": "Varun Beverages is a fast-moving consumer goods company listed in the Nifty 500 index.",
+   "basis": "b27d42d8dbcf",
+   "items": 3,
+   "updated": "2026-11-26T19:22+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "KFINTECH": {
    "summary": "KFin Technologies shares jumped about 7% after excitement around the Mahanadi Coalfields IPO, while recent filings noted a change in its corporate office address as the registrar for other listed firms.",

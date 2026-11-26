@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T16:59:31+05:30",
+ "updated": "2026-11-26T19:23:03+05:30",
  "start": "2026-11-20",
  "cost": 0.3,
  "note": "Paper trades only: no money is placed. Rules fixed on 20 Nov 2026 and never changed afterwards; entry is the first NSE close after the news reached readers, exit the close 'hold' sessions later, net of 0.3% round-trip costs. Educational; not investment advice.",
@@ -11,20 +11,31 @@
    "hold": 1,
    "earlier": "9-19 Nov replay: 24 trades, 58% won, +0.42% a trade after costs (8 of them on 18 Nov; not proven)",
    "summary": {
-    "closed": 13,
-    "open": 4,
-    "win_rate": 46,
-    "avg_net": -1.54,
-    "total_net": -20.01
+    "closed": 17,
+    "open": 1,
+    "win_rate": 41,
+    "avg_net": -1.76,
+    "total_net": -29.95
    },
    "trades": [
+    {
+     "date": "2026-11-26",
+     "symbol": "LGEINDIA",
+     "side": "long",
+     "entry": 1758.1,
+     "headline": "LG Electronics India promoter may offload 2% stake for ₹2,320.5 crore",
+     "url": "https://www.business-standard.com/companies/news/lg-electronics-india-promoter-may-offload-2-stake-for-2-320-5-crore-126112501137_1.html"
+    },
     {
      "date": "2026-11-25",
      "symbol": "LLOYDSME",
      "side": "long",
      "entry": 1606.0,
      "headline": "LLOYDS METALS AND ENERGY: CO APPROVES ISSUANCE OF NON-CONVERTIBLE DEBENTURES AGGREGATING UP TO ₹750 CRORE ON PRIVATE PLA",
-     "url": "https://t.me/Indiaredboxglobal/9976"
+     "url": "https://t.me/Indiaredboxglobal/9976",
+     "exit_date": "2026-11-26",
+     "exit": 1542.2,
+     "net": -4.27
     },
     {
      "date": "2026-11-25",
@@ -32,7 +43,10 @@
      "side": "long",
      "entry": 67.21,
      "headline": "ZEE shares defy market rally, tank 6% on record date for ₹600-crore buyback",
-     "url": "https://www.business-standard.com/markets/news/zee-shares-defy-market-rally-tank-6-on-record-date-for-600-crore-buyback-126112500179_1.html"
+     "url": "https://www.business-standard.com/markets/news/zee-shares-defy-market-rally-tank-6-on-record-date-for-600-crore-buyback-126112500179_1.html",
+     "exit_date": "2026-11-26",
+     "exit": 66.0,
+     "net": -2.1
     },
     {
      "date": "2026-11-25",
@@ -40,7 +54,10 @@
      "side": "long",
      "entry": 1476.0,
      "headline": "Why APL Apollo Tubes shares crashed 15% today to plunge at 52-week low; downgrade from brokerages after Tata Steel deal",
-     "url": "https://www.livemint.com/market/stock-market-news/why-apl-apollo-tubes-shares-crashed-15-today-to-plunge-at-52-week-low-downgrade-from-brokerages-after-tata-steel-deal-11795579639211.html"
+     "url": "https://www.livemint.com/market/stock-market-news/why-apl-apollo-tubes-shares-crashed-15-today-to-plunge-at-52-week-low-downgrade-from-brokerages-after-tata-steel-deal-11795579639211.html",
+     "exit_date": "2026-11-26",
+     "exit": 1481.5,
+     "net": 0.07
     },
     {
      "date": "2026-11-25",
@@ -48,7 +65,10 @@
      "side": "long",
      "entry": 169.95,
      "headline": "HFCL vs Sterlite Technologies: Both multibagger stocks hit 5% lower circuit again - Which one should you buy?",
-     "url": "https://www.livemint.com/market/stock-market-news/hfcl-vs-sterlite-technologies-both-multibagger-stocks-hit-5-lower-circuit-again-which-one-should-you-buy-11795587553516.html"
+     "url": "https://www.livemint.com/market/stock-market-news/hfcl-vs-sterlite-technologies-both-multibagger-stocks-hit-5-lower-circuit-again-which-one-should-you-buy-11795587553516.html",
+     "exit_date": "2026-11-26",
+     "exit": 164.27,
+     "net": -3.64
     },
     {
      "date": "2026-11-23",
@@ -203,12 +223,20 @@
    "earlier": "9-19 Nov replay: 25 trades, 48% won, -0.06% a trade after costs (Sell alerts beat Buy alerts, but not costs)",
    "summary": {
     "closed": 1,
-    "open": 0,
+    "open": 1,
     "win_rate": 100,
     "avg_net": 20.99,
     "total_net": 20.99
    },
    "trades": [
+    {
+     "date": "2026-11-26",
+     "symbol": "360ONE",
+     "side": "short",
+     "entry": 1210.0,
+     "headline": "360 ONE WAM LIMITED: 360 ONE WAM LIMITED has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteratio",
+     "url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_17593_WebXMLFile_20261125_190051583.xml"
+    },
     {
      "date": "2026-11-20",
      "symbol": "APLAPOLLO",
@@ -230,12 +258,92 @@
    "earlier": "9-19 Nov replay: 28 trades, 75% won, +1.11% a trade after costs, 12 of them on 11 Nov (not proven)",
    "summary": {
     "closed": 0,
-    "open": 21,
+    "open": 31,
     "win_rate": null,
     "avg_net": null,
     "total_net": null
    },
    "trades": [
+    {
+     "date": "2026-11-26",
+     "symbol": "WIPRO",
+     "side": "short",
+     "entry": 196.54,
+     "headline": "Wipro Limited: Wipro Limited has informed the Exchange regarding a press release dated November 25, 2026, titled \"bp sig",
+     "url": "https://nsearchives.nseindia.com/corporate/Wipro_Secretarial_25112026154806_PR.pdf"
+    },
+    {
+     "date": "2026-11-26",
+     "symbol": "BSE",
+     "side": "short",
+     "entry": 3990.4,
+     "headline": "BSE, Eternal, Titan, SBI among 18 Nifty 50 stocks that rallied 10–43% in 2026; what's driving gains?",
+     "url": "https://www.livemint.com/market/stock-market-news/bse-eternal-titan-sbi-among-18-nifty-50-stocks-that-rallied-10-43-in-2026-whats-driving-gains-11795607425766.html"
+    },
+    {
+     "date": "2026-11-26",
+     "symbol": "MCX",
+     "side": "short",
+     "entry": 3835.0,
+     "headline": "Stock Market LIVE: Sensex off day's high but up 200 pts; MCX, KFin Tech top SMID gainers",
+     "url": "https://www.business-standard.com/markets/news/stock-market-live-november-26-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-ipo-today-126112600049_1.html"
+    },
+    {
+     "date": "2026-11-26",
+     "symbol": "WELCORP",
+     "side": "short",
+     "entry": 2232.8,
+     "headline": "Welspun Corp Limited: Welspun Corp Limited has informed the Exchange about Bagging/Receiving of orders/contracts - Recei",
+     "url": "https://nsearchives.nseindia.com/corporate/WELCORP_26112026083153_SEsigned.pdf"
+    },
+    {
+     "date": "2026-11-26",
+     "symbol": "JWL",
+     "side": "short",
+     "entry": 238.69,
+     "headline": "Multibagger railway stock Jupiter Wagons shares jump 30% in 2 days after South Korean JV; game changer for Vande Bharat?",
+     "url": "https://www.livemint.com/market/stock-market-news/multibagger-railway-stock-jupiter-wagons-shares-jump-30-in-2-days-after-south-korean-jv-game-changer-for-vande-bharat-11795665959629.html"
+    },
+    {
+     "date": "2026-11-26",
+     "symbol": "INFY",
+     "side": "short",
+     "entry": 1183.0,
+     "headline": "TCS, Wipro, Infosys to HCL Tech shares: Why are Indian IT stocks skyrocketing despite Trump's tariffs threat? Explained",
+     "url": "https://www.livemint.com/market/stock-market-news/tcs-wipro-infosys-to-hcl-tech-shares-why-are-indian-it-stocks-skyrocketing-despite-trumps-tariffs-threat-explained-11795669887567.html"
+    },
+    {
+     "date": "2026-11-26",
+     "symbol": "TCS",
+     "side": "short",
+     "entry": 2640.3,
+     "headline": "TCS, Wipro, Infosys to HCL Tech shares: Why are Indian IT stocks skyrocketing despite Trump's tariffs threat? Explained",
+     "url": "https://www.livemint.com/market/stock-market-news/tcs-wipro-infosys-to-hcl-tech-shares-why-are-indian-it-stocks-skyrocketing-despite-trumps-tariffs-threat-explained-11795669887567.html"
+    },
+    {
+     "date": "2026-11-26",
+     "symbol": "BRIGADE",
+     "side": "short",
+     "entry": 628.5,
+     "headline": "₹1,600-cr sales in B'luru project drive Brigade Enterprises stock 4% higher",
+     "url": "https://www.business-standard.com/markets/news/1-600-cr-sales-in-b-luru-project-drive-brigade-enterprises-stock-4-higher-126112600490_1.html"
+    },
+    {
+     "date": "2026-11-26",
+     "symbol": "KFINTECH",
+     "side": "short",
+     "entry": 995.0,
+     "headline": "KFin Technologies shares jump 7% as Mahanadi Coalfields IPO buzz lifts registrar;experts see further upside | Here's why",
+     "url": "https://www.livemint.com/market/stock-market-news/kfin-technologies-shares-jump-7-as-mahanadi-coalfields-ipo-buzz-lifts-registrar-experts-see-further-upside-heres-why-11795674765502.html"
+    },
+    {
+     "date": "2026-11-26",
+     "symbol": "PRESTIGE",
+     "side": "short",
+     "entry": 1832.1,
+     "headline": "Nifty Realty hits 52-wk high, up 3% led by Prestige, Brigade Enterprises",
+     "url": "https://www.business-standard.com/markets/news/nifty-realty-hits-52-week-high-up-3-led-by-brigade-enterprises-prestige-estates-126112600658_1.html"
+    },
     {
      "date": "2026-11-25",
      "symbol": "ABREL",
@@ -413,20 +521,71 @@
    "hold": 1,
    "earlier": "9-19 Nov replay: 70 trades, 39% won, -0.18% a trade after costs",
    "summary": {
-    "closed": 4,
-    "open": 8,
-    "win_rate": 50,
-    "avg_net": 3.76,
-    "total_net": 15.06
+    "closed": 12,
+    "open": 6,
+    "win_rate": 42,
+    "avg_net": 1.2,
+    "total_net": 14.36
    },
    "trades": [
+    {
+     "date": "2026-11-26",
+     "symbol": "KSB",
+     "side": "long",
+     "entry": 644.75,
+     "headline": "Ksb Limited: KSB LIMITED has informed the Exchange about Awarding of order(s)/contract(s)-(Sub-para 4-Para B) |SUBJECT: ",
+     "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_1195_WebXMLFile_20261125_185507270.xml"
+    },
+    {
+     "date": "2026-11-26",
+     "symbol": "360ONE",
+     "side": "short",
+     "entry": 1210.0,
+     "headline": "360 ONE WAM LIMITED: 360 ONE WAM LIMITED has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteratio",
+     "url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_17593_WebXMLFile_20261125_190051583.xml"
+    },
+    {
+     "date": "2026-11-26",
+     "symbol": "TORNTPOWER",
+     "side": "long",
+     "entry": 1151.4,
+     "headline": "TORRENT POWER: CO ACQUIRES 100% STAKE IN TORRENT URJA 42 PRIVATE LIMITED",
+     "url": "https://t.me/Indiaredboxglobal/10093"
+    },
+    {
+     "date": "2026-11-26",
+     "symbol": "ENRIN",
+     "side": "long",
+     "entry": 3058.0,
+     "headline": "ENRIN: Q2 REVENUE 34.5B RUPEES VS 26.5B (YOY)",
+     "url": "https://t.me/Indiaredboxglobal/10105"
+    },
+    {
+     "date": "2026-11-26",
+     "symbol": "ACMESOLAR",
+     "side": "long",
+     "entry": 415.8,
+     "headline": "Acme Solar Holdings Limited: Acme Solar Holdings Limited has informed the Exchange about Commissioning of Battery Energy",
+     "url": "https://nsearchives.nseindia.com/corporate/ACME122002_26112026082635_Intimation26112026.pdf"
+    },
+    {
+     "date": "2026-11-26",
+     "symbol": "WELCORP",
+     "side": "long",
+     "entry": 2232.8,
+     "headline": "Welspun Corp Limited: Welspun Corp Limited has informed the Exchange about Bagging/Receiving of orders/contracts - Recei",
+     "url": "https://nsearchives.nseindia.com/corporate/WELCORP_26112026083153_SEsigned.pdf"
+    },
     {
      "date": "2026-11-25",
      "symbol": "DALBHARAT",
      "side": "long",
      "entry": 1586.8,
      "headline": "Dalmia Bharat approves ₹700 crore share buyback: From price per share to record date - what investors need to know",
-     "url": "https://www.livemint.com/market/dalmia-bharat-approves-rs-700-crore-share-buyback-from-price-per-share-to-record-date-what-investors-need-to-know-11795433750301.html"
+     "url": "https://www.livemint.com/market/dalmia-bharat-approves-rs-700-crore-share-buyback-from-price-per-share-to-record-date-what-investors-need-to-know-11795433750301.html",
+     "exit_date": "2026-11-26",
+     "exit": 1534.7,
+     "net": -3.58
     },
     {
      "date": "2026-11-25",
@@ -434,7 +593,10 @@
      "side": "long",
      "entry": 185.09,
      "headline": "RAIL VIKAS NIGAM: CO RECEIVED LETTER OF AWARD OF CONTRACT FROM NMDC LIMITED FOR CONSTRUCTION OF SUPER-SPECIALITY HOSPITA",
-     "url": "https://t.me/Indiaredboxglobal/9956"
+     "url": "https://t.me/Indiaredboxglobal/9956",
+     "exit_date": "2026-11-26",
+     "exit": 187.14,
+     "net": 0.81
     },
     {
      "date": "2026-11-25",
@@ -442,7 +604,10 @@
      "side": "long",
      "entry": 149.67,
      "headline": "INDIA GLYCOLS: CO WHOLLY OWNED SUBSIDIARY IGL FINANCE RECEIVES ₹58.39 CRORE UNDER ONE TIME SETTLEMENT SCHEME; AMOUNT REC",
-     "url": "https://t.me/Indiaredboxglobal/9970"
+     "url": "https://t.me/Indiaredboxglobal/9970",
+     "exit_date": "2026-11-26",
+     "exit": 148.23,
+     "net": -1.26
     },
     {
      "date": "2026-11-25",
@@ -450,7 +615,10 @@
      "side": "long",
      "entry": 589.7,
      "headline": "BRIGADE ENTERPRISES: CO RECORDS ₹1,600 CRORES IN SALES DURING LAUNCH WEEKEND AT BRIGADE AUTOGRAPH; PROJECT IS A PREMIUM ",
-     "url": "https://t.me/Indiaredboxglobal/9971"
+     "url": "https://t.me/Indiaredboxglobal/9971",
+     "exit_date": "2026-11-26",
+     "exit": 628.5,
+     "net": 6.28
     },
     {
      "date": "2026-11-25",
@@ -458,7 +626,10 @@
      "side": "long",
      "entry": 5751.5,
      "headline": "HERO MOTOCORP: CO HIGH COURT QUASHES RTO DEMAND ORDER OF ₹165 CRORES FOR TEMPORARY REGISTRATION CERTIFICATES; PETITION F",
-     "url": "https://t.me/Indiaredboxglobal/9974"
+     "url": "https://t.me/Indiaredboxglobal/9974",
+     "exit_date": "2026-11-26",
+     "exit": 5789.0,
+     "net": 0.35
     },
     {
      "date": "2026-11-25",
@@ -466,7 +637,10 @@
      "side": "long",
      "entry": 720.55,
      "headline": "Goldman Sachs, SocGen buy Rs 920 crore stake in Lenskart",
-     "url": "https://economictimes.indiatimes.com/markets/stocks/news/goldman-sachs-socgen-buy-rs-920-crore-stake-in-lenskart/articleshow/136145273.cms"
+     "url": "https://economictimes.indiatimes.com/markets/stocks/news/goldman-sachs-socgen-buy-rs-920-crore-stake-in-lenskart/articleshow/136145273.cms",
+     "exit_date": "2026-11-26",
+     "exit": 716.8,
+     "net": -0.82
     },
     {
      "date": "2026-11-25",
@@ -474,7 +648,10 @@
      "side": "long",
      "entry": 4156.0,
      "headline": "L&T: CO WINS SIGNIFICANT CONTRACT || SIGNIFICANT CONTRACT VALUES BETWEEN 10B TO 25B RUPEES",
-     "url": "https://t.me/Indiaredboxglobal/10009"
+     "url": "https://t.me/Indiaredboxglobal/10009",
+     "exit_date": "2026-11-26",
+     "exit": 4132.1,
+     "net": -0.88
     },
     {
      "date": "2026-11-25",
@@ -482,7 +659,10 @@
      "side": "long",
      "entry": 4610.0,
      "headline": "TVS MOTOR COMPANY LTD: CO. SIGNS NON-BINDING MOU WITH GOVERNMENT OF TAMIL NADU; PLANS TO INVEST ₹2000 CR OVER 4 YEARS AN",
-     "url": "https://t.me/Indiaredboxglobal/10028"
+     "url": "https://t.me/Indiaredboxglobal/10028",
+     "exit_date": "2026-11-26",
+     "exit": 4550.1,
+     "net": -1.6
     },
     {
      "date": "2026-11-23",
