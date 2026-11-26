@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T15:30+05:30",
+ "updated": "2026-11-26T15:45+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -539,6 +539,22 @@
    "updated": "2026-11-26T13:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "BSE": {
+   "summary": "BSE shares recently jumped 6% in a single day and have risen 48% so far in 2026. This strong performance coincided with a major brokerage firm raising its recommendation for the stock.",
+   "why": "For a shareholder, this indicates that the market currently has high confidence in the company's future business performance. However, such sharp rises can sometimes be driven by speculation rather than just company results.",
+   "upside": "The stock may continue to attract investor interest if the company's business fundamentals support the recent price gains.",
+   "downside": "The price could fall if the recent rally was driven by speculation rather than strong earnings, or if broader market strength fades.",
+   "watch": [
+    "Whether the company's actual business results match the high expectations set by recent price jumps.",
+    "If the broader Financials sector continues its recent upward trend.",
+    "Whether the stock price stabilizes after hitting a four-month high."
+   ],
+   "about": "BSE Ltd. is a stock exchange company that operates in the financial services sector.",
+   "basis": "4608cb20f425",
+   "items": 4,
+   "updated": "2026-11-26T15:45+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "WELSPUNLIV": {
    "summary": "Welspun Living’s shares have risen over 110% year‑to‑date as the company pushes new capex projects for growth, but a possible US tariff on Indian goods could hit its margins.",
    "why": "Shareholders care because successful investments could boost earnings, while tariffs or execution problems could reduce profits.",
@@ -745,22 +761,6 @@
    "items": 4,
    "updated": "2026-11-25T15:15+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "BSE": {
-   "summary": "BSE shares have risen significantly in 2026, reaching a four-month high recently. A major brokerage firm recently upgraded its recommendation for the stock, citing expectations for good business ahead.",
-   "why": "This matters to shareholders because positive analyst opinions and strong price trends can influence investor confidence and the stock's market value.",
-   "upside": "The stock may continue to attract investor interest if the company's business performance matches the positive expectations set by analysts.",
-   "downside": "The recent price increase might already reflect the good news, and the rally could reverse if the company's actual earnings disappoint investors.",
-   "watch": [
-    "Whether the stock price stabilizes after the recent jump.",
-    "Upcoming earnings reports to see if business results match expectations.",
-    "General trends in the Financial Services sector."
-   ],
-   "about": "",
-   "basis": "75a0ed38bf11",
-   "items": 3,
-   "updated": "2026-11-26T12:00+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "CGCL": {
    "summary": "Capri Global Capital Ltd. raised $30 million from the BlueOrchard Microfinance Fund, its first impact‑fundraise. The funding was announced on November 25, 2026.",
