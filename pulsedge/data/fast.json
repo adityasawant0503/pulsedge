@@ -1,7 +1,40 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T13:10:06+05:30",
+ "updated": "2026-11-26T13:13:06+05:30",
  "items": [
+  {
+   "id": "069cf7c563474e5b",
+   "time": "2026-11-26T13:12:01+05:30",
+   "headline": "SONA BLW: ALL MEDIATION ATTEMPTS IN THE KAPUR FAMILY DISPUTE HAVE FAILED; MATTER NOW EXPECTED TO PROCEED THROUGH COURT-LED LEGAL PROCEEDINGS.",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10162",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [],
+   "sectors": [
+    "Auto Components"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "Corporate Governance",
+   "action": "Monitor for further legal updates or management commentary on control stability.",
+   "reason": [
+    "Failed mediation increases uncertainty over promoter control.",
+    "Prolonged legal battles can distract management and dampen investor sentiment."
+   ],
+   "risks": [
+    "Potential for sudden negative headlines if court rulings are unfavorable.",
+    "Continued uncertainty may keep a discount on the stock price."
+   ],
+   "plain": "Family members of the company owners could not agree on how to run the business, so they are going to court.",
+   "why": "Uncertainty about who is in charge can make investors nervous and keep the share price from rising.",
+   "check": "Look for official company statements about how the legal process will affect daily operations.",
+   "original": "Potential impact on Sona BLW: Prolonged uncertainty over promoter-family ownership and control. Possible delays in resolving promoter-group disputes. Potential volatility in stock sentiment.",
+   "latency": 65.7,
+   "lane": "fast"
+  },
   {
    "id": "1d5f91ad7f714f83",
    "time": "2026-11-26T13:09:15+05:30",
@@ -1950,37 +1983,6 @@
      "delay": 900
     }
    }
-  },
-  {
-   "id": "3c62c506d329e019",
-   "time": "2026-11-25T13:10:51+05:30",
-   "headline": "PNGS REVA: CO RECORDED FESTIVE SALES OF ₹1,419.67M; GROWTH OF 54.44% (YOY); CO RECORDED SINGLE‐DAY REVENUE OF ₹141.08M ON THE OCCASION OF DHANTERAS, REGISTERING A YOY GROWTH OF 61.12%.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10025",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [],
-   "sectors": [],
-   "impact": 30,
-   "confidence": 60,
-   "category": "company",
-   "action": "Watch for earnings release confirming the revenue trend",
-   "reason": [
-    "Festive season sales jumped 54% YoY, indicating strong demand",
-    "Revenue growth may improve profitability if margins hold"
-   ],
-   "risks": [
-    "Higher sales may not translate into higher profits",
-    "Seasonal boost may not repeat next quarter"
-   ],
-   "plain": "The company reported a 54% year‑on‑year increase in festive sales.",
-   "why": "Higher sales could boost earnings, but profit impact is unclear.",
-   "check": "Look for the upcoming quarterly earnings announcement.",
-   "original": "PNGS REVA: CO RECORDED FESTIVE SALES OF ₹1,419.67M; GROWTH OF 54.44% (YOY); CO RECORDED SINGLE‐DAY REVENUE OF ₹141.08M ON THE OCCASION OF DHANTERAS, REGISTERING A YOY GROWTH OF 61.12%.",
-   "latency": 63.5,
-   "lane": "fast"
   }
  ]
 }
