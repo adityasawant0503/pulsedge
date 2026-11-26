@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T04:23+05:30",
+ "updated": "2026-11-26T08:17+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged that Enrin reported strong Q2 revenue growth, while L&T secured a major contract worth 10 to 25 billion rupees. APL Apollo Tubes shares fell sharply to a 52-week low after brokers lowered their ratings following a Tata Steel deal. TVS Motor signed a non-binding agreement to invest 2,000 crore rupees in Tamil Nadu, and foreign funds increased their long positions in index futures.",
+  "summary": "US proposals for high taxes on Indian goods created uncertainty for companies that sell products abroad. In the previous session, consumer staples and pharma stocks performed well, while media and metals stocks fell. A major Indian bank signed a preliminary deal with a German bank to help fund business acquisitions. Foreign investors slightly increased their optimistic bets on the Indian market.",
   "themes": [
-   "Strong corporate results and new contracts boosted confidence in Enrin and L&T.",
-   "Investor caution emerged as APL Apollo Tubes shares dropped due to concerns over acquisition costs.",
-   "Foreign investors slightly increased their bullish stance, with long positions rising to 24%."
+   "Exporters face potential profit pressure from new US tax proposals.",
+   "Banking partnerships are forming to support corporate mergers and acquisitions.",
+   "Investor sentiment shifted slightly more positive in foreign fund positions."
   ],
   "watch": [
-   "Whether Enrin's future guidance matches its strong Q2 performance.",
-   "How the market reacts to TVS Motor's planned investment in Tamil Nadu.",
-   "If further brokerages downgrade APL Apollo Tubes, potentially extending the share price decline."
+   "Official details on how US tariffs will apply to different sectors.",
+   "Progress on the funding partnership between PNB and Deutsche Bank.",
+   "Continued movement in foreign fund index-futures positions."
   ],
-  "date": "2026-11-25",
-  "basis": "10dee179a2e8",
-  "updated": "2026-11-26T04:23+05:30",
+  "date": "2026-11-26",
+  "basis": "b201063f3c25",
+  "updated": "2026-11-26T08:17+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 176
+  "items": 2
  },
  "stocks": {
   "LENSKART": {
@@ -459,6 +459,22 @@
    "updated": "2026-11-25T13:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "WIPRO": {
+   "summary": "Wipro signed a major partnership with BP to handle finance operations, which is expected to bring 3,000 staff into the company starting in 2027. At the same time, proposed US taxes on Indian goods could affect profits for companies that sell abroad.",
+   "why": "The BP deal suggests Wipro is securing large, stable contracts that support long-term business health, while the potential US taxes could reduce profits if they are applied to its exports.",
+   "upside": "Investors are moving money from expensive AI stocks to cheaper Indian software firms, which could support Wipro's share price.",
+   "downside": "The US proposed high taxes on Indian goods, which might hurt companies that sell abroad, and the BP deal will not generate revenue until 2027.",
+   "watch": [
+    "Details on how US taxes apply to the IT sector",
+    "Progress on the BP partnership implementation",
+    "Investor interest in Indian IT stocks versus AI stocks"
+   ],
+   "about": "Wipro is an Information Technology company listed in the Nifty 500 index.",
+   "basis": "3f509a264b8c",
+   "items": 4,
+   "updated": "2026-11-26T08:17+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "SUZLON": {
    "summary": "Suzlon Energy announced it is adding production capacity and the Tamil Nadu chief minister laid the foundation for a 1 GW smart‑blade factory, while also disclosing a recent cyber security breach.",
    "why": "Capacity expansion could lift future sales and earnings, whereas the cyber incident may hurt customer confidence and incur remediation costs.",
@@ -474,22 +490,6 @@
    "items": 4,
    "updated": "2026-11-25T14:01+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "WIPRO": {
-   "summary": "Wipro has signed a large partnership with BP to overhaul BP’s finance operations, with 3,000 BP staff expected to join Wipro and a new operating model launching in 2027. The IT sector index rose 1.7% in the last session and fell 0.3% over five sessions.",
-   "why": "The deal could bring long‑term revenue and new business opportunities for Wipro shareholders, though the revenue may not be recognized immediately.",
-   "upside": "The BP partnership could lead to significant future revenue growth.",
-   "downside": "The long implementation timeline may delay tangible revenue recognition.",
-   "watch": [
-    "Progress toward the 2027 operating model launch",
-    "Timing of revenue recognition from the BP deal",
-    "Shifts in investor sentiment from AI to cheaper Indian software firms"
-   ],
-   "about": "Wipro is an Indian IT services company.",
-   "basis": "fece85212b03",
-   "items": 3,
-   "updated": "2026-11-25T16:01+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "TITAGARH": {
    "summary": "Titagarh Rail Systems recently won a ₹77.09 crore order from JSW for railway wagons and received approval to manufacture auto carrier wagons. The company also delivered a naval system to the Indian Navy and secured an additional order from Presstonic Engineering for the Mumbai Metro Line 6 project.",
@@ -747,20 +747,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "PHOENIXLTD": {
-   "summary": "Phoenix Mills Ltd., a realty company in the Nifty 500, is riding a broad rally in Indian real estate stocks, with the sector index up 1.7% on the last session and 1.9% over five sessions.",
-   "why": "Shareholders see the sector’s optimism could lift Phoenix’s share price, but a sharp rise may also make the stock pricey.",
-   "upside": "If the real‑estate momentum continues, Phoenix could benefit from higher valuations.",
-   "downside": "A reversal in the sector’s rally could pull the stock lower.",
+   "summary": "Phoenix Mills is part of the Indian real estate sector, which saw a 17% jump in November. The broader Realty index has been steady recently, moving up 1.7% over the last five sessions.",
+   "why": "This matters because a large rise in sector stocks can make them more expensive, which might affect the value of your shares if the momentum stops.",
+   "upside": "Investors seem optimistic about real estate, which could keep supporting stock prices.",
+   "downside": "After a big rise, the price might drop if the recent momentum reverses.",
    "watch": [
-    "BSE Realty index performance",
-    "Sector index trends over the next sessions",
-    "Any new broker commentary on Phoenix Mills"
+    "Whether the Realty index continues its recent upward trend",
+    "If the strong November performance leads to a correction",
+    "General news about the Indian real estate sector"
    ],
-   "about": "Phoenix Mills Ltd. is a real estate development company.",
-   "basis": "b9f6d81999bf",
-   "items": 2,
-   "updated": "2026-11-23T12:15+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Phoenix Mills operates in the Realty sector.",
+   "basis": "bce8aa99029e",
+   "items": 1,
+   "updated": "2026-11-26T08:17+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "LLOYDSME": {
    "summary": "Lloyds Metals and Energy Ltd announced a capital raise by issuing new securities, an acquisition of another company, and a private placement of non‑convertible debentures worth up to ₹750 crore at 9% interest. The metals sector index has been falling, adding market pressure.",
@@ -811,36 +811,36 @@
    "model": "openai/gpt-oss-120b"
   },
   "BSE": {
-   "summary": "BSE Ltd. is part of the Financial Services sector, which recently dropped 2.5% in one day but gained 0.5% over the last five days. Recent market news highlighted that several other stocks hit their lowest prices in a year, suggesting some overall market weakness.",
-   "why": "Because BSE is a major financial company, its share price often moves in line with the broader financial sector. If the sector continues to fall, BSE shares may also see pressure, even if the company itself has no specific bad news.",
-   "upside": "The financial sector showed a small gain over the last five days, which could suggest a slight recovery in investor confidence.",
-   "downside": "Broader market pressure could push prices lower, and the recent sector drop indicates that investors are currently cautious about financial stocks.",
+   "summary": "BSE Ltd. shares have surged, joining a group of Nifty 50 stocks that rallied 10‑43% in 2026, helped by broad market strength. The financials index also rose 2.2% in the last session and 2.0% over the past five sessions.",
+   "why": "The rally lifts the value of shareholders’ holdings, but a miss on earnings could reverse the gains.",
+   "upside": "If the broader market momentum continues, BSE’s share price could keep rising.",
+   "downside": "Disappointing earnings could curb the rally and push the stock lower.",
    "watch": [
-    "Whether the Financial Services sector continues to recover or falls further",
-    "If more stocks in the market hit their 52-week lows",
-    "General economic news that might affect investor confidence"
+    "Upcoming earnings release",
+    "Continuation of Nifty 50 rally",
+    "Financials sector performance"
    ],
-   "about": "BSE Ltd. is one of India's 50 largest listed companies and operates in the Financial Services sector.",
-   "basis": "9236c31ec4fe",
-   "items": 1,
-   "updated": "2026-11-25T15:15+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "BSE Ltd. operates India’s leading stock exchange, providing trading and market infrastructure services.",
+   "basis": "62a5f6a4eca9",
+   "items": 2,
+   "updated": "2026-11-26T08:17+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "TITAN": {
-   "summary": "Titan’s shares slipped as gold prices fell, causing short‑term volatility. The broader consumer durables index was slightly down, showing modest weakness.",
-   "why": "Shareholders see the stock move with gold because the company’s jewellery business is tied to gold price swings.",
-   "upside": "A rebound in gold prices could improve sentiment and lift the share price.",
-   "downside": "Further declines in gold prices could keep pressure on the stock.",
+   "summary": "Titan Company shares have risen significantly in 2026, joining a group of large Indian companies that saw strong gains. Recently, the stock price has moved up and down in line with changes in gold prices.",
+   "why": "As a major player in the consumer durables sector, Titan's performance is linked to broader market trends and the cost of gold, which directly affects its business costs and sales.",
+   "upside": "Broad market strength could continue to support the share price if company earnings meet expectations.",
+   "downside": "The recent rally may be short-lived if earnings disappoint, and volatile gold prices can cause unpredictable short-term stock moves.",
    "watch": [
-    "Gold price movements",
-    "Consumer durables index performance",
-    "Any upcoming Titan earnings or sales data"
+    "Upcoming earnings reports to see if profits match the stock's rise",
+    "Future movements in gold prices",
+    "Overall performance of the Nifty 50 index"
    ],
-   "about": "Titan Company makes jewellery, watches and related accessories.",
-   "basis": "111d599213ba",
+   "about": "Titan Company is one of India's 50 largest listed companies in the consumer durables sector.",
+   "basis": "c475bd8cf529",
    "items": 2,
-   "updated": "2026-11-23T11:45+05:30",
-   "model": "openai/gpt-oss-120b"
+   "updated": "2026-11-26T08:17+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "CGCL": {
    "summary": "Capri Global Capital Ltd. raised $30 million from the BlueOrchard Microfinance Fund, its first impact‑fundraise. The funding was announced on November 25, 2026.",
@@ -874,6 +874,22 @@
    "updated": "2026-11-24T19:21+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "ETERNAL": {
+   "summary": "Eternal Ltd. is among the Nifty 50 stocks that have surged between 10% and 43% so far in 2026, helped by overall market strength.",
+   "why": "Shareholders watch whether the rally can be sustained, as earnings performance will influence future price moves.",
+   "upside": "If the company reports strong earnings, the upward momentum could continue.",
+   "downside": "Weak earnings could cause the rally to fade quickly.",
+   "watch": [
+    "Overall market momentum",
+    "Eternal's upcoming earnings release",
+    "Consumer services sector trends"
+   ],
+   "about": "Eternal Ltd. operates in the consumer services sector.",
+   "basis": "967a748bb180",
+   "items": 1,
+   "updated": "2026-11-26T08:17+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "ZEEL": {
    "summary": "Zee Entertainment shares fell 6% on November 25, 2026, despite a broader market rally. This drop happened because the company set a record date for a ₹600-crore share buyback, leading investors to sell before the deadline.",
    "why": "If you own these shares, the price drop may be temporary as investors sell to lock in gains before the buyback process begins.",
@@ -891,35 +907,35 @@
    "model": "qwen/qwen3.8-27b"
   },
   "BANKINDIA": {
-   "summary": "The Financials sector recently dropped by 2.5% in a single session, though it has gained 0.5% over the last five days. The Reserve Bank of India is now closely monitoring banks' gold loan portfolios after gold prices fell sharply. Additionally, there is a shift of investor money from government bonds to stocks, which may affect bond prices.",
-   "why": "Banks like Bank of India hold many government bonds and gold loans, so changes in bond prices or gold values can directly impact their profits and stability. Sector-wide movements also influence how the stock performs relative to the broader market.",
-   "upside": "If the shift of money from bonds to stocks continues, it could support overall market activity and bank performance.",
-   "downside": "A sharp drop in gold prices could force banks to set aside more money to cover potential losses on gold loans, hurting their profits.",
+   "summary": "Bank of India announced a strike notice, which may temporarily affect its operations. At the same time, the Reserve Bank of India (RBI) is considering a rate hike and has been buying dollars, which could impact the banking sector.",
+   "why": "A strike could disrupt daily banking services and earnings, while changes in interest rates and currency values directly affect how much profit the bank makes from lending and foreign exchange.",
+   "upside": "If the RBI raises interest rates, the bank could earn more from the interest it charges on loans.",
+   "downside": "A prolonged strike or a shift in monetary policy could reduce the bank's earnings or slow down economic activity.",
    "watch": [
-    "Updates on RBI's monitoring of gold loan portfolios",
-    "Changes in government bond prices due to investor shifts",
-    "Future movements in the Financials sector index"
+    "Updates on the duration and impact of the strike.",
+    "The final decision on interest rates from the RBI meeting.",
+    "Changes in the value of the Indian rupee against the US dollar."
    ],
-   "about": "Bank of India is a financial services company listed in India's Nifty 500 index.",
-   "basis": "f7fd035e0061",
-   "items": 3,
-   "updated": "2026-11-25T17:12+05:30",
+   "about": "",
+   "basis": "13631827cde6",
+   "items": 7,
+   "updated": "2026-11-26T08:17+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "LGEINDIA": {
-   "summary": "LG Electronics India’s promoter, LG Electronics Inc., intends to sell up to 2% of its shares in the open market to meet a minimum public‑shareholding rule by Dec 31 2026.",
-   "why": "The sale adds supply, which could pressure the share price for existing investors.",
-   "upside": "A broader market rally could absorb the extra supply and support the price.",
-   "downside": "The additional share supply may push the price lower.",
+   "summary": "LG Electronics India’s promoter is planning to sell up to 2% of its shares to meet a public‑holding requirement, while a proposed US tax on Indian goods could affect its overseas sales.",
+   "why": "The share sale could increase supply and pressure the stock price, and higher export taxes may reduce profits for a company that sells abroad.",
+   "upside": "A broader market rally could offset the price pressure from the share sale.",
+   "downside": "The additional share supply and potential export taxes could weigh on the share price.",
    "watch": [
-    "Execution of the promoter’s 2% share sale",
-    "Share price reaction to the sale",
-    "Consumer durables sector index performance"
+    "Execution of the 2% promoter stake sale",
+    "Details on US proposed high taxes on Indian goods",
+    "Overall market and sector index movement"
    ],
    "about": "LG Electronics India Ltd. manufactures and sells consumer electronics and appliances in India.",
-   "basis": "d8b5bd0220c8",
-   "items": 2,
-   "updated": "2026-11-25T15:31+05:30",
+   "basis": "30fdb509fe8f",
+   "items": 5,
+   "updated": "2026-11-26T08:17+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ICICIBANK": {
@@ -939,19 +955,35 @@
    "model": "openai/gpt-oss-120b"
   },
   "HINDALCO": {
-   "summary": "Hindalco shares fell about 3% as the market dropped sharply, and the company announced the re‑appointment of its Managing Director Satish Pai for 2028 and the appointment of Deputy Managing Director Hemant Sikka for 2027. It is also listed among stocks traders are watching today.",
-   "why": "The price move reflects broader market sentiment, while the leadership changes could influence the company’s future performance.",
-   "upside": "The stock could bounce back if the overall market or metals sector recovers.",
-   "downside": "Continued market volatility and a weak metals index may keep pressure on the share price.",
+   "summary": "Hindalco announced the re-appointment of its Managing Director and the appointment of a new Deputy Managing Director. The stock recently contributed to a broader market dip, with the metals sector falling significantly over the last week.",
+   "why": "Leadership changes can affect how the company is run, while the recent drop in the metals sector shows that Hindalco's share price is sensitive to wider industry trends.",
+   "upside": "The company has secured its leadership team for the coming years, which may provide operational stability.",
+   "downside": "The metals sector has fallen sharply in recent days, which could continue to pressure Hindalco's share price.",
    "watch": [
-    "Broader market volatility and Nifty 50 trends",
-    "Performance of the Metals sector index",
-    "Implementation of the new leadership appointments"
+    "How the new Deputy Managing Director integrates into the team",
+    "Whether the metals sector stabilizes after its recent drop",
+    "General market volatility affecting large-cap stocks"
    ],
-   "about": "",
-   "basis": "94308915ac42",
-   "items": 5,
-   "updated": "2026-11-25T08:17+05:30",
+   "about": "Hindalco is a major Indian company in the metals and mining sector.",
+   "basis": "9c6acadb27aa",
+   "items": 4,
+   "updated": "2026-11-26T08:17+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "SIEMENS": {
+   "summary": "Siemens Ltd. said its profitability is being hit by volatile commodity prices and foreign‑exchange movements, keeping margins under pressure. The company gave no timeline for when margins might normalise.",
+   "why": "Higher input costs and currency swings can reduce earnings, which matters to shareholders.",
+   "upside": "If commodity prices and forex rates stabilise, margins could improve.",
+   "downside": "If high material costs and adverse currency moves continue, margins may compress further.",
+   "watch": [
+    "Commodity price trends",
+    "Foreign‑exchange movements",
+    "Management guidance on margin recovery"
+   ],
+   "about": "Siemens Ltd. designs, manufactures and services industrial equipment and digital solutions for infrastructure and automation.",
+   "basis": "c945403061a0",
+   "items": 2,
+   "updated": "2026-11-25T12:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ENGINERSIN": {
@@ -1016,22 +1048,6 @@
    "basis": "6e20b50a153a",
    "items": 2,
    "updated": "2026-11-25T12:45+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "SIEMENS": {
-   "summary": "Siemens Ltd. said its profitability is being hit by volatile commodity prices and foreign‑exchange movements, keeping margins under pressure. The company gave no timeline for when margins might normalise.",
-   "why": "Higher input costs and currency swings can reduce earnings, which matters to shareholders.",
-   "upside": "If commodity prices and forex rates stabilise, margins could improve.",
-   "downside": "If high material costs and adverse currency moves continue, margins may compress further.",
-   "watch": [
-    "Commodity price trends",
-    "Foreign‑exchange movements",
-    "Management guidance on margin recovery"
-   ],
-   "about": "Siemens Ltd. designs, manufactures and services industrial equipment and digital solutions for infrastructure and automation.",
-   "basis": "c945403061a0",
-   "items": 2,
-   "updated": "2026-11-25T12:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "HDFCBANK": {

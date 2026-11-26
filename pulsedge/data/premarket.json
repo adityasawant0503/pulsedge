@@ -1,19 +1,19 @@
 {
  "date": "2026-11-26",
- "updated": "2026-11-26T04:24:04+05:30",
- "sentiment": "Mildly bearish",
+ "updated": "2026-11-26T08:18:33+05:30",
+ "sentiment": "Mildly bullish",
  "breadth": {
-  "up": 1,
-  "down": 2
+  "up": 2,
+  "down": 0
  },
  "checklist": [
   {
    "title": "GIFT Nifty - opening indication",
    "dir": "up",
-   "value": "25,925.0 · +575 pts (+2.27%) · gap-up start indicated",
+   "value": "26,050.0 · +700 pts (+2.76%) · gap-up start indicated",
    "detail": [
     "Nifty 50 last close 25,819.25 (+1.85%)",
-    "Implied open near 26,405",
+    "Implied open near 26,533",
     "Against Nifty futures' last close 25,349.7"
    ]
   },
@@ -25,16 +25,16 @@
     "Dow 50,182.95 +0.33%",
     "S&P 7,182.78 -0.25%",
     "Nasdaq 23,585.80 -0.62%",
-    "Nasdaq futures now -0.67%"
+    "Nasdaq futures now +0.82%"
    ]
   },
   {
    "title": "Asian markets live - Nikkei, Hang Seng",
-   "dir": "down",
-   "value": "Asia lower",
+   "dir": "up",
+   "value": "Asia higher",
    "detail": [
-    "Nikkei 57,011.40 -2.78%",
-    "Hang Seng 21,966.02 -1.14%"
+    "Nikkei 57,886.73 +1.54%",
+    "Hang Seng 22,493.57 +2.40%"
    ]
   },
   {
@@ -42,17 +42,15 @@
    "dir": "flat",
    "value": "No major currency pressure",
    "detail": [
-    "DXY 103.69 -0.15%",
+    "DXY 103.74 +0.05%",
     "USD/INR 92.220 +0.00%"
    ]
   },
   {
    "title": "Brent crude level",
-   "dir": "down",
-   "value": "$90.64 +2.10%",
-   "detail": [
-    "Rising crude hurts India (OMCs, paints, aviation); helps upstream"
-   ]
+   "dir": "flat",
+   "value": "$90.77 +0.14%",
+   "detail": []
   },
   {
    "title": "India VIX",
@@ -61,32 +59,32 @@
    "detail": []
   }
  ],
- "summary": "Mildly bearish setup. GIFT Nifty: gap-up start indicated (+575 pts); Brent up 2.10% — pressure on OMCs, paints and aviation.",
+ "summary": "Mildly bullish setup. GIFT Nifty: gap-up start indicated (+700 pts); NASDAQ closed 0.62% lower; IT may open soft.",
  "global_cues": [
-  "GIFT Nifty: gap-up start indicated (+575 pts)",
-  "Brent up 2.10% — pressure on OMCs, paints and aviation",
+  "GIFT Nifty: gap-up start indicated (+700 pts)",
   "NASDAQ closed 0.62% lower; IT may open soft",
-  "Nikkei down, Hang Seng down"
+  "Nikkei up, Hang Seng up"
  ],
  "india_triggers": [
-  "0 filings and headlines worth a look so far today"
+  "2 filings and headlines worth a look so far today"
  ],
- "focus": [],
+ "focus": [
+  {
+   "symbol": "WIPRO",
+   "note": "Stocks to watch: LG Electronics, Siemens Energy, Wipro, sugar stocks"
+  },
+  {
+   "symbol": "PNB",
+   "note": "Deutsche Bank, PNB ink pact to fund M&As"
+  }
+ ],
  "sector_tags": [
-  {
-   "label": "Upstream oil",
-   "tone": "positive"
-  },
-  {
-   "label": "OMCs",
-   "tone": "negative"
-  },
   {
    "label": "IT",
    "tone": "watch"
   }
  ],
- "key_risk": "A further crude spike would hit OMCs and widen the INR move",
+ "key_risk": "",
  "also": [
   {
    "name": "BANK NIFTY",
@@ -95,28 +93,28 @@
   },
   {
    "name": "S&P FUT",
-   "value": "7,196",
-   "change": -0.3
+   "value": "7,242",
+   "change": 0.65
   },
   {
    "name": "NASDAQ FUT",
-   "value": "26,100",
-   "change": -0.67
+   "value": "26,315",
+   "change": 0.82
   },
   {
    "name": "KOSPI",
-   "value": "4,698",
-   "change": -6.16
+   "value": "4,739",
+   "change": 0.88
   },
   {
    "name": "WTI",
-   "value": "83.68",
-   "change": 1.99
+   "value": "84.00",
+   "change": 0.38
   },
   {
    "name": "GOLD",
-   "value": "3,589",
-   "change": 0.93
+   "value": "3,600",
+   "change": 0.31
   },
   {
    "name": "US 10Y",

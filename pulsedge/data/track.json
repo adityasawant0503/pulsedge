@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T04:24:04+05:30",
+ "updated": "2026-11-26T08:18:33+05:30",
  "summary": {
-  "calls": 2255,
-  "scored_calls": 1042,
+  "calls": 2258,
+  "scored_calls": 1045,
   "d1": {
    "scored": 870,
    "hits": 384,
@@ -26,6 +26,39 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "72b2ac864c51d867",
+   "symbol": "WIPRO",
+   "time": "2026-11-26T08:03:01+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stocks to watch: LG Electronics, Siemens Energy, Wipro, sugar stocks",
+   "url": "https://www.business-standard.com/markets/news/stocks-to-watch-lg-electronics-siemens-energy-wipro-sugar-stocks-126112600059_1.html"
+  },
+  {
+   "id": "72b2ac864c51d867",
+   "symbol": "SIEMENS",
+   "time": "2026-11-26T08:03:01+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stocks to watch: LG Electronics, Siemens Energy, Wipro, sugar stocks",
+   "url": "https://www.business-standard.com/markets/news/stocks-to-watch-lg-electronics-siemens-energy-wipro-sugar-stocks-126112600059_1.html"
+  },
+  {
+   "id": "dfeb0773e3790b3b",
+   "symbol": "PNB",
+   "time": "2026-11-26T07:25:17+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Deutsche Bank, PNB ink pact to fund M&As",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/deutsche-bank-pnb-ink-pact-to-fund-mas/articleshow/136176118.cms"
+  },
   {
    "id": "97cea23f163027af",
    "symbol": "OIL",
