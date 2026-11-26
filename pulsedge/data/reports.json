@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T10:45+05:30",
+ "updated": "2026-11-26T11:00+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -107,22 +107,6 @@
    "updated": "2026-11-25T15:02+05:30",
    "model": "openai/gpt-oss-20b"
   },
-  "RVNL": {
-   "summary": "RVNL has received new contracts, including a hospital project from NMDC, and says it is on track to reach a 25,000 cr orderbook for FY27, having already secured about 8,000 cr in H1.",
-   "why": "These contracts add revenue and suggest steady future cash flow for shareholders, though the size of each order relative to total revenue is a factor.",
-   "upside": "If RVNL successfully executes the new contracts and hits its FY27 orderbook target, revenue could rise significantly.",
-   "downside": "Delays in project execution could hurt margins and delay revenue recognition.",
-   "watch": [
-    "Progress on NMDC hospital contract",
-    "Achievement of FY27 25,000 cr orderbook target",
-    "Impact of order size on overall revenue"
-   ],
-   "about": "RVNL is a railway infrastructure company that builds and maintains rail projects.",
-   "basis": "aec6160d5a5b",
-   "items": 3,
-   "updated": "2026-11-25T19:23+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "TORNTPOWER": {
    "summary": "Torrent Power bought 100% of Torrent Urja 42 Private Ltd and announced plans to acquire newly formed companies. The moves could add assets and generation capacity but bring financing and integration risks.",
    "why": "Shareholders could see earnings improve if the acquisitions boost capacity, but higher debt may pressure cash flow.",
@@ -153,6 +137,22 @@
    "basis": "8c6c92cdfc9c",
    "items": 2,
    "updated": "2026-11-26T10:00+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "RVNL": {
+   "summary": "RVNL has received new contracts, including a hospital construction project for NMDC in Chhattisgarh, adding to its order book. The orders could increase future income.",
+   "why": "More contracts mean higher potential revenue, which matters to shareholders.",
+   "upside": "On‑time, cost‑effective execution could lift earnings.",
+   "downside": "Small contract size or execution delays could hurt margins.",
+   "watch": [
+    "Progress on the NMDC hospital project",
+    "Size and number of new contracts announced",
+    "Impact of new orders on quarterly revenue"
+   ],
+   "about": "RVNL builds and maintains railway infrastructure in India.",
+   "basis": "c2fa7d4f0521",
+   "items": 2,
+   "updated": "2026-11-26T11:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "DALBHARAT": {
@@ -603,38 +603,6 @@
    "updated": "2026-11-26T04:23+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "HFCL": {
-   "summary": "PulsEdge flagged that HFCL's shares fell about 5% and hit the lower price circuit after a recent rally. The drop reflects strong selling pressure and heightened volatility.",
-   "why": "Shareholders should watch because the stock’s price is unstable and could move sharply on market sentiment.",
-   "upside": "If the price stabilises after the circuit break, the stock could recover some of its recent gains.",
-   "downside": "Further declines are possible if the broader market remains weak, and the circuit limits add liquidity risk.",
-   "watch": [
-    "Whether the share price stabilises after the lower‑circuit hit",
-    "Overall market trend and sentiment",
-    "Frequency of circuit‑limit triggers and resulting liquidity"
-   ],
-   "about": "HFCL Ltd. operates in the telecommunications sector.",
-   "basis": "3b4d37a52aa4",
-   "items": 2,
-   "updated": "2026-11-26T10:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "STLTECH": {
-   "summary": "Sterlite Technologies shares fell about 5%, hitting the lower price circuit after recent rallies. The drop reflects strong selling pressure in the market.",
-   "why": "Shareholders should note the heightened volatility and the risk of further price declines if the broader market stays weak.",
-   "upside": "If the stock stabilises and broader market sentiment improves, the price could recover from the circuit breach.",
-   "downside": "Continued weakness in the market or persistent selling pressure could push the stock lower, with liquidity risks from circuit limits.",
-   "watch": [
-    "Whether the price stabilises after hitting the lower circuit",
-    "Overall market trend for telecom stocks",
-    "Frequency of circuit limit hits and related liquidity risk"
-   ],
-   "about": "Sterlite Technologies Ltd. operates in the telecommunications sector.",
-   "basis": "3b4d37a52aa4",
-   "items": 2,
-   "updated": "2026-11-26T10:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "MOTILALOFS": {
    "summary": "Motilal Oswal Financial Services is part of the Nifty 500 index. Recent news highlighted a separate company, Welspun Living, which has seen strong share price growth and plans for new investments.",
    "why": "This matters because it shows the broader financial sector context, though the specific news about Welspun Living does not directly describe Motilal Oswal's own business performance.",
@@ -762,6 +730,22 @@
    "updated": "2026-11-24T18:25+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "BSE": {
+   "summary": "BSE shares have risen significantly in 2026, with one report noting a 48% jump year-to-date. The broader financial sector has also seen recent gains, adding to the positive momentum for the stock.",
+   "why": "Strong price performance and analyst interest can increase the value of your investment, but rapid rises often come with higher volatility and the risk of a correction.",
+   "upside": "Continued strong market activity and positive analyst sentiment could support further gains in the stock price.",
+   "downside": "If company earnings do not match the high expectations set by recent price increases, the stock could face a sharp drop.",
+   "watch": [
+    "Upcoming earnings reports to see if profits match the stock's rise",
+    "Overall market trends in the financial sector",
+    "Changes in trading volumes on the exchange"
+   ],
+   "about": "BSE Ltd. is a major stock exchange in India and part of the Nifty 50 index.",
+   "basis": "d497f5d7f281",
+   "items": 3,
+   "updated": "2026-11-26T10:30+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "SIEMENS": {
    "summary": "Siemens Ltd. said its profitability is being squeezed by volatile commodity prices and foreign‑exchange movements, keeping margins stressed. Meanwhile, its energy subsidiary posted a strong profit jump and declared a dividend, which could draw interest but also lead to profit‑taking.",
    "why": "Higher input costs and currency swings can cut earnings, affecting share value, while the dividend and energy‑unit earnings may support investor sentiment.",
@@ -793,22 +777,6 @@
    "items": 4,
    "updated": "2026-11-25T15:15+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "BSE": {
-   "summary": "BSE shares have risen significantly in 2026, with one report noting a 48% jump year-to-date. The broader financial sector has also seen recent gains, adding to the positive momentum for the stock.",
-   "why": "Strong price performance and analyst interest can increase the value of your investment, but rapid rises often come with higher volatility and the risk of a correction.",
-   "upside": "Continued strong market activity and positive analyst sentiment could support further gains in the stock price.",
-   "downside": "If company earnings do not match the high expectations set by recent price increases, the stock could face a sharp drop.",
-   "watch": [
-    "Upcoming earnings reports to see if profits match the stock's rise",
-    "Overall market trends in the financial sector",
-    "Changes in trading volumes on the exchange"
-   ],
-   "about": "BSE Ltd. is a major stock exchange in India and part of the Nifty 50 index.",
-   "basis": "d497f5d7f281",
-   "items": 3,
-   "updated": "2026-11-26T10:30+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "CGCL": {
    "summary": "Capri Global Capital Ltd. raised $30 million from the BlueOrchard Microfinance Fund, its first impact‑fundraise. The funding was announced on November 25, 2026.",
@@ -1225,20 +1193,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "MCX": {
-   "summary": "MCX shares rose 3% on November 26 as gold and silver prices rebounded after a recent sharp drop. The stock has gained 67% in 2026, driven by high trading activity in precious metals.",
-   "why": "The company earns money from trading fees, so when gold and silver prices move a lot, more people trade them, which can increase the company's revenue.",
-   "upside": "If gold and silver prices stay volatile, trading volumes may remain high, supporting the exchange's income.",
-   "downside": "If commodity prices stabilize or fall further, trading activity could drop, reducing the fees the exchange collects.",
+   "summary": "PulsEdge flagged that MCX shares rose about 3% as gold and silver prices jumped, after a recent period of sharp falls in those metals. The exchange’s stock is reacting to the volatility in precious‑metal prices.",
+   "why": "Higher gold and silver prices can boost trading volumes, which may increase MCX’s fee income, affecting shareholders.",
+   "upside": "Sustained or rising precious‑metal prices could keep trading activity strong and lift revenues.",
+   "downside": "A reversal or stabilization of gold and silver prices could dampen trading volumes and pressure earnings.",
    "watch": [
-    "Future US Federal Reserve interest rate decisions",
-    "Daily price movements of gold and silver on MCX",
-    "Trading volumes in other commodity segments"
+    "Gold price movements and related trading volume",
+    "Silver price movements and related trading volume",
+    "Fed rate‑hike expectations influencing commodity markets"
    ],
-   "about": "Multi Commodity Exchange of India Ltd. is a financial services company that operates a platform for trading commodity contracts.",
-   "basis": "c7c2b9300cbb",
-   "items": 5,
-   "updated": "2026-11-26T10:00+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "MCX operates a commodity exchange in India, providing a platform for trading futures and options on commodities such as gold and silver.",
+   "basis": "4c11699326d7",
+   "items": 6,
+   "updated": "2026-11-26T11:00+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "INFY": {
    "summary": "Infosys announced it has become the world’s first organization to achieve CMMI AI Maturity Level 5, a top AI certification. The IT sector index rose 1.7% in the last session, and Indian IT stocks are gaining attention as investors shift from expensive AI tech to cheaper software firms.",
@@ -1366,6 +1334,22 @@
    "basis": "72f572801305",
    "items": 2,
    "updated": "2026-11-23T14:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "HINDZINC": {
+   "summary": "Hindustan Zinc has announced a collaboration with IIT Madras to develop zinc‑air battery technology for electric mobility. The move comes as its metals sector index has been falling.",
+   "why": "Shareholders should note the company is investing in new technology that could drive long‑term growth, though it does not affect current earnings.",
+   "upside": "Successful development could open a new revenue stream from battery applications.",
+   "downside": "The technology is still in early research stages with no immediate impact on profits and may not materialise.",
+   "watch": [
+    "Progress of the IIT Madras zinc‑air battery project",
+    "Further sector performance of Metals & Mining index",
+    "Any commercial or revenue announcements related to the battery technology"
+   ],
+   "about": "Hindustan Zinc Ltd. is a metals and mining company that primarily produces zinc.",
+   "basis": "5aed86badc01",
+   "items": 2,
+   "updated": "2026-11-26T11:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "CANHLIFE": {
