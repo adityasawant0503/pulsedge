@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T11:15+05:30",
+ "updated": "2026-11-26T11:30+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a mixed day with strong gains in FMCG, pharma and financials while media and metals lagged. Sugar makers rallied sharply as analysts expect lower sugar output, pushing prices higher. Companies such as Borosil Renewable, Welspun Corp and Acme Solar reported positive developments in sales, export orders and a new battery storage project. Other notable moves included Siemens Energy’s profit jump, LG Electronics India’s price dip on a parent stake sale, and Jupiter Wagons’ surge after a South Korean joint venture.",
+  "summary": "Borosil Renewable’s management said sales and profit margins should improve next quarter, keeping EBITDA above 30%. Sugar makers’ shares jumped 14% after analysts warned next year’s sugar output would fall, while Jupiter Wagons saw a 30% rise on a new South‑Korean partnership. India’s government bonds fell as oil prices topped $95 and the RBI flagged food‑inflation risks, and the rupee’s recovery is putting pressure on IT earnings. Sector indices were strongest in FMCG (+3.8%) and weakest in media (-4.4%).",
   "themes": [
-   "Renewable and infrastructure firms highlighted with better sales, margins and new projects",
-   "Sugar sector surged on expectations of reduced production and higher prices",
-   "Overall market buoyed by strong FMCG, pharma and financials and rising foreign fund optimism"
+   "Sales and margin outlooks",
+   "Supply and demand shifts in commodities",
+   "Currency and bond market movements"
   ],
   "watch": [
-   "Will Borosil successfully hit its sales and margin targets in the coming quarter?",
-   "How quickly will Welspun’s export order for large‑diameter pipes and Acme Solar’s BESS project translate into revenue?",
-   "What effect will US tariff developments have on SRF, Cipla and Thermax, and will Adani firms’ planned bond sale proceed as expected?"
+   "Borosil’s next‑quarter sales targets and execution risk",
+   "Sugar output forecast for next year and its impact on prices",
+   "Rupee strength and its effect on IT company margins"
   ],
   "date": "2026-11-26",
-  "basis": "cd7ca6834322",
-  "updated": "2026-11-26T10:45+05:30",
-  "model": "openai/gpt-oss-120b",
-  "items": 27
+  "basis": "902f9278cfcf",
+  "updated": "2026-11-26T11:30+05:30",
+  "model": "openai/gpt-oss-20b",
+  "items": 38
  },
  "stocks": {
   "LENSKART": {
@@ -443,22 +443,6 @@
    "updated": "2026-11-26T10:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "WIPRO": {
-   "summary": "Wipro signed a major partnership with BP to handle finance operations, which is expected to bring 3,000 staff into the company starting in 2027. At the same time, proposed US taxes on Indian goods could affect profits for companies that sell abroad.",
-   "why": "The BP deal suggests Wipro is securing large, stable contracts that support long-term business health, while the potential US taxes could reduce profits if they are applied to its exports.",
-   "upside": "Investors are moving money from expensive AI stocks to cheaper Indian software firms, which could support Wipro's share price.",
-   "downside": "The US proposed high taxes on Indian goods, which might hurt companies that sell abroad, and the BP deal will not generate revenue until 2027.",
-   "watch": [
-    "Details on how US taxes apply to the IT sector",
-    "Progress on the BP partnership implementation",
-    "Investor interest in Indian IT stocks versus AI stocks"
-   ],
-   "about": "Wipro is an Information Technology company listed in the Nifty 500 index.",
-   "basis": "3f509a264b8c",
-   "items": 4,
-   "updated": "2026-11-26T08:17+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "SUZLON": {
    "summary": "Suzlon Energy announced it is adding production capacity and the Tamil Nadu chief minister laid the foundation for a 1 GW smart‑blade factory, while also disclosing a recent cyber security breach.",
    "why": "Capacity expansion could lift future sales and earnings, whereas the cyber incident may hurt customer confidence and incur remediation costs.",
@@ -473,6 +457,22 @@
    "basis": "d8d01f840279",
    "items": 4,
    "updated": "2026-11-25T14:01+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "WIPRO": {
+   "summary": "Wipro signed a strategic partnership with BP to run its finance operations, bringing about 3,000 BP staff under a new model that starts in 2027. At the same time, the US is proposing higher taxes on Indian exports, which could affect companies that sell abroad.",
+   "why": "The BP deal could boost Wipro's long‑term revenue, while the proposed US tariffs may pressure its export‑related earnings.",
+   "upside": "If the BP partnership generates new business, Wipro could see stronger revenue growth.",
+   "downside": "Delayed revenue from the 2027 rollout and possible profit cuts from US export taxes could hurt earnings.",
+   "watch": [
+    "Progress on the BP finance‑operations partnership and its 2027 start date",
+    "Developments on US tariff proposals for Indian goods",
+    "Performance of the Indian IT sector index"
+   ],
+   "about": "Wipro Ltd. provides information technology services and consulting.",
+   "basis": "15a3d0adf837",
+   "items": 3,
+   "updated": "2026-11-26T11:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "FINCABLES": {
@@ -664,22 +664,6 @@
    "basis": "9e9f468b0016",
    "items": 1,
    "updated": "2026-11-23T15:47+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "RAILTEL": {
-   "summary": "Railtel Corporation of India announced that it has won new business contracts. This news was shared with the stock exchange as a standard update on company activities.",
-   "why": "New contracts can lead to more future work and income for the company, which is generally a positive sign for its business health.",
-   "upside": "The new orders could increase the company's future revenue if the projects are successfully completed.",
-   "downside": "The value of these new orders might be too small to make a significant difference to the company's overall earnings.",
-   "watch": [
-    "The specific value of the new contracts",
-    "Future announcements about additional business wins",
-    "The company's next quarterly financial results"
-   ],
-   "about": "Railtel is a company in the telecommunication sector that provides technology services related to railways.",
-   "basis": "795bd2e3a4a6",
-   "items": 1,
-   "updated": "2026-11-23T14:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "LLOYDSME": {
@@ -1192,6 +1176,22 @@
    "updated": "2026-11-26T11:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "INFY": {
+   "summary": "Infosys announced its COO became the first in the world to achieve CMMI AI Maturity (AIM) Level 5, highlighting its AI capabilities. At the same time, a stronger Indian rupee is creating margin pressure for Indian IT firms, including Infosys.",
+   "why": "Margin pressure from a strong rupee can shrink profits, while the AI certification may help the company win new business.",
+   "upside": "The AI maturity certification could attract more AI‑related projects and boost future revenue.",
+   "downside": "A continued strong rupee could reduce the value of foreign earnings and squeeze margins.",
+   "watch": [
+    "Rupee exchange‑rate movements and their impact on IT margins",
+    "Adoption and revenue from AI services following the certification",
+    "Performance of the Indian IT sector index"
+   ],
+   "about": "Infosys Ltd. provides IT services, consulting and outsourcing solutions.",
+   "basis": "78ebe710d3c0",
+   "items": 3,
+   "updated": "2026-11-26T11:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "MINDACORP": {
    "summary": "Minda Corporation recently sold new shares to specific investors, increasing the total number of shares in circulation. This move followed a board meeting where the company considered raising funds.",
    "why": "Issuing new shares means each existing share represents a smaller portion of the company, which can reduce the value of your current holdings.",
@@ -1207,22 +1207,6 @@
    "items": 3,
    "updated": "2026-11-26T09:30+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "INFY": {
-   "summary": "Infosys announced it is the first organization worldwide to achieve CMMI AI Maturity (AIM) Level 5, a top‑level AI certification. The broader Indian IT sector has been rising as investors shift from costly AI spend to cheaper software services.",
-   "why": "The AI certification positions Infosys as a leader that could attract more business, but it does not guarantee immediate revenue growth.",
-   "upside": "If the certification helps win new AI contracts, earnings could improve.",
-   "downside": "If the certification does not translate into revenue or AI sentiment turns negative, growth may stall.",
-   "watch": [
-    "Impact of the AIM Level 5 certification on new deals",
-    "Changes in global AI sentiment affecting Indian IT stocks",
-    "Performance of the IT sector index"
-   ],
-   "about": "Infosys Ltd. provides information technology services and consulting.",
-   "basis": "5409423de2a5",
-   "items": 3,
-   "updated": "2026-11-26T11:15+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "CLEANMAX": {
    "summary": "Clean Max Enviro Energy Solutions has announced it is acquiring another business while also selling off a subsidiary and other assets. These moves happened within the last two days, signaling a major shift in the company's structure.",
