@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T15:45+05:30",
+ "updated": "2026-11-26T16:01+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -252,20 +252,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "LENSKART": {
-   "summary": "Lenskart is in focus after Goldman Sachs and Societe Generale bought a 1% stake worth about ₹920 crore, while Steadview Capital Mauritius sold 11.5 million shares in a block deal at ₹725 per share, and the stock is on a watch list due to recent news and market volatility.",
-   "why": "The foreign investor stake could lift confidence for shareholders, but the large block sale adds selling pressure and could affect the share price.",
-   "upside": "If the new investors increase their holding or other investors follow, the share price could benefit.",
-   "downside": "The block sale adds supply and broader market volatility could weigh on the stock.",
+   "summary": "Goldman Sachs and Societe Generale recently bought a 1% stake in Lenskart for about ₹920 crore. The stock is currently on a watchlist of popular companies that traders are monitoring closely.",
+   "why": "Large investors buying shares can sometimes signal confidence in the company, which may influence how other investors view the stock.",
+   "upside": "The purchase by major global banks could boost investor confidence in the company.",
+   "downside": "The stake bought is small relative to the total number of shares, so it may not have a big impact on the price.",
    "watch": [
-    "Future buying or selling activity by Goldman Sachs and SocGen",
-    "Impact of the 11.5 million‑share block deal on price",
-    "Overall market volatility affecting Lenskart"
+    "Whether other large investors follow suit with similar purchases",
+    "How the stock reacts to general market volatility",
+    "Any further news mentioned in daily stock watchlists"
    ],
    "about": "",
-   "basis": "d796b6580f86",
-   "items": 3,
-   "updated": "2026-11-26T13:00+05:30",
-   "model": "openai/gpt-oss-120b"
+   "basis": "a6a816298b4d",
+   "items": 2,
+   "updated": "2026-11-26T16:01+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "KSB": {
    "summary": "KSB Ltd. recently announced that it has been awarded a new contract. This news was shared with the stock exchange to inform investors of the company's latest business activity.",
@@ -300,20 +300,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel is in talks to restructure and tweak its deal with APL Apollo after buying a 9.91% stake for about ₹5,825 crore. The company’s shares fell more than 2% even as the broader market rose, and investors are watching valuation and debt concerns linked to the transaction.",
-   "why": "The outcome of the APL Apollo deal could affect Tata Steel’s cash position, debt load and future earnings, which matters to shareholders.",
-   "upside": "If the restructuring and deal are completed smoothly, Tata Steel could strengthen its balance sheet and capture strategic benefits.",
-   "downside": "The transaction could fall through, face regulatory hurdles, or increase debt pressure, which could weigh on the share price.",
+   "summary": "Tata Steel is restructuring its recent deal to buy a stake in APL Apollo Tubes, which has caused its share price to fall. The company is open to changing the deal structure to address concerns about debt and valuation.",
+   "why": "This matters because the deal involves a large cash outlay of ₹5,825 crore, which could strain the company's finances and affect future profits for shareholders.",
+   "upside": "The strategic partnership with APL Apollo could eventually strengthen Tata Steel's position in the steel tube market.",
+   "downside": "The deal may not go through, or the high cost could lead to further downgrades and a drop in the share price.",
    "watch": [
-    "Progress on restructuring talks with APL Apollo",
-    "Final terms of the APL Apollo deal",
-    "Impact on Tata Steel’s debt and valuation"
+    "Updates on the final structure of the APL Apollo deal",
+    "Changes in the Metals sector index performance",
+    "Company statements on debt levels and financial health"
    ],
-   "about": "Tata Steel Ltd. is one of India’s largest steel manufacturers, listed in the Nifty 50 index.",
-   "basis": "e57ee2ddf762",
-   "items": 10,
-   "updated": "2026-11-26T12:00+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Tata Steel is a major Indian company in the metals and mining sector.",
+   "basis": "4820dff3f61e",
+   "items": 9,
+   "updated": "2026-11-26T16:01+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "APLAPOLLO": {
    "summary": "APL Apollo Tubes saw Tata Steel buy a 9.91% stake for about ₹5,825 crore, triggering a 15% share drop to a 52‑week low, and a large investor sold ₹434 crore of shares in a bulk deal.",
@@ -587,6 +587,22 @@
    "updated": "2026-11-25T08:17+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "GLAXO": {
+   "summary": "GlaxoSmithKline Pharmaceuticals recently received approval for a new medicine called BLENREP, which treats a type of blood cancer. The company also informed the stock exchange about a recent order or decision made by a regulatory body.",
+   "why": "The new drug approval could lead to higher sales, while the regulatory order might affect the company's costs or how it operates.",
+   "upside": "Selling the newly approved BLENREP medicine could bring in additional revenue for the company.",
+   "downside": "The regulatory order could result in fines or restrictions on the company's operations.",
+   "watch": [
+    "Details of the regulatory order and any associated fines",
+    "Sales performance of the new BLENREP medicine",
+    "Future updates from the company regarding the regulatory matter"
+   ],
+   "about": "GlaxoSmithKline Pharmaceuticals is a healthcare company listed on the NSE.",
+   "basis": "f0056769b147",
+   "items": 2,
+   "updated": "2026-11-26T16:01+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "AMBER": {
    "summary": "Amber Enterprises India Ltd. announced a ₹500 crore expansion investment in Tamil Nadu to enhance PCB manufacturing over five years starting 2027. The deal involves Ascent Circuits, a subsidiary of IL JIN Electronics.",
    "why": "Shareholders should note that the expansion could increase production capacity and future sales, potentially impacting earnings.",
@@ -617,6 +633,22 @@
    "basis": "1d1e95407575",
    "items": 2,
    "updated": "2026-11-26T10:45+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "BAJAJ-AUTO": {
+   "summary": "Bajaj Auto announced its electric three‑wheeler set a 394 km single‑charge record, marking a first for the segment. The auto sector index also rose, showing broader market strength.",
+   "why": "The record highlights the company’s EV capabilities, which could boost future sales and investor confidence, but success depends on commercial rollout.",
+   "upside": "A smooth commercial launch of the electric three‑wheeler could lift sales and market sentiment.",
+   "downside": "If the rollout stalls, expectations for the EV line may be disappointed.",
+   "watch": [
+    "Timeline for commercial launch of the EV three‑wheeler",
+    "First‑quarter sales of the electric three‑wheeler",
+    "Performance of the broader auto sector index"
+   ],
+   "about": "Bajaj Auto manufactures motorcycles, scooters and three‑wheelers, including electric models.",
+   "basis": "1800a539aca3",
+   "items": 1,
+   "updated": "2026-11-26T16:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "MOTILALOFS": {
@@ -665,22 +697,6 @@
    "items": 1,
    "updated": "2026-11-24T12:15+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "GLAXO": {
-   "summary": "GlaxoSmithKline Pharmaceuticals announced that its drug BLENREP received approval for treating a type of blood cancer called multiple myeloma. This allows the company to sell this new medicine in the market.",
-   "why": "For shareholders, a new approved product can lead to higher sales and profits over time. However, the stock price may have already adjusted to reflect this good news.",
-   "upside": "The new drug could generate additional revenue for the company.",
-   "downside": "Investors might have already priced in the approval, limiting immediate stock gains.",
-   "watch": [
-    "Sales figures for the new BLENREP drug",
-    "Overall performance of the healthcare sector",
-    "Company announcements regarding product launch details"
-   ],
-   "about": "GlaxoSmithKline Pharmaceuticals is a healthcare company listed on the Indian stock exchange.",
-   "basis": "e204e3a0017a",
-   "items": 1,
-   "updated": "2026-11-24T12:01+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "LLOYDSME": {
    "summary": "Lloyds Metals and Energy Ltd announced a capital raise by issuing new securities, an acquisition of another company, and a private placement of non‑convertible debentures worth up to ₹750 crore at 9% interest. The metals sector index has been falling, adding market pressure.",
@@ -1018,21 +1034,6 @@
    "updated": "2026-11-26T10:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "JSWCEMENT": {
-   "summary": "JSW Cement filed a standard regulatory disclosure with the stock exchange. This is a routine requirement for listed companies to keep investors informed.",
-   "why": "Such filings ensure transparency and help shareholders stay updated on official company communications.",
-   "upside": "",
-   "downside": "",
-   "watch": [
-    "Any follow-up details in the full disclosure document",
-    "General market trends in the construction materials sector"
-   ],
-   "about": "JSW Cement is a company in the construction materials sector.",
-   "basis": "bec09fddf87e",
-   "items": 1,
-   "updated": "2026-11-26T08:30+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "MCX": {
    "summary": "MCX shares jumped about 3% as gold and silver prices rose sharply, boosting trading activity on the exchange. The stock has delivered strong returns this year, but recent price swings show volatility.",
    "why": "Higher precious‑metal prices can lift trading volumes and revenue for the exchange, which matters to shareholders. A reversal in those prices could quickly cut that upside.",
@@ -1304,22 +1305,6 @@
    "items": 2,
    "updated": "2026-11-26T09:00+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "YESBANK": {
-   "summary": "PulsEdge flagged recent regulatory disclosures from Yes Bank Ltd., including a change in directors, key managerial personnel, auditors and a senior management update. The broader financial sector index fell 2.5% in the last session but rose 0.5% over the past five sessions.",
-   "why": "Shareholders watch management and board changes because they can affect the bank’s strategy and risk profile.",
-   "upside": "If the new directors and senior managers strengthen governance, the bank could benefit.",
-   "downside": "Uncertainty around the appointments could create short‑term volatility.",
-   "watch": [
-    "Details of the announced director and auditor changes",
-    "Further information on senior management personnel updates",
-    "Financials sector index movement"
-   ],
-   "about": "Yes Bank Ltd. is a commercial bank that provides banking and financial services in India.",
-   "basis": "0f5f3c596f8c",
-   "items": 2,
-   "updated": "2026-11-24T06:49+05:30",
-   "model": "openai/gpt-oss-120b"
   }
  }
 }
