@@ -112,7 +112,8 @@ def board_event(sym, d, purpose, desc):
         if re.search(r"dividend", purpose, re.I):
             t = "Results and dividend (board meeting)"
     else:
-        k, t = "board", "Board meeting: " + (sentence(purpose.replace("/", ", ")) or "other matters")
+        p = re.sub(r"\bboard\s+meeting(\s+intimation)?\b", "", purpose, flags=re.I).strip(" ,/-|")
+        k, t = "board", ("Board meeting: " + sentence(p.replace("/", ", "))) if p else "Board meeting"
     return {"d": d, "k": k, "s": sym, "t": t, "x": desc[:200]}
 
 

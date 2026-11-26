@@ -180,14 +180,17 @@ NIFTY500_CSV = ["https://nsearchives.nseindia.com/content/indices/ind_nifty500li
 def refresh_universe(dry):
     """Download the official Nifty 500 list weekly into data/universe.json."""
     path = os.path.join(DATA, "universe.json")
-    upd = (load_json(path, {}) or {}).get("updated", "")
-    if upd and upd > (NOW - timedelta(days=6)).strftime("%Y-%m-%d"):
+    old = load_json(path, {}) or {}
+    upd = old.get("updated", "")
+    # weekly, or now if the stored list predates ISINs (the add-a-stock search shows and matches them)
+    if upd and upd > (NOW - timedelta(days=6)).strftime("%Y-%m-%d") and all("isin" in s for s in old.get("stocks", [])[:5]):
         return
     import csv, io
     for url in NIFTY500_CSV:
         try:
             rows = list(csv.DictReader(io.StringIO(get(url, "text/csv,*/*", referer="https://www.nseindia.com/").decode("utf-8-sig"))))
-            stocks = [{"symbol": r["Symbol"].strip().upper(), "name": r["Company Name"].strip(), "sector": r["Industry"].strip()}
+            stocks = [{"symbol": r["Symbol"].strip().upper(), "name": r["Company Name"].strip(), "sector": r["Industry"].strip(),
+                       "isin": (r.get("ISIN Code") or "").strip().upper()}
                       for r in rows if r.get("Symbol")]
             if len(stocks) < 400:
                 raise ValueError(f"only {len(stocks)} rows")

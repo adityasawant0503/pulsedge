@@ -126,6 +126,7 @@ h3{font-size:15px;margin:22px 0 8px}
 </main>
 <script src="assets/theme.js"></script>
 <script src="assets/member.js"></script>
+<script src="assets/stockpick.js"></script>
 <script>
 (function(){
   "use strict";
@@ -168,12 +169,12 @@ h3{font-size:15px;margin:22px 0 8px}
   // ---------- your holdings (computed here, from this browser's list) ----------
   function saveHold(){store("pe_hold",JSON.stringify(hold));renderMine()}
   function editor(box){
-    var w=el("div","no-print"),ed=el("div","ed"),inp=el("input");inp.type="text";inp.placeholder="Add a stock: symbol or name, e.g. RELIANCE";inp.setAttribute("list","uni");inp.setAttribute("aria-label","Add a stock");
-    var btn=el("button","btn","Add");btn.type="button";
-    function add(){var v=inp.value.trim().toUpperCase();if(!v)return;var m=uni.filter(function(u){return u.symbol===v||u.name.toUpperCase()===v})[0]||uni.filter(function(u){return u.name.toUpperCase().indexOf(v)===0})[0];
-      var s=m?m.symbol:v;if(!hold.some(function(h){return h.s===s}))hold.push({s:s,q:null});inp.value="";saveHold()}
-    btn.addEventListener("click",add);inp.addEventListener("keydown",function(e){if(e.key==="Enter"){e.preventDefault();add()}});
-    ed.append(inp,btn);w.appendChild(ed);
+    var w=el("div","no-print");
+    if(window.PulsePick){
+      var pk=PulsePick.create({list:function(){return uni},held:function(s){return hold.some(function(h){return h.s===s})},button:"Add",
+        onAdd:function(items){items.forEach(function(it){var ex=hold.filter(function(h){return h.s===it.s})[0];if(ex){if(it.q)ex.q=it.q}else hold.push({s:it.s,q:it.q||null})});saveHold()}});
+      w.appendChild(pk.el);
+    }
     var ch=el("div","chips");hold.forEach(function(h){var c=el("span","chip",h.s),x=el("button",null,"×");x.type="button";x.setAttribute("aria-label","Remove "+h.s);
       x.addEventListener("click",function(){hold=hold.filter(function(y){return y.s!==h.s});saveHold()});c.appendChild(x);ch.appendChild(c)});
     w.appendChild(ch);w.appendChild(el("p","muted","Your list stays on this device. It's the same list as My stocks in the PULSE terminal; quantities you add there make the portfolio change exact."));
