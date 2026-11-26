@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T14:46:07+05:30",
+ "updated": "2026-11-26T15:01:02+05:30",
  "summary": {
-  "calls": 2310,
-  "scored_calls": 1097,
+  "calls": 2314,
+  "scored_calls": 1101,
   "d1": {
    "scored": 870,
    "hits": 384,
@@ -26,6 +26,66 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "6369ba163c7bb9cc",
+   "symbol": "BPCL",
+   "time": "2026-11-26T14:55:46+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "BPCL vs IOCL vs HPCL: Jefferies names its top OMC stocks to buy as crude prices fall | Check target prices, rationale",
+   "url": "https://www.livemint.com/market/stock-market-news/bpcl-vs-iocl-vs-hpcl-jefferies-names-its-top-omc-stocks-to-buy-as-crude-prices-fall-check-target-prices-rationale-11795681099588.html",
+   "alert_px": 307.25,
+   "alert_move": -0.87,
+   "alert_at": "2026-11-26T15:00:40+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "6369ba163c7bb9cc",
+   "symbol": "IOC",
+   "time": "2026-11-26T14:55:46+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "BPCL vs IOCL vs HPCL: Jefferies names its top OMC stocks to buy as crude prices fall | Check target prices, rationale",
+   "url": "https://www.livemint.com/market/stock-market-news/bpcl-vs-iocl-vs-hpcl-jefferies-names-its-top-omc-stocks-to-buy-as-crude-prices-fall-check-target-prices-rationale-11795681099588.html",
+   "alert_px": 144.99,
+   "alert_move": -1.89,
+   "alert_at": "2026-11-26T15:00:40+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "b6ea3010b825fc4a",
+   "symbol": "BRIGADE",
+   "time": "2026-11-26T14:40:53+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Nifty Realty hits 52-wk high, up 3% led by Prestige, Brigade Enterprises",
+   "url": "https://www.business-standard.com/markets/news/nifty-realty-hits-52-week-high-up-3-led-by-brigade-enterprises-prestige-estates-126112600658_1.html",
+   "alert_px": 641.05,
+   "alert_move": 8.71,
+   "alert_at": "2026-11-26T15:00:40+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "b6ea3010b825fc4a",
+   "symbol": "PRESTIGE",
+   "time": "2026-11-26T14:40:53+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Nifty Realty hits 52-wk high, up 3% led by Prestige, Brigade Enterprises",
+   "url": "https://www.business-standard.com/markets/news/nifty-realty-hits-52-week-high-up-3-led-by-brigade-enterprises-prestige-estates-126112600658_1.html",
+   "alert_px": 1836.7,
+   "alert_move": 9.0,
+   "alert_at": "2026-11-26T15:00:40+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "642c66fc88e8eab8",
    "symbol": "WELCORP",

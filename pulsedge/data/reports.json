@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T14:45+05:30",
+ "updated": "2026-11-26T15:00+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -155,6 +155,22 @@
    "updated": "2026-11-26T04:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "BRIGADE": {
+   "summary": "Brigade Enterprises posted a sharp rise after selling about ₹1,600 crore of units during a launch weekend in Bengaluru, while the broader real‑estate index hit a 52‑week high. The company also announced a purchase of a 2.25‑acre land parcel in Secunderabad for a premium price.",
+   "why": "Shareholders care because the sales boost the revenue outlook and the new land could expand future earnings, but both come with risks.",
+   "upside": "If strong demand continues, the company could sustain higher sales and earnings growth.",
+   "downside": "If the sales spike proves one‑off or the high land cost squeezes margins, earnings could fall.",
+   "watch": [
+    "Nifty Realty index performance",
+    "Follow‑up sales momentum after the launch weekend",
+    "Progress and cost impact of the Secunderabad land acquisition"
+   ],
+   "about": "Brigade Enterprises Ltd. is a real‑estate developer that builds residential and mixed‑use projects in India.",
+   "basis": "f979b0fad654",
+   "items": 4,
+   "updated": "2026-11-26T15:00+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "WELCORP": {
    "summary": "Welspun Corp Ltd. announced receipt of new business contracts, including an export order for large‑diameter steel pipes, and its shares rose about 5% after the news. An executive also projected EBITDA could reach ₹5,000 cr in two years.",
    "why": "New contracts can increase future revenue, which matters to shareholders, while the EBITDA outlook signals confidence in growth.",
@@ -169,22 +185,6 @@
    "basis": "0509d1b2dcb8",
    "items": 4,
    "updated": "2026-11-26T14:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "BRIGADE": {
-   "summary": "Brigade Enterprises reported a strong weekend launch, selling about ₹1,600 crore of units in its premium mixed‑use township in Bengaluru. It also bought a 2.25‑acre land parcel in Secunderabad for ₹180 crore, targeting a future residential project worth roughly ₹1,000 crore.",
-   "why": "The sales boost the company’s near‑term revenue outlook, while the land acquisition could expand its pipeline and earnings potential.",
-   "upside": "If the high demand seen in Bengaluru continues and the Secunderabad project materialises, revenue and profit could rise further.",
-   "downside": "If the Bengaluru sales prove to be a one‑off event or the high land cost squeezes margins, earnings could fall short of expectations.",
-   "watch": [
-    "Future sales momentum in the Bengaluru Brigade Autograph project",
-    "Development progress and cost control on the Secunderabad land parcel",
-    "Realty sector index performance and broader market sentiment"
-   ],
-   "about": "Brigade Enterprises Ltd. is a real‑estate developer that builds residential and mixed‑use projects.",
-   "basis": "62565a18a8db",
-   "items": 4,
-   "updated": "2026-11-26T12:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "HEROMOTOCO": {
@@ -1033,21 +1033,6 @@
    "updated": "2026-11-26T08:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "TITAGARH": {
-   "summary": "Titagarh Rail Systems received an additional order from Presstonic Engineering for the Mumbai Metro Line 6 project. This news was shared via an exchange announcement.",
-   "why": "New orders can indicate future work for the company, which may affect its financial results later.",
-   "upside": "The additional order adds to the company's project pipeline for the Mumbai Metro Line 6.",
-   "downside": "",
-   "watch": [
-    "Future announcements regarding the execution of the Mumbai Metro Line 6 project.",
-    "Other orders or contracts involving Titagarh Rail Systems."
-   ],
-   "about": "Titagarh Rail Systems is a capital goods company listed in the Nifty 500 index.",
-   "basis": "2da526c6c512",
-   "items": 1,
-   "updated": "2026-11-26T10:00+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "MCX": {
    "summary": "MCX shares jumped about 3% as gold and silver prices rose sharply, boosting trading activity on the exchange. The stock has delivered strong returns this year, but recent price swings show volatility.",
    "why": "Higher precious‑metal prices can lift trading volumes and revenue for the exchange, which matters to shareholders. A reversal in those prices could quickly cut that upside.",
@@ -1078,6 +1063,22 @@
    "basis": "472530c462ae",
    "items": 4,
    "updated": "2026-11-26T12:00+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "PRESTIGE": {
+   "summary": "Prestige Estates Projects Ltd. is benefiting from a strong rally in real‑estate stocks, with the Nifty Realty index hitting a 52‑week high. The company also created two wholly‑owned subsidiaries to develop projects in Mumbai and announced acquisition of newly incorporated entities.",
+   "why": "Shareholders see potential earnings growth from the new Mumbai projects, but the stock’s performance is tied to the broader real‑estate sector’s momentum.",
+   "upside": "Successful development of the Worli North and South projects could boost revenues and margins.",
+   "downside": "High land acquisition costs could compress project margins and a sector‑wide rally could fade if the broader market weakens.",
+   "watch": [
+    "Nifty Realty sector performance",
+    "Progress on Prestige Worli North and South developments",
+    "Land cost trends and margin impact"
+   ],
+   "about": "Prestige Estates Projects Ltd. develops residential and commercial real‑estate projects in India.",
+   "basis": "11ca50e83538",
+   "items": 3,
+   "updated": "2026-11-26T15:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "KFINTECH": {
@@ -1223,22 +1224,6 @@
    "items": 2,
    "updated": "2026-11-25T08:17+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "PRESTIGE": {
-   "summary": "Prestige Estates Projects Ltd. has created two wholly‑owned subsidiaries, Prestige Worli North and South, to develop projects in Mumbai and has announced acquisition of additional to‑be‑incorporated companies. Both moves aim to expand its development pipeline, while high land costs could pressure project margins.",
-   "why": "Shareholders may see future earnings growth from the new subsidiaries, but margin pressure from expensive land could affect profitability.",
-   "upside": "Successful execution of the new subsidiaries could increase revenue and earnings.",
-   "downside": "Rising land costs may compress profit margins on new projects.",
-   "watch": [
-    "Progress of Prestige Worli North and South projects",
-    "Impact of land acquisition costs on margins",
-    "Overall performance of the Realty sector index"
-   ],
-   "about": "Prestige Estates Projects Ltd. is an Indian real estate development company.",
-   "basis": "e45eccd21149",
-   "items": 2,
-   "updated": "2026-11-24T06:49+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "HINDZINC": {
    "summary": "Hindustan Zinc has announced a collaboration with IIT Madras to develop zinc‑air battery technology for electric mobility. The move comes as its metals sector index has been falling.",
