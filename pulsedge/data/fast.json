@@ -1,7 +1,55 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T10:38:36+05:30",
+ "updated": "2026-11-26T10:46:36+05:30",
  "items": [
+  {
+   "id": "4701627019768088",
+   "time": "2026-11-26T10:45:47+05:30",
+   "headline": "TIGER GLOBAL SOLD 2.72% IN GROWW BETWEEN MAY 29 AND NOV. 23",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10135",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "GROWW",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Fintech",
+    "Investment Services"
+   ],
+   "impact": 35,
+   "confidence": 60,
+   "category": "Shareholding Change",
+   "action": "Monitor for further institutional selling or support levels in the coming sessions.",
+   "reason": [
+    "Significant reduction in stake by a major global investor.",
+    "May signal reduced long-term confidence or portfolio rebalancing."
+   ],
+   "risks": [
+    "Potential for continued selling pressure.",
+    "Negative sentiment impact on retail investors."
+   ],
+   "plain": "A large international investor sold a significant portion of its shares in this company.",
+   "why": "When big investors leave, it can make other people nervous and cause the share price to drop.",
+   "check": "Look at recent news to see if other big investors are also selling.",
+   "original": "TIGER GLOBAL SOLD 2.72% IN GROWW BETWEEN MAY 29 AND NOV. 23",
+   "latency": 49.8,
+   "lane": "fast",
+   "quotes": {
+    "GROWW": {
+     "px": 221.35,
+     "prev": 217.48,
+     "move": 1.78,
+     "at": "2026-11-26T10:46:36+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "c6072cc12afdbf79",
    "time": "2026-11-26T10:37:24+05:30",
