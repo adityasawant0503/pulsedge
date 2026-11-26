@@ -1,7 +1,39 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T13:08:06+05:30",
+ "updated": "2026-11-26T13:10:06+05:30",
  "items": [
+  {
+   "id": "1d5f91ad7f714f83",
+   "time": "2026-11-26T13:09:15+05:30",
+   "headline": "UPDATE ON SONA BLW ALL MEDIATIONS HAVE NOW FAILED",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10161",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Automotive"
+   ],
+   "impact": 0,
+   "confidence": 0,
+   "category": "Legal",
+   "action": "No immediate action required for listed stock holders.",
+   "reason": [
+    "No listed company is named in the headline.",
+    "The dispute involves unlisted entities or private parties not in the candidate list."
+   ],
+   "risks": [
+    "Potential indirect supply chain impact if Sona BLW is a major supplier, but this is speculative without named listed counterparties."
+   ],
+   "plain": "A legal dispute between two companies has failed to settle and will now go to court.",
+   "why": "Since no major listed company is named, this news does not directly affect stock prices for investors.",
+   "check": "",
+   "original": "CASE WILL NOW GO INTO COURT FOR LEGAL PURSUE",
+   "latency": 51.4,
+   "lane": "fast"
+  },
   {
    "id": "35874b55604a55a1",
    "time": "2026-11-26T13:07:01+05:30",
