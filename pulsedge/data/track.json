@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T08:18:33+05:30",
+ "updated": "2026-11-26T08:31:33+05:30",
  "summary": {
-  "calls": 2258,
-  "scored_calls": 1045,
+  "calls": 2259,
+  "scored_calls": 1046,
   "d1": {
    "scored": 870,
    "hits": 384,
@@ -26,6 +26,17 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "a3e1acda9afe4ff3",
+   "symbol": "OIL",
+   "time": "2026-11-26T08:13:43+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Rupee has room to rally before RBI steps in, strategists say",
+   "url": "https://economictimes.indiatimes.com/markets/forex/rupee-has-room-to-rally-before-rbi-steps-in-strategists-say/articleshow/136176673.cms"
+  },
   {
    "id": "72b2ac864c51d867",
    "symbol": "WIPRO",
