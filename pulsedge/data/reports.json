@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T13:15+05:30",
+ "updated": "2026-11-26T13:31+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -555,6 +555,22 @@
    "updated": "2026-11-26T13:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "WELSPUNLIV": {
+   "summary": "Welspun Living’s shares have risen over 110% year‑to‑date as the company pushes new capex projects for growth, but a possible US tariff on Indian goods could hit its margins.",
+   "why": "Shareholders care because successful investments could boost earnings, while tariffs or execution problems could reduce profits.",
+   "upside": "If the new capital spending delivers cost savings and higher sales, earnings could improve.",
+   "downside": "If US tariffs are imposed or cotton supplies stay tight, profit margins could be squeezed.",
+   "watch": [
+    "US tariff implementation risk",
+    "Progress on capex projects",
+    "Cotton supply and pricing"
+   ],
+   "about": "Welspun Living Ltd. is a textile company.",
+   "basis": "fb52f3e3bd6b",
+   "items": 3,
+   "updated": "2026-11-26T13:31+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "HYUNDAI": {
    "summary": "Hyundai Motor India announced a price increase of up to INR 8,000 per vehicle effective Dec 1, 2026, citing higher input costs. The move could boost profit per car but may also dampen demand if buyers react negatively.",
    "why": "Shareholders need to watch how the price hike affects sales volume and margins.",
@@ -585,22 +601,6 @@
    "basis": "1d1e95407575",
    "items": 2,
    "updated": "2026-11-26T10:45+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "WELSPUNLIV": {
-   "summary": "Welspun Living’s shares have jumped more than 110% year‑to‑date and the company is planning new capital spending (capex) to boost growth. Analysts see upside but note risks around project execution and cotton supply.",
-   "why": "Shareholders could see earnings improve if the new investments and cost cuts work, but the same risks could affect returns.",
-   "upside": "Successful execution of the new capex projects could lift earnings.",
-   "downside": "Delays in projects or cotton shortages could hurt margins.",
-   "watch": [
-    "Progress on capex projects",
-    "Cotton availability and its impact on margins",
-    "Sales growth and cost‑reduction efforts"
-   ],
-   "about": "Welspun Living Ltd. is a textile company.",
-   "basis": "905c68de953b",
-   "items": 2,
-   "updated": "2026-11-26T04:23+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "MOTILALOFS": {
@@ -1096,22 +1096,6 @@
    "updated": "2026-11-26T12:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "MINDACORP": {
-   "summary": "Minda Corporation recently sold new shares to specific investors, increasing the total number of shares in circulation. This move followed a board meeting where the company considered raising funds.",
-   "why": "Issuing new shares means each existing share represents a smaller portion of the company, which can reduce the value of your current holdings.",
-   "upside": "The raised funds could support company expansion, potentially improving its long-term prospects.",
-   "downside": "The new shares dilute the ownership stake of existing shareholders, which may lower the value of each share.",
-   "watch": [
-    "How the company plans to use the newly raised funds.",
-    "Details from the November 26 board meeting outcomes.",
-    "Performance of the broader Auto sector index."
-   ],
-   "about": "Minda Corporation operates in the automobile and auto components sector.",
-   "basis": "5d234959eee4",
-   "items": 3,
-   "updated": "2026-11-26T09:30+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "ICICIBANK": {
    "summary": "ICICI Bank shares jumped about 4% to a record high, riding a broad market rally that lifted the Financials index by over 2%. Analysts are comparing its valuation with HDFC and Axis banks, favoring those peers.",
    "why": "Shareholders see strong short‑term momentum, but valuation concerns could limit price gains.",
@@ -1174,6 +1158,22 @@
    "basis": "0fa2756d26c3",
    "items": 2,
    "updated": "2026-11-26T10:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "MINDACORP": {
+   "summary": "Minda Corporation announced a preferential issue of 7.65 million securities, increasing its share count, and reported the outcome of its board meeting on Nov 26, 2026.",
+   "why": "The new share issue could dilute existing shareholders’ ownership, while board decisions may affect future company actions.",
+   "upside": "The auto sector index has been rising, which could support the stock.",
+   "downside": "The preferential issue may dilute existing shareholders’ stake, potentially lowering share value.",
+   "watch": [
+    "Details of the preferential issue (price, investors)",
+    "Specific outcomes of the board meeting (dividend, plans)",
+    "Continued performance of the auto sector index"
+   ],
+   "about": "Minda Corporation Ltd. manufactures automobile and auto component products.",
+   "basis": "5918b0cb0e19",
+   "items": 2,
+   "updated": "2026-11-26T13:31+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "TMCV": {

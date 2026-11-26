@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T13:15:49+05:30",
+ "updated": "2026-11-26T13:31:12+05:30",
  "summary": {
-  "calls": 2304,
-  "scored_calls": 1091,
+  "calls": 2305,
+  "scored_calls": 1092,
   "d1": {
    "scored": 870,
    "hits": 384,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "f020c5ee3814d5bd",
+   "symbol": "WELSPUNLIV",
+   "time": "2026-11-26T13:26:05+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Trump Tariff Threat impact on Indian stocks: Gokaldas Exports to Welspun Living - Shares that could face biggest heat",
+   "url": "https://www.livemint.com/market/stock-market-news/trump-tariff-threat-impact-on-indian-stocks-gokaldas-exports-to-welspun-living-shares-that-could-face-biggest-heat-11795675402003.html",
+   "alert_px": 282.63,
+   "alert_move": 2.19,
+   "alert_at": "2026-11-26T13:30:54+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "419c6c1ef9b5e5df",
    "symbol": "COFORGE",
