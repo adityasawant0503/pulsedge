@@ -1,7 +1,40 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T11:00:37+05:30",
+ "updated": "2026-11-26T11:20:06+05:30",
  "items": [
+  {
+   "id": "4bdeb9c18d043cd4",
+   "time": "2026-11-26T11:19:07+05:30",
+   "headline": "APPLE TO EXPAND INDIA RETAIL NETWORK WITH NEW STORE IN HYDERABAD",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10139",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "positional",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Retail",
+    "Consumer"
+   ],
+   "impact": 10,
+   "confidence": 20,
+   "category": "Corporate Expansion",
+   "action": "No specific listed stock action required; monitor broader consumer sentiment.",
+   "reason": [
+    "Apple is not a listed Indian company.",
+    "No direct candidate symbol provided for this specific news item."
+   ],
+   "risks": [
+    "Indirect impact on unlisted local vendors is not tradable via NSE symbols."
+   ],
+   "plain": "Apple plans to open a new store in Hyderabad to grow its business in India.",
+   "why": "Apple is not listed on Indian stock exchanges, so this does not directly affect any specific stock price.",
+   "check": "",
+   "original": "APPLE TO EXPAND INDIA RETAIL NETWORK WITH NEW STORE IN HYDERABAD",
+   "latency": 59.8,
+   "lane": "fast"
+  },
   {
    "id": "7f7b044a437df842",
    "time": "2026-11-26T11:00:16+05:30",
@@ -1812,78 +1845,6 @@
      "delay": 900
     }
    }
-  },
-  {
-   "id": "f370be5e48fa2162",
-   "time": "2026-11-25T11:12:23+05:30",
-   "headline": "GOVT SAID TO BRING NEW SCHEME WORTH 50000 CRS FOR POWER DISTRIBUTION COS: ZEE BUSINESS (ADANI POWER)",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10008",
-   "section": "macro",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "ADANIPOWER",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Power"
-   ],
-   "impact": 60,
-   "confidence": 70,
-   "category": "policy",
-   "action": "Monitor official government circulars for specific allocation details before assuming direct benefit.",
-   "reason": [
-    "A ₹50,000 Cr scheme for power distribution could improve cash flows for the sector.",
-    "Adani Power may benefit indirectly through improved grid reliability and demand."
-   ],
-   "risks": [
-    "Scheme details are not yet officially confirmed.",
-    "Benefits may be concentrated in distribution companies rather than generation."
-   ],
-   "plain": "The government is reportedly planning a large new fund to help power distribution companies.",
-   "why": "Better-funded distribution companies can buy more electricity, which may help power producers sell their output.",
-   "check": "Look for the official government press release confirming the scheme's details.",
-   "original": "GOVT SAID TO BRING NEW SCHEME WORTH 50000 CRS FOR POWER DISTRIBUTION COS: ZEE BUSINESS (ADANI POWER)",
-   "latency": 30.1,
-   "lane": "fast",
-   "quotes": {
-    "ADANIPOWER": {
-     "px": 206.5,
-     "prev": 207.9,
-     "move": -0.67,
-     "at": "2026-11-25T11:12:53+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "de823d6ae8812a60",
-   "time": "2026-11-25T11:05:41+05:30",
-   "headline": "ANONDITA MEDICARE: CO ADDS FOUR MANUFACTURING LINES WITH 245 MILLION PIECES ANNUAL CAPACITY FOR MALE LATEX CONDOMS, TAKING TOTAL CAPACITY TO 1.114 BILLION PIECES PER ANNUM, WITH AN ESTIMATED INVESTMENT OF RS 75 CRORE.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10007",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "news",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "The company added four new manufacturing lines for male latex condoms, increasing capacity to 1.114 billion pieces annually.",
-   "why": "It’s a private firm, so it doesn’t affect any listed stocks; investors can ignore it.",
-   "check": "",
-   "original": "ANONDITA MEDICARE: CO ADDS FOUR MANUFACTURING LINES WITH 245 MILLION PIECES ANNUAL CAPACITY FOR MALE LATEX CONDOMS, TAKING TOTAL CAPACITY TO 1.114 BILLION PIECES PER ANNUM, WITH AN ESTIMATED INVESTMENT OF RS 75 CRORE.",
-   "latency": 42.8,
-   "lane": "fast"
   }
  ]
 }
