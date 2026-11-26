@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T10:01:24+05:30",
+ "updated": "2026-11-26T10:16:02+05:30",
  "summary": {
-  "calls": 2270,
-  "scored_calls": 1057,
+  "calls": 2272,
+  "scored_calls": 1059,
   "d1": {
    "scored": 870,
    "hits": 384,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "5fd66bec4cc3da67",
+   "symbol": "CIPLA",
+   "time": "2026-11-26T10:03:04+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "SRF, Cipla, Thermax: Who's impacted by US tariffs and who's not; Jefferies answers",
+   "url": "https://www.business-standard.com/markets/news/srf-cipla-thermax-who-s-impacted-by-us-tariffs-and-who-s-not-jefferies-answers-126112600149_1.html",
+   "alert_px": 1441.6,
+   "alert_move": 0.59,
+   "alert_at": "2026-11-26T10:15:38+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "5fd66bec4cc3da67",
+   "symbol": "SRF",
+   "time": "2026-11-26T10:03:04+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "SRF, Cipla, Thermax: Who's impacted by US tariffs and who's not; Jefferies answers",
+   "url": "https://www.business-standard.com/markets/news/srf-cipla-thermax-who-s-impacted-by-us-tariffs-and-who-s-not-jefferies-answers-126112600149_1.html",
+   "alert_px": 2541.2,
+   "alert_move": 1.0,
+   "alert_at": "2026-11-26T10:15:38+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "4d55490f7571f9f3",
    "symbol": "MCX",
