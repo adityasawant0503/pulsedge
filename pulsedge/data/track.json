@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T12:16:04+05:30",
+ "updated": "2026-11-26T12:30:49+05:30",
  "summary": {
-  "calls": 2295,
-  "scored_calls": 1082,
+  "calls": 2297,
+  "scored_calls": 1084,
   "d1": {
    "scored": 870,
    "hits": 384,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "ecfbfb818c7b4a7a",
+   "symbol": "NCC",
+   "time": "2026-11-26T12:24:08+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "NCC: MAINTAINS FY27 REVENUE GROWTH GUIDANCE OF 8-10%, AFTER 21% H1 GROWTH",
+   "url": "https://t.me/Indiaredboxglobal/10151",
+   "alert_px": 129.16,
+   "alert_move": -0.01,
+   "alert_at": "2026-11-26T12:24:37+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "2869e4e956f69128",
    "symbol": "HEROMOTOCO",
@@ -414,6 +429,21 @@
    "alert_px": 3729.0,
    "alert_move": 4.6,
    "alert_at": "2026-11-26T11:00:41+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "8a3252bdb2fa0391",
+   "symbol": "MCX",
+   "time": "2026-11-26T09:43:36+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Gold, Silver rates today LIVE: Prices rise on MCX | Can gold hit ₹1.50 lakh, silver climb to ₹2 lakh?",
+   "url": "https://www.livemint.com/market/commodities/gold-silver-rates-today-live-26-november-2026-why-prices-rising-on-mcx-us-fed-rate-meeting-in-focus-outlook-targets-11795664993084.html",
+   "alert_px": 3813.5,
+   "alert_move": 6.97,
+   "alert_at": "2026-11-26T12:30:35+05:30",
    "alert_delay": 900
   },
   {

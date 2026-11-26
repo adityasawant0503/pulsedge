@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T12:15+05:30",
+ "updated": "2026-11-26T12:30+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -650,22 +650,6 @@
    "updated": "2026-11-24T12:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "CCL": {
-   "summary": "PulsEdge flagged that CCL Products is part of the FMCG sector, which has risen 3.6% over the last five sessions. The company is included in the Nifty 500 index, which tracks India's 500 largest listed companies.",
-   "why": "Being in the Nifty 500 means the company is one of India's larger listed firms, which can make its shares more visible to investors. The recent rise in the FMCG sector suggests general market interest in this type of business.",
-   "upside": "",
-   "downside": "",
-   "watch": [
-    "Future news specific to CCL Products, as recent headlines were about a different company.",
-    "The performance of the FMCG sector index.",
-    "Changes in CCL's inclusion in major market indices."
-   ],
-   "about": "",
-   "basis": "9e9f468b0016",
-   "items": 1,
-   "updated": "2026-11-23T15:47+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "LLOYDSME": {
    "summary": "Lloyds Metals and Energy Ltd announced a capital raise by issuing new securities, an acquisition of another company, and a private placement of non‑convertible debentures worth up to ₹750 crore at 9% interest. The metals sector index has been falling, adding market pressure.",
    "why": "Shareholders could see dilution from the new shares and higher interest costs from the debentures, which may affect earnings and the stock price.",
@@ -1033,20 +1017,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "MCX": {
-   "summary": "MCX shares rose recently as gold and silver prices rebounded after a sharp drop. The stock gained 3% on the latest day, following a period where falling metal prices had pressured the exchange's outlook.",
-   "why": "The company earns fees from trading commodities, so when gold and silver prices move sharply, trading activity usually increases. This can boost the exchange's revenue and affect the value of its shares.",
-   "upside": "If gold and silver prices remain volatile or continue to rise, trading volumes may stay high, supporting the exchange's income.",
-   "downside": "Commodity prices are unpredictable and can fall again quickly, which would reduce trading activity and lower the fees MCX collects.",
+   "summary": "MCX shares jumped about 3% as gold and silver prices rose sharply, boosting trading activity on the exchange. The stock has delivered strong returns this year, but recent price swings show volatility.",
+   "why": "Higher precious‑metal prices can lift trading volumes and revenue for the exchange, which matters to shareholders. A reversal in those prices could quickly cut that upside.",
+   "upside": "If gold and silver stay high, trading fees could rise further.",
+   "downside": "If commodity prices stabilize or fall, trading activity may drop and pressure the share price.",
    "watch": [
-    "Daily changes in gold and silver prices on MCX",
-    "News about US Federal Reserve interest rate decisions",
-    "Overall trading volumes in precious metals"
+    "Gold and silver price trends",
+    "US dollar strength and Fed rate‑hike expectations",
+    "Overall financial sector performance"
    ],
-   "about": "MCX is a commodity exchange where people trade contracts on goods like gold and silver.",
-   "basis": "52c55c583068",
-   "items": 8,
-   "updated": "2026-11-26T12:00+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "MCX runs India’s leading commodity exchange, enabling trading in metals and other commodities.",
+   "basis": "c26605333ef5",
+   "items": 9,
+   "updated": "2026-11-26T12:30+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "INFY": {
    "summary": "Infosys is riding a rally in Indian IT stocks while the sector faces headwinds from a stronger rupee and US tariff concerns, and the company recently earned a top‑level AI maturity certification.",
