@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T19:22+05:30",
+ "updated": "2026-11-27T04:10+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged that Dalmia Bharat announced a share buyback, which can support the stock price by reducing the number of shares available. Patel Engineering secured a large hydro power project, while Panacea Biotec cleared a compliance issue to resume sales in Europe. Foreign investors increased their long positions in index futures, suggesting a slightly more positive outlook for the market.",
+  "summary": "PulsEdge noted key updates from the Indian stock market on Friday, 27 November 2026. ACME Solar started a new hybrid power project, while Swaraj Suiting received initial approval to raise funds by issuing new shares. Additionally, IFGL Refractories announced a change in its top management. Meanwhile, sector performance varied, with IT and Realty leading the gains, while Consumer Durables and FMCG saw losses.",
   "themes": [
-   "Companies are taking steps to support their share prices, such as buybacks and clearing regulatory hurdles.",
-   "New orders and project completions are boosting revenue expectations for engineering and energy firms.",
-   "Foreign investors are gradually increasing their bullish bets on the Indian market."
+   "New energy projects and business expansion",
+   "Company fundraising and management changes",
+   "Mixed sector performance between technology and consumer goods"
   ],
   "watch": [
-   "Whether the potential India-US trade deal will lower taxes on exports, which could help companies like Welspun and Cipla.",
-   "If Zydus Lifesciences can quickly address the US FDA's request for more details on its new medicine.",
-   "How Exide Industries manages the integration of its new acquisition, which carries execution risks."
+   "Execution of upcoming solar and hybrid power projects",
+   "Impact of new share issues on existing shareholders",
+   "Strategic direction following top management changes"
   ],
-  "date": "2026-11-26",
-  "basis": "d427f1c2295d",
-  "updated": "2026-11-26T19:22+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 141
+  "date": "2026-11-27",
+  "basis": "51619c673d10",
+  "updated": "2026-11-27T04:10+05:30",
+  "model": "gemini-flash-lite-latest",
+  "items": 3
  },
  "stocks": {
   "TORNTPOWER": {
@@ -121,22 +121,6 @@
    "basis": "8c6c92cdfc9c",
    "items": 2,
    "updated": "2026-11-26T10:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "RVNL": {
-   "summary": "RVNL has received new contracts, including a hospital construction project for NMDC in Chhattisgarh, adding to its order book. The orders could increase future income.",
-   "why": "More contracts mean higher potential revenue, which matters to shareholders.",
-   "upside": "On‑time, cost‑effective execution could lift earnings.",
-   "downside": "Small contract size or execution delays could hurt margins.",
-   "watch": [
-    "Progress on the NMDC hospital project",
-    "Size and number of new contracts announced",
-    "Impact of new orders on quarterly revenue"
-   ],
-   "about": "RVNL builds and maintains railway infrastructure in India.",
-   "basis": "c2fa7d4f0521",
-   "items": 2,
-   "updated": "2026-11-26T11:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ENRIN": {
@@ -252,19 +236,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "ACMESOLAR": {
-   "summary": "Acme Solar Holdings has started operating new battery energy storage systems in Rajasthan. This move increases its total operational capacity to 193.63 MW.",
-   "why": "These new systems allow the company to generate income from storing and selling energy, which is a key part of its business operations.",
-   "upside": "The new capacity could lead to higher earnings if the systems operate smoothly and sell energy effectively.",
-   "downside": "Technical issues or delays in connecting to the power grid could prevent the company from earning money from these new systems.",
+   "summary": "ACME Solar Holdings has recently started operating new battery storage systems and a hybrid power project. These additions increase the company's total capacity for storing and generating electricity.",
+   "why": "More operational capacity means the company can potentially sell more energy services, which could support its business growth.",
+   "upside": "The new projects add revenue streams and demonstrate progress in building out the company's infrastructure.",
+   "downside": "Delays in other projects or technical issues with the new systems could postpone expected income.",
    "watch": [
-    "Reports on how well the new battery systems are performing.",
-    "Updates on the company's total revenue from energy storage.",
-    "News about any problems with connecting to the power grid."
+    "Updates on the status of other ongoing projects",
+    "Any reports of grid connectivity or technical problems",
+    "Future announcements about additional capacity additions"
    ],
-   "about": "Acme Solar Holdings is a power sector company that operates battery energy storage systems.",
-   "basis": "f1ba044abeef",
-   "items": 3,
-   "updated": "2026-11-26T08:45+05:30",
+   "about": "ACME Solar Holdings is a power sector company that operates solar and battery energy storage projects.",
+   "basis": "600d7b1659cc",
+   "items": 4,
+   "updated": "2026-11-27T04:10+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "LENSKART": {
@@ -363,6 +347,22 @@
    "updated": "2026-11-25T19:23+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "SCHAEFFLER": {
+   "summary": "Schaeffler India's main owner sold a 6.5% stake in a large single trade worth about ₹3,549 crore. Several major mutual funds and the National Pension System bought shares in the same session, absorbing a significant portion of the sale.",
+   "why": "This matters because a large sale by the main owner can sometimes signal a change in strategy or create selling pressure, while the buying by large institutions shows they are willing to take those shares at the current price.",
+   "upside": "The fact that multiple large institutional investors bought shares suggests they see value in the company at this price.",
+   "downside": "The main owner is reducing their holding, which could lead to further selling in the future or signal less confidence in the company's near-term outlook.",
+   "watch": [
+    "Whether the main owner sells more shares in the coming weeks",
+    "How the stock price reacts to the large block deal",
+    "Future announcements from the company regarding its strategy"
+   ],
+   "about": "Schaeffler India is a company in the automobile and auto components sector.",
+   "basis": "8f975c993ba7",
+   "items": 16,
+   "updated": "2026-11-27T04:10+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "MEDANTA": {
    "summary": "PulsEdge flagged a series of large block and bulk trades in Global Health Ltd. on 25 Nov, with both buying and selling by major investors at ₹1,460 per share. The healthcare sector index rose 2.1% in the last session.",
    "why": "These institutional trades can move the stock and signal how investors view the company's prospects.",
@@ -378,6 +378,37 @@
    "items": 9,
    "updated": "2026-11-25T19:23+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "LGEINDIA": {
+   "summary": "LG Electronics India’s promoter, LG Electronics Inc., is selling up to 2% of its equity, including a bulk deal of 13.6 million shares worth about ₹2,396 crore, which caused the stock to fall around 3%.",
+   "why": "The increase in share supply can put downward pressure on the price for current shareholders, while the sale is aimed at meeting a regulatory public‑float requirement.",
+   "upside": "A broader market rally could offset the price pressure from the share sale.",
+   "downside": "Further insider selling, a larger block deal, or the impact of proposed US tariffs on Indian exports could push the stock lower.",
+   "watch": [
+    "Execution and size of the promoter’s 2% stake sale",
+    "Any additional bulk or block deals by LG Electronics Inc.",
+    "Progress on US tariff proposals affecting export‑focused firms"
+   ],
+   "about": "LG Electronics India Ltd. manufactures and sells consumer electronics and appliances in India.",
+   "basis": "248f0fead60a",
+   "items": 8,
+   "updated": "2026-11-27T04:10+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "IIFL": {
+   "summary": "PulsEdge flagged that large investors recently made big trades in IIFL Finance Ltd. Smallcap World Fund sold shares worth about 337 crore rupees, while UBS AG bought shares worth about 259 crore rupees in a single trade.",
+   "why": "Big-investor trades can show confidence or a lack of it, though one trade on its own is not a trend.",
+   "upside": "Large investors buying shares can be a sign of confidence in the company.",
+   "downside": "Large investors selling shares can mean they see less upside, or just need the cash.",
+   "watch": [
+    "Further bulk or block deals by large investors",
+    "Movement in the Financial Services sector index"
+   ],
+   "about": "IIFL Finance Ltd. is a financial services company included in the Nifty 500 index.",
+   "basis": "433cc7c30920",
+   "items": 2,
+   "updated": "2026-11-27T04:10+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "EXIDEIND": {
    "summary": "Exide Industries announced it will acquire another company and also increase investment in its wholly‑owned subsidiary Exide Energy Solutions. The auto sector index rose 1.2% in the last session and 3.8% over five sessions.",
@@ -427,22 +458,6 @@
    "updated": "2026-11-24T18:25+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "OIL": {
-   "summary": "Oil India is navigating higher global oil prices and a weaker Indian rupee, while the oil‑gas sector posted modest gains.",
-   "why": "Shareholders feel the impact of oil price swings on revenue and the rupee’s weakness on import costs and financing.",
-   "upside": "If oil prices stay high, Oil India could see stronger earnings from higher sale prices.",
-   "downside": "A continued rupee decline and possible RBI rate hikes could raise costs and pressure profits.",
-   "watch": [
-    "Brent crude price trends (e.g., > $95 per barrel)",
-    "Rupee movement against the dollar (around 92.40)",
-    "RBI monetary policy decisions (rate‑hike prospects)"
-   ],
-   "about": "Oil India Ltd. explores, produces and markets oil and natural gas in India.",
-   "basis": "9a4c7f63e8c6",
-   "items": 22,
-   "updated": "2026-11-26T19:22+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "WIPRO": {
    "summary": "Wipro shares jumped after the IT company signed a major strategic partnership with global energy firm BP to transform finance operations. Around 3,000 BP employees are set to join Wipro under this new operating model. Meanwhile, Indian IT stocks have risen despite US tariff threats.",
    "why": "This matters because large contracts show that major global clients trust the company for future business. However, potential US tariffs and trade policies could impact companies that sell abroad.",
@@ -491,22 +506,6 @@
    "updated": "2026-11-26T11:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "SCHAEFFLER": {
-   "summary": "Schaeffler India’s main promoter is selling about 6.5% of its stake (1.02 crore shares) and its parent, Schaeffler AG, is likely to off‑load another 6% stake at a discount. Both sales could add supply to the market.",
-   "why": "Shareholder selling can pressure the share price and affect existing investors.",
-   "upside": "If the market absorbs the share sales without a sharp price drop, the stock could remain stable.",
-   "downside": "Large block sales and possible dilution could push the share price lower.",
-   "watch": [
-    "Further promoter or parent share disposals",
-    "Market reaction to the ₹3,400‑per‑share block deal",
-    "Performance of the auto sector index"
-   ],
-   "about": "Schaeffler India makes automotive and auto‑component products.",
-   "basis": "0afcb86261f9",
-   "items": 2,
-   "updated": "2026-11-26T16:58+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "FINCABLES": {
    "summary": "Finolex Cables saw a block trade on Nov 25 where ORBITELECTRICALS PRIVATE LIMITED bought about 4.6 lakh shares worth ₹53 crore, while ARUNA MUKESH KATARA sold the same amount at ₹1,159 per share.",
    "why": "Large investors buying or selling can signal confidence or concern, which matters to current shareholders.",
@@ -539,21 +538,37 @@
    "updated": "2026-11-24T15:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "LGEINDIA": {
-   "summary": "LG Electronics India’s promoter is planning to sell up to 2% of its shares, worth about ₹2,320 crore, to meet public‑shareholding rules, which pushed the stock down about 3%. At the same time, proposed high US taxes on Indian goods could affect exporters like LG.",
-   "why": "The extra share supply may pressure the price for current investors, and any export‑related tax could reduce earnings.",
-   "upside": "A broader market rally could offset the price pressure from the share sale.",
-   "downside": "The promoter’s block sale and possible US tariffs could weigh on the share price.",
+  "ALKEM": {
+   "summary": "PulsEdge flagged a large block deal where an investor sold about ₹182 crore of Alkem Laboratories shares. On the same day, three major mutual funds bought a combined total of ₹144 crore in the stock.",
+   "why": "These trades show that large investors are actively trading the stock, which can affect its price and liquidity. The mix of buying and selling suggests different views on the company's value.",
+   "upside": "The interest from major mutual funds like ICICI Prudential, Nippon India, and HDFC indicates that some large investors see value in the stock.",
+   "downside": "The significant sale by a single investor could signal a lack of confidence or a need for cash, which might weigh on the share price.",
    "watch": [
-    "Execution of the 2% promoter stake sale",
-    "Progress on US high‑tax proposals for Indian exports",
-    "Movement in the Consumer Durables index"
+    "Future block deals to see if the buying or selling trend continues",
+    "The performance of the Healthcare sector index",
+    "Any new disclosures from the company regarding its operations"
    ],
-   "about": "LG Electronics India Ltd. designs, manufactures and sells consumer electronics and appliances in India.",
-   "basis": "33fcc8aac299",
-   "items": 6,
-   "updated": "2026-11-26T09:46+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Alkem Laboratories is a healthcare company listed in the Nifty 500 index.",
+   "basis": "446e416a7543",
+   "items": 1,
+   "updated": "2026-11-27T04:10+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "OIL": {
+   "summary": "Oil India Ltd. is facing mixed signals as global oil prices have recently risen due to supply concerns in the Middle East, while the Indian rupee has weakened against the dollar. This combination makes imported oil more expensive, which can impact costs for companies in the sector, though the broader Indian stock market saw a strong rally in the same period.",
+   "why": "For a shareholder, rising oil prices can boost company profits, but a weaker rupee increases the cost of any imported fuel or equipment, potentially squeezing margins. Additionally, if high oil prices lead to higher interest rates, borrowing costs for the company may increase.",
+   "upside": "Higher global oil prices could lead to increased revenue and profits for the company if it can manage its costs effectively.",
+   "downside": "A continued weakening of the rupee makes imported oil more expensive, and potential interest rate hikes could increase the company's borrowing costs.",
+   "watch": [
+    "Changes in global oil prices due to Middle East supply issues",
+    "The value of the Indian rupee against the US dollar",
+    "Decisions by the Reserve Bank of India regarding interest rates"
+   ],
+   "about": "Oil India Ltd. is a company in the Oil Gas & Consumable Fuels sector.",
+   "basis": "9f5b98172dc8",
+   "items": 19,
+   "updated": "2026-11-27T04:10+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "ZYDUSLIFE": {
    "summary": "Zydus Lifesciences has received FDA responses for its U.S. subsidiary’s drug and API plant, earned an EIR for a new factory in Ahmedabad, set up a wholly‑owned Australian subsidiary, and announced acquisitions of new companies.",
@@ -601,6 +616,22 @@
    "basis": "4608cb20f425",
    "items": 4,
    "updated": "2026-11-26T15:45+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "AMBER": {
+   "summary": "Amber Enterprises India Ltd. announced a partnership for a 500 crore rupee investment to expand its circuit board manufacturing in Tamil Nadu. This expansion is planned to happen over five years starting in 2027. A research firm also recently added the company to its list of high-conviction stocks.",
+   "why": "This matters because the company is planning to increase its production capacity, which could lead to higher sales and profits in the future. However, the benefits will not be immediate as the project starts in 2027.",
+   "upside": "The new investment could boost future revenue by allowing the company to produce more circuit boards.",
+   "downside": "There is a risk that the five-year expansion plan may face delays or fail to deliver the expected results.",
+   "watch": [
+    "Updates on the progress of the Tamil Nadu factory expansion.",
+    "How the partnership with Ascent Circuits develops.",
+    "Performance of the Consumer Durables sector index."
+   ],
+   "about": "Amber Enterprises India Ltd. is a company in the Consumer Durables sector that manufactures circuit boards.",
+   "basis": "b69327ec544b",
+   "items": 3,
+   "updated": "2026-11-27T04:10+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "CIPLA": {
@@ -682,22 +713,6 @@
    "items": 2,
    "updated": "2026-11-26T16:01+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "AMBER": {
-   "summary": "Amber Enterprises India Ltd. announced a ₹500 crore expansion investment in Tamil Nadu to enhance PCB manufacturing over five years starting 2027. The deal involves Ascent Circuits, a subsidiary of IL JIN Electronics.",
-   "why": "Shareholders should note that the expansion could increase production capacity and future sales, potentially impacting earnings.",
-   "upside": "If the expansion proceeds smoothly, it could boost production and revenue.",
-   "downside": "Execution risk over the five-year period could delay or increase costs.",
-   "watch": [
-    "Completion of the ₹500 crore investment plan",
-    "Progress of the new factory in Tamil Nadu",
-    "Updates on the partnership with Ascent Circuits"
-   ],
-   "about": "Amber Enterprises India Ltd. is a consumer durables company.",
-   "basis": "17345f24d002",
-   "items": 2,
-   "updated": "2026-11-26T14:00+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "ADANIPOWER": {
    "summary": "Adani Power and another Adani firm are planning to raise at least Rs 2,000 crore by issuing public bonds. The government is also said to be preparing a Rs 50,000 crore scheme to support power distribution companies, which could affect Adani Power’s sales.",
@@ -812,20 +827,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "BANKINDIA": {
-   "summary": "Bank of India announced a strike notice and is watching RBI policy moves as the central bank may raise rates while bond prices have been volatile.",
-   "why": "A strike could temporarily hit operations and earnings, while rate changes and bond market shifts affect the bank’s margins.",
-   "upside": "If the RBI continues buying dollars, a stronger rupee could boost the bank’s foreign‑exchange business.",
-   "downside": "A prolonged strike or higher rates that slow the economy could pressure earnings.",
+   "summary": "Bank of India faces a possible employee strike that could temporarily affect its operations and earnings. At the same time, broader economic factors like inflation risks, oil price shifts, and potential central bank rate changes are in focus.",
+   "why": "For someone who owns shares, these updates touch on day-to-day business operations and wider economic conditions that can influence the banking sector.",
+   "upside": "RBI dollar purchases and foreign-exchange activities could potentially benefit banks with foreign-exchange operations.",
+   "downside": "A prolonged strike could affect earnings, while persistent inflation might force the central bank to tighten policy.",
    "watch": [
-    "Strike developments",
-    "RBI’s next rate decision",
-    "Bond yield movements"
+    "Updates regarding the bank employee strike and its impact on operations",
+    "Announcements from the central bank on interest rates and inflation",
+    "Global oil price movements and their effect on the economy"
    ],
-   "about": "Bank of India is a commercial bank offering banking and financial services in India.",
-   "basis": "9c7426e6835f",
-   "items": 8,
-   "updated": "2026-11-26T11:15+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Bank of India is a financial services company included in India's Nifty 500 index.",
+   "basis": "67eddb3f829e",
+   "items": 9,
+   "updated": "2026-11-27T04:10+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "SIEMENS": {
    "summary": "Siemens Ltd. said its profitability is being squeezed by volatile commodity prices and foreign‑exchange movements, keeping margins stressed. Meanwhile, its energy subsidiary posted a strong profit jump and declared a dividend, which could draw interest but also lead to profit‑taking.",
@@ -939,6 +954,22 @@
    "updated": "2026-11-25T10:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "POONAWALLA": {
+   "summary": "Poonawalla Fincorp issued ₹500 crore of 9.15% non‑convertible debentures that mature in November 2031, adding new debt to its balance sheet. The Financials sector index fell 2.5% in the last session but was up 0.5% over the past five sessions.",
+   "why": "The new debt increases leverage, which could affect earnings and therefore share value for existing investors.",
+   "upside": "If the capital raised from the debentures is deployed effectively, it could support earnings growth.",
+   "downside": "Higher debt levels may pressure earnings and cash flow.",
+   "watch": [
+    "Interest payment schedule and cash‑flow impact of the 9.15% debentures",
+    "Sector index performance and broader financial market trends",
+    "Any updates on how the raised capital is being utilized"
+   ],
+   "about": "Poonawalla Fincorp Ltd. is an Indian financial services company.",
+   "basis": "6e20b50a153a",
+   "items": 2,
+   "updated": "2026-11-25T12:45+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "ENGINERSIN": {
    "summary": "Engineers India Ltd (ENGINERSIN) is currently listed in the Nifty 500, which tracks India’s 500 largest listed companies. No recent company‑specific announcements have been flagged by PulsEdge. The stock remains part of the broader construction sector.",
    "why": "Being in the Nifty 500 means the company is exposed to index‑linked investment flows, which can affect its share price.",
@@ -985,22 +1016,6 @@
    "basis": "e27cb3ba7416",
    "items": 2,
    "updated": "2026-11-26T08:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "POONAWALLA": {
-   "summary": "Poonawalla Fincorp issued ₹500 crore of 9.15% non‑convertible debentures that mature in November 2031, adding new debt to its balance sheet. The Financials sector index fell 2.5% in the last session but was up 0.5% over the past five sessions.",
-   "why": "The new debt increases leverage, which could affect earnings and therefore share value for existing investors.",
-   "upside": "If the capital raised from the debentures is deployed effectively, it could support earnings growth.",
-   "downside": "Higher debt levels may pressure earnings and cash flow.",
-   "watch": [
-    "Interest payment schedule and cash‑flow impact of the 9.15% debentures",
-    "Sector index performance and broader financial market trends",
-    "Any updates on how the raised capital is being utilized"
-   ],
-   "about": "Poonawalla Fincorp Ltd. is an Indian financial services company.",
-   "basis": "6e20b50a153a",
-   "items": 2,
-   "updated": "2026-11-25T12:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ENDURANCE": {

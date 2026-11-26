@@ -1,6 +1,6 @@
 {
- "date": "2026-11-26",
- "updated": "2026-11-26T19:23:02+05:30",
+ "date": "2026-11-27",
+ "updated": "2026-11-27T04:12:05+05:30",
  "sentiment": "Neutral",
  "breadth": {
   "up": 1,
@@ -10,11 +10,11 @@
   {
    "title": "GIFT Nifty - opening indication",
    "dir": "flat",
-   "value": "26,014.5 · -18 pts (-0.07%) · flat start indicated",
+   "value": "26,032.0 · +3 pts (+0.01%) · flat start indicated",
    "detail": [
     "Nifty 50 last close 25,884.50 (+0.25%)",
-    "Implied open near 25,866",
-    "Against Nifty futures' last close 26,033.0"
+    "Implied open near 25,887",
+    "Against Nifty futures' last close 26,029.4"
    ]
   },
   {
@@ -25,7 +25,7 @@
     "Dow 50,182.95 +0.33%",
     "S&P 7,182.78 -0.25%",
     "Nasdaq 23,585.80 -0.62%",
-    "Nasdaq futures now +0.81%"
+    "Nasdaq futures now +0.46%"
    ]
   },
   {
@@ -39,18 +39,20 @@
   },
   {
    "title": "DXY + USDINR move",
-   "dir": "down",
-   "value": "Rupee under pressure",
+   "dir": "flat",
+   "value": "No major currency pressure",
    "detail": [
-    "DXY 103.68 -0.01%",
-    "USD/INR 92.540 +0.35%"
+    "DXY 103.76 +0.06%",
+    "USD/INR 92.435 +0.00%"
    ]
   },
   {
    "title": "Brent crude level",
-   "dir": "flat",
-   "value": "$91.34 +0.77%",
-   "detail": []
+   "dir": "down",
+   "value": "$91.67 +1.14%",
+   "detail": [
+    "Rising crude hurts India (OMCs, paints, aviation); helps upstream"
+   ]
   },
   {
    "title": "India VIX",
@@ -59,36 +61,37 @@
    "detail": []
   }
  ],
- "summary": "Neutral setup. GIFT Nifty: flat start indicated (-18 pts); NASDAQ closed 0.62% lower; IT may open soft.",
+ "summary": "Neutral setup. GIFT Nifty: flat start indicated (+3 pts); Brent up 1.14% — pressure on OMCs, paints and aviation.",
  "global_cues": [
-  "GIFT Nifty: flat start indicated (-18 pts)",
+  "GIFT Nifty: flat start indicated (+3 pts)",
+  "Brent up 1.14% — pressure on OMCs, paints and aviation",
   "NASDAQ closed 0.62% lower; IT may open soft",
   "Nikkei up, Hang Seng up"
  ],
  "india_triggers": [
-  "141 filings and headlines worth a look so far today"
+  "3 filings and headlines worth a look so far today"
  ],
  "focus": [
   {
-   "symbol": "EXIDEIND",
-   "note": "Exide Industries Limited: EXIDE INDUSTRIES LIMITED has informed the Ex"
-  },
-  {
-   "symbol": "CIPLA",
-   "note": "Can Trump's tariffs fast-track India-US trade deal? Jefferies decodes "
-  },
-  {
-   "symbol": "DALBHARAT",
-   "note": "Dalmia Bharat Limited: Dalmia Bharat Limited has informed the Exchange"
+   "symbol": "ACMESOLAR",
+   "note": "Acme Solar Holdings Limited: ACME Solar Holdings Limited has informed "
   }
  ],
  "sector_tags": [
+  {
+   "label": "Upstream oil",
+   "tone": "positive"
+  },
+  {
+   "label": "OMCs",
+   "tone": "negative"
+  },
   {
    "label": "IT",
    "tone": "watch"
   }
  ],
- "key_risk": "",
+ "key_risk": "A further crude spike would hit OMCs and widen the INR move",
  "also": [
   {
    "name": "BANK NIFTY",
@@ -97,13 +100,13 @@
   },
   {
    "name": "S&P FUT",
-   "value": "7,252",
-   "change": 0.78
+   "value": "7,234",
+   "change": 0.54
   },
   {
    "name": "NASDAQ FUT",
-   "value": "26,312",
-   "change": 0.81
+   "value": "26,221",
+   "change": 0.46
   },
   {
    "name": "KOSPI",
@@ -112,13 +115,13 @@
   },
   {
    "name": "WTI",
-   "value": "84.60",
-   "change": 1.1
+   "value": "84.91",
+   "change": 1.47
   },
   {
    "name": "GOLD",
-   "value": "3,571",
-   "change": -0.5
+   "value": "3,566",
+   "change": -0.64
   },
   {
    "name": "US 10Y",
