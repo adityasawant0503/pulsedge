@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T11:46:05+05:30",
+ "updated": "2026-11-26T12:01:40+05:30",
  "summary": {
-  "calls": 2288,
-  "scored_calls": 1075,
+  "calls": 2293,
+  "scored_calls": 1080,
   "d1": {
    "scored": 870,
    "hits": 384,
@@ -26,6 +26,51 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "e9c3c37ddc0171fb",
+   "symbol": "HDFCBANK",
+   "time": "2026-11-26T11:48:34+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "HDFC Bank vaults 30% from Oct low; surpasses Airtel in market cap ranking",
+   "url": "https://www.business-standard.com/markets/news/hdfc-bank-share-price-hdfc-bank-vaults-30-from-oct-low-surpasses-airtel-in-market-cap-ranking-126112600392_1.html",
+   "alert_px": 866.8,
+   "alert_move": 2.43,
+   "alert_at": "2026-11-26T12:00:48+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "95ee8fabbff7e492",
+   "symbol": "INFY",
+   "time": "2026-11-26T11:44:18+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "TCS, Wipro, Infosys to HCL Tech shares: Why are Indian IT stocks skyrocketing despite Trump's tariffs threat? Explained",
+   "url": "https://www.livemint.com/market/stock-market-news/tcs-wipro-infosys-to-hcl-tech-shares-why-are-indian-it-stocks-skyrocketing-despite-trumps-tariffs-threat-explained-11795669887567.html",
+   "alert_px": 1158.1,
+   "alert_move": 2.49,
+   "alert_at": "2026-11-26T12:00:48+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "95ee8fabbff7e492",
+   "symbol": "TCS",
+   "time": "2026-11-26T11:44:18+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "TCS, Wipro, Infosys to HCL Tech shares: Why are Indian IT stocks skyrocketing despite Trump's tariffs threat? Explained",
+   "url": "https://www.livemint.com/market/stock-market-news/tcs-wipro-infosys-to-hcl-tech-shares-why-are-indian-it-stocks-skyrocketing-despite-trumps-tariffs-threat-explained-11795669887567.html",
+   "alert_px": 2548.5,
+   "alert_move": 1.24,
+   "alert_at": "2026-11-26T12:00:48+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "6105462573268b28",
    "symbol": "ANGELONE",
@@ -435,6 +480,21 @@
    "alert_delay": 900
   },
   {
+   "id": "b345d72544ae70aa",
+   "symbol": "MCX",
+   "time": "2026-11-26T08:14:21+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Gold gains 2%, silver rallies 4% on MCX; ETFs surge up to 6%: Gold Silver Rates Live Updates",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/url-live-updates-gold-rate-today-26th-november-24k-22k-20k-18-carat-mcx-gold-silver-price-in-delhi-hyderabad-chennai-bengaluru-citywise/liveblog/136176736.cms",
+   "alert_px": 3771.8,
+   "alert_move": 5.8,
+   "alert_at": "2026-11-26T12:00:48+05:30",
+   "alert_delay": 900
+  },
+  {
    "id": "a3e1acda9afe4ff3",
    "symbol": "OIL",
    "time": "2026-11-26T08:13:43+05:30",
@@ -480,6 +540,21 @@
    "alert_px": 2729.6,
    "alert_move": 0.39,
    "alert_at": "2026-11-26T11:00:41+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "b278eb93381215a9",
+   "symbol": "MCX",
+   "time": "2026-11-26T08:01:30+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Sensex off day's high but up 200 pts; MCX, KFin Tech top SMID gainers",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-26-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-ipo-today-126112600049_1.html",
+   "alert_px": 3771.8,
+   "alert_move": 5.8,
+   "alert_at": "2026-11-26T12:00:48+05:30",
    "alert_delay": 900
   },
   {

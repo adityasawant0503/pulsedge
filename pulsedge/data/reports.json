@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T11:45+05:30",
+ "updated": "2026-11-26T12:00+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -155,22 +155,6 @@
    "updated": "2026-11-26T11:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "DALBHARAT": {
-   "summary": "Dalmia Bharat announced a ₹700 crore share buyback of up to 3.78 million shares, and the stock traded flat after the news.",
-   "why": "The buyback could lift earnings per share and support the share price, directly affecting shareholders.",
-   "upside": "If the buyback is completed on schedule, earnings per share may improve and the stock could get price support.",
-   "downside": "If the buyback is delayed or not fully subscribed, the expected benefits may not materialise.",
-   "watch": [
-    "Buyback execution and subscription levels",
-    "Company’s quarterly earnings and profit trends",
-    "Overall market reaction to the buyback announcement"
-   ],
-   "about": "Dalmia Bharat Ltd. manufactures construction materials such as cement.",
-   "basis": "17de11ab659f",
-   "items": 2,
-   "updated": "2026-11-26T10:45+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "ENRIN": {
    "summary": "Siemens Energy India reported strong growth in its second quarter, with revenue rising to 34.5 billion rupees from 26.5 billion rupees in the same period last year. The company also saw increases in profit and EBITDA.",
    "why": "Stronger financial results can make the company more attractive to investors, potentially supporting the share price. However, future expectations may not match this recent performance.",
@@ -251,6 +235,22 @@
    "updated": "2026-11-26T08:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "DALBHARAT": {
+   "summary": "Dalmia Bharat approved a ₹700 crore share buyback of up to 3.78 million shares, aiming to boost earnings per share and support the stock price.",
+   "why": "Share buybacks can raise earnings per share and may help sustain the share price, directly affecting shareholders' value.",
+   "upside": "If the buyback is fully subscribed on schedule, earnings per share could improve and the stock may receive price support.",
+   "downside": "If the buyback is delayed or not fully subscribed, the anticipated earnings boost and price support may not materialise.",
+   "watch": [
+    "Progress of the buyback execution",
+    "Subscription levels of the buyback",
+    "Any changes to the buyback timeline or amount"
+   ],
+   "about": "Dalmia Bharat manufactures construction materials.",
+   "basis": "6ef666614141",
+   "items": 1,
+   "updated": "2026-11-26T12:00+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "ACMESOLAR": {
    "summary": "Acme Solar Holdings has started operating new battery energy storage systems in Rajasthan. This move increases its total operational capacity to 193.63 MW.",
    "why": "These new systems allow the company to generate income from storing and selling energy, which is a key part of its business operations.",
@@ -300,35 +300,35 @@
    "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel is restructuring its deal to buy a 9.91% stake in APL Apollo Tubes for about ₹5,825 crore. The company says it is open to discussing a restructuring plan with APL Apollo. Shares fell more than 2% on the day, moving against the broader market trend.",
-   "why": "This matters because the large purchase and potential debt could affect the company's cash and future earnings. Investors are watching how this deal impacts Tata Steel's financial health.",
-   "upside": "The strategic benefits of the deal may materialise later, potentially limiting downside.",
-   "downside": "The deal may not materialise, face regulatory hurdles, or involve asset sales that strain finances.",
+   "summary": "Tata Steel is in talks to restructure and tweak its deal with APL Apollo after buying a 9.91% stake for about ₹5,825 crore. The company’s shares fell more than 2% even as the broader market rose, and investors are watching valuation and debt concerns linked to the transaction.",
+   "why": "The outcome of the APL Apollo deal could affect Tata Steel’s cash position, debt load and future earnings, which matters to shareholders.",
+   "upside": "If the restructuring and deal are completed smoothly, Tata Steel could strengthen its balance sheet and capture strategic benefits.",
+   "downside": "The transaction could fall through, face regulatory hurdles, or increase debt pressure, which could weigh on the share price.",
    "watch": [
-    "Updates on the restructuring plan with APL Apollo",
-    "Regulatory approval for the deal",
-    "Changes in the Metals sector index"
+    "Progress on restructuring talks with APL Apollo",
+    "Final terms of the APL Apollo deal",
+    "Impact on Tata Steel’s debt and valuation"
    ],
-   "about": "Tata Steel is a large Indian company in the Metals & Mining sector.",
-   "basis": "4ee9209f639a",
-   "items": 11,
-   "updated": "2026-11-26T10:15+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Tata Steel Ltd. is one of India’s largest steel manufacturers, listed in the Nifty 50 index.",
+   "basis": "e57ee2ddf762",
+   "items": 10,
+   "updated": "2026-11-26T12:00+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "APLAPOLLO": {
-   "summary": "Tata Steel bought a 9.91% stake in APL Apollo Tubes for about ₹5,825 crore, triggering a sharp 15% share price fall and broker downgrades. At the same time, Smallcap World Fund sold ₹434 crore of shares in a bulk deal and the stock hit a 52‑week low.",
-   "why": "The new large shareholder and recent sell‑off could affect the company’s cash flow, control and future earnings, which matters to existing investors.",
-   "upside": "If Tata Steel’s investment brings strategic synergies and the market views the low price as a buying chance, the share could recover.",
-   "downside": "The high cost of the Tata Steel deal, broker downgrades and further institutional selling could keep pressure on the share price.",
+   "summary": "APL Apollo Tubes saw Tata Steel buy a 9.91% stake for about ₹5,825 crore, triggering a 15% share drop to a 52‑week low, and a large investor sold ₹434 crore of shares in a bulk deal.",
+   "why": "The stake purchase changes ownership and may affect future earnings, while the bulk sale adds selling pressure on the stock.",
+   "upside": "If the partnership with Tata Steel brings operational synergies, earnings could improve.",
+   "downside": "High deal cost and broker downgrades could keep the share price under pressure.",
    "watch": [
-    "How Tata Steel integrates its stake and any execution updates",
-    "Additional bulk or block trades by large investors",
-    "Future broker rating changes or analyst reports"
+    "Tata Steel’s integration and any further stake changes",
+    "Future broker rating actions",
+    "Additional bulk or block trades involving large investors"
    ],
-   "about": "APL Apollo Tubes Ltd. manufactures steel tubes and other capital‑goods products.",
-   "basis": "db4cefc8025b",
-   "items": 6,
-   "updated": "2026-11-26T10:30+05:30",
+   "about": "APL Apollo Tubes manufactures steel tubes and related products.",
+   "basis": "2f2b100eebaa",
+   "items": 4,
+   "updated": "2026-11-26T12:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "INDIANB": {
@@ -444,19 +444,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "WIPRO": {
-   "summary": "Wipro signed a strategic partnership with BP to run its finance operations, bringing about 3,000 BP staff under a new model that starts in 2027. At the same time, the US is proposing higher taxes on Indian exports, which could affect companies that sell abroad.",
-   "why": "The BP deal could boost Wipro's long‑term revenue, while the proposed US tariffs may pressure its export‑related earnings.",
-   "upside": "If the BP partnership generates new business, Wipro could see stronger revenue growth.",
-   "downside": "Delayed revenue from the 2027 rollout and possible profit cuts from US export taxes could hurt earnings.",
+   "summary": "Wipro has signed a strategic partnership with BP to revamp BP’s finance operations, bringing about 3,000 BP staff into Wipro’s fold, with the new model set to start in 2027. The broader Indian IT sector has been rising despite US tariff concerns.",
+   "why": "Shareholders care because the BP deal could add stable, long‑term revenue, but the benefits may not appear until after 2027.",
+   "upside": "The partnership could generate revenue sooner than planned or attract similar large contracts.",
+   "downside": "Revenue from the BP deal may be delayed until the 2027 rollout, and any change in US tariff policy could hurt sentiment.",
    "watch": [
-    "Progress on the BP finance‑operations partnership and its 2027 start date",
-    "Developments on US tariff proposals for Indian goods",
-    "Performance of the Indian IT sector index"
+    "BP partnership implementation timeline and revenue impact",
+    "US tariff policy changes affecting exporters",
+    "Movement of the Indian IT sector index"
    ],
-   "about": "Wipro Ltd. provides information technology services and consulting.",
-   "basis": "15a3d0adf837",
-   "items": 3,
-   "updated": "2026-11-26T11:30+05:30",
+   "about": "Wipro provides information technology services and consulting.",
+   "basis": "0782c3c3432b",
+   "items": 4,
+   "updated": "2026-11-26T12:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "SUZLON": {
@@ -714,22 +714,6 @@
    "updated": "2026-11-26T11:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "BSE": {
-   "summary": "BSE shares recently hit a four-month high after a major brokerage firm raised its recommendation for the stock. The company is part of a group of large Indian companies that have seen significant price increases in 2026.",
-   "why": "This matters to share owners because positive analyst opinions and strong market trends can increase the value of their holdings, though past performance does not guarantee future results.",
-   "upside": "Continued strong performance in the financial sector and positive analyst sentiment could support further price growth.",
-   "downside": "The recent price rise may already reflect the good news, and the rally could reverse if company earnings disappoint investors.",
-   "watch": [
-    "Upcoming earnings reports to see if business results match expectations",
-    "Overall movement of the Financials sector index",
-    "Whether the stock maintains its recent high levels"
-   ],
-   "about": "BSE Ltd. is a company in the Financial Services sector and is one of India's 50 largest listed companies.",
-   "basis": "0031855f5837",
-   "items": 4,
-   "updated": "2026-11-26T11:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "SIEMENS": {
    "summary": "Siemens Ltd. said its profitability is being squeezed by volatile commodity prices and foreign‑exchange movements, keeping margins stressed. Meanwhile, its energy subsidiary posted a strong profit jump and declared a dividend, which could draw interest but also lead to profit‑taking.",
    "why": "Higher input costs and currency swings can cut earnings, affecting share value, while the dividend and energy‑unit earnings may support investor sentiment.",
@@ -761,6 +745,22 @@
    "items": 4,
    "updated": "2026-11-25T15:15+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "BSE": {
+   "summary": "BSE shares have risen significantly in 2026, reaching a four-month high recently. A major brokerage firm recently upgraded its recommendation for the stock, citing expectations for good business ahead.",
+   "why": "This matters to shareholders because positive analyst opinions and strong price trends can influence investor confidence and the stock's market value.",
+   "upside": "The stock may continue to attract investor interest if the company's business performance matches the positive expectations set by analysts.",
+   "downside": "The recent price increase might already reflect the good news, and the rally could reverse if the company's actual earnings disappoint investors.",
+   "watch": [
+    "Whether the stock price stabilizes after the recent jump.",
+    "Upcoming earnings reports to see if business results match expectations.",
+    "General trends in the Financial Services sector."
+   ],
+   "about": "",
+   "basis": "75a0ed38bf11",
+   "items": 3,
+   "updated": "2026-11-26T12:00+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "CGCL": {
    "summary": "Capri Global Capital Ltd. raised $30 million from the BlueOrchard Microfinance Fund, its first impact‑fundraise. The funding was announced on November 25, 2026.",
@@ -842,38 +842,6 @@
    "updated": "2026-11-25T10:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "ICICIBANK": {
-   "summary": "ICICI Bank shares jumped about 4% to a record high, leading a broader rally in bank stocks, but analysts note that valuation concerns favor peers like HDFC and Axis.",
-   "why": "Shareholders see rapid price gains that could reverse quickly, especially if earnings miss expectations or market sentiment shifts.",
-   "upside": "If the broader market stays strong and earnings meet forecasts, the stock could keep its upward momentum.",
-   "downside": "A short‑term pullback is possible if earnings disappoint or the financial sector’s recent decline drags the share lower.",
-   "watch": [
-    "Valuation comparison with HDFC and Axis banks",
-    "Financials sector index movement (-2.5% last session)",
-    "Overall market trends in Sensex and Nifty"
-   ],
-   "about": "ICICI Bank Ltd. is a leading Indian bank providing a range of financial services.",
-   "basis": "c7a8baf5e07b",
-   "items": 4,
-   "updated": "2026-11-25T12:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "HINDALCO": {
-   "summary": "Hindalco announced the re-appointment of its Managing Director and the appointment of a new Deputy Managing Director. The stock recently contributed to a broader market dip, with the metals sector falling significantly over the last week.",
-   "why": "Leadership changes can affect how the company is run, while the recent drop in the metals sector shows that Hindalco's share price is sensitive to wider industry trends.",
-   "upside": "The company has secured its leadership team for the coming years, which may provide operational stability.",
-   "downside": "The metals sector has fallen sharply in recent days, which could continue to pressure Hindalco's share price.",
-   "watch": [
-    "How the new Deputy Managing Director integrates into the team",
-    "Whether the metals sector stabilizes after its recent drop",
-    "General market volatility affecting large-cap stocks"
-   ],
-   "about": "Hindalco is a major Indian company in the metals and mining sector.",
-   "basis": "9c6acadb27aa",
-   "items": 4,
-   "updated": "2026-11-26T08:17+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "ENGINERSIN": {
    "summary": "Engineers India Ltd (ENGINERSIN) is currently listed in the Nifty 500, which tracks India’s 500 largest listed companies. No recent company‑specific announcements have been flagged by PulsEdge. The stock remains part of the broader construction sector.",
    "why": "Being in the Nifty 500 means the company is exposed to index‑linked investment flows, which can affect its share price.",
@@ -937,38 +905,6 @@
    "items": 2,
    "updated": "2026-11-25T12:45+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "HDFCBANK": {
-   "summary": "HDFC Bank is being highlighted in recent market commentary, with analysts favoring its valuation relative to peers while it also appears among stocks pulling the Nifty 50 lower. The broader financial sector has posted gains over the past sessions.",
-   "why": "Shareholders could see short‑term price moves from changing demand and from any broader index sell‑off affecting the bank.",
-   "upside": "If the favorable valuation view holds, demand for the bank’s shares could stay strong.",
-   "downside": "Being cited as a drag on the Nifty 50 could pressure the stock if the broader sell‑off continues.",
-   "watch": [
-    "Valuation comparison with ICICI and Axis banks",
-    "Nifty 50 index trend and potential rebound",
-    "Financials sector performance"
-   ],
-   "about": "HDFC Bank Ltd. is a leading Indian commercial bank providing retail and corporate banking services.",
-   "basis": "b9f0381269d8",
-   "items": 2,
-   "updated": "2026-11-26T08:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "AXISBANK": {
-   "summary": "Axis Bank shares have recently contributed to a dip in the Nifty 50 index, though the broader financial sector has shown some recovery. Market experts are currently comparing its value against other major banks like HDFC and ICICI.",
-   "why": "If you own these shares, the recent index weakness may have lowered their price, while expert comparisons could influence short-term buying interest.",
-   "upside": "Experts have noted that Axis Bank may be favorably valued compared to some peers, which could attract investors.",
-   "downside": "The stock has recently weighed on the Nifty 50 index, indicating it may be underperforming the broader market in the short term.",
-   "watch": [
-    "Whether the financial sector's recent positive trend continues",
-    "How Axis Bank's share price reacts to expert comparisons with HDFC and ICICI",
-    "If the Nifty 50 index recovers from its recent dip below 25,500"
-   ],
-   "about": "Axis Bank is a major Indian bank listed in the Nifty 50 index.",
-   "basis": "b9f0381269d8",
-   "items": 2,
-   "updated": "2026-11-26T08:30+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "ENDURANCE": {
    "summary": "Endurance Technologies said it has four new projects starting soon and expects higher profit margins in the coming quarters. The auto sector index has been gaining, up 1.2% in the last session and 3.8% over five sessions.",
@@ -1096,100 +1032,36 @@
    "updated": "2026-11-26T10:00+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "COCHINSHIP": {
-   "summary": "Cochin Shipyard shares recently fell to their lowest point in the past year. This drop happened alongside other major Indian companies hitting similar lows.",
-   "why": "If you own these shares, their value has decreased significantly over the last 12 months. This indicates that the market is currently less confident in the stock's performance.",
-   "upside": "",
-   "downside": "Broader economic pressures could push the share price even lower.",
-   "watch": [
-    "Whether the stock price stabilizes or continues to fall",
-    "General economic conditions affecting the market",
-    "Performance of other large companies in the same index"
-   ],
-   "about": "",
-   "basis": "9236c31ec4fe",
-   "items": 1,
-   "updated": "2026-11-23T15:02+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "INOXINDIA": {
-   "summary": "PulsEdge flagged that INOX India Ltd. is part of the Nifty 500 index, which tracks India's 500 largest listed companies. The company operates in the Capital Goods sector. Recent market news highlighted that other stocks in the broader market fell to 52-week lows, though INOX India was not specifically named in that list.",
-   "why": "Being in the Nifty 500 means the company is one of India's larger listed firms, which can make its shares more visible to investors. However, the recent drop in other major stocks suggests the wider market may be under pressure, which can affect many companies.",
-   "upside": "If the broader market stabilizes, larger companies in the Nifty 500 might recover as investors return to established names.",
-   "downside": "If macroeconomic pressure continues, it could push the prices of large-cap stocks lower, including those in the Nifty 500.",
-   "watch": [
-    "Whether INOX India's share price follows the recent trend of other large stocks hitting 52-week lows.",
-    "General market trends for the Nifty 500 index to see if the broader weakness continues.",
-    "Any specific news about the Capital Goods sector that might affect the company."
-   ],
-   "about": "",
-   "basis": "9236c31ec4fe",
-   "items": 1,
-   "updated": "2026-11-23T15:02+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "INOXWIND": {
-   "summary": "PulsEdge notes that Inox Wind Ltd. remains a constituent of the Nifty 500, India's list of the 500 largest listed companies. No specific corporate events or earnings updates have been reported in the recent headlines.",
-   "why": "Being in the Nifty 500 can affect how institutional funds treat the stock, which matters to current shareholders.",
-   "upside": "If the broader index attracts more passive inflows, Inox Wind could benefit from increased buying pressure.",
-   "downside": "Wider macro‑economic weakness in the capital goods sector could weigh on the stock.",
-   "watch": [
-    "Changes in macro conditions that impact capital goods demand",
-    "Any future Nifty 500 rebalancing that could affect its weight",
-    "Sector‑specific news on wind energy or renewable equipment"
-   ],
-   "about": "",
-   "basis": "9236c31ec4fe",
-   "items": 1,
-   "updated": "2026-11-23T15:02+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "TATAPOWER": {
-   "summary": "PulsEdge flagged Tata Power (TATAPOWER) as hitting a 52‑week low on the BSE. The broader Energy index slipped 0.2% in the last session and over the past five sessions.",
-   "why": "The low price level could affect the value of existing holdings and may signal either a buying chance or deeper weakness.",
-   "upside": "If the price dip reflects temporary pressure, the stock could recover as market sentiment improves.",
-   "downside": "Continued macro‑economic pressure on the energy sector could push the share price lower.",
-   "watch": [
-    "Whether Tata Power sustains its 52‑week low or rebounds",
-    "Further movements in the Energy sector index",
-    "Macro‑economic factors affecting energy stocks"
-   ],
-   "about": "Tata Power is an Indian company that generates and distributes electricity.",
-   "basis": "9236c31ec4fe",
-   "items": 1,
-   "updated": "2026-11-23T15:02+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "MCX": {
-   "summary": "PulsEdge flagged that MCX shares rose about 3% as gold and silver prices jumped, after a recent period of sharp falls in those metals. The exchange’s stock is reacting to the volatility in precious‑metal prices.",
-   "why": "Higher gold and silver prices can boost trading volumes, which may increase MCX’s fee income, affecting shareholders.",
-   "upside": "Sustained or rising precious‑metal prices could keep trading activity strong and lift revenues.",
-   "downside": "A reversal or stabilization of gold and silver prices could dampen trading volumes and pressure earnings.",
+   "summary": "MCX shares rose recently as gold and silver prices rebounded after a sharp drop. The stock gained 3% on the latest day, following a period where falling metal prices had pressured the exchange's outlook.",
+   "why": "The company earns fees from trading commodities, so when gold and silver prices move sharply, trading activity usually increases. This can boost the exchange's revenue and affect the value of its shares.",
+   "upside": "If gold and silver prices remain volatile or continue to rise, trading volumes may stay high, supporting the exchange's income.",
+   "downside": "Commodity prices are unpredictable and can fall again quickly, which would reduce trading activity and lower the fees MCX collects.",
    "watch": [
-    "Gold price movements and related trading volume",
-    "Silver price movements and related trading volume",
-    "Fed rate‑hike expectations influencing commodity markets"
+    "Daily changes in gold and silver prices on MCX",
+    "News about US Federal Reserve interest rate decisions",
+    "Overall trading volumes in precious metals"
    ],
-   "about": "MCX operates a commodity exchange in India, providing a platform for trading futures and options on commodities such as gold and silver.",
-   "basis": "4c11699326d7",
-   "items": 6,
-   "updated": "2026-11-26T11:00+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "MCX is a commodity exchange where people trade contracts on goods like gold and silver.",
+   "basis": "52c55c583068",
+   "items": 8,
+   "updated": "2026-11-26T12:00+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "INFY": {
-   "summary": "Infosys announced its COO became the first in the world to achieve CMMI AI Maturity (AIM) Level 5, highlighting its AI capabilities. At the same time, a stronger Indian rupee is creating margin pressure for Indian IT firms, including Infosys.",
-   "why": "Margin pressure from a strong rupee can shrink profits, while the AI certification may help the company win new business.",
-   "upside": "The AI maturity certification could attract more AI‑related projects and boost future revenue.",
-   "downside": "A continued strong rupee could reduce the value of foreign earnings and squeeze margins.",
+   "summary": "Infosys is riding a rally in Indian IT stocks while the sector faces headwinds from a stronger rupee and US tariff concerns, and the company recently earned a top‑level AI maturity certification.",
+   "why": "Shareholders see sector sentiment lift the stock, but margin pressure from currency strength could affect earnings, and the AI certification may open new business opportunities.",
+   "upside": "The AI maturity certification could help Infosys win more AI‑related contracts.",
+   "downside": "A stronger rupee and potential changes in US tariff policy could compress margins and dampen sentiment.",
    "watch": [
-    "Rupee exchange‑rate movements and their impact on IT margins",
-    "Adoption and revenue from AI services following the certification",
-    "Performance of the Indian IT sector index"
+    "US tariff policy developments",
+    "Rupee strength and margin impact",
+    "Progress in monetising AI capabilities"
    ],
-   "about": "Infosys Ltd. provides IT services, consulting and outsourcing solutions.",
-   "basis": "78ebe710d3c0",
-   "items": 3,
-   "updated": "2026-11-26T11:30+05:30",
+   "about": "Infosys Ltd. provides IT consulting, software development and outsourcing services.",
+   "basis": "472530c462ae",
+   "items": 4,
+   "updated": "2026-11-26T12:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "MINDACORP": {
@@ -1208,6 +1080,22 @@
    "updated": "2026-11-26T09:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "ICICIBANK": {
+   "summary": "ICICI Bank shares jumped about 4% to a record high, riding a broad market rally that lifted the Financials index by over 2%. Analysts are comparing its valuation with HDFC and Axis banks, favoring those peers.",
+   "why": "Shareholders see strong short‑term momentum, but valuation concerns could limit price gains.",
+   "upside": "If the bank’s earnings meet expectations, the rally could extend.",
+   "downside": "A miss on earnings or valuation worries could trigger a price correction.",
+   "watch": [
+    "Valuation relative to HDFC and Axis banks",
+    "Upcoming earnings release",
+    "Overall Bank Nifty and market trend"
+   ],
+   "about": "ICICI Bank Ltd. is a leading Indian bank offering a range of financial services.",
+   "basis": "55558f54ae44",
+   "items": 3,
+   "updated": "2026-11-26T12:00+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "CLEANMAX": {
    "summary": "Clean Max Enviro Energy Solutions has announced it is acquiring another business while also selling off a subsidiary and other assets. These moves happened within the last two days, signaling a major shift in the company's structure.",
    "why": "These changes could alter the company's future earnings and debt levels, which directly affects the value of its shares. The mix of buying and selling makes it hard to predict the immediate financial impact.",
@@ -1223,6 +1111,22 @@
    "items": 3,
    "updated": "2026-11-25T15:15+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "HDFCBANK": {
+   "summary": "HDFC Bank is being highlighted in recent market commentary, with analysts favoring its valuation relative to peers while it also appears among stocks pulling the Nifty 50 lower. The broader financial sector has posted gains over the past sessions.",
+   "why": "Shareholders could see short‑term price moves from changing demand and from any broader index sell‑off affecting the bank.",
+   "upside": "If the favorable valuation view holds, demand for the bank’s shares could stay strong.",
+   "downside": "Being cited as a drag on the Nifty 50 could pressure the stock if the broader sell‑off continues.",
+   "watch": [
+    "Valuation comparison with ICICI and Axis banks",
+    "Nifty 50 index trend and potential rebound",
+    "Financials sector performance"
+   ],
+   "about": "HDFC Bank Ltd. is a leading Indian commercial bank providing retail and corporate banking services.",
+   "basis": "b9f0381269d8",
+   "items": 2,
+   "updated": "2026-11-26T08:30+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "CIPLA": {
    "summary": "Cipla got US FDA approval for its generic Flovent® HFA asthma inhaler, while analysts warn new US import tariffs could affect its earnings; the healthcare index has risen recently.",
@@ -1319,6 +1223,22 @@
    "items": 2,
    "updated": "2026-11-25T10:46+05:30",
    "model": "openai/gpt-oss-20b"
+  },
+  "HINDALCO": {
+   "summary": "Hindalco announced the re-appointment of its Managing Director and the appointment of a new Deputy Managing Director. The stock recently contributed to a broader market dip, with the metals sector falling significantly over the last week.",
+   "why": "Leadership changes can affect how the company is run, while the recent drop in the metals sector shows that Hindalco's share price is sensitive to wider industry trends.",
+   "upside": "The company has secured its leadership team for the coming years, which may provide operational stability.",
+   "downside": "The metals sector has fallen sharply in recent days, which could continue to pressure Hindalco's share price.",
+   "watch": [
+    "How the new Deputy Managing Director integrates into the team",
+    "Whether the metals sector stabilizes after its recent drop",
+    "General market volatility affecting large-cap stocks"
+   ],
+   "about": "Hindalco is a major Indian company in the metals and mining sector.",
+   "basis": "9c6acadb27aa",
+   "items": 4,
+   "updated": "2026-11-26T08:17+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "ANGELONE": {
    "summary": "Angel One Ltd. has seen two senior resignations in quick succession, with a director and a senior manager stepping down. Meanwhile, its Financials sector index has risen about 2% recently.",
