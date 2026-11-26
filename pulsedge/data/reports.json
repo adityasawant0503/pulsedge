@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T12:45+05:30",
+ "updated": "2026-11-26T13:00+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,40 +57,24 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged strong earnings and project updates boosting some stocks, while sugar makers rallied on supply concerns. Export order for Welspun and a new battery storage project added optimism. Bond prices fell as oil prices rose, raising inflation worries. FMCG led sector gains and media lagged behind.",
+  "summary": "Defensive sectors like FMCG and Pharma led the market higher, while foreign investors increased their long positions slightly. Several companies reported strong business updates, including new orders for steel pipes and power infrastructure. However, some stocks faced pressure from large share sales by major investors, such as in the electronics and IT sectors.",
   "themes": [
-   "Corporate earnings and project launches drove share moves",
-   "Commodity supply worries lifted sugar stocks and oil‑price rise pressured bonds",
-   "Foreign fund net‑long position modestly increased"
+   "Defensive sectors like FMCG and Pharma outperformed the broader market.",
+   "Industrial companies announced new contracts and operational milestones.",
+   "Large share sales by major investors weighed on specific stocks."
   ],
   "watch": [
-   "Watch Borosil's ability to meet its sales and margin targets",
-   "Watch progress on Welspun's export order and Acme Solar's battery storage revenue",
-   "Watch RBI's response to rising oil‑driven inflation and its effect on bond yields"
+   "Potential price impact from upcoming block deals in IT and electronics stocks.",
+   "Whether sugar stocks can sustain their recent sharp rise.",
+   "Outcome of the corporate insolvency hearing for Hi-Tech Gears."
   ],
   "date": "2026-11-26",
-  "basis": "cae99b58b59c",
-  "updated": "2026-11-26T12:15+05:30",
-  "model": "openai/gpt-oss-120b",
-  "items": 57
+  "basis": "2bbcccaf4b17",
+  "updated": "2026-11-26T13:00+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 70
  },
  "stocks": {
-  "LENSKART": {
-   "summary": "Lenskart Solutions saw significant trading activity this week, with Goldman Sachs and Societe Generale buying a combined 1% stake worth about ₹920 crore. On the same day, another large investor, Steadview Capital, sold shares worth approximately ₹835 crore in a block deal.",
-   "why": "These large trades indicate that major institutions are actively adjusting their positions in the company, which can influence how other investors perceive the stock's value and stability.",
-   "upside": "The fresh investment by global banks like Goldman Sachs and Societe Generale may signal confidence in the company's future performance.",
-   "downside": "The simultaneous sale of a large stake by Steadview Capital could suggest that some big investors are taking profits or reducing exposure, which might weigh on the share price.",
-   "watch": [
-    "Whether the new buyers hold their stakes or sell them in the near term",
-    "Any further large block deals by institutional investors",
-    "How the stock price reacts to these mixed signals of buying and selling"
-   ],
-   "about": "Lenskart Solutions is a company in the Consumer Services sector that is part of the Nifty 500 index of India's largest listed companies.",
-   "basis": "8017446c43d3",
-   "items": 6,
-   "updated": "2026-11-26T12:45+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "TVSMOTOR": {
    "summary": "TVS Motor Company Ltd. (TVSMOTOR) has announced new business agreements and a non‑binding memorandum of understanding with the Government of Tamil Nadu, which includes a planned investment of ₹2000 crore over four years and creation of 1000 jobs.",
    "why": "Shareholders should note that these agreements could influence the company’s future earnings and expansion plans.",
@@ -220,20 +204,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "WELCORP": {
-   "summary": "Welspun Corp Ltd. recently received an export order for large-diameter steel pipes. This new contract adds to the company's expected revenue.",
-   "why": "For shareholders, this order suggests that customers are still buying the company's products, which supports its business activity.",
-   "upside": "The new export order could boost the company's income if it is delivered on time.",
-   "downside": "The order could be delayed or cancelled, which would reduce the expected benefit.",
+   "summary": "Welspun Corp received an export order for large‑diameter steel pipes and a company executive said its EBITDA could reach about ₹5,000 crore in two years.",
+   "why": "The order could lift revenue soon, while the EBITDA outlook signals longer‑term growth potential for shareholders.",
+   "upside": "If the export order is delivered on time and the EBITDA target is achieved, earnings could improve.",
+   "downside": "Delays or cancellation of the export order or the long‑term nature of the EBITDA target could limit near‑term benefits.",
    "watch": [
-    "Updates on the delivery status of the export order",
-    "Any announcements about new contracts or orders",
-    "Changes in the company's revenue figures"
+    "Fulfilment status of the LSAW pipe export order",
+    "Any further guidance on EBITDA growth",
+    "New contract wins or cancellations"
    ],
-   "about": "Welspun Corp Ltd. is a capital goods company that manufactures steel pipes.",
-   "basis": "4ed77c193e65",
-   "items": 1,
-   "updated": "2026-11-26T08:45+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Welspun Corp Ltd. manufactures and supplies large‑diameter steel pipes and related capital‑goods.",
+   "basis": "923068fcbed1",
+   "items": 2,
+   "updated": "2026-11-26T13:00+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "DALBHARAT": {
    "summary": "Dalmia Bharat approved a ₹700 crore share buyback of up to 3.78 million shares, aiming to boost earnings per share and support the stock price.",
@@ -266,6 +250,22 @@
    "items": 3,
    "updated": "2026-11-26T08:45+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "LENSKART": {
+   "summary": "Lenskart is in focus after Goldman Sachs and Societe Generale bought a 1% stake worth about ₹920 crore, while Steadview Capital Mauritius sold 11.5 million shares in a block deal at ₹725 per share, and the stock is on a watch list due to recent news and market volatility.",
+   "why": "The foreign investor stake could lift confidence for shareholders, but the large block sale adds selling pressure and could affect the share price.",
+   "upside": "If the new investors increase their holding or other investors follow, the share price could benefit.",
+   "downside": "The block sale adds supply and broader market volatility could weigh on the stock.",
+   "watch": [
+    "Future buying or selling activity by Goldman Sachs and SocGen",
+    "Impact of the 11.5 million‑share block deal on price",
+    "Overall market volatility affecting Lenskart"
+   ],
+   "about": "",
+   "basis": "d796b6580f86",
+   "items": 3,
+   "updated": "2026-11-26T13:00+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "KSB": {
    "summary": "KSB Ltd. recently announced that it has been awarded a new contract. This news was shared with the stock exchange to inform investors of the company's latest business activity.",
@@ -1064,6 +1064,22 @@
    "updated": "2026-11-26T12:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "KFINTECH": {
+   "summary": "KFin Technologies shares jumped about 7% after excitement around the Mahanadi Coalfields IPO, while recent filings noted a change in its corporate office address as the registrar for other listed firms.",
+   "why": "The move shows market sensitivity to IPO‑related buzz and corporate updates, which can affect the stock’s short‑term price for shareholders.",
+   "upside": "Further upside is possible if the IPO excitement continues and draws more investor interest.",
+   "downside": "The price could reverse if the IPO buzz fades or the market digests the recent address change announcements.",
+   "watch": [
+    "Mahanadi Coalfields IPO developments",
+    "Any further price movement after the 7% jump",
+    "Additional corporate announcements from KFin Technologies"
+   ],
+   "about": "KFin Technologies provides registrar and share transfer agent services to listed companies.",
+   "basis": "e7a19e3a6081",
+   "items": 3,
+   "updated": "2026-11-26T13:00+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "EICHERMOT": {
    "summary": "Eicher Motors disclosed a court or regulator decision affecting it and announced a Rs 1,000 crore MoU with the Tamil Nadu government to expand its electric‑vehicle ecosystem.",
    "why": "Shareholders need to watch the legal outcome for potential financial impact and the EV investment for future growth prospects.",
@@ -1335,22 +1351,6 @@
    "items": 2,
    "updated": "2026-11-26T09:00+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "KFINTECH": {
-   "summary": "PulsEdge flagged two recent filings that KFin Technologies Ltd. is changing its corporate office address as the registrar and share transfer agent for Blackbuck Limited and Zensar Technologies Limited. The broader financial sector index fell 2.5% in the last session but rose 0.5% over the past five sessions.",
-   "why": "A change in the registrar’s office could affect how share transfers and corporate actions are processed for investors holding KFin’s shares.",
-   "upside": "If the new address improves operational efficiency, it could enhance service quality for shareholders.",
-   "downside": "The move could cause temporary confusion or delays in share transfer processes.",
-   "watch": [
-    "Further updates on the corporate office relocation",
-    "Any impact on share transfer and registrar services",
-    "Financial sector index trends"
-   ],
-   "about": "KFin Technologies provides registrar and share transfer services for listed companies.",
-   "basis": "0d2b5faf88ce",
-   "items": 2,
-   "updated": "2026-11-24T18:25+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "YESBANK": {
    "summary": "PulsEdge flagged recent regulatory disclosures from Yes Bank Ltd., including a change in directors, key managerial personnel, auditors and a senior management update. The broader financial sector index fell 2.5% in the last session but rose 0.5% over the past five sessions.",

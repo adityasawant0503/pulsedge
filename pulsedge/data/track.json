@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T12:46:19+05:30",
+ "updated": "2026-11-26T13:01:03+05:30",
  "summary": {
-  "calls": 2301,
-  "scored_calls": 1088,
+  "calls": 2303,
+  "scored_calls": 1090,
   "d1": {
    "scored": 870,
    "hits": 384,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "16acbaa2772d66b1",
+   "symbol": "WELCORP",
+   "time": "2026-11-26T12:57:53+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "WELSPUN ENTERPRISES: CO BELIEVE THAT WELSPUN CORP EBITDA CAN HIT RUPEES 5000 CR IN 2 YEARS",
+   "url": "https://t.me/Indiaredboxglobal/10157",
+   "alert_px": 2219.7,
+   "alert_move": 4.83,
+   "alert_at": "2026-11-26T12:59:06+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "757d8144d27dd8bd",
+   "symbol": "KFINTECH",
+   "time": "2026-11-26T12:47:09+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "KFin Technologies shares jump 7% as Mahanadi Coalfields IPO buzz lifts registrar;experts see further upside | Here's why",
+   "url": "https://www.livemint.com/market/stock-market-news/kfin-technologies-shares-jump-7-as-mahanadi-coalfields-ipo-buzz-lifts-registrar-experts-see-further-upside-heres-why-11795674765502.html",
+   "alert_px": 987.4,
+   "alert_move": 5.72,
+   "alert_at": "2026-11-26T13:00:32+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "a259d2dd7b4e00a4",
    "symbol": "COFORGE",
