@@ -1,7 +1,44 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T15:25:30+05:30",
+ "updated": "2026-11-26T15:45:59+05:30",
  "items": [
+  {
+   "id": "5a86bbb8c16dc5d1",
+   "time": "2026-11-26T15:45:07+05:30",
+   "headline": "PATANJALI FOODS: CO SECOND INTERIM DIVIDEND OF 1.25 RUPEES PER SHR",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10170",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "PATANJALI",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "FMCG"
+   ],
+   "impact": 10,
+   "confidence": 80,
+   "category": "Corporate Action",
+   "action": "Note the ex-dividend date to understand potential price adjustment.",
+   "reason": [
+    "Routine interim dividend declaration.",
+    "Standard corporate action with minimal new information."
+   ],
+   "risks": [
+    "Price may adjust downward by dividend amount on ex-date."
+   ],
+   "plain": "The company announced a small cash payment to its shareholders.",
+   "why": "This is a routine event that does not change the company's business performance.",
+   "check": "Look up the ex-dividend date to see when the price might adjust.",
+   "original": "PATANJALI FOODS: CO SECOND INTERIM DIVIDEND OF 1.25 RUPEES PER SHR",
+   "latency": 52.3,
+   "lane": "fast"
+  },
   {
    "id": "c64bd2d27ea64de8",
    "time": "2026-11-26T15:24:52+05:30",
