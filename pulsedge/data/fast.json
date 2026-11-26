@@ -1,7 +1,44 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T12:24:37+05:30",
+ "updated": "2026-11-26T12:25:36+05:30",
  "items": [
+  {
+   "id": "9304d211aef186ee",
+   "time": "2026-11-26T12:25:11+05:30",
+   "headline": "NCC: CO MAINTAIN ORDER INFLOW GUIDANCE OF RS 22,000-25,000 CR",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10152",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [
+    {
+     "symbol": "NCC",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Infrastructure"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "Broker Note",
+   "action": "No immediate action required as this is a reiteration of existing guidance.",
+   "reason": [
+    "Broker note reiterating previously stated guidance.",
+    "No new information provided."
+   ],
+   "risks": [
+    "Market may react to broader sector sentiment rather than this specific note."
+   ],
+   "plain": "A brokerage firm repeated the company's earlier prediction for future business orders.",
+   "why": "This is just a reminder of what was already known, so it does not change the company's value or outlook.",
+   "check": "",
+   "original": "NCC: CO MAINTAIN ORDER INFLOW GUIDANCE OF RS 22,000-25,000 CR",
+   "latency": 25.4,
+   "lane": "fast"
+  },
   {
    "id": "ecfbfb818c7b4a7a",
    "time": "2026-11-26T12:24:08+05:30",
