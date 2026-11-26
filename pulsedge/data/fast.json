@@ -1,7 +1,70 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T13:06:08+05:30",
+ "updated": "2026-11-26T13:08:06+05:30",
  "items": [
+  {
+   "id": "35874b55604a55a1",
+   "time": "2026-11-26T13:07:01+05:30",
+   "headline": "breakikng",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10160",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [],
+   "impact": 0,
+   "confidence": 0,
+   "category": "noise",
+   "action": "No specific action required as the headline lacks detail.",
+   "reason": [
+    "Headline is a fragment with no substantive information.",
+    "No listed company or specific event identified."
+   ],
+   "risks": [
+    "Potential for misinterpretation due to lack of context."
+   ],
+   "plain": "A short, unclear headline was posted without any details.",
+   "why": "There is no information to judge how it affects any company or stock.",
+   "check": "",
+   "original": "breakikng",
+   "latency": 65.8,
+   "lane": "fast"
+  },
+  {
+   "id": "69cb38a411a55dc6",
+   "time": "2026-11-26T13:06:58+05:30",
+   "headline": "SONA BLW: SETTLEMENT FAILS CASE TO BE FOUGHT IN COURT",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10159",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [],
+   "sectors": [
+    "Automotive"
+   ],
+   "impact": 30,
+   "confidence": 40,
+   "category": "legal",
+   "action": "Monitor legal updates for potential financial impact on the company.",
+   "reason": [
+    "Legal dispute with Sona BLW could lead to financial losses or operational delays.",
+    "Sona BLW is a major supplier, so the dispute may affect supply chains."
+   ],
+   "risks": [
+    "Legal costs could reduce profits.",
+    "Supply chain disruptions if the dispute escalates."
+   ],
+   "plain": "A company is taking a legal dispute with a major auto parts maker to court.",
+   "why": "Legal fights can cost money and distract management, which might hurt the company's value.",
+   "check": "Look for official company statements about the legal case.",
+   "original": "SONA BLW: SETTLEMENT FAILS CASE TO BE FOUGHT IN COURT",
+   "latency": 68.8,
+   "lane": "fast"
+  },
   {
    "id": "9a35cf2c183838ba",
    "time": "2026-11-26T13:04:50+05:30",
