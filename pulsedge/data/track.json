@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T13:01:03+05:30",
+ "updated": "2026-11-26T13:15:49+05:30",
  "summary": {
-  "calls": 2303,
-  "scored_calls": 1090,
+  "calls": 2304,
+  "scored_calls": 1091,
   "d1": {
    "scored": 870,
    "hits": 384,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "419c6c1ef9b5e5df",
+   "symbol": "COFORGE",
+   "time": "2026-11-26T13:11:46+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Coforge Limited: Coforge Limited has informed the Exchange regarding a press release dated November 26, 2026, titled \"Coforge EvolveOps.AI Wins AI Platforms, In",
+   "url": "https://nsearchives.nseindia.com/corporate/COFORGE_26112026131138_IntimationofPressReleasellNovember262026Signed.pdf",
+   "alert_px": 1965.0,
+   "alert_move": -4.61,
+   "alert_at": "2026-11-26T13:15:37+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "16acbaa2772d66b1",
    "symbol": "WELCORP",
