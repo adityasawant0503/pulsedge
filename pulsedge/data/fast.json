@@ -1,7 +1,39 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T12:39:07+05:30",
+ "updated": "2026-11-26T12:57:06+05:30",
  "items": [
+  {
+   "id": "d8b1a2bf0a62cc79",
+   "time": "2026-11-26T12:56:31+05:30",
+   "headline": "WELSPUN ENTERPRISES: CO CONFIDENT THAT WE CAN ACHIEVE RS. 2,850 CR EBITDA GUIDANCE FOR FY27",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10156",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "positional",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "Textiles"
+   ],
+   "impact": 0,
+   "confidence": 0,
+   "category": "Guidance",
+   "action": "No immediate action required as no listed entity is directly named.",
+   "reason": [
+    "Welspun Enterprises is a private company, not listed on NSE.",
+    "No direct price impact on listed stocks from this specific guidance."
+   ],
+   "risks": [
+    "Potential indirect impact on listed textile peers if sector sentiment shifts, but unlikely to be material."
+   ],
+   "plain": "A private textile company said it expects to hit its profit target for next year.",
+   "why": "Since the company is not publicly traded, its news does not directly affect stock prices.",
+   "check": "",
+   "original": "WELSPUN ENTERPRISES: CO CONFIDENT THAT WE CAN ACHIEVE RS. 2,850 CR EBITDA GUIDANCE FOR FY27",
+   "latency": 35.6,
+   "lane": "fast"
+  },
   {
    "id": "a259d2dd7b4e00a4",
    "time": "2026-11-26T12:38:04+05:30",
@@ -1810,204 +1842,6 @@
    "original": "BAJAJ FINANCE LIMITED: CO. ALLOTTED 1,42,700 SECURED REDEEMABLE NCDS AGGREGATING TO ₹1440.75 CRORE ON PRIVATE PLACEMENT BASIS; COUPON RATE SET AT 8.70% PER ANNUM; DEBENTURES TO BE LISTED ON BSE'S WHOLESALE DEBT MARKET SE",
    "latency": 55.2,
    "lane": "fast"
-  },
-  {
-   "id": "cfaab9ec337b5db6",
-   "time": "2026-11-25T12:56:13+05:30",
-   "headline": "CRAFTSMAN AUTOMATION LTD: PHASE II OF KOTHAVADI PLANT VIRTUALLY INAUGURATED BY TAMIL NADU CHIEF MINISTER; CONTINUES EXPANSION OF MANUFACTURING CAPACITY.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10023",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "CRAFTSMAN",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Industrial Automation",
-    "Manufacturing"
-   ],
-   "impact": 40,
-   "confidence": 60,
-   "category": "Capacity Expansion",
-   "action": "Monitor order book updates and revenue growth in upcoming quarterly results to confirm demand for the new capacity.",
-   "reason": [
-    "Expansion of manufacturing capacity signals management confidence in future demand.",
-    "Government backing via inauguration may enhance brand visibility and credibility."
-   ],
-   "risks": [
-    "New capacity may take time to generate significant revenue.",
-    "Market sentiment may already be priced in if the expansion was previously announced."
-   ],
-   "plain": "The company officially started up a new part of its factory to make more products.",
-   "why": "Making more products can help the company earn more money if customers want to buy them.",
-   "check": "Look at the company's next earnings report to see if sales are actually increasing.",
-   "original": "CRAFTSMAN AUTOMATION LTD: PHASE II OF KOTHAVADI PLANT VIRTUALLY INAUGURATED BY TAMIL NADU CHIEF MINISTER; CONTINUES EXPANSION OF MANUFACTURING CAPACITY.",
-   "latency": 70.1,
-   "lane": "fast",
-   "quotes": {
-    "CRAFTSMAN": {
-     "px": 11640.0,
-     "prev": 11649.0,
-     "move": -0.08,
-     "at": "2026-11-25T12:57:23+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "6348f2159dfa2270",
-   "time": "2026-11-25T12:53:40+05:30",
-   "headline": "JUPITER WAGONS: CO SAYS WILL BE INVESTING RS. 1000 CR OVER NEXT 3 YEARS FOR THE PASSENGER RAIL BUSINESS",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10022",
-   "section": "news",
-   "call": "watch",
-   "horizon": "positional",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "JWL",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Railways",
-    "Manufacturing"
-   ],
-   "impact": 65,
-   "confidence": 70,
-   "category": "Corporate Announcement",
-   "action": "Monitor order book updates and capex execution milestones over the next few quarters.",
-   "reason": [
-    "Significant capital injection into the core passenger rail business.",
-    "Indicates management confidence in long-term demand and growth potential."
-   ],
-   "risks": [
-    "High capex may pressure short-term cash flows and margins.",
-    "Execution risk in deploying funds efficiently over 3 years."
-   ],
-   "plain": "The company plans to spend 1,000 crore rupees on its passenger train business over the next three years.",
-   "why": "This shows the company is investing heavily to grow its main business, which could lead to higher future profits.",
-   "check": "Look for updates on new train orders or production capacity expansions in future reports.",
-   "original": "JUPITER WAGONS: CO SAYS WILL BE INVESTING RS. 1000 CR OVER NEXT 3 YEARS FOR THE PASSENGER RAIL BUSINESS",
-   "latency": 73.3,
-   "lane": "fast",
-   "quotes": {
-    "JWL": {
-     "px": 222.46,
-     "prev": 185.39,
-     "move": 20.0,
-     "at": "2026-11-25T12:54:53+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "25467f35b1576071",
-   "time": "2026-11-25T12:43:36+05:30",
-   "headline": "HALDYN GLASS: COMPANY ACQUIRES REMAINING 43.20% STAKE IN HALDYN HEINZ FINE GLASS FOR ₹45.15 CRORE, BECOMING 100% OWNER",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10021",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Glass"
-   ],
-   "impact": 0,
-   "confidence": 0,
-   "category": "Corporate Action",
-   "action": "No immediate action required as the entity is not a listed stock.",
-   "reason": [
-    "Haldyn Glass is not a listed entity on NSE/BSE.",
-    "No candidate symbols provided or applicable."
-   ],
-   "risks": [],
-   "plain": "A private company bought the rest of a glass business to own it fully.",
-   "why": "This does not affect any publicly traded stocks, so it is safe to skip.",
-   "check": "",
-   "original": "HALDYN GLASS: COMPANY ACQUIRES REMAINING 43.20% STAKE IN HALDYN HEINZ FINE GLASS FOR ₹45.15 CRORE, BECOMING 100% OWNER",
-   "latency": 21.1,
-   "lane": "fast"
-  },
-  {
-   "id": "5129432fb58a9974",
-   "time": "2026-11-25T12:40:33+05:30",
-   "headline": "BIKAJI FOODS INTERNATIONAL LTD: CO. ENTERS PREMIUM BAKERY SEGMENT WITH LAUNCH OF MAHÈ UNDER BIKAJI BAKES; PARTNERSHIP WITH MASTER BAKER T K KHALEEL; MAHÈ TO OFFER EUROPEAN VIENNOISERIES, ARTISAN BREADS, AND CUSTOM PRODUC",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10020",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "news",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "Bikaji Foods International launched a premium bakery brand called Mahè.",
-   "why": "It does not involve any listed Indian company, so it likely won’t affect stock prices.",
-   "check": "",
-   "original": "BIKAJI FOODS INTERNATIONAL LTD: CO. ENTERS PREMIUM BAKERY SEGMENT WITH LAUNCH OF MAHÈ UNDER BIKAJI BAKES; PARTNERSHIP WITH MASTER BAKER T K KHALEEL; MAHÈ TO OFFER EUROPEAN VIENNOISERIES, ARTISAN BREADS, AND CUSTOM PRODUC",
-   "latency": 80.6,
-   "lane": "fast"
-  },
-  {
-   "id": "80ec706ef439263d",
-   "time": "2026-11-25T12:40:18+05:30",
-   "headline": "POONAWALLA FINCORP LTD: CO. ALLOTTED 50,000 SECURED, REDEEMABLE, RATED, LISTED NON-CONVERTIBLE DEBENTURES WORTH ₹500 CRORE; COUPON RATE SET AT 9.15% P.A.; MATURITY DATE ON NOVEMBER 12, 2031",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10019",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [
-    {
-     "symbol": "POONAWALLA",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Financial Services"
-   ],
-   "impact": 45,
-   "confidence": 60,
-   "category": "news",
-   "action": "Watch for price reaction after the issue is listed and monitor debt levels.",
-   "reason": [
-    "Company raised ₹500 crore via non‑convertible debentures, adding long‑term debt.",
-    "Funds could support growth initiatives or increase leverage."
-   ],
-   "risks": [
-    "Higher debt may pressure earnings.",
-    "Market may view the additional debt negatively."
-   ],
-   "plain": "Poonawalla Fincorp issued ₹500 crore of 9.15% non‑convertible debentures maturing in 2031.",
-   "why": "The new debt raises capital but also adds leverage, which can affect share value.",
-   "check": "Look at the company’s debt‑to‑equity ratio after the issue settles.",
-   "original": "POONAWALLA FINCORP LTD: CO. ALLOTTED 50,000 SECURED, REDEEMABLE, RATED, LISTED NON-CONVERTIBLE DEBENTURES WORTH ₹500 CRORE; COUPON RATE SET AT 9.15% P.A.; MATURITY DATE ON NOVEMBER 12, 2031",
-   "latency": 36.3,
-   "lane": "fast",
-   "quotes": {
-    "POONAWALLA": {
-     "px": 524.2,
-     "prev": 517.4,
-     "move": 1.31,
-     "at": "2026-11-25T12:40:54+05:30",
-     "delay": 900
-    }
-   }
   }
  ]
 }
