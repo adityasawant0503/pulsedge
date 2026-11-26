@@ -673,11 +673,9 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
     <div class="desk">
       <div class="wl">
         <h3>Your holdings</h3>
-        <p class="hint">One stock per line, NSE symbol and quantity. Or drop your broker's holdings CSV here.</p>
-        <label for="hold-in">Paste holdings</label>
-        <textarea id="hold-in" spellcheck="false" placeholder="TCS 40&#10;HDFCBANK 120&#10;SUNPHARMA 35"></textarea>
+        <p class="hint">Search for each company you own and pick it from the list. Or drop your broker's holdings CSV here.</p>
+        <div id="hold-pick"></div>
         <div class="acts">
-          <button class="b1" id="hold-add" type="button">Add to watchlist</button>
           <button class="b2" id="hold-imp" type="button">Import CSV</button>
           <button class="b2" id="hold-ex" type="button">Try an example</button>
           <input id="hold-file" type="file" accept=".csv,text/csv" hidden>
@@ -906,6 +904,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
   <div class="vin"><button class="vclose" id="vclose" type="button">Close ✕</button><video id="vfull" controls playsinline preload="none" poster="assets/intro-poster.jpg"></video></div>
 </dialog>
 
+<script src="assets/stockpick.js"></script>
 <script>
 (function(){
   // Formspree form ID for signups. From https://formspree.io/f/abcdwxyz the ID is "abcdwxyz".
@@ -1200,7 +1199,7 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
 
   // ---------- holdings / watchlist ----------
   var holdings=[];
-  var holdIn=$("hold-in"),holdList=$("hold-list"),holdSaved=$("hold-saved");
+  var holdList=$("hold-list"),holdSaved=$("hold-saved");
   function parse(text){
     var out=[];
     text.split(/[\n;]+|,(?=\s*[A-Za-z])/).forEach(function(line){
@@ -1227,7 +1226,10 @@ footer{margin-top:96px;border-top:1px solid var(--line);padding-block:48px 40px;
     });
     $("n-mine").textContent=holdings.length;
   }
-  $("hold-add").onclick=function(){var p=parse(holdIn.value);if(!p.length){holdIn.focus();return}merge(p);holdIn.value="";save();renderHold();rebuild();select("mine")};
+  // search-as-you-type picker (assets/stockpick.js): pick the company from the list, so the symbol is always right
+  var holdPick=window.PulsePick&&PulsePick.create({placeholder:"Company name, symbol or ISIN",held:function(s){return holdings.some(function(h){return h.s===s})},button:"Add to watchlist",
+    onAdd:function(items){merge(items);save();renderHold();rebuild();select("mine");holdPick.redraw()}});
+  if(holdPick)$("hold-pick").appendChild(holdPick.el);
   $("hold-ex").onclick=function(){merge(parse((HOLD_EX&&HOLD_EX.length?HOLD_EX:["TCS","HDFCBANK","SUNPHARMA","LT"]).map(function(s,i){return s+" "+[40,120,35,15][i%4]}).join("\n")));save();renderHold();rebuild();select("mine")};
   var impMsg=$("imp-msg"),fileIn=$("hold-file"),wl=document.querySelector(".wl");
   function csvRows(text){

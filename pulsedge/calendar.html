@@ -287,6 +287,7 @@ a.evn:hover{text-decoration:underline}
 </footer>
 
 <script src="assets/member.js"></script>
+<script src="assets/stockpick.js"></script>
 <script src="assets/theme.js"></script>
 <script>
 (function(){
@@ -615,7 +616,7 @@ a.evn:hover{text-decoration:underline}
     if(ev.length)P.appendChild(evBlock(ev));
     if(ahead){if(!ev.length)P.appendChild(el("p","empty","Nothing scheduled yet."));return}
     if(!list.length){
-      if(S.view==="mine"&&!hold.length)P.appendChild(noHold());
+      if(S.view==="mine"&&!hold.length)P.appendChild(noHold(true));
       else P.appendChild(el("p","empty",S.view==="mine"?"No news on your stocks this day.":"No stories this day."));
       return;
     }
@@ -641,11 +642,23 @@ a.evn:hover{text-decoration:underline}
     var syms=[];show.slice(0,limit).forEach(function(r){r.s.slice(0,3).forEach(function(s){if(syms.indexOf(s)<0)syms.push(s)})});
     fetchLive(syms);
   }
-  function noHold(){
+  // with a picker (the day panel), or a pointer to it (the other sections)
+  function noHold(withPicker){
     var d=el("div","lock");
-    d.append(el("b",null,"Add your holdings to see their news here"),
-      el("span",null,"Add them in the terminal's My stocks tab: type them in, paste your holding summary or upload your broker's file. They stay in this browser; nothing is sent to us."));
-    var a=el("a","btn","Add my stocks");a.href="terminal.html?tab=mine#mine";d.appendChild(a);
+    d.append(el("b",null,"Add your holdings to see their news here"));
+    if(withPicker&&window.PulsePick&&S.mode!=="sample"){
+      d.appendChild(el("span",null,"Search for each company you own and pick it from the list. Your list stays in this browser; nothing is sent to us."));
+      var pk=PulsePick.create({held:isMine,button:"Add to My stocks",onAdd:function(items){
+        var list=[];try{list=JSON.parse(store("pe_hold")||"[]")||[]}catch(e){list=[]}
+        items.forEach(function(it){var ex=list.filter(function(h){return h.s===it.s})[0];if(ex){if(it.q)ex.q=it.q}else list.push({s:it.s,q:it.q||null})});
+        store("pe_hold",JSON.stringify(list));readHold();S.sel=null;render();
+      }});
+      d.appendChild(pk.el);
+      var a=el("a",null,"Or paste a holding summary or upload a broker file in the terminal");a.href="terminal.html?tab=mine#mine";d.appendChild(a);
+    }else if(withPicker){
+      d.appendChild(el("span",null,"Add them in the terminal's My stocks tab: search for each company, paste your holding summary or upload your broker's file."));
+      var b=el("a","btn","Add my stocks");b.href="terminal.html?tab=mine#mine";d.appendChild(b);
+    }else d.appendChild(el("span",null,"Add them with the search box in the day panel. Your list stays in this browser."));
     return d;
   }
   function openGate(){var b=document.querySelector(".pe-bar button");if(b)b.click();else location.href="terminal.html#trial"}

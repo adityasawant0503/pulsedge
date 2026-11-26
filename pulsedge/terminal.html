@@ -538,6 +538,7 @@ dialog.gl::backdrop{background:rgba(8,7,12,.6)}
 </footer>
 
 <script src="assets/member.js"></script>
+<script src="assets/stockpick.js"></script>
 <script>
 document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAccess.feedback()};
 (function(){
@@ -993,9 +994,17 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     });
     return {items:items,bad:bad};
   }
+  // the search box for adding stocks is made once and kept across re-renders, so typing isn't lost
+  var picker=null;
+  function getPicker(){
+    if(!picker&&window.PulsePick)picker=PulsePick.create({list:function(){return uni},held:mine,button:"Add to My stocks",
+      onAdd:function(items){addHolds({items:items,bad:[]})}});
+    return picker;
+  }
   function renderMine(){
     var box=document.getElementById("mine");if(!box)return;
     if(tab!=="mine"){box.hidden=true;return}
+    var ae=document.activeElement,keep=picker&&picker.el.contains(ae)?ae:null;
     box.hidden=false;box.textContent="";
     box.append(el("div","mh",null));
     box.firstChild.append(el("b",null,"My stocks"),el("span","sub",hold.length?plural(hold.length,"holding")+" · saved in this browser":"Nothing added yet"));
@@ -1013,9 +1022,16 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       box.append(ul);
     }else box.append(el("p","mnote","Add the stocks you hold below. Their news shows here first, with the reason for each call."));
     var modes=el("div","mtabs");
-    [["type","Type them"],["sum","Holding summary or CSV"]].forEach(function(m){var b=el("button",null,m[1]);b.type="button";b.setAttribute("aria-pressed",String(mineMode===m[0]));b.onclick=function(){mineMode=m[0];render()};modes.append(b)});
+    [["type","Search and add"],["sum","Holding summary or CSV"]].forEach(function(m){var b=el("button",null,m[1]);b.type="button";b.setAttribute("aria-pressed",String(mineMode===m[0]));b.onclick=function(){mineMode=m[0];render()};modes.append(b)});
     box.append(modes);
-    var wrap=el("div","mbox"),ta=document.createElement("textarea"),row=el("div","mrow");
+    var wrap=el("div","mbox"),pk=mineMode==="type"&&getPicker();
+    if(pk){
+      pk.redraw();wrap.append(pk.el);
+      if(mineNote&&mineNoteTab===tab)wrap.append(el("p","mmsg"+(mineErr?" err":" ok"),mineNote));
+      box.append(wrap);if(keep)keep.focus();
+      return;
+    }
+    var ta=document.createElement("textarea"),row=el("div","mrow");
     ta.value=mineText[mineMode];ta.spellcheck=false;
     ta.setAttribute("aria-label",mineMode==="type"?"Stocks to add":"Holding summary to add");
     ta.placeholder=mineMode==="type"?"TCS 40\nHDFCBANK 120\nSun Pharma 35":"Paste the holdings table from your broker app, or the text of its CSV file";
