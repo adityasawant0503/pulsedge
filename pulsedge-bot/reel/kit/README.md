@@ -77,3 +77,8 @@ The report flags text running into the footer or across the margins, a footer pu
 - Carousels: add a quiet instrumental track.
 - Reels: keep the original audio and rename it "PulsEdge · Market Explained".
 - Highlights: the how-to parts go under "How to"; the covers are in the how-to output.
+
+## More episodes and reels
+
+- `howto/guide.html` also plays episode 4, "Your 2-minute market routine": capture with `tools/capture_routine.js`, time it with `tighten_howto.py 4 …`, then use `sound_howto.py`, `stills_howto.js` and `render_howto.js` with `4`. Its cover is `howto/cover-routine.html` (`tools/cover_routine.js`).
+- `data-reel/one-hand/` holds the "One hand buying, one hand hedging" data reel (FII cash flows vs futures positioning, 16–25 Nov 2026): copy its `reel.html` and `cover.html` into a scratch data-reel folder and its `tighten_reel.py` and `sound_reel.py` into that folder's `tools/`.

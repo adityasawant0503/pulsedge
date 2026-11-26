@@ -46,7 +46,8 @@ def chime():
     tq = tt(1.2); return sum(np.sin(2 * np.pi * f * tq) * np.exp(-tq / 0.5) for f in (523.25, 659.25, 783.99)) / 3
 EV = {1: (["tap1", "tap2", "top"], ["tap1", "tap2"], ["cta", "mkt", "left", "five", "card"]),
       2: (["act", "story", "tabs", "money", "pm"], [], ["label", "act", "watch", "ignore", "plain", "why", "check", "panel"]),
-      3: (["brief", "mine", "ask", "answer"], ["pick", "tapadd", "tapfab", "chip"], ["search", "add", "mine"])}[EP]
+      3: (["brief", "mine", "ask", "answer"], ["pick", "tapadd", "tapfab", "chip"], ["search", "add", "mine"]),
+      4: (["open", "own", "money", "stuck", "answer"], ["tapideas", "tapask"], ["nifty", "us", "asia", "fx", "brent", "vix", "mine"])}[EP]
 for k in EV[0]: add(sfx, whoosh(), C[k] + (0.15 if k.startswith("tap") else -0.15), 0.25)
 for k in EV[1]: add(sfx, click(), C[k], 0.5)
 for k in EV[2]: add(sfx, blip(1320 if EP != 2 else 1100), C[k], 0.14)

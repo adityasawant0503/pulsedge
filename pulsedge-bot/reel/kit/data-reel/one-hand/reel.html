@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PulsEdge reel: one hand buying, one hand hedging</title>
+<!-- 1080x1920, ~29 s. render2.js calls init(timing) once, then render(t) per frame; nothing animates on its own.
+     Visuals live in y 330..1260, captions around y 1390, source + disclaimer at 1532/1586. Smallest text 26px.
+     Descriptive only: no forecasts or buy/sell calls. 2021 values as of 5 Feb 2021 (CPI = Dec 2020 print); 2026 as of 18 Nov 2026. -->
+<style>
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-500-normal.woff2) format("woff2");font-weight:500}
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-600-normal.woff2) format("woff2");font-weight:600}
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-700-normal.woff2) format("woff2");font-weight:700}
+@font-face{font-family:PlexMono;src:url(fonts/ibm-plex-mono-latin-500-normal.woff2) format("woff2");font-weight:500}
+@font-face{font-family:PlexMono;src:url(fonts/ibm-plex-mono-latin-600-normal.woff2) format("woff2");font-weight:600}
+@font-face{font-family:Rupee;src:local("Inter Bold"),local("Inter-Bold"),local("Inter");unicode-range:U+20B9}
+:root{--bg:#07060b;--ink:#f6f5fb;--mute:#b3afc2;--dim:#77738a;--line:#2a2836;--panel:#14131cdd;--acc:#a58bff;--red:#ff4d5e;--green:#2ee6a0;--amber:#ffc24d;--sky:#7fd4ff}
+*{box-sizing:border-box}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:var(--bg)}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;color:var(--ink);font-family:Rupee,Plex,sans-serif;-webkit-font-smoothing:antialiased}
+.glow{position:absolute;inset:-100px;opacity:0}
+#gR{background:radial-gradient(55% 35% at 25% 35%,#ff4d5e60,transparent 70%),linear-gradient(#1a050980,#1a050980)}
+#gG{background:radial-gradient(55% 35% at 75% 35%,#2ee6a066,transparent 70%),linear-gradient(#03140d99,#03140d99)}
+#gA{background:radial-gradient(55% 35% at 70% 30%,#ffc24d50,transparent 70%)}
+#gP{background:radial-gradient(55% 35% at 70% 25%,#6c43f077,transparent 70%),radial-gradient(40% 30% at 20% 80%,#6c43f033,transparent 70%)}
+#grid{position:absolute;inset:0;opacity:.3;background:linear-gradient(#ffffff10 1px,transparent 1px) 0 0/90px 90px,linear-gradient(90deg,#ffffff10 1px,transparent 1px) 0 0/90px 90px;-webkit-mask-image:radial-gradient(80% 60% at 50% 45%,#000 30%,transparent 85%)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;mix-blend-mode:screen}
+#bars{position:absolute;left:72px;right:72px;top:206px;height:6px;border-radius:3px;background:#ffffff1f;overflow:hidden}
+#bars b{display:block;height:100%;width:0;background:var(--ink)}
+#brand{position:absolute;left:72px;top:250px;display:flex;align-items:center;gap:14px;font:600 30px/1 PlexMono,monospace;letter-spacing:.16em}
+#brand span{width:16px;height:16px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 6px #a58bff2e,0 0 26px var(--acc)}
+#brand em{font-style:normal;color:var(--mute);letter-spacing:.12em}
+#src{position:absolute;left:72px;right:72px;top:1532px;font:500 26px/1.3 PlexMono,monospace;color:var(--dim);white-space:nowrap;overflow:hidden}
+#foot{position:absolute;left:72px;right:72px;top:1586px;font:500 26px/1.3 Plex,sans-serif;color:var(--dim);text-align:center}
+.sc{position:absolute;left:72px;right:72px;top:330px;height:930px;opacity:0;transform-origin:50% 40%}
+.pop{display:block;opacity:0}
+.mono{font-family:Rupee,PlexMono,monospace}
+.chip{display:inline-flex;align-items:center;gap:12px;font:600 36px/1 PlexMono,monospace;letter-spacing:.1em;border-radius:14px;padding:14px 20px}
+.chip.r{background:var(--red);color:#2a0007}.chip.g{background:var(--green);color:#00281a}.chip.a{background:var(--amber);color:#2a1d00}.chip.p{background:var(--acc);color:#150c33}
+.big{font:700 230px/0.92 Plex,sans-serif;letter-spacing:-.06em;white-space:nowrap}
+.h{font:700 110px/1 Plex,sans-serif;letter-spacing:-.045em}
+.sub{font:600 50px/1.25 Plex,sans-serif;color:var(--mute)}
+/* hook */
+#hook .chip{margin-top:40px}
+#hook .big{color:var(--green);margin-top:40px;text-shadow:0 0 80px #2ee6a066}
+#hook .h{margin-top:24px;font-size:104px}
+#hook svg{display:block;margin-top:50px;overflow:visible}
+#hook .ax{font:600 30px PlexMono,monospace;fill:var(--mute)}
+/* not 2021 */
+#notyet .k1{margin-top:120px;font:700 112px/1 Plex,sans-serif;letter-spacing:-.045em}
+#notyet .yr{position:relative;display:inline-block;margin-top:30px;font:700 340px/0.9 Plex,sans-serif;letter-spacing:-.06em;color:var(--ink)}
+#strike{position:absolute;left:-20px;top:46%;height:34px;width:0;background:var(--red);border-radius:17px;transform:rotate(-8deg);box-shadow:0 0 40px #ff4d5e99}
+#notyet .chip{margin-top:70px}
+/* then vs now board */
+.cols{display:grid;grid-template-columns:1fr 90px 1fr;padding:0 34px;margin-top:10px}
+.cols span{font:600 34px/1 PlexMono,monospace;letter-spacing:.12em;color:var(--dim)}
+#nowh{color:var(--dim)}
+.row{background:var(--panel);border:3px solid var(--line);border-radius:30px;padding:26px 34px 24px;margin-top:24px;box-shadow:0 30px 80px -40px #000}
+.row .lb{font:600 32px/1 PlexMono,monospace;letter-spacing:.12em;color:var(--mute)}
+.row .vv{display:grid;grid-template-columns:1fr 90px 1fr;align-items:end;margin-top:18px}
+.row .th{font:700 100px/1 Plex,sans-serif;letter-spacing:-.04em;color:var(--mute)}
+.row .ar{font:700 64px/1 Plex,sans-serif;color:var(--dim);padding-bottom:16px}
+.row .nw{font:700 100px/1 Plex,sans-serif;letter-spacing:-.04em;color:var(--red);text-shadow:0 0 50px #ff4d5e55}
+.row .ss{display:grid;grid-template-columns:1fr 90px 1fr;margin-top:12px;font:600 32px/1.2 Plex,sans-serif;color:var(--dim)}
+.row .ss b{color:#ff8a95;font-weight:600}
+/* catch */
+#catch .chip{margin-top:60px}
+#catch .h{margin-top:40px;font-size:120px}
+#catch .h span{color:var(--amber)}
+.bar{margin-top:80px}
+.bar .track{position:relative;height:80px;border-radius:18px;background:#ff4d5ecc;overflow:hidden}
+.bar .track b{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--green);box-shadow:6px 0 0 var(--bg)}
+.bar .lbls{display:flex;justify-content:space-between;margin-top:22px;font:600 34px/1.35 PlexMono,monospace}
+/* next */
+.wd{margin-top:46px}
+.wd .w{font:700 176px/0.95 Plex,sans-serif;letter-spacing:-.05em}
+.wd .d{font:600 36px/1.2 PlexMono,monospace;color:var(--mute);margin-top:12px;letter-spacing:.02em}
+#next .tail{margin-top:56px;font:700 66px/1.1 Plex,sans-serif;letter-spacing:-.03em;color:var(--ink)}
+/* cta */
+#cta{text-align:center}
+#cta .h{margin-top:30px;font-size:104px}
+#cta .sub{margin-top:18px}
+.stack{position:relative;width:392px;height:490px;margin:40px auto 0}
+.stack img{position:absolute;left:0;top:0;width:392px;height:490px;border-radius:26px;border:3px solid #ffffff22;box-shadow:0 40px 100px -20px #000}
+#cta .btn{display:inline-block;margin-top:44px;background:var(--ink);color:#07060b;font:700 56px/1 Plex,sans-serif;border-radius:999px;padding:34px 64px;box-shadow:0 20px 60px -10px #a58bff99}
+/* captions */
+#cap{position:absolute;left:60px;right:60px;top:1300px;height:190px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0 28px;text-align:center}
+#cap span{display:inline-block;font:700 76px/1.15 Plex,sans-serif;letter-spacing:-.02em;color:#fff;
+  text-shadow:0 0 2px #000,0 4px 0 #000,0 0 30px #000c,3px 3px 0 #000,-3px -3px 0 #000,3px -3px 0 #000,-3px 3px 0 #000}
+/* this reel */
+.big2{font:700 200px/0.92 Plex,sans-serif;letter-spacing:-.06em;white-space:nowrap}
+.big2 small{font-size:84px;letter-spacing:-.02em;margin-left:14px;color:var(--mute)}
+#hook .chip{margin-top:30px}
+#hook .big2{color:var(--green);margin-top:40px;text-shadow:0 0 80px #2ee6a066}
+#hook .h{margin-top:20px;font-size:96px}
+#fbars{display:block;margin-top:56px;overflow:visible}
+#fbars text{font:600 28px PlexMono,monospace;fill:var(--mute)}
+#streak .big{color:var(--green);margin-top:60px;text-shadow:0 0 80px #2ee6a066}
+#streak .sub{margin-top:24px}
+.ticks{display:grid;grid-template-columns:repeat(7,1fr);gap:16px;margin-top:80px}
+.tk{text-align:center}
+.tk b{display:flex;align-items:center;justify-content:center;height:112px;border-radius:24px;background:#2ee6a022;border:4px solid var(--green);color:var(--green);font:700 64px/1 Plex,sans-serif}
+.tk span{display:block;margin-top:14px;font:600 28px/1 PlexMono,monospace;color:var(--mute)}
+#twist .chip{margin-top:160px}
+#twist .h{margin-top:44px;font-size:128px}
+#fut .lb{font:600 34px/1.2 PlexMono,monospace;letter-spacing:.1em;color:var(--mute);margin-top:20px}
+.vb{position:relative;height:600px;margin-top:40px;border-bottom:4px solid #ffffff33}
+.vb .b{position:absolute;bottom:0;width:240px;border-radius:22px 22px 0 0;height:0}
+.vb .v{position:absolute;width:240px;text-align:center;font:700 76px/1 Plex,sans-serif;letter-spacing:-.03em}
+.vlab{position:relative;height:60px}
+.vlab span{position:absolute;width:240px;text-align:center;top:16px;font:600 32px/1 PlexMono,monospace;color:var(--mute)}
+#fut .chip{margin-top:40px}
+.hd{border:3px solid var(--line);background:var(--panel);border-radius:30px;padding:34px 40px;margin-top:40px}
+.hd .k{font:600 32px/1 PlexMono,monospace;letter-spacing:.12em;color:var(--mute)}
+.hd .w{font:700 120px/1 Plex,sans-serif;letter-spacing:-.045em;margin-top:18px}
+.hd .d{font:600 40px/1.2 Plex,sans-serif;color:var(--mute);margin-top:14px}
+#hands .t1{font:700 72px/1.05 Plex,sans-serif;letter-spacing:-.03em;margin-top:40px}
+#why .h{margin-top:60px;font-size:116px}
+#why .sub{margin-top:24px}
+#why .hd{margin-top:90px}
+#next .chip{margin-top:40px}
+.dt{display:grid;grid-template-columns:420px 1fr;align-items:baseline;margin-top:50px;border-bottom:3px solid #ffffff1f;padding-bottom:30px}
+.dt .w{white-space:nowrap;font:700 112px/1 Plex,sans-serif;letter-spacing:-.045em;color:#c3b0ff}
+.dt .d{font:700 72px/1 Plex,sans-serif;letter-spacing:-.03em}
+#cta{text-align:center}
+#cta .ring{width:200px;height:200px;border-radius:50%;margin:120px auto 0;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle,#a58bff33,transparent 70%);box-shadow:0 0 0 3px #ffffff14,0 40px 120px -20px #6c43f0}
+#cta .ring i{display:block;width:58px;height:58px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 20px #a58bff2e,0 0 70px var(--acc)}
+#cta .h{margin-top:70px;font-size:100px}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="glow" id="gP"></div><div class="glow" id="gR"></div><div class="glow" id="gG"></div><div class="glow" id="gA"></div>
+  <div id="grid"></div>
+  <div id="bars"><b></b></div>
+  <div id="brand"><span></span>PULSEDGE <em>· MONEY MOVES</em></div>
+
+  <section class="sc" id="hook">
+    <span class="chip g pop" data-cue="hook" data-d="-0.5">▲ FOREIGN BUYING · 16–25 NOV</span>
+    <div class="big2 pop" data-cue="hook" data-d="-0.45">₹<span data-count="0,58036,0" data-cue="hook" data-d="-0.3" data-dur="1.6">0</span><small>Cr</small></div>
+    <div class="h pop" data-cue="hook" data-d="-0.4">in 7 sessions.</div>
+    <svg id="fbars" class="pop" data-cue="hook" data-d="-0.4" width="936" height="320" viewBox="0 0 936 320"></svg>
+  </section>
+
+  <section class="sc" id="streak">
+    <div class="big pop" data-cue="streak" data-d="0">7 of 7</div>
+    <div class="sub pop" data-cue="streak" data-d="0.15">sessions of net buying</div>
+    <div class="ticks">
+      <div class="tk pop" data-cue="ticks" data-d="0"><b>✓</b><span>16</span></div>
+      <div class="tk pop" data-cue="ticks" data-d="0.13"><b>✓</b><span>17</span></div>
+      <div class="tk pop" data-cue="ticks" data-d="0.26"><b>✓</b><span>18</span></div>
+      <div class="tk pop" data-cue="ticks" data-d="0.39"><b>✓</b><span>19</span></div>
+      <div class="tk pop" data-cue="ticks" data-d="0.52"><b>✓</b><span>20</span></div>
+      <div class="tk pop" data-cue="ticks" data-d="0.65"><b>✓</b><span>23</span></div>
+      <div class="tk pop" data-cue="ticks" data-d="0.78"><b>✓</b><span>25</span></div>
+    </div>
+  </section>
+
+  <section class="sc" id="twist">
+    <span class="chip r pop" data-cue="twist" data-d="0">THE TWIST</span>
+    <div class="h pop" data-cue="twist" data-d="0.12">Now look at<br>their futures.</div>
+  </section>
+
+  <section class="sc" id="fut">
+    <div class="lb pop" data-cue="fut" data-d="0">FIIs' INDEX FUTURES<br>SHARE OF BETS THAT ARE LONG</div>
+    <div class="vb pop" data-cue="fut" data-d="0.1">
+      <div class="b" id="vb1" style="left:30px;background:#c3b0ff"></div><div class="v" id="vv1" style="left:30px;color:#c3b0ff"></div>
+      <div class="b" id="vb2" style="left:348px;background:var(--red);box-shadow:0 0 60px #ff4d5e66"></div><div class="v" id="vv2" style="left:348px;color:#ff8a95"></div>
+      <div class="b" id="vb3" style="left:666px;background:#ff4d5e88"></div><div class="v" id="vv3" style="left:666px;color:var(--mute)"></div>
+    </div>
+    <div class="vlab pop" data-cue="fut" data-d="0.1"><span style="left:30px">12 Nov</span><span style="left:348px">23 Nov</span><span style="left:666px">25 Nov</span></div>
+    <span class="chip r pop" data-cue="n2" data-d="0.35">~3 IN 4 BETS NOW SHORT</span>
+  </section>
+
+  <section class="sc" id="hands">
+    <div class="hd pop" data-cue="hands" data-d="0" style="border-color:#2ee6a066"><div class="k">ONE HAND · CASH MARKET</div><div class="w" style="color:var(--green)">Buying ▲</div><div class="d">₹58,036 Cr in 7 sessions</div></div>
+    <div class="hd pop" data-cue="h2" data-d="0" style="border-color:#ff4d5e66"><div class="k">THE OTHER · INDEX FUTURES</div><div class="w" style="color:var(--red)">Hedging ▼</div><div class="d">~3 in 4 bets now short</div></div>
+  </section>
+
+  <section class="sc" id="why">
+    <div class="h pop" data-cue="why" data-d="0">They want<br>India.</div>
+    <div class="sub pop" data-cue="why" data-d="0.4">They're insuring against a fall.</div>
+    <div class="hd pop" data-cue="ws" data-d="0"><div class="k">MEANWHILE · WALL STREET</div><div class="w" style="color:var(--red)">−11.6%</div><div class="d">S&amp;P 500 from its Oct peak, to 20 Nov</div></div>
+  </section>
+
+  <section class="sc" id="next">
+    <span class="chip p pop" data-cue="next" data-d="0">NEXT TESTS</span>
+    <div class="dt pop" data-cue="d1" data-d="0"><div class="w">30 Nov</div><div class="d">India GDP</div></div>
+    <div class="dt pop" data-cue="d2" data-d="0"><div class="w">4 Dec</div><div class="d">RBI policy</div></div>
+    <div class="dt pop" data-cue="d3" data-d="0"><div class="w">9 Dec</div><div class="d">US Fed</div></div>
+  </section>
+
+  <section class="sc" id="cta">
+    <div class="ring pop" data-cue="cta" data-d="0"><i></i></div>
+    <div class="h pop" data-cue="cta" data-d="0.1">We track this<br>every day.</div>
+    <div class="pop" data-cue="follow" data-d="0"><span class="btn">Follow PulsEdge</span></div>
+  </section>
+
+  <div id="cap"></div>
+  <div id="flash"></div>
+  <div id="src"></div>
+  <div id="foot">Educational information only · Not investment advice</div>
+</div>
+<script>
+const SCENES = ["hook", "streak", "twist", "fut", "hands", "why", "next", "cta"];
+const MOOD = { hook: "G", streak: "G", twist: "R", fut: "R", hands: "A", why: "A", next: "P", cta: "P" };
+const HI = { R: "#ff6b78", G: "#2ee6a0", A: "#ffc24d", P: "#c3b0ff" };
+const SRC = { hook: "Source: NSDL daily FPI data · 16–25 Nov 2026", streak: "Source: NSDL daily FPI data · 16–25 Nov 2026", twist: "",
+  fut: "Source: NSE participant-wise OI · 12–25 Nov 2026", hands: "NSDL · NSE · 16–25 Nov 2026", why: "Axios · S&P 500 fall to 20 Nov 2026",
+  next: "MoSPI · RBI · US Federal Reserve calendars", cta: "" };
+const FII = [[16, 5564.9], [17, 5107.61], [18, 11265.68], [19, 8729.89], [20, 7306.4], [23, 11964.54], [25, 8097.5]];
+const FUT = [37.0, 20.1, 23.8], PXPCT = 14.0;
+let T = null, PAGES = [];
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const eo = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const back = (x) => { x = clamp(x); const c = 1.9; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const fmt = (v, d) => (d ? v.toFixed(d) : Math.round(v).toLocaleString("en-IN"));
+
+function init(timing) {
+  T = timing;
+  let cur = [];
+  const flush = () => { if (cur.length) PAGES.push(cur); cur = []; };
+  T.words.forEach((w) => {
+    const len = cur.reduce((a, x) => a + x.w.length + 1, 0);
+    if (cur.length && (cur[0].c !== w.c || cur.length >= 3 || len + w.w.length > 16)) flush();
+    cur.push(w);
+  });
+  flush();
+  PAGES.forEach((p, i) => { p.a = p[0].t; const nx = PAGES[i + 1]; p.b = nx && nx[0].c === p[0].c ? nx[0].t : T.lines[p[0].c].b + 0.25; });
+  const svg = document.getElementById("fbars"), bw = 104, gap = (936 - 7 * bw) / 6, H = 230, B = 262, mx = 12000;
+  svg.innerHTML = FII.map(([d, v], i) => { const x = i * (bw + gap); return `<rect class="fb" data-h="${(H * v / mx).toFixed(1)}" x="${x}" y="${B}" width="${bw}" height="0" rx="14" fill="#2ee6a0"/>
+    <text x="${x + bw / 2}" y="${B + 44}" text-anchor="middle">${d} Nov</text>`; }).join("");
+  return { pages: PAGES.length };
+}
+
+function sceneAt(t) { let s = SCENES[0]; SCENES.forEach((id) => { if (t >= T.cues[id]) s = id; }); return s; }
+function shake(t, t0, dur, amp) { const k = clamp(1 - (t - t0) / dur); if (t < t0 || k <= 0) return [0, 0]; return [Math.sin(t * 91) * amp * k, Math.cos(t * 77) * amp * k]; }
+
+function render(t) {
+  const C = T.cues, cur = sceneAt(t);
+  SCENES.forEach((id, i) => {
+    const a = C[id], b = i + 1 < SCENES.length ? C[SCENES[i + 1]] : T.end + 1, el = document.getElementById(id);
+    if (t < a - 0.01 || t >= b) { el.style.opacity = 0; return; }
+    const pin = id === "hook" ? 1 : eo((t - a) / 0.35), drift = 1 + 0.025 * clamp((t - a) / (b - a));
+    const sc = (1.12 - 0.12 * pin) * drift;
+    const [sx, sy] = id === "hook" ? [0, 0] : shake(t, a, 0.3, id === "twist" ? 12 : 6);
+    el.style.opacity = (id === "hook" ? 1 : Math.min(1, (t - a) / 0.12)) * (1 - clamp((t - (b - 0.1)) / 0.1));
+    el.style.transform = `translate(${sx}px,${sy}px) scale(${sc})`;
+  });
+  document.querySelectorAll(".pop").forEach((el) => {
+    const at = C[el.dataset.cue] + (+el.dataset.d || 0), p = (t - at) / 0.4;
+    el.style.opacity = clamp(p * 2.5);
+    el.style.transform = `translateY(${(1 - eo(p)) * 50}px) scale(${0.86 + 0.14 * back(p)})`;
+  });
+  document.querySelectorAll("[data-count]").forEach((el) => {
+    const [f, to, d] = el.dataset.count.split(",").map(Number), at = C[el.dataset.cue] + (+el.dataset.d || 0);
+    el.textContent = fmt(f + (to - f) * eo((t - at) / (+el.dataset.dur || 1.2)), d);
+  });
+  // hook: the seven daily bars grow in turn
+  document.querySelectorAll(".fb").forEach((r, i) => { const h = +r.dataset.h * eo((t + 0.2 - 0.18 * i) / 0.5); r.setAttribute("height", h.toFixed(1)); r.setAttribute("y", (262 - h).toFixed(1)); });
+  // futures: 37% at "37%", then the drop to 20% at "just 20%", then 25 Nov
+  [[C.fut + 0.2, 0], [C.n2 - 0.1, 1], [C.n2 + 0.3, 2]].forEach(([at, i]) => {
+    const p = eo((t - at) / 0.45), v = FUT[i] * p, h = v * PXPCT;
+    document.getElementById("vb" + (i + 1)).style.height = h + "px";
+    const lab = document.getElementById("vv" + (i + 1)); lab.style.bottom = (h + 18) + "px"; lab.style.opacity = t >= at ? 1 : 0; lab.textContent = v.toFixed(1) + "%";
+  });
+  const m = MOOD[cur], since = t - C[cur];
+  ["R", "G", "A", "P"].forEach((k) => {
+    const el = document.getElementById("g" + k);
+    el.style.opacity = k === m ? Math.min(1, 0.4 + since / 0.3) : Math.max(0, 1 - since / 0.3) * (el._last === k ? 1 : 0);
+  });
+  document.getElementById("g" + m)._last = m;
+  let fl = 0;
+  SCENES.forEach((id) => { const d = t - C[id]; if (id !== "hook" && d >= 0 && d < 0.25) fl = Math.max(fl, (id === "twist" ? 0.6 : 0.25) * (1 - d / 0.25)); });
+  ["n1", "n2"].forEach((k) => { const d = t - C[k]; if (d >= 0 && d < 0.2) fl = Math.max(fl, 0.12 * (1 - d / 0.2)); });
+  document.getElementById("flash").style.opacity = fl;
+  document.querySelector("#bars b").style.width = (100 * clamp(t / T.end)) + "%";
+  document.getElementById("src").textContent = SRC[cur] || "";
+  const page = PAGES.find((p) => t >= p.a - 0.02 && t < p.b), cap = document.getElementById("cap");
+  if (!page) { cap.innerHTML = ""; return; }
+  const hi = HI[m];
+  cap.innerHTML = page.map((w) => {
+    const on = t >= w.t - 0.03 && t < w.e + 0.05, pp = clamp((t - w.t) / 0.12);
+    const s = on ? 1 + 0.05 * (1 - Math.abs(1 - 2 * pp)) + 0.02 : 1;
+    return `<span style="color:${on ? hi : "#fff"};transform:scale(${s.toFixed(3)})">${w.w}</span>`;
+  }).join("");
+  const pa = clamp((t - page.a) / 0.12);
+  cap.style.transform = `scale(${0.9 + 0.1 * pa})`; cap.style.opacity = pa;
+}
+</script>
+</body>
+</html>

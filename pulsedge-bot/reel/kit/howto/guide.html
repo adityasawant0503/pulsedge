@@ -67,7 +67,7 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:var(--b
 <div id="stage">
   <div id="glow"></div><div id="grid"></div>
   <div id="bars"><b></b></div>
-  <div id="brand"><span></span>PULSEDGE <em>· HOW TO</em></div>
+  <div id="brand"><span></span>PULSEDGE <em id="brandsub">· HOW TO</em></div>
   <div id="step"></div>
 
   <div id="win">
@@ -103,6 +103,14 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:var(--b
     <div class="pop" data-cue="end" data-d="0.8"><span class="pill">Try it free</span></div>
     <div class="sub pop" data-cue="end" data-d="1.0">5 trading sessions · no card</div>
     <div class="bio pop" data-cue="end" data-d="1.2">LINK IN BIO</div>
+  </div>
+
+  <div class="end" id="end4">
+    <div class="ring pop" data-cue="end" data-d="0"><i></i></div>
+    <div class="h pop" data-cue="end" data-d="0.05">Two minutes.</div>
+    <div class="h b pop" data-cue="end" data-d="0.3">You're caught up.</div>
+    <div class="pop" data-cue="end" data-d="0.8"><span class="pill">Follow PulsEdge</span></div>
+    <div class="bio pop" data-cue="end" data-d="1.05" style="margin-top:44px">TRY IT FREE · LINK IN BIO</div>
   </div>
 
   <div id="cap"></div>
@@ -145,6 +153,29 @@ function init(data) {
     hl(C.money + 0.15, C.pm - 0.1, M.money.tab, 6);
     shot(C.pm, "pm", 90);
     hl(C.panel - 0.1, C.end, [M.pm.panel[0], M.pm.panel[1], M.pm.panel[2], 300], 6);
+  } else if (EP === 4) {
+    document.getElementById("brandsub").textContent = "· 2-MIN ROUTINE";
+    STEPS = [[0, "BEFORE 9:15"], [C.open, "9:15 OPEN"], [C.own, "YOUR STOCKS"], [C.stuck, "STUCK?"]];
+    const pm = M.pm, rw = pm.rows;
+    shot(0, "pm", 90, 90, 0.6, 0);
+    shot(C.fx - 0.15, "pm", 90, 285, C.vix - C.fx + 0.1, 0);
+    [["nifty", "us"], ["us", "asia"], ["asia", "fx"], ["fx", "brent"], ["brent", "vix"], ["vix", "open"]].forEach(([a, b], i) => hl(C[a] - 0.05, C[b] - 0.08, rw[i], 4));
+    shot(C.open, "tabs", 140);
+    hl(C.open + 0.25, C.tapideas + 0.1, M.tabs.ideas, 6); tap(C.tapideas, M.tabs.ideas);
+    shot(C.tapideas + 0.3, "ideas", 140);
+    hl(C.tapideas + 0.4, C.ideas + 0.6, M.ideas.tab, 6); hl(C.ideas + 0.65, C.own - 0.1, M.ideas.card, 6);
+    shot(C.own, "mine", 140);
+    hl(C.mine - 0.05, C.mine + 0.9, M.mine.tab, 6);
+    shot(C.mine + 0.9, "mine2", 100);
+    hl(C.mine + 1.2, C.money - 0.1, [M.mine2.card[0], M.mine2.card[1], M.mine2.card[2], Math.min(M.mine2.card[3], 380)], 6);
+    shot(C.money, "money", 150);
+    hl(C.money + 0.15, C.money + 0.9, M.money.tab, 6); hl(C.money + 0.95, C.stuck - 0.1, [M.money.card[0], M.money.card[1], M.money.card[2], 340], 6);
+    shot(C.stuck, "card", 100);
+    hl(C.stuck + 0.25, C.tapask + 0.1, M.card.ask, 8); tap(C.tapask, M.card.ask);
+    shot(C.tapask + 0.3, "chat", 300);
+    hl(C.tapask + 0.45, C.answer - 0.05, M.chat.user, 6);
+    shot(C.answer, "chat", 300, 330, 0.8, 0);
+    hl(C.answer + 0.1, C.end, [M.chat.bot[0], M.chat.bot[1], M.chat.bot[2], 262], 6);
   } else {
     STEPS = [[0, "PART 3/3 · YOURS"]];
     shot(0, "search-0", 60);
@@ -223,8 +254,9 @@ function render(t) {
     });
   } else document.getElementById("over").style.display = "none";
   document.getElementById("scrim").style.opacity = sOn;
-  const st = document.getElementById("step"); st.textContent = STEPS[0][1];
-  st.style.opacity = t >= C.end ? 0 : 1; st.style.transform = `scale(${0.7 + 0.3 * back(t / 0.35)})`;
+  const st = document.getElementById("step"); let si = 0; STEPS.forEach((x, i) => { if (t >= x[0]) si = i; });
+  st.textContent = STEPS[si][1];
+  st.style.opacity = t >= C.end ? 0 : 1; st.style.transform = `scale(${0.7 + 0.3 * back((t - STEPS[si][0]) / 0.35)})`;
   const win = document.getElementById("win"), out = clamp((t - C.end) / 0.3);
   win.style.transform = `scale(${1 - 0.12 * out})`; win.style.opacity = 1 - out;
   let fl = 0; [C.end].forEach((s) => { const d = t - s; if (d >= 0 && d < 0.22) fl = Math.max(fl, 0.28 * (1 - d / 0.22)); });

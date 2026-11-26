@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PulsEdge how-to covers</title>
+<!-- Three 1080x1920 images: the feed cover for the full how-to reel (key content inside the middle 1080x1350),
+     and two story-highlight covers (Instagram crops a circle from the centre, so the mark sits dead centre). -->
+<style>
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-600-normal.woff2) format("woff2");font-weight:600}
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-700-normal.woff2) format("woff2");font-weight:700}
+@font-face{font-family:PlexMono;src:url(fonts/ibm-plex-mono-latin-600-normal.woff2) format("woff2");font-weight:600}
+:root{--ink:#f6f5fb;--mute:#b9b5c8;--acc:#a58bff;--accl:#c9b8ff;--green:#2ee6a0;--amber:#ffc24d}
+*{box-sizing:border-box}
+html,body{margin:0;background:#09080e}
+.c{position:relative;width:1080px;height:1920px;overflow:hidden;color:var(--ink);font-family:Plex,sans-serif;-webkit-font-smoothing:antialiased}
+.bg{position:absolute;inset:0;background:radial-gradient(60% 38% at 80% 22%,#6c43f0aa,transparent 70%),radial-gradient(55% 35% at 12% 78%,#2ee6a02a,transparent 70%),linear-gradient(170deg,#140c2c 0%,#09080e 55%,#06130e 100%)}
+.grid{position:absolute;inset:0;opacity:.3;background:linear-gradient(#ffffff10 1px,transparent 1px) 0 0/90px 90px,linear-gradient(90deg,#ffffff10 1px,transparent 1px) 0 0/90px 90px;-webkit-mask-image:radial-gradient(80% 60% at 50% 50%,#000 30%,transparent 85%)}
+.brand{position:absolute;left:72px;top:300px;display:flex;align-items:center;gap:14px;font:600 32px/1 PlexMono,monospace;letter-spacing:.16em}
+.brand i{width:18px;height:18px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 7px #a58bff33,0 0 26px var(--acc)}
+.brand b{font-weight:600;color:#1a1230;background:var(--accl);border-radius:10px;padding:8px 14px;letter-spacing:.1em;margin-left:10px}
+.h1{position:absolute;left:72px;right:60px;top:380px;font:700 104px/1.0 Plex,sans-serif;letter-spacing:-.045em}
+.h1 span{background:linear-gradient(90deg,#c9b8ff 0%,#a58bff 40%,#2ee6a0 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.steps{position:absolute;left:72px;top:640px;display:grid;gap:22px}
+.st{display:flex;align-items:center;gap:24px;font:700 52px/1 Plex,sans-serif;letter-spacing:-.02em}
+.st b{width:76px;height:76px;border-radius:20px;display:flex;align-items:center;justify-content:center;font:600 40px/1 PlexMono,monospace;background:#a58bff2a;border:3px solid #a58bff99;color:var(--accl)}
+.win{position:absolute;left:560px;top:900px;width:460px;height:640px;border-radius:36px;overflow:hidden;border:3px solid #3a3550;background:#0b0a10;transform:rotate(4deg);box-shadow:0 50px 140px -30px #6c43f0cc,0 0 0 10px #ffffff08}
+.win img{position:absolute;left:0;top:-30px;width:460px;height:auto}
+.cta{position:absolute;left:72px;top:1420px}
+.cta span{display:inline-flex;align-items:center;gap:18px;background:var(--ink);color:#09080e;font:700 46px/1 Plex,sans-serif;border-radius:999px;padding:28px 46px;box-shadow:0 20px 60px -10px #a58bff88}
+.cta span i{display:inline-block;width:0;height:0;border-left:28px solid #09080e;border-top:17px solid transparent;border-bottom:17px solid transparent}
+/* highlight covers */
+.hc .mark{position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle,#a58bff30,transparent 68%);box-shadow:0 0 0 4px #ffffff14}
+.hc .sym{width:150px;height:150px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--acc);box-shadow:0 0 0 26px #a58bff2e,0 0 90px var(--acc)}
+.hc .sym i{display:block;width:0;height:0;border-left:56px solid #150c33;border-top:34px solid transparent;border-bottom:34px solid transparent;margin-left:14px}
+.hc .sym u{display:block;width:54px;height:54px;border-radius:50%;background:#150c33}
+.hc .lab{margin-top:58px;font:600 52px/1 PlexMono,monospace;letter-spacing:.16em}
+</style>
+</head>
+<body>
+<div class="c" id="feed">
+  <div class="bg"></div><div class="grid"></div>
+  <div class="brand"><i></i>PULSEDGE<b>ROUTINE</b></div>
+  <div class="h1">Your 2-minute<br><span>market routine.</span></div>
+  <div class="steps">
+    <div class="st"><b>1</b>Before 9:15</div>
+    <div class="st"><b>2</b>9:15 open</div>
+    <div class="st"><b>3</b>Your stocks</div>
+    <div class="st"><b>4</b>Stuck? Ask</div>
+  </div>
+  <div class="win"><img src="cap/pm.png" alt="" style="top:-106px"></div>
+  <div class="cta"><span><i></i>Caught up in 2 min</span></div>
+</div>
+<div class="c hc" id="hl-howto"><div class="bg"></div><div class="grid"></div>
+  <div class="mark"><div class="sym"><i></i></div><div class="lab">HOW TO</div></div></div>
+<div class="c hc" id="hl-start"><div class="bg"></div><div class="grid"></div>
+  <div class="mark"><div class="sym"><u></u></div><div class="lab">START</div></div></div>
+</body>
+</html>
