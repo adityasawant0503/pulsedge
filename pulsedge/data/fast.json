@@ -1,7 +1,55 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T12:09:06+05:30",
+ "updated": "2026-11-26T12:24:37+05:30",
  "items": [
+  {
+   "id": "ecfbfb818c7b4a7a",
+   "time": "2026-11-26T12:24:08+05:30",
+   "headline": "NCC: MAINTAINS FY27 REVENUE GROWTH GUIDANCE OF 8-10%, AFTER 21% H1 GROWTH",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10151",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "NCC",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Infrastructure",
+    "Construction"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "Guidance",
+   "action": "Monitor if the stock holds its recent gains as the market digests the maintained growth outlook.",
+   "reason": [
+    "Company reaffirmed 8-10% revenue growth for FY27 despite strong 21% H1 performance.",
+    "Consistent guidance provides visibility for long-term investors."
+   ],
+   "risks": [
+    "Guidance is lower than the recent H1 growth rate, which might disappoint aggressive traders.",
+    "Macro factors like interest rates could still impact infrastructure spending."
+   ],
+   "plain": "The company confirmed it expects its sales to grow by 8 to 10 percent next year.",
+   "why": "It shows the business is stable and growing, which is good for long-term owners.",
+   "check": "Look at the company's recent order book to see if new projects support this growth.",
+   "original": "NCC: MAINTAINS FY27 REVENUE GROWTH GUIDANCE OF 8-10%, AFTER 21% H1 GROWTH",
+   "latency": 29.2,
+   "lane": "fast",
+   "quotes": {
+    "NCC": {
+     "px": 129.16,
+     "prev": 129.17,
+     "move": -0.01,
+     "at": "2026-11-26T12:24:37+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "47107415c2ca95b5",
    "time": "2026-11-26T12:08:35+05:30",
@@ -1842,201 +1890,6 @@
      "prev": 163.0,
      "move": -0.52,
      "at": "2026-11-25T12:27:23+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "4adcc7ac31d9ae76",
-   "time": "2026-11-25T12:24:12+05:30",
-   "headline": "CO-EXECUTIVE SAYS SECOND HALF WILL BE STRONGER AS CONSTRUCTION ACTIVITY RISES",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10017",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Construction",
-    "Real Estate"
-   ],
-   "impact": 0,
-   "confidence": 0,
-   "category": "General Commentary",
-   "action": "No specific action required as no listed entity is identified.",
-   "reason": [
-    "No specific listed company is named in the headline.",
-    "General market commentary without direct stock impact."
-   ],
-   "risks": [
-    "Potential misattribution if a specific stock was intended but not named."
-   ],
-   "plain": "A company executive said business will improve in the second half due to more construction work.",
-   "why": "This is general talk about the industry, not news about a specific stock you can buy or sell.",
-   "check": "",
-   "original": "CO-EXECUTIVE SAYS SECOND HALF WILL BE STRONGER AS CONSTRUCTION ACTIVITY RISES",
-   "latency": 70.9,
-   "lane": "fast"
-  },
-  {
-   "id": "c07f96092fbbaaf7",
-   "time": "2026-11-25T12:21:51+05:30",
-   "headline": "SFC ENVIRONMENTAL: FY27 REVENUE EXPECTED AT ₹1,200 CR, WITH EBITDA BETWEEN 300-320 CR; CO SAYS WASTEWATER TREATMENT TO CONTRIBUTE 50% OF REVENUE MIX IN FY27",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10016",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [],
-   "sectors": [
-    "Water & Wastewater"
-   ],
-   "impact": 60,
-   "confidence": 55,
-   "category": "company",
-   "action": "Watch for earnings release and actual FY27 results",
-   "reason": [
-    "Revenue and EBITDA guidance higher than prior expectations.",
-    "Wastewater treatment expected to drive half of revenue."
-   ],
-   "risks": [
-    "Guidance may not be met if project delays occur.",
-    "Macro slowdown could affect demand."
-   ],
-   "plain": "RedBox Global India expects FY27 revenue of ₹1,200 cr and EBITDA ₹300‑320 cr, with wastewater treatment making up half its revenue.",
-   "why": "If the firm hits these targets, its share could rise; missing them may push the price down.",
-   "check": "Monitor upcoming earnings releases for actual revenue and EBITDA figures.",
-   "original": "SFC ENVIRONMENTAL: FY27 REVENUE EXPECTED AT ₹1,200 CR, WITH EBITDA BETWEEN 300-320 CR; CO SAYS WASTEWATER TREATMENT TO CONTRIBUTE 50% OF REVENUE MIX IN FY27",
-   "latency": 94.1,
-   "lane": "fast"
-  },
-  {
-   "id": "428f8676770ae87f",
-   "time": "2026-11-25T12:12:35+05:30",
-   "headline": "Siemens Ltd CEO Sunil Mathur stated profitability remains impacted by commodity price volatility and forex (higher material costs). Q2 FY27 presentation notes elevated/volatile commodity and FX pressures. Analyst meet re",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10015",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "down",
-   "tickers": [
-    {
-     "symbol": "SIEMENS",
-     "direction": "down"
-    }
-   ],
-   "sectors": [
-    "Industrial",
-    "Energy"
-   ],
-   "impact": 40,
-   "confidence": 60,
-   "category": "Earnings/Management Commentary",
-   "action": "Monitor if the stock holds support despite margin pressure warnings from management.",
-   "reason": [
-    "CEO cites commodity and forex volatility as key profitability drags.",
-    "Q2 FY27 outlook suggests continued cost headwinds."
-   ],
-   "risks": [
-    "Sustained high input costs could compress margins further.",
-    "Forex movements may continue to erode net income."
-   ],
-   "plain": "The company's top executive said rising material costs and currency changes are hurting profits.",
-   "why": "Higher costs mean less money left over after expenses, which can lower the value of the shares.",
-   "check": "Look at the company's next quarterly report to see if costs actually went down.",
-   "original": "Siemens Ltd CEO Sunil Mathur stated profitability remains impacted by commodity price volatility and forex (higher material costs). Q2 FY27 presentation notes elevated/volatile commodity and FX pressures. Analyst meet re",
-   "latency": 48.3,
-   "lane": "fast",
-   "quotes": {
-    "SIEMENS": {
-     "px": 3606.8,
-     "prev": 3578.1,
-     "move": 0.8,
-     "at": "2026-11-25T12:13:23+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "0b9ff72a0e7ef101",
-   "time": "2026-11-25T12:12:12+05:30",
-   "headline": "EUROPEAN NATURAL GAS FALLS AS MUCH AS 5.2% TO €86.94/MWH",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10014",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Energy",
-    "Commodities"
-   ],
-   "impact": 10,
-   "confidence": 20,
-   "category": "Global Commodity Move",
-   "action": "No specific action needed for Indian listed stocks based on this headline alone.",
-   "reason": [
-    "Global gas price drop has limited direct impact on specific Indian listed stocks without further context.",
-    "No specific Indian company is named or directly linked."
-   ],
-   "risks": [
-    "Indirect effects on energy-intensive sectors are possible but unclear.",
-    "Market reaction may be muted or delayed."
-   ],
-   "plain": "The price of natural gas in Europe went down significantly.",
-   "why": "This is a global event that does not directly change the business of specific Indian companies listed here.",
-   "check": "",
-   "original": "EUROPEAN NATURAL GAS FALLS AS MUCH AS 5.2% TO €86.94/MWH",
-   "latency": 71.3,
-   "lane": "fast"
-  },
-  {
-   "id": "7dd0ed264273feae",
-   "time": "2026-11-25T12:09:46+05:30",
-   "headline": "SIEMENS: CO SAYS MARGINS REMAIN STRESSED DUE TO FOREX AND COMMODITY INFLATION|| NO GUIDANCE ON MARGIN NORMALISATION TIME-LINE",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10013",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "down",
-   "tickers": [
-    {
-     "symbol": "SIEMENS",
-     "direction": "down"
-    }
-   ],
-   "sectors": [
-    "Industrial"
-   ],
-   "impact": 45,
-   "confidence": 70,
-   "category": "Earnings/Management Commentary",
-   "action": "Monitor if the stock holds support despite margin concerns; look for volume confirmation before any entry.",
-   "reason": [
-    "CEO explicitly stated margins are stressed due to forex and commodity inflation.",
-    "Lack of a timeline for margin normalization creates uncertainty for near-term earnings."
-   ],
-   "risks": [
-    "Further margin compression if commodity prices rise.",
-    "Investor sentiment may worsen if competitors show better margin resilience."
-   ],
-   "plain": "The company's top executive said profits are squeezed by rising costs and currency issues, with no clear fix date.",
-   "why": "This suggests future earnings might be lower than expected, which could make the stock less attractive to investors.",
-   "check": "Look at the company's next quarterly report to see if costs actually went down.",
-   "original": "SIEMENS: CO SAYS MARGINS REMAIN STRESSED DUE TO FOREX AND COMMODITY INFLATION|| NO GUIDANCE ON MARGIN NORMALISATION TIME-LINE",
-   "latency": 67.7,
-   "lane": "fast",
-   "quotes": {
-    "SIEMENS": {
-     "px": 3608.2,
-     "prev": 3578.1,
-     "move": 0.84,
-     "at": "2026-11-25T12:10:53+05:30",
      "delay": 900
     }
    }
