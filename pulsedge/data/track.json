@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T13:47:13+05:30",
+ "updated": "2026-11-26T14:01:07+05:30",
  "summary": {
-  "calls": 2305,
-  "scored_calls": 1092,
+  "calls": 2307,
+  "scored_calls": 1094,
   "d1": {
    "scored": 870,
    "hits": 384,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "523f326773e7742f",
+   "symbol": "AMBER",
+   "time": "2026-11-26T13:59:30+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "AMBER ENTERPRISES INDIA LTD: CO. ANNOUNCES MOU FOR ₹500 CRORE EXPANSION INVESTMENT IN TAMIL NADU BY ASCENT CIRCUITS; INVESTMENT TO ENHANCE PCB MANUFACTURING CAP",
+   "url": "https://t.me/Indiaredboxglobal/10165",
+   "alert_px": 6843.5,
+   "alert_move": -1.39,
+   "alert_at": "2026-11-26T13:59:37+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "29e3862118dea04b",
+   "symbol": "AMBER",
+   "time": "2026-11-26T13:59:01+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Amber Enterprises India Limited: Pursuant to Regulation 30 of SEBI (LODR) Regulations, 2015, we wish to inform the exchange that Ascent Circuits Private Limited",
+   "url": "https://nsearchives.nseindia.com/corporate/AMBER_26112026135837_SE_Intimation_26112026_Ascent_Gov_of_TN_MOU.pdf",
+   "alert_px": 6837.5,
+   "alert_move": -1.48,
+   "alert_at": "2026-11-26T14:00:51+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "f020c5ee3814d5bd",
    "symbol": "WELSPUNLIV",
