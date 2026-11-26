@@ -1,7 +1,39 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T12:25:36+05:30",
+ "updated": "2026-11-26T12:30:06+05:30",
  "items": [
+  {
+   "id": "5206dac7e9b72a6a",
+   "time": "2026-11-26T12:28:41+05:30",
+   "headline": "HINDUSTAN FOODS: COMPANY TO INVEST ₹100 CRORE IN GREENFIELD PROJECT IN TAMIL NADU UNDER ITS HOME AND PERSONAL CARE DIVISION",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10153",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "positional",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "FMCG"
+   ],
+   "impact": 0,
+   "confidence": 0,
+   "category": "corporate",
+   "action": "No immediate action required as no listed entity is directly named.",
+   "reason": [
+    "Hindustan Foods is a private company, not listed on NSE.",
+    "No candidate symbols provided for this specific entity."
+   ],
+   "risks": [
+    "Misidentifying private company news as listed stock impact."
+   ],
+   "plain": "A private food company plans to spend money on a new factory in Tamil Nadu.",
+   "why": "This company is not publicly traded, so its news does not directly move listed stock prices.",
+   "check": "",
+   "original": "HINDUSTAN FOODS: COMPANY TO INVEST ₹100 CRORE IN GREENFIELD PROJECT IN TAMIL NADU UNDER ITS HOME AND PERSONAL CARE DIVISION",
+   "latency": 85.8,
+   "lane": "fast"
+  },
   {
    "id": "9304d211aef186ee",
    "time": "2026-11-26T12:25:11+05:30",
@@ -1879,54 +1911,6 @@
      "prev": 517.4,
      "move": 1.31,
      "at": "2026-11-25T12:40:54+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "0a5e5062ab862322",
-   "time": "2026-11-25T12:26:18+05:30",
-   "headline": "APL APOLLO: TATA STEEL IS WORKING ON TWEAKING THE APL APOLLO DEAL STRUCTURE",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10018",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [
-    {
-     "symbol": "TATASTEEL",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Metals",
-    "Steel"
-   ],
-   "impact": 40,
-   "confidence": 60,
-   "category": "M&A",
-   "action": "Monitor official announcements for deal certainty before reacting to rumors.",
-   "reason": [
-    "Deal structure tweaks introduce uncertainty into the acquisition timeline.",
-    "Market may react to potential delays or changes in valuation."
-   ],
-   "risks": [
-    "Deal could fall through or face regulatory hurdles.",
-    "Short-term volatility due to conflicting media reports."
-   ],
-   "plain": "Tata Steel is changing how it plans to buy APL Apollo.",
-   "why": "Changes to a big deal can make the stock price move up or down unexpectedly.",
-   "check": "Look for official company statements confirming the new deal terms.",
-   "original": "APL APOLLO: TATA STEEL IS WORKING ON TWEAKING THE APL APOLLO DEAL STRUCTURE",
-   "latency": 65.3,
-   "lane": "fast",
-   "quotes": {
-    "TATASTEEL": {
-     "px": 162.16,
-     "prev": 163.0,
-     "move": -0.52,
-     "at": "2026-11-25T12:27:23+05:30",
      "delay": 900
     }
    }
