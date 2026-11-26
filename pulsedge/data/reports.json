@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T14:00+05:30",
+ "updated": "2026-11-26T14:09+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -171,6 +171,22 @@
    "updated": "2026-11-26T12:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "WELCORP": {
+   "summary": "Welspun Corp received a new export order for large-diameter steel pipes, which helped push its shares up by 5%. A company executive also stated that profits could reach a high level within the next two years.",
+   "why": "New orders add to the company's income, and strong profit expectations can make the stock more attractive to investors over time.",
+   "upside": "The new export order and executive confidence suggest strong demand for the company's products.",
+   "downside": "The recent share price jump may already reflect the good news, and the new order could be delayed or cancelled.",
+   "watch": [
+    "Whether the new export order is delivered on time",
+    "If the company continues to win new contracts",
+    "General market volatility affecting the stock price"
+   ],
+   "about": "Welspun Corp is a capital goods company that manufactures steel pipes.",
+   "basis": "1ddc6e10b321",
+   "items": 3,
+   "updated": "2026-11-26T14:09+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "HEROMOTOCO": {
    "summary": "Hero MotoCorp has issued a recent press release and updated the market on a court case where the high court cancelled a ₹165 crore demand related to temporary registration certificates. The company also filed a SEBI listing regulation disclosure about the trade registration certificate matter.",
    "why": "The court ruling removes a large liability, potentially strengthening the balance sheet, while ongoing regulatory issues could impact operations.",
@@ -202,22 +218,6 @@
    "items": 3,
    "updated": "2026-11-25T19:23+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "WELCORP": {
-   "summary": "Welspun Corp received an export order for large‑diameter steel pipes and a company executive said its EBITDA could reach about ₹5,000 crore in two years.",
-   "why": "The order could lift revenue soon, while the EBITDA outlook signals longer‑term growth potential for shareholders.",
-   "upside": "If the export order is delivered on time and the EBITDA target is achieved, earnings could improve.",
-   "downside": "Delays or cancellation of the export order or the long‑term nature of the EBITDA target could limit near‑term benefits.",
-   "watch": [
-    "Fulfilment status of the LSAW pipe export order",
-    "Any further guidance on EBITDA growth",
-    "New contract wins or cancellations"
-   ],
-   "about": "Welspun Corp Ltd. manufactures and supplies large‑diameter steel pipes and related capital‑goods.",
-   "basis": "923068fcbed1",
-   "items": 2,
-   "updated": "2026-11-26T13:00+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "DALBHARAT": {
    "summary": "Dalmia Bharat approved a ₹700 crore share buyback of up to 3.78 million shares, aiming to boost earnings per share and support the stock price.",
