@@ -1,7 +1,45 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T15:45:59+05:30",
+ "updated": "2026-11-26T15:53:29+05:30",
  "items": [
+  {
+   "id": "fa03d735f54f449e",
+   "time": "2026-11-26T15:53:14+05:30",
+   "headline": "TORRENT POWER: CO SAYS WHOLLY OWNED SUBSIDIARY TORRENT GREEN ENERGY INCORPORATES STEP-DOWN SUBSIDIARY TORRENT URJA 49 PRIVATE LIMITED FOR RENEWABLE ENERGY AND GREEN HYDROGEN BUSINESS",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10171",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [
+    {
+     "symbol": "TORNTPOWER",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Power",
+    "Renewables"
+   ],
+   "impact": 5,
+   "confidence": 90,
+   "category": "Corporate Filing",
+   "action": "No immediate trading action required; monitor for future capital deployment announcements.",
+   "reason": [
+    "Routine corporate restructuring for renewable energy operations.",
+    "No immediate financial impact or new business deal disclosed."
+   ],
+   "risks": [
+    "None specific to this filing."
+   ],
+   "plain": "The company created a new internal unit to handle its green energy and hydrogen projects.",
+   "why": "This is just an organizational change with no immediate effect on profits or share value.",
+   "check": "",
+   "original": "TORRENT POWER: CO SAYS WHOLLY OWNED SUBSIDIARY TORRENT GREEN ENERGY INCORPORATES STEP-DOWN SUBSIDIARY TORRENT URJA 49 PRIVATE LIMITED FOR RENEWABLE ENERGY AND GREEN HYDROGEN BUSINESS",
+   "latency": 15.1,
+   "lane": "fast"
+  },
   {
    "id": "5a86bbb8c16dc5d1",
    "time": "2026-11-26T15:45:07+05:30",
@@ -1506,44 +1544,6 @@
    "check": "Check the final issue price and subscription details when released.",
    "original": "SHALIMAR PAINTS: CO RECEIVES BSE AND NSE TRADING APPROVAL FOR 5.19 CRORE QIP SHARES, EFFECTIVE NOVEMBER 26, 2026",
    "latency": 38.2,
-   "lane": "fast"
-  },
-  {
-   "id": "c9cc99681b6b2e05",
-   "time": "2026-11-25T15:51:58+05:30",
-   "headline": "WIPRO LIMITED: CO. ENTERS STRATEGIC PARTNERSHIP WITH BP TO TRANSFORM FINANCE OPERATIONS; AROUND 3,000 BP EMPLOYEES TO JOIN WIPRO; NEW OPERATING MODEL EFFECTIVE IN 2027.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10046",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "WIPRO",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "IT Services"
-   ],
-   "impact": 65,
-   "confidence": 70,
-   "category": "Corporate Announcement",
-   "action": "Monitor if the partnership translates into immediate revenue visibility or if the market views the 2027 timeline as too distant.",
-   "reason": [
-    "Securing a major global client like BP with 3,000 employees indicates strong demand for Wipro's finance transformation services.",
-    "The deal provides long-term revenue stability, though the 2027 effective date limits immediate financial impact."
-   ],
-   "risks": [
-    "The long implementation timeline (2027) may delay tangible revenue recognition.",
-    "Integration of 3,000 employees could strain operational capacity in the short term."
-   ],
-   "plain": "Wipro signed a big deal with BP to handle their finance work, bringing in 3,000 staff.",
-   "why": "It shows Wipro is winning large, stable contracts, which is good for its long-term business health.",
-   "check": "Look for analyst notes on how this deal affects Wipro's future revenue forecasts.",
-   "original": "WIPRO LIMITED: CO. ENTERS STRATEGIC PARTNERSHIP WITH BP TO TRANSFORM FINANCE OPERATIONS; AROUND 3,000 BP EMPLOYEES TO JOIN WIPRO; NEW OPERATING MODEL EFFECTIVE IN 2027.",
-   "latency": 13.8,
    "lane": "fast"
   }
  ]
