@@ -1,7 +1,54 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-25T15:58:13+05:30",
+ "updated": "2026-11-26T09:56:06+05:30",
  "items": [
+  {
+   "id": "c5c9d4f21997ce2f",
+   "time": "2026-11-26T09:56:00+05:30",
+   "headline": "ENDURANCE TECH: CO SAYS 4 NEW PROJECTS ARE COMING SOON|| MARGINS WILL MOVE UP IN COMING QTRS",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10129",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "ENDURANCE",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "IT Services"
+   ],
+   "impact": 45,
+   "confidence": 60,
+   "category": "company_update",
+   "action": "Monitor upcoming quarterly results to verify if the promised margin expansion materializes.",
+   "reason": [
+    "Management indicated four new projects are imminent.",
+    "Expectation of rising profit margins in coming quarters."
+   ],
+   "risks": [
+    "Project execution delays could push revenue recognition later.",
+    "Competitive pressure may limit actual margin gains."
+   ],
+   "plain": "The company says it has four new projects starting soon and expects to earn more profit on each one.",
+   "why": "Better profits and new work can make the business more valuable, but this is just a promise until results show it.",
+   "check": "Look at the next quarterly report to see if profits actually increased.",
+   "original": "ENDURANCE TECH: CO SAYS 4 NEW PROJECTS ARE COMING SOON|| MARGINS WILL MOVE UP IN COMING QTRS",
+   "latency": 6.8,
+   "lane": "fast",
+   "quotes": {
+    "ENDURANCE": {
+     "px": 2644.1,
+     "prev": 2642.2,
+     "move": 0.07,
+     "at": "2026-11-26T09:56:06+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "8b682a6bb1e2f769",
    "time": "2026-11-25T15:57:44+05:30",
@@ -1621,80 +1668,6 @@
      "delay": 900
     }
    }
-  },
-  {
-   "id": "0fae240c2e0c87cb",
-   "time": "2026-11-25T09:49:52+05:30",
-   "headline": "BEML: CO SAYS EXPECT MANY ORDERS IN DEFENCE SECTORS AND INTERNATIONAL ORDERS || ON TRACK TO ACHIEVE DOUBLE DIGIT GROWTH: INTERVIEW",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10005",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "BEML",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "defence"
-   ],
-   "impact": 70,
-   "confidence": 80,
-   "category": "company",
-   "action": "Watch for order confirmations and upcoming earnings that could validate the growth outlook.",
-   "reason": [
-    "Kept at Watch: no concrete order, just expectations",
-    "Management expects strong order inflow in defence and overseas markets.",
-    "Targeting double‑digit revenue growth signals robust performance."
-   ],
-   "risks": [
-    "Execution risk if orders are delayed or cancelled.",
-    "Higher input costs could erode margins."
-   ],
-   "plain": "BEML’s CEO says the company expects many defence and overseas orders and aims for double‑digit growth.",
-   "why": "If the order pipeline grows, revenue and profit could rise, supporting a higher share price.",
-   "check": "Look for upcoming order confirmations or quarterly earnings updates.",
-   "original": "BEML: CO SAYS EXPECT MANY ORDERS IN DEFENCE SECTORS AND INTERNATIONAL ORDERS || ON TRACK TO ACHIEVE DOUBLE DIGIT GROWTH: INTERVIEW",
-   "latency": 32.8,
-   "lane": "fast",
-   "checked": "no concrete order, just expectations",
-   "quotes": {
-    "BEML": {
-     "px": 2009.1,
-     "prev": 2008.1,
-     "move": 0.05,
-     "at": "2026-11-25T09:50:25+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "d4248c36fb63e600",
-   "time": "2026-11-25T09:25:47+05:30",
-   "headline": "According to Chinese media reports, several major smartphone makers have set lower shipment targets for 2027.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10004",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "macro",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "Chinese smartphone makers cut 2027 shipment targets, lowering expected sales.",
-   "why": "It may reduce demand for Indian phone distributors, but no direct listed-company impact.",
-   "check": "",
-   "original": "- Xiaomi is targeting about 90 million units in 2027, down 25% from its 2026 target of about 120 million. - Lenovo (primarily Motorola) is targeting about 40 million units in 2027, down 20% from about 50 million in 2026. - Apple is targeting about 220 million units in 2027, down 5.6% from about 233 ",
-   "latency": 67.2,
-   "lane": "fast"
   }
  ]
 }
