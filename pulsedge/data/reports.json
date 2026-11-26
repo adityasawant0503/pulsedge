@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T10:30+05:30",
+ "updated": "2026-11-26T10:45+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Indian markets were buoyed by strong foreign fund inflows and upbeat corporate news, while US tariff talk kept investors cautious. Welspun Corp landed an export order for large steel pipes and Acme Solar started a battery storage project, adding revenue hopes. Energy and infrastructure stocks led gains, with Siemens Energy reporting a big profit jump and Jupiter Wagons rallying on a South Korean joint venture. However, concerns linger over possible US tariffs and price corrections after sharp moves.",
+  "summary": "PulsEdge flagged a mixed day with strong gains in FMCG, pharma and financials while media and metals lagged. Sugar makers rallied sharply as analysts expect lower sugar output, pushing prices higher. Companies such as Borosil Renewable, Welspun Corp and Acme Solar reported positive developments in sales, export orders and a new battery storage project. Other notable moves included Siemens Energy’s profit jump, LG Electronics India’s price dip on a parent stake sale, and Jupiter Wagons’ surge after a South Korean joint venture.",
   "themes": [
-   "Export orders and new projects lift sentiment",
-   "Foreign fund inflows versus US tariff uncertainty shape market direction",
-   "Energy and infrastructure stocks drive gains"
+   "Renewable and infrastructure firms highlighted with better sales, margins and new projects",
+   "Sugar sector surged on expectations of reduced production and higher prices",
+   "Overall market buoyed by strong FMCG, pharma and financials and rising foreign fund optimism"
   ],
   "watch": [
-   "Jupiter Wagons' South Korean partnership and its impact on railway stocks",
-   "LG Electronics India stake sale and potential price pressure",
-   "Oil price rise on supply worries and its effect on energy companies"
+   "Will Borosil successfully hit its sales and margin targets in the coming quarter?",
+   "How quickly will Welspun’s export order for large‑diameter pipes and Acme Solar’s BESS project translate into revenue?",
+   "What effect will US tariff developments have on SRF, Cipla and Thermax, and will Adani firms’ planned bond sale proceed as expected?"
   ],
   "date": "2026-11-26",
-  "basis": "bce1f50dde2c",
-  "updated": "2026-11-26T10:00+05:30",
+  "basis": "cd7ca6834322",
+  "updated": "2026-11-26T10:45+05:30",
   "model": "openai/gpt-oss-120b",
-  "items": 18
+  "items": 27
  },
  "stocks": {
   "LENSKART": {
@@ -123,22 +123,6 @@
    "updated": "2026-11-25T19:23+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "DALBHARAT": {
-   "summary": "Dalmia Bharat announced a ₹700 crore share buyback of up to 3.78 million shares. The plan aims to reduce the share count and could support the stock price.",
-   "why": "Share buybacks can lift earnings per share, which matters to existing shareholders.",
-   "upside": "If the buyback proceeds as planned, earnings per share may improve and the share price could get support.",
-   "downside": "If the buyback is delayed or not fully subscribed, the expected benefits may not materialise.",
-   "watch": [
-    "Progress of the ₹700 crore buyback",
-    "Subscription levels for the buyback",
-    "Company's cash flow to fund the buyback"
-   ],
-   "about": "It operates in the construction materials sector.",
-   "basis": "90d40f88d5f4",
-   "items": 3,
-   "updated": "2026-11-26T09:10+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "TORNTPOWER": {
    "summary": "Torrent Power bought 100% of Torrent Urja 42 Private Ltd and announced plans to acquire newly formed companies. The moves could add assets and generation capacity but bring financing and integration risks.",
    "why": "Shareholders could see earnings improve if the acquisitions boost capacity, but higher debt may pressure cash flow.",
@@ -169,6 +153,22 @@
    "basis": "8c6c92cdfc9c",
    "items": 2,
    "updated": "2026-11-26T10:00+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "DALBHARAT": {
+   "summary": "Dalmia Bharat announced a ₹700 crore share buyback of up to 3.78 million shares, and the stock traded flat after the news.",
+   "why": "The buyback could lift earnings per share and support the share price, directly affecting shareholders.",
+   "upside": "If the buyback is completed on schedule, earnings per share may improve and the stock could get price support.",
+   "downside": "If the buyback is delayed or not fully subscribed, the expected benefits may not materialise.",
+   "watch": [
+    "Buyback execution and subscription levels",
+    "Company’s quarterly earnings and profit trends",
+    "Overall market reaction to the buyback announcement"
+   ],
+   "about": "Dalmia Bharat Ltd. manufactures construction materials such as cement.",
+   "basis": "17de11ab659f",
+   "items": 2,
+   "updated": "2026-11-26T10:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ENRIN": {
@@ -380,20 +380,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "ADANIENT": {
-   "summary": "Adani Enterprises is raising additional funds by selling a small stake in its airport business arm, Airports Authority of India Limited (AAHL). This move increases the total amount of money being raised for the project.",
-   "why": "Selling new shares can slightly reduce the ownership percentage of current shareholders, which might affect the share price. However, the new money could be used for growth projects that benefit the company in the long run.",
-   "upside": "The raised funds may be invested in growth projects that could offset the impact of new shares being issued.",
-   "downside": "Issuing new shares means existing owners hold a smaller slice of the company, which can put downward pressure on the share price.",
+   "summary": "Adani Enterprises is raising capital through a public bond sale of at least Rs 2,000 crore and a stake sale of about 1.55% for up to ₹2,790 crore, part of a larger USD 1.35 billion fundraise. The company’s sector index has fallen 2.0% in the last session and 7.6% over five sessions.",
+   "why": "Shareholders may face dilution from the stake sale and higher debt obligations from the bond issue, which can affect the company’s financial position and share price.",
+   "upside": "The raised funds could support growth projects that offset dilution effects.",
+   "downside": "Increased debt burden and dilution may reduce existing shareholders’ ownership and potentially lower the share price.",
    "watch": [
-    "How the market reacts to the new share issuance in the coming days.",
-    "Performance of the broader Metals & Mining sector, which has recently fallen.",
-    "Updates on how the raised funds are being deployed in growth projects."
+    "Progress of the public bond sale",
+    "Details of the stake sale and dilution impact",
+    "Sector index performance and market volatility"
    ],
-   "about": "",
-   "basis": "099eecd22ffe",
-   "items": 3,
-   "updated": "2026-11-25T08:17+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Adani Enterprises Ltd. is a metals and mining company listed in the Nifty 50 index.",
+   "basis": "fef06bef14fb",
+   "items": 4,
+   "updated": "2026-11-26T10:45+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "BEML": {
    "summary": "BEML's CEO says the company expects many new orders from the defence sector and international clients. The company aims to achieve double-digit growth.",
@@ -571,6 +571,22 @@
    "updated": "2026-11-25T08:17+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "ADANIPOWER": {
+   "summary": "Adani Power and another Adani firm are planning to raise at least Rs 2,000 crore by issuing public bonds. The government is also said to be preparing a Rs 50,000 crore scheme to support power distribution companies, which could affect Adani Power’s sales.",
+   "why": "Shareholders should watch the bond issue because it will increase the company’s debt and interest costs, while the government scheme could boost demand for electricity if it materialises.",
+   "upside": "If the bond sale is well‑received and the distribution‑fund scheme is confirmed, Adani Power could get cheaper financing and higher power sales.",
+   "downside": "Higher debt from the bond issue and uncertainty around the government scheme could strain finances and limit growth.",
+   "watch": [
+    "Details and subscription levels of the planned public bond issuance",
+    "Official announcement and rollout of the Rs 50,000 crore power distribution fund",
+    "Changes in the Energy sector index and any impact on Adani Power’s stock"
+   ],
+   "about": "Adani Power Ltd. generates and sells electricity in India.",
+   "basis": "1d1e95407575",
+   "items": 2,
+   "updated": "2026-11-26T10:45+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "WELSPUNLIV": {
    "summary": "Welspun Living’s shares have jumped more than 110% year‑to‑date and the company is planning new capital spending (capex) to boost growth. Analysts see upside but note risks around project execution and cotton supply.",
    "why": "Shareholders could see earnings improve if the new investments and cost cuts work, but the same risks could affect returns.",
@@ -632,22 +648,6 @@
    "basis": "9d59d609cf5d",
    "items": 1,
    "updated": "2026-11-25T13:32+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "ADANIPOWER": {
-   "summary": "The government is reportedly planning a new 50,000 crore rupee fund to support power distribution companies. This news was flagged because better-funded distributors may buy more electricity from producers like Adani Power.",
-   "why": "If the new fund helps distribution companies buy more power, it could increase the demand for electricity generated by Adani Power, which may benefit its business.",
-   "upside": "Official confirmation of the government scheme could lead to higher electricity purchases from distribution companies.",
-   "downside": "The scheme details are not yet officially confirmed, so the plan may change or not materialize.",
-   "watch": [
-    "Official government announcements regarding the new power distribution fund.",
-    "Updates on the implementation details of the 50,000 crore rupee scheme.",
-    "General trends in the Energy sector index."
-   ],
-   "about": "Adani Power Ltd. is a company in the power sector.",
-   "basis": "e1a1a8ce8598",
-   "items": 1,
-   "updated": "2026-11-25T11:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "POLICYBZR": {
