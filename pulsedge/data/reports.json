@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T09:10+05:30",
+ "updated": "2026-11-26T09:30+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -460,20 +460,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is facing mixed signals as the Indian rupee strengthens, oil prices fall and the broader market rallies, while its sector index posted modest gains. The company was among Nifty 50 stocks that have rallied significantly this year.",
-   "why": "A stronger rupee can lower the cost of imported inputs, but falling oil prices may pressure the company's earnings.",
-   "upside": "If the rupee continues to rise, it could offset some earnings pressure from lower oil prices.",
-   "downside": "A further drop in oil prices or a RBI rate hike could hurt profitability.",
+   "summary": "Oil India Ltd. has seen mixed market conditions recently, influenced by fluctuating global oil prices and a strengthening Indian rupee. While supply concerns from geopolitical tensions have sometimes pushed oil prices up, easing prices elsewhere and broader market movements have created a complex environment for oil producers.",
+   "why": "For someone who owns shares, these shifts matter because global oil prices and currency values directly impact the earnings of companies that produce and sell oil.",
+   "upside": "Higher global oil prices driven by supply concerns or refinery attacks could boost profits for oil-selling companies.",
+   "downside": "A slowdown in global demand or falling oil prices could reduce earnings for oil producers.",
    "watch": [
-    "Rupee movement and possible RBI intervention",
-    "Global oil price trends",
-    "RBI monetary policy decisions (rate hike)"
+    "Global oil price movements and supply concerns",
+    "Changes in the strength of the Indian rupee",
+    "Broader stock market trends and economic updates"
    ],
-   "about": "Oil India Ltd. explores, produces and sells crude oil and natural gas in India.",
-   "basis": "ac3e3fd192ad",
-   "items": 22,
-   "updated": "2026-11-26T08:30+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Oil India Ltd. operates in the oil, gas, and consumable fuels sector.",
+   "basis": "d8e7d71db001",
+   "items": 23,
+   "updated": "2026-11-26T09:30+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "JWL": {
    "summary": "Jupiter Wagons Ltd. is investing about ₹1,000 crore over the next three years in its passenger‑rail business and has formed an 80%‑owned joint venture with Korea’s Woojin to build metro coaches and propulsion systems in India. The moves aim to broaden its product range and capture growth in urban rail, while also raising short‑term cash‑flow and execution concerns.",
@@ -523,22 +523,6 @@
    "updated": "2026-11-25T14:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "TITAGARH": {
-   "summary": "Titagarh Rail Systems recently won a ₹77.09 crore order from JSW for railway wagons and received approval to manufacture auto carrier wagons. The company also delivered a naval system to the Indian Navy and secured an additional order from Presstonic Engineering for the Mumbai Metro Line 6 project.",
-   "why": "These new orders and approvals indicate that the company is expanding its product range and securing future income, which is relevant for shareholders tracking business growth.",
-   "upside": "The approval to make auto carrier wagons and the new JSW order could lead to increased future revenue and a broader product portfolio.",
-   "downside": "The recent JSW order is described as modest relative to the company's total revenue, so it may not significantly change overall financial results immediately.",
-   "watch": [
-    "Future orders related to the Mumbai Metro Line 6 project",
-    "Progress on manufacturing the newly approved auto carrier wagons",
-    "Additional deliveries for Indian Navy defence contracts"
-   ],
-   "about": "Titagarh Rail Systems is a capital goods company that manufactures railway wagons and naval systems.",
-   "basis": "3e58a4009af3",
-   "items": 3,
-   "updated": "2026-11-23T19:22+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "FINCABLES": {
    "summary": "Finolex Cables saw a block trade on Nov 25 where ORBITELECTRICALS PRIVATE LIMITED bought about 4.6 lakh shares worth ₹53 crore, while ARUNA MUKESH KATARA sold the same amount at ₹1,159 per share.",
    "why": "Large investors buying or selling can signal confidence or concern, which matters to current shareholders.",
@@ -570,6 +554,22 @@
    "items": 2,
    "updated": "2026-11-24T15:00+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "TITAGARH": {
+   "summary": "Titagarh Rail Systems recently won a ₹77.09 crore order from JSW for railway wagons. The company also received approval to manufacture auto carrier wagons, which expands its product range.",
+   "why": "New orders and product approvals can help the company grow its future income. This shows the business is actively taking on new work and developing new capabilities.",
+   "upside": "The new approval allows the company to enter a new market for auto carrier wagons, potentially opening up more future sales.",
+   "downside": "The recent order value is described as modest compared to the company's total revenue, so it may not significantly change overall earnings immediately.",
+   "watch": [
+    "Updates on the Mumbai Metro Line 6 project, where a supplier received an additional order from Titagarh.",
+    "Progress on manufacturing the new auto carrier wagons.",
+    "Future announcements about new orders from major clients like JSW."
+   ],
+   "about": "Titagarh Rail Systems is a capital goods company that manufactures railway wagons and related equipment.",
+   "basis": "74cfbc0af6de",
+   "items": 2,
+   "updated": "2026-11-26T09:30+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "SCHAEFFLER": {
    "summary": "Schaeffler India is set for a block sale where its parent, Schaeffler AG, may sell a 6% stake at a discount, while the auto sector index has risen recently.",
@@ -1289,6 +1289,22 @@
    "updated": "2026-11-25T15:31+05:30",
    "model": "openai/gpt-oss-20b"
   },
+  "MINDACORP": {
+   "summary": "Minda Corporation recently sold new shares to specific investors, increasing the total number of shares in circulation. This move followed a board meeting where the company considered raising funds.",
+   "why": "Issuing new shares means each existing share represents a smaller portion of the company, which can reduce the value of your current holdings.",
+   "upside": "The raised funds could support company expansion, potentially improving its long-term prospects.",
+   "downside": "The new shares dilute the ownership stake of existing shareholders, which may lower the value of each share.",
+   "watch": [
+    "How the company plans to use the newly raised funds.",
+    "Details from the November 26 board meeting outcomes.",
+    "Performance of the broader Auto sector index."
+   ],
+   "about": "Minda Corporation operates in the automobile and auto components sector.",
+   "basis": "5d234959eee4",
+   "items": 3,
+   "updated": "2026-11-26T09:30+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "MCX": {
    "summary": "Gold and silver prices on the Multi Commodity Exchange have fallen sharply in recent days. This drop in commodity prices may reduce the trading fees the exchange earns.",
    "why": "Since MCX makes money from trading activity, lower prices in major commodities like gold and silver could lead to lower revenue for the company.",
@@ -1320,22 +1336,6 @@
    "items": 3,
    "updated": "2026-11-25T15:15+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "MINDACORP": {
-   "summary": "Minda Corporation announced the outcome of its board meeting on Nov 26 and earlier flagged a board meeting on Nov 26 to consider fund raising. The auto sector index has risen recently.",
-   "why": "Shareholders watch board decisions because they may affect dividends or capital structure.",
-   "upside": "If the fund raising is used for expansion, it could improve long‑term prospects.",
-   "downside": "If the fund raising dilutes existing shares, it could pressure the stock price.",
-   "watch": [
-    "Details of the Nov 26 board meeting outcome",
-    "Announcement of any fund‑raising plan and terms",
-    "Continued performance of the auto sector index"
-   ],
-   "about": "Minda Corporation manufactures automobile and auto‑components.",
-   "basis": "caf34133cea9",
-   "items": 2,
-   "updated": "2026-11-26T09:10+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "EICHERMOT": {
    "summary": "Eicher Motors signed a deal worth Rs. 1,000 crore with the Tamil Nadu government. Through its Royal Enfield brand, the company plans to expand its electric vehicle ecosystem over the next seven years.",
