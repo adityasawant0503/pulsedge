@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T12:00+05:30",
+ "updated": "2026-11-26T12:15+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Borosil Renewable’s management said sales and profit margins should improve next quarter, keeping EBITDA above 30%. Sugar makers’ shares jumped 14% after analysts warned next year’s sugar output would fall, while Jupiter Wagons saw a 30% rise on a new South‑Korean partnership. India’s government bonds fell as oil prices topped $95 and the RBI flagged food‑inflation risks, and the rupee’s recovery is putting pressure on IT earnings. Sector indices were strongest in FMCG (+3.8%) and weakest in media (-4.4%).",
+  "summary": "PulsEdge flagged strong earnings and project updates boosting some stocks, while sugar makers rallied on supply concerns. Export order for Welspun and a new battery storage project added optimism. Bond prices fell as oil prices rose, raising inflation worries. FMCG led sector gains and media lagged behind.",
   "themes": [
-   "Sales and margin outlooks",
-   "Supply and demand shifts in commodities",
-   "Currency and bond market movements"
+   "Corporate earnings and project launches drove share moves",
+   "Commodity supply worries lifted sugar stocks and oil‑price rise pressured bonds",
+   "Foreign fund net‑long position modestly increased"
   ],
   "watch": [
-   "Borosil’s next‑quarter sales targets and execution risk",
-   "Sugar output forecast for next year and its impact on prices",
-   "Rupee strength and its effect on IT company margins"
+   "Watch Borosil's ability to meet its sales and margin targets",
+   "Watch progress on Welspun's export order and Acme Solar's battery storage revenue",
+   "Watch RBI's response to rising oil‑driven inflation and its effect on bond yields"
   ],
   "date": "2026-11-26",
-  "basis": "902f9278cfcf",
-  "updated": "2026-11-26T11:30+05:30",
-  "model": "openai/gpt-oss-20b",
-  "items": 38
+  "basis": "cae99b58b59c",
+  "updated": "2026-11-26T12:15+05:30",
+  "model": "openai/gpt-oss-120b",
+  "items": 57
  },
  "stocks": {
   "LENSKART": {
@@ -171,6 +171,22 @@
    "updated": "2026-11-26T04:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "HEROMOTOCO": {
+   "summary": "Hero MotoCorp has issued a recent press release and updated the market on a court case where the high court cancelled a ₹165 crore demand related to temporary registration certificates. The company also filed a SEBI listing regulation disclosure about the trade registration certificate matter.",
+   "why": "The court ruling removes a large liability, potentially strengthening the balance sheet, while ongoing regulatory issues could impact operations.",
+   "upside": "If the press release contains positive business updates, the company’s financial position could improve further.",
+   "downside": "Future regulatory actions or an adverse outcome in the trade registration case could lead to penalties or operational restrictions.",
+   "watch": [
+    "Details of the latest press release",
+    "Any further court or regulatory rulings on the trade registration certificate",
+    "Performance of the auto sector index"
+   ],
+   "about": "Hero MotoCorp manufactures motorcycles, scooters and cars.",
+   "basis": "c5412e739cb2",
+   "items": 3,
+   "updated": "2026-11-26T12:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "360ONE": {
    "summary": "360 ONE WAM recently issued convertible securities to raise new capital. This move increases the total number of shares, which can affect the value of existing holdings.",
    "why": "Issuing new shares means the company's ownership is split among more people, which can lower the value of each share if the new funds do not create enough value to offset this change.",
@@ -202,22 +218,6 @@
    "items": 3,
    "updated": "2026-11-26T10:30+05:30",
    "model": "gemini-flash-lite-latest"
-  },
-  "HEROMOTOCO": {
-   "summary": "The high court has cancelled a ₹165 crore demand from the regional transport office, easing a regulatory burden on Hero MotoCorp. The company also filed an update on its trade registration certificate case.",
-   "why": "Removing the demand could improve the balance sheet, while ongoing legal matters could affect operations.",
-   "upside": "If no further regulatory penalties arise, the balance sheet could stay stronger.",
-   "downside": "Future regulatory actions or court decisions could impose fines or restrict operations.",
-   "watch": [
-    "Any new rulings on the trade registration certificate",
-    "Further RTO or regulatory demands",
-    "Auto sector index movement"
-   ],
-   "about": "Hero MotoCorp manufactures motorcycles and scooters.",
-   "basis": "794da23d0431",
-   "items": 2,
-   "updated": "2026-11-24T19:21+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "WELCORP": {
    "summary": "Welspun Corp Ltd. recently received an export order for large-diameter steel pipes. This new contract adds to the company's expected revenue.",
@@ -1064,6 +1064,22 @@
    "updated": "2026-11-26T12:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "EICHERMOT": {
+   "summary": "Eicher Motors disclosed a court or regulator decision affecting it and announced a Rs 1,000 crore MoU with the Tamil Nadu government to expand its electric‑vehicle ecosystem.",
+   "why": "Shareholders need to watch the legal outcome for potential financial impact and the EV investment for future growth prospects.",
+   "upside": "A favorable legal ruling or successful EV expansion could boost earnings.",
+   "downside": "An adverse legal decision or costly EV rollout could hurt profitability.",
+   "watch": [
+    "Result of the pending legal decision",
+    "Implementation milestones of the Tamil Nadu EV MoU",
+    "Progress of the Auto sector index and broader market sentiment"
+   ],
+   "about": "Eicher Motors manufactures motorcycles (Royal Enfield) and commercial vehicles.",
+   "basis": "def78524fb97",
+   "items": 3,
+   "updated": "2026-11-26T12:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "MINDACORP": {
    "summary": "Minda Corporation recently sold new shares to specific investors, increasing the total number of shares in circulation. This move followed a board meeting where the company considered raising funds.",
    "why": "Issuing new shares means each existing share represents a smaller portion of the company, which can reduce the value of your current holdings.",
@@ -1113,19 +1129,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "HDFCBANK": {
-   "summary": "HDFC Bank is being highlighted in recent market commentary, with analysts favoring its valuation relative to peers while it also appears among stocks pulling the Nifty 50 lower. The broader financial sector has posted gains over the past sessions.",
-   "why": "Shareholders could see short‑term price moves from changing demand and from any broader index sell‑off affecting the bank.",
-   "upside": "If the favorable valuation view holds, demand for the bank’s shares could stay strong.",
-   "downside": "Being cited as a drag on the Nifty 50 could pressure the stock if the broader sell‑off continues.",
+   "summary": "HDFC Bank’s market value jumped about 30% from its October low, moving it ahead of Airtel in market‑cap ranking, while the Financials index rose around 2% recently.",
+   "why": "Shareholders see the rapid price rise and favorable valuation comparisons could affect short‑term demand for the stock.",
+   "upside": "If the momentum and valuation favorability continue, the share price could keep climbing.",
+   "downside": "Profit‑taking could reverse the recent gains.",
    "watch": [
-    "Valuation comparison with ICICI and Axis banks",
-    "Nifty 50 index trend and potential rebound",
-    "Financials sector performance"
+    "Potential profit‑taking pressure",
+    "Financials sector performance",
+    "Valuation comparisons with ICICI and Axis banks"
    ],
-   "about": "HDFC Bank Ltd. is a leading Indian commercial bank providing retail and corporate banking services.",
-   "basis": "b9f0381269d8",
+   "about": "HDFC Bank is a leading Indian private‑sector bank offering a range of banking and financial services.",
+   "basis": "bdefc67d83d9",
    "items": 2,
-   "updated": "2026-11-26T08:30+05:30",
+   "updated": "2026-11-26T12:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "CIPLA": {
@@ -1143,22 +1159,6 @@
    "items": 2,
    "updated": "2026-11-26T10:15+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "EICHERMOT": {
-   "summary": "Eicher Motors signed a deal worth Rs. 1,000 crore with the Tamil Nadu government. Through its Royal Enfield brand, the company plans to expand its electric vehicle ecosystem over the next seven years.",
-   "why": "This matters to shareholders because it shows the company is investing in electric vehicles, which is a key area for future growth.",
-   "upside": "The investment could generate 500 jobs and support the development of new electric vehicle products.",
-   "downside": "The agreement is non-binding, execution may take years, and the expansion requires significant capital investment.",
-   "watch": [
-    "Progress on the Tamil Nadu electric vehicle project",
-    "Further updates on capital spending for electric vehicles",
-    "Overall movement in the automobile sector index"
-   ],
-   "about": "Eicher Motors Ltd. is one of India's 50 largest listed companies operating in the automobile and auto components sector.",
-   "basis": "2365d915b366",
-   "items": 2,
-   "updated": "2026-11-26T08:45+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "TMCV": {
    "summary": "Tata Motors is raising the prices of its cars and SUVs by an average of 0.5% starting December 1, 2026. This move is a response to rising costs for the materials used to build the vehicles.",
@@ -1225,19 +1225,19 @@
    "model": "openai/gpt-oss-20b"
   },
   "HINDALCO": {
-   "summary": "Hindalco announced the re-appointment of its Managing Director and the appointment of a new Deputy Managing Director. The stock recently contributed to a broader market dip, with the metals sector falling significantly over the last week.",
-   "why": "Leadership changes can affect how the company is run, while the recent drop in the metals sector shows that Hindalco's share price is sensitive to wider industry trends.",
-   "upside": "The company has secured its leadership team for the coming years, which may provide operational stability.",
-   "downside": "The metals sector has fallen sharply in recent days, which could continue to pressure Hindalco's share price.",
+   "summary": "Hindalco announced that Satish Pai will continue as Managing Director starting in 2028 and Hemant Sikka will join as Deputy Managing Director in 2027. The stock is currently being watched closely by traders alongside other major companies.",
+   "why": "Changes in top leadership can affect how the company is run, which may influence investor confidence and the share price.",
+   "upside": "Continuity in leadership with Satish Pai staying on may provide stability for the company's long-term plans.",
+   "downside": "The broader metals sector has fallen significantly recently, which could drag Hindalco's price down even if the company news is neutral.",
    "watch": [
-    "How the new Deputy Managing Director integrates into the team",
-    "Whether the metals sector stabilizes after its recent drop",
+    "How the market reacts to the new leadership announcements",
+    "Trends in the overall Metals sector index",
     "General market volatility affecting large-cap stocks"
    ],
    "about": "Hindalco is a major Indian company in the metals and mining sector.",
-   "basis": "9c6acadb27aa",
-   "items": 4,
-   "updated": "2026-11-26T08:17+05:30",
+   "basis": "b8e8fac9a953",
+   "items": 3,
+   "updated": "2026-11-26T12:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ANGELONE": {

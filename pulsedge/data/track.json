@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T12:01:40+05:30",
+ "updated": "2026-11-26T12:16:04+05:30",
  "summary": {
-  "calls": 2293,
-  "scored_calls": 1080,
+  "calls": 2295,
+  "scored_calls": 1082,
   "d1": {
    "scored": 870,
    "hits": 384,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "2869e4e956f69128",
+   "symbol": "HEROMOTOCO",
+   "time": "2026-11-26T12:00:07+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Hero MotoCorp Limited: Please find enclosed herewith a copy of the Press Release being issued by the Company |SUBJECT: Press Release",
+   "url": "https://nsearchives.nseindia.com/corporate/HEROMOTO_26112026114917_StxintimationPR26112026.pdf",
+   "alert_px": 5754.0,
+   "alert_move": 0.04,
+   "alert_at": "2026-11-26T12:15:30+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "9c22459bffe543b7",
+   "symbol": "EICHERMOT",
+   "time": "2026-11-26T11:58:27+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Eicher Motors Limited: EICHER MOTORS LIMITED has informed the Exchange about Action(s) taken or orders passed (sub-para 20) |SUBJECT: Actions initiated/taken or",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/AIATOP_449_WebXMLFile_20261126_115825593.xml",
+   "alert_px": 8219.0,
+   "alert_move": -1.4,
+   "alert_at": "2026-11-26T12:15:30+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "e9c3c37ddc0171fb",
    "symbol": "HDFCBANK",
