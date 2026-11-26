@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T09:30+05:30",
+ "updated": "2026-11-26T09:46+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -587,6 +587,22 @@
    "updated": "2026-11-26T04:23+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "LGEINDIA": {
+   "summary": "LG Electronics India’s promoter is planning to sell up to 2% of its shares, worth about ₹2,320 crore, to meet public‑shareholding rules, which pushed the stock down about 3%. At the same time, proposed high US taxes on Indian goods could affect exporters like LG.",
+   "why": "The extra share supply may pressure the price for current investors, and any export‑related tax could reduce earnings.",
+   "upside": "A broader market rally could offset the price pressure from the share sale.",
+   "downside": "The promoter’s block sale and possible US tariffs could weigh on the share price.",
+   "watch": [
+    "Execution of the 2% promoter stake sale",
+    "Progress on US high‑tax proposals for Indian exports",
+    "Movement in the Consumer Durables index"
+   ],
+   "about": "LG Electronics India Ltd. designs, manufactures and sells consumer electronics and appliances in India.",
+   "basis": "33fcc8aac299",
+   "items": 6,
+   "updated": "2026-11-26T09:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "HYUNDAI": {
    "summary": "Hyundai Motor India announced a price increase of up to INR 8,000 per vehicle effective Dec 1, 2026, citing higher input costs. The move could boost profit per car but may also dampen demand if buyers react negatively.",
    "why": "Shareholders need to watch how the price hike affects sales volume and margins.",
@@ -618,22 +634,6 @@
    "items": 2,
    "updated": "2026-11-26T04:23+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "ABREL": {
-   "summary": "Aditya Birla Real Estate Ltd. (ABREL) has announced a rights‑issue investment in its wholly‑owned subsidiary, Unnatam Properties. The real‑estate sector, including ABREL, has seen a strong rise, with the BSE Realty index up 17% in November and the sector index up 1.7% in the last session.",
-   "why": "The investment uses cash that could be deployed elsewhere and may dilute existing shareholders if they participate in the rights issue.",
-   "upside": "The investment could support the company’s expansion plans.",
-   "downside": "Share dilution risk if shareholders subscribe to the rights issue, and sector momentum could reverse after a large rise.",
-   "watch": [
-    "Details of the rights‑issue subscription terms",
-    "Performance of Unnatam Properties post‑investment",
-    "Overall real‑estate index trend"
-   ],
-   "about": "Aditya Birla Real Estate Ltd. is a real‑estate company.",
-   "basis": "919193353329",
-   "items": 2,
-   "updated": "2026-11-23T15:47+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "MOTILALOFS": {
    "summary": "Motilal Oswal Financial Services is part of the Nifty 500 index. Recent news highlighted a separate company, Welspun Living, which has seen strong share price growth and plans for new investments.",
@@ -744,54 +744,6 @@
    "basis": "795bd2e3a4a6",
    "items": 1,
    "updated": "2026-11-23T14:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "GODREJPROP": {
-   "summary": "Real estate stocks in India jumped about 17% in November, and the sector index rose 1.7% on the last session and 1.9% over five days. Godrej Properties, as part of the sector, is likely feeling this upward momentum.",
-   "why": "Share price can be lifted by sector optimism, but a sharp rise may also make the stock pricey and vulnerable to a pull‑back.",
-   "upside": "If the strong sector momentum continues, Godrej Properties could see further price gains.",
-   "downside": "A reversal of the recent real‑estate rally could pull the stock lower.",
-   "watch": [
-    "BSE Realty index trend for signs of continued strength or slowdown",
-    "Sector index performance over the next few sessions",
-    "Any early signs of a pull‑back in real‑estate stock momentum"
-   ],
-   "about": "Godrej Properties Ltd. is a real‑estate development company.",
-   "basis": "bce8aa99029e",
-   "items": 1,
-   "updated": "2026-11-23T12:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "LODHA": {
-   "summary": "Lodha Developers is part of a real estate sector that has rallied sharply, with the BSE Realty index up 17% in November and the sector index gaining about 1.7% in the last session and 1.9% over five sessions.",
-   "why": "Sector momentum can lift Lodha's share price, but a reversal could also pull it down.",
-   "upside": "If the strong investor optimism in realty continues, Lodha could benefit from further price gains.",
-   "downside": "A quick reversal of the recent rally could pressure Lodha's shares lower.",
-   "watch": [
-    "Whether the BSE Realty index sustains its upward trend",
-    "Daily movement of the Realty sector index",
-    "Any Lodha‑specific announcements such as earnings or project updates"
-   ],
-   "about": "Lodha Developers Ltd. is a real estate development company.",
-   "basis": "bce8aa99029e",
-   "items": 1,
-   "updated": "2026-11-23T12:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "PHOENIXLTD": {
-   "summary": "Phoenix Mills is part of the Indian real estate sector, which saw a 17% jump in November. The broader Realty index has been steady recently, moving up 1.7% over the last five sessions.",
-   "why": "This matters because a large rise in sector stocks can make them more expensive, which might affect the value of your shares if the momentum stops.",
-   "upside": "Investors seem optimistic about real estate, which could keep supporting stock prices.",
-   "downside": "After a big rise, the price might drop if the recent momentum reverses.",
-   "watch": [
-    "Whether the Realty index continues its recent upward trend",
-    "If the strong November performance leads to a correction",
-    "General news about the Indian real estate sector"
-   ],
-   "about": "Phoenix Mills operates in the Realty sector.",
-   "basis": "bce8aa99029e",
-   "items": 1,
-   "updated": "2026-11-26T08:17+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "LLOYDSME": {
@@ -953,22 +905,6 @@
    "items": 7,
    "updated": "2026-11-26T08:17+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "LGEINDIA": {
-   "summary": "LG Electronics India’s promoter is planning to sell up to 2% of its shares to meet a public‑holding requirement, while a proposed US tax on Indian goods could affect its overseas sales.",
-   "why": "The share sale could increase supply and pressure the stock price, and higher export taxes may reduce profits for a company that sells abroad.",
-   "upside": "A broader market rally could offset the price pressure from the share sale.",
-   "downside": "The additional share supply and potential export taxes could weigh on the share price.",
-   "watch": [
-    "Execution of the 2% promoter stake sale",
-    "Details on US proposed high taxes on Indian goods",
-    "Overall market and sector index movement"
-   ],
-   "about": "LG Electronics India Ltd. manufactures and sells consumer electronics and appliances in India.",
-   "basis": "30fdb509fe8f",
-   "items": 5,
-   "updated": "2026-11-26T08:17+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "ICICIBANK": {
    "summary": "ICICI Bank shares jumped about 4% to a record high, leading a broader rally in bank stocks, but analysts note that valuation concerns favor peers like HDFC and Axis.",

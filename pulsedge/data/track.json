@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T09:31:14+05:30",
+ "updated": "2026-11-26T09:47:03+05:30",
  "summary": {
-  "calls": 2264,
-  "scored_calls": 1051,
+  "calls": 2265,
+  "scored_calls": 1052,
   "d1": {
    "scored": 870,
    "hits": 384,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "dc9b71987f406659",
+   "symbol": "LGEINDIA",
+   "time": "2026-11-26T09:28:19+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "LG Electronics India falls 3% as parent launches ₹2,320-cr stake sale",
+   "url": "https://www.business-standard.com/markets/news/lg-electronics-india-falls-3-as-parent-launches-2-320-cr-stake-sale-126112600116_1.html",
+   "alert_px": 1762.1,
+   "alert_move": -3.1,
+   "alert_at": "2026-11-26T09:46:50+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "d7b798ab9553e5b4",
    "symbol": "MINDACORP",
