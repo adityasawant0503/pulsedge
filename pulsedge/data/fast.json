@@ -1,7 +1,101 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T12:30:06+05:30",
+ "updated": "2026-11-26T12:39:07+05:30",
  "items": [
+  {
+   "id": "a259d2dd7b4e00a4",
+   "time": "2026-11-26T12:38:04+05:30",
+   "headline": "COFORGE: ADVENT- OWNED ENTITIES LIKELY TO SELL UPTO 10% STAKE",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10155",
+   "section": "news",
+   "call": "watch",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "COFORGE",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "IT Services"
+   ],
+   "impact": 60,
+   "confidence": 70,
+   "category": "Corporate Action",
+   "action": "Monitor opening price action for selling pressure from potential stake reduction.",
+   "reason": [
+    "Major investor (Advent) signaling potential sale of up to 10% stake.",
+    "Large supply overhang can weigh on share price sentiment."
+   ],
+   "risks": [
+    "Sale may not happen or could be smaller than reported.",
+    "Market may have already priced in the news."
+   ],
+   "plain": "A major investor in the company may sell a significant portion of their shares.",
+   "why": "Selling by a big holder can increase the number of shares available, potentially lowering the price.",
+   "check": "Look for official company announcements confirming the sale details.",
+   "original": "COFORGE: ADVENT- OWNED ENTITIES LIKELY TO SELL UPTO 10% STAKE",
+   "latency": 63.4,
+   "lane": "fast",
+   "quotes": {
+    "COFORGE": {
+     "px": 2042.8,
+     "prev": 2060.0,
+     "move": -0.83,
+     "at": "2026-11-26T12:39:07+05:30",
+     "delay": 900
+    }
+   }
+  },
+  {
+   "id": "a51e183820816768",
+   "time": "2026-11-26T12:37:47+05:30",
+   "headline": "COFORGE: BLOCK DEAL LIKELY NEXT WEEK: CNBC",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10154",
+   "section": "news",
+   "call": "watch",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "COFORGE",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "IT Services"
+   ],
+   "impact": 55,
+   "confidence": 65,
+   "category": "Corporate Action",
+   "action": "Watch for volume spikes and price dips if block deal rumors gain traction.",
+   "reason": [
+    "Rumors of an upcoming block deal suggest imminent large-scale selling.",
+    "Block deals often create short-term downward pressure."
+   ],
+   "risks": [
+    "Rumor may be false or delayed.",
+    "Institutional buyers might absorb the supply without price impact."
+   ],
+   "plain": "Reports suggest a large private sale of company shares is expected soon.",
+   "why": "Large private sales can temporarily push the share price down due to increased supply.",
+   "check": "Check exchange filings for any official block deal notifications.",
+   "original": "COFORGE: BLOCK DEAL LIKELY NEXT WEEK: CNBC",
+   "latency": 80.4,
+   "lane": "fast",
+   "quotes": {
+    "COFORGE": {
+     "px": 2042.8,
+     "prev": 2060.0,
+     "move": -0.83,
+     "at": "2026-11-26T12:39:07+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "5206dac7e9b72a6a",
    "time": "2026-11-26T12:28:41+05:30",
