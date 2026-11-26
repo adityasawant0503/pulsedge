@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T15:17:09+05:30",
+ "updated": "2026-11-26T15:31:16+05:30",
  "summary": {
-  "calls": 2314,
-  "scored_calls": 1101,
+  "calls": 2316,
+  "scored_calls": 1103,
   "d1": {
    "scored": 870,
    "hits": 384,
@@ -26,6 +26,32 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "c64bd2d27ea64de8",
+   "symbol": "BRIGADE",
+   "time": "2026-11-26T15:24:52+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "BRIGADE ENTERPRISES: FLEXIBLE WORKSPACE ARM BUZZWORKS ENTERS CHENNAI WITH 65000 SQ FT ACROSS TWO FACILITIES, TARGETING ANNUAL REVENUE OF RS 10 CRORE AND PLANS T",
+   "url": "https://t.me/Indiaredboxglobal/10169",
+   "alert_px": 628.6,
+   "alert_move": 6.6,
+   "alert_at": "2026-11-26T15:25:30+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "e4ac5267563cfbb4",
+   "symbol": "INDIGO",
+   "time": "2026-11-26T15:14:58+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "IndiGo up 22% in a month; Anand Rathi sees macro tailwinds aiding recovery",
+   "url": "https://www.business-standard.com/markets/news/indigo-up-22-in-a-month-anand-rathi-sees-macro-tailwinds-aiding-recovery-126112600733_1.html"
+  },
   {
    "id": "6369ba163c7bb9cc",
    "symbol": "BPCL",

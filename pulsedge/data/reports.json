@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T15:17+05:30",
+ "updated": "2026-11-26T15:30+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge noted varied updates across the Indian stock market on Thursday, 26 November 2026, with several companies reporting fresh orders, capacity expansions, and regulatory clearances. At the same time, major stake sales by existing owners impacted certain shares. Sector performances showed FMCG and Pharma leading the gains, while Media and Metals faced the steepest declines.",
+  "summary": "Patel Engineering won a Rs 1,441 crore hydro power contract as the lowest bidder, while Panacea Biotec cleared a compliance issue and can resume sales in Europe. Borosil Renewable expects sales and margins to rise next quarter, and Acme Solar has started commercial operation of a battery storage project. Welspun Corp received an export order for large‑diameter steel pipes, and Jyoti Structures got a 272‑crore contract for power lines. Sector indices were strongest in FMCG (+3.8%) and weakest in Media (-4.4%), with foreign funds holding a 24% long position in index futures.",
   "themes": [
-   "New business orders and large infrastructure contracts announced by multiple firms",
-   "Capacity expansion plans and regulatory approvals improving growth visibility",
-   "Major stakeholders offering or planning to sell sizeable shares in select companies"
+   "Contract wins and new projects",
+   "Operational and margin improvements",
+   "Sector performance and investor activity"
   ],
   "watch": [
-   "Execution progress on newly announced orders and multi-year expansion projects",
-   "Potential impacts of large-scale stake sales by major investors on share supply",
-   "Ongoing shifts in sector momentum, particularly between defensive and cyclical industries"
+   "Borosil Renewable’s next‑quarter sales and margin targets",
+   "Execution of Patel Engineering’s hydro power project",
+   "Foreign funds’ continued long positions in index futures"
   ],
   "date": "2026-11-26",
-  "basis": "92e121b3ff12",
-  "updated": "2026-11-26T14:45+05:30",
-  "model": "gemini-flash-lite-latest",
-  "items": 87
+  "basis": "e542ff0d4de8",
+  "updated": "2026-11-26T15:30+05:30",
+  "model": "openai/gpt-oss-20b",
+  "items": 94
  },
  "stocks": {
   "TVSMOTOR": {
@@ -156,20 +156,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "BRIGADE": {
-   "summary": "Brigade Enterprises posted a sharp rise after selling about ₹1,600 crore of units during a launch weekend in Bengaluru, while the broader real‑estate index hit a 52‑week high. The company also announced a purchase of a 2.25‑acre land parcel in Secunderabad for a premium price.",
-   "why": "Shareholders care because the sales boost the revenue outlook and the new land could expand future earnings, but both come with risks.",
-   "upside": "If strong demand continues, the company could sustain higher sales and earnings growth.",
-   "downside": "If the sales spike proves one‑off or the high land cost squeezes margins, earnings could fall.",
+   "summary": "Brigade Enterprises has opened a 65,000 sq ft flexible workspace arm in Chennai, targeting ₹10 cr revenue and plans to add 1 lakh sq ft by FY28. The company also recorded ₹1,600 cr sales during a launch weekend in Bengaluru, boosting its stock 4%. The realty sector hit a 52‑week high, lifting Brigade along with peers.",
+   "why": "Shareholders see potential earnings growth from new workspace and strong residential sales, but must watch for execution and sustainability risks.",
+   "upside": "If the workspace revenue targets and residential sales momentum continue, earnings could rise.",
+   "downside": "Execution risk on further space rollout and the possibility that the sales spike is one‑off could hurt future performance.",
    "watch": [
-    "Nifty Realty index performance",
-    "Follow‑up sales momentum after the launch weekend",
-    "Progress and cost impact of the Secunderabad land acquisition"
+    "Execution of additional workspace rollout",
+    "Sustainability of the ₹1,600 cr sales spike",
+    "Potential reversal of the realty sector rally"
    ],
-   "about": "Brigade Enterprises Ltd. is a real‑estate developer that builds residential and mixed‑use projects in India.",
-   "basis": "f979b0fad654",
+   "about": "Brigade Enterprises Ltd. is a real estate developer focusing on residential and mixed‑use projects.",
+   "basis": "8976ca119045",
    "items": 4,
-   "updated": "2026-11-26T15:00+05:30",
-   "model": "openai/gpt-oss-120b"
+   "updated": "2026-11-26T15:30+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "WELCORP": {
    "summary": "Welspun Corp Ltd. announced receipt of new business contracts, including an export order for large‑diameter steel pipes, and its shares rose about 5% after the news. An executive also projected EBITDA could reach ₹5,000 cr in two years.",
@@ -1063,22 +1063,6 @@
    "basis": "472530c462ae",
    "items": 4,
    "updated": "2026-11-26T12:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "PRESTIGE": {
-   "summary": "Prestige Estates Projects Ltd. is benefiting from a strong rally in real‑estate stocks, with the Nifty Realty index hitting a 52‑week high. The company also created two wholly‑owned subsidiaries to develop projects in Mumbai and announced acquisition of newly incorporated entities.",
-   "why": "Shareholders see potential earnings growth from the new Mumbai projects, but the stock’s performance is tied to the broader real‑estate sector’s momentum.",
-   "upside": "Successful development of the Worli North and South projects could boost revenues and margins.",
-   "downside": "High land acquisition costs could compress project margins and a sector‑wide rally could fade if the broader market weakens.",
-   "watch": [
-    "Nifty Realty sector performance",
-    "Progress on Prestige Worli North and South developments",
-    "Land cost trends and margin impact"
-   ],
-   "about": "Prestige Estates Projects Ltd. develops residential and commercial real‑estate projects in India.",
-   "basis": "11ca50e83538",
-   "items": 3,
-   "updated": "2026-11-26T15:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "KFINTECH": {
