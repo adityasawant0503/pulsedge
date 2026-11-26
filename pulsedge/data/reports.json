@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T11:30+05:30",
+ "updated": "2026-11-26T11:45+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -443,22 +443,6 @@
    "updated": "2026-11-26T10:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "SUZLON": {
-   "summary": "Suzlon Energy announced it is adding production capacity and the Tamil Nadu chief minister laid the foundation for a 1 GW smart‑blade factory, while also disclosing a recent cyber security breach.",
-   "why": "Capacity expansion could lift future sales and earnings, whereas the cyber incident may hurt customer confidence and incur remediation costs.",
-   "upside": "If the new capacity and factory are built on schedule and within budget, they could drive higher revenue and profit.",
-   "downside": "Delays, cost overruns in the expansion or lingering effects of the cyber breach could weigh on performance.",
-   "watch": [
-    "Progress and timing of the announced capacity addition",
-    "Construction and commissioning milestones of the 1 GW smart‑blade factory",
-    "Updates on the resolution and impact of the cyber incident"
-   ],
-   "about": "Suzlon Energy Ltd. manufactures wind turbines and related components.",
-   "basis": "d8d01f840279",
-   "items": 4,
-   "updated": "2026-11-25T14:01+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "WIPRO": {
    "summary": "Wipro signed a strategic partnership with BP to run its finance operations, bringing about 3,000 BP staff under a new model that starts in 2027. At the same time, the US is proposing higher taxes on Indian exports, which could affect companies that sell abroad.",
    "why": "The BP deal could boost Wipro's long‑term revenue, while the proposed US tariffs may pressure its export‑related earnings.",
@@ -474,6 +458,22 @@
    "items": 3,
    "updated": "2026-11-26T11:30+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "SUZLON": {
+   "summary": "Suzlon Energy is expanding its production capacity by building new facilities, including a 1 GW smart blade factory in Tamil Nadu. The company has officially notified the stock exchange about these additions to its manufacturing setup.",
+   "why": "Expanding capacity allows the company to produce more wind turbines, which could lead to higher sales and profits for shareholders in the future.",
+   "upside": "Successful completion of the new factories could significantly boost the company's ability to meet market demand and grow its revenue.",
+   "downside": "The expansion carries risks of execution delays or cost overruns, which could impact the timeline and financial benefits of the new capacity.",
+   "watch": [
+    "Progress updates on the construction of the Tamil Nadu blade factory",
+    "Official announcements regarding the timing of new capacity coming online",
+    "Any reports of delays or cost increases in the expansion projects"
+   ],
+   "about": "Suzlon Energy is a capital goods company that manufactures wind turbines and related components.",
+   "basis": "0f8b984245a0",
+   "items": 3,
+   "updated": "2026-11-26T11:45+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "FINCABLES": {
    "summary": "Finolex Cables saw a block trade on Nov 25 where ORBITELECTRICALS PRIVATE LIMITED bought about 4.6 lakh shares worth ₹53 crore, while ARUNA MUKESH KATARA sold the same amount at ₹1,159 per share.",
@@ -1319,6 +1319,22 @@
    "items": 2,
    "updated": "2026-11-25T10:46+05:30",
    "model": "openai/gpt-oss-20b"
+  },
+  "ANGELONE": {
+   "summary": "Angel One Ltd. has seen two senior resignations in quick succession, with a director and a senior manager stepping down. Meanwhile, its Financials sector index has risen about 2% recently.",
+   "why": "These departures could raise concerns about the company’s governance and continuity, which matters to shareholders.",
+   "upside": "A rising sector index may support the company’s performance.",
+   "downside": "Leadership turnover could create uncertainty and affect investor confidence.",
+   "watch": [
+    "Any further resignations or appointments",
+    "Updates on the reasons behind the departures",
+    "Continued movement of the Financials sector index"
+   ],
+   "about": "Angel One Ltd. is a financial services firm that provides brokerage and investment services.",
+   "basis": "12fded8e31ea",
+   "items": 2,
+   "updated": "2026-11-26T11:45+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "PNB": {
    "summary": "Punjab National Bank signed a preliminary agreement with Deutsche Bank to explore joint financing for business acquisitions. This partnership aims to help PNB earn fees by arranging loans for companies buying other businesses.",

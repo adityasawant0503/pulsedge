@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T11:31:01+05:30",
+ "updated": "2026-11-26T11:46:05+05:30",
  "summary": {
-  "calls": 2287,
-  "scored_calls": 1074,
+  "calls": 2288,
+  "scored_calls": 1075,
   "d1": {
    "scored": 870,
    "hits": 384,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "6105462573268b28",
+   "symbol": "ANGELONE",
+   "time": "2026-11-26T11:29:10+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Angel One Limited: Angel One Limited has informed the Exchange about Resignation of Director/KMP/SMP |SUBJECT: Resignation of Director/KMP/SMP",
+   "url": "https://nsearchives.nseindia.com/corporate/ANGELONE_ROID_105249_KMP_Doc.zip",
+   "alert_px": 353.65,
+   "alert_move": 1.29,
+   "alert_at": "2026-11-26T11:45:45+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "95b4129582521125",
    "symbol": "SUPREMEIND",
