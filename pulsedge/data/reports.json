@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T09:00+05:30",
+ "updated": "2026-11-26T09:10+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "US proposals for high taxes on Indian goods created uncertainty for companies that sell products abroad. In the previous session, consumer staples and pharma stocks performed well, while media and metals stocks fell. A major Indian bank signed a preliminary deal with a German bank to help fund business acquisitions. Foreign investors slightly increased their optimistic bets on the Indian market.",
+  "summary": "Indian shares started the day with momentum, supported by a stronger rupee and increased foreign investment. The rupee's rise lowers the cost of imports, which benefits companies that buy goods from abroad. However, attention is turning to potential US taxes on Indian exports, which could pressure companies that sell to American customers. Sector performance was mixed, with consumer staples and pharma leading gains while media and metals lagged.",
   "themes": [
-   "Exporters face potential profit pressure from new US tax proposals.",
-   "Banking partnerships are forming to support corporate mergers and acquisitions.",
-   "Investor sentiment shifted slightly more positive in foreign fund positions."
+   "A stronger rupee is making imported goods cheaper for Indian businesses.",
+   "Foreign investors are increasing their long-term bets on Indian stocks.",
+   "Uncertainty over US trade taxes is creating caution for export-heavy companies."
   ],
   "watch": [
-   "Official details on how US tariffs will apply to different sectors.",
-   "Progress on the funding partnership between PNB and Deutsche Bank.",
-   "Continued movement in foreign fund index-futures positions."
+   "Official updates on whether the proposed US tariffs will actually be implemented.",
+   "Details from Minda Corporation's recent board meeting to see if any major changes were announced.",
+   "The Reserve Bank of India's actions to see if they intervene to slow down the rupee's rise."
   ],
   "date": "2026-11-26",
-  "basis": "b201063f3c25",
-  "updated": "2026-11-26T08:17+05:30",
+  "basis": "c6a74e3199b0",
+  "updated": "2026-11-26T09:10+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 2
+  "items": 8
  },
  "stocks": {
   "LENSKART": {
@@ -90,22 +90,6 @@
    "items": 8,
    "updated": "2026-11-25T08:17+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "DALBHARAT": {
-   "summary": "Dalmia Bharat's board approved a plan to buy back up to 3.78 million shares for a total of ₹700 crore. This move reduces the total number of shares in circulation, which can increase the value of each remaining share.",
-   "why": "For existing shareholders, a buyback can boost earnings per share and may support the stock price if the company believes its shares are undervalued.",
-   "upside": "The buyback signals that the company has cash reserves and may help lift the share price by reducing the total number of shares.",
-   "downside": "The buyback could be delayed, scaled down, or not fully subscribed due to regulatory issues or cash flow constraints.",
-   "watch": [
-    "The official record date for the buyback",
-    "The final price per share set for the buyback",
-    "Any updates on the timeline for completing the buyback"
-   ],
-   "about": "Dalmia Bharat is a company in the construction materials sector.",
-   "basis": "34bd49670961",
-   "items": 4,
-   "updated": "2026-11-26T08:45+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "TVSMOTOR": {
    "summary": "TVS Motor Company Ltd. (TVSMOTOR) has announced new business agreements and a non‑binding memorandum of understanding with the Government of Tamil Nadu, which includes a planned investment of ₹2000 crore over four years and creation of 1000 jobs.",
@@ -153,6 +137,22 @@
    "basis": "aec6160d5a5b",
    "items": 3,
    "updated": "2026-11-25T19:23+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "DALBHARAT": {
+   "summary": "Dalmia Bharat announced a ₹700 crore share buyback of up to 3.78 million shares. The plan aims to reduce the share count and could support the stock price.",
+   "why": "Share buybacks can lift earnings per share, which matters to existing shareholders.",
+   "upside": "If the buyback proceeds as planned, earnings per share may improve and the share price could get support.",
+   "downside": "If the buyback is delayed or not fully subscribed, the expected benefits may not materialise.",
+   "watch": [
+    "Progress of the ₹700 crore buyback",
+    "Subscription levels for the buyback",
+    "Company's cash flow to fund the buyback"
+   ],
+   "about": "It operates in the construction materials sector.",
+   "basis": "90d40f88d5f4",
+   "items": 3,
+   "updated": "2026-11-26T09:10+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "TORNTPOWER": {
@@ -1320,6 +1320,22 @@
    "items": 3,
    "updated": "2026-11-25T15:15+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "MINDACORP": {
+   "summary": "Minda Corporation announced the outcome of its board meeting on Nov 26 and earlier flagged a board meeting on Nov 26 to consider fund raising. The auto sector index has risen recently.",
+   "why": "Shareholders watch board decisions because they may affect dividends or capital structure.",
+   "upside": "If the fund raising is used for expansion, it could improve long‑term prospects.",
+   "downside": "If the fund raising dilutes existing shares, it could pressure the stock price.",
+   "watch": [
+    "Details of the Nov 26 board meeting outcome",
+    "Announcement of any fund‑raising plan and terms",
+    "Continued performance of the auto sector index"
+   ],
+   "about": "Minda Corporation manufactures automobile and auto‑components.",
+   "basis": "caf34133cea9",
+   "items": 2,
+   "updated": "2026-11-26T09:10+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "EICHERMOT": {
    "summary": "Eicher Motors signed a deal worth Rs. 1,000 crore with the Tamil Nadu government. Through its Royal Enfield brand, the company plans to expand its electric vehicle ecosystem over the next seven years.",
