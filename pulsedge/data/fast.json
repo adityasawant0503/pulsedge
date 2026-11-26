@@ -1,7 +1,54 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T12:57:06+05:30",
+ "updated": "2026-11-26T12:59:06+05:30",
  "items": [
+  {
+   "id": "16acbaa2772d66b1",
+   "time": "2026-11-26T12:57:53+05:30",
+   "headline": "WELSPUN ENTERPRISES: CO BELIEVE THAT WELSPUN CORP EBITDA CAN HIT RUPEES 5000 CR IN 2 YEARS",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10157",
+   "section": "news",
+   "call": "watch",
+   "horizon": "positional",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "WELCORP",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Textiles"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "Earnings Outlook",
+   "action": "Monitor upcoming quarterly results to see if EBITDA growth aligns with the 2-year target.",
+   "reason": [
+    "Positive long-term earnings outlook for Welspun Corp.",
+    "Target of 5000 Cr EBITDA suggests strong operational growth potential."
+   ],
+   "risks": [
+    "Long time horizon (2 years) makes immediate price impact uncertain.",
+    "Dependent on sustained demand and raw material costs."
+   ],
+   "plain": "A company executive expects profits to reach a specific high level within two years.",
+   "why": "This signals confidence in future growth, which can support the share price over time.",
+   "check": "Look at the next quarterly report to see if profits are rising as expected.",
+   "original": "WELSPUN ENTERPRISES: CO BELIEVE THAT WELSPUN CORP EBITDA CAN HIT RUPEES 5000 CR IN 2 YEARS",
+   "latency": 73.7,
+   "lane": "fast",
+   "quotes": {
+    "WELCORP": {
+     "px": 2219.7,
+     "prev": 2117.5,
+     "move": 4.83,
+     "at": "2026-11-26T12:59:06+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "d8b1a2bf0a62cc79",
    "time": "2026-11-26T12:56:31+05:30",
@@ -1804,43 +1851,6 @@
    "check": "Look for the upcoming quarterly earnings announcement.",
    "original": "PNGS REVA: CO RECORDED FESTIVE SALES OF ₹1,419.67M; GROWTH OF 54.44% (YOY); CO RECORDED SINGLE‐DAY REVENUE OF ₹141.08M ON THE OCCASION OF DHANTERAS, REGISTERING A YOY GROWTH OF 61.12%.",
    "latency": 63.5,
-   "lane": "fast"
-  },
-  {
-   "id": "cefe286d1bc0038c",
-   "time": "2026-11-25T12:57:28+05:30",
-   "headline": "BAJAJ FINANCE LIMITED: CO. ALLOTTED 1,42,700 SECURED REDEEMABLE NCDS AGGREGATING TO ₹1440.75 CRORE ON PRIVATE PLACEMENT BASIS; COUPON RATE SET AT 8.70% PER ANNUM; DEBENTURES TO BE LISTED ON BSE'S WHOLESALE DEBT MARKET SE",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10024",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [
-    {
-     "symbol": "BAJFINANCE",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Finance"
-   ],
-   "impact": 10,
-   "confidence": 90,
-   "category": "Corporate Action",
-   "action": "No immediate trading action required; this is a standard debt issuance.",
-   "reason": [
-    "Routine private placement of Non-Convertible Debentures (NCDs).",
-    "Standard financing activity for a large NBFC with no direct equity price impact."
-   ],
-   "risks": [
-    "None significant for equity holders."
-   ],
-   "plain": "The company issued new long-term debt to raise money for its business.",
-   "why": "This is a normal way for big finance companies to fund loans and does not change the value of the shares.",
-   "check": "",
-   "original": "BAJAJ FINANCE LIMITED: CO. ALLOTTED 1,42,700 SECURED REDEEMABLE NCDS AGGREGATING TO ₹1440.75 CRORE ON PRIVATE PLACEMENT BASIS; COUPON RATE SET AT 8.70% PER ANNUM; DEBENTURES TO BE LISTED ON BSE'S WHOLESALE DEBT MARKET SE",
-   "latency": 55.2,
    "lane": "fast"
   }
  ]
