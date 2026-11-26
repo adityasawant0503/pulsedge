@@ -1,7 +1,88 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T13:30:08+05:30",
+ "updated": "2026-11-26T13:59:37+05:30",
  "items": [
+  {
+   "id": "523f326773e7742f",
+   "time": "2026-11-26T13:59:30+05:30",
+   "headline": "AMBER ENTERPRISES INDIA LTD: CO. ANNOUNCES MOU FOR ₹500 CRORE EXPANSION INVESTMENT IN TAMIL NADU BY ASCENT CIRCUITS; INVESTMENT TO ENHANCE PCB MANUFACTURING CAPABILITIES OVER FIVE YEARS STARTING 2027",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10165",
+   "section": "news",
+   "call": "watch",
+   "horizon": "positional",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "AMBER",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Electronics",
+    "Manufacturing"
+   ],
+   "impact": 60,
+   "confidence": 70,
+   "category": "Corporate Expansion",
+   "action": "Monitor quarterly capex disclosures and order book updates for confirmation of the expansion timeline.",
+   "reason": [
+    "₹500 Cr investment signals significant capacity expansion in PCB manufacturing.",
+    "Enhanced capabilities could improve long-term revenue potential and market share."
+   ],
+   "risks": [
+    "Execution risk over the 5-year period starting 2027.",
+    "Market demand for PCBs may fluctuate during the expansion phase."
+   ],
+   "plain": "A company signed a deal to invest 500 crore rupees to build more factory space for making circuit boards.",
+   "why": "This shows the company plans to grow its production, which could lead to more sales and profits in the future.",
+   "check": "Look at the company's next earnings report to see if they mention this new factory plan.",
+   "original": "AMBER ENTERPRISES INDIA LTD: CO. ANNOUNCES MOU FOR ₹500 CRORE EXPANSION INVESTMENT IN TAMIL NADU BY ASCENT CIRCUITS; INVESTMENT TO ENHANCE PCB MANUFACTURING CAPABILITIES OVER FIVE YEARS STARTING 2027",
+   "latency": 7.5,
+   "lane": "fast",
+   "quotes": {
+    "AMBER": {
+     "px": 6843.5,
+     "prev": 6940.0,
+     "move": -1.39,
+     "at": "2026-11-26T13:59:37+05:30",
+     "delay": 900
+    }
+   }
+  },
+  {
+   "id": "9969b8aba8a16303",
+   "time": "2026-11-26T13:58:32+05:30",
+   "headline": "SEAFOOD EXPORTERS: PROPOSED FRESH US TARIFFS OF 17-25% FROM JANUARY COULD HURT INDIAN SEAFOOD EXPORTERS' COMPETITIVENESS AGAINST ECUADOR, WHICH FACES 12-12.5% LEVIES; EXPORTERS ALSO FEAR US BUYERS MAY PUT PENDING SHIPMEN",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10164",
+   "section": "macro",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [],
+   "sectors": [
+    "Seafood Exports"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "Trade Policy",
+   "action": "Watch for official government statements or export data to gauge the actual impact on the sector.",
+   "reason": [
+    "Higher US tariffs on Indian seafood make it less competitive compared to Ecuador.",
+    "Potential loss of orders could affect sector-wide export volumes and margins."
+   ],
+   "risks": [
+    "US buyers may delay or cancel pending shipments.",
+    "No specific listed company is named, so impact is sector-wide and indirect."
+   ],
+   "plain": "New US taxes on Indian seafood might make it more expensive than seafood from other countries like Ecuador.",
+   "why": "If Indian seafood becomes more expensive, buyers might choose cheaper options, which could hurt companies that sell it.",
+   "check": "Check recent news for any official government response or changes in export orders.",
+   "original": "SEAFOOD EXPORTERS: PROPOSED FRESH US TARIFFS OF 17-25% FROM JANUARY COULD HURT INDIAN SEAFOOD EXPORTERS' COMPETITIVENESS AGAINST ECUADOR, WHICH FACES 12-12.5% LEVIES; EXPORTERS ALSO FEAR US BUYERS MAY PUT PENDING SHIPMEN",
+   "latency": 65.5,
+   "lane": "fast"
+  },
   {
    "id": "355f2137fd8ac0e1",
    "time": "2026-11-26T13:29:16+05:30",
@@ -1785,230 +1866,6 @@
      "prev": 232.61,
      "move": 2.04,
      "at": "2026-11-25T14:04:11+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "0449f9e67b6150ca",
-   "time": "2026-11-25T13:44:36+05:30",
-   "headline": "SEAMEC LIMITED: CO. ENTERS BIMCO CHARTER PARTY WITH HINDUSTAN OIL EXPLORATION FOR VESSEL “SEAMEC III”; CHARTER PERIOD OF 13 DAYS WITH OPTION FOR EXTENSION; TOTAL CONTRACT VALUE APPROXIMATELY ₹18.07 CRORES EXCLUSIVE OF GS",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10030",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "up",
-   "tickers": [],
-   "sectors": [
-    "Shipping",
-    "Energy"
-   ],
-   "impact": 10,
-   "confidence": 20,
-   "category": "Corporate Update",
-   "action": "No immediate action required for listed energy stocks.",
-   "reason": [
-    "Contract is with a non-listed entity (Seamec).",
-    "No direct operational impact on OIL."
-   ],
-   "risks": [
-    "Misattribution of revenue to OIL."
-   ],
-   "plain": "A private shipping company signed a short-term contract to transport oil for a state-owned firm.",
-   "why": "This is a routine business deal for the shipper and does not change the financials of the oil company.",
-   "check": "",
-   "original": "SEAMEC LIMITED: CO. ENTERS BIMCO CHARTER PARTY WITH HINDUSTAN OIL EXPLORATION FOR VESSEL “SEAMEC III”; CHARTER PERIOD OF 13 DAYS WITH OPTION FOR EXTENSION; TOTAL CONTRACT VALUE APPROXIMATELY ₹18.07 CRORES EXCLUSIVE OF GS",
-   "latency": 17.0,
-   "lane": "fast"
-  },
-  {
-   "id": "8cbec692c6e34305",
-   "time": "2026-11-25T13:39:00+05:30",
-   "headline": "APL APOLLO: TATA STEEL SAYS OPEN TO RESTRUCTURING DEAL WITH APL APOLLO",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10029",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "down",
-   "tickers": [
-    {
-     "symbol": "TATASTEEL",
-     "direction": "down"
-    }
-   ],
-   "sectors": [
-    "Steel"
-   ],
-   "impact": 60,
-   "confidence": 55,
-   "category": "Corporate",
-   "action": "Watch for any official announcement confirming terms of the restructuring.",
-   "reason": [
-    "Tata Steel exploring restructuring signals possible financial pressure",
-    "Outcome could affect profitability and balance‑sheet strength"
-   ],
-   "risks": [
-    "Deal may not materialise or could involve asset sales",
-    "Market may react negatively to perceived weakness"
-   ],
-   "plain": "Tata Steel said it is willing to discuss a restructuring plan with APL Apollo.",
-   "why": "The talk of restructuring could impact the company's financial health and future earnings, so shareholders should stay aware.",
-   "check": "Look for the next formal filing or press release on the restructuring plan.",
-   "original": "APL APOLLO: TATA STEEL SAYS OPEN TO RESTRUCTURING DEAL WITH APL APOLLO",
-   "latency": 23.8,
-   "lane": "fast",
-   "quotes": {
-    "TATASTEEL": {
-     "px": 160.08,
-     "prev": 163.0,
-     "move": -1.79,
-     "at": "2026-11-25T13:39:23+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "418ae4d7c914f066",
-   "time": "2026-11-25T13:37:03+05:30",
-   "headline": "TVS MOTOR COMPANY LTD: CO. SIGNS NON-BINDING MOU WITH GOVERNMENT OF TAMIL NADU; PLANS TO INVEST ₹2000 CR OVER 4 YEARS AND CREATE 1000 JOBS.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10028",
-   "section": "news",
-   "call": "buy",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "TVSMOTOR",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Automobile"
-   ],
-   "impact": 70,
-   "confidence": 80,
-   "category": "company",
-   "action": "Watch for earnings beat and order‑book expansion after the investment announcement.",
-   "reason": [
-    "Large capital infusion signals growth and job creation",
-    "Potential increase in production capacity and market share"
-   ],
-   "risks": [
-    "Execution risk of the investment plan",
-    "Regulatory or policy changes could affect timeline"
-   ],
-   "plain": "TVS Motor signed a non‑binding agreement to invest 2,000 crore rupees in Tamil Nadu over four years, creating 1,000 jobs.",
-   "why": "This could boost the company's future earnings and market presence, making it a positive catalyst for shareholders.",
-   "check": "Look for updates on project approvals and any changes in the company's capital spending plans.",
-   "original": "TVS MOTOR COMPANY LTD: CO. SIGNS NON-BINDING MOU WITH GOVERNMENT OF TAMIL NADU; PLANS TO INVEST ₹2000 CR OVER 4 YEARS AND CREATE 1000 JOBS.",
-   "latency": 80.9,
-   "lane": "fast",
-   "checked": "confirmed by a second AI check",
-   "quotes": {
-    "TVSMOTOR": {
-     "px": 4596.0,
-     "prev": 4528.2,
-     "move": 1.5,
-     "at": "2026-11-25T13:38:25+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "33aee2a33addef3b",
-   "time": "2026-11-25T13:34:18+05:30",
-   "headline": "SUZLON ENERGY: TAMIL NADU CM LAYS FOUNDATION FOR SUZLON'S 1 GW SMART BLADE FACTORY IN THOOTHUKUDI; EXPECTED TO CREATE OVER 1,000 JOBS; 100% POWERED BY RENEWABLES; INVESTMENT OF ₹200 CRORES.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10027",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "SUZLON",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Renewable Energy",
-    "Manufacturing"
-   ],
-   "impact": 65,
-   "confidence": 70,
-   "category": "Corporate Expansion",
-   "action": "Monitor order flow and volume to see if the expansion news sustains buying interest.",
-   "reason": [
-    "Significant capacity expansion (1 GW) signals strong growth intent and government support.",
-    "Creation of 1,000+ jobs and renewable focus aligns with national energy goals."
-   ],
-   "risks": [
-    "Execution delays or cost overruns in the new factory setup.",
-    "Market may have already priced in the positive sentiment."
-   ],
-   "plain": "The state chief minister started construction on a new, large factory for making wind turbine parts.",
-   "why": "This shows the company is growing and getting government support, which is generally good for its future.",
-   "check": "Look at recent news to see if the company has announced any new orders.",
-   "original": "SUZLON ENERGY: TAMIL NADU CM LAYS FOUNDATION FOR SUZLON'S 1 GW SMART BLADE FACTORY IN THOOTHUKUDI; EXPECTED TO CREATE OVER 1,000 JOBS; 100% POWERED BY RENEWABLES; INVESTMENT OF ₹200 CRORES.",
-   "latency": 35.4,
-   "lane": "fast",
-   "quotes": {
-    "SUZLON": {
-     "px": 35.76,
-     "prev": 35.86,
-     "move": -0.28,
-     "at": "2026-11-25T13:34:53+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "1a3b0643079cd998",
-   "time": "2026-11-25T13:31:11+05:30",
-   "headline": "POWERGRID INFRASTRUCTURE INVESTMENT TRUST: CO SAYS MANAGEMENT PROJECTS A 23-24% REVENUE DIP STARTING FY28, SEEKING STATE MONETIZATIONS AND CONSORTIUM BIDS TO OFFSET THE DROP.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10026",
-   "section": "news",
-   "call": "watch",
-   "horizon": "positional",
-   "direction": "down",
-   "tickers": [
-    {
-     "symbol": "POWERGRID",
-     "direction": "down"
-    }
-   ],
-   "sectors": [
-    "Infrastructure",
-    "Power"
-   ],
-   "impact": 45,
-   "confidence": 60,
-   "category": "Earnings Guidance",
-   "action": "Monitor upcoming quarterly results for signs of revenue stabilization or new contract wins.",
-   "reason": [
-    "Management projects a 23-24% revenue dip starting FY28.",
-    "Reliance on state monetizations and consortium bids to offset the drop introduces execution risk."
-   ],
-   "risks": [
-    "Failure to secure new bids could worsen the revenue decline.",
-    "Long-term nature of the dip may pressure valuation multiples."
-   ],
-   "plain": "The company expects its sales to drop by about a quarter starting in a few years.",
-   "why": "This signals future lower earnings, which could make the stock less attractive to long-term investors.",
-   "check": "Look at the company's recent contract wins to see if they are replacing lost revenue.",
-   "original": "POWERGRID INFRASTRUCTURE INVESTMENT TRUST: CO SAYS MANAGEMENT PROJECTS A 23-24% REVENUE DIP STARTING FY28, SEEKING STATE MONETIZATIONS AND CONSORTIUM BIDS TO OFFSET THE DROP.",
-   "latency": 42.3,
-   "lane": "fast",
-   "quotes": {
-    "POWERGRID": {
-     "px": 263.55,
-     "prev": 264.85,
-     "move": -0.49,
-     "at": "2026-11-25T13:31:53+05:30",
      "delay": 900
     }
    }
