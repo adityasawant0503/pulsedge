@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T11:00+05:30",
+ "updated": "2026-11-26T11:15+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -363,22 +363,6 @@
    "updated": "2026-11-25T19:23+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "SOLARINDS": {
-   "summary": "PulsEdge flagged a headline about Sterling and Wilson winning orders worth ₹2,050 crore. This news is distinct from Solar Industries India Ltd., which is a chemicals company in the Nifty 500 index.",
-   "why": "The provided facts do not link the recent headline to Solar Industries India Ltd., so there is no specific reason for its shareholders to react to this particular news item.",
-   "upside": "",
-   "downside": "",
-   "watch": [
-    "Future headlines specifically mentioning Solar Industries India Ltd.",
-    "General news in the chemicals sector",
-    "Performance of the Nifty 500 index"
-   ],
-   "about": "Solar Industries India Ltd. is a company in the chemicals sector that is part of the Nifty 500 index.",
-   "basis": "a835029159ea",
-   "items": 1,
-   "updated": "2026-11-26T08:45+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "ADANIENT": {
    "summary": "Adani Enterprises is raising capital through a public bond sale of at least Rs 2,000 crore and a stake sale of about 1.55% for up to ₹2,790 crore, part of a larger USD 1.35 billion fundraise. The company’s sector index has fallen 2.0% in the last session and 7.6% over five sessions.",
    "why": "Shareholders may face dilution from the stake sale and higher debt obligations from the bond issue, which can affect the company’s financial position and share price.",
@@ -428,20 +412,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. has seen mixed market conditions recently, influenced by fluctuating global oil prices and a strengthening Indian rupee. While supply concerns from geopolitical tensions have sometimes pushed oil prices up, easing prices elsewhere and broader market movements have created a complex environment for oil producers.",
-   "why": "For someone who owns shares, these shifts matter because global oil prices and currency values directly impact the earnings of companies that produce and sell oil.",
-   "upside": "Higher global oil prices driven by supply concerns or refinery attacks could boost profits for oil-selling companies.",
-   "downside": "A slowdown in global demand or falling oil prices could reduce earnings for oil producers.",
+   "summary": "Oil India is seeing mixed signals as global oil prices rose on supply worries while the Indian rupee weakened, and the broader market showed strength. The company’s sector index edged up modestly.",
+   "why": "Higher oil prices can lift earnings, but a weaker rupee raises import costs and potential rate hikes could affect financing.",
+   "upside": "If oil prices stay high, Oil India’s revenue could improve.",
+   "downside": "A falling oil price or further rupee weakness could compress margins.",
    "watch": [
-    "Global oil price movements and supply concerns",
-    "Changes in the strength of the Indian rupee",
-    "Broader stock market trends and economic updates"
+    "Oil price trends",
+    "Rupee movement against the dollar",
+    "RBI’s interest‑rate decisions"
    ],
-   "about": "Oil India Ltd. operates in the oil, gas, and consumable fuels sector.",
-   "basis": "d8e7d71db001",
-   "items": 23,
-   "updated": "2026-11-26T09:30+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "Oil India Ltd. explores, produces and markets oil and gas in India.",
+   "basis": "a3d11c9db9d3",
+   "items": 25,
+   "updated": "2026-11-26T11:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "JWL": {
    "summary": "Jupiter Wagons announced a joint venture with Korea's Woojin to build metro trains and propulsion systems in India and plans to invest Rs 1000 crore in its passenger rail business over the next three years. The news sparked a sharp share rally, with the stock jumping up to 30% in two days.",
@@ -730,20 +714,36 @@
    "updated": "2026-11-24T18:25+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BSE": {
-   "summary": "BSE shares have risen significantly in 2026, with one report noting a 48% jump year-to-date. The broader financial sector has also seen recent gains, adding to the positive momentum for the stock.",
-   "why": "Strong price performance and analyst interest can increase the value of your investment, but rapid rises often come with higher volatility and the risk of a correction.",
-   "upside": "Continued strong market activity and positive analyst sentiment could support further gains in the stock price.",
-   "downside": "If company earnings do not match the high expectations set by recent price increases, the stock could face a sharp drop.",
+  "BANKINDIA": {
+   "summary": "Bank of India announced a strike notice and is watching RBI policy moves as the central bank may raise rates while bond prices have been volatile.",
+   "why": "A strike could temporarily hit operations and earnings, while rate changes and bond market shifts affect the bank’s margins.",
+   "upside": "If the RBI continues buying dollars, a stronger rupee could boost the bank’s foreign‑exchange business.",
+   "downside": "A prolonged strike or higher rates that slow the economy could pressure earnings.",
    "watch": [
-    "Upcoming earnings reports to see if profits match the stock's rise",
-    "Overall market trends in the financial sector",
-    "Changes in trading volumes on the exchange"
+    "Strike developments",
+    "RBI’s next rate decision",
+    "Bond yield movements"
    ],
-   "about": "BSE Ltd. is a major stock exchange in India and part of the Nifty 50 index.",
-   "basis": "d497f5d7f281",
-   "items": 3,
-   "updated": "2026-11-26T10:30+05:30",
+   "about": "Bank of India is a commercial bank offering banking and financial services in India.",
+   "basis": "9c7426e6835f",
+   "items": 8,
+   "updated": "2026-11-26T11:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "BSE": {
+   "summary": "BSE shares recently hit a four-month high after a major brokerage firm raised its recommendation for the stock. The company is part of a group of large Indian companies that have seen significant price increases in 2026.",
+   "why": "This matters to share owners because positive analyst opinions and strong market trends can increase the value of their holdings, though past performance does not guarantee future results.",
+   "upside": "Continued strong performance in the financial sector and positive analyst sentiment could support further price growth.",
+   "downside": "The recent price rise may already reflect the good news, and the rally could reverse if company earnings disappoint investors.",
+   "watch": [
+    "Upcoming earnings reports to see if business results match expectations",
+    "Overall movement of the Financials sector index",
+    "Whether the stock maintains its recent high levels"
+   ],
+   "about": "BSE Ltd. is a company in the Financial Services sector and is one of India's 50 largest listed companies.",
+   "basis": "0031855f5837",
+   "items": 4,
+   "updated": "2026-11-26T11:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "SIEMENS": {
@@ -856,22 +856,6 @@
    "basis": "2ab84deb85fe",
    "items": 1,
    "updated": "2026-11-25T10:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "BANKINDIA": {
-   "summary": "Bank of India announced a strike notice, which may temporarily affect its operations. At the same time, the Reserve Bank of India (RBI) is considering a rate hike and has been buying dollars, which could impact the banking sector.",
-   "why": "A strike could disrupt daily banking services and earnings, while changes in interest rates and currency values directly affect how much profit the bank makes from lending and foreign exchange.",
-   "upside": "If the RBI raises interest rates, the bank could earn more from the interest it charges on loans.",
-   "downside": "A prolonged strike or a shift in monetary policy could reduce the bank's earnings or slow down economic activity.",
-   "watch": [
-    "Updates on the duration and impact of the strike.",
-    "The final decision on interest rates from the RBI meeting.",
-    "Changes in the value of the Indian rupee against the US dollar."
-   ],
-   "about": "",
-   "basis": "13631827cde6",
-   "items": 7,
-   "updated": "2026-11-26T08:17+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ICICIBANK": {
@@ -1208,22 +1192,6 @@
    "updated": "2026-11-26T11:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "INFY": {
-   "summary": "Infosys announced it has become the world’s first organization to achieve CMMI AI Maturity Level 5, a top AI certification. The IT sector index rose 1.7% in the last session, and Indian IT stocks are gaining attention as investors shift from expensive AI tech to cheaper software firms.",
-   "why": "Shareholders may see that the AI certification positions Infosys as a leader in AI, which could help it win future business.",
-   "upside": "The certification could help Infosys win more business from other companies.",
-   "downside": "Certification alone does not guarantee immediate revenue growth.",
-   "watch": [
-    "Impact of the AI certification on new business wins",
-    "Changes in market sentiment toward AI technology",
-    "Movement of the IT sector index in the coming sessions"
-   ],
-   "about": "Infosys Ltd. is an information technology company.",
-   "basis": "76c52aee6922",
-   "items": 4,
-   "updated": "2026-11-25T15:31+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
   "MINDACORP": {
    "summary": "Minda Corporation recently sold new shares to specific investors, increasing the total number of shares in circulation. This move followed a board meeting where the company considered raising funds.",
    "why": "Issuing new shares means each existing share represents a smaller portion of the company, which can reduce the value of your current holdings.",
@@ -1239,6 +1207,22 @@
    "items": 3,
    "updated": "2026-11-26T09:30+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "INFY": {
+   "summary": "Infosys announced it is the first organization worldwide to achieve CMMI AI Maturity (AIM) Level 5, a top‑level AI certification. The broader Indian IT sector has been rising as investors shift from costly AI spend to cheaper software services.",
+   "why": "The AI certification positions Infosys as a leader that could attract more business, but it does not guarantee immediate revenue growth.",
+   "upside": "If the certification helps win new AI contracts, earnings could improve.",
+   "downside": "If the certification does not translate into revenue or AI sentiment turns negative, growth may stall.",
+   "watch": [
+    "Impact of the AIM Level 5 certification on new deals",
+    "Changes in global AI sentiment affecting Indian IT stocks",
+    "Performance of the IT sector index"
+   ],
+   "about": "Infosys Ltd. provides information technology services and consulting.",
+   "basis": "5409423de2a5",
+   "items": 3,
+   "updated": "2026-11-26T11:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "CLEANMAX": {
    "summary": "Clean Max Enviro Energy Solutions has announced it is acquiring another business while also selling off a subsidiary and other assets. These moves happened within the last two days, signaling a major shift in the company's structure.",
@@ -1318,22 +1302,6 @@
    "basis": "e45eccd21149",
    "items": 2,
    "updated": "2026-11-24T06:49+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "TCS": {
-   "summary": "TCS shares rose while the broader market fell, with analysts noting a shift of money from pricey AI stocks to cheaper Indian IT firms. The stock is being seen as a relatively safe play amid market volatility.",
-   "why": "This trend could help share prices if investors continue moving funds into Indian software companies, and the stock’s perceived safety may attract more buying.",
-   "upside": "If the flow of capital from expensive AI tech to Indian IT firms continues, TCS could benefit.",
-   "downside": "A reversal in global AI sentiment or broader market volatility could pull the stock down.",
-   "watch": [
-    "Global AI sentiment and its impact on Indian IT stocks",
-    "Overall market volatility and its effect on crash‑proof stocks",
-    "Performance of the IT sector index in the coming sessions"
-   ],
-   "about": "Tata Consultancy Services provides IT services, consulting and business solutions.",
-   "basis": "72f572801305",
-   "items": 2,
-   "updated": "2026-11-23T14:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "HINDZINC": {
