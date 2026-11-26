@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T10:15+05:30",
+ "updated": "2026-11-26T10:30+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -187,22 +187,6 @@
    "updated": "2026-11-26T04:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BRIGADE": {
-   "summary": "Brigade Enterprises recorded ₹1,600 crore in sales during a launch weekend for a new Bengaluru project. The company also bought land in Secunderabad for a premium residential development and expects its hotel business to grow faster in the second half of the year.",
-   "why": "Strong sales and new land acquisitions suggest the company is expanding its business, which could lead to higher future revenue for shareholders.",
-   "upside": "High demand for the new project and faster growth in the hotel division could boost overall company earnings.",
-   "downside": "The high cost of the new land may reduce profit margins, and the strong sales might be a one-time event rather than a steady trend.",
-   "watch": [
-    "Whether the strong launch sales continue beyond the initial weekend",
-    "Actual performance of the hotel business compared to the growth forecast",
-    "Progress on the new Secunderabad residential project"
-   ],
-   "about": "Brigade Enterprises is a real estate company that develops residential and mixed-use properties and operates hotels.",
-   "basis": "0e16cb22430f",
-   "items": 4,
-   "updated": "2026-11-26T10:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "360ONE": {
    "summary": "360 ONE WAM recently issued convertible securities to raise new capital. This move increases the total number of shares, which can affect the value of existing holdings.",
    "why": "Issuing new shares means the company's ownership is split among more people, which can lower the value of each share if the new funds do not create enough value to offset this change.",
@@ -218,6 +202,22 @@
    "items": 3,
    "updated": "2026-11-25T19:23+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "BRIGADE": {
+   "summary": "Brigade Enterprises recorded ₹1,600 crore in sales during the launch weekend of its Brigade Autograph project in Bengaluru. The real estate company also acquired a 2.25-acre land parcel in Secunderabad to plan a new premium residential project.",
+   "why": "These major project launches and land acquisitions can shape the company's future revenue and business growth. For shareholders, this shows active expansion but also involves heavy spending on new land.",
+   "upside": "Strong launch sales suggest high demand, which may boost the company's revenue outlook.",
+   "downside": "The high cost of land acquisition may impact project margins, and launch sales could be a one-off event.",
+   "watch": [
+    "Progress on the Brigade Autograph project",
+    "Development of the new Secunderabad land parcel",
+    "Overall trends in the realty sector"
+   ],
+   "about": "Brigade Enterprises Ltd. is a realty company in India that develops residential, commercial, and mixed-use real estate projects.",
+   "basis": "0a6b8a47bc72",
+   "items": 3,
+   "updated": "2026-11-26T10:30+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "HEROMOTOCO": {
    "summary": "The high court has cancelled a ₹165 crore demand from the regional transport office, easing a regulatory burden on Hero MotoCorp. The company also filed an update on its trade registration certificate case.",
@@ -316,20 +316,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "APLAPOLLO": {
-   "summary": "APL Apollo Tubes shares fell to a 52-week low after Tata Steel bought a 9.91% stake in the company for about ₹5,825 crore. Brokers lowered their ratings on the stock, and a large fund sold shares worth ₹434 crore in a single trade.",
-   "why": "The sharp drop in share price reflects investor concern that the cost of the Tata Steel deal may pressure the company's future profits. Existing owners now face a market that is reassessing the value of their holdings.",
-   "upside": "The new shareholder agreements announced by the company could potentially support future business activities, though the exact financial impact is not yet clear.",
-   "downside": "Further downgrades from brokers or additional large sales by investors could lead to more declines in the share price.",
+   "summary": "Tata Steel bought a 9.91% stake in APL Apollo Tubes for about ₹5,825 crore, triggering a sharp 15% share price fall and broker downgrades. At the same time, Smallcap World Fund sold ₹434 crore of shares in a bulk deal and the stock hit a 52‑week low.",
+   "why": "The new large shareholder and recent sell‑off could affect the company’s cash flow, control and future earnings, which matters to existing investors.",
+   "upside": "If Tata Steel’s investment brings strategic synergies and the market views the low price as a buying chance, the share could recover.",
+   "downside": "The high cost of the Tata Steel deal, broker downgrades and further institutional selling could keep pressure on the share price.",
    "watch": [
-    "How the market reacts to the new shareholder agreements",
-    "Whether other large investors sell more shares",
-    "Updates on the integration of the Tata Steel stake"
+    "How Tata Steel integrates its stake and any execution updates",
+    "Additional bulk or block trades by large investors",
+    "Future broker rating changes or analyst reports"
    ],
-   "about": "",
-   "basis": "c309dc64696f",
-   "items": 7,
-   "updated": "2026-11-26T04:23+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "APL Apollo Tubes Ltd. manufactures steel tubes and other capital‑goods products.",
+   "basis": "db4cefc8025b",
+   "items": 6,
+   "updated": "2026-11-26T10:30+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "INDIANB": {
    "summary": "Indian Bank’s shares are moving in line with the Financials sector, which rose 2.2% in the last session and 2.0% over the past five sessions.",
@@ -345,38 +345,6 @@
    "basis": "05cfe3da3f6a",
    "items": 3,
    "updated": "2026-11-25T19:23+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "HFCL": {
-   "summary": "HFCL shares have fallen sharply, hitting the daily limit for how low they can go. This drop follows a period where the stock price had risen significantly earlier in the year.",
-   "why": "If you own these shares, the sharp fall means the value of your holding has decreased quickly. The price limit can also make it difficult to sell your shares immediately if you want to exit.",
-   "upside": "The recent drop appears to be a reaction to general market mood rather than a specific bad event at the company, which could mean the price stabilizes soon.",
-   "downside": "If the broader market stays weak, the stock price could continue to fall, and the trading limits might prevent you from selling your shares when you want to.",
-   "watch": [
-    "Whether the share price stabilizes after hitting the lower limit",
-    "The overall strength or weakness of the broader stock market",
-    "If trading remains restricted due to the circuit breaker"
-   ],
-   "about": "HFCL is a company in the telecommunications sector.",
-   "basis": "e77db8a200c1",
-   "items": 3,
-   "updated": "2026-11-25T12:16+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "STLTECH": {
-   "summary": "Sterlite Technologies shares fell sharply, hitting the lower price circuit after recent rallies, showing strong selling pressure.",
-   "why": "The drop matters to shareholders because it could affect the value of their investment and may signal further volatility.",
-   "upside": "If the broader market improves and the price stabilises, the stock could recover.",
-   "downside": "If market weakness continues, the stock may fall further and remain locked by circuit breakers, limiting exit options.",
-   "watch": [
-    "Price stabilization after the circuit break",
-    "Overall market trend for telecom stocks",
-    "Liquidity and circuit‑breaker status"
-   ],
-   "about": "Sterlite Technologies Ltd. operates in the telecommunications sector.",
-   "basis": "e77db8a200c1",
-   "items": 3,
-   "updated": "2026-11-25T12:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "MEDANTA": {
@@ -619,6 +587,38 @@
    "updated": "2026-11-26T04:23+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "HFCL": {
+   "summary": "PulsEdge flagged that HFCL's shares fell about 5% and hit the lower price circuit after a recent rally. The drop reflects strong selling pressure and heightened volatility.",
+   "why": "Shareholders should watch because the stock’s price is unstable and could move sharply on market sentiment.",
+   "upside": "If the price stabilises after the circuit break, the stock could recover some of its recent gains.",
+   "downside": "Further declines are possible if the broader market remains weak, and the circuit limits add liquidity risk.",
+   "watch": [
+    "Whether the share price stabilises after the lower‑circuit hit",
+    "Overall market trend and sentiment",
+    "Frequency of circuit‑limit triggers and resulting liquidity"
+   ],
+   "about": "HFCL Ltd. operates in the telecommunications sector.",
+   "basis": "3b4d37a52aa4",
+   "items": 2,
+   "updated": "2026-11-26T10:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "STLTECH": {
+   "summary": "Sterlite Technologies shares fell about 5%, hitting the lower price circuit after recent rallies. The drop reflects strong selling pressure in the market.",
+   "why": "Shareholders should note the heightened volatility and the risk of further price declines if the broader market stays weak.",
+   "upside": "If the stock stabilises and broader market sentiment improves, the price could recover from the circuit breach.",
+   "downside": "Continued weakness in the market or persistent selling pressure could push the stock lower, with liquidity risks from circuit limits.",
+   "watch": [
+    "Whether the price stabilises after hitting the lower circuit",
+    "Overall market trend for telecom stocks",
+    "Frequency of circuit limit hits and related liquidity risk"
+   ],
+   "about": "Sterlite Technologies Ltd. operates in the telecommunications sector.",
+   "basis": "3b4d37a52aa4",
+   "items": 2,
+   "updated": "2026-11-26T10:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "MOTILALOFS": {
    "summary": "Motilal Oswal Financial Services is part of the Nifty 500 index. Recent news highlighted a separate company, Welspun Living, which has seen strong share price growth and plans for new investments.",
    "why": "This matters because it shows the broader financial sector context, though the specific news about Welspun Living does not directly describe Motilal Oswal's own business performance.",
@@ -795,20 +795,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "BSE": {
-   "summary": "BSE Ltd. shares have surged, joining a group of Nifty 50 stocks that rallied 10‑43% in 2026, helped by broad market strength. The financials index also rose 2.2% in the last session and 2.0% over the past five sessions.",
-   "why": "The rally lifts the value of shareholders’ holdings, but a miss on earnings could reverse the gains.",
-   "upside": "If the broader market momentum continues, BSE’s share price could keep rising.",
-   "downside": "Disappointing earnings could curb the rally and push the stock lower.",
+   "summary": "BSE shares have risen significantly in 2026, with one report noting a 48% jump year-to-date. The broader financial sector has also seen recent gains, adding to the positive momentum for the stock.",
+   "why": "Strong price performance and analyst interest can increase the value of your investment, but rapid rises often come with higher volatility and the risk of a correction.",
+   "upside": "Continued strong market activity and positive analyst sentiment could support further gains in the stock price.",
+   "downside": "If company earnings do not match the high expectations set by recent price increases, the stock could face a sharp drop.",
    "watch": [
-    "Upcoming earnings release",
-    "Continuation of Nifty 50 rally",
-    "Financials sector performance"
+    "Upcoming earnings reports to see if profits match the stock's rise",
+    "Overall market trends in the financial sector",
+    "Changes in trading volumes on the exchange"
    ],
-   "about": "BSE Ltd. operates India’s leading stock exchange, providing trading and market infrastructure services.",
-   "basis": "62a5f6a4eca9",
-   "items": 2,
-   "updated": "2026-11-26T08:17+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "BSE Ltd. is a major stock exchange in India and part of the Nifty 50 index.",
+   "basis": "d497f5d7f281",
+   "items": 3,
+   "updated": "2026-11-26T10:30+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "CGCL": {
    "summary": "Capri Global Capital Ltd. raised $30 million from the BlueOrchard Microfinance Fund, its first impact‑fundraise. The funding was announced on November 25, 2026.",
