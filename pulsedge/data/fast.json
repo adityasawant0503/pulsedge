@@ -1,7 +1,44 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T14:48:59+05:30",
+ "updated": "2026-11-26T15:04:29+05:30",
  "items": [
+  {
+   "id": "1dfac8982c5df713",
+   "time": "2026-11-26T15:03:27+05:30",
+   "headline": "ZAGGLE PREPAID: SECURES A 5-YEAR AGREEMENT WITH INFOSYS TO PROVIDE ZAGGLE SAVE EMPLOYEE EXPENSE MANAGEMENT AND BENEFITS SOLUTIONS; CONTRACT VALUE WILL DEPEND ON ACTIVE USERS AND EMPLOYEE SPENDS.",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10168",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [
+    {
+     "symbol": "INFY",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "IT Services"
+   ],
+   "impact": 5,
+   "confidence": 90,
+   "category": "Corporate Update",
+   "action": "No specific trading action required; monitor general IT sector sentiment.",
+   "reason": [
+    "Infosys is the client, not the vendor, so this is a minor operational detail.",
+    "The contract value is variable and likely immaterial to Infosys's total revenue."
+   ],
+   "risks": [
+    "None significant for the listed entity."
+   ],
+   "plain": "A software company signed a deal to manage employee expenses for a large IT firm.",
+   "why": "The IT firm is the customer, so this does not change its business outlook or earnings.",
+   "check": "",
+   "original": "ZAGGLE PREPAID: SECURES A 5-YEAR AGREEMENT WITH INFOSYS TO PROVIDE ZAGGLE SAVE EMPLOYEE EXPENSE MANAGEMENT AND BENEFITS SOLUTIONS; CONTRACT VALUE WILL DEPEND ON ACTIVE USERS AND EMPLOYEE SPENDS.",
+   "latency": 62.3,
+   "lane": "fast"
+  },
   {
    "id": "aa1b02f439fa0050",
    "time": "2026-11-26T14:47:46+05:30",
@@ -1562,159 +1599,6 @@
    "original": "CABINET APPROVES RS 110 BLN FOR CONSTRUCTION, INFRA EQUIPMENT MFG ECOSYSTEM PLAN",
    "latency": 26.5,
    "lane": "fast"
-  },
-  {
-   "id": "3be3538404ea8b65",
-   "time": "2026-11-25T15:03:04+05:30",
-   "headline": "INFOSYS: CO BECOMES THE WORLD’S FIRST ORGANIZATION TO ACHIEVE CMMI AI MATURITY (AIM) LEVEL 5",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10041",
-   "section": "news",
-   "call": "watch",
-   "horizon": "positional",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "INFY",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "IT Services"
-   ],
-   "impact": 20,
-   "confidence": 60,
-   "category": "Corporate Milestone",
-   "action": "Monitor for client announcements or contract wins citing this certification.",
-   "reason": [
-    "Demonstrates technical leadership in AI maturity.",
-    "May enhance credibility for enterprise AI deals."
-   ],
-   "risks": [
-    "Certification alone does not guarantee immediate revenue.",
-    "Market may view it as a PR milestone rather than a financial event."
-   ],
-   "plain": "The company's chief operating officer became the first to reach a top-level AI maturity standard.",
-   "why": "It shows the company is a leader in AI technology, which could help win future business.",
-   "check": "Look for news about new client contracts or partnerships in the coming weeks.",
-   "original": "INFOSYS: CO BECOMES THE WORLD’S FIRST ORGANIZATION TO ACHIEVE CMMI AI MATURITY (AIM) LEVEL 5",
-   "latency": 7.3,
-   "lane": "fast",
-   "quotes": {
-    "INFY": {
-     "px": 1128.6,
-     "prev": 1103.4,
-     "move": 2.28,
-     "at": "2026-11-25T15:03:11+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "913e45e6e822c448",
-   "time": "2026-11-25T15:01:40+05:30",
-   "headline": "ZYDUS LIFESCIENCES LTD: CO. RECEIVES EIR FROM USFDA FOR API UNIT – 2 MANUFACTURING PLANT AT ANKLESHWAR; INSPECTION CONDUCTED FROM JANUARY 19 TO 23, 2026",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10040",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [
-    {
-     "symbol": "ZYDUSLIFE",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Pharma"
-   ],
-   "impact": 50,
-   "confidence": 30,
-   "category": "regulatory",
-   "action": "Watch for any FDA observations that could affect product approvals",
-   "reason": [
-    "FDA inspection outcome can impact export capabilities",
-    "Positive report may boost confidence; negative could hinder"
-   ],
-   "risks": [
-    "Potential observations leading to delays",
-    "Market may have already priced in expectations"
-   ],
-   "plain": "Zydus Lifesciences got a US FDA inspection report for its new API plant in Ankleshwar.",
-   "why": "The inspection outcome could affect the company's ability to sell its products internationally, influencing share value.",
-   "check": "Look for the FDA's detailed findings in the upcoming regulatory filing.",
-   "original": "ZYDUS LIFESCIENCES LTD: CO. RECEIVES EIR FROM USFDA FOR API UNIT – 2 MANUFACTURING PLANT AT ANKLESHWAR; INSPECTION CONDUCTED FROM JANUARY 19 TO 23, 2026",
-   "latency": 32.1,
-   "lane": "fast",
-   "quotes": {
-    "ZYDUSLIFE": {
-     "px": 1219.0,
-     "prev": 1199.5,
-     "move": 1.63,
-     "at": "2026-11-25T15:02:12+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "6270a15e52a0b331",
-   "time": "2026-11-25T14:59:28+05:30",
-   "headline": "SKYWAYS AIR SERVICES: ODYSSEY LOGISTICS EXPANDS INTO DEFENCE AND AUTOMOTIVE LOGISTICS SEGMENTS; STRATEGIC DIVERSIFICATION TO CATER TO SPECIALIZED LOGISTICS REQUIREMENTS; NEW VERTICALS TO PROVIDE END-TO-END MULTIMODAL SUP",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10039",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "news",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "",
-   "why": "",
-   "check": "",
-   "original": "SKYWAYS AIR SERVICES: ODYSSEY LOGISTICS EXPANDS INTO DEFENCE AND AUTOMOTIVE LOGISTICS SEGMENTS; STRATEGIC DIVERSIFICATION TO CATER TO SPECIALIZED LOGISTICS REQUIREMENTS; NEW VERTICALS TO PROVIDE END-TO-END MULTIMODAL SUP",
-   "latency": 73.7,
-   "lane": "fast"
-  },
-  {
-   "id": "cb4e2b1f4ac22b88",
-   "time": "2026-11-25T14:56:22+05:30",
-   "headline": "SHUKRA MEDTECH LTD: CO. PROPOSES CAPITAL RAISE OF ₹648 CRORE THROUGH PREFERENTIAL ALLOTMENT; 6 CRORE EQUITY SHARES AT ₹108 EACH; BOARD MEETING ON DECEMBER 2, 2026 TO CONSIDER PROPOSAL.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10038",
-   "section": "news",
-   "call": "sell",
-   "horizon": "swing",
-   "direction": "down",
-   "tickers": [],
-   "sectors": [
-    "Healthcare"
-   ],
-   "impact": 70,
-   "confidence": 80,
-   "category": "corporate",
-   "action": "Watch for price pressure after the board meeting announcement.",
-   "reason": [
-    "Dilutive issuance may reduce earnings per share.",
-    "Large raise could signal funding needs."
-   ],
-   "risks": [
-    "Execution risk if market conditions worsen.",
-    "Potential overhang if allotment not fully subscribed."
-   ],
-   "plain": "The company plans to raise ₹648 crore by issuing new shares at ₹108 each.",
-   "why": "New shares increase supply, which could push the price lower for current shareholders.",
-   "check": "Look for the board’s decision and allotment details in the upcoming filing.",
-   "original": "SHUKRA MEDTECH LTD: CO. PROPOSES CAPITAL RAISE OF ₹648 CRORE THROUGH PREFERENTIAL ALLOTMENT; 6 CRORE EQUITY SHARES AT ₹108 EACH; BOARD MEETING ON DECEMBER 2, 2026 TO CONSIDER PROPOSAL.",
-   "latency": 50.6,
-   "lane": "fast",
-   "checked": "confirmed by a second AI check"
   }
  ]
 }
