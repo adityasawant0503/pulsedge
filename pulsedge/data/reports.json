@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T12:30+05:30",
+ "updated": "2026-11-26T12:45+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -76,20 +76,20 @@
  },
  "stocks": {
   "LENSKART": {
-   "summary": "Lenskart saw mixed block‑deal activity on Nov 23, with institutions both buying and selling shares at ₹725, and on Nov 25 Goldman Sachs and SocGen bought a 1% stake for about ₹920 crore.",
-   "why": "Such large‑institution moves can influence investor sentiment and the stock’s price.",
-   "upside": "The new stake by Goldman Sachs and SocGen may boost confidence in the company.",
-   "downside": "The sizable sell‑offs by Steadview Capital and LTR Focus could weigh on sentiment.",
+   "summary": "Lenskart Solutions saw significant trading activity this week, with Goldman Sachs and Societe Generale buying a combined 1% stake worth about ₹920 crore. On the same day, another large investor, Steadview Capital, sold shares worth approximately ₹835 crore in a block deal.",
+   "why": "These large trades indicate that major institutions are actively adjusting their positions in the company, which can influence how other investors perceive the stock's value and stability.",
+   "upside": "The fresh investment by global banks like Goldman Sachs and Societe Generale may signal confidence in the company's future performance.",
+   "downside": "The simultaneous sale of a large stake by Steadview Capital could suggest that some big investors are taking profits or reducing exposure, which might weigh on the share price.",
    "watch": [
-    "Further institutional buying or selling in block deals",
-    "Share price reaction to the ₹725 block trades",
-    "Overall market volatility that could affect the stock"
+    "Whether the new buyers hold their stakes or sell them in the near term",
+    "Any further large block deals by institutional investors",
+    "How the stock price reacts to these mixed signals of buying and selling"
    ],
-   "about": "Lenskart Solutions Ltd. operates in the consumer services sector.",
-   "basis": "fba41b8f0ec4",
-   "items": 8,
-   "updated": "2026-11-25T08:17+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Lenskart Solutions is a company in the Consumer Services sector that is part of the Nifty 500 index of India's largest listed companies.",
+   "basis": "8017446c43d3",
+   "items": 6,
+   "updated": "2026-11-26T12:45+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "TVSMOTOR": {
    "summary": "TVS Motor Company Ltd. (TVSMOTOR) has announced new business agreements and a non‑binding memorandum of understanding with the Government of Tamil Nadu, which includes a planned investment of ₹2000 crore over four years and creation of 1000 jobs.",
@@ -171,6 +171,22 @@
    "updated": "2026-11-26T04:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "BRIGADE": {
+   "summary": "Brigade Enterprises reported a strong weekend launch, selling about ₹1,600 crore of units in its premium mixed‑use township in Bengaluru. It also bought a 2.25‑acre land parcel in Secunderabad for ₹180 crore, targeting a future residential project worth roughly ₹1,000 crore.",
+   "why": "The sales boost the company’s near‑term revenue outlook, while the land acquisition could expand its pipeline and earnings potential.",
+   "upside": "If the high demand seen in Bengaluru continues and the Secunderabad project materialises, revenue and profit could rise further.",
+   "downside": "If the Bengaluru sales prove to be a one‑off event or the high land cost squeezes margins, earnings could fall short of expectations.",
+   "watch": [
+    "Future sales momentum in the Bengaluru Brigade Autograph project",
+    "Development progress and cost control on the Secunderabad land parcel",
+    "Realty sector index performance and broader market sentiment"
+   ],
+   "about": "Brigade Enterprises Ltd. is a real‑estate developer that builds residential and mixed‑use projects.",
+   "basis": "62565a18a8db",
+   "items": 4,
+   "updated": "2026-11-26T12:45+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "HEROMOTOCO": {
    "summary": "Hero MotoCorp has issued a recent press release and updated the market on a court case where the high court cancelled a ₹165 crore demand related to temporary registration certificates. The company also filed a SEBI listing regulation disclosure about the trade registration certificate matter.",
    "why": "The court ruling removes a large liability, potentially strengthening the balance sheet, while ongoing regulatory issues could impact operations.",
@@ -202,22 +218,6 @@
    "items": 3,
    "updated": "2026-11-25T19:23+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "BRIGADE": {
-   "summary": "Brigade Enterprises recorded ₹1,600 crore in sales during the launch weekend of its Brigade Autograph project in Bengaluru. The real estate company also acquired a 2.25-acre land parcel in Secunderabad to plan a new premium residential project.",
-   "why": "These major project launches and land acquisitions can shape the company's future revenue and business growth. For shareholders, this shows active expansion but also involves heavy spending on new land.",
-   "upside": "Strong launch sales suggest high demand, which may boost the company's revenue outlook.",
-   "downside": "The high cost of land acquisition may impact project margins, and launch sales could be a one-off event.",
-   "watch": [
-    "Progress on the Brigade Autograph project",
-    "Development of the new Secunderabad land parcel",
-    "Overall trends in the realty sector"
-   ],
-   "about": "Brigade Enterprises Ltd. is a realty company in India that develops residential, commercial, and mixed-use real estate projects.",
-   "basis": "0a6b8a47bc72",
-   "items": 3,
-   "updated": "2026-11-26T10:30+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "WELCORP": {
    "summary": "Welspun Corp Ltd. recently received an export order for large-diameter steel pipes. This new contract adds to the company's expected revenue.",
@@ -427,37 +427,37 @@
    "updated": "2026-11-26T11:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "JWL": {
-   "summary": "Jupiter Wagons announced a joint venture with Korea's Woojin to build metro trains and propulsion systems in India and plans to invest Rs 1000 crore in its passenger rail business over the next three years. The news sparked a sharp share rally, with the stock jumping up to 30% in two days.",
-   "why": "The new JV and large capex could open higher‑margin revenue streams, but the spending may strain short‑term cash flow and margins.",
-   "upside": "Successful launch of metro‑train manufacturing and passenger‑rail projects could boost future earnings.",
-   "downside": "Execution delays, high capital spending and a possible price correction after the rapid share rise could hurt performance.",
-   "watch": [
-    "Progress on the Woojin joint venture and metro‑train contracts",
-    "Utilisation and impact of the Rs 1000 crore passenger‑rail investment",
-    "Share‑price reaction after the recent surge"
-   ],
-   "about": "Jupiter Wagons Ltd. manufactures railway wagons and is expanding into metro train and propulsion system production.",
-   "basis": "f5fcdfb9cefe",
-   "items": 7,
-   "updated": "2026-11-26T10:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "WIPRO": {
-   "summary": "Wipro has signed a strategic partnership with BP to revamp BP’s finance operations, bringing about 3,000 BP staff into Wipro’s fold, with the new model set to start in 2027. The broader Indian IT sector has been rising despite US tariff concerns.",
-   "why": "Shareholders care because the BP deal could add stable, long‑term revenue, but the benefits may not appear until after 2027.",
-   "upside": "The partnership could generate revenue sooner than planned or attract similar large contracts.",
-   "downside": "Revenue from the BP deal may be delayed until the 2027 rollout, and any change in US tariff policy could hurt sentiment.",
+   "summary": "Wipro shares jumped after the IT company signed a major strategic partnership with global energy firm BP to transform finance operations. Around 3,000 BP employees are set to join Wipro under this new operating model. Meanwhile, Indian IT stocks have risen despite US tariff threats.",
+   "why": "This matters because large contracts show that major global clients trust the company for future business. However, potential US tariffs and trade policies could impact companies that sell abroad.",
+   "upside": "Winning large contracts like the BP partnership could bring stable, long-term business health.",
+   "downside": "The long implementation timeline for the BP partnership may delay revenue recognition, and shifting tariff policies could hurt market sentiment.",
    "watch": [
-    "BP partnership implementation timeline and revenue impact",
-    "US tariff policy changes affecting exporters",
-    "Movement of the Indian IT sector index"
+    "Details on the BP partnership implementation timeline",
+    "Updates regarding US tariff threats and policies",
+    "Overall movement in IT sector stocks"
    ],
-   "about": "Wipro provides information technology services and consulting.",
-   "basis": "0782c3c3432b",
+   "about": "Wipro Ltd. is an information technology company that provides IT services and solutions.",
+   "basis": "c3696c9498ac",
+   "items": 5,
+   "updated": "2026-11-26T12:45+05:30",
+   "model": "gemini-flash-lite-latest"
+  },
+  "JWL": {
+   "summary": "Jupiter Wagons announced a joint venture with a South Korean firm to build metro trains and plans to invest 1,000 crore rupees in its passenger rail business over the next three years. Following these announcements, the company's share price rose sharply, jumping 30% in two days.",
+   "why": "These moves suggest the company is expanding into new areas and investing in growth, which could lead to higher future earnings for shareholders. However, the recent sharp rise in the stock price may not be sustainable if the market adjusts to the news.",
+   "upside": "The new partnership and heavy investment could open up significant new revenue streams and boost future profits.",
+   "downside": "Spending heavily on new projects might strain the company's cash flow and reduce profits in the short term, and the stock price could fall back after its recent rapid increase.",
+   "watch": [
+    "Details on the size and value of the new business agreements.",
+    "How the company manages its cash flow during the heavy investment period.",
+    "Progress in setting up the joint venture for metro train manufacturing."
+   ],
+   "about": "Jupiter Wagons is a capital goods company that manufactures railway wagons and is part of the Nifty 500 index.",
+   "basis": "b638b9689662",
    "items": 4,
-   "updated": "2026-11-26T12:00+05:30",
-   "model": "openai/gpt-oss-120b"
+   "updated": "2026-11-26T12:45+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "SUZLON": {
    "summary": "Suzlon Energy is expanding its production capacity by building new facilities, including a 1 GW smart blade factory in Tamil Nadu. The company has officially notified the stock exchange about these additions to its manufacturing setup.",
@@ -537,6 +537,22 @@
    "basis": "33fcc8aac299",
    "items": 6,
    "updated": "2026-11-26T09:46+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "COFORGE": {
+   "summary": "Coforge is seeing reports that a major investor may sell up to 10% of its shares and that a large block deal could happen next week. At the same time, the company announced enhancements to its Nuuron platform to speed up vulnerability remediation for clients.",
+   "why": "Shareholder value could be affected by the potential increase in share supply, while the new security capabilities may help win more business.",
+   "upside": "If the Nuuron enhancements attract new clients, Coforge could see higher revenue.",
+   "downside": "If the investor’s stake sale or block deal proceeds, the added share supply could put downward pressure on the stock price.",
+   "watch": [
+    "Confirmation of Advent-owned entities selling up to 10% stake",
+    "Details and timing of the anticipated block deal",
+    "Client uptake and market response to the Nuuron capability upgrade"
+   ],
+   "about": "Coforge Ltd. provides information technology services and solutions.",
+   "basis": "03185feb9aa3",
+   "items": 3,
+   "updated": "2026-11-26T12:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "HYUNDAI": {

@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T12:30:49+05:30",
+ "updated": "2026-11-26T12:46:19+05:30",
  "summary": {
-  "calls": 2297,
-  "scored_calls": 1084,
+  "calls": 2301,
+  "scored_calls": 1088,
   "d1": {
    "scored": 870,
    "hits": 384,
@@ -26,6 +26,66 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "a259d2dd7b4e00a4",
+   "symbol": "COFORGE",
+   "time": "2026-11-26T12:38:04+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "COFORGE: ADVENT- OWNED ENTITIES LIKELY TO SELL UPTO 10% STAKE",
+   "url": "https://t.me/Indiaredboxglobal/10155",
+   "alert_px": 2042.8,
+   "alert_move": -0.83,
+   "alert_at": "2026-11-26T12:39:07+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "a51e183820816768",
+   "symbol": "COFORGE",
+   "time": "2026-11-26T12:37:47+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "COFORGE: BLOCK DEAL LIKELY NEXT WEEK: CNBC",
+   "url": "https://t.me/Indiaredboxglobal/10154",
+   "alert_px": 2042.8,
+   "alert_move": -0.83,
+   "alert_at": "2026-11-26T12:39:07+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "00708ba11a31f25b",
+   "symbol": "BRIGADE",
+   "time": "2026-11-26T12:29:27+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "₹1,600-cr sales in B'luru project drive Brigade Enterprises stock 4% higher",
+   "url": "https://www.business-standard.com/markets/news/1-600-cr-sales-in-b-luru-project-drive-brigade-enterprises-stock-4-higher-126112600490_1.html",
+   "alert_px": 609.0,
+   "alert_move": 3.27,
+   "alert_at": "2026-11-26T12:45:33+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "b266de3e9c01e0e5",
+   "symbol": "WIPRO",
+   "time": "2026-11-26T12:29:06+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Wipro shares jump 4% on partnership with BP, emerges top Nifty IT gainer",
+   "url": "https://www.business-standard.com/markets/news/wipro-share-price-jump-4-percent-on-partnership-with-bp-emerges-top-nifty-it-gainer-126112600489_1.html",
+   "alert_px": 195.53,
+   "alert_move": 3.43,
+   "alert_at": "2026-11-26T12:45:33+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "ecfbfb818c7b4a7a",
    "symbol": "NCC",
