@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T08:31:33+05:30",
+ "updated": "2026-11-26T08:46:30+05:30",
  "summary": {
-  "calls": 2259,
-  "scored_calls": 1046,
+  "calls": 2261,
+  "scored_calls": 1048,
   "d1": {
    "scored": 870,
    "hits": 384,
@@ -26,6 +26,28 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "18b233756432ca12",
+   "symbol": "WELCORP",
+   "time": "2026-11-26T08:32:04+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Welspun Corp Limited: Welspun Corp Limited has informed the Exchange about Bagging/Receiving of orders/contracts - Receipt of Export Order for LSAW Pipes |SUBJE",
+   "url": "https://nsearchives.nseindia.com/corporate/WELCORP_26112026083153_SEsigned.pdf"
+  },
+  {
+   "id": "0e94a59d4fd90b4b",
+   "symbol": "ACMESOLAR",
+   "time": "2026-11-26T08:29:20+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Acme Solar Holdings Limited: Acme Solar Holdings Limited has informed the Exchange about Commissioning of Battery Energy Storage Systems (BESS) Project |SUBJECT",
+   "url": "https://nsearchives.nseindia.com/corporate/ACME122002_26112026082635_Intimation26112026.pdf"
+  },
   {
    "id": "a3e1acda9afe4ff3",
    "symbol": "OIL",

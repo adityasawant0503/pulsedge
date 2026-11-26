@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T08:30+05:30",
+ "updated": "2026-11-26T08:45+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -92,20 +92,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "DALBHARAT": {
-   "summary": "Dalmia Bharat Ltd. announced a ₹700 crore share buyback, targeting up to 3.78 million shares at ₹1,850 per share. The board approved the plan on 23 Nov 2026 and the company has informed the exchange of the approval.",
-   "why": "A buyback reduces the number of shares outstanding, which can lift earnings per share and may support the stock price for existing shareholders.",
-   "upside": "If the buyback is fully subscribed and completed on schedule, it could improve earnings per share and boost the share price.",
-   "downside": "Delays, under‑subscription, or regulatory cash‑flow constraints could limit the buyback’s impact or reduce its benefits.",
+   "summary": "Dalmia Bharat's board approved a plan to buy back up to 3.78 million shares for a total of ₹700 crore. This move reduces the total number of shares in circulation, which can increase the value of each remaining share.",
+   "why": "For existing shareholders, a buyback can boost earnings per share and may support the stock price if the company believes its shares are undervalued.",
+   "upside": "The buyback signals that the company has cash reserves and may help lift the share price by reducing the total number of shares.",
+   "downside": "The buyback could be delayed, scaled down, or not fully subscribed due to regulatory issues or cash flow constraints.",
    "watch": [
-    "Execution timeline and any delays in the buyback",
-    "Level of investor subscription to the buyback offer",
-    "Share price reaction and market sentiment after the announcement"
+    "The official record date for the buyback",
+    "The final price per share set for the buyback",
+    "Any updates on the timeline for completing the buyback"
    ],
-   "about": "",
-   "basis": "6e51ca2d7c3e",
-   "items": 5,
-   "updated": "2026-11-23T19:22+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Dalmia Bharat is a company in the construction materials sector.",
+   "basis": "34bd49670961",
+   "items": 4,
+   "updated": "2026-11-26T08:45+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "TVSMOTOR": {
    "summary": "TVS Motor Company Ltd. (TVSMOTOR) has announced new business agreements and a non‑binding memorandum of understanding with the Government of Tamil Nadu, which includes a planned investment of ₹2000 crore over four years and creation of 1000 jobs.",
@@ -234,6 +234,38 @@
    "items": 2,
    "updated": "2026-11-24T19:21+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "WELCORP": {
+   "summary": "Welspun Corp Ltd. recently received an export order for large-diameter steel pipes. This new contract adds to the company's expected revenue.",
+   "why": "For shareholders, this order suggests that customers are still buying the company's products, which supports its business activity.",
+   "upside": "The new export order could boost the company's income if it is delivered on time.",
+   "downside": "The order could be delayed or cancelled, which would reduce the expected benefit.",
+   "watch": [
+    "Updates on the delivery status of the export order",
+    "Any announcements about new contracts or orders",
+    "Changes in the company's revenue figures"
+   ],
+   "about": "Welspun Corp Ltd. is a capital goods company that manufactures steel pipes.",
+   "basis": "4ed77c193e65",
+   "items": 1,
+   "updated": "2026-11-26T08:45+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "ACMESOLAR": {
+   "summary": "Acme Solar Holdings has started operating new battery energy storage systems in Rajasthan. This move increases its total operational capacity to 193.63 MW.",
+   "why": "These new systems allow the company to generate income from storing and selling energy, which is a key part of its business operations.",
+   "upside": "The new capacity could lead to higher earnings if the systems operate smoothly and sell energy effectively.",
+   "downside": "Technical issues or delays in connecting to the power grid could prevent the company from earning money from these new systems.",
+   "watch": [
+    "Reports on how well the new battery systems are performing.",
+    "Updates on the company's total revenue from energy storage.",
+    "News about any problems with connecting to the power grid."
+   ],
+   "about": "Acme Solar Holdings is a power sector company that operates battery energy storage systems.",
+   "basis": "f1ba044abeef",
+   "items": 3,
+   "updated": "2026-11-26T08:45+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "KSB": {
    "summary": "KSB Ltd. recently announced that it has been awarded a new contract. This news was shared with the stock exchange to inform investors of the company's latest business activity.",
@@ -364,19 +396,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "SOLARINDS": {
-   "summary": "PulsEdge flagged that Solar Industries India Ltd. is part of the Nifty 500 index, which tracks India's 500 largest listed companies. The company operates in the chemicals sector. Recent news highlights focus on other renewable energy firms winning large projects, but no specific new orders or announcements were made by Solar Industries in these reports.",
-   "why": "Being in the Nifty 500 means the company is one of India's larger listed firms, which can make it more visible to investors. However, the recent headlines provided do not contain specific financial news or operational updates for Solar Industries itself.",
+   "summary": "PulsEdge flagged a headline about Sterling and Wilson winning orders worth ₹2,050 crore. This news is distinct from Solar Industries India Ltd., which is a chemicals company in the Nifty 500 index.",
+   "why": "The provided facts do not link the recent headline to Solar Industries India Ltd., so there is no specific reason for its shareholders to react to this particular news item.",
    "upside": "",
    "downside": "",
    "watch": [
-    "Future announcements from Solar Industries regarding new orders or projects.",
-    "General trends in the chemicals sector that might affect the company.",
-    "Performance of other renewable energy companies, as they may indicate broader market sentiment."
+    "Future headlines specifically mentioning Solar Industries India Ltd.",
+    "General news in the chemicals sector",
+    "Performance of the Nifty 500 index"
    ],
-   "about": "Solar Industries India Ltd. is a company in the chemicals sector.",
-   "basis": "df9c194442e8",
-   "items": 3,
-   "updated": "2026-11-23T19:22+05:30",
+   "about": "Solar Industries India Ltd. is a company in the chemicals sector that is part of the Nifty 500 index.",
+   "basis": "a835029159ea",
+   "items": 1,
+   "updated": "2026-11-26T08:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ADANIENT": {
@@ -826,22 +858,6 @@
    "updated": "2026-11-26T08:17+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "TITAN": {
-   "summary": "Titan Company shares have risen significantly in 2026, joining a group of large Indian companies that saw strong gains. Recently, the stock price has moved up and down in line with changes in gold prices.",
-   "why": "As a major player in the consumer durables sector, Titan's performance is linked to broader market trends and the cost of gold, which directly affects its business costs and sales.",
-   "upside": "Broad market strength could continue to support the share price if company earnings meet expectations.",
-   "downside": "The recent rally may be short-lived if earnings disappoint, and volatile gold prices can cause unpredictable short-term stock moves.",
-   "watch": [
-    "Upcoming earnings reports to see if profits match the stock's rise",
-    "Future movements in gold prices",
-    "Overall performance of the Nifty 50 index"
-   ],
-   "about": "Titan Company is one of India's 50 largest listed companies in the consumer durables sector.",
-   "basis": "c475bd8cf529",
-   "items": 2,
-   "updated": "2026-11-26T08:17+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "CGCL": {
    "summary": "Capri Global Capital Ltd. raised $30 million from the BlueOrchard Microfinance Fund, its first impact‑fundraise. The funding was announced on November 25, 2026.",
    "why": "The new capital could support business growth but may dilute existing shareholders if equity was issued.",
@@ -889,6 +905,22 @@
    "items": 1,
    "updated": "2026-11-26T08:17+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "TITAN": {
+   "summary": "Titan Company Ltd. has been part of a broader rally in large Indian stocks, with its share price rising between 10% and 43% in 2026. This gain is part of a wider market trend affecting many top companies.",
+   "why": "If you own shares, the recent price increase means your investment value has gone up, but the market warns that this rise might not last if company profits do not match expectations.",
+   "upside": "General market strength could continue to lift the share price along with other major companies.",
+   "downside": "The recent price rally may be short-lived if the company's earnings disappoint investors.",
+   "watch": [
+    "Upcoming earnings reports to see if profits support the recent price rise",
+    "Overall market trends for large Indian companies",
+    "Performance of the Consumer Durables sector index"
+   ],
+   "about": "",
+   "basis": "967a748bb180",
+   "items": 1,
+   "updated": "2026-11-26T08:45+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "ZEEL": {
    "summary": "Zee Entertainment shares fell 6% on November 25, 2026, despite a broader market rally. This drop happened because the company set a record date for a ₹600-crore share buyback, leading investors to sell before the deadline.",
@@ -987,20 +1019,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "ENGINERSIN": {
-   "summary": "PulsEdge flagged that Engineers India Ltd. is part of the Nifty 500 index, which tracks India's 500 largest listed companies. The recent news items flagged in the system actually relate to other companies, specifically Vascon Engineers and Eppeltone Engineers, rather than Engineers India Ltd. itself.",
-   "why": "This distinction matters because news about other construction or engineering firms does not directly change the financial performance or share value of Engineers India Ltd.",
+   "summary": "Engineers India Ltd (ENGINERSIN) is currently listed in the Nifty 500, which tracks India’s 500 largest listed companies. No recent company‑specific announcements have been flagged by PulsEdge. The stock remains part of the broader construction sector.",
+   "why": "Being in the Nifty 500 means the company is exposed to index‑linked investment flows, which can affect its share price.",
    "upside": "",
    "downside": "",
    "watch": [
-    "Official announcements from Engineers India Ltd. regarding its own new orders or contracts.",
-    "Quarterly financial results to see how the company is performing independently of peer news.",
-    "Updates on the Nifty 500 index composition to confirm the company's continued inclusion."
+    "New order or contract announcements",
+    "Quarterly earnings release",
+    "Construction sector policy changes"
    ],
-   "about": "Engineers India Ltd. is a company in the construction sector.",
-   "basis": "a2149e9f901a",
-   "items": 5,
-   "updated": "2026-11-24T19:21+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Engineers India Ltd provides engineering and construction services.",
+   "basis": "6536a6aa70b0",
+   "items": 3,
+   "updated": "2026-11-26T08:45+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "MAXHEALTH": {
    "summary": "Max Healthcare Institute Ltd. announced the resignation of a director and changes in its senior management personnel. These updates were filed with the stock exchange on November 23, 2026.",
@@ -1033,22 +1065,6 @@
    "items": 2,
    "updated": "2026-11-26T08:30+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "ACMESOLAR": {
-   "summary": "ACME Solar Holdings has started operating a new battery storage system in Rajasthan. This adds to its total energy capacity, bringing the total to 193.63 MW.",
-   "why": "This matters because the company can now use this new capacity to potentially earn more money from selling energy services.",
-   "upside": "The new operational capacity could lead to higher income from energy storage services.",
-   "downside": "The company faces risks from grid connectivity issues and potential technical problems with the new system.",
-   "watch": [
-    "How well the new battery system performs technically",
-    "Any issues with connecting to the power grid",
-    "Overall trends in the Energy sector index"
-   ],
-   "about": "ACME Solar Holdings is a power sector company that operates battery energy storage systems.",
-   "basis": "3cfd92a8ece4",
-   "items": 2,
-   "updated": "2026-11-25T17:12+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "POONAWALLA": {
    "summary": "Poonawalla Fincorp issued ₹500 crore of 9.15% non‑convertible debentures that mature in November 2031, adding new debt to its balance sheet. The Financials sector index fell 2.5% in the last session but was up 0.5% over the past five sessions.",
@@ -1306,20 +1322,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "EICHERMOT": {
-   "summary": "Eicher Motors signed a Rs 1,000 crore MoU with the Tamil Nadu government to expand its electric‑vehicle ecosystem, while its stock hit an all‑time high after a 17% rally driven by strong premium bike sales.",
-   "why": "The EV partnership could shape future growth, and the recent price surge reflects investor confidence that may affect share value.",
-   "upside": "Successful rollout of the EV ecosystem could boost earnings and market share.",
-   "downside": "The MoU is non‑binding and may take years to materialise, and the recent rally could trigger profit‑taking.",
+   "summary": "Eicher Motors signed a deal worth Rs. 1,000 crore with the Tamil Nadu government. Through its Royal Enfield brand, the company plans to expand its electric vehicle ecosystem over the next seven years.",
+   "why": "This matters to shareholders because it shows the company is investing in electric vehicles, which is a key area for future growth.",
+   "upside": "The investment could generate 500 jobs and support the development of new electric vehicle products.",
+   "downside": "The agreement is non-binding, execution may take years, and the expansion requires significant capital investment.",
    "watch": [
-    "Progress on the Tamil Nadu EV MoU",
-    "Sustaining premium bike sales momentum",
-    "Sector index trends and any profit‑taking activity"
+    "Progress on the Tamil Nadu electric vehicle project",
+    "Further updates on capital spending for electric vehicles",
+    "Overall movement in the automobile sector index"
    ],
-   "about": "Eicher Motors manufactures motorcycles under the Royal Enfield brand and commercial vehicles.",
-   "basis": "e11cf964a522",
-   "items": 3,
-   "updated": "2026-11-25T14:47+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Eicher Motors Ltd. is one of India's 50 largest listed companies operating in the automobile and auto components sector.",
+   "basis": "2365d915b366",
+   "items": 2,
+   "updated": "2026-11-26T08:45+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "TMCV": {
    "summary": "Tata Motors is raising the prices of its cars and SUVs by an average of 0.5% starting December 1, 2026. This move is a response to rising costs for the materials used to build the vehicles.",
@@ -1384,6 +1400,22 @@
    "items": 2,
    "updated": "2026-11-25T10:46+05:30",
    "model": "openai/gpt-oss-20b"
+  },
+  "PNB": {
+   "summary": "Punjab National Bank signed a preliminary agreement with Deutsche Bank to explore joint financing for business acquisitions. This partnership aims to help PNB earn fees by arranging loans for companies buying other businesses.",
+   "why": "If this collaboration leads to actual deals, it could provide the bank with an additional source of income from fees. This may help support the bank's overall earnings.",
+   "upside": "The partnership could generate new fee income if it successfully arranges loans for corporate acquisitions.",
+   "downside": "The agreement is currently just a memorandum of understanding, so it may not result in any actual business or revenue.",
+   "watch": [
+    "Whether the MOU turns into specific financing deals",
+    "Any announcements about new acquisition loans",
+    "Performance of the broader Financials sector"
+   ],
+   "about": "Punjab National Bank is a financial services company listed in India's Nifty 500 index.",
+   "basis": "dd873202f907",
+   "items": 2,
+   "updated": "2026-11-26T08:45+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "PWL": {
    "summary": "Physicswallah Ltd. is currently being watched closely by traders as part of a broader list of popular stocks. The company recently announced that the Punjab Government has officially notified its digital university in Patiala.",
