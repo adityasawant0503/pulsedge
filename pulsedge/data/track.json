@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T09:47:03+05:30",
+ "updated": "2026-11-26T10:01:24+05:30",
  "summary": {
-  "calls": 2265,
-  "scored_calls": 1052,
+  "calls": 2270,
+  "scored_calls": 1057,
   "d1": {
    "scored": 870,
    "hits": 384,
@@ -26,6 +26,66 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "4d55490f7571f9f3",
+   "symbol": "MCX",
+   "time": "2026-11-26T09:57:41+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "With 67% returns in 2026, MCX share price gains 3% today as gold and silver prices rise after crash | Buy, sell or hold?",
+   "url": "https://www.livemint.com/market/stock-market-news/with-67-returns-in-2026-mcx-share-price-gains-3-today-as-gold-and-silver-prices-rise-after-crash-buy-sell-or-hold-11795665575282.html",
+   "alert_px": 3674.6,
+   "alert_move": 3.07,
+   "alert_at": "2026-11-26T10:00:38+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "c5c9d4f21997ce2f",
+   "symbol": "ENDURANCE",
+   "time": "2026-11-26T09:56:00+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "ENDURANCE TECH: CO SAYS 4 NEW PROJECTS ARE COMING SOON|| MARGINS WILL MOVE UP IN COMING QTRS",
+   "url": "https://t.me/Indiaredboxglobal/10129",
+   "alert_px": 2644.1,
+   "alert_move": 0.07,
+   "alert_at": "2026-11-26T09:56:06+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "419554783d796fd8",
+   "symbol": "JWL",
+   "time": "2026-11-26T09:54:55+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Multibagger railway stock Jupiter Wagons shares jump 30% in 2 days after South Korean JV; game changer for Vande Bharat?",
+   "url": "https://www.livemint.com/market/stock-market-news/multibagger-railway-stock-jupiter-wagons-shares-jump-30-in-2-days-after-south-korean-jv-game-changer-for-vande-bharat-11795665959629.html",
+   "alert_px": 234.02,
+   "alert_move": 5.2,
+   "alert_at": "2026-11-26T10:00:38+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "6971174ce367e537",
+   "symbol": "SIEMENS",
+   "time": "2026-11-26T09:46:03+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Siemens Energy jumps 9% as Sept qtr PAT rises 81%; ₹12 dividend declared",
+   "url": "https://www.business-standard.com/markets/news/siemens-energy-jumps-9-as-sept-qtr-pat-rises-81-12-dividend-declared-126112600125_1.html",
+   "alert_px": 3611.2,
+   "alert_move": 0.84,
+   "alert_at": "2026-11-26T10:00:38+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "dc9b71987f406659",
    "symbol": "LGEINDIA",
@@ -103,6 +163,21 @@
    "source": "NSE Announcements",
    "headline": "Acme Solar Holdings Limited: Acme Solar Holdings Limited has informed the Exchange about Commissioning of Battery Energy Storage Systems (BESS) Project |SUBJECT",
    "url": "https://nsearchives.nseindia.com/corporate/ACME122002_26112026082635_Intimation26112026.pdf"
+  },
+  {
+   "id": "fba41ebabb78f5bf",
+   "symbol": "MCX",
+   "time": "2026-11-26T08:14:21+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Gold gains 1%, silver rallies 3% on MCX even as Fed rate hike bets weigh on bullion: Gold Silver Rates Live Updates",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/url-live-updates-gold-rate-today-26th-november-24k-22k-20k-18-carat-mcx-gold-silver-price-in-delhi-hyderabad-chennai-bengaluru-citywise/liveblog/136176736.cms",
+   "alert_px": 3674.6,
+   "alert_move": 3.07,
+   "alert_at": "2026-11-26T10:00:38+05:30",
+   "alert_delay": 900
   },
   {
    "id": "a3e1acda9afe4ff3",

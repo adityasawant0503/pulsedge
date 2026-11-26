@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T09:46+05:30",
+ "updated": "2026-11-26T10:00+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Indian shares started the day with momentum, supported by a stronger rupee and increased foreign investment. The rupee's rise lowers the cost of imports, which benefits companies that buy goods from abroad. However, attention is turning to potential US taxes on Indian exports, which could pressure companies that sell to American customers. Sector performance was mixed, with consumer staples and pharma leading gains while media and metals lagged.",
+  "summary": "Indian markets were buoyed by strong foreign fund inflows and upbeat corporate news, while US tariff talk kept investors cautious. Welspun Corp landed an export order for large steel pipes and Acme Solar started a battery storage project, adding revenue hopes. Energy and infrastructure stocks led gains, with Siemens Energy reporting a big profit jump and Jupiter Wagons rallying on a South Korean joint venture. However, concerns linger over possible US tariffs and price corrections after sharp moves.",
   "themes": [
-   "A stronger rupee is making imported goods cheaper for Indian businesses.",
-   "Foreign investors are increasing their long-term bets on Indian stocks.",
-   "Uncertainty over US trade taxes is creating caution for export-heavy companies."
+   "Export orders and new projects lift sentiment",
+   "Foreign fund inflows versus US tariff uncertainty shape market direction",
+   "Energy and infrastructure stocks drive gains"
   ],
   "watch": [
-   "Official updates on whether the proposed US tariffs will actually be implemented.",
-   "Details from Minda Corporation's recent board meeting to see if any major changes were announced.",
-   "The Reserve Bank of India's actions to see if they intervene to slow down the rupee's rise."
+   "Jupiter Wagons' South Korean partnership and its impact on railway stocks",
+   "LG Electronics India stake sale and potential price pressure",
+   "Oil price rise on supply worries and its effect on energy companies"
   ],
   "date": "2026-11-26",
-  "basis": "c6a74e3199b0",
-  "updated": "2026-11-26T09:10+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 8
+  "basis": "bce1f50dde2c",
+  "updated": "2026-11-26T10:00+05:30",
+  "model": "openai/gpt-oss-120b",
+  "items": 18
  },
  "stocks": {
   "LENSKART": {
@@ -106,22 +106,6 @@
    "items": 3,
    "updated": "2026-11-25T15:02+05:30",
    "model": "openai/gpt-oss-20b"
-  },
-  "LT": {
-   "summary": "Larsen & Toubro recently won a 2,500 crore rupee battery storage project in Gujarat and another contract worth 10 to 25 billion rupees. These new orders add to the company's list of upcoming work.",
-   "why": "New contracts mean the company has secured future income, which is generally a positive sign for the business.",
-   "upside": "The battery storage project supports growth in the renewable energy sector.",
-   "downside": "Delays in completing these projects could hurt the company's profits or cash flow.",
-   "watch": [
-    "Updates on the progress of the Gujarat battery storage project.",
-    "Details on the specific nature of the 10-25 billion rupee contract.",
-    "Any announcements regarding project timelines or delays."
-   ],
-   "about": "Larsen & Toubro is a major construction company in India.",
-   "basis": "83777c4136e1",
-   "items": 3,
-   "updated": "2026-11-26T04:23+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "RVNL": {
    "summary": "RVNL has received new contracts, including a hospital project from NMDC, and says it is on track to reach a 25,000 cr orderbook for FY27, having already secured about 8,000 cr in H1.",
@@ -169,6 +153,22 @@
    "basis": "05925b97ed79",
    "items": 2,
    "updated": "2026-11-25T19:23+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "LT": {
+   "summary": "L&T has won a ₹2,500 crore battery storage contract in Gujarat and another contract valued between ₹10 billion and ₹25 billion. Both deals are expected to add to its revenue.",
+   "why": "These contracts can increase the company’s top‑line and earnings, which matters to shareholders.",
+   "upside": "If the projects are completed on schedule, they could boost revenue and earnings.",
+   "downside": "Delays in project execution could hurt margins and cash flow.",
+   "watch": [
+    "Progress on the Gujarat battery storage project",
+    "Execution timeline of the 10‑25 billion rupee contract",
+    "Signs of any project delays affecting margins"
+   ],
+   "about": "Larsen & Toubro is an Indian construction and engineering conglomerate.",
+   "basis": "8c6c92cdfc9c",
+   "items": 2,
+   "updated": "2026-11-26T10:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ENRIN": {
@@ -476,19 +476,19 @@
    "model": "gemini-flash-lite-latest"
   },
   "JWL": {
-   "summary": "Jupiter Wagons Ltd. is investing about ₹1,000 crore over the next three years in its passenger‑rail business and has formed an 80%‑owned joint venture with Korea’s Woojin to build metro coaches and propulsion systems in India. The moves aim to broaden its product range and capture growth in urban rail, while also raising short‑term cash‑flow and execution concerns.",
-   "why": "Shareholders should watch how the large capex spend and the new metro‑train JV translate into higher future earnings, but also be aware of the risk that these projects could strain cash and margins in the near term.",
-   "upside": "Successful rollout of the metro‑train joint venture and the passenger‑rail investment could generate new, higher‑margin revenue streams.",
-   "downside": "Execution delays or cost overruns in the metro JV or the 1,000‑crore capex plan could pressure cash flow and profitability.",
+   "summary": "Jupiter Wagons announced a joint venture with Korea's Woojin to build metro trains and propulsion systems in India and plans to invest Rs 1000 crore in its passenger rail business over the next three years. The news sparked a sharp share rally, with the stock jumping up to 30% in two days.",
+   "why": "The new JV and large capex could open higher‑margin revenue streams, but the spending may strain short‑term cash flow and margins.",
+   "upside": "Successful launch of metro‑train manufacturing and passenger‑rail projects could boost future earnings.",
+   "downside": "Execution delays, high capital spending and a possible price correction after the rapid share rise could hurt performance.",
    "watch": [
-    "Progress of the ₹1,000 crore passenger‑rail investment plan",
-    "Operational and commercial milestones of the Woojin metro‑coach JV",
-    "Details and size of the newly signed business agreements"
+    "Progress on the Woojin joint venture and metro‑train contracts",
+    "Utilisation and impact of the Rs 1000 crore passenger‑rail investment",
+    "Share‑price reaction after the recent surge"
    ],
    "about": "Jupiter Wagons Ltd. manufactures railway wagons and is expanding into metro train and propulsion system production.",
-   "basis": "537c2054640b",
-   "items": 6,
-   "updated": "2026-11-25T13:00+05:30",
+   "basis": "f5fcdfb9cefe",
+   "items": 7,
+   "updated": "2026-11-26T10:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "WIPRO": {
@@ -554,22 +554,6 @@
    "items": 2,
    "updated": "2026-11-24T15:00+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "TITAGARH": {
-   "summary": "Titagarh Rail Systems recently won a ₹77.09 crore order from JSW for railway wagons. The company also received approval to manufacture auto carrier wagons, which expands its product range.",
-   "why": "New orders and product approvals can help the company grow its future income. This shows the business is actively taking on new work and developing new capabilities.",
-   "upside": "The new approval allows the company to enter a new market for auto carrier wagons, potentially opening up more future sales.",
-   "downside": "The recent order value is described as modest compared to the company's total revenue, so it may not significantly change overall earnings immediately.",
-   "watch": [
-    "Updates on the Mumbai Metro Line 6 project, where a supplier received an additional order from Titagarh.",
-    "Progress on manufacturing the new auto carrier wagons.",
-    "Future announcements about new orders from major clients like JSW."
-   ],
-   "about": "Titagarh Rail Systems is a capital goods company that manufactures railway wagons and related equipment.",
-   "basis": "74cfbc0af6de",
-   "items": 2,
-   "updated": "2026-11-26T09:30+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "SCHAEFFLER": {
    "summary": "Schaeffler India is set for a block sale where its parent, Schaeffler AG, may sell a 6% stake at a discount, while the auto sector index has risen recently.",
@@ -778,6 +762,22 @@
    "updated": "2026-11-24T18:25+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "SIEMENS": {
+   "summary": "Siemens Ltd. said its profitability is being squeezed by volatile commodity prices and foreign‑exchange movements, keeping margins stressed. Meanwhile, its energy subsidiary posted a strong profit jump and declared a dividend, which could draw interest but also lead to profit‑taking.",
+   "why": "Higher input costs and currency swings can cut earnings, affecting share value, while the dividend and energy‑unit earnings may support investor sentiment.",
+   "upside": "If commodity prices and currency impacts ease, margins could improve and earnings may rise.",
+   "downside": "If commodity costs stay high or the proposed US tariffs affect export sales, margins could remain compressed and earnings could fall.",
+   "watch": [
+    "Commodity price trends",
+    "Foreign‑exchange rates",
+    "Implementation of US tariffs on Indian exports"
+   ],
+   "about": "Siemens Ltd. designs and manufactures capital‑goods equipment for industrial and infrastructure projects.",
+   "basis": "7088e29b3592",
+   "items": 4,
+   "updated": "2026-11-26T10:00+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "ZYDUSLIFE": {
    "summary": "Zydus Lifesciences received a US FDA inspection report for its new API plant in Ankleshwar and an Export Inspection Report for its SEZ Ahmedabad facility, set up a wholly‑owned subsidiary in Australia and announced plans to acquire new businesses. These moves signal expansion but also bring regulatory and financial risks.",
    "why": "The outcomes could affect the company’s ability to sell internationally and its cost structure, which matters to shareholders.",
@@ -938,22 +938,6 @@
    "updated": "2026-11-26T08:17+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "SIEMENS": {
-   "summary": "Siemens Ltd is facing profit pressure as rising commodity prices and foreign‑exchange volatility are squeezing margins, and there is uncertainty over possible US tariffs on Indian exports.",
-   "why": "Higher input costs and potential export taxes could reduce earnings, affecting shareholder returns.",
-   "upside": "If commodity prices and currency movements stabilize, margins could improve.",
-   "downside": "Sustained high material costs and adverse forex could further compress margins.",
-   "watch": [
-    "US tariff implementation on Indian goods",
-    "Commodity price trends",
-    "Foreign‑exchange movements"
-   ],
-   "about": "Siemens Ltd operates in the capital goods sector, providing industrial and infrastructure solutions.",
-   "basis": "5c984e63d08c",
-   "items": 3,
-   "updated": "2026-11-26T08:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "ENGINERSIN": {
    "summary": "Engineers India Ltd (ENGINERSIN) is currently listed in the Nifty 500, which tracks India’s 500 largest listed companies. No recent company‑specific announcements have been flagged by PulsEdge. The stock remains part of the broader construction sector.",
    "why": "Being in the Nifty 500 means the company is exposed to index‑linked investment flows, which can affect its share price.",
@@ -1050,21 +1034,21 @@
    "updated": "2026-11-26T08:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "ITI": {
-   "summary": "ITI shares rose about 11% on November 23, 2026, even though the wider market fell. The stock exchange flagged a significant increase in trading volume for the company.",
-   "why": "This matters because the stock moved strongly against the general market trend, which can indicate high investor interest or uncertainty.",
-   "upside": "The strong price jump suggests that some investors are actively buying the stock despite broader market weakness.",
-   "downside": "High market volatility could cause the recent gains to reverse quickly.",
+  "ENDURANCE": {
+   "summary": "Endurance Technologies said it has four new projects starting soon and expects higher profit margins in the coming quarters. The auto sector index has been gaining, up 1.2% in the last session and 3.8% over five sessions.",
+   "why": "Better margins and new work could boost earnings, which matters to shareholders who own the stock.",
+   "upside": "If the projects launch on schedule and margins improve, earnings could rise.",
+   "downside": "Delays in project execution could push revenue recognition later and hurt earnings.",
    "watch": [
-    "Future trading volume levels",
-    "Official exchange announcements regarding the stock",
-    "Overall market stability"
+    "Start of the four new projects",
+    "Margin trends in upcoming quarters",
+    "Updates on project execution timelines"
    ],
-   "about": "ITI is a company in the Telecommunication sector.",
-   "basis": "117e0080befe",
-   "items": 2,
-   "updated": "2026-11-24T06:49+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Endurance Technologies makes automotive components for the vehicle industry.",
+   "basis": "be2ce0b306d5",
+   "items": 1,
+   "updated": "2026-11-26T10:00+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "CENTRALBK": {
    "summary": "Central Bank of India announced that its Company Secretary and Compliance Officer, Mr. Chandrakant Bhagwat, is resigning effective November 27, 2026. This administrative change occurred while the broader financial sector index dipped slightly in the last trading session.",
@@ -1130,6 +1114,22 @@
    "updated": "2026-11-25T11:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "ITI": {
+   "summary": "PulsEdge flagged a notable rise in trading volume for ITI Ltd., indicating heightened market activity.",
+   "why": "Higher volume can signal changing investor sentiment, which may affect the share’s performance.",
+   "upside": "If the volume surge reflects buying interest, the stock could see upward momentum.",
+   "downside": "If the volume surge reflects selling pressure, the stock could face downward pressure.",
+   "watch": [
+    "Sustained volume trends",
+    "Any new corporate announcements",
+    "Share price movement"
+   ],
+   "about": "",
+   "basis": "a0528f9aefdf",
+   "items": 1,
+   "updated": "2026-11-26T10:00+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "JSWCEMENT": {
    "summary": "JSW Cement filed a standard regulatory disclosure with the stock exchange. This is a routine requirement for listed companies to keep investors informed.",
    "why": "Such filings ensure transparency and help shareholders stay updated on official company communications.",
@@ -1143,6 +1143,21 @@
    "basis": "bec09fddf87e",
    "items": 1,
    "updated": "2026-11-26T08:30+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "TITAGARH": {
+   "summary": "Titagarh Rail Systems received an additional order from Presstonic Engineering for the Mumbai Metro Line 6 project. This news was shared via an exchange announcement.",
+   "why": "New orders can indicate future work for the company, which may affect its financial results later.",
+   "upside": "The additional order adds to the company's project pipeline for the Mumbai Metro Line 6.",
+   "downside": "",
+   "watch": [
+    "Future announcements regarding the execution of the Mumbai Metro Line 6 project.",
+    "Other orders or contracts involving Titagarh Rail Systems."
+   ],
+   "about": "Titagarh Rail Systems is a capital goods company listed in the Nifty 500 index.",
+   "basis": "2da526c6c512",
+   "items": 1,
+   "updated": "2026-11-26T10:00+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "COCHINSHIP": {
@@ -1209,6 +1224,22 @@
    "updated": "2026-11-23T15:02+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "MCX": {
+   "summary": "MCX shares rose 3% on November 26 as gold and silver prices rebounded after a recent sharp drop. The stock has gained 67% in 2026, driven by high trading activity in precious metals.",
+   "why": "The company earns money from trading fees, so when gold and silver prices move a lot, more people trade them, which can increase the company's revenue.",
+   "upside": "If gold and silver prices stay volatile, trading volumes may remain high, supporting the exchange's income.",
+   "downside": "If commodity prices stabilize or fall further, trading activity could drop, reducing the fees the exchange collects.",
+   "watch": [
+    "Future US Federal Reserve interest rate decisions",
+    "Daily price movements of gold and silver on MCX",
+    "Trading volumes in other commodity segments"
+   ],
+   "about": "Multi Commodity Exchange of India Ltd. is a financial services company that operates a platform for trading commodity contracts.",
+   "basis": "c7c2b9300cbb",
+   "items": 5,
+   "updated": "2026-11-26T10:00+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "INFY": {
    "summary": "Infosys announced it has become the world’s first organization to achieve CMMI AI Maturity Level 5, a top AI certification. The IT sector index rose 1.7% in the last session, and Indian IT stocks are gaining attention as investors shift from expensive AI tech to cheaper software firms.",
    "why": "Shareholders may see that the AI certification positions Infosys as a leader in AI, which could help it win future business.",
@@ -1239,22 +1270,6 @@
    "basis": "5d234959eee4",
    "items": 3,
    "updated": "2026-11-26T09:30+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "MCX": {
-   "summary": "Gold and silver prices on the Multi Commodity Exchange have fallen sharply in recent days. This drop in commodity prices may reduce the trading fees the exchange earns.",
-   "why": "Since MCX makes money from trading activity, lower prices in major commodities like gold and silver could lead to lower revenue for the company.",
-   "upside": "Other commodity segments might see enough trading activity to offset the losses from gold and silver.",
-   "downside": "If silver and gold prices continue to fall, the exchange's revenues may decline.",
-   "watch": [
-    "Future price movements of gold and silver on MCX",
-    "Trading volume in other commodity segments",
-    "The overall trend of the Financials sector index"
-   ],
-   "about": "",
-   "basis": "f609d07d4256",
-   "items": 3,
-   "updated": "2026-11-26T08:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "CLEANMAX": {
