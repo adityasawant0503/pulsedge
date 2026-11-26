@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T13:31+05:30",
+ "updated": "2026-11-26T13:47+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Defensive sectors like FMCG and Pharma led the market higher, while foreign investors increased their long positions slightly. Several companies reported strong business updates, including new orders for steel pipes and power infrastructure. However, some stocks faced pressure from large share sales by major investors, such as in the electronics and IT sectors.",
+  "summary": "Pharma and FMCG stocks led the market higher, while media and metals lagged. Panacea Biotec cleared a compliance issue, allowing it to resume sales in Europe. Jupiter Wagons shares jumped 30% in two days after announcing a partnership with a South Korean firm. Foreign investors increased their long positions in index futures to 24%.",
   "themes": [
-   "Defensive sectors like FMCG and Pharma outperformed the broader market.",
-   "Industrial companies announced new contracts and operational milestones.",
-   "Large share sales by major investors weighed on specific stocks."
+   "Regulatory clearances and new partnerships boosted specific stocks like Panacea and Jupiter Wagons.",
+   "Large share sales by major owners weighed on IT stocks like Coforge and LG Electronics.",
+   "Sugar stocks surged on predictions of lower production next year."
   ],
   "watch": [
-   "Potential price impact from upcoming block deals in IT and electronics stocks.",
-   "Whether sugar stocks can sustain their recent sharp rise.",
-   "Outcome of the corporate insolvency hearing for Hi-Tech Gears."
+   "Whether Coforge's major investor proceeds with selling up to 10% of their stake.",
+   "If Jupiter Wagons' share price stabilizes after its recent sharp rise.",
+   "How Panacea Biotec's resumed European sales impact its overall revenue."
   ],
   "date": "2026-11-26",
-  "basis": "2bbcccaf4b17",
-  "updated": "2026-11-26T13:00+05:30",
+  "basis": "cee4b20317b3",
+  "updated": "2026-11-26T13:47+05:30",
   "model": "qwen/qwen3.8-27b",
-  "items": 70
+  "items": 79
  },
  "stocks": {
   "TVSMOTOR": {
@@ -362,22 +362,6 @@
    "items": 9,
    "updated": "2026-11-25T19:23+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "ADANIENT": {
-   "summary": "Adani Enterprises is raising capital through a public bond sale of at least Rs 2,000 crore and a stake sale of about 1.55% for up to ₹2,790 crore, part of a larger USD 1.35 billion fundraise. The company’s sector index has fallen 2.0% in the last session and 7.6% over five sessions.",
-   "why": "Shareholders may face dilution from the stake sale and higher debt obligations from the bond issue, which can affect the company’s financial position and share price.",
-   "upside": "The raised funds could support growth projects that offset dilution effects.",
-   "downside": "Increased debt burden and dilution may reduce existing shareholders’ ownership and potentially lower the share price.",
-   "watch": [
-    "Progress of the public bond sale",
-    "Details of the stake sale and dilution impact",
-    "Sector index performance and market volatility"
-   ],
-   "about": "Adani Enterprises Ltd. is a metals and mining company listed in the Nifty 50 index.",
-   "basis": "fef06bef14fb",
-   "items": 4,
-   "updated": "2026-11-26T10:45+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "BEML": {
    "summary": "BEML's CEO says the company expects many new orders from the defence sector and international clients. The company aims to achieve double-digit growth.",
@@ -1142,6 +1126,22 @@
    "basis": "bdefc67d83d9",
    "items": 2,
    "updated": "2026-11-26T12:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "ADANIENT": {
+   "summary": "Adani Enterprises is planning a public bond issue to raise at least Rs 2,000 crore, and the stock is on a watchlist as traders monitor it amid a falling metals sector.",
+   "why": "Shareholders should watch the bond raise because it adds debt that must be serviced, while a weak sector could pressure the share price.",
+   "upside": "If the bond proceeds fund growth projects, the company could improve earnings.",
+   "downside": "Higher debt levels and a declining metals index could weigh on profitability and the stock.",
+   "watch": [
+    "Progress of the Rs 2,000 crore bond sale",
+    "Metals sector index performance",
+    "Overall market volatility affecting watchlisted stocks"
+   ],
+   "about": "Adani Enterprises is a diversified company operating in the metals and mining sector.",
+   "basis": "b8fab9f5b125",
+   "items": 2,
+   "updated": "2026-11-26T13:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "CIPLA": {
