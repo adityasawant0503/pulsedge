@@ -1,7 +1,39 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T10:09:37+05:30",
+ "updated": "2026-11-26T10:38:36+05:30",
  "items": [
+  {
+   "id": "c6072cc12afdbf79",
+   "time": "2026-11-26T10:37:24+05:30",
+   "headline": "SUDARSHAN CHEMICAL INDUSTRIES: CO. TO ACQUIRE 36.56% STAKE IN SUDARSHAN COLORANTS INDIA LTD FROM SUDARSHAN SWITZERLAND HLD1 AG; TOTAL CONSIDERATION OF ₹150.76 CRORE FOR 84,39,385 SHARES; NO CHANGE IN PROMOTER GROUP SHARE",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10134",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Chemicals"
+   ],
+   "impact": 0,
+   "confidence": 0,
+   "category": "Corporate Action",
+   "action": "No immediate action required as this is an internal restructuring.",
+   "reason": [
+    "No listed entity is directly named in the transaction.",
+    "Promoter group shareholding remains unchanged."
+   ],
+   "risks": [
+    "Potential confusion with similarly named listed entities."
+   ],
+   "plain": "A private company is buying shares from a foreign parent, but the total owner group stays the same.",
+   "why": "This is an internal family or group move that does not change who controls the business or its value.",
+   "check": "",
+   "original": "SUDARSHAN CHEMICAL INDUSTRIES: CO. TO ACQUIRE 36.56% STAKE IN SUDARSHAN COLORANTS INDIA LTD FROM SUDARSHAN SWITZERLAND HLD1 AG; TOTAL CONSIDERATION OF ₹150.76 CRORE FOR 84,39,385 SHARES; NO CHANGE IN PROMOTER GROUP SHARE",
+   "latency": 72.6,
+   "lane": "fast"
+  },
   {
    "id": "04751a709485ee7d",
    "time": "2026-11-26T10:08:32+05:30",
@@ -1708,53 +1740,6 @@
    "original": "ANONDITA MEDICARE: CO ADDS FOUR MANUFACTURING LINES WITH 245 MILLION PIECES ANNUAL CAPACITY FOR MALE LATEX CONDOMS, TAKING TOTAL CAPACITY TO 1.114 BILLION PIECES PER ANNUM, WITH AN ESTIMATED INVESTMENT OF RS 75 CRORE.",
    "latency": 42.8,
    "lane": "fast"
-  },
-  {
-   "id": "8901cd8ec1877b91",
-   "time": "2026-11-25T10:35:03+05:30",
-   "headline": "CANARA HSBC LIFE INSURANCE: CFO TARUN RUSTAGI RESIGNS EFFECTIVE 24TH NOVEMBER 2026; PURSUING GROWTH OPPORTUNITIES OUTSIDE THE ORGANIZATION",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10006",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "down",
-   "tickers": [
-    {
-     "symbol": "CANHLIFE",
-     "direction": "down"
-    }
-   ],
-   "sectors": [
-    "Insurance"
-   ],
-   "impact": 35,
-   "confidence": 60,
-   "category": "Management Change",
-   "action": "Monitor for a successor announcement and any commentary on strategic continuity.",
-   "reason": [
-    "CFO departure creates short-term uncertainty about financial oversight.",
-    "Reason cited as external opportunities suggests no immediate operational crisis."
-   ],
-   "risks": [
-    "Potential delay in financial reporting or strategic execution during transition.",
-    "Market may overreact to executive turnover in a regulated sector."
-   ],
-   "plain": "The company's chief financial officer has resigned to join another organization.",
-   "why": "Leadership changes can create uncertainty, but this specific move is often routine and may not hurt long-term value.",
-   "check": "Look for news about who will replace the departing executive.",
-   "original": "CANARA HSBC LIFE INSURANCE: CFO TARUN RUSTAGI RESIGNS EFFECTIVE 24TH NOVEMBER 2026; PURSUING GROWTH OPPORTUNITIES OUTSIDE THE ORGANIZATION",
-   "latency": 20.5,
-   "lane": "fast",
-   "quotes": {
-    "CANHLIFE": {
-     "px": 128.89,
-     "prev": 124.52,
-     "move": 3.51,
-     "at": "2026-11-25T10:35:23+05:30",
-     "delay": 900
-    }
-   }
   }
  ]
 }
