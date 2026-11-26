@@ -1,7 +1,73 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T11:29:36+05:30",
+ "updated": "2026-11-26T11:37:37+05:30",
  "items": [
+  {
+   "id": "015cc5ec809d29ad",
+   "time": "2026-11-26T11:37:04+05:30",
+   "headline": "GARWARE HI-TECH FILMS: APPOINTS ANAND H SHARMA AS CFO; PREVIOUSLY ASSOCIATED WITH CARYSIL, BATLIBOI",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10143",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Corporate Governance"
+   ],
+   "impact": 5,
+   "confidence": 10,
+   "category": "Management Change",
+   "action": "No immediate trading action required for this routine appointment.",
+   "reason": [
+    "Routine CFO appointment is standard corporate housekeeping.",
+    "No direct financial impact or new business information provided."
+   ],
+   "risks": [
+    "None significant."
+   ],
+   "plain": "The company hired a new finance chief who worked at other firms before.",
+   "why": "This is a normal staffing change that does not immediately change the company's value or operations.",
+   "check": "",
+   "original": "GARWARE HI-TECH FILMS: APPOINTS ANAND H SHARMA AS CFO; PREVIOUSLY ASSOCIATED WITH CARYSIL, BATLIBOI",
+   "latency": 33.3,
+   "lane": "fast"
+  },
+  {
+   "id": "28b9308afa9b9bf0",
+   "time": "2026-11-26T11:36:19+05:30",
+   "headline": "LCC PROJECTS LTD: CO. RECEIVES LETTER OF ACCEPTANCE FOR CONSTRUCTION OF DAM AND IRRIGATION NETWORK WORTH ₹728.51 CRORE; COMPANY'S SHARE IN JV IS 15%; PROJECT TO BE COMPLETED IN 36 MONTHS.",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10142",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "Infrastructure",
+    "Construction"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "Order Win",
+   "action": "Monitor if the stock reacts to the news, as the company's direct share is small.",
+   "reason": [
+    "Large project win (₹728 Cr) but only 15% equity stake.",
+    "36-month timeline means revenue recognition is spread out."
+   ],
+   "risks": [
+    "Execution risk over a 3-year period.",
+    "Limited immediate cash flow impact due to JV structure."
+   ],
+   "plain": "The company won a big construction contract but only owns a small part of the project.",
+   "why": "It shows the company is getting work, but the money coming in will be small and slow.",
+   "check": "Look at the company's recent order book to see if this is a one-time win.",
+   "original": "LCC PROJECTS LTD: CO. RECEIVES LETTER OF ACCEPTANCE FOR CONSTRUCTION OF DAM AND IRRIGATION NETWORK WORTH ₹728.51 CRORE; COMPANY'S SHARE IN JV IS 15%; PROJECT TO BE COMPLETED IN 36 MONTHS.",
+   "latency": 78.3,
+   "lane": "fast"
+  },
   {
    "id": "946e4446cdcce188",
    "time": "2026-11-26T11:28:35+05:30",
@@ -1816,69 +1882,6 @@
      "delay": 900
     }
    }
-  },
-  {
-   "id": "d44b13995d483ce3",
-   "time": "2026-11-25T11:34:43+05:30",
-   "headline": "RAJRATAN GLOBAL WIRE LTD: BOARD APPROVES INCORPORATION OF WHOLLY OWNED SUBSIDIARY IN EUROPE; TO BE NAMED RAJRATAN WIRE EUROPE.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10011",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Metals"
-   ],
-   "impact": 0,
-   "confidence": 0,
-   "category": "Corporate Action",
-   "action": "No immediate action required for this routine corporate update.",
-   "reason": [
-    "No listed company is named in the headline.",
-    "Incorporation of a subsidiary is a standard administrative step with no immediate price impact."
-   ],
-   "risks": [],
-   "plain": "A company approved the creation of a new business unit in Europe.",
-   "why": "This is a routine administrative step that does not change the value of any listed shares.",
-   "check": "",
-   "original": "RAJRATAN GLOBAL WIRE LTD: BOARD APPROVES INCORPORATION OF WHOLLY OWNED SUBSIDIARY IN EUROPE; TO BE NAMED RAJRATAN WIRE EUROPE.",
-   "latency": 39.8,
-   "lane": "fast"
-  },
-  {
-   "id": "62e9ffeb575ac646",
-   "time": "2026-11-25T11:32:16+05:30",
-   "headline": "SPOT GOLD FALLS NEARLY 1% TO $3,517.03/OZ",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10010",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "down",
-   "tickers": [],
-   "sectors": [
-    "Metals",
-    "Gold"
-   ],
-   "impact": 10,
-   "confidence": 50,
-   "category": "commodity",
-   "action": "Monitor gold ETFs and jewellery stocks for intraday correlation with spot prices.",
-   "reason": [
-    "Spot gold price movement is a macro indicator.",
-    "No specific Indian listed company is named or directly impacted in a material way."
-   ],
-   "risks": [
-    "Commodity price volatility can affect sentiment in related sectors."
-   ],
-   "plain": "The global price of gold dropped by about one percent.",
-   "why": "This is a general market update that does not directly change the value of any specific Indian company's shares.",
-   "check": "",
-   "original": "SPOT GOLD FALLS NEARLY 1% TO $3,517.03/OZ",
-   "latency": 67.0,
-   "lane": "fast"
   }
  ]
 }
