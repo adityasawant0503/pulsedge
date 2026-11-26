@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-26T16:01+05:30",
+ "updated": "2026-11-26T16:58+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,24 +57,40 @@
   ]
  },
  "today": {
-  "summary": "Patel Engineering won a Rs 1,441 crore hydro power contract as the lowest bidder, while Panacea Biotec cleared a compliance issue and can resume sales in Europe. Borosil Renewable expects sales and margins to rise next quarter, and Acme Solar has started commercial operation of a battery storage project. Welspun Corp received an export order for large‑diameter steel pipes, and Jyoti Structures got a 272‑crore contract for power lines. Sector indices were strongest in FMCG (+3.8%) and weakest in Media (-4.4%), with foreign funds holding a 24% long position in index futures.",
+  "summary": "PulsEdge flagged that several Indian companies reported positive business updates, including new orders and cleared regulatory hurdles. Dalmia Bharat announced a share buyback, which can support the value of existing shares. Meanwhile, foreign investors increased their bullish bets on the market, raising their long positions from 20% to 24%.",
   "themes": [
-   "Contract wins and new projects",
-   "Operational and margin improvements",
-   "Sector performance and investor activity"
+   "Companies secured new contracts or cleared compliance issues to boost future sales.",
+   "Regulatory actions and FDA responses created mixed signals for specific firms.",
+   "Foreign investors showed slightly more confidence by increasing their long positions."
   ],
   "watch": [
-   "Borosil Renewable’s next‑quarter sales and margin targets",
-   "Execution of Patel Engineering’s hydro power project",
-   "Foreign funds’ continued long positions in index futures"
+   "Whether the potential India-US trade deal progresses, which could affect exporters like Welspun.",
+   "How Zydus Lifesciences responds to the US FDA's request for more details on its new medicine.",
+   "The execution of Dalmia Bharat's share buyback program and its impact on the stock."
   ],
   "date": "2026-11-26",
-  "basis": "e542ff0d4de8",
-  "updated": "2026-11-26T15:30+05:30",
-  "model": "openai/gpt-oss-20b",
-  "items": 94
+  "basis": "7244a22fba66",
+  "updated": "2026-11-26T16:58+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 124
  },
  "stocks": {
+  "TORNTPOWER": {
+   "summary": "Torrent Power announced a share allotment, bought 100% of Torrent Urja 42 Private Ltd., and plans to acquire newly formed companies, all aimed at raising capital and expanding assets.",
+   "why": "Shareholders could face dilution from the new shares while also seeing potential earnings growth from the acquisitions, though higher debt may affect cash flow.",
+   "upside": "Successful integration of the acquisitions could increase generation capacity and earnings.",
+   "downside": "The share issuance and added debt could dilute share value and strain cash flow.",
+   "watch": [
+    "Details and pricing of the share allotment",
+    "Financing and debt impact of the Torrent Urja acquisition",
+    "Progress and execution of the newly formed company acquisitions"
+   ],
+   "about": "Torrent Power Ltd. is an Indian power generation and distribution company.",
+   "basis": "80e9e760cb6f",
+   "items": 3,
+   "updated": "2026-11-26T16:58+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "TVSMOTOR": {
    "summary": "TVS Motor Company Ltd. (TVSMOTOR) has announced new business agreements and a non‑binding memorandum of understanding with the Government of Tamil Nadu, which includes a planned investment of ₹2000 crore over four years and creation of 1000 jobs.",
    "why": "Shareholders should note that these agreements could influence the company’s future earnings and expansion plans.",
@@ -90,22 +106,6 @@
    "items": 3,
    "updated": "2026-11-25T15:02+05:30",
    "model": "openai/gpt-oss-20b"
-  },
-  "TORNTPOWER": {
-   "summary": "Torrent Power bought 100% of Torrent Urja 42 Private Ltd and announced plans to acquire newly formed companies. The moves could add assets and generation capacity but bring financing and integration risks.",
-   "why": "Shareholders could see earnings improve if the acquisitions boost capacity, but higher debt may pressure cash flow.",
-   "upside": "Successful integration could increase earnings and generation capacity.",
-   "downside": "Higher debt and execution risks could strain cash flow.",
-   "watch": [
-    "Integration of Torrent Urja 42 assets",
-    "Progress on acquiring the new companies and capacity expansion",
-    "Debt levels and cash flow impact"
-   ],
-   "about": "Torrent Power Ltd is an Indian power generation and distribution company.",
-   "basis": "05925b97ed79",
-   "items": 2,
-   "updated": "2026-11-25T19:23+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "LT": {
    "summary": "L&T has won a ₹2,500 crore battery storage contract in Gujarat and another contract valued between ₹10 billion and ₹25 billion. Both deals are expected to add to its revenue.",
@@ -187,6 +187,22 @@
    "updated": "2026-11-26T14:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "DALBHARAT": {
+   "summary": "Dalmia Bharat Ltd. has approved a plan to buy back up to 3.78 million of its own shares for a total of ₹700 crore. The company recently submitted the official public announcement for this buyback program to the stock exchange.",
+   "why": "A share buyback reduces the total number of shares in circulation, which can increase the earnings per share for remaining investors. It may also provide some support to the stock price.",
+   "upside": "The buyback could boost earnings per share and signal management confidence in the company's value.",
+   "downside": "The buyback might be delayed, not fully completed, or viewed as a sign that the company lacks better growth opportunities.",
+   "watch": [
+    "The record date for the buyback",
+    "The price per share set for the buyback",
+    "Whether the full ₹700 crore is successfully executed"
+   ],
+   "about": "Dalmia Bharat Ltd. is a company in the Construction Materials sector.",
+   "basis": "f1e4438ee119",
+   "items": 3,
+   "updated": "2026-11-26T16:58+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "HEROMOTOCO": {
    "summary": "Hero MotoCorp has issued a recent press release and updated the market on a court case where the high court cancelled a ₹165 crore demand related to temporary registration certificates. The company also filed a SEBI listing regulation disclosure about the trade registration certificate matter.",
    "why": "The court ruling removes a large liability, potentially strengthening the balance sheet, while ongoing regulatory issues could impact operations.",
@@ -219,20 +235,20 @@
    "updated": "2026-11-25T19:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "DALBHARAT": {
-   "summary": "Dalmia Bharat approved a ₹700 crore share buyback of up to 3.78 million shares, aiming to boost earnings per share and support the stock price.",
-   "why": "Share buybacks can raise earnings per share and may help sustain the share price, directly affecting shareholders' value.",
-   "upside": "If the buyback is fully subscribed on schedule, earnings per share could improve and the stock may receive price support.",
-   "downside": "If the buyback is delayed or not fully subscribed, the anticipated earnings boost and price support may not materialise.",
+  "MOTILALOFS": {
+   "summary": "Motilal Oswal Financial Services received a SEBI adjudication order, raising regulatory concerns, while the company also highlighted capex‑led growth plans that could boost earnings. The broader financial sector index has been rising, up 2.2% in the last session.",
+   "why": "Regulatory action can affect the firm’s reputation and profitability, and the growth outlook could impact shareholder returns.",
+   "upside": "If the new capital‑expenditure projects are executed successfully, earnings could improve.",
+   "downside": "The SEBI order could lead to fines or operational restrictions that hurt profitability.",
    "watch": [
-    "Progress of the buyback execution",
-    "Subscription levels of the buyback",
-    "Any changes to the buyback timeline or amount"
+    "Outcome of the SEBI adjudication and any penalties",
+    "Progress on the announced capex projects",
+    "Continued performance of the financial sector index"
    ],
-   "about": "Dalmia Bharat manufactures construction materials.",
-   "basis": "6ef666614141",
-   "items": 1,
-   "updated": "2026-11-26T12:00+05:30",
+   "about": "Motilal Oswal Financial Services provides brokerage, investment and financial advisory services.",
+   "basis": "ec9ec420f4fe",
+   "items": 2,
+   "updated": "2026-11-26T16:58+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ACMESOLAR": {
@@ -363,6 +379,22 @@
    "updated": "2026-11-25T19:23+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "EXIDEIND": {
+   "summary": "Exide Industries announced it will acquire another company and also increase investment in its wholly‑owned subsidiary Exide Energy Solutions. The auto sector index rose 1.2% in the last session and 3.8% over five sessions.",
+   "why": "Shareholders should watch because the acquisition and extra capital could boost future earnings, but execution risk remains.",
+   "upside": "Successful integration of the acquisition and growth of Exide Energy Solutions could lift earnings.",
+   "downside": "If the acquisition is costly or integration falters, or the subsidiary investment does not deliver returns, earnings could suffer.",
+   "watch": [
+    "Integration progress of the acquisition",
+    "Performance of Exide Energy Solutions after the new investment",
+    "Continued movement of the auto sector index"
+   ],
+   "about": "Exide Industries Ltd. operates in the automobile and auto components sector.",
+   "basis": "700bb824e10b",
+   "items": 2,
+   "updated": "2026-11-26T16:58+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "BEML": {
    "summary": "BEML's CEO says the company expects many new orders from the defence sector and international clients. The company aims to achieve double-digit growth.",
    "why": "If these new orders are secured, the company's revenue and profits could increase, which is generally positive for shareholders.",
@@ -396,19 +428,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India is seeing mixed signals as global oil prices rose on supply worries while the Indian rupee weakened, and the broader market showed strength. The company’s sector index edged up modestly.",
-   "why": "Higher oil prices can lift earnings, but a weaker rupee raises import costs and potential rate hikes could affect financing.",
-   "upside": "If oil prices stay high, Oil India’s revenue could improve.",
-   "downside": "A falling oil price or further rupee weakness could compress margins.",
+   "summary": "Oil India Ltd. is seeing mixed pressures as global oil prices rise while the Indian rupee weakens, raising import costs. At the same time, the sector index is modestly up, and there are hints of possible RBI rate hikes.",
+   "why": "Higher oil prices can boost revenues, but a weaker rupee makes imported oil costlier, affecting profitability.",
+   "upside": "If oil prices stay high and the rupee stabilises, the company’s earnings could improve.",
+   "downside": "A further drop in oil prices or continued rupee weakness could compress margins.",
    "watch": [
-    "Oil price trends",
+    "Brent crude price trends",
     "Rupee movement against the dollar",
     "RBI’s interest‑rate decisions"
    ],
-   "about": "Oil India Ltd. explores, produces and markets oil and gas in India.",
-   "basis": "a3d11c9db9d3",
+   "about": "Oil India Ltd. explores, produces and sells oil and gas in India.",
+   "basis": "b5fb32b72f5b",
    "items": 25,
-   "updated": "2026-11-26T11:15+05:30",
+   "updated": "2026-11-26T16:58+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "WIPRO": {
@@ -459,6 +491,22 @@
    "updated": "2026-11-26T11:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "SCHAEFFLER": {
+   "summary": "Schaeffler India’s main promoter is selling about 6.5% of its stake (1.02 crore shares) and its parent, Schaeffler AG, is likely to off‑load another 6% stake at a discount. Both sales could add supply to the market.",
+   "why": "Shareholder selling can pressure the share price and affect existing investors.",
+   "upside": "If the market absorbs the share sales without a sharp price drop, the stock could remain stable.",
+   "downside": "Large block sales and possible dilution could push the share price lower.",
+   "watch": [
+    "Further promoter or parent share disposals",
+    "Market reaction to the ₹3,400‑per‑share block deal",
+    "Performance of the auto sector index"
+   ],
+   "about": "Schaeffler India makes automotive and auto‑component products.",
+   "basis": "0afcb86261f9",
+   "items": 2,
+   "updated": "2026-11-26T16:58+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "FINCABLES": {
    "summary": "Finolex Cables saw a block trade on Nov 25 where ORBITELECTRICALS PRIVATE LIMITED bought about 4.6 lakh shares worth ₹53 crore, while ARUNA MUKESH KATARA sold the same amount at ₹1,159 per share.",
    "why": "Large investors buying or selling can signal confidence or concern, which matters to current shareholders.",
@@ -491,22 +539,6 @@
    "updated": "2026-11-24T15:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "SCHAEFFLER": {
-   "summary": "Schaeffler India is set for a block sale where its parent, Schaeffler AG, may sell a 6% stake at a discount, while the auto sector index has risen recently.",
-   "why": "A large share sale can increase supply and dilute existing holdings, which matters to current shareholders.",
-   "upside": "The auto sector’s recent gains could help support the stock.",
-   "downside": "The block sale could put downward pressure on the share price and cause dilution.",
-   "watch": [
-    "Completion of the 6% block deal",
-    "Share price reaction after the sale",
-    "Any further share dilution announcements"
-   ],
-   "about": "Schaeffler India makes automotive components.",
-   "basis": "623e7a6bf643",
-   "items": 1,
-   "updated": "2026-11-26T04:23+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "LGEINDIA": {
    "summary": "LG Electronics India’s promoter is planning to sell up to 2% of its shares, worth about ₹2,320 crore, to meet public‑shareholding rules, which pushed the stock down about 3%. At the same time, proposed high US taxes on Indian goods could affect exporters like LG.",
    "why": "The extra share supply may pressure the price for current investors, and any export‑related tax could reduce earnings.",
@@ -522,6 +554,22 @@
    "items": 6,
    "updated": "2026-11-26T09:46+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "ZYDUSLIFE": {
+   "summary": "Zydus Lifesciences has received FDA responses for its U.S. subsidiary’s drug and API plant, earned an EIR for a new factory in Ahmedabad, set up a wholly‑owned Australian subsidiary, and announced acquisitions of new companies.",
+   "why": "These developments affect the company’s ability to sell products internationally and its cash position, which matters to shareholders.",
+   "upside": "FDA approvals could open U.S. sales and the new facilities may boost production and tax efficiency.",
+   "downside": "FDA responses and inspection observations could delay sales, and the acquisitions could strain finances.",
+   "watch": [
+    "FDA response timeline for the drug and API plant",
+    "Outcome of the U.S. FDA inspection of the Ankleshwar plant",
+    "Regulatory approvals for the Australian subsidiary"
+   ],
+   "about": "Zydus Lifesciences is a pharmaceutical company that develops and sells medicines.",
+   "basis": "4f4e642c9b13",
+   "items": 5,
+   "updated": "2026-11-26T16:58+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "COFORGE": {
    "summary": "Coforge won an award for its AI product EvolveOps.AI and announced enhancements to its Nuuron security platform. At the same time, a major investor may sell up to 10% of its stake and a large block deal is rumored for next week.",
@@ -554,6 +602,22 @@
    "items": 4,
    "updated": "2026-11-26T15:45+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "CIPLA": {
+   "summary": "Cipla received US FDA approval for its generic Flovent asthma inhaler, while analysts debate how new US tariffs and a possible India‑US trade deal could affect its earnings.",
+   "why": "The FDA approval opens a US market for the drug, and any changes in tariffs or trade terms could directly impact the company’s profit margins.",
+   "upside": "A trade deal that lowers US taxes on Indian exports could boost Cipla’s sales and earnings.",
+   "downside": "Higher US import tariffs could make Cipra’s products more expensive in the US, hurting profitability.",
+   "watch": [
+    "Progress of the India‑US trade agreement and its impact on export taxes",
+    "Any revisions to US import tariffs affecting pharmaceutical imports",
+    "Market reaction and sales performance after the FDA generic approval"
+   ],
+   "about": "Cipla Ltd. is an Indian pharmaceutical company that develops and sells generic medicines.",
+   "basis": "35ed8783ff10",
+   "items": 3,
+   "updated": "2026-11-26T16:58+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "WELSPUNLIV": {
    "summary": "Welspun Living’s shares have risen over 110% year‑to‑date as the company pushes new capex projects for growth, but a possible US tariff on Indian goods could hit its margins.",
@@ -651,21 +715,6 @@
    "updated": "2026-11-26T16:01+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "MOTILALOFS": {
-   "summary": "Motilal Oswal Financial Services is part of the Nifty 500 index. Recent news highlighted a separate company, Welspun Living, which has seen strong share price growth and plans for new investments.",
-   "why": "This matters because it shows the broader financial sector context, though the specific news about Welspun Living does not directly describe Motilal Oswal's own business performance.",
-   "upside": "",
-   "downside": "",
-   "watch": [
-    "How the Financials sector index performs in the coming days",
-    "Any future announcements specifically from Motilal Oswal Financial Services"
-   ],
-   "about": "Motilal Oswal Financial Services operates in the Financial Services sector.",
-   "basis": "9d59d609cf5d",
-   "items": 1,
-   "updated": "2026-11-25T13:32+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "POLICYBZR": {
    "summary": "PB Fintech shares recently rose as part of a broader rally in insurance stocks. This movement happened even though the wider financial sector index fell in the last session.",
    "why": "The company is part of the Nifty 500 index, which tracks India's 500 largest listed companies. Shareholders may see value if the company continues to show strong performance relative to the market.",
@@ -760,22 +809,6 @@
    "basis": "7088e29b3592",
    "items": 4,
    "updated": "2026-11-26T10:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "ZYDUSLIFE": {
-   "summary": "Zydus Lifesciences received a US FDA inspection report for its new API plant in Ankleshwar and an Export Inspection Report for its SEZ Ahmedabad facility, set up a wholly‑owned subsidiary in Australia and announced plans to acquire new businesses. These moves signal expansion but also bring regulatory and financial risks.",
-   "why": "The outcomes could affect the company’s ability to sell internationally and its cost structure, which matters to shareholders.",
-   "upside": "A clean FDA inspection and tax benefits from the SEZ could boost international sales and profitability.",
-   "downside": "Any adverse observations from the FDA or regulatory hurdles in Australia could delay growth and increase costs.",
-   "watch": [
-    "Final FDA inspection outcome for the Ankleshwar API plant",
-    "Implementation of SEZ benefits at the Ahmedabad facility",
-    "Progress of the Australian subsidiary and pending acquisitions"
-   ],
-   "about": "Zydus Lifesciences Ltd. develops, manufactures and sells pharmaceutical products.",
-   "basis": "c36c3e81383a",
-   "items": 4,
-   "updated": "2026-11-25T15:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "CGCL": {
@@ -890,22 +923,6 @@
    "updated": "2026-11-26T08:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "MAXHEALTH": {
-   "summary": "Max Healthcare Institute Ltd. announced the resignation of a director and changes in its senior management personnel. These updates were filed with the stock exchange on November 23, 2026.",
-   "why": "Changes in leadership can affect how the company is run and may influence how investors view its stability.",
-   "upside": "",
-   "downside": "Leadership transitions can sometimes create uncertainty or disrupt ongoing business plans.",
-   "watch": [
-    "Who is appointed to replace the resigning director",
-    "Any further announcements about senior management changes",
-    "How the healthcare sector index performs in the coming days"
-   ],
-   "about": "Max Healthcare Institute Ltd. is a healthcare company and is one of India's 50 largest listed companies.",
-   "basis": "f22c04cb59c3",
-   "items": 3,
-   "updated": "2026-11-24T06:49+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "PPLPHARMA": {
    "summary": "Piramal Pharma’s shares fell about 7% after a 100‑million‑share block trade and after Carlyle trimmed its holding by selling roughly 9.86 crore shares. The stock is under pressure despite the broader Healthcare index gaining.",
    "why": "Large sell‑offs by a major investor can push the price down, though the impact may be limited if the fundamentals remain unchanged.",
@@ -1016,22 +1033,6 @@
    "basis": "d604194901df",
    "items": 1,
    "updated": "2026-11-25T11:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "ITI": {
-   "summary": "PulsEdge flagged a notable rise in trading volume for ITI Ltd., indicating heightened market activity.",
-   "why": "Higher volume can signal changing investor sentiment, which may affect the share’s performance.",
-   "upside": "If the volume surge reflects buying interest, the stock could see upward momentum.",
-   "downside": "If the volume surge reflects selling pressure, the stock could face downward pressure.",
-   "watch": [
-    "Sustained volume trends",
-    "Any new corporate announcements",
-    "Share price movement"
-   ],
-   "about": "",
-   "basis": "a0528f9aefdf",
-   "items": 1,
-   "updated": "2026-11-26T10:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "MCX": {
@@ -1162,22 +1163,6 @@
    "updated": "2026-11-26T13:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "CIPLA": {
-   "summary": "Cipla got US FDA approval for its generic Flovent® HFA asthma inhaler, while analysts warn new US import tariffs could affect its earnings; the healthcare index has risen recently.",
-   "why": "The approval opens a US market that could lift profits, but tariff exposure could cut margins.",
-   "upside": "Strong US sales of the generic inhaler could boost earnings.",
-   "downside": "Higher US tariffs could pressure the company’s profit margins.",
-   "watch": [
-    "US tariff policy developments",
-    "US sales performance of the Flovent® generic",
-    "Healthcare sector index movement"
-   ],
-   "about": "Cipla Ltd. is an Indian pharmaceutical company that develops, manufactures and sells medicines.",
-   "basis": "0fa2756d26c3",
-   "items": 2,
-   "updated": "2026-11-26T10:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "MINDACORP": {
    "summary": "Minda Corporation announced a preferential issue of 7.65 million securities, increasing its share count, and reported the outcome of its board meeting on Nov 26, 2026.",
    "why": "The new share issue could dilute existing shareholders’ ownership, while board decisions may affect future company actions.",
@@ -1241,22 +1226,6 @@
    "items": 2,
    "updated": "2026-11-25T10:46+05:30",
    "model": "openai/gpt-oss-20b"
-  },
-  "HINDALCO": {
-   "summary": "Hindalco announced that Satish Pai will continue as Managing Director starting in 2028 and Hemant Sikka will join as Deputy Managing Director in 2027. The stock is currently being watched closely by traders alongside other major companies.",
-   "why": "Changes in top leadership can affect how the company is run, which may influence investor confidence and the share price.",
-   "upside": "Continuity in leadership with Satish Pai staying on may provide stability for the company's long-term plans.",
-   "downside": "The broader metals sector has fallen significantly recently, which could drag Hindalco's price down even if the company news is neutral.",
-   "watch": [
-    "How the market reacts to the new leadership announcements",
-    "Trends in the overall Metals sector index",
-    "General market volatility affecting large-cap stocks"
-   ],
-   "about": "Hindalco is a major Indian company in the metals and mining sector.",
-   "basis": "b8e8fac9a953",
-   "items": 3,
-   "updated": "2026-11-26T12:15+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "ANGELONE": {
    "summary": "Angel One Ltd. has seen two senior resignations in quick succession, with a director and a senior manager stepping down. Meanwhile, its Financials sector index has risen about 2% recently.",
