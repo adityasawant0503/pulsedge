@@ -1,7 +1,55 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T11:20:06+05:30",
+ "updated": "2026-11-26T11:27:37+05:30",
  "items": [
+  {
+   "id": "95b4129582521125",
+   "time": "2026-11-26T11:26:11+05:30",
+   "headline": "SUPREME COURT PUSHES FOR HEALTH WARNING LABELS ON PACKAGED FOODS HIGH IN SUGAR, SALT AND UNHEALTHY FATS; FMCG COMPANIES MAY FACE PRESSURE TO CHANGE PRODUCT RECIPES.",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10140",
+   "section": "news",
+   "call": "watch",
+   "horizon": "positional",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "SUPREMEIND",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "FMCG",
+    "Food & Beverage"
+   ],
+   "impact": 35,
+   "confidence": 60,
+   "category": "Regulatory",
+   "action": "Monitor for specific regulatory guidelines and company statements on recipe changes.",
+   "reason": [
+    "Supreme Court push for health labels may force FMCG companies to reformulate products.",
+    "Reformulation costs and potential sales dip from taste changes could impact margins."
+   ],
+   "risks": [
+    "Regulatory implementation may be delayed or less strict than feared.",
+    "Companies may successfully market healthier variants without significant revenue loss."
+   ],
+   "plain": "The top court is asking for clear warnings on unhealthy food packages, which might force companies to change their recipes.",
+   "why": "Changing recipes costs money and might make food taste different, which could hurt sales and profits for these companies.",
+   "check": "Look for official government rules or company announcements about changing their food ingredients.",
+   "original": "SUPREME COURT PUSHES FOR HEALTH WARNING LABELS ON PACKAGED FOODS HIGH IN SUGAR, SALT AND UNHEALTHY FATS; FMCG COMPANIES MAY FACE PRESSURE TO CHANGE PRODUCT RECIPES.",
+   "latency": 86.3,
+   "lane": "fast",
+   "quotes": {
+    "SUPREMEIND": {
+     "px": 3191.7,
+     "prev": 3176.0,
+     "move": 0.49,
+     "at": "2026-11-26T11:27:37+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "4bdeb9c18d043cd4",
    "time": "2026-11-26T11:19:07+05:30",
@@ -1797,54 +1845,6 @@
    "original": "SPOT GOLD FALLS NEARLY 1% TO $3,517.03/OZ",
    "latency": 67.0,
    "lane": "fast"
-  },
-  {
-   "id": "a8f10eaf47bc1315",
-   "time": "2026-11-25T11:22:30+05:30",
-   "headline": "L&T: CO WINS SIGNIFICANT CONTRACT || SIGNIFICANT CONTRACT VALUES BETWEEN 10B TO 25B RUPEES",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10009",
-   "section": "news",
-   "call": "buy",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "LT",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Construction"
-   ],
-   "impact": 70,
-   "confidence": 80,
-   "category": "company",
-   "action": "Watch for earnings guidance update in upcoming quarters",
-   "reason": [
-    "Large contract could boost revenue",
-    "Execution risk and timing are uncertain"
-   ],
-   "risks": [
-    "Project delays could affect cash flow",
-    "Contract size may be smaller than market expectations"
-   ],
-   "plain": "L&T secured a contract worth 10‑25 billion rupees.",
-   "why": "The contract can increase L&T's revenue and earnings, potentially benefiting shareholders.",
-   "check": "Check the company's upcoming earnings guidance or project progress updates.",
-   "original": "L&T: CO WINS SIGNIFICANT CONTRACT || SIGNIFICANT CONTRACT VALUES BETWEEN 10B TO 25B RUPEES",
-   "latency": 23.9,
-   "lane": "fast",
-   "checked": "confirmed by a second AI check",
-   "quotes": {
-    "LT": {
-     "px": 4163.0,
-     "prev": 4099.9,
-     "move": 1.54,
-     "at": "2026-11-25T11:22:54+05:30",
-     "delay": 900
-    }
-   }
   }
  ]
 }
