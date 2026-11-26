@@ -1,7 +1,40 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-26T13:59:37+05:30",
+ "updated": "2026-11-26T14:44:29+05:30",
  "items": [
+  {
+   "id": "fd84b5c65acf8f92",
+   "time": "2026-11-26T14:44:12+05:30",
+   "headline": "PATEL ENGINEERING LIMITED: CO. DECLARED LOWEST BIDDER FOR ₹1,441.04 CRORE GONGRI HYDRO ELECTRIC PROJECT IN ARUNACHAL PRADESH; PROJECT TO BE COMPLETED IN 48 MONTHS; SCOPE INCLUDES DIVERSIONS, POWERHOUSE, AND ELECTRO-MECHA",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10166",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Infrastructure"
+   ],
+   "impact": 0,
+   "confidence": 0,
+   "category": "Corporate Action",
+   "action": "No immediate action required as no listed entity is directly named.",
+   "reason": [
+    "No listed company symbol provided in the candidate list.",
+    "News pertains to an unlisted or non-candidate entity (Patel Engineering)."
+   ],
+   "risks": [
+    "Potential indirect impact on infrastructure peers if market sentiment shifts.",
+    "Lack of specific stock linkage prevents actionable trading signals."
+   ],
+   "plain": "A company named Patel Engineering won a large hydroelectric project contract in Arunachal Pradesh.",
+   "why": "This news does not directly affect any specific listed stock in your watchlist, so it is safe to skip.",
+   "check": "",
+   "original": "PATEL ENGINEERING LIMITED: CO. DECLARED LOWEST BIDDER FOR ₹1,441.04 CRORE GONGRI HYDRO ELECTRIC PROJECT IN ARUNACHAL PRADESH; PROJECT TO BE COMPLETED IN 48 MONTHS; SCOPE INCLUDES DIVERSIONS, POWERHOUSE, AND ELECTRO-MECHA",
+   "latency": 17.3,
+   "lane": "fast"
+  },
   {
    "id": "523f326773e7742f",
    "time": "2026-11-26T13:59:30+05:30",
@@ -1648,227 +1681,6 @@
    "latency": 50.6,
    "lane": "fast",
    "checked": "confirmed by a second AI check"
-  },
-  {
-   "id": "b7dd636e55640cc4",
-   "time": "2026-11-25T14:39:15+05:30",
-   "headline": "ANTHROPIC SHARES DOWN 3% PREMARKET AFTER FALLING 6.5% IN THE PREVIOUS SESSION",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10037",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "ignore",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "Anthropic’s shares fell in pre‑market trading after a previous decline.",
-   "why": "The company isn’t listed on Indian exchanges, so it doesn’t affect local stock holdings.",
-   "check": "",
-   "original": "ANTHROPIC SHARES DOWN 3% PREMARKET AFTER FALLING 6.5% IN THE PREVIOUS SESSION",
-   "latency": 56.9,
-   "lane": "fast"
-  },
-  {
-   "id": "373ef62959ccb7e5",
-   "time": "2026-11-25T14:36:40+05:30",
-   "headline": "NVIDIA SHARES DOWN 4.3% PREMARKET AFTER FALLING 5.9% IN THE LAST SESSION",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10036",
-   "section": "macro",
-   "call": "watch",
-   "horizon": "intraday",
-   "direction": "down",
-   "tickers": [],
-   "sectors": [
-    "IT",
-    "Semiconductors"
-   ],
-   "impact": 30,
-   "confidence": 60,
-   "category": "Global Tech Sentiment",
-   "action": "Monitor Indian IT and semiconductor stocks for early morning weakness if global tech sentiment remains negative.",
-   "reason": [
-    "NVIDIA is a bellwether for global AI and tech sentiment.",
-    "Negative moves in US tech often correlate with Indian IT and hardware stocks."
-   ],
-   "risks": [
-    "Indian IT stocks may decouple if domestic demand remains strong.",
-    "The drop may be specific to NVIDIA and not indicative of a broader tech sell-off."
-   ],
-   "plain": "A major US computer chip company's shares fell significantly before the US market opened.",
-   "why": "This can make investors cautious about technology stocks in India, potentially causing their prices to drop slightly.",
-   "check": "Check if other major US tech companies are also trading down.",
-   "original": "NVIDIA SHARES DOWN 4.3% PREMARKET AFTER FALLING 5.9% IN THE LAST SESSION",
-   "latency": 31.3,
-   "lane": "fast"
-  },
-  {
-   "id": "baf38a6a8e251227",
-   "time": "2026-11-25T14:35:35+05:30",
-   "headline": "EICHER MOTORS: ROYAL ENFIELD SIGNS RS. 1,000 CRORE MOU WITH TAMIL NADU GOVERNMENT FOR EV ECOSYSTEM EXPANSION; INVESTMENT TO GENERATE 500 JOBS AND SUPPORT EV PRODUCT DEVELOPMENT OVER SEVEN YEARS.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10035",
-   "section": "news",
-   "call": "watch",
-   "horizon": "positional",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "EICHERMOT",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Automotive",
-    "EV"
-   ],
-   "impact": 40,
-   "confidence": 60,
-   "category": "Corporate Announcement",
-   "action": "Monitor for follow-up announcements on specific EV model launches or production timelines.",
-   "reason": [
-    "Significant capital commitment to EV ecosystem in Tamil Nadu.",
-    "Supports long-term growth narrative for Eicher Motors' EV division."
-   ],
-   "risks": [
-    "MOU is non-binding and execution may take years.",
-    "EV market competition and regulatory changes could impact returns."
-   ],
-   "plain": "Eicher Motors signed a deal to invest in electric vehicle development in Tamil Nadu.",
-   "why": "It shows the company is expanding its electric vehicle business, which is a key future growth area.",
-   "check": "Look for news on when the first electric models might be launched.",
-   "original": "EICHER MOTORS: ROYAL ENFIELD SIGNS RS. 1,000 CRORE MOU WITH TAMIL NADU GOVERNMENT FOR EV ECOSYSTEM EXPANSION; INVESTMENT TO GENERATE 500 JOBS AND SUPPORT EV PRODUCT DEVELOPMENT OVER SEVEN YEARS.",
-   "latency": 36.6,
-   "lane": "fast",
-   "quotes": {
-    "EICHERMOT": {
-     "px": 8304.0,
-     "prev": 8172.5,
-     "move": 1.61,
-     "at": "2026-11-25T14:36:11+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "a4174c617eca7f44",
-   "time": "2026-11-25T14:24:25+05:30",
-   "headline": "ZYDUS LIFE: CO RECEIVES EIR FOR ITS MANUFACTURING FACILITY IN SEZ II, AHMEDABAD",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10034",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "positional",
-   "direction": "up",
-   "tickers": [],
-   "sectors": [
-    "Pharma"
-   ],
-   "impact": 10,
-   "confidence": 20,
-   "category": "Regulatory",
-   "action": "No immediate action required for listed investors.",
-   "reason": [
-    "Zydus Life Sciences is a private entity, not listed on NSE.",
-    "EIR receipt is a standard compliance step for SEZ manufacturing, not a material financial event."
-   ],
-   "risks": [
-    "None for listed stocks."
-   ],
-   "plain": "A private company received a standard export certificate for its factory.",
-   "why": "This company is not publicly traded, so this news does not affect stock prices.",
-   "check": "",
-   "original": "ZYDUS LIFE: CO RECEIVES EIR FOR ITS MANUFACTURING FACILITY IN SEZ II, AHMEDABAD",
-   "latency": 46.2,
-   "lane": "fast"
-  },
-  {
-   "id": "c028c85aa7e600f1",
-   "time": "2026-11-25T14:11:38+05:30",
-   "headline": "RUSSIA ATTACKS NAFTOGAZ GAS FACILITY IN POLTAVA REGION: COMPANY",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10033",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Energy",
-    "Defense"
-   ],
-   "impact": 10,
-   "confidence": 20,
-   "category": "Geopolitics",
-   "action": "Monitor global crude oil prices for volatility spillover into Indian energy stocks.",
-   "reason": [
-    "Geopolitical conflict in Ukraine may affect global energy supply chains.",
-    "No direct impact on specific Indian listed companies mentioned."
-   ],
-   "risks": [
-    "Potential spike in global crude oil prices.",
-    "Increased volatility in defense and energy sectors."
-   ],
-   "plain": "Russia attacked a gas facility in Ukraine, which might affect global energy markets.",
-   "why": "This is a global event that could slightly change oil prices, but it does not directly change the business of specific Indian companies.",
-   "check": "",
-   "original": "RUSSIA ATTACKS NAFTOGAZ GAS FACILITY IN POLTAVA REGION: COMPANY",
-   "latency": 92.9,
-   "lane": "fast"
-  },
-  {
-   "id": "cd1bbb43ec0b6d17",
-   "time": "2026-11-25T14:02:49+05:30",
-   "headline": "CAPRI GLOBAL CAPITAL: RAISES USD 30 MLN FROM BLUEORCHARD MICROFINANCE FUND",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10032",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "CGCL",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Financials",
-    "Microfinance"
-   ],
-   "impact": 40,
-   "confidence": 60,
-   "category": "Funding",
-   "action": "Monitor trading volume to see if institutional interest drives sustained price movement.",
-   "reason": [
-    "Secured USD 30 million funding from a reputable microfinance fund.",
-    "Indicates confidence in the company's growth trajectory and financial health."
-   ],
-   "risks": [
-    "Dilution of existing shareholders if the funding involves equity issuance.",
-    "Market may already have priced in this positive development."
-   ],
-   "plain": "The company raised 30 million dollars from a major investment fund.",
-   "why": "This shows big investors trust the business, which can help the stock price rise.",
-   "check": "Look at recent news to see if other investors are also buying shares.",
-   "original": "CAPRI GLOBAL CAPITAL: RAISES USD 30 MLN FROM BLUEORCHARD MICROFINANCE FUND",
-   "latency": 82.2,
-   "lane": "fast",
-   "quotes": {
-    "CGCL": {
-     "px": 237.35,
-     "prev": 232.61,
-     "move": 2.04,
-     "at": "2026-11-25T14:04:11+05:30",
-     "delay": 900
-    }
-   }
   }
  ]
 }
