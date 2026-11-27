@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T14:46:05+05:30",
+ "updated": "2026-11-27T15:02:12+05:30",
  "summary": {
-  "calls": 2433,
-  "scored_calls": 1200,
+  "calls": 2436,
+  "scored_calls": 1203,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -27,6 +27,21 @@
  "source": "NSE end-of-day bhavcopy",
  "calls": [
   {
+   "id": "e917d72610382a95",
+   "symbol": "TVSMOTOR",
+   "time": "2026-11-27T14:45:08+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "TVS Motor Company Limited: TVS Motor Company Limited has informed the Exchange regarding a press release dated November 27, 2026, titled \"TVS MOTOR COMPANY INTR",
+   "url": "https://nsearchives.nseindia.com/corporate/TVSMOTOR_27112026144217_NSEBSEArmadoglobal_sd.pdf",
+   "alert_px": 4532.5,
+   "alert_move": -0.39,
+   "alert_at": "2026-11-27T15:01:09+05:30",
+   "alert_delay": 900
+  },
+  {
    "id": "d6c0ce8d5a312740",
    "symbol": "IGIL",
    "time": "2026-11-27T14:44:36+05:30",
@@ -39,6 +54,36 @@
    "alert_px": 430.8,
    "alert_move": 1.8,
    "alert_at": "2026-11-27T14:45:41+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "aa6202300da47970",
+   "symbol": "BOSCHLTD",
+   "time": "2026-11-27T14:39:36+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Bosch announces record date for stock split, bonus issue; key details",
+   "url": "https://www.business-standard.com/markets/news/bosch-announces-record-date-for-stock-split-bonus-issue-key-details-126112700618_1.html",
+   "alert_px": 49195.0,
+   "alert_move": 0.75,
+   "alert_at": "2026-11-27T15:01:09+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "52adae7a09ec90d2",
+   "symbol": "ANGELONE",
+   "time": "2026-11-27T14:36:00+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Angel One Limited: ANGEL ONE LIMITED has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteration Of Capital and Fund Raising-XBRL",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_18748_WebXMLFile_20261127_143559528.xml",
+   "alert_px": 379.0,
+   "alert_move": 5.87,
+   "alert_at": "2026-11-27T15:01:09+05:30",
    "alert_delay": 900
   },
   {

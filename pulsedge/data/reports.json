@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T14:45+05:30",
+ "updated": "2026-11-27T15:01+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged that HEG Limited listed on Indian exchanges and announced a major expansion of its graphite electrode capacity. Global clothing brands shifted $254 million in orders from Bangladesh to India, which could boost local textile companies. Meanwhile, US inflation data rose, raising concerns that high interest rates might limit foreign investment in Indian stocks.",
+  "summary": "PulsEdge flagged a busy day of corporate news, including HEG Limited listing on the exchanges and planning a major expansion, alongside Supreme Court orders regarding bank prosecutions. Global clothing brands shifted millions in orders from Bangladesh to India, creating potential opportunities for local manufacturers. Meanwhile, rising US inflation raised questions about future interest rates, and individual companies made announcements regarding share buybacks, new deals, and drug approvals.",
   "themes": [
-   "Major industrial expansions and new listings in the metals and power sectors",
-   "Shift in global manufacturing orders from Bangladesh to India",
-   "Regulatory scrutiny on large corporate deals and bank staff prosecutions"
+   "Corporate expansions, new listings, and legal developments at major firms",
+   "Shifting global supply chains benefiting Indian manufacturing",
+   "International inflation and interest rate concerns"
   ],
   "watch": [
-   "Whether Siemens Energy wins the expected high-voltage power transmission order in India next year",
-   "The outcome of SEBI's review of the Tata Steel and APL Apollo deal",
-   "How Indian textile companies manage the sudden increase in export orders"
+   "Whether Indian textile firms can smoothly absorb the shifted orders from Bangladesh",
+   "Developments regarding US interest rates and foreign investment flows",
+   "Execution and regulatory outcomes for company expansions and drug approvals"
   ],
   "date": "2026-11-27",
-  "basis": "3bed8d11eb26",
-  "updated": "2026-11-27T14:02+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 67
+  "basis": "7bd01d1aad8b",
+  "updated": "2026-11-27T15:01+05:30",
+  "model": "gemini-flash-lite-latest",
+  "items": 78
  },
  "stocks": {
   "BSE": {
@@ -90,6 +90,22 @@
    "items": 5,
    "updated": "2026-11-27T12:45+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "TVSMOTOR": {
+   "summary": "TVS Motor Company has launched a new cargo tricycle called the TVS Armado and signed new business agreements. It also signed a non-binding agreement with the Government of Tamil Nadu to invest 2,000 crore rupees over four years to create 1,000 jobs.",
+   "why": "These moves involve new products, business deals, and large investments that can change the company's future business and growth.",
+   "upside": "The planned investment and new product launches could boost the company's future earnings and market presence.",
+   "downside": "The new product's market reception is uncertain, the business agreements might be routine or low-value, and the state government deal is non-binding.",
+   "watch": [
+    "How the new TVS Armado cargo tricycle is received by the market.",
+    "Further details on the newly signed business agreements.",
+    "Updates on whether the non-binding agreement with the Tamil Nadu government becomes final."
+   ],
+   "about": "TVS Motor Company Ltd. is an automobile and auto components manufacturer.",
+   "basis": "4c1fdf5dfa2b",
+   "items": 4,
+   "updated": "2026-11-27T15:01+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "HDFCBANK": {
    "summary": "HDFC Bank has seen its market value jump past Airtel and is highlighted as a bullish pick by JPMorgan, while the Supreme Court has ordered it to approve prosecution sanctions for staff. The bank is also being compared favorably against peers in recent analyst discussions.",
@@ -154,22 +170,6 @@
    "items": 3,
    "updated": "2026-11-27T08:16+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "TVSMOTOR": {
-   "summary": "TVS Motor Company Ltd. (TVSMOTOR) has announced new business agreements and a non‑binding memorandum of understanding with the Government of Tamil Nadu, which includes a planned investment of ₹2000 crore over four years and creation of 1000 jobs.",
-   "why": "Shareholders should note that these agreements could influence the company’s future earnings and expansion plans.",
-   "upside": "The planned investment and job creation could boost future earnings.",
-   "downside": "The agreements are non‑binding, so there is a risk they may not materialise.",
-   "watch": [
-    "Details of the new business agreements",
-    "Progress on the ₹2000 crore investment plan",
-    "Updates on job creation numbers"
-   ],
-   "about": "TVS Motor Company Ltd. manufactures motorcycles, scooters, and related auto components.",
-   "basis": "047e24c584c0",
-   "items": 3,
-   "updated": "2026-11-25T15:02+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "SUPREMEIND": {
    "summary": "PulsEdge flagged headlines about Supreme Court actions regarding bank staff prosecution and food labeling, but these events do not involve Supreme Industries Ltd. The company is part of the Nifty 500 index and operates in the Capital Goods sector.",
@@ -490,22 +490,6 @@
    "updated": "2026-11-26T16:58+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "BEML": {
-   "summary": "BEML's CEO says the company expects many new orders from the defence sector and international clients. The company aims to achieve double-digit growth.",
-   "why": "If these new orders are secured, the company's revenue and profits could increase, which is generally positive for shareholders.",
-   "upside": "Securing the expected defence and overseas orders could lead to higher revenue and profit.",
-   "downside": "Orders could be delayed or cancelled, which would hurt the company's growth plans.",
-   "watch": [
-    "Announcements of new defence sector orders",
-    "Updates on international order wins",
-    "Progress toward double-digit growth targets"
-   ],
-   "about": "BEML is a capital goods company listed in the Nifty 500 index.",
-   "basis": "7fcb63bf2ec2",
-   "items": 1,
-   "updated": "2026-11-25T09:52+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "WIPRO": {
    "summary": "Wipro shares jumped after the IT company signed a major strategic partnership with global energy firm BP to transform finance operations. Around 3,000 BP employees are set to join Wipro under this new operating model. Meanwhile, Indian IT stocks have risen despite US tariff threats.",
    "why": "This matters because large contracts show that major global clients trust the company for future business. However, potential US tariffs and trade policies could impact companies that sell abroad.",
@@ -649,6 +633,22 @@
    "items": 4,
    "updated": "2026-11-26T13:15+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "ANGELONE": {
+   "summary": "Angel One Limited has announced it will issue new shares to raise capital. At the same time, the company reported that a senior leader and manager have resigned from their positions.",
+   "why": "Leadership changes and the creation of new shares can impact the value of current holdings and cause questions about the company's stability.",
+   "upside": "If the newly raised funds are deployed effectively, the company could see a recovery.",
+   "downside": "The departures of senior staff and the dilution from new shares create uncertainty about governance and stability.",
+   "watch": [
+    "How the company deploys its newly raised capital",
+    "Further updates regarding leadership and management changes",
+    "Overall movement in the financial services sector"
+   ],
+   "about": "",
+   "basis": "4b51dc374e81",
+   "items": 3,
+   "updated": "2026-11-27T15:01+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "AMBER": {
    "summary": "Amber Enterprises India Ltd. announced a partnership for a 500 crore rupee investment to expand its circuit board manufacturing in Tamil Nadu. This expansion is planned to happen over five years starting in 2027. A research firm also recently added the company to its list of high-conviction stocks.",
@@ -937,22 +937,6 @@
    "items": 1,
    "updated": "2026-11-26T08:17+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "ZEEL": {
-   "summary": "Zee Entertainment shares fell 6% on November 25, 2026, despite a broader market rally. This drop happened because the company set a record date for a ₹600-crore share buyback, leading investors to sell before the deadline.",
-   "why": "If you own these shares, the price drop may be temporary as investors sell to lock in gains before the buyback process begins.",
-   "upside": "The company is actively buying back its own shares, which can support the stock price once the selling pressure settles.",
-   "downside": "The share price may stay low until the buyback is fully completed.",
-   "watch": [
-    "The completion date of the ₹600-crore buyback",
-    "How the stock price reacts after the record date",
-    "Performance of the Media sector index"
-   ],
-   "about": "Zee Entertainment is a media company listed in India's Nifty 500 index.",
-   "basis": "2ab84deb85fe",
-   "items": 1,
-   "updated": "2026-11-25T10:15+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "HINDZINC": {
    "summary": "Hindustan Zinc’s shares rose today while the broader market fell, reflecting positive sentiment toward the Vedanta group’s metal stocks. The company also announced a collaboration with IIT Madras to develop zinc‑air battery technology for electric mobility.",
@@ -1367,22 +1351,6 @@
    "basis": "bf3898e2cb91",
    "items": 2,
    "updated": "2026-11-27T13:46+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "ANGELONE": {
-   "summary": "Angel One Ltd. has seen two senior resignations in quick succession, with a director and a senior manager stepping down. Meanwhile, its Financials sector index has risen about 2% recently.",
-   "why": "These departures could raise concerns about the company’s governance and continuity, which matters to shareholders.",
-   "upside": "A rising sector index may support the company’s performance.",
-   "downside": "Leadership turnover could create uncertainty and affect investor confidence.",
-   "watch": [
-    "Any further resignations or appointments",
-    "Updates on the reasons behind the departures",
-    "Continued movement of the Financials sector index"
-   ],
-   "about": "Angel One Ltd. is a financial services firm that provides brokerage and investment services.",
-   "basis": "12fded8e31ea",
-   "items": 2,
-   "updated": "2026-11-26T11:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "INDIANB": {
