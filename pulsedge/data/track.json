@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T13:46:25+05:30",
+ "updated": "2026-11-27T14:02:43+05:30",
  "summary": {
-  "calls": 2428,
-  "scored_calls": 1195,
+  "calls": 2430,
+  "scored_calls": 1197,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "cd3e1f4dfd623403",
+   "symbol": "NESTLEIND",
+   "time": "2026-11-27T13:54:39+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Nestle India Limited: Nestle India Limited has informed the Exchange about Action(s) taken or orders passed (sub-para 20) |SUBJECT: Actions initiated/taken or o",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/AIATOP_3034_WebXMLFile_20261127_135438325.xml",
+   "alert_px": 1318.6,
+   "alert_move": -0.13,
+   "alert_at": "2026-11-27T14:01:57+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "511f18e2cbbcdcbc",
+   "symbol": "GLENMARK",
+   "time": "2026-11-27T13:43:39+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Glenmark Pharma hits new high, up 5th straight day; gains 35% from Oct low",
+   "url": "https://www.business-standard.com/markets/news/glenmark-pharma-hits-new-high-up-5th-straight-day-gains-35-from-oct-low-126112700518_1.html",
+   "alert_px": 2825.0,
+   "alert_move": 3.09,
+   "alert_at": "2026-11-27T14:01:57+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "b5f054d85dff11a8",
    "symbol": "ONGC",

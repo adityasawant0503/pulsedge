@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T13:46+05:30",
+ "updated": "2026-11-27T14:02+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "HEG Limited listed on NSE and BSE and announced a ₹650 crore expansion to boost graphite electrode capacity, raising hopes of higher future earnings but also execution risk. The Supreme Court ordered HDFC Bank and others to approve staff prosecution sanctions, adding legal scrutiny to the banking sector. Siemens Energy expressed confidence in winning a large VSC‑HVDC order in India next year, while Zydus Life saw a dip after the US FDA requested more information on a new drug. Oil prices edged up after a three‑week decline, and sector indices showed IT and realty leading gains, with consumer durables and FMCG falling.",
+  "summary": "PulsEdge flagged that HEG Limited listed on Indian exchanges and announced a major expansion of its graphite electrode capacity. Global clothing brands shifted $254 million in orders from Bangladesh to India, which could boost local textile companies. Meanwhile, US inflation data rose, raising concerns that high interest rates might limit foreign investment in Indian stocks.",
   "themes": [
-   "Corporate expansion and capacity growth",
-   "Regulatory scrutiny on banks and steel deals",
-   "Oil price movement and sector performance"
+   "Major industrial expansions and new listings in the metals and power sectors",
+   "Shift in global manufacturing orders from Bangladesh to India",
+   "Regulatory scrutiny on large corporate deals and bank staff prosecutions"
   ],
   "watch": [
-   "HEG Limited’s expansion execution progress",
-   "Outcome of SEBI’s review of the Tata Steel‑APL Apollo deal",
-   "Oil price volatility and its impact on energy stocks"
+   "Whether Siemens Energy wins the expected high-voltage power transmission order in India next year",
+   "The outcome of SEBI's review of the Tata Steel and APL Apollo deal",
+   "How Indian textile companies manage the sudden increase in export orders"
   ],
   "date": "2026-11-27",
-  "basis": "4ce586df24a6",
-  "updated": "2026-11-27T13:15+05:30",
-  "model": "openai/gpt-oss-20b",
-  "items": 55
+  "basis": "3bed8d11eb26",
+  "updated": "2026-11-27T14:02+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 67
  },
  "stocks": {
   "BSE": {
@@ -107,22 +107,6 @@
    "updated": "2026-11-27T10:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "ICICIBANK": {
-   "summary": "ICICI Bank shares jumped about 4% to a record high as the broader market rallied, but the Supreme Court has ordered the bank to approve prosecution sanctions, putting legal scrutiny on its doorstep.",
-   "why": "Legal scrutiny could affect the bank’s reputation and share price, while the recent price surge shows strong short‑term momentum that could reverse.",
-   "upside": "If the bank complies with the court’s order, the reputational impact may be limited.",
-   "downside": "The legal probe and a possible earnings miss could erode the recent gains.",
-   "watch": [
-    "Compliance with the Supreme Court’s prosecution order",
-    "Upcoming earnings results",
-    "Valuation comparison with HDFC and Axis banks"
-   ],
-   "about": "ICICI Bank Ltd. is one of India’s largest banks offering a range of financial services.",
-   "basis": "cc263bb6540a",
-   "items": 4,
-   "updated": "2026-11-27T08:16+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "GRAPHITE": {
    "summary": "Graphite India Ltd. recently listed on the stock exchanges after being separated from HEG Limited. The company announced a plan to expand its graphite electrode production capacity to 1.15 lakh tonnes.",
    "why": "This expansion aims to increase future profits for shareholders, but the high initial stock price may settle down as the initial excitement fades.",
@@ -138,6 +122,22 @@
    "items": 3,
    "updated": "2026-11-27T12:45+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "ICICIBANK": {
+   "summary": "ICICI Bank shares jumped 4% to a record high, while the Supreme Court ordered the bank to approve prosecution sanctions along with peers. Experts are comparing its valuation with HDFC and Axis banks.",
+   "why": "Legal scrutiny could affect the bank’s reputation and share price, and the recent rally may be short‑lived if earnings disappoint.",
+   "upside": "If the bank complies with the court order, the negative impact may be limited.",
+   "downside": "The prosecution order could hurt reputation and trigger share declines, and the price gain could reverse on weak earnings.",
+   "watch": [
+    "Compliance with the Supreme Court prosecution order",
+    "Upcoming earnings results and their impact on momentum",
+    "Valuation comparisons with HDFC and Axis banks"
+   ],
+   "about": "ICICI Bank Ltd. is a major Indian bank providing a wide range of financial services.",
+   "basis": "5572a2ab9a5d",
+   "items": 3,
+   "updated": "2026-11-27T14:02+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "PNB": {
    "summary": "Punjab National Bank signed a preliminary agreement with Deutsche Bank to explore funding for business acquisitions. This move aims to help the bank earn more fees by assisting companies that are buying other businesses.",
@@ -347,22 +347,6 @@
    "updated": "2026-11-27T04:10+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "LENSKART": {
-   "summary": "Goldman Sachs and Societe Generale recently bought a 1% stake in Lenskart for about ₹920 crore. The stock is currently on a watchlist of popular companies that traders are monitoring closely.",
-   "why": "Large investors buying shares can sometimes signal confidence in the company, which may influence how other investors view the stock.",
-   "upside": "The purchase by major global banks could boost investor confidence in the company.",
-   "downside": "The stake bought is small relative to the total number of shares, so it may not have a big impact on the price.",
-   "watch": [
-    "Whether other large investors follow suit with similar purchases",
-    "How the stock reacts to general market volatility",
-    "Any further news mentioned in daily stock watchlists"
-   ],
-   "about": "",
-   "basis": "a6a816298b4d",
-   "items": 2,
-   "updated": "2026-11-26T16:01+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "KSB": {
    "summary": "KSB Ltd. recently announced that it has been awarded a new contract. This news was shared with the stock exchange to inform investors of the company's latest business activity.",
    "why": "New contracts can lead to higher sales and profits in the future, which is generally positive for the company's long-term health.",
@@ -380,20 +364,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel is working to restructure its ₹5,825 cr deal to buy a 9.91% stake in APL Apollo Tubes, while the market regulator SEBI is examining the transaction for possible rule breaches. The scrutiny has caused volatility in related stocks and could affect the deal’s timing.",
-   "why": "Regulatory review and any changes to the deal could impact Tata Steel’s cash use, ownership structure and share price.",
-   "upside": "If SEBI clears the transaction and the restructuring proceeds smoothly, the deal could strengthen Tata Steel’s market position.",
-   "downside": "Regulatory penalties, delays or a forced redesign of the deal could hurt Tata Steel’s financials and share price.",
+   "summary": "Tata Steel is currently working on restructuring a large deal involving APL Apollo Tubes. Meanwhile, the market regulator, SEBI, is examining the transaction to ensure it follows rules and protects minority owners. Tata Steel is one of India's 50 largest listed companies in the Metals & Mining sector.",
+   "why": "Regulatory checks and deal restructuring can change how a business transaction works or when it finishes. This uncertainty can cause the company's stock price to move unexpectedly.",
+   "upside": "Tata Steel has stated it is open to restructuring the deal, which could help address regulatory concerns and move the transaction forward.",
+   "downside": "Regulatory intervention or potential penalties could delay, alter, or block the deal and cause reputational damage.",
    "watch": [
-    "SEBI’s final decision on the Tata Steel‑APL Apollo transaction",
-    "Details of the revised deal structure announced by Tata Steel",
-    "Integration progress of APL Apollo Tubes into Tata Steel’s operations"
+    "Updates from SEBI regarding the review of the APL Apollo deal",
+    "Further announcements from Tata Steel on restructuring the transaction",
+    "Overall movement in the Metals sector index"
    ],
-   "about": "Tata Steel manufactures steel and related products, and is one of India’s largest listed companies.",
-   "basis": "d037403d20cb",
-   "items": 12,
-   "updated": "2026-11-27T13:15+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Tata Steel Ltd. is a major metals and mining company that produces and sells steel products.",
+   "basis": "e19f231ddb32",
+   "items": 11,
+   "updated": "2026-11-27T14:02+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "APLAPOLLO": {
    "summary": "APL Apollo Tubes shares fell sharply after a big Tata Steel stake purchase and broker downgrades, then jumped 4% as regulators may examine the deal. A large investor also sold a big block of shares recently.",
@@ -619,20 +603,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is seeing higher oil prices due to supply worries and conflicts in the Middle East. At the same time, these rising oil costs are putting pressure on the Indian rupee and raising inflation worries in the broader economy.",
-   "why": "PulsEdge notes that higher oil prices can increase earnings for oil producers, but they can also lead to broader economic issues like higher inflation and interest rates.",
-   "upside": "Higher oil prices could boost earnings for oil producers like Oil India.",
-   "downside": "Oil prices are volatile and geopolitical tensions could de-escalate, causing prices to fall.",
+   "summary": "Oil India Ltd. is part of the Oil Gas & Consumable Fuels sector, which has seen a slight rise in recent sessions. Global oil prices are currently climbing due to supply worries in the Middle East, which is affecting broader market conditions.",
+   "why": "Higher oil prices can increase the profits for companies that sell oil, which may be good for shareholders. However, rising oil costs are also causing inflation worries that could lead to higher interest rates, making borrowing more expensive.",
+   "upside": "If oil prices stay high, the company may earn more money from selling its fuel.",
+   "downside": "Oil prices can change quickly, and if the Middle East conflict calms down, prices might drop, reducing profits.",
    "watch": [
-    "Middle East supply news and conflicts",
-    "Crude oil price movements",
-    "Inflation and interest rate trends"
+    "Changes in oil prices due to Middle East supply news",
+    "Inflation reports that might lead to higher interest rates",
+    "The value of the Indian rupee against the US dollar"
    ],
-   "about": "Oil India Ltd. operates in the oil, gas, and consumable fuels sector.",
-   "basis": "ba216d1cae48",
-   "items": 20,
-   "updated": "2026-11-27T13:46+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "Oil India Ltd. is a company in the Oil Gas & Consumable Fuels sector.",
+   "basis": "04c7def6e55c",
+   "items": 18,
+   "updated": "2026-11-27T14:02+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "BRIGADE": {
    "summary": "Brigade Enterprises disclosed a new credit rating and opened a 65,000 sq ft flexible workspace in Chennai, targeting ₹10 cr revenue and further expansion by FY28. The stock rose on strong Bangalore project sales and a broader rally in the realty sector, which hit a 52‑week high.",
@@ -1256,6 +1240,22 @@
    "items": 3,
    "updated": "2026-11-26T12:15+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "GLENMARK": {
+   "summary": "Glenmark Pharma has reached a 52‑week high and has been on a five‑day winning streak, up 35% from its October low. The stock price has risen sharply in recent months, reflecting stronger business performance.",
+   "why": "The share price increase indicates that investors see the company as performing better than expected, which can make the shares more valuable for current owners.",
+   "upside": "Improved business performance could keep the stock on an upward trend.",
+   "downside": "The price may be overextended in the short term, risking a pullback.",
+   "watch": [
+    "Price trend over the next few days to see if the upward momentum holds",
+    "Sector index movement, as Healthcare is up 0.2% in the last session and 3.5% over five sessions",
+    "Any upcoming earnings or regulatory news that could affect the company"
+   ],
+   "about": "Glenmark Pharmaceuticals Ltd. is a pharmaceutical company listed on the NSE.",
+   "basis": "b7784e077f6a",
+   "items": 2,
+   "updated": "2026-11-27T14:02+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "CCL": {
    "summary": "PulsEdge notes that there are no recent company‑specific announcements for CCL Products (I) Ltd. The FMCG sector index fell 0.9% in the last session but has risen 4.4% over the past five sessions.",
