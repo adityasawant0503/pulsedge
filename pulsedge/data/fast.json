@@ -1,7 +1,55 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-27T14:45:23+05:30",
+ "updated": "2026-11-27T15:09:23+05:30",
  "items": [
+  {
+   "id": "d5a08c542760a9b4",
+   "time": "2026-11-27T15:08:29+05:30",
+   "headline": "SAHAJ SOLAR: RECEIVES USD 42 MILLION (RS 389.52 CRORE) LETTER OF AWARD FROM MAURITIUS' CENTRAL ELECTRICITY BOARD FOR DEVELOPING TWO 10 MW AC SOLAR PV AND 72 MWH BESS HYBRID RENEWABLE ENERGY PROJECTS THROUGH ITS WHOLLY OW",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10261",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "SOLARINDS",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Renewable Energy",
+    "Solar"
+   ],
+   "impact": 65,
+   "confidence": 70,
+   "category": "Contract Award",
+   "action": "Monitor order book updates and execution timelines for the Mauritius project.",
+   "reason": [
+    "Significant revenue contract of ~390 Cr INR secured.",
+    "Expansion into international markets (Mauritius) diversifies risk."
+   ],
+   "risks": [
+    "Execution delays or cost overruns in overseas projects.",
+    "Currency fluctuation risks."
+   ],
+   "plain": "The company won a large contract to build solar and battery projects in Mauritius.",
+   "why": "This adds significant future income and shows the company is growing beyond India.",
+   "check": "Look for official company announcements confirming the contract details.",
+   "original": "SAHAJ SOLAR: RECEIVES USD 42 MILLION (RS 389.52 CRORE) LETTER OF AWARD FROM MAURITIUS' CENTRAL ELECTRICITY BOARD FOR DEVELOPING TWO 10 MW AC SOLAR PV AND 72 MWH BESS HYBRID RENEWABLE ENERGY PROJECTS THROUGH ITS WHOLLY OW",
+   "latency": 54.1,
+   "lane": "fast",
+   "quotes": {
+    "SOLARINDS": {
+     "px": 19460.0,
+     "prev": 18250.0,
+     "move": 6.63,
+     "at": "2026-11-27T15:09:23+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "d6c0ce8d5a312740",
    "time": "2026-11-27T14:44:36+05:30",
@@ -1403,77 +1451,6 @@
      "delay": 900
     }
    }
-  },
-  {
-   "id": "1dfac8982c5df713",
-   "time": "2026-11-26T15:03:27+05:30",
-   "headline": "ZAGGLE PREPAID: SECURES A 5-YEAR AGREEMENT WITH INFOSYS TO PROVIDE ZAGGLE SAVE EMPLOYEE EXPENSE MANAGEMENT AND BENEFITS SOLUTIONS; CONTRACT VALUE WILL DEPEND ON ACTIVE USERS AND EMPLOYEE SPENDS.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10168",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [
-    {
-     "symbol": "INFY",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "IT Services"
-   ],
-   "impact": 5,
-   "confidence": 90,
-   "category": "Corporate Update",
-   "action": "No specific trading action required; monitor general IT sector sentiment.",
-   "reason": [
-    "Infosys is the client, not the vendor, so this is a minor operational detail.",
-    "The contract value is variable and likely immaterial to Infosys's total revenue."
-   ],
-   "risks": [
-    "None significant for the listed entity."
-   ],
-   "plain": "A software company signed a deal to manage employee expenses for a large IT firm.",
-   "why": "The IT firm is the customer, so this does not change its business outlook or earnings.",
-   "check": "",
-   "original": "ZAGGLE PREPAID: SECURES A 5-YEAR AGREEMENT WITH INFOSYS TO PROVIDE ZAGGLE SAVE EMPLOYEE EXPENSE MANAGEMENT AND BENEFITS SOLUTIONS; CONTRACT VALUE WILL DEPEND ON ACTIVE USERS AND EMPLOYEE SPENDS.",
-   "latency": 62.3,
-   "lane": "fast"
-  },
-  {
-   "id": "aa1b02f439fa0050",
-   "time": "2026-11-26T14:47:46+05:30",
-   "headline": "BRENT FUTURES FALL 1% TO $93.65 A BARREL",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10167",
-   "section": "macro",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Energy",
-    "Aviation"
-   ],
-   "impact": 10,
-   "confidence": 20,
-   "category": "Commodity Price",
-   "action": "Monitor crude-linked sectors for intraday volatility, but no specific stock action is indicated.",
-   "reason": [
-    "Global crude price movement is a broad macro signal.",
-    "No specific Indian listed company is named or directly impacted in a material way for individual stock trading."
-   ],
-   "risks": [
-    "Sudden reversal in oil prices could affect sentiment.",
-    "Indirect impact on fuel costs for various sectors."
-   ],
-   "plain": "Global oil prices dropped slightly to about 93 dollars a barrel.",
-   "why": "This is a general market update that does not point to a specific company's performance or a clear trading signal for individual stocks.",
-   "check": "",
-   "original": "BRENT FUTURES FALL 1% TO $93.65 A BARREL",
-   "latency": 73.0,
-   "lane": "fast"
   }
  ]
 }
