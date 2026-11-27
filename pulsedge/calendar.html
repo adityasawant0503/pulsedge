@@ -190,6 +190,19 @@ a.hl:hover{text-decoration:underline}
 .ev{font:700 9.5px/1.55 var(--mono);letter-spacing:.04em;border-radius:4px;padding:0 4px;background:var(--panel);border:1px solid var(--line);color:var(--fg);white-space:nowrap;flex:none}
 .ev.rbi,.ev.fed,.ev.budget{background:var(--amber-soft);border-color:#f59e0b66;color:var(--amber-l)}
 .ev.expiry,.ev.board{color:var(--mute)}
+.ev.world{color:var(--pur-l);border-color:var(--pur-edge);background:var(--pur-soft)}
+.ev.india{color:var(--amber-l);border-color:#f59e0b55}
+.ev.more{color:var(--mute)}
+/* top stories now */
+.topnow{padding:14px 16px;margin-top:4px;display:grid;gap:10px}
+.topnow .uph h2{font-size:16px}
+.tops{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(270px,1fr);gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:4px;scrollbar-width:thin}
+.tops>article{scroll-snap-align:start;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--panel2);display:grid;gap:6px;align-content:start}
+.tops .sh{font-size:11.5px}
+.tops .hl{font-size:14px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.tops .why{font-size:12.5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.reg{font:700 10.5px/1.4 var(--mono);letter-spacing:.05em;border-radius:4px;padding:1px 6px;border:1px solid var(--line);color:var(--mute)}
+.reg.world{color:var(--pur-l);border-color:var(--pur-edge)}.reg.econ{color:var(--amber-l);border-color:#f59e0b55}
 .ev.results{background:var(--green-soft);border-color:#22c55e55;color:var(--green-l)}
 .ev.ex{color:var(--pur-l);border-color:var(--pur-edge)}
 .cell.fut.has-ev{opacity:1;cursor:pointer;border-style:dashed}
@@ -252,16 +265,19 @@ a.evn:hover{text-decoration:underline}
 <main class="wrap">
   <section class="head">
     <h1>News calendar</h1>
-    <p class="lede" id="lede">Every day's market news on one page, and the dates ahead: results, dividends, RBI and Fed decisions, F&amp;O expiry. Hover over a day for the brief, or tap it to see each story, why it mattered, and how the stocks moved on the day and since.</p>
+    <p class="lede" id="lede">Every day's market news on one page, India and the world, and the dates ahead: results, dividends, RBI and Fed decisions, US and China data, F&amp;O expiry. Hover over a day for the brief, or tap it to see each story, why it mattered, and how the stocks moved on the day and since.</p>
     <div class="ctl">
       <div class="mnav"><button class="nb" id="prev" type="button" aria-label="Previous month">‹</button><b id="mname">…</b><button class="nb" id="next" type="button" aria-label="Next month">›</button></div>
       <div class="tabs" role="tablist" aria-label="Whose news">
         <button class="tab" role="tab" id="v-all" data-v="all" aria-selected="true">Market</button>
+        <button class="tab" role="tab" id="v-world" data-v="world" aria-selected="false">World</button>
         <button class="tab" role="tab" id="v-mine" data-v="mine" aria-selected="false">My stocks<span class="n" id="mine-n"></span></button>
       </div>
     </div>
     <div class="kpis" id="kpis" aria-live="polite"></div>
   </section>
+
+  <section class="card topnow" id="top" aria-labelledby="top-t" hidden></section>
 
   <div class="main">
     <section class="card cal" aria-labelledby="mname">
@@ -310,7 +326,7 @@ a.evn:hover{text-decoration:underline}
   function short(n){return String(n||"").replace(/\s+(Limited|Ltd\.?|Industries Limited)$/i,"")}
 
   var params=new URLSearchParams(location.search);
-  var S={idx:null,months:[],month:null,data:null,cache:{},view:params.get("v")==="mine"?"mine":"all",sel:params.get("d")||null,
+  var S={idx:null,months:[],month:null,data:null,cache:{},view:["mine","world"].indexOf(params.get("v"))>=0?params.get("v"):"all",sel:params.get("d")||null,
          filter:"all",shown:20,mode:"live",hol:{},live:{},liveAt:0,newsMonths:[],ev:[],evDay:{},evNames:{},evShown:12,upShown:12};
   var hold=[];
   function readHold(){try{hold=(JSON.parse(store("pe_hold")||"[]")||[]).map(function(h){return String(h.s||"").toUpperCase()}).filter(Boolean)}catch(e){hold=[]}}
@@ -319,15 +335,15 @@ a.evn:hover{text-decoration:underline}
 
   // ---------- prices: the close before a story, the first close after it, and the latest ----------
   // The close before the story is the last session that ended before it came out (NSE closes at 15:30 IST).
-  function baseIdx(t){
-    var d=t.slice(0,10),hm=t.slice(11,16),b=-1,ss=S.data.sessions;
+  function baseIdx(t,D){
+    var d=t.slice(0,10),hm=t.slice(11,16),b=-1,ss=(D||S.data).sessions;
     for(var i=0;i<ss.length;i++){if(ss[i]<d||(ss[i]===d&&hm>="15:30"))b=i;else break}
     return b;
   }
-  function moves(sym,t){
-    var xs=S.data.px[sym];if(!xs)return null;
-    var b=baseIdx(t);if(b<0||!xs[b])return null;
-    var p0=xs[b],ss=S.data.sessions,r={base:ss[b]};
+  function moves(sym,t,D){
+    D=D||S.data;var xs=D.px[sym];if(!xs)return null;
+    var b=baseIdx(t,D);if(b<0||!xs[b])return null;
+    var p0=xs[b],ss=D.sessions,r={base:ss[b]};
     if(xs[b+1]){r.day=xs[b+1]/p0-1;r.dayOn=ss[b+1]}
     var lp=S.live[sym],last=S.idx&&S.idx.last||{};
     if(lp){r.since=lp/p0-1;r.live=true}
@@ -357,6 +373,7 @@ a.evn:hover{text-decoration:underline}
   function items(){
     var it=S.data?S.data.items:[];
     if(S.view==="mine")it=it.filter(function(r){return r.s.some(isMine)});
+    else if(S.view==="world")it=it.filter(function(r){return r.c==="global"||r.c==="macro"});
     return it;
   }
   function byDay(){var o={};items().forEach(function(r){(o[r.t.slice(0,10)]=o[r.t.slice(0,10)]||[]).push(r)});return o}
@@ -380,18 +397,23 @@ a.evn:hover{text-decoration:underline}
   }
 
   // ---------- scheduled events (data/events.json) ----------
-  var EVK={rbi:"RBI",fed:"FED",budget:"BUDGET",expiry:"EXPIRY",results:"RESULTS",board:"MEETING",ex:"EX-DATE"};
-  var EVO={budget:0,rbi:1,fed:2,expiry:3,results:4,ex:5,board:6};
-  function evs(d){var l=S.evDay[d]||[];return S.view==="mine"?l.filter(function(e){return !e.s||isMine(e.s)}):l}
+  var EVK={rbi:"RBI",fed:"FED",budget:"BUDGET",expiry:"EXPIRY",results:"RESULTS",board:"MEETING",ex:"EX-DATE",world:"WORLD",india:"INDIA DATA"};
+  var EVO={budget:0,rbi:1,fed:2,world:3,india:3,expiry:4,results:5,ex:6,board:7};
+  // Market: company dates and the big market-wide ones; World: every market-wide date, minor data included;
+  // My stocks: your companies' dates and the big market-wide ones
+  function evOk(e){return S.view==="mine"?(e.s?isMine(e.s):e.p!==2):S.view==="world"?!e.s:(!!e.s||e.p!==2)}
+  function evs(d){return (S.evDay[d]||[]).filter(evOk)}
+  function tag(e){return e.tg||EVK[e.k]||String(e.k).toUpperCase()}
+  function evShort(e){return e.s?e.s+" "+tag(e).toLowerCase():e.k==="fed"?"Fed decision":e.k==="rbi"?"RBI policy":e.tg||e.t}
   function evName(e){return short(S.evNames[e.s]||(S.data&&S.data.names||{})[e.s]||e.s)}
   function evOrder(a,b){return (b.s&&isMine(b.s))-(a.s&&isMine(a.s))||EVO[a.k]-EVO[b.k]||(a.s<b.s?-1:1)}
   function evRow(e){
     var li=el("li","evr"+(e.s&&isMine(e.s)?" mine":""));
-    li.appendChild(el("span","ev "+e.k,EVK[e.k]||e.k.toUpperCase()));
+    li.appendChild(el("span","ev "+e.k,tag(e)));
     var b=el("div");
     if(e.s){var a=el("a","evn",evName(e));a.href="terminal.html?s="+encodeURIComponent(e.s);a.title="Open "+e.s+" in the terminal";
       b.append(a,el("span","mono"," "+e.s),document.createTextNode(" · "+e.t.replace(/^Ex-date: /,"")))}
-    else b.appendChild(el("b",null,e.t));
+    else{b.appendChild(el("b",null,e.t));if(e.tm)b.appendChild(el("span","mono"," · "+e.tm+" IST"))}
     if(e.x)b.appendChild(el("p","evx",e.x));
     li.appendChild(b);return li;
   }
@@ -406,7 +428,7 @@ a.evn:hover{text-decoration:underline}
   // the next 45 days, from today whatever month is open
   function upcoming(){
     var t=ymd(ist()),end=ymd(new Date(ist().getTime()+45*864e5)),days={};
-    S.ev.forEach(function(e){if(e.d<t||e.d>end)return;if(S.view==="mine"&&e.s&&!isMine(e.s))return;(days[e.d]=days[e.d]||[]).push(e)});
+    S.ev.forEach(function(e){if(e.d<t||e.d>end||!evOk(e))return;(days[e.d]=days[e.d]||[]).push(e)});
     return days;
   }
   function goDay(d){
@@ -418,7 +440,7 @@ a.evn:hover{text-decoration:underline}
   }
   function renderUpcoming(){
     var X=$("upcoming");X.textContent="";
-    var hd=el("div","uph"),h=el("h2",null,S.view==="mine"?"Coming up for your stocks":"Coming up");h.id="up-t";hd.appendChild(h);
+    var hd=el("div","uph"),h=el("h2",null,S.view==="mine"?"Coming up for your stocks":S.view==="world"?"Coming up around the world":"Coming up");h.id="up-t";hd.appendChild(h);
     var days=upcoming(),keys=Object.keys(days).sort();
     var forCal=[];keys.forEach(function(d){days[d].forEach(function(e){if(!e.s||isMine(e.s))forCal.push(e)})});
     if(forCal.length){
@@ -428,6 +450,7 @@ a.evn:hover{text-decoration:underline}
     }
     X.appendChild(hd);
     X.appendChild(el("p","lede",S.view==="mine"?"Results, dividends and other dates for the stocks in My stocks over the next 45 days, with the dates that move the whole market.":
+      S.view==="world"?"The next 45 days: central bank decisions, US, China and India economic data, and why each matters for Indian markets. Times are IST.":
       "The next 45 days: RBI and Fed decisions, the Budget, F&O expiry, and Nifty 500 results, board meetings and ex-dates. Switch to My stocks for yours."));
     if(S.view==="mine"&&!hold.length){X.appendChild(noHold());}
     if(!keys.length){X.appendChild(el("p","empty","Nothing scheduled in the next 45 days yet. Companies announce results dates two to three weeks ahead."));return}
@@ -477,7 +500,7 @@ a.evn:hover{text-decoration:underline}
     $("mname").textContent=monthName(S.month);
     var i=S.months.indexOf(S.month);
     $("prev").disabled=i<=0;$("next").disabled=i<0||i>=S.months.length-1;
-    $("v-all").setAttribute("aria-selected",S.view==="all");$("v-mine").setAttribute("aria-selected",S.view==="mine");
+    ["all","world","mine"].forEach(function(v){$("v-"+v).setAttribute("aria-selected",S.view===v)});
     $("mine-n").textContent=hold.length?String(hold.length):"";
     var days=byDay(),lv=levels(days),today=ymd(ist());
     if(!S.sel||S.sel.slice(0,7)!==S.month){
@@ -488,8 +511,8 @@ a.evn:hover{text-decoration:underline}
     var first=parse(S.month+"-01"),lead=(first.getDay()+6)%7,n=new Date(first.getFullYear(),first.getMonth()+1,0).getDate();
     for(var k=0;k<lead;k++)g.appendChild(el("span","cell pad"));
     for(var day=1;day<=n;day++)g.appendChild(cell(S.month+"-"+pad(day),days,lv,today));
-    renderLegend();renderDay();renderUpcoming();renderStrip();renderMovers();
-    var u=new URL(location.href);u.searchParams.set("m",S.month);if(S.view==="mine")u.searchParams.set("v","mine");else u.searchParams.delete("v");u.searchParams.set("d",S.sel);
+    renderTop();renderLegend();renderDay();renderUpcoming();renderStrip();renderMovers();
+    var u=new URL(location.href);u.searchParams.set("m",S.month);if(S.view!=="all")u.searchParams.set("v",S.view);else u.searchParams.delete("v");u.searchParams.set("d",S.sel);
     history.replaceState(null,"",u.pathname+u.search+u.hash);
   }
 
@@ -515,7 +538,9 @@ a.evn:hover{text-decoration:underline}
     }
     if(ev.length){
       var row=el("span","evs");
-      ev.filter(function(e){return !e.s}).sort(evOrder).forEach(function(e){row.appendChild(el("span","ev "+e.k,EVK[e.k]))});
+      var mk=ev.filter(function(e){return !e.s}).sort(evOrder);
+      mk.slice(0,3).forEach(function(e){row.appendChild(el("span","ev "+e.k,tag(e)))});
+      if(mk.length>3)row.appendChild(el("span","ev more","+"+(mk.length-3)));
       var st=ev.filter(function(e){return e.s}).sort(evOrder);
       if(st.length&&S.view==="mine"){row.appendChild(el("span","ev stk "+st[0].k,st[0].s+(st.length>1?" +"+(st.length-1):"")))}
       else if(st.length){
@@ -527,7 +552,7 @@ a.evn:hover{text-decoration:underline}
       b.appendChild(row);
     }
     var lbl=dayLong(d)+": "+(list.length?stories(list.length)+(act?", "+act+" Act":""):fut?"":"no stories")+(nx!=null?", Nifty "+pct(nx):"")+
-      (ev.length?(list.length||!fut?", ":"")+ev.length+" scheduled ("+ev.map(function(e){return e.s?e.s+" "+EVK[e.k].toLowerCase():EVK[e.k]}).slice(0,4).join(", ")+")":"");
+      (ev.length?(list.length||!fut?", ":"")+ev.length+" scheduled ("+ev.map(evShort).slice(0,4).join(", ")+")":"");
     b.setAttribute("aria-label",lbl);
     b.addEventListener("click",function(){if(fut&&!ev.length)return;S.evShown=12;S.sel=d;S.shown=20;S.filter="all";hideTip();render();if(matchMedia("(max-width:980px)").matches)$("day").scrollIntoView({behavior:"smooth",block:"start"})});
     b.addEventListener("mouseenter",function(){if(matchMedia("(hover:hover)").matches&&(!fut||ev.length))showTip(b,d,list,nx)});
@@ -545,7 +570,7 @@ a.evn:hover{text-decoration:underline}
   function renderLegend(){
     var L=$("legend");L.textContent="";
     var sc=el("span","scale");[0,1,2,3,4].forEach(function(l){sc.appendChild(el("i",l?"l"+l:""))});
-    L.append(el("span",null,S.view==="mine"?"Biggest story about your stocks: none":"News flow, against the rest of the month: none"),sc,el("span",null,S.view==="mine"?"major":"busiest"));
+    L.append(el("span",null,S.view==="mine"?"Biggest story about your stocks: none":S.view==="world"?"World news flow, against the rest of the month: none":"News flow, against the rest of the month: none"),sc,el("span",null,S.view==="mine"?"major":"busiest"));
     L.appendChild(el("span",null,"·  2A = two Act stories  ·  ±% = Nifty 50 that day  ·  dashed days: scheduled events ahead"));
   }
 
@@ -553,33 +578,65 @@ a.evn:hover{text-decoration:underline}
     var K=$("kpis");K.textContent="";
     function kpi(label,val,c){var d=el("div","kpi");d.append(el("small",null,label));var b=el("b",c||null,val);d.appendChild(b);K.appendChild(d)}
     if(S.newsMonths.indexOf(S.month)<0){                 // a month ahead: only what's scheduled
-      var sch=S.ev.filter(function(e){return e.d.slice(0,7)===S.month&&(S.view!=="mine"||!e.s||isMine(e.s))});
+      var sch=S.ev.filter(function(e){return e.d.slice(0,7)===S.month&&evOk(e)});
       kpi(S.view==="mine"?"Scheduled for you and the market":"Scheduled",String(sch.length));
       var rs=sch.filter(function(e){return e.k==="results"}).length;if(rs)kpi(S.view==="mine"?"Your results dates":"Results dates",String(rs));
       var nx0=sch.filter(function(e){return e.d>=ymd(ist())}).sort(function(a,b){return a.d<b.d?-1:a.d>b.d?1:evOrder(a,b)})[0];
       if(nx0){var same=sch.filter(function(e){return e.d===nx0.d&&e.s&&e.k===nx0.k}).length;
-        kpi("First up",(!nx0.s?nx0.t:S.view!=="mine"&&same>1?same+" "+(nx0.k==="results"?"results":nx0.k==="ex"?"ex-dates":"meetings"):nx0.s+" "+EVK[nx0.k].toLowerCase())+" · "+dayShort(nx0.d))}
+        kpi("First up",(!nx0.s?evShort(nx0):S.view!=="mine"&&same>1?same+" "+(nx0.k==="results"?"results":nx0.k==="ex"?"ex-dates":"meetings"):evShort(nx0))+" · "+dayShort(nx0.d))}
       return;
     }
     var n=S.data.nifty.filter(Boolean);
     if(n.length>1)kpi("Nifty 50 this month",pct(n[n.length-1]/n[0]-1),cls(n[n.length-1]/n[0]-1));
     var all=items(),act=all.filter(function(r){return r.v==="a"}).length;
-    kpi(S.view==="mine"?"Stories on your stocks":"Stories that mattered",String(all.length).replace(/\B(?=(\d{3})+(?!\d))/g,","));
+    kpi(S.view==="mine"?"Stories on your stocks":S.view==="world"?"World & economy stories":"Stories that mattered",String(all.length).replace(/\B(?=(\d{3})+(?!\d))/g,","));
     kpi("Act",String(act));
     var busy=Object.keys(days).sort(function(a,b){return days[b].length-days[a].length})[0];
     if(busy)kpi(S.view==="mine"?"Busiest day for you":"Busiest day",dayShort(busy)+" · "+days[busy].length);
-    var nextUp=S.ev.filter(function(e){return e.d>=ymd(ist())&&(S.view==="mine"?!e.s||isMine(e.s):!e.s)}).sort(function(a,b){return a.d<b.d?-1:a.d>b.d?1:evOrder(a,b)});
+    var nextUp=S.ev.filter(function(e){return e.d>=ymd(ist())&&evOk(e)&&(S.view==="mine"||!e.s)}).sort(function(a,b){return a.d<b.d?-1:a.d>b.d?1:evOrder(a,b)});
     var mineNext=nextUp.filter(function(e){return e.s})[0]||nextUp[0];
-    if(mineNext)kpi(S.view==="mine"&&mineNext.s?"Next for your stocks":"Next scheduled",(mineNext.s?mineNext.s+" "+EVK[mineNext.k].toLowerCase():EVK[mineNext.k]==="FED"?"Fed decision":EVK[mineNext.k]==="RBI"?"RBI policy":mineNext.t)+" · "+dayShort(mineNext.d));
+    if(mineNext)kpi(S.view==="mine"&&mineNext.s?"Next for your stocks":"Next scheduled",evShort(mineNext)+" · "+dayShort(mineNext.d));
     if(S.view==="mine"){var w=hold.filter(function(s){return all.some(function(r){return r.s.indexOf(s)>=0})}).length;kpi("Your stocks with news",w+" of "+hold.length)}
   }
 
+  // ---------- top stories now: the most important news of the last two days (India and the world) ----------
+  function ago(t){var m=Math.round((Date.now()-new Date(t+":00+05:30").getTime())/60000);return m<60?Math.max(m,1)+" min ago":m<1440?Math.round(m/60)+" h ago":dayShort(t.slice(0,10))}
+  function renderTop(){
+    var X=$("top"),lm=S.newsMonths[S.newsMonths.length-1],D=lm&&S.cache[lm];
+    if(!lm){X.hidden=true;return}
+    if(!D){load(lm).then(function(){renderTop()});return}
+    var cut=ymd(new Date(ist().getTime()-2*864e5));
+    var list=D.items.filter(function(r){return r.t.slice(0,10)>=cut&&(S.view==="world"?r.c==="global"||r.c==="macro":S.view==="mine"?r.s.some(isMine):true)});
+    list.sort(function(a,b){return (b.v==="a")-(a.v==="a")||(b.m||0)-(a.m||0)||(a.t<b.t?1:-1)});
+    var seen={},pick=[];
+    list.forEach(function(r){var k=r.s.length?r.s.slice(0,2).join(","):r.h.slice(0,40);if(seen[k]||pick.length>=(S.mode==="sample"?3:6))return;seen[k]=1;pick.push(r)});
+    if(!pick.length){X.hidden=true;return}
+    X.hidden=false;X.textContent="";
+    var hd=el("div","uph"),h=el("h2",null,S.view==="world"?"Top world stories now":S.view==="mine"?"Top stories on your stocks now":"Top stories now");h.id="top-t";
+    hd.append(h,el("span","dsum","The most important news of the last two days, India and the world. Updated every 15 minutes."));X.appendChild(hd);
+    var row=el("div","tops");
+    pick.forEach(function(r){
+      var a=el("article"),sh=el("div","sh");
+      sh.appendChild(el("span","reg "+(r.c==="global"?"world":r.c==="macro"?"econ":""),r.c==="global"?"WORLD":r.c==="macro"?"ECONOMY":"INDIA"));
+      if(r.v==="a")sh.appendChild(el("span","call act","ACT"));
+      sh.appendChild(el("span",null,ago(r.t)+(r.src?" · "+r.src:"")));
+      a.appendChild(sh);
+      var hl=r.u&&/^https?:\/\//.test(r.u)?el("a","hl",r.h):el("span","hl",r.h);
+      if(hl.tagName==="A"){hl.href=r.u;hl.target="_blank";hl.rel="noopener noreferrer"}
+      a.appendChild(hl);
+      if(r.w)a.appendChild(el("p","why",r.w));
+      if(r.s.length)a.appendChild(moveChips(r,2,D));
+      row.appendChild(a);
+    });
+    X.appendChild(row);
+  }
+
   // ---------- the day panel ----------
-  function moveChips(r,max){
+  function moveChips(r,max,D){
     var box=el("div","mv"),syms=r.s.slice();
     syms.sort(function(a,b){return isMine(b)-isMine(a)});
     syms.slice(0,max||3).forEach(function(sym){
-      var mv=moves(sym,r.t),a=el("a","mvx"+(isMine(sym)?" mine":""));a.href="terminal.html?s="+encodeURIComponent(sym);
+      var mv=moves(sym,r.t,D),a=el("a","mvx"+(isMine(sym)?" mine":""));a.href="terminal.html?s="+encodeURIComponent(sym);
       a.title="Open "+sym+" in the terminal";a.appendChild(el("b",null,sym));
       if(mv){
         if(mv.day!=null){a.append(el("small",null,"on the day"),el("span",cls(mv.day),pct(mv.day)))}
@@ -675,7 +732,7 @@ a.evn:hover{text-decoration:underline}
     if(ev.length&&!list.length&&d>ymd(ist()))bits=[S.hol[d]?"NSE holiday":"Ahead"];
     if(ev.length)bits.push(ev.length+" scheduled");
     tip.appendChild(el("div","ts",bits.join(" · ")));
-    ev.slice(0,4).forEach(function(e){var r=el("div","tev");r.append(el("span","ev "+e.k,EVK[e.k]),el("span",null,e.s?evName(e)+" · "+e.t.replace(/^Ex-date: /,""):e.t));tip.appendChild(r)});
+    ev.slice(0,4).forEach(function(e){var r=el("div","tev");r.append(el("span","ev "+e.k,tag(e)),el("span",null,e.s?evName(e)+" · "+e.t.replace(/^Ex-date: /,""):e.t+(e.tm?" · "+e.tm:"")));tip.appendChild(r)});
     if(ev.length>4)tip.appendChild(el("div","ft","and "+(ev.length-4)+" more"));
     if(list.length){
       var ul=el("ul");
@@ -756,7 +813,7 @@ a.evn:hover{text-decoration:underline}
 
   // ---------- what moved most after its news ----------
   function renderMovers(){
-    var X=$("movers");X.textContent="";X.hidden=S.newsMonths.indexOf(S.month)<0;if(X.hidden)return;
+    var X=$("movers");X.textContent="";X.hidden=S.newsMonths.indexOf(S.month)<0||S.view==="world";if(X.hidden)return;
     var h=el("h2",null,S.view==="mine"?"How your stocks moved after their news":"What moved most after its news");h.id="movers-t";X.appendChild(h);
     X.appendChild(el("p","lede","For each stock, its biggest story of the month and the change from the close before it to the latest close. A guide to what happened next, not proof the news caused it."));
     if(S.view==="mine"&&S.mode==="sample"){X.appendChild(el("p","empty","Start the free trial to see your stocks here."));return}
@@ -799,7 +856,7 @@ a.evn:hover{text-decoration:underline}
   }
   $("prev").onclick=function(){go(S.months[S.months.indexOf(S.month)-1])};
   $("next").onclick=function(){go(S.months[S.months.indexOf(S.month)+1])};
-  [$("v-all"),$("v-mine")].forEach(function(b){b.onclick=function(){S.view=b.dataset.v;S.sel=null;S.shown=20;S.filter="all";render()}});
+  [$("v-all"),$("v-world"),$("v-mine")].forEach(function(b){b.onclick=function(){S.view=b.dataset.v;S.sel=null;S.shown=20;S.filter="all";render()}});
   addEventListener("storage",function(e){if(e.key==="pe_hold"){readHold();render()}});
   addEventListener("keydown",function(e){if(e.key==="Escape")hideTip()});
 
