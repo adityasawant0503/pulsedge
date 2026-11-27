@@ -1,7 +1,55 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-27T14:05:53+05:30",
+ "updated": "2026-11-27T14:45:23+05:30",
  "items": [
+  {
+   "id": "d6c0ce8d5a312740",
+   "time": "2026-11-27T14:44:36+05:30",
+   "headline": "INTERNATIONAL GEMOLOGICAL INSTITUTE LTD: PROMOTER BCP ASIA II TOPCO PTE. LTD. SELLS 67,16,031 EQUITY SHARES TO ACHIEVE MINIMUM PUBLIC SHAREHOLDING; PROMOTER HOLDING REDUCED TO 75% AND PUBLIC SHAREHOLDING INCREASED TO 25%",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10260",
+   "section": "news",
+   "call": "watch",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "IGIL",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Jewellery",
+    "Consumer"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "Corporate Action",
+   "action": "Monitor opening price action for immediate selling pressure from the large block trade.",
+   "reason": [
+    "Promoter sold a large block of shares to meet regulatory minimum public shareholding requirements.",
+    "This increases the number of shares available for trading, which can create short-term supply pressure."
+   ],
+   "risks": [
+    "Market may interpret the sale as a lack of promoter confidence, though it is likely a compliance necessity.",
+    "Liquidity spike could lead to volatility in the first few trading hours."
+   ],
+   "plain": "The main owner sold a large number of shares to meet a legal rule about how many shares the public must own.",
+   "why": "More shares are now available for sale, which can push the price down slightly in the short term.",
+   "check": "Look at the trading volume in the first hour to see if the selling is heavy.",
+   "original": "INTERNATIONAL GEMOLOGICAL INSTITUTE LTD: PROMOTER BCP ASIA II TOPCO PTE. LTD. SELLS 67,16,031 EQUITY SHARES TO ACHIEVE MINIMUM PUBLIC SHAREHOLDING; PROMOTER HOLDING REDUCED TO 75% AND PUBLIC SHAREHOLDING INCREASED TO 25%",
+   "latency": 47.8,
+   "lane": "fast",
+   "quotes": {
+    "IGIL": {
+     "px": 430.8,
+     "prev": 423.2,
+     "move": 1.8,
+     "at": "2026-11-27T14:45:23+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "20081ae6c948eecb",
    "time": "2026-11-27T14:05:12+05:30",
@@ -1425,39 +1473,6 @@
    "check": "",
    "original": "BRENT FUTURES FALL 1% TO $93.65 A BARREL",
    "latency": 73.0,
-   "lane": "fast"
-  },
-  {
-   "id": "fd84b5c65acf8f92",
-   "time": "2026-11-26T14:44:12+05:30",
-   "headline": "PATEL ENGINEERING LIMITED: CO. DECLARED LOWEST BIDDER FOR ₹1,441.04 CRORE GONGRI HYDRO ELECTRIC PROJECT IN ARUNACHAL PRADESH; PROJECT TO BE COMPLETED IN 48 MONTHS; SCOPE INCLUDES DIVERSIONS, POWERHOUSE, AND ELECTRO-MECHA",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10166",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Infrastructure"
-   ],
-   "impact": 0,
-   "confidence": 0,
-   "category": "Corporate Action",
-   "action": "No immediate action required as no listed entity is directly named.",
-   "reason": [
-    "No listed company symbol provided in the candidate list.",
-    "News pertains to an unlisted or non-candidate entity (Patel Engineering)."
-   ],
-   "risks": [
-    "Potential indirect impact on infrastructure peers if market sentiment shifts.",
-    "Lack of specific stock linkage prevents actionable trading signals."
-   ],
-   "plain": "A company named Patel Engineering won a large hydroelectric project contract in Arunachal Pradesh.",
-   "why": "This news does not directly affect any specific listed stock in your watchlist, so it is safe to skip.",
-   "check": "",
-   "original": "PATEL ENGINEERING LIMITED: CO. DECLARED LOWEST BIDDER FOR ₹1,441.04 CRORE GONGRI HYDRO ELECTRIC PROJECT IN ARUNACHAL PRADESH; PROJECT TO BE COMPLETED IN 48 MONTHS; SCOPE INCLUDES DIVERSIONS, POWERHOUSE, AND ELECTRO-MECHA",
-   "latency": 17.3,
    "lane": "fast"
   }
  ]
