@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PulsEdge routine covers, bold</title>
+<!-- Two 1080x1920 reel covers (#A five apps to one screen, #B two-minute timer). Key content inside y 285..1635. No third-party logos: the app tiles are generic. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700;800;900&family=Source+Serif+4:ital,wght@1,600&display=swap">
+<style>
+:root{--ink:#FFFFFF;--mute:#B9B3C9;--gold:#F2C76B;--gold2:#FFD98A;--lav:#B79CFF;--red:#FF4D5E}
+*{box-sizing:border-box}
+html,body{margin:0;background:#07060A}
+.c{position:relative;width:1080px;height:1920px;overflow:hidden;color:var(--ink);font-family:"Hanken Grotesk",sans-serif;-webkit-font-smoothing:antialiased;background:#07060A}
+.bg{position:absolute;inset:0;background:radial-gradient(45% 28% at 70% 66%,#6c43f0aa,transparent 70%),radial-gradient(40% 25% at 20% 30%,#F2C76B22,transparent 70%),linear-gradient(180deg,#0B0910,#07060A)}
+.grain{position:absolute;inset:0;opacity:.07;mix-blend-mode:overlay}
+.brand{position:absolute;left:72px;top:330px;display:flex;align-items:center;gap:14px;font:800 30px/1 "Hanken Grotesk",sans-serif;letter-spacing:.2em}
+.brand i{width:16px;height:16px;border-radius:50%;background:var(--lav);box-shadow:0 0 0 6px #B79CFF33,0 0 24px var(--lav)}
+.brand b{font-weight:700;color:var(--mute);letter-spacing:.14em}
+/* A */
+#A .big{position:absolute;left:66px;top:400px;font:900 300px/0.86 "Hanken Grotesk",sans-serif;letter-spacing:-.06em}
+#A .strike{position:absolute;left:52px;top:520px;width:700px;height:26px;background:var(--gold);border-radius:13px;transform:rotate(-8deg);box-shadow:0 0 50px #F2C76B88}
+#A .to{position:absolute;left:72px;top:690px;font:900 150px/1 "Hanken Grotesk",sans-serif;letter-spacing:-.05em;color:var(--gold2)}
+#A .to span{color:var(--ink)}
+.tiles{position:absolute;left:60px;top:960px;width:420px;height:520px}
+.tile{position:absolute;width:150px;height:150px;border-radius:38px;display:flex;align-items:center;justify-content:center;box-shadow:0 20px 50px #000a}
+.tile svg{width:76px;height:76px}
+.badge{position:absolute;right:-14px;top:-14px;min-width:58px;height:58px;padding:0 12px;border-radius:29px;background:var(--red);color:#fff;font:800 30px/58px "Hanken Grotesk",sans-serif;text-align:center;box-shadow:0 0 0 6px #07060A}
+.arrow{position:absolute;left:462px;top:1150px;font:900 110px/1 "Hanken Grotesk",sans-serif;color:var(--gold2)}
+.phone{position:absolute;left:600px;top:960px;width:410px;height:500px;border-radius:52px;border:10px solid #1d1a26;overflow:hidden;background:#0b0a10;box-shadow:0 0 0 2px #B79CFF88,0 50px 140px -30px #6c43f0,0 30px 80px #000}
+.phone img{position:absolute;left:0;top:-96px;width:390px;height:auto}
+.chk{position:absolute;left:640px;top:912px;z-index:3;background:var(--gold);color:#120d00;font:800 26px/1 "Hanken Grotesk",sans-serif;letter-spacing:.06em;padding:10px 14px;border-radius:12px}
+.cta{position:absolute;left:72px;top:1500px;display:inline-flex;align-items:center;gap:18px;background:var(--ink);color:#07060A;font:800 46px/1 "Hanken Grotesk",sans-serif;border-radius:999px;padding:26px 44px;box-shadow:0 20px 60px -10px #B79CFF99}
+.cta i{display:inline-block;width:0;height:0;border-left:26px solid #07060A;border-top:16px solid transparent;border-bottom:16px solid transparent}
+/* B */
+#B .q{position:absolute;left:0;right:0;top:410px;text-align:center;font:800 76px/1.05 "Hanken Grotesk",sans-serif;letter-spacing:-.03em}
+#B .q em{font:italic 600 80px/1 "Source Serif 4",Georgia,serif;color:var(--gold2);letter-spacing:-.01em}
+#B .ring{position:absolute;left:50%;top:640px;width:700px;height:700px;margin-left:-350px}
+#B .time{position:absolute;left:0;right:0;top:850px;text-align:center;font:900 250px/1 "Hanken Grotesk",sans-serif;letter-spacing:-.06em}
+#B .unit{position:absolute;left:0;right:0;top:1105px;text-align:center;font:800 40px/1 "Hanken Grotesk",sans-serif;letter-spacing:.3em;color:var(--gold2)}
+#B .steps{position:absolute;left:0;right:0;top:1400px;display:flex;justify-content:center;gap:14px}
+#B .steps span{font:800 30px/1 "Hanken Grotesk",sans-serif;letter-spacing:.04em;border:2px solid #ffffff44;border-radius:999px;padding:14px 20px;color:var(--ink)}
+#B .steps span.on{background:var(--gold);border-color:var(--gold);color:#120d00}
+#B .cta2{position:absolute;left:0;right:0;top:1500px;text-align:center}
+#B .cta2 span{display:inline-flex;align-items:center;gap:18px;background:var(--ink);color:#07060A;font:800 46px/1 "Hanken Grotesk",sans-serif;border-radius:999px;padding:26px 44px;box-shadow:0 20px 60px -10px #B79CFF99}
+#B .cta2 i{display:inline-block;width:0;height:0;border-left:26px solid #07060A;border-top:16px solid transparent;border-bottom:16px solid transparent}
+</style>
+</head>
+<body>
+<div class="c" id="A">
+  <div class="bg"></div>
+  <svg class="grain" width="1080" height="1920"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/></filter><rect width="1080" height="1920" filter="url(#n)"/></svg>
+  <div class="brand"><i></i>PULSEDGE <b>· BEFORE 9:15</b></div>
+  <div class="big">5 apps</div>
+  <div class="strike"></div>
+  <div class="to">→ 1 <span>screen.</span></div>
+  <div class="tiles">
+    <div class="tile" style="left:0;top:20px;background:#1f2a44;transform:rotate(-10deg)"><svg viewBox="0 0 24 24" fill="none" stroke="#7fb0ff" stroke-width="2.2"><path d="M3 17l5-5 4 3 7-8"/><path d="M15 7h4v4"/></svg><span class="badge">99+</span></div>
+    <div class="tile" style="left:210px;top:0;background:#3b1f2a;transform:rotate(8deg)"><svg viewBox="0 0 24 24" fill="none" stroke="#ff8a95" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg><span class="badge">37</span></div>
+    <div class="tile" style="left:60px;top:200px;background:#1e3b2f;transform:rotate(6deg)"><svg viewBox="0 0 24 24" fill="none" stroke="#5be3a6" stroke-width="2.2"><path d="M6 4v16M6 8h3v8H6M15 6v14M15 10h3v6h-3"/></svg><span class="badge">12</span></div>
+    <div class="tile" style="left:250px;top:200px;background:#3a3218;transform:rotate(-7deg)"><svg viewBox="0 0 24 24" fill="none" stroke="#ffd166" stroke-width="2.2"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M10 20a2 2 0 0 0 4 0"/></svg><span class="badge">48</span></div>
+    <div class="tile" style="left:140px;top:380px;background:#2a2340;transform:rotate(12deg)"><svg viewBox="0 0 24 24" fill="none" stroke="#c3b0ff" stroke-width="2.2"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 21 12z"/></svg><span class="badge">7</span></div>
+  </div>
+  <div class="arrow">→</div>
+  <div class="phone"><img src="cap/pm.png" alt=""></div><span class="chk">✓ ALL IN ONE</span>
+  <div class="cta"><i></i>The 2-minute routine</div>
+</div>
+
+<div class="c" id="B">
+  <div class="bg"></div>
+  <svg class="grain" width="1080" height="1920"><filter id="n2"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/></filter><rect width="1080" height="1920" filter="url(#n2)"/></svg>
+  <div class="brand"><i></i>PULSEDGE <b>· MARKET MORNING</b></div>
+  <div class="q">Your whole market morning<br><em>before the bell.</em></div>
+  <svg class="ring" viewBox="0 0 700 700">
+    <defs><linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD98A"/><stop offset="1" stop-color="#B79CFF"/></linearGradient></defs>
+    <circle cx="350" cy="350" r="300" fill="none" stroke="#ffffff14" stroke-width="34"/>
+    <circle cx="350" cy="350" r="300" fill="none" stroke="url(#gg)" stroke-width="34" stroke-linecap="round" stroke-dasharray="1414 1885" transform="rotate(-90 350 350)"/>
+    <circle cx="350" cy="50" r="22" fill="#FFD98A"/>
+  </svg>
+  <div class="time">2:00</div>
+  <div class="unit">MINUTES</div>
+  <div class="steps"><span class="on">Pre-market</span><span>Act now</span><span>Big money</span><span>Ask</span></div>
+  <div class="cta2"><span><i></i>See the routine</span></div>
+</div>
+</body>
+</html>
