@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T09:11+05:30",
+ "updated": "2026-11-27T09:15+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -1147,20 +1147,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "URBANCO": {
-   "summary": "PulsEdge flagged that Urban Company has launched its own branded air conditioners, called Native AC, backed by a five‑year unconditional warranty. The move expands the company from services into product sales, entering a market with strong existing players.",
-   "why": "Shareholders should note that the new product line could add a fresh revenue stream, but it also brings exposure to a highly competitive appliance market.",
-   "upside": "Strong demand for the Native AC could generate additional earnings and diversify the company’s income sources.",
-   "downside": "Intense competition from established AC manufacturers may limit sales and affect profitability.",
+   "summary": "Urban Company has launched its own brand of air conditioners called Native AC. The company offers a five-year unconditional warranty with these new products.",
+   "why": "This move allows the company to earn money from selling products, not just services, which could help it grow in the future.",
+   "upside": "Selling new products can bring in extra money and make the company more famous.",
+   "downside": "There is high competition in the AC market from established players, and the new product might not sell well.",
    "watch": [
-    "Initial sales figures and market acceptance of Native AC",
-    "Competitive response from major air‑conditioner brands",
-    "Any updates on warranty claims or product performance"
+    "How well the Native AC units sell compared to established brands",
+    "Whether the five-year warranty leads to high repair costs",
+    "General stock price movements without specific news"
    ],
-   "about": "",
-   "basis": "9aea06bf75fc",
-   "items": 5,
-   "updated": "2026-11-27T08:30+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Urban Company is a consumer services company listed in the Nifty 500 index.",
+   "basis": "c85e3fcb8415",
+   "items": 4,
+   "updated": "2026-11-27T09:15+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "INFY": {
    "summary": "Infosys is riding a rally in Indian IT stocks while the sector faces headwinds from a stronger rupee and US tariff concerns, and the company recently earned a top‑level AI maturity certification.",
@@ -1272,6 +1272,22 @@
    "basis": "153fafa74cb1",
    "items": 2,
    "updated": "2026-11-27T08:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "BHARATCOAL": {
+   "summary": "Bharat Coking Coal Ltd. showed short‑term strength as its RSI indicator moved higher and trading volume spiked in recent sessions. The broader Oil & Gas sector also posted modest gains, up 0.3% in the last session.",
+   "why": "Shareholders watch these technical signals because they can precede price moves, affecting the value of their holdings.",
+   "upside": "If the upward RSI trend and elevated volume continue, the stock could attract more buying interest.",
+   "downside": "The RSI rise and volume surge may be short‑lived, and without supporting fundamentals the price could fall back.",
+   "watch": [
+    "RSI trend direction",
+    "Sustained trading volume",
+    "Sector index performance"
+   ],
+   "about": "Bharat Coking Coal Ltd. mines and supplies coking coal for steel production.",
+   "basis": "ca52fa760b66",
+   "items": 2,
+   "updated": "2026-11-27T09:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "COALINDIA": {

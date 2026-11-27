@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T09:11:09+05:30",
+ "updated": "2026-11-27T09:15:48+05:30",
  "summary": {
-  "calls": 2385,
-  "scored_calls": 1152,
+  "calls": 2386,
+  "scored_calls": 1153,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "b61aa9d93d4dc64b",
+   "symbol": "BHARATCOAL",
+   "time": "2026-11-27T08:54:46+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Bharat Coking Coal among 5 stocks showing RSI trending up",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/bharat-coking-coal-among-5-stocks-showing-rsi-trending-up/slideshow/136208088.cms",
+   "alert_px": 31.69,
+   "alert_move": 5.28,
+   "alert_at": "2026-11-27T09:15:31+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "8e4257e990ec3513",
    "symbol": "BIOCON",
