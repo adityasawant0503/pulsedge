@@ -1,7 +1,41 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-27T11:19:00+05:30",
+ "updated": "2026-11-27T11:29:00+05:30",
  "items": [
+  {
+   "id": "4afe721490db4b34",
+   "time": "2026-11-27T11:28:15+05:30",
+   "headline": "INDIA RUPEE DROPS 0.5% TO 92.8625/USD",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10239",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Currency",
+    "Macro"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "Market Colour",
+   "action": "Monitor currency-sensitive sectors like IT and Pharma for intraday volatility.",
+   "reason": [
+    "Routine daily currency fluctuation.",
+    "No specific company news or structural change."
+   ],
+   "risks": [
+    "Sustained rupee weakness could hurt importers.",
+    "IT sector earnings may face translation headwinds."
+   ],
+   "plain": "The Indian rupee lost a small amount of value against the US dollar today.",
+   "why": "This is a normal daily market movement that does not signal a specific problem with any single company.",
+   "check": "",
+   "original": "INDIA RUPEE DROPS 0.5% TO 92.8625/USD",
+   "latency": 45.6,
+   "lane": "fast"
+  },
   {
    "id": "01eb6af574f7d659",
    "time": "2026-11-27T11:18:28+05:30",
@@ -1628,121 +1662,6 @@
    "check": "Look at the company's recent order book to see if this is a one-time win.",
    "original": "LCC PROJECTS LTD: CO. RECEIVES LETTER OF ACCEPTANCE FOR CONSTRUCTION OF DAM AND IRRIGATION NETWORK WORTH ₹728.51 CRORE; COMPANY'S SHARE IN JV IS 15%; PROJECT TO BE COMPLETED IN 36 MONTHS.",
    "latency": 78.3,
-   "lane": "fast"
-  },
-  {
-   "id": "946e4446cdcce188",
-   "time": "2026-11-26T11:28:35+05:30",
-   "headline": "NESTLE SAID TO IMPACT ON MOVES WRGS SUPREME COURT ORDER",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10141",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "FMCG",
-    "Legal"
-   ],
-   "impact": 0,
-   "confidence": 0,
-   "category": "noise",
-   "action": "No specific trading action required; verify the source of the claim before reacting.",
-   "reason": [
-    "Headline is grammatically incoherent and lacks specific details.",
-    "No clear causal link or material impact on listed entities provided."
-   ],
-   "risks": [
-    "Potential for misinformation or typo in the headline.",
-    "Lack of context makes it impossible to assess market impact."
-   ],
-   "plain": "A confusing headline mentions Nestle and a Supreme Court order but provides no clear details.",
-   "why": "The text is unclear and likely contains errors, so it does not provide reliable information for investment decisions.",
-   "check": "",
-   "original": "NESTLE SAID TO IMPACT ON MOVES WRGS SUPREME COURT ORDER",
-   "latency": 61.7,
-   "lane": "fast"
-  },
-  {
-   "id": "95b4129582521125",
-   "time": "2026-11-26T11:26:11+05:30",
-   "headline": "SUPREME COURT PUSHES FOR HEALTH WARNING LABELS ON PACKAGED FOODS HIGH IN SUGAR, SALT AND UNHEALTHY FATS; FMCG COMPANIES MAY FACE PRESSURE TO CHANGE PRODUCT RECIPES.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10140",
-   "section": "news",
-   "call": "watch",
-   "horizon": "positional",
-   "direction": "down",
-   "tickers": [
-    {
-     "symbol": "SUPREMEIND",
-     "direction": "down"
-    }
-   ],
-   "sectors": [
-    "FMCG",
-    "Food & Beverage"
-   ],
-   "impact": 35,
-   "confidence": 60,
-   "category": "Regulatory",
-   "action": "Monitor for specific regulatory guidelines and company statements on recipe changes.",
-   "reason": [
-    "Supreme Court push for health labels may force FMCG companies to reformulate products.",
-    "Reformulation costs and potential sales dip from taste changes could impact margins."
-   ],
-   "risks": [
-    "Regulatory implementation may be delayed or less strict than feared.",
-    "Companies may successfully market healthier variants without significant revenue loss."
-   ],
-   "plain": "The top court is asking for clear warnings on unhealthy food packages, which might force companies to change their recipes.",
-   "why": "Changing recipes costs money and might make food taste different, which could hurt sales and profits for these companies.",
-   "check": "Look for official government rules or company announcements about changing their food ingredients.",
-   "original": "SUPREME COURT PUSHES FOR HEALTH WARNING LABELS ON PACKAGED FOODS HIGH IN SUGAR, SALT AND UNHEALTHY FATS; FMCG COMPANIES MAY FACE PRESSURE TO CHANGE PRODUCT RECIPES.",
-   "latency": 86.3,
-   "lane": "fast",
-   "quotes": {
-    "SUPREMEIND": {
-     "px": 3191.7,
-     "prev": 3176.0,
-     "move": 0.49,
-     "at": "2026-11-26T11:27:37+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "4bdeb9c18d043cd4",
-   "time": "2026-11-26T11:19:07+05:30",
-   "headline": "APPLE TO EXPAND INDIA RETAIL NETWORK WITH NEW STORE IN HYDERABAD",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10139",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "positional",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Retail",
-    "Consumer"
-   ],
-   "impact": 10,
-   "confidence": 20,
-   "category": "Corporate Expansion",
-   "action": "No specific listed stock action required; monitor broader consumer sentiment.",
-   "reason": [
-    "Apple is not a listed Indian company.",
-    "No direct candidate symbol provided for this specific news item."
-   ],
-   "risks": [
-    "Indirect impact on unlisted local vendors is not tradable via NSE symbols."
-   ],
-   "plain": "Apple plans to open a new store in Hyderabad to grow its business in India.",
-   "why": "Apple is not listed on Indian stock exchanges, so this does not directly affect any specific stock price.",
-   "check": "",
-   "original": "APPLE TO EXPAND INDIA RETAIL NETWORK WITH NEW STORE IN HYDERABAD",
-   "latency": 59.8,
    "lane": "fast"
   }
  ]
