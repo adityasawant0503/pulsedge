@@ -91,35 +91,35 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#07060b
   </section>
 
   <section class="sc" id="setup">
-    <div class="h2 p" data-a="0">Kahani shuru hui<br>kal shaam.</div>
-    <div class="clock p" data-a="0.3">26 NOV · 3:59 PM</div>
-    <div class="sub p" data-a="0.6">Market band ho chuka tha. Ek chhoti si filing aayi.</div>
-    <div class="phone p" data-a="1.2" style="height:560px;margin-top:34px"><img id="fimg" src="cap/filing.png" alt=""><div class="ring" id="r1"></div><div class="ring" id="r2"></div></div>
+    <div class="h2 p" data-c="0">Kahani shuru hui<br>kal shaam.</div>
+    <div class="clock p" data-c="1">26 NOV · 3:59 PM</div>
+    <div class="sub p" data-c="2">Market band ho chuka tha. Ek chhoti si filing aayi.</div>
+    <div class="phone p" data-c="3" style="height:560px;margin-top:34px"><img id="fimg" src="cap/filing.png" alt=""><div class="ring" id="r1"></div><div class="ring" id="r2"></div></div>
   </section>
 
   <section class="sc" id="reveal">
-    <div class="h2 p" data-a="0" style="margin-top:80px">Jo company aapka<br>AC <em style="font-style:normal;color:var(--accl)">repair</em> karti thi…</div>
-    <div class="h p" data-a="1.1" style="margin-top:60px">ab khud<br><em style="font-style:normal;color:var(--green)">AC bechegi.</em></div>
-    <div class="chip p p" data-a="1.8" style="margin-top:60px">URBAN COMPANY · NATIVE AC</div>
+    <div class="h2 p" data-c="0" style="margin-top:80px">Jo company aapka<br>AC <em style="font-style:normal;color:var(--accl)">repair</em> karti thi…</div>
+    <div class="h p" data-c="1" style="margin-top:60px">ab khud<br><em style="font-style:normal;color:var(--green)">AC bechegi.</em></div>
+    <div class="chip p p" data-c="1" data-a="0.6" style="margin-top:60px">URBAN COMPANY · NATIVE AC</div>
   </section>
 
   <section class="sc" id="twist">
-    <span class="chip y p" data-a="0">ASLI TWIST</span>
-    <div class="h p" data-a="0.15" style="margin-top:50px">5 saal warranty.<br><em style="font-style:normal;color:var(--gold)">Gas refill bhi free.</em></div>
-    <div class="h2 p" data-a="1.5" style="margin-top:70px;font-size:64px;color:var(--mute)">AC brands service se bhi kamate hain.<br><span style="color:var(--ink)">Ye seedha wahi pe waar hai.</span></div>
+    <span class="chip y p" data-c="0">ASLI TWIST</span>
+    <div class="h p" data-c="1" style="margin-top:50px">5 saal warranty.</div><div class="h p" data-c="2"><em style="font-style:normal;color:var(--gold)">Gas refill bhi free.</em></div>
+    <div class="h2 p" data-c="3" style="margin-top:70px;font-size:64px;color:var(--mute)">AC brands service se bhi kamate hain.<br><span style="color:var(--ink)">Ye seedha wahi pe waar hai.</span></div>
   </section>
 
   <section class="sc" id="climax">
-    <div class="h2 p" data-a="0">Agli subah. <span style="color:var(--gold)">9:15.</span></div>
-    <div class="tk p" data-a="0.45" style="margin-top:60px"><b>VOLTAS</b><span>▼ 3%</span></div>
-    <div class="tk p" data-a="0.75"><b>BLUE STAR</b><span>▼ 2%</span></div>
-    <div class="tk p" data-a="1.05"><b>HAVELLS</b><span>▼ 1.6%</span></div>
+    <div class="h2 p" data-c="0">Agli subah. <span style="color:var(--gold)">9:15.</span></div>
+    <div class="tk p" data-c="2" style="margin-top:60px"><b>VOLTAS</b><span>▼ 3%</span></div>
+    <div class="tk p" data-c="3"><b>BLUE STAR</b><span>▼ 2%</span></div>
+    <div class="tk p" data-c="4"><b>HAVELLS</b><span>▼ 1.6%</span></div>
   </section>
 
   <section class="sc" id="end">
-    <div class="h2 p" data-a="0" style="margin-top:80px">Jinhone kal shaam<br>filing padh li thi…</div>
-    <div class="h p" data-a="0.9" style="margin-top:40px">unke liye ye<br><em style="font-style:normal;color:var(--green)">surprise nahi tha.</em></div>
-    <div class="h2 p" data-a="2.2" style="margin-top:90px;color:var(--accl)">Agla surprise kis<br>company ka hai? 👀</div>
+    <div class="h2 p" data-c="0" style="margin-top:80px">Jinhone kal shaam<br>filing padh li thi…</div>
+    <div class="h p" data-c="1" style="margin-top:40px">unke liye ye<br><em style="font-style:normal;color:var(--green)">surprise nahi tha.</em></div>
+    <div class="h2 p" data-c="2" style="margin-top:90px;color:var(--accl)">Agla surprise kis<br>company ka hai? 👀</div>
   </section>
 
   <div id="flash"></div>
@@ -127,8 +127,8 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#07060b
   <div id="foot">Educational only · Not investment advice · Not a recommendation on any stock</div>
 </div>
 <script>
-const SC = [["hook", 0, "R"], ["setup", 3.4, "P"], ["reveal", 8.0, "P"], ["twist", 11.4, "G"], ["climax", 15.4, "R"], ["end", 18.6, "P"]];
-const END = 23.2;
+const SC = [["hook", 0, "R"], ["setup", 0, "P"], ["reveal", 0, "P"], ["twist", 0, "G"], ["climax", 0, "R"], ["end", 0, "P"]];
+let END = 23.2, TL = null;
 const SRC = { hook: "Voltas market value, 27 Nov intraday (approx.) · BS, NSE", setup: "Screen: PulsEdge feed · NSE filing, 26 Nov 2026",
   reveal: "Source: Urban Company press release to NSE, 26 Nov", twist: "Native AC terms: Urban Company, 26 Nov 2026",
   climax: "27 Nov intraday · Business Standard, PulsEdge", end: "PULSEDGE · WHY IT MOVED" };
@@ -136,7 +136,9 @@ const clamp = (x) => Math.max(0, Math.min(1, x)), eo = (x) => 1 - Math.pow(1 - c
 const back = (x) => { x = clamp(x); const c = 1.9; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
 let M = null;
 function init(meta) {
-  M = meta; const S = 616 / 390, im = document.getElementById("fimg"), top = -(M.filing.card[1] - 20) * S;
+  M = meta; TL = meta.timing; END = TL.end;
+  SC.forEach((s, i) => { if (i > 0) s[1] = TL.lines[i].start - 0.1; });
+  SC.forEach((s, i) => document.getElementById(s[0]).querySelectorAll('.p').forEach((p) => { if (p.dataset.c != null) { const ch = TL.lines[i].chunks; p.dataset.a = (ch[Math.min(+p.dataset.c, ch.length - 1)] - s[1] + (+p.dataset.a || 0)).toFixed(3); } })); const S = 616 / 390, im = document.getElementById("fimg"), top = -(M.filing.card[1] - 20) * S;
   im.style.top = top + "px";
   const place = (el, r, pad) => { el.style.left = (r[0] * S - pad) + "px"; el.style.top = (r[1] * S + top - pad) + "px"; el.style.width = (r[2] * S + 2 * pad) + "px"; el.style.height = (r[3] * S + 2 * pad) + "px"; };
   place(document.getElementById("r1"), M.filing.time, 10); place(document.getElementById("r2"), M.filing.head, 12);
@@ -155,11 +157,12 @@ function render(t) {
   });
   document.getElementById("cnt").textContent = Math.round(1000 * eo((t + 0.6) / 0.8)).toLocaleString("en-IN");
   const r1 = document.getElementById("r1"), r2 = document.getElementById("r2"), pa = SC[1][1];
-  r1.style.opacity = t > pa + 1.6 && t < pa + 3.0 ? 1 : 0; r2.style.opacity = t >= pa + 3.0 ? 1 : 0;
-  r1.style.transform = `scale(${1.15 - 0.15 * back((t - pa - 1.6) / 0.3)})`;
+  const ra = TL.lines[1].chunks[3] + 0.3;
+  r1.style.opacity = t > ra && t < SC[2][1] ? 1 : 0; r2.style.opacity = 0;
+  r1.style.transform = `scale(${1.15 - 0.15 * back((t - ra) / 0.3)})`;
   ["R", "P", "G"].forEach((k) => { document.getElementById("g" + k).style.opacity = k === cur[2] ? Math.min(1, 0.4 + (t - cur[1]) / 0.3) : 0; });
   let fl = 0; SC.forEach((s, i) => { const d = t - s[1]; if (i > 0 && d >= 0 && d < 0.2) fl = Math.max(fl, 0.22 * (1 - d / 0.2)); });
-  [15.85, 16.15, 16.45].forEach((s) => { const d = t - s; if (d >= 0 && d < 0.15) fl = Math.max(fl, 0.2 * (1 - d / 0.15)); });
+  [2, 3, 4].map((c) => TL.lines[4].chunks[c]).forEach((s) => { const d = t - s; if (d >= 0 && d < 0.15) fl = Math.max(fl, 0.2 * (1 - d / 0.15)); });
   document.getElementById("flash").style.opacity = fl;
   document.querySelector("#bars b").style.width = (100 * clamp(t / END)) + "%";
   document.getElementById("src").textContent = SRC[cur[0]] || "";
