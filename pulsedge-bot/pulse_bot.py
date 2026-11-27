@@ -9,6 +9,7 @@ feed.sample.json), so whatever shows in the terminal is what goes to Telegram.
   python pulse_bot.py news   [--dry-run]                # post the most market-moving global and India news
   python pulse_bot.py digest [--dry-run] [--any-hour]   # post the day's evening summary (once a day)
   python pulse_bot.py brief  [--dry-run] [--any-hour]   # post the morning pre-market brief (once a day)
+  python pulse_bot.py wrap   [--dry-run] [--any-hour]   # post the post-market brief once NSE's close is in (once a day)
   python pulse_bot.py teaser [--dry-run]                # premium mode: a few delayed Act alerts for the free channel
 
 Posting needs TELEGRAM_BOT_TOKEN, and TELEGRAM_CHAT_ID (defaults to @pulsedgein).
@@ -197,10 +198,20 @@ def read_list(path):
 # ---------- market-moving news ----------
 NEWS_MIN = 45            # impact a global or macro story needs: about 2-10 a day qualify
 NEWS_PER_RUN = 3
-NEWS_PER_DAY = 8
+NEWS_PER_DAY = 12
+NEWS_REDBOX_MIN = 60     # a RedBox flash with no single stock named (sector, policy, global read-through)
+NEWS_REDBOX_STOCK_MIN = 70   # a RedBox flash about one company: only the big ones, since big Act calls get their own card
+FILINGS = ("nse announcements", "bse announcements")   # company filings: never a market-wide story
+NEWS_INDIA_MIN = 60      # an India market or economy story (no single stock named) needs this impact
 NEWS_MAX_AGE = timedelta(hours=12)
 LIVE_BLOG = re.compile(r"\blive\b[: ]|live updates|live blog|highlights", re.I)
-SECTION_LABEL = {"global": "🌍 Global", "macro": "📊 Economy &amp; policy"}
+SECTION_LABEL = {"global": "🌍 Global", "macro": "📊 Economy &amp; policy", "trading": "🇮🇳 India markets"}
+
+
+def news_label(ev):
+    if "redbox" in ev["source"].lower():
+        return "⚡ RedBox"
+    return SECTION_LABEL.get(ev["section"], "📰 News")
 
 
 COMMON = set("the and for are was were has had not but its which could about their this that with have will been "
@@ -221,9 +232,20 @@ def consistent(ev):
 
 
 def newsworthy(ev, now):
-    return (ev["call"] == "watch" and ev["section"] in SECTION_LABEL and (ev["impact"] or 0) >= NEWS_MIN
-            and ev["time"] is not None and now - ev["time"] <= NEWS_MAX_AGE and not LIVE_BLOG.search(ev["headline"])
-            and consistent(ev))
+    """Watch-level stories that move the whole market or economy: global and macro news, RedBox flashes, and India
+    market-wide stories (no single stock named). Single-stock Act calls get their own card instead."""
+    if ev["call"] != "watch" or ev["time"] is None or now - ev["time"] > NEWS_MAX_AGE:
+        return False
+    if LIVE_BLOG.search(ev["headline"]) or not consistent(ev):
+        return False
+    imp = ev["impact"] or 0
+    if ev["source"].lower() in FILINGS:
+        return False
+    if "redbox" in ev["source"].lower():
+        return imp >= (NEWS_REDBOX_STOCK_MIN if ev["tickers"] else NEWS_REDBOX_MIN)
+    if ev["section"] in ("global", "macro"):
+        return imp >= NEWS_MIN
+    return ev["section"] == "trading" and not ev["tickers"] and imp >= NEWS_INDIA_MIN
 
 
 def words(text):
@@ -258,7 +280,7 @@ def pick_news(events, posted, now):
 def news_text(evs, now):
     lines = [f"📰 <b>Market-moving news</b> · {now:%H:%M} IST"]
     for ev in evs:
-        lines += ["", f"<b>{SECTION_LABEL[ev['section']]}</b>"]
+        lines += ["", f"<b>{news_label(ev)}</b>"]
         lines.append(f"<b>{html.escape(ev['headline'])}</b>")
         why = ev["why"] or (ev["reason"][0] if ev["reason"] else "")
         if why:
@@ -578,7 +600,82 @@ def post_fast(items, dry=False):
 
 # ---------- morning brief, free-channel previews ----------
 
-def brief_text(pm, now):
+def top_stories(feed, now, hours, n=3):
+    """The most important stories of the last few hours (Act and Watch), one per event, repeats of a story dropped."""
+    out = []
+    evs = [normalize(x) for x in feed.get("items", []) if x.get("headline")]
+    pool = [e for e in evs if e["call"] != "ignore" and e["time"] and now - e["time"] <= timedelta(hours=hours)
+            and not LIVE_BLOG.search(e["headline"]) and consistent(e)]
+    wide = lambda e: e["source"].lower() not in FILINGS and (e["section"] in ("global", "macro") or not e["tickers"])  # noqa: E731
+    # the market and economy first, then the biggest company stories if there is room
+    for group in ([e for e in pool if wide(e)], [e for e in pool if not wide(e)]):
+        for ev in sorted(group, key=lambda e: -(e["impact"] or 0)):
+            if len(out) >= n:
+                return out
+            if not any(same_story(ev["headline"], o["headline"]) for o in out):
+                out.append(ev)
+    return out
+
+
+def story_line(ev):
+    h = ev["headline"]
+    return f"• {html.escape(h[:115] + ('…' if len(h) > 115 else ''))}"
+
+
+MARKET_KINDS = ("rbi", "fed", "budget", "expiry", "india", "world")
+
+
+def day_events(day, limit=3):
+    """Market-wide dates for one day from data/events.json, soonest first: 'RBI policy decision' and the like."""
+    try:
+        with open(os.path.join(DATA, "events.json"), encoding="utf-8") as fh:
+            evs = json.load(fh).get("events", [])
+    except (OSError, ValueError):
+        return []
+    rows = sorted((e for e in evs if e.get("d") == day.isoformat() and e.get("k") in MARKET_KINDS and e.get("p", 1) == 1),
+                  key=lambda e: e.get("tm") or "99:99")
+    return [(f"{e['tm']} " if e.get("tm") else "") + html.escape(str(e.get("t", ""))) for e in rows[:limit]]
+
+
+def wrap_text(live, feed, now):
+    """The post-market brief: the day's closes, breadth, sectors, the stories that mattered and what is next. Built only
+    from NSE's final figures for today; None while the close isn't in yet."""
+    ins = (live or {}).get("instruments") or {}
+    n = ins.get("nifty")
+    if not n or n.get("quality") != "final" or str(n.get("as_of") or "")[:10] != now.strftime("%Y-%m-%d"):
+        return None
+
+    def mv(k, name, d=0):
+        i = ins.get(k)
+        if not i or i.get("chg_pct") is None:
+            return None
+        return f"{name} {i['v']:,.{d}f} {'▲' if i['chg_pct'] >= 0 else '▼'}{abs(i['chg_pct']):.2f}%"
+    head = " · ".join(x for x in (mv("nifty", "Nifty 50"), mv("banknifty", "Bank Nifty"), mv("vix", "India VIX", 2)) if x)
+    lines = [f"🌆 <b>PulsEdge market wrap · {now:%a} {now.day} {now:%b}</b>", head]
+    br = (live or {}).get("breadth") or {}
+    if br.get("advances") is not None and br.get("declines") is not None:
+        lines.append(f"Breadth: {br['advances']:,.0f} up · {br['declines']:,.0f} down")
+    mid = [x for x in (mv("midcap100", "Midcap 100"), mv("smallcap100", "Smallcap 100")) if x]
+    if mid:
+        lines.append(" · ".join(mid))
+    secs = (live or {}).get("sectors") or []
+    if len(secs) >= 4:
+        fmt = lambda x: f"{html.escape(x['name'])} {x['chg_pct']:+.2f}%"  # noqa: E731
+        lines += ["", "<b>Sectors</b> " + ", ".join(fmt(x) for x in secs[:3]), "<b>Lagging</b> " + ", ".join(fmt(x) for x in secs[-3:][::-1])]
+    top = top_stories(feed, now, 10, 3)
+    if top:
+        lines += ["", "<b>Stories that mattered</b>"] + [story_line(e) for e in top]
+    nxt = now.date() + timedelta(days=1)
+    while not trading_day(nxt):
+        nxt += timedelta(days=1)
+    ahead = day_events(nxt)
+    if ahead:
+        lines += ["", f"<b>Next: {nxt:%a} {nxt.day} {nxt:%b}</b>"] + [f"• {x}" for x in ahead]
+    lines += ["", f'<a href="{SITE}terminal.html">Open the PULSE terminal</a>', "<i>Educational information only. Not investment advice.</i>"]
+    return "\n".join(lines)
+
+
+def brief_text(pm, now, feed=None):
     """The morning pre-market brief from premarket.json: GIFT Nifty's opening indication first, then the checklist."""
     if not pm or pm.get("date") != now.strftime("%Y-%m-%d"):
         return None
@@ -599,6 +696,13 @@ def brief_text(pm, now):
             continue
         t = re.sub(r"\s+-\s+.*$", "", re.sub(r"\s*\(.*?\)\s*", " ", str(c["title"]))).strip()
         lines.append(f"{ARROW.get(c.get('dir'), '●')} {html.escape(t)}: {html.escape(str(c.get('value', '')))}")
+    if feed:
+        top = top_stories(feed, now, 14, 3)
+        if top:
+            lines += ["", "<b>Overnight, what mattered</b>"] + [story_line(e) for e in top]
+    today = day_events(now.date())
+    if today:
+        lines += ["", "<b>Today</b>"] + [f"• {x}" for x in today]
     if pm.get("key_risk"):
         lines += ["", f"<b>Key risk:</b> {html.escape(str(pm['key_risk']))}"]
     focus = [str(f.get("symbol")) for f in pm.get("focus") or [] if isinstance(f, dict) and f.get("symbol")]
@@ -653,7 +757,7 @@ def png_bytes(img):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("cmd", choices=["render", "post", "news", "digest", "brief", "teaser"])
+    ap.add_argument("cmd", choices=["render", "post", "news", "digest", "brief", "wrap", "teaser"])
     ap.add_argument("--event", help="only this event id")
     ap.add_argument("--out", default=os.path.join(HERE, "out"), help="render: output folder")
     ap.add_argument("--dry-run", action="store_true", help="post: show what would be sent")
@@ -710,7 +814,7 @@ def main():
                 pm = json.load(fh)
         except (OSError, ValueError):
             pass
-        text = brief_text(pm, now)
+        text = brief_text(pm, now, feed)
         if a.dry_run:
             print(text or "No pre-market data for today.")
             return
@@ -741,6 +845,46 @@ def main():
         with open(POSTED, "w") as fh:
             json.dump(posted[-2000:], fh, indent=1)
         print("posted the morning brief")
+        return
+
+    if a.cmd == "wrap":
+        now = datetime.now(IST)
+        posted = read_list(POSTED)
+        live = None
+        try:
+            with open(os.path.join(DATA, "live.json"), encoding="utf-8") as fh:
+                live = json.load(fh)
+        except (OSError, ValueError):
+            pass
+        text = wrap_text(live, feed, now)
+        if a.dry_run:
+            print(text or "The close isn't in yet; no wrap.")
+            return
+        if not text:
+            print("NSE's final figures for today aren't in yet; no wrap.")
+            return
+        if f"wrap:{now:%Y-%m-%d}" in posted:
+            print("Today's wrap already posted.")
+            return
+        if not trading_day(now.date()):
+            print("NSE is closed today; no wrap.")
+            return
+        if not a.any_hour and not (15 * 60 + 45 <= now.hour * 60 + now.minute < 19 * 60):
+            print("The wrap goes out between 15:45 and 19:00 IST.")
+            return
+        token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+        if not token:
+            print("TELEGRAM_BOT_TOKEN isn't set; skipping.")
+            return
+        for chat in [public_chat()] + ([pro_chat()] if pro_chat() else []):
+            try:
+                send_message(token, chat, text)
+            except Exception as e:
+                print(f"wrap not posted to {chat} ({type(e).__name__}: {str(e)[:120]})")
+        posted.append(f"wrap:{now:%Y-%m-%d}")
+        with open(POSTED, "w") as fh:
+            json.dump(posted[-2000:], fh, indent=1)
+        print("posted the market wrap")
         return
 
     events = [normalize(x) for x in feed.get("items", []) if x.get("headline")]

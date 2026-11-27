@@ -274,6 +274,15 @@ jobs:
         TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
       run: python pulse_bot.py brief
       working-directory: pulsedge-bot
+    - name: Post-market wrap
+      # once a trading day, after NSE's close is in (15:45-19:00 IST): closes, breadth, sectors, the stories that
+      # mattered and what is next. The 16:00 run normally posts it.
+      continue-on-error: true
+      env:
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
+      run: python pulse_bot.py wrap
+      working-directory: pulsedge-bot
     - name: Post new Act signals
       env:
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
