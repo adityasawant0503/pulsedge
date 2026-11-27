@@ -1,7 +1,54 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-27T12:40:32+05:30",
+ "updated": "2026-11-27T12:48:33+05:30",
  "items": [
+  {
+   "id": "b478c01a42d32fae",
+   "time": "2026-11-27T12:47:33+05:30",
+   "headline": "SHRIRAM FINANCE: CO SAYS NO RBI AUDIT ONGOING|| MARKET RUMOURS OF ANY RBI AUDIT ONGOING ON SHRIRAM FINANCE IS NOT TRUE AND BASELESS",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10245",
+   "section": "news",
+   "call": "watch",
+   "horizon": "intraday",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "SHRIRAMFIN",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "NBFC"
+   ],
+   "impact": 40,
+   "confidence": 60,
+   "category": "Corporate Clarification",
+   "action": "Monitor if the stock stabilizes or rebounds after the clarification, as fear-driven selling may reverse.",
+   "reason": [
+    "Company explicitly denies market rumors of an ongoing RBI audit.",
+    "Removes a specific negative catalyst that may have caused recent volatility."
+   ],
+   "risks": [
+    "Market may remain skeptical if the rumor was based on credible internal leaks.",
+    "Broader NBFC sector sentiment could still weigh on the stock."
+   ],
+   "plain": "The company stated that rumors about a current regulator audit are false.",
+   "why": "This removes a specific fear that might have caused investors to sell the stock recently.",
+   "check": "Check if the stock price stops falling or starts rising after this news.",
+   "original": "SHRIRAM FINANCE: CO SAYS NO RBI AUDIT ONGOING|| MARKET RUMOURS OF ANY RBI AUDIT ONGOING ON SHRIRAM FINANCE IS NOT TRUE AND BASELESS",
+   "latency": 60.3,
+   "lane": "fast",
+   "quotes": {
+    "SHRIRAMFIN": {
+     "px": 921.1,
+     "prev": 961.85,
+     "move": -4.24,
+     "at": "2026-11-27T12:48:33+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "f04a9f50749b16c2",
    "time": "2026-11-27T12:40:16+05:30",
