@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T12:30+05:30",
+ "updated": "2026-11-27T12:45+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -75,6 +75,22 @@
   "items": 43
  },
  "stocks": {
+  "BSE": {
+   "summary": "BSE shares recently hit a four-month high after a brokerage firm upgraded its recommendation. The stock has risen significantly in 2026, outperforming many other large Indian companies.",
+   "why": "This matters because the stock price has already increased sharply, which may reflect strong investor confidence in the company's future performance.",
+   "upside": "Analysts expect good business ahead, which could support continued interest in the stock.",
+   "downside": "The recent price jump may be driven by speculation rather than solid business results, leading to a potential reversal.",
+   "watch": [
+    "Whether the stock price stabilizes after the recent sharp rise",
+    "Upcoming earnings reports to check if business performance matches expectations",
+    "General market trends in the financial sector"
+   ],
+   "about": "BSE is one of India's major stock exchanges and a member of the Nifty 50 index.",
+   "basis": "aee7ea0323a9",
+   "items": 5,
+   "updated": "2026-11-27T12:45+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "HDFCBANK": {
    "summary": "HDFC Bank has seen its market value jump past Airtel and is highlighted as a bullish pick by JPMorgan, while the Supreme Court has ordered it to approve prosecution sanctions for staff. The bank is also being compared favorably against peers in recent analyst discussions.",
    "why": "Shareholders should watch the positive investor sentiment that could lift the stock, but also the legal scrutiny that may weigh on reputation.",
@@ -106,6 +122,22 @@
    "items": 4,
    "updated": "2026-11-27T08:16+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "GRAPHITE": {
+   "summary": "Graphite India Ltd. recently listed on the stock exchanges after being separated from HEG Limited. The company announced a plan to expand its graphite electrode production capacity to 1.15 lakh tonnes.",
+   "why": "This expansion aims to increase future profits for shareholders, but the high initial stock price may settle down as the initial excitement fades.",
+   "upside": "Successfully completing the large-scale expansion could lead to higher future profits.",
+   "downside": "The stock price might drop sharply if the initial buying excitement fades, and there is a risk that the large expansion project is not executed smoothly.",
+   "watch": [
+    "How the stock price moves after the initial listing premium settles.",
+    "Progress on the ₹650 crore expansion project.",
+    "Updates on the company's production capacity reaching 1.15 lakh tonnes."
+   ],
+   "about": "Graphite India Ltd. is a capital goods company that produces graphite electrodes.",
+   "basis": "c84c5d92f9be",
+   "items": 3,
+   "updated": "2026-11-27T12:45+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "PNB": {
    "summary": "Punjab National Bank signed a preliminary agreement with Deutsche Bank to explore funding for business acquisitions. This move aims to help the bank earn more fees by assisting companies that are buying other businesses.",
@@ -650,22 +682,6 @@
    "updated": "2026-11-26T13:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "BSE": {
-   "summary": "BSE shares recently jumped 6% in a single day and have risen 48% so far in 2026. This strong performance coincided with a major brokerage firm raising its recommendation for the stock.",
-   "why": "For a shareholder, this indicates that the market currently has high confidence in the company's future business performance. However, such sharp rises can sometimes be driven by speculation rather than just company results.",
-   "upside": "The stock may continue to attract investor interest if the company's business fundamentals support the recent price gains.",
-   "downside": "The price could fall if the recent rally was driven by speculation rather than strong earnings, or if broader market strength fades.",
-   "watch": [
-    "Whether the company's actual business results match the high expectations set by recent price jumps.",
-    "If the broader Financials sector continues its recent upward trend.",
-    "Whether the stock price stabilizes after hitting a four-month high."
-   ],
-   "about": "BSE Ltd. is a stock exchange company that operates in the financial services sector.",
-   "basis": "4608cb20f425",
-   "items": 4,
-   "updated": "2026-11-26T15:45+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "AMBER": {
    "summary": "Amber Enterprises India Ltd. announced a partnership for a 500 crore rupee investment to expand its circuit board manufacturing in Tamil Nadu. This expansion is planned to happen over five years starting in 2027. A research firm also recently added the company to its list of high-conviction stocks.",
    "why": "This matters because the company is planning to increase its production capacity, which could lead to higher sales and profits in the future. However, the benefits will not be immediate as the project starts in 2027.",
@@ -713,22 +729,6 @@
    "items": 3,
    "updated": "2026-11-26T13:31+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "GRAPHITE": {
-   "summary": "PulsEdge noted recent market activity surrounding a graphite business demerger and strong share listing by a peer company, HEG Ltd. This event highlights growing interest in the graphite sector within the capital goods industry.",
-   "why": "Such major industry events and market excitement can influence investor sentiment and trading activity across other companies in the same sector, including Graphite India Ltd.",
-   "upside": "High initial investor interest in the graphite sector could benefit related companies.",
-   "downside": "The high starting prices from initial market hype might drop sharply later.",
-   "watch": [
-    "Market reactions to the graphite business demerger",
-    "Changes in investor sentiment for graphite sector stocks",
-    "Stock price stability after the initial listing hype"
-   ],
-   "about": "Graphite India Ltd. is a capital goods company included in the Nifty 500 index.",
-   "basis": "b19c0a8c31e3",
-   "items": 2,
-   "updated": "2026-11-27T10:30+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "SRF": {
    "summary": "SRF is being watched because new US taxes on imports could affect its business. Analysts suggest these changes might hurt profits if the company sells a lot to the US.",

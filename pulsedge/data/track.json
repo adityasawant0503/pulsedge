@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T12:30:52+05:30",
+ "updated": "2026-11-27T12:45:48+05:30",
  "summary": {
-  "calls": 2420,
-  "scored_calls": 1187,
+  "calls": 2422,
+  "scored_calls": 1189,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "f04a9f50749b16c2",
+   "symbol": "BSE",
+   "time": "2026-11-27T12:40:16+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "HEG LIMITED: CO. LISTS ON NSE AND BSE AFTER DEMERGER; PLANS ₹650 CRORE EXPANSION TO RAISE GRAPHITE ELECTRODE CAPACITY TO 1.15 LAKH TONNES",
+   "url": "https://t.me/Indiaredboxglobal/10244",
+   "alert_px": 3995.0,
+   "alert_move": 0.12,
+   "alert_at": "2026-11-27T12:40:32+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "f04a9f50749b16c2",
+   "symbol": "GRAPHITE",
+   "time": "2026-11-27T12:40:16+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "HEG LIMITED: CO. LISTS ON NSE AND BSE AFTER DEMERGER; PLANS ₹650 CRORE EXPANSION TO RAISE GRAPHITE ELECTRODE CAPACITY TO 1.15 LAKH TONNES",
+   "url": "https://t.me/Indiaredboxglobal/10244",
+   "alert_px": 795.0,
+   "alert_move": 0.41,
+   "alert_at": "2026-11-27T12:40:32+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "71fa0d5a1ad46bd5",
    "symbol": "VOGL",

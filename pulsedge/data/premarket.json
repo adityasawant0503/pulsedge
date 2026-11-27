@@ -1,19 +1,19 @@
 {
  "date": "2026-11-27",
- "updated": "2026-11-27T12:30:52+05:30",
+ "updated": "2026-11-27T12:45:48+05:30",
  "sentiment": "Mildly bearish",
  "breadth": {
   "up": 1,
-  "down": 2
+  "down": 3
  },
  "checklist": [
   {
    "title": "Nifty 50 now (15 min delayed)",
    "dir": "down",
-   "value": "25,714.05 (-0.66%)",
+   "value": "25,720.80 (-0.63%)",
    "detail": [
     "Previous close 25,884.50",
-    "GIFT Nifty 25,789.5 (-0.93%)"
+    "GIFT Nifty 25,756.5 (-1.06%)"
    ]
   },
   {
@@ -24,7 +24,7 @@
     "Dow 50,182.95 +0.33%",
     "S&P 7,182.78 -0.25%",
     "Nasdaq 23,585.80 -0.62%",
-    "Nasdaq futures now +2.59%"
+    "Nasdaq futures now +2.58%"
    ]
   },
   {
@@ -33,7 +33,7 @@
    "value": "Asia higher",
    "detail": [
     "Nikkei 58,710.89 +2.11%",
-    "Hang Seng 22,676.53 +2.02%"
+    "Hang Seng 22,656.65 +1.93%"
    ]
   },
   {
@@ -41,32 +41,39 @@
    "dir": "down",
    "value": "Rupee under pressure",
    "detail": [
-    "DXY 103.70 -0.07%",
-    "USD/INR 92.880 +0.48%"
+    "DXY 103.68 -0.09%",
+    "USD/INR 92.797 +0.39%"
    ]
   },
   {
    "title": "Brent crude level",
-   "dir": "flat",
-   "value": "$92.38 +0.77%",
-   "detail": []
+   "dir": "down",
+   "value": "$92.61 +1.03%",
+   "detail": [
+    "Rising crude hurts India (OMCs, paints, aviation); helps upstream"
+   ]
   },
   {
    "title": "India VIX",
    "dir": "flat",
-   "value": "16.57 (-1.59%) — normal",
+   "value": "16.43 (-2.44%) — normal",
    "detail": []
   }
  ],
- "summary": "Mildly bearish setup. NASDAQ closed 0.62% lower; IT may open soft; Nikkei up, Hang Seng up.",
+ "summary": "Mildly bearish setup. Brent up 1.03% — pressure on OMCs, paints and aviation; NASDAQ closed 0.62% lower; IT may open soft.",
  "global_cues": [
+  "Brent up 1.03% — pressure on OMCs, paints and aviation",
   "NASDAQ closed 0.62% lower; IT may open soft",
   "Nikkei up, Hang Seng up"
  ],
  "india_triggers": [
-  "45 filings and headlines worth a look so far today"
+  "47 filings and headlines worth a look so far today"
  ],
  "focus": [
+  {
+   "symbol": "BSE",
+   "note": "HEG LIMITED: CO. LISTS ON NSE AND BSE AFTER DEMERGER; PLANS ₹650 CRORE"
+  },
   {
    "symbol": "SIEMENS",
    "note": "SIEMENS ENERGY: CO SAID IT IS CONFIDENT OF WINNING THE NEXT VSC-HVDC O"
@@ -74,34 +81,38 @@
   {
    "symbol": "HDFCBANK",
    "note": "SC asks HDFC Bank, three others to ok staff prosecution"
-  },
-  {
-   "symbol": "SIEMENS",
-   "note": "SIEMENS ENERGY: CO SAID IT IS CONFIDENT OF WINNING THE NEXT VSC-HVDC O"
   }
  ],
  "sector_tags": [
+  {
+   "label": "Upstream oil",
+   "tone": "positive"
+  },
+  {
+   "label": "OMCs",
+   "tone": "negative"
+  },
   {
    "label": "IT",
    "tone": "watch"
   }
  ],
- "key_risk": "",
+ "key_risk": "A further crude spike would hit OMCs and widen the INR move",
  "also": [
   {
    "name": "BANK NIFTY",
-   "value": "63,317.2",
-   "change": -0.34
+   "value": "63,382.9",
+   "change": -0.24
   },
   {
    "name": "S&P FUT",
-   "value": "7,322",
-   "change": 1.75
+   "value": "7,319",
+   "change": 1.72
   },
   {
    "name": "NASDAQ FUT",
-   "value": "26,776",
-   "change": 2.59
+   "value": "26,773",
+   "change": 2.58
   },
   {
    "name": "KOSPI",
@@ -110,13 +121,13 @@
   },
   {
    "name": "WTI",
-   "value": "85.96",
-   "change": 2.72
+   "value": "86.30",
+   "change": 3.13
   },
   {
    "name": "GOLD",
-   "value": "3,656",
-   "change": 1.86
+   "value": "3,660",
+   "change": 1.98
   },
   {
    "name": "US 10Y",
