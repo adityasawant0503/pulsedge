@@ -253,7 +253,7 @@ def main(argv=None):
         ats = [i["as_of"] for i in have if i.get("as_of")]
         return {"quality": qual, "src": srcs, "as_of": min(ats) if ats else live.get("as_of")}
 
-    def add(title, dir_, value, detail, keys=(), quality=None, src=None, count=True, as_of=None, show_time=True):
+    def add(title, dir_, value, detail, keys=(), quality=None, src=None, count=True, as_of=None, show_time=True, group="india", sub="", label=""):
         nonlocal up, down
         if count:
             up += dir_ == "up"
@@ -268,7 +268,8 @@ def main(argv=None):
         except (TypeError, ValueError):
             at = ""
         detail = list(detail) + [f"{st['src']} · {qlabel(st['quality'])}" + (f" · {at}" if at else "")]
-        checklist.append({"title": title, "dir": dir_, "value": value, "detail": detail, **st})
+        # group: where the terminal files it (india, global, trade, today); sub: the one line worth reading at a glance
+        checklist.append({"title": title, "label": label or title, "dir": dir_, "value": value, "sub": sub, "group": group, "detail": detail, **st})
 
     # US cash indices are final from their close (about 02:00 IST) until the next open (about 19:30 IST)
     us_closed = (NOW.weekday() < 5 and 3 <= NOW.hour < 19) or NOW.weekday() in (5, 6)
@@ -293,17 +294,21 @@ def main(argv=None):
         det.append(f"Against Nifty futures' last close {fmt(f, 1)}")
         add("GIFT Nifty - opening indication", tone(gp, band=0.15),
             f"{fmt(g, 1)} · {gap:+,.0f} pts ({gp:+.2f}%) · {opening}", det, keys=("gift",),
-            src="TradingView (GIFT Nifty) against NSE's last close")
+            src="TradingView (GIFT Nifty) against NSE's last close", group="india", label="GIFT Nifty",
+            sub=(f"Nifty last close {fmt(q['nifty']['price'], 0)} · implied open near {fmt(q['nifty']['price'] * (1 + gp / 100), 0)}" if "nifty" in q else ""))
     elif "nifty" in q:
         n = q["nifty"]
-        det = [f"Previous close {fmt(n['prev'])}"]
+        det = []
         if "gift" in q:
             det.append(f"GIFT Nifty {fmt(q['gift']['price'], 1)} ({pct(q['gift']['chg'])})")
         ni = ins.get("nifty") or {}
         title = ("Nifty 50 live" if ni.get("quality") == "realtime" else "Nifty 50 now (15 min delayed)") if in_hours else "Nifty 50 last close"
         if in_hours and ni.get("high"):
             det.append(f"Today: open {fmt(ni['open'], 1)} · high {fmt(ni['high'], 1)} · low {fmt(ni['low'], 1)}")
-        add(title, tone(n["chg"]), f"{fmt(n['price'])} ({pct(n['chg'])})", det, keys=("nifty",))
+        sub = f"Previous close {fmt(n['prev'], 0)}"
+        if in_hours and ni.get("high") and ni.get("low"):
+            sub += f" · today {fmt(ni['low'], 0)}–{fmt(ni['high'], 0)}"
+        add(title, tone(n["chg"]), f"{fmt(n['price'])} ({pct(n['chg'])})", det, keys=("nifty",), group="india", sub=sub, label="Nifty 50")
     us = [k for k in ("dow", "spx", "nasdaq") if k in q]
     if us:
         higher = sum(q[k]["chg"] > 0 for k in us)
@@ -315,7 +320,8 @@ def main(argv=None):
             det.append(f"Nasdaq futures now {pct(q['nqf']['chg'])}")
         add("US close - Dow/S&P/Nasdaq direction", tone(avg), label, det, keys=("spx", "ndx", "dji", "nq"),
             quality="final" if us_closed else "delayed_10m", show_time=not us_closed,
-            src="TradingView (US futures 10 min delayed)")
+            src="TradingView (US futures 10 min delayed)", group="global", label="US markets",
+            sub=" · ".join(f"{names[k]} {q[k]['chg']:+.2f}%" for k in us))
     asia = [k for k in ("nikkei", "hangseng") if k in q]
     if asia:
         avg = sum(q[k]["chg"] for k in asia) / len(asia)
@@ -323,7 +329,8 @@ def main(argv=None):
         mixed = len(asia) == 2 and (q["nikkei"]["chg"] > 0) != (q["hangseng"]["chg"] > 0)
         add("Asian markets live - Nikkei, Hang Seng", "flat" if mixed else tone(avg),
             "Asia mixed" if mixed else ("Asia higher" if avg > 0 else "Asia lower"),
-            [f"{names[k]} {fmt(q[k]['price'])} {pct(q[k]['chg'])}" for k in asia], keys=("nikkei", "hangseng"))
+            [f"{names[k]} {fmt(q[k]['price'])} {pct(q[k]['chg'])}" for k in asia], keys=("nikkei", "hangseng"), group="global", label="Asia",
+            sub=" · ".join(f"{names[k]} {q[k]['chg']:+.2f}%" for k in asia))
     if "dxy" in q or "usdinr" in q:
         fx = [q[k]["chg"] for k in ("dxy", "usdinr") if k in q]
         worst = max(fx)
@@ -333,17 +340,21 @@ def main(argv=None):
         if "usdinr" in q:
             det.append(f"USD/INR {fmt(q['usdinr']['price'], 3)} {pct(q['usdinr']['chg'])}")
         add("DXY + USDINR move", tone(worst, inverse=True, band=0.3),
-            "Rupee under pressure" if worst >= 0.3 else "No major currency pressure", det, keys=("dxy", "usdinr"))
+            "Rupee under pressure" if worst >= 0.3 else "No major currency pressure", det, keys=("dxy", "usdinr"), group="global", label="Rupee and dollar",
+            sub=" · ".join(([f"DXY {fmt(q['dxy']['price'])} ({q['dxy']['chg']:+.2f}%)"] if "dxy" in q else [])
+                           + ([f"USD/INR {fmt(q['usdinr']['price'], 2)} ({q['usdinr']['chg']:+.2f}%)"] if "usdinr" in q else [])))
     if "brent" in q:
         b = q["brent"]
         add("Brent crude level", tone(b["chg"], inverse=True, band=1.0), f"${fmt(b['price'])} {pct(b['chg'])}",
-            ["Rising crude hurts India (OMCs, paints, aviation); helps upstream"] if b["chg"] > 1 else [], keys=("brent",))
+            ["Rising crude hurts India (OMCs, paints, aviation); helps upstream"] if b["chg"] > 1 else [], keys=("brent",), group="global", label="Brent crude",
+            sub="Rising crude hurts OMCs, paints and aviation" if b["chg"] > 1 else "Falling crude helps OMCs and paints" if b["chg"] < -1 else "")
     if "vix" in q:
         v = q["vix"]
         level = "elevated" if v["price"] >= 18 else "normal" if v["price"] >= 11 else "low"
         vi = ins.get("vix") or {}
-        vdet = [f"Previous close {fmt(v['prev'])}"] + ([f"Day range {fmt(vi['low'])}–{fmt(vi['high'])}"] if vi.get("high") and vi.get("low") else [])
-        add("India VIX", tone(v["chg"], inverse=True, band=5), f"{fmt(v['price'])} ({pct(v['chg'])}) — {level}", vdet, keys=("vix",))
+        vdet = []                                  # the previous close and day range are in the one-line summary below
+        vsub = f"Previous close {fmt(v['prev'])}" + (f" · today {fmt(vi['low'])}–{fmt(vi['high'])}" if vi.get("high") and vi.get("low") else "")
+        add("India VIX", tone(v["chg"], inverse=True, band=5), f"{fmt(v['price'])} ({pct(v['chg'])}) — {level}", vdet, keys=("vix",), group="india", sub=vsub, label="India VIX")
 
     # ---- extra context for the day trader: not part of the sentiment score (count=False) ----
     k0 = lambda v: f"{v:,.0f}"  # noqa: E731
@@ -381,7 +392,8 @@ def main(argv=None):
         if b:
             det.append(f"Bank Nifty: pivot {k0(b['pivots']['p'])} · R1 {k0(b['pivots']['r1'])} · S1 {k0(b['pivots']['s1'])} · CPR {k0(b['cpr']['bottom'])}–{k0(b['cpr']['top'])}")
         add("Key levels - Nifty pivots and CPR", "flat", value, det, quality="final", src="NSE daily index history (previous session)",
-            as_of=pr["date"], count=False)
+            as_of=pr["date"], count=False, group="trade", label="Key levels (Nifty)",
+            sub=f"Support {k0(pv['s1'])} · pivot {k0(pv['p'])} · resistance {k0(pv['r1'])}")
 
     def chain_quality(o):
         try:
@@ -392,7 +404,9 @@ def main(argv=None):
 
     o = opt_all.get("nifty")
     if o:
-        value = f"PCR {o['pcr_oi']:.2f} · max pain {k0(o['max_pain'])} · walls {k0(o['put_wall'])} / {k0(o['call_wall'])}" if o.get("pcr_oi") and o.get("max_pain") and o.get("put_wall") and o.get("call_wall") else "Option chain loaded"
+        value = f"PCR {o['pcr_oi']:.2f} · max pain {k0(o['max_pain'])}" if o.get("pcr_oi") and o.get("max_pain") else "Option chain loaded"
+        osub = " · ".join(([f"Support {k0(o['put_wall'])}", f"resistance {k0(o['call_wall'])}"] if o.get("put_wall") and o.get("call_wall") else [])
+                          + ([f"expected move ±{o['implied_move_pct']:.2f}%"] if o.get("implied_move_pct") else []))
         det = [f"Nifty options expiring {o['expiry']}" + (" (today)" if o["expiry"] == today else "") + f" · at-the-money strike {k0(o['atm'])}"
                + ("" if o.get("session") == "today" else " · figures are from the previous session")]
         if o.get("pcr_read"):
@@ -410,7 +424,8 @@ def main(argv=None):
         if bo and bo.get("pcr_oi"):
             det.append(f"Bank Nifty ({bo['expiry']}): PCR {bo['pcr_oi']:.2f} · max pain {k0(bo['max_pain'])} · walls {k0(bo['put_wall'])} / {k0(bo['call_wall'])}"
                        + (f" · straddle ₹{bo['straddle']:,.0f} (±{bo['implied_move_pct']:.2f}%)" if bo.get("straddle") else ""))
-        add("Options positioning - Nifty", "flat", value, det, quality=chain_quality(o), src="NSE option chain", as_of=o.get("as_of"), count=False)
+        add("Options positioning - Nifty", "flat", value, det, quality=chain_quality(o), src="NSE option chain", as_of=o.get("as_of"), count=False,
+            group="trade", sub=osub, label="Options (Nifty)")
 
     br, ni = live.get("breadth") or {}, ins.get("nifty") or {}
     if br.get("advances") is not None and br.get("declines") is not None:
@@ -443,7 +458,8 @@ def main(argv=None):
                        else f"FII index futures: {fn['fii_long_pct']:.1f}% long")
         add("Market breadth and flows", "up" if ratio and ratio >= 1.5 else "down" if ratio is not None and ratio <= 0.67 else "flat",
             f"{k0(a)} up · {k0(d)} down" + (f" · A/D {ratio:.2f}" if ratio else ""), det,
-            quality=ni.get("quality") or "final", src="NSE (breadth, sectors); NSE/NSDL end-of-day flows", as_of=live.get("as_of"), count=False)
+            quality=ni.get("quality") or "final", src="NSE (breadth, sectors); NSE/NSDL end-of-day flows", as_of=live.get("as_of"), count=False,
+            group="trade", label="Breadth and flows", sub=("Leaders " + ", ".join(x["name"] for x in secs[:2]) + " · laggards " + ", ".join(x["name"] for x in secs[-2:][::-1])) if len(secs) >= 4 else "")
 
     cal = []
     try:
@@ -466,9 +482,11 @@ def main(argv=None):
             det.append(f"{comp['board']} board meeting(s): {names('board')}")
         if comp.get("ex"):
             det.append(f"{comp['ex']} stock(s) go ex-date: {names('ex')}")
-        head = [x["t"] for x in big][:2] + exp_today[:1]
-        add("Today's calendar", "flat", " · ".join(head) if head else f"{sum(comp.values())} company event(s)", det,
-            quality="scheduled", src="PulsEdge calendar (NSE announcements and official dates)", as_of=today, count=False)
+        head = [x["t"] for x in big][:2] + (["Nifty expiry today"] if exp_today else [])
+        add("Today's calendar", "flat", " · ".join(head) if head else f"{sum(comp.values())} company event{'s' if sum(comp.values()) != 1 else ''}", det,
+            quality="scheduled", src="PulsEdge calendar (NSE announcements and official dates)", as_of=today, count=False,
+            group="today", label="Today's calendar", sub=" · ".join(([f"{comp['results']} results"] if comp.get("results") else []) + ([f"{comp['board']} board meetings"] if comp.get("board") else [])
+                                          + ([f"{comp['ex']} ex-dates"] if comp.get("ex") else [])))
 
     score = up - down
     sentiment = ("Bullish" if score >= 3 else "Mildly bullish" if score >= 1 else
