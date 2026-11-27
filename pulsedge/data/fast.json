@@ -1,7 +1,32 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-27T12:56:02+05:30",
+ "updated": "2026-11-27T12:59:31+05:30",
  "items": [
+  {
+   "id": "eef19fe72284c75f",
+   "time": "2026-11-27T12:58:58+05:30",
+   "headline": "KESAR PETROPRODUCTS: CO TO ENTER OILFIELD CHEMICALS SEGMENT; NEW PLANT TARGETS ₹129 CRORE ANNUAL REVENUE AND ₹40 CRORE BOTTOM-LINE ADDITION",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10247",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "swing",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [],
+   "impact": 0,
+   "confidence": 0,
+   "category": "news",
+   "action": "",
+   "reason": [],
+   "risks": [],
+   "plain": "Kesar Petroproducts plans a new plant to enter oilfield chemicals, targeting ₹129 crore revenue and ₹40 crore profit.",
+   "why": "The company isn’t listed, so the announcement won’t directly affect any traded Indian stocks.",
+   "check": "",
+   "original": "KESAR PETROPRODUCTS: CO TO ENTER OILFIELD CHEMICALS SEGMENT; NEW PLANT TARGETS ₹129 CRORE ANNUAL REVENUE AND ₹40 CRORE BOTTOM-LINE ADDITION",
+   "latency": 33.2,
+   "lane": "fast"
+  },
   {
    "id": "a8cfcdc2eacce874",
    "time": "2026-11-27T12:55:30+05:30",
@@ -1345,85 +1370,6 @@
    "latency": 78.4,
    "lane": "fast",
    "checked": "confirmed by a second AI check"
-  },
-  {
-   "id": "16acbaa2772d66b1",
-   "time": "2026-11-26T12:57:53+05:30",
-   "headline": "WELSPUN ENTERPRISES: CO BELIEVE THAT WELSPUN CORP EBITDA CAN HIT RUPEES 5000 CR IN 2 YEARS",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10157",
-   "section": "news",
-   "call": "watch",
-   "horizon": "positional",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "WELCORP",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Textiles"
-   ],
-   "impact": 40,
-   "confidence": 60,
-   "category": "Earnings Outlook",
-   "action": "Monitor upcoming quarterly results to see if EBITDA growth aligns with the 2-year target.",
-   "reason": [
-    "Positive long-term earnings outlook for Welspun Corp.",
-    "Target of 5000 Cr EBITDA suggests strong operational growth potential."
-   ],
-   "risks": [
-    "Long time horizon (2 years) makes immediate price impact uncertain.",
-    "Dependent on sustained demand and raw material costs."
-   ],
-   "plain": "A company executive expects profits to reach a specific high level within two years.",
-   "why": "This signals confidence in future growth, which can support the share price over time.",
-   "check": "Look at the next quarterly report to see if profits are rising as expected.",
-   "original": "WELSPUN ENTERPRISES: CO BELIEVE THAT WELSPUN CORP EBITDA CAN HIT RUPEES 5000 CR IN 2 YEARS",
-   "latency": 73.7,
-   "lane": "fast",
-   "quotes": {
-    "WELCORP": {
-     "px": 2219.7,
-     "prev": 2117.5,
-     "move": 4.83,
-     "at": "2026-11-26T12:59:06+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "d8b1a2bf0a62cc79",
-   "time": "2026-11-26T12:56:31+05:30",
-   "headline": "WELSPUN ENTERPRISES: CO CONFIDENT THAT WE CAN ACHIEVE RS. 2,850 CR EBITDA GUIDANCE FOR FY27",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10156",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "positional",
-   "direction": "up",
-   "tickers": [],
-   "sectors": [
-    "Textiles"
-   ],
-   "impact": 0,
-   "confidence": 0,
-   "category": "Guidance",
-   "action": "No immediate action required as no listed entity is directly named.",
-   "reason": [
-    "Welspun Enterprises is a private company, not listed on NSE.",
-    "No direct price impact on listed stocks from this specific guidance."
-   ],
-   "risks": [
-    "Potential indirect impact on listed textile peers if sector sentiment shifts, but unlikely to be material."
-   ],
-   "plain": "A private textile company said it expects to hit its profit target for next year.",
-   "why": "Since the company is not publicly traded, its news does not directly affect stock prices.",
-   "check": "",
-   "original": "WELSPUN ENTERPRISES: CO CONFIDENT THAT WE CAN ACHIEVE RS. 2,850 CR EBITDA GUIDANCE FOR FY27",
-   "latency": 35.6,
-   "lane": "fast"
   }
  ]
 }
