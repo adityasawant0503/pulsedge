@@ -34,6 +34,7 @@ LIVE = os.path.join(DATA, "live.json")
 IST = timezone(timedelta(hours=5, minutes=30))
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 SCHEMA = 1
+LIVE_WINDOW_S = 300     # NSE stamps its figures to the minute and they reach its API one to three minutes later: still its live feed
 
 # NSE index names we keep
 NSE_INDICES = {"nifty": "NIFTY 50", "banknifty": "NIFTY BANK", "finnifty": "NIFTY FINANCIAL SERVICES",
@@ -134,6 +135,12 @@ def market_status(nse):
             "as_of": iso(parse_ts(cap.get("tradeDate")))}
 
 
+def sector_name(index):
+    """'NIFTY PSU BANK' -> 'PSU Bank', 'NIFTY IT' -> 'IT', 'NIFTY OIL & GAS' -> 'Oil & Gas'."""
+    keep = {"IT", "FMCG", "PSU", "MNC", "CPSE", "PSE", "&", "EV", "ESG"}
+    return " ".join(w if w in keep else w.capitalize() for w in index.replace("NIFTY ", "", 1).split())
+
+
 def indices(nse):
     """NSE's allIndices -> ({key: row}, sectors, market breadth, as_of)."""
     j = nse.get("allIndices")
@@ -147,7 +154,7 @@ def indices(nse):
                       "low": fnum(d.get("low")), "year_high": fnum(d.get("yearHigh")), "year_low": fnum(d.get("yearLow")),
                       "pe": fnum(d.get("pe")), "advances": fnum(d.get("advances")), "declines": fnum(d.get("declines")),
                       "label": name}
-    sectors = sorted(({"name": d["index"].replace("NIFTY ", "").title(), "chg_pct": fnum(d.get("percentChange")), "v": fnum(d.get("last"))}
+    sectors = sorted(({"name": sector_name(d["index"]), "chg_pct": fnum(d.get("percentChange")), "v": fnum(d.get("last"))}
                       for d in rows.values() if SECTOR_KEY in str(d.get("key", "")) and fnum(d.get("percentChange")) is not None),
                      key=lambda s: -s["chg_pct"])
     breadth = {"advances": fnum(j.get("advances")), "declines": fnum(j.get("declines")), "unchanged": fnum(j.get("unchanged"))}
@@ -337,7 +344,7 @@ def build(now=None, nse=None, option_ttl=180):
         out["sectors"], out["breadth"] = sectors, breadth
         for k, r in nse_rows.items():
             age = int((now - ts).total_seconds()) if ts else None
-            q = "realtime" if is_open and (age is None or age <= 180) else ("final" if not is_open else "stale")
+            q = "realtime" if is_open and (age is None or age <= LIVE_WINDOW_S) else ("final" if not is_open else "stale")
             out["instruments"][k] = {**r, "quality": q, "src": "NSE", "as_of": iso(ts), "age_s": age}
     except Exception as e:  # noqa: BLE001
         errors.append(f"allIndices: {type(e).__name__} {str(e)[:80]}")

@@ -592,7 +592,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     if(!i||i.src!=="NSE"||typeof i.v!=="number")return null;
     if(i.quality==="final")return nseOpen()?null:{px:i.v,ch:typeof i.chg_pct==="number"?i.chg_pct:null,dl:0,fin:true};
     var at=Date.parse(i.as_of),age=isNaN(at)?null:Math.max(0,(Date.now()-at)/1000);
-    if(age==null||age>480||!nseOpen())return null;
+    if(age==null||age>600||!nseOpen())return null;
     return {px:i.v,ch:typeof i.chg_pct==="number"?i.chg_pct:null,dl:age>=90?age:0,nse:true};
   }
   function tvNse(s){return "NSE:"+s.replace(/-/g,"_")}
