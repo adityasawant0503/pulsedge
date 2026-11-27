@@ -51,3 +51,4 @@ for name, path in [("marketStatus", "marketStatus"), ("allIndices", "allIndices"
         s = json.dumps(j)[:420]
         print(f"  {name}: 200, {len(b)} bytes | {s}")
     except Exception as e: print(f"  {name}: {type(e).__name__} {str(e)[:100]}")
+# rerun
