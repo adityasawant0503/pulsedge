@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-27T16:53:45+05:30",
+ "updated": "2026-11-27T19:21:42+05:30",
  "source": "NSE (bulk and block deals, provisional FII/DII cash, participant-wise open interest); NSDL (daily FPI investment, when NSE's report can't be reached)",
  "cash": {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "dii": {
-   "buy": 24352.87,
-   "sell": 18722.15,
-   "net": 5630.72
+   "buy": 17263.65,
+   "sell": 17820.07,
+   "net": -556.42
   },
   "fii": {
-   "buy": 17879.74,
-   "sell": 12036.41,
-   "net": 5843.33
+   "buy": 14259.45,
+   "sell": 12625.12,
+   "net": 1634.33
   }
  },
  "cash_history": [
@@ -62,690 +62,607 @@
    "fii": 5843.33,
    "dii": 5630.72,
    "src": "NSE"
+  },
+  {
+   "date": "2026-11-27",
+   "fii": 1634.33,
+   "dii": -556.42,
+   "src": "NSE"
   }
  ],
  "fno": {
-  "date": "2026-11-26",
-  "fii_long": 37660,
-  "fii_short": 126129,
-  "fii_long_pct": 23.0,
-  "prev_long_pct": 23.8,
-  "prev_date": "2026-11-25"
+  "date": "2026-11-27",
+  "fii_long": 36644,
+  "fii_short": 129516,
+  "fii_long_pct": 22.1,
+  "prev_long_pct": 23.0,
+  "prev_date": "2026-11-26"
  },
- "deals_date": "2026-11-26",
+ "deals_date": "2026-11-27",
  "deals": [
   {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "SCHAEFFLER SCHWEINFURT BETEILIGUNGS GMBH",
-   "who": "other",
-   "side": "sell",
-   "qty": 10159738,
-   "price": 3493.0,
-   "value_cr": 3548.8,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "LGEINDIA",
-   "name": "LG Electronics India Ltd.",
-   "client": "LG ELECTRONICS INC",
-   "who": "other",
-   "side": "sell",
-   "qty": 13575447,
-   "price": 1765.28,
-   "value_cr": 2396.45,
-   "kind": "bulk",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "ICICI PRUDENTIAL MUTUAL FUND",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 1715000,
-   "price": 3493.0,
-   "value_cr": 599.05,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "SBI MUTUAL FUND",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 1440000,
-   "price": 3493.0,
-   "value_cr": 502.99,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "MIRAE ASSET MUTUAL FUND",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 1000000,
-   "price": 3493.0,
-   "value_cr": 349.3,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "IIFL",
-   "name": "IIFL Finance Ltd.",
-   "client": "SMALLCAP WORLD FUND INC",
+   "date": "2026-11-27",
+   "symbol": "IGIL",
+   "name": "International Gemological Institute Ltd.",
+   "client": "BCP ASIA II TOPCO PTE . LTD .",
    "who": "foreign",
    "side": "sell",
-   "qty": 5615936,
-   "price": 600.16,
-   "value_cr": 337.05,
-   "kind": "bulk",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "NATIONAL PENSION SYSTEM (NPS) TRUST",
-   "who": "other",
-   "side": "buy",
-   "qty": 847000,
-   "price": 3493.0,
-   "value_cr": 295.86,
+   "qty": 3358015,
+   "price": 417.0,
+   "value_cr": 140.03,
    "kind": "block",
    "nifty500": true
   },
   {
-   "date": "2026-11-26",
-   "symbol": "AMAGI",
-   "name": "Amagi Media Labs Limited",
-   "client": "NORWEST VENTURE PARTNERS X MAURITIUS",
+   "date": "2026-11-27",
+   "symbol": "IGIL",
+   "name": "International Gemological Institute Ltd.",
+   "client": "BCP ASIA II TOPCO PTE. LTD.",
    "who": "foreign",
    "side": "sell",
-   "qty": 4737204,
-   "price": 554.0,
-   "value_cr": 262.44,
+   "qty": 3358016,
+   "price": 417.0,
+   "value_cr": 140.03,
    "kind": "block",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "IIFL",
-   "name": "IIFL Finance Ltd.",
-   "client": "UBS AG",
-   "who": "foreign",
-   "side": "buy",
-   "qty": 4320402,
-   "price": 600.0,
-   "value_cr": 259.22,
-   "kind": "bulk",
    "nifty500": true
   },
   {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "DSP MUTUAL FUND",
+   "date": "2026-11-27",
+   "symbol": "IGIL",
+   "name": "International Gemological Institute Ltd.",
+   "client": "OLD BRIDGE MUTUAL FUND",
    "who": "domestic",
    "side": "buy",
-   "qty": 700000,
-   "price": 3493.0,
-   "value_cr": 244.51,
+   "qty": 2400000,
+   "price": 417.0,
+   "value_cr": 100.08,
    "kind": "block",
    "nifty500": true
   },
   {
-   "date": "2026-11-26",
-   "symbol": "AMAGI",
-   "name": "Amagi Media Labs Limited",
-   "client": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 3327204,
-   "price": 554.0,
-   "value_cr": 184.33,
-   "kind": "block",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "ALKEM",
-   "name": "Alkem Laboratories Ltd.",
-   "client": "SEEMA SINGH",
-   "who": "other",
-   "side": "sell",
-   "qty": 358695,
-   "price": 5075.0,
-   "value_cr": 182.04,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "SUNDARAM MUTUAL FUND",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 480000,
-   "price": 3493.0,
-   "value_cr": 167.66,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "WHITEOAK CAPITAL MUTUAL FUND",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 425000,
-   "price": 3493.0,
-   "value_cr": 148.45,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "NIPPON INDIA MUTUAL FUND",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 400000,
-   "price": 3493.0,
-   "value_cr": 139.72,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 340000,
-   "price": 3493.0,
-   "value_cr": 118.76,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "UTI MUTUAL FUND",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 340000,
-   "price": 3493.0,
-   "value_cr": 118.76,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "EDELWEISS MUTUAL FUND",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 300000,
-   "price": 3493.0,
-   "value_cr": 104.79,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "SOCIETE GENERALE",
-   "who": "foreign",
-   "side": "buy",
-   "qty": 260738,
-   "price": 3493.0,
-   "value_cr": 91.08,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "HDFC STANDARD LIFE INSURANCE CO LTD",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 260000,
-   "price": 3493.0,
-   "value_cr": 90.82,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "BAJAJ ALLIANZ LIFE INSURANCE COMPANY LIMITED",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 200000,
-   "price": 3493.0,
-   "value_cr": 69.86,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "TATA MUTUAL FUND",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 200000,
-   "price": 3493.0,
-   "value_cr": 69.86,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "ALKEM",
-   "name": "Alkem Laboratories Ltd.",
-   "client": "ICICI PRUDENTIAL MUTUAL FUND",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 95000,
-   "price": 5075.0,
-   "value_cr": 48.21,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "ALKEM",
-   "name": "Alkem Laboratories Ltd.",
-   "client": "NIPPON INDIA MUTUAL FUND",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 95000,
-   "price": 5075.0,
-   "value_cr": 48.21,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "ALKEM",
-   "name": "Alkem Laboratories Ltd.",
-   "client": "HDFC MUTUAL FUND",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 95000,
-   "price": 5075.0,
-   "value_cr": 48.21,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "BNP PARIBAS ARBITRAGE",
-   "who": "foreign",
-   "side": "buy",
-   "qty": 132000,
-   "price": 3493.0,
-   "value_cr": 46.11,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "AMAGI",
-   "name": "Amagi Media Labs Limited",
-   "client": "OLD BRIDGE CAPITAL MANAGEMENT PVT LTD ALL CAP STRATEGY",
+   "date": "2026-11-27",
+   "symbol": "IGIL",
+   "name": "International Gemological Institute Ltd.",
+   "client": "STALLION ASSET PRIVATE LIMITED",
    "who": "other",
    "side": "buy",
-   "qty": 765000,
-   "price": 554.0,
-   "value_cr": 42.38,
-   "kind": "block",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "ALKEM",
-   "name": "Alkem Laboratories Ltd.",
-   "client": "BAJAJ LIFE INSURANCE LIMITED",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 73695,
-   "price": 5075.0,
-   "value_cr": 37.4,
+   "qty": 1198522,
+   "price": 417.0,
+   "value_cr": 49.98,
    "kind": "block",
    "nifty500": true
   },
   {
-   "date": "2026-11-26",
-   "symbol": "AMAGI",
-   "name": "Amagi Media Labs Limited",
-   "client": "LONG TERM EQUITY FUND",
-   "who": "other",
-   "side": "buy",
-   "qty": 645000,
-   "price": 554.0,
-   "value_cr": 35.73,
-   "kind": "block",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "ABU DHABI INVESTMENT AUTHORITY",
-   "who": "foreign",
-   "side": "buy",
-   "qty": 97162,
-   "price": 3493.0,
-   "value_cr": 33.94,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "symbol": "AGIIL",
    "name": "Agi Infra Limited",
-   "client": "ARTHKUMBH VENTURES LLP",
+   "client": "THAKKAR NILESHKUMAR FARSHURAM HUF",
    "who": "other",
    "side": "buy",
-   "qty": 1000000,
-   "price": 306.0,
-   "value_cr": 30.6,
+   "qty": 1150000,
+   "price": 307.77,
+   "value_cr": 35.39,
    "kind": "bulk",
    "nifty500": false
   },
   {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "INDIA ACORN ICAV",
-   "who": "other",
-   "side": "buy",
-   "qty": 86900,
-   "price": 3493.0,
-   "value_cr": 30.35,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "RATNAVEER",
-   "name": "Ratnaveer Precision Eng L",
-   "client": "NOMURA SINGAPORE LIMITED",
-   "who": "foreign",
-   "side": "buy",
-   "qty": 750000,
-   "price": 404.0,
-   "value_cr": 30.3,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "INDIA ACORN ICAV - ASHOKA WHITEOAK EMERGING MARKETS EQUITY FUND",
-   "who": "foreign",
-   "side": "buy",
-   "qty": 86216,
-   "price": 3493.0,
-   "value_cr": 30.12,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "ICICI PRUDENTIAL LIFE INSURANCE COMPANY LIMITED",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 85000,
-   "price": 3493.0,
-   "value_cr": 29.69,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "SBI LIFE INSURANCE COMPANY LIMITED",
-   "who": "domestic",
-   "side": "buy",
-   "qty": 85000,
-   "price": 3493.0,
-   "value_cr": 29.69,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "client": "BARODA BNP PARIBAS MUTUAL FUND",
-   "who": "foreign",
-   "side": "buy",
-   "qty": 85000,
-   "price": 3493.0,
-   "value_cr": 29.69,
-   "kind": "block",
-   "nifty500": true
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "HUBTOWN",
-   "name": "Ackruti City Limited",
-   "client": "RBA FINANCE AND INVESTMENT COMPANY",
-   "who": "other",
-   "side": "buy",
-   "qty": 1500000,
-   "price": 195.0,
-   "value_cr": 29.25,
-   "kind": "bulk",
-   "nifty500": false
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "TCI",
-   "name": "Transport Corporation of",
-   "client": "NIRMAL BANG (HUF)",
+   "date": "2026-11-27",
+   "symbol": "AGIIL",
+   "name": "Agi Infra Limited",
+   "client": "CRAFT EMERGING MARKET FUND PCC- ELITE CAPITAL FUND",
    "who": "other",
    "side": "sell",
-   "qty": 380000,
-   "price": 747.69,
-   "value_cr": 28.41,
+   "qty": 1094339,
+   "price": 306.0,
+   "value_cr": 33.49,
    "kind": "bulk",
    "nifty500": false
   },
   {
-   "date": "2026-11-26",
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
+   "date": "2026-11-27",
+   "symbol": "IGIL",
+   "name": "International Gemological Institute Ltd.",
+   "client": "CITIGROUP GLOBAL MARKETS SINGAPORE PTE LIMITED",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 719425,
+   "price": 417.0,
+   "value_cr": 30.0,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "VIKRAMSOLR",
+   "name": "Vikram Solar Limited",
+   "client": "GIRIA SANJAY KUMAR",
+   "who": "other",
+   "side": "sell",
+   "qty": 1966066,
+   "price": 140.67,
+   "value_cr": 27.66,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "RATNAVEER",
+   "name": "Ratnaveer Precision Eng L",
+   "client": "THAKKAR NILESHKUMAR FARSHURAM HUF",
+   "who": "other",
+   "side": "sell",
+   "qty": 600000,
+   "price": 423.57,
+   "value_cr": 25.41,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "IGIL",
+   "name": "International Gemological Institute Ltd.",
    "client": "MORGAN STANLEY ASIA SINGAPORE PTE",
    "who": "foreign",
    "side": "buy",
-   "qty": 80000,
-   "price": 3493.0,
-   "value_cr": 27.94,
+   "qty": 599521,
+   "price": 417.0,
+   "value_cr": 25.0,
    "kind": "block",
    "nifty500": true
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "IGIL",
+   "name": "International Gemological Institute Ltd.",
+   "client": "SUSQUEHANNA PACIFIC PTY LTD",
+   "who": "other",
+   "side": "buy",
+   "qty": 599521,
+   "price": 417.0,
+   "value_cr": 25.0,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "IGIL",
+   "name": "International Gemological Institute Ltd.",
+   "client": "ASHOKA INDIA EQUITY INVESTMENT TRUST PLC",
+   "who": "foreign",
+   "side": "buy",
+   "qty": 599521,
+   "price": 417.0,
+   "value_cr": 25.0,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "IGIL",
+   "name": "International Gemological Institute Ltd.",
+   "client": "WHITEOAK CAPITAL MUTUAL FUND",
+   "who": "domestic",
+   "side": "buy",
+   "qty": 599521,
+   "price": 417.0,
+   "value_cr": 25.0,
+   "kind": "block",
+   "nifty500": true
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "INDGN",
+   "name": "Indegene Limited",
+   "client": "RAJESH BHASKARAN NAIR",
+   "who": "other",
+   "side": "buy",
+   "qty": 373150,
+   "price": 670.0,
+   "value_cr": 25.0,
+   "kind": "block",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "INDGN",
+   "name": "Indegene Limited",
+   "client": "AARABHI PARTNERS CONSULTANTS LLP",
+   "who": "other",
+   "side": "sell",
+   "qty": 373150,
+   "price": 670.0,
+   "value_cr": 25.0,
+   "kind": "block",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "MARSONS",
+   "name": "Marsons Limited",
+   "client": "ANUPRIYA CONSULTANTS PVT LTD",
+   "who": "other",
+   "side": "sell",
+   "qty": 1000000,
+   "price": 152.51,
+   "value_cr": 15.25,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "SHALPAINTS",
+   "name": "Shalimar Paints Ltd",
+   "client": "TIGER STRATEGIES FUND -I",
+   "who": "other",
+   "side": "sell",
+   "qty": 1100000,
+   "price": 108.01,
+   "value_cr": 11.88,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "MIIL",
+   "name": "Meghna Infracon Infra L",
+   "client": "BAAHUBALI ENTERPRISE",
+   "who": "other",
+   "side": "sell",
+   "qty": 120000,
+   "price": 661.25,
+   "value_cr": 7.93,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "JAGRAN",
+   "name": "Jagran Prakashan Limited",
+   "client": "AEGIS INVESTMENT FUND",
+   "who": "other",
+   "side": "buy",
+   "qty": 1100000,
+   "price": 69.19,
+   "value_cr": 7.61,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "WATRANA",
+   "name": "Watrana Rentals Limited",
+   "client": "ASSATRA CAPITAL VENTURES PRIVATE LIMITED",
+   "who": "other",
+   "side": "buy",
+   "qty": 165600,
+   "price": 244.68,
+   "value_cr": 4.05,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "RFBL",
+   "name": "RFBL Flexi Pack Limited",
+   "client": "L7 HITECH PRIVATE LIMITED",
+   "who": "other",
+   "side": "sell",
+   "qty": 216000,
+   "price": 128.54,
+   "value_cr": 2.78,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "BRACEPORT",
+   "name": "Brace Port Logistics Ltd",
+   "client": "CORE INC",
+   "who": "other",
+   "side": "buy",
+   "qty": 198400,
+   "price": 118.76,
+   "value_cr": 2.36,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "WATRANA",
+   "name": "Watrana Rentals Limited",
+   "client": "SHRIPAL V VORA (HUF)",
+   "who": "other",
+   "side": "buy",
+   "qty": 94200,
+   "price": 237.83,
+   "value_cr": 2.24,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "NECCLTD",
+   "name": "North East Carry Corp Ltd",
+   "client": "N E C C AUTOMOBILES PRIVATE LIMITED",
+   "who": "other",
+   "side": "sell",
+   "qty": 750000,
+   "price": 26.27,
+   "value_cr": 1.97,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "VIJAYPD",
+   "name": "Vijaypd Ceutical Limited",
+   "client": "YASH HITESH PATEL",
+   "who": "other",
+   "side": "sell",
+   "qty": 162000,
+   "price": 80.69,
+   "value_cr": 1.31,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "ITALIANE",
+   "name": "Italian Edibles Limited",
+   "client": "AJAY MAKHIJA",
+   "who": "other",
+   "side": "sell",
+   "qty": 400000,
+   "price": 21.0,
+   "value_cr": 0.84,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "VIJAYPD",
+   "name": "Vijaypd Ceutical Limited",
+   "client": "FINVESTA FIRST",
+   "who": "other",
+   "side": "buy",
+   "qty": 100000,
+   "price": 80.4,
+   "value_cr": 0.8,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "AKG",
+   "name": "AKG Exim Limited",
+   "client": "KALAPI VINIT NAGADA",
+   "who": "other",
+   "side": "sell",
+   "qty": 890004,
+   "price": 8.44,
+   "value_cr": 0.75,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "BCPL",
+   "name": "BCPL Railway Infra Ltd",
+   "client": "ORION STOCKS LTD",
+   "who": "other",
+   "side": "sell",
+   "qty": 85196,
+   "price": 65.26,
+   "value_cr": 0.56,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "ITALIANE",
+   "name": "Italian Edibles Limited",
+   "client": "SACHIN GOVINDLAL MODI",
+   "who": "other",
+   "side": "buy",
+   "qty": 98000,
+   "price": 21.0,
+   "value_cr": 0.21,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "ITALIANE",
+   "name": "Italian Edibles Limited",
+   "client": "7SEA INVESTMENTS",
+   "who": "other",
+   "side": "buy",
+   "qty": 100000,
+   "price": 21.0,
+   "value_cr": 0.21,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "ITALIANE",
+   "name": "Italian Edibles Limited",
+   "client": "PRAJAL BHANDARI",
+   "who": "other",
+   "side": "buy",
+   "qty": 82000,
+   "price": 21.0,
+   "value_cr": 0.17,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "ITALIANE",
+   "name": "Italian Edibles Limited",
+   "client": "INDUS WORLD TRADE LIMITED",
+   "who": "other",
+   "side": "sell",
+   "qty": 80000,
+   "price": 21.0,
+   "value_cr": 0.17,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "PRAXIS-RE3",
+   "name": "Praxis Home Retail Ltd",
+   "client": "GLASTON MARIO MENEZES",
+   "who": "other",
+   "side": "buy",
+   "qty": 830039,
+   "price": 0.02,
+   "value_cr": 0.0,
+   "kind": "bulk",
+   "nifty500": false
+  },
+  {
+   "date": "2026-11-27",
+   "symbol": "PRAXIS-RE3",
+   "name": "Praxis Home Retail Ltd",
+   "client": "BENNETT COLEMAN & CO. LTD",
+   "who": "other",
+   "side": "sell",
+   "qty": 1715144,
+   "price": 0.02,
+   "value_cr": 0.0,
+   "kind": "bulk",
+   "nifty500": false
   }
  ],
  "by_stock": [
   {
-   "symbol": "SCHAEFFLER",
-   "name": "Schaeffler India Ltd.",
-   "foreign_cr": 345.82,
-   "domestic_cr": 2783.91
-  },
-  {
-   "symbol": "ALKEM",
-   "name": "Alkem Laboratories Ltd.",
-   "foreign_cr": 0.0,
-   "domestic_cr": 182.03
-  },
-  {
-   "symbol": "AMAGI",
-   "name": "Amagi Media Labs Limited",
-   "foreign_cr": -262.44,
-   "domestic_cr": 184.33
-  },
-  {
-   "symbol": "IIFL",
-   "name": "IIFL Finance Ltd.",
-   "foreign_cr": -77.83,
-   "domestic_cr": 0.0
-  },
-  {
-   "symbol": "RATNAVEER",
-   "name": "Ratnaveer Precision Eng L",
-   "foreign_cr": 30.3,
-   "domestic_cr": 0.0
+   "symbol": "IGIL",
+   "name": "International Gemological Institute Ltd.",
+   "foreign_cr": -200.06,
+   "domestic_cr": 125.08
   }
  ],
- "sectors_date": "2026-11-26",
+ "sectors_date": "2026-11-27",
  "sectors": [
   {
-   "label": "IT",
-   "close": 33386.95,
-   "d1": 3.66,
-   "d5": 6.8,
-   "broad": false
-  },
-  {
-   "label": "Realty",
-   "close": 972.85,
-   "d1": 3.27,
-   "d5": 5.9,
-   "broad": false
-  },
-  {
    "label": "Metals",
-   "close": 11713.5,
-   "d1": 1.17,
-   "d5": -4.16,
+   "close": 11878.0,
+   "d1": 1.4,
+   "d5": -3.43,
    "broad": false
   },
   {
    "label": "Smallcap 100",
-   "close": 19372.15,
-   "d1": 0.74,
-   "d5": 0.21,
+   "close": 19481.3,
+   "d1": 0.56,
+   "d5": 0.07,
    "broad": true
-  },
-  {
-   "label": "Energy",
-   "close": 36880.3,
-   "d1": 0.58,
-   "d5": -0.27,
-   "broad": false
-  },
-  {
-   "label": "Pharma",
-   "close": 29090.85,
-   "d1": 0.45,
-   "d5": 3.16,
-   "broad": false
-  },
-  {
-   "label": "Oil & Gas",
-   "close": 11457.4,
-   "d1": 0.34,
-   "d5": 0.57,
-   "broad": false
-  },
-  {
-   "label": "Midcap 100",
-   "close": 61781.85,
-   "d1": 0.32,
-   "d5": 1.32,
-   "broad": true
-  },
-  {
-   "label": "Nifty 50",
-   "close": 25884.5,
-   "d1": 0.25,
-   "d5": 2.6,
-   "broad": true
-  },
-  {
-   "label": "Healthcare",
-   "close": 17839.95,
-   "d1": 0.2,
-   "d5": 3.45,
-   "broad": false
-  },
-  {
-   "label": "Financials",
-   "close": 28718.9,
-   "d1": -0.16,
-   "d5": 2.6,
-   "broad": false
-  },
-  {
-   "label": "Banks",
-   "close": 63535.3,
-   "d1": -0.26,
-   "d5": 2.41,
-   "broad": false
   },
   {
    "label": "Media",
-   "close": 1665.75,
-   "d1": -0.34,
-   "d5": -6.57,
-   "broad": false
-  },
-  {
-   "label": "PSU Banks",
-   "close": 9529.9,
-   "d1": -0.68,
-   "d5": -0.14,
-   "broad": false
-  },
-  {
-   "label": "Auto",
-   "close": 28623.45,
-   "d1": -0.69,
-   "d5": 4.48,
-   "broad": false
-  },
-  {
-   "label": "FMCG",
-   "close": 49673.55,
-   "d1": -0.94,
-   "d5": 4.42,
+   "close": 1674.55,
+   "d1": 0.53,
+   "d5": -6.23,
    "broad": false
   },
   {
    "label": "Consumer durables",
-   "close": 38149.9,
+   "close": 38248.2,
+   "d1": 0.26,
+   "d5": -1.03,
+   "broad": false
+  },
+  {
+   "label": "Energy",
+   "close": 36935.0,
+   "d1": 0.15,
+   "d5": -1.26,
+   "broad": false
+  },
+  {
+   "label": "Midcap 100",
+   "close": 61846.3,
+   "d1": 0.1,
+   "d5": 0.36,
+   "broad": true
+  },
+  {
+   "label": "Oil & Gas",
+   "close": 11434.45,
+   "d1": -0.2,
+   "d5": -0.49,
+   "broad": false
+  },
+  {
+   "label": "Pharma",
+   "close": 28973.55,
+   "d1": -0.4,
+   "d5": 2.12,
+   "broad": false
+  },
+  {
+   "label": "PSU Banks",
+   "close": 9491.8,
+   "d1": -0.4,
+   "d5": -2.76,
+   "broad": false
+  },
+  {
+   "label": "Healthcare",
+   "close": 17763.6,
+   "d1": -0.43,
+   "d5": 2.45,
+   "broad": false
+  },
+  {
+   "label": "Banks",
+   "close": 63040.9,
+   "d1": -0.78,
+   "d5": -0.04,
+   "broad": false
+  },
+  {
+   "label": "FMCG",
+   "close": 49212.45,
+   "d1": -0.93,
+   "d5": 1.33,
+   "broad": false
+  },
+  {
+   "label": "Nifty 50",
+   "close": 25607.2,
+   "d1": -1.07,
+   "d5": 0.36,
+   "broad": true
+  },
+  {
+   "label": "Financials",
+   "close": 28337.15,
    "d1": -1.33,
-   "d5": 2.31,
+   "d5": 0.13,
+   "broad": false
+  },
+  {
+   "label": "Realty",
+   "close": 958.95,
+   "d1": -1.43,
+   "d5": 3.88,
+   "broad": false
+  },
+  {
+   "label": "Auto",
+   "close": 28199.9,
+   "d1": -1.48,
+   "d5": -1.4,
+   "broad": false
+  },
+  {
+   "label": "IT",
+   "close": 32758.1,
+   "d1": -1.88,
+   "d5": 5.95,
    "broad": false
   }
  ],
@@ -2079,6 +1996,76 @@
     38149.9,
     -1.33
    ]
+  },
+  "2026-11-27": {
+   "Nifty 50": [
+    25607.2,
+    -1.07
+   ],
+   "Midcap 100": [
+    61846.3,
+    0.1
+   ],
+   "Smallcap 100": [
+    19481.3,
+    0.56
+   ],
+   "Auto": [
+    28199.9,
+    -1.48
+   ],
+   "Banks": [
+    63040.9,
+    -0.78
+   ],
+   "Energy": [
+    36935.0,
+    0.15
+   ],
+   "Financials": [
+    28337.15,
+    -1.33
+   ],
+   "FMCG": [
+    49212.45,
+    -0.93
+   ],
+   "IT": [
+    32758.1,
+    -1.88
+   ],
+   "Media": [
+    1674.55,
+    0.53
+   ],
+   "Metals": [
+    11878.0,
+    1.4
+   ],
+   "Pharma": [
+    28973.55,
+    -0.4
+   ],
+   "PSU Banks": [
+    9491.8,
+    -0.4
+   ],
+   "Realty": [
+    958.95,
+    -1.43
+   ],
+   "Oil & Gas": [
+    11434.45,
+    -0.2
+   ],
+   "Healthcare": [
+    17763.6,
+    -0.43
+   ],
+   "Consumer durables": [
+    38248.2,
+    0.26
+   ]
   }
  },
  "fno_history": {
@@ -2095,13 +2082,14 @@
   "2026-11-20": 34.1,
   "2026-11-23": 20.1,
   "2026-11-25": 23.8,
-  "2026-11-26": 23.0
+  "2026-11-26": 23.0,
+  "2026-11-27": 22.1
  },
  "week": {
-  "nifty_5d": 2.6,
-  "fii_long_now": 23.0,
-  "fii_long_5d_ago": 32.5,
-  "fii_cash_5d": 41941.66,
-  "dii_cash_5d": 5630.72
+  "nifty_5d": 0.36,
+  "fii_long_now": 22.1,
+  "fii_long_5d_ago": 34.1,
+  "fii_cash_5d": 34846.1,
+  "dii_cash_5d": 5074.3
  }
 }

@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T16:53+05:30",
+ "updated": "2026-11-27T19:21+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "The Indian market fell sharply on Friday, with the Sensex dropping 1,000 points and the Nifty 277 points, led by losses in technology and finance stocks. HEG Limited listed on the NSE and BSE and announced a large expansion of its graphite electrode capacity, while DPSC Limited entered a corporate insolvency process. Sahaj Solar secured a $42 million contract in Mauritius, and Siemens Energy expressed confidence in winning a major HVDC order in India next year. Zydus Life saw a 3% dip after the USFDA requested more information on a new drug, and Angel One announced a new share issue that could dilute holdings.",
+  "summary": "PulsEdge flagged major business updates on Friday, including HEG's independent listing and expansion plans, along with new share buybacks from Zee Entertainment and Supriya Lifescience. Legal and insolvency news also made headlines, as the Supreme Court addressed bank prosecution sanctions and DPSC Limited faced an insolvency order. Meanwhile, sector performance was mixed, with metals gaining while IT shares declined.",
   "themes": [
-   "Market volatility and broad sell‑off",
-   "Corporate expansion and new contracts",
-   "Legal and regulatory challenges"
+   "Corporate expansions and share buybacks",
+   "Legal and insolvency developments for select firms",
+   "Mixed sector performance with metals up and IT down"
   ],
   "watch": [
-   "HEG Limited’s expansion and its execution risk",
-   "DPSC Limited’s insolvency filing and potential liquidation",
-   "Zydus Life’s FDA delay and its impact on future earnings"
+   "Execution of announced expansions and buybacks by companies like HEG and Zee Entertainment",
+   "Further legal developments regarding bank prosecution sanctions",
+   "Foreign funds' index-futures positions and overall market direction"
   ],
   "date": "2026-11-27",
-  "basis": "eec13119608c",
-  "updated": "2026-11-27T16:53+05:30",
-  "model": "openai/gpt-oss-20b",
-  "items": 105
+  "basis": "b8a5d04dd5ea",
+  "updated": "2026-11-27T19:21+05:30",
+  "model": "gemini-flash-lite-latest",
+  "items": 145
  },
  "stocks": {
   "BSE": {
@@ -91,37 +91,21 @@
    "updated": "2026-11-27T12:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "TVSMOTOR": {
-   "summary": "TVS Motor Company has launched a new cargo tricycle called the TVS Armado and signed new business agreements. It also signed a non-binding agreement with the Government of Tamil Nadu to invest 2,000 crore rupees over four years to create 1,000 jobs.",
-   "why": "These moves involve new products, business deals, and large investments that can change the company's future business and growth.",
-   "upside": "The planned investment and new product launches could boost the company's future earnings and market presence.",
-   "downside": "The new product's market reception is uncertain, the business agreements might be routine or low-value, and the state government deal is non-binding.",
-   "watch": [
-    "How the new TVS Armado cargo tricycle is received by the market.",
-    "Further details on the newly signed business agreements.",
-    "Updates on whether the non-binding agreement with the Tamil Nadu government becomes final."
-   ],
-   "about": "TVS Motor Company Ltd. is an automobile and auto components manufacturer.",
-   "basis": "4c1fdf5dfa2b",
-   "items": 4,
-   "updated": "2026-11-27T15:01+05:30",
-   "model": "gemini-flash-lite-latest"
-  },
   "GRAPHITE": {
-   "summary": "Graphite India Ltd. recently listed on the stock exchanges after being separated from HEG Limited. The company announced a plan to expand its graphite electrode production capacity to 1.15 lakh tonnes.",
-   "why": "This expansion aims to increase future profits for shareholders, but the high initial stock price may settle down as the initial excitement fades.",
-   "upside": "Successfully completing the large-scale expansion could lead to higher future profits.",
-   "downside": "The stock price might drop sharply if the initial buying excitement fades, and there is a risk that the large expansion project is not executed smoothly.",
+   "summary": "Graphite India Ltd listed on NSE and BSE after a demerger and started trading at about a 25% premium. The company announced a ₹650 crore plan to expand graphite electrode capacity to 1.15 lakh tonnes.",
+   "why": "The expansion could lift future sales and earnings, while the premium listing may affect the stock’s short‑term price.",
+   "upside": "If the capacity expansion is completed on schedule and demand for graphite electrodes stays strong, earnings could improve.",
+   "downside": "Execution delays or higher costs could hurt profitability, and the initial premium may erode if investor enthusiasm fades.",
    "watch": [
-    "How the stock price moves after the initial listing premium settles.",
-    "Progress on the ₹650 crore expansion project.",
-    "Updates on the company's production capacity reaching 1.15 lakh tonnes."
+    "Progress on the ₹650 crore graphite electrode expansion",
+    "Share price movement after the 25% premium listing",
+    "EU export‑control rules that could affect raw‑material supply"
    ],
-   "about": "Graphite India Ltd. is a capital goods company that produces graphite electrodes.",
-   "basis": "c84c5d92f9be",
-   "items": 3,
-   "updated": "2026-11-27T12:45+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Graphite India Ltd manufactures graphite electrodes used in battery applications.",
+   "basis": "f5eab0cd9281",
+   "items": 5,
+   "updated": "2026-11-27T19:21+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "HDFCBANK": {
    "summary": "PulsEdge flagged that HDFC Bank's market value recently jumped 30 percent from its October low, pushing it ahead of Airtel in size. At the same time, the Supreme Court ordered the bank to approve staff prosecution sanctions. Additionally, a major investment bank named HDFC Bank as a good bet for the coming year.",
@@ -266,6 +250,22 @@
    "updated": "2026-11-27T16:53+05:30",
    "model": "gemini-flash-lite-latest"
   },
+  "CPPLUS": {
+   "summary": "Aditya Infotech has just finished buying 30% of KGraph AI for 453.9 million rupees and has also filed an update about another acquisition deal that is still in progress.",
+   "why": "The new stake could change the company’s earnings and market reach, so shareholders should watch how the deal affects the business.",
+   "upside": "If the AI investment adds new revenue streams, the company could grow faster.",
+   "downside": "Integration problems or a lack of quick returns could hurt the company’s performance.",
+   "watch": [
+    "Progress on the ongoing acquisition mentioned in the update",
+    "Financial impact of the KGraph AI stake on the company’s results",
+    "Any announcements about how the AI technology will be integrated"
+   ],
+   "about": "",
+   "basis": "93d69e640507",
+   "items": 3,
+   "updated": "2026-11-27T19:21+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "WELCORP": {
    "summary": "Welspun Corp Ltd. announced receipt of new business contracts, including an export order for large‑diameter steel pipes, and its shares rose about 5% after the news. An executive also projected EBITDA could reach ₹5,000 cr in two years.",
    "why": "New contracts can increase future revenue, which matters to shareholders, while the EBITDA outlook signals confidence in growth.",
@@ -314,22 +314,6 @@
    "updated": "2026-11-25T19:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "MOTILALOFS": {
-   "summary": "Motilal Oswal Financial Services received a SEBI adjudication order, raising regulatory concerns, while the company also highlighted capex‑led growth plans that could boost earnings. The broader financial sector index has been rising, up 2.2% in the last session.",
-   "why": "Regulatory action can affect the firm’s reputation and profitability, and the growth outlook could impact shareholder returns.",
-   "upside": "If the new capital‑expenditure projects are executed successfully, earnings could improve.",
-   "downside": "The SEBI order could lead to fines or operational restrictions that hurt profitability.",
-   "watch": [
-    "Outcome of the SEBI adjudication and any penalties",
-    "Progress on the announced capex projects",
-    "Continued performance of the financial sector index"
-   ],
-   "about": "Motilal Oswal Financial Services provides brokerage, investment and financial advisory services.",
-   "basis": "ec9ec420f4fe",
-   "items": 2,
-   "updated": "2026-11-26T16:58+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "ACMESOLAR": {
    "summary": "ACME Solar Holdings has recently started operating new battery storage systems and a hybrid power project. These additions increase the company's total capacity for storing and generating electricity.",
    "why": "More operational capacity means the company can potentially sell more energy services, which could support its business growth.",
@@ -345,6 +329,38 @@
    "items": 4,
    "updated": "2026-11-27T04:10+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "ZEEL": {
+   "summary": "Zee Entertainment Enterprises Ltd. (ZEEL) has announced a share buyback through a tender offer and a letter of offer. The buyback aims to reduce the number of shares in circulation and may support the share price. The company is listed in the Nifty 500 and operates in the media entertainment and publication sector.",
+   "why": "For shareholders, a buyback can increase earnings per share and signal confidence in the company’s prospects. It also reduces the share count, which can affect the value of each remaining share.",
+   "upside": "If the buyback is executed as planned, it could support the share price.",
+   "downside": "The buyback may be smaller than expected or delayed, which could limit its impact.",
+   "watch": [
+    "Execution of the tender offer buyback",
+    "Final size of the buyback announced",
+    "Trend in the media sector index"
+   ],
+   "about": "Zee Entertainment Enterprises Ltd. is a media entertainment and publication company.",
+   "basis": "76a9ce3e32b6",
+   "items": 2,
+   "updated": "2026-11-27T19:21+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
+  "MOTILALOFS": {
+   "summary": "Motilal Oswal Financial Services received a SEBI adjudication order on 25 November 2026. The order could affect the company’s reputation and profitability. This is the main event for the company right now.",
+   "why": "Shareholders should note that regulatory actions can lead to fines or operational restrictions, which may reduce earnings.",
+   "upside": "",
+   "downside": "Potential fines or operational constraints from the SEBI order.",
+   "watch": [
+    "Final decision and any penalties announced by SEBI",
+    "Any operational restrictions imposed on the company",
+    "Movement of the Financials sector index"
+   ],
+   "about": "",
+   "basis": "875f2db98a0d",
+   "items": 1,
+   "updated": "2026-11-27T19:21+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "KSB": {
    "summary": "KSB Ltd. recently announced that it has been awarded a new contract. This news was shared with the stock exchange to inform investors of the company's latest business activity.",
@@ -472,21 +488,21 @@
    "updated": "2026-11-26T16:58+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "LT": {
-   "summary": "Larsen & Toubro recently secured a large 2,500-crore battery storage contract in Gujarat. This win helped its stock jump over two percent.",
-   "why": "Big new contracts bring in more revenue and help the company grow its renewable energy business.",
-   "upside": "Successful completion of the battery storage project could further boost the company's revenue and support its growth in the renewable sector.",
-   "downside": "Project delays could negatively impact the company's profit margins.",
+  "IGIL": {
+   "summary": "International Gemological Institute Ltd. (IGIL) has seen a flurry of block trades on 27 November 2026. Old Bridge Mutual Fund and Stallion Asset bought a combined 3.6 million shares, while BCP Asia II Topco sold 3.36 million shares in a single trade.",
+   "why": "Large institutional trades can signal confidence or concern, which may influence the stock’s liquidity and investor sentiment.",
+   "upside": "The purchases by Old Bridge Mutual Fund and Stallion Asset could be interpreted as a vote of confidence.",
+   "downside": "The sale by BCP Asia II Topco might indicate a lack of confidence or a need for liquidity.",
    "watch": [
-    "Progress on the Gujarat battery storage project",
-    "Any updates on profit margins",
-    "Future renewable energy contract wins"
+    "Any new block deals involving IGIL in the coming days",
+    "Price movement following the large trades",
+    "Changes in institutional ownership disclosed in the next 10‑day trading window"
    ],
-   "about": "Larsen & Toubro Ltd. is a major company operating in India's construction sector and is part of the Nifty 50 index.",
-   "basis": "a9792acf0498",
-   "items": 1,
-   "updated": "2026-11-27T16:53+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "International Gemological Institute Ltd. provides gemological services.",
+   "basis": "804f81861cda",
+   "items": 9,
+   "updated": "2026-11-27T19:21+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "WIPRO": {
    "summary": "Wipro shares jumped after the IT company signed a major strategic partnership with global energy firm BP to transform finance operations. Around 3,000 BP employees are set to join Wipro under this new operating model. Meanwhile, Indian IT stocks have risen despite US tariff threats.",
@@ -505,52 +521,20 @@
    "model": "gemini-flash-lite-latest"
   },
   "ZYDUSLIFE": {
-   "summary": "Zydus Lifesciences is facing regulatory scrutiny as the US FDA has asked for more information on its new drug, delaying approval. At the same time, the company received an export inspection report for its Ankleshwar API plant and a key certificate for a new manufacturing facility in Ahmedabad’s SEZ.",
-   "why": "Shareholders should watch the FDA delays because they could reduce earnings from the new product, while the new facility may improve efficiency and lower taxes over time.",
-   "upside": "If the FDA issues are resolved quickly, the drug could launch in the US and boost sales, and the new Ahmedabad plant could enhance margins.",
-   "downside": "Further regulatory delays or adverse inspection findings could extend the earnings impact and delay product launches.",
+   "summary": "Zydus Lifesciences shares fell 3% after the US FDA issued a Complete Response Letter (CRL) on a new drug, delaying its approval. The company also received a complete response letter for another drug and had a US FDA inspection of its Ankleshwar API plant.",
+   "why": "Regulatory delays can reduce the company’s future earnings and sales, affecting shareholder value.",
+   "upside": "If the company resolves the FDA issues quickly, the drugs could be approved and sales may resume.",
+   "downside": "Further regulatory delays could extend the earnings impact and keep the drugs off the market.",
    "watch": [
-    "Outcome of the FDA complete response letter for the Saroglitazar NDA",
-    "Results of the FDA inspection of the Ankleshwar API plant",
-    "Operational performance of the new Ahmedabad SEZ manufacturing facility"
+    "FDA’s decision on the CRL for the new drug",
+    "Outcome of the complete response letter for the SAROGLITAZAR NDA",
+    "Findings from the FDA inspection of the Ankleshwar API plant"
    ],
-   "about": "Zydus Lifesciences Ltd. develops, manufactures and sells pharmaceutical products in the healthcare sector.",
-   "basis": "c01232c45c32",
-   "items": 4,
-   "updated": "2026-11-27T10:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "JWL": {
-   "summary": "Jupiter Wagons shares surged 30% in two days after announcing a South Korean joint venture, then fell 7.5% as investors took profits. The company also plans to invest ₹1,000 crore over the next three years in its passenger rail business.",
-   "why": "The partnership and investment plans could affect the company’s earnings and cash flow, which matters to shareholders who own the stock.",
-   "upside": "The new joint venture and large investment could boost future earnings.",
-   "downside": "Profit booking after the surge and high capital expenditure could pressure short‑term cash flows and margins.",
-   "watch": [
-    "Possible price correction after the sharp rise",
-    "Profit booking activity by investors",
-    "Impact of ₹1,000 crore capex on cash flow"
-   ],
-   "about": "Jupiter Wagons Ltd. manufactures railway wagons.",
-   "basis": "1d177c4f0afc",
+   "about": "Zydus Lifesciences Ltd. operates in the healthcare sector.",
+   "basis": "0ae29b966da9",
    "items": 3,
-   "updated": "2026-11-27T15:30+05:30",
+   "updated": "2026-11-27T19:21+05:30",
    "model": "openai/gpt-oss-20b"
-  },
-  "SUZLON": {
-   "summary": "Suzlon Energy is expanding its production capacity by building new facilities, including a 1 GW smart blade factory in Tamil Nadu. The company has officially notified the stock exchange about these additions to its manufacturing setup.",
-   "why": "Expanding capacity allows the company to produce more wind turbines, which could lead to higher sales and profits for shareholders in the future.",
-   "upside": "Successful completion of the new factories could significantly boost the company's ability to meet market demand and grow its revenue.",
-   "downside": "The expansion carries risks of execution delays or cost overruns, which could impact the timeline and financial benefits of the new capacity.",
-   "watch": [
-    "Progress updates on the construction of the Tamil Nadu blade factory",
-    "Official announcements regarding the timing of new capacity coming online",
-    "Any reports of delays or cost increases in the expansion projects"
-   ],
-   "about": "Suzlon Energy is a capital goods company that manufactures wind turbines and related components.",
-   "basis": "0f8b984245a0",
-   "items": 3,
-   "updated": "2026-11-26T11:45+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "FINCABLES": {
    "summary": "Finolex Cables saw a block trade on Nov 25 where ORBITELECTRICALS PRIVATE LIMITED bought about 4.6 lakh shares worth ₹53 crore, while ARUNA MUKESH KATARA sold the same amount at ₹1,159 per share.",
@@ -585,35 +569,36 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is seeing its business backdrop affected by rising oil prices due to Middle East supply worries. At the same time, these higher oil prices are contributing to a weaker Indian rupee and inflation concerns.",
-   "why": "PulsEdge noted that while higher oil prices can increase revenue for oil producers, broader market sentiment can be pressured by a weaker rupee and rising inflation worries.",
-   "upside": "Higher oil prices driven by Middle East tensions could increase earnings for oil producers like Oil India.",
-   "downside": "Geopolitical tensions could de-escalate or oil prices could reverse quickly, causing prices to fall.",
+   "summary": "Oil India Ltd. is seeing higher oil prices due to supply worries and conflicts in the Middle East. At the same time, these rising oil prices have contributed to a weaker Indian rupee and broader market worries about inflation.",
+   "why": "PulsEdge noted that while higher oil prices can potentially increase revenue and earnings for oil-selling companies, they can also create wider economic pressures like higher borrowing costs and a weaker currency.",
+   "upside": "Higher global oil prices could boost earnings for oil producers like Oil India.",
+   "downside": "Geopolitical tensions could ease and cause oil prices to fall quickly.",
    "watch": [
-    "Middle East conflict developments",
-    "Crude oil price movements",
-    "Rupee and bond yield trends"
+    "Middle East supply news and oil price movements",
+    "The value of the Indian rupee against the US dollar",
+    "Inflation and interest rate trends"
    ],
-   "about": "",
-   "basis": "8b7473676335",
-   "items": 18,
-   "updated": "2026-11-27T16:53+05:30",
+   "about": "Oil India Ltd. is an oil and gas company included in the Nifty 500 index.",
+   "basis": "b4febac59498",
+   "items": 17,
+   "updated": "2026-11-27T19:21+05:30",
    "model": "gemini-flash-lite-latest"
   },
-  "TATASTEEL": {
-   "summary": "India's market regulator is currently studying Tata Steel's proposed deal with APL Apollo to ensure it protects the interests of all company owners. In response to this regulatory attention and potential rule checks, Tata Steel has shown openness to tweaking or restructuring the deal. Meanwhile, the broader metals sector has experienced mixed movements recently.",
-   "why": "This matters because major corporate deals and regulatory investigations can change how a transaction works, potentially causing the stock price to move up or down.",
-   "upside": "Tata Steel has indicated it is willing to restructure the deal, which could help address regulatory concerns and keep the transaction moving forward.",
-   "downside": "The regulatory scrutiny could lead to delays, penalties, or even a restructuring that affects the company.",
+  "AMBER": {
+   "summary": "Amber Enterprises India Ltd. announced a partnership for a 500 crore rupee investment to expand its circuit board manufacturing in Tamil Nadu. This expansion is planned to happen over five years starting in 2027. A research firm also recently added the company to its list of high-conviction stocks.",
+   "why": "This matters because the company is planning to increase its production capacity, which could lead to higher sales and profits in the future. However, the benefits will not be immediate as the project starts in 2027.",
+   "upside": "The new investment could boost future revenue by allowing the company to produce more circuit boards.",
+   "downside": "There is a risk that the five-year expansion plan may face delays or fail to deliver the expected results.",
    "watch": [
-    "Updates from the market regulator regarding the deal review.",
-    "Any official announcements on restructuring the APL Apollo transaction."
+    "Updates on the progress of the Tamil Nadu factory expansion.",
+    "How the partnership with Ascent Circuits develops.",
+    "Performance of the Consumer Durables sector index."
    ],
-   "about": "Tata Steel Ltd. is one of India's largest listed companies operating in the metals and mining sector.",
-   "basis": "9c6ba4345c81",
-   "items": 9,
-   "updated": "2026-11-27T15:15+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "Amber Enterprises India Ltd. is a company in the Consumer Durables sector that manufactures circuit boards.",
+   "basis": "b69327ec544b",
+   "items": 3,
+   "updated": "2026-11-27T04:10+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "INFY": {
    "summary": "Infosys is riding a rally in Indian IT stocks while the sector faces headwinds from a stronger rupee and US tariff concerns, and the company recently earned a top‑level AI maturity certification.",
@@ -630,6 +615,21 @@
    "items": 4,
    "updated": "2026-11-26T12:00+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "TATASTEEL": {
+   "summary": "India's market regulator is currently studying Tata Steel's proposed deal with APL Apollo to ensure it protects the interests of all company owners. In response to this regulatory attention and potential rule checks, Tata Steel has shown openness to tweaking or restructuring the deal. Meanwhile, the broader metals sector has experienced mixed movements recently.",
+   "why": "This matters because major corporate deals and regulatory investigations can change how a transaction works, potentially causing the stock price to move up or down.",
+   "upside": "Tata Steel has indicated it is willing to restructure the deal, which could help address regulatory concerns and keep the transaction moving forward.",
+   "downside": "The regulatory scrutiny could lead to delays, penalties, or even a restructuring that affects the company.",
+   "watch": [
+    "Updates from the market regulator regarding the deal review.",
+    "Any official announcements on restructuring the APL Apollo transaction."
+   ],
+   "about": "Tata Steel Ltd. is one of India's largest listed companies operating in the metals and mining sector.",
+   "basis": "9c6ba4345c81",
+   "items": 9,
+   "updated": "2026-11-27T15:15+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "BAJAJ-AUTO": {
    "summary": "Bajaj Auto shares fell in recent market downturn, but the company announced a record 394‑km range for its electric three‑wheeler, showing progress in EVs.",
@@ -663,22 +663,6 @@
    "updated": "2026-11-27T10:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "COFORGE": {
-   "summary": "Coforge won an award for its AI product EvolveOps.AI and announced enhancements to its Nuuron security platform. At the same time, a major investor may sell up to 10% of its stake and a large block deal is rumored for next week.",
-   "why": "Shareholders should watch the potential share dilution and price pressure from the possible stake sale and block deal, while the award and product upgrades could boost the company's reputation and sales.",
-   "upside": "The AI award and new security capabilities could attract new clients and increase revenue.",
-   "downside": "A large private sale of shares could increase supply and weigh on the share price.",
-   "watch": [
-    "Progress of Advent‑owned entities' stake sale",
-    "Execution of the rumored block deal next week",
-    "Client uptake of EvolveOps.AI and Nuuron enhancements"
-   ],
-   "about": "Coforge Ltd. provides information technology services and solutions.",
-   "basis": "a49e7cc47abb",
-   "items": 4,
-   "updated": "2026-11-26T13:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "ANGELONE": {
    "summary": "Angel One shares recently surged 7% on heavy trading volume despite a weak market, nearing a record high. At the same time, the company announced plans to issue new shares to raise capital and reported the resignation of a senior leader.",
    "why": "These events matter to share owners because new shares can dilute existing holdings, while leadership changes and shifting momentum can impact the company's stability and short-term stock direction.",
@@ -695,21 +679,37 @@
    "updated": "2026-11-27T15:15+05:30",
    "model": "gemini-flash-lite-latest"
   },
-  "AMBER": {
-   "summary": "Amber Enterprises India Ltd. announced a partnership for a 500 crore rupee investment to expand its circuit board manufacturing in Tamil Nadu. This expansion is planned to happen over five years starting in 2027. A research firm also recently added the company to its list of high-conviction stocks.",
-   "why": "This matters because the company is planning to increase its production capacity, which could lead to higher sales and profits in the future. However, the benefits will not be immediate as the project starts in 2027.",
-   "upside": "The new investment could boost future revenue by allowing the company to produce more circuit boards.",
-   "downside": "There is a risk that the five-year expansion plan may face delays or fail to deliver the expected results.",
+  "COFORGE": {
+   "summary": "Coforge won an award for its AI product EvolveOps.AI and announced enhancements to its Nuuron security platform. At the same time, a major investor may sell up to 10% of its stake and a large block deal is rumored for next week.",
+   "why": "Shareholders should watch the potential share dilution and price pressure from the possible stake sale and block deal, while the award and product upgrades could boost the company's reputation and sales.",
+   "upside": "The AI award and new security capabilities could attract new clients and increase revenue.",
+   "downside": "A large private sale of shares could increase supply and weigh on the share price.",
    "watch": [
-    "Updates on the progress of the Tamil Nadu factory expansion.",
-    "How the partnership with Ascent Circuits develops.",
-    "Performance of the Consumer Durables sector index."
+    "Progress of Advent‑owned entities' stake sale",
+    "Execution of the rumored block deal next week",
+    "Client uptake of EvolveOps.AI and Nuuron enhancements"
    ],
-   "about": "Amber Enterprises India Ltd. is a company in the Consumer Durables sector that manufactures circuit boards.",
-   "basis": "b69327ec544b",
+   "about": "Coforge Ltd. provides information technology services and solutions.",
+   "basis": "a49e7cc47abb",
+   "items": 4,
+   "updated": "2026-11-26T13:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "JWL": {
+   "summary": "Jupiter Wagons shares surged 30% in two days after announcing a South Korean joint venture, then fell 7.5% as investors took profits. The company also plans to invest ₹1,000 crore over the next three years in its passenger rail business.",
+   "why": "The partnership and investment plans could affect the company’s earnings and cash flow, which matters to shareholders who own the stock.",
+   "upside": "The new joint venture and large investment could boost future earnings.",
+   "downside": "Profit booking after the surge and high capital expenditure could pressure short‑term cash flows and margins.",
+   "watch": [
+    "Possible price correction after the sharp rise",
+    "Profit booking activity by investors",
+    "Impact of ₹1,000 crore capex on cash flow"
+   ],
+   "about": "Jupiter Wagons Ltd. manufactures railway wagons.",
+   "basis": "1d177c4f0afc",
    "items": 3,
-   "updated": "2026-11-27T04:10+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "updated": "2026-11-27T15:30+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "CIPLA": {
    "summary": "Cipla is in the news because of potential US trade changes. A new trade deal could lower US taxes on Indian goods, boosting sales, while new US tariffs could raise costs and hurt profits.",
@@ -742,21 +742,6 @@
    "items": 2,
    "updated": "2026-11-26T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "WELSPUNLIV": {
-   "summary": "Welspun Living shares have risen significantly this year, and the company is planning new investments for growth. However, it now faces potential challenges from US tariff threats on Indian goods.",
-   "why": "This matters because new business investments could boost earnings, but extra fees on US exports might reduce profit margins and affect the stock.",
-   "upside": "New investment projects could successfully drive growth and lift earnings for shareholders.",
-   "downside": "The actual use of US tariffs could lower profit margins.",
-   "watch": [
-    "Updates on US tariff decisions",
-    "Progress on new investment projects"
-   ],
-   "about": "Welspun Living Ltd. is a textile company included in the Nifty 500 index of India's largest listed companies.",
-   "basis": "f24c953ad523",
-   "items": 2,
-   "updated": "2026-11-27T15:30+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "ZENTEC": {
    "summary": "Zen Technologies Ltd. said its business in the second half of the fiscal year will be much better than in the first half.",
@@ -836,22 +821,6 @@
    "items": 2,
    "updated": "2026-11-27T15:15+05:30",
    "model": "gemini-flash-lite-latest"
-  },
-  "CGCL": {
-   "summary": "Capri Global Capital Ltd. raised $30 million from the BlueOrchard Microfinance Fund, its first impact‑fundraise. The funding was announced on November 25, 2026.",
-   "why": "The new capital could support business growth but may dilute existing shareholders if equity was issued.",
-   "upside": "If the funds are deployed to expand lending or other services, earnings could improve.",
-   "downside": "If the raise involves issuing new shares, existing owners could see their ownership percentage fall.",
-   "watch": [
-    "Sector index performance – Financials fell 2.5% in the last session",
-    "Details on how the $30 million will be used",
-    "Any further equity issuance plans"
-   ],
-   "about": "Capri Global Capital Ltd. is a financial services company.",
-   "basis": "993d23826224",
-   "items": 2,
-   "updated": "2026-11-25T14:16+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "KALYANKJIL": {
    "summary": "Kalyan Jewellers shares rose up to 4% as gold prices stopped falling and began to rise slightly. The broader consumer durables index fell 1.3% in the last session but has gained 2.3% over the past five sessions. The stock’s recent gain reflects optimism that steadier gold prices could boost jewellery demand.",
@@ -948,21 +917,6 @@
    "items": 3,
    "updated": "2026-11-27T10:15+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "POONAWALLA": {
-   "summary": "Poonawalla Fincorp is raising capital through a private placement of equity and has issued ₹500 crore in non-convertible debentures. These moves change the company's funding and debt levels.",
-   "why": "New shares can dilute your current holdings, while higher debt adds leverage that affects share value and earnings.",
-   "upside": "",
-   "downside": "The private placement might be undersubscribed, and the new debt could put pressure on earnings.",
-   "watch": [
-    "The outcome of the December 1, 2026 board meeting on equity fund raising.",
-    "How the new debt and capital raise impact upcoming earnings."
-   ],
-   "about": "Poonawalla Fincorp Ltd. is a financial services company included in the Nifty 500 index.",
-   "basis": "4827717e08b1",
-   "items": 2,
-   "updated": "2026-11-27T10:15+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "VIJAYA": {
    "summary": "Vijaya Diagnostic Centre has completed the acquisition of the diagnostic business from Arya Wellness Centre in Guwahati. The company has also filed an update with the stock exchange regarding this acquisition.",
@@ -1074,22 +1028,6 @@
    "basis": "e1fc69a8d623",
    "items": 1,
    "updated": "2026-11-25T17:12+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "POWERGRID": {
-   "summary": "Power Grid Corporation of India expects its sales to drop by about a quarter starting in a few years. The company is looking for new business deals to help offset this expected decline.",
-   "why": "Lower sales usually mean less profit, which can affect the value of the shares you own.",
-   "upside": "The company is actively seeking new state deals and partnership bids to replace the lost revenue.",
-   "downside": "If the company fails to secure these new deals, the revenue drop could be worse than expected.",
-   "watch": [
-    "Whether the company wins new state monetization bids",
-    "Progress on consortium partnership deals",
-    "Performance of the broader Energy sector index"
-   ],
-   "about": "Power Grid is a major company in India's power sector and is one of the 50 largest listed companies in the country.",
-   "basis": "fd95ec8fc9ae",
-   "items": 1,
-   "updated": "2026-11-25T13:47+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "MCX": {
@@ -1251,6 +1189,22 @@
    "items": 2,
    "updated": "2026-11-27T09:15+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "TVSMOTOR": {
+   "summary": "TVS Motor Company has launched a new cargo tricycle called the TVS Armado and signed new business agreements. It also signed a non-binding agreement with the Government of Tamil Nadu to invest 2,000 crore rupees over four years to create 1,000 jobs.",
+   "why": "These moves involve new products, business deals, and large investments that can change the company's future business and growth.",
+   "upside": "The planned investment and new product launches could boost the company's future earnings and market presence.",
+   "downside": "The new product's market reception is uncertain, the business agreements might be routine or low-value, and the state government deal is non-binding.",
+   "watch": [
+    "How the new TVS Armado cargo tricycle is received by the market.",
+    "Further details on the newly signed business agreements.",
+    "Updates on whether the non-binding agreement with the Tamil Nadu government becomes final."
+   ],
+   "about": "TVS Motor Company Ltd. is an automobile and auto components manufacturer.",
+   "basis": "4c1fdf5dfa2b",
+   "items": 4,
+   "updated": "2026-11-27T15:01+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "ONGC": {
    "summary": "ONGC awarded a multi‑year charter contract to ABS Marine Services for its offshore supply vessel Emerald, worth about ₹120.14 crore. The move shows the company is spending on offshore operations as its sector index posted modest gains.",
