@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T14:02:43+05:30",
+ "updated": "2026-11-27T14:17:13+05:30",
  "summary": {
-  "calls": 2430,
-  "scored_calls": 1197,
+  "calls": 2431,
+  "scored_calls": 1198,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "85783203cb5cc6af",
+   "symbol": "ABDL",
+   "time": "2026-11-27T14:09:13+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Allied Blenders and Distillers Limited: Allied Blenders and Distillers Limited has informed the Exchange regarding 'Reply to clarification sought on increase in",
+   "url": "https://nsearchives.nseindia.com/corporate/ABDINDIA_27112026140904_Clarification_-_Volume_Movement_Letter_sd.pdf",
+   "alert_px": 827.25,
+   "alert_move": 0.85,
+   "alert_at": "2026-11-27T14:16:54+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "cd3e1f4dfd623403",
    "symbol": "NESTLEIND",

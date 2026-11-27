@@ -1,6 +1,14 @@
 {
  "date": "2026-11-27",
- "updated": "2026-11-27T14:02:43+05:30",
+ "updated": "2026-11-27T14:17:09+05:30",
+ "writer": "premarket",
+ "data_as_of": "2026-11-27T14:17:09+05:30",
+ "market": {
+  "status": "Open",
+  "open": true,
+  "message": "Normal Market is Open",
+  "as_of": "2026-11-27T14:15:00+05:30"
+ },
  "sentiment": "Mildly bearish",
  "breadth": {
   "up": 1,
@@ -8,13 +16,18 @@
  },
  "checklist": [
   {
-   "title": "Nifty 50 now (15 min delayed)",
+   "title": "Nifty 50 live",
    "dir": "down",
-   "value": "25,700.10 (-0.71%)",
+   "value": "25,680.20 (-0.79%)",
    "detail": [
     "Previous close 25,884.50",
-    "GIFT Nifty 25,729.5 (-1.16%)"
-   ]
+    "GIFT Nifty 25,754.0 (-1.07%)",
+    "Today: open 25,839.2 · high 25,909.2 · low 25,643.7",
+    "NSE · live · as of 14:15 IST"
+   ],
+   "quality": "realtime",
+   "src": "NSE",
+   "as_of": "2026-11-27T14:15:00+05:30"
   },
   {
    "title": "US close - Dow/S&P/Nasdaq direction",
@@ -24,8 +37,12 @@
     "Dow 50,182.95 +0.33%",
     "S&P 7,182.78 -0.25%",
     "Nasdaq 23,585.80 -0.62%",
-    "Nasdaq futures now +2.64%"
-   ]
+    "Nasdaq futures now +2.59%",
+    "TradingView (US futures 10 min delayed) · final close"
+   ],
+   "quality": "final",
+   "src": "TradingView (US futures 10 min delayed)",
+   "as_of": "2026-11-27T14:17:09+05:30"
   },
   {
    "title": "Asian markets live - Nikkei, Hang Seng",
@@ -33,29 +50,115 @@
    "value": "Asia higher",
    "detail": [
     "Nikkei 58,710.89 +2.11%",
-    "Hang Seng 22,694.78 +2.11%"
-   ]
+    "Hang Seng 22,694.78 +2.11%",
+    "TradingView · live · as of 14:17 IST"
+   ],
+   "quality": "realtime",
+   "src": "TradingView",
+   "as_of": "2026-11-27T14:17:09+05:30"
   },
   {
    "title": "DXY + USDINR move",
    "dir": "down",
    "value": "Rupee under pressure",
    "detail": [
-    "DXY 103.80 +0.02%",
-    "USD/INR 92.892 +0.49%"
-   ]
+    "DXY 103.81 +0.03%",
+    "USD/INR 92.897 +0.50%",
+    "TradingView · live · as of 14:17 IST"
+   ],
+   "quality": "realtime",
+   "src": "TradingView",
+   "as_of": "2026-11-27T14:17:09+05:30"
   },
   {
    "title": "Brent crude level",
    "dir": "flat",
-   "value": "$92.51 +0.92%",
-   "detail": []
+   "value": "$92.47 +0.87%",
+   "detail": [
+    "TradingView · delayed 10 min · as of 14:17 IST"
+   ],
+   "quality": "delayed_10m",
+   "src": "TradingView",
+   "as_of": "2026-11-27T14:17:09+05:30"
   },
   {
    "title": "India VIX",
    "dir": "flat",
-   "value": "16.23 (-3.56%) — normal",
-   "detail": []
+   "value": "16.56 (-1.66%) — normal",
+   "detail": [
+    "Previous close 16.84",
+    "Day range 15.17–16.86",
+    "NSE · live · as of 14:15 IST"
+   ],
+   "quality": "realtime",
+   "src": "NSE",
+   "as_of": "2026-11-27T14:15:00+05:30"
+  },
+  {
+   "title": "Key levels - Nifty pivots and CPR",
+   "dir": "flat",
+   "value": "Pivot 25,864 · CPR narrow",
+   "detail": [
+    "Previous session (2026-11-26): high 25,975.0 · low 25,733.5 · close 25,884.5",
+    "Resistance R1 25,995 · R2 26,106 · R3 26,237",
+    "Support S1 25,754 · S2 25,623 · S3 25,512",
+    "Central pivot range 25,854–25,874 (0.08% wide, narrow: a trending day is more likely)",
+    "Last session's range 241 pts against a 5-day average of 419",
+    "Bank Nifty: pivot 63,657 · R1 63,983 · S1 63,210 · CPR 63,596–63,719",
+    "NSE daily index history (previous session) · final close · session of 26 Nov"
+   ],
+   "quality": "final",
+   "src": "NSE daily index history (previous session)",
+   "as_of": "2026-11-26"
+  },
+  {
+   "title": "Options positioning - Nifty",
+   "dir": "flat",
+   "value": "PCR 0.69 · max pain 25,700 · walls 25,500 / 26,000",
+   "detail": [
+    "Nifty options expiring 2026-12-01 · at-the-money strike 25,700",
+    "Put/call ratio by open interest 0.69 (call-heavy: resistance is being built (bearish lean)); by volume 1.11",
+    "At-the-money straddle ₹304 — the market is pricing about ±1.18% (±304 pts) to expiry · IV 14.2%",
+    "Put wall (biggest put open interest below spot) 25,500 · call wall (biggest call open interest above) 26,000",
+    "Heaviest call strikes 26,000, 27,000, 25,800 · heaviest put strikes 25,500, 25,000, 24,500",
+    "Open interest added today: calls +1,993,591 · puts +550,074",
+    "Bank Nifty (2026-12-29): PCR 0.90 · max pain 63,500 · walls 60,000 / 66,000 · straddle ₹2,576 (±4.07%)",
+    "NSE option chain · live · as of 14:16 IST"
+   ],
+   "quality": "realtime",
+   "src": "NSE option chain",
+   "as_of": "2026-11-27T14:16:33+05:30"
+  },
+  {
+   "title": "Market breadth and flows",
+   "dir": "flat",
+   "value": "5,156 up · 4,390 down · A/D 1.17",
+   "detail": [
+    "Whole market: 5,156 advancing · 4,390 declining · 39 unchanged",
+    "Nifty 50: 13 up · 37 down",
+    "Leading sectors Chemicals +1.44%, Metal +1.39%, Midsmall IT & Telecom +1.37%",
+    "Lagging sectors Auto -1.09%, Cement -0.97%, IT -0.97%",
+    "Midcap 100 +0.38%",
+    "Smallcap 100 +0.82%",
+    "Last session (2026-11-26): FII net +₹5,843 cr · DII net +₹5,631 cr",
+    "FII index futures: 23.0% long (was 23.8% on 2026-11-25)",
+    "NSE (breadth, sectors); NSE/NSDL end-of-day flows · live · as of 14:17 IST"
+   ],
+   "quality": "realtime",
+   "src": "NSE (breadth, sectors); NSE/NSDL end-of-day flows",
+   "as_of": "2026-11-27T14:17:09+05:30"
+  },
+  {
+   "title": "Today's calendar",
+   "dir": "flat",
+   "value": "1 company event(s)",
+   "detail": [
+    "1 board meeting(s): INDIANB",
+    "PulsEdge calendar (NSE announcements and official dates) · scheduled · session of 27 Nov"
+   ],
+   "quality": "scheduled",
+   "src": "PulsEdge calendar (NSE announcements and official dates)",
+   "as_of": "2026-11-27"
   }
  ],
  "summary": "Mildly bearish setup. NASDAQ closed 0.62% lower; IT may open soft; Nikkei up, Hang Seng up.",
@@ -64,7 +167,7 @@
   "Nikkei up, Hang Seng up"
  ],
  "india_triggers": [
-  "67 filings and headlines worth a look so far today"
+  "70 filings and headlines worth a look so far today"
  ],
  "focus": [
   {
@@ -90,8 +193,8 @@
  "also": [
   {
    "name": "BANK NIFTY",
-   "value": "63,329.3",
-   "change": -0.32
+   "value": "63,248.7",
+   "change": -0.45
   },
   {
    "name": "S&P FUT",
@@ -100,8 +203,8 @@
   },
   {
    "name": "NASDAQ FUT",
-   "value": "26,790",
-   "change": 2.64
+   "value": "26,775",
+   "change": 2.59
   },
   {
    "name": "KOSPI",
@@ -110,19 +213,335 @@
   },
   {
    "name": "WTI",
-   "value": "85.93",
-   "change": 2.69
+   "value": "85.94",
+   "change": 2.7
   },
   {
    "name": "GOLD",
-   "value": "3,675",
-   "change": 2.39
+   "value": "3,679",
+   "change": 2.51
   },
   {
    "name": "US 10Y",
-   "value": "4.91",
-   "change": 0.95
+   "value": "4.92",
+   "change": 1.07
   }
  ],
- "source": "TradingView / CNBC / Yahoo Finance (unofficial; NSE prices 15 min delayed)"
+ "source": "NSE live indices, VIX, breadth and option chain; TradingView (GIFT Nifty, Asia, FX and gold in real time; US futures and crude 10 min delayed); CNBC / Yahoo as backups. Each checklist item says which, and whether it is live",
+ "data": {
+  "instruments": {
+   "nifty": {
+    "v": 25680.2,
+    "chg_pct": -0.79,
+    "prev": 25884.5,
+    "open": 25839.25,
+    "high": 25909.15,
+    "low": 25643.65,
+    "quality": "realtime",
+    "src": "NSE",
+    "as_of": "2026-11-27T14:15:00+05:30"
+   },
+   "banknifty": {
+    "v": 63248.7,
+    "chg_pct": -0.45,
+    "prev": 63535.3,
+    "open": 63326.2,
+    "high": 63931.65,
+    "low": 63142.35,
+    "quality": "realtime",
+    "src": "NSE",
+    "as_of": "2026-11-27T14:15:00+05:30"
+   },
+   "vix": {
+    "v": 16.56,
+    "chg_pct": -1.66,
+    "prev": 16.84,
+    "open": 16.84,
+    "high": 16.86,
+    "low": 15.17,
+    "quality": "realtime",
+    "src": "NSE",
+    "as_of": "2026-11-27T14:15:00+05:30"
+   },
+   "gift": {
+    "v": 25754,
+    "chg_pct": -1.068,
+    "prev": null,
+    "open": 25959.5,
+    "high": 26012.5,
+    "low": 25704,
+    "quality": "realtime",
+    "src": "TradingView",
+    "as_of": "2026-11-27T14:17:09+05:30"
+   },
+   "niftyfut": {
+    "v": 25754.6,
+    "chg_pct": -1.056,
+    "prev": null,
+    "open": 25952,
+    "high": 26000,
+    "low": 25725,
+    "quality": "delayed_15m",
+    "src": "TradingView",
+    "as_of": "2026-11-27T14:17:09+05:30"
+   },
+   "es": {
+    "v": 7323.75,
+    "chg_pct": 1.779,
+    "prev": null,
+    "open": 7190.5,
+    "high": 7334,
+    "low": 7187,
+    "quality": "delayed_10m",
+    "src": "TradingView",
+    "as_of": "2026-11-27T14:17:09+05:30"
+   },
+   "nq": {
+    "v": 26775.25,
+    "chg_pct": 2.586,
+    "prev": null,
+    "open": 26068.5,
+    "high": 26868.75,
+    "low": 25997.5,
+    "quality": "delayed_10m",
+    "src": "TradingView",
+    "as_of": "2026-11-27T14:17:09+05:30"
+   },
+   "us30cfd": {
+    "v": 50817,
+    "chg_pct": 0.796,
+    "prev": null,
+    "open": 50434.5,
+    "high": 50841,
+    "low": 50429.5,
+    "quality": "realtime",
+    "src": "TradingView",
+    "as_of": "2026-11-27T14:17:09+05:30"
+   },
+   "nikkei": {
+    "v": 58710.89,
+    "chg_pct": 2.108,
+    "prev": null,
+    "open": 57669.79,
+    "high": 58738.02,
+    "low": 57447.16,
+    "quality": "realtime",
+    "src": "TradingView",
+    "as_of": "2026-11-27T14:17:09+05:30"
+   },
+   "hangseng": {
+    "v": 22694.78,
+    "chg_pct": 2.105,
+    "prev": null,
+    "open": 22263.7,
+    "high": 22781.03,
+    "low": 22263.7,
+    "quality": "realtime",
+    "src": "TradingView",
+    "as_of": "2026-11-27T14:17:09+05:30"
+   },
+   "usdinr": {
+    "v": 92.8975,
+    "chg_pct": 0.5,
+    "prev": null,
+    "open": 92.435,
+    "high": 92.9425,
+    "low": 92.435,
+    "quality": "realtime",
+    "src": "TradingView",
+    "as_of": "2026-11-27T14:17:09+05:30"
+   },
+   "dxy": {
+    "v": 103.81,
+    "chg_pct": 0.032,
+    "prev": null,
+    "open": 103.829,
+    "high": 103.856,
+    "low": 103.639,
+    "quality": "realtime",
+    "src": "TradingView",
+    "as_of": "2026-11-27T14:17:09+05:30"
+   },
+   "brent": {
+    "v": 92.47,
+    "chg_pct": 0.873,
+    "prev": null,
+    "open": 91.84,
+    "high": 93.17,
+    "low": 91.84,
+    "quality": "delayed_10m",
+    "src": "TradingView",
+    "as_of": "2026-11-27T14:17:09+05:30"
+   }
+  },
+  "levels": {
+   "nifty": {
+    "prev": {
+     "date": "2026-11-26",
+     "open": 25873.2,
+     "high": 25974.95,
+     "low": 25733.5,
+     "close": 25884.5
+    },
+    "pivots": {
+     "p": 25864.32,
+     "r1": 25995.13,
+     "r2": 26105.77,
+     "r3": 26236.58,
+     "s1": 25753.68,
+     "s2": 25622.87,
+     "s3": 25512.23
+    },
+    "cpr": {
+     "top": 25874.41,
+     "bottom": 25854.22,
+     "width_pct": 0.078,
+     "read": "narrow: a trending day is more likely"
+    },
+    "avg_range_5d": 419.19,
+    "prev_range": 241.45
+   },
+   "banknifty": {
+    "prev": {
+     "date": "2026-11-26",
+     "open": 63883.1,
+     "high": 64104.75,
+     "low": 63332.3,
+     "close": 63535.3
+    },
+    "pivots": {
+     "p": 63657.45,
+     "r1": 63982.6,
+     "r2": 64429.9,
+     "r3": 64755.05,
+     "s1": 63210.15,
+     "s2": 62885.0,
+     "s3": 62437.7
+    },
+    "cpr": {
+     "top": 63718.53,
+     "bottom": 63596.38,
+     "width_pct": 0.192,
+     "read": "normal"
+    },
+    "avg_range_5d": 1499.94,
+    "prev_range": 772.45
+   }
+  },
+  "options": {
+   "nifty": {
+    "spot": 25680.05,
+    "atm": 25700,
+    "pcr_oi": 0.685,
+    "pcr_volume": 1.111,
+    "pcr_read": "call-heavy: resistance is being built (bearish lean)",
+    "max_pain": 25700,
+    "call_wall": 26000,
+    "put_wall": 25500,
+    "top_call_oi": [
+     {
+      "strike": 26000,
+      "oi": 349755
+     },
+     {
+      "strike": 27000,
+      "oi": 278013
+     },
+     {
+      "strike": 25800,
+      "oi": 263228
+     }
+    ],
+    "top_put_oi": [
+     {
+      "strike": 25500,
+      "oi": 164018
+     },
+     {
+      "strike": 25000,
+      "oi": 160970
+     },
+     {
+      "strike": 24500,
+      "oi": 155720
+     }
+    ],
+    "oi_total": {
+     "calls": 4352295,
+     "puts": 2980915
+    },
+    "oi_change": {
+     "calls": 1993591,
+     "puts": 550074
+    },
+    "straddle": 304.1,
+    "implied_move_pct": 1.18,
+    "atm_iv": 14.25,
+    "as_of": "2026-11-27T14:16:33+05:30",
+    "session": "today",
+    "expiry": "2026-12-01",
+    "next_expiries": [
+     "2026-12-08",
+     "2026-12-15"
+    ]
+   },
+   "banknifty": {
+    "spot": 63244.95,
+    "atm": 63200,
+    "pcr_oi": 0.899,
+    "pcr_volume": 0.908,
+    "pcr_read": "balanced",
+    "max_pain": 63500,
+    "call_wall": 66000,
+    "put_wall": 60000,
+    "top_call_oi": [
+     {
+      "strike": 66000,
+      "oi": 53186
+     },
+     {
+      "strike": 65000,
+      "oi": 40576
+     },
+     {
+      "strike": 70000,
+      "oi": 28667
+     }
+    ],
+    "top_put_oi": [
+     {
+      "strike": 60000,
+      "oi": 23803
+     },
+     {
+      "strike": 63000,
+      "oi": 21295
+     },
+     {
+      "strike": 58000,
+      "oi": 21222
+     }
+    ],
+    "oi_total": {
+     "calls": 444328,
+     "puts": 399372
+    },
+    "oi_change": {
+     "calls": 25334,
+     "puts": 32837
+    },
+    "straddle": 2576.0,
+    "implied_move_pct": 4.07,
+    "atm_iv": 17.2,
+    "as_of": "2026-11-27T14:16:36+05:30",
+    "session": "today",
+    "expiry": "2026-12-29",
+    "next_expiries": [
+     "2027-01-25",
+     "2027-02-23"
+    ]
+   }
+  },
+  "live_file": "data/live.json"
+ }
 }

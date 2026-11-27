@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T14:02+05:30",
+ "updated": "2026-11-27T14:16+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -364,20 +364,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel is currently working on restructuring a large deal involving APL Apollo Tubes. Meanwhile, the market regulator, SEBI, is examining the transaction to ensure it follows rules and protects minority owners. Tata Steel is one of India's 50 largest listed companies in the Metals & Mining sector.",
-   "why": "Regulatory checks and deal restructuring can change how a business transaction works or when it finishes. This uncertainty can cause the company's stock price to move unexpectedly.",
-   "upside": "Tata Steel has stated it is open to restructuring the deal, which could help address regulatory concerns and move the transaction forward.",
-   "downside": "Regulatory intervention or potential penalties could delay, alter, or block the deal and cause reputational damage.",
+   "summary": "Tata Steel is under regulatory scrutiny as SEBI investigates a deal with APL Apollo, while the company is working on restructuring the transaction. The scrutiny could delay or alter the deal, affecting the company’s financials.",
+   "why": "Shareholders need to know that regulatory actions and deal changes can impact Tata Steel’s cash position and share price.",
+   "upside": "",
+   "downside": "Regulatory investigation could lead to penalties or delays that negatively affect the company’s operations and share value.",
    "watch": [
-    "Updates from SEBI regarding the review of the APL Apollo deal",
-    "Further announcements from Tata Steel on restructuring the transaction",
-    "Overall movement in the Metals sector index"
+    "SEBI’s final decision on the Tata Steel‑APL Apollo deal",
+    "Any announced changes to the deal structure",
+    "Potential penalties or delays from the regulatory review"
    ],
-   "about": "Tata Steel Ltd. is a major metals and mining company that produces and sells steel products.",
-   "basis": "e19f231ddb32",
-   "items": 11,
-   "updated": "2026-11-27T14:02+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "Tata Steel is a major Indian steel producer.",
+   "basis": "1f8772981fc4",
+   "items": 9,
+   "updated": "2026-11-27T14:16+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "APLAPOLLO": {
    "summary": "APL Apollo Tubes shares fell sharply after a big Tata Steel stake purchase and broker downgrades, then jumped 4% as regulators may examine the deal. A large investor also sold a big block of shares recently.",
@@ -1271,22 +1271,6 @@
    "basis": "a781c56e68df",
    "items": 2,
    "updated": "2026-11-27T08:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "ADANIENT": {
-   "summary": "Adani Enterprises is planning a public bond issue to raise at least Rs 2,000 crore, and the stock is on a watchlist as traders monitor it amid a falling metals sector.",
-   "why": "Shareholders should watch the bond raise because it adds debt that must be serviced, while a weak sector could pressure the share price.",
-   "upside": "If the bond proceeds fund growth projects, the company could improve earnings.",
-   "downside": "Higher debt levels and a declining metals index could weigh on profitability and the stock.",
-   "watch": [
-    "Progress of the Rs 2,000 crore bond sale",
-    "Metals sector index performance",
-    "Overall market volatility affecting watchlisted stocks"
-   ],
-   "about": "Adani Enterprises is a diversified company operating in the metals and mining sector.",
-   "basis": "b8fab9f5b125",
-   "items": 2,
-   "updated": "2026-11-26T13:47+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "MINDACORP": {
