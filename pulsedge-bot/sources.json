@@ -5,20 +5,23 @@
       "name": "SEBI",
       "kind": "rss",
       "url": "https://www.sebi.gov.in/sebirss.xml",
-      "section": "macro"
+      "section": "macro",
+      "fast": true
     },
     {
       "name": "RBI",
       "kind": "rss",
       "url": "https://www.rbi.org.in/pressreleases_rss.xml",
-      "section": "macro"
+      "section": "macro",
+      "fast": true
     },
     {
       "name": "NSE Announcements",
       "title_is_company": true,
       "kind": "rss",
       "url": "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml",
-      "section": "news"
+      "section": "news",
+      "fast": true
     },
     {
       "name": "BSE Announcements",
@@ -32,19 +35,22 @@
       "name": "ET Markets",
       "kind": "rss",
       "url": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
-      "section": "trading"
+      "section": "trading",
+      "fast": true
     },
     {
       "name": "Mint Markets",
       "kind": "rss",
       "url": "https://www.livemint.com/rss/markets",
-      "section": "trading"
+      "section": "trading",
+      "fast": true
     },
     {
       "name": "Business Standard",
       "kind": "rss",
       "url": "https://www.business-standard.com/rss/markets-106.rss",
-      "section": "trading"
+      "section": "trading",
+      "fast": true
     },
     {
       "name": "Moneycontrol",
@@ -72,7 +78,8 @@
       "name": "CNBC World Markets",
       "kind": "rss",
       "url": "https://www.cnbc.com/id/100727362/device/rss/rss.html",
-      "section": "global"
+      "section": "global",
+      "fast": true
     },
     {
       "name": "CNBC Technology",
@@ -84,7 +91,8 @@
       "name": "CNBC Economy",
       "kind": "rss",
       "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-      "section": "global"
+      "section": "global",
+      "fast": true
     }
   ]
 }
