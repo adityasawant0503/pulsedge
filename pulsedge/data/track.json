@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T12:01:10+05:30",
+ "updated": "2026-11-27T12:17:28+05:30",
  "summary": {
-  "calls": 2416,
-  "scored_calls": 1183,
+  "calls": 2419,
+  "scored_calls": 1186,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -26,6 +26,51 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "120946977563b4b9",
+   "symbol": "JWL",
+   "time": "2026-11-27T12:06:54+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Railway stock Jupiter Wagons shares fall 7.5% after 29% surge in 2 days post Woojin JV: Should you buy the multibagger?",
+   "url": "https://www.livemint.com/market/stock-market-news/railway-stock-jupiter-wagons-shares-fall-7-5-after-29-surge-in-2-days-post-woojin-jv-should-you-buy-the-multibagger-11795760304111.html",
+   "alert_px": 226.85,
+   "alert_move": -4.96,
+   "alert_at": "2026-11-27T12:16:44+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "e1fa0118668744de",
+   "symbol": "SIEMENS",
+   "time": "2026-11-27T12:06:30+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Siemens' expanding order book has margin, valuation hurdles",
+   "url": "https://www.livemint.com/market/mark-to-market/siemens-expanding-order-book-margin-valuation-hurdles-11795755446407.html",
+   "alert_px": 3605.0,
+   "alert_move": 0.79,
+   "alert_at": "2026-11-27T12:16:44+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "0b6796bcbd1afb57",
+   "symbol": "TITAN",
+   "time": "2026-11-27T12:02:52+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Titan, TBZ: Jewellery, gold financiers' stocks rise as bullion rebounds 2%",
+   "url": "https://www.business-standard.com/markets/news/titan-tbz-jewellery-gold-financiers-stocks-rise-as-bullion-rebounds-2-126112700393_1.html",
+   "alert_px": 4689.4,
+   "alert_move": 1.26,
+   "alert_at": "2026-11-27T12:16:44+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "1067f835fa25f399",
    "symbol": "APLAPOLLO",

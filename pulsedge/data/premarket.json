@@ -1,19 +1,19 @@
 {
  "date": "2026-11-27",
- "updated": "2026-11-27T12:01:10+05:30",
+ "updated": "2026-11-27T12:17:28+05:30",
  "sentiment": "Mildly bearish",
  "breadth": {
   "up": 1,
-  "down": 3
+  "down": 2
  },
  "checklist": [
   {
    "title": "Nifty 50 now (15 min delayed)",
    "dir": "down",
-   "value": "25,688.30 (-0.76%)",
+   "value": "25,741.90 (-0.55%)",
    "detail": [
     "Previous close 25,884.50",
-    "GIFT Nifty 25,810.5 (-0.85%)"
+    "GIFT Nifty 25,770.0 (-1.01%)"
    ]
   },
   {
@@ -24,7 +24,7 @@
     "Dow 50,182.95 +0.33%",
     "S&P 7,182.78 -0.25%",
     "Nasdaq 23,585.80 -0.62%",
-    "Nasdaq futures now +2.88%"
+    "Nasdaq futures now +2.82%"
    ]
   },
   {
@@ -32,8 +32,8 @@
    "dir": "up",
    "value": "Asia higher",
    "detail": [
-    "Nikkei 58,711.06 +2.11%",
-    "Hang Seng 22,671.27 +2.00%"
+    "Nikkei 58,710.89 +2.11%",
+    "Hang Seng 22,653.83 +1.92%"
    ]
   },
   {
@@ -41,33 +41,30 @@
    "dir": "down",
    "value": "Rupee under pressure",
    "detail": [
-    "DXY 103.69 -0.08%",
-    "USD/INR 92.870 +0.47%"
+    "DXY 103.73 -0.04%",
+    "USD/INR 92.842 +0.44%"
    ]
   },
   {
    "title": "Brent crude level",
-   "dir": "down",
-   "value": "$92.62 +1.04%",
-   "detail": [
-    "Rising crude hurts India (OMCs, paints, aviation); helps upstream"
-   ]
+   "dir": "flat",
+   "value": "$92.51 +0.92%",
+   "detail": []
   },
   {
    "title": "India VIX",
    "dir": "flat",
-   "value": "16.77 (-0.42%) — normal",
+   "value": "16.60 (-1.41%) — normal",
    "detail": []
   }
  ],
- "summary": "Mildly bearish setup. Brent up 1.04% — pressure on OMCs, paints and aviation; NASDAQ closed 0.62% lower; IT may open soft.",
+ "summary": "Mildly bearish setup. NASDAQ closed 0.62% lower; IT may open soft; Nikkei up, Hang Seng up.",
  "global_cues": [
-  "Brent up 1.04% — pressure on OMCs, paints and aviation",
   "NASDAQ closed 0.62% lower; IT may open soft",
   "Nikkei up, Hang Seng up"
  ],
  "india_triggers": [
-  "40 filings and headlines worth a look so far today"
+  "43 filings and headlines worth a look so far today"
  ],
  "focus": [
   {
@@ -85,34 +82,26 @@
  ],
  "sector_tags": [
   {
-   "label": "Upstream oil",
-   "tone": "positive"
-  },
-  {
-   "label": "OMCs",
-   "tone": "negative"
-  },
-  {
    "label": "IT",
    "tone": "watch"
   }
  ],
- "key_risk": "A further crude spike would hit OMCs and widen the INR move",
+ "key_risk": "",
  "also": [
   {
    "name": "BANK NIFTY",
-   "value": "63,241.3",
-   "change": -0.46
+   "value": "63,394.9",
+   "change": -0.22
   },
   {
    "name": "S&P FUT",
-   "value": "7,318",
-   "change": 1.71
+   "value": "7,327",
+   "change": 1.82
   },
   {
    "name": "NASDAQ FUT",
-   "value": "26,852",
-   "change": 2.88
+   "value": "26,835",
+   "change": 2.82
   },
   {
    "name": "KOSPI",
@@ -121,18 +110,18 @@
   },
   {
    "name": "WTI",
-   "value": "86.18",
-   "change": 2.99
+   "value": "86.10",
+   "change": 2.89
   },
   {
    "name": "GOLD",
    "value": "3,651",
-   "change": 1.73
+   "change": 1.72
   },
   {
    "name": "US 10Y",
    "value": "4.92",
-   "change": 1.19
+   "change": 1.07
   }
  ],
  "source": "TradingView / CNBC / Yahoo Finance (unofficial; NSE prices 15 min delayed)"

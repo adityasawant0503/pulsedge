@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T12:00+05:30",
+ "updated": "2026-11-27T12:16+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "Banking stocks faced pressure after the Supreme Court ordered HDFC Bank and others to approve staff prosecutions, though the impact may be limited if they comply. In the power sector, Siemens Energy expressed confidence in winning a large Indian transmission contract next year, while APL Apollo shares rebounded after a recent drop as regulators may review a merger deal. Oil prices rose near monthly highs due to Middle East tensions, and jewellery stocks gained as gold prices stabilized. IT and Realty sectors led market gains, while foreign investors slightly reduced their long positions.",
+  "summary": "PulsEdge flagged legal scrutiny for major banks like HDFC Bank and ICICI Bank, alongside regulatory reviews affecting APL Apollo Tubes. Meanwhile, oil prices rose due to Middle East supply worries, impacting government bonds and inflation concerns. Corporate updates included new drug delays for Zydus Life, share buyback plans for Supriya Lifescience, and a strong market debut for HEG Ltd's demerged business.",
   "themes": [
-   "Regulatory and legal developments affecting banks and steel mergers",
-   "Power sector optimism driven by potential large contracts and new listings",
-   "Commodity price movements influencing oil and jewellery stocks"
+   "Legal and regulatory actions affecting major companies",
+   "Rising oil prices and inflation worries",
+   "Corporate developments including buybacks and business splits"
   ],
   "watch": [
-   "Whether Siemens Energy officially wins the HVDC order in India",
-   "Regulatory decisions on the Tata Steel and APL Apollo merger",
-   "Potential price correction for the newly listed HEG graphite business"
+   "Whether banks comply with prosecution sanctions and how regulators handle pending deals",
+   "Future movements in oil prices and their effect on inflation and bond yields",
+   "Updates on major order wins and regulatory drug approvals"
   ],
   "date": "2026-11-27",
-  "basis": "29a1212a2d17",
-  "updated": "2026-11-27T11:30+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 36
+  "basis": "0801e967a031",
+  "updated": "2026-11-27T12:16+05:30",
+  "model": "gemini-flash-lite-latest",
+  "items": 43
  },
  "stocks": {
   "HDFCBANK": {
@@ -123,22 +123,6 @@
    "updated": "2026-11-27T08:16+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "TORNTPOWER": {
-   "summary": "Torrent Power announced a share allotment, bought 100% of Torrent Urja 42 Private Ltd., and plans to acquire newly formed companies, all aimed at raising capital and expanding assets.",
-   "why": "Shareholders could face dilution from the new shares while also seeing potential earnings growth from the acquisitions, though higher debt may affect cash flow.",
-   "upside": "Successful integration of the acquisitions could increase generation capacity and earnings.",
-   "downside": "The share issuance and added debt could dilute share value and strain cash flow.",
-   "watch": [
-    "Details and pricing of the share allotment",
-    "Financing and debt impact of the Torrent Urja acquisition",
-    "Progress and execution of the newly formed company acquisitions"
-   ],
-   "about": "Torrent Power Ltd. is an Indian power generation and distribution company.",
-   "basis": "80e9e760cb6f",
-   "items": 3,
-   "updated": "2026-11-26T16:58+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "TVSMOTOR": {
    "summary": "TVS Motor Company Ltd. (TVSMOTOR) has announced new business agreements and a non‑binding memorandum of understanding with the Government of Tamil Nadu, which includes a planned investment of ₹2000 crore over four years and creation of 1000 jobs.",
    "why": "Shareholders should note that these agreements could influence the company’s future earnings and expansion plans.",
@@ -170,6 +154,22 @@
    "items": 2,
    "updated": "2026-11-27T08:16+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "TORNTPOWER": {
+   "summary": "Torrent Power Ltd announced a new share allotment to raise capital and completed the acquisition of 100% of Torrent Urja 42 Private Ltd. Both events could affect the company’s cash flow and earnings outlook.",
+   "why": "Shareholders should watch the dilution from the new shares and the extra debt that may be needed to fund the acquisition.",
+   "upside": "If the acquired assets start contributing to earnings, the company’s profitability could improve.",
+   "downside": "The extra shares and higher debt could pressure cash flow and reduce earnings per share.",
+   "watch": [
+    "Details of the share allotment and how many shares are issued",
+    "Integration progress and performance of Torrent Urja 42",
+    "Changes in the company’s debt levels and cash flow"
+   ],
+   "about": "Torrent Power Ltd generates and distributes electricity in India.",
+   "basis": "65383ecbc999",
+   "items": 2,
+   "updated": "2026-11-27T12:16+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "LT": {
    "summary": "L&T has won a ₹2,500 crore battery storage contract in Gujarat and another contract valued between ₹10 billion and ₹25 billion. Both deals are expected to add to its revenue.",
@@ -297,22 +297,6 @@
    "basis": "ec9ec420f4fe",
    "items": 2,
    "updated": "2026-11-26T16:58+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "HEROMOTOCO": {
-   "summary": "Hero MotoCorp recently issued a press release and the high court has cancelled a ₹165 crore demand from the RTO for temporary registration certificates. The auto sector index fell 0.7% in the last session but rose 4.5% over five sessions.",
-   "why": "The court’s decision removes a large liability, strengthening the balance sheet and could support the share price.",
-   "upside": "If the upcoming press release contains positive business updates, the stock could benefit.",
-   "downside": "Future regulatory or legal challenges could arise, potentially affecting the company.",
-   "watch": [
-    "Details of the press release",
-    "Any new regulatory or legal actions",
-    "Auto sector index trend"
-   ],
-   "about": "Hero MotoCorp manufactures motorcycles, scooters and cars.",
-   "basis": "65b934aed51a",
-   "items": 2,
-   "updated": "2026-11-27T11:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ACMESOLAR": {
@@ -538,6 +522,22 @@
    "updated": "2026-11-26T12:45+05:30",
    "model": "gemini-flash-lite-latest"
   },
+  "JWL": {
+   "summary": "Jupiter Wagons shares fell 7.5% after a sharp 29% rise in two days, as investors sold to lock in profits. This price movement followed news of a new joint venture with South Korea's Woojin to build metro trains and a plan to invest 1,000 crore rupees in its passenger rail business over the next three years.",
+   "why": "These developments matter because they show the company is expanding into new areas like metro trains and investing heavily in its core business, which could affect future earnings for shareholders.",
+   "upside": "The new partnership and significant investment could help the company grow and earn more money in the long run.",
+   "downside": "The heavy spending may pressure the company's cash flow and profits in the short term, and the share price may continue to fall as more investors sell.",
+   "watch": [
+    "How the company manages its cash flow while spending 1,000 crore rupees on new projects.",
+    "Progress on the joint venture with Woojin for building metro trains.",
+    "Whether the share price stabilizes after the recent sharp rise and fall."
+   ],
+   "about": "Jupiter Wagons is a capital goods company that manufactures railway wagons and is involved in the passenger rail business.",
+   "basis": "cbcc1e30cc19",
+   "items": 4,
+   "updated": "2026-11-27T12:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "ZYDUSLIFE": {
    "summary": "Zydus Lifesciences is facing regulatory scrutiny as the US FDA has asked for more information on its new drug, delaying approval. At the same time, the company received an export inspection report for its Ankleshwar API plant and a key certificate for a new manufacturing facility in Ahmedabad’s SEZ.",
    "why": "Shareholders should watch the FDA delays because they could reduce earnings from the new product, while the new facility may improve efficiency and lower taxes over time.",
@@ -553,22 +553,6 @@
    "items": 4,
    "updated": "2026-11-27T10:00+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "JWL": {
-   "summary": "Jupiter Wagons shares rose sharply after the company announced a joint venture with a South Korean firm to build metro trains. The company also stated it plans to invest 1,000 crore rupees in its passenger rail business over the next three years.",
-   "why": "These moves show the company is expanding into new areas and investing heavily to grow, which could increase future earnings for shareholders.",
-   "upside": "Building metro trains opens a new source of income, and the large investment may lead to higher profits later.",
-   "downside": "Spending so much money now could reduce cash available for other needs and lower short-term profits, and the stock price might drop after its recent sharp rise.",
-   "watch": [
-    "How the partnership with the South Korean firm progresses",
-    "Whether the company can manage its cash flow during the heavy spending period",
-    "If the stock price stabilizes after the recent jump"
-   ],
-   "about": "Jupiter Wagons is a capital goods company that manufactures railway wagons and is part of the Nifty 500 index.",
-   "basis": "ce290dfb71b4",
-   "items": 3,
-   "updated": "2026-11-27T08:16+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "SUZLON": {
    "summary": "Suzlon Energy is expanding its production capacity by building new facilities, including a 1 GW smart blade factory in Tamil Nadu. The company has officially notified the stock exchange about these additions to its manufacturing setup.",
@@ -875,20 +859,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "TITAN": {
-   "summary": "Titan's shares have risen recently, helped by a bounce in gold prices and a broader rally in Nifty 50 stocks. The consumer‑durables sector was down 1.3% in the last session but up 2.3% over five sessions.",
-   "why": "Shareholders see the move because jewellery demand can improve when gold prices stabilize, and overall market strength can lift the stock.",
-   "upside": "If gold prices stay steady and broader market momentum continues, demand for Titan’s jewellery could remain strong.",
-   "downside": "A fresh rise in gold prices or weaker earnings could dampen demand and curb the recent rally.",
+   "summary": "Titan shares have risen recently as gold prices stopped falling and started to climb. This movement is part of a broader rally in several large Indian companies this year.",
+   "why": "For a share owner, rising gold prices can signal higher sales and profits for the company, which supports the value of the stock.",
+   "upside": "If gold prices stay stable or rise moderately, it may encourage more people to buy jewellery, boosting Titan's revenue.",
+   "downside": "If gold prices rise too much, jewellery becomes expensive, which could slow down customer demand.",
    "watch": [
-    "Gold price trends",
-    "Upcoming earnings results",
-    "Nifty 50 market momentum"
+    "Changes in gold prices on the commodity exchange",
+    "Upcoming earnings reports to check if sales match expectations",
+    "Overall market trends for large Indian companies"
    ],
-   "about": "",
-   "basis": "b542f35ee8f7",
-   "items": 2,
-   "updated": "2026-11-27T10:15+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Titan is a major Indian company in the consumer durables sector, known for its jewellery and watch brands.",
+   "basis": "47755da157db",
+   "items": 3,
+   "updated": "2026-11-27T12:16+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "CGCL": {
    "summary": "Capri Global Capital Ltd. raised $30 million from the BlueOrchard Microfinance Fund, its first impact‑fundraise. The funding was announced on November 25, 2026.",
