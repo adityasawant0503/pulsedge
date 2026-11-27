@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T10:00+05:30",
+ "updated": "2026-11-27T10:15+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -778,6 +778,38 @@
    "updated": "2026-11-26T10:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "GRAPHITE": {
+   "summary": "Graphite India Ltd has just been listed after being carved out from HEG Ltd, with its shares opening about 25% above the expected price.",
+   "why": "The premium pricing signals strong initial interest but also raises the risk of a price correction, which matters to current shareholders.",
+   "upside": "If the premium holds and the graphite business delivers strong results, the share price could stay elevated.",
+   "downside": "The premium could erode if the initial excitement fades, leading to a lower share price.",
+   "watch": [
+    "Share price movement in the weeks after listing",
+    "Quarterly earnings and cash flow of the graphite business",
+    "Broader market reaction to the demerger and any further corporate actions"
+   ],
+   "about": "Graphite India Ltd is a newly created company that focuses on graphite products after being spun off from HEG Ltd.",
+   "basis": "89882b54ecc6",
+   "items": 1,
+   "updated": "2026-11-27T10:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "ZENTEC": {
+   "summary": "Zen Technologies Ltd. said its business in the second half of the fiscal year will be much better than in the first half.",
+   "why": "Better performance could boost earnings, which matters to shareholders.",
+   "upside": "If the company delivers stronger H2 results, earnings could improve.",
+   "downside": "If the expected improvement does not materialise, earnings may stay flat or decline.",
+   "watch": [
+    "Actual H2 financial results",
+    "Any updated guidance from management",
+    "Sector demand for capital goods"
+   ],
+   "about": "Zen Technologies Ltd. operates in the capital goods sector, providing equipment and solutions.",
+   "basis": "45b1b30eb408",
+   "items": 1,
+   "updated": "2026-11-27T10:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "KEI": {
    "summary": "KEI Industries is a capital goods company included in the Nifty 500 index. Recent reports suggest that a potential India-US trade deal could lower taxes on Indian exports to the US.",
    "why": "If the trade deal goes through, lower export taxes could help the company sell more products in the US and potentially increase its profits.",
@@ -890,6 +922,22 @@
    "updated": "2026-11-26T10:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "TITAN": {
+   "summary": "Titan's shares have risen recently, helped by a bounce in gold prices and a broader rally in Nifty 50 stocks. The consumer‑durables sector was down 1.3% in the last session but up 2.3% over five sessions.",
+   "why": "Shareholders see the move because jewellery demand can improve when gold prices stabilize, and overall market strength can lift the stock.",
+   "upside": "If gold prices stay steady and broader market momentum continues, demand for Titan’s jewellery could remain strong.",
+   "downside": "A fresh rise in gold prices or weaker earnings could dampen demand and curb the recent rally.",
+   "watch": [
+    "Gold price trends",
+    "Upcoming earnings results",
+    "Nifty 50 market momentum"
+   ],
+   "about": "",
+   "basis": "b542f35ee8f7",
+   "items": 2,
+   "updated": "2026-11-27T10:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "CGCL": {
    "summary": "Capri Global Capital Ltd. raised $30 million from the BlueOrchard Microfinance Fund, its first impact‑fundraise. The funding was announced on November 25, 2026.",
    "why": "The new capital could support business growth but may dilute existing shareholders if equity was issued.",
@@ -921,6 +969,38 @@
    "items": 2,
    "updated": "2026-11-24T19:21+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "KALYANKJIL": {
+   "summary": "Kalyan Jewellers shares rose up to 4% as gold prices stopped falling and began to rise slightly. The broader consumer durables index fell 1.3% in the last session but has gained 2.3% over the past five sessions. The stock’s recent gain reflects optimism that steadier gold prices could boost jewellery demand.",
+   "why": "Shareholders see the price move because jewellery sales are sensitive to gold price changes, which can affect the company’s revenue and stock performance.",
+   "upside": "If gold prices remain stable or rise modestly, consumer demand for jewellery could stay strong, supporting the stock.",
+   "downside": "A further rise in gold prices could dampen consumer buying power and slow demand for jewellery, hurting the stock.",
+   "watch": [
+    "Gold price trends and volatility",
+    "Consumer durables sector index movements",
+    "Kalyan Jewellers share price changes"
+   ],
+   "about": "Kalyan Jewellers India Ltd. is a retailer of jewellery in India.",
+   "basis": "3edc70d91bce",
+   "items": 1,
+   "updated": "2026-11-27T10:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "THANGAMAYL": {
+   "summary": "Thangamayil Jewellery shares recently moved up as gold prices stopped falling and began to rise slightly. This movement was part of a broader trend where other major jewellery stocks also saw gains.",
+   "why": "Changes in gold prices directly affect how many people buy jewellery, which can influence the company's sales and, in turn, its share price.",
+   "upside": "If gold prices remain stable or rise moderately, it may encourage more people to buy jewellery, supporting the company's business.",
+   "downside": "If gold prices rise too sharply, it could make jewellery more expensive and slow down consumer demand.",
+   "watch": [
+    "Future movements in gold prices on the MCX",
+    "Sales trends for other major jewellery brands",
+    "Overall performance of the Consumer Durables sector"
+   ],
+   "about": "Thangamayil Jewellery Ltd. is a company listed in the Consumer Durables sector in India.",
+   "basis": "3edc70d91bce",
+   "items": 1,
+   "updated": "2026-11-27T10:15+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "TATAPOWER": {
    "summary": "PulsEdge flagged Tata Power’s ambitious growth plans and the execution risks they carry. Project delays could weigh on earnings. The broader energy sector showed a modest gain of 0.6% in the last session but fell 0.3% over five sessions.",
@@ -970,22 +1050,6 @@
    "updated": "2026-11-26T08:17+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "TITAN": {
-   "summary": "Titan Company Ltd. has been part of a broader rally in large Indian stocks, with its share price rising between 10% and 43% in 2026. This gain is part of a wider market trend affecting many top companies.",
-   "why": "If you own shares, the recent price increase means your investment value has gone up, but the market warns that this rise might not last if company profits do not match expectations.",
-   "upside": "General market strength could continue to lift the share price along with other major companies.",
-   "downside": "The recent price rally may be short-lived if the company's earnings disappoint investors.",
-   "watch": [
-    "Upcoming earnings reports to see if profits support the recent price rise",
-    "Overall market trends for large Indian companies",
-    "Performance of the Consumer Durables sector index"
-   ],
-   "about": "",
-   "basis": "967a748bb180",
-   "items": 1,
-   "updated": "2026-11-26T08:45+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "ZEEL": {
    "summary": "Zee Entertainment shares fell 6% on November 25, 2026, despite a broader market rally. This drop happened because the company set a record date for a ₹600-crore share buyback, leading investors to sell before the deadline.",
    "why": "If you own these shares, the price drop may be temporary as investors sell to lock in gains before the buyback process begins.",
@@ -1002,21 +1066,36 @@
    "updated": "2026-11-25T10:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "POONAWALLA": {
-   "summary": "Poonawalla Fincorp's board is looking at raising equity through a private placement on Dec 1 2026, and the company has already issued ₹500 crore of 9.15% non‑convertible debentures maturing in 2031. A brokerage has also suggested further upside, but that is an opinion.",
-   "why": "Shareholders could see dilution if new shares are issued, and the added debt may pressure earnings.",
-   "upside": "If the private placement is fully subscribed, the firm gets fresh capital without further strain on earnings.",
-   "downside": "The equity raise could dilute existing holdings and the new debt could increase financial pressure if earnings do not keep pace.",
+  "HINDZINC": {
+   "summary": "Hindustan Zinc’s shares rose today while the broader market fell, reflecting positive sentiment toward the Vedanta group’s metal stocks. The company also announced a collaboration with IIT Madras to develop zinc‑air battery technology for electric mobility.",
+   "why": "Shareholders may see the battery partnership as a potential new growth avenue, while the recent stock rally shows market confidence that could affect the share price.",
+   "upside": "Successful commercialization of zinc‑air batteries could open a new revenue stream for the company.",
+   "downside": "The battery technology is still in early research stages and may not generate near‑term earnings, and metal price volatility could affect profitability.",
    "watch": [
-    "Result of the private placement on Dec 1 2026",
-    "Subscription level and market reaction to the ₹500 crore debentures",
-    "Any new broker commentary or sector index movement"
+    "Zinc and aluminium price movements",
+    "Progress of the IIT Madras zinc‑air battery project",
+    "Performance of the Metals sector index"
    ],
-   "about": "Poonawalla Fincorp Ltd. is a financial services company that offers loan and credit products.",
-   "basis": "3f48ee45815e",
+   "about": "Hindustan Zinc Ltd. is a metals and mining company that produces zinc and related base metals.",
+   "basis": "af78355238bf",
    "items": 3,
-   "updated": "2026-11-27T08:30+05:30",
+   "updated": "2026-11-27T10:15+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "POONAWALLA": {
+   "summary": "Poonawalla Fincorp is raising capital through a private placement of equity and has issued ₹500 crore in non-convertible debentures. These moves change the company's funding and debt levels.",
+   "why": "New shares can dilute your current holdings, while higher debt adds leverage that affects share value and earnings.",
+   "upside": "",
+   "downside": "The private placement might be undersubscribed, and the new debt could put pressure on earnings.",
+   "watch": [
+    "The outcome of the December 1, 2026 board meeting on equity fund raising.",
+    "How the new debt and capital raise impact upcoming earnings."
+   ],
+   "about": "Poonawalla Fincorp Ltd. is a financial services company included in the Nifty 500 index.",
+   "basis": "4827717e08b1",
+   "items": 2,
+   "updated": "2026-11-27T10:15+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "VIJAYA": {
    "summary": "Vijaya Diagnostic Centre has completed the acquisition of the diagnostic business from Arya Wellness Centre in Guwahati. The company has also filed an update with the stock exchange regarding this acquisition.",
@@ -1049,6 +1128,22 @@
    "items": 2,
    "updated": "2026-11-26T08:30+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "VEDL": {
+   "summary": "Vedanta Ltd. shares rose recently while the broader market fell, joining other Vedanta group stocks in this gain. This movement often suggests investors are optimistic about metal prices, though the wider metals sector has seen mixed results lately.",
+   "why": "If you own Vedanta shares, this rise indicates that current market sentiment is favorable, likely driven by expectations for higher prices in metals like zinc and aluminium.",
+   "upside": "Continued strength in metal prices could keep supporting the stock's value.",
+   "downside": "Commodity prices are unpredictable and can drop quickly, which would likely hurt the share price.",
+   "watch": [
+    "Changes in global prices for zinc and aluminium",
+    "Performance of other Vedanta group companies",
+    "Overall trends in the Metals sector index"
+   ],
+   "about": "Vedanta operates in the metals and mining sector.",
+   "basis": "5190cd047179",
+   "items": 1,
+   "updated": "2026-11-27T10:15+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "ENDURANCE": {
    "summary": "Endurance Technologies said it has four new projects starting soon and expects higher profit margins in the coming quarters. The auto sector index has been gaining, up 1.2% in the last session and 3.8% over five sessions.",
@@ -1178,6 +1273,22 @@
    "updated": "2026-11-26T12:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "COALINDIA": {
+   "summary": "Coal India is seeing increased trading activity alongside the upcoming market debut of its subsidiary, Mahanadi Coalfields. The parent company's stock also recorded a notable spike in trading volume recently.",
+   "why": "Investors may react positively to the successful launch of a major subsidiary, which can boost confidence in the parent company's overall performance.",
+   "upside": "A strong debut for Mahanadi Coalfields could generate positive sentiment for Coal India shares.",
+   "downside": "The recent surge in trading volume might be temporary and reverse quickly without new fundamental news.",
+   "watch": [
+    "Mahanadi Coalfields' first day of trading performance",
+    "Whether the high trading volume in Coal India continues or fades",
+    "General trends in the Oil & Gas sector index"
+   ],
+   "about": "Coal India is a major listed company in the Oil, Gas, and Consumable Fuels sector.",
+   "basis": "4249acfdf5bd",
+   "items": 2,
+   "updated": "2026-11-27T08:30+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "VBL": {
    "summary": "Varun Beverages has acquired a 26% stake in Jager Renewables, a renewable energy firm. The company filed an update with the stock exchange regarding this acquisition.",
    "why": "This move shows the company is expanding into new areas beyond beverages, which could impact its long-term growth and financial structure.",
@@ -1288,38 +1399,6 @@
    "basis": "ca52fa760b66",
    "items": 2,
    "updated": "2026-11-27T09:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "COALINDIA": {
-   "summary": "Coal India is seeing increased trading activity alongside the upcoming market debut of its subsidiary, Mahanadi Coalfields. The parent company's stock also recorded a notable spike in trading volume recently.",
-   "why": "Investors may react positively to the successful launch of a major subsidiary, which can boost confidence in the parent company's overall performance.",
-   "upside": "A strong debut for Mahanadi Coalfields could generate positive sentiment for Coal India shares.",
-   "downside": "The recent surge in trading volume might be temporary and reverse quickly without new fundamental news.",
-   "watch": [
-    "Mahanadi Coalfields' first day of trading performance",
-    "Whether the high trading volume in Coal India continues or fades",
-    "General trends in the Oil & Gas sector index"
-   ],
-   "about": "Coal India is a major listed company in the Oil, Gas, and Consumable Fuels sector.",
-   "basis": "4249acfdf5bd",
-   "items": 2,
-   "updated": "2026-11-27T08:30+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "HINDZINC": {
-   "summary": "Hindustan Zinc has announced a collaboration with IIT Madras to develop zinc‑air battery technology for electric mobility. The move comes as its metals sector index has been falling.",
-   "why": "Shareholders should note the company is investing in new technology that could drive long‑term growth, though it does not affect current earnings.",
-   "upside": "Successful development could open a new revenue stream from battery applications.",
-   "downside": "The technology is still in early research stages with no immediate impact on profits and may not materialise.",
-   "watch": [
-    "Progress of the IIT Madras zinc‑air battery project",
-    "Further sector performance of Metals & Mining index",
-    "Any commercial or revenue announcements related to the battery technology"
-   ],
-   "about": "Hindustan Zinc Ltd. is a metals and mining company that primarily produces zinc.",
-   "basis": "5aed86badc01",
-   "items": 2,
-   "updated": "2026-11-26T11:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "CANHLIFE": {
