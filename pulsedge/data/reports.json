@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T11:30+05:30",
+ "updated": "2026-11-27T11:45+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -267,22 +267,6 @@
    "updated": "2026-11-26T19:22+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "HEROMOTOCO": {
-   "summary": "Hero MotoCorp has issued a recent press release and updated the market on a court case where the high court cancelled a ₹165 crore demand related to temporary registration certificates. The company also filed a SEBI listing regulation disclosure about the trade registration certificate matter.",
-   "why": "The court ruling removes a large liability, potentially strengthening the balance sheet, while ongoing regulatory issues could impact operations.",
-   "upside": "If the press release contains positive business updates, the company’s financial position could improve further.",
-   "downside": "Future regulatory actions or an adverse outcome in the trade registration case could lead to penalties or operational restrictions.",
-   "watch": [
-    "Details of the latest press release",
-    "Any further court or regulatory rulings on the trade registration certificate",
-    "Performance of the auto sector index"
-   ],
-   "about": "Hero MotoCorp manufactures motorcycles, scooters and cars.",
-   "basis": "c5412e739cb2",
-   "items": 3,
-   "updated": "2026-11-26T12:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "360ONE": {
    "summary": "360 ONE WAM recently issued convertible securities to raise new capital. This move increases the total number of shares, which can affect the value of existing holdings.",
    "why": "Issuing new shares means the company's ownership is split among more people, which can lower the value of each share if the new funds do not create enough value to offset this change.",
@@ -313,6 +297,22 @@
    "basis": "ec9ec420f4fe",
    "items": 2,
    "updated": "2026-11-26T16:58+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "HEROMOTOCO": {
+   "summary": "Hero MotoCorp recently issued a press release and the high court has cancelled a ₹165 crore demand from the RTO for temporary registration certificates. The auto sector index fell 0.7% in the last session but rose 4.5% over five sessions.",
+   "why": "The court’s decision removes a large liability, strengthening the balance sheet and could support the share price.",
+   "upside": "If the upcoming press release contains positive business updates, the stock could benefit.",
+   "downside": "Future regulatory or legal challenges could arise, potentially affecting the company.",
+   "watch": [
+    "Details of the press release",
+    "Any new regulatory or legal actions",
+    "Auto sector index trend"
+   ],
+   "about": "Hero MotoCorp manufactures motorcycles, scooters and cars.",
+   "basis": "65b934aed51a",
+   "items": 2,
+   "updated": "2026-11-27T11:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ACMESOLAR": {
@@ -619,19 +619,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil prices are climbing as Middle‑East tensions raise supply concerns, while the rupee has been volatile against the dollar. The oil‑and‑gas sector index is modestly higher, which reflects a generally positive market tone for producers like Oil India.",
-   "why": "Higher crude prices can lift Oil India’s revenue, but a weaker rupee makes imported oil costlier, which could squeeze margins.",
-   "upside": "If Brent stays near the month’s high, Oil India could see stronger earnings from higher oil prices.",
-   "downside": "A drop in oil prices or further rupee depreciation could reduce profits and increase import costs.",
+   "summary": "Oil India is seeing a potential boost as global oil prices rise on Middle‑East supply worries, while the Indian rupee shows mixed moves. The oil‑and‑gas sector index has edged higher recently.",
+   "why": "Higher oil prices can lift Oil India’s earnings, but price swings and currency changes can affect profitability.",
+   "upside": "Sustained high oil prices could improve the company’s profit margins.",
+   "downside": "A sharp fall in oil prices or a weaker rupee could reduce earnings.",
    "watch": [
-    "Brent crude price trends",
-    "INR/USD exchange rate movements",
-    "RBI policy signals on interest rates and inflation"
+    "Oil price movements amid geopolitical tensions",
+    "Rupee exchange‑rate trends",
+    "Indian central bank policy on inflation"
    ],
-   "about": "Oil India Ltd. explores, produces and markets crude oil and natural gas in India.",
-   "basis": "20bc2e09d3eb",
-   "items": 20,
-   "updated": "2026-11-27T08:16+05:30",
+   "about": "Oil India Ltd. explores, produces and sells oil and gas in India.",
+   "basis": "1023d8729269",
+   "items": 21,
+   "updated": "2026-11-27T11:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "BRIGADE": {

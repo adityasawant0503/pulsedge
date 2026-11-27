@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T11:30:49+05:30",
+ "updated": "2026-11-27T11:45:55+05:30",
  "summary": {
-  "calls": 2411,
-  "scored_calls": 1178,
+  "calls": 2412,
+  "scored_calls": 1179,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "6ab414361963608e",
+   "symbol": "OIL",
+   "time": "2026-11-27T11:22:14+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Oil on track to snap 3-week losing streak over West Asia supply fears",
+   "url": "https://www.business-standard.com/markets/commodities/oil-on-track-to-snap-3-week-losing-streak-over-west-asia-supply-fears-126112700293_1.html",
+   "alert_px": 428.5,
+   "alert_move": 0.33,
+   "alert_at": "2026-11-27T11:45:38+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "01eb6af574f7d659",
    "symbol": "SWIGGY",
