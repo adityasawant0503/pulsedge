@@ -1,7 +1,81 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-27T10:55:01+05:30",
+ "updated": "2026-11-27T10:57:32+05:30",
  "items": [
+  {
+   "id": "32e22bcb85cb9701",
+   "time": "2026-11-27T10:57:14+05:30",
+   "headline": "SIEMENS ENERGY: CO SAID IT IS CONFIDENT OF WINNING THE NEXT VSC-HVDC ORDER EXPECTED TO BE AWARDED IN INDIA NEXT YEAR.",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10233",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "SIEMENS",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Energy"
+   ],
+   "impact": 70,
+   "confidence": 80,
+   "category": "news",
+   "action": "Watch for price reaction and any confirmation of order award in upcoming weeks",
+   "reason": [
+    "Kept at Watch: Not a concrete order",
+    "Order could add significant revenue",
+    "Strengthens Siemens' position in Indian power infrastructure"
+   ],
+   "risks": [
+    "Order may not be awarded",
+    "Execution delays could affect margins"
+   ],
+   "plain": "Siemens Energy says it is confident of winning a major HVDC order in India next year.",
+   "why": "The contract could boost future earnings, making the stock potentially more valuable.",
+   "check": "Track official award announcements from Indian power authorities.",
+   "original": "SIEMENS ENERGY: CO SAID IT IS CONFIDENT OF WINNING THE NEXT VSC-HVDC ORDER EXPECTED TO BE AWARDED IN INDIA NEXT YEAR.",
+   "latency": 18.8,
+   "lane": "fast",
+   "checked": "Not a concrete order",
+   "quotes": {
+    "SIEMENS": {
+     "px": 3595.6,
+     "prev": 3576.6,
+     "move": 0.53,
+     "at": "2026-11-27T10:57:33+05:30",
+     "delay": 900
+    }
+   }
+  },
+  {
+   "id": "6a53483dc46a8844",
+   "time": "2026-11-27T10:56:52+05:30",
+   "headline": "MAHANADI: CO SAYS TARGETING TOPLINE GROWTH OF RS 35000 CR TO 36000 CR",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10231",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "swing",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [],
+   "impact": 0,
+   "confidence": 0,
+   "category": "news",
+   "action": "",
+   "reason": [],
+   "risks": [],
+   "plain": "Mahanadi says it targets revenue of 35,000‑36,000 crore.",
+   "why": "No listed company is named, so the statement has no direct effect on stock prices.",
+   "check": "",
+   "original": "MAHANADI: CO SAYS TARGETING TOPLINE GROWTH OF RS 35000 CR TO 36000 CR",
+   "latency": 40.8,
+   "lane": "fast"
+  },
   {
    "id": "7ebce1febc22e3a0",
    "time": "2026-11-27T10:54:22+05:30",
