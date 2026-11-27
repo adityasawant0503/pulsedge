@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T19:21+05:30",
+ "updated": "2026-11-28T03:54+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,38 +57,38 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged major business updates on Friday, including HEG's independent listing and expansion plans, along with new share buybacks from Zee Entertainment and Supriya Lifescience. Legal and insolvency news also made headlines, as the Supreme Court addressed bank prosecution sanctions and DPSC Limited faced an insolvency order. Meanwhile, sector performance was mixed, with metals gaining while IT shares declined.",
+  "summary": "Indian markets fell 1% as IT and banking stocks dragged the index down. Metals and media stocks were the strongest performers, while auto and realty lagged. Oil prices moved in conflicting directions, with US crude falling slightly while reports suggested OPEC+ would keep production steady. Foreign investors slightly reduced their long positions in index futures.",
   "themes": [
-   "Corporate expansions and share buybacks",
-   "Legal and insolvency developments for select firms",
-   "Mixed sector performance with metals up and IT down"
+   "IT and banking weakness weighed on the overall market",
+   "Metals outperformed while auto and realty struggled",
+   "Oil price signals remained mixed for energy stocks"
   ],
   "watch": [
-   "Execution of announced expansions and buybacks by companies like HEG and Zee Entertainment",
-   "Further legal developments regarding bank prosecution sanctions",
-   "Foreign funds' index-futures positions and overall market direction"
+   "How OPEC+ production decisions affect Indian oil companies",
+   "Whether IT and banking sectors can stabilize",
+   "Changes in foreign fund positioning in index futures"
   ],
-  "date": "2026-11-27",
-  "basis": "b8a5d04dd5ea",
-  "updated": "2026-11-27T19:21+05:30",
-  "model": "gemini-flash-lite-latest",
-  "items": 145
+  "date": "2026-11-28",
+  "basis": "f7736dcf63c9",
+  "updated": "2026-11-28T03:54+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 4
  },
  "stocks": {
   "BSE": {
-   "summary": "BSE shares recently hit a four-month high after a brokerage firm upgraded its recommendation. The stock has risen significantly in 2026, outperforming many other large Indian companies.",
-   "why": "This matters because the stock price has already increased sharply, which may reflect strong investor confidence in the company's future performance.",
-   "upside": "Analysts expect good business ahead, which could support continued interest in the stock.",
-   "downside": "The recent price jump may be driven by speculation rather than solid business results, leading to a potential reversal.",
+   "summary": "BSE shares recently hit a four-month high, rising 3% in one session and 6% in another. The stock has gained 48% so far in 2026, outperforming many other large Indian companies.",
+   "why": "As a major stock exchange, BSE earns money when trading activity in the Indian market is high. Strong market performance can lead to higher fees and better results for the company.",
+   "upside": "Analysts from HDFC Securities expect good business ahead, which could support further interest in the stock.",
+   "downside": "The stock price has already risen significantly, so it may reverse if the recent rally was driven by speculation rather than actual business growth.",
    "watch": [
-    "Whether the stock price stabilizes after the recent sharp rise",
-    "Upcoming earnings reports to check if business performance matches expectations",
-    "General market trends in the financial sector"
+    "Whether the stock price holds its recent gains or pulls back.",
+    "How trading volumes on the exchange change in the coming weeks.",
+    "Any new announcements regarding BSE's business operations or fees."
    ],
-   "about": "BSE is one of India's major stock exchanges and a member of the Nifty 50 index.",
-   "basis": "aee7ea0323a9",
-   "items": 5,
-   "updated": "2026-11-27T12:45+05:30",
+   "about": "BSE Ltd. is one of India's main stock exchanges, operating in the financial services sector.",
+   "basis": "be0b691b968a",
+   "items": 6,
+   "updated": "2026-11-28T03:54+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "GRAPHITE": {
@@ -187,6 +187,22 @@
    "updated": "2026-11-27T12:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "LUPIN": {
+   "summary": "Lupin received US FDA approval to sell sitagliptin tablets in the United States. The company plans to launch this new diabetes medication in the US market.",
+   "why": "This approval allows Lupin to sell a new product in a major market, which could help increase its future earnings.",
+   "upside": "Successful sales of the new diabetes drug in the US could boost the company's revenue.",
+   "downside": "The company faces strong competition from other drug makers in the US market.",
+   "watch": [
+    "Initial sales figures for the new US launch",
+    "How competitors react to the new entry",
+    "Overall performance of the Healthcare sector index"
+   ],
+   "about": "Lupin is a healthcare company listed in India's Nifty 500 index.",
+   "basis": "ccbf0b5fcd64",
+   "items": 1,
+   "updated": "2026-11-28T03:54+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "PNBHOUSING": {
    "summary": "PulsEdge flagged a Supreme Court order requiring HDFC Bank and other institutions to approve staff prosecutions. This legal development is currently affecting the broader financial services sector, where PNB Housing Finance operates.",
    "why": "Legal scrutiny can impact the reputation of financial institutions and may lead to share price declines. Since PNB Housing Finance is part of this sector, it may face similar market reactions.",
@@ -236,19 +252,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "SOLARINDS": {
-   "summary": "PulsEdge noted recent news about other companies securing solar orders and investments. However, the provided facts do not contain any specific updates or news about Solar Industries India Ltd. itself.",
-   "why": "This matters because investors need to ensure they are tracking accurate, company-specific news rather than general sector updates.",
+   "summary": "PulsEdge flagged that Solar Industries India is part of the Nifty 500 index, which tracks India's 500 largest listed companies. The recent news items PulsEdge flagged in the last few days concern other companies in the solar and chemical sectors, not Solar Industries India itself.",
+   "why": "This matters to shareholders because being in the Nifty 500 indicates the company is one of the larger listed firms in India, which can affect its visibility and liquidity in the market.",
    "upside": "",
    "downside": "",
    "watch": [
-    "Official announcements from Solar Industries India Ltd.",
-    "Company-specific order wins or financial results"
+    "Future announcements specifically from Solar Industries India Ltd.",
+    "General trends in the Nifty 500 index performance.",
+    "News regarding other large chemical sector companies for broader market context."
    ],
-   "about": "Solar Industries India Ltd. is a company in the chemicals sector and part of the Nifty 500 index.",
-   "basis": "982820a6779c",
-   "items": 4,
-   "updated": "2026-11-27T16:53+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "",
+   "basis": "b828a29aca05",
+   "items": 5,
+   "updated": "2026-11-28T03:54+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "CPPLUS": {
    "summary": "Aditya Infotech has just finished buying 30% of KGraph AI for 453.9 million rupees and has also filed an update about another acquisition deal that is still in progress.",
@@ -299,20 +316,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "360ONE": {
-   "summary": "360 ONE WAM recently issued convertible securities to raise new capital. This move increases the total number of shares, which can affect the value of existing holdings.",
-   "why": "Issuing new shares means the company's ownership is split among more people, which can lower the value of each share if the new funds do not create enough value to offset this change.",
-   "upside": "Analysts suggest that if the overall stock market remains strong, the company's profits might grow faster than expected.",
-   "downside": "The new shares could dilute the value of current holdings, and the raised money may not lead to the growth needed to support the stock price.",
+   "summary": "360 ONE WAM announced a fresh allotment of securities and issued convertible securities to raise capital. The new shares increase supply and could dilute existing shareholders if the convertibles are turned into ordinary shares.",
+   "why": "Shareholders need to watch because the capital raise could affect share value through dilution or, if used well, support growth.",
+   "upside": "If the raised funds are deployed into profitable growth projects, the company could improve earnings.",
+   "downside": "If the convertible securities are converted, the share count could rise, diluting existing holdings and putting pressure on the price.",
    "watch": [
-    "How the company plans to use the newly raised funds",
-    "Whether the broader stock market stays strong",
-    "Future announcements about the conversion of these securities"
+    "Conversion of the convertible securities and its impact on share count",
+    "How the company uses the proceeds from the allotment",
+    "Movement of the Financials sector index"
    ],
-   "about": "",
-   "basis": "6826fc39a25b",
-   "items": 3,
-   "updated": "2026-11-25T19:23+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "360 ONE WAM Ltd. operates in the financial services sector, offering financial products and services.",
+   "basis": "cb96117ddd8b",
+   "items": 2,
+   "updated": "2026-11-28T03:54+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "ACMESOLAR": {
    "summary": "ACME Solar Holdings has recently started operating new battery storage systems and a hybrid power project. These additions increase the company's total capacity for storing and generating electricity.",
@@ -395,51 +412,52 @@
    "model": "qwen/qwen3.8-27b"
   },
   "LGEINDIA": {
-   "summary": "PulsEdge flagged that the main owner of LG Electronics India Ltd. sold a large number of shares in the open market to meet minimum public shareholding rules. This massive stake sale caused the stock to fall as more shares became available to buy. Meanwhile, new competition and potential US taxes on Indian goods are also drawing attention to the company.",
-   "why": "For someone who owns shares, major owner selling can cause worry and add short-term pressure to the stock price. It is also important to watch how new competitors and broader market trends might affect the business.",
+   "summary": "LG Electronics India Ltd. is seeing its promoter sell a 2% stake and large bulk blocks of shares, causing the stock to fall about 3%. The sales are aimed at meeting minimum public shareholding requirements and have raised concerns about increased supply and promoter exit.",
+   "why": "Shareholders may see price pressure from the added share supply and worry about the promoter’s reduced stake, which can affect market sentiment.",
    "upside": "",
-   "downside": "Further insider selling or new competitors entering the appliance market could continue to pressure the stock.",
+   "downside": "Further share price decline could occur if more insider selling continues or if US tariff proposals on Indian exports hit the company’s earnings.",
    "watch": [
-    "Whether the promoter sells any more shares",
-    "How new competitors affect appliance sales",
-    "Any updates on proposed US taxes on Indian goods"
+    "Execution of the promoter's 2% stake sale",
+    "Any additional bulk share sales by LG Electronics Inc.",
+    "Progress on US high‑tax proposals affecting exporters"
    ],
-   "about": "LG Electronics India Ltd. is a consumer durables company in the Nifty 500 index.",
-   "basis": "93517764969f",
-   "items": 10,
-   "updated": "2026-11-27T16:53+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "LG Electronics India Ltd. manufactures and sells consumer electronics and appliances in India.",
+   "basis": "0ef7d90b7d1f",
+   "items": 8,
+   "updated": "2026-11-28T03:54+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "MEDANTA": {
-   "summary": "PulsEdge flagged a series of large block and bulk trades in Global Health Ltd. on 25 Nov, with both buying and selling by major investors at ₹1,460 per share. The healthcare sector index rose 2.1% in the last session.",
-   "why": "These institutional trades can move the stock and signal how investors view the company's prospects.",
-   "upside": "If more institutions keep buying, it could support the share price.",
-   "downside": "The ₹930 cr sell order by Dunearn may create downward pressure.",
+   "summary": "On Nov 25, Global Health saw several large institutional investors buy shares in block and bulk deals totalling about ₹1,681 cr, while Dunearn Investments sold roughly ₹930 cr of shares. The healthcare sector index fell 0.4% in the last session but rose 2.5% over five sessions.",
+   "why": "These trades can move the share price and reflect investor sentiment, which matters to current shareholders.",
+   "upside": "If institutional buying continues, it could support the stock.",
+   "downside": "The large sell by Dunearn Investments could put pressure on the stock if it signals reduced confidence.",
    "watch": [
-    "Further block or bulk deals by large investors",
-    "Changes in the healthcare sector index performance",
-    "Net balance of buying vs selling in upcoming trades"
+    "Future block or bulk deal activity",
+    "Healthcare sector index trend",
+    "Any additional large sell orders"
    ],
    "about": "Global Health Ltd. (MEDANTA) is a healthcare company listed on the NSE and part of the Nifty 500.",
-   "basis": "d650b0b12b4d",
-   "items": 9,
-   "updated": "2026-11-25T19:23+05:30",
+   "basis": "a1237854b7c4",
+   "items": 8,
+   "updated": "2026-11-28T03:54+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "APLAPOLLO": {
-   "summary": "APL Apollo Tubes shares jumped 4% after dropping 28% in a week. The market reacted as the regulator may closely examine a business deal with Tata Steel. Meanwhile, a large investor named Smallcap World Fund Inc sold shares worth about 434 crore rupees.",
-   "why": "Big trades by large investors and close regulatory attention to major deals can change company value and affect stock prices. This matters for anyone holding the shares.",
-   "upside": "Regulatory scrutiny could clear up uncertainty surrounding the deal, helping the stock bounce back further.",
-   "downside": "Intervention by the regulator could delay or block the business transaction.",
+   "summary": "SEBI has extended the deadline for APL Apollo Tubes' open offer filing, regulators may scrutinise its proposed Tata Steel deal, and a large investor sold about ₹434 cr of shares in a bulk trade.",
+   "why": "Shareholders face uncertainty as the deadline extension delays resolution, regulatory review could affect the Tata Steel transaction, and the bulk sale may reflect shifting investor sentiment.",
+   "upside": "If the extension helps address concerns and the deal clears regulatory review, the transaction could proceed and add value.",
+   "downside": "Delays, possible regulatory blockage, or continued large‑investor selling could weigh on the stock.",
    "watch": [
-    "Updates on the SEBI scrutiny of the Tata Steel deal",
-    "Further large trades by institutional investors"
+    "SEBI's final decision on the extended open‑offer deadline",
+    "Outcome of regulatory scrutiny on the Tata Steel deal",
+    "Further bulk or block trades involving APL Apollo Tubes"
    ],
-   "about": "APL Apollo Tubes Ltd. is a capital goods company included in the Nifty 500 index.",
-   "basis": "5e1c4ea60873",
-   "items": 2,
-   "updated": "2026-11-27T16:53+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "",
+   "basis": "168e39711857",
+   "items": 3,
+   "updated": "2026-11-28T03:54+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "IIFL": {
    "summary": "PulsEdge flagged that large investors recently made big trades in IIFL Finance Ltd. Smallcap World Fund sold shares worth about 337 crore rupees, while UBS AG bought shares worth about 259 crore rupees in a single trade.",
@@ -489,36 +507,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "IGIL": {
-   "summary": "International Gemological Institute Ltd. (IGIL) has seen a flurry of block trades on 27 November 2026. Old Bridge Mutual Fund and Stallion Asset bought a combined 3.6 million shares, while BCP Asia II Topco sold 3.36 million shares in a single trade.",
-   "why": "Large institutional trades can signal confidence or concern, which may influence the stock’s liquidity and investor sentiment.",
-   "upside": "The purchases by Old Bridge Mutual Fund and Stallion Asset could be interpreted as a vote of confidence.",
-   "downside": "The sale by BCP Asia II Topco might indicate a lack of confidence or a need for liquidity.",
+   "summary": "PulsEdge flagged a busy day of large share trades for International Gemological Institute Ltd. (IGIL) on November 27, 2026. Several major investors, including Blackstone and BCP Asia, sold significant stakes, while funds like Old Bridge Mutual and Citigroup bought large amounts of shares.",
+   "why": "These large transactions, known as block deals, can temporarily affect the stock price because they involve many shares changing hands at once. The mix of buying and selling shows that big investors have different views on the company's value right now.",
+   "upside": "The fact that major funds like Old Bridge Mutual, Citigroup, and Morgan Stanley bought large amounts of shares suggests some institutional confidence in the company.",
+   "downside": "The sale of shares by Blackstone and BCP Asia adds extra supply to the market, which can limit how much the share price rises in the short term.",
    "watch": [
-    "Any new block deals involving IGIL in the coming days",
-    "Price movement following the large trades",
-    "Changes in institutional ownership disclosed in the next 10‑day trading window"
+    "Whether the new buyers hold their shares or sell them quickly.",
+    "If more large investors follow the selling trend seen from Blackstone and BCP Asia.",
+    "How the stock price reacts to the increased number of shares available in the market."
    ],
-   "about": "International Gemological Institute Ltd. provides gemological services.",
-   "basis": "804f81861cda",
-   "items": 9,
-   "updated": "2026-11-27T19:21+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
-  "WIPRO": {
-   "summary": "Wipro shares jumped after the IT company signed a major strategic partnership with global energy firm BP to transform finance operations. Around 3,000 BP employees are set to join Wipro under this new operating model. Meanwhile, Indian IT stocks have risen despite US tariff threats.",
-   "why": "This matters because large contracts show that major global clients trust the company for future business. However, potential US tariffs and trade policies could impact companies that sell abroad.",
-   "upside": "Winning large contracts like the BP partnership could bring stable, long-term business health.",
-   "downside": "The long implementation timeline for the BP partnership may delay revenue recognition, and shifting tariff policies could hurt market sentiment.",
-   "watch": [
-    "Details on the BP partnership implementation timeline",
-    "Updates regarding US tariff threats and policies",
-    "Overall movement in IT sector stocks"
-   ],
-   "about": "Wipro Ltd. is an information technology company that provides IT services and solutions.",
-   "basis": "c3696c9498ac",
-   "items": 5,
-   "updated": "2026-11-26T12:45+05:30",
-   "model": "gemini-flash-lite-latest"
+   "about": "International Gemological Institute Ltd. is a company in the services sector that is part of the Nifty 500 index.",
+   "basis": "785735f3859c",
+   "items": 11,
+   "updated": "2026-11-28T03:54+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "ZYDUSLIFE": {
    "summary": "Zydus Lifesciences shares fell 3% after the US FDA issued a Complete Response Letter (CRL) on a new drug, delaying its approval. The company also received a complete response letter for another drug and had a US FDA inspection of its Ankleshwar API plant.",
@@ -584,6 +586,21 @@
    "updated": "2026-11-27T19:21+05:30",
    "model": "gemini-flash-lite-latest"
   },
+  "TATASTEEL": {
+   "summary": "India's market regulator is currently studying Tata Steel's proposed deal with APL Apollo to ensure it protects the interests of all company owners. In response to this regulatory attention and potential rule checks, Tata Steel has shown openness to tweaking or restructuring the deal. Meanwhile, the broader metals sector has experienced mixed movements recently.",
+   "why": "This matters because major corporate deals and regulatory investigations can change how a transaction works, potentially causing the stock price to move up or down.",
+   "upside": "Tata Steel has indicated it is willing to restructure the deal, which could help address regulatory concerns and keep the transaction moving forward.",
+   "downside": "The regulatory scrutiny could lead to delays, penalties, or even a restructuring that affects the company.",
+   "watch": [
+    "Updates from the market regulator regarding the deal review.",
+    "Any official announcements on restructuring the APL Apollo transaction."
+   ],
+   "about": "Tata Steel Ltd. is one of India's largest listed companies operating in the metals and mining sector.",
+   "basis": "9c6ba4345c81",
+   "items": 9,
+   "updated": "2026-11-27T15:15+05:30",
+   "model": "gemini-flash-lite-latest"
+  },
   "AMBER": {
    "summary": "Amber Enterprises India Ltd. announced a partnership for a 500 crore rupee investment to expand its circuit board manufacturing in Tamil Nadu. This expansion is planned to happen over five years starting in 2027. A research firm also recently added the company to its list of high-conviction stocks.",
    "why": "This matters because the company is planning to increase its production capacity, which could lead to higher sales and profits in the future. However, the benefits will not be immediate as the project starts in 2027.",
@@ -599,37 +616,6 @@
    "items": 3,
    "updated": "2026-11-27T04:10+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "INFY": {
-   "summary": "Infosys is riding a rally in Indian IT stocks while the sector faces headwinds from a stronger rupee and US tariff concerns, and the company recently earned a top‑level AI maturity certification.",
-   "why": "Shareholders see sector sentiment lift the stock, but margin pressure from currency strength could affect earnings, and the AI certification may open new business opportunities.",
-   "upside": "The AI maturity certification could help Infosys win more AI‑related contracts.",
-   "downside": "A stronger rupee and potential changes in US tariff policy could compress margins and dampen sentiment.",
-   "watch": [
-    "US tariff policy developments",
-    "Rupee strength and margin impact",
-    "Progress in monetising AI capabilities"
-   ],
-   "about": "Infosys Ltd. provides IT consulting, software development and outsourcing services.",
-   "basis": "472530c462ae",
-   "items": 4,
-   "updated": "2026-11-26T12:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "TATASTEEL": {
-   "summary": "India's market regulator is currently studying Tata Steel's proposed deal with APL Apollo to ensure it protects the interests of all company owners. In response to this regulatory attention and potential rule checks, Tata Steel has shown openness to tweaking or restructuring the deal. Meanwhile, the broader metals sector has experienced mixed movements recently.",
-   "why": "This matters because major corporate deals and regulatory investigations can change how a transaction works, potentially causing the stock price to move up or down.",
-   "upside": "Tata Steel has indicated it is willing to restructure the deal, which could help address regulatory concerns and keep the transaction moving forward.",
-   "downside": "The regulatory scrutiny could lead to delays, penalties, or even a restructuring that affects the company.",
-   "watch": [
-    "Updates from the market regulator regarding the deal review.",
-    "Any official announcements on restructuring the APL Apollo transaction."
-   ],
-   "about": "Tata Steel Ltd. is one of India's largest listed companies operating in the metals and mining sector.",
-   "basis": "9c6ba4345c81",
-   "items": 9,
-   "updated": "2026-11-27T15:15+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "BAJAJ-AUTO": {
    "summary": "Bajaj Auto shares fell in recent market downturn, but the company announced a record 394‑km range for its electric three‑wheeler, showing progress in EVs.",
@@ -661,6 +647,22 @@
    "basis": "147e03daf714",
    "items": 4,
    "updated": "2026-11-27T10:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "INFY": {
+   "summary": "Infosys is riding a rally in Indian IT stocks while the sector faces headwinds from a stronger rupee and US tariff concerns, and the company recently earned a top‑level AI maturity certification.",
+   "why": "Shareholders see sector sentiment lift the stock, but margin pressure from currency strength could affect earnings, and the AI certification may open new business opportunities.",
+   "upside": "The AI maturity certification could help Infosys win more AI‑related contracts.",
+   "downside": "A stronger rupee and potential changes in US tariff policy could compress margins and dampen sentiment.",
+   "watch": [
+    "US tariff policy developments",
+    "Rupee strength and margin impact",
+    "Progress in monetising AI capabilities"
+   ],
+   "about": "Infosys Ltd. provides IT consulting, software development and outsourcing services.",
+   "basis": "472530c462ae",
+   "items": 4,
+   "updated": "2026-11-26T12:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ANGELONE": {
@@ -806,6 +808,22 @@
    "items": 3,
    "updated": "2026-11-27T12:16+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "WIPRO": {
+   "summary": "Wipro shares jumped after the IT company signed a major strategic partnership with global energy firm BP to transform finance operations. Around 3,000 BP employees are set to join Wipro under this new operating model. Meanwhile, Indian IT stocks have risen despite US tariff threats.",
+   "why": "This matters because large contracts show that major global clients trust the company for future business. However, potential US tariffs and trade policies could impact companies that sell abroad.",
+   "upside": "Winning large contracts like the BP partnership could bring stable, long-term business health.",
+   "downside": "The long implementation timeline for the BP partnership may delay revenue recognition, and shifting tariff policies could hurt market sentiment.",
+   "watch": [
+    "Details on the BP partnership implementation timeline",
+    "Updates regarding US tariff threats and policies",
+    "Overall movement in IT sector stocks"
+   ],
+   "about": "Wipro Ltd. is an information technology company that provides IT services and solutions.",
+   "basis": "c3696c9498ac",
+   "items": 5,
+   "updated": "2026-11-26T12:45+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "SHYAMMETL": {
    "summary": "PulsEdge flagged that Shyam Metalics and Energy Limited has announced an agreement to acquire a stake in Ramsarup Industries Limited. This purchase is being made directly through its affiliate, Shyam Sel and Power Limited.",
@@ -1094,22 +1112,6 @@
    "updated": "2026-11-26T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "EICHERMOT": {
-   "summary": "Eicher Motors disclosed a court or regulator decision affecting it and announced a Rs 1,000 crore MoU with the Tamil Nadu government to expand its electric‑vehicle ecosystem.",
-   "why": "Shareholders need to watch the legal outcome for potential financial impact and the EV investment for future growth prospects.",
-   "upside": "A favorable legal ruling or successful EV expansion could boost earnings.",
-   "downside": "An adverse legal decision or costly EV rollout could hurt profitability.",
-   "watch": [
-    "Result of the pending legal decision",
-    "Implementation milestones of the Tamil Nadu EV MoU",
-    "Progress of the Auto sector index and broader market sentiment"
-   ],
-   "about": "Eicher Motors manufactures motorcycles (Royal Enfield) and commercial vehicles.",
-   "basis": "def78524fb97",
-   "items": 3,
-   "updated": "2026-11-26T12:15+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "GLENMARK": {
    "summary": "Glenmark Pharma has reached a 52‑week high and has been on a five‑day winning streak, up 35% from its October low. The stock price has risen sharply in recent months, reflecting stronger business performance.",
    "why": "The share price increase indicates that investors see the company as performing better than expected, which can make the shares more valuable for current owners.",
@@ -1189,22 +1191,6 @@
    "items": 2,
    "updated": "2026-11-27T09:15+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "TVSMOTOR": {
-   "summary": "TVS Motor Company has launched a new cargo tricycle called the TVS Armado and signed new business agreements. It also signed a non-binding agreement with the Government of Tamil Nadu to invest 2,000 crore rupees over four years to create 1,000 jobs.",
-   "why": "These moves involve new products, business deals, and large investments that can change the company's future business and growth.",
-   "upside": "The planned investment and new product launches could boost the company's future earnings and market presence.",
-   "downside": "The new product's market reception is uncertain, the business agreements might be routine or low-value, and the state government deal is non-binding.",
-   "watch": [
-    "How the new TVS Armado cargo tricycle is received by the market.",
-    "Further details on the newly signed business agreements.",
-    "Updates on whether the non-binding agreement with the Tamil Nadu government becomes final."
-   ],
-   "about": "TVS Motor Company Ltd. is an automobile and auto components manufacturer.",
-   "basis": "4c1fdf5dfa2b",
-   "items": 4,
-   "updated": "2026-11-27T15:01+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "ONGC": {
    "summary": "ONGC awarded a multi‑year charter contract to ABS Marine Services for its offshore supply vessel Emerald, worth about ₹120.14 crore. The move shows the company is spending on offshore operations as its sector index posted modest gains.",
