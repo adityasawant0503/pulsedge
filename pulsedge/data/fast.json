@@ -1,7 +1,32 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-27T12:23:31+05:30",
+ "updated": "2026-11-27T12:34:01+05:30",
  "items": [
+  {
+   "id": "ac59132d402c68a0",
+   "time": "2026-11-27T12:32:55+05:30",
+   "headline": "OBSC PERFECTION: CO. SECURES ₹24.5 CRORE EXPORT NOMINATION FROM US AUTO COMPONENTS MANUFACTURER FOR FIVE YEARS",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10242",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "swing",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [],
+   "impact": 0,
+   "confidence": 0,
+   "category": "news",
+   "action": "",
+   "reason": [],
+   "risks": [],
+   "plain": "RedBox Global India secured a five‑year export nomination worth ₹24.5 crore from a US auto parts maker.",
+   "why": "No listed company is named, so the news has no clear impact on Indian stock prices.",
+   "check": "",
+   "original": "OBSC PERFECTION: CO. SECURES ₹24.5 CRORE EXPORT NOMINATION FROM US AUTO COMPONENTS MANUFACTURER FOR FIVE YEARS",
+   "latency": 66.7,
+   "lane": "fast"
+  },
   {
    "id": "5efafec23f1aa4a5",
    "time": "2026-11-27T12:22:49+05:30",
@@ -1328,123 +1353,6 @@
      "prev": 2060.0,
      "move": -0.83,
      "at": "2026-11-26T12:39:07+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "5206dac7e9b72a6a",
-   "time": "2026-11-26T12:28:41+05:30",
-   "headline": "HINDUSTAN FOODS: COMPANY TO INVEST ₹100 CRORE IN GREENFIELD PROJECT IN TAMIL NADU UNDER ITS HOME AND PERSONAL CARE DIVISION",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10153",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "positional",
-   "direction": "up",
-   "tickers": [],
-   "sectors": [
-    "FMCG"
-   ],
-   "impact": 0,
-   "confidence": 0,
-   "category": "corporate",
-   "action": "No immediate action required as no listed entity is directly named.",
-   "reason": [
-    "Hindustan Foods is a private company, not listed on NSE.",
-    "No candidate symbols provided for this specific entity."
-   ],
-   "risks": [
-    "Misidentifying private company news as listed stock impact."
-   ],
-   "plain": "A private food company plans to spend money on a new factory in Tamil Nadu.",
-   "why": "This company is not publicly traded, so its news does not directly move listed stock prices.",
-   "check": "",
-   "original": "HINDUSTAN FOODS: COMPANY TO INVEST ₹100 CRORE IN GREENFIELD PROJECT IN TAMIL NADU UNDER ITS HOME AND PERSONAL CARE DIVISION",
-   "latency": 85.8,
-   "lane": "fast"
-  },
-  {
-   "id": "9304d211aef186ee",
-   "time": "2026-11-26T12:25:11+05:30",
-   "headline": "NCC: CO MAINTAIN ORDER INFLOW GUIDANCE OF RS 22,000-25,000 CR",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10152",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [
-    {
-     "symbol": "NCC",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Infrastructure"
-   ],
-   "impact": 10,
-   "confidence": 50,
-   "category": "Broker Note",
-   "action": "No immediate action required as this is a reiteration of existing guidance.",
-   "reason": [
-    "Broker note reiterating previously stated guidance.",
-    "No new information provided."
-   ],
-   "risks": [
-    "Market may react to broader sector sentiment rather than this specific note."
-   ],
-   "plain": "A brokerage firm repeated the company's earlier prediction for future business orders.",
-   "why": "This is just a reminder of what was already known, so it does not change the company's value or outlook.",
-   "check": "",
-   "original": "NCC: CO MAINTAIN ORDER INFLOW GUIDANCE OF RS 22,000-25,000 CR",
-   "latency": 25.4,
-   "lane": "fast"
-  },
-  {
-   "id": "ecfbfb818c7b4a7a",
-   "time": "2026-11-26T12:24:08+05:30",
-   "headline": "NCC: MAINTAINS FY27 REVENUE GROWTH GUIDANCE OF 8-10%, AFTER 21% H1 GROWTH",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10151",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "NCC",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Infrastructure",
-    "Construction"
-   ],
-   "impact": 40,
-   "confidence": 60,
-   "category": "Guidance",
-   "action": "Monitor if the stock holds its recent gains as the market digests the maintained growth outlook.",
-   "reason": [
-    "Company reaffirmed 8-10% revenue growth for FY27 despite strong 21% H1 performance.",
-    "Consistent guidance provides visibility for long-term investors."
-   ],
-   "risks": [
-    "Guidance is lower than the recent H1 growth rate, which might disappoint aggressive traders.",
-    "Macro factors like interest rates could still impact infrastructure spending."
-   ],
-   "plain": "The company confirmed it expects its sales to grow by 8 to 10 percent next year.",
-   "why": "It shows the business is stable and growing, which is good for long-term owners.",
-   "check": "Look at the company's recent order book to see if new projects support this growth.",
-   "original": "NCC: MAINTAINS FY27 REVENUE GROWTH GUIDANCE OF 8-10%, AFTER 21% H1 GROWTH",
-   "latency": 29.2,
-   "lane": "fast",
-   "quotes": {
-    "NCC": {
-     "px": 129.16,
-     "prev": 129.17,
-     "move": -0.01,
-     "at": "2026-11-26T12:24:37+05:30",
      "delay": 900
     }
    }
