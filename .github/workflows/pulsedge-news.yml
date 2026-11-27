@@ -123,7 +123,8 @@ jobs:
       continue-on-error: true
       env:
         DRY: ${{ github.ref != 'refs/heads/master' && '--dry-run' || '' }}
-      run: python pulsedge-bot/events.py update $DRY
+        FORCE: ${{ github.ref != 'refs/heads/master' && '--force' || '' }}   # branch test runs always ask the sources (nothing is written)
+      run: python pulsedge-bot/events.py update $DRY $FORCE
     - name: Commit new headlines
       id: commit
       if: github.ref == 'refs/heads/master'

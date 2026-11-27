@@ -17,7 +17,7 @@ site, the terminal and the Telegram bot switch to it within a couple of minutes.
 | `offers.json`    | Discount codes, stored as SHA-256 hashes; manage with `pulsedge-bot/offers.py` | none |
 | `monthly/`       | Monthly reports (`<YYYY-MM>.json`) and their list (`index.json`), written by `pulsedge-bot/monthly_report.py` and read by `report.html`. Drafts show only to the owner until published | none |
 | `newscal/`       | The news calendar (`calendar.html`): each month's Act and Watch stories with the NSE closes for "on the day" and "since" (`<YYYY-MM>.json`), and the months plus every stock's latest close (`index.json`). Written by `pulsedge-bot/news_calendar.py` on every news run | none |
-| `events.json`    | Dates ahead for the news calendar: Nifty 500 results dates, board meetings and ex-dates from NSE, plus RBI, Fed, Budget and F&O expiry dates. Written by `pulsedge-bot/events.py` from the news run (NSE at most every 3 hours); the RBI and Fed dates are set by hand in that script | none |
+| `events.json`    | Dates ahead for the news calendar: Nifty 500 results dates, board meetings and ex-dates from NSE; RBI, Fed, Budget and F&O expiry dates; and world and India economic dates (US CPI and jobs, ECB, Bank of Japan, Bank of England, China and India data) from TradingView's economic calendar. Written by `pulsedge-bot/events.py` from the news run (NSE at most every 3 hours); the RBI and Fed dates are set by hand in that script | none |
 | `reviews.json`   | Real member reviews (from `review.html`, with permission). The landing page shows them, with the average, once there are 3 or more | none |
 
 ## `feed.json`: signals

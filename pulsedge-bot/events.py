@@ -54,6 +54,53 @@ FIXED = [
 # NSE is closed on these every year (Republic Day, Independence Day, Gandhi Jayanti, Christmas), so expiry dates for
 # a year whose holiday list isn't in calendar.json yet still avoid them
 ALWAYS_CLOSED = {"01-26", "08-15", "10-02", "12-25"}
+# The world's dates that move Indian markets, from TradingView's public economic calendar (it answers GitHub's
+# runners; unofficial, like the prices we take from TradingView). Each entry: country, title as TradingView writes it,
+# our key, the tag on the calendar, the name, priority (1 shows everywhere, 2 only in the World view), the unit of its
+# numbers, and why it matters for India, in our own words. The Fed and the RBI come from FIXED above.
+TV_ECON = "https://economic-calendar.tradingview.com/events"
+ECON = [
+    ("US", r"^Inflation Rate YoY$", "us-cpi", "US CPI", "US inflation (CPI)", 1, "%",
+     "Hotter US inflation can keep US rates high for longer, which tends to pull foreign money out of Indian stocks and weaken the rupee."),
+    ("US", r"^Non Farm Payrolls$", "us-jobs", "US JOBS", "US jobs report", 1, "k",
+     "Strong US hiring can mean higher US rates for longer; weak hiring the opposite. It moves the dollar, US bond yields and foreign flows into India."),
+    ("US", r"^Core PCE Price Index YoY$", "us-pce", "US PCE", "US core PCE inflation (the Fed's preferred measure)", 2, "%",
+     "The inflation measure the Fed watches most closely; a surprise changes expectations for US rates."),
+    ("US", r"^GDP Growth Rate QoQ", "us-gdp", "US GDP", "US GDP growth", 2, "%",
+     "How fast the US economy is growing; it matters for Indian IT, which earns much of its revenue there."),
+    ("US", r"^Retail Sales MoM$", "us-retail", "US RETAIL", "US retail sales", 2, "%",
+     "US consumer spending; a guide to the US economy and to demand for Indian exports and IT services."),
+    ("US", r"^ISM Manufacturing PMI$", "us-ism", "US ISM", "US factory activity (ISM)", 2, "",
+     "Above 50 means US factories are growing. It moves US yields and global risk appetite."),
+    ("US", r"^FOMC Minutes$", "fomc-min", "FOMC", "Minutes of the last Fed meeting (FOMC)", 2, None,
+     "The detail behind the Fed's last decision; markets read it for hints on the next rate move."),
+    ("US", r"Fed Chair .*Speech|Powell Speech|Fed Chair .*Testimony", "fed-chair", "FED CHAIR", "The US Fed chair speaks", 2, None,
+     "Markets listen for hints on US rates, which drive the dollar and foreign flows into India."),
+    ("EU", r"^ECB Interest Rate Decision$", "ecb", "ECB", "European Central Bank rate decision", 1, "%",
+     "Europe's rate decision moves global bond yields and currencies, and with them foreign money flows."),
+    ("GB", r"^(BoE )?Interest Rate( Decision)?$", "boe", "BOE", "Bank of England rate decision", 2, "%",
+     "The UK's rate decision; it moves the pound and global bond yields."),
+    ("JP", r"^(BoJ )?Interest Rate( Decision)?$", "boj", "BOJ", "Bank of Japan rate decision", 1, "%",
+     "Japanese rates drive the yen \"carry trade\"; a surprise can pull money out of emerging markets including India."),
+    ("CN", r"^NBS Manufacturing PMI$", "cn-pmi", "CHINA PMI", "China factory activity (PMI)", 2, "",
+     "China's demand drives metal and commodity prices, which move Indian metal stocks."),
+    ("CN", r"^GDP Growth Rate YoY$", "cn-gdp", "CHINA GDP", "China GDP growth", 1, "%",
+     "China's growth drives global demand for metals and commodities, which moves Indian metal and energy stocks."),
+    ("CN", r"^Loan Prime Rate 1Y$", "cn-lpr", "CHINA RATE", "China lending rate (PBoC)", 2, "%",
+     "China's benchmark lending rate; a cut signals support for its economy and metal demand."),
+    ("IN", r"^Inflation Rate YoY$", "in-cpi", "INDIA CPI", "India inflation (CPI)", 1, "%",
+     "India's inflation shapes the RBI's next rate decision, which moves banks, NBFCs and rate-sensitive stocks."),
+    ("IN", r"^GDP Growth Rate YoY$", "in-gdp", "INDIA GDP", "India GDP growth", 1, "%",
+     "How fast India's economy grew last quarter; it sets the tone for the whole market."),
+    ("IN", r"^WPI Inflation YoY$", "in-wpi", "INDIA WPI", "India wholesale inflation (WPI)", 2, "%",
+     "Price pressure at the factory gate; it feeds into companies' costs and margins."),
+    ("IN", r"^Industrial Production YoY$", "in-iip", "INDIA IIP", "India industrial output (IIP)", 2, "%",
+     "How fast India's factories, mines and power plants are growing."),
+    ("IN", r"^Balance of Trade$", "in-trade", "INDIA TRADE", "India trade balance", 2, None,
+     "The gap between imports and exports; a wider deficit can weigh on the rupee."),
+    ("IN", r"^HSBC Manufacturing PMI Final$", "in-pmi", "INDIA PMI", "India factory activity (PMI)", 2, "",
+     "Above 50 means India's factories are growing."),
+]
 NSE_API = "https://www.nseindia.com/api/"
 RSS_BOARD = "https://nsearchives.nseindia.com/content/RSS/Board_Meetings.xml"
 RSS_ACTIONS = "https://nsearchives.nseindia.com/content/RSS/Corporate_action.xml"
@@ -223,6 +270,61 @@ def expiries(today, holidays):
     return out
 
 
+def num(v, unit):
+    if not isinstance(v, (int, float)):
+        return None
+    t = f"{v:,.2f}".rstrip("0").rstrip(".") if abs(v) < 1000 else f"{v:,.0f}"
+    return t + ("%" if unit == "%" else "K" if unit == "k" else "")
+
+
+def from_econ(today):
+    """Curated world and India economic dates (ECON) from TradingView's calendar: (events, status)."""
+    a = (today.replace(day=1) - timedelta(days=1)).replace(day=1)
+    b = today + timedelta(days=75)
+    # in windows of a month: the calendar returns at most about 2,000 events per request
+    rows, start = [], a
+    try:
+        while start < b:
+            stop = min(b, start + timedelta(days=31))
+            url = (f"{TV_ECON}?from={start.isoformat()}T00:00:00.000Z&to={stop.isoformat()}T00:00:00.000Z&countries=" +
+                   ",".join(sorted({c for c, *_ in ECON})))
+            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json",
+                                                       "Origin": "https://in.tradingview.com", "Referer": "https://in.tradingview.com/"})
+            with urllib.request.urlopen(req, timeout=25) as r:
+                rows += (json.loads(r.read()) or {}).get("result") or []
+            start = stop
+    except Exception as e:  # noqa: BLE001 - the dates found earlier are kept
+        return None, f"failed: {type(e).__name__} {str(e)[:80]}"
+    out = {}
+    for r in rows:
+        cc, title = r.get("country"), str(r.get("title") or "").strip()
+        rule = next((x for x in ECON if x[0] == cc and re.search(x[1], title)), None)
+        if not rule or not r.get("date"):
+            continue
+        _, _, key, tag, name, prio, unit, why = rule
+        try:
+            at = datetime.fromisoformat(str(r["date"]).replace("Z", "+00:00")).astimezone(IST)
+        except ValueError:
+            continue
+        d = at.date().isoformat()
+        if (d, key) in out:
+            continue
+        period = str(r.get("period") or "").strip()
+        # "Nov. 2026" -> "Nov 2026", "Q3 2026" stays; a plain date (rate decisions) adds nothing
+        per = period.replace(".", "") if re.match(r"^([A-Z][a-z]{2}\.? \d{4}|Q\d \d{4})$", period) else ""
+        bits = []
+        act, fc, prev = (num(r.get(k), unit) if unit is not None else None for k in ("actual", "forecast", "previous"))
+        if act:
+            bits.append(f"Came in at {act}" + (f" (forecast {fc})" if fc else "") + (f", previous {prev}" if prev else "") + ".")
+        elif fc:
+            bits.append(f"Forecast {fc}" + (f", previous {prev}" if prev else "") + ".")
+        elif prev:
+            bits.append(f"Previous {prev}.")
+        out[(d, key)] = {"d": d, "k": "india" if cc == "IN" else "world", "g": key, "tg": tag, "cc": cc, "p": prio,
+                         "t": name + (f" ({per})" if per else ""), "tm": at.strftime("%H:%M"), "x": (" ".join(bits) + " " + why).strip()}
+    return list(out.values()), f"{len(rows)} rows, {len(out)} kept"
+
+
 def market(today, holidays):
     return [{"d": d, "k": k, "t": t, "x": x} for d, k, t, x in FIXED + expiries(today, holidays)]
 
@@ -244,11 +346,12 @@ def update(dry=False, force=False):
     today = now.date()
     keep_from = (today.replace(day=1) - timedelta(days=1)).replace(day=1).isoformat()   # the start of last month
 
-    stocks, status = [], dict(old.get("sources") or {})
+    stocks, status, econ = [], dict(old.get("sources") or {}), None
     if due:
         a, s1 = from_api(universe)
         r, s2 = from_rss(by_name)
-        stocks, status = a + r, {**s1, **s2}
+        econ, s3 = from_econ(today)
+        stocks, status = a + r, {**s1, **s2, "economic-calendar": s3}
         for k, v in status.items():
             log(f"  {k}: {v}")
     # one event per stock, day and family (a board meeting, an ex-date); the API's wording wins over the RSS feed's,
@@ -259,12 +362,19 @@ def update(dry=False, force=False):
         key = (e["d"], e["s"], fam(e))
         if key not in merged and keep_from <= e["d"] <= (today + timedelta(days=AHEAD_DAYS)).isoformat():
             merged[key] = e
-    evs = sorted(list(merged.values()) + [e for e in market(today, holidays) if e["d"] >= keep_from],
+    # economic dates: this run's, or the ones found earlier when the calendar couldn't be read (or wasn't asked)
+    if econ is None:
+        econ = [e for e in old.get("events", []) if e.get("k") in ("world", "india")]
+    fixed = market(today, holidays)
+    # the Fed and the RBI come from FIXED; their dates in the feed would repeat them
+    econ = [e for e in econ if keep_from <= e["d"] <= (today + timedelta(days=AHEAD_DAYS)).isoformat()]
+    evs = sorted(list(merged.values()) + econ + [e for e in fixed if e["d"] >= keep_from],
                  key=lambda e: (e["d"], e.get("s") or "", e["k"]))
     out = {"events": evs, "names": {s: universe[s] for s in sorted({e["s"] for e in evs if e.get("s")}) if s in universe},
            "sources": status,
            "note": ("Upcoming events for calendar.html (pulsedge-bot/events.py). d date (IST), k results|board|ex|rbi|fed|"
-                    "budget|expiry, s NSE symbol, t title, x detail.")}
+                    "budget|expiry|world|india, s NSE symbol, t title, x detail; world and India economic dates also have "
+                    "g key, tg tag, cc country, p priority (1 everywhere, 2 World view only), tm time IST.")}
     # a run where every source failed asks again next time
     ok = due and any(not str(v).startswith("failed") for v in status.values())
     out["fetched"] = now.isoformat(timespec="minutes") if ok else old.get("fetched")
