@@ -1,7 +1,32 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-27T15:09:23+05:30",
+ "updated": "2026-11-27T15:35:24+05:30",
  "items": [
+  {
+   "id": "249a5d8938a88d2a",
+   "time": "2026-11-27T15:34:39+05:30",
+   "headline": "INDIAN RUPEE ENDS DOWN 0.6% AT 92.99 PER US DOLLAR VS 92.4450 PREVIOUS CLOSE",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10262",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [],
+   "impact": 0,
+   "confidence": 0,
+   "category": "macro",
+   "action": "",
+   "reason": [],
+   "risks": [],
+   "plain": "The Indian rupee fell 0.6% against the US dollar, trading at 92.99.",
+   "why": "Currency moves can affect import‑export costs, but this single‑day change has limited direct impact on individual stocks.",
+   "check": "",
+   "original": "INDIAN RUPEE ENDS DOWN 0.6% AT 92.99 PER US DOLLAR VS 92.4450 PREVIOUS CLOSE",
+   "latency": 45.0,
+   "lane": "fast"
+  },
   {
    "id": "d5a08c542760a9b4",
    "time": "2026-11-27T15:08:29+05:30",
@@ -1404,53 +1429,6 @@
    "original": "PATANJALI FOODS: CO SECOND INTERIM DIVIDEND OF 1.25 RUPEES PER SHR",
    "latency": 52.3,
    "lane": "fast"
-  },
-  {
-   "id": "c64bd2d27ea64de8",
-   "time": "2026-11-26T15:24:52+05:30",
-   "headline": "BRIGADE ENTERPRISES: FLEXIBLE WORKSPACE ARM BUZZWORKS ENTERS CHENNAI WITH 65000 SQ FT ACROSS TWO FACILITIES, TARGETING ANNUAL REVENUE OF RS 10 CRORE AND PLANS TO ADD ANOTHER 1 LAKH SQ FT BY FY28.",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10169",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "BRIGADE",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Real Estate"
-   ],
-   "impact": 30,
-   "confidence": 60,
-   "category": "company",
-   "action": "Watch for the unit’s revenue contribution in upcoming quarterly results",
-   "reason": [
-    "Expansion adds new revenue stream",
-    "Targeted ₹10 cr revenue signals growth potential"
-   ],
-   "risks": [
-    "Execution risk on further space rollout",
-    "Revenue may take time to materialise"
-   ],
-   "plain": "Brigade’s flexible workspace arm opened 65,000 sq ft in Chennai, targeting ₹10 cr revenue and plans more space by FY28.",
-   "why": "The new facilities could increase Brigade’s earnings, offering upside if the revenue targets are met.",
-   "check": "Check the next quarterly report for the workspace unit’s revenue figures.",
-   "original": "BRIGADE ENTERPRISES: FLEXIBLE WORKSPACE ARM BUZZWORKS ENTERS CHENNAI WITH 65000 SQ FT ACROSS TWO FACILITIES, TARGETING ANNUAL REVENUE OF RS 10 CRORE AND PLANS TO ADD ANOTHER 1 LAKH SQ FT BY FY28.",
-   "latency": 38.4,
-   "lane": "fast",
-   "quotes": {
-    "BRIGADE": {
-     "px": 628.6,
-     "prev": 589.7,
-     "move": 6.6,
-     "at": "2026-11-26T15:25:30+05:30",
-     "delay": 900
-    }
-   }
   }
  ]
 }
