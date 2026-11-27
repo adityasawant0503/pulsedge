@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T15:15+05:30",
+ "updated": "2026-11-27T15:30+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -267,6 +267,22 @@
    "updated": "2026-11-26T04:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "SOLARINDS": {
+   "summary": "Solar Industries India Ltd. (SOLARINDS) is a chemicals company listed in the Nifty 500, with no specific news items flagged in the recent PulsEdge watch list.",
+   "why": "Shareholders have no new corporate developments to consider at this time.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "Upcoming earnings announcement",
+    "Potential new contracts or projects in the chemicals sector",
+    "Changes in Nifty 500 index composition"
+   ],
+   "about": "",
+   "basis": "4603442866bf",
+   "items": 3,
+   "updated": "2026-11-27T15:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "WELCORP": {
    "summary": "Welspun Corp Ltd. announced receipt of new business contracts, including an export order for large‑diameter steel pipes, and its shares rose about 5% after the news. An executive also projected EBITDA could reach ₹5,000 cr in two years.",
    "why": "New contracts can increase future revenue, which matters to shareholders, while the EBITDA outlook signals confidence in growth.",
@@ -507,20 +523,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "JWL": {
-   "summary": "Jupiter Wagons shares fell 7.5% after a sharp 29% rise in two days, as investors sold to lock in profits. This price movement followed news of a new joint venture with South Korea's Woojin to build metro trains and a plan to invest 1,000 crore rupees in its passenger rail business over the next three years.",
-   "why": "These developments matter because they show the company is expanding into new areas like metro trains and investing heavily in its core business, which could affect future earnings for shareholders.",
-   "upside": "The new partnership and significant investment could help the company grow and earn more money in the long run.",
-   "downside": "The heavy spending may pressure the company's cash flow and profits in the short term, and the share price may continue to fall as more investors sell.",
+   "summary": "Jupiter Wagons shares surged 30% in two days after announcing a South Korean joint venture, then fell 7.5% as investors took profits. The company also plans to invest ₹1,000 crore over the next three years in its passenger rail business.",
+   "why": "The partnership and investment plans could affect the company’s earnings and cash flow, which matters to shareholders who own the stock.",
+   "upside": "The new joint venture and large investment could boost future earnings.",
+   "downside": "Profit booking after the surge and high capital expenditure could pressure short‑term cash flows and margins.",
    "watch": [
-    "How the company manages its cash flow while spending 1,000 crore rupees on new projects.",
-    "Progress on the joint venture with Woojin for building metro trains.",
-    "Whether the share price stabilizes after the recent sharp rise and fall."
+    "Possible price correction after the sharp rise",
+    "Profit booking activity by investors",
+    "Impact of ₹1,000 crore capex on cash flow"
    ],
-   "about": "Jupiter Wagons is a capital goods company that manufactures railway wagons and is involved in the passenger rail business.",
-   "basis": "cbcc1e30cc19",
-   "items": 4,
-   "updated": "2026-11-27T12:16+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Jupiter Wagons Ltd. manufactures railway wagons.",
+   "basis": "1d177c4f0afc",
+   "items": 3,
+   "updated": "2026-11-27T15:30+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "SUZLON": {
    "summary": "Suzlon Energy is expanding its production capacity by building new facilities, including a 1 GW smart blade factory in Tamil Nadu. The company has officially notified the stock exchange about these additions to its manufacturing setup.",
@@ -713,20 +729,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "WELSPUNLIV": {
-   "summary": "Welspun Living’s shares have risen over 110% year‑to‑date as the company pushes new capex projects for growth, but a possible US tariff on Indian goods could hit its margins.",
-   "why": "Shareholders care because successful investments could boost earnings, while tariffs or execution problems could reduce profits.",
-   "upside": "If the new capital spending delivers cost savings and higher sales, earnings could improve.",
-   "downside": "If US tariffs are imposed or cotton supplies stay tight, profit margins could be squeezed.",
+   "summary": "Welspun Living shares have risen significantly this year, and the company is planning new investments for growth. However, it now faces potential challenges from US tariff threats on Indian goods.",
+   "why": "This matters because new business investments could boost earnings, but extra fees on US exports might reduce profit margins and affect the stock.",
+   "upside": "New investment projects could successfully drive growth and lift earnings for shareholders.",
+   "downside": "The actual use of US tariffs could lower profit margins.",
    "watch": [
-    "US tariff implementation risk",
-    "Progress on capex projects",
-    "Cotton supply and pricing"
+    "Updates on US tariff decisions",
+    "Progress on new investment projects"
    ],
-   "about": "Welspun Living Ltd. is a textile company.",
-   "basis": "fb52f3e3bd6b",
-   "items": 3,
-   "updated": "2026-11-26T13:31+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Welspun Living Ltd. is a textile company included in the Nifty 500 index of India's largest listed companies.",
+   "basis": "f24c953ad523",
+   "items": 2,
+   "updated": "2026-11-27T15:30+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "ADANIPOWER": {
    "summary": "Adani Power and another Adani firm are planning to raise at least Rs 2,000 crore by issuing public bonds. The government is also said to be preparing a Rs 50,000 crore scheme to support power distribution companies, which could affect Adani Power’s sales.",
@@ -1127,20 +1142,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "MCX": {
-   "summary": "MCX shares rose 3% today as gold and silver prices climbed, boosting trading volumes on the exchange. The company is listed in the Nifty 500.",
-   "why": "Higher trading volumes in precious metals can increase MCX’s revenue, which matters to shareholders.",
-   "upside": "Higher commodity prices could lift trading activity and revenue.",
-   "downside": "Commodity prices may reverse or stabilize, reducing trading fees and revenue.",
+   "summary": "Gold and silver prices have seen sharp swings, with recent jumps boosting activity on Multi Commodity Exchange of India Ltd. (MCX). PulsEdge flagged that these precious-metal price spikes drove higher trading volumes on the exchange. Meanwhile, the company's shares also saw strong gains.",
+   "why": "Higher trading volumes on the exchange can increase its revenue from trading fees, which matters for anyone tracking the business side of the stock.",
+   "upside": "Stronger precious-metal trading volumes could continue to support the exchange's business activity.",
+   "downside": "Commodity prices are volatile and could reverse quickly if the US dollar strengthens or if interest rate hike bets weigh on bullion.",
    "watch": [
-    "Gold and silver price movements",
-    "Fed rate hike bets affecting bullion prices",
-    "Trading volumes and fee income"
+    "Movements in gold and silver prices",
+    "Trading volumes on the exchange",
+    "Broader market trends affecting small and mid-sized companies"
    ],
-   "about": "Multi Commodity Exchange of India Ltd. is a commodity exchange that facilitates trading in commodities.",
-   "basis": "70973daa4135",
-   "items": 7,
-   "updated": "2026-11-27T14:45+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "Multi Commodity Exchange of India Ltd. is a commodity exchange that facilitates the trading of commodities.",
+   "basis": "c850bbbbfb2f",
+   "items": 8,
+   "updated": "2026-11-27T15:30+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "COALINDIA": {
    "summary": "Coal India’s subsidiary Mahanadi Coalfields Limited has launched an IPO and begun trading, with the shares opening at a 2% discount to the issue price. The parent company’s stock saw higher trading volume recently, while the broader oil & gas sector posted modest gains.",
