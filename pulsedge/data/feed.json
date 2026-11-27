@@ -1,6 +1,38 @@
 {
- "updated": "2026-11-27T08:45:27+05:30",
+ "updated": "2026-11-27T09:10:52+05:30",
  "items": [
+  {
+   "id": "0a3d848c481d07f9",
+   "time": "2026-11-27T09:00:23+05:30",
+   "headline": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends ‘whenever I want it’",
+   "source": "CNBC World Markets",
+   "url": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
+   "section": "global",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Oil & Gas",
+    "Defense"
+   ],
+   "impact": 10,
+   "confidence": 20,
+   "category": "Geopolitics",
+   "action": "Monitor global crude oil prices for volatility spikes.",
+   "reason": [
+    "Geopolitical tension in the Middle East can affect oil prices.",
+    "No specific Indian company is named or directly impacted in the headline."
+   ],
+   "risks": [
+    "Potential oil price spike could hurt importers.",
+    "Market sentiment may turn risk-off."
+   ],
+   "plain": "A drone attack in Kuwait killed two people, and leaders are making strong statements about war.",
+   "why": "This is a global event that might slightly affect oil prices, but it does not directly change the business of any specific Indian company.",
+   "check": "",
+   "original": "Iran's foreign minister Abbas Araghchi said \"The incident is suspicious and looks like a precooked recipe for war.\""
+  },
   {
    "id": "6ae97f355e5c973f",
    "time": "2026-11-27T08:30:21+05:30",
@@ -3409,31 +3441,6 @@
    "why": "A routine notice that companies must file. It rarely affects the share price.",
    "check": "",
    "original": "Neuland Laboratories Limited: Neuland Laboratories Limited has informed the Exchange about Schedule of meet |SUBJECT: Analysts/Institutional Investor Meet/Con. Call Updates"
-  },
-  {
-   "id": "c49119018489a8e3",
-   "time": "2026-11-26T18:42:33+05:30",
-   "headline": "Fedbank Financial Services Limited: Fedbank Financial Services Limited has informed the Exchange about Schedule of meet |SUBJECT: Analysts/Institutional Investor Meet/Con. Call Updates",
-   "source": "NSE Announcements",
-   "url": "https://nsearchives.nseindia.com/corporate/FEDFINA_26112026184216_Investorcall_26112026_signed.pdf",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 8,
-   "confidence": 30,
-   "category": "Routine filing",
-   "action": "No action",
-   "reason": [
-    "Keyword rules (AI classification is off)"
-   ],
-   "risks": [],
-   "plain": "",
-   "why": "A routine notice that companies must file. It rarely affects the share price.",
-   "check": "",
-   "original": "Fedbank Financial Services Limited: Fedbank Financial Services Limited has informed the Exchange about Schedule of meet |SUBJECT: Analysts/Institutional Investor Meet/Con. Call Updates"
   },
   {
    "id": "92bf3f282e57e401",
@@ -17345,7 +17352,7 @@
   "date": "2026-11-27",
   "act": 1,
   "watch": 10,
-  "ignored": 40,
+  "ignored": 41,
   "reasons": [
    {
     "label": "news",
@@ -17354,6 +17361,10 @@
    {
     "label": "Routine Filing",
     "count": 4
+   },
+   {
+    "label": "Geopolitics",
+    "count": 3
    },
    {
     "label": "Market Color",
@@ -17365,10 +17376,6 @@
    },
    {
     "label": "Global News",
-    "count": 2
-   },
-   {
-    "label": "Geopolitics",
     "count": 2
    }
   ]
