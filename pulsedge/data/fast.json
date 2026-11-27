@@ -1,7 +1,77 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-27T12:59:31+05:30",
+ "updated": "2026-11-27T13:04:32+05:30",
  "items": [
+  {
+   "id": "8e2b6e21dfdfc190",
+   "time": "2026-11-27T13:03:52+05:30",
+   "headline": "BREAKING",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10249",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [],
+   "impact": 0,
+   "confidence": 0,
+   "category": "news",
+   "action": "",
+   "reason": [],
+   "risks": [],
+   "plain": "A breaking news alert was issued without naming any company.",
+   "why": "No specific company is mentioned, so there is no direct effect on any stock.",
+   "check": "",
+   "original": "BREAKING",
+   "latency": 40.7,
+   "lane": "fast"
+  },
+  {
+   "id": "4933db4d6f150155",
+   "time": "2026-11-27T13:03:50+05:30",
+   "headline": "SEBI summons APL Apollo officials over Tata Steel deal, examines possible RPT rule violations",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10248",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "down",
+   "tickers": [
+    {
+     "symbol": "TATASTEEL",
+     "direction": "down"
+    }
+   ],
+   "sectors": [
+    "Metals"
+   ],
+   "impact": 60,
+   "confidence": 55,
+   "category": "news",
+   "action": "Watch for any SEBI orders or penalties that could affect the stock.",
+   "reason": [
+    "Regulatory probe may lead to fines or deal delays."
+   ],
+   "risks": [
+    "Potential penalties or reputational damage."
+   ],
+   "plain": "The regulator called officials of a finance firm about a deal with Tata Steel, checking for rule breaches.",
+   "why": "Regulatory scrutiny could hurt Tata Steel’s share price if penalties or delays arise.",
+   "check": "Look for SEBI’s final decision or any fine announced.",
+   "original": "SEBI summons APL Apollo officials over Tata Steel deal, examines possible RPT rule violations",
+   "latency": 42.7,
+   "lane": "fast",
+   "quotes": {
+    "TATASTEEL": {
+     "px": 164.34,
+     "prev": 163.54,
+     "move": 0.49,
+     "at": "2026-11-27T13:04:32+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "eef19fe72284c75f",
    "time": "2026-11-27T12:58:58+05:30",
