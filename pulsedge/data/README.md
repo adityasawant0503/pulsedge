@@ -72,6 +72,10 @@ See `premarket.sample.json` for every field. In short:
   (not TradingView's 15-minute-late copy); GIFT Nifty, Asia, USD/INR, DXY and gold are real time; US futures and Brent
   are 10 minutes late. The key levels, options, breadth and calendar items are context for the day trader and are not part
   of the sentiment score or the up/down count
+- `checklist` items also carry `label` (short name for the card), `group` (`india`, `global`, `trade`, `today`: how the
+  terminal files them: India open, Global cues, Levels and positioning, Today) and `sub` (the one line worth reading at a
+  glance; the full lines stay in `detail`). The terminal shows the label, value, freshness and `sub`; tapping the value
+  opens `detail`. `title` is unchanged, for other readers (the Telegram brief and the reel match on it)
 - `data`: the same numbers as fields, so a program need not read the text: `instruments` (`v`, `chg_pct`, `prev`, `open`,
   `high`, `low`, `quality`, `src`, `as_of`), `levels` (previous session OHLC, pivots, CPR) and `options` (PCR, max pain,
   call and put walls, straddle, implied move, ATM IV), for Nifty and Bank Nifty

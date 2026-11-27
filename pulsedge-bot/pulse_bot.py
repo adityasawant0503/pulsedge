@@ -582,7 +582,8 @@ def brief_text(pm, now):
     """The morning pre-market brief from premarket.json: GIFT Nifty's opening indication first, then the checklist."""
     if not pm or pm.get("date") != now.strftime("%Y-%m-%d"):
         return None
-    cl = [c for c in pm.get("checklist") or [] if isinstance(c, dict) and c.get("title")]
+    # the levels, options, breadth and calendar items are for the terminal and the day trader, not the public brief
+    cl = [c for c in pm.get("checklist") or [] if isinstance(c, dict) and c.get("title") and c.get("group") not in ("trade", "today")]
     if not cl:
         return None
     br = pm.get("breadth") or {}
