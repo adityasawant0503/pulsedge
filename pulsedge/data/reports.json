@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T10:15+05:30",
+ "updated": "2026-11-27T10:30+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -235,22 +235,6 @@
    "updated": "2026-11-26T04:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BRIGADE": {
-   "summary": "Brigade Enterprises disclosed a new credit rating, opened 65,000 sq ft of flexible workspace in Chennai and reported strong sales of ₹1,600 cr in Bengaluru, while the broader realty sector rallied. The company is targeting further workspace expansion by FY28.",
-   "why": "A credit rating change can affect investor perception and the recent sales and workspace rollout could boost earnings, impacting share value.",
-   "upside": "If the flexible workspace arm meets its revenue and expansion targets, it could add a new growth stream.",
-   "downside": "A downgrade of the credit rating or execution challenges in the workspace rollout could pressure the stock.",
-   "watch": [
-    "Outcome of the new credit rating filing",
-    "Progress of BuzzWorks expansion to 1 lakh sq ft by FY28",
-    "Sustained sales momentum in Bengaluru and other projects"
-   ],
-   "about": "Brigade Enterprises is a real estate developer focused on residential and mixed‑use projects in India.",
-   "basis": "04acfe4484fe",
-   "items": 5,
-   "updated": "2026-11-26T19:22+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "WELCORP": {
    "summary": "Welspun Corp Ltd. announced receipt of new business contracts, including an export order for large‑diameter steel pipes, and its shares rose about 5% after the news. An executive also projected EBITDA could reach ₹5,000 cr in two years.",
    "why": "New contracts can increase future revenue, which matters to shareholders, while the EBITDA outlook signals confidence in growth.",
@@ -377,22 +361,6 @@
    "basis": "180b81cf0f77",
    "items": 1,
    "updated": "2026-11-25T19:23+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "IGL": {
-   "summary": "Indraprastha Gas Ltd. is part of the Oil & Gas sector, which has seen a slight dip in recent trading. A subsidiary, IGL Finance, recently received a one-time cash settlement of ₹58.39 crore.",
-   "why": "This cash inflow improves the company's immediate liquidity, which can strengthen its financial position, though it is a one-off event rather than ongoing revenue.",
-   "upside": "The extra cash may help the company manage its debts or operations more comfortably in the short term.",
-   "downside": "Because the cash is a one-time settlement, it does not guarantee future earnings growth or long-term financial health.",
-   "watch": [
-    "How the company uses the ₹58.39 crore cash settlement",
-    "Future updates on the financial health of IGL Finance",
-    "Trends in the broader Oil & Gas sector index"
-   ],
-   "about": "",
-   "basis": "3bdaf01e356d",
-   "items": 1,
-   "updated": "2026-11-24T18:25+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
@@ -666,6 +634,22 @@
    "updated": "2026-11-27T08:16+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "BRIGADE": {
+   "summary": "Brigade Enterprises disclosed a new credit rating and opened a 65,000 sq ft flexible workspace in Chennai, targeting ₹10 cr revenue and further expansion by FY28. The stock rose on strong Bangalore project sales and a broader rally in the realty sector, which hit a 52‑week high.",
+   "why": "A rating change can shift investor sentiment, while the sales and workspace rollout could boost earnings for shareholders.",
+   "upside": "If the flexible workspace arm meets its revenue and expansion targets, it could add to the company’s earnings.",
+   "downside": "A downgrade in the credit rating or execution delays in the workspace expansion could pressure the share price.",
+   "watch": [
+    "Outcome of the disclosed credit rating",
+    "Progress of BuzzWorks expansion and revenue targets",
+    "Sustained sales momentum in Bangalore projects"
+   ],
+   "about": "Brigade Enterprises Ltd. is a real estate developer that builds residential and commercial properties and operates flexible workspace solutions.",
+   "basis": "147e03daf714",
+   "items": 4,
+   "updated": "2026-11-27T10:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "COFORGE": {
    "summary": "Coforge won an award for its AI product EvolveOps.AI and announced enhancements to its Nuuron security platform. At the same time, a major investor may sell up to 10% of its stake and a large block deal is rumored for next week.",
    "why": "Shareholders should watch the potential share dilution and price pressure from the possible stake sale and block deal, while the award and product upgrades could boost the company's reputation and sales.",
@@ -746,6 +730,22 @@
    "updated": "2026-11-26T13:31+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "GRAPHITE": {
+   "summary": "PulsEdge noted recent market activity surrounding a graphite business demerger and strong share listing by a peer company, HEG Ltd. This event highlights growing interest in the graphite sector within the capital goods industry.",
+   "why": "Such major industry events and market excitement can influence investor sentiment and trading activity across other companies in the same sector, including Graphite India Ltd.",
+   "upside": "High initial investor interest in the graphite sector could benefit related companies.",
+   "downside": "The high starting prices from initial market hype might drop sharply later.",
+   "watch": [
+    "Market reactions to the graphite business demerger",
+    "Changes in investor sentiment for graphite sector stocks",
+    "Stock price stability after the initial listing hype"
+   ],
+   "about": "Graphite India Ltd. is a capital goods company included in the Nifty 500 index.",
+   "basis": "b19c0a8c31e3",
+   "items": 2,
+   "updated": "2026-11-27T10:30+05:30",
+   "model": "gemini-flash-lite-latest"
+  },
   "SRF": {
    "summary": "SRF is being watched because new US taxes on imports could affect its business. Analysts suggest these changes might hurt profits if the company sells a lot to the US.",
    "why": "If SRF sells products to the US, higher taxes make those products more expensive for American buyers. This could reduce how much SRF sells and lower its earnings.",
@@ -776,22 +776,6 @@
    "basis": "1d1e95407575",
    "items": 2,
    "updated": "2026-11-26T10:45+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "GRAPHITE": {
-   "summary": "Graphite India Ltd has just been listed after being carved out from HEG Ltd, with its shares opening about 25% above the expected price.",
-   "why": "The premium pricing signals strong initial interest but also raises the risk of a price correction, which matters to current shareholders.",
-   "upside": "If the premium holds and the graphite business delivers strong results, the share price could stay elevated.",
-   "downside": "The premium could erode if the initial excitement fades, leading to a lower share price.",
-   "watch": [
-    "Share price movement in the weeks after listing",
-    "Quarterly earnings and cash flow of the graphite business",
-    "Broader market reaction to the demerger and any further corporate actions"
-   ],
-   "about": "Graphite India Ltd is a newly created company that focuses on graphite products after being spun off from HEG Ltd.",
-   "basis": "89882b54ecc6",
-   "items": 1,
-   "updated": "2026-11-27T10:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ZENTEC": {
@@ -873,22 +857,6 @@
    "items": 3,
    "updated": "2026-11-25T11:30+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "HEXT": {
-   "summary": "Hexaware Technologies has been named a Challenger in the 2026 Gartner Magic Quadrant for Service Integration and Management Services. This recognition highlights the company's standing in its sector.",
-   "why": "This award may help the company attract new business, which could support its future performance for shareholders.",
-   "upside": "The recognition could lead to new client contracts and increased revenue.",
-   "downside": "The award might not result in immediate financial gains or new business.",
-   "watch": [
-    "Any announcements about new client contracts",
-    "Future quarterly earnings reports",
-    "Movement of the IT sector index"
-   ],
-   "about": "Hexaware Technologies is an Information Technology company.",
-   "basis": "c2dc715c5c92",
-   "items": 1,
-   "updated": "2026-11-24T18:25+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "BANKINDIA": {
    "summary": "Bank of India faces a possible employee strike that could temporarily affect its operations and earnings. At the same time, broader economic factors like inflation risks, oil price shifts, and potential central bank rate changes are in focus.",
@@ -1145,6 +1113,22 @@
    "updated": "2026-11-27T10:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "VEDPOWER": {
+   "summary": "Vedanta Power shares rose recently, moving in line with other Vedanta group companies. This movement happened while the broader market indices were down.",
+   "why": "Shareholders may see this as a sign that investors are currently positive about the Vedanta group's performance, particularly regarding metal prices.",
+   "upside": "Continued strength in metal prices could keep supporting the stock's value.",
+   "downside": "Commodity prices can change quickly, which might cause the stock price to drop if sentiment reverses.",
+   "watch": [
+    "Future movements in zinc and aluminium prices",
+    "Performance of other Vedanta group stocks",
+    "Overall direction of the Nifty 500 index"
+   ],
+   "about": "",
+   "basis": "5190cd047179",
+   "items": 1,
+   "updated": "2026-11-27T10:30+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "ENDURANCE": {
    "summary": "Endurance Technologies said it has four new projects starting soon and expects higher profit margins in the coming quarters. The auto sector index has been gaining, up 1.2% in the last session and 3.8% over five sessions.",
    "why": "Better margins and new work could boost earnings, which matters to shareholders who own the stock.",
@@ -1274,19 +1258,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "COALINDIA": {
-   "summary": "Coal India is seeing increased trading activity alongside the upcoming market debut of its subsidiary, Mahanadi Coalfields. The parent company's stock also recorded a notable spike in trading volume recently.",
-   "why": "Investors may react positively to the successful launch of a major subsidiary, which can boost confidence in the parent company's overall performance.",
-   "upside": "A strong debut for Mahanadi Coalfields could generate positive sentiment for Coal India shares.",
-   "downside": "The recent surge in trading volume might be temporary and reverse quickly without new fundamental news.",
+   "summary": "Coal India's subsidiary, Mahanadi Coalfields, recently started trading on the stock market at a price slightly lower than its initial offering. At the same time, the exchange noted a significant increase in trading volume for both Coal India and another related company, Bharat Coking Coal.",
+   "why": "The lower starting price for the subsidiary's shares suggests that some investors are currently cautious about buying more coal stocks, which may affect how the market views the parent company.",
+   "upside": "A successful launch of a new stock can sometimes make investors feel more positive about the parent company.",
+   "downside": "The discount on the subsidiary's shares could widen if demand in the secondary market remains low.",
    "watch": [
-    "Mahanadi Coalfields' first day of trading performance",
-    "Whether the high trading volume in Coal India continues or fades",
-    "General trends in the Oil & Gas sector index"
+    "Whether the trading volume spike for Coal India continues or reverses quickly.",
+    "If the discount on Mahanadi Coalfields' shares widens further.",
+    "General trends in the Oil & Gas sector index."
    ],
-   "about": "Coal India is a major listed company in the Oil, Gas, and Consumable Fuels sector.",
-   "basis": "4249acfdf5bd",
-   "items": 2,
-   "updated": "2026-11-27T08:30+05:30",
+   "about": "Coal India is a major company in the Oil Gas & Consumable Fuels sector and is one of India's 50 largest listed companies.",
+   "basis": "dfbc44f1fa8e",
+   "items": 3,
+   "updated": "2026-11-27T10:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "VBL": {
@@ -1384,6 +1368,22 @@
    "items": 2,
    "updated": "2026-11-27T08:30+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "NETWEB": {
+   "summary": "Netweb Technologies recently launched a new digital workspace platform called Skylus Workspace for businesses in India and abroad. The company informed the stock exchange about this product launch on November 27, 2026.",
+   "why": "New products can help a company earn more money in the future, which is generally good for people who own its shares. However, it takes time to see if customers actually buy the new tool.",
+   "upside": "The new platform could help the company grow by attracting customers in both domestic and international markets.",
+   "downside": "The product may not gain immediate traction, and a launch does not guarantee immediate sales or revenue.",
+   "watch": [
+    "Early sales figures or customer adoption for Skylus Workspace",
+    "Future announcements regarding the product's performance",
+    "Overall trends in the Information Technology sector"
+   ],
+   "about": "Netweb Technologies is an Information Technology company listed in the Nifty 500 index.",
+   "basis": "f86527aa90fc",
+   "items": 2,
+   "updated": "2026-11-27T10:30+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "BHARATCOAL": {
    "summary": "Bharat Coking Coal Ltd. showed short‑term strength as its RSI indicator moved higher and trading volume spiked in recent sessions. The broader Oil & Gas sector also posted modest gains, up 0.3% in the last session.",
