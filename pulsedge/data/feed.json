@@ -1,6 +1,121 @@
 {
- "updated": "2026-11-27T11:15:22+05:30",
+ "updated": "2026-11-27T11:30:21+05:30",
  "items": [
+  {
+   "id": "4dc37924516c4441",
+   "time": "2026-11-27T11:29:46+05:30",
+   "headline": "KCP LTD: CO. RECEIVES RAILWAY APPROVAL FOR MUKTYALA GATI SHAKTI CARGO TERMINAL; CLOSES ARAKKONAM CEMENT PACKAGING PLANT TO OPTIMISE COSTS",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10240",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Logistics",
+    "Cement"
+   ],
+   "impact": 0,
+   "confidence": 0,
+   "category": "Corporate Update",
+   "action": "No specific listed stock impact identified.",
+   "reason": [
+    "No candidate symbols provided for KCP Ltd.",
+    "News is specific to a company not in the candidate list."
+   ],
+   "risks": [
+    "Potential misattribution if KCP is confused with another listed entity."
+   ],
+   "plain": "A company named KCP got approval for a new cargo terminal and closed a cement plant to save money.",
+   "why": "This news is about a specific company that is not in your list of stocks to track, so it does not directly affect your holdings.",
+   "check": "",
+   "original": "KCP LTD: CO. RECEIVES RAILWAY APPROVAL FOR MUKTYALA GATI SHAKTI CARGO TERMINAL; CLOSES ARAKKONAM CEMENT PACKAGING PLANT TO OPTIMISE COSTS",
+   "latency": 14.6,
+   "lane": "fast"
+  },
+  {
+   "id": "4afe721490db4b34",
+   "time": "2026-11-27T11:28:15+05:30",
+   "headline": "INDIA RUPEE DROPS 0.5% TO 92.8625/USD",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10239",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Currency",
+    "Macro"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "Market Colour",
+   "action": "Monitor currency-sensitive sectors like IT and Pharma for intraday volatility.",
+   "reason": [
+    "Routine daily currency fluctuation.",
+    "No specific company news or structural change."
+   ],
+   "risks": [
+    "Sustained rupee weakness could hurt importers.",
+    "IT sector earnings may face translation headwinds."
+   ],
+   "plain": "The Indian rupee lost a small amount of value against the US dollar today.",
+   "why": "This is a normal daily market movement that does not signal a specific problem with any single company.",
+   "check": "",
+   "original": "INDIA RUPEE DROPS 0.5% TO 92.8625/USD",
+   "latency": 45.6,
+   "lane": "fast"
+  },
+  {
+   "id": "01eb6af574f7d659",
+   "time": "2026-11-27T11:18:28+05:30",
+   "headline": "SWIGGY: SWIGGY INSTAMART TO LET GO OF 340 EMPLOYEES AMID AI PUSH AND RESTRUCTURING. ROLES IMPACTED IN CORPORATE AND SUPPORT FUNCTIONS",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10237",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "mixed",
+   "tickers": [
+    {
+     "symbol": "SWIGGY",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Consumer",
+    "Technology"
+   ],
+   "impact": 45,
+   "confidence": 60,
+   "category": "Corporate Action",
+   "action": "Monitor if the restructuring leads to visible cost savings in upcoming earnings or if it triggers further operational disruptions.",
+   "reason": [
+    "Layoffs of 340 employees indicate a significant restructuring effort.",
+    "The move is driven by AI adoption, which may improve long-term efficiency but carries short-term execution risks."
+   ],
+   "risks": [
+    "Potential loss of institutional knowledge or talent.",
+    "Negative sentiment from labor unions or public perception regarding job cuts."
+   ],
+   "plain": "The company plans to cut 340 jobs to focus on using artificial intelligence for better efficiency.",
+   "why": "This could lower costs and boost profits later, but job cuts often cause short-term uncertainty and negative reactions.",
+   "check": "Look for official company statements or news about how this change affects daily operations.",
+   "original": "SWIGGY: SWIGGY INSTAMART TO LET GO OF 340 EMPLOYEES AMID AI PUSH AND RESTRUCTURING. ROLES IMPACTED IN CORPORATE AND SUPPORT FUNCTIONS",
+   "latency": 33.0,
+   "lane": "fast",
+   "quotes": {
+    "SWIGGY": {
+     "px": 182.45,
+     "prev": 182.93,
+     "move": -0.26,
+     "at": "2026-11-27T11:19:00+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "4c5d25749227370b",
    "time": "2026-11-27T11:14:47+05:30",
@@ -280,6 +395,50 @@
    "original": "Waaree Renewable Technologies shares rose nearly 14% after the company won a 120 MWp solar project covering module supply and turnkey EPC work. The unnamed domestic customer’s project is due for completion by FY28; its contract value was not disclosed."
   },
   {
+   "id": "9f7c508a02a234ba",
+   "time": "2026-11-27T11:08:44+05:30",
+   "headline": "Defence index surges 3%; BEML, Data Patterns, Solar, Paras soar up to 11%",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/defence-index-surges-3-beml-data-patterns-solar-paras-soar-up-to-11-126112700305_1.html",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "BEML",
+     "direction": "up"
+    },
+    {
+     "symbol": "DATAPATTNS",
+     "direction": "up"
+    },
+    {
+     "symbol": "SOLARINDS",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Defence"
+   ],
+   "impact": 30,
+   "confidence": 80,
+   "category": "market_colour",
+   "action": "Observe if the sector rally continues or reverses in the next session.",
+   "reason": [
+    "Headline reports a past price surge in the defence index.",
+    "No new fundamental catalyst is mentioned."
+   ],
+   "risks": [
+    "Price action may already be priced in.",
+    "Sector rotation could reverse quickly."
+   ],
+   "plain": "Shares in the defence sector went up significantly over the last few days.",
+   "why": "This is just a report of what already happened, not new news that changes the company's value.",
+   "check": "Look at the latest news to see if there is a new reason for the rise.",
+   "original": "In the past three trading days, the Nifty India Defence index outperformed the market by soaring 5% against a 2% rise in the Nifty 50."
+  },
+  {
    "id": "8b215471c60431f4",
    "time": "2026-11-27T11:08:24+05:30",
    "headline": "Fast cars, big money: Why sportswear races into Formula 1 as sponsorship spending soars 75%",
@@ -334,6 +493,53 @@
    "why": "Paying back debt is normal business and does not usually change the stock price.",
    "check": "",
    "original": "Cholamandalam Securities Limited: Confirmation of Redemption/Payment of Interest and Principal |SUBJECT: Confirmation of Redemption/Payment of Interest and Principal"
+  },
+  {
+   "id": "f3e0f856e914f689",
+   "time": "2026-11-27T11:06:40+05:30",
+   "headline": "Sharp turnaround? 4 stocks turn YTD positive after 15%+ losses till October",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/markets/news/sharp-turnaround-these-4-stocks-turn-ytd-positive-in-november-after-15-losses-till-october-2026-126112700306_1.html",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "IDFCFIRSTB",
+     "direction": "up"
+    },
+    {
+     "symbol": "MINDACORP",
+     "direction": "up"
+    },
+    {
+     "symbol": "UNOMINDA",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "Healthcare",
+    "Auto Components",
+    "Chemicals",
+    "Banking"
+   ],
+   "impact": 20,
+   "confidence": 70,
+   "category": "market_colour",
+   "action": "Monitor if the recent rally stabilizes or fades in the coming days.",
+   "reason": [
+    "Headline summarizes past price performance turning positive.",
+    "Broker opinion is mentioned but no new company-specific data is provided."
+   ],
+   "risks": [
+    "Past performance does not guarantee future results.",
+    "Rally may be a temporary technical bounce."
+   ],
+   "plain": "Four stocks that had fallen earlier in the year have now risen enough to be in profit.",
+   "why": "This describes a price change that already occurred, not a new event that changes the business outlook.",
+   "check": "Check the company's latest earnings report to understand the underlying business health.",
+   "original": "Max Health, UNO Minda, Deepak Fert, IDFC First Bank rallied up to 30% in Nov, turning YTD positive. Here's why Sudeep Shah of SBI Securities expects the bullish momentum to continue in these stocks."
   },
   {
    "id": "1d408c259c123b5a",
@@ -3199,6 +3405,38 @@
    "original": "Top stocks to watch today: NSE, Tata Group, BSE, Brainbees Solutions, Texmaco Rail &amp; Engineering, KPI Green Energy are among shares in focus on Friday."
   },
   {
+   "id": "24fb4f61f95dcd66",
+   "time": "2026-11-27T07:09:08+05:30",
+   "headline": "Stock Market Live Updates: Sensex tumbles over 600 points, Nifty below 25,750; IT, FMCG lead losses",
+   "source": "ET Markets",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/bse-sensex-today-nifty50-stock-market-live-updates-gift-nifty-nse-bse-share-price-27-november-2026/liveblog/136206762.cms",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "down",
+   "tickers": [],
+   "sectors": [
+    "IT",
+    "FMCG"
+   ],
+   "impact": 40,
+   "confidence": 90,
+   "category": "market_colour",
+   "action": "Watch for broader market stabilization before making decisions.",
+   "reason": [
+    "General market decline without specific new catalyst.",
+    "No specific company news mentioned."
+   ],
+   "risks": [
+    "Broad market volatility can affect all stocks.",
+    "Sector-specific weakness in IT and FMCG."
+   ],
+   "plain": "The overall stock market went down significantly today, with technology and consumer goods stocks falling the most.",
+   "why": "This is a general market update without specific new information about any single company.",
+   "check": "Look at the main market index to see if the drop continues or stops.",
+   "original": "Stock Market Live Updates: Sensex tumbles over 600 points, Nifty below 25,750; IT, FMCG lead losses"
+  },
+  {
    "id": "eb4e527cb4cfc7cf",
    "time": "2026-11-27T07:09:08+05:30",
    "headline": "Stock Market Live Updates: Sensex tumbles over 550 points, Nifty below 25,750; IT, FMCG stocks slide",
@@ -4284,31 +4522,6 @@
    "original": "BRENT CRUDE FUTURES SETTLE AT $96.57 A BARREL, UP $1.96 OR 2.07%"
   },
   {
-   "id": "32ef339cfe734ea4",
-   "time": "2026-11-26T23:22:15+05:30",
-   "headline": "Semiconductor chips are the new oil. Here's why",
-   "source": "CNBC World Markets",
-   "url": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
-   "section": "global",
-   "call": "ignore",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "IT"
-   ],
-   "impact": 0,
-   "confidence": 0,
-   "category": "macro",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "Semiconductor chips are being called the new oil as AI drives demand.",
-   "why": "The piece discusses global chip demand, not a specific Indian oil or chip company.",
-   "check": "",
-   "original": "Semiconductor exports overtook oil and gas for the first time in 2026, as the AI boom fueled chip demand."
-  },
-  {
    "id": "1a0a880475c844d5",
    "time": "2026-11-26T23:09:09+05:30",
    "headline": "Buyback alert! Supriya Lifescience sets December 2 board meeting to consider share buyback; details here",
@@ -4338,126 +4551,6 @@
    "why": "Buying back shares can make the remaining shares more valuable, but the drop in profits is a negative sign.",
    "check": "Look for the company's announcement about the size and price of the share buyback.",
    "original": "Supriya Lifescience will consider a share buyback at a December 2, 2026, board meeting, subject to approvals. In Q2 FY27, net profit fell 42% to ₹29.25 crore, while revenue rose 3.2% to ₹206.30 crore. Lower margins reflected product-mix changes, facility ramp-up costs and higher input prices."
-  },
-  {
-   "id": "6a26709fc5a7f791",
-   "time": "2026-11-26T22:34:54+05:30",
-   "headline": "Nvidia chip buyers told to rule out Chinese renters to purchase GPUs, sources say",
-   "source": "CNBC World Markets",
-   "url": "https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html",
-   "section": "global",
-   "call": "ignore",
-   "horizon": "intraday",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Technology"
-   ],
-   "impact": 15,
-   "confidence": 50,
-   "category": "Regulation",
-   "action": "No immediate action required for Indian tech stocks.",
-   "reason": [
-    "US regulation on Nvidia chips affects global tech supply chains.",
-    "No direct impact on Indian listed companies."
-   ],
-   "risks": [
-    "Potential disruption to global tech supply chains."
-   ],
-   "plain": "The US government has made new rules about who can buy powerful computer chips from Nvidia.",
-   "why": "This is a US regulation that affects global tech companies but does not directly change the business of Indian companies.",
-   "check": "No specific check needed for Indian investors.",
-   "original": "A new BIS rule was intended to close \"loopholes,\" U.S. Trade Representative Jamieson Greer told CNBC's \"Squawk Box\" on Wednesday."
-  },
-  {
-   "id": "4d3f7f038865bde8",
-   "time": "2026-11-26T22:33:10+05:30",
-   "headline": "Tariff threat likely to hasten India-US trade deal, says Jefferies report",
-   "source": "Business Standard",
-   "url": "https://www.business-standard.com/economy/news/tariff-threat-likely-to-hasten-india-us-trade-deal-says-jefferies-report-126112601345_1.html",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [
-    "Exporters"
-   ],
-   "impact": 20,
-   "confidence": 60,
-   "category": "Trade Policy",
-   "action": "Monitor India-US trade deal developments for sector-specific impacts.",
-   "reason": [
-    "Trade deal could benefit exporters but also expose them to competition.",
-    "No specific company named."
-   ],
-   "risks": [
-    "Tariff threats could hurt exporters if not resolved."
-   ],
-   "plain": "A report says that the threat of trade penalties might make India and the US agree to a trade deal faster.",
-   "why": "A trade deal could help some Indian companies sell more abroad, but it might also make it harder for them to compete.",
-   "check": "Check news about the India-US trade talks for updates.",
-   "original": "Brokerage sees rate falling to 17% with a pact, says chemical, textile and capital goods exporters most exposed"
-  },
-  {
-   "id": "9ebae8c5f6ca1702",
-   "time": "2026-11-26T22:18:39+05:30",
-   "headline": "Nifty 50 to hit 29,000? J.P. Morgan calls Indian stocks a 'safe haven' from AI trades; sees 12% upside. Key reasons",
-   "source": "Mint Markets",
-   "url": "https://www.livemint.com/market/stock-market-news/nifty-50-to-hit-29-000-j-p-morgan-calls-indian-stocks-a-safe-haven-from-ai-trades-sees-12-upside-key-reasons-11795710323279.html",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "positional",
-   "direction": "up",
-   "tickers": [],
-   "sectors": [
-    "Equities"
-   ],
-   "impact": 20,
-   "confidence": 50,
-   "category": "Market Outlook",
-   "action": "No immediate action required; monitor market sentiment.",
-   "reason": [
-    "Brokerage report is a market outlook, not specific company news.",
-    "No direct impact on specific stocks."
-   ],
-   "risks": [
-    "Market may not follow the brokerage's forecast."
-   ],
-   "plain": "A bank says Indian stocks might be a good place for investors to put their money because they are safer than tech stocks.",
-   "why": "This is an opinion from a bank about the overall market, not news about a specific company.",
-   "check": "Check the current level of the Nifty 50 index to see how it is performing.",
-   "original": "J.P. Morgan sees Indian equities as a potential safe haven for investors diversifying beyond AI-focused trades and forecasts the Nifty 50 at 29,000 by the end of 2027. The index has rebounded sharply in November, while other global brokerages have also raised their target levels for it.&nbsp;"
-  },
-  {
-   "id": "f558a3fc4bc7623b",
-   "time": "2026-11-26T21:21:45+05:30",
-   "headline": "Ashiana Housing JV buys 10-acre land in Chennai for senior living project, eyes Rs 1,100 cr revenue",
-   "source": "ET Markets",
-   "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/ashiana-housing-jv-buys-10-acre-land-in-chennai-for-senior-living-project-eyes-rs-1100-cr-revenue/articleshow/136197134.cms",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [],
-   "sectors": [
-    "Real Estate"
-   ],
-   "impact": 20,
-   "confidence": 60,
-   "category": "Business Expansion",
-   "action": "No immediate action required for Indian real estate stocks.",
-   "reason": [
-    "Ashiana Housing JV is a specific project, not a listed company.",
-    "No direct impact on listed stocks."
-   ],
-   "risks": [
-    "None specific to listed stocks."
-   ],
-   "plain": "A housing company has bought land in Chennai to build a place for older people to live.",
-   "why": "This is a new project for a specific company and does not directly affect the stocks of other listed companies.",
-   "check": "No specific check needed for Indian stock investors.",
-   "original": "Ashiana Housing Ltd recently revealed its acquisition of nearly 10 acres in Chennai aimed at a senior living initiative. In collaboration with Arihant Foundations, the project estimates a saleable area of around 9 lakh square feet, with an anticipated revenue potential of Rs 1,100 crore. The land pu"
   },
   {
    "id": "af7e144b7d766d78",
@@ -17917,42 +18010,13 @@
    "why": "Legal issues can affect how a company operates and might lead to fines or restrictions.",
    "check": "Check the latest news on the company's legal cases.",
    "original": "Hero MotoCorp Limited: Pursuant to Regulation 30 of the SEBI Listing Regulations, please refer to the disclosure document regarding the update on Trade Registration Certificate matter. |SUBJECT: Pendency of Litigation(s)/dispute(s) or the outc"
-  },
-  {
-   "id": "dc02403a6ef7fcf9",
-   "time": "2026-11-24T18:00:07+05:30",
-   "headline": "Pearl Global Industries Limited: Pearl Global Industries Limited has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteration Of Capital and Fund Raising-XBRL",
-   "source": "NSE Announcements",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_2531_WebXMLFile_20261124_180006781.xml",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 30,
-   "confidence": 60,
-   "category": "company",
-   "action": "Watch for any share‑price reaction after the capital‑raising details are disclosed.",
-   "reason": [
-    "Capital increase may dilute existing shareholders",
-    "Fund‑raising could strengthen the balance sheet"
-   ],
-   "risks": [
-    "Dilution may pressure the share price",
-    "Market may already price in the raise"
-   ],
-   "plain": "Pearl Global announced a change in capital and plans to raise funds.",
-   "why": "New shares could dilute existing holdings, potentially affecting the stock’s value.",
-   "check": "Review the company’s filing for the amount of capital to be raised.",
-   "original": "Pearl Global Industries Limited: Pearl Global Industries Limited has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteration Of Capital and Fund Raising-XBRL"
   }
  ],
  "digest": {
   "date": "2026-11-27",
   "act": 1,
-  "watch": 34,
-  "ignored": 92,
+  "watch": 35,
+  "ignored": 97,
   "reasons": [
    {
     "label": "news",
@@ -17960,7 +18024,7 @@
    },
    {
     "label": "market_colour",
-    "count": 7
+    "count": 10
    },
    {
     "label": "Routine filing",
@@ -17972,7 +18036,7 @@
    },
    {
     "label": "Market Colour",
-    "count": 4
+    "count": 5
    },
    {
     "label": "macro",

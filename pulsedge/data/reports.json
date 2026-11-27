@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T11:15+05:30",
+ "updated": "2026-11-27T11:30+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge noted a mixed session on Friday, 27 November 2026, with the Sensex and Nifty down despite gains in metal and gold-linked stocks. Major developments included the Supreme Court ordering banks to approve staff prosecution and a potential US trade deal coming close to completion. Meanwhile, commodity price shifts and new stock listings kept investors watching different sectors closely.",
+  "summary": "Banking stocks faced pressure after the Supreme Court ordered HDFC Bank and others to approve staff prosecutions, though the impact may be limited if they comply. In the power sector, Siemens Energy expressed confidence in winning a large Indian transmission contract next year, while APL Apollo shares rebounded after a recent drop as regulators may review a merger deal. Oil prices rose near monthly highs due to Middle East tensions, and jewellery stocks gained as gold prices stabilized. IT and Realty sectors led market gains, while foreign investors slightly reduced their long positions.",
   "themes": [
-   "Legal and regulatory updates affecting banks and drug makers",
-   "Commodity price movements boosting metal and gold finance stocks",
-   "New business splits and stock listings drawing mixed investor reactions"
+   "Regulatory and legal developments affecting banks and steel mergers",
+   "Power sector optimism driven by potential large contracts and new listings",
+   "Commodity price movements influencing oil and jewellery stocks"
   ],
   "watch": [
-   "Compliance actions and legal scrutiny regarding bank staff prosecution",
-   "Developments around the upcoming US trade deal",
-   "Volatility in gold and oil prices affecting related companies"
+   "Whether Siemens Energy officially wins the HVDC order in India",
+   "Regulatory decisions on the Tata Steel and APL Apollo merger",
+   "Potential price correction for the newly listed HEG graphite business"
   ],
   "date": "2026-11-27",
-  "basis": "0a4b9a8702dc",
-  "updated": "2026-11-27T10:45+05:30",
-  "model": "gemini-flash-lite-latest",
-  "items": 28
+  "basis": "29a1212a2d17",
+  "updated": "2026-11-27T11:30+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 36
  },
  "stocks": {
   "HDFCBANK": {
@@ -1079,6 +1079,22 @@
    "basis": "e27cb3ba7416",
    "items": 2,
    "updated": "2026-11-26T08:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "SWIGGY": {
+   "summary": "Swiggy is cutting about 340 jobs in its Instamart grocery arm to push AI‑driven efficiency and restructure its operations.",
+   "why": "Shareholders care because the cuts could lower costs and improve margins, though they may also create short‑term uncertainty.",
+   "upside": "If AI delivers efficiency gains, operating costs could fall and profits may rise.",
+   "downside": "The layoffs could lead to loss of talent and institutional knowledge, potentially hurting performance.",
+   "watch": [
+    "Implementation progress of AI tools",
+    "Instamart’s financial performance after restructuring",
+    "Employee morale and any further workforce changes"
+   ],
+   "about": "Swiggy operates an online platform for food delivery and grocery services in India.",
+   "basis": "b1d62d9ec483",
+   "items": 1,
+   "updated": "2026-11-27T11:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "VEDL": {

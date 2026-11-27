@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T11:15:49+05:30",
+ "updated": "2026-11-27T11:30:49+05:30",
  "summary": {
-  "calls": 2410,
-  "scored_calls": 1177,
+  "calls": 2411,
+  "scored_calls": 1178,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "01eb6af574f7d659",
+   "symbol": "SWIGGY",
+   "time": "2026-11-27T11:18:28+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "SWIGGY: SWIGGY INSTAMART TO LET GO OF 340 EMPLOYEES AMID AI PUSH AND RESTRUCTURING. ROLES IMPACTED IN CORPORATE AND SUPPORT FUNCTIONS",
+   "url": "https://t.me/Indiaredboxglobal/10237",
+   "alert_px": 182.45,
+   "alert_move": -0.26,
+   "alert_at": "2026-11-27T11:19:00+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "4c5d25749227370b",
    "symbol": "APARINDS",
