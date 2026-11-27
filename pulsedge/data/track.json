@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T10:45:55+05:30",
+ "updated": "2026-11-27T11:01:10+05:30",
  "summary": {
-  "calls": 2404,
-  "scored_calls": 1171,
+  "calls": 2407,
+  "scored_calls": 1174,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -26,6 +26,51 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "2f2368cd2fa18438",
+   "symbol": "SIEMENS",
+   "time": "2026-11-27T10:59:09+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "SIEMENS ENERGY: CO SAID IT IS CONFIDENT OF WINNING THE NEXT VSC-HVDC ORDER EXPECTED TO BE AWARDED IN INDIA NEXT YEAR.; TOTAL PROJECT SIZE RS 33500 CR OF WHICH 5",
+   "url": "https://t.me/Indiaredboxglobal/10235",
+   "alert_px": 3598.5,
+   "alert_move": 0.61,
+   "alert_at": "2026-11-27T11:00:00+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "32e22bcb85cb9701",
+   "symbol": "SIEMENS",
+   "time": "2026-11-27T10:57:14+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "SIEMENS ENERGY: CO SAID IT IS CONFIDENT OF WINNING THE NEXT VSC-HVDC ORDER EXPECTED TO BE AWARDED IN INDIA NEXT YEAR.",
+   "url": "https://t.me/Indiaredboxglobal/10233",
+   "alert_px": 3595.6,
+   "alert_move": 0.53,
+   "alert_at": "2026-11-27T10:57:33+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "c96fda3dfa108838",
+   "symbol": "TATASTEEL",
+   "time": "2026-11-27T10:36:10+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "APL Apollo rebounds 4% after 30% crash as Sebi may review Tata Steel deal",
+   "url": "https://www.business-standard.com/markets/news/apl-apollo-rebounds-4-after-30-crash-as-sebi-may-review-tata-steel-deal-126112700265_1.html",
+   "alert_px": 165.48,
+   "alert_move": 1.19,
+   "alert_at": "2026-11-27T11:00:34+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "2d49179f2f029215",
    "symbol": "NETWEB",
