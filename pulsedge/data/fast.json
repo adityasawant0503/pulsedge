@@ -1,7 +1,89 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-27T09:41:32+05:30",
+ "updated": "2026-11-27T09:59:31+05:30",
  "items": [
+  {
+   "id": "02be95960154f971",
+   "time": "2026-11-27T09:59:16+05:30",
+   "headline": "INDIA TRADE MINISTER: U.S. TRADE DEAL IS CLOSE TO CULMINATION",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10224",
+   "section": "macro",
+   "call": "watch",
+   "horizon": "positional",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [
+    "Export",
+    "Pharma",
+    "IT"
+   ],
+   "impact": 40,
+   "confidence": 50,
+   "category": "Trade Policy",
+   "action": "Monitor export-heavy sectors for positive sentiment if the deal is officially signed.",
+   "reason": [
+    "A finalized US-India trade deal could reduce tariffs and boost exports.",
+    "Benefits are broad but depend on final terms and implementation timeline."
+   ],
+   "risks": [
+    "Deal terms may not be as favorable as expected.",
+    "Negotiations could stall or face political hurdles."
+   ],
+   "plain": "The trade minister says a deal with the US is almost finished.",
+   "why": "This could help companies that sell goods to the US by making it cheaper and easier.",
+   "check": "Look for official government announcements confirming the final agreement.",
+   "original": "INDIA TRADE MINISTER: U.S. TRADE DEAL IS CLOSE TO CULMINATION",
+   "latency": 15.5,
+   "lane": "fast"
+  },
+  {
+   "id": "ff76edff9158c2b2",
+   "time": "2026-11-27T09:58:26+05:30",
+   "headline": "ZEN TECHNOLOGIES: CO SAYS H2 WILL BE MUCH BETTER THEN H1",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10223",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "ZENTEC",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "IT Services"
+   ],
+   "impact": 60,
+   "confidence": 60,
+   "category": "Management Commentary",
+   "action": "Watch for order book updates or revenue guidance in the next earnings call.",
+   "reason": [
+    "Management expects stronger performance in the second half of the year.",
+    "Positive outlook can drive short-term investor interest."
+   ],
+   "risks": [
+    "Commentary is qualitative and lacks specific financial targets.",
+    "Market may already have priced in the improvement."
+   ],
+   "plain": "The company's leaders say business will be much better in the next six months.",
+   "why": "This suggests they expect to make more money soon, which is good for shareholders.",
+   "check": "Check the company's next earnings report for actual sales numbers.",
+   "original": "ZEN TECHNOLOGIES: CO SAYS H2 WILL BE MUCH BETTER THEN H1",
+   "latency": 65.5,
+   "lane": "fast",
+   "quotes": {
+    "ZENTEC": {
+     "px": 1789.5,
+     "prev": 1768.1,
+     "move": 1.21,
+     "at": "2026-11-27T09:59:31+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "9f16dce75a138ebc",
    "time": "2026-11-27T09:40:12+05:30",
@@ -1503,53 +1585,6 @@
    "latency": 85.5,
    "lane": "fast",
    "checked": "confirmed by a second AI check"
-  },
-  {
-   "id": "c5c9d4f21997ce2f",
-   "time": "2026-11-26T09:56:00+05:30",
-   "headline": "ENDURANCE TECH: CO SAYS 4 NEW PROJECTS ARE COMING SOON|| MARGINS WILL MOVE UP IN COMING QTRS",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10129",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "ENDURANCE",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "IT Services"
-   ],
-   "impact": 45,
-   "confidence": 60,
-   "category": "company_update",
-   "action": "Monitor upcoming quarterly results to verify if the promised margin expansion materializes.",
-   "reason": [
-    "Management indicated four new projects are imminent.",
-    "Expectation of rising profit margins in coming quarters."
-   ],
-   "risks": [
-    "Project execution delays could push revenue recognition later.",
-    "Competitive pressure may limit actual margin gains."
-   ],
-   "plain": "The company says it has four new projects starting soon and expects to earn more profit on each one.",
-   "why": "Better profits and new work can make the business more valuable, but this is just a promise until results show it.",
-   "check": "Look at the next quarterly report to see if profits actually increased.",
-   "original": "ENDURANCE TECH: CO SAYS 4 NEW PROJECTS ARE COMING SOON|| MARGINS WILL MOVE UP IN COMING QTRS",
-   "latency": 6.8,
-   "lane": "fast",
-   "quotes": {
-    "ENDURANCE": {
-     "px": 2644.1,
-     "prev": 2642.2,
-     "move": 0.07,
-     "at": "2026-11-26T09:56:06+05:30",
-     "delay": 900
-    }
-   }
   }
  ]
 }
