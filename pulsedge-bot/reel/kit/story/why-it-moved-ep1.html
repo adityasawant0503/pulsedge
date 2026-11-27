@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PulsEdge reel: Why it moved, ep 1</title>
+<!-- 1080x1920, 20 s, text-first (no voiceover): music + SFX baked in, or SFX only for a trending sound added in Instagram.
+     Facts: Urban Company press release to NSE, 26 Nov 2026, shown on PulsEdge at 15:59 (after the 15:30 close). 27 Nov intraday:
+     Voltas down over 3% (low ₹1,211) and Blue Star ~2% (Business Standard); Havells −1.6% (PulsEdge price chip). Native AC: from ₹55,499,
+     5-year unconditional warranty incl. gas refills, 10-year compressor warranty. Educational only; no buy/sell calls. Smallest text 26px. -->
+<style>
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-500-normal.woff2) format("woff2");font-weight:500}
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-600-normal.woff2) format("woff2");font-weight:600}
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-700-normal.woff2) format("woff2");font-weight:700}
+@font-face{font-family:PlexMono;src:url(fonts/ibm-plex-mono-latin-600-normal.woff2) format("woff2");font-weight:600}
+@font-face{font-family:Rupee;src:local("Inter Bold"),local("Inter-Bold"),local("Inter");unicode-range:U+20B9}
+:root{--ink:#f6f5fb;--mute:#b3afc2;--dim:#8a8699;--acc:#a58bff;--accl:#c9b8ff;--green:#2ee6a0;--red:#ff4d5e;--gold:#ffc24d}
+*{box-sizing:border-box}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#07060b}
+#st{position:relative;width:1080px;height:1920px;overflow:hidden;color:var(--ink);font-family:Rupee,Plex,sans-serif;-webkit-font-smoothing:antialiased}
+.glow{position:absolute;inset:-100px;opacity:0}
+#gR{background:radial-gradient(55% 35% at 30% 30%,#ff4d5e55,transparent 70%),linear-gradient(#1a050980,#1a050980)}
+#gP{background:radial-gradient(55% 35% at 70% 28%,#6c43f077,transparent 70%),radial-gradient(40% 30% at 20% 80%,#6c43f033,transparent 70%)}
+#gG{background:radial-gradient(55% 35% at 70% 30%,#2ee6a044,transparent 70%)}
+#grid{position:absolute;inset:0;opacity:.28;background:linear-gradient(#ffffff10 1px,transparent 1px) 0 0/90px 90px,linear-gradient(90deg,#ffffff10 1px,transparent 1px) 0 0/90px 90px;-webkit-mask-image:radial-gradient(80% 60% at 50% 45%,#000 30%,transparent 85%)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;mix-blend-mode:screen}
+#bars{position:absolute;left:72px;right:72px;top:206px;height:6px;border-radius:3px;background:#ffffff1f;overflow:hidden}
+#bars b{display:block;height:100%;width:0;background:var(--ink)}
+#brand{position:absolute;left:72px;top:250px;display:flex;align-items:center;gap:14px;font:600 30px/1 PlexMono,monospace;letter-spacing:.16em}
+#brand span{width:16px;height:16px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 6px #a58bff2e,0 0 26px var(--acc)}
+#brand em{font-style:normal;color:var(--mute);letter-spacing:.12em}
+#src{position:absolute;left:72px;right:72px;top:1520px;font:500 26px/1.3 PlexMono,monospace;color:var(--dim);text-align:center}
+#foot{position:absolute;left:72px;right:72px;top:1572px;font:500 26px/1.3 Plex,sans-serif;color:var(--dim);text-align:center}
+.sc{position:absolute;left:72px;right:72px;top:330px;height:1150px;opacity:0;transform-origin:50% 45%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.p{opacity:0}
+.h{font:700 112px/1.02 Plex,sans-serif;letter-spacing:-.045em}
+.h2{font:700 84px/1.06 Plex,sans-serif;letter-spacing:-.035em}
+.sub{font:600 50px/1.2 Plex,sans-serif;color:var(--mute)}
+.chip{display:inline-flex;align-items:center;gap:12px;font:600 36px/1 PlexMono,monospace;letter-spacing:.08em;border-radius:14px;padding:14px 20px}
+.chip.r{background:var(--red);color:#2a0007}.chip.p{background:var(--acc);color:#150c33}.chip.g{background:var(--green);color:#00281a}.chip.y{background:var(--gold);color:#2a1d00}
+.big{font:700 190px/0.95 Plex,sans-serif;letter-spacing:-.06em;color:var(--red);text-shadow:0 0 80px #ff4d5e77;margin-top:20px;white-space:nowrap}
+.clock{font:600 84px/1 PlexMono,monospace;letter-spacing:.02em;color:var(--gold);margin-top:40px}
+#setup .sub{margin-top:24px;font-size:44px}
+/* 1 hook */
+.tk{align-self:stretch;display:flex;justify-content:space-between;align-items:center;background:#1c0a10;border:3px solid #ff4d5e88;border-radius:26px;padding:26px 34px;margin-top:22px;box-shadow:0 30px 80px -30px #ff4d5e88}
+.tk b{font:700 60px/1 Plex,sans-serif;letter-spacing:-.02em}
+.tk span{font:700 66px/1 Plex,sans-serif;color:var(--red);letter-spacing:-.02em}
+#hook .h{margin-top:50px}
+#hook .h em{font-style:normal;color:var(--gold)}
+/* 2 launch */
+#launch .h2{margin-top:20px}
+#launch .h2 em{font-style:normal;color:var(--accl)}
+.fact{display:flex;align-items:center;gap:26px;margin-top:34px;background:#14131cdd;border:3px solid #2a2836;border-radius:26px;padding:28px 32px}
+.fact i{font-style:normal;font:700 64px/1 Plex,sans-serif;color:var(--green);min-width:330px;letter-spacing:-.03em}
+.fact span{font:600 40px/1.2 Plex,sans-serif;color:var(--mute)}
+/* 3 phone */
+#pe .h2{text-align:center}
+.phone{position:relative;width:640px;height:760px;margin:36px auto 0;border-radius:56px;border:12px solid #1d1a26;overflow:hidden;background:#0b0a10;box-shadow:0 0 0 2px #a58bff88,0 50px 140px -30px #6c43f0}
+.phone img{position:absolute;left:0;top:0;width:616px;height:auto}
+.ring{position:absolute;border:6px solid var(--gold);border-radius:16px;box-shadow:0 0 0 6px #ffc24d33,0 0 40px #ffc24d99;opacity:0}
+#tag{position:absolute;left:50%;top:860px;transform:translateX(-50%);white-space:nowrap}
+/* 4 timeline */
+.tl{position:relative;margin-top:60px;padding-left:90px}
+.tl:before{content:"";position:absolute;left:30px;top:30px;bottom:60px;width:6px;background:#ffffff22;border-radius:3px}
+#tlfill{position:absolute;left:30px;top:30px;width:6px;height:0;background:linear-gradient(var(--green),var(--red));border-radius:3px}
+.node{position:relative;margin-bottom:70px}
+.node:before{content:"";position:absolute;left:-76px;top:14px;width:40px;height:40px;border-radius:50%;background:#07060b;border:6px solid var(--c,#fff)}
+.node .w{font:600 34px/1 PlexMono,monospace;letter-spacing:.06em;color:var(--c,#fff)}
+.node .d{font:700 66px/1.08 Plex,sans-serif;letter-spacing:-.03em;margin-top:12px}
+/* 5 mine */
+#mine .h2{text-align:center}
+/* 6 cta */
+#cta{text-align:center}
+#cta .h{margin-top:150px;font-size:104px}
+#cta .h em{font-style:normal;color:var(--accl)}
+#cta .btn{display:inline-block;margin-top:70px;background:var(--ink);color:#07060b;font:700 60px/1 Plex,sans-serif;border-radius:999px;padding:36px 70px;box-shadow:0 20px 60px -10px #a58bff99}
+#cta .sm{margin-top:40px;font:600 36px/1 PlexMono,monospace;letter-spacing:.12em;color:var(--mute)}
+</style>
+</head>
+<body>
+<div id="st">
+  <div class="glow" id="gR"></div><div class="glow" id="gP"></div><div class="glow" id="gG"></div>
+  <div id="grid"></div>
+  <div id="bars"><b></b></div>
+  <div id="brand"><span></span>PULSEDGE <em>· WHY IT MOVED</em></div>
+
+  <section class="sc" id="hook">
+    <span class="chip r p" data-a="-0.6">WHY IT MOVED · EP 1</span>
+    <div class="h2 p" data-a="-0.55" style="margin-top:60px">Ek <span style="color:var(--gold)">₹55,499</span> ke AC ne</div>
+    <div class="big p" data-a="-0.5">₹<span id="cnt">0</span> Cr+</div>
+    <div class="h2 p" data-a="-0.45">uda diye.<br><span style="color:var(--mute)">Ek subah mein.</span></div>
+  </section>
+
+  <section class="sc" id="setup">
+    <div class="h2 p" data-a="0">Kahani shuru hui<br>kal shaam.</div>
+    <div class="clock p" data-a="0.3">26 NOV · 3:59 PM</div>
+    <div class="sub p" data-a="0.6">Market band ho chuka tha. Ek chhoti si filing aayi.</div>
+    <div class="phone p" data-a="1.2" style="height:560px;margin-top:34px"><img id="fimg" src="cap/filing.png" alt=""><div class="ring" id="r1"></div><div class="ring" id="r2"></div></div>
+  </section>
+
+  <section class="sc" id="reveal">
+    <div class="h2 p" data-a="0" style="margin-top:80px">Jo company aapka<br>AC <em style="font-style:normal;color:var(--accl)">repair</em> karti thi…</div>
+    <div class="h p" data-a="1.1" style="margin-top:60px">ab khud<br><em style="font-style:normal;color:var(--green)">AC bechegi.</em></div>
+    <div class="chip p p" data-a="1.8" style="margin-top:60px">URBAN COMPANY · NATIVE AC</div>
+  </section>
+
+  <section class="sc" id="twist">
+    <span class="chip y p" data-a="0">ASLI TWIST</span>
+    <div class="h p" data-a="0.15" style="margin-top:50px">5 saal warranty.<br><em style="font-style:normal;color:var(--gold)">Gas refill bhi free.</em></div>
+    <div class="h2 p" data-a="1.5" style="margin-top:70px;font-size:64px;color:var(--mute)">AC brands service se bhi kamate hain.<br><span style="color:var(--ink)">Ye seedha wahi pe waar hai.</span></div>
+  </section>
+
+  <section class="sc" id="climax">
+    <div class="h2 p" data-a="0">Agli subah. <span style="color:var(--gold)">9:15.</span></div>
+    <div class="tk p" data-a="0.45" style="margin-top:60px"><b>VOLTAS</b><span>▼ 3%</span></div>
+    <div class="tk p" data-a="0.75"><b>BLUE STAR</b><span>▼ 2%</span></div>
+    <div class="tk p" data-a="1.05"><b>HAVELLS</b><span>▼ 1.6%</span></div>
+  </section>
+
+  <section class="sc" id="end">
+    <div class="h2 p" data-a="0" style="margin-top:80px">Jinhone kal shaam<br>filing padh li thi…</div>
+    <div class="h p" data-a="0.9" style="margin-top:40px">unke liye ye<br><em style="font-style:normal;color:var(--green)">surprise nahi tha.</em></div>
+    <div class="h2 p" data-a="2.2" style="margin-top:90px;color:var(--accl)">Agla surprise kis<br>company ka hai? 👀</div>
+  </section>
+
+  <div id="flash"></div>
+  <div id="src"></div>
+  <div id="foot">Educational only · Not investment advice · Not a recommendation on any stock</div>
+</div>
+<script>
+const SC = [["hook", 0, "R"], ["setup", 3.4, "P"], ["reveal", 8.0, "P"], ["twist", 11.4, "G"], ["climax", 15.4, "R"], ["end", 18.6, "P"]];
+const END = 23.2;
+const SRC = { hook: "Voltas market value, 27 Nov intraday (approx.) · BS, NSE", setup: "Screen: PulsEdge feed · NSE filing, 26 Nov 2026",
+  reveal: "Source: Urban Company press release to NSE, 26 Nov", twist: "Native AC terms: Urban Company, 26 Nov 2026",
+  climax: "27 Nov intraday · Business Standard, PulsEdge", end: "PULSEDGE · WHY IT MOVED" };
+const clamp = (x) => Math.max(0, Math.min(1, x)), eo = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const back = (x) => { x = clamp(x); const c = 1.9; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+let M = null;
+function init(meta) {
+  M = meta; const S = 616 / 390, im = document.getElementById("fimg"), top = -(M.filing.card[1] - 20) * S;
+  im.style.top = top + "px";
+  const place = (el, r, pad) => { el.style.left = (r[0] * S - pad) + "px"; el.style.top = (r[1] * S + top - pad) + "px"; el.style.width = (r[2] * S + 2 * pad) + "px"; el.style.height = (r[3] * S + 2 * pad) + "px"; };
+  place(document.getElementById("r1"), M.filing.time, 10); place(document.getElementById("r2"), M.filing.head, 12);
+  return "ok";
+}
+function render(t) {
+  let cur = SC[0];
+  SC.forEach((s, i) => {
+    const el = document.getElementById(s[0]), a = s[1], b = i + 1 < SC.length ? SC[i + 1][1] : END + 1;
+    if (t >= a) cur = s;
+    if (t < a - 0.01 || t >= b) { el.style.opacity = 0; return; }
+    const pin = i === 0 ? 1 : eo((t - a) / 0.3), sc = (1.1 - 0.1 * pin) * (1 + 0.02 * clamp((t - a) / (b - a)));
+    el.style.opacity = (i === 0 ? 1 : Math.min(1, (t - a) / 0.1)) * (1 - clamp((t - (b - 0.08)) / 0.08));
+    el.style.transform = `scale(${sc})`;
+    el.querySelectorAll(".p").forEach((p) => { const q = (t - a - (+p.dataset.a || 0)) / 0.35; p.style.opacity = clamp(q * 2.5); p.style.transform = `translateY(${(1 - eo(q)) * 50}px) scale(${0.88 + 0.12 * back(q)})`; });
+  });
+  document.getElementById("cnt").textContent = Math.round(1000 * eo((t + 0.6) / 0.8)).toLocaleString("en-IN");
+  const r1 = document.getElementById("r1"), r2 = document.getElementById("r2"), pa = SC[1][1];
+  r1.style.opacity = t > pa + 1.6 && t < pa + 3.0 ? 1 : 0; r2.style.opacity = t >= pa + 3.0 ? 1 : 0;
+  r1.style.transform = `scale(${1.15 - 0.15 * back((t - pa - 1.6) / 0.3)})`;
+  ["R", "P", "G"].forEach((k) => { document.getElementById("g" + k).style.opacity = k === cur[2] ? Math.min(1, 0.4 + (t - cur[1]) / 0.3) : 0; });
+  let fl = 0; SC.forEach((s, i) => { const d = t - s[1]; if (i > 0 && d >= 0 && d < 0.2) fl = Math.max(fl, 0.22 * (1 - d / 0.2)); });
+  [15.85, 16.15, 16.45].forEach((s) => { const d = t - s; if (d >= 0 && d < 0.15) fl = Math.max(fl, 0.2 * (1 - d / 0.15)); });
+  document.getElementById("flash").style.opacity = fl;
+  document.querySelector("#bars b").style.width = (100 * clamp(t / END)) + "%";
+  document.getElementById("src").textContent = SRC[cur[0]] || "";
+}
+</script>
+</body>
+</html>
