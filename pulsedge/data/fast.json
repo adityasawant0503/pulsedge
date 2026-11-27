@@ -1,7 +1,36 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-27T13:59:07+05:30",
+ "updated": "2026-11-27T14:00:01+05:30",
  "items": [
+  {
+   "id": "3cf23061ec33a75a",
+   "time": "2026-11-27T13:59:08+05:30",
+   "headline": "BANGLADESH FACTORY OWNERS REPORT ORDER CANCELLATIONS AND, FOR SOME, A LACK OF NEW ORDERS FROM GLOBAL BRANDS :RTRS",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10258",
+   "section": "macro",
+   "call": "ignore",
+   "horizon": "intraday",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Textiles"
+   ],
+   "impact": 10,
+   "confidence": 50,
+   "category": "industry",
+   "action": "",
+   "reason": [
+    "News affects Bangladesh manufacturing rather than direct listed Indian companies."
+   ],
+   "risks": [],
+   "plain": "Factories in a neighboring country are seeing canceled and missing orders from international brands.",
+   "why": "This mainly impacts overseas competitors, so it is safe to skip for a domestic investor.",
+   "check": "",
+   "original": "BANGLADESH FACTORY OWNERS REPORT ORDER CANCELLATIONS AND, FOR SOME, A LACK OF NEW ORDERS FROM GLOBAL BRANDS :RTRS",
+   "latency": 53.1,
+   "lane": "fast"
+  },
   {
    "id": "10d9bdcff709e18d",
    "time": "2026-11-27T13:58:42+05:30",
@@ -1397,54 +1426,6 @@
    "original": "PATEL ENGINEERING LIMITED: CO. DECLARED LOWEST BIDDER FOR ₹1,441.04 CRORE GONGRI HYDRO ELECTRIC PROJECT IN ARUNACHAL PRADESH; PROJECT TO BE COMPLETED IN 48 MONTHS; SCOPE INCLUDES DIVERSIONS, POWERHOUSE, AND ELECTRO-MECHA",
    "latency": 17.3,
    "lane": "fast"
-  },
-  {
-   "id": "523f326773e7742f",
-   "time": "2026-11-26T13:59:30+05:30",
-   "headline": "AMBER ENTERPRISES INDIA LTD: CO. ANNOUNCES MOU FOR ₹500 CRORE EXPANSION INVESTMENT IN TAMIL NADU BY ASCENT CIRCUITS; INVESTMENT TO ENHANCE PCB MANUFACTURING CAPABILITIES OVER FIVE YEARS STARTING 2027",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10165",
-   "section": "news",
-   "call": "watch",
-   "horizon": "positional",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "AMBER",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Electronics",
-    "Manufacturing"
-   ],
-   "impact": 60,
-   "confidence": 70,
-   "category": "Corporate Expansion",
-   "action": "Monitor quarterly capex disclosures and order book updates for confirmation of the expansion timeline.",
-   "reason": [
-    "₹500 Cr investment signals significant capacity expansion in PCB manufacturing.",
-    "Enhanced capabilities could improve long-term revenue potential and market share."
-   ],
-   "risks": [
-    "Execution risk over the 5-year period starting 2027.",
-    "Market demand for PCBs may fluctuate during the expansion phase."
-   ],
-   "plain": "A company signed a deal to invest 500 crore rupees to build more factory space for making circuit boards.",
-   "why": "This shows the company plans to grow its production, which could lead to more sales and profits in the future.",
-   "check": "Look at the company's next earnings report to see if they mention this new factory plan.",
-   "original": "AMBER ENTERPRISES INDIA LTD: CO. ANNOUNCES MOU FOR ₹500 CRORE EXPANSION INVESTMENT IN TAMIL NADU BY ASCENT CIRCUITS; INVESTMENT TO ENHANCE PCB MANUFACTURING CAPABILITIES OVER FIVE YEARS STARTING 2027",
-   "latency": 7.5,
-   "lane": "fast",
-   "quotes": {
-    "AMBER": {
-     "px": 6843.5,
-     "prev": 6940.0,
-     "move": -1.39,
-     "at": "2026-11-26T13:59:37+05:30",
-     "delay": 900
-    }
-   }
   }
  ]
 }
