@@ -17,6 +17,7 @@ site, the terminal and the Telegram bot switch to it within a couple of minutes.
 | `offers.json`    | Discount codes, stored as SHA-256 hashes; manage with `pulsedge-bot/offers.py` | none |
 | `monthly/`       | Monthly reports (`<YYYY-MM>.json`) and their list (`index.json`), written by `pulsedge-bot/monthly_report.py` and read by `report.html`. Drafts show only to the owner until published | none |
 | `newscal/`       | The news calendar (`calendar.html`): each month's Act and Watch stories with the NSE closes for "on the day" and "since" (`<YYYY-MM>.json`), and the months plus every stock's latest close (`index.json`). Written by `pulsedge-bot/news_calendar.py` on every news run | none |
+| `live.json`      | NSE's own live view for the day trader and the terminal's Nifty, Bank Nifty and VIX tiles: every figure with its source, `quality` (`realtime`, `delayed_10m`, `delayed_15m`, `final`, `stale`) and time, plus breadth, sector moves, previous-session levels and pivots, and the Nifty and Bank Nifty option chains (PCR, max pain, walls, straddle). Written by `pulsedge-bot/live_market.py` through `premarket.py`: every minute from 08:30 to 09:30 IST, every three minutes in the session, every ten outside it, by the fast lane | none |
 | `events.json`    | Dates ahead for the news calendar: Nifty 500 results dates, board meetings and ex-dates from NSE; RBI, Fed, Budget and F&O expiry dates; and world and India economic dates (US CPI and jobs, ECB, Bank of Japan, Bank of England, China and India data) from TradingView's economic calendar. Written by `pulsedge-bot/events.py` from the news run (NSE at most every 3 hours); the RBI and Fed dates are set by hand in that script | none |
 | `reviews.json`   | Real member reviews (from `review.html`, with permission). The landing page shows them, with the average, once there are 3 or more | none |
 
@@ -63,8 +64,17 @@ Older items in the `verdict` / `impacts` format still work: `act` becomes
 
 See `premarket.sample.json` for every field. In short:
 
-- `updated`, `sentiment` ("Mildly bearish"), `breadth` (`{"up": 2, "down": 3}`)
-- `checklist`: items with `title`, `dir` (`up`/`down`/`flat`), `value`, `detail` (lines)
+- `updated`, `sentiment` ("Mildly bearish"), `breadth` (`{"up": 2, "down": 3}`), `writer` (`premarket` for the 15-minute run,
+  `live` for the fast lane's refreshes), `data_as_of`, `market` (NSE's open/closed status)
+- `checklist`: items with `title`, `dir` (`up`/`down`/`flat`), `value`, `detail` (lines), and for each item `quality`
+  (`realtime`, `delayed_10m`, `delayed_15m`, `final`, `scheduled`), `src` and `as_of`. The last `detail` line repeats them in words
+  ("NSE · live · as of 13:48 IST"). Nifty, Bank Nifty and India VIX come from NSE itself, so they are live to the minute
+  (not TradingView's 15-minute-late copy); GIFT Nifty, Asia, USD/INR, DXY and gold are real time; US futures and Brent
+  are 10 minutes late. The key levels, options, breadth and calendar items are context for the day trader and are not part
+  of the sentiment score or the up/down count
+- `data`: the same numbers as fields, so a program need not read the text: `instruments` (`v`, `chg_pct`, `prev`, `open`,
+  `high`, `low`, `quality`, `src`, `as_of`), `levels` (previous session OHLC, pivots, CPR) and `options` (PCR, max pain,
+  call and put walls, straddle, implied move, ATM IV), for Nifty and Bank Nifty
 - `summary`, `global_cues`, `india_triggers` (bullets)
 - `focus` (`[{symbol, note}]`), `sector_tags` (`[{label, tone: positive|negative|watch}]`)
 - `key_risk`, `also` (`[{name, value, change}]`, change in %)

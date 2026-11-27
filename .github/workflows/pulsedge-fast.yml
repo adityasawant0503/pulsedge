@@ -5,6 +5,9 @@ name: PulsEdge fast lane
 # and market-moving news go straight to the Telegram channel (within about a minute of the post), then everything is
 # written to pulsedge/data/fast.json and the site redeployed (the terminal has it two to three minutes after posting).
 #
+# The same loop (--live) refreshes the pre-market checklist and live.json from NSE's own live data: every minute from
+# 08:30 to 09:30 IST, every three minutes in the session, every ten minutes outside it (pulsedge-bot/live_market.py).
+#
 # One run keeps checking for up to 5 h 45 min, then starts the next run itself (runs queue in one group, so two
 # never overlap). The news workflow's update job starts this lane if it isn't running, which covers GitHub's
 # unreliable cron; the cron line below starts the day early. On any other branch (push): one dry-run check.
@@ -19,6 +22,8 @@ on:
       - 'pulsedge-bot/fast_lane.py'
       - 'pulsedge-bot/eval_act.py'
       - 'pulsedge-bot/quotes.py'
+      - 'pulsedge-bot/premarket.py'
+      - 'pulsedge-bot/live_market.py'
       - 'pulsedge-bot/eval/**'
       - '.github/workflows/pulsedge-fast.yml'
 
@@ -62,6 +67,23 @@ jobs:
     - name: Live price source (branches)
       if: github.ref != 'refs/heads/master'
       run: python pulsedge-bot/quotes.py RELIANCE TCS M\&M HDFCBANK TMPV KAYNES URBANCO
+    - name: Live market data and pre-market checklist (branches)
+      # a dry run against the real sources: NSE's indices, VIX, option chain and history, and TradingView's real-time feeds
+      if: github.ref != 'refs/heads/master'
+      run: |
+        python pulsedge-bot/live_market.py > "$RUNNER_TEMP/live.txt"
+        head -c 3500 "$RUNNER_TEMP/live.txt"
+        echo "-----"
+        python pulsedge-bot/premarket.py --dry-run > "$RUNNER_TEMP/premarket.txt"
+        python - <<'PY'
+        import json, os
+        d = json.load(open(os.path.join(os.environ["RUNNER_TEMP"], "premarket.txt")))
+        print("writer", d["writer"], "| data as of", d["data_as_of"], "| market", d["market"])
+        for it in d["checklist"]:
+            print(f"[{it['dir']:4}] {it['title']} :: {it['value']}")
+            for line in it["detail"]:
+                print("        -", line)
+        PY
     - name: Act checks on past alerts (branches)
       if: github.ref != 'refs/heads/master'
       # the rules only on a push; the AI second check (about 90 requests) only when started by hand, because on
@@ -73,7 +95,7 @@ jobs:
       run: |
         git config user.name "pulsedge-bot"
         git config user.email "pulsedge-bot@users.noreply.github.com"
-        python pulsedge-bot/fast_lane.py --loop --publish --start 07:00 --until 16:00 --minutes 345
+        python pulsedge-bot/fast_lane.py --loop --publish --live --start 07:00 --until 16:00 --minutes 345
     - name: Hand over to the next run
       if: github.ref == 'refs/heads/master' && steps.lane.outputs.more == '1'
       run: gh workflow run pulsedge-fast.yml --repo "${{ github.repository }}" --ref master && echo "Next run queued."

@@ -13,6 +13,11 @@ Telegram within about a minute and the terminal within two or three. The 15-minu
 
 In --loop mode it runs on NSE trading days from --start to --until IST, for at most --minutes, then prints
 more=1 to $GITHUB_OUTPUT when the window is still open, so the workflow can hand over to a fresh run.
+
+With --live it also refreshes the pre-market checklist and pulsedge/data/live.json from NSE's own live data
+(premarket.py --writer live, which uses live_market.py) as the day goes: every minute from 08:30 to 09:30, every
+three minutes in the session, every ten minutes outside it. Each refresh is committed and the site redeployed (unless a
+deploy is still running: the next refresh carries the latest data).
 """
 import argparse
 import json
@@ -31,6 +36,7 @@ REPO_ROOT = os.path.normpath(os.path.join(news.HERE, ".."))
 KEEP = timedelta(hours=24)     # how long items stay in fast.json; the news run has long since taken them by then
 MAX_ITEMS = 80
 FRESH = timedelta(hours=6)     # older posts (a first check of the day) are left to the news run
+LIVE_FILES = ("pulsedge/data/premarket.json", "pulsedge/data/live.json")
 
 
 def log(*a):
@@ -163,6 +169,61 @@ def publish(n):
     log("  pushed; site deploy " + ("started" if r.returncode == 0 else f"not started ({r.stderr.strip()[:120]})"))
 
 
+def live_every(t):
+    """Seconds between live-data refreshes: quickest around the open, when the day trader reads the checklist."""
+    hm = t.strftime("%H:%M")
+    if "08:30" <= hm < "09:30":
+        return 60
+    if "09:30" <= hm < "15:30":
+        return 180
+    return 600
+
+
+def deploy_site():
+    """Redeploy the site unless a deploy is already running: the site workflow cancels a running deploy when a new one
+    starts, so deploys asked for every minute would cancel each other and none would finish."""
+    r = subprocess.run(["gh", "run", "list", "--workflow", "pulsedge-pages.yml", "--limit", "3", "--json", "status", "--jq",
+                        '[.[] | select(.status != "completed")] | length'], capture_output=True, text=True)
+    if r.returncode == 0 and r.stdout.strip() not in ("", "0"):
+        return "a deploy is still running; the next refresh carries this data"
+    r = subprocess.run(["gh", "workflow", "run", "pulsedge-pages.yml", "--ref", "master"], capture_output=True, text=True)
+    return "site deploy started" if r.returncode == 0 else f"site deploy not started ({r.stderr.strip()[:120]})"
+
+
+def live_tick(publishing, dry):
+    """Refresh premarket.json and live.json from NSE, then commit, push and redeploy."""
+    if publishing:                                    # the news run's latest flows, events and headlines, without losing unpushed work
+        if git("fetch", "-q", "origin", "master").returncode == 0:
+            if git("rev-list", "--count", "origin/master..HEAD").stdout.strip() == "0":
+                git("reset", "-q", "--hard", "origin/master")
+            elif git("pull", "--rebase", "-q", "-X", "theirs", "origin", "master").returncode != 0:
+                git("rebase", "--abort")
+    try:
+        import importlib
+        import premarket
+        importlib.reload(premarket)               # it reads the clock when imported; live_market keeps its caches and session
+        premarket.main(["--dry-run"] if dry else ["--writer", "live"])
+    except Exception as e:                        # noqa: BLE001 - one bad refresh never stops the lane
+        log(f"  live refresh failed ({type(e).__name__}: {str(e)[:160]})")
+        return False
+    if dry or not publishing:
+        return True
+    git("add", *[f for f in LIVE_FILES if os.path.exists(os.path.join(REPO_ROOT, f))])
+    if git("commit", "-q", "-m", "PulsEdge live market data").returncode != 0:
+        return True                               # nothing changed
+    for attempt in range(4):
+        if git("push", "-q", "origin", "HEAD:master").returncode == 0:
+            break
+        git("pull", "--rebase", "-q", "-X", "theirs", "origin", "master")   # our refresh wins on these two files
+        time.sleep(1 + attempt * 2)
+    else:
+        git("rebase", "--abort")
+        log("  push failed four times; the next refresh carries this data")
+        return False
+    log("  live data pushed; " + deploy_site())
+    return True
+
+
 def check(sources, sorter, universe, known, dry, publishing):
     """One look at the fast sources. Returns how many new posts were added."""
     raw = collect(sources, verbose=dry)
@@ -232,6 +293,7 @@ def main():
     ap.add_argument("--start", default="07:00", help="IST time the window opens (HH:MM)")
     ap.add_argument("--until", default="16:00", help="IST time the window closes (HH:MM)")
     ap.add_argument("--minutes", type=float, default=345, help="longest this run may keep checking")
+    ap.add_argument("--live", action="store_true", help="also refresh the pre-market checklist and live.json from NSE as the day goes")
     a = ap.parse_args()
 
     sources = fast_sources()
@@ -247,9 +309,11 @@ def main():
     if not a.loop:
         n = check(sources, sorter, universe, known, a.dry_run, a.publish and not a.dry_run)
         log(f"{n} new")
+        if a.live:
+            live_tick(a.publish and not a.dry_run, a.dry_run)
         return
 
-    end, checks, added, more = time.time() + a.minutes * 60, 0, 0, False
+    end, checks, added, more, next_live = time.time() + a.minutes * 60, 0, 0, False, 0.0
     while True:
         t = now()
         if not trading_day(t):
@@ -276,6 +340,9 @@ def main():
             added += check(sources, sorter, universe, known, a.dry_run, a.publish and not a.dry_run)
         except Exception as e:                       # one bad check never stops the lane
             log(f"check failed ({type(e).__name__}: {str(e)[:160]})")
+        if a.live and time.time() >= next_live:
+            live_tick(a.publish and not a.dry_run, a.dry_run)
+            next_live = time.time() + live_every(now()) - 5
         checks += 1
         if checks % 30 == 0:
             log(f"{checks} checks, {added} new posts so far")
