@@ -1,7 +1,55 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-27T10:06:01+05:30",
+ "updated": "2026-11-27T10:18:01+05:30",
  "items": [
+  {
+   "id": "7b13c69132fc3f58",
+   "time": "2026-11-27T10:17:13+05:30",
+   "headline": "NETWEB TECHNOLOGIES: LAUNCHES 'SKYLUS WORKSPACE' ENTERPRISE DIGITAL WORKSPACE PLATFORM FOR DOMESTIC AND INTERNATIONAL MARKETS",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10229",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [
+    {
+     "symbol": "NETWEB",
+     "direction": "up"
+    }
+   ],
+   "sectors": [
+    "IT Services",
+    "Enterprise Software"
+   ],
+   "impact": 35,
+   "confidence": 40,
+   "category": "Product Launch",
+   "action": "Monitor trading volume and price action in the first hour to see if the market reacts to the new product announcement.",
+   "reason": [
+    "Launch of a new enterprise platform signals product expansion and potential future revenue growth.",
+    "Targeting both domestic and international markets suggests an effort to diversify the customer base."
+   ],
+   "risks": [
+    "Product launch does not guarantee immediate sales or revenue recognition.",
+    "Market may already be pricing in the company's growth trajectory."
+   ],
+   "plain": "The company announced a new digital workspace tool for businesses in India and abroad.",
+   "why": "New products can help a company grow, but it takes time to see if customers actually buy it.",
+   "check": "Look for any news about actual sales or contracts related to this new tool.",
+   "original": "NETWEB TECHNOLOGIES: LAUNCHES 'SKYLUS WORKSPACE' ENTERPRISE DIGITAL WORKSPACE PLATFORM FOR DOMESTIC AND INTERNATIONAL MARKETS",
+   "latency": 48.1,
+   "lane": "fast",
+   "quotes": {
+    "NETWEB": {
+     "px": 4151.0,
+     "prev": 4057.0,
+     "move": 2.32,
+     "at": "2026-11-27T10:18:01+05:30",
+     "delay": 900
+    }
+   }
+  },
   {
    "id": "4da43a425ff52f29",
    "time": "2026-11-27T10:04:55+05:30",
@@ -1601,61 +1649,6 @@
    "check": "",
    "original": "SUDARSHAN CHEMICAL INDUSTRIES: CO. TO ACQUIRE 36.56% STAKE IN SUDARSHAN COLORANTS INDIA LTD FROM SUDARSHAN SWITZERLAND HLD1 AG; TOTAL CONSIDERATION OF ₹150.76 CRORE FOR 84,39,385 SHARES; NO CHANGE IN PROMOTER GROUP SHARE",
    "latency": 72.6,
-   "lane": "fast"
-  },
-  {
-   "id": "04751a709485ee7d",
-   "time": "2026-11-26T10:08:32+05:30",
-   "headline": "Tata a battle moves to Court;Tata Trusts To Move Bombay HC Against N Chandra’s Reappointment. Trusts seek declaration that Sept 17 resolution is ultra vires the Articles, null and void",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10133",
-   "section": "news",
-   "call": "watch",
-   "horizon": "swing",
-   "direction": "down",
-   "tickers": [],
-   "sectors": [],
-   "impact": 30,
-   "confidence": 40,
-   "category": "legal",
-   "action": "Watch for any court ruling that could affect group governance perception",
-   "reason": [
-    "Legal dispute may raise governance concerns for Tata group listed companies"
-   ],
-   "risks": [
-    "Potential delay in strategic decisions",
-    "Negative market sentiment if dispute escalates"
-   ],
-   "plain": "A legal battle over Tata Trusts' challenge to a board appointment has been filed in court.",
-   "why": "It could affect confidence in Tata group companies if the dispute escalates.",
-   "check": "Monitor court filings for updates on the Tata Trusts case.",
-   "original": "reports per sources - Trusts seek to restrain Tata Sons from acting on the reappointment - SDTT seeks bar on board chair using casting vote when 2 trust nominees disagree - Trusts seek interim, ad-interim relief ahead of Nov 30 Tata Sons board meet - Trusts fear more resolutions could be passed via ",
-   "latency": 65.0,
-   "lane": "fast"
-  },
-  {
-   "id": "4848479035baef5a",
-   "time": "2026-11-26T10:07:00+05:30",
-   "headline": "TCS: TATA TRUST MOVES BOMBAY HC AGAINST N CHANDRASHEKAR REAPPOINTMENT|| TATA TRUST CHALLENGES REAPPOINTMENT OF N CHADRASHEKAR: CNBC",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10131",
-   "section": "news",
-   "call": "ignore",
-   "horizon": "swing",
-   "direction": "mixed",
-   "tickers": [],
-   "sectors": [],
-   "impact": 0,
-   "confidence": 0,
-   "category": "legal",
-   "action": "",
-   "reason": [],
-   "risks": [],
-   "plain": "Tata Trust has filed a petition in the Bombay High Court to block N Chandrashekar’s reappointment.",
-   "why": "The matter concerns a board appointment and does not affect TCS’s business or earnings.",
-   "check": "",
-   "original": "TCS: TATA TRUST MOVES BOMBAY HC AGAINST N CHANDRASHEKAR REAPPOINTMENT|| TATA TRUST CHALLENGES REAPPOINTMENT OF N CHADRASHEKAR: CNBC",
-   "latency": 37.0,
    "lane": "fast"
   }
  ]
