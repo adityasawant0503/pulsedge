@@ -1,7 +1,41 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-27T11:00:00+05:30",
+ "updated": "2026-11-27T11:13:30+05:30",
  "items": [
+  {
+   "id": "9b4b77dfb25af668",
+   "time": "2026-11-27T11:12:56+05:30",
+   "headline": "KOTHARI INDUSTRIAL CORPORATION LTD: CO. SIGNS TWO MOUS WITH THIAGARAJAR COLLEGE OF ENGINEERING FOR DRONE PILOT TRAINING AND UAV R&D; INITIATIVE AIMS TO DEMOCRATIZE ACCESS TO TRAINING AND ADVANCE INDIGENOUS RESEARCH IN TA",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10236",
+   "section": "news",
+   "call": "ignore",
+   "horizon": "positional",
+   "direction": "mixed",
+   "tickers": [],
+   "sectors": [
+    "Defence",
+    "Education"
+   ],
+   "impact": 10,
+   "confidence": 20,
+   "category": "Corporate Announcement",
+   "action": "No immediate action required for listed investors.",
+   "reason": [
+    "Kothari Industrial is not in the candidate list.",
+    "MOU with a college is a long-term R&D step, not immediate revenue."
+   ],
+   "risks": [
+    "Execution risk in drone training programs.",
+    "No direct financial impact on listed peers."
+   ],
+   "plain": "A company signed a deal with a college to train drone pilots and research drones.",
+   "why": "This is a long-term research step for a company not on your watchlist, so it does not change your portfolio today.",
+   "check": "",
+   "original": "KOTHARI INDUSTRIAL CORPORATION LTD: CO. SIGNS TWO MOUS WITH THIAGARAJAR COLLEGE OF ENGINEERING FOR DRONE PILOT TRAINING AND UAV R&D; INITIATIVE AIMS TO DEMOCRATIZE ACCESS TO TRAINING AND ADVANCE INDIGENOUS RESEARCH IN TA",
+   "latency": 34.8,
+   "lane": "fast"
+  },
   {
    "id": "2f2368cd2fa18438",
    "time": "2026-11-27T10:59:09+05:30",
@@ -1662,54 +1696,6 @@
    "original": "APPLE TO EXPAND INDIA RETAIL NETWORK WITH NEW STORE IN HYDERABAD",
    "latency": 59.8,
    "lane": "fast"
-  },
-  {
-   "id": "7f7b044a437df842",
-   "time": "2026-11-26T11:00:16+05:30",
-   "headline": "ATUL AUTO LIMITED: CO. ENTERS INTO A 60-MONTH LEAVE AND LICENCE AGREEMENT TO LEASE RAJKOT MANUFACTURING UNIT; MONTHLY LICENCE FEES SET AT ₹40 LAKH; NO INDEPENDENT TURNOVER GENERATED FROM UNIT",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10138",
-   "section": "news",
-   "call": "sell",
-   "horizon": "swing",
-   "direction": "down",
-   "tickers": [
-    {
-     "symbol": "ATUL",
-     "direction": "down"
-    }
-   ],
-   "sectors": [
-    "Auto"
-   ],
-   "impact": 45,
-   "confidence": 70,
-   "category": "company",
-   "action": "Watch for earnings guidance revision after the lease period starts",
-   "reason": [
-    "New 60‑month lease adds ₹40 lakh monthly expense with no current revenue",
-    "Adds cost pressure that could dent margins if the unit stays idle"
-   ],
-   "risks": [
-    "Unit may become operational and generate revenue later",
-    "Lease terms could be renegotiated favorably"
-   ],
-   "plain": "Atul Auto signed a 60‑month lease for a plant, paying ₹40 lakh each month with no current revenue from it.",
-   "why": "The lease adds a recurring cost without income, which may hurt profits and affect the share price.",
-   "check": "Check the next quarterly earnings for updates on the plant’s utilization.",
-   "original": "ATUL AUTO LIMITED: CO. ENTERS INTO A 60-MONTH LEAVE AND LICENCE AGREEMENT TO LEASE RAJKOT MANUFACTURING UNIT; MONTHLY LICENCE FEES SET AT ₹40 LAKH; NO INDEPENDENT TURNOVER GENERATED FROM UNIT",
-   "latency": 21.4,
-   "lane": "fast",
-   "checked": "confirmed by a second AI check",
-   "quotes": {
-    "ATUL": {
-     "px": 5107.0,
-     "prev": 5087.0,
-     "move": 0.39,
-     "at": "2026-11-26T11:00:38+05:30",
-     "delay": 900
-    }
-   }
   }
  ]
 }
