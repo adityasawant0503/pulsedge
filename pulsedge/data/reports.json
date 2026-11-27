@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T15:01+05:30",
+ "updated": "2026-11-27T15:15+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -363,38 +363,6 @@
    "updated": "2026-11-25T19:23+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "TATASTEEL": {
-   "summary": "Tata Steel is under regulatory scrutiny as SEBI investigates a deal with APL Apollo, while the company is working on restructuring the transaction. The scrutiny could delay or alter the deal, affecting the company’s financials.",
-   "why": "Shareholders need to know that regulatory actions and deal changes can impact Tata Steel’s cash position and share price.",
-   "upside": "",
-   "downside": "Regulatory investigation could lead to penalties or delays that negatively affect the company’s operations and share value.",
-   "watch": [
-    "SEBI’s final decision on the Tata Steel‑APL Apollo deal",
-    "Any announced changes to the deal structure",
-    "Potential penalties or delays from the regulatory review"
-   ],
-   "about": "Tata Steel is a major Indian steel producer.",
-   "basis": "1f8772981fc4",
-   "items": 9,
-   "updated": "2026-11-27T14:16+05:30",
-   "model": "openai/gpt-oss-20b"
-  },
-  "APLAPOLLO": {
-   "summary": "APL Apollo Tubes shares fell sharply after a big Tata Steel stake purchase and broker downgrades, then jumped 4% as regulators may examine the deal. A large investor also sold a big block of shares recently.",
-   "why": "Shareholders feel the impact of the Tata Steel transaction and any regulator action, which could change the company’s value.",
-   "upside": "If SEBI clears the deal, the transaction could proceed smoothly and support the share price.",
-   "downside": "Regulatory scrutiny or further downgrades could delay the deal and push the stock lower.",
-   "watch": [
-    "Outcome of SEBI’s review of the Tata Steel deal",
-    "Progress on integrating Tata Steel’s 9.91% stake",
-    "Any additional large block trades or broker rating changes"
-   ],
-   "about": "APL Apollo Tubes makes steel tubes for the capital‑goods sector.",
-   "basis": "d7d49b204256",
-   "items": 5,
-   "updated": "2026-11-27T12:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "SCHAEFFLER": {
    "summary": "Schaeffler India's main owner sold a 6.5% stake in a large single trade worth about ₹3,549 crore. Several major mutual funds and the National Pension System bought shares in the same session, absorbing a significant portion of the sale.",
    "why": "This matters because a large sale by the main owner can sometimes signal a change in strategy or create selling pressure, while the buying by large institutions shows they are willing to take those shares at the current price.",
@@ -442,6 +410,22 @@
    "items": 9,
    "updated": "2026-11-25T19:23+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "APLAPOLLO": {
+   "summary": "APL Apollo Tubes shares rose 4% after a 28% drop in a week, amid speculation that SEBI may scrutinise the Tata Steel stake purchase. The company also saw a large bulk sale by a major investor.",
+   "why": "Share price swings can affect the value of an investor’s holdings and reflect uncertainty about the Tata Steel deal.",
+   "upside": "Shares rebounded after the sharp decline, suggesting a potential recovery.",
+   "downside": "Regulatory scrutiny could delay or block the Tata Steel stake acquisition.",
+   "watch": [
+    "SEBI’s decision on the Tata Steel deal",
+    "Impact of Tata Steel’s 9.91% stake purchase",
+    "Future bulk selling activity by large investors"
+   ],
+   "about": "",
+   "basis": "5d7ce865eeb5",
+   "items": 4,
+   "updated": "2026-11-27T15:15+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "IIFL": {
    "summary": "PulsEdge flagged that large investors recently made big trades in IIFL Finance Ltd. Smallcap World Fund sold shares worth about 337 crore rupees, while UBS AG bought shares worth about 259 crore rupees in a single trade.",
@@ -506,22 +490,6 @@
    "updated": "2026-11-26T12:45+05:30",
    "model": "gemini-flash-lite-latest"
   },
-  "JWL": {
-   "summary": "Jupiter Wagons shares fell 7.5% after a sharp 29% rise in two days, as investors sold to lock in profits. This price movement followed news of a new joint venture with South Korea's Woojin to build metro trains and a plan to invest 1,000 crore rupees in its passenger rail business over the next three years.",
-   "why": "These developments matter because they show the company is expanding into new areas like metro trains and investing heavily in its core business, which could affect future earnings for shareholders.",
-   "upside": "The new partnership and significant investment could help the company grow and earn more money in the long run.",
-   "downside": "The heavy spending may pressure the company's cash flow and profits in the short term, and the share price may continue to fall as more investors sell.",
-   "watch": [
-    "How the company manages its cash flow while spending 1,000 crore rupees on new projects.",
-    "Progress on the joint venture with Woojin for building metro trains.",
-    "Whether the share price stabilizes after the recent sharp rise and fall."
-   ],
-   "about": "Jupiter Wagons is a capital goods company that manufactures railway wagons and is involved in the passenger rail business.",
-   "basis": "cbcc1e30cc19",
-   "items": 4,
-   "updated": "2026-11-27T12:16+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "ZYDUSLIFE": {
    "summary": "Zydus Lifesciences is facing regulatory scrutiny as the US FDA has asked for more information on its new drug, delaying approval. At the same time, the company received an export inspection report for its Ankleshwar API plant and a key certificate for a new manufacturing facility in Ahmedabad’s SEZ.",
    "why": "Shareholders should watch the FDA delays because they could reduce earnings from the new product, while the new facility may improve efficiency and lower taxes over time.",
@@ -537,6 +505,22 @@
    "items": 4,
    "updated": "2026-11-27T10:00+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "JWL": {
+   "summary": "Jupiter Wagons shares fell 7.5% after a sharp 29% rise in two days, as investors sold to lock in profits. This price movement followed news of a new joint venture with South Korea's Woojin to build metro trains and a plan to invest 1,000 crore rupees in its passenger rail business over the next three years.",
+   "why": "These developments matter because they show the company is expanding into new areas like metro trains and investing heavily in its core business, which could affect future earnings for shareholders.",
+   "upside": "The new partnership and significant investment could help the company grow and earn more money in the long run.",
+   "downside": "The heavy spending may pressure the company's cash flow and profits in the short term, and the share price may continue to fall as more investors sell.",
+   "watch": [
+    "How the company manages its cash flow while spending 1,000 crore rupees on new projects.",
+    "Progress on the joint venture with Woojin for building metro trains.",
+    "Whether the share price stabilizes after the recent sharp rise and fall."
+   ],
+   "about": "Jupiter Wagons is a capital goods company that manufactures railway wagons and is involved in the passenger rail business.",
+   "basis": "cbcc1e30cc19",
+   "items": 4,
+   "updated": "2026-11-27T12:16+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "SUZLON": {
    "summary": "Suzlon Energy is expanding its production capacity by building new facilities, including a 1 GW smart blade factory in Tamil Nadu. The company has officially notified the stock exchange about these additions to its manufacturing setup.",
@@ -602,6 +586,21 @@
    "updated": "2026-11-27T14:30+05:30",
    "model": "openai/gpt-oss-20b"
   },
+  "TATASTEEL": {
+   "summary": "India's market regulator is currently studying Tata Steel's proposed deal with APL Apollo to ensure it protects the interests of all company owners. In response to this regulatory attention and potential rule checks, Tata Steel has shown openness to tweaking or restructuring the deal. Meanwhile, the broader metals sector has experienced mixed movements recently.",
+   "why": "This matters because major corporate deals and regulatory investigations can change how a transaction works, potentially causing the stock price to move up or down.",
+   "upside": "Tata Steel has indicated it is willing to restructure the deal, which could help address regulatory concerns and keep the transaction moving forward.",
+   "downside": "The regulatory scrutiny could lead to delays, penalties, or even a restructuring that affects the company.",
+   "watch": [
+    "Updates from the market regulator regarding the deal review.",
+    "Any official announcements on restructuring the APL Apollo transaction."
+   ],
+   "about": "Tata Steel Ltd. is one of India's largest listed companies operating in the metals and mining sector.",
+   "basis": "9c6ba4345c81",
+   "items": 9,
+   "updated": "2026-11-27T15:15+05:30",
+   "model": "gemini-flash-lite-latest"
+  },
   "BRIGADE": {
    "summary": "Brigade Enterprises disclosed a new credit rating and opened a 65,000 sq ft flexible workspace in Chennai, targeting ₹10 cr revenue and further expansion by FY28. The stock rose on strong Bangalore project sales and a broader rally in the realty sector, which hit a 52‑week high.",
    "why": "A rating change can shift investor sentiment, while the sales and workspace rollout could boost earnings for shareholders.",
@@ -635,19 +634,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "ANGELONE": {
-   "summary": "Angel One Limited has announced it will issue new shares to raise capital. At the same time, the company reported that a senior leader and manager have resigned from their positions.",
-   "why": "Leadership changes and the creation of new shares can impact the value of current holdings and cause questions about the company's stability.",
-   "upside": "If the newly raised funds are deployed effectively, the company could see a recovery.",
-   "downside": "The departures of senior staff and the dilution from new shares create uncertainty about governance and stability.",
+   "summary": "Angel One shares recently surged 7% on heavy trading volume despite a weak market, nearing a record high. At the same time, the company announced plans to issue new shares to raise capital and reported the resignation of a senior leader.",
+   "why": "These events matter to share owners because new shares can dilute existing holdings, while leadership changes and shifting momentum can impact the company's stability and short-term stock direction.",
+   "upside": "If the newly raised funds are deployed effectively, the share price could recover and strong buying momentum might keep pushing prices higher short-term.",
+   "downside": "The stock could face a reversal if buying pressure fades or if the leadership departure leads to governance instability.",
    "watch": [
-    "How the company deploys its newly raised capital",
-    "Further updates regarding leadership and management changes",
-    "Overall movement in the financial services sector"
+    "Whether buying pressure and momentum continue",
+    "Details on how the newly raised capital will be used",
+    "Updates regarding the resignation of the senior leader"
    ],
-   "about": "",
-   "basis": "4b51dc374e81",
+   "about": "Angel One Ltd. is a financial services company included in the Nifty 500 index of India's largest listed firms.",
+   "basis": "11a4e17097b4",
    "items": 3,
-   "updated": "2026-11-27T15:01+05:30",
+   "updated": "2026-11-27T15:15+05:30",
    "model": "gemini-flash-lite-latest"
   },
   "AMBER": {
@@ -666,21 +665,20 @@
    "updated": "2026-11-27T04:10+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "WELSPUNLIV": {
-   "summary": "Welspun Living’s shares have risen over 110% year‑to‑date as the company pushes new capex projects for growth, but a possible US tariff on Indian goods could hit its margins.",
-   "why": "Shareholders care because successful investments could boost earnings, while tariffs or execution problems could reduce profits.",
-   "upside": "If the new capital spending delivers cost savings and higher sales, earnings could improve.",
-   "downside": "If US tariffs are imposed or cotton supplies stay tight, profit margins could be squeezed.",
+  "BAJAJ-AUTO": {
+   "summary": "Bajaj Auto shares recently fell during a broader market drop led by the Sensex. At the same time, the company announced that its electric three-wheeler set a record of 394 km on a single charge.",
+   "why": "Broader market trends can pull the share price down even when there is positive news about the company's products. Highlights in electric vehicle capabilities may help future sales.",
+   "upside": "Strong electric vehicle capabilities could increase future sales and boost investor confidence if the commercial rollout succeeds.",
+   "downside": "Further market weakness could push the stock lower, and execution risks remain if the commercial rollout stalls.",
    "watch": [
-    "US tariff implementation risk",
-    "Progress on capex projects",
-    "Cotton supply and pricing"
+    "Broader market movements and the Sensex",
+    "Commercial rollout progress of the electric three-wheeler"
    ],
-   "about": "Welspun Living Ltd. is a textile company.",
-   "basis": "fb52f3e3bd6b",
-   "items": 3,
-   "updated": "2026-11-26T13:31+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Bajaj Auto Ltd. is an automobile company and one of India's 50 largest listed companies.",
+   "basis": "22e9d437e209",
+   "items": 2,
+   "updated": "2026-11-27T15:15+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "CIPLA": {
    "summary": "Cipla is in the news because of potential US trade changes. A new trade deal could lower US taxes on Indian goods, boosting sales, while new US tariffs could raise costs and hurt profits.",
@@ -713,6 +711,22 @@
    "items": 2,
    "updated": "2026-11-26T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "WELSPUNLIV": {
+   "summary": "Welspun Living’s shares have risen over 110% year‑to‑date as the company pushes new capex projects for growth, but a possible US tariff on Indian goods could hit its margins.",
+   "why": "Shareholders care because successful investments could boost earnings, while tariffs or execution problems could reduce profits.",
+   "upside": "If the new capital spending delivers cost savings and higher sales, earnings could improve.",
+   "downside": "If US tariffs are imposed or cotton supplies stay tight, profit margins could be squeezed.",
+   "watch": [
+    "US tariff implementation risk",
+    "Progress on capex projects",
+    "Cotton supply and pricing"
+   ],
+   "about": "Welspun Living Ltd. is a textile company.",
+   "basis": "fb52f3e3bd6b",
+   "items": 3,
+   "updated": "2026-11-26T13:31+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "ADANIPOWER": {
    "summary": "Adani Power and another Adani firm are planning to raise at least Rs 2,000 crore by issuing public bonds. The government is also said to be preparing a Rs 50,000 crore scheme to support power distribution companies, which could affect Adani Power’s sales.",
@@ -762,38 +776,6 @@
    "updated": "2026-11-26T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "BAJAJ-AUTO": {
-   "summary": "Bajaj Auto announced its electric three‑wheeler set a 394 km single‑charge record, marking a first for the segment. The auto sector index also rose, showing broader market strength.",
-   "why": "The record highlights the company’s EV capabilities, which could boost future sales and investor confidence, but success depends on commercial rollout.",
-   "upside": "A smooth commercial launch of the electric three‑wheeler could lift sales and market sentiment.",
-   "downside": "If the rollout stalls, expectations for the EV line may be disappointed.",
-   "watch": [
-    "Timeline for commercial launch of the EV three‑wheeler",
-    "First‑quarter sales of the electric three‑wheeler",
-    "Performance of the broader auto sector index"
-   ],
-   "about": "Bajaj Auto manufactures motorcycles, scooters and three‑wheelers, including electric models.",
-   "basis": "1800a539aca3",
-   "items": 1,
-   "updated": "2026-11-26T16:01+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "POLICYBZR": {
-   "summary": "PB Fintech shares recently rose as part of a broader rally in insurance stocks. This movement happened even though the wider financial sector index fell in the last session.",
-   "why": "The company is part of the Nifty 500 index, which tracks India's 500 largest listed companies. Shareholders may see value if the company continues to show strong performance relative to the market.",
-   "upside": "If insurance companies continue to become more profitable, it could make their shares more attractive to investors.",
-   "downside": "A general drop in the overall market could wipe out the gains specific to the insurance sector.",
-   "watch": [
-    "Whether the insurance sector rally continues",
-    "Performance of the broader financial sector index",
-    "Company-specific profit updates"
-   ],
-   "about": "",
-   "basis": "0d531583ebd3",
-   "items": 1,
-   "updated": "2026-11-25T10:32+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
   "LLOYDSME": {
    "summary": "Lloyds Metals And Energy Ltd. announced a capital raise by issuing new securities and disclosed an agreement to acquire another company.",
    "why": "These actions could affect the value of existing shares through dilution or changes in the company’s growth prospects.",
@@ -841,6 +823,21 @@
    "items": 3,
    "updated": "2026-11-27T12:16+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "SHYAMMETL": {
+   "summary": "PulsEdge flagged that Shyam Metalics and Energy Limited has announced an agreement to acquire a stake in Ramsarup Industries Limited. This purchase is being made directly through its affiliate, Shyam Sel and Power Limited.",
+   "why": "Buying another business can help a company grow, but it also costs money and requires careful management to combine the two operations successfully.",
+   "upside": "The acquisition could help the company grow its business further.",
+   "downside": "There are integration risks and challenges in managing the newly acquired business.",
+   "watch": [
+    "Further details on the acquisition agreement",
+    "Updates on how the integration of Ramsarup Industries is handled"
+   ],
+   "about": "",
+   "basis": "ae399e5dd84b",
+   "items": 2,
+   "updated": "2026-11-27T15:15+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "CGCL": {
    "summary": "Capri Global Capital Ltd. raised $30 million from the BlueOrchard Microfinance Fund, its first impact‑fundraise. The funding was announced on November 25, 2026.",
@@ -1320,22 +1317,6 @@
    "items": 2,
    "updated": "2026-11-27T09:15+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "CANHLIFE": {
-   "summary": "Canara HSBC Life Insurance Company Ltd. has announced the resignation of its CFO, Tarun Rustagi, effective 24 November 2026. The departure may cause short‑term concern among investors until a replacement is found.",
-   "why": "Shareholders may worry about potential management instability and delays in financial reporting during the transition.",
-   "upside": "",
-   "downside": "The CFO exit could lead to delays in financial reporting or strategic execution, and may increase management instability.",
-   "watch": [
-    "CFO replacement announcement",
-    "Updates on financial reporting timelines",
-    "Sector index movement (Financials down 2.5% last session)"
-   ],
-   "about": "It provides life insurance products in India.",
-   "basis": "dad559dfd4d5",
-   "items": 2,
-   "updated": "2026-11-25T10:46+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "ONGC": {
    "summary": "ONGC awarded a multi‑year charter contract to ABS Marine Services for its offshore supply vessel Emerald, worth about ₹120.14 crore. The move shows the company is spending on offshore operations as its sector index posted modest gains.",

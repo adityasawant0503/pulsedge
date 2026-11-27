@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T15:02:12+05:30",
+ "updated": "2026-11-27T15:18:16+05:30",
  "summary": {
-  "calls": 2436,
-  "scored_calls": 1203,
+  "calls": 2443,
+  "scored_calls": 1210,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -26,6 +26,66 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "d5a08c542760a9b4",
+   "symbol": "SOLARINDS",
+   "time": "2026-11-27T15:08:29+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "SAHAJ SOLAR: RECEIVES USD 42 MILLION (RS 389.52 CRORE) LETTER OF AWARD FROM MAURITIUS' CENTRAL ELECTRICITY BOARD FOR DEVELOPING TWO 10 MW AC SOLAR PV AND 72 MWH",
+   "url": "https://t.me/Indiaredboxglobal/10261",
+   "alert_px": 19460.0,
+   "alert_move": 6.63,
+   "alert_at": "2026-11-27T15:09:23+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "e7ae57de590338e4",
+   "symbol": "SOLARINDS",
+   "time": "2026-11-27T15:05:18+05:30",
+   "call": "buy",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Sahaj Solar Limited: Sahaj Solar Limited has informed the Exchange about receipt of letter of award from Central Electricity Board (CEB), Mauritius |SUBJECT: Ba",
+   "url": "https://nsearchives.nseindia.com/corporate/SahajSolar_27112026150509_Intimationforreceiptofcontract.pdf",
+   "alert_px": 19455.0,
+   "alert_move": 6.6,
+   "alert_at": "2026-11-27T15:15:44+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "ac4e52d9df0e2007",
+   "symbol": "SHYAMMETL",
+   "time": "2026-11-27T15:03:30+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Shyam Metalics and Energy Limited: SHYAM METALICS AND ENERGY LIMITED has informed the Exchange regarding Acquisition (including agreement to acquire) |SUBJECT: ",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_Restructuring_19311_WebXMLFile_20261127_150329238.xml",
+   "alert_px": 1305.8,
+   "alert_move": 0.99,
+   "alert_at": "2026-11-27T15:15:44+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "945f67aa66aa9bb7",
+   "symbol": "ANGELONE",
+   "time": "2026-11-27T14:56:00+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Angel One surges 7% on huge volume; stock nears record high in weak market",
+   "url": "https://www.business-standard.com/markets/news/angel-one-surges-7-on-huge-volume-stock-nears-record-high-in-weak-market-126112700640_1.html",
+   "alert_px": 378.8,
+   "alert_move": 5.81,
+   "alert_at": "2026-11-27T15:15:44+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "e917d72610382a95",
    "symbol": "TVSMOTOR",
@@ -204,6 +264,21 @@
    "alert_px": 164.04,
    "alert_move": 0.31,
    "alert_at": "2026-11-27T13:15:37+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "8aa6baf16543c954",
+   "symbol": "TATASTEEL",
+   "time": "2026-11-27T12:51:09+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Sebi studying Tata Steel-APL Apollo deal, minority interests key: Pandey",
+   "url": "https://www.business-standard.com/markets/news/sebi-tata-steel-apl-apollo-deal-minority-shareholders-tuhin-kanta-pandey-126112700466_1.html",
+   "alert_px": 164.49,
+   "alert_move": 0.58,
+   "alert_at": "2026-11-27T15:15:44+05:30",
    "alert_delay": 900
   },
   {
@@ -777,6 +852,21 @@
    "alert_delay": 900
   },
   {
+   "id": "7099cd6a169eecc4",
+   "symbol": "MCX",
+   "time": "2026-11-27T08:59:30+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Gold jumps 2%, silver hits 6% upper circuit on MCX as bullion rebounds from multi-month lows: Gold Silver Rates Live Updates",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/live-updates-gold-rate-today-27th-november-24k-22k-20k-18-carat-mcx-gold-silver-price-in-delhi-hyderabad-chennai-bengaluru-citywise/liveblog/136208041.cms",
+   "alert_px": 3908.1,
+   "alert_move": 1.91,
+   "alert_at": "2026-11-27T15:15:44+05:30",
+   "alert_delay": 900
+  },
+  {
    "id": "b61aa9d93d4dc64b",
    "symbol": "BHARATCOAL",
    "time": "2026-11-27T08:54:46+05:30",
@@ -834,6 +924,21 @@
    "source": "Mint Markets",
    "headline": "Tata Power: Opportunity or value trap as ambitious growth plans meet execution risks?",
    "url": "https://www.livemint.com/market/stock-market-news/tata-power-opportunity-or-value-trap-as-ambitious-growth-plans-meet-execution-risks-11795692308967.html"
+  },
+  {
+   "id": "961827c05d849118",
+   "symbol": "BAJAJ-AUTO",
+   "time": "2026-11-27T08:00:12+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stock Market LIVE: Shriram Fin, Bajaj Auto lead 800-pt loss in Sensex; Nifty below 25,700",
+   "url": "https://www.business-standard.com/markets/news/stock-market-live-november-27-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-mahanadi-coalfields-share-price-ipo-today-126112700100_1.html",
+   "alert_px": 10517.0,
+   "alert_move": -3.07,
+   "alert_at": "2026-11-27T15:15:44+05:30",
+   "alert_delay": 900
   },
   {
    "id": "3453e30b564b3c68",
