@@ -123,6 +123,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .cv.flat{color:var(--fg)}
 .cd{font:12.5px/1.5 var(--mono);color:var(--mute);margin-top:4px}
 .cd div{overflow-wrap:anywhere}
+.cd .cq{font-size:11px;margin-top:3px}
+.cd .cq.rt{color:var(--green-l)}.cd .cq.dl{color:var(--amber-l)}.cd .cq.st{color:var(--dim)}
 .notes{padding:16px;display:grid;gap:14px}
 #pm-flows{border-top:1px solid var(--line)}
 .tl{display:grid;grid-template-columns:minmax(0,1.7fr) repeat(3,minmax(0,1fr));gap:6px 10px;font-size:13.5px;align-items:baseline}
@@ -567,15 +569,32 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
 
   // ---------- live prices in the pre-market card ----------
   // This browser reads TradingView's public screener every 20 seconds while the page is open (it answers requests
-  // from any site, so no server is needed). GIFT Nifty, Asia, currencies, gold and bond yields are real time; NSE
-  // prices are 15 minutes delayed and US futures 10, and each tile says which. Free and unofficial: right for a
-  // glance, not a licensed feed. If it stops answering, the card keeps the 15-minute snapshot (data/premarket.json).
+  // from any site, so no server is needed). GIFT Nifty, Asia, currencies, gold and bond yields are real time; US futures
+  // and crude are 10 minutes late, and each tile says which. Nifty, Bank Nifty and VIX come from data/live.json (NSE's own
+  // feed) while it is fresh, and from TradingView's 15-minute-late copy otherwise. Free and unofficial: right for a
+  // glance, not a licensed feed. If it stops answering, the card keeps the snapshot (data/premarket.json).
   var LIVE_URL="https://scanner.tradingview.com/global/scan",LIVE_FUT="NSE:NIFTY1!",LIVE_GIFT="NSEIX:NIFTY1!";
   var LIVE_SET=[[LIVE_GIFT,"GIFT Nifty",1],["NSE:NIFTY","Nifty 50",2],["NSE:BANKNIFTY","Bank Nifty",2],["NSE:INDIAVIX","India VIX",2],
     ["CBOT_MINI:YM1!","Dow fut",0],["CME_MINI:ES1!","S&P 500 fut",2],["CME_MINI:NQ1!","Nasdaq fut",2],
     ["TVC:NI225","Nikkei",0],["TVC:HSI","Hang Seng",0],["TVC:KOSPI","KOSPI",2],
     ["FX_IDC:USDINR","USD/INR",3],["TVC:DXY","Dollar index",2],["ICEEUR:BRN1!","Brent",2],["TVC:GOLD","Gold",1],["TVC:US10Y","US 10Y",3]];
-  var lv={q:{},at:0,fails:0,timer:null,ok:false,started:false};
+  var lv={q:{},at:0,fails:0,timer:null,ok:false,started:false,nse:null,nseAt:0};
+  // NSE's own live Nifty, Bank Nifty and India VIX (data/live.json, refreshed every one to three minutes in the session by the
+  // fast lane) replace TradingView's 15-minute-late copies while they are fresh; the tile says how old they are.
+  var NSE_MAP={"NSE:NIFTY":"nifty","NSE:BANKNIFTY":"banknifty","NSE:INDIAVIX":"vix"};
+  function nseFetch(){
+    if(Date.now()-lv.nseAt<55000)return Promise.resolve();
+    lv.nseAt=Date.now();
+    return fetch("data/live.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).then(function(j){if(j&&j.instruments)lv.nse=j}).catch(function(){});
+  }
+  function nseQuote(k){
+    var n=lv.nse,i=n&&n.instruments&&n.instruments[NSE_MAP[k]];
+    if(!i||i.src!=="NSE"||typeof i.v!=="number")return null;
+    if(i.quality==="final")return nseOpen()?null:{px:i.v,ch:typeof i.chg_pct==="number"?i.chg_pct:null,dl:0,fin:true};
+    var at=Date.parse(i.as_of),age=isNaN(at)?null:Math.max(0,(Date.now()-at)/1000);
+    if(age==null||age>480||!nseOpen())return null;
+    return {px:i.v,ch:typeof i.chg_pct==="number"?i.chg_pct:null,dl:age>=90?age:0,nse:true};
+  }
   function tvNse(s){return "NSE:"+s.replace(/-/g,"_")}
   function liveMine(){var seen={};return hold.map(function(h){return String(h.s||"").toUpperCase()}).filter(function(s){if(!s||seen[s])return false;seen[s]=1;return true}).slice(0,24)}
   function liveFetch(){
@@ -598,7 +617,8 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
     clearTimeout(lv.timer);lv.timer=null;
     if(lv.busy||document.visibilityState==="hidden")return;   // a hidden page is picked up again when it's visible
     lv.busy=true;
-    liveFetch().then(function(q){
+    Promise.all([liveFetch(),nseFetch()]).then(function(r){
+      var q=r[0];Object.keys(NSE_MAP).forEach(function(k){var n=nseQuote(k);if(n)q[k]=n});
       var old=lv.q;lv.q=q;lv.at=Date.now();lv.fails=0;lv.ok=!!q[LIVE_GIFT]||Object.keys(q).length>=5;renderLive(old);
     }).catch(function(){lv.fails++;if(lv.fails>=3&&lv.ok){lv.ok=false;renderLive({})}}).then(function(){
       lv.busy=false;var d=ist(),wkend=d.getDay()===0||d.getDay()===6;
@@ -610,8 +630,8 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
   function liveTile(name,q,d,old){
     var t=el("div","tile"),b=el("b",null,num(q.px,d)),tr=el("div","tr");
     if(old&&old.px!==q.px)b.className=q.px>old.px?"tku":"tkd";
-    tr.append(el("span",q.ch==null?"flat":q.ch>=0?"up":"down",q.ch==null?"":sgn(q.ch,2)+"%"),q.dl?el("i","dl",Math.round(q.dl/60)+" min"):el("i","rt","\u25cf live"));
-    t.title=q.dl?name+": "+Math.round(q.dl/60)+" minutes delayed":name+": real time";
+    tr.append(el("span",q.ch==null?"flat":q.ch>=0?"up":"down",q.ch==null?"":sgn(q.ch,2)+"%"),q.fin?el("i","dl","close"):q.dl?el("i","dl",(q.nse?Math.max(1,Math.round(q.dl/60)):Math.round(q.dl/60))+" min"):el("i","rt","\u25cf live"));
+    t.title=q.fin?name+": last close from NSE":q.nse?name+(q.dl?": from NSE, "+Math.round(q.dl/60)+" minutes old":": from NSE, live"):q.dl?name+": "+Math.round(q.dl/60)+" minutes delayed":name+": real time";
     t.append(el("small",null,name),b,tr);
     return t;
   }
@@ -639,7 +659,7 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       box.appendChild(el("div","lbl","Your stocks"));
       var g2=el("div","also");mine.forEach(function(s){g2.appendChild(liveTile(s,lv.q[tvNse(s)],2,old[tvNse(s)]))});box.appendChild(g2);
     }
-    box.appendChild(el("p","lvnote","From TradingView's public data, read by your browser every 20 seconds. Tiles marked live are real time; the rest are delayed by the minutes shown (NSE 15, US futures 10). For a quick look, not for placing orders."));
+    box.appendChild(el("p","lvnote","Nifty 50, Bank Nifty and India VIX come from NSE's own feed, refreshed every one to three minutes in the session (a tile shows its age once it is over a minute and a half old); the rest from TradingView's public data, read by your browser every 20 seconds. Tiles marked live are real time; US futures and crude are 10 minutes delayed. For a quick look, not for placing orders."));
     if(gi){chip.hidden=false;chip.textContent="";chip.append(el("span","ldot"),document.createTextNode("GIFT "+num(gi.px,1)+" "),el("span",gi.ch==null?"flat":gi.ch>=0?"up":"down",gi.ch==null?"":sgn(gi.ch,2)+"%"))}
     else chip.hidden=true;
   }
@@ -670,7 +690,12 @@ document.getElementById("fb").onclick=function(){if(window.PulseAccess)PulseAcce
       cb.onchange=function(){var dn=pmDone().filter(function(x){return x!==i});if(cb.checked)dn.push(i);store(pmKey,JSON.stringify(dn));renderPM()};
       var body=el("div");
       body.append(el("div","ct",(i+1)+". "+c.title),el("div","cv "+d,c.value||""));
-      if(Array.isArray(c.detail)&&c.detail.length){var cd=el("div","cd");c.detail.forEach(function(t){cd.appendChild(el("div",null,t))});body.appendChild(cd)}
+      if(Array.isArray(c.detail)&&c.detail.length){
+        var cd=el("div","cd"),qc=c.quality==="realtime"?"rt":/^delayed|stale|unknown/.test(c.quality||"")?"dl":"st";
+        // the last line says where the numbers came from, whether they are real time, and as of when (premarket.py)
+        c.detail.forEach(function(t,k){cd.appendChild(el("div",c.quality&&k===c.detail.length-1?"cq "+qc:null,(c.quality&&k===c.detail.length-1?(qc==="rt"?"\u25cf ":qc==="dl"?"\u25cb ":""):"")+t))});
+        body.appendChild(cd);
+      }
       li.append(cb,el("span","ind "+d,ARROW[d]),body);ul.appendChild(li);
     });
 

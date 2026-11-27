@@ -104,7 +104,10 @@ jobs:
       timeout-minutes: 4
       env:
         DRY: ${{ github.ref != 'refs/heads/master' && '--dry-run' || '' }}
-      run: python pulsedge-bot/premarket.py $DRY | head -c 4000
+      # --if-stale: while the fast lane is refreshing premarket.json every few minutes, this run leaves it alone
+      run: |
+        python pulsedge-bot/premarket.py $DRY --if-stale 300 > "$RUNNER_TEMP/premarket.out"
+        head -c 3000 "$RUNNER_TEMP/premarket.out"
     - name: Track record
       timeout-minutes: 4
       env:
@@ -129,18 +132,19 @@ jobs:
       id: commit
       if: github.ref == 'refs/heads/master'
       run: |
-        FILES="pulsedge/data/feed.json pulsedge/data/universe.json pulsedge/data/premarket.json pulsedge/data/track.json pulsedge/data/flows.json pulsedge/data/reports.json pulsedge/data/paper.json pulsedge/data/newscal pulsedge/data/events.json pulsedge-bot/state"
+        FILES="pulsedge/data/feed.json pulsedge/data/universe.json pulsedge/data/premarket.json pulsedge/data/live.json pulsedge/data/track.json pulsedge/data/flows.json pulsedge/data/reports.json pulsedge/data/paper.json pulsedge/data/newscal pulsedge/data/events.json pulsedge-bot/state"
         FILES=$(for f in $FILES; do [ -e "$f" ] && echo "$f"; done)
         if [ -n "$(git status --porcelain $FILES)" ]; then
           git config user.name "pulsedge-bot"
           git config user.email "pulsedge-bot@users.noreply.github.com"
           git add $FILES
           git commit -q -m "PulsEdge news: $(date -u +%Y-%m-%dT%H:%MZ)"
-          # the fast lane pushes fast.json about once a minute; it never touches these files, so a rebase is clean
+          # the fast lane pushes fast.json and, every few minutes, premarket.json and live.json (this run skips those two
+          # while the fast lane is refreshing them); on a clash over them this run's copy wins and the next refresh replaces it
           ok=""
           for i in 1 2 3 4; do
             if git push -q; then ok=1; break; fi
-            git pull --rebase -q origin master || true
+            git pull --rebase -X theirs -q origin master || git rebase --abort || true
             sleep "$i"
           done
           [ -n "$ok" ] || { echo "push failed four times"; exit 1; }

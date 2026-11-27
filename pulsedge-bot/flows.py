@@ -204,6 +204,9 @@ def cash():
     opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
     try:
         get("https://www.nseindia.com/", opener)
+    except Exception:  # noqa: BLE001 - the home page answers 403 to cloud runners; its API still answers
+        pass
+    try:
         data = json.loads(get("https://www.nseindia.com/api/fiidiiTradeReact", opener,
                               referer="https://www.nseindia.com/reports/fii-dii"))
     except Exception as e:  # noqa: BLE001
