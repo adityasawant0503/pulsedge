@@ -281,13 +281,18 @@ def from_econ(today):
     """Curated world and India economic dates (ECON) from TradingView's calendar: (events, status)."""
     a = (today.replace(day=1) - timedelta(days=1)).replace(day=1)
     b = today + timedelta(days=75)
-    url = (f"{TV_ECON}?from={a.isoformat()}T00:00:00.000Z&to={b.isoformat()}T00:00:00.000Z&countries=" +
-           ",".join(sorted({c for c, *_ in ECON})))
+    # in windows of a month: the calendar returns at most about 2,000 events per request
+    rows, start = [], a
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json",
-                                                   "Origin": "https://in.tradingview.com", "Referer": "https://in.tradingview.com/"})
-        with urllib.request.urlopen(req, timeout=25) as r:
-            rows = (json.loads(r.read()) or {}).get("result") or []
+        while start < b:
+            stop = min(b, start + timedelta(days=31))
+            url = (f"{TV_ECON}?from={start.isoformat()}T00:00:00.000Z&to={stop.isoformat()}T00:00:00.000Z&countries=" +
+                   ",".join(sorted({c for c, *_ in ECON})))
+            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json",
+                                                       "Origin": "https://in.tradingview.com", "Referer": "https://in.tradingview.com/"})
+            with urllib.request.urlopen(req, timeout=25) as r:
+                rows += (json.loads(r.read()) or {}).get("result") or []
+            start = stop
     except Exception as e:  # noqa: BLE001 - the dates found earlier are kept
         return None, f"failed: {type(e).__name__} {str(e)[:80]}"
     out = {}
