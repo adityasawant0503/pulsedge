@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T14:30+05:30",
+ "updated": "2026-11-27T14:45+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -666,22 +666,6 @@
    "updated": "2026-11-27T04:10+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "CIPLA": {
-   "summary": "Cipla received US FDA approval for its generic Flovent asthma inhaler, while analysts debate how new US tariffs and a possible India‑US trade deal could affect its earnings.",
-   "why": "The FDA approval opens a US market for the drug, and any changes in tariffs or trade terms could directly impact the company’s profit margins.",
-   "upside": "A trade deal that lowers US taxes on Indian exports could boost Cipla’s sales and earnings.",
-   "downside": "Higher US import tariffs could make Cipra’s products more expensive in the US, hurting profitability.",
-   "watch": [
-    "Progress of the India‑US trade agreement and its impact on export taxes",
-    "Any revisions to US import tariffs affecting pharmaceutical imports",
-    "Market reaction and sales performance after the FDA generic approval"
-   ],
-   "about": "Cipla Ltd. is an Indian pharmaceutical company that develops and sells generic medicines.",
-   "basis": "35ed8783ff10",
-   "items": 3,
-   "updated": "2026-11-26T16:58+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "WELSPUNLIV": {
    "summary": "Welspun Living’s shares have risen over 110% year‑to‑date as the company pushes new capex projects for growth, but a possible US tariff on Indian goods could hit its margins.",
    "why": "Shareholders care because successful investments could boost earnings, while tariffs or execution problems could reduce profits.",
@@ -697,6 +681,22 @@
    "items": 3,
    "updated": "2026-11-26T13:31+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "CIPLA": {
+   "summary": "Cipla is in the news because of potential US trade changes. A new trade deal could lower US taxes on Indian goods, boosting sales, while new US tariffs could raise costs and hurt profits.",
+   "why": "Shareholders should watch because changes in US trade policy could affect Cipla's export sales and profit margins.",
+   "upside": "If the trade deal is finalized, lower US taxes could increase Cipla's exports and profits.",
+   "downside": "If US tariffs remain or increase, higher costs could reduce Cipla's competitiveness and earnings.",
+   "watch": [
+    "Status of the India-US trade deal negotiations",
+    "Final tariff rates on Indian pharmaceutical imports",
+    "Cipla's export sales volume to the US"
+   ],
+   "about": "Cipla operates in the healthcare sector.",
+   "basis": "8ceaa5ad1bec",
+   "items": 2,
+   "updated": "2026-11-27T14:45+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "SRF": {
    "summary": "SRF is being watched because new US taxes on imports could affect its business. Analysts suggest these changes might hurt profits if the company sells a lot to the US.",
@@ -1146,20 +1146,20 @@
    "model": "openai/gpt-oss-120b"
   },
   "MCX": {
-   "summary": "MCX shares rose recently as gold and silver prices rebounded after a sharp drop. The stock gained 3% on the latest trading day, outperforming many other small and mid-sized companies.",
-   "why": "When gold and silver prices move, more people trade them, which can increase the fees MCX collects. This activity directly affects the company's revenue and, in turn, the value of its shares.",
-   "upside": "If gold and silver prices stay high or continue to fluctuate, trading activity on the exchange could remain strong.",
-   "downside": "Commodity prices can fall quickly, which might reduce trading volumes and lower the exchange's income.",
+   "summary": "MCX shares rose 3% today as gold and silver prices climbed, boosting trading volumes on the exchange. The company is listed in the Nifty 500.",
+   "why": "Higher trading volumes in precious metals can increase MCX’s revenue, which matters to shareholders.",
+   "upside": "Higher commodity prices could lift trading activity and revenue.",
+   "downside": "Commodity prices may reverse or stabilize, reducing trading fees and revenue.",
    "watch": [
-    "Changes in gold and silver prices on the exchange",
-    "News about US Federal Reserve interest rate decisions",
-    "Overall trading volumes in the commodity sector"
+    "Gold and silver price movements",
+    "Fed rate hike bets affecting bullion prices",
+    "Trading volumes and fee income"
    ],
-   "about": "MCX is a platform where people and businesses trade commodities like gold and silver.",
-   "basis": "58eba44935b2",
-   "items": 8,
-   "updated": "2026-11-27T08:30+05:30",
-   "model": "qwen/qwen3.8-27b"
+   "about": "Multi Commodity Exchange of India Ltd. is a commodity exchange that facilitates trading in commodities.",
+   "basis": "70973daa4135",
+   "items": 7,
+   "updated": "2026-11-27T14:45+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "COALINDIA": {
    "summary": "Coal India’s subsidiary Mahanadi Coalfields Limited has launched an IPO and begun trading, with the shares opening at a 2% discount to the issue price. The parent company’s stock saw higher trading volume recently, while the broader oil & gas sector posted modest gains.",
