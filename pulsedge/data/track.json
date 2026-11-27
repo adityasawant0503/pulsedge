@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T13:32:07+05:30",
+ "updated": "2026-11-27T13:46:25+05:30",
  "summary": {
-  "calls": 2426,
-  "scored_calls": 1193,
+  "calls": 2428,
+  "scored_calls": 1195,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "b5f054d85dff11a8",
+   "symbol": "ONGC",
+   "time": "2026-11-27T13:33:55+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "ABS MARINE SERVICES: SECURES ₹120.14 CRORE CHARTER CONTRACT FOR PSV “EMERALD” FROM ONGC",
+   "url": "https://t.me/Indiaredboxglobal/10252",
+   "alert_px": 223.46,
+   "alert_move": 0.26,
+   "alert_at": "2026-11-27T13:34:31+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "7fad0ace6292c798",
+   "symbol": "BRITANNIA",
+   "time": "2026-11-27T13:31:10+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "BRITANNIA INDUSTRIES: CHIEF MARKETING OFFICER PUNEET DAS TO LEAVE POST ON DEC. 9",
+   "url": "https://t.me/Indiaredboxglobal/10251",
+   "alert_px": 5152.1,
+   "alert_move": -0.63,
+   "alert_at": "2026-11-27T13:31:30+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "4933db4d6f150155",
    "symbol": "TATASTEEL",

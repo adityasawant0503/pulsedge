@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T13:15+05:30",
+ "updated": "2026-11-27T13:46+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -619,20 +619,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India is seeing a favorable backdrop as global oil prices rise on Middle‑East supply worries, lifting the Oil & Gas sector modestly. At the same time, higher oil prices are pushing up Indian bond yields and weakening the rupee, raising cost concerns.",
-   "why": "Higher oil prices can boost Oil India's earnings, but a weaker rupee and higher borrowing costs could pressure margins.",
-   "upside": "If oil prices stay elevated or climb further, the company's revenue and profit could improve.",
-   "downside": "A drop in oil prices or tighter monetary policy from the RBI could hurt earnings and increase financing costs.",
+   "summary": "Oil India Ltd. is seeing higher oil prices due to supply worries and conflicts in the Middle East. At the same time, these rising oil costs are putting pressure on the Indian rupee and raising inflation worries in the broader economy.",
+   "why": "PulsEdge notes that higher oil prices can increase earnings for oil producers, but they can also lead to broader economic issues like higher inflation and interest rates.",
+   "upside": "Higher oil prices could boost earnings for oil producers like Oil India.",
+   "downside": "Oil prices are volatile and geopolitical tensions could de-escalate, causing prices to fall.",
    "watch": [
-    "Brent crude price movements, especially around the $95 per barrel level",
-    "Indian rupee exchange rate against the US dollar",
-    "RBI's stance on interest rates and inflation"
+    "Middle East supply news and conflicts",
+    "Crude oil price movements",
+    "Inflation and interest rate trends"
    ],
-   "about": "Oil India Ltd. explores and produces oil and gas in India.",
-   "basis": "56c55ff89932",
-   "items": 22,
-   "updated": "2026-11-27T12:00+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Oil India Ltd. operates in the oil, gas, and consumable fuels sector.",
+   "basis": "ba216d1cae48",
+   "items": 20,
+   "updated": "2026-11-27T13:46+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "BRIGADE": {
    "summary": "Brigade Enterprises disclosed a new credit rating and opened a 65,000 sq ft flexible workspace in Chennai, targeting ₹10 cr revenue and further expansion by FY28. The stock rose on strong Bangalore project sales and a broader rally in the realty sector, which hit a 52‑week high.",
@@ -1368,6 +1368,22 @@
    "items": 2,
    "updated": "2026-11-25T10:46+05:30",
    "model": "openai/gpt-oss-20b"
+  },
+  "ONGC": {
+   "summary": "ONGC awarded a multi‑year charter contract to ABS Marine Services for its offshore supply vessel Emerald, worth about ₹120.14 crore. The move shows the company is spending on offshore operations as its sector index posted modest gains.",
+   "why": "The contract adds a steady service expense that could influence ONGC’s profit margins and operational visibility.",
+   "upside": "The long‑term charter provides predictable operational capacity, which may help support ONGC’s business outlook.",
+   "downside": "The charter cost, though modest, could pressure margins if offshore spending rises faster than revenue.",
+   "watch": [
+    "Any additional offshore service contracts or spending by ONGC",
+    "Impact of the charter cost on ONGC’s quarterly margins",
+    "Performance of the Oil & Gas sector index in the coming sessions"
+   ],
+   "about": "ONGC is India’s largest integrated oil and gas exploration and production company.",
+   "basis": "bf3898e2cb91",
+   "items": 2,
+   "updated": "2026-11-27T13:46+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "ANGELONE": {
    "summary": "Angel One Ltd. has seen two senior resignations in quick succession, with a director and a senior manager stepping down. Meanwhile, its Financials sector index has risen about 2% recently.",
