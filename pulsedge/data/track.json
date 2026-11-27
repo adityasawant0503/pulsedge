@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T09:30:38+05:30",
+ "updated": "2026-11-27T09:45:48+05:30",
  "summary": {
-  "calls": 2386,
-  "scored_calls": 1153,
+  "calls": 2388,
+  "scored_calls": 1155,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -26,6 +26,36 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "049b3ffe2a3fa74e",
+   "symbol": "BLUESTARCO",
+   "time": "2026-11-27T09:33:11+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Urban Company gains 2% on AC biz entry; Voltas, Blue Star, Havells fall",
+   "url": "https://www.business-standard.com/markets/news/urban-company-gains-2-on-ac-biz-entry-voltas-blue-star-havells-fall-126112700181_1.html",
+   "alert_px": 1755.5,
+   "alert_move": -1.39,
+   "alert_at": "2026-11-27T09:45:37+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "049b3ffe2a3fa74e",
+   "symbol": "HAVELLS",
+   "time": "2026-11-27T09:33:11+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Urban Company gains 2% on AC biz entry; Voltas, Blue Star, Havells fall",
+   "url": "https://www.business-standard.com/markets/news/urban-company-gains-2-on-ac-biz-entry-voltas-blue-star-havells-fall-126112700181_1.html",
+   "alert_px": 1162.6,
+   "alert_move": -1.56,
+   "alert_at": "2026-11-27T09:45:37+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "b61aa9d93d4dc64b",
    "symbol": "BHARATCOAL",

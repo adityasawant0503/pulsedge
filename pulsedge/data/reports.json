@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T09:15+05:30",
+ "updated": "2026-11-27T09:45+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -459,6 +459,22 @@
    "updated": "2026-11-27T04:10+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "LGEINDIA": {
+   "summary": "LG Electronics India saw its shares drop about 3% after its parent announced a large stake sale, including a bulk deal of roughly ₹2,396 crore. The promoter plans to offload up to 2% of shares to meet public‑float rules, adding more supply to the market.",
+   "why": "More shares on the market can push the price lower for existing shareholders, and insider selling may raise concerns about the company’s outlook.",
+   "upside": "A broader market rally could help support the stock despite the share dilution.",
+   "downside": "The large stake sale and bulk deal increase share supply, which could further depress the price.",
+   "watch": [
+    "Execution of the promoter's 2% stake sale",
+    "Any additional bulk or block deals by LG Electronics Inc.",
+    "Potential impact of US proposed high taxes on Indian exports"
+   ],
+   "about": "LG Electronics India makes consumer durables such as home appliances and electronics.",
+   "basis": "7489a93d5e5c",
+   "items": 9,
+   "updated": "2026-11-27T09:45+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "MEDANTA": {
    "summary": "PulsEdge flagged a series of large block and bulk trades in Global Health Ltd. on 25 Nov, with both buying and selling by major investors at ₹1,460 per share. The healthcare sector index rose 2.1% in the last session.",
    "why": "These institutional trades can move the stock and signal how investors view the company's prospects.",
@@ -473,22 +489,6 @@
    "basis": "d650b0b12b4d",
    "items": 9,
    "updated": "2026-11-25T19:23+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "LGEINDIA": {
-   "summary": "LG Electronics India’s promoter, LG Electronics Inc., is selling up to 2% of its equity, including a bulk deal of 13.6 million shares worth about ₹2,396 crore, which caused the stock to fall around 3%.",
-   "why": "The increase in share supply can put downward pressure on the price for current shareholders, while the sale is aimed at meeting a regulatory public‑float requirement.",
-   "upside": "A broader market rally could offset the price pressure from the share sale.",
-   "downside": "Further insider selling, a larger block deal, or the impact of proposed US tariffs on Indian exports could push the stock lower.",
-   "watch": [
-    "Execution and size of the promoter’s 2% stake sale",
-    "Any additional bulk or block deals by LG Electronics Inc.",
-    "Progress on US tariff proposals affecting export‑focused firms"
-   ],
-   "about": "LG Electronics India Ltd. manufactures and sells consumer electronics and appliances in India.",
-   "basis": "248f0fead60a",
-   "items": 8,
-   "updated": "2026-11-27T04:10+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "IIFL": {
