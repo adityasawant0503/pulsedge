@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T12:45+05:30",
+ "updated": "2026-11-27T13:15+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged legal scrutiny for major banks like HDFC Bank and ICICI Bank, alongside regulatory reviews affecting APL Apollo Tubes. Meanwhile, oil prices rose due to Middle East supply worries, impacting government bonds and inflation concerns. Corporate updates included new drug delays for Zydus Life, share buyback plans for Supriya Lifescience, and a strong market debut for HEG Ltd's demerged business.",
+  "summary": "HEG Limited listed on NSE and BSE and announced a ₹650 crore expansion to boost graphite electrode capacity, raising hopes of higher future earnings but also execution risk. The Supreme Court ordered HDFC Bank and others to approve staff prosecution sanctions, adding legal scrutiny to the banking sector. Siemens Energy expressed confidence in winning a large VSC‑HVDC order in India next year, while Zydus Life saw a dip after the US FDA requested more information on a new drug. Oil prices edged up after a three‑week decline, and sector indices showed IT and realty leading gains, with consumer durables and FMCG falling.",
   "themes": [
-   "Legal and regulatory actions affecting major companies",
-   "Rising oil prices and inflation worries",
-   "Corporate developments including buybacks and business splits"
+   "Corporate expansion and capacity growth",
+   "Regulatory scrutiny on banks and steel deals",
+   "Oil price movement and sector performance"
   ],
   "watch": [
-   "Whether banks comply with prosecution sanctions and how regulators handle pending deals",
-   "Future movements in oil prices and their effect on inflation and bond yields",
-   "Updates on major order wins and regulatory drug approvals"
+   "HEG Limited’s expansion execution progress",
+   "Outcome of SEBI’s review of the Tata Steel‑APL Apollo deal",
+   "Oil price volatility and its impact on energy stocks"
   ],
   "date": "2026-11-27",
-  "basis": "0801e967a031",
-  "updated": "2026-11-27T12:16+05:30",
-  "model": "gemini-flash-lite-latest",
-  "items": 43
+  "basis": "4ce586df24a6",
+  "updated": "2026-11-27T13:15+05:30",
+  "model": "openai/gpt-oss-20b",
+  "items": 55
  },
  "stocks": {
   "BSE": {
@@ -380,20 +380,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "TATASTEEL": {
-   "summary": "Tata Steel is revising a deal with APL Apollo Tubes after buying a 9.91% stake for ₹5,825 crore. The deal is under SEBI scrutiny, and the company’s shares fell over 2% while the market rose.",
-   "why": "Shareholders should watch because the deal could change Tata Steel’s cash position and ownership structure, affecting future earnings.",
-   "upside": "If the restructuring succeeds, it could strengthen the company’s balance sheet.",
-   "downside": "Regulatory delays or a deal collapse could hurt the company’s financial health and share price.",
+   "summary": "Tata Steel is working to restructure its ₹5,825 cr deal to buy a 9.91% stake in APL Apollo Tubes, while the market regulator SEBI is examining the transaction for possible rule breaches. The scrutiny has caused volatility in related stocks and could affect the deal’s timing.",
+   "why": "Regulatory review and any changes to the deal could impact Tata Steel’s cash use, ownership structure and share price.",
+   "upside": "If SEBI clears the transaction and the restructuring proceeds smoothly, the deal could strengthen Tata Steel’s market position.",
+   "downside": "Regulatory penalties, delays or a forced redesign of the deal could hurt Tata Steel’s financials and share price.",
    "watch": [
-    "SEBI’s review of the Tata Steel–APL Apollo deal",
-    "Progress on the restructuring and deal‑structure tweaks",
-    "Tata Steel share price relative to the broader market"
+    "SEBI’s final decision on the Tata Steel‑APL Apollo transaction",
+    "Details of the revised deal structure announced by Tata Steel",
+    "Integration progress of APL Apollo Tubes into Tata Steel’s operations"
    ],
-   "about": "Tata Steel Ltd. operates in the metals and mining sector.",
-   "basis": "2b62dc11e7ea",
-   "items": 10,
-   "updated": "2026-11-27T12:00+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "Tata Steel manufactures steel and related products, and is one of India’s largest listed companies.",
+   "basis": "d037403d20cb",
+   "items": 12,
+   "updated": "2026-11-27T13:15+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "APLAPOLLO": {
    "summary": "APL Apollo Tubes shares fell sharply after a big Tata Steel stake purchase and broker downgrades, then jumped 4% as regulators may examine the deal. A large investor also sold a big block of shares recently.",
@@ -409,22 +409,6 @@
    "basis": "d7d49b204256",
    "items": 5,
    "updated": "2026-11-27T12:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "INDIANB": {
-   "summary": "Indian Bank’s shares are moving in line with the Financials sector, which rose 2.2% in the last session and 2.0% over the past five sessions.",
-   "why": "Sector strength can lift the bank’s stock, while a sector pull‑back could weigh on it.",
-   "upside": "Continued sector gains could boost Indian Bank’s share price.",
-   "downside": "A slowdown in the Financials sector could drag the stock lower.",
-   "watch": [
-    "Sector index performance",
-    "Upcoming earnings or regulatory updates for Indian Bank",
-    "Any changes in senior management or capital structure"
-   ],
-   "about": "Indian Bank is a commercial bank providing banking and financial services in India.",
-   "basis": "05cfe3da3f6a",
-   "items": 3,
-   "updated": "2026-11-25T19:23+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "SCHAEFFLER": {
@@ -1399,6 +1383,22 @@
    "basis": "12fded8e31ea",
    "items": 2,
    "updated": "2026-11-26T11:45+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "INDIANB": {
+   "summary": "Indian Bank is part of the Financials sector, which slipped 0.2% in the last session but has risen 2.6% over the past five sessions. No company‑specific news was reported in the recent headlines.",
+   "why": "Sector moves can influence the bank's share price, so investors watch the broader financial index.",
+   "upside": "A continued rise in the Financials sector could lift Indian Bank's stock.",
+   "downside": "A further dip in the sector could weigh on the bank's share price.",
+   "watch": [
+    "Sector performance trends for Financials",
+    "Upcoming earnings or regulatory disclosures from Indian Bank",
+    "Leadership or strategic changes at peer banks such as South Indian Bank"
+   ],
+   "about": "Indian Bank is a commercial bank that provides retail and corporate banking services in India.",
+   "basis": "a9435b3b8685",
+   "items": 2,
+   "updated": "2026-11-27T13:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "PATANJALI": {
