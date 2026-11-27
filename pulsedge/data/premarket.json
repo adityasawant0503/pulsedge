@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "updated": "2026-11-27T04:12:05+05:30",
+ "updated": "2026-11-27T08:17:08+05:30",
  "sentiment": "Neutral",
  "breadth": {
   "up": 1,
@@ -9,11 +9,11 @@
  "checklist": [
   {
    "title": "GIFT Nifty - opening indication",
-   "dir": "flat",
-   "value": "26,032.0 · +3 pts (+0.01%) · flat start indicated",
+   "dir": "down",
+   "value": "25,955.0 · -74 pts (-0.29%) · slightly lower start indicated",
    "detail": [
     "Nifty 50 last close 25,884.50 (+0.25%)",
-    "Implied open near 25,887",
+    "Implied open near 25,811",
     "Against Nifty futures' last close 26,029.4"
    ]
   },
@@ -25,7 +25,7 @@
     "Dow 50,182.95 +0.33%",
     "S&P 7,182.78 -0.25%",
     "Nasdaq 23,585.80 -0.62%",
-    "Nasdaq futures now +0.46%"
+    "Nasdaq futures now +2.07%"
    ]
   },
   {
@@ -33,8 +33,8 @@
    "dir": "up",
    "value": "Asia higher",
    "detail": [
-    "Nikkei 57,498.94 +0.86%",
-    "Hang Seng 22,226.89 +1.19%"
+    "Nikkei 58,171.82 +1.17%",
+    "Hang Seng 22,387.73 +0.72%"
    ]
   },
   {
@@ -42,17 +42,15 @@
    "dir": "flat",
    "value": "No major currency pressure",
    "detail": [
-    "DXY 103.76 +0.06%",
+    "DXY 103.65 -0.12%",
     "USD/INR 92.435 +0.00%"
    ]
   },
   {
    "title": "Brent crude level",
-   "dir": "down",
-   "value": "$91.67 +1.14%",
-   "detail": [
-    "Rising crude hurts India (OMCs, paints, aviation); helps upstream"
-   ]
+   "dir": "flat",
+   "value": "$92.19 +0.57%",
+   "detail": []
   },
   {
    "title": "India VIX",
@@ -61,37 +59,36 @@
    "detail": []
   }
  ],
- "summary": "Neutral setup. GIFT Nifty: flat start indicated (+3 pts); Brent up 1.14% — pressure on OMCs, paints and aviation.",
+ "summary": "Neutral setup. GIFT Nifty: slightly lower start indicated (-74 pts); NASDAQ closed 0.62% lower; IT may open soft.",
  "global_cues": [
-  "GIFT Nifty: flat start indicated (+3 pts)",
-  "Brent up 1.14% — pressure on OMCs, paints and aviation",
+  "GIFT Nifty: slightly lower start indicated (-74 pts)",
   "NASDAQ closed 0.62% lower; IT may open soft",
   "Nikkei up, Hang Seng up"
  ],
  "india_triggers": [
-  "3 filings and headlines worth a look so far today"
+  "9 filings and headlines worth a look so far today"
  ],
  "focus": [
   {
-   "symbol": "ACMESOLAR",
-   "note": "Acme Solar Holdings Limited: ACME Solar Holdings Limited has informed "
+   "symbol": "HDFCBANK",
+   "note": "SC asks HDFC Bank, three others to ok staff prosecution"
+  },
+  {
+   "symbol": "OIL",
+   "note": "Brent trades near month's high as Mideast conflict threatens supply"
+  },
+  {
+   "symbol": "TATAPOWER",
+   "note": "Tata Power: Opportunity or value trap as ambitious growth plans meet e"
   }
  ],
  "sector_tags": [
-  {
-   "label": "Upstream oil",
-   "tone": "positive"
-  },
-  {
-   "label": "OMCs",
-   "tone": "negative"
-  },
   {
    "label": "IT",
    "tone": "watch"
   }
  ],
- "key_risk": "A further crude spike would hit OMCs and widen the INR move",
+ "key_risk": "",
  "also": [
   {
    "name": "BANK NIFTY",
@@ -100,33 +97,33 @@
   },
   {
    "name": "S&P FUT",
-   "value": "7,234",
-   "change": 0.54
+   "value": "7,296",
+   "change": 1.39
   },
   {
    "name": "NASDAQ FUT",
-   "value": "26,221",
-   "change": 0.46
+   "value": "26,640",
+   "change": 2.07
   },
   {
    "name": "KOSPI",
-   "value": "4,711",
-   "change": 0.29
+   "value": "4,838",
+   "change": 2.69
   },
   {
    "name": "WTI",
-   "value": "84.91",
-   "change": 1.47
+   "value": "85.66",
+   "change": 2.37
   },
   {
    "name": "GOLD",
-   "value": "3,566",
-   "change": -0.64
+   "value": "3,626",
+   "change": 1.01
   },
   {
    "name": "US 10Y",
-   "value": "4.86",
-   "change": -1.3
+   "value": "4.90",
+   "change": 0.82
   }
  ],
  "source": "TradingView / CNBC / Yahoo Finance (unofficial; NSE prices 15 min delayed)"

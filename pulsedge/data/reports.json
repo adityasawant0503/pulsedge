@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T04:10+05:30",
+ "updated": "2026-11-27T08:16+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,24 +57,72 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge noted key updates from the Indian stock market on Friday, 27 November 2026. ACME Solar started a new hybrid power project, while Swaraj Suiting received initial approval to raise funds by issuing new shares. Additionally, IFGL Refractories announced a change in its top management. Meanwhile, sector performance varied, with IT and Realty leading the gains, while Consumer Durables and FMCG saw losses.",
+  "summary": "Asian stocks rose for a second day, with Indian IT and Realty sectors leading the gains. Oil prices climbed near monthly highs due to Middle East conflicts, which may benefit oil producers. The Supreme Court ordered major banks to approve staff prosecutions, creating some legal uncertainty. A new coal company is set to start trading on the Mumbai stock exchange.",
   "themes": [
-   "New energy projects and business expansion",
-   "Company fundraising and management changes",
-   "Mixed sector performance between technology and consumer goods"
+   "Rising oil prices driven by geopolitical tensions in the Middle East",
+   "Strong performance in IT and Realty sectors while consumer stocks lagged",
+   "Legal and regulatory updates affecting banks and new market listings"
   ],
   "watch": [
-   "Execution of upcoming solar and hybrid power projects",
-   "Impact of new share issues on existing shareholders",
-   "Strategic direction following top management changes"
+   "How banks respond to the Supreme Court's order on staff prosecutions",
+   "Whether Middle East conflicts continue to push oil prices higher",
+   "The initial trading performance of Mahanadi Coalfields' new listing"
   ],
   "date": "2026-11-27",
-  "basis": "51619c673d10",
-  "updated": "2026-11-27T04:10+05:30",
-  "model": "gemini-flash-lite-latest",
-  "items": 3
+  "basis": "5d6b8563fd41",
+  "updated": "2026-11-27T08:16+05:30",
+  "model": "qwen/qwen3.8-27b",
+  "items": 9
  },
  "stocks": {
+  "ICICIBANK": {
+   "summary": "ICICI Bank shares jumped about 4% to a record high as the broader market rallied, but the Supreme Court has ordered the bank to approve prosecution sanctions, putting legal scrutiny on its doorstep.",
+   "why": "Legal scrutiny could affect the bank’s reputation and share price, while the recent price surge shows strong short‑term momentum that could reverse.",
+   "upside": "If the bank complies with the court’s order, the reputational impact may be limited.",
+   "downside": "The legal probe and a possible earnings miss could erode the recent gains.",
+   "watch": [
+    "Compliance with the Supreme Court’s prosecution order",
+    "Upcoming earnings results",
+    "Valuation comparison with HDFC and Axis banks"
+   ],
+   "about": "ICICI Bank Ltd. is one of India’s largest banks offering a range of financial services.",
+   "basis": "cc263bb6540a",
+   "items": 4,
+   "updated": "2026-11-27T08:16+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "HDFCBANK": {
+   "summary": "PulsEdge noted that HDFC Bank's market value recently jumped, pushing it ahead of Airtel in size. At the same time, the Supreme Court ordered the bank to approve staff prosecution sanctions. Experts have also compared the bank with its peers, favoring it on valuation.",
+   "why": "This matters because legal scrutiny can hurt reputation and cause share declines, while valuation views can affect short-term demand.",
+   "upside": "Valuation arguments and a strong recent price rise could support the stock, though profit-taking might reverse these gains.",
+   "downside": "Legal scrutiny and compliance orders could hurt the bank's reputation and lead to share declines.",
+   "watch": [
+    "Whether the bank complies with the Supreme Court prosecution order",
+    "If profit-taking reverses the recent price gains",
+    "Changes in short-term demand driven by expert valuation views"
+   ],
+   "about": "HDFC Bank Ltd. is a major financial services company and one of India's 50 largest listed companies.",
+   "basis": "286375ee8d4f",
+   "items": 3,
+   "updated": "2026-11-27T08:16+05:30",
+   "model": "gemini-flash-lite-latest"
+  },
+  "PNB": {
+   "summary": "Punjab National Bank signed a preliminary agreement with Deutsche Bank to explore funding for business acquisitions. This move aims to help the bank earn more fees by assisting companies that are buying other businesses.",
+   "why": "If this partnership leads to actual deals, it could create a new source of income for the bank. This might be important for shareholders because it shows the bank is looking for ways to grow its earnings.",
+   "upside": "The bank could earn additional fees if the partnership results in successful acquisition financing deals.",
+   "downside": "The agreement is only a memorandum of understanding, so it may not turn into real business or extra income.",
+   "watch": [
+    "Whether the MOU with Deutsche Bank turns into actual funded deals",
+    "How the broader financial sector performs in the coming days",
+    "Any updates on the bank's specific business activities"
+   ],
+   "about": "Punjab National Bank is a financial services company listed in India's Nifty 500 index.",
+   "basis": "04c9d56eb142",
+   "items": 3,
+   "updated": "2026-11-27T08:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "TORNTPOWER": {
    "summary": "Torrent Power announced a share allotment, bought 100% of Torrent Urja 42 Private Ltd., and plans to acquire newly formed companies, all aimed at raising capital and expanding assets.",
    "why": "Shareholders could face dilution from the new shares while also seeing potential earnings growth from the acquisitions, though higher debt may affect cash flow.",
@@ -107,6 +155,22 @@
    "updated": "2026-11-25T15:02+05:30",
    "model": "openai/gpt-oss-20b"
   },
+  "SUPREMEIND": {
+   "summary": "PulsEdge flagged headlines about Supreme Court actions regarding bank staff prosecution and food labeling, but these events do not involve Supreme Industries Ltd. The company is part of the Nifty 500 index and operates in the Capital Goods sector.",
+   "why": "These specific news items do not directly impact Supreme Industries, so they do not change the outlook for its shares based on the provided facts.",
+   "upside": "",
+   "downside": "",
+   "watch": [
+    "Future news specifically mentioning Supreme Industries Ltd.",
+    "General trends in the Capital Goods sector",
+    "Updates on the Nifty 500 index performance"
+   ],
+   "about": "Supreme Industries Ltd. is a company in the Capital Goods sector.",
+   "basis": "c15e125df316",
+   "items": 2,
+   "updated": "2026-11-27T08:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
   "LT": {
    "summary": "L&T has won a ₹2,500 crore battery storage contract in Gujarat and another contract valued between ₹10 billion and ₹25 billion. Both deals are expected to add to its revenue.",
    "why": "These contracts can increase the company’s top‑line and earnings, which matters to shareholders.",
@@ -122,6 +186,38 @@
    "items": 2,
    "updated": "2026-11-26T10:00+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "PNBHOUSING": {
+   "summary": "PulsEdge flagged a Supreme Court order requiring HDFC Bank and other institutions to approve staff prosecutions. This legal development is currently affecting the broader financial services sector, where PNB Housing Finance operates.",
+   "why": "Legal scrutiny can impact the reputation of financial institutions and may lead to share price declines. Since PNB Housing Finance is part of this sector, it may face similar market reactions.",
+   "upside": "",
+   "downside": "If the legal issues lead to significant reputational damage or regulatory penalties, it could negatively affect the company's stock price.",
+   "watch": [
+    "How the Supreme Court's order impacts other financial institutions",
+    "Any specific legal actions or penalties involving PNB Housing Finance",
+    "Overall performance of the Financials sector index"
+   ],
+   "about": "PNB Housing Finance Ltd. is a company in the Financial Services sector.",
+   "basis": "bc91c7555b75",
+   "items": 1,
+   "updated": "2026-11-27T08:16+05:30",
+   "model": "qwen/qwen3.8-27b"
+  },
+  "SAMMAANCAP": {
+   "summary": "Sammaan Capital is part of the Financial Services sector, which saw a slight drop in the last session but rose over the past week. Recent news in this sector involved the Supreme Court ordering major banks to approve staff prosecutions, though this did not directly name Sammaan Capital.",
+   "why": "Investors in financial stocks may see their share values move in line with the broader sector, which has shown mixed short-term results.",
+   "upside": "The financial sector index has gained 2.6% over the last five sessions, suggesting some recent momentum.",
+   "downside": "Legal issues involving major banks in the sector could hurt investor confidence and lead to share price declines.",
+   "watch": [
+    "How the financial sector index performs in the coming days",
+    "Any further legal developments involving major banks",
+    "Sammaan Capital's specific stock price movement relative to the sector"
+   ],
+   "about": "",
+   "basis": "bc91c7555b75",
+   "items": 1,
+   "updated": "2026-11-27T08:16+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "ENRIN": {
    "summary": "Siemens Energy India reported strong growth in its second quarter, with revenue rising to 34.5 billion rupees from 26.5 billion rupees in the same period last year. The company also saw increases in profit and EBITDA.",
@@ -475,19 +571,19 @@
    "model": "gemini-flash-lite-latest"
   },
   "JWL": {
-   "summary": "Jupiter Wagons announced a joint venture with a South Korean firm to build metro trains and plans to invest 1,000 crore rupees in its passenger rail business over the next three years. Following these announcements, the company's share price rose sharply, jumping 30% in two days.",
-   "why": "These moves suggest the company is expanding into new areas and investing in growth, which could lead to higher future earnings for shareholders. However, the recent sharp rise in the stock price may not be sustainable if the market adjusts to the news.",
-   "upside": "The new partnership and heavy investment could open up significant new revenue streams and boost future profits.",
-   "downside": "Spending heavily on new projects might strain the company's cash flow and reduce profits in the short term, and the stock price could fall back after its recent rapid increase.",
+   "summary": "Jupiter Wagons shares rose sharply after the company announced a joint venture with a South Korean firm to build metro trains. The company also stated it plans to invest 1,000 crore rupees in its passenger rail business over the next three years.",
+   "why": "These moves show the company is expanding into new areas and investing heavily to grow, which could increase future earnings for shareholders.",
+   "upside": "Building metro trains opens a new source of income, and the large investment may lead to higher profits later.",
+   "downside": "Spending so much money now could reduce cash available for other needs and lower short-term profits, and the stock price might drop after its recent sharp rise.",
    "watch": [
-    "Details on the size and value of the new business agreements.",
-    "How the company manages its cash flow during the heavy investment period.",
-    "Progress in setting up the joint venture for metro train manufacturing."
+    "How the partnership with the South Korean firm progresses",
+    "Whether the company can manage its cash flow during the heavy spending period",
+    "If the stock price stabilizes after the recent jump"
    ],
    "about": "Jupiter Wagons is a capital goods company that manufactures railway wagons and is part of the Nifty 500 index.",
-   "basis": "b638b9689662",
-   "items": 4,
-   "updated": "2026-11-26T12:45+05:30",
+   "basis": "ce290dfb71b4",
+   "items": 3,
+   "updated": "2026-11-27T08:16+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "SUZLON": {
@@ -522,22 +618,6 @@
    "updated": "2026-11-26T04:23+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "TMPV": {
-   "summary": "Tata Motors Passenger Vehicles announced a 0.5% price increase for its cars and SUVs starting Dec 1, 2026. The auto sector index fell 1% in the last session but is up 3.3% over five sessions.",
-   "why": "Shareholders care because higher prices could boost profit per vehicle but might also curb sales if buyers react to higher costs.",
-   "upside": "If demand remains steady, the price hike could improve margins.",
-   "downside": "If customers are price‑sensitive, sales volumes could decline.",
-   "watch": [
-    "Sales response to the Dec 1 price increase",
-    "Further movements in the auto sector index",
-    "Any additional price changes or cost pressures"
-   ],
-   "about": "Tata Motors Passenger Vehicles Ltd designs, manufactures and sells cars and SUVs in India.",
-   "basis": "d5524853d855",
-   "items": 2,
-   "updated": "2026-11-24T15:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "ALKEM": {
    "summary": "PulsEdge flagged a large block deal where an investor sold about ₹182 crore of Alkem Laboratories shares. On the same day, three major mutual funds bought a combined total of ₹144 crore in the stock.",
    "why": "These trades show that large investors are actively trading the stock, which can affect its price and liquidity. The mix of buying and selling suggests different views on the company's value.",
@@ -555,36 +635,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil India Ltd. is facing mixed signals as global oil prices have recently risen due to supply concerns in the Middle East, while the Indian rupee has weakened against the dollar. This combination makes imported oil more expensive, which can impact costs for companies in the sector, though the broader Indian stock market saw a strong rally in the same period.",
-   "why": "For a shareholder, rising oil prices can boost company profits, but a weaker rupee increases the cost of any imported fuel or equipment, potentially squeezing margins. Additionally, if high oil prices lead to higher interest rates, borrowing costs for the company may increase.",
-   "upside": "Higher global oil prices could lead to increased revenue and profits for the company if it can manage its costs effectively.",
-   "downside": "A continued weakening of the rupee makes imported oil more expensive, and potential interest rate hikes could increase the company's borrowing costs.",
+   "summary": "Oil prices are climbing as Middle‑East tensions raise supply concerns, while the rupee has been volatile against the dollar. The oil‑and‑gas sector index is modestly higher, which reflects a generally positive market tone for producers like Oil India.",
+   "why": "Higher crude prices can lift Oil India’s revenue, but a weaker rupee makes imported oil costlier, which could squeeze margins.",
+   "upside": "If Brent stays near the month’s high, Oil India could see stronger earnings from higher oil prices.",
+   "downside": "A drop in oil prices or further rupee depreciation could reduce profits and increase import costs.",
    "watch": [
-    "Changes in global oil prices due to Middle East supply issues",
-    "The value of the Indian rupee against the US dollar",
-    "Decisions by the Reserve Bank of India regarding interest rates"
+    "Brent crude price trends",
+    "INR/USD exchange rate movements",
+    "RBI policy signals on interest rates and inflation"
    ],
-   "about": "Oil India Ltd. is a company in the Oil Gas & Consumable Fuels sector.",
-   "basis": "9f5b98172dc8",
-   "items": 19,
-   "updated": "2026-11-27T04:10+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "ZYDUSLIFE": {
-   "summary": "Zydus Lifesciences has received FDA responses for its U.S. subsidiary’s drug and API plant, earned an EIR for a new factory in Ahmedabad, set up a wholly‑owned Australian subsidiary, and announced acquisitions of new companies.",
-   "why": "These developments affect the company’s ability to sell products internationally and its cash position, which matters to shareholders.",
-   "upside": "FDA approvals could open U.S. sales and the new facilities may boost production and tax efficiency.",
-   "downside": "FDA responses and inspection observations could delay sales, and the acquisitions could strain finances.",
-   "watch": [
-    "FDA response timeline for the drug and API plant",
-    "Outcome of the U.S. FDA inspection of the Ankleshwar plant",
-    "Regulatory approvals for the Australian subsidiary"
-   ],
-   "about": "Zydus Lifesciences is a pharmaceutical company that develops and sells medicines.",
-   "basis": "4f4e642c9b13",
-   "items": 5,
-   "updated": "2026-11-26T16:58+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "Oil India Ltd. explores, produces and markets crude oil and natural gas in India.",
+   "basis": "20bc2e09d3eb",
+   "items": 20,
+   "updated": "2026-11-27T08:16+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "COFORGE": {
    "summary": "Coforge won an award for its AI product EvolveOps.AI and announced enhancements to its Nuuron security platform. At the same time, a major investor may sell up to 10% of its stake and a large block deal is rumored for next week.",
@@ -650,6 +714,22 @@
    "updated": "2026-11-26T16:58+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "ZYDUSLIFE": {
+   "summary": "Zydus Lifesciences has received FDA responses for its U.S. subsidiary’s drug and API plant, earned an EIR for a new factory in Ahmedabad, set up a wholly‑owned Australian subsidiary, and announced acquisitions of new companies.",
+   "why": "These developments affect the company’s ability to sell products internationally and its cash position, which matters to shareholders.",
+   "upside": "FDA approvals could open U.S. sales and the new facilities may boost production and tax efficiency.",
+   "downside": "FDA responses and inspection observations could delay sales, and the acquisitions could strain finances.",
+   "watch": [
+    "FDA response timeline for the drug and API plant",
+    "Outcome of the U.S. FDA inspection of the Ankleshwar plant",
+    "Regulatory approvals for the Australian subsidiary"
+   ],
+   "about": "Zydus Lifesciences is a pharmaceutical company that develops and sells medicines.",
+   "basis": "4f4e642c9b13",
+   "items": 5,
+   "updated": "2026-11-26T16:58+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "WELSPUNLIV": {
    "summary": "Welspun Living’s shares have risen over 110% year‑to‑date as the company pushes new capex projects for growth, but a possible US tariff on Indian goods could hit its margins.",
    "why": "Shareholders care because successful investments could boost earnings, while tariffs or execution problems could reduce profits.",
@@ -666,22 +746,6 @@
    "updated": "2026-11-26T13:31+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "HYUNDAI": {
-   "summary": "Hyundai Motor India announced a price increase of up to INR 8,000 per vehicle effective Dec 1, 2026, citing higher input costs. The move could boost profit per car but may also dampen demand if buyers react negatively.",
-   "why": "Shareholders need to watch how the price hike affects sales volume and margins.",
-   "upside": "If customers continue buying, the higher prices could improve the company’s profit margins.",
-   "downside": "If the price rise deters buyers, sales could fall and the firm might lose market share to rivals.",
-   "watch": [
-    "Actual sales impact after the December price hike",
-    "Competitors' pricing response",
-    "Auto sector index trend and broader market sentiment"
-   ],
-   "about": "Hyundai Motor India Ltd. manufactures and sells automobiles in India.",
-   "basis": "4acb0afbbdbd",
-   "items": 3,
-   "updated": "2026-11-25T08:17+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "SRF": {
    "summary": "SRF is being watched because new US taxes on imports could affect its business. Analysts suggest these changes might hurt profits if the company sells a lot to the US.",
    "why": "If SRF sells products to the US, higher taxes make those products more expensive for American buyers. This could reduce how much SRF sells and lower its earnings.",
@@ -696,22 +760,6 @@
    "basis": "8ceaa5ad1bec",
    "items": 2,
    "updated": "2026-11-26T19:22+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "GLAXO": {
-   "summary": "GlaxoSmithKline Pharmaceuticals recently received approval for a new medicine called BLENREP, which treats a type of blood cancer. The company also informed the stock exchange about a recent order or decision made by a regulatory body.",
-   "why": "The new drug approval could lead to higher sales, while the regulatory order might affect the company's costs or how it operates.",
-   "upside": "Selling the newly approved BLENREP medicine could bring in additional revenue for the company.",
-   "downside": "The regulatory order could result in fines or restrictions on the company's operations.",
-   "watch": [
-    "Details of the regulatory order and any associated fines",
-    "Sales performance of the new BLENREP medicine",
-    "Future updates from the company regarding the regulatory matter"
-   ],
-   "about": "GlaxoSmithKline Pharmaceuticals is a healthcare company listed on the NSE.",
-   "basis": "f0056769b147",
-   "items": 2,
-   "updated": "2026-11-26T16:01+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "ADANIPOWER": {
@@ -777,22 +825,6 @@
    "items": 1,
    "updated": "2026-11-25T10:32+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "GLAND": {
-   "summary": "Gland Pharma said it received an Establishment Inspection Report (EIR) from the US FDA for its new sterile oncology formulations facility. The letter indicates the factory meets US regulator’s expectations, but approval is not final.",
-   "why": "The EIR could clear the way for the company to sell its oncology medicines in the United States, which may affect earnings for shareholders.",
-   "upside": "If the FDA grants full approval, the company could start exporting to the US market, boosting revenue.",
-   "downside": "The EIR is only an interim step; additional regulatory requirements could delay or block US market entry.",
-   "watch": [
-    "Final FDA approval for the VSEZ facility",
-    "Any further regulatory feedback from USFDA",
-    "Healthcare sector index trends"
-   ],
-   "about": "Gland Pharma manufactures sterile oncology drug formulations.",
-   "basis": "336b49bb7c70",
-   "items": 1,
-   "updated": "2026-11-24T12:15+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "LLOYDSME": {
    "summary": "Lloyds Metals and Energy Ltd announced a capital raise by issuing new securities, an acquisition of another company, and a private placement of non‑convertible debentures worth up to ₹750 crore at 9% interest. The metals sector index has been falling, adding market pressure.",
@@ -970,22 +1002,6 @@
    "updated": "2026-11-25T12:45+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "ENGINERSIN": {
-   "summary": "Engineers India Ltd (ENGINERSIN) is currently listed in the Nifty 500, which tracks India’s 500 largest listed companies. No recent company‑specific announcements have been flagged by PulsEdge. The stock remains part of the broader construction sector.",
-   "why": "Being in the Nifty 500 means the company is exposed to index‑linked investment flows, which can affect its share price.",
-   "upside": "",
-   "downside": "",
-   "watch": [
-    "New order or contract announcements",
-    "Quarterly earnings release",
-    "Construction sector policy changes"
-   ],
-   "about": "Engineers India Ltd provides engineering and construction services.",
-   "basis": "6536a6aa70b0",
-   "items": 3,
-   "updated": "2026-11-26T08:45+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "VIJAYA": {
    "summary": "Vijaya Diagnostic Centre has completed the acquisition of the diagnostic business from Arya Wellness Centre in Guwahati. The company has also filed an update with the stock exchange regarding this acquisition.",
    "why": "This move expands the company's presence in a new region, which could potentially increase its revenue and market reach for existing shareholders.",
@@ -1146,22 +1162,6 @@
    "updated": "2026-11-26T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "KFINTECH": {
-   "summary": "KFin Technologies shares jumped about 7% after excitement around the Mahanadi Coalfields IPO, while recent filings noted a change in its corporate office address as the registrar for other listed firms.",
-   "why": "The move shows market sensitivity to IPO‑related buzz and corporate updates, which can affect the stock’s short‑term price for shareholders.",
-   "upside": "Further upside is possible if the IPO excitement continues and draws more investor interest.",
-   "downside": "The price could reverse if the IPO buzz fades or the market digests the recent address change announcements.",
-   "watch": [
-    "Mahanadi Coalfields IPO developments",
-    "Any further price movement after the 7% jump",
-    "Additional corporate announcements from KFin Technologies"
-   ],
-   "about": "KFin Technologies provides registrar and share transfer agent services to listed companies.",
-   "basis": "e7a19e3a6081",
-   "items": 3,
-   "updated": "2026-11-26T13:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "EICHERMOT": {
    "summary": "Eicher Motors disclosed a court or regulator decision affecting it and announced a Rs 1,000 crore MoU with the Tamil Nadu government to expand its electric‑vehicle ecosystem.",
    "why": "Shareholders need to watch the legal outcome for potential financial impact and the EV investment for future growth prospects.",
@@ -1178,52 +1178,20 @@
    "updated": "2026-11-26T12:15+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "ICICIBANK": {
-   "summary": "ICICI Bank shares jumped about 4% to a record high, riding a broad market rally that lifted the Financials index by over 2%. Analysts are comparing its valuation with HDFC and Axis banks, favoring those peers.",
-   "why": "Shareholders see strong short‑term momentum, but valuation concerns could limit price gains.",
-   "upside": "If the bank’s earnings meet expectations, the rally could extend.",
-   "downside": "A miss on earnings or valuation worries could trigger a price correction.",
+  "KFINTECH": {
+   "summary": "KFin Technologies shares jumped about 7% after excitement around the Mahanadi Coalfields IPO, while recent filings noted a change in its corporate office address as the registrar for other listed firms.",
+   "why": "The move shows market sensitivity to IPO‑related buzz and corporate updates, which can affect the stock’s short‑term price for shareholders.",
+   "upside": "Further upside is possible if the IPO excitement continues and draws more investor interest.",
+   "downside": "The price could reverse if the IPO buzz fades or the market digests the recent address change announcements.",
    "watch": [
-    "Valuation relative to HDFC and Axis banks",
-    "Upcoming earnings release",
-    "Overall Bank Nifty and market trend"
+    "Mahanadi Coalfields IPO developments",
+    "Any further price movement after the 7% jump",
+    "Additional corporate announcements from KFin Technologies"
    ],
-   "about": "ICICI Bank Ltd. is a leading Indian bank offering a range of financial services.",
-   "basis": "55558f54ae44",
+   "about": "KFin Technologies provides registrar and share transfer agent services to listed companies.",
+   "basis": "e7a19e3a6081",
    "items": 3,
-   "updated": "2026-11-26T12:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "CLEANMAX": {
-   "summary": "Clean Max Enviro Energy Solutions has announced it is acquiring another business while also selling off a subsidiary and other assets. These moves happened within the last two days, signaling a major shift in the company's structure.",
-   "why": "These changes could alter the company's future earnings and debt levels, which directly affects the value of its shares. The mix of buying and selling makes it hard to predict the immediate financial impact.",
-   "upside": "The acquisition could help the company grow its operations faster if the new business performs well.",
-   "downside": "Buying a new business costs money and may add debt, while selling assets could reduce the company's long-term growth potential.",
-   "watch": [
-    "How much debt the acquisition adds to the company",
-    "Which specific assets are being sold and for how much",
-    "How the broader energy sector performs, as it has recently fallen"
-   ],
-   "about": "Clean Max Enviro Energy Solutions is a company in the power sector.",
-   "basis": "5e622653014e",
-   "items": 3,
-   "updated": "2026-11-25T15:15+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "HDFCBANK": {
-   "summary": "HDFC Bank’s market value jumped about 30% from its October low, moving it ahead of Airtel in market‑cap ranking, while the Financials index rose around 2% recently.",
-   "why": "Shareholders see the rapid price rise and favorable valuation comparisons could affect short‑term demand for the stock.",
-   "upside": "If the momentum and valuation favorability continue, the share price could keep climbing.",
-   "downside": "Profit‑taking could reverse the recent gains.",
-   "watch": [
-    "Potential profit‑taking pressure",
-    "Financials sector performance",
-    "Valuation comparisons with ICICI and Axis banks"
-   ],
-   "about": "HDFC Bank is a leading Indian private‑sector bank offering a range of banking and financial services.",
-   "basis": "bdefc67d83d9",
-   "items": 2,
-   "updated": "2026-11-26T12:15+05:30",
+   "updated": "2026-11-26T13:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "ADANIENT": {
@@ -1258,20 +1226,20 @@
    "updated": "2026-11-26T13:31+05:30",
    "model": "openai/gpt-oss-120b"
   },
-  "TMCV": {
-   "summary": "Tata Motors is raising the prices of its cars and SUVs by an average of 0.5% starting December 1, 2026. This move is a response to rising costs for the materials used to build the vehicles.",
-   "why": "This matters to share owners because higher prices can help the company maintain its profit levels despite increased production costs.",
-   "upside": "The price increase may help the company keep its profits steady as input costs rise.",
-   "downside": "Customers might buy fewer cars if they find the new prices too high, which could lower overall sales.",
+  "CLEANMAX": {
+   "summary": "Clean Max Enviro Energy Solutions has announced it is acquiring another business while also selling off a subsidiary and other assets. These moves happened within the last two days, signaling a major shift in the company's structure.",
+   "why": "These changes could alter the company's future earnings and debt levels, which directly affects the value of its shares. The mix of buying and selling makes it hard to predict the immediate financial impact.",
+   "upside": "The acquisition could help the company grow its operations faster if the new business performs well.",
+   "downside": "Buying a new business costs money and may add debt, while selling assets could reduce the company's long-term growth potential.",
    "watch": [
-    "How many cars are sold after the December 1 price change",
-    "Whether other car companies also raise their prices",
-    "Changes in the cost of raw materials for manufacturing"
+    "How much debt the acquisition adds to the company",
+    "Which specific assets are being sold and for how much",
+    "How the broader energy sector performs, as it has recently fallen"
    ],
-   "about": "Tata Motors is a car maker that sells passenger vehicles, including cars and SUVs.",
-   "basis": "7dc6a4fe045f",
-   "items": 2,
-   "updated": "2026-11-25T08:17+05:30",
+   "about": "Clean Max Enviro Energy Solutions is a company in the power sector.",
+   "basis": "5e622653014e",
+   "items": 3,
+   "updated": "2026-11-25T15:15+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "HINDZINC": {
@@ -1321,22 +1289,6 @@
    "items": 2,
    "updated": "2026-11-26T11:45+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "PNB": {
-   "summary": "Punjab National Bank signed a preliminary agreement with Deutsche Bank to explore joint financing for business acquisitions. This partnership aims to help PNB earn fees by arranging loans for companies buying other businesses.",
-   "why": "If this collaboration leads to actual deals, it could provide the bank with an additional source of income from fees. This may help support the bank's overall earnings.",
-   "upside": "The partnership could generate new fee income if it successfully arranges loans for corporate acquisitions.",
-   "downside": "The agreement is currently just a memorandum of understanding, so it may not result in any actual business or revenue.",
-   "watch": [
-    "Whether the MOU turns into specific financing deals",
-    "Any announcements about new acquisition loans",
-    "Performance of the broader Financials sector"
-   ],
-   "about": "Punjab National Bank is a financial services company listed in India's Nifty 500 index.",
-   "basis": "dd873202f907",
-   "items": 2,
-   "updated": "2026-11-26T08:45+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "CREDITACC": {
    "summary": "CreditAccess Grameen announced the resignation of a director and reported changes to its board and auditors. These updates were filed with the stock exchange on November 25, 2026.",

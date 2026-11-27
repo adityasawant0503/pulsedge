@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T04:12:05+05:30",
+ "updated": "2026-11-27T08:17:09+05:30",
  "summary": {
-  "calls": 2376,
-  "scored_calls": 1143,
+  "calls": 2383,
+  "scored_calls": 1150,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -26,6 +26,83 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "d111b908e52679e6",
+   "symbol": "URBANCO",
+   "time": "2026-11-27T08:04:47+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Stocks to watch: Urban Company, Leela Palaces,Waaree Renewable, KPI Green",
+   "url": "https://www.business-standard.com/markets/news/stocks-to-watch-urban-company-leela-palaces-waaree-renewable-kpi-green-126112700102_1.html"
+  },
+  {
+   "id": "58b22d58e52e3040",
+   "symbol": "TATAPOWER",
+   "time": "2026-11-27T08:00:36+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Tata Power: Opportunity or value trap as ambitious growth plans meet execution risks?",
+   "url": "https://www.livemint.com/market/stock-market-news/tata-power-opportunity-or-value-trap-as-ambitious-growth-plans-meet-execution-risks-11795692308967.html"
+  },
+  {
+   "id": "3453e30b564b3c68",
+   "symbol": "COALINDIA",
+   "time": "2026-11-27T07:59:25+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Mahanadi Coalfields Set for Mumbai Debut After $969 Million IPO",
+   "url": "https://www.livemint.com/market/mahanadi-coalfields-set-for-mumbai-debut-after-969-million-ipo-11795746565861.html"
+  },
+  {
+   "id": "065936a0f3f4ed70",
+   "symbol": "OIL",
+   "time": "2026-11-27T07:37:52+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Brent trades near month's high as Mideast conflict threatens supply",
+   "url": "https://economictimes.indiatimes.com/markets/commodities/news/brent-trades-near-months-high-as-mideast-conflict-threatens-supply/articleshow/136207059.cms"
+  },
+  {
+   "id": "32e384861387d595",
+   "symbol": "OIL",
+   "time": "2026-11-27T06:20:49+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Global Market Today: Asian stocks rise for second day, crude oil gains",
+   "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-stocks-rise-for-second-day-crude-oil-gains/articleshow/136206178.cms"
+  },
+  {
+   "id": "0e45f71c731a967a",
+   "symbol": "HDFCBANK",
+   "time": "2026-11-27T01:32:16+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "SC asks HDFC Bank, three others to ok staff prosecution",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/sc-asks-hdfc-bank-three-others-to-ok-staff-prosecution/articleshow/136206787.cms"
+  },
+  {
+   "id": "0e45f71c731a967a",
+   "symbol": "ICICIBANK",
+   "time": "2026-11-27T01:32:16+05:30",
+   "call": "sell",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "SC asks HDFC Bank, three others to ok staff prosecution",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/sc-asks-hdfc-bank-three-others-to-ok-staff-prosecution/articleshow/136206787.cms"
+  },
   {
    "id": "c86a5914de0c36a2",
    "symbol": "ACMESOLAR",
