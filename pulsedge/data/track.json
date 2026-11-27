@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T12:45:48+05:30",
+ "updated": "2026-11-27T13:00:53+05:30",
  "summary": {
-  "calls": 2422,
-  "scored_calls": 1189,
+  "calls": 2424,
+  "scored_calls": 1191,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -26,6 +26,21 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "b478c01a42d32fae",
+   "symbol": "SHRIRAMFIN",
+   "time": "2026-11-27T12:47:33+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "SHRIRAM FINANCE: CO SAYS NO RBI AUDIT ONGOING|| MARKET RUMOURS OF ANY RBI AUDIT ONGOING ON SHRIRAM FINANCE IS NOT TRUE AND BASELESS",
+   "url": "https://t.me/Indiaredboxglobal/10245",
+   "alert_px": 921.1,
+   "alert_move": -4.24,
+   "alert_at": "2026-11-27T12:48:33+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "f04a9f50749b16c2",
    "symbol": "BSE",
@@ -54,6 +69,21 @@
    "alert_px": 795.0,
    "alert_move": 0.41,
    "alert_at": "2026-11-27T12:40:32+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "ace06920b930c860",
+   "symbol": "RAMCOCEM",
+   "time": "2026-11-27T12:29:30+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "The Ramco Cements Limited: Confirmation of Redemption/Payment of Interest and Principal |SUBJECT: Confirmation of Redemption/Payment of Interest and Principal",
+   "url": "https://nsearchives.nseindia.com/content/debt/WDM/ELANGOVAN_27112026122909_REDEMPTION27112026.pdf",
+   "alert_px": 834.3,
+   "alert_move": 0.76,
+   "alert_at": "2026-11-27T13:00:46+05:30",
    "alert_delay": 900
   },
   {
