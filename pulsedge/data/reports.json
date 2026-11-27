@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T16:00+05:30",
+ "updated": "2026-11-27T16:53+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "HEG Limited went public and announced a big expansion of its graphite electrode capacity, which could lift future earnings but carries execution risk. The Supreme Court ordered major banks to approve staff prosecution sanctions, adding legal scrutiny that could affect their reputations. Several companies secured new contracts or deals—Sahaj Solar won a Mauritius solar project, Siemens Energy is confident of a large HVDC order, and Zara and other brands shifted orders to India, boosting textile demand. Angel One issued new shares and Supriya Lifescience plans a share buyback, both affecting shareholder value.",
+  "summary": "The Indian market fell sharply on Friday, with the Sensex dropping 1,000 points and the Nifty 277 points, led by losses in technology and finance stocks. HEG Limited listed on the NSE and BSE and announced a large expansion of its graphite electrode capacity, while DPSC Limited entered a corporate insolvency process. Sahaj Solar secured a $42 million contract in Mauritius, and Siemens Energy expressed confidence in winning a major HVDC order in India next year. Zydus Life saw a 3% dip after the USFDA requested more information on a new drug, and Angel One announced a new share issue that could dilute holdings.",
   "themes": [
-   "Capacity expansion and execution risk",
-   "Legal scrutiny and reputational impact",
-   "Growth from overseas contracts and order shifts"
+   "Market volatility and broad sell‑off",
+   "Corporate expansion and new contracts",
+   "Legal and regulatory challenges"
   ],
   "watch": [
-   "Execution of HEG Limited’s ₹650 crore expansion plan",
-   "Outcome of the Supreme Court’s bank prosecution approvals",
-   "Potential award of the VSC‑HVDC order to Siemens Energy next year"
+   "HEG Limited’s expansion and its execution risk",
+   "DPSC Limited’s insolvency filing and potential liquidation",
+   "Zydus Life’s FDA delay and its impact on future earnings"
   ],
   "date": "2026-11-27",
-  "basis": "2bfee6663411",
-  "updated": "2026-11-27T16:00+05:30",
+  "basis": "eec13119608c",
+  "updated": "2026-11-27T16:53+05:30",
   "model": "openai/gpt-oss-20b",
-  "items": 88
+  "items": 105
  },
  "stocks": {
   "BSE": {
@@ -107,22 +107,6 @@
    "updated": "2026-11-27T15:01+05:30",
    "model": "gemini-flash-lite-latest"
   },
-  "HDFCBANK": {
-   "summary": "HDFC Bank has seen its market value jump past Airtel and is highlighted as a bullish pick by JPMorgan, while the Supreme Court has ordered it to approve prosecution sanctions for staff. The bank is also being compared favorably against peers in recent analyst discussions.",
-   "why": "Shareholders should watch the positive investor sentiment that could lift the stock, but also the legal scrutiny that may weigh on reputation.",
-   "upside": "If JPMorgan’s bullish view draws more investors, the share price could rise further.",
-   "downside": "Compliance with the Supreme Court’s order could damage the bank’s reputation and pressure the stock.",
-   "watch": [
-    "JPMorgan’s bullish stance on HDFC Bank",
-    "Supreme Court order on staff prosecution approvals",
-    "Recent 30% market‑cap gain and potential profit‑taking"
-   ],
-   "about": "HDFC Bank provides banking and financial services in India.",
-   "basis": "0658da4e13fa",
-   "items": 4,
-   "updated": "2026-11-27T10:00+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "GRAPHITE": {
    "summary": "Graphite India Ltd. recently listed on the stock exchanges after being separated from HEG Limited. The company announced a plan to expand its graphite electrode production capacity to 1.15 lakh tonnes.",
    "why": "This expansion aims to increase future profits for shareholders, but the high initial stock price may settle down as the initial excitement fades.",
@@ -138,6 +122,22 @@
    "items": 3,
    "updated": "2026-11-27T12:45+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "HDFCBANK": {
+   "summary": "PulsEdge flagged that HDFC Bank's market value recently jumped 30 percent from its October low, pushing it ahead of Airtel in size. At the same time, the Supreme Court ordered the bank to approve staff prosecution sanctions. Additionally, a major investment bank named HDFC Bank as a good bet for the coming year.",
+   "why": "This matters to shareholders because positive views from big banks can attract new investors, but legal scrutiny and potential profit-taking could create risks for the stock.",
+   "upside": "Positive opinions from major investment banks and strong recent market value growth could attract more investors.",
+   "downside": "Legal scrutiny and potential profit-taking by investors could reverse recent gains.",
+   "watch": [
+    "Updates on the Supreme Court prosecution sanction order",
+    "Whether recent price gains hold or face profit-taking",
+    "Broader market conditions heading into 2027"
+   ],
+   "about": "HDFC Bank Ltd. is one of India's largest listed companies operating in the financial services sector.",
+   "basis": "d963e91b16fc",
+   "items": 3,
+   "updated": "2026-11-27T16:53+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "PNB": {
    "summary": "Punjab National Bank signed a preliminary agreement with Deutsche Bank to explore funding for business acquisitions. This move aims to help the bank earn more fees by assisting companies that are buying other businesses.",
@@ -156,20 +156,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "ICICIBANK": {
-   "summary": "The Supreme Court ordered ICICI Bank, along with other banks, to approve prosecution sanctions. Analysts are comparing ICICI Bank’s valuation with peers, favoring HDFC and Axis banks.",
-   "why": "Legal scrutiny can affect the bank’s reputation and share demand, while valuation debates may influence short‑term buying interest.",
-   "upside": "If ICICI Bank complies with the court order, the impact on its reputation and share price may be limited.",
-   "downside": "The court‑ordered prosecution process could hurt the bank’s image and trigger share declines.",
+   "summary": "ICICI Bank announced a new securities allotment to raise capital. At the same time, the Supreme Court ordered the bank and others to approve staff prosecution sanctions.",
+   "why": "Legal scrutiny and issuing new shares can impact the bank's reputation and the value of existing holdings.",
+   "upside": "If the bank uses the new capital effectively and complies with legal requirements smoothly, the impact may be limited.",
+   "downside": "Legal troubles could hurt the bank's reputation and lead to share declines.",
    "watch": [
-    "Implementation of the Supreme Court’s prosecution sanction order",
-    "Market sentiment after valuation comparisons with HDFC and Axis",
-    "Financials sector index movement and its effect on the bank"
+    "How the bank uses the newly raised capital",
+    "Updates on the Supreme Court prosecution sanction order",
+    "Overall movement of the financial sector index"
    ],
-   "about": "ICICI Bank Ltd. is a leading Indian bank that provides a range of financial services.",
-   "basis": "ab3c5e08b1bc",
+   "about": "ICICI Bank Ltd. is one of India's largest financial services companies and is part of the Nifty 50 index.",
+   "basis": "9837f8754d81",
    "items": 2,
-   "updated": "2026-11-27T16:00+05:30",
-   "model": "openai/gpt-oss-120b"
+   "updated": "2026-11-27T16:53+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "SUPREMEIND": {
    "summary": "PulsEdge flagged headlines about Supreme Court actions regarding bank staff prosecution and food labeling, but these events do not involve Supreme Industries Ltd. The company is part of the Nifty 500 index and operates in the Capital Goods sector.",
@@ -201,22 +201,6 @@
    "basis": "65383ecbc999",
    "items": 2,
    "updated": "2026-11-27T12:16+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "LT": {
-   "summary": "L&T has won a ₹2,500 crore battery storage contract in Gujarat and another contract valued between ₹10 billion and ₹25 billion. Both deals are expected to add to its revenue.",
-   "why": "These contracts can increase the company’s top‑line and earnings, which matters to shareholders.",
-   "upside": "If the projects are completed on schedule, they could boost revenue and earnings.",
-   "downside": "Delays in project execution could hurt margins and cash flow.",
-   "watch": [
-    "Progress on the Gujarat battery storage project",
-    "Execution timeline of the 10‑25 billion rupee contract",
-    "Signs of any project delays affecting margins"
-   ],
-   "about": "Larsen & Toubro is an Indian construction and engineering conglomerate.",
-   "basis": "8c6c92cdfc9c",
-   "items": 2,
-   "updated": "2026-11-26T10:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "PNBHOUSING": {
@@ -268,20 +252,19 @@
    "model": "qwen/qwen3.8-27b"
   },
   "SOLARINDS": {
-   "summary": "Solar Industries India Ltd. (SOLARINDS) is a chemicals company listed in the Nifty 500, with no specific news items flagged in the recent PulsEdge watch list.",
-   "why": "Shareholders have no new corporate developments to consider at this time.",
+   "summary": "PulsEdge noted recent news about other companies securing solar orders and investments. However, the provided facts do not contain any specific updates or news about Solar Industries India Ltd. itself.",
+   "why": "This matters because investors need to ensure they are tracking accurate, company-specific news rather than general sector updates.",
    "upside": "",
    "downside": "",
    "watch": [
-    "Upcoming earnings announcement",
-    "Potential new contracts or projects in the chemicals sector",
-    "Changes in Nifty 500 index composition"
+    "Official announcements from Solar Industries India Ltd.",
+    "Company-specific order wins or financial results"
    ],
-   "about": "",
-   "basis": "4603442866bf",
-   "items": 3,
-   "updated": "2026-11-27T15:30+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Solar Industries India Ltd. is a company in the chemicals sector and part of the Nifty 500 index.",
+   "basis": "982820a6779c",
+   "items": 4,
+   "updated": "2026-11-27T16:53+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "WELCORP": {
    "summary": "Welspun Corp Ltd. announced receipt of new business contracts, including an export order for large‑diameter steel pipes, and its shares rose about 5% after the news. An executive also projected EBITDA could reach ₹5,000 cr in two years.",
@@ -396,20 +379,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "LGEINDIA": {
-   "summary": "LG Electronics India saw its shares drop about 3% after its parent announced a large stake sale, including a bulk deal of roughly ₹2,396 crore. The promoter plans to offload up to 2% of shares to meet public‑float rules, adding more supply to the market.",
-   "why": "More shares on the market can push the price lower for existing shareholders, and insider selling may raise concerns about the company’s outlook.",
-   "upside": "A broader market rally could help support the stock despite the share dilution.",
-   "downside": "The large stake sale and bulk deal increase share supply, which could further depress the price.",
+   "summary": "PulsEdge flagged that the main owner of LG Electronics India Ltd. sold a large number of shares in the open market to meet minimum public shareholding rules. This massive stake sale caused the stock to fall as more shares became available to buy. Meanwhile, new competition and potential US taxes on Indian goods are also drawing attention to the company.",
+   "why": "For someone who owns shares, major owner selling can cause worry and add short-term pressure to the stock price. It is also important to watch how new competitors and broader market trends might affect the business.",
+   "upside": "",
+   "downside": "Further insider selling or new competitors entering the appliance market could continue to pressure the stock.",
    "watch": [
-    "Execution of the promoter's 2% stake sale",
-    "Any additional bulk or block deals by LG Electronics Inc.",
-    "Potential impact of US proposed high taxes on Indian exports"
+    "Whether the promoter sells any more shares",
+    "How new competitors affect appliance sales",
+    "Any updates on proposed US taxes on Indian goods"
    ],
-   "about": "LG Electronics India makes consumer durables such as home appliances and electronics.",
-   "basis": "7489a93d5e5c",
-   "items": 9,
-   "updated": "2026-11-27T09:45+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "LG Electronics India Ltd. is a consumer durables company in the Nifty 500 index.",
+   "basis": "93517764969f",
+   "items": 10,
+   "updated": "2026-11-27T16:53+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "MEDANTA": {
    "summary": "PulsEdge flagged a series of large block and bulk trades in Global Health Ltd. on 25 Nov, with both buying and selling by major investors at ₹1,460 per share. The healthcare sector index rose 2.1% in the last session.",
@@ -428,20 +411,19 @@
    "model": "openai/gpt-oss-120b"
   },
   "APLAPOLLO": {
-   "summary": "APL Apollo Tubes shares rose 4% after a 28% drop in a week, amid speculation that SEBI may scrutinise the Tata Steel stake purchase. The company also saw a large bulk sale by a major investor.",
-   "why": "Share price swings can affect the value of an investor’s holdings and reflect uncertainty about the Tata Steel deal.",
-   "upside": "Shares rebounded after the sharp decline, suggesting a potential recovery.",
-   "downside": "Regulatory scrutiny could delay or block the Tata Steel stake acquisition.",
+   "summary": "APL Apollo Tubes shares jumped 4% after dropping 28% in a week. The market reacted as the regulator may closely examine a business deal with Tata Steel. Meanwhile, a large investor named Smallcap World Fund Inc sold shares worth about 434 crore rupees.",
+   "why": "Big trades by large investors and close regulatory attention to major deals can change company value and affect stock prices. This matters for anyone holding the shares.",
+   "upside": "Regulatory scrutiny could clear up uncertainty surrounding the deal, helping the stock bounce back further.",
+   "downside": "Intervention by the regulator could delay or block the business transaction.",
    "watch": [
-    "SEBI’s decision on the Tata Steel deal",
-    "Impact of Tata Steel’s 9.91% stake purchase",
-    "Future bulk selling activity by large investors"
+    "Updates on the SEBI scrutiny of the Tata Steel deal",
+    "Further large trades by institutional investors"
    ],
-   "about": "",
-   "basis": "5d7ce865eeb5",
-   "items": 4,
-   "updated": "2026-11-27T15:15+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "APL Apollo Tubes Ltd. is a capital goods company included in the Nifty 500 index.",
+   "basis": "5e1c4ea60873",
+   "items": 2,
+   "updated": "2026-11-27T16:53+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "IIFL": {
    "summary": "PulsEdge flagged that large investors recently made big trades in IIFL Finance Ltd. Smallcap World Fund sold shares worth about 337 crore rupees, while UBS AG bought shares worth about 259 crore rupees in a single trade.",
@@ -459,20 +441,20 @@
    "model": "gemini-flash-lite-latest"
   },
   "SIEMENS": {
-   "summary": "Siemens Ltd is seeing a larger order book but investors worry margins may not improve, while the firm’s energy arm is confident about winning a big HVDC contract next year. Recent results showed an 81% profit jump and a dividend, yet profitability is under pressure from commodity price volatility and forex.",
-   "why": "Margins and future revenue are key for shareholders; higher costs could squeeze earnings while a new contract or dividend could add value.",
-   "upside": "Winning the VSC‑HVDC order could boost future earnings and revenue.",
-   "downside": "Profit margins may stay stressed due to rising commodity and foreign‑exchange costs, and the contract is not yet awarded.",
+   "summary": "Siemens recently reported much higher profits and declared a dividend, while also aiming for a large power transmission contract in India next year. However, the company faces potential profit margin hurdles due to its expanding order book and concerns over possible new taxes on goods sold abroad.",
+   "why": "This matters to shareholders because strong profits and new orders can boost the company's value, but concerns over profit margins and external taxes could limit those gains.",
+   "upside": "Winning the upcoming large power transmission contract could add significant future revenue.",
+   "downside": "The company may face lower earnings if profit margins do not improve and new taxes are applied to its exports.",
    "watch": [
-    "Outcome of the VSC‑HVDC contract award in India",
-    "Trend in margins amid commodity and forex pressures",
-    "Impact of proposed US tariffs on export‑focused earnings"
+    "Whether the company wins the expected VSC-HVDC power transmission contract.",
+    "Updates on profit margins and how well the expanding order book translates into actual earnings.",
+    "Any developments regarding proposed taxes on goods sold abroad."
    ],
-   "about": "Siemens Ltd supplies capital goods and industrial solutions, including energy and infrastructure equipment.",
-   "basis": "59e3815c65e3",
-   "items": 7,
-   "updated": "2026-11-27T12:30+05:30",
-   "model": "openai/gpt-oss-120b"
+   "about": "Siemens Ltd. is a capital goods company included in the Nifty 500 index of India's largest listed firms.",
+   "basis": "b3dd49fb9fd3",
+   "items": 5,
+   "updated": "2026-11-27T16:53+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "EXIDEIND": {
    "summary": "Exide Industries announced it will acquire another company and also increase investment in its wholly‑owned subsidiary Exide Energy Solutions. The auto sector index rose 1.2% in the last session and 3.8% over five sessions.",
@@ -489,6 +471,22 @@
    "items": 2,
    "updated": "2026-11-26T16:58+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "LT": {
+   "summary": "Larsen & Toubro recently secured a large 2,500-crore battery storage contract in Gujarat. This win helped its stock jump over two percent.",
+   "why": "Big new contracts bring in more revenue and help the company grow its renewable energy business.",
+   "upside": "Successful completion of the battery storage project could further boost the company's revenue and support its growth in the renewable sector.",
+   "downside": "Project delays could negatively impact the company's profit margins.",
+   "watch": [
+    "Progress on the Gujarat battery storage project",
+    "Any updates on profit margins",
+    "Future renewable energy contract wins"
+   ],
+   "about": "Larsen & Toubro Ltd. is a major company operating in India's construction sector and is part of the Nifty 50 index.",
+   "basis": "a9792acf0498",
+   "items": 1,
+   "updated": "2026-11-27T16:53+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "WIPRO": {
    "summary": "Wipro shares jumped after the IT company signed a major strategic partnership with global energy firm BP to transform finance operations. Around 3,000 BP employees are set to join Wipro under this new operating model. Meanwhile, Indian IT stocks have risen despite US tariff threats.",
@@ -587,20 +585,20 @@
    "model": "qwen/qwen3.8-27b"
   },
   "OIL": {
-   "summary": "Oil prices are rising due to Middle East supply concerns, which could lift earnings for Indian oil producers. The Indian rupee is weakening as oil costs climb, and bond yields are rising, adding cost pressure. Oil India Ltd. is positioned to benefit from higher oil prices but faces risks from currency and price volatility.",
-   "why": "Higher oil prices can increase the company’s revenue and profit, while a weaker rupee may raise the cost of imported fuel and equipment.",
-   "upside": "Higher oil prices could boost the company’s earnings.",
-   "downside": "Oil price volatility or a stronger rupee could reduce profitability.",
+   "summary": "Oil India Ltd. is seeing its business backdrop affected by rising oil prices due to Middle East supply worries. At the same time, these higher oil prices are contributing to a weaker Indian rupee and inflation concerns.",
+   "why": "PulsEdge noted that while higher oil prices can increase revenue for oil producers, broader market sentiment can be pressured by a weaker rupee and rising inflation worries.",
+   "upside": "Higher oil prices driven by Middle East tensions could increase earnings for oil producers like Oil India.",
+   "downside": "Geopolitical tensions could de-escalate or oil prices could reverse quickly, causing prices to fall.",
    "watch": [
-    "Oil price movements in the Middle East",
-    "Exchange rate of the Indian rupee vs. US dollar",
-    "Government bond yields and inflation expectations"
+    "Middle East conflict developments",
+    "Crude oil price movements",
+    "Rupee and bond yield trends"
    ],
-   "about": "Oil India Ltd. is an Indian oil company listed on the NSE.",
-   "basis": "b17dfd58dfec",
-   "items": 16,
-   "updated": "2026-11-27T14:30+05:30",
-   "model": "openai/gpt-oss-20b"
+   "about": "",
+   "basis": "8b7473676335",
+   "items": 18,
+   "updated": "2026-11-27T16:53+05:30",
+   "model": "gemini-flash-lite-latest"
   },
   "TATASTEEL": {
    "summary": "India's market regulator is currently studying Tata Steel's proposed deal with APL Apollo to ensure it protects the interests of all company owners. In response to this regulatory attention and potential rule checks, Tata Steel has shown openness to tweaking or restructuring the deal. Meanwhile, the broader metals sector has experienced mixed movements recently.",
@@ -616,6 +614,38 @@
    "items": 9,
    "updated": "2026-11-27T15:15+05:30",
    "model": "gemini-flash-lite-latest"
+  },
+  "INFY": {
+   "summary": "Infosys is riding a rally in Indian IT stocks while the sector faces headwinds from a stronger rupee and US tariff concerns, and the company recently earned a top‑level AI maturity certification.",
+   "why": "Shareholders see sector sentiment lift the stock, but margin pressure from currency strength could affect earnings, and the AI certification may open new business opportunities.",
+   "upside": "The AI maturity certification could help Infosys win more AI‑related contracts.",
+   "downside": "A stronger rupee and potential changes in US tariff policy could compress margins and dampen sentiment.",
+   "watch": [
+    "US tariff policy developments",
+    "Rupee strength and margin impact",
+    "Progress in monetising AI capabilities"
+   ],
+   "about": "Infosys Ltd. provides IT consulting, software development and outsourcing services.",
+   "basis": "472530c462ae",
+   "items": 4,
+   "updated": "2026-11-26T12:00+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
+  "BAJAJ-AUTO": {
+   "summary": "Bajaj Auto shares fell in recent market downturn, but the company announced a record 394‑km range for its electric three‑wheeler, showing progress in EVs.",
+   "why": "Share price moves reflect broader market trends, while the EV record could influence future sales and investor sentiment.",
+   "upside": "The record electric range may boost future sales and investor confidence.",
+   "downside": "Execution risk if the commercial rollout of the electric three‑wheeler stalls, and market weakness could keep the stock lower.",
+   "watch": [
+    "Overall market trend (Sensex/Nifty) and its impact on Bajaj Auto",
+    "Commercial rollout progress of the Bajaj WEGO electric three‑wheeler",
+    "Any further company announcements or updates on EV execution"
+   ],
+   "about": "Bajaj Auto Ltd. manufactures automobiles and auto components.",
+   "basis": "81eb116a418a",
+   "items": 3,
+   "updated": "2026-11-27T16:00+05:30",
+   "model": "openai/gpt-oss-20b"
   },
   "BRIGADE": {
    "summary": "Brigade Enterprises disclosed a new credit rating and opened a 65,000 sq ft flexible workspace in Chennai, targeting ₹10 cr revenue and further expansion by FY28. The stock rose on strong Bangalore project sales and a broader rally in the realty sector, which hit a 52‑week high.",
@@ -664,22 +694,6 @@
    "items": 3,
    "updated": "2026-11-27T15:15+05:30",
    "model": "gemini-flash-lite-latest"
-  },
-  "BAJAJ-AUTO": {
-   "summary": "Bajaj Auto shares fell in recent market downturn, but the company announced a record 394‑km range for its electric three‑wheeler, showing progress in EVs.",
-   "why": "Share price moves reflect broader market trends, while the EV record could influence future sales and investor sentiment.",
-   "upside": "The record electric range may boost future sales and investor confidence.",
-   "downside": "Execution risk if the commercial rollout of the electric three‑wheeler stalls, and market weakness could keep the stock lower.",
-   "watch": [
-    "Overall market trend (Sensex/Nifty) and its impact on Bajaj Auto",
-    "Commercial rollout progress of the Bajaj WEGO electric three‑wheeler",
-    "Any further company announcements or updates on EV execution"
-   ],
-   "about": "Bajaj Auto Ltd. manufactures automobiles and auto components.",
-   "basis": "81eb116a418a",
-   "items": 3,
-   "updated": "2026-11-27T16:00+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "AMBER": {
    "summary": "Amber Enterprises India Ltd. announced a partnership for a 500 crore rupee investment to expand its circuit board manufacturing in Tamil Nadu. This expansion is planned to happen over five years starting in 2027. A research firm also recently added the company to its list of high-conviction stocks.",
@@ -744,22 +758,6 @@
    "updated": "2026-11-27T15:30+05:30",
    "model": "gemini-flash-lite-latest"
   },
-  "ADANIPOWER": {
-   "summary": "Adani Power and another Adani firm are planning to raise at least Rs 2,000 crore by issuing public bonds. The government is also said to be preparing a Rs 50,000 crore scheme to support power distribution companies, which could affect Adani Power’s sales.",
-   "why": "Shareholders should watch the bond issue because it will increase the company’s debt and interest costs, while the government scheme could boost demand for electricity if it materialises.",
-   "upside": "If the bond sale is well‑received and the distribution‑fund scheme is confirmed, Adani Power could get cheaper financing and higher power sales.",
-   "downside": "Higher debt from the bond issue and uncertainty around the government scheme could strain finances and limit growth.",
-   "watch": [
-    "Details and subscription levels of the planned public bond issuance",
-    "Official announcement and rollout of the Rs 50,000 crore power distribution fund",
-    "Changes in the Energy sector index and any impact on Adani Power’s stock"
-   ],
-   "about": "Adani Power Ltd. generates and sells electricity in India.",
-   "basis": "1d1e95407575",
-   "items": 2,
-   "updated": "2026-11-26T10:45+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "ZENTEC": {
    "summary": "Zen Technologies Ltd. said its business in the second half of the fiscal year will be much better than in the first half.",
    "why": "Better performance could boost earnings, which matters to shareholders.",
@@ -791,22 +789,6 @@
    "items": 1,
    "updated": "2026-11-26T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "LLOYDSME": {
-   "summary": "Lloyds Metals And Energy Ltd. announced a capital raise by issuing new securities and disclosed an agreement to acquire another company.",
-   "why": "These actions could affect the value of existing shares through dilution or changes in the company’s growth prospects.",
-   "upside": "If the acquisition is successfully integrated, it could enhance the company’s operations and earnings.",
-   "downside": "The new share issuance may dilute existing holdings and the market might not absorb the additional shares, putting pressure on the stock price.",
-   "watch": [
-    "Progress of the capital raise and share subscription levels",
-    "Details and integration progress of the acquisition",
-    "Sector index performance and market appetite for new shares"
-   ],
-   "about": "Lloyds Metals And Energy Ltd. is a metals and mining company listed on the NSE.",
-   "basis": "b14d02bd684e",
-   "items": 2,
-   "updated": "2026-11-27T12:30+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "BANKINDIA": {
    "summary": "Bank of India has issued a strike notice that could temporarily affect its operations. At the same time, Indian government bond yields are volatile and the RBI may raise rates while buying dollars, influencing borrowing costs and foreign‑exchange dynamics.",
@@ -998,22 +980,6 @@
    "updated": "2026-11-26T19:22+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "PPLPHARMA": {
-   "summary": "Piramal Pharma’s shares fell about 7% after a 100‑million‑share block trade and after Carlyle trimmed its holding by selling roughly 9.86 crore shares. The stock is under pressure despite the broader Healthcare index gaining.",
-   "why": "Large sell‑offs by a major investor can push the price down, though the impact may be limited if the fundamentals remain unchanged.",
-   "upside": "If the stake reduction is routine and the Healthcare sector’s strength continues, the stock could stabilize or recover.",
-   "downside": "Further block sales or additional stake reductions could drive the share price lower.",
-   "watch": [
-    "Any new block trades on the BSE",
-    "Carlyle’s future buying or selling activity",
-    "Performance of the Healthcare sector index"
-   ],
-   "about": "Piramal Pharma Ltd. manufactures pharmaceutical products.",
-   "basis": "e27cb3ba7416",
-   "items": 2,
-   "updated": "2026-11-26T08:30+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "SWIGGY": {
    "summary": "Swiggy is cutting about 340 jobs in its Instamart grocery arm to push AI‑driven efficiency and restructure its operations.",
    "why": "Shareholders care because the cuts could lower costs and improve margins, though they may also create short‑term uncertainty.",
@@ -1078,6 +1044,22 @@
    "updated": "2026-11-26T10:00+05:30",
    "model": "openai/gpt-oss-120b"
   },
+  "PPLPHARMA": {
+   "summary": "Piramal Pharma’s shares fell about 7% after a 100‑million‑share block trade and after Carlyle trimmed its holding by selling roughly 9.86 crore shares. The stock is under pressure despite the broader Healthcare index gaining.",
+   "why": "Large sell‑offs by a major investor can push the price down, though the impact may be limited if the fundamentals remain unchanged.",
+   "upside": "If the stake reduction is routine and the Healthcare sector’s strength continues, the stock could stabilize or recover.",
+   "downside": "Further block sales or additional stake reductions could drive the share price lower.",
+   "watch": [
+    "Any new block trades on the BSE",
+    "Carlyle’s future buying or selling activity",
+    "Performance of the Healthcare sector index"
+   ],
+   "about": "Piramal Pharma Ltd. manufactures pharmaceutical products.",
+   "basis": "e27cb3ba7416",
+   "items": 2,
+   "updated": "2026-11-26T08:30+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "CENTRALBK": {
    "summary": "Central Bank of India announced that its Company Secretary and Compliance Officer, Mr. Chandrakant Bhagwat, is resigning effective November 27, 2026. This administrative change occurred while the broader financial sector index dipped slightly in the last trading session.",
    "why": "Changes in key compliance roles can affect how smoothly a company manages its legal and regulatory duties, which matters to shareholders concerned about corporate governance.",
@@ -1109,38 +1091,6 @@
    "items": 1,
    "updated": "2026-11-25T13:47+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "AARTIIND": {
-   "summary": "Aarti Industries is starting up a new production line for a chemical called chlorotoluene. This chemical is used in farming and medicine products.",
-   "why": "This matters because selling more of this chemical could help the company earn more money in the future.",
-   "upside": "The new line could help the company sell more products in growing industries like agriculture and pharma.",
-   "downside": "The new factory line might take longer to start than expected, or customers might not buy as much as hoped.",
-   "watch": [
-    "When the new chlorotoluene line is fully running",
-    "How much of the new chemical the company sells",
-    "Any delays in starting up the new production"
-   ],
-   "about": "Aarti Industries is a company in the chemicals sector.",
-   "basis": "0221ae89dabc",
-   "items": 1,
-   "updated": "2026-11-25T12:00+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "AAVAS": {
-   "summary": "Aavas Financiers announced an allotment of new securities to raise capital. The move comes as the Financials sector fell 2.5% in the last session but was up 0.5% over the past five sessions.",
-   "why": "Existing shareholders may see their ownership diluted, which can affect the stock price.",
-   "upside": "If the capital raised is deployed for growth or to strengthen the balance sheet, it could improve the company’s prospects.",
-   "downside": "The new share issue could dilute existing holdings and put downward pressure on the share price.",
-   "watch": [
-    "Progress and pricing of the securities allotment",
-    "How the raised funds will be used",
-    "Continued performance of the Financials sector index"
-   ],
-   "about": "Aavas Financiers provides financial services, primarily lending.",
-   "basis": "d604194901df",
-   "items": 1,
-   "updated": "2026-11-25T11:30+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "MCX": {
    "summary": "Gold and silver prices have seen sharp swings, with recent jumps boosting activity on Multi Commodity Exchange of India Ltd. (MCX). PulsEdge flagged that these precious-metal price spikes drove higher trading volumes on the exchange. Meanwhile, the company's shares also saw strong gains.",
@@ -1189,22 +1139,6 @@
    "items": 4,
    "updated": "2026-11-27T09:15+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "INFY": {
-   "summary": "Infosys is riding a rally in Indian IT stocks while the sector faces headwinds from a stronger rupee and US tariff concerns, and the company recently earned a top‑level AI maturity certification.",
-   "why": "Shareholders see sector sentiment lift the stock, but margin pressure from currency strength could affect earnings, and the AI certification may open new business opportunities.",
-   "upside": "The AI maturity certification could help Infosys win more AI‑related contracts.",
-   "downside": "A stronger rupee and potential changes in US tariff policy could compress margins and dampen sentiment.",
-   "watch": [
-    "US tariff policy developments",
-    "Rupee strength and margin impact",
-    "Progress in monetising AI capabilities"
-   ],
-   "about": "Infosys Ltd. provides IT consulting, software development and outsourcing services.",
-   "basis": "472530c462ae",
-   "items": 4,
-   "updated": "2026-11-26T12:00+05:30",
-   "model": "openai/gpt-oss-120b"
   },
   "VBL": {
    "summary": "Varun Beverages has acquired a 26% stake in Jager Renewables, a renewable energy firm. The company filed an update with the stock exchange regarding this acquisition.",
@@ -1284,22 +1218,6 @@
    "basis": "5918b0cb0e19",
    "items": 2,
    "updated": "2026-11-26T13:31+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
-  "CLEANMAX": {
-   "summary": "Clean Max Enviro Energy Solutions Ltd. announced it will acquire another business while also selling a subsidiary. Both moves are aimed at reshaping its operations.",
-   "why": "Shareholders should watch because the acquisition could add growth but may increase debt, and the sale could reduce earnings if the proceeds are unclear.",
-   "upside": "If the acquisition delivers synergies, the company could expand its revenue base.",
-   "downside": "The acquisition could be costly and add debt, while the subsidiary sale might shrink earnings without clear benefit.",
-   "watch": [
-    "Details of the acquisition target and purchase price",
-    "Amount of proceeds and strategic rationale for the subsidiary sale",
-    "Impact of both transactions on the company's debt and cash position"
-   ],
-   "about": "It operates in the power sector.",
-   "basis": "153fafa74cb1",
-   "items": 2,
-   "updated": "2026-11-27T08:30+05:30",
    "model": "openai/gpt-oss-120b"
   },
   "NETWEB": {

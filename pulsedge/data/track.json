@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T16:01:13+05:30",
+ "updated": "2026-11-27T16:54:48+05:30",
  "summary": {
-  "calls": 2444,
-  "scored_calls": 1211,
+  "calls": 2452,
+  "scored_calls": 1219,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -26,6 +26,72 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "16d4eaec62721af8",
+   "symbol": "INFY",
+   "time": "2026-11-27T16:48:48+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Stock market today: Sensex tumbles 1,000 points, Nifty drops 277 points as TCS, Infosys, Shriram Finance lead losses",
+   "url": "https://www.livemint.com/market/stock-market-news/stock-market-today-sensex-tumbles-1-000-points-nifty-drops-277-points-as-tcs-infosys-shriram-finance-lead-losses-11795774138976.html"
+  },
+  {
+   "id": "16d4eaec62721af8",
+   "symbol": "SHRIRAMFIN",
+   "time": "2026-11-27T16:48:48+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Mint Markets",
+   "headline": "Stock market today: Sensex tumbles 1,000 points, Nifty drops 277 points as TCS, Infosys, Shriram Finance lead losses",
+   "url": "https://www.livemint.com/market/stock-market-news/stock-market-today-sensex-tumbles-1-000-points-nifty-drops-277-points-as-tcs-infosys-shriram-finance-lead-losses-11795774138976.html"
+  },
+  {
+   "id": "957f7cdab2373c1c",
+   "symbol": "SOLARINDS",
+   "time": "2026-11-27T16:16:15+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "KP GREEN ENGINEERING: CO SECURES FRESH ORDERS AGGREGATING ₹110.54 CRORE ACROSS SOLAR, TRANSMISSION TOWERS, CABLE TRAYS AND HIGHMASTS",
+   "url": "https://t.me/Indiaredboxglobal/10263"
+  },
+  {
+   "id": "f91cd890e5e068c6",
+   "symbol": "LGEINDIA",
+   "time": "2026-11-27T16:15:28+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "LG Electronics India Limited: LG Electronics India Limited has informed the Exchange regarding 'Sale of Equity Shares of the Company by LG Electronics Inc., Pro",
+   "url": "https://nsearchives.nseindia.com/corporate/LGEINDIA_27112026160719_Intimation_of_Sale_by_Promoter.pdf"
+  },
+  {
+   "id": "6c2e1ee9b1a764f4",
+   "symbol": "OIL",
+   "time": "2026-11-27T15:56:25+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Eurozone bond yields rise as investors return to riskier assets, oil prices rebound",
+   "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/eurozone-bond-yields-rise-as-investors-return-to-riskier-assets-oil-prices-rebound/articleshow/136218279.cms"
+  },
+  {
+   "id": "0e592a9da17418f7",
+   "symbol": "OIL",
+   "time": "2026-11-27T15:53:05+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Rupee rally takes a hit as AI trade revival dents shares, currency sees weekly dip",
+   "url": "https://economictimes.indiatimes.com/markets/forex/rupee-rally-takes-a-hit-as-ai-trade-revival-dents-shares-currency-sees-weekly-dip/articleshow/136218142.cms"
+  },
   {
    "id": "d5a08c542760a9b4",
    "symbol": "SOLARINDS",
@@ -657,6 +723,17 @@
    "alert_delay": 900
   },
   {
+   "id": "7ed52d46056f2897",
+   "symbol": "TATACONSUM",
+   "time": "2026-11-27T10:04:21+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Tata Consumer Products Share Price Live Updates: Announcement under Regulation 30 (LODR)-Allotment of ESOP / ESPS",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/tata-consumer-share-price-live-updates-27-nov-2026/liveblog/136209138.cms"
+  },
+  {
    "id": "505ae33020bf7098",
    "symbol": "GRAPHITE",
    "time": "2026-11-27T10:03:54+05:30",
@@ -971,6 +1048,17 @@
    "scored": true,
    "source": "ET Markets",
    "headline": "Stock Market Live Updates | Closing Bell: Sensex sinks 989 pts, Nifty ends near 25,600; Bajaj Auto, HCL Tech drop 3% each",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/bse-sensex-today-nifty50-stock-market-live-updates-gift-nifty-nse-bse-share-price-27-november-2026/liveblog/136206762.cms"
+  },
+  {
+   "id": "40bc79a4416ba82a",
+   "symbol": "BAJAJ-AUTO",
+   "time": "2026-11-27T07:09:08+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "Stock Market Highlights: Sensex sinks 989 pts, Nifty ends near 25,600; Bajaj Auto, HCL Tech drop 3% each",
    "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/bse-sensex-today-nifty50-stock-market-live-updates-gift-nifty-nse-bse-share-price-27-november-2026/liveblog/136206762.cms"
   },
   {
