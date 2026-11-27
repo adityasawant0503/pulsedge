@@ -1,7 +1,38 @@
 {
  "note": "Posts from the fastest sources, sorted within about a minute of appearing (pulsedge-bot/fast_lane.py). The terminal shows them until the 15-minute news run adds them to feed.json.",
- "updated": "2026-11-27T10:48:30+05:30",
+ "updated": "2026-11-27T10:55:01+05:30",
  "items": [
+  {
+   "id": "7ebce1febc22e3a0",
+   "time": "2026-11-27T10:54:22+05:30",
+   "headline": "MAHANADI: CO SAYS TARGETING 10% PRODUCTION GROWTH THIS YEAR",
+   "source": "RedBox Global India",
+   "url": "https://t.me/Indiaredboxglobal/10230",
+   "section": "news",
+   "call": "watch",
+   "horizon": "swing",
+   "direction": "up",
+   "tickers": [],
+   "sectors": [],
+   "impact": 40,
+   "confidence": 60,
+   "category": "company",
+   "action": "Watch for earnings updates confirming production growth",
+   "reason": [
+    "Company aims 10% production increase",
+    "Higher output could boost revenues"
+   ],
+   "risks": [
+    "Target may not be met",
+    "Input cost volatility"
+   ],
+   "plain": "The company said it aims to increase production by 10% this year.",
+   "why": "If the target is met, revenues could rise, but execution risk remains.",
+   "check": "Look for the next quarterly production report.",
+   "original": "MAHANADI: CO SAYS TARGETING 10% PRODUCTION GROWTH THIS YEAR",
+   "latency": 39.5,
+   "lane": "fast"
+  },
   {
    "id": "7b13c69132fc3f58",
    "time": "2026-11-27T10:17:13+05:30",
@@ -1554,54 +1585,6 @@
      "prev": 5087.0,
      "move": 0.39,
      "at": "2026-11-26T11:00:38+05:30",
-     "delay": 900
-    }
-   }
-  },
-  {
-   "id": "d62623ecce75590e",
-   "time": "2026-11-26T10:51:43+05:30",
-   "headline": "HINDUSTAN ZINC: COLLABORATION WITH IIT MADRAS TARGETS ADVANCES IN ZINC-AIR BATTERY TECHNOLOGY FOR NEXT-GENERATION ELECTRIC MOBILITY",
-   "source": "RedBox Global India",
-   "url": "https://t.me/Indiaredboxglobal/10137",
-   "section": "news",
-   "call": "watch",
-   "horizon": "positional",
-   "direction": "up",
-   "tickers": [
-    {
-     "symbol": "HINDZINC",
-     "direction": "up"
-    }
-   ],
-   "sectors": [
-    "Metals",
-    "New Energy"
-   ],
-   "impact": 35,
-   "confidence": 40,
-   "category": "R&D/Partnership",
-   "action": "Monitor for any commercialization timeline or revenue impact announcements.",
-   "reason": [
-    "Partnership with IIT Madras signals long-term R&D focus on next-gen battery tech.",
-    "Zinc-air batteries are a potential future revenue stream for electric mobility."
-   ],
-   "risks": [
-    "Technology is still in research phase with no immediate revenue impact.",
-    "Commercial viability and market adoption remain uncertain."
-   ],
-   "plain": "The company is working with a top engineering college to improve battery technology for electric vehicles.",
-   "why": "This shows the company is investing in future technology, which could be good for long-term growth but not immediate profits.",
-   "check": "Look for news about when this technology might be ready for sale.",
-   "original": "HINDUSTAN ZINC: COLLABORATION WITH IIT MADRAS TARGETS ADVANCES IN ZINC-AIR BATTERY TECHNOLOGY FOR NEXT-GENERATION ELECTRIC MOBILITY",
-   "latency": 53.8,
-   "lane": "fast",
-   "quotes": {
-    "HINDZINC": {
-     "px": 533.0,
-     "prev": 519.7,
-     "move": 2.56,
-     "at": "2026-11-26T10:52:36+05:30",
      "delay": 900
     }
    }
