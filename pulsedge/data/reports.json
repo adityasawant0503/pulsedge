@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T11:00+05:30",
+ "updated": "2026-11-27T11:15+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -520,22 +520,6 @@
    "basis": "7fcb63bf2ec2",
    "items": 1,
    "updated": "2026-11-25T09:52+05:30",
-   "model": "qwen/qwen3.8-27b"
-  },
-  "IDBI": {
-   "summary": "IDBI Bank is in the news because Canada’s Fairfax may buy the company at a price higher than the current market rate. This potential deal is currently under review and requires regulatory approval.",
-   "why": "If the deal is approved, the higher purchase price could lift the share price for existing owners. However, the process might take time, creating uncertainty.",
-   "upside": "A successful takeover at a premium could increase the value of the shares.",
-   "downside": "Regulatory approval might be delayed, which could keep the share price uncertain for a while.",
-   "watch": [
-    "Updates on regulatory approval status",
-    "Official announcements from Fairfax or IDBI",
-    "General movement in the Financials sector index"
-   ],
-   "about": "IDBI Bank is a financial services company listed in India's Nifty 500 index.",
-   "basis": "6ae24c0f53fa",
-   "items": 1,
-   "updated": "2026-11-24T18:25+05:30",
    "model": "qwen/qwen3.8-27b"
   },
   "WIPRO": {
@@ -1225,6 +1209,22 @@
    "updated": "2026-11-27T08:30+05:30",
    "model": "qwen/qwen3.8-27b"
   },
+  "COALINDIA": {
+   "summary": "Coal India’s subsidiary Mahanadi Coalfields Limited has launched an IPO and begun trading, with the shares opening at a 2% discount to the issue price. The parent company’s stock saw higher trading volume recently, while the broader oil & gas sector posted modest gains.",
+   "why": "The IPO can bring fresh capital to Coal India but may dilute existing shareholders’ ownership, and the discount signals current market appetite for its coal assets.",
+   "upside": "If the new shares maintain price stability, the capital raise could strengthen Coal India’s balance sheet.",
+   "downside": "A widening discount or weak demand for the subsidiary’s stock could pressure Coal India’s share price.",
+   "watch": [
+    "Mahanadi Coalfields share price movement after debut",
+    "Any further dilution from the IPO",
+    "Trading volume trends for Coal India and Bharat Coking Coal"
+   ],
+   "about": "Coal India Ltd is India’s largest coal mining company.",
+   "basis": "0cbc454f9a0a",
+   "items": 4,
+   "updated": "2026-11-27T11:15+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "URBANCO": {
    "summary": "Urban Company has launched its own brand of air conditioners called Native AC. The company offers a five-year unconditional warranty with these new products.",
    "why": "This move allows the company to earn money from selling products, not just services, which could help it grow in the future.",
@@ -1256,22 +1256,6 @@
    "items": 4,
    "updated": "2026-11-26T12:00+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "COALINDIA": {
-   "summary": "Coal India's subsidiary, Mahanadi Coalfields, recently started trading on the stock market at a price slightly lower than its initial offering. At the same time, the exchange noted a significant increase in trading volume for both Coal India and another related company, Bharat Coking Coal.",
-   "why": "The lower starting price for the subsidiary's shares suggests that some investors are currently cautious about buying more coal stocks, which may affect how the market views the parent company.",
-   "upside": "A successful launch of a new stock can sometimes make investors feel more positive about the parent company.",
-   "downside": "The discount on the subsidiary's shares could widen if demand in the secondary market remains low.",
-   "watch": [
-    "Whether the trading volume spike for Coal India continues or reverses quickly.",
-    "If the discount on Mahanadi Coalfields' shares widens further.",
-    "General trends in the Oil & Gas sector index."
-   ],
-   "about": "Coal India is a major company in the Oil Gas & Consumable Fuels sector and is one of India's 50 largest listed companies.",
-   "basis": "dfbc44f1fa8e",
-   "items": 3,
-   "updated": "2026-11-27T10:30+05:30",
-   "model": "qwen/qwen3.8-27b"
   },
   "VBL": {
    "summary": "Varun Beverages has acquired a 26% stake in Jager Renewables, a renewable energy firm. The company filed an update with the stock exchange regarding this acquisition.",

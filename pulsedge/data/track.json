@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T11:01:10+05:30",
+ "updated": "2026-11-27T11:15:49+05:30",
  "summary": {
-  "calls": 2407,
-  "scored_calls": 1174,
+  "calls": 2410,
+  "scored_calls": 1177,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -26,6 +26,51 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "4c5d25749227370b",
+   "symbol": "APARINDS",
+   "time": "2026-11-27T11:14:47+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Apar Industries Limited: APAR INDUSTRIES LIMITED has informed the Exchange about Action(s) initiated or orders passed (sub-para 19) |SUBJECT: Actions initiated/",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/AIATOP_2205_WebXMLFile_20261127_111445693.xml",
+   "alert_px": 14400.0,
+   "alert_move": 1.41,
+   "alert_at": "2026-11-27T11:15:36+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "8501ad4723b15ad1",
+   "symbol": "SHYAMMETL",
+   "time": "2026-11-27T11:12:37+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Shyam Metalics and Energy Limited: Shyam Metalics And Energy Limited has informed the Exchange about Acquisition of Stake directly by Shyam Sel and Power Limite",
+   "url": "https://nsearchives.nseindia.com/corporate/SHYAMMETL_27112026111226_SMELAcquisitionofStakebySSPL27112026.pdf",
+   "alert_px": 1303.9,
+   "alert_move": 0.84,
+   "alert_at": "2026-11-27T11:15:36+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "1a0623f4c77b27c8",
+   "symbol": "COALINDIA",
+   "time": "2026-11-27T11:12:19+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Coal India Limited: Initial Public Offering (IPO) of equity shares of face value Rs. 2 each of Mahanadi Coalfields Limited, a subsidiary of Coal India Limited. ",
+   "url": "https://nsearchives.nseindia.com/corporate/COALINDIA_27112026111158_mcl-letter_to_stock_exchage.pdf",
+   "alert_px": 385.15,
+   "alert_move": -0.96,
+   "alert_at": "2026-11-27T11:15:36+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "2f2368cd2fa18438",
    "symbol": "SIEMENS",
