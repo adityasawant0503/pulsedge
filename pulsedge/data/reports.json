@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T15:30+05:30",
+ "updated": "2026-11-27T16:00+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,22 +57,22 @@
   ]
  },
  "today": {
-  "summary": "PulsEdge flagged a busy day of corporate news, including HEG Limited listing on the exchanges and planning a major expansion, alongside Supreme Court orders regarding bank prosecutions. Global clothing brands shifted millions in orders from Bangladesh to India, creating potential opportunities for local manufacturers. Meanwhile, rising US inflation raised questions about future interest rates, and individual companies made announcements regarding share buybacks, new deals, and drug approvals.",
+  "summary": "HEG Limited went public and announced a big expansion of its graphite electrode capacity, which could lift future earnings but carries execution risk. The Supreme Court ordered major banks to approve staff prosecution sanctions, adding legal scrutiny that could affect their reputations. Several companies secured new contracts or deals—Sahaj Solar won a Mauritius solar project, Siemens Energy is confident of a large HVDC order, and Zara and other brands shifted orders to India, boosting textile demand. Angel One issued new shares and Supriya Lifescience plans a share buyback, both affecting shareholder value.",
   "themes": [
-   "Corporate expansions, new listings, and legal developments at major firms",
-   "Shifting global supply chains benefiting Indian manufacturing",
-   "International inflation and interest rate concerns"
+   "Capacity expansion and execution risk",
+   "Legal scrutiny and reputational impact",
+   "Growth from overseas contracts and order shifts"
   ],
   "watch": [
-   "Whether Indian textile firms can smoothly absorb the shifted orders from Bangladesh",
-   "Developments regarding US interest rates and foreign investment flows",
-   "Execution and regulatory outcomes for company expansions and drug approvals"
+   "Execution of HEG Limited’s ₹650 crore expansion plan",
+   "Outcome of the Supreme Court’s bank prosecution approvals",
+   "Potential award of the VSC‑HVDC order to Siemens Energy next year"
   ],
   "date": "2026-11-27",
-  "basis": "7bd01d1aad8b",
-  "updated": "2026-11-27T15:01+05:30",
-  "model": "gemini-flash-lite-latest",
-  "items": 78
+  "basis": "2bfee6663411",
+  "updated": "2026-11-27T16:00+05:30",
+  "model": "openai/gpt-oss-20b",
+  "items": 88
  },
  "stocks": {
   "BSE": {
@@ -139,22 +139,6 @@
    "updated": "2026-11-27T12:45+05:30",
    "model": "qwen/qwen3.8-27b"
   },
-  "ICICIBANK": {
-   "summary": "ICICI Bank shares jumped 4% to a record high, while the Supreme Court ordered the bank to approve prosecution sanctions along with peers. Experts are comparing its valuation with HDFC and Axis banks.",
-   "why": "Legal scrutiny could affect the bank’s reputation and share price, and the recent rally may be short‑lived if earnings disappoint.",
-   "upside": "If the bank complies with the court order, the negative impact may be limited.",
-   "downside": "The prosecution order could hurt reputation and trigger share declines, and the price gain could reverse on weak earnings.",
-   "watch": [
-    "Compliance with the Supreme Court prosecution order",
-    "Upcoming earnings results and their impact on momentum",
-    "Valuation comparisons with HDFC and Axis banks"
-   ],
-   "about": "ICICI Bank Ltd. is a major Indian bank providing a wide range of financial services.",
-   "basis": "5572a2ab9a5d",
-   "items": 3,
-   "updated": "2026-11-27T14:02+05:30",
-   "model": "openai/gpt-oss-120b"
-  },
   "PNB": {
    "summary": "Punjab National Bank signed a preliminary agreement with Deutsche Bank to explore funding for business acquisitions. This move aims to help the bank earn more fees by assisting companies that are buying other businesses.",
    "why": "If this partnership leads to actual deals, it could create a new source of income for the bank. This might be important for shareholders because it shows the bank is looking for ways to grow its earnings.",
@@ -170,6 +154,22 @@
    "items": 3,
    "updated": "2026-11-27T08:16+05:30",
    "model": "qwen/qwen3.8-27b"
+  },
+  "ICICIBANK": {
+   "summary": "The Supreme Court ordered ICICI Bank, along with other banks, to approve prosecution sanctions. Analysts are comparing ICICI Bank’s valuation with peers, favoring HDFC and Axis banks.",
+   "why": "Legal scrutiny can affect the bank’s reputation and share demand, while valuation debates may influence short‑term buying interest.",
+   "upside": "If ICICI Bank complies with the court order, the impact on its reputation and share price may be limited.",
+   "downside": "The court‑ordered prosecution process could hurt the bank’s image and trigger share declines.",
+   "watch": [
+    "Implementation of the Supreme Court’s prosecution sanction order",
+    "Market sentiment after valuation comparisons with HDFC and Axis",
+    "Financials sector index movement and its effect on the bank"
+   ],
+   "about": "ICICI Bank Ltd. is a leading Indian bank that provides a range of financial services.",
+   "basis": "ab3c5e08b1bc",
+   "items": 2,
+   "updated": "2026-11-27T16:00+05:30",
+   "model": "openai/gpt-oss-120b"
   },
   "SUPREMEIND": {
    "summary": "PulsEdge flagged headlines about Supreme Court actions regarding bank staff prosecution and food labeling, but these events do not involve Supreme Industries Ltd. The company is part of the Nifty 500 index and operates in the Capital Goods sector.",
@@ -665,6 +665,22 @@
    "updated": "2026-11-27T15:15+05:30",
    "model": "gemini-flash-lite-latest"
   },
+  "BAJAJ-AUTO": {
+   "summary": "Bajaj Auto shares fell in recent market downturn, but the company announced a record 394‑km range for its electric three‑wheeler, showing progress in EVs.",
+   "why": "Share price moves reflect broader market trends, while the EV record could influence future sales and investor sentiment.",
+   "upside": "The record electric range may boost future sales and investor confidence.",
+   "downside": "Execution risk if the commercial rollout of the electric three‑wheeler stalls, and market weakness could keep the stock lower.",
+   "watch": [
+    "Overall market trend (Sensex/Nifty) and its impact on Bajaj Auto",
+    "Commercial rollout progress of the Bajaj WEGO electric three‑wheeler",
+    "Any further company announcements or updates on EV execution"
+   ],
+   "about": "Bajaj Auto Ltd. manufactures automobiles and auto components.",
+   "basis": "81eb116a418a",
+   "items": 3,
+   "updated": "2026-11-27T16:00+05:30",
+   "model": "openai/gpt-oss-20b"
+  },
   "AMBER": {
    "summary": "Amber Enterprises India Ltd. announced a partnership for a 500 crore rupee investment to expand its circuit board manufacturing in Tamil Nadu. This expansion is planned to happen over five years starting in 2027. A research firm also recently added the company to its list of high-conviction stocks.",
    "why": "This matters because the company is planning to increase its production capacity, which could lead to higher sales and profits in the future. However, the benefits will not be immediate as the project starts in 2027.",
@@ -680,21 +696,6 @@
    "items": 3,
    "updated": "2026-11-27T04:10+05:30",
    "model": "qwen/qwen3.8-27b"
-  },
-  "BAJAJ-AUTO": {
-   "summary": "Bajaj Auto shares recently fell during a broader market drop led by the Sensex. At the same time, the company announced that its electric three-wheeler set a record of 394 km on a single charge.",
-   "why": "Broader market trends can pull the share price down even when there is positive news about the company's products. Highlights in electric vehicle capabilities may help future sales.",
-   "upside": "Strong electric vehicle capabilities could increase future sales and boost investor confidence if the commercial rollout succeeds.",
-   "downside": "Further market weakness could push the stock lower, and execution risks remain if the commercial rollout stalls.",
-   "watch": [
-    "Broader market movements and the Sensex",
-    "Commercial rollout progress of the electric three-wheeler"
-   ],
-   "about": "Bajaj Auto Ltd. is an automobile company and one of India's 50 largest listed companies.",
-   "basis": "22e9d437e209",
-   "items": 2,
-   "updated": "2026-11-27T15:15+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "CIPLA": {
    "summary": "Cipla is in the news because of potential US trade changes. A new trade deal could lower US taxes on Indian goods, boosting sales, while new US tariffs could raise costs and hurt profits.",
