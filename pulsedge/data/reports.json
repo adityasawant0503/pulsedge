@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T08:30+05:30",
+ "updated": "2026-11-27T08:45+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -1337,6 +1337,22 @@
    "items": 2,
    "updated": "2026-11-26T11:45+05:30",
    "model": "openai/gpt-oss-120b"
+  },
+  "PATANJALI": {
+   "summary": "Patanjali Foods announced its second interim dividend for the current financial year. The board declared a payment of Rs. 1.25 per share.",
+   "why": "This dividend is a direct cash payment to shareholders, which can be a sign that the company is generating profits.",
+   "upside": "The dividend payment may be viewed positively by investors as evidence of the company's profitability.",
+   "downside": "The dividend amount might be lower than what some investors expected, or the overall return on investment could be low.",
+   "watch": [
+    "The specific record date for receiving the dividend",
+    "How the broader FMCG sector performs in the coming days",
+    "Any future announcements regarding the company's financial results"
+   ],
+   "about": "Patanjali Foods is a company in the Fast Moving Consumer Goods sector.",
+   "basis": "cbaf8089e9fb",
+   "items": 2,
+   "updated": "2026-11-27T08:45+05:30",
+   "model": "qwen/qwen3.8-27b"
   },
   "CREDITACC": {
    "summary": "CreditAccess Grameen announced the resignation of a director and reported changes to its board and auditors. These updates were filed with the stock exchange on November 25, 2026.",

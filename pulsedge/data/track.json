@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T08:31:29+05:30",
+ "updated": "2026-11-27T08:45:44+05:30",
  "summary": {
-  "calls": 2384,
-  "scored_calls": 1151,
+  "calls": 2385,
+  "scored_calls": 1152,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -26,6 +26,17 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "8e4257e990ec3513",
+   "symbol": "BIOCON",
+   "time": "2026-11-27T08:27:31+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "NSE Announcements",
+   "headline": "Biocon Limited: Biocon Limited has informed the Exchange regarding a press release dated November 27, 2026, titled \"Biocon Announces Approval for Biosimilar Per",
+   "url": "https://nsearchives.nseindia.com/corporate/BIOCON_27112026082717_Pressrelease27112026-Signed.pdf"
+  },
   {
    "id": "d111b908e52679e6",
    "symbol": "URBANCO",
