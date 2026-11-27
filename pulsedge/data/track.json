@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T09:45:48+05:30",
+ "updated": "2026-11-27T10:01:59+05:30",
  "summary": {
-  "calls": 2388,
-  "scored_calls": 1155,
+  "calls": 2392,
+  "scored_calls": 1159,
   "d1": {
    "scored": 1004,
    "hits": 453,
@@ -26,6 +26,66 @@
  "method": "Entry is the first NSE close after the news reached readers (15 minutes after it came out); 1D and 5D are the closes 1 and 5 sessions later. Only AI calls with an up/down direction count towards the hit rate.",
  "source": "NSE end-of-day bhavcopy",
  "calls": [
+  {
+   "id": "ff76edff9158c2b2",
+   "symbol": "ZENTEC",
+   "time": "2026-11-27T09:58:26+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "RedBox Global India",
+   "headline": "ZEN TECHNOLOGIES: CO SAYS H2 WILL BE MUCH BETTER THEN H1",
+   "url": "https://t.me/Indiaredboxglobal/10223",
+   "alert_px": 1789.5,
+   "alert_move": 1.21,
+   "alert_at": "2026-11-27T09:59:31+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "a3dab5e455769d41",
+   "symbol": "ZYDUSLIFE",
+   "time": "2026-11-27T09:38:02+05:30",
+   "call": "watch",
+   "dir": "down",
+   "scored": true,
+   "source": "Business Standard",
+   "headline": "Zydus Life shares dip 3% on USFDA's CRL to new drug; MOFSL stays 'neutral'",
+   "url": "https://www.business-standard.com/markets/news/zydus-life-share-price-dips-3-on-usfda-s-crl-to-new-drug-mofsl-stays-neutral-126112700189_1.html",
+   "alert_px": 1181.5,
+   "alert_move": -1.06,
+   "alert_at": "2026-11-27T10:00:31+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "54c84810ed965a1e",
+   "symbol": "HDFCBANK",
+   "time": "2026-11-27T09:35:05+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "HDFC Bank, SBI, 8 other stocks JPMorgan is bullish on as markets gear up to enter 2027. See full list",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/hdfc-bank-sbi-8-other-stocks-jpmorgan-is-bullish-on-as-markets-gear-up-to-enter-2027-see-full-list/slideshow/136208713.cms",
+   "alert_px": 861.2,
+   "alert_move": -0.09,
+   "alert_at": "2026-11-27T10:00:31+05:30",
+   "alert_delay": 900
+  },
+  {
+   "id": "54c84810ed965a1e",
+   "symbol": "BAJFINANCE",
+   "time": "2026-11-27T09:35:05+05:30",
+   "call": "watch",
+   "dir": "up",
+   "scored": true,
+   "source": "ET Markets",
+   "headline": "HDFC Bank, SBI, 8 other stocks JPMorgan is bullish on as markets gear up to enter 2027. See full list",
+   "url": "https://economictimes.indiatimes.com/markets/stocks/news/hdfc-bank-sbi-8-other-stocks-jpmorgan-is-bullish-on-as-markets-gear-up-to-enter-2027-see-full-list/slideshow/136208713.cms",
+   "alert_px": 1101.9,
+   "alert_move": 0.37,
+   "alert_at": "2026-11-27T10:00:31+05:30",
+   "alert_delay": 900
+  },
   {
    "id": "049b3ffe2a3fa74e",
    "symbol": "BLUESTARCO",

@@ -1,6 +1,6 @@
 {
  "note": "AI-written plain-English reports from PulsEdge's own feed, shown in the terminal's search. Educational information, not investment advice.",
- "updated": "2026-11-27T09:45+05:30",
+ "updated": "2026-11-27T10:00+05:30",
  "nifty50": {
   "updated": "2026-11-26",
   "symbols": [
@@ -57,24 +57,40 @@
   ]
  },
  "today": {
-  "summary": "Asian stocks rose for a second day, with Indian IT and Realty sectors leading the gains. Oil prices climbed near their monthly high due to Middle East conflicts, which may benefit Indian oil producers. The Supreme Court ordered major banks to approve staff prosecutions, creating potential legal risks for the sector. Mahanadi Coalfields also began trading on the Mumbai stock exchange after a large IPO.",
+  "summary": "PulsEdge flagged a Supreme Court order asking HDFC Bank, ICICI Bank and others to approve staff prosecution, which could weigh on their reputations. A USFDA request for more information on Zydus Life’s new drug may delay earnings from that product. Oil prices rose as Middle‑East tensions threatened supply, helping oil‑related companies. The trade minister said a US‑India trade deal is close to completion, which could ease exports if it materialises.",
   "themes": [
-   "Rising oil prices driven by geopolitical tensions in the Middle East",
-   "Strong performance in IT and Realty sectors while consumer goods lagged",
-   "Legal scrutiny and management changes affecting banks and industrial firms"
+   "Legal scrutiny on major banks may affect share sentiment",
+   "Regulatory delays in pharma and potential trade benefits for exporters",
+   "Geopolitical tension lifting oil prices but could reverse if tensions ease"
   ],
   "watch": [
-   "How HDFC Bank and other banks respond to the Supreme Court's prosecution order",
-   "Whether Middle East conflicts continue to push oil prices higher or de-escalate",
-   "Market reaction to Mahanadi Coalfields' debut and Tata Power's growth plans"
+   "Any follow‑up on the Supreme Court order and bank compliance actions",
+   "USFDA’s final decision on Zydus Life’s drug filing",
+   "Progress on the US‑India trade agreement and its impact on export‑oriented firms"
   ],
   "date": "2026-11-27",
-  "basis": "b717d6edab3e",
-  "updated": "2026-11-27T09:11+05:30",
-  "model": "qwen/qwen3.8-27b",
-  "items": 11
+  "basis": "44bc637fb487",
+  "updated": "2026-11-27T10:00+05:30",
+  "model": "openai/gpt-oss-120b",
+  "items": 19
  },
  "stocks": {
+  "HDFCBANK": {
+   "summary": "HDFC Bank has seen its market value jump past Airtel and is highlighted as a bullish pick by JPMorgan, while the Supreme Court has ordered it to approve prosecution sanctions for staff. The bank is also being compared favorably against peers in recent analyst discussions.",
+   "why": "Shareholders should watch the positive investor sentiment that could lift the stock, but also the legal scrutiny that may weigh on reputation.",
+   "upside": "If JPMorgan’s bullish view draws more investors, the share price could rise further.",
+   "downside": "Compliance with the Supreme Court’s order could damage the bank’s reputation and pressure the stock.",
+   "watch": [
+    "JPMorgan’s bullish stance on HDFC Bank",
+    "Supreme Court order on staff prosecution approvals",
+    "Recent 30% market‑cap gain and potential profit‑taking"
+   ],
+   "about": "HDFC Bank provides banking and financial services in India.",
+   "basis": "0658da4e13fa",
+   "items": 4,
+   "updated": "2026-11-27T10:00+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "ICICIBANK": {
    "summary": "ICICI Bank shares jumped about 4% to a record high as the broader market rallied, but the Supreme Court has ordered the bank to approve prosecution sanctions, putting legal scrutiny on its doorstep.",
    "why": "Legal scrutiny could affect the bank’s reputation and share price, while the recent price surge shows strong short‑term momentum that could reverse.",
@@ -90,22 +106,6 @@
    "items": 4,
    "updated": "2026-11-27T08:16+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "HDFCBANK": {
-   "summary": "PulsEdge noted that HDFC Bank's market value recently jumped, pushing it ahead of Airtel in size. At the same time, the Supreme Court ordered the bank to approve staff prosecution sanctions. Experts have also compared the bank with its peers, favoring it on valuation.",
-   "why": "This matters because legal scrutiny can hurt reputation and cause share declines, while valuation views can affect short-term demand.",
-   "upside": "Valuation arguments and a strong recent price rise could support the stock, though profit-taking might reverse these gains.",
-   "downside": "Legal scrutiny and compliance orders could hurt the bank's reputation and lead to share declines.",
-   "watch": [
-    "Whether the bank complies with the Supreme Court prosecution order",
-    "If profit-taking reverses the recent price gains",
-    "Changes in short-term demand driven by expert valuation views"
-   ],
-   "about": "HDFC Bank Ltd. is a major financial services company and one of India's 50 largest listed companies.",
-   "basis": "286375ee8d4f",
-   "items": 3,
-   "updated": "2026-11-27T08:16+05:30",
-   "model": "gemini-flash-lite-latest"
   },
   "PNB": {
    "summary": "Punjab National Bank signed a preliminary agreement with Deutsche Bank to explore funding for business acquisitions. This move aims to help the bank earn more fees by assisting companies that are buying other businesses.",
@@ -570,6 +570,22 @@
    "updated": "2026-11-26T12:45+05:30",
    "model": "gemini-flash-lite-latest"
   },
+  "ZYDUSLIFE": {
+   "summary": "Zydus Lifesciences is facing regulatory scrutiny as the US FDA has asked for more information on its new drug, delaying approval. At the same time, the company received an export inspection report for its Ankleshwar API plant and a key certificate for a new manufacturing facility in Ahmedabad’s SEZ.",
+   "why": "Shareholders should watch the FDA delays because they could reduce earnings from the new product, while the new facility may improve efficiency and lower taxes over time.",
+   "upside": "If the FDA issues are resolved quickly, the drug could launch in the US and boost sales, and the new Ahmedabad plant could enhance margins.",
+   "downside": "Further regulatory delays or adverse inspection findings could extend the earnings impact and delay product launches.",
+   "watch": [
+    "Outcome of the FDA complete response letter for the Saroglitazar NDA",
+    "Results of the FDA inspection of the Ankleshwar API plant",
+    "Operational performance of the new Ahmedabad SEZ manufacturing facility"
+   ],
+   "about": "Zydus Lifesciences Ltd. develops, manufactures and sells pharmaceutical products in the healthcare sector.",
+   "basis": "c01232c45c32",
+   "items": 4,
+   "updated": "2026-11-27T10:00+05:30",
+   "model": "openai/gpt-oss-120b"
+  },
   "JWL": {
    "summary": "Jupiter Wagons shares rose sharply after the company announced a joint venture with a South Korean firm to build metro trains. The company also stated it plans to invest 1,000 crore rupees in its passenger rail business over the next three years.",
    "why": "These moves show the company is expanding into new areas and investing heavily to grow, which could increase future earnings for shareholders.",
@@ -713,22 +729,6 @@
    "items": 3,
    "updated": "2026-11-26T16:58+05:30",
    "model": "openai/gpt-oss-120b"
-  },
-  "ZYDUSLIFE": {
-   "summary": "Zydus Lifesciences has received a complete response letter from the U.S. FDA for its sarglitazar NDA, an FDA inspection report for its Ankleshwar API plant, and an EIR for a new SEZ II facility in Ahmedabad. These events relate to regulatory approvals and facility certifications that could affect its international sales and operations.",
-   "why": "The FDA response letter means the new drug cannot be sold in the U.S. yet, which could reduce sales. The inspection report could influence the company’s ability to sell products abroad, while the SEZ certificate may improve tax efficiency and operational costs.",
-   "upside": "The SEZ certificate could help the company save on taxes and run its new facility more efficiently.",
-   "downside": "The FDA complete response letter indicates the drug cannot be sold in the U.S. yet, potentially lowering sales, and the inspection report could reveal observations that delay operations.",
-   "watch": [
-    "FDA’s final decision on the sarglitazar NDA",
-    "Outcome of the FDA inspection for the Ankleshwar API plant",
-    "Financial impact of the SEZ II facility certificate"
-   ],
-   "about": "",
-   "basis": "e18129ea60ba",
-   "items": 3,
-   "updated": "2026-11-27T08:30+05:30",
-   "model": "openai/gpt-oss-20b"
   },
   "WELSPUNLIV": {
    "summary": "Welspun Living’s shares have risen over 110% year‑to‑date as the company pushes new capex projects for growth, but a possible US tariff on Indian goods could hit its margins.",
