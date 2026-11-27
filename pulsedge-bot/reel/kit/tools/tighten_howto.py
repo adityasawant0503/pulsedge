@@ -46,7 +46,17 @@ CH = {1: [
  [("Confused",8),("by",2),("a",1),("headline?",8)],
  [("Tap",3),("Ask",3),("on",2),("that",4),("card,",4),("and",3),("get",3),("it",2),("in",2),("plain",5),("words.",5)],
  [("Two",3),("minutes,",7),("and",3),("you're",5),("caught",6),("up.",2)],
- [("Follow",6),("PulsEdge.",8)]]}[ep]
+ [("Follow",6),("PulsEdge.",8)]],
+ 5: [
+ [("Before",6),("9:15,",10)],
+ [("open",4),("the",3),("pre-market",10),("checklist.",9)],
+ [("At",2),("the",3),("open,",4),("tap",3),("Act",3),("now,",3),("for",3),("only",4),("the",3),("news",4),("worth",5),("reading.",7)],
+ [("Big",3),("money",5),("shows",5),("the",3),("large",5),("trades,",6),("like",4),("this",4),("week's",5),("₹3,500",14),("crore",5),("block",5),("deal.",4)],
+ [("Own",3),("a",1),("stock?",5)],
+ [("My",2),("stocks",6),("shows",5),("just",4),("your",4),("news.",4)],
+ [("Stuck?",5)],
+ [("Tap",3),("Ask.",3)],
+ [("Save",4),("this,",4),("and",3),("follow",6),("PulsEdge.",8)]]}[ep]
 pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", src, "-f", "f32le", "-ac", "1", "-ar", str(SR), "-"], capture_output=True, check=True).stdout
 x = np.frombuffer(pcm, dtype=np.float32)
 log = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", src, "-af", "silencedetect=noise=-38dB:d=0.15", "-f", "null", "-"], capture_output=True, text=True).stderr
@@ -92,9 +102,12 @@ elif ep == 4:
     cues = {"hook": 0.0, "pm": L(1), "panel": W(2, "pre-market"), "nifty": L(3), "us": L(4), "asia": L(5), "fx": L(6), "brent": W(7, "crude"), "vix": W(7, "VIX,"),
             "check": L(8), "open": L(9), "tapideas": L(10), "ideas": L(11) - 0.05, "own": L(13) - 0.05, "mine": W(14, "My"), "money": L(15) - 0.05,
             "stuck": L(16) - 0.05, "tapask": W(17, "Ask"), "answer": W(17, "get"), "end": L(18) - 0.1}
+elif ep == 5:
+    cues = {"hook": 0.0, "pm": 0.0, "panel": W(1, "pre-market"), "open": L(2) - 0.05, "tapideas": W(2, "tap"), "ideas": W(2, "for"), "money": L(3) - 0.05,
+            "deal": W(3, "like"), "own": L(4) - 0.05, "mine": W(5, "My"), "stuck": L(6) - 0.05, "tapask": W(7, "Ask."), "answer": W(7, "Ask.") + 0.3, "end": W(8, "and") - 0.05}
 else:
     cues = {"hook": 0.0, "search": L(1), "pick": W(1, "one-page") - 0.3, "brief": W(1, "one-page"), "add": L(2), "tapadd": W(2, "add"), "mine": W(2, "tab"),
             "ask": L(3), "tapfab": W(4, "Ask"), "chip": W(4, "PulsEdge.") + 0.35, "answer": L(5) - 0.05, "end": L(6) - 0.1}
-end = round(max(dur, last) + (2.4 if ep < 3 else 2.0 if ep == 3 else 1.0), 2)
+end = round(max(dur, last) + (2.4 if ep < 3 else 2.0 if ep == 3 else 1.0 if ep == 4 else 0.9), 2)
 json.dump({"ep": ep, "cues": {k: round(v, 3) for k, v in cues.items()}, "words": words, "lines": lines, "audio": round(dur, 3), "end": end}, open(tout, "w"), indent=0)
 print(json.dumps({"ep": ep, "orig": round(total, 2), "new": round(dur, 2), "end": end, "cues": {k: round(v, 2) for k, v in cues.items()}}))

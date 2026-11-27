@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PulsEdge reel: record month, 2-minute routine</title>
+<!-- 1080x1920, ~29 s. render2.js calls init(timing) once, then render(t) per frame; nothing animates on its own.
+     Visuals live in y 330..1260, captions around y 1390, source + disclaimer at 1532/1586. Smallest text 26px.
+     Descriptive only: no forecasts or buy/sell calls. 2021 values as of 5 Feb 2021 (CPI = Dec 2020 print); 2026 as of 18 Nov 2026. -->
+<style>
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-500-normal.woff2) format("woff2");font-weight:500}
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-600-normal.woff2) format("woff2");font-weight:600}
+@font-face{font-family:Plex;src:url(fonts/ibm-plex-sans-latin-700-normal.woff2) format("woff2");font-weight:700}
+@font-face{font-family:PlexMono;src:url(fonts/ibm-plex-mono-latin-500-normal.woff2) format("woff2");font-weight:500}
+@font-face{font-family:PlexMono;src:url(fonts/ibm-plex-mono-latin-600-normal.woff2) format("woff2");font-weight:600}
+@font-face{font-family:Rupee;src:local("Inter Bold"),local("Inter-Bold"),local("Inter");unicode-range:U+20B9}
+:root{--bg:#07060b;--ink:#f6f5fb;--mute:#b3afc2;--dim:#77738a;--line:#2a2836;--panel:#14131cdd;--acc:#a58bff;--red:#ff4d5e;--green:#2ee6a0;--amber:#ffc24d;--sky:#7fd4ff}
+*{box-sizing:border-box}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:var(--bg)}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;color:var(--ink);font-family:Rupee,Plex,sans-serif;-webkit-font-smoothing:antialiased}
+.glow{position:absolute;inset:-100px;opacity:0}
+#gR{background:radial-gradient(55% 35% at 25% 35%,#ff4d5e60,transparent 70%),linear-gradient(#1a050980,#1a050980)}
+#gG{background:radial-gradient(55% 35% at 75% 35%,#2ee6a066,transparent 70%),linear-gradient(#03140d99,#03140d99)}
+#gA{background:radial-gradient(55% 35% at 70% 30%,#ffc24d50,transparent 70%)}
+#gP{background:radial-gradient(55% 35% at 70% 25%,#6c43f077,transparent 70%),radial-gradient(40% 30% at 20% 80%,#6c43f033,transparent 70%)}
+#grid{position:absolute;inset:0;opacity:.3;background:linear-gradient(#ffffff10 1px,transparent 1px) 0 0/90px 90px,linear-gradient(90deg,#ffffff10 1px,transparent 1px) 0 0/90px 90px;-webkit-mask-image:radial-gradient(80% 60% at 50% 45%,#000 30%,transparent 85%)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;mix-blend-mode:screen}
+#bars{position:absolute;left:72px;right:72px;top:206px;height:6px;border-radius:3px;background:#ffffff1f;overflow:hidden}
+#bars b{display:block;height:100%;width:0;background:var(--ink)}
+#brand{position:absolute;left:72px;top:250px;display:flex;align-items:center;gap:14px;font:600 30px/1 PlexMono,monospace;letter-spacing:.16em}
+#brand span{width:16px;height:16px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 6px #a58bff2e,0 0 26px var(--acc)}
+#brand em{font-style:normal;color:var(--mute);letter-spacing:.12em}
+#src{position:absolute;left:72px;right:72px;top:1532px;font:500 26px/1.3 PlexMono,monospace;color:var(--dim);white-space:nowrap;overflow:hidden}
+#foot{position:absolute;left:72px;right:72px;top:1586px;font:500 26px/1.3 Plex,sans-serif;color:var(--dim);text-align:center}
+.sc{position:absolute;left:72px;right:72px;top:330px;height:930px;opacity:0;transform-origin:50% 40%}
+.pop{display:block;opacity:0}
+.mono{font-family:Rupee,PlexMono,monospace}
+.chip{display:inline-flex;align-items:center;gap:12px;font:600 36px/1 PlexMono,monospace;letter-spacing:.1em;border-radius:14px;padding:14px 20px}
+.chip.r{background:var(--red);color:#2a0007}.chip.g{background:var(--green);color:#00281a}.chip.a{background:var(--amber);color:#2a1d00}.chip.p{background:var(--acc);color:#150c33}
+.big{font:700 230px/0.92 Plex,sans-serif;letter-spacing:-.06em;white-space:nowrap}
+.h{font:700 110px/1 Plex,sans-serif;letter-spacing:-.045em}
+.sub{font:600 50px/1.25 Plex,sans-serif;color:var(--mute)}
+/* hook */
+#hook .chip{margin-top:40px}
+#hook .big{color:var(--green);margin-top:40px;text-shadow:0 0 80px #2ee6a066}
+#hook .h{margin-top:24px;font-size:104px}
+#hook svg{display:block;margin-top:50px;overflow:visible}
+#hook .ax{font:600 30px PlexMono,monospace;fill:var(--mute)}
+/* not 2021 */
+#notyet .k1{margin-top:120px;font:700 112px/1 Plex,sans-serif;letter-spacing:-.045em}
+#notyet .yr{position:relative;display:inline-block;margin-top:30px;font:700 340px/0.9 Plex,sans-serif;letter-spacing:-.06em;color:var(--ink)}
+#strike{position:absolute;left:-20px;top:46%;height:34px;width:0;background:var(--red);border-radius:17px;transform:rotate(-8deg);box-shadow:0 0 40px #ff4d5e99}
+#notyet .chip{margin-top:70px}
+/* then vs now board */
+.cols{display:grid;grid-template-columns:1fr 90px 1fr;padding:0 34px;margin-top:10px}
+.cols span{font:600 34px/1 PlexMono,monospace;letter-spacing:.12em;color:var(--dim)}
+#nowh{color:var(--dim)}
+.row{background:var(--panel);border:3px solid var(--line);border-radius:30px;padding:26px 34px 24px;margin-top:24px;box-shadow:0 30px 80px -40px #000}
+.row .lb{font:600 32px/1 PlexMono,monospace;letter-spacing:.12em;color:var(--mute)}
+.row .vv{display:grid;grid-template-columns:1fr 90px 1fr;align-items:end;margin-top:18px}
+.row .th{font:700 100px/1 Plex,sans-serif;letter-spacing:-.04em;color:var(--mute)}
+.row .ar{font:700 64px/1 Plex,sans-serif;color:var(--dim);padding-bottom:16px}
+.row .nw{font:700 100px/1 Plex,sans-serif;letter-spacing:-.04em;color:var(--red);text-shadow:0 0 50px #ff4d5e55}
+.row .ss{display:grid;grid-template-columns:1fr 90px 1fr;margin-top:12px;font:600 32px/1.2 Plex,sans-serif;color:var(--dim)}
+.row .ss b{color:#ff8a95;font-weight:600}
+/* catch */
+#catch .chip{margin-top:60px}
+#catch .h{margin-top:40px;font-size:120px}
+#catch .h span{color:var(--amber)}
+.bar{margin-top:80px}
+.bar .track{position:relative;height:80px;border-radius:18px;background:#ff4d5ecc;overflow:hidden}
+.bar .track b{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--green);box-shadow:6px 0 0 var(--bg)}
+.bar .lbls{display:flex;justify-content:space-between;margin-top:22px;font:600 34px/1.35 PlexMono,monospace}
+/* next */
+.wd{margin-top:46px}
+.wd .w{font:700 176px/0.95 Plex,sans-serif;letter-spacing:-.05em}
+.wd .d{font:600 36px/1.2 PlexMono,monospace;color:var(--mute);margin-top:12px;letter-spacing:.02em}
+#next .tail{margin-top:56px;font:700 66px/1.1 Plex,sans-serif;letter-spacing:-.03em;color:var(--ink)}
+/* cta */
+#cta{text-align:center}
+#cta .h{margin-top:30px;font-size:104px}
+#cta .sub{margin-top:18px}
+.stack{position:relative;width:392px;height:490px;margin:40px auto 0}
+.stack img{position:absolute;left:0;top:0;width:392px;height:490px;border-radius:26px;border:3px solid #ffffff22;box-shadow:0 40px 100px -20px #000}
+#cta .btn{display:inline-block;margin-top:44px;background:var(--ink);color:#07060b;font:700 56px/1 Plex,sans-serif;border-radius:999px;padding:34px 64px;box-shadow:0 20px 60px -10px #a58bff99}
+/* captions */
+#cap{position:absolute;left:60px;right:60px;top:1300px;height:190px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0 28px;text-align:center}
+#cap span{display:inline-block;font:700 76px/1.15 Plex,sans-serif;letter-spacing:-.02em;color:#fff;
+  text-shadow:0 0 2px #000,0 4px 0 #000,0 0 30px #000c,3px 3px 0 #000,-3px -3px 0 #000,3px -3px 0 #000,-3px 3px 0 #000}
+/* record month reel */
+.big2{font:700 230px/0.92 Plex,sans-serif;letter-spacing:-.06em;white-space:nowrap}
+.big2 small{font-size:84px;letter-spacing:-.02em;margin-left:16px;color:var(--mute)}
+#hook .chip{margin-top:30px}
+#hook .big2{color:var(--green);margin-top:90px;text-shadow:0 0 80px #2ee6a066}
+#hook .h{margin-top:20px;font-size:100px}
+#stamp{display:inline-block;margin-top:130px;transform-origin:30% 50%}
+#stamp span{display:inline-block;font:700 76px/1 PlexMono,monospace;letter-spacing:.08em;color:var(--amber);border:8px solid var(--amber);border-radius:22px;padding:22px 34px;transform:rotate(-6deg);box-shadow:0 0 60px #ffc24d55,inset 0 0 30px #ffc24d33}
+#half .h{margin-top:30px;font-size:96px}
+#half .one{font:700 150px/1 Plex,sans-serif;letter-spacing:-.05em;color:var(--amber);margin-top:6px;text-shadow:0 0 70px #ffc24d55}
+.donrow{display:grid;grid-template-columns:400px 1fr;align-items:center;gap:40px;margin-top:70px}
+#donut{display:block;overflow:visible}
+#donut text{font:700 84px Plex,sans-serif;fill:var(--ink)}
+.dr .k{font:600 34px/1.2 PlexMono,monospace;letter-spacing:.1em;color:var(--mute)}
+.dr .w{font:700 84px/1.02 Plex,sans-serif;letter-spacing:-.035em;color:var(--green);margin-top:10px}
+.dr .v{font:700 92px/1 Plex,sans-serif;letter-spacing:-.04em;margin-top:22px}
+.dr .s{font:600 32px/1.25 Plex,sans-serif;color:var(--mute);margin-top:12px}
+#sect .lb{font:600 32px/1.3 PlexMono,monospace;letter-spacing:.1em;color:var(--mute);margin-top:20px}
+.sr{display:grid;grid-template-columns:330px 1fr 230px;align-items:center;margin-top:56px}
+.sr .n{font:700 52px/1.1 Plex,sans-serif;letter-spacing:-.02em}
+.sr .tr{position:relative;height:84px}
+.sr .tr b{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:12px;background:var(--green)}
+.sr .v{font:700 56px/1 Plex,sans-serif;letter-spacing:-.03em;text-align:right;color:var(--green)}
+.sr.neg .tr b{background:var(--red);box-shadow:0 0 40px #ff4d5e66}
+.sr.neg .v{color:#ff8a95}
+#soldchip{margin-top:70px}
+#next .h{margin-top:120px;font-size:112px}
+#next .chip{margin-top:80px;font-size:52px;padding:22px 30px;border-radius:18px}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="glow" id="gP"></div><div class="glow" id="gR"></div><div class="glow" id="gG"></div><div class="glow" id="gA"></div>
+  <div id="grid"></div>
+  <div id="bars"><b></b></div>
+  <div id="brand"><span></span>PULSEDGE <em>· MONEY MOVES</em></div>
+
+  <section class="sc" id="hook">
+    <span class="chip g pop" data-cue="hook" data-d="-0.5">▲ FOREIGN BUYING · NOV 2026</span>
+    <div class="big2 pop" data-cue="hook" data-d="-0.45">₹<span data-count="0,1.38,2" data-cue="hook" data-d="-0.3" data-dur="2.2">0</span><small>lakh Cr</small></div>
+    <div class="h pop" data-cue="hook" data-d="-0.4">into Indian shares<br>this month.</div>
+    <div id="stamp" class="pop" data-cue="rec" data-d="0"><span>RECORD MONTH</span></div>
+  </section>
+
+  <section class="sc" id="half">
+    <div class="h pop" data-cue="half" data-d="0">Half of it went to</div>
+    <div class="one pop" data-cue="one" data-d="0">ONE sector.</div>
+    <div class="donrow">
+      <svg id="donut" class="pop" data-cue="half" data-d="0.2" width="400" height="400" viewBox="0 0 400 400">
+        <circle cx="200" cy="200" r="160" fill="none" stroke="#ffffff1c" stroke-width="56"/>
+        <circle id="arc" cx="200" cy="200" r="160" fill="none" stroke="#2ee6a0" stroke-width="56" stroke-linecap="butt" transform="rotate(-90 200 200)"/>
+        <text id="pct" x="200" y="228" text-anchor="middle">0%</text>
+      </svg>
+      <div class="dr">
+        <div class="k pop" data-cue="bank" data-d="0">FINANCIAL SERVICES</div>
+        <div class="w pop" data-cue="bank" data-d="0.05">Banks &amp;<br>finance</div>
+        <div class="v pop" data-cue="n43" data-d="0">₹<span data-count="0,43102,0" data-cue="n43" data-d="0" data-dur="0.9">0</span> Cr</div>
+        <div class="s pop" data-cue="n43" data-d="0.3">of ₹84,291 Cr<br>1–15 Nov</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sc" id="sect">
+    <div class="lb pop" data-cue="bars" data-d="0">FOREIGN BUYING BY SECTOR<br>1–15 NOV 2026 · ₹ CRORE</div>
+    <div class="sr pop" data-cue="bars" data-d="0.05"><div class="n">Financials</div><div class="tr"><b data-w="100" data-cue="bars" data-d="0.1"></b></div><div class="v">43,102</div></div>
+    <div class="sr pop" data-cue="b2" data-d="0"><div class="n">Telecom</div><div class="tr"><b data-w="17.6" data-cue="b2" data-d="0.05"></b></div><div class="v">7,570</div></div>
+    <div class="sr pop" data-cue="b3" data-d="0"><div class="n">IT</div><div class="tr"><b data-w="11.9" data-cue="b3" data-d="0.05"></b></div><div class="v">5,130</div></div>
+    <div class="sr pop" data-cue="b4" data-d="0"><div class="n">FMCG</div><div class="tr"><b data-w="7.0" data-cue="b4" data-d="0.05"></b></div><div class="v">~3,000</div></div>
+    <div class="sr neg pop" data-cue="cg" data-d="0"><div class="n">Capital goods</div><div class="tr"><b data-w="8.8" data-cue="cg" data-d="0.1"></b></div><div class="v">−3,781</div></div>
+    <span id="soldchip" class="chip r pop" data-cue="sold" data-d="0">▼ SOLD THE MOST</span>
+  </section>
+
+  <section class="sc" id="next">
+    <div class="h pop" data-cue="next" data-d="0">Want to catch moves like this early?</div>
+    <span class="chip p pop" data-cue="routine" data-d="0">THE 2-MINUTE ROUTINE ↓</span>
+  </section>
+
+  <div id="cap"></div>
+  <div id="flash"></div>
+  <div id="src"></div>
+  <div id="foot">Educational information only · Not investment advice</div>
+</div>
+<script>
+const SCENES = ["hook", "half", "sect", "next"];
+const MOOD = { hook: "G", half: "A", sect: "G", next: "P" };
+const HI = { R: "#ff6b78", G: "#2ee6a0", A: "#ffc24d", P: "#c3b0ff" };
+const SRC = { hook: "Source: NSDL FPI data · 1–26 Nov 2026", half: "Source: NSDL sector data · 1–15 Nov 2026", sect: "Source: NSDL sector data · 1–15 Nov 2026", next: "" };
+let T = null, PAGES = [];
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const eo = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const back = (x) => { x = clamp(x); const c = 1.9; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const fmt = (v, d) => (d ? v.toFixed(d) : Math.round(v).toLocaleString("en-IN"));
+
+function init(timing) {
+  T = timing; T.cues.sect = T.cues.bars;
+  let cur = [];
+  const flush = () => { if (cur.length) PAGES.push(cur); cur = []; };
+  T.words.forEach((w) => {
+    const len = cur.reduce((a, x) => a + x.w.length + 1, 0);
+    if (cur.length && (cur[0].c !== w.c || cur.length >= 3 || len + w.w.length > 16)) flush();
+    cur.push(w);
+  });
+  flush();
+  PAGES.forEach((p, i) => { p.a = p[0].t; const nx = PAGES[i + 1]; p.b = nx && nx[0].c === p[0].c ? nx[0].t : T.lines[p[0].c].b + 0.25; });
+  return { pages: PAGES.length };
+}
+
+function sceneAt(t) { let s = SCENES[0]; SCENES.forEach((id) => { if (t >= T.cues[id]) s = id; }); return s; }
+function shake(t, t0, dur, amp) { const k = clamp(1 - (t - t0) / dur); if (t < t0 || k <= 0) return [0, 0]; return [Math.sin(t * 91) * amp * k, Math.cos(t * 77) * amp * k]; }
+
+function render(t) {
+  const C = T.cues, cur = sceneAt(t);
+  SCENES.forEach((id, i) => {
+    const a = C[id], b = i + 1 < SCENES.length ? C[SCENES[i + 1]] : T.end + 1, el = document.getElementById(id);
+    if (t < a - 0.01 || t >= b) { el.style.opacity = 0; return; }
+    const pin = id === "hook" ? 1 : eo((t - a) / 0.35), drift = 1 + 0.025 * clamp((t - a) / (b - a));
+    const sc = (1.12 - 0.12 * pin) * drift;
+    const [sx, sy] = id === "hook" ? [0, 0] : shake(t, a, 0.3, 6);
+    el.style.opacity = (id === "hook" ? 1 : Math.min(1, (t - a) / 0.12)) * (1 - clamp((t - (b - 0.1)) / 0.1));
+    el.style.transform = `translate(${sx}px,${sy}px) scale(${sc})`;
+  });
+  document.querySelectorAll(".pop").forEach((el) => {
+    const at = C[el.dataset.cue] + (+el.dataset.d || 0), p = (t - at) / 0.4;
+    el.style.opacity = clamp(p * 2.5);
+    el.style.transform = `translateY(${(1 - eo(p)) * 50}px) scale(${0.86 + 0.14 * back(p)})`;
+  });
+  // the stamp slams in
+  const st = document.getElementById("stamp"), ps = (t - C.rec) / 0.25;
+  st.style.transform = `scale(${t < C.rec ? 2 : 2 - eo(ps)})`; st.style.opacity = clamp(ps * 3);
+  document.querySelectorAll("[data-count]").forEach((el) => {
+    const [f, to, d] = el.dataset.count.split(",").map(Number), at = C[el.dataset.cue] + (+el.dataset.d || 0);
+    el.textContent = fmt(f + (to - f) * eo((t - at) / (+el.dataset.dur || 1.2)), d);
+  });
+  document.querySelectorAll("[data-w]").forEach((el) => {
+    const at = C[el.dataset.cue] + (+el.dataset.d || 0);
+    el.style.width = (+el.dataset.w * eo((t - at) / 0.6)) + "%";
+  });
+  // donut: fills to 51% between "half" and "banks"
+  const circ = 2 * Math.PI * 160, f = 0.511 * eo((t - C.half - 0.3) / 1.6);
+  const arc = document.getElementById("arc"); arc.setAttribute("stroke-dasharray", `${(circ * f).toFixed(1)} ${circ.toFixed(1)}`);
+  document.getElementById("pct").textContent = Math.round(f * 100) + "%";
+  const m = MOOD[cur], since = t - C[cur];
+  ["R", "G", "A", "P"].forEach((k) => {
+    const el = document.getElementById("g" + k);
+    el.style.opacity = k === m ? Math.min(1, 0.4 + since / 0.3) : Math.max(0, 1 - since / 0.3) * (el._last === k ? 1 : 0);
+  });
+  document.getElementById("g" + m)._last = m;
+  let fl = 0;
+  SCENES.forEach((id) => { const d = t - C[id]; if (id !== "hook" && d >= 0 && d < 0.25) fl = Math.max(fl, 0.25 * (1 - d / 0.25)); });
+  ["rec", "n43", "cg"].forEach((k) => { const d = t - C[k]; if (d >= 0 && d < 0.2) fl = Math.max(fl, (k === "rec" ? 0.35 : 0.12) * (1 - d / 0.2)); });
+  document.getElementById("flash").style.opacity = fl;
+  document.querySelector("#bars > b").style.width = (100 * clamp(t / T.end)) + "%";
+  document.getElementById("src").textContent = SRC[cur] || "";
+  const page = PAGES.find((p) => t >= p.a - 0.02 && t < p.b), cap = document.getElementById("cap");
+  if (!page) { cap.innerHTML = ""; return; }
+  const hi = HI[m];
+  cap.innerHTML = page.map((w) => {
+    const on = t >= w.t - 0.03 && t < w.e + 0.05, pp = clamp((t - w.t) / 0.12);
+    const s = on ? 1 + 0.05 * (1 - Math.abs(1 - 2 * pp)) + 0.02 : 1;
+    return `<span style="color:${on ? hi : "#fff"};transform:scale(${s.toFixed(3)})">${w.w}</span>`;
+  }).join("");
+  const pa = clamp((t - page.a) / 0.12);
+  cap.style.transform = `scale(${0.9 + 0.1 * pa})`; cap.style.opacity = pa;
+}
+</script>
+</body>
+</html>

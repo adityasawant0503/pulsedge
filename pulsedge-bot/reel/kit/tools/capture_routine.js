@@ -53,7 +53,7 @@ const meta = {};
   const mc = p.locator(".sig").first(); await scrollTo((await topOf(mc)) - 110);
   await shot("mine2", { card: await box(mc) });
   // 5. Ask on a card: back to All, first card with an Ask button near the top
-  await p.locator('.tab[data-t="all"]').first().click(); await p.waitForTimeout(700);
+  await p.locator('.tab[data-t="' + (process.env.ASK_TAB || "all") + '"]').first().click(); await p.waitForTimeout(700);
   const card = p.locator(".sig").filter({ has: p.locator(".askb") }).first();
   await scrollTo((await topOf(card)) - 120);
   const askb = card.locator(".askb").first();

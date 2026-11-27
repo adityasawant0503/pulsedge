@@ -113,6 +113,14 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:var(--b
     <div class="bio pop" data-cue="end" data-d="1.05" style="margin-top:44px">TRY IT FREE · LINK IN BIO</div>
   </div>
 
+  <div class="end" id="end5">
+    <div class="ring pop" data-cue="end" data-d="0"><i></i></div>
+    <div class="h pop" data-cue="end" data-d="0.05">Save this.</div>
+    <div class="h b pop" data-cue="end" data-d="0.3">2 minutes a day.</div>
+    <div class="pop" data-cue="end" data-d="0.6"><span class="pill">Follow PulsEdge</span></div>
+    <div class="bio pop" data-cue="end" data-d="0.8" style="margin-top:44px">TRY IT FREE · LINK IN BIO</div>
+  </div>
+
   <div id="cap"></div>
   <div id="flash"></div>
   <div id="foot">Educational information only · Not investment advice</div>
@@ -176,6 +184,28 @@ function init(data) {
     hl(C.tapask + 0.45, C.answer - 0.05, M.chat.user, 6);
     shot(C.answer, "chat", 300, 330, 0.8, 0);
     hl(C.answer + 0.1, C.end, [M.chat.bot[0], M.chat.bot[1], M.chat.bot[2], 262], 6);
+  } else if (EP === 5) {
+    document.getElementById("brandsub").textContent = "· 2-MIN ROUTINE";
+    STEPS = [[0, "BEFORE 9:15"], [C.open, "9:15 OPEN"], [C.money, "BIG MONEY"], [C.own, "YOUR STOCKS"], [C.stuck, "STUCK?"]];
+    const rw = M.pm.rows;
+    shot(0, "pm", 90, 90, 0.6, 0);
+    shot(C.panel, "pm", 90, 230, C.open - C.panel - 0.1, 0);
+    hl(0.15, C.panel - 0.05, rw[0], 4);
+    rw.slice(1).forEach((r, i) => hl(C.panel + (C.open - C.panel - 0.2) * i / 5, C.panel + (C.open - C.panel - 0.2) * (i + 1) / 5 - 0.03, r, 4));
+    shot(C.open, "tabs", 140);
+    hl(C.open + 0.2, C.tapideas + 0.1, M.tabs.ideas, 6); tap(C.tapideas, M.tabs.ideas);
+    shot(C.tapideas + 0.3, "ideas", 140);
+    hl(C.ideas, C.money - 0.1, [M.ideas.card[0], M.ideas.card[1], M.ideas.card[2], Math.min(M.ideas.card[3], 330)], 6);
+    shot(C.money, "money", 150);
+    hl(C.money + 0.15, C.deal - 0.05, M.money.tab, 6); hl(C.deal, C.own - 0.1, [M.money.card[0], M.money.card[1], M.money.card[2], 340], 6);
+    shot(C.own, "mine", 140);
+    hl(C.own + 0.1, C.mine + 0.5, M.mine.tab, 6);
+    shot(C.mine + 0.5, "mine2", 100);
+    hl(C.mine + 0.7, C.stuck - 0.1, [M.mine2.card[0], M.mine2.card[1], M.mine2.card[2], Math.min(M.mine2.card[3], 380)], 6);
+    shot(C.stuck, "card", 100);
+    hl(C.stuck + 0.15, C.tapask + 0.1, M.card.ask, 8); tap(C.tapask, M.card.ask);
+    shot(C.answer, "chat", 200);
+    hl(C.answer + 0.1, C.end, M.chat.user, 6);
   } else {
     STEPS = [[0, "PART 3/3 · YOURS"]];
     shot(0, "search-0", 60);
