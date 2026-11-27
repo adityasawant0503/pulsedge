@@ -139,8 +139,12 @@ def telegram(items, dry):
     sent = pulse_bot.post_fast(items, dry=dry)
     if sent:
         log(f"  posted to Telegram ({pulse_bot.alert_chat()}): {', '.join(sent)}")
+        # read the list before opening the file to write it: open(..., "w") empties the file first, so reading inside
+        # the "with" saw an empty list and every post wiped the earlier entries. The 15-minute run then posted those
+        # cards a second time, hours later (5 of the 7 fast-lane cards on 25-27 Nov were sent twice).
+        already = news.load_json(FAST_POSTED, [])
         with open(FAST_POSTED, "w", encoding="utf-8") as fh:
-            json.dump((news.load_json(FAST_POSTED, []) + sent)[-600:], fh, indent=1)
+            json.dump((already + sent)[-600:], fh, indent=1)
         # when each card went out: the free channel's "members got this at" (premium mode) and the evening count
         t = now()
         times = pulse_bot.read_times(pulse_bot.FAST_POSTED_AT)
