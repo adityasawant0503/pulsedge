@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Decoded No. 4: A deficit is not a floor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..600&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
+<!-- Five 1080x1350 LinkedIn carousel slides: Decoded No. 4, silver. Navy palette, no logos, smallest text 20px. Outlook only: no targets, return scenarios or buy/sell calls. Prices as of 27 Nov 2026. -->
+<style>
+@page{size:1080px 1350px;margin:0}
+html,body{margin:0;background:#fff}
+*{box-sizing:border-box}
+:root{--navy:#0F2747;--sky:#7399C6;--deep:#2D5C93;--ink2:#46556B;--dim:#5F6B7E;--rule:#D8E0EA;--tint:#EEF3F9;--grey:#C3CEDB}
+.s{width:1080px;height:1350px;padding:60px 80px 60px;background:#fff;color:var(--navy);font-family:'Hanken Grotesk',system-ui,sans-serif;display:flex;flex-direction:column;overflow:hidden;break-after:page;position:relative}
+.s.dark{background:var(--navy);color:#fff}
+.run{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:12px;border-bottom:1px solid var(--navy);font-size:20px;letter-spacing:.14em;font-weight:700}
+.run i{font-style:normal;font-weight:500;color:var(--dim);letter-spacing:.06em}
+.sec{margin-top:34px;display:flex;gap:18px;align-items:baseline;font-size:20px;font-weight:700;letter-spacing:.16em;color:var(--deep)}
+.sec b{font-family:'Source Serif 4',Georgia,serif;font-size:30px;letter-spacing:0;font-weight:600;color:var(--navy)}
+.h{margin:12px 0 0;font-family:'Source Serif 4',Georgia,serif;font-size:58px;line-height:1.08;font-weight:500;letter-spacing:-.012em}
+.dek{margin:14px 0 0;font-size:25px;line-height:1.42;color:var(--ink2)}
+.exh{font-size:21px;font-weight:700;letter-spacing:.02em}
+.exh span{font-weight:500;color:var(--dim)}
+.read{border-top:2px solid var(--navy);padding-top:14px}
+.read .k{font-size:20px;font-weight:700;letter-spacing:.16em;color:var(--deep)}
+.read .x{margin-top:8px;font-family:'Source Serif 4',Georgia,serif;font-size:27px;line-height:1.38;color:var(--navy)}
+.note{font-size:20px;line-height:1.42;color:var(--dim)}
+.foot{margin-top:auto;padding-top:18px;border-top:1px solid var(--rule);display:flex;justify-content:space-between;align-items:baseline;font-size:20px;color:var(--dim)}
+.foot b{color:var(--navy);font-size:22px;font-weight:700;margin-right:12px}
+.dark .foot{border-top-color:rgba(255,255,255,.22);color:#A9BCD6}.dark .foot b{color:#fff}
+.abs{position:absolute}
+.mid{flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;padding:26px 0 18px}
+.tbl{display:grid;grid-template-columns:250px 222px 206px 1fr}
+.tbl>div{padding:13px 0;border-bottom:1px solid var(--rule);font-size:23px;display:flex;align-items:center}
+.tbl .now{background:var(--tint);padding-left:16px;font-weight:700}
+.tbl .then{padding-left:16px;color:var(--ink2)}
+.tbl .sh{padding-left:20px;color:var(--deep);font-weight:600;font-size:22px}
+.tbl .m{color:var(--navy);font-weight:600}
+.sig{display:grid;grid-template-columns:262px 1fr 1fr;column-gap:20px}
+.sig>div{padding:14px 0;border-bottom:1px solid var(--rule);font-size:22px;line-height:1.3}
+.sig .d{font-size:22px;font-weight:700;color:var(--deep)}
+.sig .d span{color:var(--navy);font-weight:600;margin-left:8px}
+</style>
+</head>
+<body>
+<style>
+.kv{display:grid;grid-template-columns:200px 1fr;border-top:2px solid var(--navy)}
+.kv>div{padding:11px 0;border-bottom:1px solid var(--rule);font-size:23px;line-height:1.3}
+.kv .k2{font-weight:700;color:var(--deep);font-size:20px;letter-spacing:.06em;text-transform:uppercase;padding-top:13px}
+.t{display:grid;border-top:2px solid var(--navy)}
+.t>div{padding:11px 12px 11px 0;border-bottom:1px solid var(--rule);font-size:22px;line-height:1.3}
+.t .hd{font-size:20px;font-weight:700;letter-spacing:.08em;color:var(--dim);border-bottom-color:var(--navy)}
+.t .b{font-weight:700}
+.t .c{color:var(--ink2)}
+.t .hl{background:var(--tint)}
+.tile{border-top:2px solid var(--navy);padding-top:12px}
+.tile .n{font-size:48px;font-weight:700;letter-spacing:-.02em;line-height:1.05}
+.tile .n small{font-size:24px}
+.tile .l{margin-top:8px;font-size:21px;line-height:1.32;color:var(--ink2)}
+.bars{border-top:2px solid var(--navy)}
+.bars .r{display:grid;grid-template-columns:240px 1fr 130px;align-items:center;column-gap:16px;padding:12px 0;border-bottom:1px solid var(--rule);font-size:23px}
+.bars .r .k{font-weight:700}
+.bars .r .k span{display:block;font-weight:500;font-size:20px;color:var(--dim)}
+.bars .r .v{text-align:right;font-weight:700}
+.bars .trk{height:32px;position:relative}
+.bars .fill{position:absolute;left:0;top:0;bottom:0;background:var(--deep)}
+.bars .fill.lt{background:var(--sky)}
+.bars .fill.rk{background:#B5524F}
+</style>
+
+<!-- 1 · COVER -->
+<section class="s dark">
+  <div class="run" style="border-bottom-color:rgba(255,255,255,.4)"><span style="color:#8FB4E3">DECODED · NO. 4</span><i style="color:#A9BCD6">Commodities · 28 November 2026</i></div>
+  <div style="margin-top:70px;font-size:20px;font-weight:700;letter-spacing:.18em;color:#8FB4E3">MARKET NOTE · SILVER</div>
+  <h1 class="h" style="margin-top:16px;font-size:104px;line-height:1;letter-spacing:-.02em">A deficit<br>is not a floor.</h1>
+  <p class="dek" style="margin-top:30px;font-size:28px;color:#C9D6E8;max-width:900px">Silver has been short of metal for six straight years, yet it's about 64% below January's record. This week UBS turned positive on it, and its reasons show what really drives silver. The shortage isn't one.</p>
+  <div class="mid" style="padding-top:20px">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.4);border-bottom:1px solid rgba(255,255,255,.4)">
+      <div style="padding:24px 16px 24px 0"><div style="font-size:46px;font-weight:700;letter-spacing:-.02em">$121.6</div><div style="margin-top:10px;font-size:20px;line-height:1.35;color:#A9BCD6">Record high,<br>29 January</div></div>
+      <div style="padding:24px 16px;border-left:1px solid rgba(255,255,255,.22)"><div style="font-size:46px;font-weight:700;letter-spacing:-.02em">$43.6</div><div style="margin-top:10px;font-size:20px;line-height:1.35;color:#A9BCD6">Spot an ounce,<br>27 Nov close</div></div>
+      <div style="padding:24px 16px;border-left:1px solid rgba(255,255,255,.22)"><div style="font-size:46px;font-weight:700;letter-spacing:-.02em">35<span style="font-size:26px"> Moz</span></div><div style="margin-top:10px;font-size:20px;line-height:1.35;color:#A9BCD6">2026 deficit,<br>~3% of demand</div></div>
+      <div style="padding:24px 0 24px 16px;border-left:1px solid rgba(255,255,255,.22)"><div style="font-size:46px;font-weight:700;letter-spacing:-.02em">43 → 88</div><div style="margin-top:10px;font-size:20px;line-height:1.35;color:#A9BCD6">Gold/silver ratio,<br>Jan vs 25 Nov low</div></div>
+    </div>
+    <div style="margin-top:40px;font-size:20px;font-weight:700;letter-spacing:.16em;color:#8FB4E3">IN THIS NOTE</div>
+    <div style="margin-top:12px;display:grid;grid-template-columns:repeat(2,1fr);row-gap:10px;font-size:25px">
+      <div><span style="font-family:'Source Serif 4',Georgia,serif;color:#8FB4E3;margin-right:14px">01</span>Money, not metal</div>
+      <div><span style="font-family:'Source Serif 4',Georgia,serif;color:#8FB4E3;margin-right:14px">03</span>Silver has done this before</div>
+      <div><span style="font-family:'Source Serif 4',Georgia,serif;color:#8FB4E3;margin-right:14px">02</span>A rates bet, and UBS's case</div>
+      <div><span style="font-family:'Source Serif 4',Georgia,serif;color:#8FB4E3;margin-right:14px">04</span>Signposts</div>
+    </div>
+  </div>
+  <div class="foot"><span><b>Aditya Sawant</b>Views personal · not investment advice</span><span><span style="color:#8FB4E3;font-weight:700;font-size:24px;margin-right:24px">Swipe →</span>1 / 5</span></div>
+</section>
+
+<!-- 2 · MONEY, NOT METAL -->
+<section class="s">
+  <div class="run"><span>DECODED · NO. 4</span><i>A deficit is not a floor</i></div>
+  <div class="sec"><b>01</b>MONEY, NOT METAL</div>
+  <h2 class="h">Short of metal, still falling.</h2>
+  <p class="dek">This year's deficit is real but small: about 3% of a year's demand, and tiny next to the silver already sitting in vaults.</p>
+  <div class="mid">
+    <div class="exh">Exhibit 1 <span>· 2026 shortfall against metal in storage, million ounces</span></div>
+    <div class="bars" style="margin-top:12px">
+      <div class="r"><div class="k">2026 deficit<span>Silver Institute</span></div><div class="trk"><div class="fill rk" style="width:2.8%"></div></div><div class="v">35</div></div>
+      <div class="r"><div class="k">COMEX stocks<span>Mid-Nov</span></div><div class="trk"><div class="fill lt" style="width:26.6%"></div></div><div class="v">~332</div></div>
+      <div class="r"><div class="k">London vaults<span>End-Oct</span></div><div class="trk"><div class="fill lt" style="width:74.3%"></div></div><div class="v">~929</div></div>
+      <div class="r"><div class="k">Global ETPs<span>3 Nov</span></div><div class="trk"><div class="fill" style="width:100%"></div></div><div class="v">1,250</div></div>
+    </div>
+    <p class="note" style="margin:10px 0 0">London vaults hold much of the ETP metal, so those two bars overlap.</p>
+    <div style="margin-top:30px;display:grid;grid-template-columns:repeat(3,1fr);column-gap:30px">
+      <div class="tile"><div class="n">746<small> Moz</small></div><div class="l">Total deficit, 2021–26, covered from stocks</div></div>
+      <div class="tile"><div class="n">−45<small> Moz</small></div><div class="l">ETP outflow expected in 2026, after +273 in 2025</div></div>
+      <div class="tile"><div class="n">−19%</div><div class="l">Solar's silver use in 2026, as panels switch to copper</div></div>
+    </div>
+    <div class="read" style="margin-top:30px"><div class="k">MY READ</div><div class="x">Six years of deficits were covered from vaults without a lasting shortage. The price now turns on whether investors add to those stocks or sell them.</div></div>
+  </div>
+  <div class="foot"><span><b>Aditya Sawant</b>Sources: Silver Institute / Metals Focus; vault data via trackers</span><span>2 / 5</span></div>
+</section>
+
+<!-- 3 · A RATES BET -->
+<section class="s">
+  <div class="run"><span>DECODED · NO. 4</span><i>A deficit is not a floor</i></div>
+  <div class="sec"><b>02</b>A RATES BET, AND UBS'S CASE</div>
+  <h2 class="h">Silver is trading on the Fed.</h2>
+  <p class="dek">Since September it has followed US inflation data and the odds of a Fed hike. UBS's new positive call rests on the same thing.</p>
+  <div class="mid">
+    <div class="exh">Exhibit 2 <span>· Silver against the US rate cycle</span></div>
+    <div class="kv" style="margin-top:12px">
+      <div class="k2">16 Sep</div><div>Fed's first hike in three years; silver ~$63</div>
+      <div class="k2">October</div><div>Silver −18%; gold about −6 to −7%</div>
+      <div class="k2">25 Nov</div><div>Below $40 after hot US core inflation (3.3%)</div>
+      <div class="k2">27 Nov</div><div>UBS turns positive; silver rebounds 5–7% in a day</div>
+      <div class="k2">9 Dec</div><div>Next Fed decision; a hike is ~94–99% priced in</div>
+    </div>
+    <div class="exh" style="margin-top:28px">Exhibit 3 <span>· UBS's reasons, as reported</span></div>
+    <div style="margin-top:12px;display:grid;grid-template-columns:repeat(3,1fr);column-gap:30px">
+      <div class="tile"><div class="n">88</div><div class="l">Gold/silver ratio at the low; "inexpensive, not exceptionally so"</div></div>
+      <div class="tile"><div class="n">Q1 '27</div><div class="l">When UBS expects the Fed's hikes to end</div></div>
+      <div class="tile"><div class="n">Balance</div><div class="l">UBS sees supply and demand near balance, not short</div></div>
+    </div>
+    <div class="read" style="margin-top:28px"><div class="k">MY READ</div><div class="x">UBS's case is the right one to test: the Fed done by early 2027 and silver cheap against gold. If inflation stays hot, that sensitivity to rates cuts the other way.</div></div>
+  </div>
+  <div class="foot"><span><b>Aditya Sawant</b>Sources: Kitco, CME FedWatch via press, UBS via Bloomberg/Investing.com</span><span>3 / 5</span></div>
+</section>
+
+<!-- 4 · PAST CRASHES -->
+<section class="s">
+  <div class="run"><span>DECODED · NO. 4</span><i>A deficit is not a floor</i></div>
+  <div class="sec"><b>03</b>SILVER HAS DONE THIS BEFORE</div>
+  <h2 class="h">Big falls, very different endings.</h2>
+  <p class="dek">Three earlier crashes of more than half. How each one ended depended on the Fed far more than on silver.</p>
+  <div class="mid">
+    <div class="exh">Exhibit 4 <span>· Peak-to-low fall and how long it took (approx.)</span></div>
+    <div class="bars" style="margin-top:12px">
+      <div class="r"><div class="k">1980<span>2 months</span></div><div class="trk"><div class="fill" style="width:78%"></div></div><div class="v">−78%</div></div>
+      <div class="r"><div class="k">2008<span>7 months</span></div><div class="trk"><div class="fill" style="width:59%"></div></div><div class="v">−59%</div></div>
+      <div class="r"><div class="k">2011–15<span>4.6 years</span></div><div class="trk"><div class="fill" style="width:73%"></div></div><div class="v">−73%</div></div>
+      <div class="r"><div class="k">2026<span>Jan to 25 Nov</span></div><div class="trk"><div class="fill rk" style="width:68%"></div></div><div class="v">−68%</div></div>
+    </div>
+    <div class="t" style="margin-top:26px;grid-template-columns:130px 1fr 1fr">
+      <div class="hd">CRASH</div><div class="hd">TRIGGER</div><div class="hd">WHAT CAME AFTER</div>
+      <div class="b">1980</div><div>A cornered market, trading curbs, Volcker's hikes</div><div class="c">The high stood until Oct 2025</div>
+      <div class="b">2008</div><div>Lehman and forced selling</div><div class="c">Fed cut to zero; a fast rebound</div>
+      <div class="b">2011–15</div><div>CME margin hikes, a strong dollar</div><div class="c">−60% by mid-2013, then ~25% lower</div>
+    </div>
+    <div class="read" style="margin-top:28px"><div class="k">MY READ</div><div class="x">2026 rhymes most with 2011: a margin-led peak, then a firm dollar. A fall this size has ended both quickly and slowly. The Fed decided which.</div></div>
+  </div>
+  <div class="foot"><span><b>Aditya Sawant</b>Sources: historical London/COMEX prices, rounded; CME notices</span><span>4 / 5</span></div>
+</section>
+
+<!-- 5 · SIGNPOSTS -->
+<section class="s">
+  <div class="run"><span>DECODED · NO. 4</span><i>A deficit is not a floor</i></div>
+  <div class="sec"><b>04</b>SIGNPOSTS</div>
+  <h2 class="h">What would change the picture.</h2>
+  <p class="dek">No forecasts. These are the markers I'm tracking.</p>
+  <div class="mid">
+    <div class="sig" style="border-top:2px solid var(--navy)">
+      <div style="font-size:20px;font-weight:700;letter-spacing:.12em;color:var(--dim);border-bottom-color:var(--navy)">WHEN</div>
+      <div style="font-size:20px;font-weight:700;letter-spacing:.12em;color:var(--deep);border-bottom-color:var(--navy)">SUPPORTS SILVER</div>
+      <div style="font-size:20px;font-weight:700;letter-spacing:.12em;color:var(--navy);border-bottom-color:var(--navy)">WEIGHS ON IT</div>
+      <div class="d">9 Dec<span>Fed</span></div><div>Hike framed as the last</div><div>More hikes signalled</div>
+      <div class="d">Monthly<span>US CPI</span></div><div>Inflation cools</div><div>Hot prints continue</div>
+      <div class="d">Weekly<span>ETP data</span></div><div>Holdings stop falling</div><div>Outflows keep going</div>
+      <div class="d">1 Feb<span>Budget</span></div><div>Import duty held at 15%</div><div>A cut lowers the ₹ price</div>
+      <div class="d">Apr 2027<span>Survey</span></div><div>Deficit widens</div><div>Market tips to surplus</div>
+    </div>
+    <div style="margin-top:24px;background:var(--tint);padding:16px 20px;font-size:22px;line-height:1.38"><b>For Indian buyers:</b> the rupee price is the dollar price × the rupee rate + 15% import duty. A cut back to 6% would lower it about 8%, all else equal.</div>
+    <div style="margin-top:24px;padding:24px 30px;background:var(--navy);color:#fff">
+      <div style="font-size:20px;font-weight:700;letter-spacing:.16em;color:#8FB4E3">BOTTOM LINE</div>
+      <div style="margin-top:10px;font-family:'Source Serif 4',Georgia,serif;font-size:29px;line-height:1.32">Silver can rise again, but not on its deficit alone. Watch the Fed and investor flows before the industrial story.</div>
+      <div style="margin-top:12px;font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:23px;color:#A9BCD6">— Aditya Sawant</div>
+    </div>
+    <p class="note" style="margin:16px 0 0">For information and education only. Not investment advice or a recommendation to buy or sell anything. Views personal. Prices as of 27 Nov 2026; vault data from third-party trackers; UBS's view as reported in the press. Commodity prices are volatile.</p>
+  </div>
+  <div class="foot"><span><b>Aditya Sawant</b>Views personal · not investment advice</span><span>5 / 5</span></div>
+</section>
+
+</body>
+</html>

@@ -91,7 +91,7 @@ Event anchors to date: RBI policy (early Dec) · NOAA El Niño update (10 Dec) �
 | Week | Instagram (PulsEdge) | LinkedIn (Aditya) |
 |---|---|---|
 | 23–29 Nov | Thu 26: "Your 2-minute market routine" reel (already scheduled) · weekend carousel: "What is a bulk deal?" (the Big money tab, explained) | "The number that matters: 27%". Two weeks of foreign buying reversed about a quarter of ten months of selling. One exhibit. |
-| 30 Nov – 6 Dec (RBI) | Before: "RBI week: what to watch" carousel · after: "The repo rate in 30 seconds" reel | Decoded No. 4, after the decision: the RBI and a food-led inflation problem |
+| 30 Nov – 6 Dec (RBI) | Before: "RBI week: what to watch" carousel · after: "The repo rate in 30 seconds" reel | Tue 2 Dec: Decoded No. 4, silver ("A deficit is not a floor") · after the RBI decision: event note, text + one exhibit, on the RBI and food-led inflation |
 | 7–13 Dec (NOAA, CPI) | "El Niño update" carousel · "November inflation in 30 seconds" reel | Text + exhibit: food vs headline inflation since September |
 | 14–20 Dec (Fed) | "What the Fed decision means for India" reel · glossary carousel: FII, DII, repo, VIX | Decoded No. 5: "2026 in five exhibits" (year-end) |
 
